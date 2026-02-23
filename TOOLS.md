@@ -39,6 +39,24 @@ curl -s -X POST \
 - If a food photo is sent, identify the food, estimate carbs, and push as `Meal Bolus`.
 - Include descriptive notes (food items, medication names+doses, activity type+duration).
 
+### Food Photo → Nightscout with Image Link
+When Maria sends a **food photo** in the Telegram group:
+1. Save the photo locally: use exec to download from Telegram file API
+2. Upload to Catbox.moe for permanent hosting:
+```bash
+curl -s -F "reqtype=fileupload" -F "fileToUpload=@/path/to/photo.jpg" https://catbox.moe/user/api.php
+```
+   Returns a URL like: `https://files.catbox.moe/abc123.jpg`
+3. Include the URL in the Nightscout treatment notes:
+```bash
+curl -s -X POST \
+  -H "Content-Type: application/json" \
+  -H "api-secret: b3170e23f45df7738434cd8be9cd79d86a6d0f01" \
+  -d '{"enteredBy":"Javordclaws","eventType":"Meal Bolus","notes":"Lunch: [food description]\n📷 https://files.catbox.moe/abc123.jpg","created_at":"UTC_TIMESTAMP"}' \
+  https://p01--sefi--s66fclg7g2lm.code.run/api/v1/treatments.json
+```
+4. The photo link will be visible when clicking/hovering on the treatment icon in Nightscout.
+
 ---
 
 ## Telegram Group
