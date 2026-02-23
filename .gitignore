@@ -1,0 +1,30 @@
+# Local system files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# OpenClaw sensitive/local data
+secrets/
+.openclaw/
+tmp/
+*.log
+
+# Media/Large Files
+input/
+**/*.MOV
+**/*.mov
+**/*.HEIC
+**/*.heic
+**/*.mp4
+**/*.png
+**/*.jpg
+**/*.jpeg
+
+# Tool-specific tokens/auth
+**/token.json
+**/auth.json
+**/.env

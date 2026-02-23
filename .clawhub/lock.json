@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "skills": {
+    "ffmpeg-video-editor": {
+      "version": "1.0.0",
+      "installedAt": 1771461193595
+    },
+    "video-subtitles": {
+      "version": "1.0.0",
+      "installedAt": 1771461194965
+    }
+  }
+}
