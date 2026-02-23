@@ -9,5 +9,6 @@
 | 2026-02-23 | 10:00 | Maria Dennis | Food | 1 cup black coffee |
 | 2026-02-23 | 09:42 | Maria Dennis | Food | 2 fried eggs, 2 slices toast with butter, sliced apple |
 | 2026-02-23 | 09:00 | Maria Dennis | Medication | Rosuvastatin 10mg, Lisinopril 10mg |
+| 2026-02-23 | 11:00 | Maria Dennis | Activity | 1 hour housework (11:00 AM - 12:00 PM) |
 | 2026-02-23 | 04:00 | Maria Dennis | Medication | 1 Sudafed tablet |
 | 2026-02-23 | 04:00 | Maria Dennis | Sleep | Slept (4:00 AM - 9:00 AM) |
