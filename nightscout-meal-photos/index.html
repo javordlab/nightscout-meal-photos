@@ -289,7 +289,7 @@
 
     function extractPhotoUrls(notes) {
       if (!notes) return [];
-      const regex = /https?:\/\/files\.catbox\.moe\/[a-zA-Z0-9]+\.\w+/g;
+      const regex = /https?:\/\/(?:files\.catbox\.moe|iili\.io)\/[a-zA-Z0-9]+\.\w+/g;
       return notes.match(regex) || [];
     }
 
