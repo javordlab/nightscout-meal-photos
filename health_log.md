@@ -2,6 +2,7 @@
 
 | Date | Time | User | Category | Entry |
 |------|------|------|----------|-------|
+| 2026-02-24 | 11:47 | Maria Dennis | Activity | 30 minutes housework |
 | 2026-02-24 | 11:18 | Maria Dennis | Activity | 1 hour heavy gardening (pruning and weeding) |
 | 2026-02-24 | 09:54 | Maria Dennis | Food | Fried egg, prosciutto, 2 small bao buns, and sliced apple |
 | 2026-02-24 | 09:00 | Maria Dennis | Medication | Lisinopril 10mg, Rosuvastatin 10mg |
