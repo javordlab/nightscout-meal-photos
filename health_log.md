@@ -6,6 +6,7 @@
 | 2026-02-22 | 19:30 | Maria Dennis | Food | 1 egg, 1 cup vegetables, 1 cup noodles, small piece of cheese, 2 strawberries with chocolate, a slice of bacon, and 4oz sake |
 | 2026-02-22 | 20:30 | Maria Dennis | Food | Handful of cashews |
 | 2026-02-22 | 21:00 | Maria Dennis | Medication | 1500mg Metformin HCL |
+| 2026-02-23 | 18:02 | Maria Dennis | Food | Dinner: Grilled unagi, white rice, kabocha pumpkin tempura, and white asparagus |
 | 2026-02-23 | 17:34 | Maria Dennis | Medication | 1 500mg Tylenol tablet |
 | 2026-02-23 | 16:04 | Maria Dennis | Medication | Trulicity 0.75 MG/0.5 ML |
 | 2026-02-23 | 15:10 | Maria Dennis | Food | Handful of roasted cashews and a small filled pastry/roll |
