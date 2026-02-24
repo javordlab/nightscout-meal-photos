@@ -244,8 +244,10 @@
 
   <script>
     // --- Config ---
-    // Use local proxy to avoid CORS issues
-    const NS_URL = window.location.origin;
+    // If running locally (dev), use local proxy; otherwise hit Nightscout directly
+    const NS_URL = window.location.hostname === 'localhost'
+      ? window.location.origin
+      : 'https://p01--sefi--s66fclg7g2lm.code.run';
     const TZ_OFFSET = -8; // PST
 
     // --- Init ---

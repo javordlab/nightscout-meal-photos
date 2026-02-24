@@ -6,6 +6,7 @@
 | 2026-02-22 | 19:30 | Maria Dennis | Food | 1 egg, 1 cup vegetables, 1 cup noodles, small piece of cheese, 2 strawberries with chocolate, a slice of bacon, and 4oz sake |
 | 2026-02-22 | 20:30 | Maria Dennis | Food | Handful of cashews |
 | 2026-02-22 | 21:00 | Maria Dennis | Medication | 1500mg Metformin HCL |
+| 2026-02-23 | 15:15 | Maria Dennis | Medication | Trulicity 0.75 MG/0.5 ML |
 | 2026-02-23 | 15:10 | Maria Dennis | Food | Handful of roasted cashews and a small filled pastry/roll |
 | 2026-02-23 | 15:05 | Maria Dennis | Activity | 90 minutes heavy gardening (digging, pruning) |
 | 2026-02-23 | 12:06 | Maria Dennis | Food | Small baked potato with butter, prosciutto, and chard/apple salad |
