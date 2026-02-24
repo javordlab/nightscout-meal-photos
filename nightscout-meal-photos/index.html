@@ -291,7 +291,7 @@
 
     function extractPhotoUrls(notes) {
       if (!notes) return [];
-      const regex = /https?:\/\/(?:files\.catbox\.moe|iili\.io)\/[a-zA-Z0-9]+\.\w+/g;
+      const regex = /https?:\/\/(?:files\.catbox\.moe|iili\.io)\/\S+/g;
       return notes.match(regex) || [];
     }
 
@@ -300,7 +300,7 @@
       // Remove photo URLs and emoji
       return notes
         .replace(/📷\s*https?:\/\/\S+/g, '')
-        .replace(/https?:\/\/files\.catbox\.moe\/\S+/g, '')
+        .replace(/https?:\/\/(?:files\.catbox\.moe|iili\.io)\/\S+/g, '')
         .trim();
     }
 
