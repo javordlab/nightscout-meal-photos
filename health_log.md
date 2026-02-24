@@ -3,6 +3,7 @@
 | Date | Time | User | Category | Entry |
 |------|------|------|----------|-------|
 | 2026-02-24 | 09:54 | Maria Dennis | Food | Fried egg, prosciutto, 2 small bao buns, and sliced apple |
+| 2026-02-24 | 09:00 | Maria Dennis | Medication | Lisinopril 10mg, Rosuvastatin 10mg |
 | 2026-02-23 | 20:45 | Maria Dennis | Medication | 1500mg Metformin HCL |
 | 2026-02-23 | 20:43 | Maria Dennis | Food | Japanese Strawberry Cream Sand cookie |
 | 2026-02-23 | 20:33 | Maria Dennis | Activity | 15 minute walk |

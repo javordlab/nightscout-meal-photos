@@ -16,7 +16,7 @@ _Last updated: 2026-02-23 05:25 PM PST_
 - Telegram ID: 8738167445
 - Speaks English and Spanish
 - Communicates primarily via voice messages in Telegram group
-- Medication: 1500mg Metformin HCL (nightly, ~9 PM)
+- Medication: 1500mg Metformin HCL (nightly, ~9 PM); 10mg Lisinopril (daily morning); 10mg Rosuvastatin (every other morning).
 - Patient ID: 446dcd1b-c6f2-11ee-9e32-4e8e6fd5ce94
 - LibreLinkUp follower account: librelinkup@javierordonez.com
 
