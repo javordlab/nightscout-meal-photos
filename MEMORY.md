@@ -1,6 +1,6 @@
 # MEMORY.md — Long-Term Memory
 
-_Last updated: 2026-02-23 04:18 AM PST_
+_Last updated: 2026-02-23 05:25 PM PST_
 
 ## People
 
@@ -31,6 +31,13 @@ _Last updated: 2026-02-23 04:18 AM PST_
 - Treatment push: POST /api/v1/treatments.json with api-secret header (SHA1 hash)
 - Event types: "Meal Bolus" for food, "Note" for meds, "Exercise" for activity
 - MongoDB: mongodb://...@mongo-0.mongo--s66fclg7g2lm.addon.code.run:27017/...
+- **CORS:** Enabled via `ENABLE=cors ...` in Northflank env vars.
+
+### Meal Photos Page
+- Public URL: https://javordlab.github.io/nightscout-meal-photos/
+- GitHub Repo: https://github.com/javordlab/nightscout-meal-photos (public)
+- Function: Pulls "Meal Bolus" treatments from Nightscout and displays embedded photo links.
+- **Image Hosting:** Uses `freeimage.host` (iili.io) for persistent meal photo storage. Catbox.moe was deprecated after serving 0-byte files.
 
 ### Telegram Group ("Food log")
 - Group ID: -5262020908
