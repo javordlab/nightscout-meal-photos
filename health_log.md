@@ -5,7 +5,7 @@
 | 2026-02-23 | 20:45 | Maria Dennis | Medication | 1500mg Metformin HCL |
 | 2026-02-23 | 20:43 | Maria Dennis | Food | Japanese Strawberry Cream Sand cookie |
 | 2026-02-23 | 20:33 | Maria Dennis | Activity | 15 minute walk |
-| 2026-02-23 | 18:02 | Maria Dennis | Food | Dinner: Grilled unagi, white rice, kabocha pumpkin tempura, and white asparagus |
+| 2026-02-23 | 19:45 | Maria Dennis | Food | Dinner: Grilled unagi, white rice, kabocha pumpkin tempura, and white asparagus |
 | 2026-02-23 | 17:34 | Maria Dennis | Medication | 1 500mg Tylenol tablet |
 | 2026-02-23 | 16:04 | Maria Dennis | Medication | Trulicity 0.75 MG/0.5 ML |
 | 2026-02-23 | 15:10 | Maria Dennis | Food | Handful of roasted cashews and a small filled pastry/roll |

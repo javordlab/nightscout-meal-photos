@@ -27,11 +27,12 @@ curl -s -X POST \
 | Other notes | `Note` | Any other health observation |
 
 ### Time Conversion (CRITICAL)
+- ALWAYS use the Telegram message arrival time for the record, unless Maria specifies a different time in her message.
 - Maria reports times in **PST** (America/Los_Angeles)
 - Nightscout stores everything in **UTC**
 - **PST → UTC: Add 8 hours**
 - Example: 9:00 AM PST → 17:00 UTC → `2026-02-23T17:00:00Z`
-- If Maria doesn't specify a time, use the current time
+- DO NOT use the current system time if it differs from the message timestamp.
 
 ### Rules
 - ALWAYS push to Nightscout. Never skip this step.
