@@ -21,3 +21,4 @@
 | 2026-02-22 | 20:30 | Maria Dennis | Food | Handful of cashews |
 | 2026-02-22 | 19:30 | Maria Dennis | Food | 1 egg, 1 cup vegetables, 1 cup noodles, small piece of cheese, 2 strawberries with chocolate, a slice of bacon, and 4oz sake |
 | 2026-02-22 | 14:30 | Maria Dennis | Activity | 1 hour exercise/gardening (2:30 PM - 3:30 PM) |
+| 2026-02-23 | 22:58 | Maria Dennis | Sleep | Sleep Report (Apple Watch): 5h 3m total. Core: 3h 19m, Deep: 54m, REM: 50m. |
