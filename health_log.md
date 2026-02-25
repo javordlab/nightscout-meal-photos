@@ -2,6 +2,8 @@
 
 | Date | Time | User | Category | Entry |
 |------|------|------|----------|-------|
+| 2026-02-24 | 21:36 | Maria Dennis | Medication | 1500mg Metformin HCL |
+| 2026-02-24 | 21:34 | Maria Dennis | Food | Glass of milk and Japanese Cream Sand cookie |
 | 2026-02-24 | 19:28 | Maria Dennis | Food | Small piece of dark chocolate |
 | 2026-02-24 | 18:48 | Maria Dennis | Food | Green vegetable soup, octopus with potatoes (pulpo a la gallega) |
 | 2026-02-24 | 15:49 | Maria Dennis | Food | Handful of roasted cashews and dark chocolate |
