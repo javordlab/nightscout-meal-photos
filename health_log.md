@@ -5,6 +5,7 @@
 | 2026-02-24 | 21:36 | Maria Dennis | Medication | 1500mg Metformin HCL |
 | 2026-02-24 | 21:34 | Maria Dennis | Food | Glass of milk and Japanese Cream Sand cookie |
 | 2026-02-24 | 19:28 | Maria Dennis | Food | Small piece of dark chocolate |
+| 2026-02-24 | 09:25 | Maria Dennis | Sleep | Sleep Report (Apple Watch): 7h 20m total. Core: 5h, Deep: 1h, REM: 1h 20m. |
 | 2026-02-24 | 18:48 | Maria Dennis | Food | Green vegetable soup, octopus with potatoes (pulpo a la gallega) |
 | 2026-02-24 | 15:49 | Maria Dennis | Food | Handful of roasted cashews and dark chocolate |
 | 2026-02-24 | 13:22 | Maria Dennis | Food | 2 Onigiri (filled with unagi), 2 Umeboshi, and Miso soup with Enoki mushrooms |
