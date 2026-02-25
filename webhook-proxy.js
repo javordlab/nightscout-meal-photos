@@ -37,39 +37,20 @@ const server = http.createServer((client_req, client_res) => {
         tgRes.on('data', c => tgBody += c);
         tgRes.on('end', () => {
             console.log('Telegram response:', tgBody);
+            // Return 200 to the iPhone Shortcut regardless of gateway status
+            client_res.writeHead(200, { 'Content-Type': 'application/json' });
+            client_res.end(JSON.stringify({ status: "success", delivered: "telegram" }));
         });
       });
       
       tgReq.on('error', (e) => {
         console.error('Telegram Request Error:', e.message);
+        client_res.writeHead(500);
+        client_res.end('Telegram Delivery Failed');
       });
 
       tgReq.write(tgPayload);
       tgReq.end();
-
-      // Forward to Gateway as well
-      const gatewayReq = http.request({
-        hostname: '127.0.0.1',
-        port: GATEWAY_PORT,
-        path: client_req.url,
-        method: client_req.method,
-        headers: {
-            ...client_req.headers,
-            'host': `localhost:${GATEWAY_PORT}`,
-            'x-forwarded-for': client_req.socket.remoteAddress
-        }
-      }, (gwRes) => {
-        client_res.writeHead(gwRes.statusCode, gwRes.headers);
-        gwRes.pipe(client_res, { end: true });
-      });
-
-      gatewayReq.on('error', (e) => {
-        client_res.writeHead(200);
-        client_res.end('Synced to Telegram only');
-      });
-
-      gatewayReq.write(body);
-      gatewayReq.end();
 
     } catch (e) {
       console.error('Parse Error:', e.message);
@@ -79,5 +60,5 @@ const server = http.createServer((client_req, client_res) => {
   });
 });
 
-console.log(`OpenClaw VPN Proxy (FIXED HTTPS) starting on port ${PROXY_PORT}...`);
+console.log(`OpenClaw VPN Proxy (FINAL FIX) starting on port ${PROXY_PORT}...`);
 server.listen(PROXY_PORT, '0.0.0.0');
