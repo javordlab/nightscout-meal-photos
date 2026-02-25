@@ -1,4 +1,5 @@
 const http = require('http');
+const https = require('https');
 
 const PROXY_PORT = 18790;
 const GATEWAY_PORT = 18789;
@@ -15,15 +16,22 @@ const server = http.createServer((client_req, client_res) => {
       const data = JSON.parse(body);
       const sleepMsg = data.message || 'New sleep record received via proxy';
       
-      console.log(`Forwarding to Telegram: ${sleepMsg}`);
+      console.log(`Forwarding to Telegram (HTTPS): ${sleepMsg}`);
       
-      // 1. Forward directly to Telegram so you see it in the group
-      const tgReq = http.request({
+      const tgPayload = JSON.stringify({
+        chat_id: CHAT_ID,
+        text: `[iPhone Shortcut Sync]\n${sleepMsg}`
+      });
+
+      const tgReq = https.request({
         hostname: 'api.telegram.org',
         port: 443,
         path: `/bot${BOT_TOKEN}/sendMessage`,
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' }
+        headers: { 
+          'Content-Type': 'application/json',
+          'Content-Length': Buffer.byteLength(tgPayload)
+        }
       }, (tgRes) => {
         let tgBody = '';
         tgRes.on('data', c => tgBody += c);
@@ -32,13 +40,14 @@ const server = http.createServer((client_req, client_res) => {
         });
       });
       
-      tgReq.write(JSON.stringify({
-        chat_id: CHAT_ID,
-        text: `[iPhone Shortcut Sync]\n${sleepMsg}`
-      }));
+      tgReq.on('error', (e) => {
+        console.error('Telegram Request Error:', e.message);
+      });
+
+      tgReq.write(tgPayload);
       tgReq.end();
 
-      // 2. Also try to forward to Gateway for internal processing
+      // Forward to Gateway as well
       const gatewayReq = http.request({
         hostname: '127.0.0.1',
         port: GATEWAY_PORT,
@@ -55,8 +64,7 @@ const server = http.createServer((client_req, client_res) => {
       });
 
       gatewayReq.on('error', (e) => {
-        console.error('Gateway Error:', e.message);
-        client_res.writeHead(200); // Return 200 anyway since we did the TG sync
+        client_res.writeHead(200);
         client_res.end('Synced to Telegram only');
       });
 
@@ -71,5 +79,5 @@ const server = http.createServer((client_req, client_res) => {
   });
 });
 
-console.log(`OpenClaw VPN Proxy (TG-PASS) starting on port ${PROXY_PORT}...`);
+console.log(`OpenClaw VPN Proxy (FIXED HTTPS) starting on port ${PROXY_PORT}...`);
 server.listen(PROXY_PORT, '0.0.0.0');
