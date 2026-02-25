@@ -2,6 +2,7 @@
 
 | Date | Time | User | Category | Entry |
 |------|------|------|----------|-------|
+| 2026-02-24 | 19:28 | Maria Dennis | Food | Small piece of dark chocolate |
 | 2026-02-24 | 18:48 | Maria Dennis | Food | Dinner: Green vegetable soup with cream, sliced octopus with potatoes (pulpo a la gallega), and 1 small bao bun |
 | 2026-02-24 | 15:49 | Maria Dennis | Food | Handful of roasted cashews and 1-2 pieces of dark chocolate |
 | 2026-02-24 | 13:22 | Maria Dennis | Food | 2 Onigiri (filled with unagi), 2 Umeboshi, and Miso soup with Enoki mushrooms |
