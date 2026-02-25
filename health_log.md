@@ -2,7 +2,6 @@
 
 | Date | Time | User | Category | Entry |
 |------|------|------|----------|-------|
-| 2026-02-24 | 15:50 | Maria Dennis | Food | Square of dark chocolate and handful of cashews |
 | 2026-02-24 | 15:49 | Maria Dennis | Food | Handful of roasted cashews and 1-2 pieces of dark chocolate |
 | 2026-02-24 | 13:22 | Maria Dennis | Food | 2 Onigiri (filled with unagi), 2 Umeboshi, and Miso soup with Enoki mushrooms |
 | 2026-02-24 | 11:47 | Maria Dennis | Activity | 30 minutes housework |
