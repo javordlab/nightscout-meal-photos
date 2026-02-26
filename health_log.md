@@ -39,8 +39,11 @@
 | 2026-02-25 | 16:01 | Maria Dennis | Activity | 1 hour heavy housework |
 | 2026-02-25 | 16:03 | Maria Dennis | Food | Half an apple (~12g carbs) |
 | 2026-02-25 | 18:02 | Maria Dennis | Activity | 2 hour walk |
-| 2026-02-25 | 18:26 | Maria Dennis | Food | Dinner salad (endive/citrus/avocado mix) (~12g carbs) |
-| 2026-02-25 | 18:33 | Maria Dennis | Food | Snack: mixed chips (nori + rice/tortilla-style crisps) (~15g carbs) |
-| 2026-02-25 | 18:38 | Maria Dennis | Food | Tostada/corn crisp with tuna and toppings (~15g carbs) |
-| 2026-02-25 | 18:44 | Maria Dennis | Food | Mole chicken with a small portion of rice (~30g carbs) |
+| 2026-02-25 | 18:26 | Maria Dennis | Food | Dinner salad: endive, avocado, citrus segments, radicchio, light vinaigrette/nuts (~12g carbs) |
+| 2026-02-25 | 18:33 | Maria Dennis | Food | Snack: nori seaweed chips + light rice/tortilla crisps (~15g carbs) |
+| 2026-02-25 | 18:38 | Maria Dennis | Food | Corn tostada with tuna, avocado, pickled onion/microgreens (~15g carbs) |
+| 2026-02-25 | 18:44 | Maria Dennis | Food | White rice with dark mole/curry-style sauce, protein pieces (chicken/paneer), fried onion + pepper bits (~30g carbs) |
 | 2026-02-25 | 19:38 | Maria Dennis | Food | Snack: 6 green grapes (~5g carbs) |
+| 2026-02-25 | 22:04 | Maria Dennis | Medication | 1 ibuprofen |
+| 2026-02-25 | 22:04 | Maria Dennis | Medication | 1 prunlax |
+| 2026-02-25 | 22:05 | Maria Dennis | Food | Small glass of milk (~8g carbs) |
