@@ -43,20 +43,28 @@ curl -s -X POST \
 ### Food Photo → Nightscout with Image Link
 When Maria sends a **food photo** in the Telegram group:
 1. Save the photo locally: use exec to download from Telegram file API
-2. Upload to Catbox.moe for permanent hosting:
-```bash
-curl -s -F "reqtype=fileupload" -F "fileToUpload=@/path/to/photo.jpg" https://catbox.moe/user/api.php
-```
-   Returns a URL like: `https://files.catbox.moe/abc123.jpg`
-3. Include the URL in the Nightscout treatment notes:
+2. Upload to **freeimage.host (iili.io)** (Catbox has been unreliable for this workflow).
+3. **Verify the hosted URL actually serves the image** (non-zero bytes / HTTP 200) before writing it to Nightscout.
+4. Include the URL in the Nightscout treatment notes:
 ```bash
 curl -s -X POST \
   -H "Content-Type: application/json" \
   -H "api-secret: b3170e23f45df7738434cd8be9cd79d86a6d0f01" \
-  -d '{"enteredBy":"Javordclaws","eventType":"Meal Bolus","notes":"Lunch: [food description]\n📷 https://files.catbox.moe/abc123.jpg","created_at":"UTC_TIMESTAMP"}' \
+  -d '{"enteredBy":"Javordclaws","eventType":"Meal Bolus","notes":"Lunch: [food description]\n📷 [HOSTED_IMAGE_URL]","created_at":"UTC_TIMESTAMP"}' \
   https://p01--sefi--s66fclg7g2lm.code.run/api/v1/treatments.json
 ```
-4. The photo link will be visible when clicking/hovering on the treatment icon in Nightscout.
+5. The photo link will be visible when clicking/hovering on the treatment icon in Nightscout.
+
+### Food Recognition Message Format (Telegram + Nightscout)
+For food photos, always include a clear food-item list in the Telegram confirmation and in Nightscout notes.
+
+Format:
+- Meal label + carb estimate
+- `Items identified:` bullet list
+
+Example:
+- `Dinner (~42g carbs)`
+- `Items identified: grapes, grilled chicken, mixed salad, olive oil dressing`
 
 ---
 
