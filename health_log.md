@@ -38,3 +38,9 @@
 | 2026-02-22 | 14:30 | Maria Dennis | Activity | 1 hour exercise/gardening (2:30 PM - 3:30 PM) |
 | 2026-02-25 | 16:01 | Maria Dennis | Activity | 1 hour heavy housework |
 | 2026-02-25 | 16:03 | Maria Dennis | Food | Half an apple (~12g carbs) |
+| 2026-02-25 | 18:02 | Maria Dennis | Activity | 2 hour walk |
+| 2026-02-25 | 18:26 | Maria Dennis | Food | Dinner salad (endive/citrus/avocado mix) (~12g carbs) |
+| 2026-02-25 | 18:33 | Maria Dennis | Food | Snack: mixed chips (nori + rice/tortilla-style crisps) (~15g carbs) |
+| 2026-02-25 | 18:38 | Maria Dennis | Food | Tostada/corn crisp with tuna and toppings (~15g carbs) |
+| 2026-02-25 | 18:44 | Maria Dennis | Food | Mole chicken with a small portion of rice (~30g carbs) |
+| 2026-02-25 | 19:38 | Maria Dennis | Food | Snack: 6 green grapes (~5g carbs) |
