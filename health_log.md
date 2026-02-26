@@ -2,9 +2,7 @@
 
 | Date | Time | User | Category | Entry |
 |------|------|------|----------|-------|
-| 2026-02-25 | 09:27 | Maria Dennis | Food | Breakfast: Smoked salmon (lox) on bagel/English muffin (~35g carbs) [📷](https://files.catbox.moe/tno002.jpg) |
-| 2026-02-25 | 02:00 | Maria Dennis | Medication | 500 mg Tylenol |
-| 2026-02-25 | 09:27 | Maria Dennis | Food | Breakfast: Smoked salmon (lox) on bagel/English muffin (~35g carbs) [📷](https://files.catbox.moe/tno002.jpg) |
+| 2026-02-25 | 09:27 | Maria Dennis | Food | Breakfast: Smoked salmon (lox) on 1 bao bun (~22g carbs) [📷](https://files.catbox.moe/tno002.jpg) |
 | 2026-02-25 | 02:00 | Maria Dennis | Medication | 500 mg Tylenol |
 | 2026-02-25 | 00:33 | Maria Dennis | Sleep | Sleep Report (Shortcut Sync): 5.31 hours total. |
 | 2026-02-24 | 21:36 | Maria Dennis | Medication | 1500mg Metformin HCL |
@@ -38,3 +36,5 @@
 | 2026-02-22 | 20:30 | Maria Dennis | Food | Handful of cashews |
 | 2026-02-22 | 19:30 | Maria Dennis | Food | 1 egg, 1 cup vegetables, 1 cup noodles, small piece of cheese, 2 strawberries with chocolate, a slice of bacon, and 4oz sake |
 | 2026-02-22 | 14:30 | Maria Dennis | Activity | 1 hour exercise/gardening (2:30 PM - 3:30 PM) |
+| 2026-02-25 | 16:01 | Maria Dennis | Activity | 1 hour heavy housework |
+| 2026-02-25 | 16:03 | Maria Dennis | Food | Half an apple (~12g carbs) |
