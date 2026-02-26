@@ -2,7 +2,7 @@
 
 | Date | Time | User | Category | Entry |
 |------|------|------|----------|-------|
-| 2026-02-25 | 09:27 | Maria Dennis | Food | Breakfast: Smoked salmon (lox) on 1 bao bun (~22g carbs) [📷](https://files.catbox.moe/tno002.jpg) |
+| 2026-02-25 | 09:27 | Maria Dennis | Food | Breakfast: Smoked salmon (lox) on 1 bao bun (~22g carbs) [📷](https://cdn.jsdelivr.net/gh/javordlab/nightscout-meal-photos@main/uploads/2026-02-25/meal-245.jpg) |
 | 2026-02-25 | 02:00 | Maria Dennis | Medication | 500 mg Tylenol |
 | 2026-02-25 | 00:33 | Maria Dennis | Sleep | Sleep Report (Shortcut Sync): 5.31 hours total. |
 | 2026-02-24 | 21:36 | Maria Dennis | Medication | 1500mg Metformin HCL |
