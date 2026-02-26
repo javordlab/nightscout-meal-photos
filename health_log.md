@@ -47,3 +47,5 @@
 | 2026-02-25 | 22:04 | Maria Dennis | Medication | 1 ibuprofen |
 | 2026-02-25 | 22:04 | Maria Dennis | Medication | 1 prunlax |
 | 2026-02-25 | 22:05 | Maria Dennis | Food | Small glass of milk (~8g carbs) |
+| 2026-02-26 | 09:27 | Maria Dennis | Food | Apple slices + small cup of yogurt (~20g carbs) |
+| 2026-02-26 | 09:31 | Maria Dennis | Food | Scallion pancake / savory flatbread with some cheese (~30g carbs) |
