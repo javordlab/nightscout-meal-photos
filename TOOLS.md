@@ -7,6 +7,7 @@ When Maria Dennis logs **food**, **medication**, **activity**, or **sleep** in t
 1. Log it to `/Users/javier/.openclaw/workspace/health_log.md` (local record)
 2. **Push it to Nightscout immediately** using the command below
 3. Confirm to Maria that it was logged
+4. For food photos: **upload/host the image + identify items immediately in the same processing turn** (no delayed backfill unless explicitly requested)
 
 ### Push Command
 ```bash
