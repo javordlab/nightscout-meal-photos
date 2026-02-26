@@ -17,6 +17,8 @@ _Last updated: 2026-02-23 05:25 PM PST_
 - Speaks English and Spanish
 - Communicates primarily via voice messages in Telegram group
 - Medication: 1500mg Metformin HCL (nightly, ~9 PM); 10mg Lisinopril (daily morning); 10mg Rosuvastatin (every other morning).
+- Recurring med logging protocol (confirmed 2026-02-26): log Lisinopril daily + Rosuvastatin every other day without requiring daily Telegram posts. Anchor date for Rosuvastatin cycle: 2026-02-26 taken; next due dates include 2026-02-28, 2026-03-02, ...
+- Timing rule: log both at breakfast entry time when present; if no breakfast entry by 11:00 AM PT, log meds at 11:00 AM PT.
 - Patient ID: 446dcd1b-c6f2-11ee-9e32-4e8e6fd5ce94
 - LibreLinkUp follower account: librelinkup@javierordonez.com
 
