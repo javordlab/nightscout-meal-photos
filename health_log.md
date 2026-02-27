@@ -64,3 +64,4 @@
 | 2026-02-27 | 10:23 | Maria Dennis | Activity | 1 hour gardening |
 | 2026-02-27 | 11:21 | Maria Dennis | Food | 4oz orange juice (~13g carbs) |
 | 2026-02-27 | 11:41 | Maria Dennis | Food | Noodles with avocado, greens, and shaved cheese (~45g carbs) [📷](https://iili.io/qfLDFt4.jpg) |
+| 2026-02-27 | 13:15 | Maria Dennis | Activity | 1 hour walk |
