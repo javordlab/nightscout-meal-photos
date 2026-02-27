@@ -244,10 +244,7 @@
 
   <script>
     // --- Config ---
-    // If running locally (dev), use local proxy; otherwise hit Nightscout directly
-    const NS_URL = window.location.hostname === 'localhost'
-      ? window.location.origin
-      : 'https://p01--sefi--s66fclg7g2lm.code.run';
+    const NS_URL = 'https://p01--sefi--s66fclg7g2lm.code.run';
     const TZ_OFFSET = -8; // PST
 
     // --- Init ---
@@ -260,12 +257,6 @@
 
     function fmt(d) {
       return d.toISOString().split('T')[0];
-    }
-
-    function toPST(utcStr) {
-      const d = new Date(utcStr);
-      const pst = new Date(d.getTime() + TZ_OFFSET * 3600000);
-      return pst;
     }
 
     function formatTime(utcStr) {
@@ -291,13 +282,13 @@
 
     function extractPhotoUrls(notes) {
       if (!notes) return [];
-      const regex = /https?:\/\/(?:files\.catbox\.moe|iili\.io|cdn\.jsdelivr\.net|javordlab\.github\.io)\/\S+/g;
+      // Support all known providers
+      const regex = /https?:\/\/(?:files\.catbox\.moe|iili\.io|cdn\.jsdelivr\.net|javordlab\.github\.io)\/[^\s\)\>]+/g;
       return notes.match(regex) || [];
     }
 
     function extractDescription(notes) {
       if (!notes) return '';
-      // Remove photo URLs and emoji
       return notes
         .replace(/📷\s*https?:\/\/\S+/g, '')
         .replace(/https?:\/\/(?:files\.catbox\.moe|iili\.io|cdn\.jsdelivr\.net|javordlab\.github\.io)\/\S+/g, '')
@@ -333,10 +324,7 @@
         const res = await fetch(url);
         const treatments = await res.json();
 
-        // Filter to only treatments with photo URLs
         const withPhotos = treatments.filter(t => extractPhotoUrls(t.notes).length > 0);
-
-        // Also keep meals without photos for stats
         const allMeals = treatments;
 
         if (allMeals.length === 0) {
@@ -345,7 +333,6 @@
           return;
         }
 
-        // Stats
         const totalCarbs = allMeals.reduce((sum, t) => sum + (t.carbs || 0), 0);
         document.getElementById('statMeals').textContent = allMeals.length;
         document.getElementById('statCarbs').textContent = totalCarbs;
@@ -353,14 +340,12 @@
         document.getElementById('statsBar').style.display = 'flex';
 
         if (withPhotos.length === 0) {
-          timeline.innerHTML = '<div class="no-photos">No meal photos found. Photos appear when treatments include Catbox image URLs in notes.</div>';
+          timeline.innerHTML = '<div class="no-photos">No meal photos found.</div>';
           return;
         }
 
-        // Sort by date descending
         withPhotos.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
 
-        // Group by day (PST)
         const grouped = {};
         for (const t of withPhotos) {
           const dayKey = formatDate(t.created_at);
@@ -389,16 +374,12 @@
             html += `</div></div>`;
           }
         }
-
         timeline.innerHTML = html;
-
       } catch (err) {
         timeline.innerHTML = `<div class="no-photos">Error loading meals: ${err.message}</div>`;
-        console.error(err);
       }
     }
 
-    // Load on start
     loadMeals();
   </script>
 </body>
