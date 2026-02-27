@@ -1,6 +1,6 @@
 # MEMORY.md — Long-Term Memory
 
-_Last updated: 2026-02-23 05:25 PM PST_
+_Last updated: 2026-02-26 06:45 PM PST_
 
 ## People
 
@@ -39,13 +39,14 @@ _Last updated: 2026-02-23 05:25 PM PST_
 - Public URL: https://javordlab.github.io/nightscout-meal-photos/
 - GitHub Repo: https://github.com/javordlab/nightscout-meal-photos (public)
 - Function: Pulls "Meal Bolus" treatments from Nightscout and displays embedded photo links.
-- **Image Hosting:** Uses `freeimage.host` (iili.io) for persistent meal photo storage. Catbox.moe was deprecated after serving 0-byte files.
+- **PHOTO PROTOCOL (Revised 2026-02-26):** Use `freeimage.host` (iili.io) for all photo uploads. GitHub pushes for image storage are DEPRECATED. The gallery site reads `iili.io` links directly from Nightscout notes.
 
 ### Telegram Group ("Food log")
 - Group ID: -5262020908
 - Bot: @Javordclaws_bot (token: 8262629923:AAEdW0HWJN1Y-R32ekvghqrg5bnQydMeop0)
 - Privacy mode disabled, bot is admin, processes messages without @mention
-- dmPolicy: open, groupPolicy: open, allowFrom: ["*"]
+- dmPolicy: pairing, groupPolicy: allowlist, allowFrom: [8335333215, 8738167445]
+- dmScope: per-channel-peer
 
 ### GitHub
 - Repo: https://github.com/javordlab/openclaw-workspace.git (private)
@@ -59,10 +60,8 @@ _Last updated: 2026-02-23 05:25 PM PST_
 
 ## Models & Auth
 - Primary: google-antigravity/gemini-3-flash (1M context, best for this use case)
-- Fallbacks: gemini-3-flash → claude-opus-4-6-thinking → gemini-3-pro-high → openai-codex/gpt-5.3-codex
-- OpenAI Codex uses ChatGPT Plus OAuth — subject to daily usage caps (can exhaust quickly with agent bursts)
-- Gemini uses developer API quota — much higher limits
-- Lesson: Never put quota-limited OAuth model as both primary AND first fallback
+- Fallbacks: gemini-3-flash → ollama/qwen2.5-coder:14b → ollama/qwen2.5-coder:7b → openai-codex/gpt-5.3-codex
+- Sandbox: Active (Docker-based) for all model runs.
 
 ## Clinical
 - GMI formula: GMI(%) = 3.31 + 0.02392 × [mean glucose mg/dL] — needs ≥14 days

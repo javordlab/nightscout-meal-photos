@@ -4,10 +4,10 @@
 
 When Maria Dennis logs **food**, **medication**, **activity**, or **sleep** in the Telegram group, you MUST:
 
-1. Log it to `/Users/javier/.openclaw/workspace/health_log.md` (local record)
+1. Log it to `/workspace/health_log.md` (local record - mapped to host)
 2. **Push it to Nightscout immediately** using the command below
 3. Confirm to Maria that it was logged
-4. For food photos: **upload/host the image + identify items immediately in the same processing turn** (no delayed backfill unless explicitly requested)
+4. For food photos: **upload/host the image + identify items immediately in the same processing turn**
 
 ### Push Command
 ```bash
@@ -41,22 +41,15 @@ curl -s -X POST \
 - If a food photo is sent, identify the food, estimate carbs, and push as `Meal Bolus`.
 - Include descriptive notes (food items, medication names+doses, activity type+duration).
 
-### Food Photo → Nightscout with Image Link
-When Maria sends a **food photo** in the Telegram group:
-1. Save the photo locally: use exec to download from Telegram file API
-2. Upload to **freeimage.host (iili.io)** (Catbox has been unreliable for this workflow).
-3. **Verify the hosted URL actually serves the image** (non-zero bytes / HTTP 200) before writing it to Nightscout.
-4. Include the URL in the Nightscout treatment notes:
-```bash
-curl -s -X POST \
-  -H "Content-Type: application/json" \
-  -H "api-secret: b3170e23f45df7738434cd8be9cd79d86a6d0f01" \
-  -d '{"enteredBy":"Javordclaws","eventType":"Meal Bolus","notes":"Lunch: [food description]\n📷 [HOSTED_IMAGE_URL]","created_at":"UTC_TIMESTAMP"}' \
-  https://p01--sefi--s66fclg7g2lm.code.run/api/v1/treatments.json
-```
-5. The photo link will be visible when clicking/hovering on the treatment icon in Nightscout.
+### 📷 Food Photo Protocol (REVISED 2026-02-26)
+Standardized for Sandbox compatibility and reliability:
+1. **Host:** Upload every photo to **freeimage.host (iili.io)**.
+   - API Key: `6d207e02198a847aa98d0a2a901485a5`
+   - Use `curl -s -F "source=@/path/to/photo.jpg" -F "action=upload" -F "key=KEY" https://freeimage.host/api/1/upload | jq -r '.image.url'`
+2. **Link:** Include the resulting `iili.io` URL in the Nightscout treatment notes with a 📷 emoji prefix.
+3. **No Local Sync:** Do NOT attempt to push photos to the GitHub repository or move them to local `uploads/` folders. The visual log site [javordlab.github.io/nightscout-meal-photos/](https://javordlab.github.io/nightscout-meal-photos/) is updated to read these links directly from Nightscout.
 
-### Food Recognition Message Format (Telegram + Nightscout)
+### Food Recognition Message Format
 For food photos, always include a clear food-item list in the Telegram confirmation and in Nightscout notes.
 
 Format:
@@ -73,7 +66,3 @@ Example:
 - Group: "Food log" (ID: -5262020908)
 - Bot: @Javordclaws_bot
 - Members: Javi (8335333215), Maria (8738167445)
-
----
-
-Add whatever helps you do your job. This is your cheat sheet.

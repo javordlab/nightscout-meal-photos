@@ -49,3 +49,12 @@
 | 2026-02-25 | 22:05 | Maria Dennis | Food | Small glass of milk (~8g carbs) |
 | 2026-02-26 | 09:27 | Maria Dennis | Food | Apple slices + small cup of yogurt (~20g carbs) |
 | 2026-02-26 | 09:31 | Maria Dennis | Food | Scallion pancake / savory flatbread with some cheese (~30g carbs) |
+- 13:54 PST: Lunch: noodle soup with egg and leafy greens (~45g carbs) - Maria Dennis
+| 2026-02-26 | 06:03 | Maria Dennis | Medication | 1 ibuprofen |
+| 2026-02-26 | 06:04 | Maria Dennis | Medication | 1 prunlax |
+| 2026-02-26 | 06:04 | Maria Dennis | Food | Small glass of milk (~8g carbs) |
+| 2026-02-26 | 09:44 | Maria Dennis | Activity | Gardening (90 minutes) |
+| 2026-02-26 | 17:42 | Maria Dennis | Food | Dinner: 2 bao buns with braised meat and scallions (~45g carbs) |
+| 2026-02-26 | 17:47 | Maria Dennis | Food | Snack: Two deviled eggs (~1g carbs) |
+| 2026-02-26 | 17:52 | Maria Dennis | Food | Snack: Glass of champagne and 6 grapes (~12g carbs) |
+| 2026-02-26 | 19:38 | Maria Dennis | Food | Snack: 1 Cream Sand cookie (~10g carbs) |
