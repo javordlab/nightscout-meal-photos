@@ -58,3 +58,6 @@
 | 2026-02-26 | 17:47 | Maria Dennis | Food | Snack: Two deviled eggs (~1g carbs) |
 | 2026-02-26 | 17:52 | Maria Dennis | Food | Snack: Glass of champagne and 6 grapes (~12g carbs) |
 | 2026-02-26 | 19:38 | Maria Dennis | Food | Snack: 1 Cream Sand cookie (~10g carbs) |
+| 2026-02-27 | 09:13 | Maria Dennis | Food | Fresh orange juice (~25g carbs) [📷](https://iili.io/qfPs7vp.jpg) |
+| 2026-02-27 | 09:15 | Maria Dennis | Food | Two slices toasted sourdough with cream cheese and smoked salmon (~30g carbs) [📷](https://iili.io/qfPtLdJ.jpg) |
+| 2026-02-27 | 09:17 | Maria Dennis | Food | Half a red apple, sliced (~10g carbs) [📷](https://iili.io/qfPDmyx.jpg) |
