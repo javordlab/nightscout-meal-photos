@@ -62,3 +62,4 @@
 | 2026-02-27 | 09:15 | Maria Dennis | Food | Two slices toasted sourdough with cream cheese and smoked salmon (~30g carbs) [📷](https://iili.io/qfPtLdJ.jpg) |
 | 2026-02-27 | 09:17 | Maria Dennis | Food | Half a red apple, sliced (~10g carbs) [📷](https://iili.io/qfPDmyx.jpg) |
 | 2026-02-27 | 10:23 | Maria Dennis | Activity | 1 hour gardening |
+| 2026-02-27 | 11:21 | Maria Dennis | Food | 4oz orange juice (~13g carbs) |
