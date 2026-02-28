@@ -72,3 +72,5 @@
 | 2026-02-28 | 09:04 | Maria Dennis | Food | Breakfast: Scallion pancake, smoked salmon, scrambled eggs, avocado, orange, and 3 loquats (~45g carbs) [📷](https://iili.io/qqKyhN9.jpg) |
 | 2026-02-28 | 09:04 | Maria Dennis | Medication | Lisinopril 10mg (Routine) |
 | 2026-02-28 | 10:05 | Maria Dennis | Activity | 30 minute walk |
+| 2026-02-28 | 13:06 | Maria Dennis | Food | Snack: Prosciutto, hard cheese, and 6 green grapes (~7g carbs) [📷](https://iili.io/qqCGaOg.jpg) |
+| 2026-02-28 | 13:26 | Maria Dennis | Food | Snack: 1 Japanese Cream Sand cookie (~12g carbs) [📷](https://iili.io/qqCNPx1.jpg) |
