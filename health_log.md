@@ -71,3 +71,4 @@
 | 2026-02-27 | 20:33 | Maria Dennis | Food | Yogurt with berry jam (~22g carbs) [📷](https://iili.io/qfm6STJ.jpg) |
 | 2026-02-28 | 09:04 | Maria Dennis | Food | Breakfast: Scallion pancake, smoked salmon, scrambled eggs, avocado, orange, and 3 loquats (~45g carbs) [📷](https://iili.io/qqKyhN9.jpg) |
 | 2026-02-28 | 09:04 | Maria Dennis | Medication | Lisinopril 10mg (Routine) |
+| 2026-02-28 | 10:05 | Maria Dennis | Activity | 30 minute walk |
