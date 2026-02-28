@@ -68,3 +68,4 @@
 | 2026-02-27 | 20:30 | Maria Dennis | Food | Sliced sausage with sautéed peppers/onions and side of mochi (~35g carbs) [📷](https://iili.io/qfbT3y7.jpg) |
 | 2026-02-27 | 21:03 | Maria Dennis | Activity | 25 minutes tai chi |
 | 2026-02-27 | 20:33 | Maria Dennis | Medication | 1 tablet prunelax |
+| 2026-02-27 | 20:33 | Maria Dennis | Food | Yogurt with berry jam (~22g carbs) [📷](https://iili.io/qfm6STJ.jpg) |
