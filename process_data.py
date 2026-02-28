@@ -1,104 +1,99 @@
 import json
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timedelta
 
-# Constants
-PST_OFFSET = timedelta(hours=-8)
-TIR_LOW = 70
-TIR_HIGH = 180
+# Current time in UTC (Feb 28, 17:30 UTC)
+now_utc = datetime(2026, 2, 28, 17, 30, 0)
+day24_ago_utc = now_utc - timedelta(hours=24)
+day48_ago_utc = now_utc - timedelta(hours=48)
+day14_ago_utc = now_utc - timedelta(days=14)
 
-def to_pst(dt_utc):
-    return dt_utc.astimezone(timezone(PST_OFFSET))
+with open('entries_14d.json', 'r') as f:
+    entries = json.load(f)
 
-def gmi(mean_glucose):
-    return 3.31 + (0.02392 * mean_glucose)
+# Sort entries by date (descending)
+entries.sort(key=lambda x: x['date'], reverse=True)
 
-# Current reference time (Friday, Feb 27, 2026, 9:30 AM PST)
-current_time_pst = datetime(2026, 2, 27, 9, 30, tzinfo=timezone(PST_OFFSET))
-current_time_utc = current_time_pst.astimezone(timezone.utc)
-
-try:
-    with open('/workspace/glucose_data.json', 'r') as f:
-        entries = json.load(f)
-except Exception:
-    entries = []
-
-# Sort entries by date
-entries.sort(key=lambda x: x.get('dateString', ''))
-
-# Filter periods
-period_24h_start = current_time_utc - timedelta(hours=24)
-period_prev_24h_start = current_time_utc - timedelta(hours=48)
-period_14d_start = current_time_utc - timedelta(days=14)
-
-glucose_today = []
-glucose_prev = []
-glucose_14d = []
-
-for e in entries:
-    if 'dateString' not in e or 'sgv' not in e: continue
-    try:
-        dt = datetime.fromisoformat(e['dateString'].replace('Z', '+00:00'))
-    except:
-        continue
-    sgv = e['sgv']
+def calculate_stats(entries_list):
+    if not entries_list:
+        return None
     
-    if period_24h_start <= dt <= current_time_utc:
-        glucose_today.append({'sgv': sgv, 'dt': dt})
-    elif period_prev_24h_start <= dt < period_24h_start:
-        glucose_prev.append({'sgv': sgv, 'dt': dt})
+    sgvs = [e['sgv'] for e in entries_list if 'sgv' in e]
+    if not sgvs:
+        return None
     
-    if period_14d_start <= dt <= current_time_utc:
-        glucose_14d.append({'sgv': sgv, 'dt': dt})
-
-# Calculations - Today
-if glucose_today:
-    avg_today = sum(e['sgv'] for e in glucose_today) / len(glucose_today)
-    tir_today = (len([e for e in glucose_today if TIR_LOW <= e['sgv'] <= TIR_HIGH]) / len(glucose_today)) * 100
-    gmi_today = gmi(avg_today)
-else:
-    avg_today = tir_today = gmi_today = 0
-
-# Calculations - Previous
-if glucose_prev:
-    avg_prev = sum(e['sgv'] for e in glucose_prev) / len(glucose_prev)
-    tir_prev = (len([e for e in glucose_prev if TIR_LOW <= e['sgv'] <= TIR_HIGH]) / len(glucose_prev)) * 100
-    gmi_prev = gmi(avg_prev)
-else:
-    avg_prev = tir_prev = gmi_prev = 0
-
-# Calculations - 14-day
-if glucose_14d:
-    avg_14d = sum(e['sgv'] for e in glucose_14d) / len(glucose_14d)
-    gmi_14d = gmi(avg_14d)
-else:
-    gmi_14d = 0
-
-# Outliers (Today)
-spikes = [e for e in glucose_today if e['sgv'] > 250]
-lows = [e for e in glucose_today if e['sgv'] < 70]
-
-# Trends
-trend_avg = "improving" if avg_today < avg_prev - 5 else "stable" if abs(avg_today - avg_prev) <= 5 else "higher"
-trend_tir = "improving" if tir_today > tir_prev + 5 else "stable" if abs(tir_today - tir_prev) <= 5 else "declining"
-
-# Output for report
-report = {
-    "summary_24h": {
-        "avg": round(avg_today, 1),
-        "tir": round(tir_today, 1),
-        "gmi": round(gmi_today, 2)
-    },
-    "gmi_14d": round(gmi_14d, 2),
-    "trends": {
-        "avg": trend_avg,
-        "tir": trend_tir,
-        "prev_avg": round(avg_prev, 1),
-        "prev_tir": round(tir_prev, 1)
-    },
-    "outliers": {
-        "spikes": [{"sgv": e['sgv'], "time": to_pst(e['dt']).strftime('%I:%M %p')} for e in spikes],
-        "lows": [{"sgv": e['sgv'], "time": to_pst(e['dt']).strftime('%I:%M %p')} for e in lows]
+    avg_glucose = sum(sgvs) / len(sgvs)
+    # GMI = 3.31 + (0.02392 * avg_glucose)
+    gmi = 3.31 + (0.02392 * avg_glucose)
+    
+    # TIR: 70-180 mg/dL
+    in_range = [s for s in sgvs if 70 <= s <= 180]
+    tir = (len(in_range) / len(sgvs)) * 100
+    
+    return {
+        'avg': avg_glucose,
+        'gmi': gmi,
+        'tir': tir,
+        'sgvs': sgvs,
+        'count': len(sgvs)
     }
+
+# Filtering entries
+entries_24h = [e for e in entries if datetime.fromtimestamp(e['date']/1000) >= day24_ago_utc]
+entries_prev_24h = [e for e in entries if day48_ago_utc <= datetime.fromtimestamp(e['date']/1000) < day24_ago_utc]
+entries_14d = [e for e in entries if datetime.fromtimestamp(e['date']/1000) >= day14_ago_utc]
+
+stats_24h = calculate_stats(entries_24h)
+stats_prev_24h = calculate_stats(entries_prev_24h)
+stats_14d = calculate_stats(entries_14d)
+
+# Outliers (spikes > 180 or > 250, lows < 70)
+outliers = []
+for e in entries_24h:
+    time_pst = datetime.fromtimestamp(e['date']/1000) - timedelta(hours=8)
+    if e['sgv'] > 250:
+        outliers.append({'time': time_pst.strftime('%H:%M'), 'sgv': e['sgv'], 'type': 'High Alert'})
+    elif e['sgv'] > 180:
+        # Check if it's a spike (first point above 180 or peak)
+        outliers.append({'time': time_pst.strftime('%H:%M'), 'sgv': e['sgv'], 'type': 'High (>180)'})
+    elif e['sgv'] < 70:
+        outliers.append({'time': time_pst.strftime('%H:%M'), 'sgv': e['sgv'], 'type': 'Low Alert'})
+
+# Keep only representative outliers (top high, bottom low)
+unique_outliers = {}
+for o in outliers:
+    # Basic grouping by hour to avoid spamming
+    key = o['time'][:2]
+    if key not in unique_outliers:
+        unique_outliers[key] = o
+    else:
+        if o['type'] == 'Low Alert' or o['sgv'] > unique_outliers[key]['sgv']:
+             unique_outliers[key] = o
+
+results = {
+    'stats_24h': stats_24h,
+    'stats_prev_24h': stats_prev_24h,
+    'stats_14d': stats_14d,
+    'outliers': list(unique_outliers.values())
 }
 
-print(json.dumps(report, indent=2))
+# Fetch treatments for "Reality Check"
+with open('treatments_24h.json', 'r') as f:
+    treatments = json.load(f)
+
+# PST 24h window
+pst_now = now_utc - timedelta(hours=8)
+pst_24h_ago = pst_now - timedelta(hours=24)
+
+# Filter treatments in the last 24h
+t_list = []
+for t in treatments:
+    try:
+        t_time = datetime.fromisoformat(t['created_at'].replace('Z', '+00:00'))
+        if day24_ago_utc <= t_time.replace(tzinfo=None) <= now_utc:
+             t_list.append(t)
+    except:
+        continue
+
+results['treatments'] = t_list
+
+print(json.dumps(results, indent=2))
