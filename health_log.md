@@ -66,3 +66,5 @@
 | 2026-02-27 | 11:41 | Maria Dennis | Food | Noodles with avocado, greens, and shaved cheese (~45g carbs) [📷](https://iili.io/qfLDFt4.jpg) |
 | 2026-02-27 | 13:15 | Maria Dennis | Activity | 1 hour walk |
 | 2026-02-27 | 20:30 | Maria Dennis | Food | Sliced sausage with sautéed peppers/onions and side of mochi (~35g carbs) [📷](https://iili.io/qfbT3y7.jpg) |
+| 2026-02-27 | 21:03 | Maria Dennis | Activity | 25 minutes tai chi |
+| 2026-02-27 | 20:33 | Maria Dennis | Medication | 1 tablet prunelax |
