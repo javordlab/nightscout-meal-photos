@@ -39,6 +39,7 @@ curl -s -X POST \
 - ALWAYS push to Nightscout. Never skip this step.
 - ALWAYS convert times to UTC before pushing.
 - If a food photo is sent, identify the food, estimate carbs, and push as `Meal Bolus`.
+- **Session Consolidation:** If multiple photos or food descriptions are sent within a **30-minute window**, consider them part of the SAME meal event (e.g., Breakfast, Lunch). Consolidate the carb estimates and item lists before confirming or providing advice.
 - Include descriptive notes (food items, medication names+doses, activity type+duration).
 
 ### 📷 Food Photo Protocol (REVISED 2026-02-26)
