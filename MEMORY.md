@@ -20,6 +20,7 @@ _Last updated: 2026-02-26 06:45 PM PST_
 - Recurring med logging protocol (confirmed 2026-02-28): log Lisinopril daily + Rosuvastatin every other day. 
 - Anchor date for Rosuvastatin cycle: 2026-02-27 (Friday) taken; next due dates include 2026-03-01 (Sunday), 2026-03-03 (Tuesday), etc.
 - Timing rule: log both at breakfast entry time when present; if no breakfast entry by 11:00 AM PT, log meds at 11:00 AM PT.
+- **Timestamp Accuracy (CRITICAL):** For all food, medication, and activity logs, ALWAYS use the Telegram message arrival time (or the time Maria specifies) for the record. This ensures glucose correlations and "Intelligence & Impact" reports are clinically accurate. Never use the processing time as the event time.
 - Patient ID: 446dcd1b-c6f2-11ee-9e32-4e8e6fd5ce94
 - LibreLinkUp follower account: librelinkup@javierordonez.com
 
