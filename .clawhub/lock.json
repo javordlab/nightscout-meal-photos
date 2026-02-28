@@ -8,6 +8,30 @@
     "video-subtitles": {
       "version": "1.0.0",
       "installedAt": 1771461194965
+    },
+    "coding-agent-backup": {
+      "version": "1.0.0",
+      "installedAt": 1772303229006
+    },
+    "spotify-player": {
+      "version": "1.0.0",
+      "installedAt": 1772303233804
+    },
+    "sonos": {
+      "version": "1.0.0",
+      "installedAt": 1772303235303
+    },
+    "slack": {
+      "version": "1.0.0",
+      "installedAt": 1772303236540
+    },
+    "session-logs": {
+      "version": "1.0.0",
+      "installedAt": 1772303237837
+    },
+    "1password": {
+      "version": "1.0.1",
+      "installedAt": 1772303239145
     }
   }
 }
