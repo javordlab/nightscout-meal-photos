@@ -2,7 +2,7 @@
 
 | Date | Time | User | Category | Entry |
 |------|------|------|----------|-------|
-| 2026-02-28 | 17:29 | Maria Dennis | Food | Snack: Jamón/Prosciutto-wrapped cheese pieces (~1g carbs) [📷](https://iili.io/qqIwqJa.jpg) |
+| 2026-02-28 | 17:29 | Maria Dennis | Food | Snack: Jamón Serrano (~0g carbs) [📷](https://iili.io/qqIwqJa.jpg) |
 | 2026-02-28 | 13:26 | Maria Dennis | Food | Snack: 1 Japanese Cream Sand cookie (~12g carbs) [📷](https://iili.io/qqCNPx1.jpg) |
 | 2026-02-28 | 13:06 | Maria Dennis | Food | Snack: Prosciutto, hard cheese, and 6 green grapes (~7g carbs) [📷](https://iili.io/qqCGaOg.jpg) |
 | 2026-02-28 | 10:05 | Maria Dennis | Activity | 30 minute walk |
