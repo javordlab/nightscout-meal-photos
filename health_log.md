@@ -2,7 +2,47 @@
 
 | Date | Time | User | Category | Entry |
 |------|------|------|----------|-------|
-| 2026-02-25 | 09:27 | Maria Dennis | Food | Breakfast: Smoked salmon (lox) on 1 bao bun (~22g carbs) [📷](https://cdn.jsdelivr.net/gh/javordlab/nightscout-meal-photos@main/uploads/2026-02-25/meal-245.jpg) |
+| 2026-02-28 | 17:29 | Maria Dennis | Food | Snack: Jamón/Prosciutto-wrapped cheese pieces (~1g carbs) [📷](https://iili.io/qqIwqJa.jpg) |
+| 2026-02-28 | 13:26 | Maria Dennis | Food | Snack: 1 Japanese Cream Sand cookie (~12g carbs) [📷](https://iili.io/qqCNPx1.jpg) |
+| 2026-02-28 | 13:06 | Maria Dennis | Food | Snack: Prosciutto, hard cheese, and 6 green grapes (~7g carbs) [📷](https://iili.io/qqCGaOg.jpg) |
+| 2026-02-28 | 10:05 | Maria Dennis | Activity | 30 minute walk |
+| 2026-02-28 | 09:04 | Maria Dennis | Food | Breakfast: Scallion pancake, smoked salmon, scrambled eggs, avocado, orange, and 3 loquats (~45g carbs) [📷](https://iili.io/qqKyhN9.jpg) |
+| 2026-02-28 | 09:04 | Maria Dennis | Medication | Lisinopril 10mg (Routine) |
+| 2026-02-27 | 21:03 | Maria Dennis | Activity | 25 minutes tai chi |
+| 2026-02-27 | 20:33 | Maria Dennis | Medication | 1 tablet prunelax |
+| 2026-02-27 | 20:33 | Maria Dennis | Food | Yogurt with berry jam (~22g carbs) [📷](https://iili.io/qfm6STJ.jpg) |
+| 2026-02-27 | 19:01 | Maria Dennis | Food | Sliced sausage with sautéed peppers/onions and side of mochi (~35g carbs) [📷](https://iili.io/qfbT3y7.jpg) |
+| 2026-02-27 | 13:15 | Maria Dennis | Activity | 1 hour walk |
+| 2026-02-27 | 12:41 | Maria Dennis | Food | Noodles with avocado, greens, and shaved cheese (~45g carbs) [📷](https://iili.io/qfLDFt4.jpg) |
+| 2026-02-27 | 12:31 | Maria Dennis | Food | 4oz orange juice (~13g carbs) |
+| 2026-02-27 | 10:23 | Maria Dennis | Activity | 1 hour gardening |
+| 2026-02-27 | 09:17 | Maria Dennis | Food | Half a red apple, sliced (~10g carbs) [📷](https://iili.io/qfPDmyx.jpg) |
+| 2026-02-27 | 09:15 | Maria Dennis | Food | Two slices toasted sourdough with cream cheese and smoked salmon (~30g carbs) [📷](https://iili.io/qfPtLdJ.jpg) |
+| 2026-02-27 | 09:13 | Maria Dennis | Food | Fresh orange juice (~25g carbs) [📷](https://iili.io/qfPs7vp.jpg) |
+| 2026-02-26 | 19:38 | Maria Dennis | Food | Snack: 1 Cream Sand cookie (~10g carbs) [📷](https://iili.io/qfwu5VS.jpg) |
+| 2026-02-26 | 17:52 | Maria Dennis | Food | Snack: Glass of champagne and 6 grapes (~12g carbs) [📷](https://iili.io/qfj0fQj.jpg) |
+| 2026-02-26 | 17:47 | Maria Dennis | Food | Snack: Two deviled eggs (~1g carbs) [📷](https://iili.io/qfj0Khb.jpg) |
+| 2026-02-26 | 17:42 | Maria Dennis | Food | Dinner: 2 bao buns with braised meat and scallions (~45g carbs) [📷](https://iili.io/qfj0dv9.jpg) |
+| 2026-02-26 | 13:54 | Maria Dennis | Food | Lunch: noodle soup with egg and leafy greens (~45g carbs) [📷](https://iili.io/qfhhYKJ.jpg) |
+| 2026-02-26 | 09:44 | Maria Dennis | Activity | Gardening (90 minutes) |
+| 2026-02-26 | 09:31 | Maria Dennis | Food | Scallion pancake / savory flatbread with some cheese (~30g carbs) [📷](https://iili.io/qfh8R3X.jpg) |
+| 2026-02-26 | 09:27 | Maria Dennis | Food | Apple slices + small cup of yogurt (~20g carbs) [📷](https://iili.io/qfh8TGI.jpg) |
+| 2026-02-26 | 06:04 | Maria Dennis | Food | Small glass of milk (~8g carbs) |
+| 2026-02-26 | 06:04 | Maria Dennis | Medication | 1 prunlax |
+| 2026-02-26 | 06:03 | Maria Dennis | Medication | 1 ibuprofen |
+| 2026-02-25 | 19:38 | Maria Dennis | Food | Snack: 6 green grapes (~5g carbs) [📷](https://files.catbox.moe/pdbpxz.jpg) |
+| 2026-02-25 | 18:44 | Maria Dennis | Food | White rice with dark mole/curry-style sauce, protein pieces (chicken/paneer), fried onion + pepper bits (~30g carbs) |
+| 2026-02-25 | 18:38 | Maria Dennis | Food | Corn tostada with tuna, avocado, pickled onion/microgreens (~15g carbs) |
+| 2026-02-25 | 18:33 | Maria Dennis | Food | Snack: nori seaweed chips + light rice/tortilla crisps (~15g carbs) |
+| 2026-02-25 | 18:26 | Maria Dennis | Food | Dinner salad: endive, avocado, citrus segments, radicchio, light vinaigrette/nuts (~12g carbs) |
+| 2026-02-25 | 18:02 | Maria Dennis | Activity | 2 hour walk |
+| 2026-02-25 | 16:03 | Maria Dennis | Food | Half an apple (~12g carbs) |
+| 2026-02-25 | 16:01 | Maria Dennis | Activity | 1 hour heavy housework |
+| 2026-02-25 | 12:09 | Maria Dennis | Food | Lunch: Octopus with potatoes (~29g carbs) [📷](https://files.catbox.moe/uf8gwq.jpg) |
+| 2026-02-25 | 09:27 | Maria Dennis | Food | Breakfast: Smoked salmon (lox) on 1 bao bun (~22g carbs) [📷](https://files.catbox.moe/dzucg3.jpg) |
+| 2026-02-25 | 05:34 | Maria Dennis | Food | Snack: Glass of milk and Japanese Cream Sand cookie (~17g carbs) |
+| 2026-02-25 | 03:28 | Maria Dennis | Food | Late snack: Small piece of dark chocolate (~3g carbs) [📷](https://files.catbox.moe/xw7qza.jpg) |
+| 2026-02-25 | 02:48 | Maria Dennis | Food | Dinner: Green vegetable soup, octopus with potatoes (pulpo a la gallega) (~35g carbs) [📷](https://files.catbox.moe/2059f6.jpg) |
 | 2026-02-25 | 02:00 | Maria Dennis | Medication | 500 mg Tylenol |
 | 2026-02-25 | 00:33 | Maria Dennis | Sleep | Sleep Report (Shortcut Sync): 5.31 hours total. |
 | 2026-02-24 | 21:36 | Maria Dennis | Medication | 1500mg Metformin HCL |
@@ -36,41 +76,3 @@
 | 2026-02-22 | 20:30 | Maria Dennis | Food | Handful of cashews |
 | 2026-02-22 | 19:30 | Maria Dennis | Food | 1 egg, 1 cup vegetables, 1 cup noodles, small piece of cheese, 2 strawberries with chocolate, a slice of bacon, and 4oz sake |
 | 2026-02-22 | 14:30 | Maria Dennis | Activity | 1 hour exercise/gardening (2:30 PM - 3:30 PM) |
-| 2026-02-25 | 16:01 | Maria Dennis | Activity | 1 hour heavy housework |
-| 2026-02-25 | 16:03 | Maria Dennis | Food | Half an apple (~12g carbs) |
-| 2026-02-25 | 18:02 | Maria Dennis | Activity | 2 hour walk |
-| 2026-02-25 | 18:26 | Maria Dennis | Food | Dinner salad: endive, avocado, citrus segments, radicchio, light vinaigrette/nuts (~12g carbs) |
-| 2026-02-25 | 18:33 | Maria Dennis | Food | Snack: nori seaweed chips + light rice/tortilla crisps (~15g carbs) |
-| 2026-02-25 | 18:38 | Maria Dennis | Food | Corn tostada with tuna, avocado, pickled onion/microgreens (~15g carbs) |
-| 2026-02-25 | 18:44 | Maria Dennis | Food | White rice with dark mole/curry-style sauce, protein pieces (chicken/paneer), fried onion + pepper bits (~30g carbs) |
-| 2026-02-25 | 19:38 | Maria Dennis | Food | Snack: 6 green grapes (~5g carbs) |
-| 2026-02-25 | 22:04 | Maria Dennis | Medication | 1 ibuprofen |
-| 2026-02-25 | 22:04 | Maria Dennis | Medication | 1 prunlax |
-| 2026-02-25 | 22:05 | Maria Dennis | Food | Small glass of milk (~8g carbs) |
-| 2026-02-26 | 09:27 | Maria Dennis | Food | Apple slices + small cup of yogurt (~20g carbs) |
-| 2026-02-26 | 09:31 | Maria Dennis | Food | Scallion pancake / savory flatbread with some cheese (~30g carbs) |
-- 13:54 PST: Lunch: noodle soup with egg and leafy greens (~45g carbs) - Maria Dennis
-| 2026-02-26 | 06:03 | Maria Dennis | Medication | 1 ibuprofen |
-| 2026-02-26 | 06:04 | Maria Dennis | Medication | 1 prunlax |
-| 2026-02-26 | 06:04 | Maria Dennis | Food | Small glass of milk (~8g carbs) |
-| 2026-02-26 | 09:44 | Maria Dennis | Activity | Gardening (90 minutes) |
-| 2026-02-26 | 17:42 | Maria Dennis | Food | Dinner: 2 bao buns with braised meat and scallions (~45g carbs) |
-| 2026-02-26 | 17:47 | Maria Dennis | Food | Snack: Two deviled eggs (~1g carbs) |
-| 2026-02-26 | 17:52 | Maria Dennis | Food | Snack: Glass of champagne and 6 grapes (~12g carbs) |
-| 2026-02-26 | 19:38 | Maria Dennis | Food | Snack: 1 Cream Sand cookie (~10g carbs) |
-| 2026-02-27 | 09:13 | Maria Dennis | Food | Fresh orange juice (~25g carbs) [📷](https://iili.io/qfPs7vp.jpg) |
-| 2026-02-27 | 09:15 | Maria Dennis | Food | Two slices toasted sourdough with cream cheese and smoked salmon (~30g carbs) [📷](https://iili.io/qfPtLdJ.jpg) |
-| 2026-02-27 | 09:17 | Maria Dennis | Food | Half a red apple, sliced (~10g carbs) [📷](https://iili.io/qfPDmyx.jpg) |
-| 2026-02-27 | 10:23 | Maria Dennis | Activity | 1 hour gardening |
-| 2026-02-27 | 12:31 | Maria Dennis | Food | 4oz orange juice (~13g carbs) |
-| 2026-02-27 | 12:41 | Maria Dennis | Food | Noodles with avocado, greens, and shaved cheese (~45g carbs) [📷](https://iili.io/qfLDFt4.jpg) |
-| 2026-02-27 | 13:15 | Maria Dennis | Activity | 1 hour walk |
-| 2026-02-27 | 19:01 | Maria Dennis | Food | Sliced sausage with sautéed peppers/onions and side of mochi (~35g carbs) [📷](https://iili.io/qfbT3y7.jpg) |
-| 2026-02-27 | 21:03 | Maria Dennis | Activity | 25 minutes tai chi |
-| 2026-02-27 | 20:33 | Maria Dennis | Medication | 1 tablet prunelax |
-| 2026-02-27 | 20:33 | Maria Dennis | Food | Yogurt with berry jam (~22g carbs) [📷](https://iili.io/qfm6STJ.jpg) |
-| 2026-02-28 | 09:04 | Maria Dennis | Food | Breakfast: Scallion pancake, smoked salmon, scrambled eggs, avocado, orange, and 3 loquats (~45g carbs) [📷](https://iili.io/qqKyhN9.jpg) |
-| 2026-02-28 | 09:04 | Maria Dennis | Medication | Lisinopril 10mg (Routine) |
-| 2026-02-28 | 10:05 | Maria Dennis | Activity | 30 minute walk |
-| 2026-02-28 | 13:06 | Maria Dennis | Food | Snack: Prosciutto, hard cheese, and 6 green grapes (~7g carbs) [📷](https://iili.io/qqCGaOg.jpg) |
-| 2026-02-28 | 13:26 | Maria Dennis | Food | Snack: 1 Japanese Cream Sand cookie (~12g carbs) [📷](https://iili.io/qqCNPx1.jpg) |
