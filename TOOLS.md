@@ -13,7 +13,7 @@ When Maria Dennis logs **food**, **medication**, **activity**, or **sleep** in t
    - Record the exact time of that peak (**Peak Time**).
    - Calculate and update the **BG Delta**.
    - Calculate and update the **Time to Peak (min)** (minutes between meal start and peak).
-5. **Confirm:** Send confirmation to Maria and Javi in the Telegram group.
+5. **Confirm:** Send confirmation to Maria and Javi in the Telegram group. **CRITICAL:** Always include the current glucose reading (value and trend arrow) in this confirmation.
 
 ### Photo & Carb Protocol
 - **Host:** Upload photos to **freeimage.host (iili.io)**.
