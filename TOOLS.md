@@ -10,6 +10,7 @@ When Maria Dennis logs **food**, **medication**, **activity**, or **sleep** in t
 4. **Impact Analysis (Notion Only):** For **Food** entries:
    - Identify the glucose level AT the time of the meal (**Pre-Meal BG**).
    - Wait/Schedule a check for the highest glucose level 2 hours after the meal (**2hr Peak BG**).
+   - Record the exact time of that peak (**Peak Time**).
    - Calculate and update the **BG Delta**.
 5. **Confirm:** Send confirmation to Maria and Javi in the Telegram group.
 
