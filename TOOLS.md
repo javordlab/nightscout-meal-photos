@@ -12,6 +12,7 @@ When Maria Dennis logs **food**, **medication**, **activity**, or **sleep** in t
    - Wait/Schedule a check for the highest glucose level 2 hours after the meal (**2hr Peak BG**).
    - Record the exact time of that peak (**Peak Time**).
    - Calculate and update the **BG Delta**.
+   - Calculate and update the **Time to Peak (min)** (minutes between meal start and peak).
 5. **Confirm:** Send confirmation to Maria and Javi in the Telegram group.
 
 ### Photo & Carb Protocol
