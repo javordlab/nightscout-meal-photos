@@ -5,6 +5,7 @@
 | 2026-02-28 | 17:29 | Maria Dennis | Food | Snack: Jamón Serrano (~0g carbs) [📷](https://iili.io/qqIwqJa.jpg) |
 | 2026-02-28 | 18:40 | Maria Dennis | Food | Dinner: Ramen with pork belly, tofu, bok choy, carrots, and nori (~45g carbs) [📷](https://iili.io/qqT7gaI.jpg) |
 | 2026-02-28 | 18:53 | Maria Dennis | Food | Snack: Small slice of bread with brie cheese (~10g carbs) [📷](https://iili.io/qqT1iw7.jpg) |
+| 2026-02-28 | 19:06 | Maria Dennis | Food | Snack: 1 protein ball / energy bite (~12g carbs) [📷](https://iili.io/qquu6Ml.jpg) |
 | 2026-02-28 | 13:26 | Maria Dennis | Food | Snack: 1 Japanese Cream Sand cookie (~12g carbs) [📷](https://iili.io/qqCNPx1.jpg) |
 | 2026-02-28 | 13:06 | Maria Dennis | Food | Snack: Prosciutto, hard cheese, and 6 green grapes (~7g carbs) [📷](https://iili.io/qqCGaOg.jpg) |
 | 2026-02-28 | 10:05 | Maria Dennis | Activity | 30 minute walk |
