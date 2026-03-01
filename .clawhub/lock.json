@@ -32,6 +32,10 @@
     "1password": {
       "version": "1.0.1",
       "installedAt": 1772303239145
+    },
+    "agentic-coding": {
+      "version": "1.0.0",
+      "installedAt": 1772323862341
     }
   }
 }
