@@ -4,6 +4,7 @@
 |------|------|------|----------|-------|
 | 2026-03-01 | 09:07 | Maria Dennis | Food | Breakfast: Sourdough with peanut butter and jam, and coffee with milk (~50g carbs) [📷](https://iili.io/qq1L2Hl.jpg) |
 | 2026-03-01 | 09:07 | Maria Dennis | Medication | Lisinopril 10mg, Rosuvastatin 10mg (Sunday) |
+| 2026-03-01 | 11:15 | Maria Dennis | Activity | 1 hr heavy housework |
 | 2026-02-28 | 17:29 | Maria Dennis | Food | Snack: Jamón Serrano (~0g carbs) [📷](https://iili.io/qqIwqJa.jpg) |
 | 2026-02-28 | 18:40 | Maria Dennis | Food | Dinner: Ramen with pork belly, tofu, bok choy, carrots, and nori (~45g carbs) [📷](https://iili.io/qqT7gaI.jpg) |
 | 2026-02-28 | 18:53 | Maria Dennis | Food | Snack: Small slice of bread with brie cheese (~10g carbs) [📷](https://iili.io/qqT1iw7.jpg) |
