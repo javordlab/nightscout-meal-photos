@@ -14,6 +14,7 @@ _Last updated: 2026-02-26 06:45 PM PST_
 ### Maria Dennis (Javi's wife)
 - Type 2 Diabetes, FreeStyle Libre 3 CGM
 - Telegram ID: 8738167445
+- Profile: 73-year-old female, 139 lbs, 5'0" tall.
 - Speaks English and Spanish
 - Communicates primarily via voice messages in Telegram group
 - Medication: 1500mg Metformin HCL (nightly, ~9 PM); 10mg Lisinopril (daily morning); 10mg Rosuvastatin (every other morning).
@@ -21,7 +22,9 @@ _Last updated: 2026-02-26 06:45 PM PST_
 - Anchor date for Rosuvastatin cycle: 2026-02-27 (Friday) taken; next due dates include 2026-03-01 (Sunday), 2026-03-03 (Tuesday), etc.
 - Timing rule (SILENT & AUTOMATIC): DO NOT ask Maria about these medications. Log them silently to health_log.md, Nightscout, and Notion at breakfast entry time (if she sends one); if no breakfast entry by 11:00 AM PT, log them automatically at 11:00 AM PT. 
 - Exception: Only ask if there is a specific contradiction or if she explicitly mentions changing her dosage.
-- **Session Consolidation:** If multiple photos or food descriptions are sent within a **30-minute window**, consider them part of the SAME meal event (e.g., Breakfast, Lunch, Dinner). They are simply different courses of the same meal. Consolidate the carb estimates and item lists before confirming or providing advice. Do not log them as separate snacks.
+- **Calorie Logging (NEW 2026-03-02):** Estimate and log calories for all food entries in addition to carbs.
+- **Nutrition Recommendations:** Provide proactive dietary recommendations for Maria based on her profile (diabetes management, weight maintenance, and glucose stability).
+- **Session Consolidation:** If multiple photos or food descriptions are sent within a **30-minute window**, consider them part of the SAME meal event (e.g., Breakfast, Lunch, Dinner). They are simply different courses of the same meal. Consolidate the carb/calorie estimates and item lists before confirming or providing advice. Do not log them as separate snacks.
 - **Timestamp Accuracy (CRITICAL):** For all food, medication, and activity logs, ALWAYS use the Telegram message arrival time (or the time Maria specifies) for the record. This ensures glucose correlations and "Intelligence & Impact" reports are clinically accurate. Never use the processing time as the event time.
 - Patient ID: 446dcd1b-c6f2-11ee-9e32-4e8e6fd5ce94
 - LibreLinkUp follower account: librelinkup@javierordonez.com
