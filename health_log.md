@@ -7,6 +7,9 @@
 | 2026-03-01 | 11:15 | Maria Dennis | Activity | 1 hr heavy housework |
 | 2026-03-01 | 12:56 | Maria Dennis | Food | Lunch: 2 bao buns with pork belly and a glass of orange juice (~70g carbs) [📷](https://iili.io/qqM6DBe.jpg) |
 | 2026-03-01 | 14:22 | Maria Dennis | Activity | 1 hr housework |
+| 2026-03-01 | 18:42 | Maria Dennis | Food | Snack: 6 green grapes (~7g carbs) [📷](https://iili.io/qqXyUUQ.jpg) |
+| 2026-03-01 | 18:21 | Maria Dennis | Food | Dinner: Meatballs in sauce with fried rice and greens (~55g carbs) [📷](https://iili.io/qqXmrEx.jpg) |
+| 2026-03-01 | 16:47 | Maria Dennis | Food | Snack: Handful of pecans (~2g carbs) [📷](https://iili.io/qqXmSLb.jpg) |
 | 2026-03-01 | 16:40 | Maria Dennis | Food | Snack: Small wedge of brie cheese (~0g carbs) [📷](https://iili.io/qqXd1AN.jpg) |
 | 2026-02-28 | 17:29 | Maria Dennis | Food | Snack: Jamón Serrano (~0g carbs) [📷](https://iili.io/qqIwqJa.jpg) |
 | 2026-02-28 | 18:40 | Maria Dennis | Food | Dinner: Ramen with pork belly, tofu, bok choy, carrots, and nori (~45g carbs) [📷](https://iili.io/qqT7gaI.jpg) |
