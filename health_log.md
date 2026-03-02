@@ -7,6 +7,7 @@
 | 2026-03-01 | 09:07 | Maria Dennis | Food | Breakfast: Sourdough with peanut butter and jam, and coffee with milk (~50g carbs) [📷](https://iili.io/qq1L2Hl.jpg) |
 | 2026-03-01 | 09:07 | Maria Dennis | Medication | Lisinopril 10mg, Rosuvastatin 10mg (Sunday) |
 | 2026-03-01 | 11:15 | Maria Dennis | Activity | 1 hr heavy housework |
+| 2026-03-02 | 08:49 | Maria Dennis | Medication | Lisinopril 10mg (Routine) |
 | 2026-03-01 | 19:35 | Maria Dennis | Medication | 1500mg Metformin HCL |
 | 2026-03-01 | 12:56 | Maria Dennis | Food | Lunch: 2 bao buns with pork belly and a glass of orange juice (~70g carbs) [📷](https://iili.io/qqM6DBe.jpg) |
 | 2026-03-01 | 14:22 | Maria Dennis | Activity | 1 hr housework |
