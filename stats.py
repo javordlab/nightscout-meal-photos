@@ -1,65 +1,115 @@
 import json
-import sys
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
-def calculate_gmi(avg_bg):
-    # GMI (%) = 3.31 + 0.02392 * [average glucose in mg/dL]
-    return 3.31 + (0.02392 * avg_bg)
+def calculate_gmi(mean_glucose):
+    return 3.31 + (0.02392 * mean_glucose)
 
-def calculate_tir(entries, low, high):
-    if not entries:
-        return 0, 0, 0
-    in_range = [e for e in entries if low <= e['sgv'] <= high]
-    above = [e for e in entries if e['sgv'] > high]
-    below = [e for e in entries if e['sgv'] < low]
-    return (len(in_range) / len(entries)) * 100, (len(above) / len(entries)) * 100, (len(below) / len(entries)) * 100
+def get_pst_time(utc_dt):
+    # PST is UTC-8
+    return utc_dt.astimezone(timezone(timedelta(hours=-8)))
 
-def run():
-    try:
-        data = json.load(sys.stdin)
-    except Exception as e:
-        print(f"Error loading JSON: {e}")
-        return
+def process_data():
+    with open('glucose_data.json', 'r') as f:
+        entries = json.load(f)
+    
+    with open('treatments_data.json', 'r') as f:
+        treatments = json.load(f)
 
-    # Filter for sgv type
-    entries = [e for e in data if 'sgv' in e]
-    if not entries:
-        print("No SGV entries found.")
-        return
+    # Current time in UTC (for filtering)
+    now_utc = datetime.now(timezone.utc)
+    
+    # 24h ago
+    period_1_start = now_utc - timedelta(hours=24)
+    # 48h ago
+    period_2_start = now_utc - timedelta(hours=48)
+    # 14 days ago
+    period_14d_start = now_utc - timedelta(days=14)
 
-    # Sort by date
-    entries.sort(key=lambda x: x['date'])
+    p1_values = []
+    p2_values = []
+    p14d_values = []
+    
+    outliers = []
 
-    now_utc = datetime.fromisoformat("2026-02-23T07:31:00+00:00")
-    one_day_ago = now_utc - timedelta(days=1)
-    fourteen_days_ago = now_utc - timedelta(days=14)
-
-    last_24h = [e for e in entries if one_day_ago.timestamp() * 1000 <= e['date'] <= now_utc.timestamp() * 1000]
-    last_14d = [e for e in entries if fourteen_days_ago.timestamp() * 1000 <= e['date'] <= now_utc.timestamp() * 1000]
-
-    if not last_24h:
-        print("No data for last 24 hours.")
-    else:
-        avg_24h = sum(e['sgv'] for e in last_24h) / len(last_24h)
-        tir_24h, above_24h, below_24h = calculate_tir(last_24h, 80, 180)
-        gmi_24h = calculate_gmi(avg_24h)
+    for entry in entries:
+        dt = datetime.fromisoformat(entry['dateString'].replace('Z', '+00:00'))
+        sgv = entry.get('sgv')
+        if sgv is None: continue
         
-        print(f"24-Hour Summary:")
-        print(f"Average: {avg_24h:.1f} mg/dL")
-        print(f"GMI: {gmi_24h:.2f}%")
-        print(f"TIR (80-180): {tir_24h:.1f}%")
-        print(f"Above (>180): {above_24h:.1f}%")
-        print(f"Below (<80): {below_24h:.1f}%")
-        print()
+        if dt >= period_1_start:
+            p1_values.append(sgv)
+            if sgv > 250 or sgv < 70:
+                outliers.append((dt, sgv))
+        elif dt >= period_2_start:
+            p2_values.append(sgv)
+        
+        if dt >= period_14d_start:
+            p14d_values.append(sgv)
 
-    if not last_14d:
-        print("No data for last 14 days.")
+    # 1. 24-hour summary
+    avg_p1 = sum(p1_values) / len(p1_values) if p1_values else 0
+    tir_p1 = (len([v for v in p1_values if 70 <= v <= 180]) / len(p1_values) * 100) if p1_values else 0
+    gmi_p1 = calculate_gmi(avg_p1)
+
+    # 2. 14-day rolling GMI
+    avg_14d = sum(p14d_values) / len(p14d_values) if p14d_values else 0
+    gmi_14d = calculate_gmi(avg_14d)
+
+    # 3. Trends
+    avg_p2 = sum(p2_values) / len(p2_values) if p2_values else 0
+    if avg_p1 < avg_p2 - 5:
+        trend = "Improving (Lower average)"
+    elif avg_p1 > avg_p2 + 5:
+        trend = "Declining (Higher average)"
     else:
-        avg_14d = sum(e['sgv'] for e in last_14d) / len(last_14d)
-        gmi_14d = calculate_gmi(avg_14d)
-        print(f"14-Day Rolling Statistics:")
-        print(f"Estimated GMI: {gmi_14d:.2f}%")
-        print(f"Based on {len(last_14d)} readings.")
+        trend = "Stable"
+
+    # 4. Outliers
+    outlier_reports = []
+    for dt, sgv in outliers:
+        pst_time = get_pst_time(dt).strftime('%I:%M %p')
+        type_str = "Spike" if sgv > 250 else "Low"
+        outlier_reports.append(f"- {type_str}: {sgv} mg/dL at {pst_time} PST")
+
+    # 5. Reality Check & Recommendations
+    # Find treatments in the last 24h
+    recent_treatments = [t for t in treatments if datetime.fromisoformat(t['created_at'].replace('Z', '+00:00')) >= period_1_start]
+    
+    # Generate report
+    report = f"""Maria's Daily Health Brief 📊
+Date: {get_pst_time(now_utc).strftime('%A, %B %d, %Y')}
+
+Summary (Last 24 Hours):
+- Average Glucose: {avg_p1:.1f} mg/dL
+- Time In Range (70-180): {tir_p1:.1f}%
+- Estimated GMI (A1c): {gmi_p1:.2f}%
+
+Historical Context:
+- 14-Day Rolling GMI: {gmi_14d:.2f}%
+- Trend vs. Previous 24h: {trend}
+
+Outliers & Significant Events:
+{chr(10).join(outlier_reports) if outlier_reports else "No significant outliers detected! Great stability."}
+
+Reality Check Analysis:
+"""
+    # Recommendations logic
+    if tir_p1 > 80:
+        report += "Excellent control! You've stayed in range for the vast majority of the day. Keep up the consistent meal timing and monitoring.\n"
+    elif tir_p1 > 60:
+        report += "Good effort. To improve your TIR, consider reviewing the carb counts for meals that led to spikes and ensure bolusing happens 15-20 mins before eating.\n"
+    else:
+        report += "It's been a challenging day. Focus on returning to baseline stability. Check if any recent meals had hidden sugars or if stress/activity levels changed unexpectedly.\n"
+
+    if any(v < 70 for v in p1_values):
+        report += "\nRecommendation: Review the timing of your activity relative to insulin. Lows can often be prevented by a small snack before exercise.\n"
+    
+    if any(v > 250 for v in p1_values):
+        report += "\nRecommendation: Those spikes suggest we might need to look at pre-bolus times or high-glycemic index foods. Try adding more fiber/protein to dampen the curves.\n"
+
+    report += "\nStay positive—every day is a new opportunity to fine-tune. You're doing the hard work that pays off in the long run! 💪✨"
+    
+    print(report)
 
 if __name__ == "__main__":
-    run()
+    process_data()

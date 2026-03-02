@@ -138,6 +138,9 @@ async function main() {
     const dateStr = (props.Date && props.Date.date) ? props.Date.date.start : null;
     if (!dateStr) continue;
 
+    const entryTitle = props.Entry && props.Entry.title ? props.Entry.title : [];
+    const titleText = entryTitle.length > 0 ? (entryTitle[0].text ? (entryTitle[0].text.content || "Untitled") : (entryTitle[0].plain_text || "Untitled")) : "Untitled";
+
     const mealDate = new Date(dateStr);
     const now = new Date();
     // Only process if at least 3.5 hours have passed to ensure we have the full peak window
@@ -148,9 +151,6 @@ async function main() {
 
     const preBg = getBgAt(nsEntries, dateStr);
     const { peakBg, peakTime } = getPeak2Hr(nsEntries, dateStr);
-
-    const entryTitle = props.Entry && props.Entry.title ? props.Entry.title : [];
-    const titleText = entryTitle.length > 0 ? (entryTitle[0].text ? entryTitle[0].text.content : (entryTitle[0].plain_text || "Untitled")) : "Untitled";
 
     if (preBg && peakBg) {
       const delta = peakBg - preBg;
