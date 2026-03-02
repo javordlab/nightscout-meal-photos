@@ -18,6 +18,7 @@ When Maria Dennis logs **food**, **medication**, **activity**, or **sleep** in t
 
 ### Photo & Carb Protocol
 - **Host:** Upload photos to **freeimage.host (iili.io)**.
+- **Key:** `6d207e02198a847aa98d0a2a901485a5`
 - **Link:** Include the link in Nightscout notes with 📷 and in the Notion **Photo** column.
 - **Carbs:** Parse estimates into the Nightscout `carbs` field and the Notion **Carbs (est)** column.
 - **Titles:** Use the high-fidelity "Items identified" list for the Notion **Entry** title.

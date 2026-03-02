@@ -2,6 +2,8 @@
 
 | Date | Time | User | Category | Entry |
 |------|------|------|----------|-------|
+| 2026-03-02 | 08:49 | Maria Dennis | Food | Breakfast: Smoked salmon and avocado on two slices of toasted sourdough (~30g carbs) |
+| 2026-03-02 | 08:49 | Maria Dennis | Medication | Lisinopril 10mg (Routine) |
 | 2026-03-01 | 09:07 | Maria Dennis | Food | Breakfast: Sourdough with peanut butter and jam, and coffee with milk (~50g carbs) [📷](https://iili.io/qq1L2Hl.jpg) |
 | 2026-03-01 | 09:07 | Maria Dennis | Medication | Lisinopril 10mg, Rosuvastatin 10mg (Sunday) |
 | 2026-03-01 | 11:15 | Maria Dennis | Activity | 1 hr heavy housework |

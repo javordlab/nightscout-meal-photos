@@ -19,7 +19,8 @@ _Last updated: 2026-02-26 06:45 PM PST_
 - Medication: 1500mg Metformin HCL (nightly, ~9 PM); 10mg Lisinopril (daily morning); 10mg Rosuvastatin (every other morning).
 - Recurring med logging protocol (confirmed 2026-02-28): log Lisinopril daily + Rosuvastatin every other day. 
 - Anchor date for Rosuvastatin cycle: 2026-02-27 (Friday) taken; next due dates include 2026-03-01 (Sunday), 2026-03-03 (Tuesday), etc.
-- Timing rule: log both at breakfast entry time when present; if no breakfast entry by 11:00 AM PT, log meds at 11:00 AM PT.
+- Timing rule (SILENT & AUTOMATIC): DO NOT ask Maria about these medications. Log them silently to health_log.md, Nightscout, and Notion at breakfast entry time (if she sends one); if no breakfast entry by 11:00 AM PT, log them automatically at 11:00 AM PT. 
+- Exception: Only ask if there is a specific contradiction or if she explicitly mentions changing her dosage.
 - **Session Consolidation:** If multiple photos or food descriptions are sent within a **30-minute window**, consider them part of the SAME meal event (e.g., Breakfast, Lunch, Dinner). They are simply different courses of the same meal. Consolidate the carb estimates and item lists before confirming or providing advice. Do not log them as separate snacks.
 - **Timestamp Accuracy (CRITICAL):** For all food, medication, and activity logs, ALWAYS use the Telegram message arrival time (or the time Maria specifies) for the record. This ensures glucose correlations and "Intelligence & Impact" reports are clinically accurate. Never use the processing time as the event time.
 - Patient ID: 446dcd1b-c6f2-11ee-9e32-4e8e6fd5ce94
