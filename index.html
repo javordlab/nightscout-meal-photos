@@ -117,15 +117,24 @@
       line-height: 1.5;
     }
 
-    .meal-card .carbs-badge {
+    .meal-card .carbs-badge, .meal-card .calories-badge {
       display: inline-block;
       margin-top: 8px;
+      margin-right: 6px;
       padding: 3px 10px;
       border-radius: 12px;
-      background: var(--accent);
-      color: var(--orange);
       font-size: 0.85em;
       font-weight: 600;
+    }
+
+    .meal-card .carbs-badge {
+      background: var(--accent);
+      color: var(--orange);
+    }
+
+    .meal-card .calories-badge {
+      background: #3d3d5c;
+      color: #b3b3cc;
     }
 
     .no-photos {
@@ -287,11 +296,22 @@
       return notes.match(regex) || [];
     }
 
+    function extractCalories(notes) {
+      if (!notes) return null;
+      const regex = /~?(\d+)\s*kcal/i;
+      const match = notes.match(regex);
+      return match ? match[1] : null;
+    }
+
     function extractDescription(notes) {
       if (!notes) return '';
       return notes
         .replace(/📷\s*https?:\/\/\S+/g, '')
         .replace(/https?:\/\/(?:files\.catbox\.moe|iili\.io|cdn\.jsdelivr\.net|javordlab\.github\.io)\/\S+/g, '')
+        .replace(/\(~?\d+g\s*carbs,\s*~?\d+\s*kcal\)/i, '') // Remove the (Xg carbs, Y kcal) block
+        .replace(/\(~?\d+\s*kcal\)/i, '') // Remove (Y kcal) block
+        .replace(/~?\d+\s*kcal/i, '') // Remove kcal string
+        .replace(/\[📷\].*?\)/g, '') // Remove [📷](url) links
         .trim();
     }
 
@@ -360,6 +380,7 @@
             const photos = extractPhotoUrls(meal.notes);
             const desc = extractDescription(meal.notes);
             const time = formatTime(meal.created_at);
+            const calories = extractCalories(meal.notes);
 
             html += `<div class="meal-card">`;
             for (const photoUrl of photos) {
@@ -370,6 +391,9 @@
             html += `<div class="description">${desc}</div>`;
             if (meal.carbs) {
               html += `<span class="carbs-badge">${meal.carbs}g carbs</span>`;
+            }
+            if (calories) {
+              html += `<span class="calories-badge">${calories} kcal</span>`;
             }
             html += `</div></div>`;
           }
