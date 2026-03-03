@@ -19,7 +19,8 @@ _Last updated: 2026-02-26 06:45 PM PST_
 - Communicates primarily via voice messages in Telegram group
 - Medication: 1500mg Metformin HCL (nightly, ~9 PM); 10mg Lisinopril (daily morning); 10mg Rosuvastatin (every other morning).
 - Recurring med logging protocol (confirmed 2026-02-28): log Lisinopril daily + Rosuvastatin every other day. 
-- Anchor date for Rosuvastatin cycle: 2026-02-27 (Friday) taken; next due dates include 2026-03-01 (Sunday), 2026-03-03 (Tuesday), etc.
+- **Anchor date for Rosuvastatin cycle:** 2026-03-01 (Sunday) taken; next due dates include 2026-03-03 (Tuesday), 2026-03-05 (Thursday), etc. 
+- **CRITICAL (User Feedback 2026-03-02):** Rosuvastatin is NOT due on Mondays (per Javi). The current cycle follows an Every-Other-Day (EOD) pattern anchored to Sunday, March 1st.
 - Timing rule (SILENT & AUTOMATIC): DO NOT ask Maria about these medications. Log them silently to health_log.md, Nightscout, and Notion at breakfast entry time (if she sends one); if no breakfast entry by 11:00 AM PT, log them automatically at 11:00 AM PT. 
 - Exception: Only ask if there is a specific contradiction or if she explicitly mentions changing her dosage.
 - **Calorie Logging (NEW 2026-03-02):** Estimate and log calories for all food entries in addition to carbs.
