@@ -3,8 +3,8 @@ const https = require('https');
 const { execSync } = require('child_process');
 
 const NOTION_KEY = execSync('cat ~/.config/notion/api_key').toString().trim();
-const NOTION_VERSION = "2025-09-03";
-const DATA_SOURCE_ID = "31685ec7-0668-815a-bc98-000bab1964f3";
+const NOTION_VERSION = "2022-06-28";
+const DATA_SOURCE_ID = "31685ec7-0668-813e-8b9e-c5b4d5d70fa5";
 const NS_URL = "https://p01--sefi--s66fclg7g2lm.code.run";
 
 async function fetchJson(url, options = {}) {
@@ -119,7 +119,11 @@ async function main() {
   while (hasMore) {
     const payload = { page_size: 100 };
     if (nextCursor) payload.start_cursor = nextCursor;
-    const data = await postJson(`https://api.notion.com/v1/data_sources/${DATA_SOURCE_ID}/query`, payload, notionHeaders);
+    const data = await postJson(`https://api.notion.com/v1/databases/${DATA_SOURCE_ID}/query`, payload, notionHeaders);
+    if (!data.results) {
+        console.log("Error querying Notion:", data);
+        break;
+    }
     notionItems = notionItems.concat(data.results);
     hasMore = data.has_more;
     nextCursor = data.next_cursor;
@@ -129,18 +133,31 @@ async function main() {
 
   for (const item of notionItems) {
     const props = item.properties;
+    if (!props) {
+        console.log("Item missing properties:", item.id);
+        continue;
+    }
+    // console.log("Props:", Object.keys(props));
     const category = (props.Category && props.Category.select) ? props.Category.select.name : null;
-    if (category !== "Food") continue;
+    if (category !== "Food") {
+        // console.log(`Skipping '${item.id}': Not Food (${category})`);
+        continue;
+    }
 
     const bgDeltaProp = props['BG Delta'] ? props['BG Delta'].number : null;
-    if (bgDeltaProp !== null) continue;
-
     const dateStr = (props.Date && props.Date.date) ? props.Date.date.start : null;
-    if (!dateStr) continue;
-
     const entryTitle = props.Entry && props.Entry.title ? props.Entry.title : [];
     const titleText = entryTitle.length > 0 ? (entryTitle[0].text ? (entryTitle[0].text.content || "Untitled") : (entryTitle[0].plain_text || "Untitled")) : "Untitled";
 
+    if (bgDeltaProp !== null) {
+      console.log(`Skipping '${titleText}' (${dateStr}): Already has BG Delta: ${bgDeltaProp}`);
+      continue;
+    }
+
+    if (!dateStr) {
+      console.log(`Skipping '${titleText}': Missing Date`);
+      continue;
+    }
     const mealDate = new Date(dateStr);
     const now = new Date();
     // Only process if at least 3.5 hours have passed to ensure we have the full peak window
