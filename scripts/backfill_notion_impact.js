@@ -139,18 +139,19 @@ async function main() {
     }
     // console.log("Props:", Object.keys(props));
     const category = (props.Category && props.Category.select) ? props.Category.select.name : null;
-    if (category !== "Food") {
-        // console.log(`Skipping '${item.id}': Not Food (${category})`);
-        continue;
-    }
-
     const bgDeltaProp = props['BG Delta'] ? props['BG Delta'].number : null;
     const dateStr = (props.Date && props.Date.date) ? props.Date.date.start : null;
     const entryTitle = props.Entry && props.Entry.title ? props.Entry.title : [];
     const titleText = entryTitle.length > 0 ? (entryTitle[0].text ? (entryTitle[0].text.content || "Untitled") : (entryTitle[0].plain_text || "Untitled")) : "Untitled";
 
+    if (category !== "Food") {
+        // console.log(`Skipping '${item.id}': Not Food (${category})`);
+        continue;
+    }
+    // console.log(`Checking Food item: '${titleText}' (${dateStr})`);
+
     if (bgDeltaProp !== null) {
-      console.log(`Skipping '${titleText}' (${dateStr}): Already has BG Delta: ${bgDeltaProp}`);
+      // console.log(`Skipping '${titleText}' (${dateStr}): Already has BG Delta: ${bgDeltaProp}`);
       continue;
     }
 
