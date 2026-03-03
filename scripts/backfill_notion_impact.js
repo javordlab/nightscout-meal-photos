@@ -145,13 +145,12 @@ async function main() {
     const titleText = entryTitle.length > 0 ? (entryTitle[0].text ? (entryTitle[0].text.content || "Untitled") : (entryTitle[0].plain_text || "Untitled")) : "Untitled";
 
     if (category !== "Food") {
-        // console.log(`Skipping '${item.id}': Not Food (${category})`);
         continue;
     }
-    // console.log(`Checking Food item: '${titleText}' (${dateStr})`);
+    console.log(`Checking Food item: '${titleText}' (${dateStr})`);
 
     if (bgDeltaProp !== null) {
-      // console.log(`Skipping '${titleText}' (${dateStr}): Already has BG Delta: ${bgDeltaProp}`);
+      console.log(`Skipping '${titleText}' (${dateStr}): Already has BG Delta: ${bgDeltaProp}`);
       continue;
     }
 
