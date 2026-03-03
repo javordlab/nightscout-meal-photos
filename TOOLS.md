@@ -16,11 +16,11 @@ When Maria Dennis logs **food**, **medication**, **activity**, or **sleep** in t
    - Calculate and update the **Time to Peak (min)** (minutes between meal start and peak).
 6. **Confirm:** Send confirmation to Maria and Javi in the Telegram group. **CRITICAL:** Always include the current glucose reading (value and trend arrow) in this confirmation.
 
-### Photo & Carb/Calorie Protocol
+- **Photo & Carb/Calorie Protocol**
 - **Host:** Upload photos to **freeimage.host (iili.io)**.
 - **Key:** `6d207e02198a847aa98d0a2a901485a5`
 - **Link:** Include the link in Nightscout notes with 📷 and in the Notion **Photo** column.
-- **Carbs/Calories:** Parse estimates into the Nightscout `carbs` field (carbs only) and the Notion **Carbs (est)** and **Calories (est)** columns.
+- **Carbs/Calories:** Parse estimates into the Nightscout `carbs` field (carbs only) and include the calorie estimate in the Nightscout `notes` field (e.g., "Lunch: ... (~45g carbs, ~500 kcal)"). For Notion, use the **Carbs (est)** and **Calories (est)** columns.
 - **Titles:** Use the high-fidelity "Items identified" list for the Notion **Entry** title.
 
 ---
