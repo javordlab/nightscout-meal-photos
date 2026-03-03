@@ -71,6 +71,11 @@ _Last updated: 2026-02-26 06:45 PM PST_
 - Fallbacks: gemini-3-flash → ollama/qwen2.5-coder:14b → ollama/qwen2.5-coder:7b → openai-codex/gpt-5.3-codex
 - Sandbox: Active (Docker-based) for all model runs.
 
+### OpenAI Quotas (Daily Limits)
+- **High-Tier (250k tokens/day):** gpt-5.2, gpt-5.1, gpt-5.1-codex, gpt-5, gpt-5-codex, gpt-5-chat-latest, gpt-4.1, gpt-4o, o1, o3.
+- **Speed/Efficiency-Tier (2.5M tokens/day):** gpt-5.1-codex-mini, gpt-5-mini, gpt-5-nano, gpt-4.1-mini, gpt-4.1-nano, gpt-4o-mini, o1-mini, o3-mini, o4-mini, codex-mini-latest.
+- **Efficiency Rule:** Use "Mini/Nano" models for routine tasks (logs, heartbeats, summaries) and reserved "High-Tier" models for complex reasoning, medical analysis, or debugging.
+
 ## Clinical
 - GMI formula: GMI(%) = 3.31 + 0.02392 × [mean glucose mg/dL] — needs ≥14 days
 - Glucose target range: 70–180 mg/dL (standard)
