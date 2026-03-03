@@ -4,6 +4,7 @@
 |------|------|------|----------|-------|
 | 2026-03-02 | 08:49 | Maria Dennis | Food | Breakfast: Smoked salmon and avocado on two slices of toasted sourdough (~30g carbs) |
 | 2026-03-02 | 19:46 | Maria Dennis | Medication | 1500mg Metformin HCL |
+| 2026-03-02 | 18:00 | Maria Dennis | Medication | Trulicity 0.75 MG/0.5 ML (Weekly Injection) |
 | 2026-03-02 | 19:43 | Maria Dennis | Food | Dessert: Sliced strawberries (~8g carbs) [📷](https://iili.io/qBACD3x.jpg) |
 | 2026-03-02 | 19:21 | Maria Dennis | Food | Dinner: Shredded beef with bell peppers and a ciabatta roll (~40g carbs) [📷](https://iili.io/qBuPu14.jpg) |
 | 2026-03-02 | 17:16 | Maria Dennis | Food | Snack: 2 meat and cheese roll-ups (~0g carbs) [📷](https://iili.io/qBIbt1a.jpg) |
