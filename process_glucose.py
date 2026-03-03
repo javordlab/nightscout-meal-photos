@@ -1,60 +1,96 @@
 import json
 from datetime import datetime, timedelta, timezone
 
-# Load data
-with open('glucose_14d.json', 'r') as f:
+# Load the data
+with open('entries.json', 'r') as f:
     entries = json.load(f)
 
-# Current time in UTC (simulated as per prompt context)
-# Tuesday, Feb 24, 2026, 9:30 AM PST -> 17:30 UTC
-now_utc = datetime(2026, 2, 24, 17, 30, tzinfo=timezone.utc)
-day24_ago_utc = now_utc - timedelta(days=1)
-day48_ago_utc = now_utc - timedelta(days=2)
-day14_ago_utc = now_utc - timedelta(days=14)
+# PST is UTC-8.
+# Current time provided: Tuesday, March 3rd, 2026 — 9:30 AM PST
+now_pst = datetime(2026, 3, 3, 9, 30, tzinfo=timezone(timedelta(hours=-8)))
+now_utc = now_pst.astimezone(timezone.utc)
+
+# Ranges in UTC
+last_24h_start = now_utc - timedelta(hours=24)
+prev_24h_start = now_utc - timedelta(hours=48)
+last_14d_start = now_utc - timedelta(days=14)
+
+def calculate_metrics(entries_list):
+    if not entries_list:
+        return None
+    
+    sgvs = [e['sgv'] for e in entries_list]
+    avg_glucose = sum(sgvs) / len(sgvs)
+    
+    # TIR: 70-180 mg/dL
+    in_range = [s for s in sgvs if 70 <= s <= 180]
+    tir = (len(in_range) / len(sgvs)) * 100
+    
+    # GMI (%) = 3.31 + 0.02392 * avg_glucose_mgdL
+    gmi = 3.31 + 0.02392 * avg_glucose
+    
+    return {
+        'avg': avg_glucose,
+        'tir': tir,
+        'gmi': gmi,
+        'count': len(sgvs)
+    }
 
 # Filter entries
-entries_24h = []
+entries_last_24h = []
 entries_prev_24h = []
-entries_14d = []
+entries_last_14d = []
 
 for e in entries:
-    # dateString format: "2026-02-24T17:25:00.000Z"
-    dt = datetime.fromisoformat(e['dateString'].replace('Z', '+00:00'))
-    sgv = e.get('sgv')
-    if sgv is None: continue
+    # Use 'dateString' or 'date' (timestamp in ms)
+    # Nightscout date is in ms
+    dt = datetime.fromtimestamp(e['date'] / 1000, tz=timezone.utc)
     
-    if dt >= day24_ago_utc:
-        entries_24h.append(sgv)
-    elif dt >= day48_ago_utc:
-        entries_prev_24h.append(sgv)
-    
-    if dt >= day14_ago_utc:
-        entries_14d.append((dt, sgv))
+    if last_24h_start <= dt <= now_utc:
+        entries_last_24h.append(e)
+    if prev_24h_start <= dt < last_24h_start:
+        entries_prev_24h.append(e)
+    if last_14d_start <= dt <= now_utc:
+        entries_last_14d.append(e)
 
-def calc_stats(sgvs):
-    if not sgvs: return None
-    avg = sum(sgvs) / len(sgvs)
-    tir = (len([s for s in sgvs if 70 <= s <= 180]) / len(sgvs)) * 100
-    gmi = 3.31 + (0.02392 * avg)
-    return {'avg': avg, 'tir': tir, 'gmi': gmi}
-
-stats_24h = calc_stats(entries_24h)
-stats_prev_24h = calc_stats(entries_prev_24h)
-stats_14d = calc_stats([s for dt, s in entries_14d])
+metrics_24h = calculate_metrics(entries_last_24h)
+metrics_prev_24h = calculate_metrics(entries_prev_24h)
+metrics_14d = calculate_metrics(entries_last_14d)
 
 # Outliers in last 24h
 outliers = []
-for e in entries:
-    dt = datetime.fromisoformat(e['dateString'].replace('Z', '+00:00'))
-    if dt >= day24_ago_utc:
-        sgv = e.get('sgv')
-        if sgv and (sgv > 250 or sgv < 70):
-            pst_time = dt - timedelta(hours=8)
-            outliers.append(f"{pst_time.strftime('%I:%M %p')}: {sgv} mg/dL")
+# Thresholds: High > 180, Low < 70
+for e in sorted(entries_last_24h, key=lambda x: x['date']):
+    dt_pst = datetime.fromtimestamp(e['date'] / 1000, tz=timezone.utc).astimezone(timezone(timedelta(hours=-8)))
+    if e['sgv'] > 220 or e['sgv'] < 65: # Looking for significant outliers
+        outliers.append((dt_pst.strftime('%I:%M %p'), e['sgv']))
+
+# Group consecutive outliers
+grouped_outliers = []
+if outliers:
+    start_time, val = outliers[0]
+    last_time = start_time
+    peak_val = val
+    for i in range(1, len(outliers)):
+        curr_time, curr_val = outliers[i]
+        # If within 30 mins, consider same event (simplification)
+        # Actually just report significant spikes/lows
+        if curr_val > peak_val if val > 180 else curr_val < peak_val:
+             peak_val = curr_val
+    # This is a bit simple, let's just find the max/min in the last 24h
+    max_sgv = max([e['sgv'] for e in entries_last_24h]) if entries_last_24h else 0
+    min_sgv = min([e['sgv'] for e in entries_last_24h]) if entries_last_24h else 0
+    
+    max_entry = next(e for e in entries_last_24h if e['sgv'] == max_sgv)
+    min_entry = next(e for e in entries_last_24h if e['sgv'] == min_sgv)
+    
+    max_time = datetime.fromtimestamp(max_entry['date'] / 1000, tz=timezone.utc).astimezone(timezone(timedelta(hours=-8))).strftime('%I:%M %p')
+    min_time = datetime.fromtimestamp(min_entry['date'] / 1000, tz=timezone.utc).astimezone(timezone(timedelta(hours=-8))).strftime('%I:%M %p')
 
 print(json.dumps({
-    'stats_24h': stats_24h,
-    'stats_prev_24h': stats_prev_24h,
-    'stats_14d': stats_14d,
-    'outliers': outliers[:5] # Limit outliers
+    'metrics_24h': metrics_24h,
+    'metrics_prev_24h': metrics_prev_24h,
+    'metrics_14d': metrics_14d,
+    'max': {'val': max_sgv, 'time': max_time} if entries_last_24h else None,
+    'min': {'val': min_sgv, 'time': min_time} if entries_last_24h else None
 }, indent=2))
