@@ -4,6 +4,7 @@
 |------|------|------|----------|-------|
 | 2026-03-02 | 08:49 | Maria Dennis | Food | Breakfast: Smoked salmon and avocado on two slices of toasted sourdough (~30g carbs) |
 | 2026-03-04 | 10:45 | Maria Dennis | Medication | Lisinopril 10mg (Routine) |
+| 2026-03-04 | 14:46 | Maria Dennis | Food | Snack: 1 Japanese Cream Sand cookie (~12g carbs) [📷](https://iili.io/qCSzSnf.jpg) |
 | 2026-03-04 | 12:45 | Maria Dennis | Activity | 40 minutes walk |
 | 2026-03-04 | 12:16 | Maria Dennis | Food | Lunch: Pork belly on bread, half an apple, and a small bowl of mixed nuts (~35g carbs) [📷](https://iili.io/qCexbqP.jpg) |
 | 2026-03-04 | 08:47 | Maria Dennis | Food | Breakfast: Prosciutto, bread with brie cheese, and tea (~25g carbs) [📷](https://iili.io/qCEobbj.jpg) |
