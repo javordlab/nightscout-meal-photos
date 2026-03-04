@@ -3,6 +3,7 @@
 | Date | Time | User | Category | Entry |
 |------|------|------|----------|-------|
 | 2026-03-02 | 08:49 | Maria Dennis | Food | Breakfast: Smoked salmon and avocado on two slices of toasted sourdough (~30g carbs) |
+| 2026-03-03 | 21:13 | Maria Dennis | Food | Snack: 1 protein ball (~12g carbs) |
 | 2026-03-03 | 20:30 | Maria Dennis | Activity | 29 minutes tai chi |
 | 2026-03-03 | 20:35 | Maria Dennis | Medication | 1 tablet Prunelax |
 | 2026-03-03 | 20:30 | Maria Dennis | Medication | 1500mg Metformin HCL, Vitamin D 1000 IU |
