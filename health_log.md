@@ -3,6 +3,8 @@
 | Date | Time | User | Category | Entry |
 |------|------|------|----------|-------|
 | 2026-03-02 | 08:49 | Maria Dennis | Food | Breakfast: Smoked salmon and avocado on two slices of toasted sourdough (~30g carbs) |
+| 2026-03-04 | 08:47 | Maria Dennis | Food | Breakfast: Prosciutto, bread with brie cheese, and tea (~25g carbs) [📷](https://iili.io/qCEobbj.jpg) |
+| 2026-03-04 | 08:30 | Maria Dennis | Food | Breakfast: Sliced kiwi with goji berries (~18g carbs) [📷](https://iili.io/qC199AF.jpg) |
 | 2026-03-03 | 21:13 | Maria Dennis | Food | Snack: 1 protein ball (~12g carbs) |
 | 2026-03-03 | 20:30 | Maria Dennis | Activity | 29 minutes tai chi |
 | 2026-03-03 | 20:35 | Maria Dennis | Medication | 1 tablet Prunelax |
