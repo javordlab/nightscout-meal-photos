@@ -3,6 +3,10 @@
 | Date | Time | User | Category | Entry |
 |------|------|------|----------|-------|
 | 2026-03-02 | 08:49 | Maria Dennis | Food | Breakfast: Smoked salmon and avocado on two slices of toasted sourdough (~30g carbs) |
+| 2026-03-03 | 20:30 | Maria Dennis | Activity | 29 minutes tai chi |
+| 2026-03-03 | 20:35 | Maria Dennis | Medication | 1 tablet Prunelax |
+| 2026-03-03 | 20:30 | Maria Dennis | Medication | 1500mg Metformin HCL, Vitamin D 1000 IU |
+| 2026-03-03 | 19:41 | Maria Dennis | Food | Snack: Half an apple (~12g carbs) [📷](https://iili.io/qCdmXet.jpg) |
 | 2026-03-03 | 18:57 | Maria Dennis | Food | Dinner: Meatballs, fried potatoes, sourdough bread with butter, and a side of greens with grapes (~55g carbs) [📷](https://iili.io/qCJDbs4.jpg) |
 | 2026-03-03 | 16:34 | Maria Dennis | Food | Snack: Yogurt with strawberries and goji berries (~25g carbs) [📷](https://iili.io/qC9KEyN.jpg) |
 | 2026-03-03 | 13:04 | Maria Dennis | Food | Lunch: Carrot cheese soup, prosciutto, and bread (~45g carbs) [📷](https://iili.io/qBDE9pe.jpg) |
