@@ -1,92 +1,85 @@
 import json
 from datetime import datetime, timedelta, timezone
 
-# PST offset is -8 hours
-PST_OFFSET = -8
+# 1. Load data
+with open('glucose_48h.json', 'r') as f:
+    glucose_48h = json.load(f)
 
-def utc_to_pst(utc_str):
-    # Nightscout usually uses ISO8601 or timestamps
-    try:
-        dt = datetime.fromisoformat(utc_str.replace('Z', '+00:00'))
-    except ValueError:
-        # Fallback to timestamp if needed
-        dt = datetime.fromtimestamp(int(utc_str)/1000, tz=timezone.utc)
-    pst_dt = dt + timedelta(hours=PST_OFFSET)
-    return pst_dt
+with open('glucose_14d.json', 'r') as f:
+    glucose_14d = json.load(f)
 
-def format_pst(pst_dt):
-    return pst_dt.strftime('%H:%M PST')
+with open('treatments_48h.json', 'r') as f:
+    treatments_48h = json.load(f)
 
-# Current time in PST (from prompt)
-current_time_pst = datetime(2026, 2, 26, 9, 30, tzinfo=timezone(timedelta(hours=PST_OFFSET)))
-# Convert to UTC for comparison
-current_time_utc = current_time_pst + timedelta(hours=8)
+# Helper: UTC to PST (UTC-8)
+def to_pst(dt_utc):
+    return dt_utc - timedelta(hours=8)
 
-last_24h_start = current_time_pst - timedelta(days=1)
-prev_24h_start = current_time_pst - timedelta(days=2)
-last_14d_start = current_time_pst - timedelta(days=14)
+now_utc = datetime.now(timezone.utc)
+# Overriding now_utc to the prompt's context time
+# Prompt says: Thursday, March 5th, 2026 — 9:30 AM (America/Los_Angeles)
+# 9:30 AM PST = 17:30 UTC
+now_utc = datetime(2026, 3, 5, 17, 30, tzinfo=timezone.utc)
+yesterday_utc = now_utc - timedelta(days=1)
+two_days_ago_utc = now_utc - timedelta(days=2)
 
-with open('glucose_data.json', 'r') as f:
-    entries = json.load(f)
+# Previous calendar day (PST): Wednesday, March 4th
+# March 4th 00:00 PST = March 4th 08:00 UTC
+# March 4th 23:59 PST = March 5th 07:59 UTC
+cal_start_utc = datetime(2026, 3, 4, 8, 0, tzinfo=timezone.utc)
+cal_end_utc = datetime(2026, 3, 5, 8, 0, tzinfo=timezone.utc)
 
-# Sort by date (descending usually, but let's be safe)
-entries.sort(key=lambda x: x['date'], reverse=True)
+# 2. Glucose metrics (last 24h)
+last_24h_sgv = [e['sgv'] for e in glucose_48h if yesterday_utc <= datetime.fromisoformat(e['dateString'].replace('Z', '+00:00')) < now_utc]
+prev_24h_sgv = [e['sgv'] for e in glucose_48h if two_days_ago_utc <= datetime.fromisoformat(e['dateString'].replace('Z', '+00:00')) < yesterday_utc]
 
-# Period definitions
-p_last_24 = []
-p_prev_24 = []
-p_last_14 = []
+def get_stats(sgv_list):
+    if not sgv_list: return None
+    avg = sum(sgv_list) / len(sgv_list)
+    tir = len([s for s in sgv_list if 70 <= s <= 180]) / len(sgv_list) * 100
+    gmi = 3.31 + 0.02392 * avg
+    return {"avg": avg, "tir": tir, "gmi": gmi}
 
-for e in entries:
-    # Use 'date' (timestamp) or 'dateString' (ISO8601)
-    dt_utc = datetime.fromtimestamp(e['date'] / 1000, tz=timezone.utc)
-    dt_pst = dt_utc + timedelta(hours=PST_OFFSET)
-    
-    val = e.get('sgv') or e.get('mbg') # Sensor Glucose Value
-    if val is None: continue
+stats_24h = get_stats(last_24h_sgv)
+stats_prev_24h = get_stats(prev_24h_sgv)
 
-    if dt_pst >= last_24h_start:
-        p_last_24.append({'val': val, 'time': dt_pst})
-    elif dt_pst >= prev_24h_start:
-        p_prev_24.append({'val': val, 'time': dt_pst})
-    
-    if dt_pst >= last_14d_start:
-        p_last_14.append({'val': val, 'time': dt_pst})
+# 3. 14-day rolling GMI
+all_14d_sgv = [e['sgv'] for e in glucose_14d]
+stats_14d = get_stats(all_14d_sgv)
 
-def calc_metrics(data):
-    if not data: return None
-    vals = [d['val'] for d in data]
-    avg = sum(vals) / len(vals)
-    gmi = 3.31 + (0.02392 * avg)
-    tir_count = sum(1 for v in vals if 70 <= v <= 180)
-    tir_pct = (tir_count / len(vals)) * 100
-    return {'avg': avg, 'gmi': gmi, 'tir': tir_pct}
+# 4. Outliers (last 24h)
+outliers = []
+for e in glucose_48h:
+    dt = datetime.fromisoformat(e['dateString'].replace('Z', '+00:00'))
+    if yesterday_utc <= dt < now_utc:
+        if e['sgv'] > 250 or e['sgv'] < 70:
+            pst_time = to_pst(dt).strftime('%I:%M %p')
+            outliers.append(f"{pst_time}: {e['sgv']} mg/dL")
 
-m_last_24 = calc_metrics(p_last_24)
-m_prev_24 = calc_metrics(p_prev_24)
-m_last_14 = calc_metrics(p_last_14)
+# 5. Calories and Carbs (Previous PST calendar day)
+total_carbs = 0
+total_calories = 0
+for t in treatments_48h:
+    # Ensure 'created_at' exists
+    created_str = t.get('created_at') or t.get('timestamp')
+    if not created_str: continue
+    dt = datetime.fromisoformat(created_str.replace('Z', '+00:00'))
+    if cal_start_utc <= dt < cal_end_utc:
+        total_carbs += float(t.get('carbs', 0) or 0)
+        # Calories often in notes or custom fields
+        notes = t.get('notes', '')
+        if notes and '~' in notes and 'kcal' in notes:
+            import re
+            m = re.search(r'~(\d+)\s*kcal', notes)
+            if m:
+                total_calories += int(m.group(1))
 
-# Outliers last 24h
-spikes = [d for d in p_last_24 if d['val'] > 250]
-lows = [d for d in p_last_24 if d['val'] < 70]
-
-# Trend Comparison
-trend = "Stable"
-if m_last_24 and m_prev_24:
-    if m_last_24['tir'] > m_prev_24['tir'] + 5:
-        trend = "Improving (Higher TIR) 📈"
-    elif m_last_24['tir'] < m_prev_24['tir'] - 5:
-        trend = "Declining (Lower TIR) 📉"
-    elif m_last_24['avg'] < m_prev_24['avg'] - 10:
-        trend = "Improving (Lower Average) 📈"
-    elif m_last_24['avg'] > m_prev_24['avg'] + 10:
-        trend = "Declining (Higher Average) 📉"
-
+# 6. Report Generation
 print(json.dumps({
-    "last_24h": m_last_24,
-    "prev_24h": m_prev_24,
-    "last_14d_gmi": m_last_14['gmi'] if m_last_14 else None,
-    "trend": trend,
-    "spikes": [{"val": s['val'], "time": format_pst(s['time'])} for s in spikes],
-    "lows": [{"val": l['val'], "time": format_pst(l['time'])} for l in lows]
-}))
+    "stats_24h": stats_24h,
+    "stats_prev_24h": stats_prev_24h,
+    "stats_14d": stats_14d,
+    "outliers": outliers,
+    "total_carbs": total_carbs,
+    "total_calories": total_calories
+}, indent=2))
