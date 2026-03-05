@@ -5,6 +5,8 @@
 | 2026-03-04 | 21:00 | Maria Dennis | Medication | 1500mg Metformin HCL |
 | 2026-03-02 | 08:49 | Maria Dennis | Food | Breakfast: Smoked salmon and avocado on two slices of toasted sourdough (~30g carbs) |
 | 2026-03-04 | 10:45 | Maria Dennis | Medication | Lisinopril 10mg (Routine) |
+| 2026-03-04 | 19:35 | Maria Dennis | Medication | 1500mg Metformin HCL |
+| 2026-03-04 | 18:23 | Maria Dennis | Food | Dinner: Pasta with meat sauce, cheese, broccoli, plus strawberries and grapes (~66g carbs) [📷](https://iili.io/qC6Ur8X.jpg) [📷](https://iili.io/qCiaBXj.jpg) |
 | 2026-03-04 | 14:46 | Maria Dennis | Food | Snack: 1 Japanese Cream Sand cookie (~12g carbs) [📷](https://iili.io/qCSzSnf.jpg) |
 | 2026-03-04 | 12:45 | Maria Dennis | Activity | 40 minutes walk |
 | 2026-03-04 | 12:16 | Maria Dennis | Food | Lunch: Pork belly on bread, half an apple, and a small bowl of mixed nuts (~35g carbs) [📷](https://iili.io/qCexbqP.jpg) |
