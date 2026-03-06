@@ -291,7 +291,7 @@
 
     function extractPhotoUrls(notes) {
       if (!notes) return [];
-      // Support all known providers
+      // Support all known providers (files.catbox.moe, iili.io, cdn.jsdelivr.net, javordlab.github.io)
       const regex = /https?:\/\/(?:files\.catbox\.moe|iili\.io|cdn\.jsdelivr\.net|javordlab\.github\.io)\/[^\s\)\>]+/g;
       return notes.match(regex) || [];
     }
