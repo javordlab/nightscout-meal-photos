@@ -9,6 +9,10 @@
 | 2026-03-05 | 11:00 | Maria Dennis | Activity | 2 hours gardening (Pre-lunch) |
 | 2026-03-05 | 20:22 | Maria Dennis | Food | Snack: 1 protein ball (~12g carbs) |
 | 2026-03-05 | 20:30 | Maria Dennis | Activity | 15 minutes tai chi |
+| 2026-03-06 | 14:05 | Maria Dennis | Food | Lunch: Fried rice, sliced pastrami, energy ball, and 8 green grapes (~50g carbs) [📷](https://iili.io/qxY5I49.jpg) [📷](https://iili.io/qxYS8ve.jpg) |
+| 2026-03-06 | 13:58 | Maria Dennis | Activity | 90 minutes gardening |
+| 2026-03-06 | 12:05 | Maria Dennis | Activity | 30 minutes heavy gardening |
+| 2026-03-06 | 10:30 | Maria Dennis | Food | Breakfast: Prosciutto and avocado on a ciabatta roll, plus an orange (~55g carbs) [📷](https://iili.io/qxFCkgI.jpg) [📷](https://iili.io/qxFRUep.jpg) |
 | 2026-03-05 | 18:43 | Maria Dennis | Food | Dinner: Fried rice with egg/avocado, carrot soup, sake, and pastrami toast (~71g carbs) [📷](https://iili.io/qnDnLzB.jpg) [📷](https://iili.io/qnDM5CX.jpg) [📷](https://iili.io/qnDXzyx.jpg) |
 | 2026-03-05 | 17:40 | Maria Dennis | Activity | 1 hour gardening (Pre-dinner) |
 | 2026-03-05 | 15:19 | Maria Dennis | Food | Snack: 1 oatmeal chocolate cookie and a small glass of milk (~24g carbs) [📷](https://iili.io/qngbl5X.jpg) |
