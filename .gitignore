@@ -1,4 +1,4 @@
-# Local system files
+# OS specific
 .DS_Store
 .AppleDouble
 .LSOverride
@@ -13,16 +13,31 @@ secrets/
 tmp/
 *.log
 
-# Media/Large Files
+# Large Binaries and Models (NEVER commit these)
+models/
+**/*.bin
+**/*.dmg
+**/*.zip
+**/*.pkg
+
+# Media (Already handled but reinforced)
 input/
 **/*.MOV
 **/*.mov
 **/*.HEIC
 **/*.heic
 **/*.mp4
+**/*.PNG
 **/*.png
+**/*.JPG
 **/*.jpg
 **/*.jpeg
+
+# Dependencies
+node_modules/
+**/node_modules/
+.venv/
+.venv*/
 
 # Tool-specific tokens/auth
 **/token.json

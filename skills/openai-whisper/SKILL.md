@@ -1,38 +1,25 @@
 ---
 name: openai-whisper
 description: Local speech-to-text with the Whisper CLI (no API key).
-homepage: https://openai.com/research/whisper
-metadata:
-  {
-    "openclaw":
-      {
-        "emoji": "🎙️",
-        "requires": { "bins": ["whisper"] },
-        "install":
-          [
-            {
-              "id": "brew",
-              "kind": "brew",
-              "formula": "openai-whisper",
-              "bins": ["whisper"],
-              "label": "Install OpenAI Whisper (brew)",
-            },
-          ],
-      },
-  }
 ---
 
-# Whisper (CLI)
+# Whisper Local Transcription
 
-Use `whisper` to transcribe audio locally.
+Transcribes audio files locally on the Mac mini using `whisper-cpp`.
 
-Quick start
+## Usage
 
-- `whisper /path/audio.mp3 --model medium --output_format txt --output_dir .`
-- `whisper /path/audio.m4a --task translate --output_format srt`
+```bash
+whisper-cpp -m /Users/javier/.openclaw/workspace/models/whisper/ggml-large-v3-turbo.bin -f <audio_file.wav>
+```
 
-Notes
+### Note
+- Input must be a **16kHz WAV** file.
+- Use `ffmpeg` to convert other formats if needed.
 
-- Models download to `~/.cache/whisper` on first run.
-- `--model` defaults to `turbo` on this install.
-- Use smaller models for speed, larger for accuracy.
+## Example
+
+```bash
+ffmpeg -i inbound_voice.ogg -ar 16000 -ac 1 -c:a pcm_s16le output.wav
+whisper-cpp -m /Users/javier/.openclaw/workspace/models/whisper/ggml-large-v3-turbo.bin -f output.wav
+```
