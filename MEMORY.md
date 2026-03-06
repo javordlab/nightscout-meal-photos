@@ -26,6 +26,11 @@ _Last updated: 2026-02-26 06:45 PM PST_
 - **Calorie Logging (NEW 2026-03-02):** Estimate and log calories for all food entries in addition to carbs. These should be included in the confirmation message, the Nightscout notes (e.g., "~500 kcal"), and the Notion **Calories (est)** column.
 - **Nutrition Recommendations:** Provide proactive dietary recommendations for Maria based on her profile (diabetes management, weight maintenance, and glucose stability).
 - **Session Consolidation:** If multiple photos or food descriptions are sent within a **30-minute window**, consider them part of the SAME meal event (e.g., Breakfast, Lunch, Dinner). They are simply different courses of the same meal. Consolidate the carb/calorie estimates and item lists before confirming or providing advice. Do not log them as separate snacks.
+### Heartbeat Status (CRITICAL)
+As of 2026-03-05 9:45 PM, heartbeats must be COMPLETELY silent. 
+Rule: If all checks pass, the response must be EXACTLY: HEARTBEAT_OK
+Reason: Any other text (like a summary) triggers a user notification.
+Summary: NO summaries allowed unless a CRITICAL error is found.
 - **Timestamp Accuracy (CRITICAL):** For all food, medication, and activity logs, ALWAYS use the Telegram message arrival time (or the time Maria specifies) for the record. This ensures glucose correlations and "Intelligence & Impact" reports are clinically accurate. Never use the processing time as the event time.
 - Patient ID: 446dcd1b-c6f2-11ee-9e32-4e8e6fd5ce94
 - LibreLinkUp follower account: librelinkup@javierordonez.com

@@ -13,3 +13,4 @@
 - Telegram: verify poller active.
 - Sync: verify `git status` clean.
 - **IGNORE "0 paired nodes"**. Do not check `nodes status`.
+

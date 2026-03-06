@@ -130,14 +130,12 @@ Skills provide your tools. When you need one, check its `SKILL.md`. Keep local n
 - **Discord links:** Wrap multiple links in `<>` to suppress embeds: `<https://example.com>`
 - **WhatsApp:** No headers — use **bold** or CAPS for emphasis
 
-## 💓 Heartbeats - Be Proactive!
+💓 Heartbeats - Be Proactive!
 
-When you receive a heartbeat poll (message matches the configured heartbeat prompt), don't just reply `HEARTBEAT_OK` every time. Use heartbeats productively!
+When you receive a heartbeat poll, follow the specific instructions in `HEARTBEAT.md`. 
 
-Default heartbeat prompt:
-`Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.`
-
-You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it small to limit token burn.
+**The Silence Rule:**
+If `HEARTBEAT.md` directs you to respond with `HEARTBEAT_OK` when everything is healthy, you **MUST** do so. Do not provide a summary of your successful checks. A status report is ONLY allowed if a critical error is found or manual intervention is required.
 
 ### Heartbeat vs Cron: When to Use Each
 
