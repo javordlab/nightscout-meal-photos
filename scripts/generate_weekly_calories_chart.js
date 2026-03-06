@@ -60,8 +60,8 @@ async function main() {
     monthlyTotals[date] += cal;
   });
 
-  // Last 7 days for the chart
-  for (let i = 0; i < 7; i++) {
+  // Last 7 FULL days for the chart (excluding today)
+  for (let i = 1; i <= 7; i++) {
     const d = new Date();
     d.setDate(d.getDate() - i);
     const ds = d.toISOString().split('T')[0];

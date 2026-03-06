@@ -1361,8 +1361,9 @@ function buildSpec(opts) {
           mark: {
             type: 'text',
             align: 'right',
-            baseline: 'middle',
+            baseline: 'bottom', // Move text above the line
             dx: -5,
+            dy: -2, // Slight offset upwards
             fontSize: 11,
             fontWeight: 'bold',
             color: lineColor
