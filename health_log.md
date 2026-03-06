@@ -7,6 +7,8 @@
 | 2026-03-05 | 10:05 | Maria Dennis | Food | Breakfast: Scallion pancake with pork and a kiwi (~38g carbs) [📷](https://iili.io/qn5BXpf.jpg) |
 | 2026-03-05 | 10:05 | Maria Dennis | Medication | Lisinopril 10mg (Routine) |
 | 2026-03-05 | 11:00 | Maria Dennis | Activity | 2 hours gardening (Pre-lunch) |
+| 2026-03-05 | 18:43 | Maria Dennis | Food | Dinner: Fried rice with egg/avocado, carrot soup, sake, and pastrami toast (~71g carbs) [📷](https://iili.io/qnDnLzB.jpg) [📷](https://iili.io/qnDM5CX.jpg) [📷](https://iili.io/qnDXzyx.jpg) |
+| 2026-03-05 | 17:40 | Maria Dennis | Activity | 1 hour gardening (Pre-dinner) |
 | 2026-03-05 | 15:19 | Maria Dennis | Food | Snack: 1 oatmeal chocolate cookie and a small glass of milk (~24g carbs) [📷](https://iili.io/qngbl5X.jpg) |
 | 2026-03-05 | 13:07 | Maria Dennis | Food | Lunch: Pastrami and melted cheese on toast with a side of steamed broccoli (~20g carbs) [📷](https://iili.io/qnNJF2a.jpg) [📷](https://iili.io/qnNqsJ1.jpg) |
 | 2026-03-05 | 10:41 | Maria Dennis | Medication | 1 Advil tablet, Vitamin D 1000 IU |
