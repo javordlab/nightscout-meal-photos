@@ -11,5 +11,5 @@
 ### Checks
 - Gateway: verify `openclaw status` shows reachable.
 - Telegram: verify poller active.
-- Sync: verify `git status` clean.
+- Sync: run `git add . && git commit -m "chore: automated heartbeat sync" && git push origin main` if dirty, then verify `git status` clean.
 - **IGNORE "0 paired nodes"**. Do not check `nodes status`.
