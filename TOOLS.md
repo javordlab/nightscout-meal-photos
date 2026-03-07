@@ -18,7 +18,7 @@ When Maria Dennis logs **food**, **medication**, **activity**, or **sleep** in t
    - Record the exact time of that peak (**Peak Time**).
    - Calculate and update the **BG Delta**.
    - Calculate and update the **Time to Peak (min)** (minutes between meal start and peak).
-   - **Feedback Loop:** Compare the actual peak and delta with the "Glucose Impact Projection" provided during logging to refine future estimates.
+   - **Adaptive Projections:** If Maria logs additional food within 2 hours of a previous meal (e.g., a snack shortly after lunch), you MUST update the existing projection. Explicitly state how the new intake changes the predicted peak and time (e.g., "The additional apple adds ~12g carbs; adjusting projected peak from 197 to 215 mg/dL"). If the impact is negligible, state that as well.
 8. **Confirm:** Send confirmation to Maria and Javi in the Telegram group. 
    - **Current Status:** Always include the current glucose reading (value and trend arrow).
    - **Glucose Impact Projection:** Based on Maria's historical data for similar meals or carb loads, provide a projection of the likely glucose increase (Delta) and the predicted absolute peak value and time (e.g., "Predicted rise: +80 mg/dL to ~197 mg/dL by 11:45 AM").

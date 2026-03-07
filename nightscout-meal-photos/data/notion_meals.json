@@ -1,5 +1,16 @@
 [
   {
+    "id": "31c85ec7-0668-8125-a1f5-d74a5338405d",
+    "title": "Rice vermicelli with egg and greens",
+    "type": "Food",
+    "date": "2026-03-07T13:15:00.000-08:00",
+    "photo": "https://iili.io/qzbUSxn.jpg",
+    "carbs": 35,
+    "cals": 400,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "31c85ec7-0668-81b9-b460-ccfacfcbe8aa",
     "title": "Breakfast: Scallion pancake with cheese, kiwi, and plain yogurt with berries/nuts",
     "type": "Breakfast",
