@@ -32,7 +32,7 @@ async function main() {
     sorts: [{ property: "Date", direction: "descending" }]
   });
   
-  let content = "# Health Log\n\n| Date | Time | User | Category | Entry | Carbs | Cals |\n|------|------|------|----------|-------|-------|------|\n";
+  let content = "# Health Log\n\n| Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |\n|------|------|------|----------|-----------|-------|-------|------|\n";
   
   data.results.forEach(item => {
     const props = item.properties;
@@ -43,15 +43,16 @@ async function main() {
     const time = timePart.substring(0, 5);
     const user = props.User.select ? props.User.select.name : "Maria Dennis";
     const category = props.Category.select ? props.Category.select.name : "Food";
+    const mealType = props["Meal Type"].select ? props["Meal Type"].select.name : "-";
     const entry = props.Entry.title[0] ? props.Entry.title[0].text.content : "Untitled";
     const carbs = props["Carbs (est)"] ? props["Carbs (est)"].number : "-";
     const cals = props["Calories (est)"] ? props["Calories (est)"].number : "-";
     
-    content += `| ${date} | ${time} | ${user} | ${category} | ${entry} | ${carbs} | ${cals} |\n`;
+    content += `| ${date} | ${time} | ${user} | ${category} | ${mealType} | ${entry} | ${carbs} | ${cals} |\n`;
   });
   
   fs.writeFileSync('/Users/javier/.openclaw/workspace/health_log.md', content);
-  console.log("Health log rebuilt from Notion.");
+  console.log("Health log rebuilt from Notion with Meal Type column.");
 }
 
 main().catch(console.error);

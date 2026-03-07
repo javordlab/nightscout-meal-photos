@@ -12,9 +12,9 @@ const meals = [];
 lines.forEach(line => {
     if (line.includes(targetDate) && line.includes('| Food |')) {
         const parts = line.split('|').map(p => p.trim());
-        const entry = parts[5];
-        const carbs = parseInt(parts[6]);
-        const cals = parseInt(parts[7]);
+        const entry = parts[6];
+        const carbs = parseInt(parts[7]);
+        const cals = parseInt(parts[8]);
         
         if (!isNaN(carbs)) totalCarbs += carbs;
         if (!isNaN(cals)) totalCals += cals;
