@@ -10,7 +10,14 @@ async function fetchJson(url) {
     https.get(url, (res) => {
       let data = '';
       res.on('data', (chunk) => data += chunk);
-      res.on('end', () => resolve(JSON.parse(data)));
+      res.on('end', () => {
+          try {
+              resolve(JSON.parse(data));
+          } catch(e) {
+              console.error("Failed to parse response for", url);
+              resolve([]);
+          }
+      });
     }).on('error', reject);
   });
 }
@@ -62,7 +69,7 @@ async function patchJson(url, payload, headers = {}) {
 function getBgAt(entries, mealTime) {
   const target = new Date(mealTime).getTime();
   let closest = null;
-  let minDiff = 20 * 60 * 1000;
+  let minDiff = 25 * 60 * 1000; // 25 mins
   for (const e of entries) {
     const mills = e.date || e.mills;
     const diff = Math.abs(mills - target);
@@ -76,7 +83,7 @@ function getBgAt(entries, mealTime) {
 
 function getPeak2Hr(entries, mealTime) {
   const start = new Date(mealTime).getTime();
-  const end = start + 3 * 60 * 60 * 1000;
+  const end = start + 3.5 * 60 * 60 * 1000;
   let peakBg = 0;
   let peakTimeMs = null;
   for (const e of entries) {
@@ -111,22 +118,28 @@ async function main() {
 
   console.log(`Auditing ${notionItems.length} Notion items...`);
 
-  for (const item of notionItems) {
+  // Group missing items by date to minimize NS queries
+  const itemsToFix = notionItems.filter(item => {
     const props = item.properties;
-    const category = (props.Category && props.Category.select) ? props.Category.select.name : null;
-    if (category !== "Food") continue;
+    return (props.Category && props.Category.select && props.Category.select.name === "Food") &&
+           (props['BG Delta'] ? props['BG Delta'].number === null : true);
+  });
 
-    const dateStr = (props.Date && props.Date.date) ? props.Date.date.start : null;
-    if (!dateStr) continue;
+  console.log(`Found ${itemsToFix.length} items needing impact data.`);
 
-    const deltaProp = props['BG Delta'] ? props['BG Delta'].number : null;
-    if (deltaProp !== null) continue;
-
-    const mealDate = new Date(dateStr);
+  for (const item of itemsToFix) {
+    const props = item.properties;
+    const dateStr = props.Date.date.start;
     const dateQuery = dateStr.split('T')[0];
-    
-    // Fetch SGV entries for that specific day
-    const entries = await fetchJson(`${NS_URL}/api/v1/entries.json?find[dateString][$regex]=${dateQuery}&count=1000`);
+    const nextDay = new Date(new Date(dateQuery).getTime() + 24 * 60 * 60 * 1000).toISOString().split('T')[0];
+
+    console.log(`Fetching data for ${dateQuery} and ${nextDay}...`);
+    // Query both days to cover UTC rollover
+    const [entries1, entries2] = await Promise.all([
+        fetchJson(`${NS_URL}/api/v1/entries.json?find[dateString][$regex]=${dateQuery}&count=1000`),
+        fetchJson(`${NS_URL}/api/v1/entries.json?find[dateString][$regex]=${nextDay}&count=1000`)
+    ]);
+    const entries = [...entries1, ...entries2];
 
     const preBg = getBgAt(entries, dateStr);
     const { peakBg, peakTime } = getPeak2Hr(entries, dateStr);
@@ -136,6 +149,7 @@ async function main() {
 
     if (preBg && peakBg) {
       const delta = peakBg - preBg;
+      const mealDate = new Date(dateStr);
       const peakDate = new Date(peakTime);
       const timeToPeak = Math.round((peakDate - mealDate) / (1000 * 60));
 
@@ -151,9 +165,9 @@ async function main() {
 
       console.log(`Updating '${titleText}' (${dateStr}): Pre ${preBg}, Peak ${peakBg}, Delta ${delta}`);
       await patchJson(`https://api.notion.com/v1/pages/${item.id}`, updatePayload, notionHeaders);
-      await new Promise(r => setTimeout(r, 200));
+      await new Promise(r => setTimeout(r, 250));
     } else {
-        console.log(`Skipping '${titleText}' (${dateStr}): Pre ${preBg}, Peak ${peakBg}`);
+        console.log(`Could not find sensor data for '${titleText}' (${dateStr}): Pre ${preBg}, Peak ${peakBg}`);
     }
   }
   console.log("Full backfill complete.");
