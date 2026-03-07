@@ -47,12 +47,18 @@ async function main() {
     const entry = props.Entry.title[0] ? props.Entry.title[0].text.content : "Untitled";
     const carbs = props["Carbs (est)"] ? props["Carbs (est)"].number : "-";
     const cals = props["Calories (est)"] ? props["Calories (est)"].number : "-";
+    const photoUrl = props.Photo ? props.Photo.url : null;
     
-    content += `| ${date} | ${time} | ${user} | ${category} | ${mealType} | ${entry} | ${carbs} | ${cals} |\n`;
+    let entryText = entry;
+    if (photoUrl) {
+        entryText += ` [📷](${photoUrl})`;
+    }
+    
+    content += `| ${date} | ${time} | ${user} | ${category} | ${mealType} | ${entryText} | ${carbs} | ${cals} |\n`;
   });
   
   fs.writeFileSync('/Users/javier/.openclaw/workspace/health_log.md', content);
-  console.log("Health log rebuilt from Notion with Meal Type column.");
+  console.log("Health log rebuilt with 📷 links.");
 }
 
 main().catch(console.error);
