@@ -1,15 +1,12 @@
 # HEARTBEAT.md
 
-# If everything is healthy, respond with ONLY: HEARTBEAT_OK
-# This will suppress the notification.
-
-### Response Rule
-- If all checks pass and no manual intervention is needed, reply with EXACTLY: HEARTBEAT_OK
-- DO NOT provide a status report or use emojis unless a CRITICAL error is found.
-- The single word HEARTBEAT_OK is mandatory for silence.
+### MANDATORY RESPONSE RULE
+- If all checks below pass, reply with EXACTLY: HEARTBEAT_OK
+- NO summaries, NO emojis, NO bullet points allowed unless a CRITICAL failure is found.
 
 ### Checks
-- Gateway: verify `openclaw status` shows reachable.
-- Telegram: verify poller active.
-- Sync: run `git add . && git commit -m "chore: automated heartbeat sync" && git push origin main` if dirty, then verify `git status` clean.
-- **IGNORE "0 paired nodes"**. Do not check `nodes status`.
+1. Gateway: run `openclaw status` and verify "reachable".
+2. Telegram: run `openclaw status` and verify "ON".
+3. Auto-Sync: ALWAYS run `git add . && git commit -m "chore: heartbeat sync" && git push origin main`.
+4. Final Verification: run `git status` and verify "clean".
+5. IGNORE "0 paired nodes".
