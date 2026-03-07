@@ -4,7 +4,7 @@
 |------|------|------|----------|-----------|-------|-------|------|
 | 2026-03-07 | 09:59 | Maria Dennis | Medication | - | Lisinopril 10mg, Rosuvastatin 10mg (Routine) | null | null |
 | 2026-03-07 | 09:59 | Maria Dennis | Food | Breakfast | Breakfast: Scallion pancake with cheese, kiwi, and plain yogurt with berries/nuts [📷](https://iili.io/qzkC2ff.jpg) | 52 | 500 |
-| 2026-03-06 | 21:43 | Maria Dennis | Food | Snack | Snack: Mixed nuts and actual dry cheese balls [📷](https://iili.io/example-pending.jpg) | 2 | 180 |
+| 2026-03-06 | 21:43 | Maria Dennis | Food | Snack | Snack: Mixed nuts and actual dry cheese balls [📷](https://iili.io/qzbOAmJ.jpg) | 2 | 180 |
 | 2026-03-06 | 20:54 | Maria Dennis | Medication | - | 1500mg Metformin HCL, Vitamin D 1000 IU, 1 tablet Prunelax | null | null |
 | 2026-03-06 | 20:30 | Maria Dennis | Activity | - | 20 minutes tai chi/qigong | null | null |
 | 2026-03-06 | 20:25 | Maria Dennis | Food | Dinner | Dinner: Strawberries with whipped cream [📷](https://iili.io/qxOVscb.jpg) | 12 | 150 |
@@ -102,3 +102,4 @@
 | 2026-02-25 | 18:26 | Maria Dennis | Food | Dinner | Dinner salad: endive, avocado, citrus | 12 | 150 |
 | 2026-02-26 | 02:02 | Maria Dennis | Activity | - | 2 hour walk | null | null |
 | 2026-02-25 | 16:03 | Maria Dennis | Food | Snack | Snack: Half an apple | 12 | 50 |
+| 2026-03-07 | 11:27 | Maria Dennis | Activity | 1 hour gardening |
