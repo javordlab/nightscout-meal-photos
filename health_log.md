@@ -3,7 +3,7 @@
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
 |------|------|------|----------|-----------|-------|-------|------|
 | 2026-03-07 | 09:59 | Maria Dennis | Medication | - | Lisinopril 10mg, Rosuvastatin 10mg (Routine) | null | null |
-| 2026-03-07 | 09:59 | Maria Dennis | Food | Snack | Snack: Scallion pancake with cheese, kiwi, and plain yogurt with berries/nuts | 52 | 500 |
+| 2026-03-07 | 09:59 | Maria Dennis | Food | Breakfast | Breakfast: Scallion pancake with cheese, kiwi, and plain yogurt with berries/nuts | 52 | 500 |
 | 2026-03-06 | 21:43 | Maria Dennis | Food | Snack | Snack: Mixed nuts and actual dry cheese balls | 2 | 180 |
 | 2026-03-06 | 20:54 | Maria Dennis | Medication | - | 1500mg Metformin HCL, Vitamin D 1000 IU, 1 tablet Prunelax | null | null |
 | 2026-03-06 | 20:30 | Maria Dennis | Activity | - | 20 minutes tai chi/qigong | null | null |
@@ -31,7 +31,7 @@
 | 2026-03-04 | 18:23 | Maria Dennis | Food | Dinner | Dinner: Pasta with meat sauce, cheese, broccoli, plus strawberries and grapes | 66 | 615 |
 | 2026-03-04 | 14:46 | Maria Dennis | Food | Snack | Snack: 1 Japanese Cream Sand cookie | 12 | 80 |
 | 2026-03-04 | 12:45 | Maria Dennis | Activity | - | 40 minutes walk | null | null |
-| 2026-03-04 | 12:16 | Maria Dennis | Food | Snack | Snack: Lunch: Pork belly on bread, half an apple, and a small bowl of mixed nuts | 35 | 500 |
+| 2026-03-04 | 12:16 | Maria Dennis | Food | Lunch | Lunch: Pork belly on bread, half an apple, and a small bowl of mixed nuts | 35 | 500 |
 | 2026-03-04 | 10:45 | Maria Dennis | Medication | - | Lisnopril 10mg (Routine) | null | null |
 | 2026-03-04 | 08:47 | Maria Dennis | Food | Breakfast | Breakfast: Prosciutto, bread with brie cheese, and tea | 25 | 350 |
 | 2026-03-04 | 08:30 | Maria Dennis | Food | Breakfast | Breakfast: Sliced kiwi with goji berries | 18 | 110 |
@@ -69,7 +69,7 @@
 | 2026-02-28 | 18:53 | Maria Dennis | Food | Snack | Snack: Small slice of bread with brie cheese | 10 | 150 |
 | 2026-02-28 | 18:40 | Maria Dennis | Food | Dinner | Dinner: Ramen with pork belly, tofu, bok choy, carrots, and nori | 45 | 500 |
 | 2026-02-28 | 13:26 | Maria Dennis | Food | Snack | Snack: 1 Japanese Cream Sand cookie | 12 | 80 |
-| 2026-02-28 | 13:06 | Maria Dennis | Food | Snack | Snack: Prosciutto, hard cheese, and 6 green grapes | 7 | 180 |
+| 2026-02-28 | 13:06 | Maria Dennis | Food | Lunch | Lunch: Prosciutto, hard cheese, and 6 green grapes | 7 | 180 |
 | 2026-02-28 | 18:05 | Maria Dennis | Activity | - | 30 minute walk | null | null |
 | 2026-02-28 | 09:04 | Maria Dennis | Food | Breakfast | Breakfast: Scallion pancake, smoked salmon, scrambled eggs, avocado, orange, and 3 loquats | 45 | 550 |
 | 2026-02-28 | 17:04 | Maria Dennis | Medication | - | CORRECTION: Maria did NOT take Rosuvastatin today. Only Lisinopril 10mg. | null | null |
@@ -101,4 +101,4 @@
 | 2026-02-25 | 18:33 | Maria Dennis | Food | Snack | Snack: nori seaweed chips | 15 | 50 |
 | 2026-02-25 | 18:26 | Maria Dennis | Food | Dinner | Dinner salad: endive, avocado, citrus | 12 | 150 |
 | 2026-02-26 | 02:02 | Maria Dennis | Activity | - | 2 hour walk | null | null |
-| 2026-02-25 | 16:03 | Maria Dennis | Food | Dinner | Dinner: Half an apple | 12 | 50 |
+| 2026-02-25 | 16:03 | Maria Dennis | Food | Snack | Snack: Half an apple | 12 | 50 |
