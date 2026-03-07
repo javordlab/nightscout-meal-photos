@@ -5,10 +5,12 @@
 When Maria Dennis logs **food**, **medication**, **activity**, or **sleep** in the Telegram group, you MUST:
 
 1. **Local:** Log it to `/workspace/health_log.md` (local record).
-2. **Nightscout:** Push to Nightscout immediately (eventType: `Meal Bolus`, `Note`, or `Exercise`).
+2. **Nightscout:** Push to Nightscout immediately. **STRICT REQUIREMENT:** ALWAYS include `eventType`. Use `Meal Bolus` for food, `Note` for meds, or `Exercise` for activity. NEVER leave eventType as null or empty, as the photo gallery relies on `Meal Bolus`.
 3. **Notion:** Push to the Notion "Maria Health Log" database (ID: `31685ec7-0668-813e-8b9e-c5b4d5d70fa5`). **Verification:** After pushing, confirm the Notion page was created successfully.
 4. **Timezone Standard (CRITICAL):** ALWAYS use PST/PDT offsets (e.g., `-08:00`) for all Notion and Nightscout timestamps. Never use raw UTC strings as they cause date-shifts.
-5. **Reconciliation:** Once a day (during the 9:45 AM log review), audit the last 24h of `health_log.md` against Notion to catch and fix any missing entries.
+5. **Reconciliation & Sync Guard:** 
+   - Once a day (during the 9:45 AM log review), audit the last 24h of `health_log.md` against Nightscout and Notion.
+   - **NEW:** Every 4 hours, run a "Sync Guard" check: query Nightscout for recent entries and ensure all food items have `eventType: Meal Bolus`. If any are null, fix them immediately.
 6. **Pre-Query Verification (IMPORTANT):** Before asking about a missing meal, medication, or activity entry (during heartbeats or automated reminders), ALWAYS perform a thorough search of recent channel history (via `sessions_history`) and local logs (`health_log.md`) to confirm the information wasn't already provided but missed or not yet processed.
 7. **Impact Analysis (Notion Only):** For **Food** entries:
    - Identify the glucose level AT the time of the meal (**Pre-Meal BG**).
