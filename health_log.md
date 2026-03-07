@@ -9,6 +9,8 @@
 | 2026-03-05 | 11:00 | Maria Dennis | Activity | 2 hours gardening (Pre-lunch) |
 | 2026-03-05 | 20:22 | Maria Dennis | Food | Snack: 1 protein ball (~12g carbs) |
 | 2026-03-05 | 20:30 | Maria Dennis | Activity | 15 minutes tai chi |
+| 2026-03-06 | 20:54 | Maria Dennis | Medication | 1500mg Metformin HCL, Vitamin D 1000 IU, 1 tablet Prunelax |
+| 2026-03-06 | 20:30 | Maria Dennis | Activity | 20 minutes tai chi/qigong |
 | 2026-03-06 | 20:25 | Maria Dennis | Food | Dessert: Strawberries with whipped cream (~12g carbs) [📷](https://iili.io/qxOVscb.jpg) |
 | 2026-03-06 | 19:30 | Maria Dennis | Food | Dinner: Lentil and vegetable stew with half a sausage, pork, and bread (~42g carbs) [📷](https://iili.io/qxwmeft.jpg) |
 | 2026-03-06 | 18:42 | Maria Dennis | Food | Snack: Sliced prosciutto (~0g carbs) [📷](https://iili.io/qxjGK22.jpg) |
