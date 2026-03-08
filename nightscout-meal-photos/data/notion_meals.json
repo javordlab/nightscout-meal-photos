@@ -1,5 +1,16 @@
 [
   {
+    "id": "31d85ec7-0668-812c-9b4e-c408ad7b2c62",
+    "title": "Sliced prosciutto",
+    "type": "Food",
+    "date": "2026-03-08T17:40:00.000-07:00",
+    "photo": "https://iili.io/qTVzP0Q.jpg",
+    "carbs": 0,
+    "cals": 100,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "31d85ec7-0668-81d2-a997-e643e9884597",
     "title": "Mixed nuts, goji berries, and cheese balls",
     "type": "Food",
@@ -18,8 +29,8 @@
     "photo": "https://iili.io/qTodUR1.jpg",
     "carbs": 28,
     "cals": 350,
-    "delta": null,
-    "peak": null
+    "delta": 136,
+    "peak": 245
   },
   {
     "id": "31c85ec7-0668-81b9-b460-ccfacfcbe8aa",
@@ -40,8 +51,8 @@
     "photo": "https://iili.io/qTnqsCg.jpg",
     "carbs": 32,
     "cals": 340,
-    "delta": null,
-    "peak": null
+    "delta": 117,
+    "peak": 245
   },
   {
     "id": "31b85ec7-0668-813e-b2ee-e01f27dc8544",
