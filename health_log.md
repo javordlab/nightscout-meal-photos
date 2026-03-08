@@ -110,3 +110,4 @@
 | 2026-03-08 | 10:59 | Maria Dennis | Food | Dessert: Piece of chocolate cake with whipped cream (~28g carbs) [📷](https://iili.io/qTodUR1.jpg) |
 | 2026-03-08 | 13:40 | Maria Dennis | Activity | 90 minutes gardening |
 | 2026-03-08 | 16:40 | Maria Dennis | Food | Snack: Handful of mixed nuts (pecans, macadamias), goji berries, and cheese balls (~8g carbs) [📷](https://iili.io/qT0M0DN.jpg) |
+| 2026-03-08 | 17:40 | Maria Dennis | Food | Snack: Sliced prosciutto (~0g carbs) [📷](https://iili.io/qTVzP0Q.jpg) |
