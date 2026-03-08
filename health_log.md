@@ -109,3 +109,4 @@
 | 2026-03-07 | 16:29 | Maria Dennis | Food | Snack: 1 oatmeal chocolate cookie (~12g carbs) [📷](https://iili.io/qIKIAyx.jpg) |
 | 2026-03-07 | 18:51 | Maria Dennis | Food | Dinner: Carrot cheese soup with yogurt, shredded meat with brie on bread, and half a kiwi (~46g carbs) [📷](https://iili.io/qICp3oG.jpg) [📷](https://iili.io/qInbwP4.jpg) |
 | 2026-03-07 | 19:50 | Maria Dennis | Food | Dessert: Piece of chocolate cake with whipped cream (~28g carbs) [📷](https://iili.io/qIxzsxs.jpg) |
+| 2026-03-07 | 20:30 | Maria Dennis | Activity | 20 minutes walk and 10 minutes tai chi |
