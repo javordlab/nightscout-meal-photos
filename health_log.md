@@ -10,6 +10,9 @@
 | 2026-03-07 | 13:58 | Maria Dennis | Activity | - | 30 minutes housework | null | null |
 | 2026-03-07 | 13:15 | Maria Dennis | Food | - | Rice vermicelli with egg and greens [📷](https://iili.io/qzbUSxn.jpg) | 35 | 400 |
 | 2026-03-07 | 11:27 | Maria Dennis | Activity | - | 1 hour gardening | null | null |
+| 2026-03-08 | 09:59 | Maria Dennis | Food | Dessert | Brunch Dessert: Chocolate cake with whipped cream (~28g carbs, ~350 kcal) [📷](https://iili.io/qTodUR1.jpg) | 28 | 350 |
+| 2026-03-08 | 09:43 | Maria Dennis | Medication | - | Lisinopril 10mg (Routine) | null | null |
+| 2026-03-08 | 09:43 | Maria Dennis | Food | Breakfast | Breakfast: Fried egg, avocado on toast, and green grapes (~32g carbs, ~340 kcal) [📷](https://iili.io/qTnqsCg.jpg) | 32 | 340 |
 | 2026-03-07 | 09:59 | Maria Dennis | Medication | - | Lisinopril 10mg, Rosuvastatin 10mg (Routine) | null | null |
 | 2026-03-07 | 09:59 | Maria Dennis | Food | Breakfast | Breakfast: Scallion pancake with cheese, kiwi, and plain yogurt with berries/nuts [📷](https://iili.io/qzkC2ff.jpg) | 52 | 500 |
 | 2026-03-06 | 21:43 | Maria Dennis | Food | Snack | Snack: Mixed nuts and actual dry cheese balls [📷](https://iili.io/qzbOAmJ.jpg) | 2 | 180 |
