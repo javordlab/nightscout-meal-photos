@@ -10,6 +10,10 @@
 | 2026-03-07 | 13:58 | Maria Dennis | Activity | - | 30 minutes housework | null | null |
 | 2026-03-07 | 13:15 | Maria Dennis | Food | - | Rice vermicelli with egg and greens [📷](https://iili.io/qzbUSxn.jpg) | 35 | 400 |
 | 2026-03-07 | 11:27 | Maria Dennis | Activity | - | 1 hour gardening | null | null |
+| 2026-03-08 | 17:40 | Maria Dennis | Food | Snack | Snack: Sliced prosciutto (~0g carbs, ~100 kcal) [📷](https://iili.io/qTVzP0Q.jpg) | 0 | 100 |
+| 2026-03-08 | 16:45 | Maria Dennis | Activity | - | 30 minutes gardening (After nuts) | null | null |
+| 2026-03-08 | 16:40 | Maria Dennis | Food | Snack | Snack: Mixed nuts, goji berries, and cheese balls (~8g carbs, ~200 kcal) [📷](https://iili.io/qT0M0DN.jpg) | 8 | 200 |
+| 2026-03-08 | 13:40 | Maria Dennis | Activity | - | 90 minutes gardening | null | null |
 | 2026-03-08 | 09:59 | Maria Dennis | Food | Dessert | Brunch Dessert: Chocolate cake with whipped cream (~28g carbs, ~350 kcal) [📷](https://iili.io/qTodUR1.jpg) | 28 | 350 |
 | 2026-03-08 | 09:43 | Maria Dennis | Medication | - | Lisinopril 10mg (Routine) | null | null |
 | 2026-03-08 | 09:43 | Maria Dennis | Food | Breakfast | Breakfast: Fried egg, avocado on toast, and green grapes (~32g carbs, ~340 kcal) [📷](https://iili.io/qTnqsCg.jpg) | 32 | 340 |
