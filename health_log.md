@@ -105,3 +105,5 @@
 | 2026-03-07 | 11:27 | Maria Dennis | Activity | 1 hour gardening |
 | 2026-03-07 | 13:15 | Maria Dennis | Food | Lunch: Wheat ramen noodles with egg and leafy greens, 1 slice prosciutto, and half an apple (~47g carbs) [📷](https://iili.io/qzbUSxn.jpg) |
 | 2026-03-07 | 13:58 | Maria Dennis | Activity | 30 minutes housework |
+| 2026-03-07 | 16:30 | Maria Dennis | Food | Snack: Small glass of milk (~12g carbs) [📷](https://iili.io/qIKuCge.jpg) |
+| 2026-03-07 | 16:29 | Maria Dennis | Food | Snack: 1 oatmeal chocolate cookie (~12g carbs) [📷](https://iili.io/qIKIAyx.jpg) |
