@@ -1,12 +1,23 @@
 [
   {
+    "id": "31d85ec7-0668-81d5-ba94-c010333cc691",
+    "title": "Chocolate cake with whipped cream",
+    "type": "Food",
+    "date": "2026-03-07T19:50:00.000-08:00",
+    "photo": "https://iili.io/qIxzsxs.jpg",
+    "carbs": 28,
+    "cals": 350,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "31d85ec7-0668-81c3-8d55-d847d122e8aa",
-    "title": "Carrot cheese soup and shredded meat with brie on bread",
+    "title": "Carrot cheese soup, shredded meat with brie on bread, and half a kiwi",
     "type": "Food",
     "date": "2026-03-07T18:51:00.000-08:00",
     "photo": "https://iili.io/qICp3oG.jpg",
-    "carbs": 40,
-    "cals": 550,
+    "carbs": 46,
+    "cals": 580,
     "delta": null,
     "peak": null
   },
@@ -18,8 +29,8 @@
     "photo": "https://iili.io/qIKuCge.jpg",
     "carbs": 12,
     "cals": 100,
-    "delta": null,
-    "peak": null
+    "delta": 31,
+    "peak": 165
   },
   {
     "id": "31d85ec7-0668-81c3-b118-f9b105dfa06d",
@@ -29,8 +40,8 @@
     "photo": "https://iili.io/qIKIAyx.jpg",
     "carbs": 12,
     "cals": 150,
-    "delta": null,
-    "peak": null
+    "delta": 31,
+    "peak": 165
   },
   {
     "id": "31c85ec7-0668-8125-a1f5-d74a5338405d",
