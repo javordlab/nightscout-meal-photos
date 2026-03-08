@@ -2,6 +2,14 @@
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
 |------|------|------|----------|-----------|-------|-------|------|
+| 2026-03-07 | 20:30 | Maria Dennis | Activity | - | 20 minutes walk and 10 minutes tai chi | null | null |
+| 2026-03-07 | 19:50 | Maria Dennis | Food | - | Chocolate cake with whipped cream [📷](https://iili.io/qIxzsxs.jpg) | 28 | 350 |
+| 2026-03-07 | 18:51 | Maria Dennis | Food | - | Carrot cheese soup, shredded meat with brie on bread, and half a kiwi [📷](https://iili.io/qICp3oG.jpg) | 46 | 580 |
+| 2026-03-07 | 16:30 | Maria Dennis | Food | - | Small glass of milk [📷](https://iili.io/qIKuCge.jpg) | 12 | 100 |
+| 2026-03-07 | 16:29 | Maria Dennis | Food | - | Oatmeal chocolate cookie [📷](https://iili.io/qIKIAyx.jpg) | 12 | 150 |
+| 2026-03-07 | 13:58 | Maria Dennis | Activity | - | 30 minutes housework | null | null |
+| 2026-03-07 | 13:15 | Maria Dennis | Food | - | Rice vermicelli with egg and greens [📷](https://iili.io/qzbUSxn.jpg) | 35 | 400 |
+| 2026-03-07 | 11:27 | Maria Dennis | Activity | - | 1 hour gardening | null | null |
 | 2026-03-07 | 09:59 | Maria Dennis | Medication | - | Lisinopril 10mg, Rosuvastatin 10mg (Routine) | null | null |
 | 2026-03-07 | 09:59 | Maria Dennis | Food | Breakfast | Breakfast: Scallion pancake with cheese, kiwi, and plain yogurt with berries/nuts [📷](https://iili.io/qzkC2ff.jpg) | 52 | 500 |
 | 2026-03-06 | 21:43 | Maria Dennis | Food | Snack | Snack: Mixed nuts and actual dry cheese balls [📷](https://iili.io/qzbOAmJ.jpg) | 2 | 180 |
@@ -42,7 +50,6 @@
 | 2026-03-03 | 20:30 | Maria Dennis | Activity | - | 29 minutes tai chi | null | null |
 | 2026-03-03 | 19:41 | Maria Dennis | Food | Snack | Snack: Half an apple [📷](https://iili.io/qCdmXet.jpg) | 12 | 50 |
 | 2026-03-03 | 18:57 | Maria Dennis | Food | Dinner | Dinner: Meatballs, fried potatoes, sourdough bread with butter, and a side of greens with grapes [📷](https://iili.io/qCJDbs4.jpg) | 55 | 550 |
-| 2026-03-03 | 16:34 | Maria Dennis | Food | Snack | Snack: Yogurt with strawberries and goji berries [📷](https://iili.io/qC9KEyN.jpg) | 25 | 200 |
 | 2026-03-03 | 13:04 | Maria Dennis | Food | Lunch | Lunch: Carrot cheese soup, prosciutto, and bread [📷](https://iili.io/qBDE9pe.jpg) | 45 | 450 |
 | 2026-03-03 | 09:56 | Maria Dennis | Food | Breakfast | Breakfast: Toasted bread with cream cheese, smoked salmon, and a kiwi [📷](https://iili.io/qBPwuwJ.jpg) | 32 | 350 |
 | 2026-03-03 | 09:56 | Maria Dennis | Medication | - | Lisinopril 10mg, Rosuvastatin 10mg (Routine) | null | null |
@@ -95,18 +102,3 @@
 | 2026-02-26 | 06:04 | Maria Dennis | Food | Breakfast | Breakfast: Small glass of milk | 8 | 100 |
 | 2026-02-26 | 06:03 | Maria Dennis | Medication | - | 1 ibuprofen | null | null |
 | 2026-02-26 | 06:02 | Maria Dennis | Medication | - | 1 prunlax | null | null |
-| 2026-02-25 | 19:38 | Maria Dennis | Food | Snack | Snack: 6 green grapes [📷](https://files.catbox.moe/pdbpxz.jpg) | 5 | 40 |
-| 2026-02-25 | 18:44 | Maria Dennis | Food | Dinner | Dinner: White rice with mole/curry protein | 30 | 450 |
-| 2026-02-25 | 18:38 | Maria Dennis | Food | Dinner | Dinner: Corn tostada with tuna and avocado | 15 | 250 |
-| 2026-02-25 | 18:33 | Maria Dennis | Food | Snack | Snack: nori seaweed chips | 15 | 50 |
-| 2026-02-25 | 18:26 | Maria Dennis | Food | Dinner | Dinner salad: endive, avocado, citrus | 12 | 150 |
-| 2026-02-26 | 02:02 | Maria Dennis | Activity | - | 2 hour walk | null | null |
-| 2026-02-25 | 16:03 | Maria Dennis | Food | Snack | Snack: Half an apple | 12 | 50 |
-| 2026-03-07 | 11:27 | Maria Dennis | Activity | 1 hour gardening |
-| 2026-03-07 | 13:15 | Maria Dennis | Food | Lunch: Wheat ramen noodles with egg and leafy greens, 1 slice prosciutto, and half an apple (~47g carbs) [📷](https://iili.io/qzbUSxn.jpg) |
-| 2026-03-07 | 13:58 | Maria Dennis | Activity | 30 minutes housework |
-| 2026-03-07 | 16:30 | Maria Dennis | Food | Snack: Small glass of milk (~12g carbs) [📷](https://iili.io/qIKuCge.jpg) |
-| 2026-03-07 | 16:29 | Maria Dennis | Food | Snack: 1 oatmeal chocolate cookie (~12g carbs) [📷](https://iili.io/qIKIAyx.jpg) |
-| 2026-03-07 | 18:51 | Maria Dennis | Food | Dinner: Carrot cheese soup with yogurt, shredded meat with brie on bread, and half a kiwi (~46g carbs) [📷](https://iili.io/qICp3oG.jpg) [📷](https://iili.io/qInbwP4.jpg) |
-| 2026-03-07 | 19:50 | Maria Dennis | Food | Dessert: Piece of chocolate cake with whipped cream (~28g carbs) [📷](https://iili.io/qIxzsxs.jpg) |
-| 2026-03-07 | 20:30 | Maria Dennis | Activity | 20 minutes walk and 10 minutes tai chi |

@@ -3,7 +3,8 @@ const fs = require('fs');
 const log = fs.readFileSync('/Users/javier/.openclaw/workspace/health_log.md', 'utf8');
 const lines = log.split('\n');
 
-const targetDate = "2026-03-06";
+// Current date is March 8th, so yesterday is March 7th
+const targetDate = "2026-03-07";
 
 let totalCarbs = 0;
 let totalCals = 0;
