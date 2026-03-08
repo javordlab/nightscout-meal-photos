@@ -107,3 +107,4 @@
 | 2026-03-07 | 13:58 | Maria Dennis | Activity | 30 minutes housework |
 | 2026-03-07 | 16:30 | Maria Dennis | Food | Snack: Small glass of milk (~12g carbs) [📷](https://iili.io/qIKuCge.jpg) |
 | 2026-03-07 | 16:29 | Maria Dennis | Food | Snack: 1 oatmeal chocolate cookie (~12g carbs) [📷](https://iili.io/qIKIAyx.jpg) |
+| 2026-03-07 | 18:51 | Maria Dennis | Food | Dinner: Carrot cheese soup with yogurt, and shredded meat with brie on bread (~40g carbs) [📷](https://iili.io/qICp3oG.jpg) |
