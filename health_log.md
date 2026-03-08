@@ -102,3 +102,6 @@
 | 2026-02-26 | 06:04 | Maria Dennis | Food | Breakfast | Breakfast: Small glass of milk | 8 | 100 |
 | 2026-02-26 | 06:03 | Maria Dennis | Medication | - | 1 ibuprofen | null | null |
 | 2026-02-26 | 06:02 | Maria Dennis | Medication | - | 1 prunlax | null | null |
+| 2026-03-08 | 10:43 | Maria Dennis | Food | Breakfast: Fried egg, avocado on toast, and 8 green grapes (~32g carbs) [📷](https://iili.io/qTnqsCg.jpg) |
+| 2026-03-08 | 10:43 | Maria Dennis | Medication | Lisinopril 10mg (Routine) |
+| 2026-03-08 | 10:59 | Maria Dennis | Food | Dessert: Piece of chocolate cake with whipped cream (~28g carbs) [📷](https://iili.io/qTodUR1.jpg) |

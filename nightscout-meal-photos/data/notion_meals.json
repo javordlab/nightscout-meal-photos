@@ -1,5 +1,27 @@
 [
   {
+    "id": "31d85ec7-0668-810c-ba90-e9fdd3740f00",
+    "title": "Brunch Dessert: Chocolate cake with whipped cream",
+    "type": "Food",
+    "date": "2026-03-08T09:59:00.000-08:00",
+    "photo": "https://iili.io/qTodUR1.jpg",
+    "carbs": 28,
+    "cals": 350,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "31d85ec7-0668-81d0-9545-f24e20e54d36",
+    "title": "Fried egg, avocado on toast, and grapes",
+    "type": "Food",
+    "date": "2026-03-08T09:43:00.000-08:00",
+    "photo": "https://iili.io/qTnqsCg.jpg",
+    "carbs": 32,
+    "cals": 340,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "31d85ec7-0668-81d5-ba94-c010333cc691",
     "title": "Chocolate cake with whipped cream",
     "type": "Food",
