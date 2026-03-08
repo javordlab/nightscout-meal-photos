@@ -1,5 +1,16 @@
 [
   {
+    "id": "31d85ec7-0668-81d2-a997-e643e9884597",
+    "title": "Mixed nuts, goji berries, and cheese balls",
+    "type": "Food",
+    "date": "2026-03-08T16:40:00.000-07:00",
+    "photo": "https://iili.io/qT0M0DN.jpg",
+    "carbs": 8,
+    "cals": 200,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "31d85ec7-0668-810c-ba90-e9fdd3740f00",
     "title": "Brunch Dessert: Chocolate cake with whipped cream",
     "type": "Food",
