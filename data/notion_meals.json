@@ -1,5 +1,27 @@
 [
   {
+    "id": "31d85ec7-0668-8104-a7d4-d3fce014c186",
+    "title": "Small glass of milk",
+    "type": "Food",
+    "date": "2026-03-07T16:30:00.000-08:00",
+    "photo": "https://iili.io/qIKuCge.jpg",
+    "carbs": 12,
+    "cals": 100,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "31d85ec7-0668-81c3-b118-f9b105dfa06d",
+    "title": "Oatmeal chocolate cookie",
+    "type": "Food",
+    "date": "2026-03-07T16:29:00.000-08:00",
+    "photo": "https://iili.io/qIKIAyx.jpg",
+    "carbs": 12,
+    "cals": 150,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "31c85ec7-0668-8125-a1f5-d74a5338405d",
     "title": "Rice vermicelli with egg and greens",
     "type": "Food",
@@ -7,8 +29,8 @@
     "photo": "https://iili.io/qzbUSxn.jpg",
     "carbs": 35,
     "cals": 400,
-    "delta": null,
-    "peak": null
+    "delta": 14,
+    "peak": 161
   },
   {
     "id": "31c85ec7-0668-81b9-b460-ccfacfcbe8aa",
