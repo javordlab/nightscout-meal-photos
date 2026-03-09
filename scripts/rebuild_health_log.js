@@ -13,7 +13,7 @@ async function postJson(url, payload) {
         'Authorization': `Bearer ${NOTION_KEY}`,
         'Notion-Version': '2022-06-28',
         'Content-Type': 'application/json',
-        'Content-Length': data.length
+        'Content-Length': Buffer.byteLength(data)
       }
     };
     const req = https.request(url, options, (res) => {
@@ -28,22 +28,48 @@ async function postJson(url, payload) {
 }
 
 async function main() {
-  const data = await postJson(`https://api.notion.com/v1/databases/${DATABASE_ID}/query`, {
-    sorts: [{ property: "Date", direction: "descending" }]
-  });
+  let allResults = [];
+  let hasMore = true;
+  let nextCursor = null;
+
+  console.log("Fetching all records from Notion...");
+
+  while (hasMore) {
+    const payload = {
+      sorts: [{ property: "Date", direction: "descending" }]
+    };
+    if (nextCursor) payload.start_cursor = nextCursor;
+
+    const data = await postJson(`https://api.notion.com/v1/databases/${DATABASE_ID}/query`, payload);
+    
+    if (!data.results) {
+        console.error("Error fetching data:", data);
+        break;
+    }
+
+    allResults = allResults.concat(data.results);
+    hasMore = data.has_more;
+    nextCursor = data.next_cursor;
+    console.log(`Fetched ${allResults.length} records so far...`);
+  }
   
-  let content = "# Health Log\n\n| Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |\n|------|------|------|----------|-----------|-------|-------|------|\n";
+  let content = "# Health Log\n\n";
+  content += "| Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |\n";
+  content += "| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n";
   
-  data.results.forEach(item => {
+  const seen = new Set();
+  
+  allResults.forEach(item => {
     const props = item.properties;
     if (!props.Date.date) return;
+    
     const dateStr = props.Date.date.start;
-    const date = dateStr.split('T')[0];
-    const timePart = dateStr.split('T')[1] || "00:00";
-    const time = timePart.substring(0, 5);
+    const datePart = dateStr.split("T")[0];
+    const timePart = dateStr.split("T")[1].substring(0, 5);
+    
     const user = props.User.select ? props.User.select.name : "Maria Dennis";
     const category = props.Category.select ? props.Category.select.name : "Food";
-    const mealType = props["Meal Type"].select ? props["Meal Type"].select.name : "-";
+    const mealType = props["Meal Type"] && props["Meal Type"].select ? props["Meal Type"].select.name : "-";
     const entry = props.Entry.title[0] ? props.Entry.title[0].text.content : "Untitled";
     const carbs = props["Carbs (est)"] ? props["Carbs (est)"].number : "-";
     const cals = props["Calories (est)"] ? props["Calories (est)"].number : "-";
@@ -54,11 +80,17 @@ async function main() {
         entryText += ` [📷](${photoUrl})`;
     }
     
-    content += `| ${date} | ${time} | ${user} | ${category} | ${mealType} | ${entryText} | ${carbs} | ${cals} |\n`;
+    const line = `| ${datePart} | ${timePart} | ${user} | ${category} | ${mealType} | ${entryText} | ${carbs} | ${cals} |`;
+    
+    const key = `${datePart}|${timePart}|${entry}`;
+    if (!seen.has(key)) {
+        seen.add(key);
+        content += line + "\n";
+    }
   });
   
-  fs.writeFileSync('/Users/javier/.openclaw/workspace/health_log.md', content);
-  console.log("Health log rebuilt with 📷 links.");
+  fs.writeFileSync("/Users/javier/.openclaw/workspace/health_log.md", content);
+  console.log(`Health log rebuilt and cleaned. Total entries: ${allResults.length}`);
 }
 
 main().catch(console.error);

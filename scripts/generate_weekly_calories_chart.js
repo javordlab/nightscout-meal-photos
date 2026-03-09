@@ -1,81 +1,46 @@
-const https = require('https');
 const { spawn } = require('child_process');
 const fs = require('fs');
 
-const NOTION_KEY = fs.readFileSync('/Users/javier/.config/notion/api_key', 'utf8').trim();
-const DATABASE_ID = "31685ec7-0668-813e-8b9e-c5b4d5d70fa5";
+const LOG_FILE = "/Users/javier/.openclaw/workspace/health_log.md";
 const CHART_SCRIPT = "/Users/javier/.openclaw/workspace/skills/chart-image/scripts/chart.mjs";
 const OUTPUT_PATH = "/Users/javier/.openclaw/workspace/tmp/weekly_calories_chart.png";
 
-async function postJson(url, payload) {
-  return new Promise((resolve, reject) => {
-    const data = JSON.stringify(payload);
-    const options = {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${NOTION_KEY}`,
-        'Notion-Version': '2022-06-28',
-        'Content-Type': 'application/json',
-        'Content-Length': data.length
-      }
-    };
-    const req = https.request(url, options, (res) => {
-      let responseBody = '';
-      res.on('data', (chunk) => responseBody += chunk);
-      res.on('end', () => resolve(JSON.parse(responseBody)));
-    });
-    req.on('error', reject);
-    req.write(data);
-    req.end();
-  });
-}
-
-async function main() {
-  const thirtyDaysAgo = new Date();
-  thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
-  const dateStr = thirtyDaysAgo.toISOString().split('T')[0];
-
-  const payload = {
-    filter: {
-      and: [
-        { property: "Category", select: { equals: "Food" } },
-        { property: "Date", date: { on_or_after: dateStr } }
-      ]
-    },
-    sorts: [{ property: "Date", direction: "ascending" }]
-  };
-
-  const data = await postJson(`https://api.notion.com/v1/databases/${DATABASE_ID}/query`, payload);
+function main() {
+  const content = fs.readFileSync(LOG_FILE, 'utf8');
+  const lines = content.split('\n');
   
   const dailyTotals = {};
   const monthlyTotals = {};
 
-  data.results.forEach(item => {
-    const dateProp = item.properties.Date.date;
-    if (!dateProp) return;
-    const date = dateProp.start.split('T')[0];
-    const cal = item.properties["Calories (est)"].number || 0;
-    
-    if (!monthlyTotals[date]) monthlyTotals[date] = 0;
-    monthlyTotals[date] += cal;
+  lines.forEach(line => {
+    if (line.includes('| Food |')) {
+      const parts = line.split('|').map(p => p.trim());
+      const date = parts[1];
+      const carbs = parseInt(parts[7]);
+      const cals = parseInt(parts[8]);
+      
+      if (!isNaN(cals)) {
+        if (!monthlyTotals[date]) monthlyTotals[date] = 0;
+        monthlyTotals[date] += cals;
+      }
+    }
   });
 
   // Last 7 FULL days for the chart (excluding today)
+  const chartData = [];
   for (let i = 1; i <= 7; i++) {
     const d = new Date();
     d.setDate(d.getDate() - i);
     const ds = d.toISOString().split('T')[0];
-    dailyTotals[ds] = monthlyTotals[ds] || 0;
+    const total = monthlyTotals[ds] || 0;
+    chartData.push({
+      x: ds.split('-').slice(1).join('/'),
+      y: total
+    });
   }
+  chartData.reverse();
 
-  const chartData = Object.keys(dailyTotals)
-    .sort()
-    .map(date => ({
-      x: date.split('-').slice(1).join('/'),
-      y: dailyTotals[date]
-    }));
-
-  // Calculate 30-day average (excluding 0 days for better representation since logging is new)
+  // Calculate 30-day average (excluding 0 days)
   const nonZeroDays = Object.values(monthlyTotals).filter(v => v > 0);
   const avgCal = nonZeroDays.length > 0 ? Math.round(nonZeroDays.reduce((a, b) => a + b) / nonZeroDays.length) : 0;
 
@@ -85,10 +50,10 @@ async function main() {
   const args = [
     CHART_SCRIPT,
     '--type', 'bar',
-    '--title', "Weekly Calorie Intake",
+    '--title', "Weekly Calorie Intake (Audited)",
     '--y-title', 'Calories (kcal)',
-    '--width', '800',
-    '--height', '400',
+    '--width', 800,
+    '--height', 400,
     '--output', OUTPUT_PATH,
     '--bar-labels',
     '--color', '#3498db',
@@ -102,9 +67,9 @@ async function main() {
   child.stdin.end();
 
   child.on('close', (code) => {
-    if (code === 0) console.log(`Weekly chart generated with average line: ${avgCal} kcal`);
+    if (code === 0) console.log(`Weekly audited chart generated at: ${OUTPUT_PATH}`);
     else process.exit(code);
   });
 }
 
-main().catch(console.error);
+main();

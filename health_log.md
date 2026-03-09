@@ -1,7 +1,18 @@
 # Health Log
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
-|------|------|------|----------|-----------|-------|-------|------|
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-03-08 | 21:58 | Maria Dennis | Food | - | Small handful of sweet potato chips | 10 | 100 |
+| 2026-03-08 | 19:51 | Maria Dennis | Activity | - | 30 minutes Qigong/Tai Chi | null | null |
+| 2026-03-08 | 19:39 | Maria Dennis | Food | - | Chocolate cake with whipped cream and grapes [📷](https://iili.io/qTU7gYx.jpg) | 18 | 200 |
+| 2026-03-08 | 19:15 | Maria Dennis | Food | - | Lentil stew with half a sausage, potatoes, and sauteed greens [📷](https://iili.io/qTSD9PR.jpg) | 58 | 600 |
+| 2026-03-08 | 17:40 | Maria Dennis | Food | - | Sliced prosciutto [📷](https://iili.io/qTVzP0Q.jpg) | 0 | 100 |
+| 2026-03-08 | 16:45 | Maria Dennis | Activity | - | 30 minutes gardening (After nuts) | null | null |
+| 2026-03-08 | 16:40 | Maria Dennis | Food | - | Mixed nuts, goji berries, and cheese balls [📷](https://iili.io/qT0M0DN.jpg) | 8 | 200 |
+| 2026-03-08 | 13:40 | Maria Dennis | Activity | - | 90 minutes gardening | null | null |
+| 2026-03-08 | 10:43 | Maria Dennis | Medication | - | Lisinopril 10mg (Routine) | null | null |
+| 2026-03-08 | 09:59 | Maria Dennis | Food | Snack | Brunch Dessert: Chocolate cake with whipped cream | 28 | 350 |
+| 2026-03-08 | 09:43 | Maria Dennis | Food | Breakfast | Breakfast: Fried egg, avocado on toast, and 8 green grapes | 32 | 340 |
 | 2026-03-07 | 20:30 | Maria Dennis | Activity | - | 20 minutes walk and 10 minutes tai chi | null | null |
 | 2026-03-07 | 19:50 | Maria Dennis | Food | - | Chocolate cake with whipped cream [📷](https://iili.io/qIxzsxs.jpg) | 28 | 350 |
 | 2026-03-07 | 18:51 | Maria Dennis | Food | - | Carrot cheese soup, shredded meat with brie on bread, and half a kiwi [📷](https://iili.io/qICp3oG.jpg) | 46 | 580 |
@@ -10,16 +21,6 @@
 | 2026-03-07 | 13:58 | Maria Dennis | Activity | - | 30 minutes housework | null | null |
 | 2026-03-07 | 13:15 | Maria Dennis | Food | - | Rice vermicelli with egg and greens [📷](https://iili.io/qzbUSxn.jpg) | 35 | 400 |
 | 2026-03-07 | 11:27 | Maria Dennis | Activity | - | 1 hour gardening | null | null |
-| 2026-03-08 | 19:51 | Maria Dennis | Activity | - | 30 minutes Qigong/Tai Chi | null | null |
-| 2026-03-08 | 19:39 | Maria Dennis | Food | Dessert | Late Dessert: Piece of chocolate cake with whipped cream and 3 green grapes (~18g carbs, ~200 kcal) [📷](https://iili.io/qTU7gYx.jpg) | 18 | 200 |
-| 2026-03-08 | 18:39 | Maria Dennis | Food | Dinner | Dinner: Lentil stew with half a sausage, potatoes, and sauteed greens (~58g carbs, ~600 kcal) [📷](https://iili.io/qTSD9PR.jpg) [📷](https://iili.io/qTSDkfR.jpg) [📷](https://iili.io/qTSpwxe.jpg) | 58 | 600 |
-| 2026-03-08 | 17:40 | Maria Dennis | Food | Snack | Snack: Sliced prosciutto (~0g carbs, ~100 kcal) [📷](https://iili.io/qTVzP0Q.jpg) | 0 | 100 |
-| 2026-03-08 | 16:45 | Maria Dennis | Activity | - | 30 minutes gardening (After nuts) | null | null |
-| 2026-03-08 | 16:40 | Maria Dennis | Food | Snack | Snack: Mixed nuts, goji berries, and cheese balls (~8g carbs, ~200 kcal) [📷](https://iili.io/qT0M0DN.jpg) | 8 | 200 |
-| 2026-03-08 | 13:40 | Maria Dennis | Activity | - | 90 minutes gardening | null | null |
-| 2026-03-08 | 09:59 | Maria Dennis | Food | Dessert | Brunch Dessert: Chocolate cake with whipped cream (~28g carbs, ~350 kcal) [📷](https://iili.io/qTodUR1.jpg) | 28 | 350 |
-| 2026-03-08 | 09:43 | Maria Dennis | Medication | - | Lisinopril 10mg (Routine) | null | null |
-| 2026-03-08 | 09:43 | Maria Dennis | Food | Breakfast | Breakfast: Fried egg, avocado on toast, and green grapes (~32g carbs, ~340 kcal) [📷](https://iili.io/qTnqsCg.jpg) | 32 | 340 |
 | 2026-03-07 | 09:59 | Maria Dennis | Medication | - | Lisinopril 10mg, Rosuvastatin 10mg (Routine) | null | null |
 | 2026-03-07 | 09:59 | Maria Dennis | Food | Breakfast | Breakfast: Scallion pancake with cheese, kiwi, and plain yogurt with berries/nuts [📷](https://iili.io/qzkC2ff.jpg) | 52 | 500 |
 | 2026-03-06 | 21:43 | Maria Dennis | Food | Snack | Snack: Mixed nuts and actual dry cheese balls [📷](https://iili.io/qzbOAmJ.jpg) | 2 | 180 |
@@ -32,7 +33,6 @@
 | 2026-03-06 | 14:05 | Maria Dennis | Food | Lunch | Lunch: Fried rice, pastrami, energy ball, and 8 green grapes [📷](https://iili.io/qxY5I49.jpg) | 40 | 500 |
 | 2026-03-06 | 13:58 | Maria Dennis | Activity | - | 90 minutes gardening | null | null |
 | 2026-03-06 | 12:05 | Maria Dennis | Activity | - | 30 minutes heavy gardening | null | null |
-| 2026-03-06 | 10:30 | Maria Dennis | Medication | - | Lisinopril 10mg (Routine) | null | null |
 | 2026-03-06 | 10:30 | Maria Dennis | Food | Breakfast | Breakfast: Prosciutto and avocado on ciabatta, plus an orange [📷](https://iili.io/qxFCkgI.jpg) | 55 | 510 |
 | 2026-03-05 | 20:30 | Maria Dennis | Activity | - | 15 minutes tai chi | null | null |
 | 2026-03-05 | 20:22 | Maria Dennis | Food | Snack | Snack: 1 protein ball | 12 | 100 |
@@ -112,14 +112,49 @@
 | 2026-02-26 | 06:04 | Maria Dennis | Food | Breakfast | Breakfast: Small glass of milk | 8 | 100 |
 | 2026-02-26 | 06:03 | Maria Dennis | Medication | - | 1 ibuprofen | null | null |
 | 2026-02-26 | 06:02 | Maria Dennis | Medication | - | 1 prunlax | null | null |
-| 2026-03-08 | 10:43 | Maria Dennis | Food | Breakfast: Fried egg, avocado on toast, and 8 green grapes (~32g carbs) [📷](https://iili.io/qTnqsCg.jpg) |
-| 2026-03-08 | 10:43 | Maria Dennis | Medication | Lisinopril 10mg (Routine) |
-| 2026-03-08 | 10:59 | Maria Dennis | Food | Dessert: Piece of chocolate cake with whipped cream (~28g carbs) [📷](https://iili.io/qTodUR1.jpg) |
-| 2026-03-08 | 13:40 | Maria Dennis | Activity | 90 minutes gardening |
-| 2026-03-08 | 16:40 | Maria Dennis | Food | Snack: Handful of mixed nuts (pecans, macadamias), goji berries, and cheese balls (~8g carbs) [📷](https://iili.io/qT0M0DN.jpg) |
-| 2026-03-08 | 17:40 | Maria Dennis | Food | Snack: Sliced prosciutto (~0g carbs) [📷](https://iili.io/qTVzP0Q.jpg) |
-| 2026-03-08 | 16:45 | Maria Dennis | Activity | 30 minutes gardening (After nuts) |
-| 2026-03-08 | 21:58 | Maria Dennis | Food | Snack: Small handful of sweet potato chips (~10g carbs) |
-| 2026-03-08 | 19:15 | Maria Dennis | Food | Dinner: Lentil stew with half a sausage, potatoes, and sauteed greens (~58g carbs) [📷](https://iili.io/qTSD9PR.jpg) [📷](https://iili.io/qTSDkfR.jpg) [📷](https://iili.io/qTSpwxe.jpg) |
-| 2026-03-08 | 19:39 | Maria Dennis | Food | Dessert: Piece of chocolate cake with whipped cream and 3 green grapes (~18g carbs) [📷](https://iili.io/qTU7gYx.jpg) |
-| 2026-03-08 | 19:51 | Maria Dennis | Activity | 30 minutes Qigong/Tai Chi |
+| 2026-02-25 | 19:38 | Maria Dennis | Food | Snack | Snack: 6 green grapes [📷](https://files.catbox.moe/pdbpxz.jpg) | 5 | 40 |
+| 2026-02-25 | 18:44 | Maria Dennis | Food | Dinner | Dinner: White rice with mole/curry protein | 30 | 450 |
+| 2026-02-25 | 18:38 | Maria Dennis | Food | Dinner | Dinner: Corn tostada with tuna and avocado | 15 | 250 |
+| 2026-02-25 | 18:33 | Maria Dennis | Food | Snack | Snack: nori seaweed chips | 15 | 50 |
+| 2026-02-25 | 18:26 | Maria Dennis | Food | Dinner | Dinner salad: endive, avocado, citrus | 12 | 150 |
+| 2026-02-26 | 02:02 | Maria Dennis | Activity | - | 2 hour walk | null | null |
+| 2026-02-25 | 16:03 | Maria Dennis | Food | Snack | Snack: Half an apple | 12 | 50 |
+| 2026-02-26 | 00:01 | Maria Dennis | Activity | - | 1 hour heavy housework | null | null |
+| 2026-02-25 | 12:09 | Maria Dennis | Food | Lunch | Lunch: Octopus with potatoes [📷](https://files.catbox.moe/uf8gwq.jpg) | 29 | 400 |
+| 2026-02-25 | 09:27 | Maria Dennis | Food | Breakfast | Breakfast: Smoked salmon on 1 bao bun [📷](https://files.catbox.moe/dzucg3.jpg) | 22 | 250 |
+| 2026-02-25 | 05:34 | Maria Dennis | Food | Snack | Snack: Glass of milk and cookie | 17 | 200 |
+| 2026-02-25 | 03:28 | Maria Dennis | Food | Snack | Snack: Late snack: Small piece of dark chocolate [📷](https://files.catbox.moe/xw7qza.jpg) | 3 | 50 |
+| 2026-02-25 | 02:48 | Maria Dennis | Food | Snack | Snack: Dinner: Green vegetable soup, octopus with potatoes [📷](https://files.catbox.moe/2059f6.jpg) | 35 | 450 |
+| 2026-02-25 | 10:00 | Maria Dennis | Medication | - | 500 mg Tylenol | null | null |
+| 2026-02-25 | 08:33 | Maria Dennis | Sleep | - | Sleep Report: 5.31 hours total. Breakdown received: 4.66, 1.4. | null | null |
+| 2026-02-25 | 05:36 | Maria Dennis | Medication | - | 1500mg Metformin HCL | null | null |
+| 2026-02-24 | 21:34 | Maria Dennis | Food | Snack | Snack: Glass of milk and Japanese Cream Sand cookie | 25 | 200 |
+| 2026-02-24 | 19:28 | Maria Dennis | Food | Dinner | Dinner: Small piece of dark chocolate | 5 | 50 |
+| 2026-02-24 | 18:48 | Maria Dennis | Food | Dinner | Dinner: Green vegetable soup, octopus with potatoes | 35 | 450 |
+| 2026-02-24 | 15:49 | Maria Dennis | Food | Lunch | Lunch: Handful of roasted cashews and dark chocolate | 12 | 180 |
+| 2026-02-24 | 13:22 | Maria Dennis | Food | Lunch | Lunch: 2 Onigiri, 2 Umeboshi, and Miso soup | 45 | 450 |
+| 2026-02-24 | 19:47 | Maria Dennis | Activity | - | 30 minutes housework | null | null |
+| 2026-02-24 | 19:18 | Maria Dennis | Activity | - | 1 hour heavy gardening pruning and weeding | null | null |
+| 2026-02-24 | 09:54 | Maria Dennis | Food | Breakfast | Breakfast: Fried egg, prosciutto, 2 bao buns, and sliced apple | 30 | 450 |
+| 2026-02-24 | 17:25 | Maria Dennis | Sleep | - | Sleep Report: 7h 20m total (Core: 5h, Deep: 1h, REM: 1h 20m | null | null |
+| 2026-02-24 | 17:00 | Maria Dennis | Medication | - | Lisinopril 10mg, Rosuvastatin 10mg | null | null |
+| 2026-02-24 | 04:45 | Maria Dennis | Medication | - | 1500mg Metformin HCL | null | null |
+| 2026-02-23 | 20:43 | Maria Dennis | Food | Snack | Snack: Japanese Strawberry Cream Sand cookie | 15 | 85 |
+| 2026-02-24 | 04:33 | Maria Dennis | Activity | - | 15 minute walk | null | null |
+| 2026-02-23 | 19:45 | Maria Dennis | Food | Dinner | Dinner: Grilled unagi, rice, tempura, asparagus | 85 | 650 |
+| 2026-02-24 | 01:34 | Maria Dennis | Medication | - | 1 500mg Tylenol tablet | null | null |
+| 2026-02-24 | 00:04 | Maria Dennis | Medication | - | Trulicity 0.75 MG/0.5 ML | null | null |
+| 2026-02-23 | 15:10 | Maria Dennis | Food | Lunch | Lunch: small bread roll with apple cream, roasted cashews | 30 | 250 |
+| 2026-02-23 | 23:05 | Maria Dennis | Activity | - | 90 mins heavy gardening: digging, pruning | null | null |
+| 2026-02-23 | 12:06 | Maria Dennis | Food | Lunch | Lunch: Small baked potato with prosciutto and salad | 35 | 400 |
+| 2026-02-23 | 20:00 | Maria Dennis | Activity | - | 2 hours housework (corrected from 1h | null | null |
+| 2026-02-23 | 10:00 | Maria Dennis | Food | Breakfast | Breakfast: 1 cup black coffee | 0 | 5 |
+| 2026-02-23 | 18:00 | Maria Dennis | Medication | - | 1 cup black coffee | null | null |
+| 2026-02-23 | 09:42 | Maria Dennis | Food | Breakfast | Breakfast: 2 fried eggs, 2 slices toast, sliced apple | 30 | 400 |
+| 2026-02-23 | 17:25 | Maria Dennis | Sleep | - | Sleep Report (Apple Watch): 5h 3m total. Core: 3h 19m, Deep: 54m, REM: 50m. Awake: 10m. | null | null |
+| 2026-02-23 | 17:00 | Maria Dennis | Medication | - | Medication: Rosuvastatin 10mg, Lisinopril 10mg | null | null |
+| 2026-02-23 | 12:00 | Maria Dennis | Medication | - | Medication: 1 Sudafed tablet | null | null |
+| 2026-02-23 | 05:00 | Maria Dennis | Medication | - | Medication: 1500mg Metformin HCL | null | null |
+| 2026-02-22 | 20:30 | Maria Dennis | Food | Dinner | Dinner: Handful of cashews | 5 | 150 |
+| 2026-02-22 | 19:30 | Maria Dennis | Food | Dinner | Dinner: Pasta dinner with sake | 70 | 700 |
+| 2026-02-22 | 22:30 | Maria Dennis | Activity | - | Gardening (1 hour | null | null |
