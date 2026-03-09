@@ -2,6 +2,8 @@
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-03-09 | 09:24 | Maria Dennis | Medication | - | Lisinopril 10mg, Rosuvastatin 10mg (Routine) | null | null |
+| 2026-03-09 | 09:24 | Maria Dennis | Food | - | Scallion pancake with cheese, fried egg, kiwi, and black coffee [📷](https://iili.io/qAnVvMN.jpg) | 43 | 410 |
 | 2026-03-08 | 21:58 | Maria Dennis | Food | - | Small handful of sweet potato chips | 10 | 100 |
 | 2026-03-08 | 19:51 | Maria Dennis | Activity | - | 30 minutes Qigong/Tai Chi | null | null |
 | 2026-03-08 | 19:39 | Maria Dennis | Food | - | Chocolate cake with whipped cream and grapes [📷](https://iili.io/qTU7gYx.jpg) | 18 | 200 |
@@ -12,7 +14,7 @@
 | 2026-03-08 | 13:40 | Maria Dennis | Activity | - | 90 minutes gardening | null | null |
 | 2026-03-08 | 10:43 | Maria Dennis | Medication | - | Lisinopril 10mg (Routine) | null | null |
 | 2026-03-08 | 09:59 | Maria Dennis | Food | Snack | Brunch Dessert: Chocolate cake with whipped cream | 28 | 350 |
-| 2026-03-08 | 09:43 | Maria Dennis | Food | Breakfast | Breakfast: Fried egg, avocado on toast, and 8 green grapes | 32 | 340 |
+| 2026-03-08 | 09:43 | Maria Dennis | Food | Breakfast | Breakfast: Fried egg, avocado on toast, and 8 green grapes [📷](https://iili.io/qxFCkgI.jpg) | 32 | 340 |
 | 2026-03-07 | 20:30 | Maria Dennis | Activity | - | 20 minutes walk and 10 minutes tai chi | null | null |
 | 2026-03-07 | 19:50 | Maria Dennis | Food | - | Chocolate cake with whipped cream [📷](https://iili.io/qIxzsxs.jpg) | 28 | 350 |
 | 2026-03-07 | 18:51 | Maria Dennis | Food | - | Carrot cheese soup, shredded meat with brie on bread, and half a kiwi [📷](https://iili.io/qICp3oG.jpg) | 46 | 580 |
@@ -23,7 +25,7 @@
 | 2026-03-07 | 11:27 | Maria Dennis | Activity | - | 1 hour gardening | null | null |
 | 2026-03-07 | 09:59 | Maria Dennis | Medication | - | Lisinopril 10mg, Rosuvastatin 10mg (Routine) | null | null |
 | 2026-03-07 | 09:59 | Maria Dennis | Food | Breakfast | Breakfast: Scallion pancake with cheese, kiwi, and plain yogurt with berries/nuts [📷](https://iili.io/qzkC2ff.jpg) | 52 | 500 |
-| 2026-03-06 | 21:43 | Maria Dennis | Food | Snack | Snack: Mixed nuts and actual dry cheese balls [📷](https://iili.io/qzbOAmJ.jpg) | 2 | 180 |
+| 2026-03-06 | 21:43 | Maria Dennis | Food | Snack | Snack: Mixed nuts and actual dry cheese balls [📷](https://iili.io/qAzkiQt.jpg) | 2 | 180 |
 | 2026-03-06 | 20:54 | Maria Dennis | Medication | - | 1500mg Metformin HCL, Vitamin D 1000 IU, 1 tablet Prunelax | null | null |
 | 2026-03-06 | 20:30 | Maria Dennis | Activity | - | 20 minutes tai chi/qigong | null | null |
 | 2026-03-06 | 20:25 | Maria Dennis | Food | Dinner | Dinner: Strawberries with whipped cream [📷](https://iili.io/qxOVscb.jpg) | 12 | 150 |
