@@ -1,5 +1,27 @@
 [
   {
+    "id": "31e85ec7-0668-81e4-9187-ec9225911d61",
+    "title": "Chocolate cake with whipped cream and grapes",
+    "type": "Food",
+    "date": "2026-03-08T19:39:00.000-07:00",
+    "photo": "https://iili.io/qTU7gYx.jpg",
+    "carbs": 18,
+    "cals": 200,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "31e85ec7-0668-814d-8954-fb5174085f15",
+    "title": "Lentil stew with half a sausage, potatoes, and sauteed greens",
+    "type": "Food",
+    "date": "2026-03-08T19:15:00.000-07:00",
+    "photo": "https://iili.io/qTSD9PR.jpg",
+    "carbs": 58,
+    "cals": 600,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "31d85ec7-0668-812c-9b4e-c408ad7b2c62",
     "title": "Sliced prosciutto",
     "type": "Food",
