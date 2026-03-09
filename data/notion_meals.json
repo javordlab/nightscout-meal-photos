@@ -1,5 +1,16 @@
 [
   {
+    "id": "31e85ec7-0668-8192-9bc7-ca0df4488886",
+    "title": "Mixed nuts and cheese balls",
+    "type": "Food",
+    "date": "2026-03-09T15:58:00.000-07:00",
+    "photo": "https://iili.io/qAS2gVV.jpg",
+    "carbs": 12,
+    "cals": 250,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "31e85ec7-0668-8120-853f-fca733f37d83",
     "title": "Sliced apple and kiwi",
     "type": "Food",
