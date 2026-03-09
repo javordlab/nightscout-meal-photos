@@ -10,6 +10,7 @@
 | 2026-03-07 | 13:58 | Maria Dennis | Activity | - | 30 minutes housework | null | null |
 | 2026-03-07 | 13:15 | Maria Dennis | Food | - | Rice vermicelli with egg and greens [📷](https://iili.io/qzbUSxn.jpg) | 35 | 400 |
 | 2026-03-07 | 11:27 | Maria Dennis | Activity | - | 1 hour gardening | null | null |
+| 2026-03-08 | 19:51 | Maria Dennis | Activity | - | 30 minutes Qigong/Tai Chi | null | null |
 | 2026-03-08 | 19:39 | Maria Dennis | Food | Dessert | Late Dessert: Piece of chocolate cake with whipped cream and 3 green grapes (~18g carbs, ~200 kcal) [📷](https://iili.io/qTU7gYx.jpg) | 18 | 200 |
 | 2026-03-08 | 18:39 | Maria Dennis | Food | Dinner | Dinner: Lentil stew with half a sausage, potatoes, and sauteed greens (~58g carbs, ~600 kcal) [📷](https://iili.io/qTSD9PR.jpg) [📷](https://iili.io/qTSDkfR.jpg) [📷](https://iili.io/qTSpwxe.jpg) | 58 | 600 |
 | 2026-03-08 | 17:40 | Maria Dennis | Food | Snack | Snack: Sliced prosciutto (~0g carbs, ~100 kcal) [📷](https://iili.io/qTVzP0Q.jpg) | 0 | 100 |
