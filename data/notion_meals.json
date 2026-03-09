@@ -13,7 +13,7 @@
   {
     "id": "31e85ec7-0668-81e4-9187-ec9225911d61",
     "title": "Chocolate cake with whipped cream and grapes",
-    "type": "Food",
+    "type": "Snack",
     "date": "2026-03-08T19:39:00.000-08:00",
     "photo": "https://iili.io/qTU7gYx.jpg",
     "carbs": 18,
@@ -24,7 +24,7 @@
   {
     "id": "31e85ec7-0668-814d-8954-fb5174085f15",
     "title": "Lentil stew with half a sausage, potatoes, and sauteed greens",
-    "type": "Food",
+    "type": "Snack",
     "date": "2026-03-08T19:15:00.000-07:00",
     "photo": "https://iili.io/qTSD9PR.jpg",
     "carbs": 58,
@@ -35,7 +35,7 @@
   {
     "id": "31d85ec7-0668-812c-9b4e-c408ad7b2c62",
     "title": "Sliced prosciutto",
-    "type": "Food",
+    "type": "Snack",
     "date": "2026-03-08T17:40:00.000-08:00",
     "photo": "https://iili.io/qTVzP0Q.jpg",
     "carbs": 0,
@@ -46,7 +46,7 @@
   {
     "id": "31d85ec7-0668-81d2-a997-e643e9884597",
     "title": "Mixed nuts, goji berries, and cheese balls",
-    "type": "Food",
+    "type": "Snack",
     "date": "2026-03-08T16:40:00.000-08:00",
     "photo": "https://iili.io/qT0M0DN.jpg",
     "carbs": 8,
@@ -68,7 +68,7 @@
   {
     "id": "31d85ec7-0668-81d5-ba94-c010333cc691",
     "title": "Chocolate cake with whipped cream",
-    "type": "Food",
+    "type": "Snack",
     "date": "2026-03-07T19:50:00.000-08:00",
     "photo": "https://iili.io/qIxzsxs.jpg",
     "carbs": 28,
@@ -79,7 +79,7 @@
   {
     "id": "31d85ec7-0668-81c3-8d55-d847d122e8aa",
     "title": "Carrot cheese soup, shredded meat with brie on bread, and half a kiwi",
-    "type": "Food",
+    "type": "Snack",
     "date": "2026-03-07T18:51:00.000-08:00",
     "photo": "https://iili.io/qICp3oG.jpg",
     "carbs": 46,
@@ -90,7 +90,7 @@
   {
     "id": "31d85ec7-0668-8104-a7d4-d3fce014c186",
     "title": "Small glass of milk",
-    "type": "Food",
+    "type": "Snack",
     "date": "2026-03-07T16:30:00.000-08:00",
     "photo": "https://iili.io/qIKuCge.jpg",
     "carbs": 12,
@@ -101,7 +101,7 @@
   {
     "id": "31d85ec7-0668-81c3-b118-f9b105dfa06d",
     "title": "Oatmeal chocolate cookie",
-    "type": "Food",
+    "type": "Snack",
     "date": "2026-03-07T16:29:00.000-08:00",
     "photo": "https://iili.io/qIKIAyx.jpg",
     "carbs": 12,
@@ -112,7 +112,7 @@
   {
     "id": "31c85ec7-0668-8125-a1f5-d74a5338405d",
     "title": "Rice vermicelli with egg and greens",
-    "type": "Food",
+    "type": "Snack",
     "date": "2026-03-07T13:15:00.000-08:00",
     "photo": "https://iili.io/qzbUSxn.jpg",
     "carbs": 35,
