@@ -1,5 +1,16 @@
 [
   {
+    "id": "31e85ec7-0668-8122-8aa5-ee05e84875ab",
+    "title": "Scallion pancake with cheese, fried egg, kiwi, and black coffee",
+    "type": "Food",
+    "date": "2026-03-09T09:24:00.000-07:00",
+    "photo": "https://iili.io/qAnVvMN.jpg",
+    "carbs": 43,
+    "cals": 410,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "31e85ec7-0668-81e4-9187-ec9225911d61",
     "title": "Chocolate cake with whipped cream and grapes",
     "type": "Food",
@@ -44,26 +55,15 @@
     "peak": 121
   },
   {
-    "id": "31c85ec7-0668-81b9-b460-ccfacfcbe8aa",
-    "title": "Breakfast: Scallion pancake with cheese, kiwi, and plain yogurt with berries/nuts",
+    "id": "31e85ec7-0668-81e6-9c48-ca86014ec9b1",
+    "title": "Breakfast: Fried egg, avocado on toast, and 8 green grapes",
     "type": "Breakfast",
-    "date": "2026-03-08T10:59:00.000-08:00",
-    "photo": "https://iili.io/qzkC2ff.jpg",
-    "carbs": 52,
-    "cals": 500,
-    "delta": 46,
-    "peak": 165
-  },
-  {
-    "id": "31b85ec7-0668-813e-b2ee-e01f27dc8544",
-    "title": "Breakfast: Prosciutto and avocado on ciabatta, plus an orange",
-    "type": "Breakfast",
-    "date": "2026-03-08T10:43:00.000-08:00",
+    "date": "2026-03-08T09:43:00.000-07:00",
     "photo": "https://iili.io/qxFCkgI.jpg",
-    "carbs": 55,
-    "cals": 510,
-    "delta": 105,
-    "peak": 218
+    "carbs": 32,
+    "cals": 340,
+    "delta": 121,
+    "peak": 245
   },
   {
     "id": "31d85ec7-0668-81d5-ba94-c010333cc691",
@@ -121,11 +121,22 @@
     "peak": 161
   },
   {
+    "id": "31c85ec7-0668-81b9-b460-ccfacfcbe8aa",
+    "title": "Breakfast: Scallion pancake with cheese, kiwi, and plain yogurt with berries/nuts",
+    "type": "Breakfast",
+    "date": "2026-03-07T09:59:00.000-08:00",
+    "photo": "https://iili.io/qzkC2ff.jpg",
+    "carbs": 52,
+    "cals": 500,
+    "delta": 46,
+    "peak": 165
+  },
+  {
     "id": "31c85ec7-0668-81d6-b14f-cadd747a25c1",
     "title": "Snack: Mixed nuts and actual dry cheese balls",
     "type": "Snack",
     "date": "2026-03-06T21:43:00.000-08:00",
-    "photo": "https://iili.io/qzbOAmJ.jpg",
+    "photo": "https://iili.io/qAzkiQt.jpg",
     "carbs": 2,
     "cals": 180,
     "delta": 0,
@@ -174,6 +185,17 @@
     "cals": 500,
     "delta": 31,
     "peak": 197
+  },
+  {
+    "id": "31b85ec7-0668-813e-b2ee-e01f27dc8544",
+    "title": "Breakfast: Prosciutto and avocado on ciabatta, plus an orange",
+    "type": "Breakfast",
+    "date": "2026-03-06T10:30:00.000-08:00",
+    "photo": "https://iili.io/qxFCkgI.jpg",
+    "carbs": 55,
+    "cals": 510,
+    "delta": 105,
+    "peak": 218
   },
   {
     "id": "31b85ec7-0668-8172-b110-f7a05eaf48fe",
