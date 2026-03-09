@@ -117,3 +117,5 @@
 | 2026-03-08 | 17:40 | Maria Dennis | Food | Snack: Sliced prosciutto (~0g carbs) [📷](https://iili.io/qTVzP0Q.jpg) |
 | 2026-03-08 | 16:45 | Maria Dennis | Activity | 30 minutes gardening (After nuts) |
 | 2026-03-08 | 21:58 | Maria Dennis | Food | Snack: Small handful of sweet potato chips (~10g carbs) |
+| 2026-03-08 | 19:15 | Maria Dennis | Food | Dinner: Lentil stew with half a sausage, potatoes, and sauteed greens (~58g carbs) [📷](https://iili.io/qTSD9PR.jpg) [📷](https://iili.io/qTSDkfR.jpg) [📷](https://iili.io/qTSpwxe.jpg) |
+| 2026-03-08 | 19:39 | Maria Dennis | Food | Dessert: Piece of chocolate cake with whipped cream and 3 green grapes (~18g carbs) [📷](https://iili.io/qTU7gYx.jpg) |
