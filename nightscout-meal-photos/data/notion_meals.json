@@ -2,7 +2,7 @@
   {
     "id": "31f85ec7-0668-8188-a7b0-d4f002a62a90",
     "title": "Dessert: Small piece of chocolate cake with whipped cream",
-    "type": "Food",
+    "type": "Dinner",
     "date": "2026-03-09T18:56:00.000-07:00",
     "photo": "https://iili.io/qAZ5pMF.jpg",
     "carbs": 10,
@@ -13,7 +13,7 @@
   {
     "id": "31f85ec7-0668-818c-b040-c10359294522",
     "title": "Pasta with meat sauce, cheese, pork belly, broccoli, and bread",
-    "type": "Food",
+    "type": "Dinner",
     "date": "2026-03-09T18:40:00.000-07:00",
     "photo": "https://iili.io/qAQ2FNp.jpg",
     "carbs": 70,
@@ -24,7 +24,7 @@
   {
     "id": "31e85ec7-0668-8192-9bc7-ca0df4488886",
     "title": "Mixed nuts and cheese balls",
-    "type": "Food",
+    "type": "Snack",
     "date": "2026-03-09T15:58:00.000-07:00",
     "photo": "https://iili.io/qAS2gVV.jpg",
     "carbs": 12,
@@ -35,7 +35,7 @@
   {
     "id": "31e85ec7-0668-8120-853f-fca733f37d83",
     "title": "Sliced apple and kiwi",
-    "type": "Food",
+    "type": "Lunch",
     "date": "2026-03-09T13:39:00.000-07:00",
     "photo": "https://iili.io/qAWYFjf.jpg",
     "carbs": 22,
@@ -46,7 +46,7 @@
   {
     "id": "31e85ec7-0668-819c-8560-df620bc9e7f1",
     "title": "Lunch: Scallion pancake, prosciutto, and avocado",
-    "type": "Food",
+    "type": "Lunch",
     "date": "2026-03-09T13:37:00.000-07:00",
     "photo": "https://iili.io/qAWqhN9.jpg",
     "carbs": 42,
@@ -79,7 +79,7 @@
   {
     "id": "31e85ec7-0668-814d-8954-fb5174085f15",
     "title": "Lentil stew with half a sausage, potatoes, and sauteed greens",
-    "type": "Snack",
+    "type": "Dinner",
     "date": "2026-03-08T19:15:00.000-07:00",
     "photo": "https://iili.io/qTSD9PR.jpg",
     "carbs": 58,
