@@ -133,24 +133,34 @@ async function run() {
     console.log("\n--- Sync Guard Phase 2: Auditing Last 24h ---");
     const now = new Date();
     const yesterday = new Date(now.getTime() - 24 * 60 * 60 * 1000);
+    const rolling24h = yesterday.toISOString();
     
     const logContent = fs.readFileSync('/Users/javier/.openclaw/workspace/health_log.md', 'utf8');
-    const logLines = logContent.split('\n').filter(l => l.includes('| 2026-03-09') || l.includes('| 2026-03-10'));
-    
-    const localEntries = logLines.map(line => {
+    const lines = logContent.split('\n');
+    const localEntries = [];
+
+    for (const line of lines) {
         const parts = line.split('|').map(p => p.trim());
-        if (parts.length < 10) return null;
-        return {
-            date: parts[1],
-            time: parts[2],
-            user: parts[3],
-            category: parts[4],
-            mealType: parts[5],
-            entry: parts[6],
-            carbs: parts[7],
-            cals: parts[8]
-        };
-    }).filter(e => e !== null && e.date !== 'Date' && e.category !== 'Activity');
+        if (parts.length < 10 || parts[1] === 'Date') continue;
+        
+        const entryDate = parts[1];
+        const entryTime = parts[2];
+        const entryIso = `${entryDate}T${entryTime}:00-07:00`;
+        const entryDt = new Date(entryIso);
+
+        if (entryDt >= yesterday) {
+            localEntries.push({
+                date: entryDate,
+                time: entryTime,
+                user: parts[3],
+                category: parts[4],
+                mealType: parts[5],
+                entry: parts[6],
+                carbs: parts[7],
+                cals: parts[8]
+            });
+        }
+    }
 
     const nsRecent = await nsGet(`/api/v1/treatments.json?find[created_at][$gte]=${yesterday.toISOString()}`);
     const notionRecent = await notionQuery();
