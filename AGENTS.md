@@ -54,7 +54,7 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - When in doubt, ask.
 
 ## OpenAI Token Efficiency
-- **High-Tier (250k/day limit):** Use for high-reasoning tasks (complex medical logs, deep debugging, complex script writing). Includes gpt-5.x, gpt-4.1, o1, o3, and **openai-codex/gpt-5.3-codex**.
+- **High-Tier (250k/day limit):** Use for high-reasoning tasks (complex medical logs, deep debugging, complex script writing). Includes gpt-5.x, gpt-4.1, o1, o3, and **openai-codex/gpt-5.3-codex**. Use the non-Codex **openai/gpt-5.3** for escalations involving reasoning without coding.
 - **Speed/Efficiency-Tier (2.5M/day limit):** Use for routine tasks (heartbeats, simple file reads, summary generation, log parsing). Includes all -mini and -nano variants, and **google-antigravity/gemini-3-flash**.
 - **Gemini CLI Rule:** When calling the `gemini` CLI tool for reports or parallel checks, ALWAYS specify `--model gemini-3-flash`. Avoid older versions like `2.5` unless specifically required by the user.
 - Transition to more efficient models whenever the task is low-complexity to preserve high-tier quota.
