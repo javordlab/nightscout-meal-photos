@@ -168,3 +168,4 @@
 | 2026-03-09 | 17:35 | Maria Dennis | Activity | 45 minutes gardening |
 | 2026-03-09 | 18:40 | Maria Dennis | Food | Dinner | Pasta with meat sauce, cheese, pork belly, broccoli, and a slice of bread (~70g carbs, ~780 kcal) [📷](https://iili.io/qAQ2FNp.jpg) [📷](https://iili.io/qAQf0QV.jpg) | 55 | 650 |
 | 2026-03-09 | 18:56 | Maria Dennis | Food | Dessert | Chocolate cake with whipped cream (~28g carbs, ~350 kcal) [📷](https://iili.io/qAZ5pMF.jpg) | 28 | 350 |
+| 2026-03-09 | 20:30 | Maria Dennis | Activity | 15 minutes walk |
