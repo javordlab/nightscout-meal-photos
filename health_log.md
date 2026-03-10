@@ -2,6 +2,7 @@
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-03-10 | 04:49 | Maria Dennis | Medication | - | Half anti-acid tablet | null | null |
 | 2026-03-09 | 10:24 | Maria Dennis | Food | Breakfast | Breakfast: Scallion pancake with cheese, fried egg, kiwi, and black coffee [📷](https://iili.io/qAnVvMN.jpg) | 43 | 410 |
 | 2026-03-09 | 09:24 | Maria Dennis | Medication | - | Lisinopril 10mg, Rosuvastatin 10mg (Routine) | null | null |
 | 2026-03-08 | 21:58 | Maria Dennis | Food | - | Small handful of sweet potato chips | 10 | 100 |
@@ -170,3 +171,4 @@
 | 2026-03-09 | 18:56 | Maria Dennis | Food | Dessert | Chocolate cake with whipped cream (~28g carbs, ~350 kcal) [📷](https://iili.io/qAZ5pMF.jpg) | 28 | 350 |
 | 2026-03-09 | 20:30 | Maria Dennis | Activity | 15 minutes walk |
 | 2026-03-09 | 21:30 | Maria Dennis | Food | Snack | Glass of milk and a spoon of peanut butter (~15g carbs, ~250 kcal) | 15 | 250 |
+| 2026-03-10 | 04:49 | Maria Dennis | Medication | - | Half anti-acid tablet | null | null |
