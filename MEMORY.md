@@ -36,12 +36,17 @@ _Last updated: 2026-03-09 12:15 PM PST_
 
 ### 📊 Daily Summary Protocol
 - **Time:** 9:30 AM PT daily.
+- **Priority Order (Javi-confirmed):**
+  1. Accuracy first
+  2. If accurate, send on time
+  3. If not accurate by send time, send a delay notice with ETA, then deliver when ready
 - **Source:** Use `health_log.md` for all intake (calories/carbs) calculations. Pull glucose data from Nightscout.
 - **Charts:** Generate 3 PNG charts using scripts in `workspace/scripts/`:
   1. `generate_glucose_chart.js` -> `tmp/glucose_chart.png`
   2. `generate_weekly_calories_chart.js` -> `tmp/weekly_calories_chart.png`
   3. `generate_weekly_carbs_chart.js` -> `tmp/weekly_carbs_chart.png`
 - **Delivery:** Post summary text + 3 images to the "Food log" Telegram group (-5262020908).
+- **Delay-Comms Rule:** Never miss silently. If validation is still in progress at 9:30 AM, post a brief “working on data validation” update with a concrete ETA.
 
 ## Infrastructure
 
