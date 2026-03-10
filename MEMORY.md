@@ -33,6 +33,7 @@ _Last updated: 2026-03-09 12:15 PM PST_
 - **One-Way Dispatch:** All other platforms (Nightscout, Notion, GitHub Gallery) are strictly downstream mirrors. 
 - **Dispatcher:** Use `node scripts/radial_dispatcher.js` to push from the local log to external APIs.
 - **Strict Rule:** Never pull data *from* Notion/Nightscout back into the local log. Fix errors in `health_log.md` first.
+- **Local-First Enforcement:** No downstream changes are allowed until `health_log.md` is updated first; run `node scripts/consistency_check.js 2` as a gate.
 
 ### 📊 Daily Summary Protocol
 - **Time:** 9:30 AM PT daily.
