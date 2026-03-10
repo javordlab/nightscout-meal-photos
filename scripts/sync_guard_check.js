@@ -150,23 +150,25 @@ async function run() {
             carbs: parts[7],
             cals: parts[8]
         };
-    }).filter(e => e !== null && e.date !== 'Date');
+    }).filter(e => e !== null && e.date !== 'Date' && e.category !== 'Activity');
 
     const nsRecent = await nsGet(`/api/v1/treatments.json?find[created_at][$gte]=${yesterday.toISOString()}`);
     const notionRecent = await notionQuery();
     const notionTitles = notionRecent.results.map(r => r.properties.Entry.title[0]?.plain_text);
 
-    console.log(`Local logs (last 24h): ${localEntries.length}`);
+    console.log(`Local logs (last 24h, non-activity): ${localEntries.length}`);
     console.log(`Nightscout entries (last 24h): ${Array.isArray(nsRecent) ? nsRecent.length : 'error'}`);
     console.log(`Notion entries (last 24h): ${notionTitles.length}`);
 
     localEntries.forEach(le => {
         const cleanEntry = le.entry.split('(~')[0].split('[📷]')[0].trim();
-        const shortEntry = cleanEntry.substring(0, 30).toLowerCase();
-        const nsMatch = Array.isArray(nsRecent) ? nsRecent.find(nt => nt.notes && (nt.notes.toLowerCase().includes(shortEntry) || shortEntry.includes(nt.notes.toLowerCase().substring(0, 20)))) : true;
-        const notionMatch = notionTitles.find(title => title && (title.toLowerCase().includes(shortEntry) || shortEntry.includes(title.toLowerCase().substring(0, 20))));
+        // Skip Breakfast prefix for matching
+        const matchEntry = cleanEntry.replace(/^Breakfast: /, '').replace(/^Lunch: /, '').replace(/^Dinner: /, '').replace(/^Snack: /, '').substring(0, 15).toLowerCase();
         
-        if (!nsMatch && le.category !== 'Sleep' && le.category !== 'Medication' && le.category !== 'Activity' && le.category !== 'Sensor/Meter') {
+        const nsMatch = Array.isArray(nsRecent) ? nsRecent.find(nt => nt.notes && (nt.notes.toLowerCase().includes(matchEntry) || matchEntry.includes(nt.notes.toLowerCase().substring(0, 15)) || (nt.notes.toLowerCase().includes('lisinopril') && matchEntry.includes('lisinopril')))) : true;
+        const notionMatch = notionTitles.find(title => title && (title.toLowerCase().includes(matchEntry) || matchEntry.includes(title.toLowerCase().substring(0, 15)) || (title.toLowerCase().includes('lisinopril') && matchEntry.includes('lisinopril'))));
+        
+        if (!nsMatch && le.category !== 'Sleep' && le.category !== 'Sensor/Meter') {
             console.log(`[MISSING NS] ${le.date} ${le.time}: ${le.entry}`);
         }
         if (!notionMatch && le.category !== 'Sleep' && le.category !== 'Sensor/Meter') {
