@@ -1,5 +1,27 @@
 [
   {
+    "id": "31f85ec7-0668-8188-a7b0-d4f002a62a90",
+    "title": "Dessert: Small piece of chocolate cake with whipped cream",
+    "type": "Food",
+    "date": "2026-03-09T18:56:00.000-07:00",
+    "photo": "https://iili.io/qAZ5pMF.jpg",
+    "carbs": 10,
+    "cals": 120,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "31f85ec7-0668-818c-b040-c10359294522",
+    "title": "Pasta with meat sauce, cheese, pork belly, broccoli, and bread",
+    "type": "Food",
+    "date": "2026-03-09T18:40:00.000-07:00",
+    "photo": "https://iili.io/qAQ2FNp.jpg",
+    "carbs": 70,
+    "cals": 780,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "31e85ec7-0668-8192-9bc7-ca0df4488886",
     "title": "Mixed nuts and cheese balls",
     "type": "Food",
