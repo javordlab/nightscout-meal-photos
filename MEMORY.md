@@ -38,6 +38,7 @@ _Last updated: 2026-03-09 12:15 PM PST_
 - **Time:** 9:30 AM PT daily.
 - **Priority Order (Javi-confirmed):**
   1. Accuracy first
+  2. Escalation Notification: Notify Javi if a task or cron job escalates to a high-tier model (e.g., `gpt-5.3-codex`) due to failure or complexity. State the reason (e.g., "escalating due to gemini-3-flash timeout").
   2. If accurate, send on time
   3. If not accurate by send time, send a delay notice with ETA, then deliver when ready
 - **Source:** Use `health_log.md` for all intake (calories/carbs) calculations. Pull glucose data from Nightscout.
