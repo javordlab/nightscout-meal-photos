@@ -2,6 +2,8 @@
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-03-10 | 10:22 | Maria Dennis | Food | Snack | Snack: Small handful of goji berries [📷](https://iili.io/q5dLMCX.jpg) | 12 | 110 |
+| 2026-03-10 | 10:05 | Maria Dennis | Food | Breakfast | Breakfast: Cheese, prosciutto, bread, kiwi, and milk (~35g carbs, ~380 kcal) | 35 | 380 |
 | 2026-03-10 | 04:49 | Maria Dennis | Medication | - | Half anti-acid tablet | null | null |
 | 2026-03-09 | 10:24 | Maria Dennis | Food | Breakfast | Breakfast: Scallion pancake with cheese, fried egg, kiwi, and black coffee [📷](https://iili.io/qAnVvMN.jpg) | 43 | 410 |
 | 2026-03-09 | 09:24 | Maria Dennis | Medication | - | Lisinopril 10mg, Rosuvastatin 10mg (Routine) | null | null |
