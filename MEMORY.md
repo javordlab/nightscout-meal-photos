@@ -1,6 +1,6 @@
 # MEMORY.md — Long-Term Memory
 
-_Last updated: 2026-03-07 10:04 AM PST_
+_Last updated: 2026-03-09 12:15 PM PST_
 
 ## People
 
@@ -19,22 +19,28 @@ _Last updated: 2026-03-07 10:04 AM PST_
 - Communicates primarily via voice messages in Telegram group
 - Medication: 1500mg Metformin HCL (nightly, ~9 PM); 10mg Lisinopril (daily morning); 10mg Rosuvastatin (every other morning).
 - **Anchor date for Rosuvastatin cycle:** 2026-03-01 (Sunday) taken; next due dates include 2026-03-03 (Tuesday), 2026-03-05 (Thursday), 2026-03-07 (Saturday), etc.
-- **Calorie Logging (DEFINITIVE):** As of 2026-03-06, all food entries must include calories and carbs in the local \`health_log.md\` using the specific column format: | Date | Time | User | Category | Entry | Carbs | Cals |
+- **Calorie Logging (DEFINITIVE):** As of 2026-03-06, all food entries must include calories and carbs in the local `health_log.md` using the specific column format: | Date | Time | User | Category | Entry | Carbs | Cals |
 
 ## Protocols
 
 ### 💓 Heartbeat Status (CRITICAL)
 - **Silence Rule:** As of 2026-03-05 9:45 PM, heartbeats must be COMPLETELY silent. 
 - **Rule:** If all checks pass, the response must be EXACTLY: HEARTBEAT_OK
-- **Auto-Sync:** Heartbeats must automatically run \`git add . && git commit -m "chore: heartbeat sync" && git push origin main\` to keep the workspace clean.
+- **Auto-Sync:** Heartbeats must automatically run `git add . && git commit -m "chore: heartbeat sync" && git push origin main` to keep the workspace clean.
+
+### 🛡️ Radial Architecture (SSoT)
+- **Single Source of Truth (SSoT):** `/workspace/health_log.md` is the **only** definitive source.
+- **One-Way Dispatch:** All other platforms (Nightscout, Notion, GitHub Gallery) are strictly downstream mirrors. 
+- **Dispatcher:** Use `node scripts/radial_dispatcher.js` to push from the local log to external APIs.
+- **Strict Rule:** Never pull data *from* Notion/Nightscout back into the local log. Fix errors in `health_log.md` first.
 
 ### 📊 Daily Summary Protocol
 - **Time:** 9:30 AM PT daily.
-- **Source:** Use \`health_log.md\` for all intake (calories/carbs) calculations. Pull glucose data from Nightscout.
-- **Charts:** Generate 3 PNG charts using scripts in \`workspace/scripts/\`:
-  1. \`generate_glucose_chart.js\` -> \`tmp/glucose_chart.png\`
-  2. \`generate_weekly_calories_chart.js\` -> \`tmp/weekly_calories_chart.png\`
-  3. \`generate_weekly_carbs_chart.js\` -> \`tmp/weekly_carbs_chart.png\`
+- **Source:** Use `health_log.md` for all intake (calories/carbs) calculations. Pull glucose data from Nightscout.
+- **Charts:** Generate 3 PNG charts using scripts in `workspace/scripts/`:
+  1. `generate_glucose_chart.js` -> `tmp/glucose_chart.png`
+  2. `generate_weekly_calories_chart.js` -> `tmp/weekly_calories_chart.png`
+  3. `generate_weekly_carbs_chart.js` -> `tmp/weekly_carbs_chart.png`
 - **Delivery:** Post summary text + 3 images to the "Food log" Telegram group (-5262020908).
 
 ## Infrastructure
@@ -47,3 +53,4 @@ _Last updated: 2026-03-07 10:04 AM PST_
 ### Meal Photos Page
 - Public URL: https://javordlab.github.io/nightscout-meal-photos/
 - Hosting: freeimage.host (iili.io) for all photo uploads.
+- **Data Feed:** Moving to a local-log-based generator (Radial Dispatcher).
