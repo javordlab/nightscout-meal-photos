@@ -48,6 +48,7 @@ _Last updated: 2026-03-09 12:15 PM PST_
   2. `generate_weekly_calories_chart.js` -> `tmp/weekly_calories_chart.png`
   3. `generate_weekly_carbs_chart.js` -> `tmp/weekly_carbs_chart.png`
 - **Delivery:** Post summary text + 3 images to the "Food log" Telegram group (-5262020908).
+- **Required Sections (from 2026-03-10 onward):** Include explicit sections for **Outliers** and **Supervisor Analysis** in every daily report.
 - **Delay-Comms Rule:** Never miss silently. If validation is still in progress at 9:30 AM, post a brief “working on data validation” update with a concrete ETA.
 
 ## Infrastructure
