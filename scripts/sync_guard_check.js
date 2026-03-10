@@ -163,8 +163,8 @@ async function run() {
     localEntries.forEach(le => {
         const cleanEntry = le.entry.split('(~')[0].split('[📷]')[0].trim();
         const shortEntry = cleanEntry.substring(0, 30).toLowerCase();
-        const nsMatch = Array.isArray(nsRecent) ? nsRecent.find(nt => nt.notes && nt.notes.toLowerCase().includes(shortEntry)) : true;
-        const notionMatch = notionTitles.find(title => title && title.toLowerCase().includes(shortEntry));
+        const nsMatch = Array.isArray(nsRecent) ? nsRecent.find(nt => nt.notes && (nt.notes.toLowerCase().includes(shortEntry) || shortEntry.includes(nt.notes.toLowerCase().substring(0, 20)))) : true;
+        const notionMatch = notionTitles.find(title => title && (title.toLowerCase().includes(shortEntry) || shortEntry.includes(title.toLowerCase().substring(0, 20))));
         
         if (!nsMatch && le.category !== 'Sleep' && le.category !== 'Medication' && le.category !== 'Activity' && le.category !== 'Sensor/Meter') {
             console.log(`[MISSING NS] ${le.date} ${le.time}: ${le.entry}`);
