@@ -113,34 +113,20 @@ async function notionQuery() {
 
 async function run() {
     console.log("--- Sync Guard Phase 1: Fixing Nightscout null eventTypes ---");
-    let treatments = await nsGet('/api/v1/treatments.json?find[eventType][$exists]=false&find[notes][$regex]=.*&count=50');
+    let treatments = await nsGet('/api/v1/treatments.json?count=100');
     if (!Array.isArray(treatments)) {
         console.log("Treatments response is not an array:", treatments);
         treatments = [];
     }
-    console.log(`Found ${treatments.length} treatments with missing eventType.`);
     
     for (const t of treatments) {
-        if (t.notes && (t.notes.includes('Breakfast') || t.notes.includes('Lunch') || t.notes.includes('Dinner') || t.notes.includes('Snack'))) {
-            console.log(`Fixing treatment ${t._id}: setting eventType to 'Meal Bolus'`);
-            t.eventType = 'Meal Bolus';
-            await nsPut(t);
-            await nsDelete(t._id);
-        }
-    }
-
-    let emptyTreatments = await nsGet('/api/v1/treatments.json?find[eventType]=&count=50');
-    if (!Array.isArray(emptyTreatments)) {
-        console.log("Empty treatments response is not an array:", emptyTreatments);
-        emptyTreatments = [];
-    }
-    console.log(`Found ${emptyTreatments.length} treatments with empty eventType.`);
-    for (const t of emptyTreatments) {
-        if (t.notes && (t.notes.includes('Breakfast') || t.notes.includes('Lunch') || t.notes.includes('Dinner') || t.notes.includes('Snack'))) {
-            console.log(`Fixing treatment ${t._id}: setting eventType to 'Meal Bolus'`);
-            t.eventType = 'Meal Bolus';
-            await nsPut(t);
-            await nsDelete(t._id);
+        if (!t.eventType || t.eventType === null) {
+            if (t.notes && (t.notes.includes('Breakfast') || t.notes.includes('Lunch') || t.notes.includes('Dinner') || t.notes.includes('Snack') || t.notes.includes('Dessert') || t.notes.includes('Meal') || t.notes.includes('Food'))) {
+                console.log(`Fixing treatment ${t._id}: setting eventType to 'Meal Bolus'`);
+                t.eventType = 'Meal Bolus';
+                await nsPut(t);
+                await nsDelete(t._id);
+            }
         }
     }
 
@@ -149,18 +135,22 @@ async function run() {
     const yesterday = new Date(now.getTime() - 24 * 60 * 60 * 1000);
     
     const logContent = fs.readFileSync('/Users/javier/.openclaw/workspace/health_log.md', 'utf8');
-    const logLines = logContent.split('\n').filter(l => l.includes('| 2026-03-06') || l.includes('| 2026-03-07'));
+    const logLines = logContent.split('\n').filter(l => l.includes('| 2026-03-09') || l.includes('| 2026-03-10'));
     
     const localEntries = logLines.map(line => {
         const parts = line.split('|').map(p => p.trim());
-        if (parts.length < 6) return null;
+        if (parts.length < 10) return null;
         return {
             date: parts[1],
             time: parts[2],
+            user: parts[3],
             category: parts[4],
-            entry: parts[5]
+            mealType: parts[5],
+            entry: parts[6],
+            carbs: parts[7],
+            cals: parts[8]
         };
-    }).filter(e => e !== null);
+    }).filter(e => e !== null && e.date !== 'Date');
 
     const nsRecent = await nsGet(`/api/v1/treatments.json?find[created_at][$gte]=${yesterday.toISOString()}`);
     const notionRecent = await notionQuery();
@@ -171,11 +161,12 @@ async function run() {
     console.log(`Notion entries (last 24h): ${notionTitles.length}`);
 
     localEntries.forEach(le => {
-        const cleanEntry = le.entry.split('(~')[0].trim();
-        const nsMatch = Array.isArray(nsRecent) ? nsRecent.find(nt => nt.notes && nt.notes.includes(cleanEntry)) : true;
-        const notionMatch = notionTitles.find(title => title && title.includes(cleanEntry));
+        const cleanEntry = le.entry.split('(~')[0].split('[📷]')[0].trim();
+        const shortEntry = cleanEntry.substring(0, 30).toLowerCase();
+        const nsMatch = Array.isArray(nsRecent) ? nsRecent.find(nt => nt.notes && nt.notes.toLowerCase().includes(shortEntry)) : true;
+        const notionMatch = notionTitles.find(title => title && title.toLowerCase().includes(shortEntry));
         
-        if (!nsMatch && le.category !== 'Sleep') {
+        if (!nsMatch && le.category !== 'Sleep' && le.category !== 'Medication' && le.category !== 'Activity' && le.category !== 'Sensor/Meter') {
             console.log(`[MISSING NS] ${le.date} ${le.time}: ${le.entry}`);
         }
         if (!notionMatch && le.category !== 'Sleep' && le.category !== 'Sensor/Meter') {
