@@ -2,6 +2,9 @@
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-03-11 | 09:56 | Maria Dennis | Food | Breakfast | Breakfast (Awaiting details/photo) | null | null |
+| 2026-03-11 | 09:56 | Maria Dennis | Medication | - | 500mg Metformin HCL | null | null |
+| 2026-03-11 | 09:56 | Maria Dennis | Activity | - | 30 minutes walk | null | null |
 | 2026-03-10 | 18:30 | Maria Dennis | Medication | - | 1500mg Metformin HCL | null | null |
 | 2026-03-10 | 14:30 | Maria Dennis | Medication | - | 500mg Metformin HCL | null | null |
 | 2026-03-10 | 10:22 | Maria Dennis | Food | Snack | Snack: Small handful of goji berries [📷](https://iili.io/q5dLMCX.jpg) | 12 | 110 |
