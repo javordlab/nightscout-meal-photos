@@ -2,6 +2,8 @@
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-03-10 | 18:30 | Maria Dennis | Medication | - | 1500mg Metformin HCL | null | null |
+| 2026-03-10 | 14:30 | Maria Dennis | Medication | - | 500mg Metformin HCL | null | null |
 | 2026-03-10 | 10:22 | Maria Dennis | Food | Snack | Snack: Small handful of goji berries [📷](https://iili.io/q5dLMCX.jpg) | 12 | 110 |
 | 2026-03-10 | 10:05 | Maria Dennis | Food | Breakfast | Breakfast: Cheese, prosciutto, bread, kiwi, and milk (~35g carbs, ~380 kcal) | 35 | 380 |
 | 2026-03-10 | 04:49 | Maria Dennis | Medication | - | Half anti-acid tablet | null | null |
