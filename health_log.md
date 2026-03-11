@@ -2,6 +2,9 @@
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-03-11 | 14:15 | Maria Dennis | Activity | - | 45 minutes walk (After lunch) | null | null |
+| 2026-03-11 | 13:30 | Maria Dennis | Medication | - | 500mg Metformin HCL | null | null |
+| 2026-03-11 | 13:30 | Maria Dennis | Food | Lunch | Lunch (Awaiting details/photo) | null | null |
 | 2026-03-11 | 09:56 | Maria Dennis | Food | Breakfast | Breakfast (Awaiting details/photo) | null | null |
 | 2026-03-11 | 09:56 | Maria Dennis | Medication | - | 500mg Metformin HCL | null | null |
 | 2026-03-11 | 09:56 | Maria Dennis | Activity | - | 30 minutes walk | null | null |
