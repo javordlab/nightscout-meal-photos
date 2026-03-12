@@ -42,7 +42,7 @@ _Last updated: 2026-03-09 12:15 PM PST_
   2. Escalation Notification: Notify Javi if a task or cron job escalates to a high-tier model (e.g., `gpt-5.3-codex`) due to failure or complexity. State the reason (e.g., "escalating due to gemini-3-flash timeout").
   2. If accurate, send on time
   3. If not accurate by send time, send a delay notice with ETA, then deliver when ready
-- **Source:** Use `health_log.md` for all intake (calories/carbs) calculations. Pull glucose data from Nightscout.
+- **Source:** Use `health_log.md` for all intake (calories/carbs) calculations. Pull glucose data from Nightscout. Include **24-hour GMI/A1C estimate** in addition to the 14-day trend.
 - **Charts:** Generate 3 PNG charts using scripts in `workspace/scripts/`:
   1. `generate_glucose_chart.js` -> `tmp/glucose_chart.png`
   2. `generate_weekly_calories_chart.js` -> `tmp/weekly_calories_chart.png`
