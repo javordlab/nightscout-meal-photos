@@ -33,6 +33,9 @@ When Maria Dennis logs **food**, **medication**, **activity**, or **sleep** in t
 - **Carbs/Calories:** Parse estimates into the Nightscout `carbs` field (carbs only) and include the calorie estimate in the Nightscout `notes` field (e.g., "Lunch: ... (~45g carbs, ~500 kcal)"). For Notion, use the **Carbs (est)** and **Calories (est)** columns.
 - **Titles:** Use the high-fidelity "Items identified" list for the Notion **Entry** title. Always prefix the Entry title with the meal type (e.g., "Breakfast: Scallion pancake...") and populate the **Meal Type** column (Breakfast, Lunch, Dinner, Snack).
 
+## Ingredient Reference
+- **Flour Tortilla:** 130 kcal (per Javi, 2026-03-12)
+
 ---
 
 ## Telegram Group

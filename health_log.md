@@ -2,6 +2,7 @@
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-03-12 | 10:23 | Maria Dennis | Food | Breakfast | Breakfast: Flour tortilla with cheese, pastrami, and half a sliced apple [📷](https://iili.io/qaep2st.jpg) | 28 | 390 |
 | 2026-03-11 | 19:30 | Maria Dennis | Activity | - | 45 minutes exercise (After dinner) | null | null |
 | 2026-03-11 | 19:15 | Maria Dennis | Food | Dessert | Chocolate cake with whipped cream (~28g carbs, ~350 kcal) | 28 | 350 |
 | 2026-03-11 | 18:58 | Maria Dennis | Food | Dinner | Dinner: Spanish tortilla (egg/potato) wedge, sautéed cabbage/carrots, bread with butter, and 2 slices prosciutto [📷](https://iili.io/qY0dtLJ.jpg) [📷](https://iili.io/qY0zFft.jpg) | 40 | 600 |
