@@ -2,6 +2,8 @@
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-03-11 | 19:30 | Maria Dennis | Activity | - | 45 minutes exercise (After dinner) | null | null |
+| 2026-03-11 | 19:15 | Maria Dennis | Food | Dessert | Chocolate cake with whipped cream (~28g carbs, ~350 kcal) | 28 | 350 |
 | 2026-03-11 | 18:58 | Maria Dennis | Food | Dinner | Dinner: Spanish tortilla (egg/potato) wedge, sautéed cabbage/carrots, bread with butter, and 2 slices prosciutto [📷](https://iili.io/qY0dtLJ.jpg) [📷](https://iili.io/qY0zFft.jpg) | 40 | 600 |
 | 2026-03-11 | 14:15 | Maria Dennis | Activity | - | 45 minutes walk (After lunch) | null | null |
 | 2026-03-11 | 13:30 | Maria Dennis | Medication | - | 500mg Metformin HCL | null | null |
