@@ -2,10 +2,11 @@
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-03-11 | 18:58 | Maria Dennis | Food | Dinner | Dinner: Bread with butter (Awaiting full dinner details) [📷](https://iili.io/qY0zFft.jpg) | 15 | 200 |
 | 2026-03-11 | 14:15 | Maria Dennis | Activity | - | 45 minutes walk (After lunch) | null | null |
 | 2026-03-11 | 13:30 | Maria Dennis | Medication | - | 500mg Metformin HCL | null | null |
-| 2026-03-11 | 13:30 | Maria Dennis | Food | Lunch | Lunch (Awaiting details/photo) | null | null |
-| 2026-03-11 | 09:56 | Maria Dennis | Food | Breakfast | Breakfast (Awaiting details/photo) | null | null |
+| 2026-03-11 | 13:30 | Maria Dennis | Food | Lunch | Lunch: Fried rice with pork and veggies, plus a few grapes [📷](https://iili.io/qY0zFft.jpg) (~52g carbs, ~550 kcal) | 52 | 550 |
+| 2026-03-11 | 09:56 | Maria Dennis | Food | Breakfast | Breakfast: Small beef and cheese sandwich and one small orange (~32g carbs, ~380 kcal) | 32 | 380 |
 | 2026-03-11 | 09:56 | Maria Dennis | Medication | - | 500mg Metformin HCL | null | null |
 | 2026-03-11 | 09:56 | Maria Dennis | Activity | - | 30 minutes walk | null | null |
 | 2026-03-10 | 18:30 | Maria Dennis | Medication | - | 1500mg Metformin HCL | null | null |
