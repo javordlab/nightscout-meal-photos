@@ -1,29 +1,51 @@
 [
   {
-    "id": "31f85ec7-0668-8188-a7b0-d4f002a62a90",
-    "title": "Dessert: Small piece of chocolate cake with whipped cream",
-    "type": "Dinner",
-    "date": "2026-03-09T18:56:00.000-07:00",
-    "photo": "https://iili.io/qAZ5pMF.jpg",
-    "carbs": 10,
-    "cals": 120,
-    "delta": 106,
-    "peak": 233
+    "id": "32185ec7-0668-819d-8917-f2f7baea58bf",
+    "title": "Lunch: 1.5 shrimp/fish tacos and ~60% of roasted potatoes (Leftovers deducted)",
+    "type": "Lunch",
+    "date": "2026-03-12T13:44:00.000-07:00",
+    "photo": "https://iili.io/qcJf0oQ.jpg",
+    "carbs": 45,
+    "cals": 360,
+    "delta": null,
+    "peak": null
   },
   {
-    "id": "31f85ec7-0668-818c-b040-c10359294522",
-    "title": "Dinner: Pasta with meat sauce, cheese, pork belly, broccoli, and a slice of bread (~55g carbs, ~650 kcal) [📷](https://iili.io/qAQ2FNp.jpg) [📷](https://iili.io/qAQf0QV.jpg)",
+    "id": "32185ec7-0668-8124-a3db-c2b3c0eb0d3f",
+    "title": "Breakfast: Flour tortilla with cheese, pastrami, and half a sliced apple",
+    "type": "Breakfast",
+    "date": "2026-03-12T10:23:00.000-07:00",
+    "photo": "https://iili.io/qaep2st.jpg",
+    "carbs": 28,
+    "cals": 390,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "32185ec7-0668-81e4-a71e-e08008aa171b",
+    "title": "Dinner: Spanish tortilla (egg/potato) wedge, sautéed cabbage/carrots, bread with butter, and 2 slices prosciutto",
     "type": "Dinner",
-    "date": "2026-03-09T18:40:00.000-07:00",
-    "photo": "https://iili.io/qAQ2FNp.jpg",
-    "carbs": 55,
-    "cals": 650,
-    "delta": 104,
-    "peak": 233
+    "date": "2026-03-11T18:58:00.000-07:00",
+    "photo": "https://iili.io/qY0dtLJ.jpg",
+    "carbs": 40,
+    "cals": 600,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "32185ec7-0668-810b-b4a8-e6ae75af38fe",
+    "title": "Snack: Small handful of goji berries",
+    "type": "Snack",
+    "date": "2026-03-10T10:22:00.000-07:00",
+    "photo": "https://iili.io/q5dLMCX.jpg",
+    "carbs": 12,
+    "cals": 110,
+    "delta": null,
+    "peak": null
   },
   {
     "id": "31e85ec7-0668-8192-9bc7-ca0df4488886",
-    "title": "Mixed nuts and cheese balls",
+    "title": "Mixed nuts and cheese balls (~12g carbs, ~250 kcal)",
     "type": "Snack",
     "date": "2026-03-09T15:58:00.000-07:00",
     "photo": "https://iili.io/qAS2gVV.jpg",
@@ -34,8 +56,8 @@
   },
   {
     "id": "31e85ec7-0668-8120-853f-fca733f37d83",
-    "title": "Sliced apple and kiwi",
-    "type": "Lunch",
+    "title": "Sliced apple and kiwi (~22g carbs, ~90 kcal)",
+    "type": "Snack",
     "date": "2026-03-09T13:39:00.000-07:00",
     "photo": "https://iili.io/qAWYFjf.jpg",
     "carbs": 22,
@@ -45,7 +67,7 @@
   },
   {
     "id": "31e85ec7-0668-819c-8560-df620bc9e7f1",
-    "title": "Lunch: Scallion pancake, prosciutto, and avocado",
+    "title": "Lunch: Scallion pancake, prosciutto, and avocado (~42g carbs, ~500 kcal)",
     "type": "Lunch",
     "date": "2026-03-09T13:37:00.000-07:00",
     "photo": "https://iili.io/qAWqhN9.jpg",
@@ -691,6 +713,28 @@
     "cals": 220,
     "delta": 57,
     "peak": 191
+  },
+  {
+    "id": "32185ec7-0668-81c9-b453-ef054e97dcbc",
+    "title": "Breakfast: Scallion pancake / savory flatbread with some cheese",
+    "type": "Breakfast",
+    "date": "2026-02-26T09:31:00.000-07:00",
+    "photo": "https://iili.io/qfh8R3X.jpg",
+    "carbs": 30,
+    "cals": 400,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "32185ec7-0668-8167-b40a-f46490b983ba",
+    "title": "Breakfast: Apple slices + small cup of yogurt",
+    "type": "Breakfast",
+    "date": "2026-02-26T09:27:00.000-07:00",
+    "photo": "https://iili.io/qfh8TGI.jpg",
+    "carbs": 20,
+    "cals": 220,
+    "delta": null,
+    "peak": null
   },
   {
     "id": "31b85ec7-0668-8190-a67e-f50bd7d39e9b",
