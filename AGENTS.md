@@ -13,5 +13,5 @@
 ## Operational Standards
 - **SAFETY:** Use `trash` over `rm`. Ask before exfiltrating data (emails, public posts).
 - **GROUPS:** In group chats, contribute only when directly mentioned or adding clear value. Use emojis for acknowledgement.
-- **QUOTAS:** Prioritize `gemini-3-flash` for routine tasks. Use high-tier models (e.g., `gpt-5.3-codex`) only for complex reasoning/coding. Notify the user of any model escalations.
+- **QUOTAS:** Prioritize `anthropic/claude-3.5-sonnet` for reasoning and complex logic. Use `google/gemini-3-flash` exclusively for image analysis, high-context data ingestion (MySQL syncs), and routine cron tasks to optimize costs.
 - **TOOLS:** Refer to `SKILL.md` for tools and `TOOLS.md` for local configuration/notes.
