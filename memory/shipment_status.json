@@ -1,0 +1,31 @@
+{
+  "tracking_number": "CH499405530CA",
+  "status": "In transit",
+  "expected_delivery": "2026-03-17",
+  "last_update": "2026-03-12T13:21:00",
+  "last_event": "Item processed - Bethpage, USA",
+  "history": [
+    {
+      "date": "2026-03-12",
+      "time": "1:21 pm",
+      "event": "Item processed",
+      "location": "Bethpage, USA"
+    },
+    {
+      "date": "2026-03-11",
+      "time": "8:09 pm",
+      "event": "Item has arrived in foreign country",
+      "location": "Usjfka, USA"
+    },
+    {
+      "date": "2026-03-11",
+      "time": "7:07 pm",
+      "event": "International shipment has arrived in a foreign country",
+      "location": "Usjfka"
+    },
+    {
+      "date": "2026-03-10",
+      "event": "Received by Canada Post"
+    }
+  ]
+}

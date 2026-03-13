@@ -36,4 +36,7 @@ find "$BACKUP_DIR/weekly" -name "*.sql.gz" -mtime +31 -delete
 
 # (Monthly backups are kept indefinitely by this script)
 
+# 5. Update Dashboard
+/usr/local/bin/node /Users/javier/.openclaw/workspace/scripts/generate_backup_dashboard_data.js
+
 echo "MySQL Backup Completed: $FILE"
