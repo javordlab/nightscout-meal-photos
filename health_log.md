@@ -2,6 +2,7 @@
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-03-12 | 18:45 | Maria Dennis | Food | Dinner | Dinner: Leftover lunch (shrimp/fish taco fillings, roasted potatoes) and one orange [📷](https://iili.io/qcIm7lj.jpg) | 55 | 380 |
 | 2026-03-12 | 13:44 | Maria Dennis | Food | Lunch | Lunch: 1.5 shrimp/fish tacos and ~60% of roasted potatoes (Leftovers deducted) [📷](https://iili.io/qcJf0oQ.jpg) [📷](https://iili.io/qcJsJfV.jpg) | 45 | 360 |
 | 2026-03-12 | 10:23 | Maria Dennis | Food | Breakfast | Breakfast: Flour tortilla with cheese, pastrami, and half a sliced apple [📷](https://iili.io/qaep2st.jpg) | 28 | 390 |
 | 2026-03-11 | 19:30 | Maria Dennis | Activity | - | 45 minutes exercise (After dinner) | null | null |
