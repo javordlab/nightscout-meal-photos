@@ -1,5 +1,12 @@
 {
-  "lastUpdated": "2026-03-13T03:20:37.379Z",
+  "lastUpdated": "2026-03-13T03:43:11.152Z",
+  "shipment": {
+    "trackingNumber": "CH499405530CA",
+    "status": "In transit",
+    "expectedDelivery": "2026-03-17",
+    "lastEvent": "Item processed - Bethpage, USA",
+    "lastAccessed": "2026-03-13T03:40:25.145Z"
+  },
   "backups": [
     {
       "filename": "2026-03-12.sql.gz",
