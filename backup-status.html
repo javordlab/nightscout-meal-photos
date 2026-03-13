@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySQL Backup Status - Health Monitor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .status-badge { @apply px-2 py-1 rounded-full text-xs font-semibold; }
+        .bg-glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen font-sans text-gray-900">
+    <nav class="bg-white border-b sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <i class="fas fa-database text-blue-600 text-2xl"></i>
+                <h1 class="text-xl font-bold tracking-tight">Maria Health <span class="text-blue-600">Backup Console</span></h1>
+            </div>
+            <div class="text-sm text-gray-500" id="last-updated">Updating...</div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        <!-- Retention Overview -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="bg-white p-6 rounded-2xl border shadow-sm flex items-center gap-4">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
+                    <i class="fas fa-calendar-day"></i>
+                </div>
+                <div>
+                    <h3 class="text-sm font-medium text-gray-500 uppercase tracking-wider">Daily Retention</h3>
+                    <p class="text-2xl font-bold">7 Days</p>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border shadow-sm flex items-center gap-4">
+                <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-600">
+                    <i class="fas fa-calendar-week"></i>
+                </div>
+                <div>
+                    <h3 class="text-sm font-medium text-gray-500 uppercase tracking-wider">Weekly Retention</h3>
+                    <p class="text-2xl font-bold">1 Month</p>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border shadow-sm flex items-center gap-4">
+                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600">
+                    <i class="fas fa-infinity"></i>
+                </div>
+                <div>
+                    <h3 class="text-sm font-medium text-gray-500 uppercase tracking-wider">Monthly Retention</h3>
+                    <p class="text-2xl font-bold">Infinite</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Backups List -->
+        <div class="bg-white rounded-2xl border shadow-sm overflow-hidden">
+            <div class="px-6 py-4 border-b bg-gray-50 flex justify-between items-center">
+                <h2 class="font-bold">Database Snapshots</h2>
+                <span class="text-xs bg-gray-200 px-2 py-1 rounded text-gray-600" id="count-label">0 total</span>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left">
+                    <thead class="bg-gray-50 text-xs text-gray-500 uppercase">
+                        <tr>
+                            <th class="px-6 py-3">Created</th>
+                            <th class="px-6 py-3">Filename</th>
+                            <th class="px-6 py-3">Type</th>
+                            <th class="px-6 py-3 text-center">Local</th>
+                            <th class="px-6 py-3 text-center">GitHub</th>
+                            <th class="px-6 py-3 text-right">Size</th>
+                        </tr>
+                    </thead>
+                    <tbody id="backup-list" class="divide-y">
+                        <!-- Rows injected here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        async function loadStatus() {
+            try {
+                const response = await fetch('./data/backups.json');
+                const data = await response.json();
+                
+                document.getElementById('last-updated').textContent = `Last sync: ${new Date(data.lastUpdated).toLocaleString()}`;
+                document.getElementById('count-label').textContent = `${data.backups.length} snapshots tracked`;
+                
+                const list = document.getElementById('backup-list');
+                list.innerHTML = data.backups.map(b => `
+                    <tr class="hover:bg-gray-50 transition-colors">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                            ${new Date(b.created).toLocaleDateString()} <span class="text-gray-400 font-normal ml-1">${new Date(b.created).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600 font-mono">
+                            ${b.filename}
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <span class="px-2 py-1 rounded-full text-[10px] font-bold uppercase tracking-tighter ${
+                                b.type.includes('Daily') ? 'bg-blue-50 text-blue-700' : 
+                                b.type.includes('Weekly') ? 'bg-purple-50 text-purple-700' : 'bg-green-50 text-green-700'
+                            }">
+                                ${b.type}
+                            </span>
+                        </td>
+                        <td class="px-6 py-4 text-center">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                        </td>
+                        <td class="px-6 py-4 text-center">
+                            ${b.git ? '<i class="fas fa-cloud-upload-alt text-blue-500"></i>' : '<i class="fas fa-clock text-gray-300"></i>'}
+                        </td>
+                        <td class="px-6 py-4 text-right whitespace-nowrap text-sm font-mono text-gray-500">
+                            ${b.size}
+                        </td>
+                    </tr>
+                `).join('');
+
+            } catch (error) {
+                console.error('Failed to load backup data:', error);
+            }
+        }
+
+        loadStatus();
+    </script>
+</body>
+</html>
