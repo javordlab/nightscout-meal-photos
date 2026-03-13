@@ -1,5 +1,16 @@
 [
   {
+    "id": "32285ec7-0668-8119-9323-f0691c9dfc30",
+    "title": "Dinner: Leftover lunch (shrimp/fish taco fillings, roasted potatoes) and one orange",
+    "type": "Dinner",
+    "date": "2026-03-12T18:45:00.000-07:00",
+    "photo": "https://iili.io/qcIm7lj.jpg",
+    "carbs": 55,
+    "cals": 380,
+    "delta": -2,
+    "peak": 103
+  },
+  {
     "id": "32185ec7-0668-819d-8917-f2f7baea58bf",
     "title": "Lunch: 1.5 shrimp/fish tacos and ~60% of roasted potatoes (Leftovers deducted)",
     "type": "Lunch",
