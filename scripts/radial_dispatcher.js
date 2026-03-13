@@ -159,8 +159,23 @@ async function main() {
       }
     };
 
+    
     if (notionQuery.results.length === 0) {
       console.log("  -> Pushing to Notion...");
+      
+      // Calculate basic prediction for new Food entries
+      if (entryData.category === 'Food' && entryData.carbs > 0) {
+        const mealTime = new Date(entryData.iso);
+        const predPeakTime = new Date(mealTime.getTime() + 105 * 60 * 1000); // Default 105 mins
+        const predRise = 30 + (entryData.carbs * 1.5); // Very simple heuristic
+        // This is a placeholder; real logic would use pre-meal BG
+        // But dispatcher doesn't have easy access to NS SGV at the moment of log.
+        // We will leave the BG prediction for the manual log confirm step.
+        notionBody.properties['Predicted Peak Time'] = { date: { start: predPeakTime.toISOString() } };
+      }
+
+      await notionRequest("POST", "/pages", notionBody);
+    } else {
       await notionRequest("POST", "/pages", notionBody);
     } else {
       const existing = notionQuery.results[0];

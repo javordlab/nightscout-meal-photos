@@ -15,10 +15,12 @@ When Maria Dennis logs **food**, **medication**, **activity**, or **sleep** in t
 7. **Pre-Query Verification (IMPORTANT):** Before asking about a missing meal, medication, or activity entry (during heartbeats or automated reminders), ALWAYS perform a thorough search of recent channel history (via `sessions_history`) and local logs (`health_log.md`) to confirm the information wasn't already provided but missed or not yet processed.
 8. **Impact Analysis (Notion Only):** For **Food** entries:
    - Identify the glucose level AT the time of the meal (**Pre-Meal BG**).
+   - **Prediction:** Based on carb load, set a **Predicted Peak BG** and **Predicted Peak Time** (usually +90 to +120 mins).
    - Wait/Schedule a check for the highest glucose level 2 hours after the meal (**2hr Peak BG**).
    - Record the exact time of that peak (**Peak Time**).
    - Calculate and update the **BG Delta**.
    - Calculate and update the **Time to Peak (min)** (minutes between meal start and peak).
+   - **Variance Analysis:** Once the real peak is known, calculate the difference between real and predicted for both value (**Peak BG Delta**) and time (**Peak Time Delta (min)**).
    - **Adaptive Projections:** If Maria logs additional food within 2 hours of a previous meal (e.g., a snack shortly after lunch), you MUST update the existing projection. Explicitly state how the new intake changes the predicted peak and time (e.g., "The additional apple adds ~12g carbs; adjusting projected peak from 197 to 215 mg/dL"). If the impact is negligible, state that as well.
 9. **Confirm:** Send confirmation to Maria and Javi in the Telegram group. 
    - **Current Status:** Always include the current glucose reading (value and trend arrow).

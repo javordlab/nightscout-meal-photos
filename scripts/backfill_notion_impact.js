@@ -185,6 +185,19 @@ async function main() {
         }
       };
 
+      // Calculate Variances if predictions exist
+      const predPeakBg = props['Predicted Peak BG']?.number;
+      const predPeakTimeStr = props['Predicted Peak Time']?.date?.start;
+
+      if (predPeakBg != null) {
+        updatePayload.properties['Peak BG Delta'] = { number: peakBg - predPeakBg };
+      }
+      if (predPeakTimeStr) {
+        const predDate = new Date(predPeakTimeStr);
+        const timeVar = Math.round((peakDate - predDate) / (1000 * 60));
+        updatePayload.properties['Peak Time Delta (min)'] = { number: timeVar };
+      }
+
       console.log(`Updating '${titleText}' (${dateStr}): Pre ${preBg}, Peak ${peakBg}, Delta ${delta}`);
       await patchJson(`https://api.notion.com/v1/pages/${item.id}`, updatePayload, notionHeaders);
     } else {
