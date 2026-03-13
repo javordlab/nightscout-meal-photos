@@ -41,7 +41,12 @@ const projections = [
   { id: '31e85ec7066881228aa5ee05e84875ab', bg: 171, time: '2026-03-09T11:55:00.000-07:00' }, // Breakfast
   { id: '31e85ec70668819c8560df620bc9e7f1', bg: 208, time: '2026-03-09T15:30:00.000-07:00' }, // Lunch
   { id: '31e85ec7066881929bc7ca0df4488886', bg: 146, time: '2026-03-09T17:58:00.000-07:00' }, // Snack
-  { id: '31e85ec70668814d8954fb5174085f15', bg: 234, time: '2026-03-08T20:40:00.000-07:00' }  // Dinner (Logged Mar 8 evening)
+  { id: '32285ec706688129bd53da00427fb63c', bg: 259, time: '2026-03-09T21:35:00.000-07:00' }, // Dinner (Consolidated)
+  { id: '32285ec7066881d080fbcd0ab8ac9f29', bg: 259, time: '2026-03-09T21:35:00.000-07:00' }, // Dessert (Consolidated)
+  { id: '32285ec706688146b12adad0277fd75e', bg: 214, time: '2026-03-09T23:30:00.000-07:00' }, // Late Snack
+  // Mar 10
+  { id: '32185ec70668818eb893e79dc4ceecba', bg: 165, time: '2026-03-10T12:00:00-07:00' }, // Breakfast
+  { id: '32185ec70668810bb4a8e6ae75af38fe', bg: 135, time: '2026-03-10T11:30:00-07:00' }  // Snack
 ];
 
 async function run() {

@@ -77,7 +77,7 @@ function extractPhotos(text) {
 }
 
 async function main() {
-  console.log("Starting Radial Dispatcher v2...");
+  console.log("Starting Radial Dispatcher v2.1...");
   
   if (!fs.existsSync(LOG_PATH)) {
     console.error("Error: health_log.md not found.");
@@ -85,7 +85,8 @@ async function main() {
   }
 
   const content = fs.readFileSync(LOG_PATH, 'utf8');
-  const lines = content.split('\n').filter(l => l.includes('| 2026-03-10') || l.includes('| 2026-03-11') || l.includes('| 2026-03-12')).reverse(); // Process Mar 10-12
+  // Process all history for backfill
+  const lines = content.split('\n').filter(l => l.startsWith('| 202')).reverse(); 
   
   console.log(`Found ${lines.length} entries in log.`);
 
@@ -101,9 +102,13 @@ async function main() {
       mealType: p[5],
       text: p[6],
       carbs: parseInt(p[7]) || null,
-      cals: parseInt(p[8]) || null,
-      iso: `${p[1]}T${p[2]}:00-07:00` // Assuming PDT for Mar 2026
+      cals: parseInt(p[8]) || null
     };
+    
+    // Determine Timezone Offset
+    const dStr = `${entryData.date}T${entryData.time}:00`;
+    const isPDT = new Date(dStr + "Z") > new Date("2026-03-08T10:00:00Z");
+    entryData.iso = dStr + (isPDT ? "-07:00" : "-08:00");
 
     const photos = extractPhotos(entryData.text);
     const cleanText = entryData.text.replace(/\[📷\]\([^\)]+\)/g, '').trim();
@@ -128,7 +133,6 @@ async function main() {
       console.log("  -> Pushing to Nightscout...");
       await nsRequest("POST", "/api/v1/treatments.json", nsBody);
     } else if (Array.isArray(existingNS) && existingNS.length > 0) {
-      // Check if text matches, if not update
       const existing = existingNS[0];
       if (existing.notes !== nsBody.notes || existing.carbs !== nsBody.carbs) {
         console.log("  -> Updating Nightscout...");
@@ -138,12 +142,9 @@ async function main() {
 
     // 2. Sync to Notion
     const notionQuery = await notionRequest("POST", `/databases/${NOTION_DB_ID}/query`, {
-      filter: {
-        and: [
-          { property: "Date", date: { equals: entryData.iso } }
-        ]
-      }
+      filter: { and: [ { property: "Date", date: { equals: entryData.iso } } ] }
     });
+    const activeResults = (notionQuery.results || []).filter(r => !r.archived);
 
     const notionBody = {
       parent: { database_id: NOTION_DB_ID },
@@ -159,26 +160,19 @@ async function main() {
       }
     };
 
-    
-    if (notionQuery.results.length === 0) {
+    if (activeResults.length === 0) {
       console.log("  -> Pushing to Notion...");
       
-      // Calculate basic prediction for new Food entries
+      // Basic prediction for new Food entries
       if (entryData.category === 'Food' && entryData.carbs > 0) {
         const mealTime = new Date(entryData.iso);
-        const predPeakTime = new Date(mealTime.getTime() + 105 * 60 * 1000); // Default 105 mins
-        const predRise = 30 + (entryData.carbs * 1.5); // Very simple heuristic
-        // This is a placeholder; real logic would use pre-meal BG
-        // But dispatcher doesn't have easy access to NS SGV at the moment of log.
-        // We will leave the BG prediction for the manual log confirm step.
+        const predPeakTime = new Date(mealTime.getTime() + 105 * 60 * 1000); 
         notionBody.properties['Predicted Peak Time'] = { date: { start: predPeakTime.toISOString() } };
       }
 
       await notionRequest("POST", "/pages", notionBody);
     } else {
-      await notionRequest("POST", "/pages", notionBody);
-    } else {
-      const existing = notionQuery.results[0];
+      const existing = activeResults[0];
       const existingTitle = existing.properties.Entry.title[0]?.plain_text;
       const existingCarbs = existing.properties["Carbs (est)"].number;
       const existingPhoto = existing.properties.Photo.url;
