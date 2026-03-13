@@ -13,5 +13,5 @@
 ## Operational Standards
 - **SAFETY:** Use `trash` over `rm`. Ask before exfiltrating data (emails, public posts).
 - **GROUPS:** In group chats, contribute only when directly mentioned or adding clear value. Use emojis for acknowledgement.
-- **QUOTAS:** Prioritize `anthropic/claude-3.5-sonnet` for reasoning and complex logic. Use `google/gemini-3-flash` exclusively for image analysis, high-context data ingestion (MySQL syncs), and routine cron tasks to optimize costs.
+- **QUOTAS:** Prioritize `google/gemini-3-flash` for all tasks (reasoning, image analysis, and background automation) to maintain cost efficiency and stability. Avoid switching to high-tier models (e.g., Sonnet/GPT-5) unless explicitly requested and configured.
 - **TOOLS:** Refer to `SKILL.md` for tools and `TOOLS.md` for local configuration/notes.
