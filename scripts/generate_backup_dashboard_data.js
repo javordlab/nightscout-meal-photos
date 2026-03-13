@@ -37,20 +37,21 @@ function getFiles(dir, retentionType) {
 
 const SHIPMENT_PATH = "/Users/javier/.openclaw/workspace/memory/shipment_status.json";
 
-function getShipmentStatus() {
-    if (!fs.existsSync(SHIPMENT_PATH)) return null;
+function getShipments() {
+    if (!fs.existsSync(SHIPMENT_PATH)) return [];
     try {
         const raw = fs.readFileSync(SHIPMENT_PATH, 'utf8');
         const parsed = JSON.parse(raw);
-        return {
-            trackingNumber: parsed.tracking_number,
-            status: parsed.status,
-            expectedDelivery: parsed.expected_delivery,
-            lastEvent: parsed.last_event,
-            lastAccessed: fs.statSync(SHIPMENT_PATH).mtime.toISOString()
-        };
+        return Object.keys(parsed).map(tn => ({
+            trackingNumber: tn,
+            carrier: parsed[tn].carrier,
+            status: parsed[tn].status,
+            expectedDelivery: parsed[tn].expected_delivery,
+            lastEvent: parsed[tn].last_event,
+            lastUpdate: parsed[tn].last_update
+        }));
     } catch (e) {
-        return null;
+        return [];
     }
 }
 
@@ -59,7 +60,7 @@ function main() {
     
     const data = {
         lastUpdated: new Date().toISOString(),
-        shipment: getShipmentStatus(),
+        shipments: getShipments(),
         backups: [
             ...getFiles('daily', 'Daily (7 days)'),
             ...getFiles('weekly', 'Weekly (1 month)'),

@@ -1,31 +1,16 @@
 {
-  "tracking_number": "CH499405530CA",
-  "status": "In transit",
-  "expected_delivery": "2026-03-17",
-  "last_update": "2026-03-13T08:40:00",
-  "last_event": "Item processed - Bethpage, USA",
-  "history": [
-    {
-      "date": "2026-03-12",
-      "time": "1:21 pm",
-      "event": "Item processed",
-      "location": "Bethpage, USA"
-    },
-    {
-      "date": "2026-03-11",
-      "time": "8:09 pm",
-      "event": "Item has arrived in foreign country",
-      "location": "Usjfka, USA"
-    },
-    {
-      "date": "2026-03-11",
-      "time": "7:07 pm",
-      "event": "International shipment has arrived in a foreign country",
-      "location": "Usjfka"
-    },
-    {
-      "date": "2026-03-10",
-      "event": "Received by Canada Post"
-    }
-  ]
+  "CH499405530CA": {
+    "carrier": "Canada Post",
+    "status": "In transit",
+    "expected_delivery": "2026-03-17",
+    "last_update": "2026-03-13T10:19:00",
+    "last_event": "Item processed - Bethpage, USA"
+  },
+  "1ZB8673X0413940373": {
+    "carrier": "UPS",
+    "status": "On the Way",
+    "expected_delivery": "2026-03-16",
+    "last_update": "2026-03-13T10:19:00",
+    "last_event": "Clearance in Progress - 03/13/2026, 3:47 A.M."
+  }
 }
