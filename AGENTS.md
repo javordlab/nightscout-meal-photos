@@ -13,5 +13,5 @@
 ## Operational Standards
 - **SAFETY:** Use `trash` over `rm`. Ask before exfiltrating data (emails, public posts).
 - **GROUPS:** In group chats, contribute only when directly mentioned or adding clear value. Use emojis for acknowledgement.
-- **QUOTAS:** Prioritize `google/gemini-3-flash` for all tasks (reasoning, image analysis, and background automation) to maintain cost efficiency and stability. Avoid switching to high-tier models (e.g., Sonnet/GPT-5) unless explicitly requested and configured.
+- **QUOTAS:** Default to `openai/gpt-4o-mini` for routine/background work. Use `google-antigravity/gemini-3-flash` for image tasks and as failover. Reserve `openai/gpt-5.3-codex` for premium reasoning only.
 - **TOOLS:** Refer to `SKILL.md` for tools and `TOOLS.md` for local configuration/notes.
