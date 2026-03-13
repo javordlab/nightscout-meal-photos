@@ -2,6 +2,8 @@
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-03-13 | 12:49 | Maria Dennis | Activity | - | 30 minutes gardening | null | null |
+| 2026-03-13 | 12:47 | Maria Dennis | Food | Snack | Snack: Mixed nuts and cheese balls [📷](https://iili.io/qlVW9DJ.jpg) | 10 | 250 |
 | 2026-03-13 | 12:44 | Maria Dennis | Activity | - | 45 minutes walk | null | null |
 | 2026-03-13 | 10:17 | Maria Dennis | Food | Breakfast | Breakfast: Open-faced corned beef and cheese sandwich with half a kiwi and black coffee [📷](https://iili.io/qlAA44f.jpg) | 23 | 370 |
 | 2026-03-12 | 19:48 | Maria Dennis | Medication | - | 1500mg Metformin HCL | null | null |
