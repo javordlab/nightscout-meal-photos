@@ -1,5 +1,27 @@
 [
   {
+    "id": "32285ec7-0668-81da-b8aa-d30d71d30461",
+    "title": "Snack: Mixed nuts and cheese balls",
+    "type": "Snack",
+    "date": "2026-03-13T12:47:00.000-07:00",
+    "photo": "https://iili.io/qlVW9DJ.jpg",
+    "carbs": 10,
+    "cals": 250,
+    "delta": 0,
+    "peak": 162
+  },
+  {
+    "id": "32285ec7-0668-813c-a7d9-c38d6e9342a1",
+    "title": "Breakfast: Open-faced corned beef and cheese sandwich with half a kiwi and black coffee",
+    "type": "Breakfast",
+    "date": "2026-03-13T10:17:00.000-07:00",
+    "photo": "https://iili.io/qlAA44f.jpg",
+    "carbs": 23,
+    "cals": 370,
+    "delta": 45,
+    "peak": 162
+  },
+  {
     "id": "32285ec7-0668-8123-af40-ecf08842d089",
     "title": "Dessert: Yogurt with walnuts and honey/jam",
     "type": "Dessert",
