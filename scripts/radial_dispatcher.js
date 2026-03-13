@@ -1,5 +1,6 @@
 const fs = require('fs');
 const https = require('https');
+const { execSync } = require('child_process');
 
 // --- Configuration ---
 const LOG_PATH = "/Users/javier/.openclaw/workspace/health_log.md";
@@ -7,8 +8,41 @@ const NIGHTSCOUT_URL = "https://p01--sefi--s66fclg7g2lm.code.run";
 const NIGHTSCOUT_SECRET = "b3170e23f45df7738434cd8be9cd79d86a6d0f01"; // SHA1
 const NOTION_KEY = "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";
 const NOTION_DB_ID = "31685ec7-0668-813e-8b9e-c5b4d5d70fa5";
+const MYSQL_BIN = "/opt/homebrew/opt/mysql@8.4/bin/mysql";
 
 // --- Helpers ---
+function mysqlEscape(str) {
+  if (str === null || str === undefined) return 'NULL';
+  return `'${String(str).replace(/'/g, "''")}'`;
+}
+
+function syncToMysql(data) {
+  const mealType = data.category === "Food" ? (data.mealType === "-" ? "Snack" : data.mealType) : null;
+  const photoUrl = data.photos && data.photos.length > 0 ? data.photos[0] : null;
+  
+  const sql = `
+    INSERT INTO maria_health_log 
+    (entry_title, event_date, user_name, category, meal_type, carbs_est, calories_est, photo_url)
+    VALUES 
+    (${mysqlEscape(data.text)}, ${mysqlEscape(data.iso.replace('T', ' ').substring(0, 19))}, 
+     ${mysqlEscape(data.user)}, ${mysqlEscape(data.category)}, 
+     ${mealType ? mysqlEscape(mealType) : 'NULL'}, 
+     ${data.carbs || 'NULL'}, ${data.cals || 'NULL'}, 
+     ${photoUrl ? mysqlEscape(photoUrl) : 'NULL'})
+    ON DUPLICATE KEY UPDATE 
+    entry_title = VALUES(entry_title),
+    carbs_est = VALUES(carbs_est),
+    calories_est = VALUES(calories_est),
+    photo_url = VALUES(photo_url);
+  `;
+  
+  try {
+    execSync(`${MYSQL_BIN} -u root health_monitor -e "${sql.replace(/"/g, '\\"')}"`);
+    console.log("  -> MySQL OK");
+  } catch (e) {
+    console.error("  -> MySQL Sync Failed:", e.message);
+  }
+}
 async function nsRequest(method, endpoint, body = null) {
   const url = `${NIGHTSCOUT_URL}${endpoint}`;
   const data = body ? JSON.stringify(body) : null;
@@ -189,6 +223,9 @@ async function main() {
         await notionRequest("PATCH", `/pages/${existing.id}`, notionBody);
       }
     }
+
+    // 3. Sync to MySQL
+    syncToMysql({ ...entryData, text: cleanText, photos });
   }
 
   console.log("Radial Sync Complete.");
