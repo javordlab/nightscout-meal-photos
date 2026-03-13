@@ -2,6 +2,7 @@
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-03-13 | 13:55 | Maria Dennis | Activity | - | 15 minutes walk | null | null |
 | 2026-03-13 | 13:44 | Maria Dennis | Food | Lunch | Lunch: Fried rice, prosciutto, and a sliced orange [📷](https://iili.io/qlNchv9.jpg) | 43 | 310 |
 | 2026-03-13 | 12:49 | Maria Dennis | Activity | - | 30 minutes gardening | null | null |
 | 2026-03-13 | 12:47 | Maria Dennis | Food | Snack | Snack: Mixed nuts and cheese balls [📷](https://iili.io/qlVW9DJ.jpg) | 10 | 250 |
