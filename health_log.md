@@ -2,6 +2,7 @@
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-03-12 | 19:48 | Maria Dennis | Medication | - | 1500mg Metformin HCL | null | null |
 | 2026-03-12 | 19:15 | Maria Dennis | Activity | - | 45 minutes walk and Qigong | null | null |
 | 2026-03-12 | 19:00 | Maria Dennis | Food | Dessert | Dessert: Yogurt with walnuts and honey/jam [📷](https://iili.io/qcTcanV.jpg) | 25 | 230 |
 | 2026-03-12 | 18:45 | Maria Dennis | Food | Dinner | Dinner: Leftover lunch (shrimp/fish taco fillings, roasted potatoes) and one orange [📷](https://iili.io/qcIm7lj.jpg) | 55 | 380 |

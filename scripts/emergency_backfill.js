@@ -66,10 +66,12 @@ async function run() {
         "User": { select: { name: e.user } },
         "Carbs (est)": { number: e.carbs },
         "Calories (est)": { number: e.cals },
-        "Meal Type": { select: { name: e.mealType === "-" ? "Snack" : e.mealType } },
         "Photo": { url: photos[0] || null }
       }
     };
+    if (e.category === "Food") {
+      notionBody.properties["Meal Type"] = { select: { name: e.mealType === "-" ? "Snack" : e.mealType } };
+    }
     await postJson('https://api.notion.com/v1/pages', { 'Authorization': `Bearer ${NOTION_KEY}`, 'Notion-Version': '2022-06-28' }, notionBody);
     console.log("  -> Notion OK");
 

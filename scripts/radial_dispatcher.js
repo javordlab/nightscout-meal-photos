@@ -155,10 +155,16 @@ async function main() {
         "User": { select: { name: entryData.user } },
         "Carbs (est)": { number: entryData.carbs },
         "Calories (est)": { number: entryData.cals },
-        "Meal Type": { select: { name: entryData.mealType === "-" ? "Snack" : entryData.mealType } },
         "Photo": { url: photos[0] || null }
       }
     };
+
+    // Only set Meal Type if Category is Food
+    if (entryData.category === "Food") {
+      notionBody.properties["Meal Type"] = { 
+        select: { name: entryData.mealType === "-" ? "Snack" : entryData.mealType } 
+      };
+    }
 
     if (activeResults.length === 0) {
       console.log("  -> Pushing to Notion...");
