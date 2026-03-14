@@ -61,8 +61,13 @@
                         <div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-purple-500"></span> Notion</div>
                     </div>
                 </div>
-                <div class="h-48">
-                    <canvas id="growthChart"></canvas>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 h-48">
+                    <div class="col-span-1">
+                        <canvas id="growthChartGlucose"></canvas>
+                    </div>
+                    <div class="col-span-1">
+                        <canvas id="growthChartNotion"></canvas>
+                    </div>
                 </div>
             </div>
         </div>
@@ -214,37 +219,53 @@
                     document.getElementById('notion-count').textContent = data.database.notion.toLocaleString();
                 }
 
-                // Growth Chart
+                // Growth Charts (separate axes)
                 if (data.syncHistory && data.syncHistory.length > 0) {
-                    const ctx = document.getElementById('growthChart').getContext('2d');
-                    new Chart(ctx, {
+                    const labels = data.syncHistory.map(h => h.date);
+
+                    // Glucose chart
+                    const ctxG = document.getElementById('growthChartGlucose').getContext('2d');
+                    new Chart(ctxG, {
                         type: 'line',
                         data: {
-                            labels: data.syncHistory.map(h => h.date),
+                            labels: labels,
                             datasets: [{
                                 label: 'Glucose Records',
                                 data: data.syncHistory.map(h => h.glucose),
                                 borderColor: '#3B82F6',
-                                backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                                backgroundColor: 'rgba(59, 130, 246, 0.08)',
                                 fill: true,
-                                tension: 0.4
-                            }, {
-                                label: 'Notion Syncs',
-                                data: data.syncHistory.map(h => h.notion),
-                                borderColor: '#A855F7',
-                                backgroundColor: 'rgba(168, 85, 247, 0.1)',
-                                fill: true,
-                                tension: 0.4
+                                tension: 0.3
                             }]
                         },
                         options: {
                             responsive: true,
                             maintainAspectRatio: false,
                             plugins: { legend: { display: false } },
-                            scales: {
-                                y: { display: true, beginAtZero: false },
-                                x: { display: false }
-                            }
+                            scales: { y: { beginAtZero: true }, x: { display: true } }
+                        }
+                    });
+
+                    // Notion chart
+                    const ctxN = document.getElementById('growthChartNotion').getContext('2d');
+                    new Chart(ctxN, {
+                        type: 'line',
+                        data: {
+                            labels: labels,
+                            datasets: [{
+                                label: 'Notion Syncs',
+                                data: data.syncHistory.map(h => h.notion),
+                                borderColor: '#A855F7',
+                                backgroundColor: 'rgba(168, 85, 247, 0.08)',
+                                fill: true,
+                                tension: 0.3
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            plugins: { legend: { display: false } },
+                            scales: { y: { beginAtZero: true }, x: { display: true } }
                         }
                     });
                 }

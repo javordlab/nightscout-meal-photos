@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-14T04:19:38.800Z",
+  "lastUpdated": "2026-03-14T09:25:14.535Z",
   "shipments": [
     {
       "trackingNumber": "CH499405530CA",
@@ -7,7 +7,7 @@
       "status": "In transit",
       "expectedDelivery": "2026-03-17",
       "lastEvent": "Item processed - Bethpage, USA",
-      "lastUpdate": "2026-03-13T18:16:00"
+      "lastUpdate": "2026-03-14T02:16:00"
     },
     {
       "trackingNumber": "1ZB8673X0413940373",
@@ -15,7 +15,7 @@
       "status": "On the Way",
       "expectedDelivery": "2026-03-16",
       "lastEvent": "Clearance in Progress - 03/13/2026, 3:47 A.M.",
-      "lastUpdate": "2026-03-13T18:16:00"
+      "lastUpdate": "2026-03-14T02:16:00"
     }
   ],
   "tokenUsage": [
@@ -24,7 +24,7 @@
       "bucketType": "250K",
       "managedUsed": 100000,
       "managedRemaining": 150000,
-      "oauthUsed": 1392842,
+      "oauthUsed": 1682855,
       "percentRemaining": 60
     },
     {
@@ -38,18 +38,71 @@
     {
       "platform": "OpenAI Codex",
       "bucketType": "2M",
-      "managedUsed": 20000,
-      "managedRemaining": 1980000,
+      "managedUsed": 25000,
+      "managedRemaining": 2475000,
       "oauthUsed": 0,
       "percentRemaining": 99
     },
     {
       "platform": "OpenAI GPT 5.3",
       "bucketType": "2M",
-      "managedUsed": 20000,
-      "managedRemaining": 1980000,
+      "managedUsed": 25000,
+      "managedRemaining": 2475000,
       "oauthUsed": 0,
       "percentRemaining": 99
+    }
+  ],
+  "database": {
+    "glucose": 5357,
+    "notion": 191,
+    "history": {
+      "glucose": [
+        {
+          "date": "2026-03-14",
+          "count": 99
+        },
+        {
+          "date": "2026-03-13",
+          "count": 268
+        },
+        {
+          "date": "2026-03-12",
+          "count": 278
+        },
+        {
+          "date": "2026-03-11",
+          "count": 278
+        },
+        {
+          "date": "2026-03-10",
+          "count": 260
+        },
+        {
+          "date": "2026-03-09",
+          "count": 279
+        },
+        {
+          "date": "2026-03-08",
+          "count": 274
+        }
+      ],
+      "notion": [
+        {
+          "date": "2026-03-13",
+          "count": 7
+        },
+        {
+          "date": "2026-03-12",
+          "count": 184
+        }
+      ]
+    }
+  },
+  "syncHistory": [
+    {
+      "date": "2026-03-14",
+      "glucose": 5357,
+      "notion": 191
     }
   ],
   "backups": [
