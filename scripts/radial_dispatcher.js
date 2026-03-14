@@ -140,9 +140,21 @@ async function main() {
     };
     
     // Determine Timezone Offset
-    const dStr = `${entryData.date}T${entryData.time}:00`;
-    const isPDT = new Date(dStr + "Z") > new Date("2026-03-08T10:00:00Z");
-    entryData.iso = dStr + (isPDT ? "-07:00" : "-08:00");
+    let timePart = entryData.time;
+    let offsetPart = null;
+    if (timePart.includes(' ')) {
+      const parts = timePart.split(' ');
+      timePart = parts[0];
+      offsetPart = parts[1];
+    }
+
+    const dStr = `${entryData.date}T${timePart}:00`;
+    if (offsetPart) {
+      entryData.iso = dStr + offsetPart;
+    } else {
+      const isPDT = new Date(dStr + "Z") > new Date("2026-03-08T10:00:00Z");
+      entryData.iso = dStr + (isPDT ? "-07:00" : "-08:00");
+    }
 
     const photos = extractPhotos(entryData.text);
     const cleanText = entryData.text.replace(/\[📷\]\([^\)]+\)/g, '').trim();

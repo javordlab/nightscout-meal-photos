@@ -64,6 +64,7 @@ function main() {
 
   const child = spawn('node', args);
   child.stdin.write(JSON.stringify(chartData));
+  console.log("Chart Data:", JSON.stringify(chartData, null, 2));
   child.stdin.end();
 
   child.on('close', (code) => {
