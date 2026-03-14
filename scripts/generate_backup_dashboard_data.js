@@ -5,6 +5,7 @@ const { execSync } = require('child_process');
 const BACKUP_ROOT = "/Users/javier/.openclaw/workspace/backups/mysql";
 const OUTPUT_PATH = "/Users/javier/.openclaw/workspace/nightscout-meal-photos/data/backups.json";
 const SESSIONS_PATH = "/Users/javier/.openclaw/agents/health-guard/sessions/sessions.json";
+const MYSQL_BIN = "/opt/homebrew/opt/mysql@8.4/bin/mysql";
 
 function getFiles(dir, retentionType) {
     const fullPath = path.join(BACKUP_ROOT, dir);
@@ -53,13 +54,12 @@ function getUsage() {
     try {
         const sessions = JSON.parse(fs.readFileSync(SESSIONS_PATH, 'utf8'));
         Object.values(sessions).forEach(s => {
-            // Include both input and output tokens for OAuth sessions
             totalOAuthTokens += ((s.inputTokens || 0) + (s.outputTokens || 0));
         });
     } catch (e) {}
 
     return usage.map(u => {
-        const bucketSize = u.bucket === '2M' ? 2000000 : 250000;
+        const bucketSize = u.bucket === '2M' ? 2500000 : 250000;
         const remaining = Math.round(bucketSize * (u.percent / 100));
         const managedUsed = bucketSize - remaining;
         
@@ -68,18 +68,73 @@ function getUsage() {
             bucketType: u.bucket,
             managedUsed: managedUsed,
             managedRemaining: remaining,
-            oauthUsed: u.platform === 'Gemini Antigravity' ? totalOAuthTokens : 0, // Most usage is currently Antigravity
+            oauthUsed: u.platform === 'Gemini Antigravity' ? totalOAuthTokens : 0,
             percentRemaining: u.percent
         };
     });
 }
 
+function getDatabaseStats() {
+    const stats = {
+        glucose: 0,
+        notion: 0,
+        history: []
+    };
+
+    try {
+        // Current counts
+        stats.glucose = parseInt(execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT COUNT(*) FROM glucose_measurements;"`).toString().trim());
+        stats.notion = parseInt(execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT COUNT(*) FROM maria_health_log;"`).toString().trim());
+
+        // Simple growth history (last 7 days by created_at/event_time)
+        // Note: For glucose we use event_time, for notion we use created_at as proxies for sync volume
+        const glucoseHistory = execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT DATE(event_time), COUNT(*) FROM glucose_measurements GROUP BY DATE(event_time) ORDER BY DATE(event_time) DESC LIMIT 7;"`).toString().trim().split('\n');
+        const notionHistory = execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT DATE(created_at), COUNT(*) FROM maria_health_log GROUP BY DATE(created_at) ORDER BY DATE(created_at) DESC LIMIT 7;"`).toString().trim().split('\n');
+
+        stats.history = {
+            glucose: glucoseHistory.map(line => {
+                const [date, count] = line.split('\t');
+                return { date, count: parseInt(count) };
+            }),
+            notion: notionHistory.map(line => {
+                const [date, count] = line.split('\t');
+                return { date, count: parseInt(count) };
+            })
+        };
+    } catch (e) {
+        console.error("Database stats failed:", e.message);
+    }
+    return stats;
+}
+
 function main() {
     console.log("Generating Dashboard Data...");
+    const currentData = fs.existsSync(OUTPUT_PATH) ? JSON.parse(fs.readFileSync(OUTPUT_PATH, 'utf8')) : {};
+    
+    const dbStats = getDatabaseStats();
+    
+    // Maintain a rolling history of total counts for the growth chart
+    let syncHistory = currentData.syncHistory || [];
+    const today = new Date().toISOString().split('T')[0];
+    
+    // Update or add today's entry
+    const entryIdx = syncHistory.findIndex(h => h.date === today);
+    const newEntry = { date: today, glucose: dbStats.glucose, notion: dbStats.notion };
+    if (entryIdx >= 0) {
+        syncHistory[entryIdx] = newEntry;
+    } else {
+        syncHistory.push(newEntry);
+    }
+    
+    // Keep last 30 entries
+    if (syncHistory.length > 30) syncHistory = syncHistory.slice(-30);
+
     const data = {
         lastUpdated: new Date().toISOString(),
         shipments: getShipments(),
         tokenUsage: getUsage(),
+        database: dbStats,
+        syncHistory: syncHistory,
         backups: [
             ...getFiles('daily', 'Daily (7 days)'),
             ...getFiles('weekly', 'Weekly (1 month)'),

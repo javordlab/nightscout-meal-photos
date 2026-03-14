@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MySQL Backup Status - Health Monitor</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .status-badge { @apply px-2 py-1 rounded-full text-xs font-semibold; }
@@ -23,31 +24,52 @@
     </nav>
 
     <main class="max-w-7xl mx-auto px-4 py-8">
-        <!-- Shipment Status -->
-        <div id="shipment-card" class="bg-white p-6 rounded-2xl border shadow-sm mb-8 hidden">
-            <div class="flex items-center justify-between mb-4">
-                <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center text-orange-600">
-                        <i class="fas fa-shipping-fast"></i>
+        <!-- Token Usage -->
+        <div id="usage-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 hidden">
+            <!-- Usage cards injected here -->
+        </div>
+
+        <!-- Database Stats -->
+        <div id="db-stats-container" class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8 hidden">
+            <div class="lg:col-span-1 space-y-6">
+                <div class="bg-white p-6 rounded-2xl border shadow-sm">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h2 class="font-bold">Glucose Records</h2>
                     </div>
-                    <h2 class="font-bold text-lg">Shipment Tracking: <span id="tracking-num" class="font-mono text-gray-500"></span></h2>
+                    <div class="text-3xl font-black text-gray-800" id="glucose-count">0</div>
+                    <div class="text-xs text-gray-400 mt-1 uppercase font-bold tracking-tighter">Total MySQL Entries</div>
                 </div>
-                <div class="text-xs text-gray-400">Last Checked: <span id="shipment-accessed"></span></div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="border rounded-xl p-4 bg-orange-50/30">
-                    <div class="text-xs text-orange-600 uppercase font-bold mb-1 tracking-tighter">Current Status</div>
-                    <div id="shipment-status" class="text-xl font-black text-orange-700">-</div>
-                </div>
-                <div class="border rounded-xl p-4">
-                    <div class="text-xs text-gray-500 uppercase font-bold mb-1 tracking-tighter">Expected Delivery</div>
-                    <div id="shipment-delivery" class="text-xl font-bold">-</div>
-                </div>
-                <div class="border rounded-xl p-4 col-span-1 md:col-span-1">
-                    <div class="text-xs text-gray-500 uppercase font-bold mb-1 tracking-tighter">Latest Event</div>
-                    <div id="shipment-event" class="text-sm font-medium leading-tight line-clamp-2">-</div>
+                <div class="bg-white p-6 rounded-2xl border shadow-sm">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center text-purple-600">
+                            <i class="fas fa-sync"></i>
+                        </div>
+                        <h2 class="font-bold">Notion Syncs</h2>
+                    </div>
+                    <div class="text-3xl font-black text-gray-800" id="notion-count">0</div>
+                    <div class="text-xs text-gray-400 mt-1 uppercase font-bold tracking-tighter">Synchronized Items</div>
                 </div>
             </div>
+            <div class="lg:col-span-2 bg-white p-6 rounded-2xl border shadow-sm">
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="font-bold">Sync Growth (30 Days)</h2>
+                    <div class="flex gap-4 text-[10px] font-bold uppercase tracking-tighter">
+                        <div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Glucose</div>
+                        <div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-purple-500"></span> Notion</div>
+                    </div>
+                </div>
+                <div class="h-48">
+                    <canvas id="growthChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shipment Status -->
+        <div id="shipment-container" class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 hidden">
+            <!-- Shipment cards injected here -->
         </div>
 
         <!-- Retention Overview -->
@@ -117,13 +139,114 @@
                 document.getElementById('count-label').textContent = `${data.backups.length} snapshots tracked`;
                 
                 // Shipment info
-                if (data.shipment) {
-                    document.getElementById('shipment-card').classList.remove('hidden');
-                    document.getElementById('tracking-num').textContent = data.shipment.trackingNumber;
-                    document.getElementById('shipment-status').textContent = data.shipment.status;
-                    document.getElementById('shipment-delivery').textContent = data.shipment.expectedDelivery || 'TBD';
-                    document.getElementById('shipment-event').textContent = data.shipment.lastEvent || 'No data';
-                    document.getElementById('shipment-accessed').textContent = new Date(data.shipment.lastAccessed).toLocaleString();
+                const shipmentContainer = document.getElementById('shipment-container');
+                if (data.shipments && data.shipments.length > 0) {
+                    shipmentContainer.classList.remove('hidden');
+                    shipmentContainer.innerHTML = data.shipments.map(s => `
+                        <div class="bg-white p-6 rounded-2xl border shadow-sm">
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 ${s.carrier === 'UPS' ? 'bg-amber-100 text-amber-700' : 'bg-orange-100 text-orange-600'} rounded-full flex items-center justify-center">
+                                        <i class="fas fa-shipping-fast"></i>
+                                    </div>
+                                    <h2 class="font-bold">${s.carrier} Tracking: <span class="font-mono text-gray-400 text-xs">${s.trackingNumber}</span></h2>
+                                </div>
+                                <div class="text-[10px] text-gray-400">${new Date(s.lastUpdate).toLocaleString()}</div>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4 mb-4">
+                                <div class="border rounded-xl p-3 ${s.status.toLowerCase().includes('way') || s.status.toLowerCase().includes('transit') ? 'bg-blue-50/30' : 'bg-gray-50/30'}">
+                                    <div class="text-[10px] text-gray-500 uppercase font-bold tracking-tighter mb-1">Status</div>
+                                    <div class="text-sm font-black text-gray-800">${s.status}</div>
+                                </div>
+                                <div class="border rounded-xl p-3">
+                                    <div class="text-[10px] text-gray-500 uppercase font-bold tracking-tighter mb-1">Expected</div>
+                                    <div class="text-sm font-bold text-gray-800">${s.expectedDelivery || 'TBD'}</div>
+                                </div>
+                            </div>
+                            <div class="border rounded-xl p-3 bg-gray-50/50">
+                                <div class="text-[10px] text-gray-500 uppercase font-bold tracking-tighter mb-1">Latest Event</div>
+                                <div class="text-xs font-medium text-gray-600 line-clamp-1">${s.lastEvent || 'No data'}</div>
+                            </div>
+                        </div>
+                    `).join('');
+                }
+
+                // Token Usage info
+                const usageContainer = document.getElementById('usage-container');
+                if (data.tokenUsage && data.tokenUsage.length > 0) {
+                    usageContainer.classList.remove('hidden');
+                    // Filter out Codex if it has 0 usage and is 100% full
+                    const filteredUsage = data.tokenUsage.filter(u => u.platform !== 'OpenAI Codex' || u.managedUsed > 0 || u.oauthUsed > 0);
+                    usageContainer.innerHTML = filteredUsage.map(u => `
+                        <div class="bg-white p-5 rounded-2xl border shadow-sm">
+                            <div class="flex justify-between items-start mb-3">
+                                <div class="text-xs font-bold text-gray-400 uppercase tracking-tighter">${u.platform}</div>
+                                <div class="text-[10px] bg-gray-100 px-1.5 py-0.5 rounded text-gray-500 font-mono">${u.bucketType}</div>
+                            </div>
+                            <div class="flex items-end justify-between mb-2">
+                                <div class="text-2xl font-black text-gray-800">${u.percentRemaining}%</div>
+                                <div class="text-[10px] text-gray-400 font-medium">REMAINING</div>
+                            </div>
+                            <div class="w-full bg-gray-100 rounded-full h-1.5 mb-4">
+                                <div class="bg-blue-500 h-1.5 rounded-full" style="width: ${u.percentRemaining}%"></div>
+                            </div>
+                            <div class="space-y-1">
+                                <div class="flex justify-between text-[10px]">
+                                    <span class="text-gray-400">Managed Used</span>
+                                    <span class="font-mono text-gray-600">${(u.managedUsed / 1000).toFixed(1)}k</span>
+                                </div>
+                                ${u.oauthUsed > 0 ? `
+                                <div class="flex justify-between text-[10px]">
+                                    <span class="text-blue-400 font-bold">OAuth Used</span>
+                                    <span class="font-mono text-blue-600 font-bold">${(u.oauthUsed / 1000).toFixed(1)}k</span>
+                                </div>
+                                ` : ''}
+                            </div>
+                        </div>
+                    `).join('');
+                }
+
+                // Database Stats
+                const dbStatsContainer = document.getElementById('db-stats-container');
+                if (data.database) {
+                    dbStatsContainer.classList.remove('hidden');
+                    document.getElementById('glucose-count').textContent = data.database.glucose.toLocaleString();
+                    document.getElementById('notion-count').textContent = data.database.notion.toLocaleString();
+                }
+
+                // Growth Chart
+                if (data.syncHistory && data.syncHistory.length > 0) {
+                    const ctx = document.getElementById('growthChart').getContext('2d');
+                    new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: data.syncHistory.map(h => h.date),
+                            datasets: [{
+                                label: 'Glucose Records',
+                                data: data.syncHistory.map(h => h.glucose),
+                                borderColor: '#3B82F6',
+                                backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                                fill: true,
+                                tension: 0.4
+                            }, {
+                                label: 'Notion Syncs',
+                                data: data.syncHistory.map(h => h.notion),
+                                borderColor: '#A855F7',
+                                backgroundColor: 'rgba(168, 85, 247, 0.1)',
+                                fill: true,
+                                tension: 0.4
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            plugins: { legend: { display: false } },
+                            scales: {
+                                y: { display: true, beginAtZero: false },
+                                x: { display: false }
+                            }
+                        }
+                    });
                 }
 
                 const list = document.getElementById('backup-list');
