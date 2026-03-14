@@ -2,6 +2,8 @@
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-03-13 | 19:00 | Maria Dennis | Food | Dessert | Dessert: Walnut strudel/cake with whipped cream [📷](https://iili.io/qlLwf7s.jpg) | 28 | 320 |
+| 2026-03-13 | 18:49 | Maria Dennis | Food | Dinner | Dinner: Pulled meat fajita on flour tortilla with sautéed cabbage/carrots and white wine [📷](https://iili.io/qlL9zve.jpg) | 37 | 530 |
 | 2026-03-13 | 13:55 | Maria Dennis | Activity | - | 15 minutes walk | null | null |
 | 2026-03-13 | 13:44 | Maria Dennis | Food | Lunch | Lunch: Fried rice, prosciutto, and a sliced orange [📷](https://iili.io/qlNchv9.jpg) | 43 | 310 |
 | 2026-03-13 | 12:49 | Maria Dennis | Activity | - | 30 minutes gardening | null | null |
