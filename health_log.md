@@ -2,6 +2,8 @@
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-03-14 | 10:45 | Maria Dennis | Activity | - | 30 minutes walk | null | null |
+| 2026-03-14 | 09:55 | Maria Dennis | Food | Breakfast | Breakfast: 2 fried eggs on 1 slice of toast, half a kiwi, and black coffee [📷](https://iili.io/b897d6da-6326-442f-b636-b6825405d464.jpg) | 22 | 260 |
 | 2026-03-13 | 20:43 | Maria Dennis | Medication | - | 1000mg Metformin HCL | null | null |
 | 2026-03-13 | 19:50 | Maria Dennis | Activity | - | 15 minutes Qigong | null | null |
 | 2026-03-13 | 19:30 | Maria Dennis | Activity | - | 20 minutes walk uphill/down hill | null | null |
