@@ -1,5 +1,16 @@
 [
   {
+    "id": "32385ec7-0668-8182-9867-fb4a1fdbe726",
+    "title": "Breakfast: 2 fried eggs on 1 slice of toast, half a kiwi, and black coffee",
+    "type": "Breakfast",
+    "date": "2026-03-14T09:55:00.000-07:00",
+    "photo": "https://iili.io/b897d6da-6326-442f-b636-b6825405d464.jpg",
+    "carbs": 22,
+    "cals": 260,
+    "delta": 48,
+    "peak": 168
+  },
+  {
     "id": "32385ec7-0668-810e-a149-cc1626a6a46a",
     "title": "Dinner: Burrito (pulled meat, cabbage/carrots, white wine), sweet roll (walnut), and a slice of bread",
     "type": "Dinner",
