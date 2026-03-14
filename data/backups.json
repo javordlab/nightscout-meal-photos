@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-14T06:20:41.069Z",
+  "lastUpdated": "2026-03-14T09:25:14.535Z",
   "shipments": [
     {
       "trackingNumber": "CH499405530CA",
@@ -7,7 +7,7 @@
       "status": "In transit",
       "expectedDelivery": "2026-03-17",
       "lastEvent": "Item processed - Bethpage, USA",
-      "lastUpdate": "2026-03-13T22:16:00"
+      "lastUpdate": "2026-03-14T02:16:00"
     },
     {
       "trackingNumber": "1ZB8673X0413940373",
@@ -15,7 +15,7 @@
       "status": "On the Way",
       "expectedDelivery": "2026-03-16",
       "lastEvent": "Clearance in Progress - 03/13/2026, 3:47 A.M.",
-      "lastUpdate": "2026-03-13T22:16:00"
+      "lastUpdate": "2026-03-14T02:16:00"
     }
   ],
   "tokenUsage": [
@@ -24,7 +24,7 @@
       "bucketType": "250K",
       "managedUsed": 100000,
       "managedRemaining": 150000,
-      "oauthUsed": 2254219,
+      "oauthUsed": 1682855,
       "percentRemaining": 60
     },
     {
@@ -53,13 +53,13 @@
     }
   ],
   "database": {
-    "glucose": 5327,
+    "glucose": 5357,
     "notion": 191,
     "history": {
       "glucose": [
         {
           "date": "2026-03-14",
-          "count": 69
+          "count": 99
         },
         {
           "date": "2026-03-13",
@@ -101,7 +101,7 @@
   "syncHistory": [
     {
       "date": "2026-03-14",
-      "glucose": 5327,
+      "glucose": 5357,
       "notion": 191
     }
   ],
