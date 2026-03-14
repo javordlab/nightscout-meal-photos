@@ -1,5 +1,16 @@
 [
   {
+    "id": "32385ec7-0668-810e-a149-cc1626a6a46a",
+    "title": "Dinner: Burrito (pulled meat, cabbage/carrots, white wine), sweet roll (walnut), and a slice of bread",
+    "type": "Dinner",
+    "date": "2026-03-13T18:49:00.000-07:00",
+    "photo": "https://iili.io/qlL9zve.jpg",
+    "carbs": 80,
+    "cals": 930,
+    "delta": 0,
+    "peak": 125
+  },
+  {
     "id": "32285ec7-0668-8132-9888-ca67e2e179d1",
     "title": "Lunch: Fried rice, prosciutto, and a sliced orange",
     "type": "Lunch",
