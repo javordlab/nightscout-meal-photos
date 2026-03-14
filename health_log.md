@@ -3,6 +3,7 @@
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
 | 2026-03-14 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-03-14 | 14:45 -07:00 | Maria Dennis | Activity | - | 25 minutes walk | null | null |
 | 2026-03-14 | 14:15 -07:00 | Maria Dennis | Food | Lunch | Lunch: Open-faced pastrami sandwich on seeded bread, carrot sticks, orange slices, and 10 green grapes [📷](https://iili.io/69b01ec8-8c15-4503-b835-ea975336b5c2.jpg) | 43 | 325 |
 | 2026-03-14 | 11:20 -07:00 | Maria Dennis | Medication | - | 500mg Metformin HCL | null | null |
 | 2026-03-14 | 10:45 -07:00 | Maria Dennis | Activity | - | 30 minutes walk | null | null |
