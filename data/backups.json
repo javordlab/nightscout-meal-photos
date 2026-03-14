@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-14T09:25:14.535Z",
+  "lastUpdated": "2026-03-14T18:19:46.778Z",
   "shipments": [
     {
       "trackingNumber": "CH499405530CA",
@@ -24,7 +24,7 @@
       "bucketType": "250K",
       "managedUsed": 100000,
       "managedRemaining": 150000,
-      "oauthUsed": 1682855,
+      "oauthUsed": 1745521,
       "percentRemaining": 60
     },
     {
@@ -53,13 +53,13 @@
     }
   ],
   "database": {
-    "glucose": 5357,
+    "glucose": 5463,
     "notion": 191,
     "history": {
       "glucose": [
         {
           "date": "2026-03-14",
-          "count": 99
+          "count": 205
         },
         {
           "date": "2026-03-13",
@@ -100,12 +100,64 @@
   },
   "syncHistory": [
     {
+      "date": "2026-03-05",
+      "glucose": 3090,
+      "notion": 0
+    },
+    {
+      "date": "2026-03-06",
+      "glucose": 3357,
+      "notion": 0
+    },
+    {
+      "date": "2026-03-07",
+      "glucose": 3621,
+      "notion": 0
+    },
+    {
+      "date": "2026-03-08",
+      "glucose": 3895,
+      "notion": 0
+    },
+    {
+      "date": "2026-03-09",
+      "glucose": 4174,
+      "notion": 0
+    },
+    {
+      "date": "2026-03-10",
+      "glucose": 4434,
+      "notion": 0
+    },
+    {
+      "date": "2026-03-11",
+      "glucose": 4712,
+      "notion": 0
+    },
+    {
+      "date": "2026-03-12",
+      "glucose": 4990,
+      "notion": 184
+    },
+    {
+      "date": "2026-03-13",
+      "glucose": 5258,
+      "notion": 191
+    },
+    {
       "date": "2026-03-14",
-      "glucose": 5357,
+      "glucose": 5463,
       "notion": 191
     }
   ],
   "backups": [
+    {
+      "filename": "2026-03-14.sql.gz",
+      "type": "Daily (7 days)",
+      "size": "107.15 KB",
+      "created": "2026-03-14T11:20:01.504Z",
+      "path": "daily/2026-03-14.sql.gz"
+    },
     {
       "filename": "2026-03-13.sql.gz",
       "type": "Daily (7 days)",
