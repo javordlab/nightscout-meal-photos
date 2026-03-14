@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MySQL Backup Status - Health Monitor</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .status-badge { @apply px-2 py-1 rounded-full text-xs font-semibold; }
@@ -26,6 +27,44 @@
         <!-- Token Usage -->
         <div id="usage-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 hidden">
             <!-- Usage cards injected here -->
+        </div>
+
+        <!-- Database Stats -->
+        <div id="db-stats-container" class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8 hidden">
+            <div class="lg:col-span-1 space-y-6">
+                <div class="bg-white p-6 rounded-2xl border shadow-sm">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h2 class="font-bold">Glucose Records</h2>
+                    </div>
+                    <div class="text-3xl font-black text-gray-800" id="glucose-count">0</div>
+                    <div class="text-xs text-gray-400 mt-1 uppercase font-bold tracking-tighter">Total MySQL Entries</div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border shadow-sm">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center text-purple-600">
+                            <i class="fas fa-sync"></i>
+                        </div>
+                        <h2 class="font-bold">Notion Syncs</h2>
+                    </div>
+                    <div class="text-3xl font-black text-gray-800" id="notion-count">0</div>
+                    <div class="text-xs text-gray-400 mt-1 uppercase font-bold tracking-tighter">Synchronized Items</div>
+                </div>
+            </div>
+            <div class="lg:col-span-2 bg-white p-6 rounded-2xl border shadow-sm">
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="font-bold">Sync Growth (30 Days)</h2>
+                    <div class="flex gap-4 text-[10px] font-bold uppercase tracking-tighter">
+                        <div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Glucose</div>
+                        <div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-purple-500"></span> Notion</div>
+                    </div>
+                </div>
+                <div class="h-48">
+                    <canvas id="growthChart"></canvas>
+                </div>
+            </div>
         </div>
 
         <!-- Shipment Status -->
@@ -165,6 +204,49 @@
                             </div>
                         </div>
                     `).join('');
+                }
+
+                // Database Stats
+                const dbStatsContainer = document.getElementById('db-stats-container');
+                if (data.database) {
+                    dbStatsContainer.classList.remove('hidden');
+                    document.getElementById('glucose-count').textContent = data.database.glucose.toLocaleString();
+                    document.getElementById('notion-count').textContent = data.database.notion.toLocaleString();
+                }
+
+                // Growth Chart
+                if (data.syncHistory && data.syncHistory.length > 0) {
+                    const ctx = document.getElementById('growthChart').getContext('2d');
+                    new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: data.syncHistory.map(h => h.date),
+                            datasets: [{
+                                label: 'Glucose Records',
+                                data: data.syncHistory.map(h => h.glucose),
+                                borderColor: '#3B82F6',
+                                backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                                fill: true,
+                                tension: 0.4
+                            }, {
+                                label: 'Notion Syncs',
+                                data: data.syncHistory.map(h => h.notion),
+                                borderColor: '#A855F7',
+                                backgroundColor: 'rgba(168, 85, 247, 0.1)',
+                                fill: true,
+                                tension: 0.4
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            plugins: { legend: { display: false } },
+                            scales: {
+                                y: { display: true, beginAtZero: false },
+                                x: { display: false }
+                            }
+                        }
+                    });
                 }
 
                 const list = document.getElementById('backup-list');
