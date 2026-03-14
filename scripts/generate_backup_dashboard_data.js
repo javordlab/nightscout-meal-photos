@@ -86,10 +86,9 @@ function getDatabaseStats() {
         stats.glucose = parseInt(execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT COUNT(*) FROM glucose_measurements;"`).toString().trim());
         stats.notion = parseInt(execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT COUNT(*) FROM maria_health_log;"`).toString().trim());
 
-        // Simple growth history (last 7 days by created_at/event_time)
-        // Note: For glucose we use event_time, for notion we use created_at as proxies for sync volume
-        const glucoseHistory = execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT DATE(event_time), COUNT(*) FROM glucose_measurements GROUP BY DATE(event_time) ORDER BY DATE(event_time) DESC LIMIT 7;"`).toString().trim().split('\n');
-        const notionHistory = execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT DATE(created_at), COUNT(*) FROM maria_health_log GROUP BY DATE(created_at) ORDER BY DATE(created_at) DESC LIMIT 7;"`).toString().trim().split('\n');
+        // Simple growth history (last 30 days by created_at/event_time)
+        const glucoseHistory = execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT DATE(event_time), COUNT(*) FROM glucose_measurements GROUP BY DATE(event_time) ORDER BY DATE(event_time) DESC LIMIT 30;"`).toString().trim().split('\n');
+        const notionHistory = execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT DATE(created_at), COUNT(*) FROM maria_health_log GROUP BY DATE(created_at) ORDER BY DATE(created_at) DESC LIMIT 30;"`).toString().trim().split('\n');
 
         stats.history = {
             glucose: glucoseHistory.map(line => {
@@ -107,11 +106,28 @@ function getDatabaseStats() {
     return stats;
 }
 
+function getGlucoseTrend() {
+    try {
+        // Fetch last 30 days of data from MySQL for the trend
+        // Decimating or averaging might be needed for performance, but for now let's get the raw points
+        const raw = execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT event_time, sgv FROM glucose_measurements WHERE event_time >= DATE_SUB(NOW(), INTERVAL 30 DAY) ORDER BY event_time ASC;"`).toString().trim();
+        if (!raw) return [];
+        return raw.split('\n').map(line => {
+            const [time, sgv] = line.split('\t');
+            return { t: new Date(time).toISOString(), v: parseInt(sgv) };
+        });
+    } catch (e) {
+        console.error("Glucose trend failed:", e.message);
+        return [];
+    }
+}
+
 function main() {
     console.log("Generating Dashboard Data...");
     const currentData = fs.existsSync(OUTPUT_PATH) ? JSON.parse(fs.readFileSync(OUTPUT_PATH, 'utf8')) : {};
     
     const dbStats = getDatabaseStats();
+    const trend = getGlucoseTrend();
     
     // Maintain a rolling history of total counts for the growth chart
     let syncHistory = currentData.syncHistory || [];
@@ -135,6 +151,7 @@ function main() {
         tokenUsage: getUsage(),
         database: dbStats,
         syncHistory: syncHistory,
+        glucoseTrend: trend,
         backups: [
             ...getFiles('daily', 'Daily (7 days)'),
             ...getFiles('weekly', 'Weekly (1 month)'),

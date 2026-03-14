@@ -55,19 +55,36 @@
             </div>
             <div class="lg:col-span-2 bg-white p-6 rounded-2xl border shadow-sm">
                 <div class="flex items-center justify-between mb-6">
-                    <h2 class="font-bold">Sync Growth (30 Days)</h2>
-                    <div class="flex gap-4 text-[10px] font-bold uppercase tracking-tighter">
-                        <div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Glucose</div>
-                        <div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-purple-500"></span> Notion</div>
+                    <h2 class="font-bold">Glucose Trend</h2>
+                    <div class="flex gap-2" id="range-selector">
+                        <button onclick="setRange(24)" class="px-3 py-1 text-[10px] font-bold uppercase rounded-lg border bg-blue-600 text-white transition-all" data-range="24">24h</button>
+                        <button onclick="setRange(72)" class="px-3 py-1 text-[10px] font-bold uppercase rounded-lg border bg-white text-gray-500 hover:bg-gray-50 transition-all" data-range="72">72h</button>
+                        <button onclick="setRange(168)" class="px-3 py-1 text-[10px] font-bold uppercase rounded-lg border bg-white text-gray-500 hover:bg-gray-50 transition-all" data-range="168">1w</button>
+                        <button onclick="setRange(720)" class="px-3 py-1 text-[10px] font-bold uppercase rounded-lg border bg-white text-gray-500 hover:bg-gray-50 transition-all" data-range="720">1m</button>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 h-48">
-                    <div class="col-span-1">
-                        <canvas id="growthChartGlucose"></canvas>
-                    </div>
-                    <div class="col-span-1">
-                        <canvas id="growthChartNotion"></canvas>
-                    </div>
+                <div class="h-64">
+                    <canvas id="glucoseTrendChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sync History (Growth) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <div class="bg-white p-6 rounded-2xl border shadow-sm">
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="font-bold">MySQL Record Growth (Glucose)</h2>
+                </div>
+                <div class="h-48">
+                    <canvas id="growthChartGlucose"></canvas>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border shadow-sm">
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="font-bold">MySQL Record Growth (Notion)</h2>
+                </div>
+                <div class="h-48">
+                    <canvas id="growthChartNotion"></canvas>
                 </div>
             </div>
         </div>
@@ -135,14 +152,82 @@
     </main>
 
     <script>
+        let dashboardData = null;
+        let charts = {};
+
+        function setRange(hours) {
+            // Update buttons
+            document.querySelectorAll('#range-selector button').forEach(btn => {
+                if (parseInt(btn.dataset.range) === hours) {
+                    btn.classList.remove('bg-white', 'text-gray-500');
+                    btn.classList.add('bg-blue-600', 'text-white');
+                } else {
+                    btn.classList.add('bg-white', 'text-gray-500');
+                    btn.classList.remove('bg-blue-600', 'text-white');
+                }
+            });
+
+            updateGlucoseChart(hours);
+        }
+
+        function updateGlucoseChart(hours) {
+            if (!dashboardData || !dashboardData.glucoseTrend) return;
+
+            const cutoff = new Date(Date.now() - hours * 60 * 60 * 1000);
+            const filtered = dashboardData.glucoseTrend.filter(p => new Date(p.t) >= cutoff);
+
+            const labels = filtered.map(p => {
+                const d = new Date(p.t);
+                return hours <= 72 ? d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : d.toLocaleDateString([], { month: 'numeric', day: 'numeric' });
+            });
+
+            const data = filtered.map(p => p.v);
+
+            if (charts.glucose) {
+                charts.glucose.data.labels = labels;
+                charts.glucose.data.datasets[0].data = data;
+                charts.glucose.update('none');
+            } else {
+                const ctx = document.getElementById('glucoseTrendChart').getContext('2d');
+                charts.glucose = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: 'Glucose (mg/dL)',
+                            data: data,
+                            borderColor: '#3B82F6',
+                            backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                            borderWidth: 2,
+                            pointRadius: hours <= 48 ? 2 : 0,
+                            fill: true,
+                            tension: 0.4
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        interaction: { intersect: false, mode: 'index' },
+                        plugins: { legend: { display: false } },
+                        scales: { 
+                            y: { min: 40, max: 300, grid: { color: '#f3f4f6' } },
+                            x: { grid: { display: false } }
+                        }
+                    }
+                });
+            }
+        }
+
         async function loadStatus() {
             try {
                 const response = await fetch('./data/backups.json');
-                const data = await response.json();
+                dashboardData = await response.json();
+                const data = dashboardData;
                 
                 document.getElementById('last-updated').textContent = `Last sync: ${new Date(data.lastUpdated).toLocaleString()}`;
                 document.getElementById('count-label').textContent = `${data.backups.length} snapshots tracked`;
                 
+                // ... (shipment and usage code remains same)
                 // Shipment info
                 const shipmentContainer = document.getElementById('shipment-container');
                 if (data.shipments && data.shipments.length > 0) {
@@ -219,6 +304,9 @@
                     document.getElementById('notion-count').textContent = data.database.notion.toLocaleString();
                 }
 
+                // Initial Glucose Chart
+                updateGlucoseChart(24);
+
                 // Growth Charts (separate axes)
                 if (data.syncHistory && data.syncHistory.length > 0) {
                     const labels = data.syncHistory.map(h => h.date);
@@ -230,7 +318,7 @@
                         data: {
                             labels: labels,
                             datasets: [{
-                                label: 'Glucose Records',
+                                label: 'Total Records',
                                 data: data.syncHistory.map(h => h.glucose),
                                 borderColor: '#3B82F6',
                                 backgroundColor: 'rgba(59, 130, 246, 0.08)',
@@ -242,7 +330,7 @@
                             responsive: true,
                             maintainAspectRatio: false,
                             plugins: { legend: { display: false } },
-                            scales: { y: { beginAtZero: true }, x: { display: true } }
+                            scales: { y: { beginAtZero: false }, x: { display: true } }
                         }
                     });
 
@@ -253,7 +341,7 @@
                         data: {
                             labels: labels,
                             datasets: [{
-                                label: 'Notion Syncs',
+                                label: 'Total Syncs',
                                 data: data.syncHistory.map(h => h.notion),
                                 borderColor: '#A855F7',
                                 backgroundColor: 'rgba(168, 85, 247, 0.08)',
@@ -265,7 +353,7 @@
                             responsive: true,
                             maintainAspectRatio: false,
                             plugins: { legend: { display: false } },
-                            scales: { y: { beginAtZero: true }, x: { display: true } }
+                            scales: { y: { beginAtZero: false }, x: { display: true } }
                         }
                     });
                 }
