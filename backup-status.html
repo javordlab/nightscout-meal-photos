@@ -23,6 +23,11 @@
     </nav>
 
     <main class="max-w-7xl mx-auto px-4 py-8">
+        <!-- Token Usage -->
+        <div id="usage-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 hidden">
+            <!-- Usage cards injected here -->
+        </div>
+
         <!-- Shipment Status -->
         <div id="shipment-card" class="bg-white p-6 rounded-2xl border shadow-sm mb-8 hidden">
             <div class="flex items-center justify-between mb-4">
@@ -117,13 +122,49 @@
                 document.getElementById('count-label').textContent = `${data.backups.length} snapshots tracked`;
                 
                 // Shipment info
-                if (data.shipment) {
-                    document.getElementById('shipment-card').classList.remove('hidden');
-                    document.getElementById('tracking-num').textContent = data.shipment.trackingNumber;
-                    document.getElementById('shipment-status').textContent = data.shipment.status;
-                    document.getElementById('shipment-delivery').textContent = data.shipment.expectedDelivery || 'TBD';
-                    document.getElementById('shipment-event').textContent = data.shipment.lastEvent || 'No data';
-                    document.getElementById('shipment-accessed').textContent = new Date(data.shipment.lastAccessed).toLocaleString();
+                const shipmentCard = document.getElementById('shipment-card');
+                if (data.shipments && data.shipments.length > 0) {
+                    shipmentCard.classList.remove('hidden');
+                    // Simple multi-shipment display (using first for header, could be expanded)
+                    const s = data.shipments[0];
+                    document.getElementById('tracking-num').textContent = s.trackingNumber;
+                    document.getElementById('shipment-status').textContent = s.status;
+                    document.getElementById('shipment-delivery').textContent = s.expectedDelivery || 'TBD';
+                    document.getElementById('shipment-event').textContent = s.lastEvent || 'No data';
+                    document.getElementById('shipment-accessed').textContent = new Date(s.lastUpdate).toLocaleString();
+                }
+
+                // Token Usage info
+                const usageContainer = document.getElementById('usage-container');
+                if (data.tokenUsage && data.tokenUsage.length > 0) {
+                    usageContainer.classList.remove('hidden');
+                    usageContainer.innerHTML = data.tokenUsage.map(u => `
+                        <div class="bg-white p-5 rounded-2xl border shadow-sm">
+                            <div class="flex justify-between items-start mb-3">
+                                <div class="text-xs font-bold text-gray-400 uppercase tracking-tighter">${u.platform}</div>
+                                <div class="text-[10px] bg-gray-100 px-1.5 py-0.5 rounded text-gray-500 font-mono">${u.bucketType}</div>
+                            </div>
+                            <div class="flex items-end justify-between mb-2">
+                                <div class="text-2xl font-black text-gray-800">${u.percentRemaining}%</div>
+                                <div class="text-[10px] text-gray-400 font-medium">REMAINING</div>
+                            </div>
+                            <div class="w-full bg-gray-100 rounded-full h-1.5 mb-4">
+                                <div class="bg-blue-500 h-1.5 rounded-full" style="width: ${u.percentRemaining}%"></div>
+                            </div>
+                            <div class="space-y-1">
+                                <div class="flex justify-between text-[10px]">
+                                    <span class="text-gray-400">Managed Used</span>
+                                    <span class="font-mono text-gray-600">${(u.managedUsed / 1000).toFixed(1)}k</span>
+                                </div>
+                                ${u.oauthUsed > 0 ? `
+                                <div class="flex justify-between text-[10px]">
+                                    <span class="text-blue-400 font-bold">OAuth Used</span>
+                                    <span class="font-mono text-blue-600 font-bold">${(u.oauthUsed / 1000).toFixed(1)}k</span>
+                                </div>
+                                ` : ''}
+                            </div>
+                        </div>
+                    `).join('');
                 }
 
                 const list = document.getElementById('backup-list');
