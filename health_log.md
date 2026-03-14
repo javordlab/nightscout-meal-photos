@@ -2,6 +2,8 @@
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-03-13 | 20:43 | Maria Dennis | Medication | - | 1000mg Metformin HCL | null | null |
+| 2026-03-13 | 19:50 | Maria Dennis | Activity | - | 15 minutes Qigong | null | null |
 | 2026-03-13 | 19:30 | Maria Dennis | Activity | - | 20 minutes walk uphill/down hill | null | null |
 | 2026-03-13 | 18:49 | Maria Dennis | Food | Dinner | Dinner: Burrito (pulled meat, cabbage/carrots, white wine), sweet roll (walnut), and a slice of bread [📷](https://iili.io/qlL9zve.jpg) [📷](https://iili.io/qlLwf7s.jpg) [📷](https://iili.io/qlQ3yUQ.jpg) | 80 | 930 |
 | 2026-03-13 | 13:55 | Maria Dennis | Activity | - | 15 minutes walk | null | null |
