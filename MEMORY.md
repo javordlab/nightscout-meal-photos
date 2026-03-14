@@ -19,3 +19,9 @@
 ## Infrastructure
 - **Nightscout:** https://p01--sefi--s66fclg7g2lm.code.run (Secret: JaviCare2026)
 - **Photos:** https://javordlab.github.io/nightscout-meal-photos/
+
+## Model Usage Reference (OpenAI shared traffic)
+- OpenAI shared free daily token tiers:
+  - **250K/day**: gpt-5.4, gpt-5.2, gpt-5.1, gpt-5.1-codex, gpt-5, gpt-5-codex, gpt-5-chat-latest, gpt-4.1, gpt-4o, o1, o3.
+  - **2.5M/day**: gpt-5.1-codex-mini, gpt-5-mini, gpt-5-nano, gpt-4.1-mini, gpt-4.1-nano, gpt-4o-mini, o1-mini, o3-mini, o4-mini, codex-mini-latest.
+- Important correction from Javi: this second tier is **2.5M** (not 2M).
