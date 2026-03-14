@@ -240,6 +240,16 @@ async function main() {
     syncToMysql({ ...entryData, text: cleanText, photos });
   }
 
+  // 4. Update Dashboard
+  try {
+    console.log("  -> Updating Backup Dashboard...");
+    execSync('node /Users/javier/.openclaw/workspace/scripts/generate_backup_dashboard_data.js');
+    execSync('node /Users/javier/.openclaw/workspace/scripts/backfill_dashboard_history.js');
+    execSync('cd /Users/javier/.openclaw/workspace/nightscout-meal-photos && git add . && git commit -m "chore: automated dashboard update" && git push origin main');
+  } catch (e) {
+    console.error("Dashboard update failed:", e.message);
+  }
+
   console.log("Radial Sync Complete.");
 }
 
