@@ -1,6 +1,8 @@
 # Health Log
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
+| 2026-03-15 | 09:05 -07:00 | Maria Dennis | Medication | - | Rosuvastatin 10mg (Scheduled) | null | null |
+| 2026-03-15 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
 | 2026-03-14 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 2026-03-14 | 20:00 -07:00 | Maria Dennis | Activity | - | 15 minute walk and 20 minutes Qigong (BG: 164 mg/dL Flat) | null | null |
