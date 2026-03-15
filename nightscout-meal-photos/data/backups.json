@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-15T11:17:01.254Z",
+  "lastUpdated": "2026-03-15T11:32:28.293Z",
   "shipments": [
     {
       "trackingNumber": "CH499405530CA",
@@ -24,7 +24,7 @@
       "bucketType": "250K",
       "managedUsed": 100000,
       "managedRemaining": 150000,
-      "oauthUsed": 1960014,
+      "oauthUsed": 1324052,
       "percentRemaining": 60
     },
     {
@@ -22577,6 +22577,13 @@
     }
   ],
   "backups": [
+    {
+      "filename": "2026-03-15.sql.gz",
+      "type": "Daily (7 days)",
+      "size": "111.71 KB",
+      "created": "2026-03-15T11:21:53.046Z",
+      "path": "daily/2026-03-15.sql.gz"
+    },
     {
       "filename": "2026-03-14.sql.gz",
       "type": "Daily (7 days)",
