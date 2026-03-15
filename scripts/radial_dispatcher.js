@@ -105,13 +105,13 @@ async function notionRequest(method, endpoint, body = null) {
 }
 
 function extractPhotos(text) {
-  const regex = /\[📷\]\((https:\/\/iili\.io\/[^\)]+)\)/g;
+  const regex = /\[📷\]\((https?:\/\/[^\)]+)\)/g;
   const matches = [...text.matchAll(regex)];
   return matches.map(m => m[1]);
 }
 
 async function main() {
-  console.log("Starting Radial Dispatcher v2.1...");
+  console.log("Starting Radial Dispatcher v2.2...");
   
   if (!fs.existsSync(LOG_PATH)) {
     console.error("Error: health_log.md not found.");
@@ -174,7 +174,7 @@ async function main() {
       created_at: entryData.iso
     };
 
-    const existingNS = await nsRequest("GET", `/api/v1/treatments.json?find[created_at]=${entryData.iso}&count=1`, {});
+    const existingNS = await nsRequest("GET", `/api/v1/treatments.json?find[created_at]=${entryData.iso}&find[notes][$regex]=${encodeURIComponent(cleanText.substring(0, 20))}&count=1`, {});
     if (Array.isArray(existingNS) && existingNS.length === 0) {
       console.log("  -> Pushing to Nightscout...");
       await nsRequest("POST", "/api/v1/treatments.json", nsBody);
@@ -188,7 +188,12 @@ async function main() {
 
     // 2. Sync to Notion
     const notionQuery = await notionRequest("POST", `/databases/${NOTION_DB_ID}/query`, {
-      filter: { and: [ { property: "Date", date: { equals: entryData.iso } } ] }
+      filter: { 
+        and: [ 
+            { property: "Date", date: { equals: entryData.iso } },
+            { property: "Entry", title: { contains: cleanText.substring(0, 50) } }
+        ] 
+      }
     });
     const activeResults = (notionQuery.results || []).filter(r => !r.archived);
 

@@ -55,7 +55,7 @@ async function run() {
     filter: {
       and: [
         { property: 'Category', select: { equals: 'Food' } },
-        { property: 'Date', date: { on_or_after: '2026-03-10' } }
+        { property: 'Date', date: { on_or_after: '2026-03-01' } }
       ]
     }
   });

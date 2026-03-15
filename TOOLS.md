@@ -2,7 +2,7 @@
 
 ## Logging Protocol
 1. **SSoT:** Log/correct in `/workspace/health_log.md` first.
-2. **BG DATA:** Whenever logging a new Food, Snack, or Activity entry, fetch the latest glucose value from Nightscout and include it in the response and the log note.
+2. **BG DATA:** Whenever logging a new Food, Snack, Activity, or Medication entry, fetch the latest glucose value from Nightscout and include it in the response and the log note.
 3. **GATE:** Run `node scripts/consistency_check.js 2` before/after sync.
 4. **NIGHTSCOUT:** Use `eventType` (Meal Bolus, Note, Exercise). Never leave null.
 5. **NOTION:** Sync to DB `31685ec7-0668-813e-8b9e-c5b4d5d70fa5`. Confirm success.

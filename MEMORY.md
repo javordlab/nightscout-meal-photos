@@ -11,11 +11,12 @@
 - **Meds:** Metformin (1500mg nightly, ~9 PM), Lisinopril (10mg daily morning), Rosuvastatin (10mg every other morning).
 - **Rosuvastatin Cycle:** Anchor date 2026-03-01 (taken).
 
-## Operational Memory
-- **Radial Architecture:** `health_log.md` is the only SSoT. One-way dispatch to external APIs.
-- **Daily Summary (9:30 AM PT):** Pull glucose from Nightscout, intake from `health_log.md`. Generate 3 charts (glucose, calories, carbs). Post to "Food log" Telegram.
-- **Reports:** Must include 24-hour GMI/A1C estimate, Outliers, Supervisor Analysis, and the Model used for generation.
-- **Logging Protocol:** Every new food/snack/activity log must include the most recent glucose value from Nightscout.
+## Core Operational Protocols
+- **Radial Architecture:** `health_log.md` is the only SSoT. All syncs (Notion, Nightscout, MySQL) must trigger every 30 minutes and after any manual log update.
+- **Reporting (9:30 AM PT Daily):** Must include 24-hour summary (Avg, TIR, GMI), 14-day trends (GMI, Avg, TIR, CV), Nutrition (24h full + 14d avg), Medication status, Outliers, and Supervisor Analysis. Use emojis/bolding.
+- **Projections:** Every Food entry MUST have a `Predicted Peak BG` and `Predicted Peak Time` calculated immediately upon logging.
+- **Real-time Context:** Every manual log entry (Food, Medication, Activity) MUST include the most recent glucose value from Nightscout in the response and the log note.
+- **Data Integrity:** All dashboard data and visual charts must be pushed to GitHub at the end of every sync cycle.
 
 ## Infrastructure
 - **Nightscout:** https://p01--sefi--s66fclg7g2lm.code.run (Secret: JaviCare2026)
