@@ -1,5 +1,16 @@
 [
   {
+    "id": "32485ec7-0668-811b-8118-d8ba365b1a42",
+    "title": "Breakfast: Seeded toast with 2 slices of prosciutto and 2 slices of tomato (BG: 130 mg/dL Flat)",
+    "type": "Breakfast",
+    "date": "2026-03-15T09:05:00.000-07:00",
+    "photo": "https://iili.io/70e1c2c7-082b-486f-b6f0-99d2bae19f52.jpg",
+    "carbs": 22,
+    "cals": 250,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "32485ec7-0668-81b4-9689-df810a291195",
     "title": "Dessert: Very small slice of dark chocolate cake with whipped cream",
     "type": "Dessert",
