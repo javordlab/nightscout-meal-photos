@@ -1,6 +1,7 @@
 # Health Log
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
+| 2026-03-15 | 10:45 -07:00 | Maria Dennis | Activity | - | 1 hr walk (BG: 191 mg/dL Flat) | null | null |
 | 2026-03-15 | 09:05 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Seeded toast with 2 slices of prosciutto and 2 slices of tomato (BG: 130 mg/dL Flat) [📷](https://iili.io/70e1c2c7-082b-486f-b6f0-99d2bae19f52.jpg) | 22 | 250 |
 | 2026-03-15 | 09:05 -07:00 | Maria Dennis | Medication | - | Rosuvastatin 10mg (Scheduled) | null | null |
 | 2026-03-15 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
