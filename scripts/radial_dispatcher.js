@@ -129,12 +129,18 @@ async function main() {
   }
 
   const content = fs.readFileSync(LOG_PATH, 'utf8');
-  // Process all history for backfill
-  const lines = content.split('\n').filter(l => l.startsWith('| 202')).reverse(); 
+  const allLines = content.split('\n');
+  const dataLines = allLines.filter(l => l.startsWith('| 202'));
   
-  console.log(`Found ${lines.length} entries in log.`);
+  console.log(`Found ${dataLines.length} entries in log.`);
 
-  for (const line of lines) {
+  // Process today's entries first, then the rest
+  const today = new Date().toISOString().split('T')[0];
+  const priorityLines = dataLines.filter(l => l.includes(today));
+  const otherLines = dataLines.filter(l => !l.includes(today)).reverse();
+  const finalLines = [...priorityLines, ...otherLines];
+
+  for (const line of finalLines) {
     const p = line.split('|').map(x => x.trim());
     if (p.length < 9) continue;
 

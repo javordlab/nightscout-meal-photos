@@ -1,7 +1,7 @@
 # Health Log
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
-| 2026-03-15 | 12:45 -07:00 | Maria Dennis | Food | Lunch | Lunch: Flour tortilla wrap with peppers and meat, and 4 orange wedges (BG: 140 mg/dL Flat) [📷](https://iili.io/d6b3cf3a-ae1f-4836-b3f3-73ecd6a89ee2.jpg) | 45 | 365 |
+| 2026-03-15 | 12:45 -07:00 | Maria Dennis | Food | Lunch | Lunch: Flour tortilla wrap with peppers and meat, and 4 orange wedges (BG: 140 mg/dL Flat) [📷](https://iili.io/d6b3cf3a-ae1f-4836-b3f3-73ecd6a89ee2.jpg) (Pred: 278 mg/dL @ 2:30 PM) | 45 | 365 |
 | 2026-03-15 | 10:45 -07:00 | Maria Dennis | Activity | - | 1 hr walk (BG: 191 mg/dL Flat) | null | null |
 | 2026-03-15 | 09:05 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Seeded toast with 2 slices of prosciutto and 2 slices of tomato (BG: 130 mg/dL Flat) [📷](https://iili.io/70e1c2c7-082b-486f-b6f0-99d2bae19f52.jpg) | 22 | 250 |
 | 2026-03-15 | 09:05 -07:00 | Maria Dennis | Medication | - | Rosuvastatin 10mg (Scheduled) | null | null |
