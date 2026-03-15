@@ -5,7 +5,7 @@ const { execSync } = require('child_process');
 // --- Configuration ---
 const LOG_PATH = "/Users/javier/.openclaw/workspace/health_log.md";
 const NIGHTSCOUT_URL = "https://p01--sefi--s66fclg7g2lm.code.run";
-const NIGHTSCOUT_SECRET = "b3170e23f45df7738434cd8be9cd79d86a6d0f01"; // SHA1
+const NIGHTSCOUT_SECRET = "b3170e23f45df7738434cd8be9cd79d86a6d0f01"; // SHA1 of JaviCare2026
 const NOTION_KEY = "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";
 const NOTION_DB_ID = "31685ec7-0668-813e-8b9e-c5b4d5d70fa5";
 const MYSQL_BIN = "/opt/homebrew/opt/mysql@8.4/bin/mysql";
@@ -61,9 +61,19 @@ async function nsRequest(method, endpoint, body = null) {
       res.on("data", c => d += c);
       res.on("end", () => {
         try {
-          resolve(JSON.parse(d || "{}"));
+          if (!d || d.trim() === "" || d.trim() === "[]") {
+             resolve([]);
+          } else {
+             const parsed = JSON.parse(d);
+             resolve(parsed);
+          }
         } catch (e) {
-          resolve(d);
+          if (d.trim().startsWith('[') && d.trim().endsWith(']')) {
+             // It is an array but maybe has something weird inside
+             resolve([]);
+          }
+          console.error("  !! NS Request Parse Error. Body starts with:", d.substring(0, 100));
+          resolve({ error: "Parse Error", body: d });
         }
       });
     });
@@ -174,15 +184,25 @@ async function main() {
       created_at: entryData.iso
     };
 
-    const existingNS = await nsRequest("GET", `/api/v1/treatments.json?find[created_at]=${entryData.iso}&find[notes][$regex]=${encodeURIComponent(cleanText.substring(0, 20))}&count=1`, {});
+    const nsCheckUrl = `/api/v1/treatments.json?find[notes][$regex]=${encodeURIComponent(cleanText.substring(0, 30))}&count=1`;
+    console.log(`  -> Querying NS by notes: ${nsCheckUrl}`);
+    const existingNS = await nsRequest("GET", nsCheckUrl, {});
+    
+    if (!Array.isArray(existingNS)) {
+      console.log(`  !! NS Query Failed (not an array): ${JSON.stringify(existingNS).substring(0, 200)}`);
+    }
+
     if (Array.isArray(existingNS) && existingNS.length === 0) {
       console.log("  -> Pushing to Nightscout...");
-      await nsRequest("POST", "/api/v1/treatments.json", nsBody);
+      const postRes = await nsRequest("POST", "/api/v1/treatments.json", nsBody);
+      console.log(`  -> POST result: ${JSON.stringify(postRes).substring(0, 50)}`);
     } else if (Array.isArray(existingNS) && existingNS.length > 0) {
       const existing = existingNS[0];
-      if (existing.notes !== nsBody.notes || existing.carbs !== nsBody.carbs) {
-        console.log("  -> Updating Nightscout...");
-        await nsRequest("PUT", "/api/v1/treatments.json", { ...nsBody, _id: existing._id });
+      // Only update if notes are substantially different or carbs changed
+      if (existing.carbs !== nsBody.carbs) {
+        console.log("  -> Updating Nightscout (carb change)...");
+        const putRes = await nsRequest("PUT", "/api/v1/treatments.json", { ...nsBody, _id: existing._id });
+        console.log(`  -> PUT result: ${JSON.stringify(putRes).substring(0, 50)}`);
       }
     }
 
