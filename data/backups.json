@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-15T20:32:35.181Z",
+  "lastUpdated": "2026-03-15T20:36:30.483Z",
   "shipments": [
     {
       "trackingNumber": "CH499405530CA",
@@ -24,7 +24,7 @@
       "bucketType": "250K",
       "managedUsed": 100000,
       "managedRemaining": 150000,
-      "oauthUsed": 1841340,
+      "oauthUsed": 2339756,
       "percentRemaining": 60
     },
     {
@@ -54,9 +54,9 @@
   ],
   "database": {
     "glucose": 5758,
-    "notion": 215,
+    "notion": 217,
     "lastGlucose": "2026-03-15 19:44:31",
-    "lastNotion": "2026-03-15 13:14:17",
+    "lastNotion": "2026-03-15 13:34:19",
     "history": {
       "glucose": [
         {
@@ -151,7 +151,7 @@
       "notion": [
         {
           "date": "2026-03-15",
-          "count": 4
+          "count": 6
         },
         {
           "date": "2026-03-14",
