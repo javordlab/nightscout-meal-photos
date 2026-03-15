@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-15T18:14:48.326Z",
+  "lastUpdated": "2026-03-15T18:14:49.706Z",
   "shipments": [
     {
       "trackingNumber": "CH499405530CA",
@@ -216,6 +216,11 @@
       "date": "2026-03-14",
       "glucose": 5463,
       "notion": 191
+    },
+    {
+      "date": "2026-03-15",
+      "glucose": 5739,
+      "notion": 213
     }
   ],
   "glucoseTrend": [
