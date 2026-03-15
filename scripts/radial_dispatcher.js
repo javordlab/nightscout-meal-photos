@@ -219,7 +219,10 @@ async function main() {
       if (entryData.category === 'Food' && entryData.carbs > 0) {
         const mealTime = new Date(entryData.iso);
         const predPeakTime = new Date(mealTime.getTime() + 105 * 60 * 1000); 
+        const predictedBg = Math.round(120 + (entryData.carbs * 3.5));
+        
         notionBody.properties['Predicted Peak Time'] = { date: { start: predPeakTime.toISOString() } };
+        notionBody.properties['Predicted Peak BG'] = { number: predictedBg > 300 ? 300 : predictedBg };
       }
 
       await notionRequest("POST", "/pages", notionBody);
