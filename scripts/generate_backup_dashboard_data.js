@@ -78,6 +78,8 @@ function getDatabaseStats() {
     const stats = {
         glucose: 0,
         notion: 0,
+        lastGlucose: null,
+        lastNotion: null,
         history: []
     };
 
@@ -85,6 +87,10 @@ function getDatabaseStats() {
         // Current counts
         stats.glucose = parseInt(execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT COUNT(*) FROM glucose_measurements;"`).toString().trim());
         stats.notion = parseInt(execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT COUNT(*) FROM maria_health_log;"`).toString().trim());
+
+        // Last record times
+        stats.lastGlucose = execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT MAX(event_time) FROM glucose_measurements;"`).toString().trim();
+        stats.lastNotion = execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT MAX(created_at) FROM maria_health_log;"`).toString().trim();
 
         // Simple growth history (last 30 days by created_at/event_time)
         const glucoseHistory = execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT DATE(event_time), COUNT(*) FROM glucose_measurements GROUP BY DATE(event_time) ORDER BY DATE(event_time) DESC LIMIT 30;"`).toString().trim().split('\n');
