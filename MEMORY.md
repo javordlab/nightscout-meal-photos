@@ -14,7 +14,8 @@
 ## Operational Memory
 - **Radial Architecture:** `health_log.md` is the only SSoT. One-way dispatch to external APIs.
 - **Daily Summary (9:30 AM PT):** Pull glucose from Nightscout, intake from `health_log.md`. Generate 3 charts (glucose, calories, carbs). Post to "Food log" Telegram.
-- **Reports:** Must include 24-hour GMI/A1C estimate, Outliers, and Supervisor Analysis.
+- **Reports:** Must include 24-hour GMI/A1C estimate, Outliers, Supervisor Analysis, and the Model used for generation.
+- **Logging Protocol:** Every new food/snack/activity log must include the most recent glucose value from Nightscout.
 
 ## Infrastructure
 - **Nightscout:** https://p01--sefi--s66fclg7g2lm.code.run (Secret: JaviCare2026)
