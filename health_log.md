@@ -3,9 +3,9 @@
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
 | 2026-03-14 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-03-14 | 21:45 -07:00 | Maria Dennis | Activity | - | 15 minute walk and 20 minutes Qigong (BG: 164 mg/dL Flat) | null | null |
-| 2026-03-14 | 21:15 -07:00 | Maria Dennis | Food | Dessert | Dessert: Very small slice of dark chocolate cake with whipped cream [📷](https://iili.io/b44e5874-e6ce-4e08-a022-bff91696c959.jpg) | 28 | 250 |
-| 2026-03-14 | 20:30 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL | null | null |
+| 2026-03-14 | 20:00 -07:00 | Maria Dennis | Activity | - | 15 minute walk and 20 minutes Qigong (BG: 164 mg/dL Flat) | null | null |
+| 2026-03-14 | 19:45 -07:00 | Maria Dennis | Food | Dessert | Dessert: Very small slice of dark chocolate cake with whipped cream [📷](https://iili.io/b44e5874-e6ce-4e08-a022-bff91696c959.jpg) | 28 | 250 |
+| 2026-03-14 | 19:15 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL | null | null |
 | 2026-03-14 | 18:45 -07:00 | Maria Dennis | Food | Dinner | Dinner: Salmon with dill, small purple potato, sautéed cabbage/carrot slaw with broccoli, and a slice of rustic bread [📷](https://iili.io/433bffdc-d64f-4c48-bde5-27ef31bce5db.jpg) [📷](https://iili.io/bd369df3-cc40-4045-b83d-20112dc8a8ca.jpg) | 62 | 565 |
 | 2026-03-14 | 16:30 -07:00 | Maria Dennis | Food | Snack | Snack: 1/4 cup mixed nuts | 4 | 180 |
 | 2026-03-14 | 14:45 -07:00 | Maria Dennis | Activity | - | 25 minutes walk | null | null |
