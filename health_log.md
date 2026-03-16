@@ -1,6 +1,7 @@
 # Health Log
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
+| 2026-03-15 | 19:50 -07:00 | Maria Dennis | Activity | - | 40 minutes walk (BG: 159 mg/dL Flat) | null | null |
 | 2026-03-15 | 19:15 -07:00 | Maria Dennis | Food | Dessert | Snack: Small wedge of Brie cheese [📷](https://iili.io/4a293f8a-2283-4c49-923b-5260d4e858fe.jpg) | 0 | 60 |
 | 2026-03-15 | 18:45 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL (2x 500mg) | null | null |
 | 2026-03-15 | 18:45 -07:00 | Maria Dennis | Food | Dinner | Dinner: 3 meatballs in sauce, small purple potato, sautéed zucchini, and a glass of white wine [📷](https://iili.io/c01f80a4-aafd-48c8-01b-72d73bc822d6.jpg) | 37 | 470 |
