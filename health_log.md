@@ -2,7 +2,7 @@
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
 | 2026-03-15 | 19:50 -07:00 | Maria Dennis | Activity | - | 40 minutes walk (BG: 159 mg/dL Flat) | null | null |
-| 2026-03-15 | 19:15 -07:00 | Maria Dennis | Food | Dessert | Snack: Small wedge of Brie cheese [📷](https://iili.io/4a293f8a-2283-4c49-923b-5260d4e858fe.jpg) | 0 | 60 |
+| 2026-03-15 | 19:15 -07:00 | Maria Dennis | Food | Dessert | Snack: Small wedge of Brie cheese [📷](https://iili.io/4a293f8a-2283-4c49-923b-5260d4e858fe.jpg) (No Carb Impact) | 0 | 60 |
 | 2026-03-15 | 18:45 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL (2x 500mg) | null | null |
 | 2026-03-15 | 18:45 -07:00 | Maria Dennis | Food | Dinner | Dinner: 3 meatballs in sauce, small purple potato, sautéed zucchini, and a glass of white wine [📷](https://iili.io/c01f80a4-aafd-48c8-01b-72d73bc822d6.jpg) (Pred: 250 mg/dL @ 8:30 PM) | 37 | 470 |
 | 2026-03-16 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
@@ -10,7 +10,7 @@
 | 2026-03-15 | 13:04 -07:00 | Maria Dennis | Food | Dessert | Dessert: Small slice of dark chocolate cake with whipped cream [📷](https://iili.io/f53060b2-14d1-4466-919f-1d6cbaf359ec.jpg) (Pred: 197 mg/dL @ 2:50 PM) | 22 | 240 |
 | 2026-03-15 | 12:45 -07:00 | Maria Dennis | Food | Lunch | Lunch: Flour tortilla wrap with peppers and meat, and 4 orange wedges (BG: 140 mg/dL Flat) [📷](https://iili.io/d6b3cf3a-ae1f-4836-b3f3-73ecd6a89ee2.jpg) (Pred: 278 mg/dL @ 2:30 PM) | 45 | 365 |
 | 2026-03-15 | 10:45 -07:00 | Maria Dennis | Activity | - | 1 hr walk (BG: 191 mg/dL Flat) | null | null |
-| 2026-03-15 | 09:05 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Seeded toast with 2 slices of prosciutto and 2 slices of tomato (BG: 130 mg/dL Flat) [📷](https://iili.io/70e1c2c7-082b-486f-b6f0-99d2bae19f52.jpg) | 22 | 250 |
+| 2026-03-15 | 09:05 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Seeded toast with 2 slices of prosciutto and 2 slices of tomato (BG: 130 mg/dL Flat) [📷](https://iili.io/70e1c2c7-082b-486f-b6f0-99d2bae19f52.jpg) (Pred: 197 mg/dL @ 10:50 AM) | 22 | 250 |
 | 2026-03-15 | 09:05 -07:00 | Maria Dennis | Medication | - | Rosuvastatin 10mg (Scheduled) | null | null |
 | 2026-03-15 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
 | 2026-03-14 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |

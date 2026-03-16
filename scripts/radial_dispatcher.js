@@ -134,8 +134,9 @@ async function main() {
   
   console.log(`Found ${dataLines.length} entries in log.`);
 
-  // Process today's entries first, then the rest
-  const today = new Date().toISOString().split('T')[0];
+  // Process today's entries first, then the rest (using robust local PST date)
+  const laDate = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Los_Angeles', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+  const today = laDate; // YYYY-MM-DD
   const priorityLines = dataLines.filter(l => l.includes(today));
   const otherLines = dataLines.filter(l => !l.includes(today)).reverse();
   const finalLines = [...priorityLines, ...otherLines];
