@@ -4,7 +4,7 @@
 | 2026-03-15 | 19:50 -07:00 | Maria Dennis | Activity | - | 40 minutes walk (BG: 159 mg/dL Flat) | null | null |
 | 2026-03-15 | 19:15 -07:00 | Maria Dennis | Food | Dessert | Snack: Small wedge of Brie cheese [📷](https://iili.io/4a293f8a-2283-4c49-923b-5260d4e858fe.jpg) | 0 | 60 |
 | 2026-03-15 | 18:45 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL (2x 500mg) | null | null |
-| 2026-03-15 | 18:45 -07:00 | Maria Dennis | Food | Dinner | Dinner: 3 meatballs in sauce, small purple potato, sautéed zucchini, and a glass of white wine [📷](https://iili.io/c01f80a4-aafd-48c8-01b-72d73bc822d6.jpg) | 37 | 470 |
+| 2026-03-15 | 18:45 -07:00 | Maria Dennis | Food | Dinner | Dinner: 3 meatballs in sauce, small purple potato, sautéed zucchini, and a glass of white wine [📷](https://iili.io/c01f80a4-aafd-48c8-01b-72d73bc822d6.jpg) (Pred: 250 mg/dL @ 8:30 PM) | 37 | 470 |
 | 2026-03-16 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
 | 2026-03-15 | 13:05 -07:00 | Maria Dennis | Medication | - | 500mg Metformin HCL | null | null |
 | 2026-03-15 | 13:04 -07:00 | Maria Dennis | Food | Dessert | Dessert: Small slice of dark chocolate cake with whipped cream [📷](https://iili.io/f53060b2-14d1-4466-919f-1d6cbaf359ec.jpg) (Pred: 197 mg/dL @ 2:50 PM) | 22 | 240 |
