@@ -1,6 +1,7 @@
 # Health Log
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
+| 2026-03-16 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
 | 2026-03-15 | 13:05 -07:00 | Maria Dennis | Medication | - | 500mg Metformin HCL | null | null |
 | 2026-03-15 | 13:04 -07:00 | Maria Dennis | Food | Dessert | Dessert: Small slice of dark chocolate cake with whipped cream [📷](https://iili.io/f53060b2-14d1-4466-919f-1d6cbaf359ec.jpg) (Pred: 197 mg/dL @ 2:50 PM) | 22 | 240 |
 | 2026-03-15 | 12:45 -07:00 | Maria Dennis | Food | Lunch | Lunch: Flour tortilla wrap with peppers and meat, and 4 orange wedges (BG: 140 mg/dL Flat) [📷](https://iili.io/d6b3cf3a-ae1f-4836-b3f3-73ecd6a89ee2.jpg) (Pred: 278 mg/dL @ 2:30 PM) | 45 | 365 |
