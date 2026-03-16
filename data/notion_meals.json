@@ -165,6 +165,17 @@
     "peak": 168
   },
   {
+    "id": "32585ec7-0668-8163-9ceb-f07a0cdfffc6",
+    "title": "Dinner: Salmon with dill, small purple potato, sautéed cabbage/carrot slaw with broccoli, and a slice of rustic bread",
+    "type": "Dinner",
+    "date": "2026-03-14T18:45:00.000-07:00",
+    "photo": "https://iili.io/q18mLrJ.jpg",
+    "carbs": 62,
+    "cals": 565,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "32585ec7-0668-8174-ac25-dc59080522a9",
     "title": "Dinner: Salmon with dill, small purple potato, sautéed cabbage/carrot slaw with broccoli, and a slice of rustic bread",
     "type": "Dinner",
@@ -1087,16 +1098,5 @@
     "cals": 100,
     "delta": 79,
     "peak": 211
-  },
-  {
-    "id": "31b85ec7-0668-81e5-b91b-c211e364027c",
-    "title": "Snack: 1 Cream Sand cookie",
-    "type": "Snack",
-    "date": "2026-02-26T19:38:00.000-08:00",
-    "photo": "https://iili.io/qfwu5VS.jpg",
-    "carbs": 10,
-    "cals": 80,
-    "delta": 15,
-    "peak": 189
   }
 ]
