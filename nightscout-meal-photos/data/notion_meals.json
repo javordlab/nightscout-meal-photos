@@ -1,5 +1,16 @@
 [
   {
+    "id": "32585ec7-0668-815e-b59b-eaa79049e209",
+    "title": "Breakfast: 2 soft-boiled eggs, seeded toast triangles (1 slice), half a kiwi, and black coffee (BG: 123 mg/dL Flat)",
+    "type": "Breakfast",
+    "date": "2026-03-16T10:05:00.000-07:00",
+    "photo": "https://iili.io/28205df3-226e-4852-8b8e-8e6f9e461ed4.jpg",
+    "carbs": 24,
+    "cals": 288,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "32585ec7-0668-818a-8c2f-fe76155a05a6",
     "title": "Snack: Small wedge of Brie cheese  (No Carb Impact)",
     "type": "Dessert",
@@ -1087,16 +1098,5 @@
     "cals": 80,
     "delta": 15,
     "peak": 189
-  },
-  {
-    "id": "31b85ec7-0668-813d-8c28-cfb8f4b00205",
-    "title": "Snack: Glass of champagne and 6 grapes",
-    "type": "Snack",
-    "date": "2026-02-26T17:52:00.000-08:00",
-    "photo": "https://iili.io/qfj0fQj.jpg",
-    "carbs": 12,
-    "cals": 140,
-    "delta": 66,
-    "peak": 194
   }
 ]
