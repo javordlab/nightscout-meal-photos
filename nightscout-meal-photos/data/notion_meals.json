@@ -1,5 +1,27 @@
 [
   {
+    "id": "32585ec7-0668-81ab-bd11-cd3d668e4d22",
+    "title": "Snack: Mixed nuts and cheese balls (BG: 134 mg/dL Flat)",
+    "type": "Snack",
+    "date": "2026-03-16T13:25:00.000-07:00",
+    "photo": "https://iili.io/4169eba5-b2a4-4d1e-9074-2c81e117627a.jpg",
+    "carbs": 16,
+    "cals": 290,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "32585ec7-0668-81c6-842d-d5509b0f6e5b",
+    "title": "Lunch: Open-faced pastrami and cheese sandwich on seeded toast (BG: 133 mg/dL Flat)",
+    "type": "Lunch",
+    "date": "2026-03-16T13:05:00.000-07:00",
+    "photo": "https://iili.io/35cdbb5c-b5a0-4553-893e-a476afc4d19e.jpg",
+    "carbs": 20,
+    "cals": 450,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "32585ec7-0668-815e-b59b-eaa79049e209",
     "title": "Breakfast: 2 soft-boiled eggs, seeded toast triangles (1 slice), half a kiwi, and black coffee (BG: 123 mg/dL Flat)",
     "type": "Breakfast",
@@ -1075,28 +1097,6 @@
     "carbs": 10,
     "cals": 50,
     "delta": 78,
-    "peak": 211
-  },
-  {
-    "id": "31b85ec7-0668-8188-a111-fac24323079b",
-    "title": "Breakfast: Two slices toasted sourdough with cream cheese and smoked salmon",
-    "type": "Breakfast",
-    "date": "2026-02-27T09:15:00.000-08:00",
-    "photo": "https://iili.io/qfPtLdJ.jpg",
-    "carbs": 30,
-    "cals": 350,
-    "delta": 79,
-    "peak": 211
-  },
-  {
-    "id": "31b85ec7-0668-81ad-8e7f-e34972ddad6e",
-    "title": "Breakfast: Fresh orange juice",
-    "type": "Breakfast",
-    "date": "2026-02-27T09:13:00.000-08:00",
-    "photo": "https://iili.io/qfPs7vp.jpg",
-    "carbs": 25,
-    "cals": 100,
-    "delta": 79,
     "peak": 211
   }
 ]
