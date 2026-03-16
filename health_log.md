@@ -2,8 +2,9 @@
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
 | 2026-03-15 | 19:50 -07:00 | Maria Dennis | Activity | - | 40 minutes walk (BG: 159 mg/dL Flat) | null | null |
-| 2026-03-15 | 18:45 -07:00 | Maria Dennis | Food | Dinner | Dinner: 3 meatballs, purple potato, zucchini, half glass white wine, and brie cheese [📷](https://iili.io/c01f80a4-aafd-48cb-01b-72d73bc822d6.jpg) [📷](https://iili.io/4a293f8a-2283-4c49-923b-5260d4e858fe.jpg) | 35 | 470 |
+| 2026-03-15 | 18:45 -07:00 | Maria Dennis | Food | Dinner | Dinner: 3 meatballs, purple potato, zucchini, half glass white wine, and brie cheese [📷](https://iili.io/c01f80a4-aafd-48cb-01b-72d73bc822d6.jpg) [📷](https://iili.io/4a293f8a-2283-4c49-923b-5260d4e858fe.jpg) (Pred: 243 mg/dL @ 8:30 PM) | 35 | 470 |
 | 2026-03-15 | 18:45 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL (2x 500mg) | null | null |
+| 2026-03-16 | 14:15 -07:00 | Maria Dennis | Activity | - | 30 minutes walk (BG: 175 mg/dL Flat) | null | null |
 | 2026-03-16 | 13:05 -07:00 | Maria Dennis | Food | Lunch | Lunch: Open-faced pastrami sandwich, mixed nuts, cheese balls, and 1/2 orange (BG: 134 mg/dL Flat) [📷](https://iili.io/35cdbb5c-b5a0-4553-893e-a476afc4d19e.jpg) [📷](https://iili.io/4169eba5-b2a4-4d1e-9074-2c81e117627a.jpg) [📷](https://iili.io/1bcae232-3858-47cc-8556-529a3c5f04e1.jpg) | 44 | 775 |
 | 2026-03-16 | 11:30 -07:00 | Maria Dennis | Food | Snack | Snack: Small guava (BG: 192 mg/dL ↗️) | 8 | 40 |
 | 2026-03-16 | 11:00 -07:00 | Maria Dennis | Activity | - | 35 minutes walk (BG: 192 mg/dL ↗️) | null | null |
