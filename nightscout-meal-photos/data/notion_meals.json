@@ -1,5 +1,27 @@
 [
   {
+    "id": "32585ec7-0668-81bb-969d-f7ed360176db",
+    "title": "Snack: Small wedge of Brie cheese",
+    "type": "Dessert",
+    "date": "2026-03-15T19:15:00.000-07:00",
+    "photo": "https://iili.io/4a293f8a-2283-4c49-923b-5260d4e858fe.jpg",
+    "carbs": null,
+    "cals": 60,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "32585ec7-0668-8136-9afc-e5fdaecc73c0",
+    "title": "Dinner: 3 meatballs in sauce, small purple potato, sautéed zucchini, and a glass of white wine",
+    "type": "Dinner",
+    "date": "2026-03-15T18:45:00.000-07:00",
+    "photo": "https://iili.io/c01f80a4-aafd-48c8-01b-72d73bc822d6.jpg",
+    "carbs": 37,
+    "cals": 470,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "32485ec7-0668-819f-93c5-c574fcbbfb61",
     "title": "Dessert: Small slice of dark chocolate cake with whipped cream  (Pred: 197 mg/dL @ 2:50 PM)",
     "type": "Dessert",
@@ -383,6 +405,17 @@
     "cals": 100,
     "delta": 31,
     "peak": 165
+  },
+  {
+    "id": "32585ec7-0668-8153-88ce-ff0b1ee21c70",
+    "title": "Oatmeal chocolate cookie",
+    "type": "Snack",
+    "date": "2026-03-07T16:29:00.000-08:00",
+    "photo": "https://iili.io/qIKIAyx.jpg",
+    "carbs": 12,
+    "cals": 150,
+    "delta": null,
+    "peak": null
   },
   {
     "id": "31d85ec7-0668-81c3-b118-f9b105dfa06d",
