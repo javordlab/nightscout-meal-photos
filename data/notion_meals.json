@@ -1,5 +1,16 @@
 [
   {
+    "id": "32585ec7-0668-818a-8c2f-fe76155a05a6",
+    "title": "Snack: Small wedge of Brie cheese  (No Carb Impact)",
+    "type": "Dessert",
+    "date": "2026-03-15T19:15:00.000-07:00",
+    "photo": "https://iili.io/4a293f8a-2283-4c49-923b-5260d4e858fe.jpg",
+    "carbs": null,
+    "cals": 60,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "32585ec7-0668-81bb-969d-f7ed360176db",
     "title": "Snack: Small wedge of Brie cheese",
     "type": "Dessert",
@@ -12,7 +23,7 @@
   },
   {
     "id": "32585ec7-0668-8136-9afc-e5fdaecc73c0",
-    "title": "Dinner: 3 meatballs in sauce, small purple potato, sautéed zucchini, and a glass of white wine",
+    "title": "Dinner: 3 meatballs in sauce, small purple potato, sautéed zucchini, and a glass of white wine  (Pred: 250 mg/dL @ 8:30 PM)",
     "type": "Dinner",
     "date": "2026-03-15T18:45:00.000-07:00",
     "photo": "https://iili.io/c01f80a4-aafd-48c8-01b-72d73bc822d6.jpg",
@@ -45,7 +56,7 @@
   },
   {
     "id": "32485ec7-0668-811b-8118-d8ba365b1a42",
-    "title": "Breakfast: Seeded toast with 2 slices of prosciutto and 2 slices of tomato (BG: 130 mg/dL Flat)",
+    "title": "Breakfast: Seeded toast with 2 slices of prosciutto and 2 slices of tomato (BG: 130 mg/dL Flat)  (Pred: 197 mg/dL @ 10:50 AM)",
     "type": "Breakfast",
     "date": "2026-03-15T09:05:00.000-07:00",
     "photo": "https://iili.io/70e1c2c7-082b-486f-b6f0-99d2bae19f52.jpg",
