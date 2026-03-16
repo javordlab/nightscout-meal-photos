@@ -37,6 +37,10 @@ async function fetchJson(url) {
 async function main() {
   try {
     // Fetch last 24h entries (288 entries for 5-min intervals)
+    // Exclude current day, show previous 7
+    const now = new Date();
+    const endOfYesterday = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, 0);
+    const startOf7DaysAgo = new Date(endOfYesterday.getTime() - 7 * 24 * 60 * 60 * 1000);
     const entries = await fetchJson(`${NS_URL}/api/v1/entries.json?count=300`);
     
     // Format data for Vega-Lite
