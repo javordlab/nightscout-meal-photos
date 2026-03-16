@@ -1,6 +1,8 @@
 # Health Log
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
+| 2026-03-15 | 18:45 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL (2x 500mg) | null | null |
+| 2026-03-15 | 18:45 -07:00 | Maria Dennis | Food | Dinner | Dinner: 3 meatballs in sauce, small purple potato, sautéed zucchini, and a glass of white wine [📷](https://iili.io/c01f80a4-aafd-48c8-01b-72d73bc822d6.jpg) | 37 | 470 |
 | 2026-03-16 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
 | 2026-03-15 | 13:05 -07:00 | Maria Dennis | Medication | - | 500mg Metformin HCL | null | null |
 | 2026-03-15 | 13:04 -07:00 | Maria Dennis | Food | Dessert | Dessert: Small slice of dark chocolate cake with whipped cream [📷](https://iili.io/f53060b2-14d1-4466-919f-1d6cbaf359ec.jpg) (Pred: 197 mg/dL @ 2:50 PM) | 22 | 240 |
