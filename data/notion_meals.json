@@ -11,6 +11,17 @@
     "peak": null
   },
   {
+    "id": "32585ec7-0668-819f-83be-cd429b031cb3",
+    "title": "Lunch: Open-faced pastrami sandwich, mixed nuts, cheese balls, and 1/2 orange (BG: 134 mg/dL Flat)",
+    "type": "Lunch",
+    "date": "2026-03-16T13:05:00.000-07:00",
+    "photo": "https://iili.io/35cdbb5c-b5a0-4553-893e-a476afc4d19e.jpg",
+    "carbs": 44,
+    "cals": 775,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "32585ec7-0668-81c6-842d-d5509b0f6e5b",
     "title": "Lunch: Open-faced pastrami and cheese sandwich on seeded toast (BG: 133 mg/dL Flat)",
     "type": "Lunch",
@@ -1087,16 +1098,5 @@
     "cals": 450,
     "delta": 63,
     "peak": 174
-  },
-  {
-    "id": "31b85ec7-0668-814a-9a20-c95897b4303f",
-    "title": "Breakfast: Half a red apple, sliced",
-    "type": "Breakfast",
-    "date": "2026-02-27T09:17:00.000-08:00",
-    "photo": "https://iili.io/qfPDmyx.jpg",
-    "carbs": 10,
-    "cals": 50,
-    "delta": 78,
-    "peak": 211
   }
 ]
