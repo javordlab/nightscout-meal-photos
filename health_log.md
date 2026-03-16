@@ -4,6 +4,8 @@
 | 2026-03-15 | 19:50 -07:00 | Maria Dennis | Activity | - | 40 minutes walk (BG: 159 mg/dL Flat) | null | null |
 | 2026-03-15 | 18:45 -07:00 | Maria Dennis | Food | Dinner | Dinner: 3 meatballs, purple potato, zucchini, half glass white wine, and brie cheese [📷](https://iili.io/c01f80a4-aafd-48cb-01b-72d73bc822d6.jpg) [📷](https://iili.io/4a293f8a-2283-4c49-923b-5260d4e858fe.jpg) | 35 | 470 |
 | 2026-03-15 | 18:45 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL (2x 500mg) | null | null |
+| 2026-03-16 | 11:30 -07:00 | Maria Dennis | Food | Snack | Snack: Small guava (BG: 192 mg/dL ↗️) | 8 | 40 |
+| 2026-03-16 | 11:00 -07:00 | Maria Dennis | Activity | - | 35 minutes walk (BG: 192 mg/dL ↗️) | null | null |
 | 2026-03-16 | 10:05 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: 2 soft-boiled eggs, seeded toast triangles (1 slice), half a kiwi, and black coffee (BG: 123 mg/dL Flat) [📷](https://iili.io/28205df3-226e-4852-8b8e-8e6f9e461ed4.jpg) | 24 | 288 |
 | 2026-03-16 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
 | 2026-03-15 | 13:05 -07:00 | Maria Dennis | Medication | - | 500mg Metformin HCL | null | null |
