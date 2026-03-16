@@ -22,6 +22,17 @@
     "peak": null
   },
   {
+    "id": "32585ec7-0668-81d8-9362-e919fa6db432",
+    "title": "Dinner: 3 meatballs, purple potato, zucchini, half glass white wine, and brie cheese",
+    "type": "Dinner",
+    "date": "2026-03-15T18:45:00.000-07:00",
+    "photo": "https://iili.io/c01f80a4-aafd-48cb-01b-72d73bc822d6.jpg",
+    "carbs": 35,
+    "cals": 470,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "32585ec7-0668-8136-9afc-e5fdaecc73c0",
     "title": "Dinner: 3 meatballs in sauce, small purple potato, sautéed zucchini, and a glass of white wine  (Pred: 250 mg/dL @ 8:30 PM)",
     "type": "Dinner",
@@ -1087,16 +1098,5 @@
     "cals": 50,
     "delta": 16,
     "peak": 125
-  },
-  {
-    "id": "31b85ec7-0668-8127-a302-c5ee3adbb6ec",
-    "title": "Snack: Dinner: Green vegetable soup, octopus with potatoes",
-    "type": "Snack",
-    "date": "2026-02-25T02:48:00.000-08:00",
-    "photo": "https://files.catbox.moe/2059f6.jpg",
-    "carbs": 35,
-    "cals": 450,
-    "delta": 8,
-    "peak": 139
   }
 ]
