@@ -1,5 +1,27 @@
 [
   {
+    "id": "32685ec7-0668-81c9-bba3-fe03a06ea77c",
+    "title": "Snack: One small guava (BG: 110 mg/dL Flat)",
+    "type": "Snack",
+    "date": "2026-03-16T18:45:00.000-07:00",
+    "photo": "https://iili.io/d60c1ebe-cefb-4490-b75c-27ea3a294930.jpg",
+    "carbs": 7,
+    "cals": 35,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "32685ec7-0668-810b-8c4f-f2eb928ac06d",
+    "title": "Dinner: Roasted pork with glaze, pearl barley, and broccoli, plus rustic bread with brie (BG: 106 mg/dL Flat)",
+    "type": "Dinner",
+    "date": "2026-03-16T18:30:00.000-07:00",
+    "photo": "https://iili.io/30d718c6-0d35-4c9d-8e0e-f6bcb56f28cb.jpg",
+    "carbs": 47,
+    "cals": 585,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "32585ec7-0668-81ab-bd11-cd3d668e4d22",
     "title": "Snack: Mixed nuts and cheese balls (BG: 134 mg/dL Flat)",
     "type": "Snack",
@@ -1076,27 +1098,5 @@
     "cals": 200,
     "delta": 13,
     "peak": 204
-  },
-  {
-    "id": "31685ec7-0668-8110-9898-e0716c28826f",
-    "title": "Dinner: Yogurt with berry jam",
-    "type": "Dinner",
-    "date": "2026-02-27T20:33:00.000-08:00",
-    "photo": "https://iili.io/qfm6STJ.jpg",
-    "carbs": 22,
-    "cals": 200,
-    "delta": null,
-    "peak": null
-  },
-  {
-    "id": "31b85ec7-0668-81f4-9651-fb32c9f3968b",
-    "title": "Lunch: Noodles with avocado, greens, and shaved cheese",
-    "type": "Lunch",
-    "date": "2026-02-27T12:41:00.000-08:00",
-    "photo": "https://iili.io/qfLDFt4.jpg",
-    "carbs": 45,
-    "cals": 450,
-    "delta": 63,
-    "peak": 174
   }
 ]
