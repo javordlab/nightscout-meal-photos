@@ -6,6 +6,7 @@
 | 2026-03-15 | 19:50 -07:00 | Maria Dennis | Activity | - | 40 minutes walk (BG: 159 mg/dL Flat) | null | null |
 | 2026-03-15 | 18:45 -07:00 | Maria Dennis | Food | Dinner | Dinner: 3 meatballs, purple potato, zucchini, half glass white wine, and brie cheese [📷](https://iili.io/c01f80a4-aafd-48cb-01b-72d73bc822d6.jpg) [📷](https://iili.io/4a293f8a-2283-4c49-923b-5260d4e858fe.jpg) (Pred: 243 mg/dL @ 8:30 PM) | 35 | 470 |
 | 2026-03-15 | 18:45 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL (2x 500mg) | null | null |
+| 2026-03-16 | 19:45 -07:00 | Maria Dennis | Activity | - | 20 minutes walk (BG: 167 mg/dL Flat) | null | null |
 | 2026-03-16 | 18:45 -07:00 | Maria Dennis | Food | Snack | Snack: One small guava (BG: 110 mg/dL Flat) [📷](https://iili.io/d60c1ebe-cefb-4490-b75c-27ea3a294930.jpg) | 7 | 35 |
 | 2026-03-16 | 18:30 -07:00 | Maria Dennis | Food | Dinner | Dinner: Roasted pork with glaze, pearl barley, and broccoli, plus rustic bread with brie (BG: 106 mg/dL Flat) [📷](https://iili.io/30d718c6-0d35-4c9d-8e0e-f6bcb56f28cb.jpg) [📷](https://iili.io/4d20a8e3-3a1a-487f-b1bd-1b711874d816.jpg) | 47 | 585 |
 | 2026-03-16 | 14:15 -07:00 | Maria Dennis | Activity | - | 30 minutes walk (BG: 175 mg/dL Flat) | null | null |
