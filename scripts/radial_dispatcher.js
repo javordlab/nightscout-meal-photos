@@ -9,6 +9,8 @@ const NIGHTSCOUT_SECRET = "b3170e23f45df7738434cd8be9cd79d86a6d0f01"; // SHA1 of
 const NOTION_KEY = "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";
 const NOTION_DB_ID = "31685ec7-0668-813e-8b9e-c5b4d5d70fa5";
 const MYSQL_BIN = "/opt/homebrew/opt/mysql@8.4/bin/mysql";
+const MYSQL_SYNC_ENABLED = false;
+const DASHBOARD_SYNC_ENABLED = false;
 
 // --- Helpers ---
 function mysqlEscape(str) {
@@ -271,19 +273,23 @@ async function main() {
       }
     }
 
-    // 3. Sync to MySQL
-    syncToMysql({ ...entryData, text: cleanText, photos });
+    // 3. Sync to MySQL (paused)
+    if (MYSQL_SYNC_ENABLED) {
+      syncToMysql({ ...entryData, text: cleanText, photos });
+    }
   }
 
-  // 4. Update Dashboard
-  try {
-    console.log("  -> Updating Backup Dashboard...");
-    execSync('node /Users/javier/.openclaw/workspace/scripts/generate_backup_dashboard_data.js');
-    execSync('node /Users/javier/.openclaw/workspace/scripts/backfill_dashboard_history.js');
-    execSync('node /Users/javier/.openclaw/workspace/scripts/generate_notion_gallery_data.js');
-    execSync('cd /Users/javier/.openclaw/workspace/nightscout-meal-photos && git add . && git commit -m "chore: automated dashboard update" && git push origin main');
-  } catch (e) {
-    console.error("Dashboard update failed:", e.message);
+  // 4. Update Dashboard (paused)
+  if (DASHBOARD_SYNC_ENABLED) {
+    try {
+      console.log("  -> Updating Backup Dashboard...");
+      execSync('node /Users/javier/.openclaw/workspace/scripts/generate_backup_dashboard_data.js');
+      execSync('node /Users/javier/.openclaw/workspace/scripts/backfill_dashboard_history.js');
+      execSync('node /Users/javier/.openclaw/workspace/scripts/generate_notion_gallery_data.js');
+      execSync('cd /Users/javier/.openclaw/workspace/nightscout-meal-photos && git add . && git commit -m "chore: automated dashboard update" && git push origin main');
+    } catch (e) {
+      console.error("Dashboard update failed:", e.message);
+    }
   }
 
   console.log("Radial Sync Complete.");
