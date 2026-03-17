@@ -51,11 +51,17 @@ async function patchJson(id, props) {
 
 async function run() {
   console.log('Starting Projections Audit...');
+
+  // Retroactive window: last 7 days in America/Los_Angeles business context
+  const now = new Date();
+  const sevenDaysAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
+  const onOrAfter = sevenDaysAgo.toISOString().slice(0, 10);
+
   const response = await postJson(`https://api.notion.com/v1/databases/${DATABASE_ID}/query`, {
     filter: {
       and: [
         { property: 'Category', select: { equals: 'Food' } },
-        { property: 'Date', date: { on_or_after: '2026-03-01' } }
+        { property: 'Date', date: { on_or_after: onOrAfter } }
       ]
     }
   });
@@ -72,16 +78,18 @@ async function run() {
     const title = props.Entry.title[0]?.plain_text;
     const date = props.Date.date.start;
 
-    if (carbs && !currentPred) {
+    if (currentPred == null) {
+      const carbsForCalc = Number.isFinite(carbs) ? carbs : 0;
+
       // Logic: Baseline 120 + 3.5 per carb, capped at 300
-      let predictedBg = Math.round(120 + (carbs * 3.5));
+      let predictedBg = Math.round(120 + (carbsForCalc * 3.5));
       if (predictedBg > 300) predictedBg = 300;
 
       // Time logic: +105 mins default
       const mealTime = new Date(date);
       const peakTime = new Date(mealTime.getTime() + 105 * 60 * 1000);
 
-      console.log(`Calculating projection for '${title}' (${carbs}g): ${predictedBg} mg/dL`);
+      console.log(`Calculating projection for '${title}' (${carbsForCalc}g): ${predictedBg} mg/dL`);
 
       await patchJson(page.id, {
         'Predicted Peak BG': { number: predictedBg },
