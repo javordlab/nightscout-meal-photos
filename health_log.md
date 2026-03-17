@@ -8,13 +8,13 @@
 | 2026-03-15 | 18:45 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL (2x 500mg) | null | null |
 | 2026-03-16 | 21:00 -07:00 | Maria Dennis | Medication | - | Half a Prunelax tablet | null | null |
 | 2026-03-16 | 19:45 -07:00 | Maria Dennis | Activity | - | 20 minutes walk (BG: 167 mg/dL Flat) | null | null |
-| 2026-03-16 | 18:45 -07:00 | Maria Dennis | Food | Snack | Snack: One small guava (BG: 110 mg/dL Flat) [📷](https://iili.io/d60c1ebe-cefb-4490-b75c-27ea3a294930.jpg) | 7 | 35 |
-| 2026-03-16 | 18:30 -07:00 | Maria Dennis | Food | Dinner | Dinner: Roasted pork with glaze, pearl barley, and broccoli, plus rustic bread with brie (BG: 106 mg/dL Flat) [📷](https://iili.io/30d718c6-0d35-4c9d-8e0e-f6bcb56f28cb.jpg) [📷](https://iili.io/4d20a8e3-3a1a-487f-b1bd-1b711874d816.jpg) | 47 | 585 |
+| 2026-03-16 | 18:45 -07:00 | Maria Dennis | Food | Snack | Snack: One small guava (BG: 110 mg/dL Flat) [📷](https://iili.io/d60c1ebe-cefb-4490-b75c-27ea3a294930.jpg) (Pred: 145 mg/dL @ 8:30 PM) | 7 | 35 |
+| 2026-03-16 | 18:30 -07:00 | Maria Dennis | Food | Dinner | Dinner: Roasted pork with glaze, pearl barley, and broccoli, plus rustic bread with brie (BG: 106 mg/dL Flat) [📷](https://iili.io/30d718c6-0d35-4c9d-8e0e-f6bcb56f28cb.jpg) [📷](https://iili.io/4d20a8e3-3a1a-487f-b1bd-1b711874d816.jpg) (Pred: 285 mg/dL @ 8:15 PM) | 47 | 585 |
 | 2026-03-16 | 14:15 -07:00 | Maria Dennis | Activity | - | 30 minutes walk (BG: 175 mg/dL Flat) | null | null |
-| 2026-03-16 | 13:05 -07:00 | Maria Dennis | Food | Lunch | Lunch: Open-faced pastrami sandwich, mixed nuts, cheese balls, and 1/2 orange (BG: 134 mg/dL Flat) [📷](https://iili.io/35cdbb5c-b5a0-4553-893e-a476afc4d19e.jpg) [📷](https://iili.io/4169eba5-b2a4-4d1e-9074-2c81e117627a.jpg) [📷](https://iili.io/1bcae232-3858-47cc-8556-529a3c5f04e1.jpg) | 44 | 775 |
-| 2026-03-16 | 11:30 -07:00 | Maria Dennis | Food | Snack | Snack: Small guava (BG: 192 mg/dL ↗️) | 8 | 40 |
+| 2026-03-16 | 13:05 -07:00 | Maria Dennis | Food | Lunch | Lunch: Open-faced pastrami sandwich, mixed nuts, cheese balls, and 1/2 orange (BG: 134 mg/dL Flat) [📷](https://iili.io/35cdbb5c-b5a0-4553-893e-a476afc4d19e.jpg) [📷](https://iili.io/4169eba5-b2a4-4d1e-9074-2c81e117627a.jpg) [📷](https://iili.io/1bcae232-3858-47cc-8556-529a3c5f04e1.jpg) (Pred: 274 mg/dL @ 2:50 PM) | 44 | 775 |
+| 2026-03-16 | 11:30 -07:00 | Maria Dennis | Food | Snack | Snack: Small guava (BG: 192 mg/dL ↗️) (Pred: 148 mg/dL @ 1:15 PM) | 8 | 40 |
 | 2026-03-16 | 11:00 -07:00 | Maria Dennis | Activity | - | 35 minutes walk (BG: 192 mg/dL ↗️) | null | null |
-| 2026-03-16 | 10:05 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: 2 soft-boiled eggs, seeded toast triangles (1 slice), half a kiwi, and black coffee (BG: 123 mg/dL Flat) [📷](https://iili.io/28205df3-226e-4852-8b8e-8e6f9e461ed4.jpg) | 24 | 288 |
+| 2026-03-16 | 10:05 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: 2 soft-boiled eggs, seeded toast triangles (1 slice), half a kiwi, and black coffee (BG: 123 mg/dL Flat) [📷](https://iili.io/28205df3-226e-4852-8b8e-8e6f9e461ed4.jpg) (Pred: 204 mg/dL @ 11:50 AM) | 24 | 288 |
 | 2026-03-16 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
 | 2026-03-15 | 13:05 -07:00 | Maria Dennis | Medication | - | 500mg Metformin HCL | null | null |
 | 2026-03-15 | 13:04 -07:00 | Maria Dennis | Food | Dessert | Dessert: Small slice of dark chocolate cake with whipped cream [📷](https://iili.io/f53060b2-14d1-4466-919f-1d6cbaf359ec.jpg) (Pred: 197 mg/dL @ 2:50 PM) | 22 | 240 |
@@ -26,16 +26,16 @@
 | 2026-03-14 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 2026-03-14 | 20:00 -07:00 | Maria Dennis | Activity | - | 15 minute walk and 20 minutes Qigong (BG: 164 mg/dL Flat) | null | null |
-| 2026-03-14 | 19:45 -07:00 | Maria Dennis | Food | Dessert | Dessert: Very small slice of dark chocolate cake with whipped cream [📷](https://iili.io/q18pJBn.jpg) | 28 | 250 |
+| 2026-03-14 | 19:45 -07:00 | Maria Dennis | Food | Dessert | Dessert: Very small slice of dark chocolate cake with whipped cream [📷](https://iili.io/q18pJBn.jpg) (Pred: 218 mg/dL @ 9:30 PM) | 28 | 250 |
 | 2026-03-14 | 19:15 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL | null | null |
-| 2026-03-14 | 18:45 -07:00 | Maria Dennis | Food | Dinner | Dinner: Salmon with dill, small purple potato, sautéed cabbage/carrot slaw with broccoli, and a slice of rustic bread [📷](https://iili.io/q18mLrJ.jpg) [📷](https://iili.io/q18mt7R.jpg) | 62 | 565 |
-| 2026-03-14 | 16:30 -07:00 | Maria Dennis | Food | Snack | Snack: 1/4 cup mixed nuts | 4 | 180 |
+| 2026-03-14 | 18:45 -07:00 | Maria Dennis | Food | Dinner | Dinner: Salmon with dill, small purple potato, sautéed cabbage/carrot slaw with broccoli, and a slice of rustic bread [📷](https://iili.io/q18mLrJ.jpg) [📷](https://iili.io/q18mt7R.jpg) (Pred: 300 mg/dL @ 8:30 PM) | 62 | 565 |
+| 2026-03-14 | 16:30 -07:00 | Maria Dennis | Food | Snack | Snack: 1/4 cup mixed nuts (Pred: 134 mg/dL @ 6:15 PM) | 4 | 180 |
 | 2026-03-14 | 14:45 -07:00 | Maria Dennis | Activity | - | 25 minutes walk | null | null |
 | 2026-03-14 | 14:15 -07:00 | Maria Dennis | Medication | - | 500mg Metformin HCL | null | null |
-| 2026-03-14 | 14:15 -07:00 | Maria Dennis | Food | Lunch | Lunch: Open-faced pastrami sandwich on seeded bread, carrot sticks, orange slices, and 10 green grapes [📷](https://iili.io/q18m4X1.jpg) | 43 | 325 |
+| 2026-03-14 | 14:15 -07:00 | Maria Dennis | Food | Lunch | Lunch: Open-faced pastrami sandwich on seeded bread, carrot sticks, orange slices, and 10 green grapes [📷](https://iili.io/q18m4X1.jpg) (Pred: 271 mg/dL @ 4:00 PM) | 43 | 325 |
 | 2026-03-14 | 11:20 -07:00 | Maria Dennis | Medication | - | 500mg Metformin HCL | null | null |
 | 2026-03-14 | 10:45 -07:00 | Maria Dennis | Activity | - | 30 minutes walk | null | null |
-| 2026-03-14 | 09:55 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: 2 fried eggs on 1 slice of toast, half a kiwi, and black coffee [📷](https://iili.io/q18mO0b.jpg) | 22 | 260 |
+| 2026-03-14 | 09:55 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: 2 fried eggs on 1 slice of toast, half a kiwi, and black coffee [📷](https://iili.io/q18mO0b.jpg) (Pred: 197 mg/dL @ 11:40 AM) | 22 | 260 |
 | 2026-03-13 | 20:43 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL | null | null |
 | 2026-03-13 | 19:50 -07:00 | Maria Dennis | Activity | - | 15 minutes Qigong | null | null |
 | 2026-03-13 | 19:30 -07:00 | Maria Dennis | Activity | - | 20 minutes walk uphill/down hill | null | null |
