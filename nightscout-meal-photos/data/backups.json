@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-17T04:47:04.241Z",
+  "lastUpdated": "2026-03-17T05:03:01.457Z",
   "shipments": [
     {
       "trackingNumber": "CH499405530CA",
@@ -24,7 +24,7 @@
       "bucketType": "250K",
       "managedUsed": 100000,
       "managedRemaining": 150000,
-      "oauthUsed": 2597716,
+      "oauthUsed": 2669409,
       "percentRemaining": 60
     },
     {
