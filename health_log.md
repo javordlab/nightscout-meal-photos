@@ -1,6 +1,7 @@
 # Health Log
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
+| 2026-03-18 | 10:15 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: 1 cup plain yogurt and 2 slices prosciutto (BG: 116 mg/dL Flat) (Pred: 135 mg/dL @ 12:00 PM) | 10 | 250 |
 | 2026-03-18 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
 | 2026-03-17 | 21:30 -07:00 | Maria Dennis | Activity | - | 15 minute walk and 15 minutes Qigong (BG: 162 mg/dL Flat) | null | null |
 | 2026-03-17 | 21:30 -07:00 | Maria Dennis | Medication | - | 1500mg Metformin HCL (incl. missed lunch dose; Total for day: 2000mg) | null | null |
