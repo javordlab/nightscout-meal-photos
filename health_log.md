@@ -1,6 +1,8 @@
 # Health Log
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
+| 2026-03-18 | 15:45 -07:00 | Maria Dennis | Food | Snack | Snack: 1 slice dragon fruit and 1 orange slice (BG: 230 mg/dL Flat) | 5 | 25 |
+| 2026-03-18 | 15:35 -07:00 | Maria Dennis | Activity | - | 3 hours heavy gardening (BG: 230 mg/dL Flat) | null | null |
 | 2026-03-18 | 13:30 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL (Lunch/Scheduled) | null | null |
 | 2026-03-18 | 13:30 -07:00 | Maria Dennis | Food | Lunch | Lunch: Cured meat sandwich on baguette with spread and a small guava (BG: 148 mg/dL Flat) [📷](https://iili.io/d5afb3ee-eff2-4281-a355-34796d217b29.jpg) (Pred: 278 mg/dL @ 3:15 PM) | 45 | 375 |
 | 2026-03-18 | 11:35 -07:00 | Maria Dennis | Activity | - | 30 minutes walk (BG: 111 mg/dL Flat) | null | null |
