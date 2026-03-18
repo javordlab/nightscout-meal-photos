@@ -2,6 +2,8 @@
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
 | 2026-03-18 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
+| 2026-03-17 | 21:30 -07:00 | Maria Dennis | Activity | - | 15 minute walk and 15 minutes Qigong (BG: 162 mg/dL Flat) | null | null |
+| 2026-03-17 | 21:30 -07:00 | Maria Dennis | Medication | - | 1500mg Metformin HCL (incl. missed lunch dose) | null | null |
 | 2026-03-17 | 21:00 -07:00 | Maria Dennis | Food | Dessert | Dessert: Small piece of sweet roll (BG: 135 mg/dL ↗️) | 18 | 150 |
 | 2026-03-17 | 20:15 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL (Dinner dose) | null | null |
 | 2026-03-17 | 19:10 -07:00 | Maria Dennis | Food | Dinner | Dinner: Poached eggs on a vegetable stew (eggplant, carrots, dill) with pearl barley, rustic bread with brie, and Nigori sake (BG: 93 mg/dL Flat) [📷](https://iili.io/51c8ee3d-fed3-43f8-b00f-50439dd4bac6.jpg) [📷](https://iili.io/3c0ba392-d087-4351-bdc9-0b62242e6899.jpg) | 65 | 650 |
