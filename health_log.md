@@ -1,6 +1,8 @@
 # Health Log
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
+| 2026-03-18 | 13:30 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL (Lunch/Scheduled) | null | null |
+| 2026-03-18 | 13:30 -07:00 | Maria Dennis | Food | Lunch | Lunch: Cured meat sandwich on baguette with spread and a small guava (BG: 148 mg/dL Flat) [📷](https://iili.io/d5afb3ee-eff2-4281-a355-34796d217b29.jpg) | 45 | 375 |
 | 2026-03-18 | 11:35 -07:00 | Maria Dennis | Activity | - | 30 minutes walk (BG: 111 mg/dL Flat) | null | null |
 | 2026-03-18 | 10:15 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: 1 cup plain yogurt and 2 slices prosciutto (BG: 116 mg/dL Flat) (Pred: 135 mg/dL @ 12:00 PM) | 10 | 250 |
 | 2026-03-18 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
