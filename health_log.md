@@ -2,6 +2,7 @@
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
 | 2026-03-18 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
+| 2026-03-17 | 13:30 -07:00 | Maria Dennis | Food | Lunch | Lunch: 1 slice of bread and 1oz of pastrami (BG: 101 mg/dL Flat) | 18 | 150 |
 | 2026-03-17 | 09:30 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: 2 slices prosciutto, 1 slice seedy bread, cream cheese, few nuts (BG: 96 mg/dL Flat) | 20 | 320 |
 | 2026-03-17 | 09:30 -07:00 | Maria Dennis | Medication | - | 500mg Metformin HCL | null | null |
 | 2026-03-17 | 09:05 -07:00 | Maria Dennis | Medication | - | Rosuvastatin 10mg (Scheduled) | null | null |
