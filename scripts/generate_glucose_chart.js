@@ -12,17 +12,6 @@ async function fetchJson(url) {
     https.get(url, (res) => {
       let data = '';
       res.on('data', (chunk) => data += chunk);
-      res.on('end')
-    });
-  });
-}
-
-// Correcting the fetch function
-async function fetchJson(url) {
-  return new Promise((resolve, reject) => {
-    https.get(url, (res) => {
-      let data = '';
-      res.on('data', (chunk) => data += chunk);
       res.on('end', () => {
         try {
           resolve(JSON.parse(data));
@@ -36,12 +25,18 @@ async function fetchJson(url) {
 
 async function main() {
   try {
-    // Fetch last 24h entries (288 entries for 5-min intervals)
     // Exclude current day, show previous 7
     const now = new Date();
-    const endOfYesterday = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, 0);
-    const startOf7DaysAgo = new Date(endOfYesterday.getTime() - 7 * 24 * 60 * 60 * 1000);
-    const entries = await fetchJson(`${NS_URL}/api/v1/entries.json?count=300`);
+    // Start of current day (PST)
+    const end = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, 0).toISOString();
+    // 7 days before start of today
+    const start = new Date(new Date(end).getTime() - 7 * 24 * 60 * 60 * 1000).toISOString();
+    
+    console.log(`Generating 7-day chart (excluding today): ${start} to ${end}`);
+    
+    // Fetch entries for the range
+    const url = `${NS_URL}/api/v1/entries/sgv.json?find[dateString][$gte]=${start}&find[dateString][$lte]=${end}&count=2500`;
+    const entries = await fetchJson(url);
     
     // Format data for Vega-Lite
     const chartData = entries
@@ -65,7 +60,7 @@ async function main() {
       CHART_SCRIPT,
       '--type', 'line',
       '--x-type', 'temporal',
-      '--title', "Maria's Glucose - Last 24 Hours",
+      '--title', "Maria's Glucose - Previous 7 Days",
       '--y-title', 'mg/dL',
       '--y-domain', '40,300',
       '--hline', '70,#ff9f43,Low',
@@ -77,14 +72,9 @@ async function main() {
 
     if (isDark) args.push('--dark');
 
-    // Spawn process and pipe data to stdin
     const child = spawn('node', args);
-    
     child.stdin.write(JSON.stringify(chartData));
     child.stdin.end();
-
-    child.stdout.on('data', (data) => console.log(data.toString()));
-    child.stderr.on('data', (data) => console.error(data.toString()));
 
     child.on('close', (code) => {
       if (code === 0) {

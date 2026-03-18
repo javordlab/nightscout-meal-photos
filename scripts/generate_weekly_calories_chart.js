@@ -26,9 +26,9 @@ function main() {
     }
   });
 
-  // Last 7 days for the chart (including today)
+  // Previous 7 days for the chart (excluding today)
   const chartData = [];
-  for (let i = 0; i < 7; i++) {
+  for (let i = 1; i <= 7; i++) {
     const d = new Date();
     d.setDate(d.getDate() - i);
     const ds = d.toISOString().split('T')[0];
