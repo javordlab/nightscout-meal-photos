@@ -1,6 +1,8 @@
 # Health Log
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
+| 2026-03-19 | 09:05 -07:00 | Maria Dennis | Medication | - | Rosuvastatin 10mg (Scheduled) | null | null |
+| 2026-03-19 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
 | 2026-03-18 | 15:45 -07:00 | Maria Dennis | Food | Snack | Snack: 1 slice dragon fruit and 1 orange slice (BG: 230 mg/dL Flat) | 5 | 25 |
 | 2026-03-18 | 15:35 -07:00 | Maria Dennis | Activity | - | 3 hours heavy gardening (BG: 230 mg/dL Flat) | null | null |
 | 2026-03-18 | 13:30 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL (Lunch/Scheduled) | null | null |
