@@ -1,6 +1,8 @@
 # Health Log
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
+| 2026-03-19 | 09:48 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Ciabatta bread (~60g), avocado (~75g), prosciutto (~15g, 1 slice), milk (~1 cup) (BG: 102 mg/dL Flat) (Pred: 140-155 mg/dL @ 11:15-11:45 AM) | 48 | 360 |
+| 2026-03-19 | 09:48 -07:00 | Maria Dennis | Medication | - | Metformin 500mg (with breakfast) | null | null |
 | 2026-03-19 | 09:05 -07:00 | Maria Dennis | Medication | - | Rosuvastatin 10mg (Scheduled) | null | null |
 | 2026-03-19 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
 | 2026-03-18 | 20:55 -07:00 | Maria Dennis | Activity | - | 20 minutes walk (BG: 102 mg/dL Flat) | null | null |
