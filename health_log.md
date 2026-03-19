@@ -3,8 +3,11 @@
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
 | 2026-03-19 | 09:05 -07:00 | Maria Dennis | Medication | - | Rosuvastatin 10mg (Scheduled) | null | null |
 | 2026-03-19 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
+| 2026-03-18 | 20:55 -07:00 | Maria Dennis | Activity | - | 20 minutes walk (BG: 102 mg/dL Flat) | null | null |
+| 2026-03-18 | 19:20 -07:00 | Maria Dennis | Food | Dinner | Dinner: 3 steamed dumplings + octopus and potato stew with carrots + loquats, grapes, and one strawberry (BG: 144 mg/dL ↗️) [📷](https://iili.io/7c08586f-286c-4da4-8018-f2a66b64abf7.jpg) [📷](https://iili.io/e06b4b8a-ffd9-4f21-848b-ff2ebc7603b9.jpg) [📷](https://iili.io/7e08c360-7b67-4b12-88cf-012bacd4a479.jpg) [📷](https://iili.io/f35236b3-6f01-4e14-9fb0-0a2e95f4eaa1.jpg) | 72 | 518 |
+| 2026-03-18 | 19:15 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL (Dinner dose) | null | null |
 | 2026-03-18 | 15:45 -07:00 | Maria Dennis | Food | Snack | Snack: 1 slice dragon fruit and 1 orange slice (BG: 230 mg/dL Flat) | 5 | 25 |
-| 2026-03-18 | 15:35 -07:00 | Maria Dennis | Activity | - | 3 hours heavy gardening (BG: 230 mg/dL Flat) | null | null |
+| 2026-03-18 | 15:35 -07:00 | Maria Dennis | Activity | - | 2 hours heavy gardening (BG: 230 mg/dL Flat) | null | null |
 | 2026-03-18 | 13:30 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL (Lunch/Scheduled) | null | null |
 | 2026-03-18 | 13:30 -07:00 | Maria Dennis | Food | Lunch | Lunch: Cured meat sandwich on baguette with spread and a small guava (BG: 148 mg/dL Flat) [📷](https://iili.io/d5afb3ee-eff2-4281-a355-34796d217b29.jpg) (Pred: 278 mg/dL @ 3:15 PM) | 45 | 375 |
 | 2026-03-18 | 11:35 -07:00 | Maria Dennis | Activity | - | 30 minutes walk (BG: 111 mg/dL Flat) | null | null |
