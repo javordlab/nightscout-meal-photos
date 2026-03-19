@@ -206,10 +206,58 @@
       margin-top: 2px;
     }
 
+    .charts-section {
+      max-width: 1200px;
+      margin: 0 auto 30px;
+      padding: 20px;
+      background: var(--card-bg);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+
+    .charts-section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: var(--green);
+    }
+
+    .chart-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 20px;
+    }
+
+    .chart-card {
+      background: var(--bg);
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .chart-card h3 {
+      font-size: 0.95em;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .chart-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: transform 0.15s;
+    }
+
+    .chart-card img:hover {
+      transform: scale(1.02);
+    }
+
     @media (max-width: 600px) {
       body { padding: 12px; }
       .header h1 { font-size: 1.4em; }
       .meal-card img { max-height: 280px; }
+      .chart-grid { grid-template-columns: 1fr; }
+      .chart-card { padding: 12px; }
     }
   </style>
 </head>
@@ -217,6 +265,29 @@
   <div class="header">
     <h1>🍽️ Meal Photos</h1>
     <p class="subtitle">Food log with photos from Nightscout treatments</p>
+    <p style="margin-top: 10px;"><a href="backup-status.html" style="color: var(--green);">📊 View Backup Dashboard</a></p>
+  </div>
+
+  <div class="charts-section">
+    <h2>📈 Glucose Charts</h2>
+    <div class="chart-grid">
+      <div class="chart-card">
+        <h3>Daily View</h3>
+        <img src="daily_glucose_chart.png" alt="Daily Glucose Chart" />
+      </div>
+      <div class="chart-card">
+        <h3>14-Day Trend</h3>
+        <img src="glucose_chart.png" alt="14-Day Glucose Chart" />
+      </div>
+      <div class="chart-card">
+        <h3>Weekly Carbs</h3>
+        <img src="weekly_carbs_chart.png" alt="Weekly Carbs Chart" />
+      </div>
+      <div class="chart-card">
+        <h3>Weekly Calories</h3>
+        <img src="weekly_calories_chart.png" alt="Weekly Calories Chart" />
+      </div>
+    </div>
   </div>
 
   <div class="controls">
