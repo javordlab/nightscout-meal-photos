@@ -47,6 +47,10 @@ async function main() {
     return;
   }
 
+  // Deduplicate by photo URL + date
+  const seen = new Set();
+  const duplicates = [];
+  
   const meals = res.results.map(page => {
     const p = page.properties;
     return {
@@ -60,10 +64,27 @@ async function main() {
       delta: p["BG Delta"]?.number,
       peak: p["2hr Peak BG"]?.number
     };
+  }).filter(meal => {
+    const key = `${meal.photo}|${meal.date}`;
+    if (seen.has(key)) {
+      duplicates.push({ id: meal.id, title: meal.title, date: meal.date });
+      return false;
+    }
+    seen.add(key);
+    return true;
   });
 
   fs.writeFileSync(OUTPUT_PATH, JSON.stringify(meals, null, 2));
   console.log(`Successfully wrote ${meals.length} meals to gallery data.`);
+  
+  if (duplicates.length > 0) {
+    console.log(`\n⚠️  Found ${duplicates.length} duplicate entries in Notion:`);
+    duplicates.forEach(d => console.log(`  - ${d.date}: ${d.title.substring(0, 50)}... (ID: ${d.id})`));
+    
+    // Save duplicates for cleanup
+    fs.writeFileSync('/Users/javier/.openclaw/workspace/tmp/notion_duplicates.json', JSON.stringify(duplicates, null, 2));
+    console.log(`\nDuplicate IDs saved to tmp/notion_duplicates.json`);
+  }
 }
 
 main().catch(console.error);
