@@ -44,17 +44,6 @@
     "peak": null
   },
   {
-    "id": "32685ec7-0668-81c9-bba3-fe03a06ea77c",
-    "title": "Snack: One small guava (BG: 110 mg/dL Flat)",
-    "type": "Snack",
-    "date": "2026-03-16T18:45:00.000-08:00",
-    "photo": "https://iili.io/d60c1ebe-cefb-4490-b75c-27ea3a294930.jpg",
-    "carbs": 7,
-    "cals": 35,
-    "delta": null,
-    "peak": null
-  },
-  {
     "id": "32685ec7-0668-810b-8c4f-f2eb928ac06d",
     "title": "Dinner: Roasted pork with glaze, pearl barley, and broccoli, plus rustic bread with brie (BG: 106 mg/dL Flat)   (Pred: 285 mg/dL @ 8:15 PM)",
     "type": "Dinner",
@@ -110,17 +99,6 @@
     "peak": null
   },
   {
-    "id": "32585ec7-0668-81c6-842d-d5509b0f6e5b",
-    "title": "Lunch: Open-faced pastrami and cheese sandwich on seeded toast (BG: 133 mg/dL Flat)",
-    "type": "Lunch",
-    "date": "2026-03-16T13:05:00.000-08:00",
-    "photo": "https://iili.io/35cdbb5c-b5a0-4553-893e-a476afc4d19e.jpg",
-    "carbs": 20,
-    "cals": 450,
-    "delta": null,
-    "peak": null
-  },
-  {
     "id": "32685ec7-0668-8169-896c-d46e93a9ba87",
     "title": "Lunch: Open-faced pastrami sandwich, mixed nuts, cheese balls, and 1/2 orange (BG: 134 mg/dL Flat)    (Pred: 274 mg/dL @ 2:50 PM)",
     "type": "Lunch",
@@ -165,30 +143,8 @@
     "peak": null
   },
   {
-    "id": "32585ec7-0668-81bb-969d-f7ed360176db",
-    "title": "Snack: Small wedge of Brie cheese",
-    "type": "Dessert",
-    "date": "2026-03-15T19:15:00.000-08:00",
-    "photo": "https://iili.io/4a293f8a-2283-4c49-923b-5260d4e858fe.jpg",
-    "carbs": null,
-    "cals": 60,
-    "delta": null,
-    "peak": null
-  },
-  {
     "id": "32585ec7-0668-81d3-bf9d-e930c8e7b9d8",
     "title": "Dinner: 3 meatballs, purple potato, zucchini, half glass white wine, and brie cheese   (Pred: 243 mg/dL @ 8:30 PM)",
-    "type": "Dinner",
-    "date": "2026-03-15T18:45:00.000-08:00",
-    "photo": "https://iili.io/c01f80a4-aafd-48cb-01b-72d73bc822d6.jpg",
-    "carbs": 35,
-    "cals": 470,
-    "delta": null,
-    "peak": null
-  },
-  {
-    "id": "32585ec7-0668-81d8-9362-e919fa6db432",
-    "title": "Dinner: 3 meatballs, purple potato, zucchini, half glass white wine, and brie cheese",
     "type": "Dinner",
     "date": "2026-03-15T18:45:00.000-08:00",
     "photo": "https://iili.io/c01f80a4-aafd-48cb-01b-72d73bc822d6.jpg",
@@ -231,29 +187,7 @@
     "peak": null
   },
   {
-    "id": "32485ec7-0668-819f-93c5-c574fcbbfb61",
-    "title": "Dessert: Small slice of dark chocolate cake with whipped cream  (Pred: 197 mg/dL @ 2:50 PM)",
-    "type": "Dessert",
-    "date": "2026-03-15T13:04:00.000-08:00",
-    "photo": "https://iili.io/f53060b2-14d1-4466-919f-1d6cbaf359ec.jpg",
-    "carbs": 22,
-    "cals": 240,
-    "delta": 27,
-    "peak": 167
-  },
-  {
     "id": "32585ec7-0668-81a4-aafa-eadf595a61c2",
-    "title": "Lunch: Flour tortilla wrap with peppers and meat, and 4 orange wedges (BG: 140 mg/dL Flat)  (Pred: 278 mg/dL @ 2:30 PM)",
-    "type": "Lunch",
-    "date": "2026-03-15T12:45:00.000-08:00",
-    "photo": "https://iili.io/d6b3cf3a-ae1f-4836-b3f3-73ecd6a89ee2.jpg",
-    "carbs": 45,
-    "cals": 365,
-    "delta": null,
-    "peak": null
-  },
-  {
-    "id": "32485ec7-0668-81e8-9d49-deaaaab3f710",
     "title": "Lunch: Flour tortilla wrap with peppers and meat, and 4 orange wedges (BG: 140 mg/dL Flat)  (Pred: 278 mg/dL @ 2:30 PM)",
     "type": "Lunch",
     "date": "2026-03-15T12:45:00.000-08:00",
@@ -297,17 +231,6 @@
     "peak": null
   },
   {
-    "id": "32485ec7-0668-811b-8118-d8ba365b1a42",
-    "title": "Breakfast: Seeded toast with 2 slices of prosciutto and 2 slices of tomato (BG: 130 mg/dL Flat)  (Pred: 197 mg/dL @ 10:50 AM)",
-    "type": "Breakfast",
-    "date": "2026-03-15T09:05:00.000-08:00",
-    "photo": "https://iili.io/70e1c2c7-082b-486f-b6f0-99d2bae19f52.jpg",
-    "carbs": 22,
-    "cals": 250,
-    "delta": 30,
-    "peak": 162
-  },
-  {
     "id": "32685ec7-0668-818c-91e7-f15ee6eedab2",
     "title": "Breakfast: Seeded toast with 2 slices of prosciutto and 2 slices of tomato (BG: 130 mg/dL Flat)  (Pred: 197 mg/dL @ 10:50 AM)",
     "type": "Breakfast",
@@ -328,17 +251,6 @@
     "cals": 250,
     "delta": null,
     "peak": null
-  },
-  {
-    "id": "32485ec7-0668-81b4-9689-df810a291195",
-    "title": "Dessert: Very small slice of dark chocolate cake with whipped cream",
-    "type": "Dessert",
-    "date": "2026-03-14T19:45:00.000-08:00",
-    "photo": "https://iili.io/q18pJBn.jpg",
-    "carbs": 28,
-    "cals": 250,
-    "delta": 11,
-    "peak": 179
   },
   {
     "id": "32685ec7-0668-810e-b15d-f04b977e6c63",
@@ -363,28 +275,6 @@
     "peak": null
   },
   {
-    "id": "32585ec7-0668-8174-ac25-dc59080522a9",
-    "title": "Dinner: Salmon with dill, small purple potato, sautéed cabbage/carrot slaw with broccoli, and a slice of rustic bread",
-    "type": "Dinner",
-    "date": "2026-03-14T18:45:00.000-08:00",
-    "photo": "https://iili.io/q18mLrJ.jpg",
-    "carbs": 62,
-    "cals": 565,
-    "delta": null,
-    "peak": null
-  },
-  {
-    "id": "32485ec7-0668-8116-be5f-fd3d462a254e",
-    "title": "Dinner: Salmon with dill, small purple potato, sautéed cabbage/carrot slaw with broccoli, and a slice of rustic bread",
-    "type": "Dinner",
-    "date": "2026-03-14T18:45:00.000-08:00",
-    "photo": "https://iili.io/q18mLrJ.jpg",
-    "carbs": 62,
-    "cals": 565,
-    "delta": 64,
-    "peak": 168
-  },
-  {
     "id": "32685ec7-0668-8120-91ea-d2a9de9f763d",
     "title": "Dinner: Salmon with dill, small purple potato, sautéed cabbage/carrot slaw with broccoli, and a slice of rustic bread   (Pred: 300 mg/dL @ 8:30 PM)",
     "type": "Dinner",
@@ -407,17 +297,6 @@
     "peak": null
   },
   {
-    "id": "32485ec7-0668-81a5-8d2f-dec0a4a6cb19",
-    "title": "Lunch: Open-faced pastrami sandwich on seeded bread, carrot sticks, orange slices, and 10 green grapes",
-    "type": "Lunch",
-    "date": "2026-03-14T14:15:00.000-08:00",
-    "photo": "https://iili.io/q18m4X1.jpg",
-    "carbs": 43,
-    "cals": 325,
-    "delta": -15,
-    "peak": 157
-  },
-  {
     "id": "32685ec7-0668-8179-978c-d1c9b063fdff",
     "title": "Lunch: Open-faced pastrami sandwich on seeded bread, carrot sticks, orange slices, and 10 green grapes  (Pred: 271 mg/dL @ 4:00 PM)",
     "type": "Lunch",
@@ -438,17 +317,6 @@
     "cals": 260,
     "delta": null,
     "peak": null
-  },
-  {
-    "id": "32385ec7-0668-8182-9867-fb4a1fdbe726",
-    "title": "Breakfast: 2 fried eggs on 1 slice of toast, half a kiwi, and black coffee",
-    "type": "Breakfast",
-    "date": "2026-03-14T09:55:00.000-08:00",
-    "photo": "https://iili.io/q18mO0b.jpg",
-    "carbs": 22,
-    "cals": 260,
-    "delta": 48,
-    "peak": 168
   },
   {
     "id": "32685ec7-0668-8161-9370-e9f50084c6e7",
@@ -825,17 +693,6 @@
     "peak": null
   },
   {
-    "id": "31d85ec7-0668-81c3-b118-f9b105dfa06d",
-    "title": "Oatmeal chocolate cookie",
-    "type": "Snack",
-    "date": "2026-03-07T16:29:00.000-08:00",
-    "photo": "https://iili.io/qIKIAyx.jpg",
-    "carbs": 12,
-    "cals": 150,
-    "delta": 31,
-    "peak": 165
-  },
-  {
     "id": "31c85ec7-0668-8125-a1f5-d74a5338405d",
     "title": "Rice vermicelli with egg and greens",
     "type": "Snack",
@@ -968,17 +825,6 @@
     "peak": 190
   },
   {
-    "id": "31a85ec7-0668-8111-90be-c17356129213",
-    "title": "Breakfast: Scallion pancake with pork and a kiwi",
-    "type": "Breakfast",
-    "date": "2026-03-05T10:05:00.000-08:00",
-    "photo": "https://iili.io/qn5BXpf.jpg",
-    "carbs": 38,
-    "cals": 400,
-    "delta": null,
-    "peak": null
-  },
-  {
     "id": "31b85ec7-0668-8176-8956-c94465a27419",
     "title": "Dinner: Pasta with meat sauce, cheese, broccoli, plus strawberries and grapes",
     "type": "Dinner",
@@ -1078,17 +924,6 @@
     "peak": 191
   },
   {
-    "id": "31885ec7-0668-8169-b7be-d839456a6eff",
-    "title": "Breakfast: Toasted bread with cream cheese, smoked salmon, and a kiwi",
-    "type": "Breakfast",
-    "date": "2026-03-03T09:56:00.000-08:00",
-    "photo": "https://iili.io/qBPwuwJ.jpg",
-    "carbs": 32,
-    "cals": 350,
-    "delta": null,
-    "peak": null
-  },
-  {
     "id": "31b85ec7-0668-81fb-ad70-c721c343059a",
     "title": "Dinner: Dessert: Sliced strawberries",
     "type": "Dinner",
@@ -1098,5 +933,159 @@
     "cals": 60,
     "delta": 87,
     "peak": 229
+  },
+  {
+    "id": "31b85ec7-0668-8191-9eb8-c1b63194071d",
+    "title": "Dinner: Shredded beef with bell peppers and a ciabatta roll",
+    "type": "Dinner",
+    "date": "2026-03-02T19:21:00.000-08:00",
+    "photo": "https://iili.io/qBuPu14.jpg",
+    "carbs": 40,
+    "cals": 500,
+    "delta": 110,
+    "peak": 229
+  },
+  {
+    "id": "31b85ec7-0668-819c-947d-cceb7dc33b5f",
+    "title": "Snack: 2 meat and cheese roll-ups",
+    "type": "Snack",
+    "date": "2026-03-02T17:16:00.000-08:00",
+    "photo": "https://iili.io/qBIbt1a.jpg",
+    "carbs": null,
+    "cals": 180,
+    "delta": 112,
+    "peak": 203
+  },
+  {
+    "id": "31b85ec7-0668-818e-834e-cbf0612054e2",
+    "title": "Snack: 6 green grapes",
+    "type": "Snack",
+    "date": "2026-03-01T18:42:00.000-08:00",
+    "photo": "https://iili.io/qqXyUUQ.jpg",
+    "carbs": 7,
+    "cals": 40,
+    "delta": 106,
+    "peak": 252
+  },
+  {
+    "id": "31b85ec7-0668-81e8-ab84-da7755af137b",
+    "title": "Dinner: Meatballs in sauce with fried rice and greens",
+    "type": "Dinner",
+    "date": "2026-03-01T18:21:00.000-08:00",
+    "photo": "https://iili.io/qqXmrEx.jpg",
+    "carbs": 55,
+    "cals": 550,
+    "delta": 142,
+    "peak": 252
+  },
+  {
+    "id": "31b85ec7-0668-81c8-84d7-d5cb9e85fae4",
+    "title": "Snack: Handful of pecans",
+    "type": "Snack",
+    "date": "2026-03-01T16:47:00.000-08:00",
+    "photo": "https://iili.io/qqXmSLb.jpg",
+    "carbs": 2,
+    "cals": 200,
+    "delta": 134,
+    "peak": 252
+  },
+  {
+    "id": "31b85ec7-0668-81ad-9142-e594d6b546f1",
+    "title": "Snack: Small wedge of brie cheese",
+    "type": "Snack",
+    "date": "2026-03-01T16:40:00.000-08:00",
+    "photo": "https://iili.io/qqXd1AN.jpg",
+    "carbs": null,
+    "cals": 120,
+    "delta": 134,
+    "peak": 252
+  },
+  {
+    "id": "31b85ec7-0668-8160-9f87-c428a25d38b2",
+    "title": "Lunch: 2 bao buns with pork belly and a glass of orange juice",
+    "type": "Lunch",
+    "date": "2026-03-01T12:56:00.000-08:00",
+    "photo": "https://iili.io/qqM6DBe.jpg",
+    "carbs": 70,
+    "cals": 600,
+    "delta": 98,
+    "peak": 235
+  },
+  {
+    "id": "31b85ec7-0668-812b-8dba-efa654499df8",
+    "title": "Breakfast: Sourdough with peanut butter and jam, and coffee with milk",
+    "type": "Breakfast",
+    "date": "2026-03-01T09:07:00.000-08:00",
+    "photo": "https://iili.io/qq1L2Hl.jpg",
+    "carbs": 50,
+    "cals": 450,
+    "delta": 91,
+    "peak": 240
+  },
+  {
+    "id": "31b85ec7-0668-8192-ab34-ce07263d786d",
+    "title": "Snack: 1 energy ball",
+    "type": "Snack",
+    "date": "2026-02-28T19:06:00.000-08:00",
+    "photo": "https://iili.io/qquu6Ml.jpg",
+    "carbs": 12,
+    "cals": 120,
+    "delta": 60,
+    "peak": 196
+  },
+  {
+    "id": "31b85ec7-0668-817a-9d8a-d960db20bbd4",
+    "title": "Snack: Small slice of bread with brie cheese",
+    "type": "Snack",
+    "date": "2026-02-28T18:53:00.000-08:00",
+    "photo": "https://iili.io/qqT1iw7.jpg",
+    "carbs": 10,
+    "cals": 150,
+    "delta": 75,
+    "peak": 196
+  },
+  {
+    "id": "31b85ec7-0668-81a2-8a5d-f97d8be0ee7a",
+    "title": "Dinner: Ramen with pork belly, tofu, bok choy, carrots, and nori",
+    "type": "Dinner",
+    "date": "2026-02-28T18:40:00.000-08:00",
+    "photo": "https://iili.io/qqT7gaI.jpg",
+    "carbs": 45,
+    "cals": 500,
+    "delta": 74,
+    "peak": 196
+  },
+  {
+    "id": "31b85ec7-0668-818f-97c4-c873ce51fd74",
+    "title": "Snack: 1 Japanese Cream Sand cookie",
+    "type": "Snack",
+    "date": "2026-02-28T13:26:00.000-08:00",
+    "photo": "https://iili.io/qqCNPx1.jpg",
+    "carbs": 12,
+    "cals": 80,
+    "delta": 5,
+    "peak": 154
+  },
+  {
+    "id": "31b85ec7-0668-8112-8894-d15cb353dfa0",
+    "title": "Lunch: Prosciutto, hard cheese, and 6 green grapes",
+    "type": "Lunch",
+    "date": "2026-02-28T13:06:00.000-08:00",
+    "photo": "https://iili.io/qqCGaOg.jpg",
+    "carbs": 7,
+    "cals": 180,
+    "delta": 4,
+    "peak": 154
+  },
+  {
+    "id": "31b85ec7-0668-816f-b7a5-fae5cfd7e178",
+    "title": "Breakfast: Scallion pancake, smoked salmon, scrambled eggs, avocado, orange, and 3 loquats",
+    "type": "Breakfast",
+    "date": "2026-02-28T09:04:00.000-08:00",
+    "photo": "https://iili.io/qqKyhN9.jpg",
+    "carbs": 45,
+    "cals": 550,
+    "delta": 82,
+    "peak": 215
   }
 ]
