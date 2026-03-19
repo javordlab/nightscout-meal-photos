@@ -204,8 +204,8 @@
 
     async function loadData() {
       try {
-        // Fetch the statically generated JSON file
-        const res = await fetch('data/notion_meals.json?t=' + Date.now());
+        // Fetch the statically generated JSON file with cache-busting
+        const res = await fetch('data/notion_meals.json?v=' + Date.now());
         allData = await res.json();
         
         // Set default date range

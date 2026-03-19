@@ -47,7 +47,7 @@ async function main() {
     return;
   }
 
-  // Deduplicate by photo URL + date
+  // Deduplicate by photo URL (not photo + date, as timezone offsets may differ)
   const seen = new Set();
   const duplicates = [];
   
@@ -65,12 +65,12 @@ async function main() {
       peak: p["2hr Peak BG"]?.number
     };
   }).filter(meal => {
-    const key = `${meal.photo}|${meal.date}`;
-    if (seen.has(key)) {
-      duplicates.push({ id: meal.id, title: meal.title, date: meal.date });
+    // Deduplicate by photo URL only (same photo = same meal, even if timestamps differ slightly)
+    if (seen.has(meal.photo)) {
+      duplicates.push({ id: meal.id, title: meal.title, date: meal.date, photo: meal.photo });
       return false;
     }
-    seen.add(key);
+    seen.add(meal.photo);
     return true;
   });
 
