@@ -1,85 +1,121 @@
+#!/usr/bin/env node
+/**
+ * Delete duplicate "[Photo - needs description]" entries from Notion
+ */
+
 const https = require('https');
+const NOTION_KEY = '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';
+const DATABASE_ID = '31685ec7-0668-813e-8b9e-c5b4d5d70fa5';
 
-const NOTION_KEY = "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";
+async function queryNotion() {
+  const data = JSON.stringify({
+    filter: {
+      property: "Entry",
+      title: { contains: "[Photo - needs description]" }
+    },
+    sorts: [{ property: "Date", direction: "descending" }]
+  });
 
-// Duplicate IDs to delete (the -07:00 timezone versions)
-const duplicateIds = [
-  "32985ec7-0668-8195-9cdb-de0b20416e17",  // March 15 meatballs -07:00
-  "32985ec7-0668-811d-ac8e-d973cfdadcd2",  // March 14 dessert -07:00
-  "32985ec7-0668-812d-b93c-e2975b63f07b",  // March 14 dinner -07:00
-  "32985ec7-0668-817c-9e05-c84c391d09eb",  // March 14 lunch -07:00
-  "32985ec7-0668-8199-8577-f8acc3c412cb",  // March 14 breakfast -07:00
-  "32985ec7-0668-811d-ae7a-d464e3af0782",  // March 13 dinner -07:00
-  "32985ec7-0668-8138-9b87-e9230993177d",  // March 13 lunch -07:00
-  "32985ec7-0668-8107-9c63-e1ad13cf9856",  // March 13 snack -07:00
-  "32985ec7-0668-81ed-9054-cd66f10909f2",  // March 13 breakfast -07:00
-  "32985ec7-0668-8191-8a1e-db6b30ed5553",  // March 08 cake -07:00
-  "32985ec7-0668-818e-981f-e436a592cd4a"   // March 08 prosciutto -07:00
-];
+  const options = {
+    hostname: 'api.notion.com',
+    path: `/v1/databases/${DATABASE_ID}/query`,
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${NOTION_KEY}`,
+      'Notion-Version': '2022-06-28',
+      'Content-Type': 'application/json',
+      'Content-Length': data.length
+    }
+  };
 
-async function notionRequest(method, endpoint) {
-  return new Promise((resolve) => {
-    const options = {
-      method,
-      hostname: 'api.notion.com',
-      path: `/v1${endpoint}`,
-      headers: {
-        'Authorization': `Bearer ${NOTION_KEY}`,
-        'Notion-Version': '2022-06-28'
-      }
-    };
-    https.request(options, (res) => {
-      let d = '';
-      res.on('data', c => d += c);
+  return new Promise((resolve, reject) => {
+    const req = https.request(options, (res) => {
+      let body = '';
+      res.on('data', chunk => body += chunk);
       res.on('end', () => {
-        try { resolve(JSON.parse(d || '{}')); } catch (e) { resolve({}); }
+        try {
+          resolve(JSON.parse(body));
+        } catch (e) {
+          reject(e);
+        }
       });
-    }).on('error', () => resolve({})).end();
+    });
+    req.on('error', reject);
+    req.write(data);
+    req.end();
   });
 }
 
-async function archivePage(pageId) {
-  return new Promise((resolve) => {
-    const data = JSON.stringify({ archived: true });
-    const options = {
-      method: 'PATCH',
-      hostname: 'api.notion.com',
-      path: `/v1/pages/${pageId}`,
-      headers: {
-        'Authorization': `Bearer ${NOTION_KEY}`,
-        'Notion-Version': '2022-06-28',
-        'Content-Type': 'application/json',
-        'Content-Length': Buffer.byteLength(data)
-      }
-    };
-    https.request(options, (res) => {
-      let d = '';
-      res.on('data', c => d += c);
+async function deletePage(pageId) {
+  const options = {
+    hostname: 'api.notion.com',
+    path: `/v1/pages/${pageId}`,
+    method: 'PATCH',
+    headers: {
+      'Authorization': `Bearer ${NOTION_KEY}`,
+      'Notion-Version': '2022-06-28',
+      'Content-Type': 'application/json'
+    }
+  };
+
+  const data = JSON.stringify({
+    archived: true
+  });
+
+  return new Promise((resolve, reject) => {
+    const req = https.request(options, (res) => {
+      let body = '';
+      res.on('data', chunk => body += chunk);
       res.on('end', () => {
-        try { resolve(JSON.parse(d || '{}')); } catch (e) { resolve({}); }
+        try {
+          resolve(JSON.parse(body));
+        } catch (e) {
+          reject(e);
+        }
       });
-    }).on('error', () => resolve({})).end(data);
+    });
+    req.on('error', reject);
+    req.write(data);
+    req.end();
   });
 }
 
 async function main() {
-  console.log(`Deleting ${duplicateIds.length} duplicate entries...\n`);
+  console.log('Finding "[Photo - needs description]" entries to delete...\n');
   
-  for (const id of duplicateIds) {
-    process.stdout.write(`Archiving ${id.substring(0, 20)}... `);
-    const result = await archivePage(id);
-    if (result.archived) {
-      console.log('✅');
-    } else if (result.status === 404) {
-      console.log('⚠️ Already deleted');
-    } else {
-      console.log(`❌ ${result.message || 'Failed'}`);
-    }
-    // Small delay
-    await new Promise(r => setTimeout(r, 200));
+  const result = await queryNotion();
+  if (!result.results) {
+    console.log('Error:', result);
+    return;
   }
+
+  console.log(`Found ${result.results.length} placeholder entries\n`);
+
+  if (result.results.length === 0) {
+    console.log('No placeholder entries to delete.');
+    return;
+  }
+
+  console.log('Deleting ALL placeholder entries...\n');
   
-  console.log('\nDone. Regenerate gallery data to see changes.');
+  let deleted = 0;
+  let failed = 0;
+  
+  for (const page of result.results) {
+    const title = page.properties.Entry?.title[0]?.plain_text || 'Untitled';
+    const date = page.properties.Date?.date?.start || 'No date';
+    process.stdout.write(`Deleting ${date} - ${title.substring(0, 40)}... `);
+    try {
+      await deletePage(page.id);
+      console.log('OK');
+      deleted++;
+    } catch (e) {
+      console.log(`FAILED: ${e.message}`);
+      failed++;
+    }
+  }
+
+  console.log(`\nDone. Deleted: ${deleted}, Failed: ${failed}`);
 }
 
-main();
+main().catch(console.error);
