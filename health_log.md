@@ -1,9 +1,12 @@
 # Health Log
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
-| 2026-03-19 | 13:55 -07:00 | Maria Dennis | Food | Lunch | Lunch: 2 steamed bao buns, grapes (BG: 154 mg/dL Flat) (Pred: 180-200 mg/dL @ 3:30-4:00 PM; lowered due to 3hr pre-meal gardening) | 70 | 570 |
+| 2026-03-20 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
+| 2026-03-19 | 16:09 -07:00 | Maria Dennis | Activity | - | 90 minutes heavy gardening (BG: 176 mg/dL Flat) | null | null |
+| 2026-03-19 | 14:07 -07:00 | Maria Dennis | Food | Snack | Snack: 2 dried dragon fruit slices (BG: 152 mg/dL Flat) [📷](https://iili.io/qN52Ct2.jpg) | 15 | 80 |
+| 2026-03-19 | 13:55 -07:00 | Maria Dennis | Food | Lunch | Lunch: 2 pork belly bao buns, green grapes, green tea (BG: 154 mg/dL Flat) [📷](https://iili.io/qN52onS.jpg) (Pred: 180-200 mg/dL @ 3:30-4:00 PM; lowered due to 3hr pre-meal gardening) | 70 | 570 |
 | 2026-03-19 | 10:30 -07:00 | Maria Dennis | Activity | - | 3 hours heavy gardening (BG: ~110 mg/dL estimated) | null | null |
-| 2026-03-19 | 09:48 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Ciabatta bread (~60g), avocado (~75g), prosciutto (~15g, 1 slice), milk (~1 cup) (BG: 102 mg/dL Flat) (Pred: 140-155 mg/dL @ 11:15-11:45 AM) | 48 | 360 |
+| 2026-03-19 | 09:48 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Ciabatta bread (~60g), avocado (~75g), prosciutto (~15g, 1 slice), milk (~1 cup) (BG: 102 mg/dL Flat) (Pred: 140-155 mg/dL @ 11:15-11:45 AM) [📷](https://iili.io/qN52xM7.jpg) | 48 | 360 |
 | 2026-03-19 | 09:48 -07:00 | Maria Dennis | Medication | - | Metformin 500mg (with breakfast) | null | null |
 | 2026-03-19 | 09:05 -07:00 | Maria Dennis | Medication | - | Rosuvastatin 10mg (Scheduled) | null | null |
 | 2026-03-19 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
