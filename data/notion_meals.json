@@ -1,5 +1,49 @@
 [
   {
+    "id": "manual-2026-03-20-13:17 -07:00",
+    "title": "Snack: Half apple (~75g)",
+    "type": "Snack",
+    "date": "2026-03-20T13:17:00.000-07:00",
+    "photo": "https://iili.io/qenMa9f.jpg",
+    "carbs": 13,
+    "cals": 50,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "manual-2026-03-20-13:16 -07:00",
+    "title": "Lunch: Prosciutto and brie on toasted ciabatta with milk (~5oz)",
+    "type": "Lunch",
+    "date": "2026-03-20T13:16:00.000-07:00",
+    "photo": "https://iili.io/qenMcu4.jpg",
+    "carbs": 22,
+    "cals": 290,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "manual-2026-03-20-09:14 -07:00",
+    "title": "Snack: Mixed nuts (pecans, Brazil nuts, hazelnuts) + dried goji berries",
+    "type": "Snack",
+    "date": "2026-03-20T09:14:00.000-07:00",
+    "photo": "https://iili.io/qenM0t2.jpg",
+    "carbs": 5.5,
+    "cals": 205,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "manual-2026-03-20-09:04 -07:00",
+    "title": "Breakfast: Smoked salmon on ciabatta with cream cheese/butter spread + small guava",
+    "type": "Breakfast",
+    "date": "2026-03-20T09:04:00.000-07:00",
+    "photo": "https://iili.io/qenMlwl.jpg",
+    "carbs": 25,
+    "cals": 300,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "32985ec7-0668-8138-a753-fd2bc64f3b4f",
     "title": "Dinner: Pork and rice burrito with beans/cheese, avocado slices (BG: 96 mg/dL Flat) (Pred: 160-180 mg/dL @ 8:45-9:15 PM)",
     "type": "Dinner",
