@@ -1,6 +1,10 @@
 # Health Log
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
+| 2026-03-20 | 13:17 -07:00 | Maria Dennis | Food | Snack | Snack: Half apple (~75g) (Pred: 110-120 mg/dL @ 2:45 PM) [📷](https://iili.io/qenMa9f.jpg) | 13 | 50 |
+| 2026-03-20 | 13:16 -07:00 | Maria Dennis | Food | Lunch | Lunch: Prosciutto and brie on toasted ciabatta with milk (~5oz) (Pred: 180-200 mg/dL @ 2:45-3:15 PM) [📷](https://iili.io/qenMcu4.jpg) | 22 | 290 |
+| 2026-03-20 | 09:14 -07:00 | Maria Dennis | Food | Snack | Snack: Mixed nuts (pecans, Brazil nuts, hazelnuts) + dried goji berries (Pred: 150-160 mg/dL @ 11:00 AM) [📷](https://iili.io/qenM0t2.jpg) | 5.5 | 205 |
+| 2026-03-20 | 09:04 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Smoked salmon on ciabatta with cream cheese/butter spread + small guava (Pred: 140-160 mg/dL @ 10:40-11:10 AM) [📷](https://iili.io/qenMlwl.jpg) | 25 | 300 |
 | 2026-03-20 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
 | 2026-03-19 | 20:20 -07:00 | Maria Dennis | Activity | - | 15 minutes walk uphill/downhill (BG: ~130 mg/dL estimated) | null | null |
 | 2026-03-19 | 19:14 -07:00 | Maria Dennis | Food | Dinner | Dinner: Pork and rice burrito with beans/cheese, avocado slices (BG: 96 mg/dL Flat) (Pred: 160-180 mg/dL @ 8:45-9:15 PM) | 70 | 750 |
