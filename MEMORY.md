@@ -8,7 +8,7 @@
 
 ### Maria Dennis
 - **Details:** 73yo, 139 lbs, 5'0". Type 2 Diabetes (FreeStyle Libre 3).
-- **Meds:** Metformin (1500mg nightly, ~9 PM), Lisinopril (10mg daily morning), Rosuvastatin (10mg every other morning).
+- **Meds:** Metformin (500mg breakfast, 500mg lunch, 1000mg dinner), Lisinopril (10mg daily morning), Rosuvastatin (10mg every other morning).
 - **Rosuvastatin Cycle:** Anchor date 2026-03-01 (taken).
 
 ## Core Operational Protocols
@@ -23,6 +23,23 @@
   2. Use the EXACT output values in reports
   3. Do not round or approximate unless the script already does
   4. Never invent numbers — if data is missing, state "Data unavailable" instead of guessing
+
+## Model Configuration (Updated 2026-03-20)
+
+### General Task Chain
+| Priority | Model |
+|----------|-------|
+| Primary | `ollama/kimi-k2.5:cloud` |
+| Fallback #1 | `openai/gpt-5-mini` |
+| Fallback #2 | `google-gemini-cli/gemini-3-flash-preview` |
+| Fallback #3 | `ollama/qwen2.5-coder:7b` |
+
+### Specialized Models (On-Demand)
+| Use Case | Model |
+|----------|-------|
+| Code Tasks | `openai-codex/gpt-5.3-codex` |
+| Image Processing | `google-gemini-cli/gemini-3-flash-preview` |
+| Top-Tier Reasoning | `openai/gpt-5.4` |
 
 ## Infrastructure
 - **Nightscout:** https://p01--sefi--s66fclg7g2lm.code.run (Secret: JaviCare2026)
