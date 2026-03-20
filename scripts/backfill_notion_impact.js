@@ -6,31 +6,67 @@ const DATA_SOURCE_ID = "31685ec7-0668-813e-8b9e-c5b4d5d70fa5";
 const NS_URL = "https://p01--sefi--s66fclg7g2lm.code.run";
 
 async function fetchJson(url) {
-  return new Promise((resolve) => {
+  return new Promise((resolve, reject) => {
     https.get(url, (res) => {
-      let data = ''; res.on('data', (c) => data += c); res.on('end', () => resolve(JSON.parse(data || '[]')));
-    });
+      let data = ''; 
+      res.on('data', (c) => data += c); 
+      res.on('end', () => {
+        try {
+          resolve(JSON.parse(data || '[]'));
+        } catch (e) {
+          console.error(`Error parsing JSON from ${url}:`, e.message);
+          console.error('Response starts with:', data.substring(0, 100));
+          reject(e);
+        }
+      });
+    }).on('error', reject);
   });
 }
 
 async function postJson(url, payload) {
-  return new Promise((resolve) => {
+  return new Promise((resolve, reject) => {
     const data = JSON.stringify(payload);
     const options = {
       method: 'POST', headers: { 'Authorization': 'Bearer ' + NOTION_KEY, 'Notion-Version': '2022-06-28', 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(data) }
     };
-    const req = https.request(url, options, (res) => { let body = ''; res.on('data', (c) => body += c); res.on('end', () => resolve(JSON.parse(body || '{}'))); });
+    const req = https.request(url, options, (res) => { 
+      let body = ''; 
+      res.on('data', (c) => body += c); 
+      res.on('end', () => {
+        try {
+          resolve(JSON.parse(body || '{}'));
+        } catch (e) {
+          console.error(`Error parsing JSON from POST ${url}:`, e.message);
+          console.error('Response starts with:', body.substring(0, 100));
+          reject(e);
+        }
+      });
+    });
+    req.on('error', reject);
     req.write(data); req.end();
   });
 }
 
 async function patchJson(url, payload) {
-  return new Promise((resolve) => {
+  return new Promise((resolve, reject) => {
     const data = JSON.stringify(payload);
     const options = {
       method: 'PATCH', headers: { 'Authorization': 'Bearer ' + NOTION_KEY, 'Notion-Version': '2022-06-28', 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(data) }
     };
-    const req = https.request(url, options, (res) => { let body = ''; res.on('data', (c) => body += c); res.on('end', () => resolve(JSON.parse(body || '{}'))); });
+    const req = https.request(url, options, (res) => { 
+      let body = ''; 
+      res.on('data', (c) => body += c); 
+      res.on('end', () => {
+        try {
+          resolve(JSON.parse(body || '{}'));
+        } catch (e) {
+          console.error(`Error parsing JSON from PATCH ${url}:`, e.message);
+          console.error('Response starts with:', body.substring(0, 100));
+          reject(e);
+        }
+      });
+    });
+    req.on('error', reject);
     req.write(data); req.end();
   });
 }

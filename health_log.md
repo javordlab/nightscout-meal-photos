@@ -2,6 +2,8 @@
 
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
 | 2026-03-20 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
+| 2026-03-19 | 20:20 -07:00 | Maria Dennis | Activity | - | 15 minutes walk uphill/downhill (BG: ~130 mg/dL estimated) | null | null |
+| 2026-03-19 | 19:14 -07:00 | Maria Dennis | Food | Dinner | Dinner: Pork and rice burrito with beans/cheese, avocado slices (BG: 96 mg/dL Flat) (Pred: 160-180 mg/dL @ 8:45-9:15 PM) | 70 | 750 |
  | 2026-03-19 | 17:36 -07:00 | Maria Dennis | Food | Snack | Snack: Strawberries and guava (BG: 85 mg/dL Flat) (Pred: 183 mg/dL @ 7:21 PM) | 18 | 90 | 
 | 2026-03-19 | 16:09 -07:00 | Maria Dennis | Activity | - | 90 minutes heavy gardening (BG: 176 mg/dL Flat) | null | null |
  | 2026-03-19 | 14:07 -07:00 | Maria Dennis | Food | Snack | Snack: 2 dried dragon fruit slices (BG: 152 mg/dL Flat) (Pred: 173 mg/dL @ 3:52 PM) [📷](https://iili.io/qN52Ct2.jpg) | 15 | 80 | 
