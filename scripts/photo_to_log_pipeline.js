@@ -15,10 +15,36 @@ const STATE_FILE = '/Users/javier/.openclaw/workspace/.photo_pipeline_state.json
 const HEALTH_LOG = '/Users/javier/.openclaw/workspace/health_log.md';
 const MAX_RETRIES = 3;
 
-// Load processed files state
+// Extract file number prefix (e.g., "file_154" from "file_154---uuid.jpg")
+function getFilePrefix(filename) {
+  const match = filename.match(/^(file_\d+)/);
+  return match ? match[1] : filename;
+}
+
+// Find actual file on disk matching a file prefix
+function findFileByPrefix(prefix) {
+  const files = fs.readdirSync(INBOUND_DIR)
+    .filter(f => f.match(/\.(jpg|jpeg|png)$/i));
+  
+  for (const f of files) {
+    if (getFilePrefix(f) === prefix) {
+      return f;
+    }
+  }
+  return null;
+}
+
+// Load processed files state (now tracks by prefix, not full filename)
 function loadState() {
   if (fs.existsSync(STATE_FILE)) {
-    return JSON.parse(fs.readFileSync(STATE_FILE, 'utf8'));
+    const state = JSON.parse(fs.readFileSync(STATE_FILE, 'utf8'));
+    // Migrate old state if needed
+    if (state.processed && state.processed.length > 0 && state.processed[0].includes('---')) {
+      console.log('Migrating state to use file prefixes...');
+      state.processed = [...new Set(state.processed.map(getFilePrefix))];
+      state.failed = state.failed.map(f => ({ ...f, file: getFilePrefix(f.file) }));
+    }
+    return state;
   }
   return { processed: [], failed: [], lastRun: null };
 }
@@ -107,29 +133,46 @@ async function main() {
   console.log('Photo Pipeline Starting...', new Date().toISOString());
   
   const state = loadState();
-  const files = fs.readdirSync(INBOUND_DIR)
-    .filter(f => f.match(/\.(jpg|jpeg|png)$/i))
-    .filter(f => !state.processed.includes(f))
-    .filter(f => !state.failed.includes(f))
-    .map(f => ({
-      name: f,
-      path: path.join(INBOUND_DIR, f),
-      mtime: fs.statSync(path.join(INBOUND_DIR, f)).mtime
-    }))
-    .sort((a, b) => a.mtime - b.mtime); // Process oldest first
+  const allFiles = fs.readdirSync(INBOUND_DIR)
+    .filter(f => f.match(/\.(jpg|jpeg|png)$/i));
   
-  if (files.length === 0) {
+  // Build map of prefixes to actual files
+  const prefixToFile = new Map();
+  for (const f of allFiles) {
+    const prefix = getFilePrefix(f);
+    if (!prefixToFile.has(prefix)) {
+      prefixToFile.set(prefix, f);
+    }
+  }
+  
+  // Filter out already processed (by prefix)
+  const filesToProcess = [];
+  for (const [prefix, filename] of prefixToFile) {
+    if (!state.processed.includes(prefix) && !state.failed.find(f => f.file === prefix)) {
+      filesToProcess.push({
+        name: filename,
+        prefix: prefix,
+        path: path.join(INBOUND_DIR, filename),
+        mtime: fs.statSync(path.join(INBOUND_DIR, filename)).mtime
+      });
+    }
+  }
+  
+  // Sort by modification time (oldest first)
+  filesToProcess.sort((a, b) => a.mtime - b.mtime);
+  
+  if (filesToProcess.length === 0) {
     console.log('No new photos to process');
     return;
   }
   
-  console.log(`Found ${files.length} unprocessed photos`);
+  console.log(`Found ${filesToProcess.length} unprocessed photos`);
   
   // Get current BG once for all entries
   const bg = await getCurrentBG();
   
-  for (const file of files) {
-    console.log(`\nProcessing: ${file.name}`);
+  for (const file of filesToProcess) {
+    console.log(`\nProcessing: ${file.name} (prefix: ${file.prefix})`);
     
     try {
       // Analyze photo
@@ -155,21 +198,21 @@ async function main() {
       // Add to log
       addToLog(entry);
       
-      // Mark as processed
-      state.processed.push(file.name);
+      // Mark as processed (by prefix)
+      state.processed.push(file.prefix);
       
     } catch (e) {
       console.error(`Failed to process ${file.name}:`, e.message);
       
-      // Track failures
-      const failEntry = state.failed.find(f => f.file === file.name);
+      // Track failures (by prefix)
+      const failEntry = state.failed.find(f => f.file === file.prefix);
       if (failEntry) {
         failEntry.retries++;
         if (failEntry.retries >= MAX_RETRIES) {
-          console.log(`Giving up on ${file.name} after ${MAX_RETRIES} retries`);
+          console.log(`Giving up on ${file.prefix} after ${MAX_RETRIES} retries`);
         }
       } else {
-        state.failed.push({ file: file.name, retries: 1, error: e.message });
+        state.failed.push({ file: file.prefix, retries: 1, error: e.message });
       }
     }
   }
