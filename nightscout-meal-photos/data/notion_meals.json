@@ -1,7 +1,7 @@
 [
   {
     "id": "32985ec7-0668-8138-a753-fd2bc64f3b4f",
-    "title": "Dinner: Pork and rice burrito with beans/cheese, avocado slices (BG: 96 mg/dL Flat) (Pred: 165 mg/dL @ 8:44 PM)",
+    "title": "Dinner: Pork and rice burrito with beans/cheese, avocado slices (BG: 96 mg/dL Flat) (Pred: 160-180 mg/dL @ 8:45-9:15 PM)",
     "type": "Dinner",
     "date": "2026-03-19T19:14:00.000-07:00",
     "photo": "https://iili.io/qNM744f.jpg",
@@ -1087,16 +1087,5 @@
     "cals": 220,
     "delta": 57,
     "peak": 191
-  },
-  {
-    "id": "31b85ec7-0668-8190-a67e-f50bd7d39e9b",
-    "title": "Snack: 6 green grapes",
-    "type": "Snack",
-    "date": "2026-02-25T19:38:00.000-08:00",
-    "photo": "https://files.catbox.moe/pdbpxz.jpg",
-    "carbs": 5,
-    "cals": 40,
-    "delta": 21,
-    "peak": 221
   }
 ]
