@@ -1,10 +1,14 @@
+#!/usr/bin/env node
+/**
+ * Backfill March 20 entries specifically
+ */
+
 const https = require('https');
-const fs = require('fs');
 
 const NOTION_KEY = "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";
 const DATA_SOURCE_ID = "31685ec7-0668-813e-8b9e-c5b4d5d70fa5";
 const NS_URL = "https://p01--sefi--s66fclg7g2lm.code.run";
-const NS_SECRET_HASH = "b3170e23f45df7738434cd8be9cd79d86a6d0f01"; // SHA1 of JaviCare2026
+const NS_SECRET_HASH = "b3170e23f45df7738434cd8be9cd79d86a6d0f01";
 
 async function fetchJson(url, headers = {}) {
   return new Promise((resolve, reject) => {
@@ -20,8 +24,7 @@ async function fetchJson(url, headers = {}) {
           resolve(JSON.parse(data || '[]'));
         } catch (e) {
           console.error(`Error parsing JSON from ${url}:`, e.message);
-          console.error('Response starts with:', data.substring(0, 100));
-          reject(e);
+          resolve([]);
         }
       });
     }).on('error', reject);
@@ -41,9 +44,7 @@ async function postJson(url, payload) {
         try {
           resolve(JSON.parse(body || '{}'));
         } catch (e) {
-          console.error(`Error parsing JSON from POST ${url}:`, e.message);
-          console.error('Response starts with:', body.substring(0, 100));
-          reject(e);
+          resolve({});
         }
       });
     });
@@ -65,9 +66,7 @@ async function patchJson(url, payload) {
         try {
           resolve(JSON.parse(body || '{}'));
         } catch (e) {
-          console.error(`Error parsing JSON from PATCH ${url}:`, e.message);
-          console.error('Response starts with:', body.substring(0, 100));
-          reject(e);
+          resolve({});
         }
       });
     });
@@ -105,69 +104,69 @@ function getPeak2Hr(entries, mealTime) {
       }
     }
   }
-  return { peakBg, peakTime: peakTimeMs ? new Date(peakTimeMs).toISOString() : null };
+  return { peakBg: peakBg > 0 ? peakBg : null, peakTime: peakTimeMs ? new Date(peakTimeMs).toISOString() : null };
 }
 
 async function run() {
-  console.log('Starting Impact Variance Audit...');
+  console.log('Backfilling March 20 entries...');
   const nsEntries = await fetchJson(`${NS_URL}/api/v1/entries.json?count=5000`);
+  console.log(`Fetched ${nsEntries.length} Nightscout entries`);
+  
+  // Get March 20 food entries
   const data = await postJson(`https://api.notion.com/v1/databases/${DATA_SOURCE_ID}/query`, { 
-    filter: { property: 'Date', date: { on_or_after: '2026-03-06' } }
+    filter: { 
+      and: [
+        { property: 'Date', date: { on_or_after: '2026-03-20' } },
+        { property: 'Date', date: { before: '2026-03-21' } }
+      ]
+    }
   });
 
-  for (const item of data.results) {
+  console.log(`Found ${data.results?.length || 0} March 20 entries`);
+
+  for (const item of data.results || []) {
     if (item.archived) continue;
     const props = item.properties;
-    if (props.Category.select.name !== 'Food') continue;
+    if (props.Category?.select?.name !== 'Food') continue;
     
-    const titleText = props.Entry.title[0]?.plain_text;
-    const dateStr = props.Date.date.start;
-    const updatePayload = { properties: {} };
-
-    // 1. Ensure real peak data is current
-    let currentPeakBg = props['2hr Peak BG']?.number;
-    let currentPeakTimeStr = props['Peak Time']?.date?.start;
-    let currentPreBg = props['Pre-Meal BG']?.number;
-
-    if (!currentPeakBg || !currentPreBg) {
-        const preBg = getBgAt(nsEntries, dateStr);
-        const { peakBg, peakTime } = getPeak2Hr(nsEntries, dateStr);
-        if (preBg && peakBg) {
-            currentPreBg = preBg;
-            currentPeakBg = peakBg;
-            currentPeakTimeStr = peakTime;
-            const delta = peakBg - preBg;
-            const timeToPeak = Math.round((new Date(peakTime) - new Date(dateStr)) / (1000 * 60));
-            
-            updatePayload.properties['Pre-Meal BG'] = { number: preBg };
-            updatePayload.properties['2hr Peak BG'] = { number: peakBg };
-            updatePayload.properties['BG Delta'] = { number: delta };
-            updatePayload.properties['Peak Time'] = { date: { start: peakTime } };
-            updatePayload.properties['Time to Peak (min)'] = { number: timeToPeak };
-        }
-    }
-
-    // 2. Calculate Variances if predictions exist
-    const predPeakBg = props['Predicted Peak BG']?.number;
-    const predPeakTimeStr = props['Predicted Peak Time']?.date?.start;
-
-    if (predPeakBg != null && currentPeakBg != null) {
-      const bgVar = currentPeakBg - predPeakBg;
-      updatePayload.properties['Peak BG Delta'] = { number: bgVar };
+    const titleText = props.Entry?.title?.[0]?.plain_text;
+    const dateStr = props.Date?.date?.start;
+    
+    console.log(`\nProcessing: ${titleText}`);
+    console.log(`  Date: ${dateStr}`);
+    
+    const preBg = getBgAt(nsEntries, dateStr);
+    const { peakBg, peakTime } = getPeak2Hr(nsEntries, dateStr);
+    
+    console.log(`  Pre-meal BG: ${preBg || 'N/A'}`);
+    console.log(`  Peak BG: ${peakBg || 'N/A'} @ ${peakTime || 'N/A'}`);
+    
+    if (preBg && peakBg) {
+      const delta = peakBg - preBg;
+      const timeToPeak = Math.round((new Date(peakTime) - new Date(dateStr)) / (1000 * 60));
       
-      if (currentPeakTimeStr && predPeakTimeStr) {
-        const predDate = new Date(predPeakTimeStr);
-        const peakDate = new Date(currentPeakTimeStr);
-        const timeVar = Math.round((peakDate - predDate) / (1000 * 60));
-        updatePayload.properties['Peak Time Delta (min)'] = { number: timeVar };
+      const updatePayload = {
+        properties: {
+          'Pre-Meal BG': { number: preBg },
+          '2hr Peak BG': { number: peakBg },
+          'BG Delta': { number: delta },
+          'Peak Time': { date: { start: peakTime } },
+          'Time to Peak (min)': { number: timeToPeak }
+        }
+      };
+      
+      // Calculate variance
+      const predPeakBg = props['Predicted Peak BG']?.number;
+      if (predPeakBg != null) {
+        updatePayload.properties['Peak BG Delta'] = { number: peakBg - predPeakBg };
       }
-    }
-
-    if (Object.keys(updatePayload.properties).length > 0) {
-        console.log(`Updating '${titleText}' (${dateStr}): Pre ${currentPreBg}, Peak ${currentPeakBg}`);
-        await patchJson(`https://api.notion.com/v1/pages/${item.id}`, updatePayload);
+      
+      await patchJson(`https://api.notion.com/v1/pages/${item.id}`, updatePayload);
+      console.log('  UPDATED');
+    } else {
+      console.log('  NO GLUCOSE DATA');
     }
   }
-  console.log('Variance Audit Complete.');
+  console.log('\nDone!');
 }
 run();
