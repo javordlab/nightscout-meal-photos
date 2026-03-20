@@ -88,28 +88,6 @@
     "peak": 173
   },
   {
-    "id": "32985ec7-0668-81e1-9854-fcd11a8c10fe",
-    "title": "Snack: One small guava (BG: 110 mg/dL Flat)  (Pred: 145 mg/dL @ 8:30 PM)",
-    "type": "Snack",
-    "date": "2026-03-16T18:45:00.000-07:00",
-    "photo": "https://iili.io/d60c1ebe-cefb-4490-b75c-27ea3a294930.jpg",
-    "carbs": 7,
-    "cals": 35,
-    "delta": 65,
-    "peak": 173
-  },
-  {
-    "id": "32985ec7-0668-8108-b388-c68b17ea7f80",
-    "title": "Dinner: Roasted pork with glaze, pearl barley, and broccoli, plus rustic bread with brie (BG: 106 mg/dL Flat)   (Pred: 285 mg/dL @ 8:15 PM)",
-    "type": "Dinner",
-    "date": "2026-03-16T18:30:00.000-07:00",
-    "photo": "https://iili.io/30d718c6-0d35-4c9d-8e0e-f6bcb56f28cb.jpg",
-    "carbs": 47,
-    "cals": 585,
-    "delta": 67,
-    "peak": 173
-  },
-  {
     "id": "32585ec7-0668-81ab-bd11-cd3d668e4d22",
     "title": "Snack: Mixed nuts and cheese balls (BG: 134 mg/dL Flat)",
     "type": "Snack",
@@ -132,17 +110,6 @@
     "peak": 175
   },
   {
-    "id": "32985ec7-0668-8115-b654-eba21a78bbba",
-    "title": "Lunch: Open-faced pastrami sandwich, mixed nuts, cheese balls, and 1/2 orange (BG: 134 mg/dL Flat)    (Pred: 274 mg/dL @ 2:50 PM)",
-    "type": "Lunch",
-    "date": "2026-03-16T13:05:00.000-07:00",
-    "photo": "https://iili.io/35cdbb5c-b5a0-4553-893e-a476afc4d19e.jpg",
-    "carbs": 44,
-    "cals": 775,
-    "delta": 42,
-    "peak": 175
-  },
-  {
     "id": "32585ec7-0668-815e-b59b-eaa79049e209",
     "title": "Breakfast: 2 soft-boiled eggs, seeded toast triangles (1 slice), half a kiwi, and black coffee (BG: 123 mg/dL Flat)  (Pred: 204 mg/dL @ 11:50 AM)",
     "type": "Breakfast",
@@ -152,17 +119,6 @@
     "cals": 288,
     "delta": -8,
     "peak": 182
-  },
-  {
-    "id": "32985ec7-0668-8162-9025-c2dae79d388a",
-    "title": "Breakfast: 2 soft-boiled eggs, seeded toast triangles (1 slice), half a kiwi, and black coffee (BG: 123 mg/dL Flat)  (Pred: 204 mg/dL @ 11:50 AM)",
-    "type": "Breakfast",
-    "date": "2026-03-16T10:05:00.000-07:00",
-    "photo": "https://iili.io/28205df3-226e-4852-8b8e-8e6f9e461ed4.jpg",
-    "carbs": 24,
-    "cals": 288,
-    "delta": 69,
-    "peak": 192
   },
   {
     "id": "32585ec7-0668-818a-8c2f-fe76155a05a6",
@@ -1098,5 +1054,38 @@
     "cals": 400,
     "delta": 40,
     "peak": 145
+  },
+  {
+    "id": "31b85ec7-0668-81e4-9d53-c75637142533",
+    "title": "Breakfast: Smoked salmon on 1 bao bun",
+    "type": "Breakfast",
+    "date": "2026-02-25T09:27:00.000-08:00",
+    "photo": "https://files.catbox.moe/dzucg3.jpg",
+    "carbs": 22,
+    "cals": 250,
+    "delta": 59,
+    "peak": 196
+  },
+  {
+    "id": "31b85ec7-0668-8142-bf14-d29d106bbeee",
+    "title": "Snack: Late snack: Small piece of dark chocolate",
+    "type": "Snack",
+    "date": "2026-02-25T03:28:00.000-08:00",
+    "photo": "https://files.catbox.moe/xw7qza.jpg",
+    "carbs": 3,
+    "cals": 50,
+    "delta": 16,
+    "peak": 125
+  },
+  {
+    "id": "31b85ec7-0668-8127-a302-c5ee3adbb6ec",
+    "title": "Snack: Dinner: Green vegetable soup, octopus with potatoes",
+    "type": "Snack",
+    "date": "2026-02-25T02:48:00.000-08:00",
+    "photo": "https://files.catbox.moe/2059f6.jpg",
+    "carbs": 35,
+    "cals": 450,
+    "delta": 8,
+    "peak": 139
   }
 ]
