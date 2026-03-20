@@ -15,6 +15,7 @@
 - **Radial Architecture:** `health_log.md` is the only SSoT. All syncs (Notion, Nightscout, MySQL) must trigger every 30 minutes and after any manual log update.
 - **Reporting (9:30 AM PT Daily):** Must include 24-hour summary (Avg, TIR, GMI), 14-day trends (GMI, Avg, TIR, CV), Nutrition (24h full + 14d avg), Medication status, Outliers, and Supervisor Analysis. Use emojis/bolding.
 - **Projections & Outcomes:** Every Food entry MUST have `Predicted Peak BG` and `Predicted Peak Time` calculated immediately upon logging. After meal completion (~3 hours), automatically backfill actual outcomes: `Pre-Meal BG`, `2hr Peak BG`, `Peak Time`, `BG Delta`, `Time to Peak (min)`, `Peak BG Delta`, and `Peak Time Delta (min)`. Automated backfill runs every 2 hours via cron.
+- **Silent Logging:** Food, Medication, and Exercise entries are auto-logged immediately without confirmation. Photos are optional — log the entry either way.
 - **Real-time Context:** Every manual log entry (Food, Medication, Activity) MUST include the most recent glucose value from Nightscout in the response and the log note.
 - **Data Integrity:** All dashboard data and visual charts must be pushed to GitHub at the end of every sync cycle.
 
