@@ -187,28 +187,6 @@
     "peak": 159
   },
   {
-    "id": "32585ec7-0668-818a-bfea-cb3868043ee2",
-    "title": "Dessert: Small slice of dark chocolate cake with whipped cream  (Pred: 197 mg/dL @ 2:50 PM)",
-    "type": "Dessert",
-    "date": "2026-03-15T13:04:00.000-08:00",
-    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/f53060b2-14d1-4466-919f-1d6cbaf359ec.jpg",
-    "carbs": 22,
-    "cals": 240,
-    "delta": null,
-    "peak": null
-  },
-  {
-    "id": "32585ec7-0668-81a4-aafa-eadf595a61c2",
-    "title": "Lunch: Flour tortilla wrap with peppers and meat, and 4 orange wedges (BG: 140 mg/dL Flat)  (Pred: 278 mg/dL @ 2:30 PM)",
-    "type": "Lunch",
-    "date": "2026-03-15T12:45:00.000-08:00",
-    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/d6b3cf3a-ae1f-4836-b3f3-73ecd6a89ee2.jpg",
-    "carbs": 45,
-    "cals": 365,
-    "delta": null,
-    "peak": null
-  },
-  {
     "id": "32985ec7-0668-81c0-b45f-c6b0816dc791",
     "title": "Dessert: Small slice of dark chocolate cake with whipped cream  (Pred: 197 mg/dL @ 2:50 PM)",
     "type": "Dessert",
@@ -227,17 +205,6 @@
     "photo": "https://iili.io/d6b3cf3a-ae1f-4836-b3f3-73ecd6a89ee2.jpg",
     "carbs": 45,
     "cals": 365,
-    "delta": null,
-    "peak": null
-  },
-  {
-    "id": "32585ec7-0668-81bc-9372-e4e1f066ca39",
-    "title": "Breakfast: Seeded toast with 2 slices of prosciutto and 2 slices of tomato (BG: 130 mg/dL Flat)  (Pred: 197 mg/dL @ 10:50 AM)",
-    "type": "Breakfast",
-    "date": "2026-03-15T09:05:00.000-08:00",
-    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/70e1c2c7-082b-486f-b6f0-99d2bae19f52.jpg",
-    "carbs": 22,
-    "cals": 250,
     "delta": null,
     "peak": null
   },
@@ -1098,5 +1065,38 @@
     "cals": 400,
     "delta": 57,
     "peak": 191
+  },
+  {
+    "id": "31b85ec7-0668-81bb-870e-e41f70a8286e",
+    "title": "Breakfast: Apple slices + small cup of yogurt",
+    "type": "Breakfast",
+    "date": "2026-02-26T09:27:00.000-08:00",
+    "photo": "https://iili.io/qfh8TGI.jpg",
+    "carbs": 20,
+    "cals": 220,
+    "delta": 57,
+    "peak": 191
+  },
+  {
+    "id": "31b85ec7-0668-8190-a67e-f50bd7d39e9b",
+    "title": "Snack: 6 green grapes",
+    "type": "Snack",
+    "date": "2026-02-25T19:38:00.000-08:00",
+    "photo": "https://files.catbox.moe/pdbpxz.jpg",
+    "carbs": 5,
+    "cals": 40,
+    "delta": 21,
+    "peak": 221
+  },
+  {
+    "id": "31b85ec7-0668-8187-9e2f-e8e62b50a83f",
+    "title": "Lunch: Octopus with potatoes",
+    "type": "Lunch",
+    "date": "2026-02-25T12:09:00.000-08:00",
+    "photo": "https://files.catbox.moe/uf8gwq.jpg",
+    "carbs": 29,
+    "cals": 400,
+    "delta": 40,
+    "peak": 145
   }
 ]
