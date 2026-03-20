@@ -18,6 +18,11 @@
 - **Silent Logging:** Food, Medication, and Exercise entries are auto-logged immediately without confirmation. Photos are optional — log the entry either way.
 - **Real-time Context:** Every manual log entry (Food, Medication, Activity) MUST include the most recent glucose value from Nightscout in the response and the log note.
 - **Data Integrity:** All dashboard data and visual charts must be pushed to GitHub at the end of every sync cycle.
+- **STRICT DATA RULE — NEVER EYEBALL:** When reporting any numerical values (glucose, carbs, calories, TIR, GMI, etc.), **NEVER estimate or eyeball**. Always:
+  1. Execute the calculation scripts (`scripts/calculate_glucose_summary.js`, `scripts/calculate_14d_stats.js`)
+  2. Use the EXACT output values in reports
+  3. Do not round or approximate unless the script already does
+  4. Never invent numbers — if data is missing, state "Data unavailable" instead of guessing
 
 ## Infrastructure
 - **Nightscout:** https://p01--sefi--s66fclg7g2lm.code.run (Secret: JaviCare2026)
