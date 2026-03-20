@@ -12,42 +12,42 @@
 | 2026-03-19 | 09:05 -07:00 | Maria Dennis | Medication | - | Rosuvastatin 10mg (Scheduled) | null | null |
 | 2026-03-19 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
 | 2026-03-18 | 20:55 -07:00 | Maria Dennis | Activity | - | 20 minutes walk (BG: 102 mg/dL Flat) | null | null |
- | 2026-03-18 | 19:20 -07:00 | Maria Dennis | Food | Dinner | Dinner: 3 steamed dumplings + octopus and potato stew with carrots + loquats, grapes, and one strawberry (BG: 144 mg/dL ↗️) (Pred: 300 mg/dL @ 9:05 PM) [📷](https://iili.io/7c08586f-286c-4da4-8018-f2a66b64abf7.jpg) [📷](https://iili.io/e06b4b8a-ffd9-4f21-848b-ff2ebc7603b9.jpg) [📷](https://iili.io/7e08c360-7b67-4b12-88cf-012bacd4a479.jpg) [📷](https://iili.io/f35236b3-6f01-4e14-9fb0-0a2e95f4eaa1.jpg) | 72 | 518 | 
+ | 2026-03-18 | 19:20 -07:00 | Maria Dennis | Food | Dinner | Dinner: 3 steamed dumplings + octopus and potato stew with carrots + loquats, grapes, and one strawberry (BG: 144 mg/dL ↗️) (Pred: 300 mg/dL @ 9:05 PM) [📷](https://iili.io/qN1tOZl.jpg) [📷](https://iili.io/e06b4b8a-ffd9-4f21-848b-ff2ebc7603b9.jpg) [📷](https://iili.io/7e08c360-7b67-4b12-88cf-012bacd4a479.jpg) [📷](https://iili.io/f35236b3-6f01-4e14-9fb0-0a2e95f4eaa1.jpg) | 72 | 518 | 
 | 2026-03-18 | 19:15 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL (Dinner dose) | null | null |
  | 2026-03-18 | 15:45 -07:00 | Maria Dennis | Food | Snack | Snack: 1 slice dragon fruit and 1 orange slice (BG: 230 mg/dL Flat) (Pred: 138 mg/dL @ 5:30 PM) | 5 | 25 | 
 | 2026-03-18 | 15:35 -07:00 | Maria Dennis | Activity | - | 2 hours heavy gardening (BG: 230 mg/dL Flat) | null | null |
 | 2026-03-18 | 13:30 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL (Lunch/Scheduled) | null | null |
-| 2026-03-18 | 13:30 -07:00 | Maria Dennis | Food | Lunch | Lunch: Cured meat sandwich on baguette with spread and a small guava (BG: 148 mg/dL Flat) [📷](https://iili.io/d5afb3ee-eff2-4281-a355-34796d217b29.jpg) (Pred: 278 mg/dL @ 3:15 PM) | 45 | 375 |
+| 2026-03-18 | 13:30 -07:00 | Maria Dennis | Food | Lunch | Lunch: Cured meat sandwich on baguette with spread and a small guava (BG: 148 mg/dL Flat) [📷](https://iili.io/qN1tmcF.jpg) (Pred: 278 mg/dL @ 3:15 PM) | 45 | 375 |
 | 2026-03-18 | 11:35 -07:00 | Maria Dennis | Activity | - | 30 minutes walk (BG: 111 mg/dL Flat) | null | null |
 | 2026-03-18 | 10:15 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: 1 cup plain yogurt and 2 slices prosciutto (BG: 116 mg/dL Flat) (Pred: 135 mg/dL @ 12:00 PM) | 10 | 250 |
 | 2026-03-18 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
 | 2026-03-17 | 21:30 -07:00 | Maria Dennis | Activity | - | 15 minute walk and 15 minutes Qigong (BG: 162 mg/dL Flat) | null | null |
 | 2026-03-17 | 21:30 -07:00 | Maria Dennis | Medication | - | 1500mg Metformin HCL (incl. missed lunch dose; Total for day: 2000mg) | null | null |
 | 2026-03-17 | 21:00 -07:00 | Maria Dennis | Food | Dessert | Dessert: Small piece of sweet roll (BG: 135 mg/dL ↗️) (Pred: 183 mg/dL @ 10:45 PM) | 18 | 150 |
-| 2026-03-17 | 19:10 -07:00 | Maria Dennis | Food | Dinner | Dinner: Poached eggs on a vegetable stew (eggplant, carrots, dill) with pearl barley, rustic bread with brie, and Nigori sake (BG: 93 mg/dL Flat) (Pred: 300 mg/dL @ 8:55 PM) [📷](https://iili.io/51c8ee3d-fed3-43f8-b00f-50439dd4bac6.jpg) [📷](https://iili.io/3c0ba392-d087-4351-bdc9-0b62242e6899.jpg) | 65 | 650 |
+| 2026-03-17 | 19:10 -07:00 | Maria Dennis | Food | Dinner | Dinner: Poached eggs on a vegetable stew (eggplant, carrots, dill) with pearl barley, rustic bread with brie, and Nigori sake (BG: 93 mg/dL Flat) (Pred: 300 mg/dL @ 8:55 PM) [📷](https://iili.io/qN1DgiN.jpg) [📷](https://iili.io/3c0ba392-d087-4351-bdc9-0b62242e6899.jpg) | 65 | 650 |
 | 2026-03-17 | 13:30 -07:00 | Maria Dennis | Food | Lunch | Lunch: 1 slice of bread and 1oz of pastrami (BG: 101 mg/dL Flat) (Pred: 183 mg/dL @ 3:15 PM) | 18 | 150 |
 | 2026-03-17 | 09:30 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: 2 slices prosciutto, 1 slice seedy bread, cream cheese, few nuts (BG: 96 mg/dL Flat) (Pred: 190 mg/dL @ 11:15 AM) | 20 | 320 |
 | 2026-03-17 | 09:30 -07:00 | Maria Dennis | Medication | - | 500mg Metformin HCL | null | null |
 | 2026-03-17 | 09:05 -07:00 | Maria Dennis | Medication | - | Rosuvastatin 10mg (Scheduled) | null | null |
 | 2026-03-17 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
 | 2026-03-15 | 19:50 -07:00 | Maria Dennis | Activity | - | 40 minutes walk (BG: 159 mg/dL Flat) | null | null |
-| 2026-03-15 | 18:45 -07:00 | Maria Dennis | Food | Dinner | Dinner: 3 meatballs, purple potato, zucchini, half glass white wine, and brie cheese [📷](https://iili.io/c01f80a4-aafd-48cb-01b-72d73bc822d6.jpg) [📷](https://iili.io/4a293f8a-2283-4c49-923b-5260d4e858fe.jpg) (Pred: 243 mg/dL @ 8:30 PM) | 35 | 470 |
+| 2026-03-15 | 18:45 -07:00 | Maria Dennis | Food | Dinner | Dinner: 3 meatballs, purple potato, zucchini, half glass white wine, and brie cheese [📷](https://iili.io/qN1KJpI.jpg) (Pred: 243 mg/dL @ 8:30 PM) | 35 | 470 |
 | 2026-03-15 | 18:45 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL (2x 500mg) | null | null |
 | 2026-03-16 | 21:00 -07:00 | Maria Dennis | Medication | - | Half a Prunelax tablet | null | null |
 | 2026-03-16 | 19:45 -07:00 | Maria Dennis | Activity | - | 20 minutes walk (BG: 167 mg/dL Flat) | null | null |
-| 2026-03-16 | 18:45 -07:00 | Maria Dennis | Food | Snack | Snack: One small guava (BG: 110 mg/dL Flat) [📷](https://iili.io/d60c1ebe-cefb-4490-b75c-27ea3a294930.jpg) (Pred: 145 mg/dL @ 8:30 PM) | 7 | 35 |
-| 2026-03-16 | 18:30 -07:00 | Maria Dennis | Food | Dinner | Dinner: Roasted pork with glaze, pearl barley, and broccoli, plus rustic bread with brie (BG: 106 mg/dL Flat) [📷](https://iili.io/30d718c6-0d35-4c9d-8e0e-f6bcb56f28cb.jpg) [📷](https://iili.io/4d20a8e3-3a1a-487f-b1bd-1b711874d816.jpg) (Pred: 285 mg/dL @ 8:15 PM) | 47 | 585 |
+| 2026-03-16 | 18:45 -07:00 | Maria Dennis | Food | Snack | Snack: One small guava (BG: 110 mg/dL Flat) [📷](https://iili.io/qN1DsJn.jpg) (Pred: 145 mg/dL @ 8:30 PM) | 7 | 35 |
+| 2026-03-16 | 18:30 -07:00 | Maria Dennis | Food | Dinner | Dinner: Roasted pork with glaze, pearl barley, and broccoli, plus rustic bread with brie (BG: 106 mg/dL Flat) [📷](https://iili.io/qN1DZbf.jpg) [📷](https://iili.io/4d20a8e3-3a1a-487f-b1bd-1b711874d816.jpg) (Pred: 285 mg/dL @ 8:15 PM) | 47 | 585 |
 | 2026-03-16 | 14:15 -07:00 | Maria Dennis | Activity | - | 30 minutes walk (BG: 175 mg/dL Flat) | null | null |
-| 2026-03-16 | 13:05 -07:00 | Maria Dennis | Food | Lunch | Lunch: Open-faced pastrami sandwich, mixed nuts, cheese balls, and 1/2 orange (BG: 134 mg/dL Flat) [📷](https://iili.io/35cdbb5c-b5a0-4553-893e-a476afc4d19e.jpg) [📷](https://iili.io/4169eba5-b2a4-4d1e-9074-2c81e117627a.jpg) [📷](https://iili.io/1bcae232-3858-47cc-8556-529a3c5f04e1.jpg) (Pred: 274 mg/dL @ 2:50 PM) | 44 | 775 |
+| 2026-03-16 | 13:05 -07:00 | Maria Dennis | Food | Lunch | Lunch: Open-faced pastrami sandwich, mixed nuts, cheese balls, and 1/2 orange (BG: 134 mg/dL Flat) [📷](https://iili.io/qN1DDx4.jpg) [📷](https://iili.io/4169eba5-b2a4-4d1e-9074-2c81e117627a.jpg) [📷](https://iili.io/1bcae232-3858-47cc-8556-529a3c5f04e1.jpg) (Pred: 274 mg/dL @ 2:50 PM) | 44 | 775 |
 | 2026-03-16 | 11:30 -07:00 | Maria Dennis | Food | Snack | Snack: Small guava (BG: 192 mg/dL ↗️) (Pred: 148 mg/dL @ 1:15 PM) | 8 | 40 |
 | 2026-03-16 | 11:00 -07:00 | Maria Dennis | Activity | - | 35 minutes walk (BG: 192 mg/dL ↗️) | null | null |
-| 2026-03-16 | 10:05 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: 2 soft-boiled eggs, seeded toast triangles (1 slice), half a kiwi, and black coffee (BG: 123 mg/dL Flat) [📷](https://iili.io/28205df3-226e-4852-8b8e-8e6f9e461ed4.jpg) (Pred: 204 mg/dL @ 11:50 AM) | 24 | 288 |
+| 2026-03-16 | 10:05 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: 2 soft-boiled eggs, seeded toast triangles (1 slice), half a kiwi, and black coffee (BG: 123 mg/dL Flat) [📷](https://iili.io/qN1DbWl.jpg) (Pred: 204 mg/dL @ 11:50 AM) | 24 | 288 |
 | 2026-03-16 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
 | 2026-03-15 | 13:05 -07:00 | Maria Dennis | Medication | - | 500mg Metformin HCL | null | null |
-| 2026-03-15 | 13:04 -07:00 | Maria Dennis | Food | Dessert | Dessert: Small slice of dark chocolate cake with whipped cream [📷](https://iili.io/f53060b2-14d1-4466-919f-1d6cbaf359ec.jpg) (Pred: 197 mg/dL @ 2:50 PM) | 22 | 240 |
-| 2026-03-15 | 12:45 -07:00 | Maria Dennis | Food | Lunch | Lunch: Flour tortilla wrap with peppers and meat, and 4 orange wedges (BG: 140 mg/dL Flat) [📷](https://iili.io/d6b3cf3a-ae1f-4836-b3f3-73ecd6a89ee2.jpg) (Pred: 278 mg/dL @ 2:30 PM) | 45 | 365 |
+| 2026-03-15 | 13:04 -07:00 | Maria Dennis | Food | Dessert | Dessert: Small slice of dark chocolate cake with whipped cream [📷](https://iili.io/qN1DyfS.jpg) (Pred: 197 mg/dL @ 2:50 PM) | 22 | 240 |
+| 2026-03-15 | 12:45 -07:00 | Maria Dennis | Food | Lunch | Lunch: Flour tortilla wrap with peppers and meat, and 4 orange wedges (BG: 140 mg/dL Flat) [📷](https://iili.io/qN1bHg9.jpg) (Pred: 278 mg/dL @ 2:30 PM) | 45 | 365 |
 | 2026-03-15 | 10:45 -07:00 | Maria Dennis | Activity | - | 1 hr walk (BG: 191 mg/dL Flat) | null | null |
-| 2026-03-15 | 09:05 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Seeded toast with 2 slices of prosciutto and 2 slices of tomato (BG: 130 mg/dL Flat) [📷](https://iili.io/70e1c2c7-082b-486f-b6f0-99d2bae19f52.jpg) (Pred: 197 mg/dL @ 10:50 AM) | 22 | 250 |
+| 2026-03-15 | 09:05 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Seeded toast with 2 slices of prosciutto and 2 slices of tomato (BG: 130 mg/dL Flat) [📷](https://iili.io/qN1b25u.jpg) (Pred: 197 mg/dL @ 10:50 AM) | 22 | 250 |
 | 2026-03-15 | 09:05 -07:00 | Maria Dennis | Medication | - | Rosuvastatin 10mg (Scheduled) | null | null |
 | 2026-03-15 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
 | 2026-03-14 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
