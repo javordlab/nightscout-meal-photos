@@ -90,13 +90,8 @@ function toIso(date, timeCell) {
 }
 
 function buildEntryKey(entry) {
-  const basis = [
-    entry.timestamp,
-    entry.user,
-    entry.category,
-    entry.mealType,
-    normalizeTitle(entry.title)
-  ].join('|');
+  // Match unified_sync.js: timestamp|user|title (original title, not normalized)
+  const basis = `${entry.timestamp}|${entry.user}|${entry.title}`;
   return sha256(basis);
 }
 

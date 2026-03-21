@@ -223,6 +223,14 @@ function syncGallery(entry, state, galleryItems) {
   return { status: 'created', galleryId: newItem.id };
 }
 
+// --- Utils ---
+function getEntryKey(entry) {
+  // Generate consistent entry key from timestamp + user + title
+  const crypto = require('crypto');
+  const base = `${entry.timestamp}|${entry.user}|${entry.title}`;
+  return `sha256:${crypto.createHash('sha256').update(base).digest('hex')}`;
+}
+
 // --- Main ---
 async function main(options = {}) {
   const normalized = JSON.parse(fs.readFileSync(NORMALIZED_PATH, 'utf8'));
@@ -235,10 +243,33 @@ async function main(options = {}) {
 
   const results = { nightscout: [], notion: [], gallery: [], errors: [] };
 
+  // Build lookup map for existing entries by timestamp+title
+  const existingByTsTitle = {};
+  for (const [key, val] of Object.entries(state.entries)) {
+    const lookupKey = `${val.timestamp}|${val.user}|${val.title}`;
+    existingByTsTitle[lookupKey] = key;
+  }
+
   for (const entry of normalized.entries) {
     if (since && new Date(entry.timestamp) < since) continue;
+    
+    // Use consistent entry key
+    const entryKey = getEntryKey(entry);
+    entry.entryKey = entryKey; // Update entry for downstream use
+    
+    // Check for existing entry by timestamp+title if entryKey doesn't match
+    if (!state.entries[entryKey]) {
+      const lookupKey = `${entry.timestamp}|${entry.user}|${entry.title}`;
+      const existingKey = existingByTsTitle[lookupKey];
+      if (existingKey) {
+        // Migrate to new key format
+        state.entries[entryKey] = state.entries[existingKey];
+        delete state.entries[existingKey];
+      }
+    }
+    
     if (onlyNew) {
-      const s = getEntry(state, entry.entryKey);
+      const s = getEntry(state, entryKey);
       if (s?.nightscout?.treatment_id && s?.notion?.page_id) continue;
     }
 
