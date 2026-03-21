@@ -95,10 +95,20 @@
       "photo_urls": [
         "https://iili.io/qe1AVUl.jpg"
       ],
-      "outcomes_backfilled": false,
+      "outcomes_backfilled": true,
       "gallery": {
         "gallery_id": "manual-2026-03-20-16:13-07:00",
         "last_synced_at": "2026-03-21T05:55:54.870Z"
+      },
+      "actual_outcomes": {
+        "preMealBg": 96,
+        "peakBg": 153,
+        "peakTime": "2026-03-21T01:29:45.000Z",
+        "bgDelta": 57,
+        "timeToPeakMin": 137,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": 148
       }
     },
     "sha256:db6e4fde67fc088cbe504229ca35ef42f483cea87e3e8421dc020904bb0a47e3": {
@@ -111,10 +121,20 @@
       "photo_urls": [
         "https://iili.io/qenMa9f.jpg"
       ],
-      "outcomes_backfilled": false,
+      "outcomes_backfilled": true,
       "gallery": {
         "gallery_id": "manual-2026-03-20-13:17 -07:00",
         "last_synced_at": "2026-03-21T05:55:54.871Z"
+      },
+      "actual_outcomes": {
+        "preMealBg": 107,
+        "peakBg": 163,
+        "peakTime": "2026-03-20T22:34:46.000Z",
+        "bgDelta": 56,
+        "timeToPeakMin": 138,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": 157
       }
     },
     "sha256:a32ff272165e64504eea1c0ccab9645bdaa9a9792bb4a3f7416bec06a55aac38": {
@@ -127,10 +147,20 @@
       "photo_urls": [
         "https://iili.io/qenMcu4.jpg"
       ],
-      "outcomes_backfilled": false,
+      "outcomes_backfilled": true,
       "gallery": {
         "gallery_id": "manual-2026-03-20-13:16 -07:00",
         "last_synced_at": "2026-03-21T05:55:54.871Z"
+      },
+      "actual_outcomes": {
+        "preMealBg": 107,
+        "peakBg": 163,
+        "peakTime": "2026-03-20T22:34:46.000Z",
+        "bgDelta": 56,
+        "timeToPeakMin": 139,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": 157
       }
     },
     "sha256:4639dd81725480e2244fb6f0b1ae79bf780154e0c6d35726bbd04212aa397bd0": {
@@ -143,10 +173,20 @@
       "photo_urls": [
         "https://iili.io/qenM0t2.jpg"
       ],
-      "outcomes_backfilled": false,
+      "outcomes_backfilled": true,
       "gallery": {
         "gallery_id": "manual-2026-03-20-09:14 -07:00",
         "last_synced_at": "2026-03-21T05:55:54.871Z"
+      },
+      "actual_outcomes": {
+        "preMealBg": 129,
+        "peakBg": 159,
+        "peakTime": "2026-03-20T17:19:45.000Z",
+        "bgDelta": 30,
+        "timeToPeakMin": 66,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": 159
       }
     },
     "sha256:6ed72824ee6decb8095947b9f945b73d79502425fa571f4b43e334445059ab5e": {
@@ -159,10 +199,20 @@
       "photo_urls": [
         "https://iili.io/qenMlwl.jpg"
       ],
-      "outcomes_backfilled": false,
+      "outcomes_backfilled": true,
       "gallery": {
         "gallery_id": "manual-2026-03-20-09:04 -07:00",
         "last_synced_at": "2026-03-21T05:55:54.871Z"
+      },
+      "actual_outcomes": {
+        "preMealBg": 141,
+        "peakBg": 159,
+        "peakTime": "2026-03-20T17:19:45.000Z",
+        "bgDelta": 18,
+        "timeToPeakMin": 76,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": 159
       }
     },
     "sha256:b42837f2c85166f42a89b3a0747ae381cdd0e0b1aaa70710098249a72ac0e8a0": {
@@ -195,7 +245,7 @@
       "photo_urls": [
         "https://iili.io/qNM744f.jpg"
       ],
-      "outcomes_backfilled": false,
+      "outcomes_backfilled": true,
       "gallery": {
         "gallery_id": "32985ec7-0668-8138-a753-fd2bc64f3b4f",
         "last_synced_at": "2026-03-21T05:55:54.871Z"
@@ -203,6 +253,16 @@
       "notion": {
         "page_id": "32985ec7-0668-8138-a753-fd2bc64f3b4f",
         "last_synced_at": "2026-03-21T05:55:54.871Z"
+      },
+      "actual_outcomes": {
+        "preMealBg": 99,
+        "peakBg": 204,
+        "peakTime": "2026-03-20T02:54:47.000Z",
+        "bgDelta": 105,
+        "timeToPeakMin": 41,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": 204
       }
     },
     "sha256:8ee35edd68d088216db7c6b670b204e5ee172e4ad6c5cdfb9a8ff7ea1aebfb32": {
@@ -215,7 +275,17 @@
       "photo_urls": [
         "https://iili.io/qexq4LB.jpg"
       ],
-      "outcomes_backfilled": false
+      "outcomes_backfilled": true,
+      "actual_outcomes": {
+        "preMealBg": 85,
+        "peakBg": 204,
+        "peakTime": "2026-03-20T02:54:47.000Z",
+        "bgDelta": 119,
+        "timeToPeakMin": 139,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": 178
+      }
     },
     "sha256:bf37dcd35bbab25ceb33153a5683e3f3ac06d22859ab32572b0ab6103b69c91d": {
       "timestamp": "2026-03-19T16:09:00-07:00",
