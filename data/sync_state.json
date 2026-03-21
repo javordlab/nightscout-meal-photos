@@ -19,6 +19,10 @@
       "gallery": {
         "gallery_id": "manual-2026-03-21T02-00-00-07-00",
         "last_synced_at": "2026-03-21T06:36:30.928Z"
+      },
+      "nightscout": {
+        "treatment_id": "69bdfc86911a8ea261e673f1",
+        "last_synced_at": "2026-03-21T06:38:12.446Z"
       }
     },
     "sha256:d76271b4338e94c7e0ce475bcd7bba3aa18c6a3d1fbf86dc1cbd85c87110cc79": {
@@ -39,6 +43,10 @@
       "gallery": {
         "gallery_id": "manual-2026-03-21T01-45-00-07-00",
         "last_synced_at": "2026-03-21T06:36:31.184Z"
+      },
+      "nightscout": {
+        "treatment_id": "69bdf8ad911a8ea261e673ed",
+        "last_synced_at": "2026-03-21T06:38:12.446Z"
       }
     },
     "sha256:118c7285a11e21fe83e29f92749c25016ea43e33e47ca9576872b46d95d29c9c": {
@@ -53,6 +61,10 @@
       "notion": {
         "page_id": "32a85ec7-0668-813f-8ee7-e107eaec0a1f",
         "last_synced_at": "2026-03-21T06:36:31.521Z"
+      },
+      "nightscout": {
+        "treatment_id": "69bde082911a8ea261e673cc",
+        "last_synced_at": "2026-03-21T06:38:12.446Z"
       }
     },
     "sha256:3ec90496fac8b55d20e30162ed690b6891c3c544e517bc62577b32627f6eb934": {
@@ -67,6 +79,10 @@
       "notion": {
         "page_id": "32a85ec7-0668-81a9-849a-e4ced0827c58",
         "last_synced_at": "2026-03-21T06:36:31.871Z"
+      },
+      "nightscout": {
+        "treatment_id": "69bde081911a8ea261e673cb",
+        "last_synced_at": "2026-03-21T06:38:12.446Z"
       }
     },
     "sha256:f39d7d497fb6683c153caa66317ede165443390a8ec5f2bf1c0c982f386ddb65": {
