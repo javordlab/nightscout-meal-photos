@@ -1209,5 +1209,18 @@
     "preMeal": null,
     "delta": null,
     "peak": null
+  },
+  {
+    "id": "manual-2026-03-21T10-03-00-07-00",
+    "entry_key": "sha256:8bc99e2c6d3212f3a71121c26a3d9c9be3bd7edfcdc4225d0abbd8c4129cd50b",
+    "title": "Breakfast: Breakfast: 2 boiled eggs, 1 slice white bread, 1 small guava",
+    "type": "Breakfast",
+    "date": "2026-03-21T10:03:00-07:00",
+    "photo": "https://iili.io/qkQfYYl.jpg",
+    "carbs": 21,
+    "cals": 245,
+    "preMeal": null,
+    "delta": null,
+    "peak": null
   }
 ]

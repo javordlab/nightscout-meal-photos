@@ -3107,6 +3107,30 @@
       "title": "Glass of milk and a spoon of peanut butter (~15g carbs, ~250 kcal)",
       "photo_urls": [],
       "outcomes_backfilled": false
+    },
+    "sha256:8bc99e2c6d3212f3a71121c26a3d9c9be3bd7edfcdc4225d0abbd8c4129cd50b": {
+      "timestamp": "2026-03-21T10:03:00-07:00",
+      "content_hash": "sha256:b74461907a97f734e2f028ba101515f6ebe385b694f62e08ef64598ba538bee7",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: 2 boiled eggs, 1 slice white bread, 1 small guava",
+      "photo_urls": [
+        "https://iili.io/qkQfYYl.jpg"
+      ],
+      "outcomes_backfilled": false,
+      "nightscout": {
+        "treatment_id": "69bed40f911a8ea261e674b0",
+        "last_synced_at": "2026-03-21T17:23:27.322Z"
+      },
+      "notion": {
+        "page_id": "32a85ec7-0668-81b8-9707-c78c54633987",
+        "last_synced_at": "2026-03-21T17:23:27.554Z"
+      },
+      "gallery": {
+        "gallery_id": "manual-2026-03-21T10-03-00-07-00",
+        "last_synced_at": "2026-03-21T17:23:27.555Z"
+      }
     }
   }
 }
