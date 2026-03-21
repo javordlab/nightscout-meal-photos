@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-21T06:43:29.273Z",
+  "generatedAt": "2026-03-21T06:55:01.056Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
   "entryCount": 267,
   "entries": [
@@ -39,7 +39,7 @@
       },
       "sync": {
         "nightscout": "linked",
-        "notion": "linked",
+        "notion": "pending",
         "gallery": "linked",
         "outcomesBackfilled": false
       },
@@ -81,7 +81,7 @@
       },
       "sync": {
         "nightscout": "linked",
-        "notion": "linked",
+        "notion": "pending",
         "gallery": "linked",
         "outcomesBackfilled": false
       },
@@ -121,7 +121,7 @@
       },
       "sync": {
         "nightscout": "linked",
-        "notion": "linked",
+        "notion": "pending",
         "gallery": "pending",
         "outcomesBackfilled": false
       },
@@ -161,7 +161,7 @@
       },
       "sync": {
         "nightscout": "linked",
-        "notion": "linked",
+        "notion": "pending",
         "gallery": "pending",
         "outcomesBackfilled": false
       },
@@ -202,7 +202,7 @@
         "twoHourPeakBg": null
       },
       "sync": {
-        "nightscout": "pending",
+        "nightscout": "linked",
         "notion": "pending",
         "gallery": "linked",
         "outcomesBackfilled": true
@@ -244,7 +244,7 @@
         "twoHourPeakBg": null
       },
       "sync": {
-        "nightscout": "pending",
+        "nightscout": "linked",
         "notion": "pending",
         "gallery": "linked",
         "outcomesBackfilled": true
@@ -286,7 +286,7 @@
         "twoHourPeakBg": null
       },
       "sync": {
-        "nightscout": "pending",
+        "nightscout": "linked",
         "notion": "pending",
         "gallery": "linked",
         "outcomesBackfilled": true
@@ -328,7 +328,7 @@
         "twoHourPeakBg": null
       },
       "sync": {
-        "nightscout": "pending",
+        "nightscout": "linked",
         "notion": "pending",
         "gallery": "linked",
         "outcomesBackfilled": true
@@ -370,7 +370,7 @@
         "twoHourPeakBg": null
       },
       "sync": {
-        "nightscout": "pending",
+        "nightscout": "linked",
         "notion": "pending",
         "gallery": "linked",
         "outcomesBackfilled": true
@@ -410,7 +410,7 @@
         "twoHourPeakBg": null
       },
       "sync": {
-        "nightscout": "pending",
+        "nightscout": "linked",
         "notion": "pending",
         "gallery": "pending",
         "outcomesBackfilled": false
@@ -450,7 +450,7 @@
         "twoHourPeakBg": null
       },
       "sync": {
-        "nightscout": "pending",
+        "nightscout": "linked",
         "notion": "pending",
         "gallery": "pending",
         "outcomesBackfilled": false
@@ -492,8 +492,8 @@
         "twoHourPeakBg": null
       },
       "sync": {
-        "nightscout": "pending",
-        "notion": "linked",
+        "nightscout": "linked",
+        "notion": "pending",
         "gallery": "linked",
         "outcomesBackfilled": true
       },
@@ -534,9 +534,9 @@
         "twoHourPeakBg": null
       },
       "sync": {
-        "nightscout": "pending",
+        "nightscout": "linked",
         "notion": "pending",
-        "gallery": "pending",
+        "gallery": "linked",
         "outcomesBackfilled": true
       },
       "entryKey": "sha256:8ee35edd68d088216db7c6b670b204e5ee172e4ad6c5cdfb9a8ff7ea1aebfb32",
@@ -617,9 +617,9 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "linked",
+        "notion": "pending",
         "gallery": "linked",
-        "outcomesBackfilled": false
+        "outcomesBackfilled": true
       },
       "entryKey": "sha256:4229a5d2b9e82a241f9fd97022bcd88c8044e125a018f1d3f0eaa5d2bbd39f2d",
       "contentHash": "sha256:d1f37106c1f5885936f566441935b74aeaddba3fdf3627a46fab00b97e6121e1"
@@ -659,9 +659,9 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "linked",
+        "notion": "pending",
         "gallery": "linked",
-        "outcomesBackfilled": false
+        "outcomesBackfilled": true
       },
       "entryKey": "sha256:a68b5b624e48c66fe79794df11cf946811c06479e8ef6e85a1a28944cd396ef2",
       "contentHash": "sha256:1d18bdebea53aa30958a566b15fe8a4e15257f0ffa7de0b015839a150842619b"
@@ -741,9 +741,9 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "linked",
+        "notion": "pending",
         "gallery": "linked",
-        "outcomesBackfilled": false
+        "outcomesBackfilled": true
       },
       "entryKey": "sha256:56fc77c3a0508df6e2866f5d4535548b32825e2c7c75aa139c60c51e0eec18e8",
       "contentHash": "sha256:c5f3d6818470af334812215503249f1c8e0c8fb0a00ae6085dbcc209f8f9c119"
@@ -946,9 +946,9 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "linked",
+        "notion": "pending",
         "gallery": "linked",
-        "outcomesBackfilled": false
+        "outcomesBackfilled": true
       },
       "entryKey": "sha256:49b82941f3af6c348f626047721f0274c1219740c31eaf1fc913b4fd982b18cc",
       "contentHash": "sha256:6ca02ceb8b7f6e8ec1c5f1b5f4f4589401029185349b0138cf734bc2972f7e5a"

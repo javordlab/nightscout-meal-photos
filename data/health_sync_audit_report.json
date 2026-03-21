@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-03-21T06:43:42.313Z",
+  "generatedAt": "2026-03-21T06:55:15.963Z",
   "since": "2026-03-19",
   "summary": {
     "totalEntries": 24,
     "inSyncState": 24,
-    "nsLinked": 4,
+    "nsLinked": 13,
     "notionLinked": 24,
     "galleryLinked": 13,
     "outcomesBackfilled": 11,
     "duplicates": 0,
-    "missingNs": 20,
+    "missingNs": 11,
     "missingNotion": 0,
     "missingGallery": 0,
     "missingOutcomes": 0
@@ -22,7 +22,7 @@
       "issues": [
         {
           "type": "notion_page_missing",
-          "pageId": "32a85ec7-0668-81e8-92d8-c20af7379cd3",
+          "pageId": "32a85ec7-0668-814e-bfc0-d97ca6690231",
           "severity": "error"
         }
       ]
@@ -34,7 +34,7 @@
       "issues": [
         {
           "type": "notion_page_missing",
-          "pageId": "32a85ec7-0668-810f-b5da-d175f3b9cde3",
+          "pageId": "32a85ec7-0668-811a-bd4f-e30bd97e4deb",
           "severity": "error"
         }
       ]
@@ -46,7 +46,7 @@
       "issues": [
         {
           "type": "notion_page_missing",
-          "pageId": "32a85ec7-0668-813f-8ee7-e107eaec0a1f",
+          "pageId": "32a85ec7-0668-81d6-8f81-ee46cadc3461",
           "severity": "error"
         }
       ]
@@ -58,7 +58,7 @@
       "issues": [
         {
           "type": "notion_page_missing",
-          "pageId": "32a85ec7-0668-81a9-849a-e4ced0827c58",
+          "pageId": "32a85ec7-0668-8134-a823-f27d34142266",
           "severity": "error"
         }
       ]
@@ -70,12 +70,8 @@
       "issues": [
         {
           "type": "notion_page_missing",
-          "pageId": "32a85ec7-0668-81bf-bc64-db23558b1890",
+          "pageId": "32a85ec7-0668-8116-9d71-f6ee11a260d8",
           "severity": "error"
-        },
-        {
-          "type": "missing_ns_link",
-          "severity": "warning"
         }
       ]
     },
@@ -86,12 +82,8 @@
       "issues": [
         {
           "type": "notion_page_missing",
-          "pageId": "32a85ec7-0668-81e0-a007-da99815bd520",
+          "pageId": "32a85ec7-0668-81e6-9f38-ccd4b888b474",
           "severity": "error"
-        },
-        {
-          "type": "missing_ns_link",
-          "severity": "warning"
         }
       ]
     },
@@ -102,12 +94,8 @@
       "issues": [
         {
           "type": "notion_page_missing",
-          "pageId": "32a85ec7-0668-81d4-8dfd-f6fd3cd31fd5",
+          "pageId": "32a85ec7-0668-8125-ac04-de97280375f2",
           "severity": "error"
-        },
-        {
-          "type": "missing_ns_link",
-          "severity": "warning"
         }
       ]
     },
@@ -118,12 +106,8 @@
       "issues": [
         {
           "type": "notion_page_missing",
-          "pageId": "32a85ec7-0668-81fa-8a9e-f84d3e1e22b4",
+          "pageId": "32a85ec7-0668-8182-a6b3-cc245c010b44",
           "severity": "error"
-        },
-        {
-          "type": "missing_ns_link",
-          "severity": "warning"
         }
       ]
     },
@@ -134,12 +118,8 @@
       "issues": [
         {
           "type": "notion_page_missing",
-          "pageId": "32a85ec7-0668-8176-a0a9-d0efc880631b",
+          "pageId": "32a85ec7-0668-81ef-969b-df75918f1db2",
           "severity": "error"
-        },
-        {
-          "type": "missing_ns_link",
-          "severity": "warning"
         }
       ]
     },
@@ -150,12 +130,8 @@
       "issues": [
         {
           "type": "notion_page_missing",
-          "pageId": "32a85ec7-0668-81bc-b984-e2dd08617cb7",
+          "pageId": "32a85ec7-0668-815d-accd-fd3417566e25",
           "severity": "error"
-        },
-        {
-          "type": "missing_ns_link",
-          "severity": "warning"
         }
       ]
     },
@@ -166,12 +142,8 @@
       "issues": [
         {
           "type": "notion_page_missing",
-          "pageId": "32a85ec7-0668-81a3-bd84-e5c6b6298ede",
+          "pageId": "32a85ec7-0668-8183-81fb-f2c69b0c1d52",
           "severity": "error"
-        },
-        {
-          "type": "missing_ns_link",
-          "severity": "warning"
         }
       ]
     },
@@ -184,10 +156,6 @@
           "type": "notion_page_missing",
           "pageId": "32985ec7-0668-8138-a753-fd2bc64f3b4f",
           "severity": "error"
-        },
-        {
-          "type": "missing_ns_link",
-          "severity": "warning"
         }
       ]
     },
@@ -198,12 +166,8 @@
       "issues": [
         {
           "type": "notion_page_missing",
-          "pageId": "32a85ec7-0668-81db-a664-f8f620dea288",
+          "pageId": "32a85ec7-0668-8117-9993-f6bad20241c6",
           "severity": "error"
-        },
-        {
-          "type": "missing_ns_link",
-          "severity": "warning"
         }
       ]
     },
@@ -214,7 +178,7 @@
       "issues": [
         {
           "type": "notion_page_missing",
-          "pageId": "32a85ec7-0668-8130-bfb9-d658aef67f58",
+          "pageId": "32a85ec7-0668-81e0-858a-cf78268c789b",
           "severity": "error"
         },
         {
@@ -262,7 +226,7 @@
       "issues": [
         {
           "type": "notion_page_missing",
-          "pageId": "32a85ec7-0668-81d5-a81c-d7742118c7f8",
+          "pageId": "32a85ec7-0668-8132-b73a-ea88d889f6ee",
           "severity": "error"
         },
         {
@@ -294,7 +258,7 @@
       "issues": [
         {
           "type": "notion_page_missing",
-          "pageId": "32a85ec7-0668-8108-868e-efa2507963e7",
+          "pageId": "32a85ec7-0668-8198-9051-d747bc96151f",
           "severity": "error"
         },
         {
@@ -310,7 +274,7 @@
       "issues": [
         {
           "type": "notion_page_missing",
-          "pageId": "32a85ec7-0668-81ee-9c7a-f12cfa99f267",
+          "pageId": "32a85ec7-0668-8115-916a-c5496d8da878",
           "severity": "error"
         },
         {
@@ -326,7 +290,7 @@
       "issues": [
         {
           "type": "notion_page_missing",
-          "pageId": "32a85ec7-0668-81b1-b60c-f72cae484602",
+          "pageId": "32a85ec7-0668-8193-ac9b-cd59051fb1bf",
           "severity": "error"
         },
         {
@@ -342,7 +306,7 @@
       "issues": [
         {
           "type": "notion_page_missing",
-          "pageId": "32a85ec7-0668-812f-8b07-d21160474f06",
+          "pageId": "32a85ec7-0668-81c6-b3ed-f561048b91bc",
           "severity": "error"
         },
         {
@@ -374,7 +338,7 @@
       "issues": [
         {
           "type": "notion_page_missing",
-          "pageId": "32a85ec7-0668-8168-bc42-da22f458ed42",
+          "pageId": "32a85ec7-0668-8105-b3bd-de95fb38f994",
           "severity": "error"
         },
         {

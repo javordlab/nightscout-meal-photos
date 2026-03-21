@@ -16,3 +16,17 @@
 {"ts":"2026-03-21T06:43:42.315Z","op":"step_start","name":"Repair"}
 {"ts":"2026-03-21T06:43:42.317Z","op":"step_complete","name":"Repair","duration":2,"result":"object"}
 {"ts":"2026-03-21T06:43:42.317Z","op":"pipeline_complete","duration":13053,"results":["normalize","enrich","sync","outcomes","audit","repair"]}
+{"ts":"2026-03-21T06:55:01.046Z","op":"pipeline_start","mode":"full","since":"2026-03-19"}
+{"ts":"2026-03-21T06:55:01.047Z","op":"step_start","name":"Normalize"}
+{"ts":"2026-03-21T06:55:01.058Z","op":"step_complete","name":"Normalize","duration":11}
+{"ts":"2026-03-21T06:55:01.058Z","op":"step_start","name":"Enrich"}
+{"ts":"2026-03-21T06:55:01.063Z","op":"step_complete","name":"Enrich","duration":5}
+{"ts":"2026-03-21T06:55:01.063Z","op":"step_start","name":"Unified Sync"}
+{"ts":"2026-03-21T06:55:14.570Z","op":"step_complete","name":"Unified Sync","duration":13507,"result":"object"}
+{"ts":"2026-03-21T06:55:14.570Z","op":"step_start","name":"Outcome Backfill"}
+{"ts":"2026-03-21T06:55:15.828Z","op":"step_complete","name":"Outcome Backfill","duration":1258,"result":"object"}
+{"ts":"2026-03-21T06:55:15.829Z","op":"step_start","name":"Audit"}
+{"ts":"2026-03-21T06:55:15.968Z","op":"step_complete","name":"Audit","duration":139,"result":"object"}
+{"ts":"2026-03-21T06:55:15.968Z","op":"step_start","name":"Repair"}
+{"ts":"2026-03-21T06:55:15.976Z","op":"step_complete","name":"Repair","duration":8,"result":"object"}
+{"ts":"2026-03-21T06:55:15.976Z","op":"pipeline_complete","duration":14929,"results":["normalize","enrich","sync","outcomes","audit","repair"]}
