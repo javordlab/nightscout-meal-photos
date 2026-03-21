@@ -1,5 +1,31 @@
 [
   {
+    "id": "sha256:03812b13b41419d44a6324c",
+    "entry_key": "sha256:03812b13b41419d44a6324cd1aa60bb640c05df1784decb0f57adc9c9b857ac2",
+    "title": "Lunch: Smoked salmon on bread with avocado and apple wedges",
+    "type": "Lunch",
+    "date": "2026-03-21T13:21:00-07:00",
+    "photo": "https://iili.io/qvI0E6Q.jpg",
+    "carbs": 33,
+    "cals": 300,
+    "protein": null,
+    "predictedPeak": "180-200 mg/dL",
+    "predictedTime": "2:45-3:15 PM"
+  },
+  {
+    "id": "sha256:a4d105c8f914630d5768b98",
+    "entry_key": "sha256:a4d105c8f914630d5768b9890e5eab13b4296a5ac4cc4a5c9bdaee9d0719347e",
+    "title": "Snack: Avocado toast with salmon and half apple",
+    "type": "Snack",
+    "date": "2026-03-21T13:21:00-07:00",
+    "photo": "https://iili.io/qkQfYYl.jpg",
+    "carbs": 23,
+    "cals": 320,
+    "protein": null,
+    "predictedPeak": "165-180 mg/dL",
+    "predictedTime": "3:00-3:30 PM"
+  },
+  {
     "id": "sha256:8bc99e2c6d3212f3a71121c",
     "entry_key": "sha256:8bc99e2c6d3212f3a71121c26a3d9c9be3bd7edfcdc4225d0abbd8c4129cd50b",
     "title": "Breakfast: 2 boiled eggs, 1 slice white bread, 1 small guava",
