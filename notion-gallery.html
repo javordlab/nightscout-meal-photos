@@ -208,11 +208,12 @@
         const res = await fetch('data/notion_meals.json?v=' + Date.now());
         allData = await res.json();
         
-        // Set default date range
+        // Set default date range (data is in descending order, so reverse for proper range)
         const dates = allData.map(m => m.date.split('T')[0]);
         if (dates.length > 0) {
-            document.getElementById('dateTo').value = dates[0];
-            document.getElementById('dateFrom').value = dates[dates.length-1];
+            const uniqueDates = [...new Set(dates)].sort(); // Get unique dates, sorted ascending
+            document.getElementById('dateFrom').value = uniqueDates[0];
+            document.getElementById('dateTo').value = uniqueDates[uniqueDates.length-1];
         }
 
         renderMeals();
