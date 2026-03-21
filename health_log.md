@@ -1,6 +1,8 @@
 # Health Log
 
 | 2026-03-20 | 23:13 -07:00 | Maria Dennis | Food | Snack | Snack: [Photo - needs description] (BG: Unknown) (Pred: TBD) [📷](https://iili.io/qe1AVUl.jpg) | null | null |
+| 2026-03-21 | 09:05 -07:00 | Maria Dennis | Medication | - | Rosuvastatin 10mg (Scheduled) | null | null |
+| 2026-03-21 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
 | 2026-03-20 | 20:17 -07:00 | Maria Dennis | Food | Lunch | Lunch: [Photo - needs description] (BG: Unknown) (Pred: TBD) [📷](https://iili.io/qenMa9f.jpg) | null | null |
 | 2026-03-20 | 20:16 -07:00 | Maria Dennis | Food | Lunch | Lunch: [Photo - needs description] (BG: Unknown) (Pred: TBD) [📷](https://iili.io/qenMcu4.jpg) | null | null |
 | 2026-03-20 | 16:14 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: [Photo - needs description] (BG: Unknown) (Pred: TBD) [📷](https://iili.io/qenM0t2.jpg) | null | null |
