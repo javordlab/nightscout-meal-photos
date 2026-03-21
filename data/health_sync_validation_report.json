@@ -1,0 +1,212 @@
+{
+  "generatedAt": "2026-03-21T05:55:54.913Z",
+  "entryCount": 267,
+  "errors": [],
+  "warnings": [
+    {
+      "entryKey": "sha256:2e8efec1ca6bacb551974eaa060c7251a841fdb56d80dfa3dc91b960b644c79f",
+      "reason": "missing_carbs_estimate",
+      "title": "Dinner: [Photo received - awaiting manual description] (Pred: TBD)"
+    },
+    {
+      "entryKey": "sha256:d76271b4338e94c7e0ce475bcd7bba3aa18c6a3d1fbf86dc1cbd85c87110cc79",
+      "reason": "missing_carbs_estimate",
+      "title": "Dinner: [Photo received - awaiting manual description] (Pred: TBD)"
+    },
+    {
+      "entryKey": "sha256:7a0c167fffcf6740e08d99b53199a5a9b3cd87cb16ca720d3a3c0d9fd74cf152",
+      "reason": "missing_photo_urls",
+      "title": "Snack: 1 slice dragon fruit and 1 orange slice"
+    },
+    {
+      "entryKey": "sha256:4b76ef3e8373267234f6238d73c8b522e7b403ee460bd72828fae0ce93d59026",
+      "reason": "missing_photo_urls",
+      "title": "Breakfast: 1 cup plain yogurt and 2 slices prosciutto"
+    },
+    {
+      "entryKey": "sha256:9fd46cbbb70964c2487f13b507d422d0850f55c7e6e300c464c86aa54ac06dc8",
+      "reason": "missing_photo_urls",
+      "title": "Dessert: Small piece of sweet roll"
+    },
+    {
+      "entryKey": "sha256:1d61961f1bce197efefa78deab53a4b9c6c8aa6b4a9d4ecf3133b0d423857fff",
+      "reason": "missing_photo_urls",
+      "title": "Lunch: 1 slice of bread and 1oz of pastrami"
+    },
+    {
+      "entryKey": "sha256:d88b727b48f3eb1d46620bdb66e0bd47d29cb0465d01770e8f3cf9278653e2b5",
+      "reason": "missing_photo_urls",
+      "title": "Breakfast: 2 slices prosciutto, 1 slice seedy bread, cream cheese, few nuts"
+    },
+    {
+      "entryKey": "sha256:0d89df37436ab0eecfdb769f75b8eea84e74df1299c3ed24ed08b808000677f7",
+      "reason": "missing_photo_urls",
+      "title": "Snack: Small guava"
+    },
+    {
+      "entryKey": "sha256:d532b554def1b27686f8268552d5d79373b5cc5a968037b06ed4397d3916981c",
+      "reason": "missing_photo_urls",
+      "title": "Snack: 1/4 cup mixed nuts"
+    },
+    {
+      "entryKey": "sha256:5ca51b8c4cfd599aea2fc7b0057d9f218f6c7fcb219be4dcd72a692ba2dc2ce7",
+      "reason": "missing_photo_urls",
+      "title": "Chocolate cake with whipped cream (~28g carbs, ~350 kcal)"
+    },
+    {
+      "entryKey": "sha256:dd672b50762f5140254e0786fdcde1eb67b1529a8c0a21192e5b4d73682a81d5",
+      "reason": "missing_photo_urls",
+      "title": "Breakfast: Small beef and cheese sandwich and one small orange (~32g carbs, ~380 kcal)"
+    },
+    {
+      "entryKey": "sha256:858bc29e3c08f98f249ea71cab9e424b7c5621cb88715ba2dee21b8120e2e20c",
+      "reason": "missing_photo_urls",
+      "title": "Breakfast: Cheese, prosciutto, bread, kiwi, and milk (~35g carbs, ~380 kcal)"
+    },
+    {
+      "entryKey": "sha256:94eacaa3cc2b7037341611c3a7dcf1119fe171508f06125cd002ee93aee32bf7",
+      "reason": "missing_photo_urls",
+      "title": "Small handful of sweet potato chips"
+    },
+    {
+      "entryKey": "sha256:6ae925d6ae674825e89e6abaf6cb65994575a925ccb95577aaa399e6285597af",
+      "reason": "missing_photo_urls",
+      "title": "Brunch Dessert: Chocolate cake with whipped cream"
+    },
+    {
+      "entryKey": "sha256:755f0bd8fa86cddc7bf88571bdb62d570db95506b39e13050a0f65cd0f4538c2",
+      "reason": "missing_photo_urls",
+      "title": "Snack: 1 protein ball"
+    },
+    {
+      "entryKey": "sha256:b9e183296f12b28ededbd551504eb9b9f986c1b54cfaa5ebc6ea7f6c5ea3090b",
+      "reason": "missing_photo_urls",
+      "title": "Snack: 1 protein ball"
+    },
+    {
+      "entryKey": "sha256:6d9df5b4f48b7065d9991de1a13431ed55c40b1c2c3c58184f6803d30135edba",
+      "reason": "missing_photo_urls",
+      "title": "Breakfast: Smoked salmon and avocado on two slices of toasted sourdough"
+    },
+    {
+      "entryKey": "sha256:306c84333c8b975f1cad5a7d106a76169586eb4494fb2b11de130f3856aa04cf",
+      "reason": "missing_photo_urls",
+      "title": "Snack: Small piece of bread and a glass of milk"
+    },
+    {
+      "entryKey": "sha256:64ffb1bf9ba4b3c2981445f519ce7fbcded718789784d8325bdb2e9806f66592",
+      "reason": "missing_photo_urls",
+      "title": "Lunch: 4oz orange juice"
+    },
+    {
+      "entryKey": "sha256:5235548d3103d2078458b6d11a9a0d382ad0b08c49fe503969eee3a7bb50ef77",
+      "reason": "missing_photo_urls",
+      "title": "Breakfast: Small glass of milk"
+    },
+    {
+      "entryKey": "sha256:993f0c04ef094d366c242f2afc619c8222792919ba023cdf122b87478ccb8f46",
+      "reason": "missing_photo_urls",
+      "title": "Dinner: White rice with mole/curry protein"
+    },
+    {
+      "entryKey": "sha256:ba42e911a9ddaef74c8ad42ee311c5ce19d86368e3cb8b8b71537f8c25a38775",
+      "reason": "missing_photo_urls",
+      "title": "Dinner: Corn tostada with tuna and avocado"
+    },
+    {
+      "entryKey": "sha256:446e6c0caa0d50655c26811adf422b82963c26f71274a02516c3f301852b9a11",
+      "reason": "missing_photo_urls",
+      "title": "Snack: nori seaweed chips"
+    },
+    {
+      "entryKey": "sha256:3595a713619deac44afd523eae84352d3cfde47cfddd7775485c0a4ea3857f7c",
+      "reason": "missing_photo_urls",
+      "title": "Dinner salad: endive, avocado, citrus"
+    },
+    {
+      "entryKey": "sha256:0ebfbc357cdbea61fd7775785f9616a7de1ee90abb91756feb25bc25aa4eb5ff",
+      "reason": "missing_photo_urls",
+      "title": "Snack: Half an apple"
+    },
+    {
+      "entryKey": "sha256:dc6e89ab48aa98cfcd705380aa150d93c1f37206c7d81d057109ddf512ad19fe",
+      "reason": "missing_photo_urls",
+      "title": "Snack: Glass of milk and cookie"
+    },
+    {
+      "entryKey": "sha256:b1ea4b7738dd4a5432efd94062810a267662447c9993ebe944a797ad84992d7a",
+      "reason": "missing_photo_urls",
+      "title": "Snack: Glass of milk and Japanese Cream Sand cookie"
+    },
+    {
+      "entryKey": "sha256:1e1bac58f9f35681069dc0da3bf6fb5ecb836aaef97d17a43d5e9f6dd4d836ba",
+      "reason": "missing_photo_urls",
+      "title": "Dinner: Small piece of dark chocolate"
+    },
+    {
+      "entryKey": "sha256:12015b81d93bed83bb5d00426fee58839389a133173aecedad1121e11d46c138",
+      "reason": "missing_photo_urls",
+      "title": "Dinner: Green vegetable soup, octopus with potatoes"
+    },
+    {
+      "entryKey": "sha256:23395a1f9b0d6294939abf8b71c5a3d38bb686752e3dfb01ef0a2970dec3a4aa",
+      "reason": "missing_photo_urls",
+      "title": "Lunch: Handful of roasted cashews and dark chocolate"
+    },
+    {
+      "entryKey": "sha256:6b7e961f5b39837b39e80a189e25c97f02d1765ab46124a7e7e28647d7e17f9e",
+      "reason": "missing_photo_urls",
+      "title": "Lunch: 2 Onigiri, 2 Umeboshi, and Miso soup"
+    },
+    {
+      "entryKey": "sha256:9802b7ddaf2d756a8bb87b40cda407a0b0e33df78e228b26c41598aea73529ed",
+      "reason": "missing_photo_urls",
+      "title": "Breakfast: Fried egg, prosciutto, 2 bao buns, and sliced apple"
+    },
+    {
+      "entryKey": "sha256:de79f965379917cc40dee1388c18884c5ad568fde9ddb0da272e73ca1f26aec8",
+      "reason": "missing_photo_urls",
+      "title": "Snack: Japanese Strawberry Cream Sand cookie"
+    },
+    {
+      "entryKey": "sha256:1dbb54e75db1c5bc7045a25f872413cc2f98444cff319b3f71603dcb3ccfdefd",
+      "reason": "missing_photo_urls",
+      "title": "Dinner: Grilled unagi, rice, tempura, asparagus"
+    },
+    {
+      "entryKey": "sha256:ffbc5cad8ee48b5064d0ffa3e789ff9b5af77cfd32a7def07ec69ea5d77a3092",
+      "reason": "missing_photo_urls",
+      "title": "Lunch: small bread roll with apple cream, roasted cashews"
+    },
+    {
+      "entryKey": "sha256:f668e8741bf6d0aaa9154723821ff0784e951c1af31608da64e7065380597aaa",
+      "reason": "missing_photo_urls",
+      "title": "Lunch: Small baked potato with prosciutto and salad"
+    },
+    {
+      "entryKey": "sha256:4eb31e6048a2d0b82c9cd8a740d0eb73f2eb797480f3b5474084fee7dc97bbd0",
+      "reason": "missing_photo_urls",
+      "title": "Breakfast: 1 cup black coffee"
+    },
+    {
+      "entryKey": "sha256:c50ac613bc011603029806ba14720b51aef97cf3128e476ab426b4d4ab99e840",
+      "reason": "missing_photo_urls",
+      "title": "Breakfast: 2 fried eggs, 2 slices toast, sliced apple"
+    },
+    {
+      "entryKey": "sha256:e86b5e11e57baed9efb665aaa10a3e0fe12cb5722b982732cf42ba69b7987f90",
+      "reason": "missing_photo_urls",
+      "title": "Dinner: Handful of cashews"
+    },
+    {
+      "entryKey": "sha256:e07afeee5ef56bf134a63f8cdf354914aca51c93f100e028ad3b58088cb9112e",
+      "reason": "missing_photo_urls",
+      "title": "Dinner: Pasta dinner with sake"
+    },
+    {
+      "entryKey": "sha256:10150b7b221b65b9e9e971573a652639269cf6e118761b456dfad50d4d7febd2",
+      "reason": "missing_photo_urls",
+      "title": "Glass of milk and a spoon of peanut butter (~15g carbs, ~250 kcal)"
+    }
+  ]
+}
