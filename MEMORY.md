@@ -46,6 +46,41 @@
   - **API Secret (SHA1 hash):** `b3170e23f45df7738434cd8be9cd79d86a6d0f01` (Use this for API calls)
 - **Photos:** https://javordlab.github.io/nightscout-meal-photos/
 
+## Critical Fixes Applied (2026-03-21)
+
+### Issue 1: Duplicate Prevention
+**Root Cause:** `normalize_health_log.js` and `unified_sync.js` used different entry key generation methods.
+**Fix:** Both now use `sha256(timestamp|user|title)` for consistent sync_state tracking.
+**Commits:** `1526afb`, `3a9e79c`
+
+### Issue 2: Timestamp Accuracy
+**Root Cause:** Photos uploaded at one time were logged with different timestamps.
+**Fix:** Photo file timestamps now correctly mapped to meal entry timestamps.
+**Example:** March 20 dinner photos (6:45 PM, 7:00 PM) vs incorrectly logged as March 21 (1:45 AM, 2:00 AM).
+**Commit:** `c6cea64`, `cab03ed`
+
+### Issue 3: Predictions Not in Database Columns
+**Root Cause:** Predictions were only in entry titles, not Notion database columns.
+**Fix:** Added script to parse `Pred: XX-XX mg/dL @ HH:MM AM/PM` from titles and populate `Predicted Peak BG` and `Predicted Peak Time` columns.
+**Commit:** `362bccd`, `3a9e79c`
+
+### Issue 4: Gallery Missing Recent Entries
+**Root Cause:** Date range filter in gallery HTML was backwards (data is descending order).
+**Fix:** Fixed date range calculation; added `generate_notion_gallery.js` to auto-generate gallery JSON.
+**Commit:** `3a9e79c`
+
+### Issue 5: BG Data Unavailable in Responses
+**Root Cause:** Food log session used plaintext secret "JaviCare2026" instead of SHA1 hash.
+**Fix:** Created `scripts/fetch_bg.js` with correct secret; documented SHA1 format in MEMORY.md.
+**Commit:** `192fccd`, `2e65967`
+
+## CI/CD Pipeline
+- Pre-commit hooks validate sync state (0 duplicates allowed)
+- Unit tests for entry key generation
+- Integration tests with mock APIs
+- All changes must pass validation before production deploy
+**Commit:** `61b0dfa`
+
 ## Model Usage Reference (OpenAI shared traffic)
 - OpenAI shared free daily token tiers:
   - **250K/day**: gpt-5.4, gpt-5.2, gpt-5.1, gpt-5.1-codex, gpt-5, gpt-5-codex, gpt-5-chat-latest, gpt-4.1, gpt-4o, o1, o3.
