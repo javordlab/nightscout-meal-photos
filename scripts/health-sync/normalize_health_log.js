@@ -71,21 +71,21 @@ function parseNumber(value) {
   return Number.isFinite(parsed) ? parsed : null;
 }
 
-function inferOffset(date, timeValue) {
-  if (/[-+]\d\d:\d\d$/.test(timeValue)) {
-    return timeValue.match(/([-+]\d\d:\d\d)$/)[1];
-  }
-
-  const d = new Date(`${date}T${timeValue}:00Z`);
-  const dstStart = new Date('2026-03-08T10:00:00Z');
-  return d >= dstStart ? '-07:00' : '-08:00';
+function inferOffset(dateValue) {
+  // Use a fixed rule for America/Los_Angeles 2026
+  // DST 2026 starts March 8, ends Nov 1
+  const d = new Date(`${dateValue}T00:00:00Z`);
+  const dstStart = new Date('2026-03-08T00:00:00Z');
+  const dstEnd = new Date('2026-11-01T00:00:00Z');
+  return (d >= dstStart && d < dstEnd) ? '-07:00' : '-08:00';
 }
 
 function toIso(date, timeCell) {
   const trimmed = cleanWhitespace(timeCell);
   const parts = trimmed.split(' ');
   const timeOnly = parts[0];
-  const offset = parts[1] || inferOffset(date, trimmed);
+  // Priority: 1. Explicit offset in log, 2. Determined LA offset
+  const offset = parts[1] || inferOffset(date);
   return `${date}T${timeOnly}:00${offset}`;
 }
 

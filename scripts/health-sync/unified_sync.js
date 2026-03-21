@@ -260,6 +260,9 @@ async function main(options = {}) {
   const dryRun = options.dryRun || false;
   if (!dryRun) acquireLock();
   const normalized = JSON.parse(fs.readFileSync(NORMALIZED_PATH, 'utf8'));
+  const state = loadSyncState(SYNC_STATE_PATH);
+  const galleryItems = fs.existsSync(GALLERY_PATH) ? JSON.parse(fs.readFileSync(GALLERY_PATH, 'utf8')) : [];
+
   const onlyNew = options.onlyNew || false;
   const since = options.since ? new Date(options.since) : null;
 
@@ -267,6 +270,8 @@ async function main(options = {}) {
 
   // Build lookup map for existing entries by timestamp+title
   const existingByTsTitle = {};
+  const duplicateTimeCheck = new Map();
+
   for (const [key, val] of Object.entries(state.entries)) {
     const lookupKey = `${val.timestamp}|${val.user}|${val.title}`;
     existingByTsTitle[lookupKey] = key;
@@ -275,6 +280,19 @@ async function main(options = {}) {
   for (const entry of normalized.entries) {
     if (since && new Date(entry.timestamp) < since) continue;
     
+    // Strict Mode Check: Catch identical titles at the same timestamp (duplicate protection)
+    const tsTitleKey = `${entry.timestamp}|${entry.user}|${entry.title}`;
+    if (duplicateTimeCheck.has(tsTitleKey)) {
+      console.error(`🛑 STRICT MODE ALERT: Exact duplicate detected!`);
+      console.error(`   Time: ${entry.timestamp}`);
+      console.error(`   Entry: ${entry.title}`);
+      if (!options.force) {
+         console.error(`   Use --force to override.`);
+         process.exit(1);
+      }
+    }
+    duplicateTimeCheck.set(tsTitleKey, true);
+
     // Use consistent entry key
     const entryKey = getEntryKey(entry);
     entry.entryKey = entryKey; // Update entry for downstream use

@@ -379,7 +379,11 @@
       "meal_type": "-",
       "title": "90 minutes heavy gardening",
       "photo_urls": [],
-      "outcomes_backfilled": false
+      "outcomes_backfilled": false,
+      "notion": {
+        "page_id": "32a85ec7-0668-81f4-94f7-ef2528d0923c",
+        "last_synced_at": "2026-03-21T19:21:43.144Z"
+      }
     },
     "sha256:11ffe4e23dd63a7fbff237f7591cb00ab26099b7616b219c4765725a27e4e4a0": {
       "timestamp": "2026-03-19T14:07:00-07:00",
@@ -391,7 +395,15 @@
       "photo_urls": [
         "https://iili.io/qN52Ct2.jpg"
       ],
-      "outcomes_backfilled": false
+      "outcomes_backfilled": false,
+      "notion": {
+        "page_id": "32a85ec7-0668-81ee-acc6-f1e3f6a94ba8",
+        "last_synced_at": "2026-03-21T19:21:43.419Z"
+      },
+      "gallery": {
+        "gallery_id": "sha256:11ffe4e23dd63a7fbff237f",
+        "last_synced_at": "2026-03-21T19:21:43.420Z"
+      }
     },
     "sha256:82d85dd85af381acfb7bffa7ed2aed9af9cf0dc18e5f2140645453216671ef5f": {
       "timestamp": "2026-03-19T13:55:00-07:00",
@@ -403,7 +415,15 @@
       "photo_urls": [
         "https://iili.io/qN52onS.jpg"
       ],
-      "outcomes_backfilled": false
+      "outcomes_backfilled": false,
+      "notion": {
+        "page_id": "32a85ec7-0668-818d-baad-c75c35deb237",
+        "last_synced_at": "2026-03-21T19:21:44.039Z"
+      },
+      "gallery": {
+        "gallery_id": "sha256:82d85dd85af381acfb7bffa",
+        "last_synced_at": "2026-03-21T19:21:44.039Z"
+      }
     },
     "sha256:0147b9d07aeca082459284f5299c741255138ad40af365ace1038f9cfabdc00e": {
       "timestamp": "2026-03-19T10:30:00-07:00",
@@ -413,7 +433,11 @@
       "meal_type": "-",
       "title": "3 hours heavy gardening",
       "photo_urls": [],
-      "outcomes_backfilled": false
+      "outcomes_backfilled": false,
+      "notion": {
+        "page_id": "32a85ec7-0668-8187-b78d-e6f738a7c9c4",
+        "last_synced_at": "2026-03-21T19:21:44.374Z"
+      }
     },
     "sha256:7a4dd1e5a07a0281af513ab6993b36d9013db51a38d738becacf322161cf0345": {
       "timestamp": "2026-03-19T09:48:00-07:00",
@@ -425,7 +449,15 @@
       "photo_urls": [
         "https://iili.io/qN52xM7.jpg"
       ],
-      "outcomes_backfilled": false
+      "outcomes_backfilled": false,
+      "notion": {
+        "page_id": "32a85ec7-0668-818b-aa6b-da3f745d8e7e",
+        "last_synced_at": "2026-03-21T19:21:44.681Z"
+      },
+      "gallery": {
+        "gallery_id": "sha256:7a4dd1e5a07a0281af513ab",
+        "last_synced_at": "2026-03-21T19:21:44.682Z"
+      }
     },
     "sha256:c5027fe2540ed77fd691c89fc3b08041d4bc3128a8594937681865e392c67d64": {
       "timestamp": "2026-03-19T09:48:00-07:00",
@@ -435,7 +467,11 @@
       "meal_type": "-",
       "title": "Metformin 500mg (with breakfast)",
       "photo_urls": [],
-      "outcomes_backfilled": false
+      "outcomes_backfilled": false,
+      "notion": {
+        "page_id": "32a85ec7-0668-817e-bff7-d49f98db0446",
+        "last_synced_at": "2026-03-21T19:21:44.954Z"
+      }
     },
     "sha256:c2e26fdcc714d3a373c91b00abf94e7234cdced4bb1f064db51a23c03c441211": {
       "timestamp": "2026-03-19T09:05:00-07:00",
@@ -445,7 +481,11 @@
       "meal_type": "-",
       "title": "Rosuvastatin 10mg (Scheduled)",
       "photo_urls": [],
-      "outcomes_backfilled": false
+      "outcomes_backfilled": false,
+      "notion": {
+        "page_id": "32a85ec7-0668-818c-8059-fd9647515e7c",
+        "last_synced_at": "2026-03-21T19:21:45.731Z"
+      }
     },
     "sha256:f497a4f258f4f2ac7cc7dca7d728c089b42ae8a7960aac9ddb7ef0118a0491a1": {
       "timestamp": "2026-03-19T09:00:00-07:00",
@@ -455,7 +495,11 @@
       "meal_type": "-",
       "title": "Lisinopril 10mg (Scheduled)",
       "photo_urls": [],
-      "outcomes_backfilled": false
+      "outcomes_backfilled": false,
+      "notion": {
+        "page_id": "32a85ec7-0668-8152-ab60-f7d01d296160",
+        "last_synced_at": "2026-03-21T19:21:45.969Z"
+      }
     },
     "sha256:068fd81330b2bb91317c867cf197850e20a36a81c863f02ccbd10c2ac7bf9efd": {
       "timestamp": "2026-03-18T20:55:00-07:00",
@@ -465,7 +509,11 @@
       "meal_type": "-",
       "title": "20 minutes walk",
       "photo_urls": [],
-      "outcomes_backfilled": false
+      "outcomes_backfilled": false,
+      "notion": {
+        "page_id": "32a85ec7-0668-81a0-af9c-ea5deb8f0516",
+        "last_synced_at": "2026-03-21T19:21:46.252Z"
+      }
     },
     "sha256:114ef858b47b6c7e14a276d595704da7521647fc6ee57f95ab830b692467e78e": {
       "timestamp": "2026-03-18T19:20:00-07:00",
@@ -480,7 +528,15 @@
         "https://iili.io/7e08c360-7b67-4b12-88cf-012bacd4a479.jpg",
         "https://iili.io/f35236b3-6f01-4e14-9fb0-0a2e95f4eaa1.jpg"
       ],
-      "outcomes_backfilled": false
+      "outcomes_backfilled": false,
+      "notion": {
+        "page_id": "32a85ec7-0668-8166-9df9-f27a670ea1ac",
+        "last_synced_at": "2026-03-21T19:21:46.502Z"
+      },
+      "gallery": {
+        "gallery_id": "sha256:114ef858b47b6c7e14a276d",
+        "last_synced_at": "2026-03-21T19:21:46.503Z"
+      }
     },
     "sha256:e362bc0b8988f1143fa5a687d2e26d499f202469817cf9c3f648ce5f99b78b81": {
       "timestamp": "2026-03-18T19:15:00-07:00",
@@ -490,7 +546,11 @@
       "meal_type": "-",
       "title": "1000mg Metformin HCL (Dinner dose)",
       "photo_urls": [],
-      "outcomes_backfilled": false
+      "outcomes_backfilled": false,
+      "notion": {
+        "page_id": "32a85ec7-0668-8138-bfcf-f529660d11c1",
+        "last_synced_at": "2026-03-21T19:21:46.777Z"
+      }
     },
     "sha256:1281627437e9d29d8239e2848498df98637cf420c124e388109728613cc5bc0c": {
       "timestamp": "2026-03-18T15:45:00-07:00",
@@ -3130,6 +3190,20 @@
       "gallery": {
         "gallery_id": "manual-2026-03-21T10-03-00-07-00",
         "last_synced_at": "2026-03-21T17:23:27.555Z"
+      }
+    },
+    "sha256:c08b420bb06a44b63c364d886e35b6b485e7754e42e407eb730b19dfa0107c51": {
+      "timestamp": "2026-03-21T10:56:00-07:00",
+      "content_hash": "sha256:8990b7af4b659dbe52134a3c7fcfd042e098014e24a5fb00fefb1589e43064e3",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "15 minutes walk",
+      "photo_urls": [],
+      "outcomes_backfilled": false,
+      "notion": {
+        "page_id": "32a85ec7-0668-81b0-922a-e223d3a22536",
+        "last_synced_at": "2026-03-21T19:21:42.354Z"
       }
     }
   }
