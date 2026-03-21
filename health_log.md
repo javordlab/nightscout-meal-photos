@@ -1,11 +1,11 @@
 # Health Log
 
+
 | 2026-03-21 | 14:56 -07:00 | Maria Dennis | Activity | - | 60 minutes gardening | null | null |
-| 2026-03-21 | 13:21 -07:00 | Maria Dennis | Food | Lunch | Lunch: Smoked salmon on bread with avocado and apple wedges (BG: 140 mg/dL ➡️) (Pred: 180-200 mg/dL @ 2:45-3:15 PM) (Protein: 17g) [📷](https://iili.io/qvI0E6Q.jpg) | 33 | 300 |
-| 2026-03-21 | 13:21 -07:00 | Maria Dennis | Food | Snack | Snack: Avocado toast with salmon and half apple (BG: Unknown) (Pred: 165-180 mg/dL @ 3:00-3:30 PM) [📷](https://iili.io/qkQfYYl.jpg) | 23 | 320 |
+| 2026-03-21 | 13:21 -07:00 | Maria Dennis | Food | Lunch | Lunch: Smoked salmon on bread with avocado and apple wedges (BG: 140 mg/dL ➡️) (Peak: 165 mg/dL @ 3:19 PM) (Protein: 17g) [📷](https://iili.io/qvI0E6Q.jpg) | 33 | 300 |
 | 2026-03-21 | 12:31 -07:00 | Maria Dennis | Activity | - | 90 minutes gardening | null | null |
 | 2026-03-21 | 10:56 -07:00 | Maria Dennis | Activity | - | 15 minutes walk | null | null |
-| 2026-03-21 | 10:03 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: 2 boiled eggs, 1 slice white bread, 1 small guava (BG: Unknown) (Pred: 145-155 mg/dL @ 11:30 AM-12:00 PM) [📷](https://iili.io/qkQfYYl.jpg) | 21 | 245 |
+| 2026-03-21 | 10:03 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: 2 boiled eggs, 1 slice white bread, 1 small guava (BG: 117 mg/dL ➡️) (Peak: 161 mg/dL @ 10:59 AM) [📷](https://iili.io/qkQfYYl.jpg) | 21 | 245 |
 | 2026-03-21 | 09:05 -07:00 | Maria Dennis | Medication | - | Rosuvastatin 10mg (Scheduled) | null | null |
 | 2026-03-21 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |

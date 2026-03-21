@@ -21,9 +21,14 @@ function validate() {
   const content = fs.readFileSync(LOG_PATH, 'utf8');
   const lines = content.split('\n');
   
-  // We only care about lines older than the last 10 entries (buffer for current work)
-  // This allows current logging while protecting history.
-  const historicalContent = lines.slice(20).join('\n');
+  // Find the anchor header that separates today's work from history
+  // If the header is missing, fall back to line 20
+  const headerIndex = lines.findIndex(line => line.includes('| Date | Time | User | Category |'));
+  const anchorIndex = headerIndex !== -1 ? headerIndex + 1 : 20;
+
+  console.log(`⚓ Using anchor at line ${anchorIndex + 1} (${headerIndex !== -1 ? 'Header found' : 'Fallback used'})`);
+
+  const historicalContent = lines.slice(anchorIndex).join('\n');
   const currentChecksum = getChecksum(historicalContent);
 
   if (!fs.existsSync(CHECKSUM_PATH)) {
