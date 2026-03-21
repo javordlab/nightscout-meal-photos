@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 
-const WORKSPACE = '/Users/javier/.openclaw/workspace';
+const WORKSPACE = process.cwd();
 const NORMALIZED_PATH = path.join(WORKSPACE, 'data', 'health_log.normalized.json');
 const SYNC_STATE_PATH = path.join(WORKSPACE, 'data', 'sync_state.json');
 const GALLERY_PATH = path.join(WORKSPACE, 'nightscout-meal-photos', 'data', 'notion_meals.json');

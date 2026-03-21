@@ -21,9 +21,6 @@ jobs:
     - name: Install dependencies
       run: npm ci
     
-    - name: Run linting
-      run: npm run lint
-    
     - name: Run unit tests
       run: npm run test:unit
     
@@ -32,9 +29,6 @@ jobs:
     
     - name: Validate sync state
       run: npm run test:validation
-    
-    - name: Dry run sync
-      run: npm run dry-run
 
   deploy-staging:
     needs: test

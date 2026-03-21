@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 
-const WORKSPACE = '/Users/javier/.openclaw/workspace';
+const WORKSPACE = process.cwd();
 const LOG_PATH = path.join(WORKSPACE, 'health_log.md');
 const CHECKSUM_PATH = path.join(WORKSPACE, 'data', 'log_integrity.json');
 
