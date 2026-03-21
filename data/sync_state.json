@@ -11,7 +11,15 @@
       "photo_urls": [
         "https://iili.io/qeh6rzX.jpg"
       ],
-      "outcomes_backfilled": false
+      "outcomes_backfilled": false,
+      "notion": {
+        "page_id": "32a85ec7-0668-81e8-92d8-c20af7379cd3",
+        "last_synced_at": "2026-03-21T06:36:30.927Z"
+      },
+      "gallery": {
+        "gallery_id": "manual-2026-03-21T02-00-00-07-00",
+        "last_synced_at": "2026-03-21T06:36:30.928Z"
+      }
     },
     "sha256:d76271b4338e94c7e0ce475bcd7bba3aa18c6a3d1fbf86dc1cbd85c87110cc79": {
       "timestamp": "2026-03-21T01:45:00-07:00",
@@ -23,7 +31,15 @@
       "photo_urls": [
         "https://iili.io/qeh3GSI.jpg"
       ],
-      "outcomes_backfilled": false
+      "outcomes_backfilled": false,
+      "notion": {
+        "page_id": "32a85ec7-0668-810f-b5da-d175f3b9cde3",
+        "last_synced_at": "2026-03-21T06:36:31.183Z"
+      },
+      "gallery": {
+        "gallery_id": "manual-2026-03-21T01-45-00-07-00",
+        "last_synced_at": "2026-03-21T06:36:31.184Z"
+      }
     },
     "sha256:118c7285a11e21fe83e29f92749c25016ea43e33e47ca9576872b46d95d29c9c": {
       "timestamp": "2026-03-21T09:05:00-07:00",
@@ -33,7 +49,11 @@
       "meal_type": "-",
       "title": "Rosuvastatin 10mg (Scheduled)",
       "photo_urls": [],
-      "outcomes_backfilled": false
+      "outcomes_backfilled": false,
+      "notion": {
+        "page_id": "32a85ec7-0668-813f-8ee7-e107eaec0a1f",
+        "last_synced_at": "2026-03-21T06:36:31.521Z"
+      }
     },
     "sha256:3ec90496fac8b55d20e30162ed690b6891c3c544e517bc62577b32627f6eb934": {
       "timestamp": "2026-03-21T09:00:00-07:00",
@@ -43,7 +63,11 @@
       "meal_type": "-",
       "title": "Lisinopril 10mg (Scheduled)",
       "photo_urls": [],
-      "outcomes_backfilled": false
+      "outcomes_backfilled": false,
+      "notion": {
+        "page_id": "32a85ec7-0668-81a9-849a-e4ced0827c58",
+        "last_synced_at": "2026-03-21T06:36:31.871Z"
+      }
     },
     "sha256:f39d7d497fb6683c153caa66317ede165443390a8ec5f2bf1c0c982f386ddb65": {
       "timestamp": "2026-03-20T16:13:00-07:00",
