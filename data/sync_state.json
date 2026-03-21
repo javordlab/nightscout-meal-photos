@@ -1,46 +1,6 @@
 {
   "version": 1,
   "entries": {
-    "sha256:2e8efec1ca6bacb551974eaa060c7251a841fdb56d80dfa3dc91b960b644c79f": {
-      "timestamp": "2026-03-21T02:00:00-07:00",
-      "content_hash": "sha256:3fadc5214666af0404b92266a27f811b15a1298df3836437789dc87b35101073",
-      "user": "Maria Dennis",
-      "category": "Food",
-      "meal_type": "Dinner",
-      "title": "Dinner: [Photo received - awaiting manual description] (Pred: TBD)",
-      "photo_urls": [
-        "https://iili.io/qeh6rzX.jpg"
-      ],
-      "outcomes_backfilled": false,
-      "gallery": {
-        "gallery_id": "manual-2026-03-21T02-00-00-07-00",
-        "last_synced_at": "2026-03-21T07:03:11.318Z"
-      },
-      "nightscout": {
-        "treatment_id": "69bdfc86911a8ea261e673f1",
-        "last_synced_at": "2026-03-21T06:38:12.446Z"
-      }
-    },
-    "sha256:d76271b4338e94c7e0ce475bcd7bba3aa18c6a3d1fbf86dc1cbd85c87110cc79": {
-      "timestamp": "2026-03-21T01:45:00-07:00",
-      "content_hash": "sha256:17f9d78385b884a58cca3b47ef9743b049c43d49140401e421a959c6deba8d74",
-      "user": "Maria Dennis",
-      "category": "Food",
-      "meal_type": "Dinner",
-      "title": "Dinner: [Photo received - awaiting manual description] (Pred: TBD)",
-      "photo_urls": [
-        "https://iili.io/qeh3GSI.jpg"
-      ],
-      "outcomes_backfilled": false,
-      "gallery": {
-        "gallery_id": "manual-2026-03-21T02-00-00-07-00",
-        "last_synced_at": "2026-03-21T07:03:11.318Z"
-      },
-      "nightscout": {
-        "treatment_id": "69bdf8ad911a8ea261e673ed",
-        "last_synced_at": "2026-03-21T06:38:12.446Z"
-      }
-    },
     "sha256:118c7285a11e21fe83e29f92749c25016ea43e33e47ca9576872b46d95d29c9c": {
       "timestamp": "2026-03-21T09:05:00-07:00",
       "content_hash": "sha256:558d9d8205ba1f69260dd2718a580234aee83f46ab0632bb6b4f5ad9ea0b8829",

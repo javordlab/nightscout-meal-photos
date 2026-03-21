@@ -1,14 +1,15 @@
 # Health Log
 
 | 2026-03-21 | 15:41 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: [Photo received - awaiting manual description] (BG: Unknown) (Pred: TBD) [📷](https://iili.io/qkUyAOP.jpg) | null | null |
-| 2026-03-21 | 02:00 -07:00 | Maria Dennis | Food | Dinner | Dinner: [Photo received - awaiting manual description] (BG: Unknown) (Pred: TBD) [📷](https://iili.io/qeh6rzX.jpg) | null | null |
-| 2026-03-21 | 01:45 -07:00 | Maria Dennis | Food | Dinner | Dinner: [Photo received - awaiting manual description] (BG: Unknown) (Pred: TBD) [📷](https://iili.io/qeh3GSI.jpg) | null | null |
 | 2026-03-21 | 09:05 -07:00 | Maria Dennis | Medication | - | Rosuvastatin 10mg (Scheduled) | null | null |
 | 2026-03-21 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
 | 2026-03-20 | 16:13 -07:00 | Maria Dennis | Food | Snack | Snack: Protein ball/hazelnut chocolate truffle (BG: Unknown) (Pred: 145-165 mg/dL @ 6:00 PM) [📷](https://iili.io/qe1AVUl.jpg) | 25 | 200 |
 | 2026-03-20 | 13:17 -07:00 | Maria Dennis | Food | Snack | Snack: Half apple (~75g) (Pred: 110-120 mg/dL @ 2:45 PM) [📷](https://iili.io/qenMa9f.jpg) | 13 | 50 |
 | 2026-03-20 | 13:16 -07:00 | Maria Dennis | Food | Lunch | Lunch: Prosciutto and brie on toasted ciabatta with milk (~5oz) (Pred: 180-200 mg/dL @ 2:45-3:15 PM) [📷](https://iili.io/qenMcu4.jpg) | 22 | 290 |
+| 2026-03-20 | 18:45 -07:00 | Maria Dennis | Food | Dinner | Dinner: Four steamed dumplings with braised meat, sautéed vegetable hash, and dipping sauce [📷](https://iili.io/qeh3woG.jpg) | 55 | 450 |
+| 2026-03-20 | 18:45 -07:00 | Maria Dennis | Food | Dinner | Dinner: Glass of milk (whole milk, ~8oz) [📷](https://iili.io/qeh3GSI.jpg) | 12 | 150 |
+| 2026-03-20 | 19:00 -07:00 | Maria Dennis | Food | Dinner | Dinner: Small piece of dark chocolate bark/brownie [📷](https://iili.io/qeh6rzX.jpg) | 8 | 70 |
 | 2026-03-20 | 09:14 -07:00 | Maria Dennis | Food | Snack | Snack: Mixed nuts (pecans, Brazil nuts, hazelnuts) + dried goji berries (Pred: 150-160 mg/dL @ 11:00 AM) [📷](https://iili.io/qenM0t2.jpg) | 5.5 | 205 |
 | 2026-03-20 | 09:04 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Smoked salmon on ciabatta with cream cheese/butter spread + small guava (Pred: 140-160 mg/dL @ 10:40-11:10 AM) [📷](https://iili.io/qenMlwl.jpg) | 25 | 300 |
 | 2026-03-20 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |

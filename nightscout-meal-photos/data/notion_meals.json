@@ -1159,32 +1159,6 @@
     "peak": 139
   },
   {
-    "id": "manual-2026-03-21T02-00-00-07-00",
-    "entry_key": "sha256:2e8efec1ca6bacb551974eaa060c7251a841fdb56d80dfa3dc91b960b644c79f",
-    "title": "Dinner: Dinner: [Photo received - awaiting manual description] (Pred: TBD)",
-    "type": "Dinner",
-    "date": "2026-03-21T02:00:00-07:00",
-    "photo": "https://iili.io/qeh6rzX.jpg",
-    "carbs": null,
-    "cals": null,
-    "preMeal": null,
-    "delta": null,
-    "peak": null
-  },
-  {
-    "id": "manual-2026-03-21T01-45-00-07-00",
-    "entry_key": "sha256:d76271b4338e94c7e0ce475bcd7bba3aa18c6a3d1fbf86dc1cbd85c87110cc79",
-    "title": "Dinner: Dinner: [Photo received - awaiting manual description] (Pred: TBD)",
-    "type": "Dinner",
-    "date": "2026-03-21T01:45:00-07:00",
-    "photo": "https://iili.io/qeh3GSI.jpg",
-    "carbs": null,
-    "cals": null,
-    "preMeal": null,
-    "delta": null,
-    "peak": null
-  },
-  {
     "id": "manual-2026-03-19T17-36-00-07-00",
     "entry_key": "sha256:8ee35edd68d088216db7c6b670b204e5ee172e4ad6c5cdfb9a8ff7ea1aebfb32",
     "title": "Snack: Snack: Strawberries and guava",
@@ -1196,5 +1170,44 @@
     "preMeal": 85,
     "delta": 119,
     "peak": 204
+  },
+  {
+    "id": "manual-2026-03-20T18-45-00-07-00",
+    "entry_key": "sha256:1774108246790",
+    "title": "Dinner: Four steamed dumplings with braised meat, sautéed vegetable hash, and dipping sauce",
+    "type": "Dinner",
+    "date": "2026-03-20T18:45:00-07:00",
+    "photo": "https://iili.io/qeh3woG.jpg",
+    "carbs": 55,
+    "cals": 450,
+    "preMeal": null,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "manual-2026-03-20T18-45-00-07-00",
+    "entry_key": "sha256:1774108246790",
+    "title": "Dinner: Glass of milk (whole milk, ~8oz)",
+    "type": "Dinner",
+    "date": "2026-03-20T18:45:00-07:00",
+    "photo": "https://iili.io/qeh3GSI.jpg",
+    "carbs": 12,
+    "cals": 150,
+    "preMeal": null,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "manual-2026-03-20T19-00-00-07-00",
+    "entry_key": "sha256:1774108246790",
+    "title": "Dinner: Small piece of dark chocolate bark/brownie",
+    "type": "Dinner",
+    "date": "2026-03-20T19:00:00-07:00",
+    "photo": "https://iili.io/qeh6rzX.jpg",
+    "carbs": 8,
+    "cals": 70,
+    "preMeal": null,
+    "delta": null,
+    "peak": null
   }
 ]
