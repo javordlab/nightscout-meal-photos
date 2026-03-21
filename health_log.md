@@ -1,6 +1,5 @@
 # Health Log
 
-| 2026-03-21 | 15:41 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: [Photo received - awaiting manual description] (BG: Unknown) (Pred: TBD) [📷](https://iili.io/qkUyAOP.jpg) | null | null |
 | 2026-03-21 | 09:05 -07:00 | Maria Dennis | Medication | - | Rosuvastatin 10mg (Scheduled) | null | null |
 | 2026-03-21 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
