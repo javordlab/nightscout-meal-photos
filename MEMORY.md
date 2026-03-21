@@ -43,6 +43,7 @@
 
 ## Infrastructure
 - **Nightscout:** https://p01--sefi--s66fclg7g2lm.code.run (Secret: JaviCare2026)
+  - **API Secret (SHA1 hash):** `b3170e23f45df7738434cd8be9cd79d86a6d0f01` (Use this for API calls)
 - **Photos:** https://javordlab.github.io/nightscout-meal-photos/
 
 ## Model Usage Reference (OpenAI shared traffic)
