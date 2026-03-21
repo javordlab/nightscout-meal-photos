@@ -9,6 +9,30 @@ const NORMALIZED_PATH = path.join(WORKSPACE, 'data', 'health_log.normalized.json
 const SYNC_STATE_PATH = path.join(WORKSPACE, 'data', 'sync_state.json');
 const GALLERY_PATH = path.join(WORKSPACE, 'nightscout-meal-photos', 'data', 'notion_meals.json');
 const LOG_PATH = path.join(WORKSPACE, 'data', 'unified_sync.log.jsonl');
+const LOCK_PATH = path.join(WORKSPACE, 'data', 'sync.lock');
+
+// --- Lock Management ---
+function acquireLock() {
+  if (fs.existsSync(LOCK_PATH)) {
+    const lockTime = fs.statSync(LOCK_PATH).mtime;
+    const now = new Date();
+    // Auto-release lock if older than 10 minutes
+    if (now - lockTime > 10 * 60 * 1000) {
+      console.warn('⚠️ Found stale lock file, auto-releasing...');
+      releaseLock();
+    } else {
+      console.error(`❌ Sync already in progress (Lock created at: ${lockTime.toISOString()})`);
+      process.exit(1);
+    }
+  }
+  fs.writeFileSync(LOCK_PATH, process.pid.toString());
+}
+
+function releaseLock() {
+  if (fs.existsSync(LOCK_PATH)) {
+    fs.unlinkSync(LOCK_PATH);
+  }
+}
 
 const NOTION_KEY = process.env.NOTION_KEY || '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';
 const NOTION_DB_ID = process.env.NOTION_DB_ID || '31685ec7-0668-813e-8b9e-c5b4d5d70fa5';
@@ -233,11 +257,9 @@ function getEntryKey(entry) {
 
 // --- Main ---
 async function main(options = {}) {
-  const normalized = JSON.parse(fs.readFileSync(NORMALIZED_PATH, 'utf8'));
-  const state = loadSyncState(SYNC_STATE_PATH);
-  const galleryItems = fs.existsSync(GALLERY_PATH) ? JSON.parse(fs.readFileSync(GALLERY_PATH, 'utf8')) : [];
-
   const dryRun = options.dryRun || false;
+  if (!dryRun) acquireLock();
+  const normalized = JSON.parse(fs.readFileSync(NORMALIZED_PATH, 'utf8'));
   const onlyNew = options.onlyNew || false;
   const since = options.since ? new Date(options.since) : null;
 
@@ -324,10 +346,15 @@ if (require.main === module) {
   const sinceArg = args.find(a => a.startsWith('--since='));
   const since = sinceArg ? sinceArg.split('=')[1] : null;
 
-  main({ dryRun, onlyNew, since }).catch(e => {
-    console.error(e.message);
-    process.exit(1);
-  });
+  main({ dryRun, onlyNew, since })
+    .then(() => {
+      if (!dryRun) releaseLock();
+    })
+    .catch(e => {
+      console.error(e.message);
+      if (!dryRun) releaseLock();
+      process.exit(1);
+    });
 }
 
 module.exports = { main, syncNightscout, syncNotion, syncGallery };
