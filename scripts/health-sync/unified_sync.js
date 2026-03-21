@@ -85,12 +85,19 @@ async function syncNightscout(entry, state) {
 
   try {
     const res = await nsRequest('POST', '/api/v1/treatments.json', payload);
-    const treatmentId = Array.isArray(res) ? res[0]?._id : res?._id;
-    if (treatmentId) {
-      upsertEntry(state, entry.entryKey, {
-        nightscout: { treatment_id: treatmentId, last_synced_at: new Date().toISOString() }
-      });
+    let treatmentId = null;
+    if (Array.isArray(res) && res.length > 0 && res[0]?._id) {
+      treatmentId = res[0]._id;
+    } else if (res?._id) {
+      treatmentId = res._id;
     }
+    if (!treatmentId) {
+      log({ op: 'ns_create_no_id', entryKey: entry.entryKey, res: typeof res, resPreview: JSON.stringify(res).slice(0, 200) });
+      return { status: 'error', error: 'no_treatment_id_returned' };
+    }
+    upsertEntry(state, entry.entryKey, {
+      nightscout: { treatment_id: treatmentId, last_synced_at: new Date().toISOString() }
+    });
     log({ op: 'ns_create', entryKey: entry.entryKey, treatmentId });
     return { status: 'created', treatmentId };
   } catch (e) {
