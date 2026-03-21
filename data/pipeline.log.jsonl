@@ -1,0 +1,18 @@
+{"ts":"2026-03-21T06:42:52.162Z","op":"pipeline_start","mode":"full","since":"2026-03-19"}
+{"ts":"2026-03-21T06:42:52.163Z","op":"step_start","name":"Normalize"}
+{"ts":"2026-03-21T06:42:52.166Z","op":"step_error","name":"Normalize","duration":3,"error":"mod.main is not a function"}
+{"ts":"2026-03-21T06:42:52.167Z","op":"pipeline_abort","reason":"normalize_failed"}
+{"ts":"2026-03-21T06:43:29.263Z","op":"pipeline_start","mode":"full","since":"2026-03-19"}
+{"ts":"2026-03-21T06:43:29.264Z","op":"step_start","name":"Normalize"}
+{"ts":"2026-03-21T06:43:29.275Z","op":"step_complete","name":"Normalize","duration":11}
+{"ts":"2026-03-21T06:43:29.275Z","op":"step_start","name":"Enrich"}
+{"ts":"2026-03-21T06:43:29.281Z","op":"step_complete","name":"Enrich","duration":6}
+{"ts":"2026-03-21T06:43:29.281Z","op":"step_start","name":"Unified Sync"}
+{"ts":"2026-03-21T06:43:41.115Z","op":"step_complete","name":"Unified Sync","duration":11834,"result":"object"}
+{"ts":"2026-03-21T06:43:41.115Z","op":"step_start","name":"Outcome Backfill"}
+{"ts":"2026-03-21T06:43:42.212Z","op":"step_complete","name":"Outcome Backfill","duration":1096,"result":"object"}
+{"ts":"2026-03-21T06:43:42.212Z","op":"step_start","name":"Audit"}
+{"ts":"2026-03-21T06:43:42.315Z","op":"step_complete","name":"Audit","duration":103,"result":"object"}
+{"ts":"2026-03-21T06:43:42.315Z","op":"step_start","name":"Repair"}
+{"ts":"2026-03-21T06:43:42.317Z","op":"step_complete","name":"Repair","duration":2,"result":"object"}
+{"ts":"2026-03-21T06:43:42.317Z","op":"pipeline_complete","duration":13053,"results":["normalize","enrich","sync","outcomes","audit","repair"]}

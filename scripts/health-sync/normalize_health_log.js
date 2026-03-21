@@ -251,5 +251,6 @@ module.exports = {
   buildEntryKey,
   buildContentHash,
   extractPhotos,
-  stripPhotos
+  stripPhotos,
+  main
 };

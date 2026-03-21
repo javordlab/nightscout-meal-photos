@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-21T04:48:43.638Z",
+  "generatedAt": "2026-03-21T06:43:29.273Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
   "entryCount": 267,
   "entries": [
@@ -38,9 +38,9 @@
         "twoHourPeakBg": null
       },
       "sync": {
-        "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "nightscout": "linked",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:2e8efec1ca6bacb551974eaa060c7251a841fdb56d80dfa3dc91b960b644c79f",
@@ -80,9 +80,9 @@
         "twoHourPeakBg": null
       },
       "sync": {
-        "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "nightscout": "linked",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:d76271b4338e94c7e0ce475bcd7bba3aa18c6a3d1fbf86dc1cbd85c87110cc79",
@@ -120,8 +120,8 @@
         "twoHourPeakBg": null
       },
       "sync": {
-        "nightscout": "pending",
-        "notion": "pending",
+        "nightscout": "linked",
+        "notion": "linked",
         "gallery": "pending",
         "outcomesBackfilled": false
       },
@@ -160,8 +160,8 @@
         "twoHourPeakBg": null
       },
       "sync": {
-        "nightscout": "pending",
-        "notion": "pending",
+        "nightscout": "linked",
+        "notion": "linked",
         "gallery": "pending",
         "outcomesBackfilled": false
       },
@@ -204,8 +204,8 @@
       "sync": {
         "nightscout": "pending",
         "notion": "pending",
-        "gallery": "pending",
-        "outcomesBackfilled": false
+        "gallery": "linked",
+        "outcomesBackfilled": true
       },
       "entryKey": "sha256:f39d7d497fb6683c153caa66317ede165443390a8ec5f2bf1c0c982f386ddb65",
       "contentHash": "sha256:fd1ad9af3289c9b655bb25e549432e23f8cf369a44f656c3cb26cf977432aa77"
@@ -246,8 +246,8 @@
       "sync": {
         "nightscout": "pending",
         "notion": "pending",
-        "gallery": "pending",
-        "outcomesBackfilled": false
+        "gallery": "linked",
+        "outcomesBackfilled": true
       },
       "entryKey": "sha256:db6e4fde67fc088cbe504229ca35ef42f483cea87e3e8421dc020904bb0a47e3",
       "contentHash": "sha256:48dad3ad8e0544c4720fb6f3cc2c9240200b927da302a09b8a9220b07cd36dcc"
@@ -288,8 +288,8 @@
       "sync": {
         "nightscout": "pending",
         "notion": "pending",
-        "gallery": "pending",
-        "outcomesBackfilled": false
+        "gallery": "linked",
+        "outcomesBackfilled": true
       },
       "entryKey": "sha256:a32ff272165e64504eea1c0ccab9645bdaa9a9792bb4a3f7416bec06a55aac38",
       "contentHash": "sha256:77efce670155acd74334abe454b0ce6de3fef9cf7a31d94883ba7743aae23887"
@@ -330,8 +330,8 @@
       "sync": {
         "nightscout": "pending",
         "notion": "pending",
-        "gallery": "pending",
-        "outcomesBackfilled": false
+        "gallery": "linked",
+        "outcomesBackfilled": true
       },
       "entryKey": "sha256:4639dd81725480e2244fb6f0b1ae79bf780154e0c6d35726bbd04212aa397bd0",
       "contentHash": "sha256:1cd453ef52ca0b828c7201dfae73959866db14bedabd5858d330287768ce022c"
@@ -372,8 +372,8 @@
       "sync": {
         "nightscout": "pending",
         "notion": "pending",
-        "gallery": "pending",
-        "outcomesBackfilled": false
+        "gallery": "linked",
+        "outcomesBackfilled": true
       },
       "entryKey": "sha256:6ed72824ee6decb8095947b9f945b73d79502425fa571f4b43e334445059ab5e",
       "contentHash": "sha256:72d520c1119f5835cebd606c1f5874c62a1efb8964309f5fa173387818e2ac15"
@@ -493,9 +493,9 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
-        "outcomesBackfilled": false
+        "notion": "linked",
+        "gallery": "linked",
+        "outcomesBackfilled": true
       },
       "entryKey": "sha256:adbdd78d8260e91b21f5e51248727c6711f8f9b6591816419f298d7afc35c2e3",
       "contentHash": "sha256:79daba3115b45ac697a07a374fdd6688fc68fa00754939989621ab1f7fc8e8df"
@@ -537,7 +537,7 @@
         "nightscout": "pending",
         "notion": "pending",
         "gallery": "pending",
-        "outcomesBackfilled": false
+        "outcomesBackfilled": true
       },
       "entryKey": "sha256:8ee35edd68d088216db7c6b670b204e5ee172e4ad6c5cdfb9a8ff7ea1aebfb32",
       "contentHash": "sha256:ac2cb352608fc533b6165958868ac7c27196e9e150e5a26cf765e6bf7febadb3"
@@ -617,8 +617,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:4229a5d2b9e82a241f9fd97022bcd88c8044e125a018f1d3f0eaa5d2bbd39f2d",
@@ -659,8 +659,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:a68b5b624e48c66fe79794df11cf946811c06479e8ef6e85a1a28944cd396ef2",
@@ -741,8 +741,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:56fc77c3a0508df6e2866f5d4535548b32825e2c7c75aa139c60c51e0eec18e8",
@@ -946,8 +946,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:49b82941f3af6c348f626047721f0274c1219740c31eaf1fc913b4fd982b18cc",
@@ -1148,8 +1148,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:cb7b826d8d7d4604b4d9f2f2e5d260c1112efd9ca397cce91592969a91722b8e",
@@ -1431,8 +1431,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:0cc0eb81d65a33f4844d443f816aa6a06fb81051303b27e1632dbb20090855c6",
@@ -1713,8 +1713,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:f012b94fc3736ba55079c83730cf4d53ed0144f36e17446d9b07e410a393a01f",
@@ -1875,8 +1875,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:7252944848a4a008bb95d0dc9f5d550af900f163e8f735ed83cf571e5c40ce37",
@@ -1918,8 +1918,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:7076943aae9c8dc4912b596a1e8cb2181061e4ca3a568207ed609271db73e396",
@@ -2002,8 +2002,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:f07bf8dab12d0dacef192cccaace0cd1036d6bbbc343af81201796a158337c5c",
@@ -2124,8 +2124,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:e303d160c5c860fe60f8c97adfb15887c64e707790335eb27e92ff959b83ea5c",
@@ -2246,8 +2246,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:0ce8abe94fe6afa89424d61a906214f55e92390d0832fffe83afd934b614317e",
@@ -2288,8 +2288,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:2914d407b8f9afec904c91b097432686ccfbbf4b7bb2aac34e695963d0525f38",
@@ -2370,8 +2370,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:2ea9b9ce47cbb244dc7493e360dadb5a8b23b0e3e26353a455a74553b2b27fc1",
@@ -2572,8 +2572,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:68ab4b47221c39e68b12b953f6c0178b1fc746bb78ce382a1dbeb1b44cdcf821",
@@ -2655,8 +2655,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:195fbde504e69d2682b62d8d50b394394eebc0eb8c6fdc4d35fdf65e7a23ae8a",
@@ -2817,8 +2817,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:bc23f8520a2dffd5977d093a8d162460d587a4b72693224ec4ec96cc68fae980",
@@ -2939,8 +2939,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:5c7249db092eaf175968a140ad10074d6deed3ad8855e427a11c11e997b30771",
@@ -3103,8 +3103,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:447182087019c2981bc003b01cabbac2e7d297a91e248628136084b24b31851f",
@@ -3185,8 +3185,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:0dd5a4df335fb52d44784801a09c75c2209e99192a93fec3100d9a716cf3dd93",
@@ -3267,8 +3267,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:8c28c4503c00740d096ee88794f153844963b57c0649a943bb31adc70c9f5b44",
@@ -3349,8 +3349,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:333c3e2dec8bec30a153863146c2c12b28f2da446af9b34f3704912e0fef5fa0",
@@ -3471,8 +3471,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:8ade7cb48c4e2bdc8740f7f31f83bf98f3115bcd2919d201a3facd4d9df66504",
@@ -3513,8 +3513,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:241dd63d94eb66d7964eb9d761ffb3126ce7a5c6c989dfa9a8a00882dc942946",
@@ -3556,8 +3556,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:703754cf05c72e54448e14a5adcaff7806f355a07f14f84d80673041988873b9",
@@ -3598,8 +3598,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:ab67eff153278c3e661297a5bbb0d50eb0d70bdb77554f50d3d755d0af6306fd",
@@ -3721,8 +3721,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:49233ac8eb80110062898e889ad65e5bfeaf82cce206c15648fa593ab2f1f0a4",
@@ -3843,8 +3843,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:65eb7675e1006e1b421ffe9a3372b3d00ddbedcf8c1a50f574f0551410b6829d",
@@ -4085,8 +4085,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:3a6625e4e0c6188653d25b162052f6ba534b7841fd27861ba92749e7d7904911",
@@ -4207,8 +4207,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:ed961c186d24898a73407fab49cd7c9d574bbb46b2afde9a1a52fd5f8abd0b42",
@@ -4369,8 +4369,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:ca5833883074043ce7726b565a59df290189604572c84e32c43eddf5d9a6f32a",
@@ -4411,8 +4411,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:1633e67164311f1fcbc7b73141dcfb3a8b6e685a9a7bc9d827c6e84f2de337b0",
@@ -4453,8 +4453,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:5e3c44939f89588b4eca6a3f78804075c961c74c41ce4c251ffc52ff751074c4",
@@ -4535,8 +4535,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:a04f6f2b3f1d26b80d2370b59f6a4f50cac468c9109f2398e79cfc16170003eb",
@@ -4697,8 +4697,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:c50f4ea885887a3bbdfca2d44f855048d5be15a2f23702073240747ab8f0c1e5",
@@ -4779,8 +4779,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:4a99949a18895f86a70b06013ecae3e6bfc2eca73cec330ce1fab7317b1842d7",
@@ -4821,8 +4821,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:af2abefe502e81d1c2aa5727c4c4089f4db346c701eee1ee36236b8fc4305401",
@@ -4863,8 +4863,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:372eaf03f2be43078e0701d4915d6dcc80443f5ec69abcb151e2bb79661e9b75",
@@ -4905,8 +4905,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:b4570ab5fc1f8f96efa603e4d55d8aed3ccd732c1690241736d4a7c4591d3103",
@@ -4987,8 +4987,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:d790270fbdc94d655e53622acb4906b1b6bfbc674606e5837688acd7d9426fed",
@@ -5109,8 +5109,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:92a3276075a0caba75369ceaa934ca973e1f3aaca4c1afc84bacc0269736241e",
@@ -5151,8 +5151,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:c8c74012af02af8fa08d0cf98f5c7218878dcc1a0bf2477169aa9e0f172b68b8",
@@ -5273,8 +5273,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:729fe9f2787961966402fad2a89051fcbffbb94da92e21f622c9a351656582aa",
@@ -5315,8 +5315,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:d491460ff91674fd16427e63d831f86e0cccf0267633c0c29340ffb3e547c0ec",
@@ -5357,8 +5357,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:740fc7aecb5f82d2a099d4b158c1f984e25d4a40e39cae9e0f2e24ef4a077c6f",
@@ -5439,8 +5439,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:81bc30538329461289331f4f44297a4eefb9cdeb72ee82ea55bba08dd067750e",
@@ -5561,8 +5561,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:e04f148ff302a090af923b431d43b196fb091c5805d1d27d392a317b175c7fa5",
@@ -5683,8 +5683,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:26d2b50cecefc70a3c446ae3d3c27fc0daf23d0c24745538ab495f43f9bc3a4f",
@@ -5765,8 +5765,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:ff0af05ac40799f4d168c123e8fd94e50458a5da6924c3c480c3843d0e8cfdfb",
@@ -5847,8 +5847,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:9ff33ed3cc8a844bbb8bc19666b4f228131ad17ddc685d140dbbcdf93cc55c14",
@@ -5969,8 +5969,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:6daf51ff6cec9083cbcde529bef0c240ef4cbc75c92adbbc76d2e67d1898b66e",
@@ -6091,8 +6091,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:5f1febc58eac9810142d7d3ebca37ef6e0372a0d559ccf49e57717f9ad24440e",
@@ -6133,8 +6133,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:bc47c882e0084a331bce10db6e6257f429674248ab2180e80d939c1956b6c853",
@@ -6215,8 +6215,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:f54f54d9ae7f1e0f1a764c94165c37b10f053351d41888502cb080ee38afd431",
@@ -6297,8 +6297,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:86af86df8f1172e3313ba00e26dd807bfd4dcfe75b313a12db3fca60d07d706b",
@@ -6339,8 +6339,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:871d95652272ef2992344931649ef8c3c1a90e9892be7340d6ee2c25f044a424",
@@ -6581,8 +6581,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:8aa18c982688c03967337ddbd76e15411eee2e7dbfe2086a937ddfc30405fdd3",
@@ -6623,8 +6623,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:f168662d110e97c3cb68ae2eb88f0b39b09fe9a616e35fb7a7cd0d9ef0415335",
@@ -6665,8 +6665,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:0428c6461d42bb098e7d05c66548179b17f51c8675020c379c5d4881abc4c4bf",
@@ -6707,8 +6707,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:9e465c3ec21a73c20303d3cf30fa79a18c7019704f6ea01c0fa5d05ec0297dc6",
@@ -6909,8 +6909,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:f52c41d302562f48391ab969a81f36a96b54b47565cb996d706bfdd51e49a9c5",
@@ -6951,8 +6951,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:c920ac4d355b1fad2a7f607554c9b44318c4ad3dfe75191ec6918ee6d765633f",
@@ -7033,8 +7033,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:11d0f8a463dae7bb013c7a1970f82abedba4dc793de724c05df7faa20d135107",
@@ -7195,8 +7195,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:4e6848c59cc8113e868acb7734c53c2820c05b52cb7890fdc8ba4d834e539c50",
@@ -7237,8 +7237,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:92926560af33f15d9635a76e66c308933e8caaa394df7bdc8688c300af4d9d06",
@@ -7279,8 +7279,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:e1d214873b66d3ea53d52e83175e06d3ee6d93a2f79697ef6ed8aa6000279eef",
@@ -7321,8 +7321,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:0a79f30f134cb2fba9cca2569d979844ac43c38b51bc5ece7bb9d931661c3a3f",
@@ -7403,8 +7403,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:9575c389c4b75d7dc60c0941f859daef7ddbe621d6d8aee1299f37425195f735",
@@ -7485,8 +7485,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:bb3cf33dacef7607e7d327967ee287c0dbf03922db13579be87e6dd11e130eef",
@@ -7567,8 +7567,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:9dc66ae936b5ffcec74f6ab6b14ade5d4cfc613fff5138d90339ac1ccfa90457",
@@ -7609,8 +7609,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:821170d6901e983432cf6bcdde9df88bb71f96b8d9f2cc20f19ddfc9ccbb6e3e",
@@ -7651,8 +7651,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:d4f935dc6c92276185de41c666f21359c6511677aa129898b8fc6e4e9e537262",
@@ -7693,8 +7693,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:05399e6f2d8a6badaffd142b9eef67b4f58e94ae2f9c77986d54105d7ce4df8f",
@@ -7735,8 +7735,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:d2668c843856790bee6e612526ec22353fc68795d909532f38ca0ff09f19f44f",
@@ -7817,8 +7817,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:7ab3d8e651595e749266c5f16a1f74b1ebc77daa4fb490eedfff51236e08b27d",
@@ -7939,8 +7939,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:656ec1419f48b2fc413d6d9139185cd44f2dd79953e90f31f7da3197d0f3893a",
@@ -8061,8 +8061,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:a0c2836c02d529eadf8ba8b6eeeb4895059d3f4f69e995da0ab47f5258e3d671",
@@ -8183,8 +8183,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:6a8b560536bc227c13602eb736e614adc3e700f75a0ea73f7af070047e58e2d1",
@@ -8225,8 +8225,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:76e36a0c3ba75619d3d2a5793ef9c8435e1cf96f59064415cd2ffa3bae5a99fa",
@@ -8267,8 +8267,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:d68a11c7f4776fa5bda467759449121d34ec55eba8d5c49f8d9226d2f6be21cd",
@@ -8309,8 +8309,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:f9b9136377e6d0737da2519ee44aaac646c038d74d79a27469b6e3ab50f1c93f",
@@ -8351,8 +8351,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:30779bc3548cc965781ffbaa552fc65048f15e9b22694649038f357e3ec5dac8",
@@ -8393,8 +8393,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:813c2b1e9ae8959587caccd62dc130be107ff81be4bddd2c1d35fbc0d9943541",
@@ -8435,8 +8435,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:d83e7dc6a6347698d8becf818cc1ffb921e670b214f85f71c6da3d5a35537752",
@@ -8477,8 +8477,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:d9d1beb9851b9f16e8099cc5ec0c6c33a958b85219c3dddf424ddd54e776b419",
@@ -8559,8 +8559,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:cde8737222ce1ecfc4892abd441aa9983afa0e5894ceef88d8a2fdbdae9c6dce",
@@ -8601,8 +8601,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:f98e53e8c78171889b3b9aade039252a60c2b2a1383c6d7d0437601ad12f3f81",
@@ -8803,8 +8803,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:a985d35f4ce4a4b7ab10cc7ed10a5b6eb0c1637d89a5f8b4c0ebae1f9de80a32",
@@ -9125,8 +9125,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:f75128f78640752d4bc3d55868c00186cd93dc55fc0845b3e3947c05d4c846cb",
@@ -9167,8 +9167,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:a3d0ff4612a693c2f1246dfcaa9b0a4b0acfa44dc97fd5177a1c532017dec928",
@@ -9249,8 +9249,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:13190934398458506e4aa065cebeb093c642f1427814f843ec82a9929928ec8d",
@@ -9291,8 +9291,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:2c8a82637e3c744bf0b0a818f9300858f61cb1109d5b7449268cfcf7a17033d3",
@@ -10653,8 +10653,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:89fd0f053ae87ce69ba8a4de39e6971b797851d079c7afa7a9b52ef99d1acc62",
@@ -10695,8 +10695,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:91ca93f25198256964e35f963748394d138dbd2613522ccd1b95bbf58e7f86ab",
@@ -10737,8 +10737,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:3f2af089cd5eade0fad2047d32c40b0326ffa9ad6b16fe8363192e2a6840146a",
@@ -10780,8 +10780,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:2834387db4b733f82f0dfbe15d176033cb282a7e2297238dd7ab29ba1499bbd0",
@@ -10822,8 +10822,8 @@
       },
       "sync": {
         "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
+        "notion": "linked",
+        "gallery": "linked",
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:9fd1c7c427f923f323d0b7f55a0bc9ac0cfc182909e206335e62dd484b37b949",

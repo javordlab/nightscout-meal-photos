@@ -1,0 +1,387 @@
+{
+  "generatedAt": "2026-03-21T06:43:42.313Z",
+  "since": "2026-03-19",
+  "summary": {
+    "totalEntries": 24,
+    "inSyncState": 24,
+    "nsLinked": 4,
+    "notionLinked": 24,
+    "galleryLinked": 13,
+    "outcomesBackfilled": 11,
+    "duplicates": 0,
+    "missingNs": 20,
+    "missingNotion": 0,
+    "missingGallery": 0,
+    "missingOutcomes": 0
+  },
+  "discrepancies": [
+    {
+      "entryKey": "sha256:2e8efec1ca6bacb551974eaa060c7251a841fdb56d80dfa3dc91b960b644c79f",
+      "timestamp": "2026-03-21T02:00:00-07:00",
+      "title": "Dinner: [Photo received - awaiting manual description] (Pred: TBD)",
+      "issues": [
+        {
+          "type": "notion_page_missing",
+          "pageId": "32a85ec7-0668-81e8-92d8-c20af7379cd3",
+          "severity": "error"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:d76271b4338e94c7e0ce475bcd7bba3aa18c6a3d1fbf86dc1cbd85c87110cc79",
+      "timestamp": "2026-03-21T01:45:00-07:00",
+      "title": "Dinner: [Photo received - awaiting manual description] (Pred: TBD)",
+      "issues": [
+        {
+          "type": "notion_page_missing",
+          "pageId": "32a85ec7-0668-810f-b5da-d175f3b9cde3",
+          "severity": "error"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:118c7285a11e21fe83e29f92749c25016ea43e33e47ca9576872b46d95d29c9c",
+      "timestamp": "2026-03-21T09:05:00-07:00",
+      "title": "Rosuvastatin 10mg (Scheduled)",
+      "issues": [
+        {
+          "type": "notion_page_missing",
+          "pageId": "32a85ec7-0668-813f-8ee7-e107eaec0a1f",
+          "severity": "error"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:3ec90496fac8b55d20e30162ed690b6891c3c544e517bc62577b32627f6eb934",
+      "timestamp": "2026-03-21T09:00:00-07:00",
+      "title": "Lisinopril 10mg (Scheduled)",
+      "issues": [
+        {
+          "type": "notion_page_missing",
+          "pageId": "32a85ec7-0668-81a9-849a-e4ced0827c58",
+          "severity": "error"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:f39d7d497fb6683c153caa66317ede165443390a8ec5f2bf1c0c982f386ddb65",
+      "timestamp": "2026-03-20T16:13:00-07:00",
+      "title": "Snack: Protein ball/hazelnut chocolate truffle",
+      "issues": [
+        {
+          "type": "notion_page_missing",
+          "pageId": "32a85ec7-0668-81bf-bc64-db23558b1890",
+          "severity": "error"
+        },
+        {
+          "type": "missing_ns_link",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:db6e4fde67fc088cbe504229ca35ef42f483cea87e3e8421dc020904bb0a47e3",
+      "timestamp": "2026-03-20T13:17:00-07:00",
+      "title": "Snack: Half apple (~75g)",
+      "issues": [
+        {
+          "type": "notion_page_missing",
+          "pageId": "32a85ec7-0668-81e0-a007-da99815bd520",
+          "severity": "error"
+        },
+        {
+          "type": "missing_ns_link",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:a32ff272165e64504eea1c0ccab9645bdaa9a9792bb4a3f7416bec06a55aac38",
+      "timestamp": "2026-03-20T13:16:00-07:00",
+      "title": "Lunch: Prosciutto and brie on toasted ciabatta with milk (~5oz)",
+      "issues": [
+        {
+          "type": "notion_page_missing",
+          "pageId": "32a85ec7-0668-81d4-8dfd-f6fd3cd31fd5",
+          "severity": "error"
+        },
+        {
+          "type": "missing_ns_link",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:4639dd81725480e2244fb6f0b1ae79bf780154e0c6d35726bbd04212aa397bd0",
+      "timestamp": "2026-03-20T09:14:00-07:00",
+      "title": "Snack: Mixed nuts (pecans, Brazil nuts, hazelnuts) + dried goji berries",
+      "issues": [
+        {
+          "type": "notion_page_missing",
+          "pageId": "32a85ec7-0668-81fa-8a9e-f84d3e1e22b4",
+          "severity": "error"
+        },
+        {
+          "type": "missing_ns_link",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:6ed72824ee6decb8095947b9f945b73d79502425fa571f4b43e334445059ab5e",
+      "timestamp": "2026-03-20T09:04:00-07:00",
+      "title": "Breakfast: Smoked salmon on ciabatta with cream cheese/butter spread + small guava",
+      "issues": [
+        {
+          "type": "notion_page_missing",
+          "pageId": "32a85ec7-0668-8176-a0a9-d0efc880631b",
+          "severity": "error"
+        },
+        {
+          "type": "missing_ns_link",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:b42837f2c85166f42a89b3a0747ae381cdd0e0b1aaa70710098249a72ac0e8a0",
+      "timestamp": "2026-03-20T09:00:00-07:00",
+      "title": "Lisinopril 10mg (Scheduled)",
+      "issues": [
+        {
+          "type": "notion_page_missing",
+          "pageId": "32a85ec7-0668-81bc-b984-e2dd08617cb7",
+          "severity": "error"
+        },
+        {
+          "type": "missing_ns_link",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:8a0c96404bcf9014fbd2b65cf6c6245698ecf465a610553f5349deee3b270e63",
+      "timestamp": "2026-03-19T20:20:00-07:00",
+      "title": "15 minutes walk uphill/downhill",
+      "issues": [
+        {
+          "type": "notion_page_missing",
+          "pageId": "32a85ec7-0668-81a3-bd84-e5c6b6298ede",
+          "severity": "error"
+        },
+        {
+          "type": "missing_ns_link",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:adbdd78d8260e91b21f5e51248727c6711f8f9b6591816419f298d7afc35c2e3",
+      "timestamp": "2026-03-19T19:14:00-07:00",
+      "title": "Dinner: Pork and rice burrito with beans/cheese, avocado slices",
+      "issues": [
+        {
+          "type": "notion_page_missing",
+          "pageId": "32985ec7-0668-8138-a753-fd2bc64f3b4f",
+          "severity": "error"
+        },
+        {
+          "type": "missing_ns_link",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:8ee35edd68d088216db7c6b670b204e5ee172e4ad6c5cdfb9a8ff7ea1aebfb32",
+      "timestamp": "2026-03-19T17:36:00-07:00",
+      "title": "Snack: Strawberries and guava",
+      "issues": [
+        {
+          "type": "notion_page_missing",
+          "pageId": "32a85ec7-0668-81db-a664-f8f620dea288",
+          "severity": "error"
+        },
+        {
+          "type": "missing_ns_link",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:bf37dcd35bbab25ceb33153a5683e3f3ac06d22859ab32572b0ab6103b69c91d",
+      "timestamp": "2026-03-19T16:09:00-07:00",
+      "title": "90 minutes heavy gardening",
+      "issues": [
+        {
+          "type": "notion_page_missing",
+          "pageId": "32a85ec7-0668-8130-bfb9-d658aef67f58",
+          "severity": "error"
+        },
+        {
+          "type": "missing_ns_link",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:4229a5d2b9e82a241f9fd97022bcd88c8044e125a018f1d3f0eaa5d2bbd39f2d",
+      "timestamp": "2026-03-19T14:07:00-07:00",
+      "title": "Snack: 2 dried dragon fruit slices",
+      "issues": [
+        {
+          "type": "notion_page_missing",
+          "pageId": "32885ec7-0668-81f2-81ca-db049001e1d9",
+          "severity": "error"
+        },
+        {
+          "type": "missing_ns_link",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:a68b5b624e48c66fe79794df11cf946811c06479e8ef6e85a1a28944cd396ef2",
+      "timestamp": "2026-03-19T13:55:00-07:00",
+      "title": "Lunch: 2 pork belly bao buns, green grapes, green tea",
+      "issues": [
+        {
+          "type": "notion_page_missing",
+          "pageId": "32985ec7-0668-81ee-add3-f68899f38c0e",
+          "severity": "error"
+        },
+        {
+          "type": "missing_ns_link",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:53a993fc486dfc092f46574661922158cbc9740937655f86819175b8947359a9",
+      "timestamp": "2026-03-19T10:30:00-07:00",
+      "title": "3 hours heavy gardening",
+      "issues": [
+        {
+          "type": "notion_page_missing",
+          "pageId": "32a85ec7-0668-81d5-a81c-d7742118c7f8",
+          "severity": "error"
+        },
+        {
+          "type": "missing_ns_link",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:56fc77c3a0508df6e2866f5d4535548b32825e2c7c75aa139c60c51e0eec18e8",
+      "timestamp": "2026-03-19T09:48:00-07:00",
+      "title": "Breakfast: Ciabatta bread (~60g), avocado (~75g), prosciutto (~15g, 1 slice), milk (~1 cup)",
+      "issues": [
+        {
+          "type": "notion_page_missing",
+          "pageId": "32885ec7-0668-81a9-9fa1-c732a8e278fc",
+          "severity": "error"
+        },
+        {
+          "type": "missing_ns_link",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:60bb5f837788c57b5183814f09d88ae129249c7878394368be923aa48833b586",
+      "timestamp": "2026-03-19T09:48:00-07:00",
+      "title": "Metformin 500mg (with breakfast)",
+      "issues": [
+        {
+          "type": "notion_page_missing",
+          "pageId": "32a85ec7-0668-8108-868e-efa2507963e7",
+          "severity": "error"
+        },
+        {
+          "type": "missing_ns_link",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:0d35abd3bf41fba9ec7bff1f46b28a824e3e58d4f6ad34ca3b804d1f7252e6c1",
+      "timestamp": "2026-03-19T09:05:00-07:00",
+      "title": "Rosuvastatin 10mg (Scheduled)",
+      "issues": [
+        {
+          "type": "notion_page_missing",
+          "pageId": "32a85ec7-0668-81ee-9c7a-f12cfa99f267",
+          "severity": "error"
+        },
+        {
+          "type": "missing_ns_link",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:b6ff4b08d56a54d7c7f82c89e41ce4ae385a52a77b3bcf452df5d6646f5d4e9e",
+      "timestamp": "2026-03-19T09:00:00-07:00",
+      "title": "Lisinopril 10mg (Scheduled)",
+      "issues": [
+        {
+          "type": "notion_page_missing",
+          "pageId": "32a85ec7-0668-81b1-b60c-f72cae484602",
+          "severity": "error"
+        },
+        {
+          "type": "missing_ns_link",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:33885514095a48d76593e45516128de01766d8a87596a63490b2f4bc83563bfb",
+      "timestamp": "2026-03-18T20:55:00-07:00",
+      "title": "20 minutes walk",
+      "issues": [
+        {
+          "type": "notion_page_missing",
+          "pageId": "32a85ec7-0668-812f-8b07-d21160474f06",
+          "severity": "error"
+        },
+        {
+          "type": "missing_ns_link",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:49b82941f3af6c348f626047721f0274c1219740c31eaf1fc913b4fd982b18cc",
+      "timestamp": "2026-03-18T19:20:00-07:00",
+      "title": "Dinner: 3 steamed dumplings + octopus and potato stew with carrots + loquats, grapes, and one strawberry",
+      "issues": [
+        {
+          "type": "notion_page_missing",
+          "pageId": "32885ec7-0668-8173-995c-d6421b2754dc",
+          "severity": "error"
+        },
+        {
+          "type": "missing_ns_link",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:e81c0ffdc4087f4c019e6050ad20f07a1eedb8e252b3dbd607858d5e515f59cd",
+      "timestamp": "2026-03-18T19:15:00-07:00",
+      "title": "1000mg Metformin HCL (Dinner dose)",
+      "issues": [
+        {
+          "type": "notion_page_missing",
+          "pageId": "32a85ec7-0668-8168-bc42-da22f458ed42",
+          "severity": "error"
+        },
+        {
+          "type": "missing_ns_link",
+          "severity": "warning"
+        }
+      ]
+    }
+  ]
+}
