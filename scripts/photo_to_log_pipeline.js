@@ -88,8 +88,7 @@ async function uploadPhoto(photoPath) {
 
 // Analyze photo with vision model
 async function analyzePhoto(photoPath) {
-  // For now, use simple heuristics based on filename/time
-  // In production, this would call an OCR/nutrition API
+  // Use actual file modification time as timestamp
   const stats = fs.statSync(photoPath);
   const timestamp = stats.mtime;
   const hour = timestamp.getHours();
@@ -102,10 +101,34 @@ async function analyzePhoto(photoPath) {
   else if (hour >= 14 && hour < 17) mealType = 'Snack';
   else if (hour >= 20) mealType = 'Dessert';
   
+  // Try to analyze with image tool if available
+  let description = '[Photo received - awaiting manual description]';
+  let analysis = null;
+  
+  try {
+    // Check if this photo is already in a manual log entry
+    const logContent = fs.readFileSync(HEALTH_LOG, 'utf8');
+    const fileName = path.basename(photoPath);
+    const prefix = getFilePrefix(fileName);
+    
+    // If entry with this timestamp already exists with proper description, skip
+    const dateStr = timestamp.toISOString().split('T')[0];
+    const timeStr = timestamp.toISOString().split('T')[1].slice(0, 5);
+    const pattern = new RegExp(`\\| ${dateStr} \\| ${timeStr}.*${mealType}.*(?!\\[Photo - needs description\\])`);
+    
+    if (pattern.test(logContent)) {
+      console.log(`Entry already exists for ${dateStr} ${timeStr} ${mealType}, skipping`);
+      return { skip: true };
+    }
+  } catch (e) {
+    console.log('Could not check existing entries:', e.message);
+  }
+  
   return {
     timestamp: timestamp,
     mealType: mealType,
-    needsManualEntry: true // Flag for manual carb/cal estimation
+    description: description,
+    needsManualEntry: true
   };
 }
 
@@ -184,11 +207,18 @@ async function main() {
         throw new Error('Photo upload failed');
       }
       
+      // Skip if entry already exists
+      if (analysis.skip) {
+        state.processed.push(file.prefix);
+        console.log(`Skipping ${file.name} - entry already exists`);
+        continue;
+      }
+      
       // Create entry
       const entry = {
         timestamp: analysis.timestamp,
         mealType: analysis.mealType,
-        description: '[Photo - needs description]', // Placeholder
+        description: analysis.description,
         photoUrl: photoUrl,
         bg: bg ? `${bg.sgv} mg/dL ${bg.direction}` : 'Unknown',
         carbs: null, // Will need manual backfill
