@@ -1,5 +1,16 @@
 [
   {
+    "id": "manual-2026-03-20-16:13-07:00",
+    "title": "Snack: Protein ball/hazelnut chocolate truffle",
+    "type": "Snack",
+    "date": "2026-03-20T16:13:00.000-07:00",
+    "photo": "https://iili.io/qe1AVUl.jpg",
+    "carbs": 25,
+    "cals": 200,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "manual-2026-03-20-13:17 -07:00",
     "title": "Snack: Half apple (~75g)",
     "type": "Snack",
