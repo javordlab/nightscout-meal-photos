@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-21T23:43:43.408Z",
+  "lastUpdated": "2026-03-21T23:44:07.636Z",
   "shipments": [],
   "tokenUsage": [
     {
@@ -7,7 +7,7 @@
       "bucketType": "250K",
       "managedUsed": 100000,
       "managedRemaining": 150000,
-      "oauthUsed": 45287636,
+      "oauthUsed": 45310994,
       "percentRemaining": 60
     },
     {
