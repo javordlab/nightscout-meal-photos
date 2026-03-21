@@ -44,3 +44,11 @@
 {"ts":"2026-03-21T07:03:32.715Z","op":"step_start","name":"Repair"}
 {"ts":"2026-03-21T07:03:32.724Z","op":"step_complete","name":"Repair","duration":9,"result":"object"}
 {"ts":"2026-03-21T07:03:32.724Z","op":"pipeline_complete","duration":21420,"results":["normalize","enrich","sync","outcomes","audit","repair"]}
+{"ts":"2026-03-21T16:18:22.327Z","op":"pipeline_start","mode":"sync-only","since":"2026-03-20T00:00:00-07:00"}
+{"ts":"2026-03-21T16:18:22.328Z","op":"step_start","name":"Normalize"}
+{"ts":"2026-03-21T16:18:22.340Z","op":"step_complete","name":"Normalize","duration":12}
+{"ts":"2026-03-21T16:18:22.340Z","op":"step_start","name":"Enrich"}
+{"ts":"2026-03-21T16:18:22.345Z","op":"step_complete","name":"Enrich","duration":5}
+{"ts":"2026-03-21T16:18:22.345Z","op":"step_start","name":"Unified Sync"}
+{"ts":"2026-03-21T16:18:35.115Z","op":"step_complete","name":"Unified Sync","duration":12770,"result":"object"}
+{"ts":"2026-03-21T16:18:35.116Z","op":"pipeline_complete","duration":12788,"results":["normalize","enrich","sync"]}

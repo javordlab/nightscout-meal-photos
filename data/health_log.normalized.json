@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-21T16:19:25.958Z",
+  "generatedAt": "2026-03-21T16:27:41.569Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
-  "entryCount": 268,
+  "entryCount": 267,
   "entries": [
     {
       "source": {
@@ -10910,46 +10910,6 @@
       },
       "entryKey": "sha256:1ede023e510027d41e356281be69f4e58c7ee98057334fece27992dbb8c2873e",
       "contentHash": "sha256:f98d2bd45d4405e20daadfad625147dc221a7e6e29434cda5acc4cb877ae35c8"
-    },
-    {
-      "source": {
-        "file": "health_log.md",
-        "line": 276,
-        "rawRow": "| 2026-03-10 | 04:49 -07:00 | Maria Dennis | Medication | - | Half anti-acid tablet | null | null |"
-      },
-      "timestamp": "2026-03-10T04:49:00-07:00",
-      "date": "2026-03-10",
-      "time": "04:49 -07:00",
-      "user": "Maria Dennis",
-      "category": "Medication",
-      "mealType": "-",
-      "title": "Half anti-acid tablet",
-      "notes": null,
-      "photoUrls": [],
-      "carbsEst": null,
-      "caloriesEst": null,
-      "predicted": {
-        "peakBgText": null,
-        "peakTimeText": null
-      },
-      "actual": {
-        "preMealBg": null,
-        "peakBg": null,
-        "peakTime": null,
-        "bgDelta": null,
-        "timeToPeakMin": null,
-        "peakBgDelta": null,
-        "peakTimeDeltaMin": null,
-        "twoHourPeakBg": null
-      },
-      "sync": {
-        "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
-        "outcomesBackfilled": false
-      },
-      "entryKey": "sha256:f24a952da4891920625309b8bd9389685d4daf07f290262391f686e9aea1c3a7",
-      "contentHash": "sha256:2ccc31df04ac434b4a209f7d52a1363e296cd0994de5deac9573f21a7d8a89b4"
     }
   ]
 }

@@ -273,4 +273,3 @@
  | 2026-03-09 | 18:56 -07:00 | Maria Dennis | Food | Dessert | Chocolate cake with whipped cream (~10g carbs, ~120 kcal) (Pred: 155 mg/dL @ 8:41 PM) [📷](https://iili.io/qAZ5pMF.jpg) | 10 | 120 | 
 | 2026-03-09 | 20:30 -07:00 | Maria Dennis | Activity | 15 minutes walk |
  | 2026-03-09 | 21:30 -07:00 | Maria Dennis | Food | Snack | Glass of milk and a spoon of peanut butter (~15g carbs, ~250 kcal) (Pred: 173 mg/dL @ 11:15 PM) | 15 | 250 | 
-| 2026-03-10 | 04:49 -07:00 | Maria Dennis | Medication | - | Half anti-acid tablet | null | null |
