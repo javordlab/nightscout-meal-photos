@@ -52,7 +52,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69bde082911a8ea261e673cc",
-        "last_synced_at": "2026-03-21T06:38:12.446Z"
+        "last_synced_at": "2026-03-21T06:54:16.811Z"
       }
     },
     "sha256:3ec90496fac8b55d20e30162ed690b6891c3c544e517bc62577b32627f6eb934": {
@@ -66,7 +66,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69bde081911a8ea261e673cb",
-        "last_synced_at": "2026-03-21T06:38:12.446Z"
+        "last_synced_at": "2026-03-21T06:54:16.811Z"
       }
     },
     "sha256:f39d7d497fb6683c153caa66317ede165443390a8ec5f2bf1c0c982f386ddb65": {
@@ -93,6 +93,10 @@
         "peakBgDelta": null,
         "peakTimeDeltaMin": null,
         "twoHourPeakBg": 148
+      },
+      "nightscout": {
+        "treatment_id": "69bde76a911a8ea261e673da",
+        "last_synced_at": "2026-03-21T06:50:53.297Z"
       }
     },
     "sha256:db6e4fde67fc088cbe504229ca35ef42f483cea87e3e8421dc020904bb0a47e3": {
@@ -119,6 +123,10 @@
         "peakBgDelta": null,
         "peakTimeDeltaMin": null,
         "twoHourPeakBg": 157
+      },
+      "nightscout": {
+        "treatment_id": "69bdb0ea911a8ea261e67306",
+        "last_synced_at": "2026-03-21T06:50:53.298Z"
       }
     },
     "sha256:a32ff272165e64504eea1c0ccab9645bdaa9a9792bb4a3f7416bec06a55aac38": {
@@ -145,6 +153,10 @@
         "peakBgDelta": null,
         "peakTimeDeltaMin": null,
         "twoHourPeakBg": 157
+      },
+      "nightscout": {
+        "treatment_id": "69bdb0eb911a8ea261e67307",
+        "last_synced_at": "2026-03-21T06:50:53.298Z"
       }
     },
     "sha256:4639dd81725480e2244fb6f0b1ae79bf780154e0c6d35726bbd04212aa397bd0": {
@@ -171,6 +183,10 @@
         "peakBgDelta": null,
         "peakTimeDeltaMin": null,
         "twoHourPeakBg": 159
+      },
+      "nightscout": {
+        "treatment_id": "69bded9e911a8ea261e673e3",
+        "last_synced_at": "2026-03-21T06:50:53.298Z"
       }
     },
     "sha256:6ed72824ee6decb8095947b9f945b73d79502425fa571f4b43e334445059ab5e": {
@@ -197,6 +213,10 @@
         "peakBgDelta": null,
         "peakTimeDeltaMin": null,
         "twoHourPeakBg": 159
+      },
+      "nightscout": {
+        "treatment_id": "69bde824911a8ea261e673dc",
+        "last_synced_at": "2026-03-21T06:50:53.298Z"
       }
     },
     "sha256:b42837f2c85166f42a89b3a0747ae381cdd0e0b1aaa70710098249a72ac0e8a0": {
@@ -207,7 +227,11 @@
       "meal_type": "-",
       "title": "Lisinopril 10mg (Scheduled)",
       "photo_urls": [],
-      "outcomes_backfilled": false
+      "outcomes_backfilled": false,
+      "nightscout": {
+        "treatment_id": "69bc8ec7911a8ea261e671e2",
+        "last_synced_at": "2026-03-21T06:54:16.812Z"
+      }
     },
     "sha256:8a0c96404bcf9014fbd2b65cf6c6245698ecf465a610553f5349deee3b270e63": {
       "timestamp": "2026-03-19T20:20:00-07:00",
@@ -217,7 +241,11 @@
       "meal_type": "-",
       "title": "15 minutes walk uphill/downhill",
       "photo_urls": [],
-      "outcomes_backfilled": false
+      "outcomes_backfilled": false,
+      "nightscout": {
+        "treatment_id": "69bcbf44911a8ea261e67216",
+        "last_synced_at": "2026-03-21T06:50:53.298Z"
+      }
     },
     "sha256:adbdd78d8260e91b21f5e51248727c6711f8f9b6591816419f298d7afc35c2e3": {
       "timestamp": "2026-03-19T19:14:00-07:00",
@@ -243,6 +271,10 @@
         "peakBgDelta": null,
         "peakTimeDeltaMin": null,
         "twoHourPeakBg": 204
+      },
+      "nightscout": {
+        "treatment_id": "69bcbf45911a8ea261e67217",
+        "last_synced_at": "2026-03-21T06:50:53.298Z"
       }
     },
     "sha256:8ee35edd68d088216db7c6b670b204e5ee172e4ad6c5cdfb9a8ff7ea1aebfb32": {
@@ -269,6 +301,10 @@
       "gallery": {
         "gallery_id": "manual-2026-03-19T17-36-00-07-00",
         "last_synced_at": "2026-03-21T06:43:36.432Z"
+      },
+      "nightscout": {
+        "treatment_id": "69bde86a911a8ea261e673dd",
+        "last_synced_at": "2026-03-21T06:50:53.298Z"
       }
     },
     "sha256:bf37dcd35bbab25ceb33153a5683e3f3ac06d22859ab32572b0ab6103b69c91d": {
@@ -369,16 +405,6 @@
         "twoHourPeakBg": 172
       }
     },
-    "sha256:60bb5f837788c57b5183814f09d88ae129249c7878394368be923aa48833b586": {
-      "timestamp": "2026-03-19T09:48:00-07:00",
-      "content_hash": "sha256:db5b973ea5cca2ace426389825582904ba8bad76d63d8e2fd837e60e3cfa0792",
-      "user": "Maria Dennis",
-      "category": "Medication",
-      "meal_type": "-",
-      "title": "Metformin 500mg (with breakfast)",
-      "photo_urls": [],
-      "outcomes_backfilled": false
-    },
     "sha256:0d35abd3bf41fba9ec7bff1f46b28a824e3e58d4f6ad34ca3b804d1f7252e6c1": {
       "timestamp": "2026-03-19T09:05:00-07:00",
       "content_hash": "sha256:adeea81dbfadc374278afad835bf8eee9a747020e3b2d632469f7f73be6abc8c",
@@ -465,16 +491,6 @@
       "category": "Activity",
       "meal_type": "-",
       "title": "2 hours heavy gardening",
-      "photo_urls": [],
-      "outcomes_backfilled": false
-    },
-    "sha256:72c4324c74973e8a01fc293d52e7031c13685da7406cedc4864dbc513a6e1775": {
-      "timestamp": "2026-03-18T13:30:00-07:00",
-      "content_hash": "sha256:69bfd5b20bd57a0c1adee4051b683be22f79e5e60f5b9eb45dc07bb8dc02706a",
-      "user": "Maria Dennis",
-      "category": "Medication",
-      "meal_type": "-",
-      "title": "1000mg Metformin HCL (Lunch/Scheduled)",
       "photo_urls": [],
       "outcomes_backfilled": false
     },
@@ -599,16 +615,6 @@
       "photo_urls": [],
       "outcomes_backfilled": false
     },
-    "sha256:60cb48d52d7339c8c727bf960dc79664ac64a979a0634e1d2023a2c1469a8c91": {
-      "timestamp": "2026-03-17T09:30:00-07:00",
-      "content_hash": "sha256:3fde2cfceb8c5562d183e638a54654892035c636f0c6a06922d97e26b87ee9ea",
-      "user": "Maria Dennis",
-      "category": "Medication",
-      "meal_type": "-",
-      "title": "500mg Metformin HCL",
-      "photo_urls": [],
-      "outcomes_backfilled": false
-    },
     "sha256:cfe9cbb249da08228c9004a9f926861c8eba4a95a508f8651bdaf61a895fed75": {
       "timestamp": "2026-03-17T09:05:00-07:00",
       "content_hash": "sha256:4bf4f338e88227482dd295ba464b16cf92603d598434cd271e976b045ebf803e",
@@ -658,16 +664,6 @@
         "page_id": "32585ec7-0668-81d3-bf9d-e930c8e7b9d8",
         "last_synced_at": "2026-03-21T06:43:29.279Z"
       }
-    },
-    "sha256:9189ce4cc6dd522f2b406b76cbdcf9e26755d5ff6ee54dfb48a7bdec8202fafc": {
-      "timestamp": "2026-03-15T18:45:00-07:00",
-      "content_hash": "sha256:09dde98fb6fcfc72a7f03bbf6b82417e7c782714c38febe06fa595e4c384228a",
-      "user": "Maria Dennis",
-      "category": "Medication",
-      "meal_type": "-",
-      "title": "1000mg Metformin HCL (2x 500mg)",
-      "photo_urls": [],
-      "outcomes_backfilled": false
     },
     "sha256:c01ed06bf3f54e7d59b0f149c159aaccb68a14fda3bbc479773d851eec0b1693": {
       "timestamp": "2026-03-16T21:00:00-07:00",
@@ -892,16 +888,6 @@
         "last_synced_at": "2026-03-21T06:43:29.279Z"
       }
     },
-    "sha256:f243cf6250456e6a4bb0751a60264d9d819a7ba89c0a70fdf10e564248964988": {
-      "timestamp": "2026-03-15T09:05:00-07:00",
-      "content_hash": "sha256:a627fa698282ad385b5a5b1a63ac2d72ed8cf15773e94c629c181120137c7bc7",
-      "user": "Maria Dennis",
-      "category": "Medication",
-      "meal_type": "-",
-      "title": "Rosuvastatin 10mg (Scheduled)",
-      "photo_urls": [],
-      "outcomes_backfilled": false
-    },
     "sha256:93fc59cbb3e61cb1e0ae0f2ba0cab0dab7af7bc1b481c5c783a073b37c4528bb": {
       "timestamp": "2026-03-15T09:00:00-07:00",
       "content_hash": "sha256:f7e9c24b8bc8715e5a6b3423aded931a550f59c6e47a79a5ac553ea71a57fec1",
@@ -1000,16 +986,6 @@
       "category": "Activity",
       "meal_type": "-",
       "title": "25 minutes walk",
-      "photo_urls": [],
-      "outcomes_backfilled": false
-    },
-    "sha256:701fd924b2254e5a9a298f8e4a17e0ac6179ecdbd2b02e32a10caa636251350b": {
-      "timestamp": "2026-03-14T14:15:00-07:00",
-      "content_hash": "sha256:1eb7e17f783c8ffc44f5cf21eaeafa3be5b5b69ff66ca1ad847d2f066fbd83e0",
-      "user": "Maria Dennis",
-      "category": "Medication",
-      "meal_type": "-",
-      "title": "500mg Metformin HCL",
       "photo_urls": [],
       "outcomes_backfilled": false
     },
@@ -1367,16 +1343,6 @@
       "photo_urls": [],
       "outcomes_backfilled": false
     },
-    "sha256:d877ab630320b044e84feeb88884edcea1f3182dcc3ec7f27b21acd6dba7db88": {
-      "timestamp": "2026-03-11T13:30:00-07:00",
-      "content_hash": "sha256:809c8453e3fa19b5a82d41c63ecb28debce3c143753981c56b124910ff5aa1d4",
-      "user": "Maria Dennis",
-      "category": "Medication",
-      "meal_type": "-",
-      "title": "500mg Metformin HCL",
-      "photo_urls": [],
-      "outcomes_backfilled": false
-    },
     "sha256:65eb7675e1006e1b421ffe9a3372b3d00ddbedcf8c1a50f574f0551410b6829d": {
       "timestamp": "2026-03-11T13:30:00-07:00",
       "content_hash": "sha256:02fa693205c76f7afaca45ff067921563626af332fc7807b9f46ec7733f85b6a",
@@ -1404,26 +1370,6 @@
       "category": "Food",
       "meal_type": "Breakfast",
       "title": "Breakfast: Small beef and cheese sandwich and one small orange (~32g carbs, ~380 kcal)",
-      "photo_urls": [],
-      "outcomes_backfilled": false
-    },
-    "sha256:e002a48987b447069fd94d9c39d4203afdf81a47e75e77d1650823f97cc753e1": {
-      "timestamp": "2026-03-11T09:56:00-07:00",
-      "content_hash": "sha256:6ceaa7f9b764527d8936afe09ba2b5978de7e26c34188eab06d997d50a105e80",
-      "user": "Maria Dennis",
-      "category": "Medication",
-      "meal_type": "-",
-      "title": "500mg Metformin HCL",
-      "photo_urls": [],
-      "outcomes_backfilled": false
-    },
-    "sha256:dd18082d7b1527a63173aae22d9ba3dd9a78b5c220baac22af415591e197df97": {
-      "timestamp": "2026-03-11T09:56:00-07:00",
-      "content_hash": "sha256:c751c65dc23f5bdda00502002315373739f914ac1debecbabc44e3676eaee40e",
-      "user": "Maria Dennis",
-      "category": "Activity",
-      "meal_type": "-",
-      "title": "30 minutes walk",
       "photo_urls": [],
       "outcomes_backfilled": false
     },
@@ -1807,16 +1753,6 @@
       "photo_urls": [],
       "outcomes_backfilled": false
     },
-    "sha256:ac4d28675e1e1cc5d47e8b0d513662897a9471aa7c3b54bceb4bf513e98b91c3": {
-      "timestamp": "2026-03-07T09:59:00-08:00",
-      "content_hash": "sha256:83092c354184ed9565423999bcc803ea4771b0af54bf2d9688e9b68ad8fd82c0",
-      "user": "Maria Dennis",
-      "category": "Medication",
-      "meal_type": "-",
-      "title": "Lisinopril 10mg, Rosuvastatin 10mg (Routine)",
-      "photo_urls": [],
-      "outcomes_backfilled": false
-    },
     "sha256:92a3276075a0caba75369ceaa934ca973e1f3aaca4c1afc84bacc0269736241e": {
       "timestamp": "2026-03-07T09:59:00-08:00",
       "content_hash": "sha256:884d11e56650d284b17090e33f7d83b67b1a3717debae0018012faddb3943883",
@@ -2147,16 +2083,6 @@
         "last_synced_at": "2026-03-21T06:43:29.279Z"
       }
     },
-    "sha256:69549a6a723cc83e56e0f4c7ae9b89cf08e05ccac1dbd4b534e0e6235f442e41": {
-      "timestamp": "2026-03-05T10:05:00-08:00",
-      "content_hash": "sha256:0ad86f8ef7daadd1fe542869d01f99021959086f85cb56532ef8b1e3bd06a936",
-      "user": "Maria Dennis",
-      "category": "Medication",
-      "meal_type": "-",
-      "title": "Lisinopril 10mg (Routine)",
-      "photo_urls": [],
-      "outcomes_backfilled": false
-    },
     "sha256:2f3fe2900c9e833f512cde786a60df9cf3defa174d9078e36b70696a1ff624c7": {
       "timestamp": "2026-03-04T19:35:00-08:00",
       "content_hash": "sha256:21045984183b894b0467d7bd40d3a2e0cdda5acdce6fb54f8dc05abe778af0fc",
@@ -2417,16 +2343,6 @@
         "last_synced_at": "2026-03-21T06:43:29.279Z"
       }
     },
-    "sha256:cdda7a8da89e4d276e586ad406439741e8d59554abe475dd0e8bcfc1a17ffab0": {
-      "timestamp": "2026-03-03T09:56:00-08:00",
-      "content_hash": "sha256:02fb384be212b6585d10974084b04adb34cd46f53220127ee71f69b1fa82ae9b",
-      "user": "Maria Dennis",
-      "category": "Medication",
-      "meal_type": "-",
-      "title": "Lisinopril 10mg, Rosuvastatin 10mg (Routine)",
-      "photo_urls": [],
-      "outcomes_backfilled": false
-    },
     "sha256:04474d08f812c1f372f20ca8079fcc96f19428b05d08949d38189ec3939ad491": {
       "timestamp": "2026-03-02T20:50:00-08:00",
       "content_hash": "sha256:2dad0d72bb975fb32fa77712f35ed7389bdb64c82298bb1ebc6c71e68c6988a8",
@@ -2534,16 +2450,6 @@
       "category": "Food",
       "meal_type": "Breakfast",
       "title": "Breakfast: Smoked salmon and avocado on two slices of toasted sourdough",
-      "photo_urls": [],
-      "outcomes_backfilled": false
-    },
-    "sha256:09085e41353a94887d08c7982b5e88c0d0d53e9648ea5d543be7443e6b4f6f77": {
-      "timestamp": "2026-03-02T08:49:00-08:00",
-      "content_hash": "sha256:a94c3f54dd3cbf6b90d0e6df964e6d84ee9b8b0679064844118a18e9569fbab5",
-      "user": "Maria Dennis",
-      "category": "Medication",
-      "meal_type": "-",
-      "title": "Lisinopril 10mg (Routine)",
       "photo_urls": [],
       "outcomes_backfilled": false
     },
