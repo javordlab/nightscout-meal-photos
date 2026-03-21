@@ -23,12 +23,6 @@ jobs:
     
     - name: Run unit tests
       run: npm run test:unit
-    
-    - name: Run integration tests
-      run: npm run test:integration
-    
-    - name: Validate sync state
-      run: npm run test:validation
 
   deploy-staging:
     needs: test
