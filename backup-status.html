@@ -178,7 +178,15 @@
 
             const labels = filtered.map(p => {
                 const d = new Date(p.t);
-                return hours <= 72 ? d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : d.toLocaleDateString([], { month: 'numeric', day: 'numeric' });
+                return hours <= 72 ? d.toLocaleTimeString([], { 
+                    timeZone: 'America/Los_Angeles',
+                    hour: '2-digit', 
+                    minute: '2-digit' 
+                }) : d.toLocaleDateString([], { 
+                    timeZone: 'America/Los_Angeles',
+                    month: 'numeric', 
+                    day: 'numeric' 
+                });
             });
 
             const data = filtered.map(p => p.v);
@@ -224,7 +232,7 @@
                 dashboardData = await response.json();
                 const data = dashboardData;
                 
-                document.getElementById('last-updated').textContent = `Last sync: ${new Date(data.lastUpdated).toLocaleString()}`;
+                document.getElementById('last-updated').textContent = `Last sync: ${new Date(data.lastUpdated).toLocaleString([], { timeZone: 'America/Los_Angeles' })}`;
                 document.getElementById('count-label').textContent = `${data.backups.length} snapshots tracked`;
                 
                 // ... (shipment and usage code remains same)
@@ -362,7 +370,7 @@
                 list.innerHTML = data.backups.map(b => `
                     <tr class="hover:bg-gray-50 transition-colors">
                         <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                            ${new Date(b.created).toLocaleDateString()} <span class="text-gray-400 font-normal ml-1">${new Date(b.created).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</span>
+                            ${new Date(b.created).toLocaleDateString([], { timeZone: 'America/Los_Angeles' })} <span class="text-gray-400 font-normal ml-1">${new Date(b.created).toLocaleTimeString([], {timeZone: 'America/Los_Angeles', hour: '2-digit', minute:'2-digit'})}</span>
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600 font-mono">
                             ${b.filename}
