@@ -7,8 +7,9 @@
     "photo": "https://iili.io/qe1AVUl.jpg",
     "carbs": 25,
     "cals": 200,
-    "delta": null,
-    "peak": null
+    "delta": 26,
+    "peak": 156,
+    "preMeal": 130
   },
   {
     "id": "manual-2026-03-20-13:17 -07:00",
@@ -18,8 +19,9 @@
     "photo": "https://iili.io/qenMa9f.jpg",
     "carbs": 13,
     "cals": 50,
-    "delta": null,
-    "peak": null
+    "delta": 14,
+    "peak": 133,
+    "preMeal": 119
   },
   {
     "id": "manual-2026-03-20-13:16 -07:00",
@@ -29,8 +31,9 @@
     "photo": "https://iili.io/qenMcu4.jpg",
     "carbs": 22,
     "cals": 290,
-    "delta": null,
-    "peak": null
+    "delta": 14,
+    "peak": 133,
+    "preMeal": 119
   },
   {
     "id": "manual-2026-03-20-09:14 -07:00",
@@ -51,8 +54,9 @@
     "photo": "https://iili.io/qenMlwl.jpg",
     "carbs": 25,
     "cals": 300,
-    "delta": null,
-    "peak": null
+    "delta": 31,
+    "peak": 142,
+    "preMeal": 111
   },
   {
     "id": "32985ec7-0668-8138-a753-fd2bc64f3b4f",
