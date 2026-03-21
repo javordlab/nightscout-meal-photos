@@ -1,68 +1,50 @@
 #!/usr/bin/env node
-// generate_notion_gallery.js - Generate gallery JSON from sync_state
+// generate_notion_gallery.js - Generate gallery JSON from normalized health log + sync_state outcomes
 
 const fs = require('fs');
 const path = require('path');
 
+const NORMALIZED_PATH = path.join(__dirname, '..', 'data', 'health_log.normalized.json');
 const SYNC_STATE_PATH = path.join(__dirname, '..', 'data', 'sync_state.json');
 const GALLERY_PATH = path.join(__dirname, '..', 'nightscout-meal-photos', 'data', 'notion_meals.json');
 
 function generateGallery() {
   console.log('Generating Notion gallery data...');
   
-  const state = JSON.parse(fs.readFileSync(SYNC_STATE_PATH, 'utf8'));
+  const normalized = JSON.parse(fs.readFileSync(NORMALIZED_PATH, 'utf8'));
+  const syncState = JSON.parse(fs.readFileSync(SYNC_STATE_PATH, 'utf8'));
   const gallery = [];
   
-  for (const [key, entry] of Object.entries(state.entries)) {
-    // Only include entries with photos (sync_state uses snake_case)
-    const photoUrls = entry.photo_urls || entry.photoUrls || [];
-    if (photoUrls.length === 0) continue;
-    
-    // Parse predictions from title if present
-    let predictedPeak = null;
-    let predictedTime = null;
-    
-    const title = entry.title || '';
-    const predMatch = title.match(/Pred:\s*(\d+)-?(\d+)?\s*mg\/dL/);
-    if (predMatch) {
-      if (predMatch[2]) {
-        // Range like "145-155 mg/dL"
-        predictedPeak = Math.round((parseInt(predMatch[1]) + parseInt(predMatch[2])) / 2);
-      } else {
-        // Single value like "150 mg/dL"
-        predictedPeak = parseInt(predMatch[1]);
-      }
+  // Build lookup for actual outcomes from sync_state
+  const outcomesByKey = {};
+  for (const [key, entry] of Object.entries(syncState.entries)) {
+    if (entry.actual_outcomes) {
+      outcomesByKey[key] = entry.actual_outcomes;
     }
+  }
+  
+  for (const entry of normalized.entries) {
+    // Only include entries with photos
+    if (!entry.photoUrls || entry.photoUrls.length === 0) continue;
     
-    const timeMatch = title.match(/@\s*(\d+):(\d+)\s*(AM|PM)/);
-    if (timeMatch) {
-      // Use the timestamp from entry and replace time
-      const date = new Date(entry.timestamp);
-      let hours = parseInt(timeMatch[1]);
-      const mins = timeMatch[2];
-      const ampm = timeMatch[3];
-      
-      if (ampm === 'PM' && hours !== 12) hours += 12;
-      if (ampm === 'AM' && hours === 12) hours = 0;
-      
-      date.setHours(hours, parseInt(mins), 0, 0);
-      predictedTime = date.toISOString();
-    }
+    // Get actual outcomes from sync_state if available
+    const actualOutcomes = outcomesByKey[entry.entryKey] || {};
+    const predicted = entry.predicted || {};
     
     gallery.push({
-      id: `notion-${key.slice(0, 20)}`,
-      entry_key: key,
-      title: title.replace(/\s*\(Pred:.*?\)/, '').trim(), // Remove prediction from title
+      id: entry.entryKey.slice(0, 30),
+      entry_key: entry.entryKey,
+      title: entry.title,
       type: entry.mealType || entry.category,
       date: entry.timestamp,
-      photo: photoUrls[0],
+      photo: entry.photoUrls[0],
       carbs: entry.carbsEst,
       cals: entry.caloriesEst,
-      preMeal: entry.preMeal,
-      delta: entry.delta,
-      peak: entry.peak,
-      predictedPeak: predictedPeak,
-      predictedTime: predictedTime
+      preMeal: actualOutcomes.preMealBg || actualOutcomes.pre_meal_bg,
+      delta: actualOutcomes.bgDelta || actualOutcomes.bg_delta,
+      peak: actualOutcomes.peakBg || actualOutcomes.peak_bg,
+      predictedPeak: predicted.peakBgText || null,
+      predictedTime: predicted.peakTimeText || null
     });
   }
   
