@@ -10,20 +10,10 @@
     "cals": 300,
     "protein": null,
     "predictedPeak": "180-200 mg/dL",
-    "predictedTime": "2:45-3:15 PM"
-  },
-  {
-    "id": "sha256:a4d105c8f914630d5768b98",
-    "entry_key": "sha256:a4d105c8f914630d5768b9890e5eab13b4296a5ac4cc4a5c9bdaee9d0719347e",
-    "title": "Snack: Avocado toast with salmon and half apple",
-    "type": "Snack",
-    "date": "2026-03-21T13:21:00-07:00",
-    "photo": "https://iili.io/qkQfYYl.jpg",
-    "carbs": 23,
-    "cals": 320,
-    "protein": null,
-    "predictedPeak": "165-180 mg/dL",
-    "predictedTime": "3:00-3:30 PM"
+    "predictedTime": "2:45-3:15 PM",
+    "preMeal": 140,
+    "peak": 165,
+    "delta": 25
   },
   {
     "id": "sha256:8bc99e2c6d3212f3a71121c",
@@ -36,7 +26,10 @@
     "cals": 245,
     "protein": null,
     "predictedPeak": "145-155 mg/dL",
-    "predictedTime": "11:30 AM-12:00 PM"
+    "predictedTime": "11:30 AM-12:00 PM",
+    "preMeal": 117,
+    "peak": 161,
+    "delta": 44
   },
   {
     "id": "sha256:98f968dabdc11d0dd3bbcc6",
