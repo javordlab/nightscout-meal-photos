@@ -191,9 +191,16 @@
 
             const data = filtered.map(p => p.v);
 
+            // Calculate Median
+            const sorted = [...data].sort((a, b) => a - b);
+            const median = sorted.length % 2 === 0 
+                ? (sorted[sorted.length / 2 - 1] + sorted[sorted.length / 2]) / 2
+                : sorted[Math.floor(sorted.length / 2)];
+
             if (charts.glucose) {
                 charts.glucose.data.labels = labels;
                 charts.glucose.data.datasets[0].data = data;
+                charts.glucose.data.datasets[1].data = Array(data.length).fill(median);
                 charts.glucose.update('none');
             } else {
                 const ctx = document.getElementById('glucoseTrendChart').getContext('2d');
@@ -201,16 +208,28 @@
                     type: 'line',
                     data: {
                         labels: labels,
-                        datasets: [{
-                            label: 'Glucose (mg/dL)',
-                            data: data,
-                            borderColor: '#3B82F6',
-                            backgroundColor: 'rgba(59, 130, 246, 0.1)',
-                            borderWidth: 2,
-                            pointRadius: hours <= 48 ? 2 : 0,
-                            fill: true,
-                            tension: 0.4
-                        }]
+                        datasets: [
+                            {
+                                label: 'Glucose (mg/dL)',
+                                data: data,
+                                borderColor: '#3B82F6',
+                                backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                                borderWidth: 2,
+                                pointRadius: hours <= 48 ? 2 : 0,
+                                fill: true,
+                                tension: 0.4
+                            },
+                            {
+                                label: 'Median',
+                                data: Array(data.length).fill(median),
+                                borderColor: 'rgba(239, 68, 68, 0.5)',
+                                borderWidth: 2,
+                                borderDash: [5, 5],
+                                pointRadius: 0,
+                                fill: false,
+                                tension: 0
+                            }
+                        ]
                     },
                     options: {
                         responsive: true,
