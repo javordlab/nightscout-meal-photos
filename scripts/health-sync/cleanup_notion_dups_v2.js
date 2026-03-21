@@ -1,111 +1,63 @@
-const https = require('https');
+const { Client } = require("@notionhq/client");
 
-const NOTION_KEY = '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';
+const notion = new Client({
+  auth: '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',
+});
 
-function notionSearch(query) {
-  return new Promise((resolve, reject) => {
-    const data = JSON.stringify({ query, page_size: 100 });
-    const options = {
-      hostname: 'api.notion.com',
-      path: '/v1/search',
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${NOTION_KEY}`,
-        'Notion-Version': '2025-09-03',
-        'Content-Type': 'application/json',
-        'Content-Length': Buffer.byteLength(data)
-      }
-    };
-    const req = https.request(options, (res) => {
-      let d = '';
-      res.on('data', c => d += c);
-      res.on('end', () => { try { resolve(JSON.parse(d)); } catch { resolve({}); } });
-    });
-    req.on('error', reject);
-    req.write(data);
-    req.end();
+const DB_ID = '31685ec7-0668-813e-8b9e-c5b4d5d70fa5';
+
+async function cleanup() {
+  console.log('🧹 Fetching entries for cleanup using official SDK...');
+  const res = await notion.databases.query({
+    database_id: DB_ID,
+    page_size: 100,
+    filter: {
+      property: 'Date',
+      date: {
+        on_or_after: '2026-03-19',
+      },
+    },
   });
-}
 
-function notionArchive(pageId) {
-  return new Promise((resolve) => {
-    const data = JSON.stringify({ archived: true });
-    const options = {
-      hostname: 'api.notion.com',
-      path: `/v1/pages/${pageId}`,
-      method: 'PATCH',
-      headers: {
-        'Authorization': `Bearer ${NOTION_KEY}`,
-        'Notion-Version': '2025-09-03',
-        'Content-Type': 'application/json',
-        'Content-Length': Buffer.byteLength(data)
-      }
-    };
-    const req = https.request(options, (res) => {
-      res.on('end', () => resolve(res.statusCode));
-      res.on('data', () => {});
-    });
-    req.on('error', () => resolve(0));
-    req.write(data);
-    req.end();
-  });
-}
+  const entries = res.results;
+  console.log(`Found ${entries.length} potential entries.`);
 
-async function main() {
-  // Search for all March 19-21 entries
-  const queries = ['Rosuvastatin', 'Lisinopril', 'Protein ball', 'Half apple', 'Prosciutto', 'Mixed nuts', 'Smoked salmon', 'walk uphill', 'Pork and rice'];
-  
-  const allPages = [];
-  
-  for (const query of queries) {
-    const result = await notionSearch(query);
-    const pages = result.results?.filter(p => {
-      const date = p.properties?.Date?.date?.start;
-      return (date?.startsWith('2026-03-19') || date?.startsWith('2026-03-20') || date?.startsWith('2026-03-21')) && !p.archived;
-    }) || [];
-    allPages.push(...pages);
-    await new Promise(r => setTimeout(r, 100));
-  }
-  
-  console.log(`Found ${allPages.length} pages from March 19-21`);
-  
-  // Group by date+title
-  const byKey = {};
-  allPages.forEach(p => {
-    const title = p.properties?.Entry?.title?.[0]?.plain_text || 
-                  p.properties?.title?.title?.[0]?.plain_text || '';
-    const date = p.properties?.Date?.date?.start || '';
+  const seen = new Map();
+  const toArchive = [];
+
+  for (const page of entries) {
+    const title = page.properties?.Entry?.title?.[0]?.plain_text || 'Untitled';
+    const date = page.properties?.Date?.date?.start;
     const key = `${date}|${title}`;
-    if (!byKey[key]) byKey[key] = [];
-    byKey[key].push(p);
-  });
-  
-  // Find duplicates
-  const duplicates = Object.entries(byKey).filter(([k, v]) => v.length > 1);
-  console.log(`\nFound ${duplicates.length} duplicate groups`);
-  
-  // Archive duplicates
-  let archived = 0;
-  for (const [key, pages] of duplicates) {
-    console.log(`\n${key}:`);
-    console.log(`  ${pages.length} copies`);
-    console.log(`  Keeping: ${pages[0].id}`);
-    
-    for (let i = 1; i < pages.length; i++) {
-      console.log(`  Archiving: ${pages[i].id}`);
-      await notionArchive(pages[i].id);
-      archived++;
-      await new Promise(r => setTimeout(r, 300));
+
+    if (seen.has(key)) {
+      const existing = seen.get(key);
+      const existingScore = (existing.properties?.Photo?.url ? 1 : 0) + (existing.properties?.['Carbs (est)']?.number ? 1 : 0);
+      const currentScore = (page.properties?.Photo?.url ? 1 : 0) + (page.properties?.['Carbs (est)']?.number ? 1 : 0);
+
+      if (currentScore > existingScore) {
+        toArchive.push(existing.id);
+        seen.set(key, page);
+      } else {
+        toArchive.push(page.id);
+      }
+    } else {
+      seen.set(key, page);
     }
   }
-  
-  console.log(`\n\nArchived ${archived} duplicates`);
-  
-  // Show remaining unique entries
-  console.log('\nUnique entries after cleanup:');
-  Object.entries(byKey).forEach(([key, pages]) => {
-    console.log(`  1x | ${key}`);
-  });
+
+  console.log(`Identified ${toArchive.length} duplicates to archive.`);
+
+  for (const id of toArchive) {
+    console.log(`Archiving: ${id}`);
+    await notion.pages.update({
+      page_id: id,
+      archived: true,
+    });
+    await new Promise(r => setTimeout(r, 200));
+  }
+
+  console.log('✅ Cleanup finished.');
 }
 
-main().catch(console.error);
+cleanup().catch(console.error);

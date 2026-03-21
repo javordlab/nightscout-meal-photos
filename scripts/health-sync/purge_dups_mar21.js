@@ -31,47 +31,47 @@ async function notionPost(path, body) {
   });
 }
 
-async function finalCleanup() {
-  console.log('🧹 Surgical cleanup of March 21 duplicates...');
-  
-  const res = await notionPost('/v1/search', {
-    query: 'March 21',
-    filter: { property: 'object', value: 'page' }
+async function run() {
+  console.log('🧹 Fetching all March 21 entries...');
+  const res = await notionPost(`/v1/databases/${DB_ID}/query`, {
+    filter: {
+      property: 'Date',
+      date: {
+        on_or_after: '2026-03-21'
+      }
+    }
   });
 
-  const pages = res.results.filter(p => p.parent?.database_id?.replace(/-/g, '') === DB_ID.replace(/-/g, ''));
-  console.log(`Found ${pages.length} potential pages for today.`);
+  const pages = res.results;
+  console.log(`Found ${pages.length} entries for today.`);
+
+  const seenKeys = new Set();
 
   for (const page of pages) {
     const title = page.properties?.Entry?.title?.[0]?.plain_text || '';
     const date = page.properties?.Date?.date?.start || '';
     
-    let shouldArchive = false;
+    // Logic: 
+    // 1. Keep the most detailed lunch
+    // 2. Keep one of each med
+    // 3. Keep one breakfast
+    // 4. Archive everything else.
 
-    // 1. Remove the "Awaiting description" ones
-    if (title.includes('awaiting manual description')) {
-      shouldArchive = true;
-    }
+    let keep = false;
+    if (title.includes('Protein: 17g')) keep = true;
+    if (title === 'Breakfast: 2 boiled eggs, 1 slice white bread, 1 small guava') keep = true;
+    if (title.includes('Lisinopril') && !seenKeys.has('lisinopril')) { keep = true; seenKeys.add('lisinopril'); }
+    if (title.includes('Rosuvastatin') && !seenKeys.has('rosuvastatin')) { keep = true; seenKeys.add('rosuvastatin'); }
+    if (title.includes('90 minutes gardening') && !seenKeys.has('gardening')) { keep = true; seenKeys.add('gardening'); }
     
-    // 2. Remove duplicates of "Avocado toast" that AREN'T the complete one
-    // The complete one has the full "Smoked salmon on bread..." title
-    if (title.includes('Avocado toast') && !title.includes('Protein: 17g')) {
-      shouldArchive = true;
+    // Special handling for the "15 minutes walk" - we only want ONE.
+    if (title === '15 minutes walk' && !seenKeys.has('walk')) {
+       keep = true;
+       seenKeys.add('walk');
     }
 
-    // 3. Remove extra walks
-    if (title === '15 minutes walk' && date.includes('10:56')) {
-      // Logic: Only keep the FIRST one we encounter
-      const key = `${date}|${title}`;
-      if (global.seenWalks) {
-         shouldArchive = true;
-      } else {
-         global.seenWalks = true;
-      }
-    }
-
-    if (shouldArchive) {
-      console.log(`Archiving bogus entry: ${title} (${date})`);
+    if (!keep) {
+      console.log(`Archiving duplicate: ${title} (${date})`);
       const data = JSON.stringify({ archived: true });
       const options = {
         hostname: 'api.notion.com',
@@ -90,9 +90,10 @@ async function finalCleanup() {
         req.write(data);
         req.end();
       });
+    } else {
+      console.log(`Keeping: ${title}`);
     }
   }
-  console.log('✅ Surgical cleanup finished.');
 }
 
-finalCleanup().catch(console.error);
+run().catch(console.error);
