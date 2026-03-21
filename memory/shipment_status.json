@@ -1,16 +1,1 @@
-{
-  "CH499405530CA": {
-    "carrier": "Canada Post",
-    "status": "In transit",
-    "expected_delivery": "2026-03-17",
-    "last_update": "2026-03-14T02:16:00",
-    "last_event": "Item processed - Bethpage, USA"
-  },
-  "1ZB8673X0413940373": {
-    "carrier": "UPS",
-    "status": "On the Way",
-    "expected_delivery": "2026-03-16",
-    "last_update": "2026-03-14T02:16:00",
-    "last_event": "Clearance in Progress - 03/13/2026, 3:47 A.M."
-  }
-}
+{}
