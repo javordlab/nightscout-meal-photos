@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-21T23:44:07.636Z",
+  "lastUpdated": "2026-03-21T23:46:43.884Z",
   "shipments": [],
   "tokenUsage": [
     {
@@ -7,7 +7,7 @@
       "bucketType": "250K",
       "managedUsed": 100000,
       "managedRemaining": 150000,
-      "oauthUsed": 45310994,
+      "oauthUsed": 45358124,
       "percentRemaining": 60
     },
     {
@@ -30148,6 +30148,13 @@
   ],
   "backups": [
     {
+      "filename": "2026-03-21.sql.gz",
+      "type": "Daily (7 days)",
+      "size": "156.92 KB",
+      "created": "2026-03-21T23:46:43.718Z",
+      "path": "daily/2026-03-21.sql.gz"
+    },
+    {
       "filename": "2026-w12.sql.gz",
       "type": "Weekly (1 month)",
       "size": "118.54 KB",
@@ -30174,20 +30181,6 @@
       "size": "107.15 KB",
       "created": "2026-03-14T11:20:01.504Z",
       "path": "daily/2026-03-14.sql.gz"
-    },
-    {
-      "filename": "2026-03-13.sql.gz",
-      "type": "Daily (7 days)",
-      "size": "101.56 KB",
-      "created": "2026-03-13T11:20:01.908Z",
-      "path": "daily/2026-03-13.sql.gz"
-    },
-    {
-      "filename": "2026-03-12.sql.gz",
-      "type": "Daily (7 days)",
-      "size": "6.49 KB",
-      "created": "2026-03-13T03:13:05.929Z",
-      "path": "daily/2026-03-12.sql.gz"
     }
   ]
 }
