@@ -79,6 +79,7 @@ function entryToNightscout(entry) {
   const notes = [
     entry.title,
     entry.carbsEst ? `(~${entry.carbsEst}g carbs, ~${entry.caloriesEst} kcal)` : null,
+    entry.proteinEst ? `(~${entry.proteinEst}g protein)` : null,
     photo ? `📷 ${photo}` : null,
     `[entry_key:${entry.entryKey}]`
   ].filter(Boolean).join(' ');
@@ -87,6 +88,7 @@ function entryToNightscout(entry) {
     enteredBy: 'javordclaw-ssot',
     eventType,
     carbs: entry.carbsEst,
+    protein: entry.proteinEst,
     notes,
     created_at: entry.timestamp
   };
@@ -170,6 +172,7 @@ function entryToNotion(entry) {
     'Meal Type': { select: { name: entry.mealType || '-' } },
     'Carbs (est)': entry.carbsEst != null ? { number: entry.carbsEst } : null,
     'Calories (est)': entry.caloriesEst != null ? { number: entry.caloriesEst } : null,
+    'Protein (est)': entry.proteinEst != null ? { number: entry.proteinEst } : null,
     Photo: photo ? { url: photo } : null
   };
   Object.keys(properties).forEach(k => {

@@ -13,6 +13,7 @@ const { loadSyncState, saveSyncState, upsertEntry } = require('./sync_state');
 const PHOTO_REGEX = /\[📷\]\((https?:\/\/[^)]+)\)/g;
 const PRED_REGEX = /\(Pred:\s*([^@)]+?)\s*@\s*([^)]+)\)/i;
 const BG_REGEX = /\(BG:\s*([^)]*?)\)/i;
+const PROTEIN_REGEX = /\(Protein:\s*([^)]+?)\)/i;
 
 function sha256(value) {
   return `sha256:${crypto.createHash('sha256').update(value).digest('hex')}`;
@@ -59,9 +60,14 @@ function extractBgText(entryText) {
   return bg ? cleanWhitespace(bg[1]) : null;
 }
 
+function extractProtein(entryText) {
+  const protein = entryText.match(PROTEIN_REGEX);
+  return protein ? parseNumber(protein[1]) : null;
+}
+
 function stripMetadata(entryText) {
   let text = stripPhotos(entryText);
-  text = cleanWhitespace(text.replace(BG_REGEX, '').replace(PRED_REGEX, ''));
+  text = cleanWhitespace(text.replace(BG_REGEX, '').replace(PRED_REGEX, '').replace(PROTEIN_REGEX, ''));
   return text;
 }
 
@@ -72,8 +78,6 @@ function parseNumber(value) {
 }
 
 function inferOffset(dateValue) {
-  // Use a fixed rule for America/Los_Angeles 2026
-  // DST 2026 starts March 8, ends Nov 1
   const d = new Date(`${dateValue}T00:00:00Z`);
   const dstStart = new Date('2026-03-08T00:00:00Z');
   const dstEnd = new Date('2026-11-01T00:00:00Z');
@@ -84,13 +88,11 @@ function toIso(date, timeCell) {
   const trimmed = cleanWhitespace(timeCell);
   const parts = trimmed.split(' ');
   const timeOnly = parts[0];
-  // Priority: 1. Explicit offset in log, 2. Determined LA offset
   const offset = parts[1] || inferOffset(date);
   return `${date}T${timeOnly}:00${offset}`;
 }
 
 function buildEntryKey(entry) {
-  // Match unified_sync.js: timestamp|user|title (original title, not normalized)
   const basis = `${entry.timestamp}|${entry.user}|${entry.title}`;
   return sha256(basis);
 }
@@ -130,6 +132,7 @@ function parseRow(line, lineNumber) {
   const photos = extractPhotos(entryText);
   const predictions = extractPredictions(entryText);
   const bgText = extractBgText(entryText);
+  const protein = extractProtein(entryText);
   const title = stripMetadata(entryText);
 
   const normalized = {
@@ -147,11 +150,13 @@ function parseRow(line, lineNumber) {
     title,
     notes: cleanWhitespace([
       bgText ? `BG: ${bgText}` : null,
+      protein ? `Protein: ${protein}g` : null,
       predictions.raw ? predictions.raw.replace(/^\(|\)$/g, '') : null
     ].filter(Boolean).join('; ')) || null,
     photoUrls: photos,
     carbsEst: carbs,
     caloriesEst: cals,
+    proteinEst: protein,
     predicted: {
       peakBgText: predictions.peakBgText,
       peakTimeText: predictions.peakTimeText
@@ -180,65 +185,47 @@ function parseRow(line, lineNumber) {
 }
 
 function main() {
-  if (!fs.existsSync(LOG_PATH)) {
-    throw new Error(`health_log.md not found: ${LOG_PATH}`);
+  const content = fs.readFileSync(LOG_PATH, 'utf8');
+  const lines = content.split('\n');
+  const entries = [];
+
+  for (let i = 0; i < lines.length; i++) {
+    const row = parseRow(lines[i], i + 1);
+    if (row) entries.push(row);
   }
 
-  const raw = fs.readFileSync(LOG_PATH, 'utf8');
-  const lines = raw.split('\n');
-  const entries = [];
-  const syncState = loadSyncState(SYNC_STATE_PATH);
-
-  lines.forEach((line, index) => {
-    if (!line.trim().startsWith('| 202')) return;
-    const parsed = parseRow(line, index + 1);
-    if (!parsed) return;
-
-    const existingState = syncState.entries[parsed.entryKey] || {};
-    parsed.sync = {
-      nightscout: existingState.nightscout?.treatment_id ? 'linked' : 'pending',
-      notion: existingState.notion?.page_id ? 'linked' : 'pending',
-      gallery: existingState.gallery?.gallery_id ? 'linked' : 'pending',
-      outcomesBackfilled: Boolean(existingState.outcomes_backfilled)
-    };
-
-    upsertEntry(syncState, parsed.entryKey, {
-      timestamp: parsed.timestamp,
-      content_hash: parsed.contentHash,
-      user: parsed.user,
-      category: parsed.category,
-      meal_type: parsed.mealType,
-      title: parsed.title,
-      photo_urls: parsed.photoUrls,
-      outcomes_backfilled: existingState.outcomes_backfilled || false
-    });
-
-    entries.push(parsed);
-  });
-
-  fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true });
-  fs.writeFileSync(OUTPUT_PATH, JSON.stringify({
+  const output = {
     version: 1,
     generatedAt: new Date().toISOString(),
     source: LOG_PATH,
     entryCount: entries.length,
     entries
-  }, null, 2) + '\n');
+  };
 
-  saveSyncState(SYNC_STATE_PATH, syncState);
-
+  fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true });
+  fs.writeFileSync(OUTPUT_PATH, JSON.stringify(output, null, 2));
   console.log(`Normalized ${entries.length} entries.`);
   console.log(`Wrote ${OUTPUT_PATH}`);
+
+  const state = loadSyncState(SYNC_STATE_PATH);
+  for (const entry of entries) {
+    upsertEntry(state, entry.entryKey, {
+      timestamp: entry.timestamp,
+      content_hash: entry.contentHash,
+      user: entry.user,
+      category: entry.category,
+      meal_type: entry.mealType,
+      title: entry.title,
+      photo_urls: entry.photoUrls,
+      outcomes_backfilled: entry.actual?.peakBg != null
+    });
+  }
+  saveSyncState(SYNC_STATE_PATH, state);
   console.log(`Updated ${SYNC_STATE_PATH}`);
 }
 
 if (require.main === module) {
-  try {
-    main();
-  } catch (error) {
-    console.error(error.message);
-    process.exit(1);
-  }
+  main();
 }
 
 module.exports = {

@@ -40,6 +40,7 @@ function generateGallery() {
       photo: entry.photoUrls[0],
       carbs: entry.carbsEst,
       cals: entry.caloriesEst,
+      protein: entry.proteinEst,
       preMeal: actualOutcomes.preMealBg || actualOutcomes.pre_meal_bg,
       delta: actualOutcomes.bgDelta || actualOutcomes.bg_delta,
       peak: actualOutcomes.peakBg || actualOutcomes.peak_bg,
