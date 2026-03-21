@@ -1,0 +1,2890 @@
+{
+  "version": 1,
+  "entries": {
+    "sha256:2e8efec1ca6bacb551974eaa060c7251a841fdb56d80dfa3dc91b960b644c79f": {
+      "timestamp": "2026-03-21T02:00:00-07:00",
+      "content_hash": "sha256:3fadc5214666af0404b92266a27f811b15a1298df3836437789dc87b35101073",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: [Photo received - awaiting manual description] (Pred: TBD)",
+      "photo_urls": [
+        "https://iili.io/qeh6rzX.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:d76271b4338e94c7e0ce475bcd7bba3aa18c6a3d1fbf86dc1cbd85c87110cc79": {
+      "timestamp": "2026-03-21T01:45:00-07:00",
+      "content_hash": "sha256:17f9d78385b884a58cca3b47ef9743b049c43d49140401e421a959c6deba8d74",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: [Photo received - awaiting manual description] (Pred: TBD)",
+      "photo_urls": [
+        "https://iili.io/qeh3GSI.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:118c7285a11e21fe83e29f92749c25016ea43e33e47ca9576872b46d95d29c9c": {
+      "timestamp": "2026-03-21T09:05:00-07:00",
+      "content_hash": "sha256:558d9d8205ba1f69260dd2718a580234aee83f46ab0632bb6b4f5ad9ea0b8829",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Rosuvastatin 10mg (Scheduled)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:3ec90496fac8b55d20e30162ed690b6891c3c544e517bc62577b32627f6eb934": {
+      "timestamp": "2026-03-21T09:00:00-07:00",
+      "content_hash": "sha256:09c7aff358f8159e81584b43e8f621a1dd616db388117857384dbd5986438581",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Lisinopril 10mg (Scheduled)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:f39d7d497fb6683c153caa66317ede165443390a8ec5f2bf1c0c982f386ddb65": {
+      "timestamp": "2026-03-20T16:13:00-07:00",
+      "content_hash": "sha256:fd1ad9af3289c9b655bb25e549432e23f8cf369a44f656c3cb26cf977432aa77",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: Protein ball/hazelnut chocolate truffle",
+      "photo_urls": [
+        "https://iili.io/qe1AVUl.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:db6e4fde67fc088cbe504229ca35ef42f483cea87e3e8421dc020904bb0a47e3": {
+      "timestamp": "2026-03-20T13:17:00-07:00",
+      "content_hash": "sha256:48dad3ad8e0544c4720fb6f3cc2c9240200b927da302a09b8a9220b07cd36dcc",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: Half apple (~75g)",
+      "photo_urls": [
+        "https://iili.io/qenMa9f.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:a32ff272165e64504eea1c0ccab9645bdaa9a9792bb4a3f7416bec06a55aac38": {
+      "timestamp": "2026-03-20T13:16:00-07:00",
+      "content_hash": "sha256:77efce670155acd74334abe454b0ce6de3fef9cf7a31d94883ba7743aae23887",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Lunch",
+      "title": "Lunch: Prosciutto and brie on toasted ciabatta with milk (~5oz)",
+      "photo_urls": [
+        "https://iili.io/qenMcu4.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:4639dd81725480e2244fb6f0b1ae79bf780154e0c6d35726bbd04212aa397bd0": {
+      "timestamp": "2026-03-20T09:14:00-07:00",
+      "content_hash": "sha256:1cd453ef52ca0b828c7201dfae73959866db14bedabd5858d330287768ce022c",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: Mixed nuts (pecans, Brazil nuts, hazelnuts) + dried goji berries",
+      "photo_urls": [
+        "https://iili.io/qenM0t2.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:6ed72824ee6decb8095947b9f945b73d79502425fa571f4b43e334445059ab5e": {
+      "timestamp": "2026-03-20T09:04:00-07:00",
+      "content_hash": "sha256:72d520c1119f5835cebd606c1f5874c62a1efb8964309f5fa173387818e2ac15",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: Smoked salmon on ciabatta with cream cheese/butter spread + small guava",
+      "photo_urls": [
+        "https://iili.io/qenMlwl.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:b42837f2c85166f42a89b3a0747ae381cdd0e0b1aaa70710098249a72ac0e8a0": {
+      "timestamp": "2026-03-20T09:00:00-07:00",
+      "content_hash": "sha256:bcca8df8a97e41714f9a8b73cec693a41aced591a3c1a575dae4127181617a73",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Lisinopril 10mg (Scheduled)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:8a0c96404bcf9014fbd2b65cf6c6245698ecf465a610553f5349deee3b270e63": {
+      "timestamp": "2026-03-19T20:20:00-07:00",
+      "content_hash": "sha256:a65ccb4b45c727ab0c4972f352209dd05165d830633aa41e9daf20e099aeb051",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "15 minutes walk uphill/downhill",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:adbdd78d8260e91b21f5e51248727c6711f8f9b6591816419f298d7afc35c2e3": {
+      "timestamp": "2026-03-19T19:14:00-07:00",
+      "content_hash": "sha256:79daba3115b45ac697a07a374fdd6688fc68fa00754939989621ab1f7fc8e8df",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: Pork and rice burrito with beans/cheese, avocado slices",
+      "photo_urls": [
+        "https://iili.io/qNM744f.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:8ee35edd68d088216db7c6b670b204e5ee172e4ad6c5cdfb9a8ff7ea1aebfb32": {
+      "timestamp": "2026-03-19T17:36:00-07:00",
+      "content_hash": "sha256:ac2cb352608fc533b6165958868ac7c27196e9e150e5a26cf765e6bf7febadb3",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: Strawberries and guava",
+      "photo_urls": [
+        "https://iili.io/qexq4LB.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:bf37dcd35bbab25ceb33153a5683e3f3ac06d22859ab32572b0ab6103b69c91d": {
+      "timestamp": "2026-03-19T16:09:00-07:00",
+      "content_hash": "sha256:c90194d5c6207be78b3321db678c30419778e8de67e8ca23182fb64026ca4118",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "90 minutes heavy gardening",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:4229a5d2b9e82a241f9fd97022bcd88c8044e125a018f1d3f0eaa5d2bbd39f2d": {
+      "timestamp": "2026-03-19T14:07:00-07:00",
+      "content_hash": "sha256:d1f37106c1f5885936f566441935b74aeaddba3fdf3627a46fab00b97e6121e1",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: 2 dried dragon fruit slices",
+      "photo_urls": [
+        "https://iili.io/qN52Ct2.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:a68b5b624e48c66fe79794df11cf946811c06479e8ef6e85a1a28944cd396ef2": {
+      "timestamp": "2026-03-19T13:55:00-07:00",
+      "content_hash": "sha256:1d18bdebea53aa30958a566b15fe8a4e15257f0ffa7de0b015839a150842619b",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Lunch",
+      "title": "Lunch: 2 pork belly bao buns, green grapes, green tea",
+      "photo_urls": [
+        "https://iili.io/qN52onS.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:53a993fc486dfc092f46574661922158cbc9740937655f86819175b8947359a9": {
+      "timestamp": "2026-03-19T10:30:00-07:00",
+      "content_hash": "sha256:261db2b459b6290b173e9a211e21a2be77a9632808b387777ca23791f30bb577",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "3 hours heavy gardening",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:56fc77c3a0508df6e2866f5d4535548b32825e2c7c75aa139c60c51e0eec18e8": {
+      "timestamp": "2026-03-19T09:48:00-07:00",
+      "content_hash": "sha256:c5f3d6818470af334812215503249f1c8e0c8fb0a00ae6085dbcc209f8f9c119",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: Ciabatta bread (~60g), avocado (~75g), prosciutto (~15g, 1 slice), milk (~1 cup)",
+      "photo_urls": [
+        "https://iili.io/qN52xM7.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:60bb5f837788c57b5183814f09d88ae129249c7878394368be923aa48833b586": {
+      "timestamp": "2026-03-19T09:48:00-07:00",
+      "content_hash": "sha256:db5b973ea5cca2ace426389825582904ba8bad76d63d8e2fd837e60e3cfa0792",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Metformin 500mg (with breakfast)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:0d35abd3bf41fba9ec7bff1f46b28a824e3e58d4f6ad34ca3b804d1f7252e6c1": {
+      "timestamp": "2026-03-19T09:05:00-07:00",
+      "content_hash": "sha256:adeea81dbfadc374278afad835bf8eee9a747020e3b2d632469f7f73be6abc8c",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Rosuvastatin 10mg (Scheduled)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:b6ff4b08d56a54d7c7f82c89e41ce4ae385a52a77b3bcf452df5d6646f5d4e9e": {
+      "timestamp": "2026-03-19T09:00:00-07:00",
+      "content_hash": "sha256:54c3b6edcc1341e47d1d948b6cc07a3ed0c9199fdd86c1ede22b4c8271550755",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Lisinopril 10mg (Scheduled)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:33885514095a48d76593e45516128de01766d8a87596a63490b2f4bc83563bfb": {
+      "timestamp": "2026-03-18T20:55:00-07:00",
+      "content_hash": "sha256:84a8df7f27b6266ff56dced70fd5fdcb67756dcff3db9128caa9fe4260202311",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "20 minutes walk",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:49b82941f3af6c348f626047721f0274c1219740c31eaf1fc913b4fd982b18cc": {
+      "timestamp": "2026-03-18T19:20:00-07:00",
+      "content_hash": "sha256:6ca02ceb8b7f6e8ec1c5f1b5f4f4589401029185349b0138cf734bc2972f7e5a",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: 3 steamed dumplings + octopus and potato stew with carrots + loquats, grapes, and one strawberry",
+      "photo_urls": [
+        "https://iili.io/qN1tOZl.jpg",
+        "https://iili.io/e06b4b8a-ffd9-4f21-848b-ff2ebc7603b9.jpg",
+        "https://iili.io/7e08c360-7b67-4b12-88cf-012bacd4a479.jpg",
+        "https://iili.io/f35236b3-6f01-4e14-9fb0-0a2e95f4eaa1.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:e81c0ffdc4087f4c019e6050ad20f07a1eedb8e252b3dbd607858d5e515f59cd": {
+      "timestamp": "2026-03-18T19:15:00-07:00",
+      "content_hash": "sha256:5494d0e3dbdfc5af0a65ec06d573f32849535173f145187a627bd3b4c07d0793",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "1000mg Metformin HCL (Dinner dose)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:7a0c167fffcf6740e08d99b53199a5a9b3cd87cb16ca720d3a3c0d9fd74cf152": {
+      "timestamp": "2026-03-18T15:45:00-07:00",
+      "content_hash": "sha256:eaa9cddff3798deccec8bd68a547bdd57ba78e5d75d0bf6fa43723070634c4c4",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: 1 slice dragon fruit and 1 orange slice",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:6b2e9a20a31ba54a399e57d823a588e8a26c00d285ac616886cff855a226caeb": {
+      "timestamp": "2026-03-18T15:35:00-07:00",
+      "content_hash": "sha256:6d053e598c8bc4561a3ddae3301d4d5bf0ba2d613d06b289b502222c3e117869",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "2 hours heavy gardening",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:72c4324c74973e8a01fc293d52e7031c13685da7406cedc4864dbc513a6e1775": {
+      "timestamp": "2026-03-18T13:30:00-07:00",
+      "content_hash": "sha256:69bfd5b20bd57a0c1adee4051b683be22f79e5e60f5b9eb45dc07bb8dc02706a",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "1000mg Metformin HCL (Lunch/Scheduled)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:cb7b826d8d7d4604b4d9f2f2e5d260c1112efd9ca397cce91592969a91722b8e": {
+      "timestamp": "2026-03-18T13:30:00-07:00",
+      "content_hash": "sha256:40b9bdf2d1aecf61c39541f102814dcc3f495f84ec1c1f4fd32698e3bf2d0a0d",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Lunch",
+      "title": "Lunch: Cured meat sandwich on baguette with spread and a small guava",
+      "photo_urls": [
+        "https://iili.io/qN1tmcF.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:2c54f71a914fa40932c2175e2a0ea80344f580e7c75fe43b419a858cec4839d6": {
+      "timestamp": "2026-03-18T11:35:00-07:00",
+      "content_hash": "sha256:e018e31b03cd82093f0d0bbc97793aab74bb8db924d981cf3ca8bbc0f0cbce7e",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "30 minutes walk",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:4b76ef3e8373267234f6238d73c8b522e7b403ee460bd72828fae0ce93d59026": {
+      "timestamp": "2026-03-18T10:15:00-07:00",
+      "content_hash": "sha256:26642c8acdbf6348ce2a0fd675ad4d855d67dd317327ae1454f61be661cea9c3",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: 1 cup plain yogurt and 2 slices prosciutto",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:f7feeda7a05677af5ba71b0f573d4be5392f611b55067247c48382889348ea7e": {
+      "timestamp": "2026-03-18T09:00:00-07:00",
+      "content_hash": "sha256:6d0f93654b89478ed5216e21416d474b79a4ebd7d7a72f1b2824a38d9b32ee62",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Lisinopril 10mg (Scheduled)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:178b8933d83f3ffcc57fba839fda07a766658d2fe134aa1302db5655843d3eb2": {
+      "timestamp": "2026-03-17T21:30:00-07:00",
+      "content_hash": "sha256:5ea4e46515af6659ccd3ee6a6cdfcf2b5c8f670918b1207b1776763004069196",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "15 minute walk and 15 minutes Qigong",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:7ab9dee404ec7f449f4a55f975d3cc04e26fa5252252f208e42ca9d1a3a45de4": {
+      "timestamp": "2026-03-17T21:30:00-07:00",
+      "content_hash": "sha256:f783bc7ab0f04be647cb97e224a0fa0df593608e9e91e79ea9e3e1dec8c20781",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "1500mg Metformin HCL (incl. missed lunch dose; Total for day: 2000mg)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:9fd46cbbb70964c2487f13b507d422d0850f55c7e6e300c464c86aa54ac06dc8": {
+      "timestamp": "2026-03-17T21:00:00-07:00",
+      "content_hash": "sha256:73e77381ee72abd6e50cbe64c4ef7c4d2dd49230647baad68c0edb1c5cfb4c05",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dessert",
+      "title": "Dessert: Small piece of sweet roll",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:0cc0eb81d65a33f4844d443f816aa6a06fb81051303b27e1632dbb20090855c6": {
+      "timestamp": "2026-03-17T19:10:00-07:00",
+      "content_hash": "sha256:86e2dd6cf9a2f4873890fcd1cca6693c9523260b40750adc4856e5a52926cca9",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: Poached eggs on a vegetable stew (eggplant, carrots, dill) with pearl barley, rustic bread with brie, and Nigori sake",
+      "photo_urls": [
+        "https://iili.io/qN1DgiN.jpg",
+        "https://iili.io/3c0ba392-d087-4351-bdc9-0b62242e6899.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:1d61961f1bce197efefa78deab53a4b9c6c8aa6b4a9d4ecf3133b0d423857fff": {
+      "timestamp": "2026-03-17T13:30:00-07:00",
+      "content_hash": "sha256:1ae46f4e5e291ae71c9bce130dc37bc1e10b247b80576a82270d7f48c8470986",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Lunch",
+      "title": "Lunch: 1 slice of bread and 1oz of pastrami",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:d88b727b48f3eb1d46620bdb66e0bd47d29cb0465d01770e8f3cf9278653e2b5": {
+      "timestamp": "2026-03-17T09:30:00-07:00",
+      "content_hash": "sha256:8ddfdf9a8b3f817101666ac082ef3e83732212eea89150aa28252b2d4cb63caf",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: 2 slices prosciutto, 1 slice seedy bread, cream cheese, few nuts",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:60cb48d52d7339c8c727bf960dc79664ac64a979a0634e1d2023a2c1469a8c91": {
+      "timestamp": "2026-03-17T09:30:00-07:00",
+      "content_hash": "sha256:3fde2cfceb8c5562d183e638a54654892035c636f0c6a06922d97e26b87ee9ea",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "500mg Metformin HCL",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:cfe9cbb249da08228c9004a9f926861c8eba4a95a508f8651bdaf61a895fed75": {
+      "timestamp": "2026-03-17T09:05:00-07:00",
+      "content_hash": "sha256:4bf4f338e88227482dd295ba464b16cf92603d598434cd271e976b045ebf803e",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Rosuvastatin 10mg (Scheduled)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:48fc780491ba0abaab142bb5f1250acae42846e79c23ae8200f0dc9c485d6ff3": {
+      "timestamp": "2026-03-17T09:00:00-07:00",
+      "content_hash": "sha256:ea0ccd90eb9dd86658b00f41b13c4f24dec8ca995cd0a31da1ae02e90c460440",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Lisinopril 10mg (Scheduled)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:61bf0545544d6c273e4f5dbfcbe78b72a930279621a8ff606d16f59e9a4bf958": {
+      "timestamp": "2026-03-15T19:50:00-07:00",
+      "content_hash": "sha256:30c9b48a4dd95cf859993cd57ef1d30bad7d015dc0664fc16d547604ba53338d",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "40 minutes walk",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:f012b94fc3736ba55079c83730cf4d53ed0144f36e17446d9b07e410a393a01f": {
+      "timestamp": "2026-03-15T18:45:00-07:00",
+      "content_hash": "sha256:ae5c9256a44499ca7137b8e8f5be73f51308a0d799bf662ac71142538ba23e81",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: 3 meatballs, purple potato, zucchini, half glass white wine, and brie cheese",
+      "photo_urls": [
+        "https://iili.io/qN1KJpI.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:9189ce4cc6dd522f2b406b76cbdcf9e26755d5ff6ee54dfb48a7bdec8202fafc": {
+      "timestamp": "2026-03-15T18:45:00-07:00",
+      "content_hash": "sha256:09dde98fb6fcfc72a7f03bbf6b82417e7c782714c38febe06fa595e4c384228a",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "1000mg Metformin HCL (2x 500mg)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:c01ed06bf3f54e7d59b0f149c159aaccb68a14fda3bbc479773d851eec0b1693": {
+      "timestamp": "2026-03-16T21:00:00-07:00",
+      "content_hash": "sha256:57f492682545ca5724db3a876e2d81cc228d83eaa9bae8e7f4d2177305c8f213",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Half a Prunelax tablet",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:7e40c43c9532fe131bf4f2c18b9eac7c00769ea54ef98036cdcb6c916ec98c99": {
+      "timestamp": "2026-03-16T19:45:00-07:00",
+      "content_hash": "sha256:8fd9a8e834523022d19839c23e5b4b52952ec2dd080227901eb835c2ed122ae5",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "20 minutes walk",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:7252944848a4a008bb95d0dc9f5d550af900f163e8f735ed83cf571e5c40ce37": {
+      "timestamp": "2026-03-16T18:45:00-07:00",
+      "content_hash": "sha256:8f5ea933e276c33ff9add912003f738a00ea87242b771f0bbe5e4f3657f365f3",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: One small guava",
+      "photo_urls": [
+        "https://iili.io/qN1DsJn.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:7076943aae9c8dc4912b596a1e8cb2181061e4ca3a568207ed609271db73e396": {
+      "timestamp": "2026-03-16T18:30:00-07:00",
+      "content_hash": "sha256:527a1a5b6a82cc38e75c2e43cdfb0df9d72bac15090e5dba6b8256db47b6b5d1",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: Roasted pork with glaze, pearl barley, and broccoli, plus rustic bread with brie",
+      "photo_urls": [
+        "https://iili.io/qN1DZbf.jpg",
+        "https://iili.io/4d20a8e3-3a1a-487f-b1bd-1b711874d816.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:87aaf0e04ac61d988089da42c9a4088935bf5c526070235df166e85846fb4b71": {
+      "timestamp": "2026-03-16T14:15:00-07:00",
+      "content_hash": "sha256:a915be2f66dce9a784242672a8f0ae60d7aaf53084e728699811af24df4c5455",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "30 minutes walk",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:f07bf8dab12d0dacef192cccaace0cd1036d6bbbc343af81201796a158337c5c": {
+      "timestamp": "2026-03-16T13:05:00-07:00",
+      "content_hash": "sha256:c48a65da5288753cfba26811d9bd5e45eb587bdfa144bb3e2f3e8666058c6a8e",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Lunch",
+      "title": "Lunch: Open-faced pastrami sandwich, mixed nuts, cheese balls, and 1/2 orange",
+      "photo_urls": [
+        "https://iili.io/qN1DDx4.jpg",
+        "https://iili.io/4169eba5-b2a4-4d1e-9074-2c81e117627a.jpg",
+        "https://iili.io/1bcae232-3858-47cc-8556-529a3c5f04e1.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:0d89df37436ab0eecfdb769f75b8eea84e74df1299c3ed24ed08b808000677f7": {
+      "timestamp": "2026-03-16T11:30:00-07:00",
+      "content_hash": "sha256:a78b7222c6464980ddc7a17617f332909557b659ecd6201dffacfa70c167cc6a",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: Small guava",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:0f33fbdaca0d830c56d2a22f7477fb34bc79883b760b42e0f91b479cbb590be1": {
+      "timestamp": "2026-03-16T11:00:00-07:00",
+      "content_hash": "sha256:8a895d68a68be85bf1773eaa4943f3ddffa702e6fe720f7a95a87b931c22f13f",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "35 minutes walk",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:e303d160c5c860fe60f8c97adfb15887c64e707790335eb27e92ff959b83ea5c": {
+      "timestamp": "2026-03-16T10:05:00-07:00",
+      "content_hash": "sha256:7eac45f6c10d748e1f8bf6d8f3d9fda82448bad7cac39e1c2ab7e6991ddcda5d",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: 2 soft-boiled eggs, seeded toast triangles (1 slice), half a kiwi, and black coffee",
+      "photo_urls": [
+        "https://iili.io/qN1DbWl.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:c788b6ae38800c0cb504c7cb9dc6a6e324dd171068b34d1114088320bd05a268": {
+      "timestamp": "2026-03-16T09:00:00-07:00",
+      "content_hash": "sha256:23caa55add5941bd68a94a1b3516053fa56f4143e69cccda804ac8ad875e6f30",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Lisinopril 10mg (Scheduled)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:ca5683cfb85e592b875657a785c37da0dcb7056edd8f71569135c30df35a5b3a": {
+      "timestamp": "2026-03-15T13:05:00-07:00",
+      "content_hash": "sha256:5a672fb813c36bea4c89e56927db45638d25afef00ef809d5811dbbf6044b789",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "500mg Metformin HCL",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:0ce8abe94fe6afa89424d61a906214f55e92390d0832fffe83afd934b614317e": {
+      "timestamp": "2026-03-15T13:04:00-07:00",
+      "content_hash": "sha256:34198e75d49ad3f708df21b59e8948852d0b64cfc6fa9227e0ddf22bdab4cbf4",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dessert",
+      "title": "Dessert: Small slice of dark chocolate cake with whipped cream",
+      "photo_urls": [
+        "https://iili.io/qN1DyfS.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:2914d407b8f9afec904c91b097432686ccfbbf4b7bb2aac34e695963d0525f38": {
+      "timestamp": "2026-03-15T12:45:00-07:00",
+      "content_hash": "sha256:71c15fb28f6dc68365439a7c4885a317e68489c3725a3c372b1506b67289fd8a",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Lunch",
+      "title": "Lunch: Flour tortilla wrap with peppers and meat, and 4 orange wedges",
+      "photo_urls": [
+        "https://iili.io/qN1bHg9.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:91f706d12024089afe4f407abf212cf50337beda1f75391b53cfb166aeefb82c": {
+      "timestamp": "2026-03-15T10:45:00-07:00",
+      "content_hash": "sha256:b48e46cea2efface9d7af4ed4dc7728eb41597c6faf43e3063cb1ba4320b6f45",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "1 hr walk",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:2ea9b9ce47cbb244dc7493e360dadb5a8b23b0e3e26353a455a74553b2b27fc1": {
+      "timestamp": "2026-03-15T09:05:00-07:00",
+      "content_hash": "sha256:c382164d5ec93e218dc4e38badc06360b0665eb8afdd5290610b3254e93c0dde",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: Seeded toast with 2 slices of prosciutto and 2 slices of tomato",
+      "photo_urls": [
+        "https://iili.io/qN1b25u.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:f243cf6250456e6a4bb0751a60264d9d819a7ba89c0a70fdf10e564248964988": {
+      "timestamp": "2026-03-15T09:05:00-07:00",
+      "content_hash": "sha256:a627fa698282ad385b5a5b1a63ac2d72ed8cf15773e94c629c181120137c7bc7",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Rosuvastatin 10mg (Scheduled)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:93fc59cbb3e61cb1e0ae0f2ba0cab0dab7af7bc1b481c5c783a073b37c4528bb": {
+      "timestamp": "2026-03-15T09:00:00-07:00",
+      "content_hash": "sha256:f7e9c24b8bc8715e5a6b3423aded931a550f59c6e47a79a5ac553ea71a57fec1",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Lisinopril 10mg (Scheduled)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:2df6444c9d73519dab0d389ea6c073e9c922eba223a8d6b76576374c60dabf1b": {
+      "timestamp": "2026-03-14T09:00:00-07:00",
+      "content_hash": "sha256:c338d58b37cd225e92cdd025cf1d4aaa10f569b0c58e67406bf7d53e3f8a69c4",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Lisinopril 10mg (Scheduled)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:0ebe3a26cbce8abab31bc6a7e43e2cab57ec8cbc1c110746683b9cbf52132385": {
+      "timestamp": "2026-03-14T20:00:00-07:00",
+      "content_hash": "sha256:aac3c69a9d8f4766deb3c023d4421cdc9a36de08140efd5756d1505c30046946",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "15 minute walk and 20 minutes Qigong",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:68ab4b47221c39e68b12b953f6c0178b1fc746bb78ce382a1dbeb1b44cdcf821": {
+      "timestamp": "2026-03-14T19:45:00-07:00",
+      "content_hash": "sha256:f92bc9c6b3081b20d59e372e3170a557d9a6008f046bf444ca54c9cc905d81fb",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dessert",
+      "title": "Dessert: Very small slice of dark chocolate cake with whipped cream",
+      "photo_urls": [
+        "https://iili.io/q18pJBn.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:567c82b8c0afc0a1d3f5cf709fb66870619f238707ddd25130933e1e78db2a3d": {
+      "timestamp": "2026-03-14T19:15:00-07:00",
+      "content_hash": "sha256:7b43833b8ff67086f528d110fff91575b2b999d5e9b3a7a0c0f1b46474e5e972",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "1000mg Metformin HCL",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:195fbde504e69d2682b62d8d50b394394eebc0eb8c6fdc4d35fdf65e7a23ae8a": {
+      "timestamp": "2026-03-14T18:45:00-07:00",
+      "content_hash": "sha256:7892567fb4ae051e01b3b344fc8e6f71587ced560ed835f7bba2bb7127d2e21c",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: Salmon with dill, small purple potato, sautéed cabbage/carrot slaw with broccoli, and a slice of rustic bread",
+      "photo_urls": [
+        "https://iili.io/q18mLrJ.jpg",
+        "https://iili.io/q18mt7R.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:d532b554def1b27686f8268552d5d79373b5cc5a968037b06ed4397d3916981c": {
+      "timestamp": "2026-03-14T16:30:00-07:00",
+      "content_hash": "sha256:5f05a37eb9a7ac7547179664625373cf159a8da214c2cd28a1e3c986cd6f5a2f",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: 1/4 cup mixed nuts",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:799f97bbf394c5f3791bf7f055ffb6479e92180fd2e88f23e3d02039f447dbf9": {
+      "timestamp": "2026-03-14T14:45:00-07:00",
+      "content_hash": "sha256:3537e9ee3a1dc83128205b0270646c274094870d100a20a209297bef9a60bd64",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "25 minutes walk",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:701fd924b2254e5a9a298f8e4a17e0ac6179ecdbd2b02e32a10caa636251350b": {
+      "timestamp": "2026-03-14T14:15:00-07:00",
+      "content_hash": "sha256:1eb7e17f783c8ffc44f5cf21eaeafa3be5b5b69ff66ca1ad847d2f066fbd83e0",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "500mg Metformin HCL",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:bc23f8520a2dffd5977d093a8d162460d587a4b72693224ec4ec96cc68fae980": {
+      "timestamp": "2026-03-14T14:15:00-07:00",
+      "content_hash": "sha256:9d946d3016265dd95588b829c725f5e0cdcc556bffa459f5371a2bae7e407403",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Lunch",
+      "title": "Lunch: Open-faced pastrami sandwich on seeded bread, carrot sticks, orange slices, and 10 green grapes",
+      "photo_urls": [
+        "https://iili.io/q18m4X1.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:22d43237191dd8501df831f6e382479cb6f30d7cddac1f5d3dbcf1767cd25766": {
+      "timestamp": "2026-03-14T11:20:00-07:00",
+      "content_hash": "sha256:d1973d82e19f5d3c700c897696c8ea0a8cf185d3457749707d0d2d4d489bb61f",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "500mg Metformin HCL",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:a2676b7d98bada39d166bdeb8b75c14f64fdac73ce7fce0a5fe1bf2a0ec49643": {
+      "timestamp": "2026-03-14T10:45:00-07:00",
+      "content_hash": "sha256:1248b544800a3ab70e10fe00fee780a123e249f096004d1677187efd96de2299",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "30 minutes walk",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:5c7249db092eaf175968a140ad10074d6deed3ad8855e427a11c11e997b30771": {
+      "timestamp": "2026-03-14T09:55:00-07:00",
+      "content_hash": "sha256:4dcd69db4c3104ad691a3f4ffcd81d6a6803dd4eda5bbcb79c65ff414fc61143",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: 2 fried eggs on 1 slice of toast, half a kiwi, and black coffee",
+      "photo_urls": [
+        "https://iili.io/q18mO0b.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:7b921a871caa5ba68c2bb127b551d606846d57124cdbe5e135ef9786b16b169b": {
+      "timestamp": "2026-03-13T20:43:00-07:00",
+      "content_hash": "sha256:7560a71a64933901172c19ca841d210c46a124173f20dc99a78c6a3e63e27d37",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "1000mg Metformin HCL",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:c3957451d274c08bc24a08c004d69b1c0c0303c9813d8884735c2f0d7b329ede": {
+      "timestamp": "2026-03-13T19:50:00-07:00",
+      "content_hash": "sha256:f5f91685b4edd637b223213b481c0f7440794c9fee8953774d0bfe33d68a933f",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "15 minutes Qigong",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:78f85f9784cfd6ea1108689623c9171f564fb41d07ebab6625a42a24b4d0b3cf": {
+      "timestamp": "2026-03-13T19:30:00-07:00",
+      "content_hash": "sha256:500abd775aa85abf0d0084912a364943105a44cb7f2057ef3ba599b19ea83bb0",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "20 minutes walk uphill/down hill",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:447182087019c2981bc003b01cabbac2e7d297a91e248628136084b24b31851f": {
+      "timestamp": "2026-03-13T18:49:00-07:00",
+      "content_hash": "sha256:79d8c55bd62390cdae5c69951eb1c5d96d85041dc75a0cbd1a426e5822c8c034",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: Burrito (pulled meat, cabbage/carrots, white wine), sweet roll (walnut), and a slice of bread",
+      "photo_urls": [
+        "https://iili.io/qlL9zve.jpg",
+        "https://iili.io/qlLwf7s.jpg",
+        "https://iili.io/qlQ3yUQ.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:2a3f1df96b5ae4f6e1a19e6b763d76c00d41e4c744bdbffef182d805008ea8af": {
+      "timestamp": "2026-03-13T13:55:00-07:00",
+      "content_hash": "sha256:68599d212b732e41c0ec1ae18a4959d7aa54b5d5018751867fc7c89733c9dcf7",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "15 minutes walk",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:0dd5a4df335fb52d44784801a09c75c2209e99192a93fec3100d9a716cf3dd93": {
+      "timestamp": "2026-03-13T13:44:00-07:00",
+      "content_hash": "sha256:26de326f27f33eead2afaf778bee5bf4ba7f4f04ad2d0816b65b1e22df1dd21d",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Lunch",
+      "title": "Lunch: Fried rice, prosciutto, and a sliced orange",
+      "photo_urls": [
+        "https://iili.io/qlNchv9.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:5ea3079470c9c10d8dedfb7bcc042a024919b62fb6c0ab2be308a4f2ebd5c4d1": {
+      "timestamp": "2026-03-13T12:49:00-07:00",
+      "content_hash": "sha256:26b4c730cf676a48acf7cfe40c913ca01856d07102573638dcc9f9d13843e471",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "30 minutes gardening",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:8c28c4503c00740d096ee88794f153844963b57c0649a943bb31adc70c9f5b44": {
+      "timestamp": "2026-03-13T12:47:00-07:00",
+      "content_hash": "sha256:4fc2d0443f54dd424b9d605b7b75a353bb0773db9b7ff952483d87485a6ae480",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: Mixed nuts and cheese balls",
+      "photo_urls": [
+        "https://iili.io/qlVW9DJ.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:f5381e308b3f10fa0bc0a451c7ac26cadd7f9e375c81b59b7aa17c3808ae4a04": {
+      "timestamp": "2026-03-13T12:44:00-07:00",
+      "content_hash": "sha256:90bb36ad3189d4eaec630fd6574c0d247dd863ac872c9b137a4fc117cf68da5c",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "45 minutes walk",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:333c3e2dec8bec30a153863146c2c12b28f2da446af9b34f3704912e0fef5fa0": {
+      "timestamp": "2026-03-13T10:17:00-07:00",
+      "content_hash": "sha256:199ee6627f94349ef2f018b5d90cbbf052ed2f3ab03b4312df9946f5ed7ae3a5",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: Open-faced corned beef and cheese sandwich with half a kiwi and black coffee",
+      "photo_urls": [
+        "https://iili.io/qlAA44f.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:c7869fb70fd7187742a23231ff21bf607118fa543efb361a9905281c77cde0fb": {
+      "timestamp": "2026-03-12T19:48:00-07:00",
+      "content_hash": "sha256:019355994afe18bbf4302f17fe06d20a404c0cdbd2905310022d3fc5671124ca",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "1500mg Metformin HCL",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:0a762418323dc52c130414603eadc7d790c19c39e11705ae9ae05b317fd6522b": {
+      "timestamp": "2026-03-12T19:15:00-07:00",
+      "content_hash": "sha256:6e0630b731f094a713f58c6dc4a4018daadf498f828f1ad4cc1a33f7519e7ab3",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "45 minutes walk and Qigong",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:8ade7cb48c4e2bdc8740f7f31f83bf98f3115bcd2919d201a3facd4d9df66504": {
+      "timestamp": "2026-03-12T19:00:00-07:00",
+      "content_hash": "sha256:6795a7b5226950a2bde3577c22df9905040f3d8ba657b6bced24cdc8bf0e08fb",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dessert",
+      "title": "Dessert: Yogurt with walnuts and honey/jam",
+      "photo_urls": [
+        "https://iili.io/qcTcanV.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:241dd63d94eb66d7964eb9d761ffb3126ce7a5c6c989dfa9a8a00882dc942946": {
+      "timestamp": "2026-03-12T18:45:00-07:00",
+      "content_hash": "sha256:b09cbb8da41cf6d8153ffceb39283eac029285ef11f5f1cf8106cf94a3a4b443",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: Leftover lunch (shrimp/fish taco fillings, roasted potatoes) and one orange",
+      "photo_urls": [
+        "https://iili.io/qcIm7lj.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:703754cf05c72e54448e14a5adcaff7806f355a07f14f84d80673041988873b9": {
+      "timestamp": "2026-03-12T13:44:00-07:00",
+      "content_hash": "sha256:c6b26feeeb4bc62550b5b66c10090854c4739cfd3fadc6f98c9f5045ca1c1b56",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Lunch",
+      "title": "Lunch: 1.5 shrimp/fish tacos and ~60% of roasted potatoes (Leftovers deducted)",
+      "photo_urls": [
+        "https://iili.io/qcJf0oQ.jpg",
+        "https://iili.io/qcJsJfV.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:ab67eff153278c3e661297a5bbb0d50eb0d70bdb77554f50d3d755d0af6306fd": {
+      "timestamp": "2026-03-12T10:23:00-07:00",
+      "content_hash": "sha256:77b542e3d9f118b0c40dc2aea637ab0d4e0c86a96e308910d641b6d3cc50786f",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: Flour tortilla with cheese, pastrami, and half a sliced apple",
+      "photo_urls": [
+        "https://iili.io/qaep2st.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:2c72dcd5eb0b70593da7d2f1d5518cd8d8fbd96a52fdeac86a03accd019e02a4": {
+      "timestamp": "2026-03-11T19:30:00-07:00",
+      "content_hash": "sha256:532443caa2617b33425ee9b56d2faf1ca3dad7a47d8fccb51f2c56d8414c970d",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "45 minutes exercise (After dinner)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:5ca51b8c4cfd599aea2fc7b0057d9f218f6c7fcb219be4dcd72a692ba2dc2ce7": {
+      "timestamp": "2026-03-11T19:15:00-07:00",
+      "content_hash": "sha256:8e9aff8ae49d2e235707fee0541ed948d808e647ce53818f22d5b4edd4326a84",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dessert",
+      "title": "Chocolate cake with whipped cream (~28g carbs, ~350 kcal)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:49233ac8eb80110062898e889ad65e5bfeaf82cce206c15648fa593ab2f1f0a4": {
+      "timestamp": "2026-03-11T18:58:00-07:00",
+      "content_hash": "sha256:4b20ac51c57b8f2af61a2d67e2248f9334ee0d105b9939b49b0e2f99502a2bc4",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: Spanish tortilla (egg/potato) wedge, sautéed cabbage/carrots, bread with butter, and 2 slices prosciutto",
+      "photo_urls": [
+        "https://iili.io/qY0dtLJ.jpg",
+        "https://iili.io/qY0zFft.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:47dadadcc8a924919e6dbe413a1f475fb9f747614c5e78916774069133113d75": {
+      "timestamp": "2026-03-11T14:15:00-07:00",
+      "content_hash": "sha256:313cbb8f23fb767cdd788d639d58c66373e95f899d6ec70d168db8c200c2d8dd",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "45 minutes walk (After lunch)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:d877ab630320b044e84feeb88884edcea1f3182dcc3ec7f27b21acd6dba7db88": {
+      "timestamp": "2026-03-11T13:30:00-07:00",
+      "content_hash": "sha256:809c8453e3fa19b5a82d41c63ecb28debce3c143753981c56b124910ff5aa1d4",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "500mg Metformin HCL",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:65eb7675e1006e1b421ffe9a3372b3d00ddbedcf8c1a50f574f0551410b6829d": {
+      "timestamp": "2026-03-11T13:30:00-07:00",
+      "content_hash": "sha256:02fa693205c76f7afaca45ff067921563626af332fc7807b9f46ec7733f85b6a",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Lunch",
+      "title": "Lunch: Fried rice with pork and veggies, plus a few grapes (~52g carbs, ~550 kcal)",
+      "photo_urls": [
+        "https://iili.io/qY0zFft.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:dd672b50762f5140254e0786fdcde1eb67b1529a8c0a21192e5b4d73682a81d5": {
+      "timestamp": "2026-03-11T09:56:00-07:00",
+      "content_hash": "sha256:82c1dd64dce8c6931e351b9a7dcd468ef79fd1a1a10be64993024ea9435f22c1",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: Small beef and cheese sandwich and one small orange (~32g carbs, ~380 kcal)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:e002a48987b447069fd94d9c39d4203afdf81a47e75e77d1650823f97cc753e1": {
+      "timestamp": "2026-03-11T09:56:00-07:00",
+      "content_hash": "sha256:6ceaa7f9b764527d8936afe09ba2b5978de7e26c34188eab06d997d50a105e80",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "500mg Metformin HCL",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:dd18082d7b1527a63173aae22d9ba3dd9a78b5c220baac22af415591e197df97": {
+      "timestamp": "2026-03-11T09:56:00-07:00",
+      "content_hash": "sha256:c751c65dc23f5bdda00502002315373739f914ac1debecbabc44e3676eaee40e",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "30 minutes walk",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:bebf83a7ce73f204cd8b95025253820a6decc11b51975bfe094f2e0cc40a5fd5": {
+      "timestamp": "2026-03-10T18:30:00-07:00",
+      "content_hash": "sha256:aad187439c92aee9b992b8369ea992cea28630166e1ea4d93801de0dbb0d2f8a",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "1500mg Metformin HCL",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:0be27cd2cad1a9a4fae9d47fb4858bda6fade16b043e64dd51c858e3f12be4f3": {
+      "timestamp": "2026-03-10T14:30:00-07:00",
+      "content_hash": "sha256:0cd3245fede0243fbb8d3a3e56a0e3129b0692c4c20e6756e78b8dd72985e13e",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "500mg Metformin HCL",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:3a6625e4e0c6188653d25b162052f6ba534b7841fd27861ba92749e7d7904911": {
+      "timestamp": "2026-03-10T10:22:00-07:00",
+      "content_hash": "sha256:9d3567a6bcba99b9c72ab8115697d9e176ae75ae43040d28e8638b3f7c2252ac",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: Small handful of goji berries",
+      "photo_urls": [
+        "https://iili.io/q5dLMCX.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:858bc29e3c08f98f249ea71cab9e424b7c5621cb88715ba2dee21b8120e2e20c": {
+      "timestamp": "2026-03-10T10:05:00-07:00",
+      "content_hash": "sha256:7a3c6f05787cdea5d65fdf8aaa5392b998bdd04b1a04d5d45ac93ef5ed3feb4d",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: Cheese, prosciutto, bread, kiwi, and milk (~35g carbs, ~380 kcal)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:1d4f3c115b7bd37f487efeb08c239fa6f27952f2ec4baa9f23d42a78e46a60f7": {
+      "timestamp": "2026-03-10T04:49:00-07:00",
+      "content_hash": "sha256:2ccc31df04ac434b4a209f7d52a1363e296cd0994de5deac9573f21a7d8a89b4",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Half anti-acid tablet",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:ed961c186d24898a73407fab49cd7c9d574bbb46b2afde9a1a52fd5f8abd0b42": {
+      "timestamp": "2026-03-09T10:24:00-07:00",
+      "content_hash": "sha256:84dbf22710acb7974943a28a329dc0deeec81abfd023225b0f7ef8a3f9001e80",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: Scallion pancake with cheese, fried egg, kiwi, and black coffee",
+      "photo_urls": [
+        "https://iili.io/qAnVvMN.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:a26615ec2739ef5aedc96406df52c3eb1c7524862b54b388021457308244c9dc": {
+      "timestamp": "2026-03-09T09:24:00-07:00",
+      "content_hash": "sha256:d93ed92030324175f3ec5a4c91ef8f46c6bb052830780b44fffadeb958d3f43a",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Lisinopril 10mg, Rosuvastatin 10mg (Routine)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:94eacaa3cc2b7037341611c3a7dcf1119fe171508f06125cd002ee93aee32bf7": {
+      "timestamp": "2026-03-08T21:58:00-07:00",
+      "content_hash": "sha256:bfe164f2a3f738b4e966952cd1520322260b56f5c1bdfe31dba1a6f886b85626",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "-",
+      "title": "Small handful of sweet potato chips",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:4c2196ba60eeb03b7571bf50a8a726291d88cc314941f8cd1c86758649c00077": {
+      "timestamp": "2026-03-08T19:51:00-07:00",
+      "content_hash": "sha256:7de35bd2ec6f7c498c91e001960b39f25a656d88a1471d1f14997b422f4de5c9",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "30 minutes Qigong/Tai Chi",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:ca5833883074043ce7726b565a59df290189604572c84e32c43eddf5d9a6f32a": {
+      "timestamp": "2026-03-08T19:39:00-07:00",
+      "content_hash": "sha256:3a7567dccb720308d1ad59f85ddd6f0d7256df877c35886c5c12fe4800f2ffb9",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "-",
+      "title": "Chocolate cake with whipped cream and grapes",
+      "photo_urls": [
+        "https://iili.io/qTU7gYx.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:1633e67164311f1fcbc7b73141dcfb3a8b6e685a9a7bc9d827c6e84f2de337b0": {
+      "timestamp": "2026-03-08T19:15:00-07:00",
+      "content_hash": "sha256:dfdc46f19c7b306a999f3ecd7b292873ce9e5ac6d26154ff8f8ac4b312558fe1",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "-",
+      "title": "Lentil stew with half a sausage, potatoes, and sauteed greens",
+      "photo_urls": [
+        "https://iili.io/qTSD9PR.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:5e3c44939f89588b4eca6a3f78804075c961c74c41ce4c251ffc52ff751074c4": {
+      "timestamp": "2026-03-08T17:40:00-07:00",
+      "content_hash": "sha256:6f4af8a4ad4974605583c09660c33c4228cdcdb27a5a6cf371ee34068e189356",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "-",
+      "title": "Sliced prosciutto",
+      "photo_urls": [
+        "https://iili.io/qTVzP0Q.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:3536976494fd4abac602c15e2c5707ed31737360678b868654a71a25f636e1e5": {
+      "timestamp": "2026-03-08T16:45:00-07:00",
+      "content_hash": "sha256:b7641d254525ca86af68602667dcc72cdaa79bb020a6a3fd688172795347603e",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "30 minutes gardening (After nuts)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:a04f6f2b3f1d26b80d2370b59f6a4f50cac468c9109f2398e79cfc16170003eb": {
+      "timestamp": "2026-03-08T16:40:00-07:00",
+      "content_hash": "sha256:c44ea15734a0a134cc86eaf561fc9c4ec4fdc0738a453a61530c850da63de4fc",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "-",
+      "title": "Mixed nuts, goji berries, and cheese balls",
+      "photo_urls": [
+        "https://iili.io/qT0M0DN.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:471f1ff3b6f48aacfa3977ce7105e070b042e3305bc525a0a18bc075d70e0cd1": {
+      "timestamp": "2026-03-08T13:40:00-07:00",
+      "content_hash": "sha256:bbf6bcf68020957c9c23ac948d1c5fdec925149a780de025cca707c6f8da3eda",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "90 minutes gardening",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:273ab75eaf4373c6d692887c1f4625905825b172c781ad8349f7ec72e8e1d90a": {
+      "timestamp": "2026-03-08T10:43:00-07:00",
+      "content_hash": "sha256:d91d7cdd28b5eba857e60fed5b0c57ecb0d8867454c94036c1b244cf7a1c677b",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Lisinopril 10mg (Routine)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:6ae925d6ae674825e89e6abaf6cb65994575a925ccb95577aaa399e6285597af": {
+      "timestamp": "2026-03-08T09:59:00-08:00",
+      "content_hash": "sha256:5cc15e766d91306e6db5a54121e86b8529e0c2bb85d8250f6cd93febac9857af",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Brunch Dessert: Chocolate cake with whipped cream",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:c50f4ea885887a3bbdfca2d44f855048d5be15a2f23702073240747ab8f0c1e5": {
+      "timestamp": "2026-03-08T09:43:00-08:00",
+      "content_hash": "sha256:69fc4ca47a1318648b27f41e735779d9dd5e00be9cd85ed7fb3952b6546f0f26",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: Fried egg, avocado on toast, and 8 green grapes",
+      "photo_urls": [
+        "https://iili.io/qTnqsCg.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:a978c8b6b33c59172fb2b7b6a26285eafcc2847a5240de2701c7d0941da8c621": {
+      "timestamp": "2026-03-07T20:30:00-08:00",
+      "content_hash": "sha256:1067267eead9d926152f30c0a33884241fc896d959b0d9f21c5e6a4f16d7f434",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "20 minutes walk and 10 minutes tai chi",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:4a99949a18895f86a70b06013ecae3e6bfc2eca73cec330ce1fab7317b1842d7": {
+      "timestamp": "2026-03-07T19:50:00-08:00",
+      "content_hash": "sha256:6a590b4219b573aac9e64e67c7dadaa0a98b91f2ff1547d354140dd7a11f86fa",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "-",
+      "title": "Chocolate cake with whipped cream",
+      "photo_urls": [
+        "https://iili.io/qIxzsxs.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:af2abefe502e81d1c2aa5727c4c4089f4db346c701eee1ee36236b8fc4305401": {
+      "timestamp": "2026-03-07T18:51:00-08:00",
+      "content_hash": "sha256:b0efc509d4e10d35caaa6fc6c8389ba063df3659aa3c5fcef1a703aa9aaffe5c",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "-",
+      "title": "Carrot cheese soup, shredded meat with brie on bread, and half a kiwi",
+      "photo_urls": [
+        "https://iili.io/qICp3oG.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:372eaf03f2be43078e0701d4915d6dcc80443f5ec69abcb151e2bb79661e9b75": {
+      "timestamp": "2026-03-07T16:30:00-08:00",
+      "content_hash": "sha256:d20716602a97103c4a4e7deb0f66e7736b37f8ddf32ca1c4d28c085f6e56e962",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "-",
+      "title": "Small glass of milk",
+      "photo_urls": [
+        "https://iili.io/qIKuCge.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:b4570ab5fc1f8f96efa603e4d55d8aed3ccd732c1690241736d4a7c4591d3103": {
+      "timestamp": "2026-03-07T16:29:00-08:00",
+      "content_hash": "sha256:1751f5e7a1b55b2c6ad691f12238f622cd12e778c4d395523bf20028f86dd30c",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "-",
+      "title": "Oatmeal chocolate cookie",
+      "photo_urls": [
+        "https://iili.io/qIKIAyx.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:0eba81591f153211a5a9cb4b1e3dbbea3d85aa5a59deed747ac5e1f464662865": {
+      "timestamp": "2026-03-07T13:58:00-08:00",
+      "content_hash": "sha256:f7d888512f35e819c80904e04193834d402f3350b7212fe523829bcc1501e6c8",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "30 minutes housework",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:d790270fbdc94d655e53622acb4906b1b6bfbc674606e5837688acd7d9426fed": {
+      "timestamp": "2026-03-07T13:15:00-08:00",
+      "content_hash": "sha256:30ccaaac09371f68c56bc71cde1e7ef77f6cadbf6d0bbd1a3f2967d9b7b687d5",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "-",
+      "title": "Rice vermicelli with egg and greens",
+      "photo_urls": [
+        "https://iili.io/qzbUSxn.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:75e0c7f7868e3cc5cef5c059f813a3a053aaf43c9691499d0b81a158c957ebba": {
+      "timestamp": "2026-03-07T11:27:00-08:00",
+      "content_hash": "sha256:0881ba62f6afdd9f5f2dd1027a562d642ef7e03725e2cb31bfcd8fa96181b022",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "1 hour gardening",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:ac4d28675e1e1cc5d47e8b0d513662897a9471aa7c3b54bceb4bf513e98b91c3": {
+      "timestamp": "2026-03-07T09:59:00-08:00",
+      "content_hash": "sha256:83092c354184ed9565423999bcc803ea4771b0af54bf2d9688e9b68ad8fd82c0",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Lisinopril 10mg, Rosuvastatin 10mg (Routine)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:92a3276075a0caba75369ceaa934ca973e1f3aaca4c1afc84bacc0269736241e": {
+      "timestamp": "2026-03-07T09:59:00-08:00",
+      "content_hash": "sha256:884d11e56650d284b17090e33f7d83b67b1a3717debae0018012faddb3943883",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: Scallion pancake with cheese, kiwi, and plain yogurt with berries/nuts",
+      "photo_urls": [
+        "https://iili.io/qzkC2ff.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:c8c74012af02af8fa08d0cf98f5c7218878dcc1a0bf2477169aa9e0f172b68b8": {
+      "timestamp": "2026-03-06T21:43:00-08:00",
+      "content_hash": "sha256:9f8f7005a17691dee83b0bcc70ebd5e8b42227a1c04a1853dbf0585b664096ed",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: Mixed nuts and actual dry cheese balls",
+      "photo_urls": [
+        "https://iili.io/qAzkiQt.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:5344415fd0495ac8692c76d67e640442013bc0f45679acf06b1d4dff701e14b0": {
+      "timestamp": "2026-03-06T20:54:00-08:00",
+      "content_hash": "sha256:f50c702e4cd937aab11db6a79261e65684d12d4fe71df817fa91fcb0a6d0fe92",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "1500mg Metformin HCL, Vitamin D 1000 IU, 1 tablet Prunelax",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:a11b981c65acf3c26f65f2e3257785685cf11487e59f46a97e5526653afd68d3": {
+      "timestamp": "2026-03-06T20:30:00-08:00",
+      "content_hash": "sha256:af388916ff8c6bbe2f759eb1252dcc13457e8e39ad31e54a2d1b6c683ed29178",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "20 minutes tai chi/qigong",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:729fe9f2787961966402fad2a89051fcbffbb94da92e21f622c9a351656582aa": {
+      "timestamp": "2026-03-06T20:25:00-08:00",
+      "content_hash": "sha256:744c31dabb3221159e876ee28e1b494d4a1f156e5c47a62cc9d2b78f963de240",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: Strawberries with whipped cream",
+      "photo_urls": [
+        "https://iili.io/qxOVscb.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:d491460ff91674fd16427e63d831f86e0cccf0267633c0c29340ffb3e547c0ec": {
+      "timestamp": "2026-03-06T19:30:00-08:00",
+      "content_hash": "sha256:14b0196777574ad50ac6bbacea0c2b2c47cc24901d33308eac76878f1fe63841",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: Lentil stew with sausage, pork, and bread",
+      "photo_urls": [
+        "https://iili.io/qxwmeft.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:740fc7aecb5f82d2a099d4b158c1f984e25d4a40e39cae9e0f2e24ef4a077c6f": {
+      "timestamp": "2026-03-06T18:42:00-08:00",
+      "content_hash": "sha256:b7a95e5616356ac7f997e49376cfca843fc8750be18e2c9365d04eaecd0ea9a9",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: Sliced prosciutto",
+      "photo_urls": [
+        "https://iili.io/qxjGK22.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:8d64a05f64bbe981e793df52ad5d2224d5fdbfa4cc3bcf0fe9620998630beb44": {
+      "timestamp": "2026-03-06T16:30:00-08:00",
+      "content_hash": "sha256:65ff13013f411973d979cf8f26678f3e8970bc7dc695ca021eaa899c37ba6df4",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "30 minutes gardening",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:81bc30538329461289331f4f44297a4eefb9cdeb72ee82ea55bba08dd067750e": {
+      "timestamp": "2026-03-06T14:05:00-08:00",
+      "content_hash": "sha256:72998f048b1e119d06cd475dc3755fc7cace2d23bcdd0629d0c2442e1707bc95",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Lunch",
+      "title": "Lunch: Fried rice, pastrami, energy ball, and 8 green grapes",
+      "photo_urls": [
+        "https://iili.io/qxY5I49.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:304cfa34e786f0a162a69b7e61a89c80f853be2a1ed0dc14aa7eeeb85e14f8da": {
+      "timestamp": "2026-03-06T13:58:00-08:00",
+      "content_hash": "sha256:99645e512302a82f19def2ca40f5615720fd44685fe04da37431c93a69770a0b",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "90 minutes gardening",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:e827307f06f4d7b516f6b7d301e399fc3a6f475aea13aabf204687633f55cda9": {
+      "timestamp": "2026-03-06T12:05:00-08:00",
+      "content_hash": "sha256:2d5902142fe58e22cd7c9d7fedb804646621fed2cf876924c977549871b23dca",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "30 minutes heavy gardening",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:e04f148ff302a090af923b431d43b196fb091c5805d1d27d392a317b175c7fa5": {
+      "timestamp": "2026-03-06T10:30:00-08:00",
+      "content_hash": "sha256:83f5f01314b2c77e097b37e996a2fa3e9f6981361b9c91a4049c55a41d6178bc",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: Prosciutto and avocado on ciabatta, plus an orange",
+      "photo_urls": [
+        "https://iili.io/qxFCkgI.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:f4820e0c931695c469416873bca66fbd452d962b6ecb25423f91d28b253d155f": {
+      "timestamp": "2026-03-05T20:30:00-08:00",
+      "content_hash": "sha256:34a29cba5af3a852ad41d3bead336c97b7dfb0b06b3cae45e69571f7f41dafc8",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "15 minutes tai chi",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:755f0bd8fa86cddc7bf88571bdb62d570db95506b39e13050a0f65cd0f4538c2": {
+      "timestamp": "2026-03-05T20:22:00-08:00",
+      "content_hash": "sha256:79242d0a762e0b614a541dfd7b5563250d376c4693fd78e782552e9f8bba1844",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: 1 protein ball",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:26d2b50cecefc70a3c446ae3d3c27fc0daf23d0c24745538ab495f43f9bc3a4f": {
+      "timestamp": "2026-03-05T18:43:00-08:00",
+      "content_hash": "sha256:e04e24420c9f751337d21253a64cf3a61a1bf821a9c1613241f3f93f15b07b37",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: Fried rice with egg/avocado, carrot soup, sake, and pastrami toast",
+      "photo_urls": [
+        "https://iili.io/qnDnLzB.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:3fcb04f821bfd9205c59fe2009d61b4ded137175be352baadd5015cb12315fbf": {
+      "timestamp": "2026-03-05T17:40:00-08:00",
+      "content_hash": "sha256:2e59b598e78f058228265c8ad0b053adb4129b24615278bd480153fcb7af0887",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "1 hour gardening",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:ff0af05ac40799f4d168c123e8fd94e50458a5da6924c3c480c3843d0e8cfdfb": {
+      "timestamp": "2026-03-05T15:19:00-08:00",
+      "content_hash": "sha256:1b3e8534e466390ac5efd25c4c0d71508766b61a6e898298e3ec7c21df450dc7",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: 1 oatmeal chocolate cookie and a small glass of milk",
+      "photo_urls": [
+        "https://iili.io/qngbl5X.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:5925dee4107f26d72c9021dbfa96006e3895fb4f81721b9c0c77cdc3cec8d737": {
+      "timestamp": "2026-03-05T13:10:00-08:00",
+      "content_hash": "sha256:e5565dd2491fef0b5600a2d91003e96f9cd63d85c5aab207492ec71b210803e7",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "2 hours gardening",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:9ff33ed3cc8a844bbb8bc19666b4f228131ad17ddc685d140dbbcdf93cc55c14": {
+      "timestamp": "2026-03-05T13:07:00-08:00",
+      "content_hash": "sha256:990424d75e8441aa84e43af655d8f1e29b7fa51d9f06a96e8215b8ea5e68bb5e",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Lunch",
+      "title": "Lunch: Pastrami and melted cheese on toast with a side of steamed broccoli",
+      "photo_urls": [
+        "https://iili.io/qnNJF2a.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:68d3fea4deac28602a7d94262eb6e7e5aa906baa0b52ca5625491b90bc5fae61": {
+      "timestamp": "2026-03-05T11:00:00-08:00",
+      "content_hash": "sha256:4727d1d0dee3ece46f4c72ff3cab47980c88b2b1d4223bce94f630a4f1789994",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "90 minutes gardening",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:03f086f3469ea4e53ac21cd6418812278bf39c9670a62c149b454899b035420d": {
+      "timestamp": "2026-03-05T10:41:00-08:00",
+      "content_hash": "sha256:2272c53dc19f8719104845699ee7b84456385fb82b6c9dcc0d055830e32e6fb0",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "1 Advil tablet, Vitamin D 1000 IU",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:6daf51ff6cec9083cbcde529bef0c240ef4cbc75c92adbbc76d2e67d1898b66e": {
+      "timestamp": "2026-03-05T10:05:00-08:00",
+      "content_hash": "sha256:b39cdd38b743288518a2d3a85c832bb81f63e9908b1d61aad05e40c5933cc910",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: Scallion pancake with pork and a kiwi",
+      "photo_urls": [
+        "https://iili.io/qn5BXpf.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:69549a6a723cc83e56e0f4c7ae9b89cf08e05ccac1dbd4b534e0e6235f442e41": {
+      "timestamp": "2026-03-05T10:05:00-08:00",
+      "content_hash": "sha256:0ad86f8ef7daadd1fe542869d01f99021959086f85cb56532ef8b1e3bd06a936",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Lisinopril 10mg (Routine)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:2f3fe2900c9e833f512cde786a60df9cf3defa174d9078e36b70696a1ff624c7": {
+      "timestamp": "2026-03-04T19:35:00-08:00",
+      "content_hash": "sha256:21045984183b894b0467d7bd40d3a2e0cdda5acdce6fb54f8dc05abe778af0fc",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "1500mg Metformin HCL",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:5f1febc58eac9810142d7d3ebca37ef6e0372a0d559ccf49e57717f9ad24440e": {
+      "timestamp": "2026-03-04T18:23:00-08:00",
+      "content_hash": "sha256:f3a2f8ee0de817e3ccaaf9cecbb1b0dde78d612d224357836ad103eb1e78ef76",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: Pasta with meat sauce, cheese, broccoli, plus strawberries and grapes",
+      "photo_urls": [
+        "https://iili.io/qC6Ur8X.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:bc47c882e0084a331bce10db6e6257f429674248ab2180e80d939c1956b6c853": {
+      "timestamp": "2026-03-04T14:46:00-08:00",
+      "content_hash": "sha256:a7b9e770da8348d0851065eb3e9a84719704cd71676548bc0932e8b56bfdc2c7",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: 1 Japanese Cream Sand cookie",
+      "photo_urls": [
+        "https://iili.io/qCSzSnf.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:11c1fea799cd57874d2707b9fe7357c0888da9964d36292336f70e0c01d6e066": {
+      "timestamp": "2026-03-04T12:45:00-08:00",
+      "content_hash": "sha256:50a922009b6d16cd73a441fcd1e6591d4035bd65b6a2869c8ab822bb259821e4",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "40 minutes walk",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:f54f54d9ae7f1e0f1a764c94165c37b10f053351d41888502cb080ee38afd431": {
+      "timestamp": "2026-03-04T12:16:00-08:00",
+      "content_hash": "sha256:c352a2aea765d10fd264233efb891bb9753e24ee603a0242660550058d270576",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Lunch",
+      "title": "Lunch: Pork belly on bread, half an apple, and a small bowl of mixed nuts",
+      "photo_urls": [
+        "https://iili.io/qCexbqP.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:5c4c3459a09aa308410e1e3743eca73c585f5337fd514e5b4a4f5d6a484d4b7b": {
+      "timestamp": "2026-03-04T10:45:00-08:00",
+      "content_hash": "sha256:91bba313debdaf7d841274f5d02483d8e2ff5b54302c4d7392f9060ebb9efd2e",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Lisnopril 10mg (Routine)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:86af86df8f1172e3313ba00e26dd807bfd4dcfe75b313a12db3fca60d07d706b": {
+      "timestamp": "2026-03-04T08:47:00-08:00",
+      "content_hash": "sha256:7e2b09d29f85df552ccc3f538891dfa5e7882a3e21fc3abcc1868e104c841c67",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: Prosciutto, bread with brie cheese, and tea",
+      "photo_urls": [
+        "https://iili.io/qCEobbj.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:871d95652272ef2992344931649ef8c3c1a90e9892be7340d6ee2c25f044a424": {
+      "timestamp": "2026-03-04T08:30:00-08:00",
+      "content_hash": "sha256:b00224737a69a7903cd70c0d8edc263ad480cafc697beaa3ad2d6cf368a3c808",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: Sliced kiwi with goji berries",
+      "photo_urls": [
+        "https://iili.io/qC199AF.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:b9e183296f12b28ededbd551504eb9b9f986c1b54cfaa5ebc6ea7f6c5ea3090b": {
+      "timestamp": "2026-03-03T21:13:00-08:00",
+      "content_hash": "sha256:812af22bb5cfe02f5eb2b91b13de4adcf7f2dc945283530a518e4fb1b227bcc2",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: 1 protein ball",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:4df8eeb238416aef053c1ee0b732970e924a2409de081280c7e7b4fb54c5fdb0": {
+      "timestamp": "2026-03-03T20:35:00-08:00",
+      "content_hash": "sha256:06202d0c3c3c0053939ca95ef107e594d9fec22341960cd081f64fe2fb7c2de0",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Prunelax tablet",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:cfd2296638f5186401ae458bf3ac2f814c60974d413e24072c43289d69d983c5": {
+      "timestamp": "2026-03-03T20:30:00-08:00",
+      "content_hash": "sha256:b4a0a9ce6fe3cdc753ebfb4ecef7002ca66b2553f5811469713a06ea84c9fdc3",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Vitamin D 1000 IU",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:e0adb1a6e6793c9941ce00aaa3e7f484e99b83e1a1069fe3708481bd61baf30a": {
+      "timestamp": "2026-03-03T20:30:00-08:00",
+      "content_hash": "sha256:40be5b4ab829cc4e5bd48341cca6170eeea16990e0ab8e781428e17f00700ed4",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "1500mg Metformin HCL",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:032179a5539d6cde4f170472aab21a688f8b9af89215bcb312f4cbe0304d8bbd": {
+      "timestamp": "2026-03-03T20:30:00-08:00",
+      "content_hash": "sha256:81d12fd92da76790c72400d4d62c788874a051923f0e4d398ca37d28c25b9aa5",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "29 minutes tai chi",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:8aa18c982688c03967337ddbd76e15411eee2e7dbfe2086a937ddfc30405fdd3": {
+      "timestamp": "2026-03-03T19:41:00-08:00",
+      "content_hash": "sha256:2a138c8456c7332a2f15fa5f71b73532d1d5a9de8af28f0f47d6aaac7647b65b",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: Half an apple",
+      "photo_urls": [
+        "https://iili.io/qCdmXet.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:f168662d110e97c3cb68ae2eb88f0b39b09fe9a616e35fb7a7cd0d9ef0415335": {
+      "timestamp": "2026-03-03T18:57:00-08:00",
+      "content_hash": "sha256:e25e7ba78cfaf72b25c007422c063c2ff94892f7c1b15a03ce6b443455daac37",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: Meatballs, fried potatoes, sourdough bread with butter, and a side of greens with grapes",
+      "photo_urls": [
+        "https://iili.io/qCJDbs4.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:0428c6461d42bb098e7d05c66548179b17f51c8675020c379c5d4881abc4c4bf": {
+      "timestamp": "2026-03-03T13:04:00-08:00",
+      "content_hash": "sha256:b7f9a6769cb30b21eccb5fe60c78804c70f1725122ad7cbd6cbc13e22eeec187",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Lunch",
+      "title": "Lunch: Carrot cheese soup, prosciutto, and bread",
+      "photo_urls": [
+        "https://iili.io/qBDE9pe.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:9e465c3ec21a73c20303d3cf30fa79a18c7019704f6ea01c0fa5d05ec0297dc6": {
+      "timestamp": "2026-03-03T09:56:00-08:00",
+      "content_hash": "sha256:f94f4615f651119a627d0383911a03a63244b5076da6ce446a39f42686977021",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: Toasted bread with cream cheese, smoked salmon, and a kiwi",
+      "photo_urls": [
+        "https://iili.io/qBPwuwJ.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:cdda7a8da89e4d276e586ad406439741e8d59554abe475dd0e8bcfc1a17ffab0": {
+      "timestamp": "2026-03-03T09:56:00-08:00",
+      "content_hash": "sha256:02fb384be212b6585d10974084b04adb34cd46f53220127ee71f69b1fa82ae9b",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Lisinopril 10mg, Rosuvastatin 10mg (Routine)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:04474d08f812c1f372f20ca8079fcc96f19428b05d08949d38189ec3939ad491": {
+      "timestamp": "2026-03-02T20:50:00-08:00",
+      "content_hash": "sha256:2dad0d72bb975fb32fa77712f35ed7389bdb64c82298bb1ebc6c71e68c6988a8",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Half prunlax tablet",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:ceb80133d037783547909e1fde2c6fee3d3db866e7238ca94f8950597e86414a": {
+      "timestamp": "2026-03-02T20:20:00-08:00",
+      "content_hash": "sha256:105fbc03cc3b45fdf09c2775c71431a2f8cdc0226104583ca5fcba59e1764914",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "25 minutes tai chi",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:13cc081bc490b756b7821fb29f43828091434754c1b8cbd87ed959f108338498": {
+      "timestamp": "2026-03-02T19:46:00-08:00",
+      "content_hash": "sha256:699c61f79065237c4a01d871905273d7d65b3ef05a93059a7589f1d3b3de2758",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "1500mg Metformin HCL",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:f52c41d302562f48391ab969a81f36a96b54b47565cb996d706bfdd51e49a9c5": {
+      "timestamp": "2026-03-02T19:43:00-08:00",
+      "content_hash": "sha256:f2783908782520b98bf08279d0da48b6853f0502136e0d70bbab40d346eae212",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: Dessert: Sliced strawberries",
+      "photo_urls": [
+        "https://iili.io/qBACD3x.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:c920ac4d355b1fad2a7f607554c9b44318c4ad3dfe75191ec6918ee6d765633f": {
+      "timestamp": "2026-03-02T19:21:00-08:00",
+      "content_hash": "sha256:a7c180672e9f750564b6a658e0cd4d02bf501dc26f1c2ef0d24dc2030b518116",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: Shredded beef with bell peppers and a ciabatta roll",
+      "photo_urls": [
+        "https://iili.io/qBuPu14.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:f5e41a8b06ad90780907e3cedefcfcd3c4172b0bc6455e2bc5d0e7a42bfba185": {
+      "timestamp": "2026-03-02T18:00:00-08:00",
+      "content_hash": "sha256:ac293d68507ffc5669cd00c78a5c621577d2bcc55ae444a216208512185d009f",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Trulicity 0.75 MG/0.5 ML",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:11d0f8a463dae7bb013c7a1970f82abedba4dc793de724c05df7faa20d135107": {
+      "timestamp": "2026-03-02T17:16:00-08:00",
+      "content_hash": "sha256:251caf3a01f79352a0f745d60ded45e663c817b7da0d081c5edfec73b8a73385",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: 2 meat and cheese roll-ups",
+      "photo_urls": [
+        "https://iili.io/qBIbt1a.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:6d9df5b4f48b7065d9991de1a13431ed55c40b1c2c3c58184f6803d30135edba": {
+      "timestamp": "2026-03-02T08:49:00-08:00",
+      "content_hash": "sha256:a9c2f3ba5c076120cdd7bcead8dbe704e727472d301a84df72c4a05afd24c02b",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: Smoked salmon and avocado on two slices of toasted sourdough",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:09085e41353a94887d08c7982b5e88c0d0d53e9648ea5d543be7443e6b4f6f77": {
+      "timestamp": "2026-03-02T08:49:00-08:00",
+      "content_hash": "sha256:a94c3f54dd3cbf6b90d0e6df964e6d84ee9b8b0679064844118a18e9569fbab5",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Lisinopril 10mg (Routine)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:4ac1820723e7895164765d1370c245a9670a88ca3b30b479ebe959dddc21f2b2": {
+      "timestamp": "2026-03-01T19:35:00-08:00",
+      "content_hash": "sha256:282df0f70fc1515823998bb87b5093108b5c5fa2e6889c2d2b7d26bdff5fc8f9",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "1500mg Metformin HCL (Manual correction)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:4e6848c59cc8113e868acb7734c53c2820c05b52cb7890fdc8ba4d834e539c50": {
+      "timestamp": "2026-03-01T18:42:00-08:00",
+      "content_hash": "sha256:4a08d51d1db187e58e2683ff204a95ab7f3bcde06d4810abbc9e563b1ecce046",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: 6 green grapes",
+      "photo_urls": [
+        "https://iili.io/qqXyUUQ.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:92926560af33f15d9635a76e66c308933e8caaa394df7bdc8688c300af4d9d06": {
+      "timestamp": "2026-03-01T18:21:00-08:00",
+      "content_hash": "sha256:d54602b55380d0c166017858f3497ba8a4cde58600caa5b603ef87a88a8a1d32",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: Meatballs in sauce with fried rice and greens",
+      "photo_urls": [
+        "https://iili.io/qqXmrEx.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:e1d214873b66d3ea53d52e83175e06d3ee6d93a2f79697ef6ed8aa6000279eef": {
+      "timestamp": "2026-03-01T16:47:00-08:00",
+      "content_hash": "sha256:27e72c86fa3be61c7a9cf9dd916a6078d142d2c60a1e2f843afb77c8e48c2cac",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: Handful of pecans",
+      "photo_urls": [
+        "https://iili.io/qqXmSLb.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:0a79f30f134cb2fba9cca2569d979844ac43c38b51bc5ece7bb9d931661c3a3f": {
+      "timestamp": "2026-03-01T16:40:00-08:00",
+      "content_hash": "sha256:9775809e24c85ceb2ea3635abc65147f22da01f5d42589d6487b38b47131cd99",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: Small wedge of brie cheese",
+      "photo_urls": [
+        "https://iili.io/qqXd1AN.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:c234402897894f6b45d1959d058e92742b1311e7ae99bc3968b86604546d8c98": {
+      "timestamp": "2026-03-01T22:22:00-08:00",
+      "content_hash": "sha256:0f4732a18a87b5f40eed9390f9ba564c63d5714842542cac5eec7fc388788cc0",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "1 hr housework",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:9575c389c4b75d7dc60c0941f859daef7ddbe621d6d8aee1299f37425195f735": {
+      "timestamp": "2026-03-01T12:56:00-08:00",
+      "content_hash": "sha256:5a0b87c9fa4d4ee48dbaba8c34ea17574f1ed3ef69a62b9a563757b95846d2dc",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Lunch",
+      "title": "Lunch: 2 bao buns with pork belly and a glass of orange juice",
+      "photo_urls": [
+        "https://iili.io/qqM6DBe.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:2aa434588b4a58e3f4c477de41e3368bf3e06cf7da385352f1d08965ccb6e1ec": {
+      "timestamp": "2026-03-01T19:15:00-08:00",
+      "content_hash": "sha256:6110d3f21762fe100b7a4970139484ffef9b54fde09601d485ce7f276e9e0728",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "1 hr heavy housework",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:bb3cf33dacef7607e7d327967ee287c0dbf03922db13579be87e6dd11e130eef": {
+      "timestamp": "2026-03-01T09:07:00-08:00",
+      "content_hash": "sha256:de3599003fbd491b1d7d49ab94c8aa7758fab1226f20382fe755f829d8892068",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: Sourdough with peanut butter and jam, and coffee with milk",
+      "photo_urls": [
+        "https://iili.io/qq1L2Hl.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:306c84333c8b975f1cad5a7d106a76169586eb4494fb2b11de130f3856aa04cf": {
+      "timestamp": "2026-02-28T19:42:00-08:00",
+      "content_hash": "sha256:55a96b67c05e6ca45a29fdd3f2f374890d1063e14d7e5f388692b622536eb35f",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: Small piece of bread and a glass of milk",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:9dc66ae936b5ffcec74f6ab6b14ade5d4cfc613fff5138d90339ac1ccfa90457": {
+      "timestamp": "2026-02-28T19:06:00-08:00",
+      "content_hash": "sha256:2622b5af01480b8df1e35b8615317df2079e6ed374191fc0a1e8582d2c3e33d9",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: 1 energy ball",
+      "photo_urls": [
+        "https://iili.io/qquu6Ml.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:821170d6901e983432cf6bcdde9df88bb71f96b8d9f2cc20f19ddfc9ccbb6e3e": {
+      "timestamp": "2026-02-28T18:53:00-08:00",
+      "content_hash": "sha256:1632bcdcff5de9f9a725801248ae25f93e7323f2fea206021c19ce67eb15e718",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: Small slice of bread with brie cheese",
+      "photo_urls": [
+        "https://iili.io/qqT1iw7.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:d4f935dc6c92276185de41c666f21359c6511677aa129898b8fc6e4e9e537262": {
+      "timestamp": "2026-02-28T18:40:00-08:00",
+      "content_hash": "sha256:75111db04d0af1406b65dca2d3ff6c34ab05a6f823fc2095c3c9c9accb055b76",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: Ramen with pork belly, tofu, bok choy, carrots, and nori",
+      "photo_urls": [
+        "https://iili.io/qqT7gaI.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:05399e6f2d8a6badaffd142b9eef67b4f58e94ae2f9c77986d54105d7ce4df8f": {
+      "timestamp": "2026-02-28T13:26:00-08:00",
+      "content_hash": "sha256:fd537c3f5fe2eb95ee3c2028fd27ec8ea426531e8762f28842956ab4832c9d45",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: 1 Japanese Cream Sand cookie",
+      "photo_urls": [
+        "https://iili.io/qqCNPx1.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:d2668c843856790bee6e612526ec22353fc68795d909532f38ca0ff09f19f44f": {
+      "timestamp": "2026-02-28T13:06:00-08:00",
+      "content_hash": "sha256:433f67e5b919bf4bc25456d0c9b2a916ca7e1d85d38b1047ce7f23ce2b7eebc3",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Lunch",
+      "title": "Lunch: Prosciutto, hard cheese, and 6 green grapes",
+      "photo_urls": [
+        "https://iili.io/qqCGaOg.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:7e509efe1b03123e089861ef046a0f76e59fd0f26ad65946f6100e76e5cf1f29": {
+      "timestamp": "2026-02-28T18:05:00-08:00",
+      "content_hash": "sha256:f2ee1d11688f0fde9178c0318e305ee1aed3ce4c7417434783c7d4cdda81e964",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "30 minute walk",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:7ab3d8e651595e749266c5f16a1f74b1ebc77daa4fb490eedfff51236e08b27d": {
+      "timestamp": "2026-02-28T09:04:00-08:00",
+      "content_hash": "sha256:e5b47670cd00d6e452a9b04859fd2a8fe75e53881d4ddc96712555395d466ee0",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: Scallion pancake, smoked salmon, scrambled eggs, avocado, orange, and 3 loquats",
+      "photo_urls": [
+        "https://iili.io/qqKyhN9.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:8f1ee4da5836a5a81ee8bbf069c844834f02883f0d80650418c345af13e8ea33": {
+      "timestamp": "2026-02-28T17:04:00-08:00",
+      "content_hash": "sha256:7ef4f513db6e72ea25a9520161ea4668f4baea622ea1679708ce64579581c676",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "CORRECTION: Maria did NOT take Rosuvastatin today. Only Lisinopril 10mg.",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:6d032240228b51b150c53e0703345d36ebfac63a94ae50bdc680233a1d714b77": {
+      "timestamp": "2026-02-28T05:03:00-08:00",
+      "content_hash": "sha256:473ae1d68bf831e41400e8dff42ea2f330539e9b5ddac32bb2f6d10da7a1f70b",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "25 minutes tai chi",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:656ec1419f48b2fc413d6d9139185cd44f2dd79953e90f31f7da3197d0f3893a": {
+      "timestamp": "2026-02-27T20:33:00-08:00",
+      "content_hash": "sha256:161fd5e42123dcdf40672c93ccff8ac3f66fafdbe32a1e3d7ef371c54433c06a",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: Yogurt with berry jam",
+      "photo_urls": [
+        "https://iili.io/qfm6STJ.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:94af26269adf7a845e13a76177d6b944daef131a713e1943947f532e0f3fe87c": {
+      "timestamp": "2026-02-28T04:33:00-08:00",
+      "content_hash": "sha256:40cff4cf6185d3d8da5aee55231a08fb82504cd7c4b4f884d02fdde2bd520748",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "1 tablet prunelax",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:ff0dcdab074c31f7d5cfb9609976abc072137778fdaacf96c283faafe7410413": {
+      "timestamp": "2026-02-27T21:15:00-08:00",
+      "content_hash": "sha256:86dbb3af35b134f5d72ec8a3eaf1e5231c3e86a5d2dda197d9cb561005ece5d4",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "1 hr walk",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:a0c2836c02d529eadf8ba8b6eeeb4895059d3f4f69e995da0ab47f5258e3d671": {
+      "timestamp": "2026-02-27T12:41:00-08:00",
+      "content_hash": "sha256:09680a873176f56b4158fc6eaba5417ca5dfc54dbf01dfd63b97207f4046aae3",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Lunch",
+      "title": "Lunch: Noodles with avocado, greens, and shaved cheese",
+      "photo_urls": [
+        "https://iili.io/qfLDFt4.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:64ffb1bf9ba4b3c2981445f519ce7fbcded718789784d8325bdb2e9806f66592": {
+      "timestamp": "2026-02-27T12:31:00-08:00",
+      "content_hash": "sha256:26e6637afcd0c81fd7431c7265075a9d396ba0d6a6358128a716b22822eaab08",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Lunch",
+      "title": "Lunch: 4oz orange juice",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:bb3a557c25eb04f16f54ffeecd7b43203b0a0bbacfb03584f9e827562b160137": {
+      "timestamp": "2026-02-27T18:23:00-08:00",
+      "content_hash": "sha256:a2439aa3f85c5f1abf389c3d8d6b44973eda31f69eaff041f17f1860a2cf8a66",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "Gardening",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:6a8b560536bc227c13602eb736e614adc3e700f75a0ea73f7af070047e58e2d1": {
+      "timestamp": "2026-02-27T09:17:00-08:00",
+      "content_hash": "sha256:5151cfa164f6d63c3956c078d7430127f4d93684815607113375cddd38319ad7",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: Half a red apple, sliced",
+      "photo_urls": [
+        "https://iili.io/qfPDmyx.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:76e36a0c3ba75619d3d2a5793ef9c8435e1cf96f59064415cd2ffa3bae5a99fa": {
+      "timestamp": "2026-02-27T09:15:00-08:00",
+      "content_hash": "sha256:44452068826d90230adba657e7040bd588a68ef1a8cbd28be1bbb298f5245bdd",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: Two slices toasted sourdough with cream cheese and smoked salmon",
+      "photo_urls": [
+        "https://iili.io/qfPtLdJ.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:d68a11c7f4776fa5bda467759449121d34ec55eba8d5c49f8d9226d2f6be21cd": {
+      "timestamp": "2026-02-27T09:13:00-08:00",
+      "content_hash": "sha256:e486ce6347044e305d27a2ebb107e0686071ed8d53335f998d0a6535cebb4faa",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: Fresh orange juice",
+      "photo_urls": [
+        "https://iili.io/qfPs7vp.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:f9b9136377e6d0737da2519ee44aaac646c038d74d79a27469b6e3ab50f1c93f": {
+      "timestamp": "2026-02-26T19:38:00-08:00",
+      "content_hash": "sha256:5e30546b453fc297b998c9b222ff2dd5f5012efbf952a788641426cb2973787a",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: 1 Cream Sand cookie",
+      "photo_urls": [
+        "https://iili.io/qfwu5VS.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:30779bc3548cc965781ffbaa552fc65048f15e9b22694649038f357e3ec5dac8": {
+      "timestamp": "2026-02-26T17:52:00-08:00",
+      "content_hash": "sha256:496f6edc727188a1518387770fb95437022ffc1a2fe06008ece5358c1c754147",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: Glass of champagne and 6 grapes",
+      "photo_urls": [
+        "https://iili.io/qfj0fQj.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:813c2b1e9ae8959587caccd62dc130be107ff81be4bddd2c1d35fbc0d9943541": {
+      "timestamp": "2026-02-26T17:47:00-08:00",
+      "content_hash": "sha256:6ba3144307828047e9aca00695073ef0e63b9d3278e71028ef7526d65a1d44e8",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: Two deviled eggs",
+      "photo_urls": [
+        "https://iili.io/qfj0Khb.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:d83e7dc6a6347698d8becf818cc1ffb921e670b214f85f71c6da3d5a35537752": {
+      "timestamp": "2026-02-26T17:42:00-08:00",
+      "content_hash": "sha256:5a5d5c430b1b5a033ccab0f0d652c9c21be97dd4e39376ace1756106bdfe0b6b",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: 2 bao buns with braised meat and scallions",
+      "photo_urls": [
+        "https://iili.io/qfj0dv9.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:d9d1beb9851b9f16e8099cc5ec0c6c33a958b85219c3dddf424ddd54e776b419": {
+      "timestamp": "2026-02-26T13:54:00-08:00",
+      "content_hash": "sha256:7fd3e3493b18252bc9de720bee27f8fd8b457732ecbc669b1595762df242695c",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Lunch",
+      "title": "Lunch: noodle soup with egg and leafy greens",
+      "photo_urls": [
+        "https://iili.io/qfhhYKJ.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:157c3818b5c99be43ff47a4229a4691ffd7ae5a609c8f7407a0b78ce1cd557a8": {
+      "timestamp": "2026-02-26T17:44:00-08:00",
+      "content_hash": "sha256:a08c123f45310dc10a6e99dce8b3eaa72107fc659fd4059969d2d7376523b564",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "Gardening (90 minutes",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:cde8737222ce1ecfc4892abd441aa9983afa0e5894ceef88d8a2fdbdae9c6dce": {
+      "timestamp": "2026-02-26T09:31:00-08:00",
+      "content_hash": "sha256:790d8804bbff9543c408f5b0396a50ef76c5f89c4dfe4c93478ef50e17635914",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: Scallion pancake / savory flatbread with some cheese",
+      "photo_urls": [
+        "https://iili.io/qfh8R3X.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:f98e53e8c78171889b3b9aade039252a60c2b2a1383c6d7d0437601ad12f3f81": {
+      "timestamp": "2026-02-26T09:27:00-08:00",
+      "content_hash": "sha256:f54e474bea57b185a70952fe95ff2b3cd38f24a57b8ee8f04b1a59216017c413",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: Apple slices + small cup of yogurt",
+      "photo_urls": [
+        "https://iili.io/qfh8TGI.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:1507ceb6c8fa811e65d4ab427bf097ea852a40604e908776cd72dc2f44d5ac31": {
+      "timestamp": "2026-02-26T17:27:00-08:00",
+      "content_hash": "sha256:b51e39c008c159417958145ef3b7e67c9f3579e261ac58b5492006150585b25c",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Medication: Lisinopril 10mg, Rosuvastatin 10mg",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:5235548d3103d2078458b6d11a9a0d382ad0b08c49fe503969eee3a7bb50ef77": {
+      "timestamp": "2026-02-26T06:04:00-08:00",
+      "content_hash": "sha256:f8eb40eab040e6f0919560e54844c21e2ab832353c03e08919a6eabc6d314f81",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: Small glass of milk",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:a20537539107145b51d2676f5ca8ee8f33cdb7c017f5c31c584596fa4566e436": {
+      "timestamp": "2026-02-26T06:03:00-08:00",
+      "content_hash": "sha256:35748be47008a13ded4aa0be023fdee54b0e77ca3676c3c3df21f6c515a8bd46",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "1 ibuprofen",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:2195a18442b227aa9118dd0c44700c4f40eb1fa5d3ddd1a46f873b24f1533ab1": {
+      "timestamp": "2026-02-26T06:02:00-08:00",
+      "content_hash": "sha256:48390d08212385d7188b82d901a6db5380690ef3e9ccb7e7bddfd2fedd33456e",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "1 prunlax",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:a985d35f4ce4a4b7ab10cc7ed10a5b6eb0c1637d89a5f8b4c0ebae1f9de80a32": {
+      "timestamp": "2026-02-25T19:38:00-08:00",
+      "content_hash": "sha256:dc2396e49632909fb275fe23ecae717eb4b77e1389eedb54f8110036f356fa24",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: 6 green grapes",
+      "photo_urls": [
+        "https://files.catbox.moe/pdbpxz.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:993f0c04ef094d366c242f2afc619c8222792919ba023cdf122b87478ccb8f46": {
+      "timestamp": "2026-02-25T18:44:00-08:00",
+      "content_hash": "sha256:60608e4d4e0027b8e220866853331e3d33890f6fd6c4d58de04e6d2c098ec884",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: White rice with mole/curry protein",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:ba42e911a9ddaef74c8ad42ee311c5ce19d86368e3cb8b8b71537f8c25a38775": {
+      "timestamp": "2026-02-25T18:38:00-08:00",
+      "content_hash": "sha256:e2066b778df5ebe5203b86f51e2e865b3993de33d7e7ccebcafa50bbfdacd35f",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: Corn tostada with tuna and avocado",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:446e6c0caa0d50655c26811adf422b82963c26f71274a02516c3f301852b9a11": {
+      "timestamp": "2026-02-25T18:33:00-08:00",
+      "content_hash": "sha256:f4775bca670155361df69ff19ab975d19af985caaa672d92663c41fb31897eb5",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: nori seaweed chips",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:3595a713619deac44afd523eae84352d3cfde47cfddd7775485c0a4ea3857f7c": {
+      "timestamp": "2026-02-25T18:26:00-08:00",
+      "content_hash": "sha256:9316ea885f1afe39f76f2a7a7ec203f96f49fbf686e05d7aaa7092bfe621eaeb",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner salad: endive, avocado, citrus",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:3b4b82e689c4b1e53bb92d65196bdfa5ac39d1444d91591ff37cd8a9aef01a9b": {
+      "timestamp": "2026-02-26T02:02:00-08:00",
+      "content_hash": "sha256:fa38839da283585669d32d4d0eec03840d9e01d39309c9d394aba5b324f1e6f4",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "2 hour walk",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:0ebfbc357cdbea61fd7775785f9616a7de1ee90abb91756feb25bc25aa4eb5ff": {
+      "timestamp": "2026-02-25T16:03:00-08:00",
+      "content_hash": "sha256:6bff303635e6d4f632320ae0b585b8e0f200073422d4930f758e955be5b9a8f8",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: Half an apple",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:5c31e9bc249ff044092b93ec2c62471e4b3197088e0310a9e814ffaa3704399e": {
+      "timestamp": "2026-02-26T00:01:00-08:00",
+      "content_hash": "sha256:5f67e30a16d03943d9aded805788a549474c8c691b08d8f8508ce90e8921548f",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "1 hour heavy housework",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:f75128f78640752d4bc3d55868c00186cd93dc55fc0845b3e3947c05d4c846cb": {
+      "timestamp": "2026-02-25T12:09:00-08:00",
+      "content_hash": "sha256:1f6b3aed7c38d5ea1ef49206c392deb072133ab6b4d07ccda5275d0b23f83b74",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Lunch",
+      "title": "Lunch: Octopus with potatoes",
+      "photo_urls": [
+        "https://files.catbox.moe/uf8gwq.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:a3d0ff4612a693c2f1246dfcaa9b0a4b0acfa44dc97fd5177a1c532017dec928": {
+      "timestamp": "2026-02-25T09:27:00-08:00",
+      "content_hash": "sha256:1979c05b2e4ae366c6be0c62e215db4e574d588ca1721547a1bc98fbd19e3cdc",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: Smoked salmon on 1 bao bun",
+      "photo_urls": [
+        "https://files.catbox.moe/dzucg3.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:dc6e89ab48aa98cfcd705380aa150d93c1f37206c7d81d057109ddf512ad19fe": {
+      "timestamp": "2026-02-25T05:34:00-08:00",
+      "content_hash": "sha256:ceecff9379601ffbce478369296d11120c2797159cc312d5ae43c3864a9547e8",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: Glass of milk and cookie",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:13190934398458506e4aa065cebeb093c642f1427814f843ec82a9929928ec8d": {
+      "timestamp": "2026-02-25T03:28:00-08:00",
+      "content_hash": "sha256:1bfacfc256d7e2b65f8827eb9e4a7008a446f30647c88b453c4db0d62406ed54",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: Late snack: Small piece of dark chocolate",
+      "photo_urls": [
+        "https://files.catbox.moe/xw7qza.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:2c8a82637e3c744bf0b0a818f9300858f61cb1109d5b7449268cfcf7a17033d3": {
+      "timestamp": "2026-02-25T02:48:00-08:00",
+      "content_hash": "sha256:9b173b7a466e4d05f29ffa9ba9bebf2a52d1e335792342524ef8384ba14e8039",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: Dinner: Green vegetable soup, octopus with potatoes",
+      "photo_urls": [
+        "https://files.catbox.moe/2059f6.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:a5e46ac87a97a3b072516b6775d2f5a449e4db4a74ed5b67b2b8149b4d54bd3a": {
+      "timestamp": "2026-02-25T10:00:00-08:00",
+      "content_hash": "sha256:7176b7cc845846a898fa157fe47e1960d7ae8fba8b78945ee34e8d8cee60304b",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "500 mg Tylenol",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:ada7b8543fa5570dc4c50eb2cc4c4e5c6ca69090cc69a6c1b42f614f6713285e": {
+      "timestamp": "2026-02-25T08:33:00-08:00",
+      "content_hash": "sha256:d218985c3d81f2a58ef6f2075fb24db2c92df306b7c9298ed2d3b7ae1443eb02",
+      "user": "Maria Dennis",
+      "category": "Sleep",
+      "meal_type": "-",
+      "title": "Sleep Report: 5.31 hours total. Breakdown received: 4.66, 1.4.",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:eaa3f0a470e977ba5171b2933e31ef99f2190d3c4df842bd9d1119cdbadd440f": {
+      "timestamp": "2026-02-25T05:36:00-08:00",
+      "content_hash": "sha256:de032ac35ced68f953046e8a981a6b2ba83d79084c503f7e46f3b77504fa073f",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "1500mg Metformin HCL",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:b1ea4b7738dd4a5432efd94062810a267662447c9993ebe944a797ad84992d7a": {
+      "timestamp": "2026-02-24T21:34:00-08:00",
+      "content_hash": "sha256:9d9a1154e160977ec941f172d1858724777e34ec288f248d7398602399325cd7",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: Glass of milk and Japanese Cream Sand cookie",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:1e1bac58f9f35681069dc0da3bf6fb5ecb836aaef97d17a43d5e9f6dd4d836ba": {
+      "timestamp": "2026-02-24T19:28:00-08:00",
+      "content_hash": "sha256:3a2dedb6123b048f97618d2fff6f3a3ca51d0b239459b0763bd2c31cd3ab4b1a",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: Small piece of dark chocolate",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:12015b81d93bed83bb5d00426fee58839389a133173aecedad1121e11d46c138": {
+      "timestamp": "2026-02-24T18:48:00-08:00",
+      "content_hash": "sha256:e28a5ddb35de9c583d3f94f9b818d338de15ac748cdeae720bb78d51904ab1ca",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: Green vegetable soup, octopus with potatoes",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:23395a1f9b0d6294939abf8b71c5a3d38bb686752e3dfb01ef0a2970dec3a4aa": {
+      "timestamp": "2026-02-24T15:49:00-08:00",
+      "content_hash": "sha256:c3597ded4e8781f257c6a742ce16dd33afdbb977bb3f2aa9d5f6a3388ab7e513",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Lunch",
+      "title": "Lunch: Handful of roasted cashews and dark chocolate",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:6b7e961f5b39837b39e80a189e25c97f02d1765ab46124a7e7e28647d7e17f9e": {
+      "timestamp": "2026-02-24T13:22:00-08:00",
+      "content_hash": "sha256:aae92d25c494a79620517f7b4ef5f5920dfb579ebcd385bd33765d6fe87b1b12",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Lunch",
+      "title": "Lunch: 2 Onigiri, 2 Umeboshi, and Miso soup",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:5451cf909535a84bfa88d3bad31a3980acae6730b9bc8db082558318d4a6af62": {
+      "timestamp": "2026-02-24T19:47:00-08:00",
+      "content_hash": "sha256:32903ccd2dc8be6f10426fea1b2c4bd3cd7bac7ec6af66aaffbad4c0e1872b1f",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "30 minutes housework",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:550c8fcdabc85d5307d7fee301958939ba1ce74175dd4d280fbe700b619ce911": {
+      "timestamp": "2026-02-24T19:18:00-08:00",
+      "content_hash": "sha256:4980bb2befbc887c820e0fd4ac124ce57f858150d47b900aa377d90b94c24c01",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "1 hour heavy gardening pruning and weeding",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:9802b7ddaf2d756a8bb87b40cda407a0b0e33df78e228b26c41598aea73529ed": {
+      "timestamp": "2026-02-24T09:54:00-08:00",
+      "content_hash": "sha256:67366023ae81f7b37ea644451c25240e22c583cbe758c305d4f628e1f132af05",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: Fried egg, prosciutto, 2 bao buns, and sliced apple",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:245042d13c196b93188dfe9ca3f5dc9b3b47c0c033f155316274399af2c2b31c": {
+      "timestamp": "2026-02-24T17:25:00-08:00",
+      "content_hash": "sha256:fdd115f44d5a3eafb5e5e546979fa81ecadaf6c28f2430c2a921e79a0269f95d",
+      "user": "Maria Dennis",
+      "category": "Sleep",
+      "meal_type": "-",
+      "title": "Sleep Report: 7h 20m total (Core: 5h, Deep: 1h, REM: 1h 20m",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:0b2335108661f74c1515215c4a6219be3b36daf4521c193d357e7b3bc26788d3": {
+      "timestamp": "2026-02-24T17:00:00-08:00",
+      "content_hash": "sha256:8a387df3c5578334793d17ce884a585b7cd2113cb7b191983b35118d9030a053",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Lisinopril 10mg, Rosuvastatin 10mg",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:b47130c19c26f5775a3c65affb155c5eef705a0e12ccd38a7f32e34778990be9": {
+      "timestamp": "2026-02-24T04:45:00-08:00",
+      "content_hash": "sha256:3105d06b80fd3cd87d931b9b3b674b05e6c9453910a331ea6b4eaff2e9011629",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "1500mg Metformin HCL",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:de79f965379917cc40dee1388c18884c5ad568fde9ddb0da272e73ca1f26aec8": {
+      "timestamp": "2026-02-23T20:43:00-08:00",
+      "content_hash": "sha256:10b7db3339ec946455eb9f341556a916deaf39b58d481747192c8f4b70ad26a3",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: Japanese Strawberry Cream Sand cookie",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:0d8c1f0b77632ef000a29fe8c7afb43bf887de1ac37c505bfbfc5b7c6c3f4772": {
+      "timestamp": "2026-02-24T04:33:00-08:00",
+      "content_hash": "sha256:2909e6b0287f1449f1a9e8ffbef75eb926187a69708c0af42bd282b4768ddb39",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "15 minute walk",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:1dbb54e75db1c5bc7045a25f872413cc2f98444cff319b3f71603dcb3ccfdefd": {
+      "timestamp": "2026-02-23T19:45:00-08:00",
+      "content_hash": "sha256:76685e32dec245b55cfc06c25b24d0ec0859d1e97c845ff62aec8cf1989ebbfe",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: Grilled unagi, rice, tempura, asparagus",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:6a914359b2e0fe3f1b6ecc8e841d071b4b2539811143c4d5dd359911e95cf092": {
+      "timestamp": "2026-02-24T01:34:00-08:00",
+      "content_hash": "sha256:bb676c9329d50ed803a556f1bfd7faf6c4581e45a61c773274dc3825d0fb5d23",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "1 500mg Tylenol tablet",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:edbe90481d9bd167314130360c643cc660652fb3f58262326fad38e0a227c996": {
+      "timestamp": "2026-02-24T00:04:00-08:00",
+      "content_hash": "sha256:ac9ada44d8e62592c9dbf9d6f0cca417e3a9916f6990ce8e26b80566cae609fd",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Trulicity 0.75 MG/0.5 ML",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:ffbc5cad8ee48b5064d0ffa3e789ff9b5af77cfd32a7def07ec69ea5d77a3092": {
+      "timestamp": "2026-02-23T15:10:00-08:00",
+      "content_hash": "sha256:8a11e1ee56ac768a41e7b4db210351a54915bfcc6764269faa353831a746a3c4",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Lunch",
+      "title": "Lunch: small bread roll with apple cream, roasted cashews",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:95556d82fcdce0345740b1bb853baadb292b2706130140bd3acabe73fd2e5827": {
+      "timestamp": "2026-02-23T23:05:00-08:00",
+      "content_hash": "sha256:509234f6785ea60b6c83293408900abbefa08138d225f15f6ba302f0a2dd2d82",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "90 mins heavy gardening: digging, pruning",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:f668e8741bf6d0aaa9154723821ff0784e951c1af31608da64e7065380597aaa": {
+      "timestamp": "2026-02-23T12:06:00-08:00",
+      "content_hash": "sha256:255e76095e847837c077776b6d2a41d4dd251beee10a72400ff1444bf495ec4a",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Lunch",
+      "title": "Lunch: Small baked potato with prosciutto and salad",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:525efcfd2efa99381c1e2fbacd3ead6a079964880b002075b613924b51847069": {
+      "timestamp": "2026-02-23T20:00:00-08:00",
+      "content_hash": "sha256:e7280e4ce799b9f8a6baab69d65f9823b015af56b4e73e6b8f313da47866ace2",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "2 hours housework (corrected from 1h",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:4eb31e6048a2d0b82c9cd8a740d0eb73f2eb797480f3b5474084fee7dc97bbd0": {
+      "timestamp": "2026-02-23T10:00:00-08:00",
+      "content_hash": "sha256:1cba56ab5cec1888c8c6818b9cf6b37ed1d4b7b559e817fdddbb36f98b6334c8",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: 1 cup black coffee",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:d8d3f8ab0f87c058ad15a488e985afaa77ab869265fa5b917ebcb0a26c059e09": {
+      "timestamp": "2026-02-23T18:00:00-08:00",
+      "content_hash": "sha256:bc20988a6d8edca50d8761359701797c0880301b2517c15b33a308626e6da773",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "1 cup black coffee",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:c50ac613bc011603029806ba14720b51aef97cf3128e476ab426b4d4ab99e840": {
+      "timestamp": "2026-02-23T09:42:00-08:00",
+      "content_hash": "sha256:0087825c0d74e0f197be714b2fd5df731d37d8582ba9757e6df8d8041d1ce42d",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: 2 fried eggs, 2 slices toast, sliced apple",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:846521472f9f2526f7f26962601603b212e96af53da4a4568beb9fe9e67ae09a": {
+      "timestamp": "2026-02-23T17:25:00-08:00",
+      "content_hash": "sha256:d6ab8b085ef6221709c5f50ba02d472f62536719a3f5e56bedcf57dfc678fcd8",
+      "user": "Maria Dennis",
+      "category": "Sleep",
+      "meal_type": "-",
+      "title": "Sleep Report (Apple Watch): 5h 3m total. Core: 3h 19m, Deep: 54m, REM: 50m. Awake: 10m.",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:b99a9ef164bb0d557074af945587321b1ba6621f818d8479abcf743606aff6fb": {
+      "timestamp": "2026-02-23T17:00:00-08:00",
+      "content_hash": "sha256:a1ba31669f598dd5200457dfaf3d87c107ca26c82d2d1562f041e1392e65e66a",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Medication: Rosuvastatin 10mg, Lisinopril 10mg",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:1479d1705e6135e37fb887ec1794ebb6aa82966616361a497d57a952663c2cd9": {
+      "timestamp": "2026-02-23T12:00:00-08:00",
+      "content_hash": "sha256:bb9b97f7c6eeeea6263450eab89ef4b22754ec70afca18ddcc6d31ef279d713e",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Medication: 1 Sudafed tablet",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:8e234facc78dea4f750a0ab6d6f14bfd808dab1c9d1068f597641855e4f76360": {
+      "timestamp": "2026-02-23T05:00:00-08:00",
+      "content_hash": "sha256:513ffeeb564ea8ec977a17ddfe63a6d5db2184e5f97d1dd05a54de24d80c0326",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Medication: 1500mg Metformin HCL",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:e86b5e11e57baed9efb665aaa10a3e0fe12cb5722b982732cf42ba69b7987f90": {
+      "timestamp": "2026-02-22T20:30:00-08:00",
+      "content_hash": "sha256:d10bc07b8d505edd1edb89cff1c60e20e20ee4e41134ed55e6b74f4aa5a08677",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: Handful of cashews",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:e07afeee5ef56bf134a63f8cdf354914aca51c93f100e028ad3b58088cb9112e": {
+      "timestamp": "2026-02-22T19:30:00-08:00",
+      "content_hash": "sha256:7d25541fe9fbb3002b56ba0800dea1740f6d25083494998dc97357320234a0dd",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: Pasta dinner with sake",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:74e1038293df24e3baeb78c5f63db22e8319ab20a401da34208da0b183cd63a7": {
+      "timestamp": "2026-02-22T22:30:00-08:00",
+      "content_hash": "sha256:5cfc387a04ff863ac9eab6e4bc30da9c6992b4f185266d70fdf2c0c2b267cbea",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "Gardening (1 hour",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:89fd0f053ae87ce69ba8a4de39e6971b797851d079c7afa7a9b52ef99d1acc62": {
+      "timestamp": "2026-03-09T13:37:00-07:00",
+      "content_hash": "sha256:167d25524b89f53a2b9165d3ba249a0d408725e84b3ba07d2535f50f04d70af5",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Lunch",
+      "title": "Lunch: Scallion pancake, prosciutto, and avocado (~42g carbs, ~500 kcal)",
+      "photo_urls": [
+        "https://iili.io/qAWqhN9.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:91ca93f25198256964e35f963748394d138dbd2613522ccd1b95bbf58e7f86ab": {
+      "timestamp": "2026-03-09T13:39:00-07:00",
+      "content_hash": "sha256:d1455fd73cc116ce8daa9c5af6e70c8711af2a26c816bdac926a29ed7fa114d5",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Sliced apple and kiwi (~22g carbs, ~90 kcal)",
+      "photo_urls": [
+        "https://iili.io/qAWYFjf.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:3f2af089cd5eade0fad2047d32c40b0326ffa9ad6b16fe8363192e2a6840146a": {
+      "timestamp": "2026-03-09T15:58:00-07:00",
+      "content_hash": "sha256:4b2bc9017629967b929561b27a1a506940dba6327b34fdf0729adc3273ad05f4",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Mixed nuts and cheese balls (~12g carbs, ~250 kcal)",
+      "photo_urls": [
+        "https://iili.io/qAS2gVV.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:2834387db4b733f82f0dfbe15d176033cb282a7e2297238dd7ab29ba1499bbd0": {
+      "timestamp": "2026-03-09T18:40:00-07:00",
+      "content_hash": "sha256:49f3ee0cbcbce31fafdb752af7c481c9ca4aa79e1111d7273ad70ab8818094b7",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Pasta with meat sauce, cheese, pork belly, broccoli, and a slice of bread (~70g carbs, ~780 kcal)",
+      "photo_urls": [
+        "https://iili.io/qAQ2FNp.jpg",
+        "https://iili.io/qAQf0QV.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:9fd1c7c427f923f323d0b7f55a0bc9ac0cfc182909e206335e62dd484b37b949": {
+      "timestamp": "2026-03-09T18:56:00-07:00",
+      "content_hash": "sha256:e31505dddeb67d2d19a36ff84204e3bdb7f92ed19e4218a22543ff1fbe0aa96f",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dessert",
+      "title": "Chocolate cake with whipped cream (~10g carbs, ~120 kcal)",
+      "photo_urls": [
+        "https://iili.io/qAZ5pMF.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:10150b7b221b65b9e9e971573a652639269cf6e118761b456dfad50d4d7febd2": {
+      "timestamp": "2026-03-09T21:30:00-07:00",
+      "content_hash": "sha256:f98d2bd45d4405e20daadfad625147dc221a7e6e29434cda5acc4cb877ae35c8",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Glass of milk and a spoon of peanut butter (~15g carbs, ~250 kcal)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    }
+  }
+}
