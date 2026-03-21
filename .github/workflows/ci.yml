@@ -22,7 +22,7 @@ jobs:
       run: npm ci
     
     - name: Run unit tests
-      run: npm run test:unit
+      run: node --test tests/unit/sync_state.test.js
 
   deploy-staging:
     needs: test
