@@ -1,5 +1,16 @@
 [
   {
+    "id": "32b85ec7-0668-812f-bb71-dd52cd7a98b2",
+    "title": "Breakfast: Avocado toast (1 slice) with 4 sardines (Peak: 155 mg/dL @ 12:04 PM ✓ within prediction) (BG: 121 mg/dL Flat) (Protein: 17g) (Pred: 140-160 mg/dL @ 10:45-11:15 AM)",
+    "type": "Breakfast",
+    "date": "2026-03-22T09:12:00.000-07:00",
+    "photo": "https://iili.io/qSJLrFe.jpg",
+    "carbs": 21,
+    "cals": 340,
+    "delta": 47,
+    "peak": 168
+  },
+  {
     "id": "32b85ec7-0668-81d6-91bf-c6fb1bda3769",
     "title": "Dinner: Pulpo a la Gallega (octopus and potatoes with paprika), dark vegetable medley (mushroom/eggplant stew), 3 strawberries, 5oz milk (BG: 127 mg/dL ➡️) (Pred: 190-210 mg/dL @ 8:45-9:15 PM) (Protein: 26g)",
     "type": "Dinner",
