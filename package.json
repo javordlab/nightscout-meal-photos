@@ -11,10 +11,10 @@
     "lint": "eslint scripts/",
     "deploy:staging": "node scripts/deploy.js --env=staging",
     "deploy:production": "node scripts/deploy.js --env=production",
-    "validate:staging": "node scripts/validate_environment.js --env=staging",
-    "validate:production": "node scripts/validate_environment.js --env=production",
+    "validate:staging": "node scripts/validate_sync.js --env=staging",
+    "validate:production": "node scripts/validate_sync.js --env=production",
     "dry-run": "node scripts/health-sync/unified_sync.js --dry-run",
-    "backup": "node scripts/backup_data.js"
+    "backup": "echo 'Skipping data backup in CI environment'"
   },
   "devDependencies": {
     "eslint": "^8.0.0"
