@@ -24,22 +24,24 @@
   3. Do not round or approximate unless the script already does
   4. Never invent numbers — if data is missing, state "Data unavailable" instead of guessing
 
-## Model Configuration (Updated 2026-03-20)
+## Model Configuration (Updated 2026-03-21)
 
-### General Task Chain
+### Default Runtime Chain (OpenClaw)
 | Priority | Model |
 |----------|-------|
 | Primary | `ollama/kimi-k2.5:cloud` |
-| Fallback #1 | `openai/gpt-5-mini` |
-| Fallback #2 | `google-gemini-cli/gemini-3-flash-preview` |
-| Fallback #3 | `ollama/qwen2.5-coder:7b` |
+| Fallback #1 | `google-gemini-cli/gemini-3-flash-preview` |
+| Fallback #2 | `ollama/qwen2.5-coder:7b` |
 
-### Specialized Models (On-Demand)
-| Use Case | Model |
-|----------|-------|
-| Code Tasks | `openai-codex/gpt-5.3-codex` |
-| Image Processing | `google-gemini-cli/gemini-3-flash-preview` |
-| Top-Tier Reasoning | `openai/gpt-5.4` |
+### Escalation Policy (Manual)
+| Trigger | Escalate To |
+|---------|-------------|
+| Routine sync / dashboards / CRUD | Keep `ollama/kimi-k2.5:cloud` |
+| Cross-system mismatch after first fix | `google-gemini-cli/gemini-3-flash-preview` |
+| Persistent high-risk bug (idempotency, dedupe, data integrity) | `openai-codex/gpt-5.3-codex` |
+
+### Verification Rule (Mandatory)
+- Never mark incidents as fixed without live verification against target systems (Notion UI/API, Nightscout API, deployed dashboard JSON/HTML).
 
 ## Infrastructure
 - **Nightscout:** https://p01--sefi--s66fclg7g2lm.code.run (Secret: JaviCare2026)

@@ -85,6 +85,13 @@
             } catch(e) { return "??:??"; }
         }
 
+        function formatGrowthDateLabel(dateStr) {
+            const m = String(dateStr || '').match(/^(\d{4})-(\d{2})-(\d{2})$/);
+            if (!m) return String(dateStr || '');
+            const [, y, mo, d] = m;
+            return `${mo}/${d}/${y.slice(2)}`;
+        }
+
         function setRange(hours) {
             document.querySelectorAll('#range-selector button').forEach(btn => {
                 if (parseInt(btn.dataset.range) === hours) {
@@ -150,15 +157,52 @@
                 renderGlucoseChart(24);
 
                 // Growth Charts
-                if (d.syncHistory) {
-                    const labels = d.syncHistory.map(h=>h.date.slice(5).replace('-','/'));
+                if (Array.isArray(d.syncHistory) && d.syncHistory.length) {
+                    const fullDates = d.syncHistory.map(h => String(h.date || ''));
+                    const displayDates = fullDates.map(formatGrowthDateLabel);
+                    const commonOptions = {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: { display: false },
+                            tooltip: {
+                                callbacks: {
+                                    title: (items) => {
+                                        const idx = items?.[0]?.dataIndex ?? 0;
+                                        return fullDates[idx] || '';
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            x: {
+                                ticks: {
+                                    autoSkip: true,
+                                    maxTicksLimit: 10,
+                                    maxRotation: 45,
+                                    minRotation: 45,
+                                    callback: (_, idx) => displayDates[idx] || ''
+                                }
+                            }
+                        }
+                    };
+
                     new Chart(document.getElementById('growthChartGlucose'), {
-                        type: 'line', data: { labels, datasets: [{ data: d.syncHistory.map(h=>h.glucose), borderColor: '#3B82F6', fill: true, tension: 0.3 }] },
-                        options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } } }
+                        type: 'line',
+                        data: {
+                            labels: fullDates,
+                            datasets: [{ data: d.syncHistory.map(h => h.glucose), borderColor: '#3B82F6', fill: true, tension: 0.3 }]
+                        },
+                        options: commonOptions
                     });
+
                     new Chart(document.getElementById('growthChartNotion'), {
-                        type: 'line', data: { labels, datasets: [{ data: d.syncHistory.map(h=>h.notion), borderColor: '#A855F7', fill: true, tension: 0.3 }] },
-                        options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } } }
+                        type: 'line',
+                        data: {
+                            labels: fullDates,
+                            datasets: [{ data: d.syncHistory.map(h => h.notion), borderColor: '#A855F7', fill: true, tension: 0.3 }]
+                        },
+                        options: commonOptions
                     });
                 }
 

@@ -6,6 +6,25 @@ const BACKUP_ROOT = "/Users/javier/.openclaw/workspace/backups/mysql";
 const OUTPUT_PATH = "/Users/javier/.openclaw/workspace/nightscout-meal-photos/data/backups.json";
 const SESSIONS_PATH = "/Users/javier/.openclaw/agents/health-guard/sessions/sessions.json";
 const MYSQL_BIN = "/opt/homebrew/opt/mysql@8.4/bin/mysql";
+const DASHBOARD_TZ = 'America/Los_Angeles';
+
+function getDateStringInTZ(date, timeZone) {
+    const parts = new Intl.DateTimeFormat('en-US', {
+        timeZone,
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit'
+    }).formatToParts(date);
+
+    const map = Object.fromEntries(parts.filter(p => p.type !== 'literal').map(p => [p.type, p.value]));
+    return `${map.year}-${map.month}-${map.day}`;
+}
+
+function addOneDay(dateStr) {
+    const d = new Date(`${dateStr}T00:00:00Z`);
+    d.setUTCDate(d.getUTCDate() + 1);
+    return d.toISOString().slice(0, 10);
+}
 
 function getFiles(dir, retentionType) {
     const fullPath = path.join(BACKUP_ROOT, dir);
@@ -41,20 +60,22 @@ function getDatabaseStats() {
         notionHistory.forEach(l => { const [d, c] = l.split('\t'); nCum += parseInt(c); nMap[d] = nCum; });
 
         const allDates = [...new Set([...Object.keys(gMap), ...Object.keys(nMap)])].sort();
-        const start = new Date(allDates[0]);
-        const end = new Date();
-        const dateSet = new Set();
-        let curr = new Date(start.getTime());
-        curr.setHours(12,0,0,0);
-        while (curr <= end) { dateSet.add(curr.toISOString().split('T')[0]); curr.setDate(curr.getDate()+1); }
-        
-        const continuousDates = Array.from(dateSet).sort();
-        let lastG = 0, lastN = 0;
-        stats.syncHistory = continuousDates.map(d => {
-            if (gMap[d]) lastG = gMap[d];
-            if (nMap[d]) lastN = nMap[d];
-            return { date: d, glucose: lastG, notion: lastN };
-        }).slice(-30);
+        if (allDates.length) {
+            const startDate = allDates[0];
+            const endDate = getDateStringInTZ(new Date(), DASHBOARD_TZ);
+            const continuousDates = [];
+
+            for (let d = startDate; d <= endDate; d = addOneDay(d)) {
+                continuousDates.push(d);
+            }
+
+            let lastG = 0, lastN = 0;
+            stats.syncHistory = continuousDates.map(d => {
+                if (gMap[d] !== undefined) lastG = gMap[d];
+                if (nMap[d] !== undefined) lastN = nMap[d];
+                return { date: d, glucose: lastG, notion: lastN };
+            }).slice(-30);
+        }
     } catch (e) { console.error(e); }
     return stats;
 }
