@@ -1,67 +1,62 @@
 {
-  "lastUpdated": "2026-03-21T21:56:32.567Z",
-  "shipments": [
-    {
-      "trackingNumber": "CH499405530CA",
-      "carrier": "Canada Post",
-      "status": "In transit",
-      "expectedDelivery": "2026-03-17",
-      "lastEvent": "Item processed - Bethpage, USA",
-      "lastUpdate": "2026-03-14T02:16:00"
-    },
-    {
-      "trackingNumber": "1ZB8673X0413940373",
-      "carrier": "UPS",
-      "status": "On the Way",
-      "expectedDelivery": "2026-03-16",
-      "lastEvent": "Clearance in Progress - 03/13/2026, 3:47 A.M.",
-      "lastUpdate": "2026-03-14T02:16:00"
-    }
-  ],
+  "lastUpdated": "2026-03-22T00:23:07.507Z",
+  "shipments": [],
   "tokenUsage": [
     {
-      "platform": "Gemini Antigravity",
-      "bucketType": "250K",
-      "managedUsed": 100000,
-      "managedRemaining": 150000,
-      "oauthUsed": 43077809,
-      "percentRemaining": 60
+      "platform": "Kimi (Ollama)",
+      "bucketType": "Free",
+      "managedUsed": 64115073,
+      "managedRemaining": 0,
+      "oauthUsed": 0,
+      "percentRemaining": 100,
+      "realTokens": 64115073,
+      "link": "https://ollama.com"
     },
     {
-      "platform": "Gemini CLI",
-      "bucketType": "250K",
-      "managedUsed": 0,
-      "managedRemaining": 250000,
+      "platform": "Gemini Antigravity",
+      "bucketType": "Pay-as-you-go",
+      "managedUsed": 876627,
+      "managedRemaining": 0,
       "oauthUsed": 0,
-      "percentRemaining": 100
+      "percentRemaining": 100,
+      "realTokens": 876627,
+      "link": "https://aistudio.google.com/app/plan"
     },
     {
       "platform": "OpenAI Codex",
-      "bucketType": "2M",
-      "managedUsed": 25000,
-      "managedRemaining": 2475000,
+      "bucketType": "Pay-as-you-go",
+      "managedUsed": 192786,
+      "managedRemaining": 0,
       "oauthUsed": 0,
-      "percentRemaining": 99
+      "percentRemaining": 100,
+      "realTokens": 192786,
+      "link": "https://platform.openai.com/usage"
     },
     {
-      "platform": "OpenAI GPT 5.3",
-      "bucketType": "2M",
-      "managedUsed": 25000,
-      "managedRemaining": 2475000,
+      "platform": "Gemini CLI",
+      "bucketType": "Preview",
+      "managedUsed": 81316,
+      "managedRemaining": 0,
       "oauthUsed": 0,
-      "percentRemaining": 99
+      "percentRemaining": 100,
+      "realTokens": 81316,
+      "link": "https://aistudio.google.com/app/plan"
     }
   ],
   "database": {
-    "glucose": 7461,
-    "notion": 457,
-    "lastGlucose": "2026-03-21 21:54:57",
-    "lastNotion": "2026-03-21 13:30:07",
+    "glucose": 7489,
+    "notion": 472,
+    "lastGlucose": "2026-03-22 00:14:43",
+    "lastNotion": "2026-03-21 17:02:29",
     "history": {
       "glucose": [
         {
+          "date": "2026-03-22",
+          "count": 3
+        },
+        {
           "date": "2026-03-21",
-          "count": 263
+          "count": 288
         },
         {
           "date": "2026-03-20",
@@ -175,7 +170,7 @@
       "notion": [
         {
           "date": "2026-03-21",
-          "count": 12
+          "count": 27
         },
         {
           "date": "2026-03-20",
@@ -214,54 +209,154 @@
   },
   "syncHistory": [
     {
+      "date": "2026-02-22",
+      "glucose": 127,
+      "notion": 4
+    },
+    {
+      "date": "2026-02-23",
+      "glucose": 408,
+      "notion": 20
+    },
+    {
+      "date": "2026-02-24",
+      "glucose": 691,
+      "notion": 40
+    },
+    {
+      "date": "2026-02-25",
+      "glucose": 973,
+      "notion": 58
+    },
+    {
+      "date": "2026-02-26",
+      "glucose": 1238,
+      "notion": 81
+    },
+    {
+      "date": "2026-02-27",
+      "glucose": 1497,
+      "notion": 99
+    },
+    {
+      "date": "2026-02-28",
+      "glucose": 1755,
+      "notion": 115
+    },
+    {
+      "date": "2026-03-01",
+      "glucose": 2019,
+      "notion": 130
+    },
+    {
+      "date": "2026-03-02",
+      "glucose": 2280,
+      "notion": 145
+    },
+    {
+      "date": "2026-03-03",
+      "glucose": 2550,
+      "notion": 160
+    },
+    {
+      "date": "2026-03-04",
+      "glucose": 2815,
+      "notion": 175
+    },
+    {
       "date": "2026-03-05",
       "glucose": 3090,
-      "notion": 0
+      "notion": 193
     },
     {
       "date": "2026-03-06",
       "glucose": 3357,
-      "notion": 0
+      "notion": 211
     },
     {
       "date": "2026-03-07",
       "glucose": 3621,
-      "notion": 0
+      "notion": 227
     },
     {
       "date": "2026-03-08",
       "glucose": 3895,
-      "notion": 0
+      "notion": 247
+    },
+    {
+      "date": "2026-03-08",
+      "glucose": 3895,
+      "notion": 247
     },
     {
       "date": "2026-03-09",
       "glucose": 4174,
-      "notion": 0
+      "notion": 262
     },
     {
       "date": "2026-03-10",
       "glucose": 4434,
-      "notion": 0
+      "notion": 271
     },
     {
       "date": "2026-03-11",
       "glucose": 4712,
-      "notion": 0
+      "notion": 281
     },
     {
       "date": "2026-03-12",
       "glucose": 4990,
-      "notion": 184
+      "notion": 292
     },
     {
       "date": "2026-03-13",
       "glucose": 5258,
-      "notion": 191
+      "notion": 307
     },
     {
       "date": "2026-03-14",
-      "glucose": 5463,
-      "notion": 191
+      "glucose": 5527,
+      "notion": 333
+    },
+    {
+      "date": "2026-03-15",
+      "glucose": 5797,
+      "notion": 357
+    },
+    {
+      "date": "2026-03-16",
+      "glucose": 6062,
+      "notion": 382
+    },
+    {
+      "date": "2026-03-17",
+      "glucose": 6341,
+      "notion": 396
+    },
+    {
+      "date": "2026-03-18",
+      "glucose": 6626,
+      "notion": 410
+    },
+    {
+      "date": "2026-03-19",
+      "glucose": 6914,
+      "notion": 430
+    },
+    {
+      "date": "2026-03-20",
+      "glucose": 7198,
+      "notion": 453
+    },
+    {
+      "date": "2026-03-21",
+      "glucose": 7486,
+      "notion": 471
+    },
+    {
+      "date": "2026-03-22",
+      "glucose": 7489,
+      "notion": 472
     }
   ],
   "glucoseTrend": [
@@ -30108,9 +30203,128 @@
     {
       "t": "2026-03-22T04:54:57.000Z",
       "v": 147
+    },
+    {
+      "t": "2026-03-22T04:59:45.000Z",
+      "v": 152
+    },
+    {
+      "t": "2026-03-22T05:04:43.000Z",
+      "v": 149
+    },
+    {
+      "t": "2026-03-22T05:09:43.000Z",
+      "v": 160
+    },
+    {
+      "t": "2026-03-22T05:14:44.000Z",
+      "v": 164
+    },
+    {
+      "t": "2026-03-22T05:19:44.000Z",
+      "v": 165
+    },
+    {
+      "t": "2026-03-22T05:24:44.000Z",
+      "v": 164
+    },
+    {
+      "t": "2026-03-22T05:29:44.000Z",
+      "v": 159
+    },
+    {
+      "t": "2026-03-22T05:34:44.000Z",
+      "v": 159
+    },
+    {
+      "t": "2026-03-22T05:39:44.000Z",
+      "v": 159
+    },
+    {
+      "t": "2026-03-22T05:44:44.000Z",
+      "v": 159
+    },
+    {
+      "t": "2026-03-22T05:49:44.000Z",
+      "v": 159
+    },
+    {
+      "t": "2026-03-22T05:54:44.000Z",
+      "v": 157
+    },
+    {
+      "t": "2026-03-22T05:59:44.000Z",
+      "v": 151
+    },
+    {
+      "t": "2026-03-22T06:04:44.000Z",
+      "v": 146
+    },
+    {
+      "t": "2026-03-22T06:09:45.000Z",
+      "v": 137
+    },
+    {
+      "t": "2026-03-22T06:14:44.000Z",
+      "v": 130
+    },
+    {
+      "t": "2026-03-22T06:19:45.000Z",
+      "v": 122
+    },
+    {
+      "t": "2026-03-22T06:24:43.000Z",
+      "v": 118
+    },
+    {
+      "t": "2026-03-22T06:29:44.000Z",
+      "v": 114
+    },
+    {
+      "t": "2026-03-22T06:34:45.000Z",
+      "v": 109
+    },
+    {
+      "t": "2026-03-22T06:38:43.000Z",
+      "v": 115
+    },
+    {
+      "t": "2026-03-22T06:44:43.000Z",
+      "v": 118
+    },
+    {
+      "t": "2026-03-22T06:49:45.000Z",
+      "v": 114
+    },
+    {
+      "t": "2026-03-22T06:54:45.000Z",
+      "v": 113
+    },
+    {
+      "t": "2026-03-22T06:59:43.000Z",
+      "v": 115
+    },
+    {
+      "t": "2026-03-22T07:04:44.000Z",
+      "v": 113
+    },
+    {
+      "t": "2026-03-22T07:09:43.000Z",
+      "v": 118
+    },
+    {
+      "t": "2026-03-22T07:14:43.000Z",
+      "v": 119
     }
   ],
   "backups": [
+    {
+      "filename": "2026-03-21.sql.gz",
+      "type": "Daily (7 days)",
+      "size": "156.92 KB",
+      "created": "2026-03-21T23:46:43.718Z",
+      "path": "daily/2026-03-21.sql.gz"
+    },
     {
       "filename": "2026-w12.sql.gz",
       "type": "Weekly (1 month)",
@@ -30138,20 +30352,6 @@
       "size": "107.15 KB",
       "created": "2026-03-14T11:20:01.504Z",
       "path": "daily/2026-03-14.sql.gz"
-    },
-    {
-      "filename": "2026-03-13.sql.gz",
-      "type": "Daily (7 days)",
-      "size": "101.56 KB",
-      "created": "2026-03-13T11:20:01.908Z",
-      "path": "daily/2026-03-13.sql.gz"
-    },
-    {
-      "filename": "2026-03-12.sql.gz",
-      "type": "Daily (7 days)",
-      "size": "6.49 KB",
-      "created": "2026-03-13T03:13:05.929Z",
-      "path": "daily/2026-03-12.sql.gz"
     }
   ]
 }

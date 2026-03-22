@@ -32,39 +32,53 @@ async function notionRequest(method, endpoint, body = null) {
 
 async function main() {
   console.log("Querying Notion for gallery data...");
-  const res = await notionRequest("POST", `/databases/${NOTION_DB_ID}/query`, {
-    filter: {
-      and: [
-        { property: "Category", select: { equals: "Food" } },
-        { property: "Photo", url: { is_not_empty: true } }
-      ]
-    },
-    sorts: [{ property: "Date", direction: "descending" }]
-  });
+  let meals = [];
+  let hasMore = true;
+  let cursor = undefined;
 
-  if (!res.results) {
-    console.error("Failed to query Notion:", res);
-    return;
+  while (hasMore) {
+    const res = await notionRequest("POST", `/databases/${NOTION_DB_ID}/query`, {
+      filter: {
+        and: [
+          { property: "Category", select: { equals: "Food" } },
+          { property: "Photo", url: { is_not_empty: true } }
+        ]
+      },
+      sorts: [{ property: "Date", direction: "descending" }],
+      start_cursor: cursor
+    });
+
+    if (!res.results) {
+      console.error("Failed to query Notion:", res);
+      break;
+    }
+
+    const pageMeals = res.results.map(page => {
+      const p = page.properties;
+      return {
+        id: page.id,
+        title: p.Entry.title[0]?.plain_text || "Untitled",
+        type: p["Meal Type"]?.select?.name || "Food",
+        date: p.Date.date.start,
+        photo: p.Photo.url,
+        carbs: p["Carbs (est)"]?.number,
+        cals: p["Calories (est)"]?.number,
+        delta: p["BG Delta"]?.number,
+        peak: p["2hr Peak BG"]?.number
+      };
+    });
+
+    meals = meals.concat(pageMeals);
+    hasMore = res.has_more;
+    cursor = res.next_cursor;
+    console.log(`Fetched ${meals.length} meals so far...`);
   }
 
   // Deduplicate by photo URL (not photo + date, as timezone offsets may differ)
   const seen = new Set();
   const duplicates = [];
   
-  const meals = res.results.map(page => {
-    const p = page.properties;
-    return {
-      id: page.id,
-      title: p.Entry.title[0]?.plain_text || "Untitled",
-      type: p["Meal Type"]?.select?.name || "Food",
-      date: p.Date.date.start,
-      photo: p.Photo.url,
-      carbs: p["Carbs (est)"]?.number,
-      cals: p["Calories (est)"]?.number,
-      delta: p["BG Delta"]?.number,
-      peak: p["2hr Peak BG"]?.number
-    };
-  }).filter(meal => {
+  const filteredMeals = meals.filter(meal => {
     // Deduplicate by photo URL only (same photo = same meal, even if timestamps differ slightly)
     if (seen.has(meal.photo)) {
       duplicates.push({ id: meal.id, title: meal.title, date: meal.date, photo: meal.photo });
@@ -74,8 +88,8 @@ async function main() {
     return true;
   });
 
-  fs.writeFileSync(OUTPUT_PATH, JSON.stringify(meals, null, 2));
-  console.log(`Successfully wrote ${meals.length} meals to gallery data.`);
+  fs.writeFileSync(OUTPUT_PATH, JSON.stringify(filteredMeals, null, 2));
+  console.log(`Successfully wrote ${filteredMeals.length} meals to gallery data.`);
   
   if (duplicates.length > 0) {
     console.log(`\n⚠️  Found ${duplicates.length} duplicate entries in Notion:`);

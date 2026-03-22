@@ -26,16 +26,25 @@ function main() {
     const glucoseHistory = getHistory("glucose_measurements", "event_time");
     const notionHistory = getHistory("maria_health_log", "event_date");
 
-    // Get unique dates sorted
+    // Get unique dates sorted to find start point
     const allDates = [...new Set([...Object.keys(glucoseHistory), ...Object.keys(notionHistory)])].sort();
 
-    const syncHistory = allDates.map(date => ({
+    // Generate a continuous list of dates from the first date to today
+    const start = new Date(allDates[0]);
+    const end = new Date();
+    const continuousDates = [];
+    for (let d = new Date(start); d <= end; d.setDate(d.getDate() + 1)) {
+        continuousDates.push(d.toISOString().split('T')[0]);
+    }
+
+    const syncHistory = continuousDates.map(date => ({
         date: date,
         glucose: glucoseHistory[date] || 0,
         notion: notionHistory[date] || 0
     }));
 
-    // Backfill missing values in cumulative series (if a day has no entries, count stays the same)
+    // Backfill cumulative values: if a day is 0, it means no NEW records,
+    // so the total count is the same as the previous day.
     for (let i = 1; i < syncHistory.length; i++) {
         if (syncHistory[i].glucose === 0) syncHistory[i].glucose = syncHistory[i-1].glucose;
         if (syncHistory[i].notion === 0) syncHistory[i].notion = syncHistory[i-1].notion;

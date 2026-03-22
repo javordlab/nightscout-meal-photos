@@ -37,6 +37,10 @@ find "$BACKUP_DIR/weekly" -name "*.sql.gz" -mtime +31 -delete
 # (Monthly backups are kept indefinitely by this script)
 
 # 5. Update Dashboard
-/usr/local/bin/node /Users/javier/.openclaw/workspace/scripts/generate_backup_dashboard_data.js
+/opt/homebrew/bin/node /Users/javier/.openclaw/workspace/scripts/generate_backup_dashboard_data.js
+cd /Users/javier/.openclaw/workspace/nightscout-meal-photos
+/usr/bin/git add data/backups.json
+/usr/bin/git commit -m "chore: automated backup dashboard update"
+/usr/bin/git push origin main
 
 echo "MySQL Backup Completed: $FILE"

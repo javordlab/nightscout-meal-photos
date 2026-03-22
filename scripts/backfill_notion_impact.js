@@ -111,17 +111,43 @@ function getPeak2Hr(entries, mealTime) {
 async function run() {
   console.log('Starting Impact Variance Audit...');
   const nsEntries = await fetchJson(`${NS_URL}/api/v1/entries.json?count=5000`);
-  const data = await postJson(`https://api.notion.com/v1/databases/${DATA_SOURCE_ID}/query`, { 
-    filter: { property: 'Date', date: { on_or_after: '2026-03-06' } }
-  });
+  
+  let results = [];
+  let hasMore = true;
+  let cursor = undefined;
 
-  for (const item of data.results) {
+  while (hasMore) {
+    const res = await postJson(`https://api.notion.com/v1/databases/${DATA_SOURCE_ID}/query`, { 
+      filter: { property: 'Date', date: { on_or_after: '2026-03-06' } },
+      start_cursor: cursor
+    });
+    
+    if (res.results) {
+      results = results.concat(res.results);
+    }
+    hasMore = res.has_more;
+    cursor = res.next_cursor;
+    console.log(`Fetched ${results.length} entries from Notion...`);
+  }
+
+  for (const item of results) {
     if (item.archived) continue;
     const props = item.properties;
     if (props.Category.select.name !== 'Food') continue;
     
     const titleText = props.Entry.title[0]?.plain_text;
     const dateStr = props.Date.date.start;
+    
+    // MATURITY CHECK: Only process meals that are at least 3 hours old
+    const mealTime = new Date(dateStr);
+    const now = new Date();
+    const ageInHours = (now - mealTime) / (1000 * 60 * 60);
+    
+    if (ageInHours < 3) {
+      console.log(`Skipping '${titleText}' (${dateStr}): Too recent (age: ${ageInHours.toFixed(1)}h)`);
+      continue;
+    }
+
     const updatePayload = { properties: {} };
 
     // 1. Ensure real peak data is current
