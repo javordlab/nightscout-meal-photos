@@ -71,6 +71,14 @@ function getGlucoseTrend() {
 
 function getUsage() {
     const usageByModel = {};
+    const SCRAPE_FILE = "/Users/javier/.openclaw/workspace/data/usage_scrape.json";
+    let scraped = {};
+    try {
+        if (fs.existsSync(SCRAPE_FILE)) {
+            scraped = JSON.parse(fs.readFileSync(SCRAPE_FILE, 'utf8'));
+        }
+    } catch(e) {}
+
     try {
         if (fs.existsSync(SESSIONS_PATH)) {
             const sessions = JSON.parse(fs.readFileSync(SESSIONS_PATH, 'utf8'));
@@ -85,8 +93,8 @@ function getUsage() {
     
     const platforms = [
         { id: 'ollama/kimi-k2.5:cloud', name: 'Kimi (Ollama)', bucket: 'Free', link: 'https://ollama.com' },
-        { id: 'google-antigravity/gemini-3-flash', name: 'Gemini Antigravity', bucket: 'Pay-as-you-go', link: 'https://aistudio.google.com/app/plan' },
-        { id: 'openai-codex/gpt-5.3-codex', name: 'OpenAI Codex', bucket: 'Pay-as-you-go', link: 'https://platform.openai.com/usage' }
+        { id: 'google-antigravity/gemini-3-flash', name: 'Gemini Antigravity', bucket: scraped.google || 'Pay-as-you-go', link: 'https://aistudio.google.com/app/plan' },
+        { id: 'openai-codex/gpt-5.3-codex', name: 'OpenAI Codex', bucket: scraped.openai || 'Pay-as-you-go', link: 'https://platform.openai.com/usage' }
     ];
 
     return platforms.map(p => ({

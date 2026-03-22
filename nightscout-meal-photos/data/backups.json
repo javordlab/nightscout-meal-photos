@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-03-22T02:47:19.090Z",
+  "lastUpdated": "2026-03-22T03:17:16.917Z",
   "tokenUsage": [
     {
       "platform": "Kimi (Ollama)",
       "bucketType": "Free",
-      "realTokens": 64461306,
+      "realTokens": 64696779,
       "link": "https://ollama.com"
     },
     {
       "platform": "Gemini Antigravity",
-      "bucketType": "Pay-as-you-go",
+      "bucketType": "Sign in\nwith your Google Account. This account will be available to other Google apps in the browser.\nEmail or phone\nForgot email?\nNot your computer? Use a private browsing window to sign in. Learn more about using Guest mode\nNext\nCreate account\nAfrikaans\nazərbaycan\nbosanski\ncatalà\nČeština\nCymraeg\nDansk\nDeutsch\neesti\nEnglish (United Kingdom)\nEnglish (United States)\nEspañol (España)\nEspañol (Latinoamérica)\neuskara\nFilipino\nFrançais (Canada)\nFrançais (France)\nGaeilge\ngalego\nHrvatski\nIndonesia\nisiZulu\níslenska\nItaliano\nKiswahili\nlatviešu\nlietuvių\nmagyar\nMelayu\nNederlands\nnorsk\no‘zbek\npolski\nPortuguês (Brasil)\nPortuguês (Portugal)\nromână\nshqip\nSlovenčina\nslovenščina\nsrpski (latinica)\nSuomi\nSvenska\nTiếng Việt\nTürkçe\nΕλληνικά\nбеларуская\nбългарски\nкыргызча\nқазақ тілі\nмакедонски\nмонгол\nРусский\nсрпски (ћирилица)\nУкраїнська\nქართული\nհայերեն\n‫עברית‬\n‫اردو‬\n‫العربية‬\n‫فارسی‬\nአማርኛ\nनेपाली\nमराठी\nहिन्दी\nঅসমীয়া\nবাংলা\nਪੰਜਾਬੀ\nગુજરાતી\nଓଡ଼ିଆ\nதமிழ்\nతెలుగు\nಕನ್ನಡ\nമലയാളം\nසිංහල\nไทย\nລາວ\nမြန်မာ\nខ្មែរ\n한국어\n中文（香港）\n日",
       "realTokens": 876627,
       "link": "https://aistudio.google.com/app/plan"
     },
@@ -21,8 +21,8 @@
     }
   ],
   "database": {
-    "glucose": 7519,
-    "notion": 474
+    "glucose": 7525,
+    "notion": 478
   },
   "syncHistory": [
     {
@@ -30152,6 +30152,30 @@
     {
       "t": "2026-03-22T02:44:43.000Z",
       "v": 147
+    },
+    {
+      "t": "2026-03-22T02:49:43.000Z",
+      "v": 144
+    },
+    {
+      "t": "2026-03-22T02:54:43.000Z",
+      "v": 152
+    },
+    {
+      "t": "2026-03-22T02:59:43.000Z",
+      "v": 161
+    },
+    {
+      "t": "2026-03-22T03:04:44.000Z",
+      "v": 158
+    },
+    {
+      "t": "2026-03-22T03:09:43.000Z",
+      "v": 168
+    },
+    {
+      "t": "2026-03-22T03:14:44.000Z",
+      "v": 201
     }
   ],
   "backups": [
