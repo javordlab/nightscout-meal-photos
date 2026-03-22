@@ -1,25 +1,31 @@
 [
   {
     "id": "32b85ec7-0668-812f-bb71-dd52cd7a98b2",
-    "title": "Breakfast: Avocado toast (1 slice) with 4 sardines (Peak: 155 mg/dL @ 12:04 PM ✓ within prediction) (BG: 121 mg/dL Flat) (Protein: 17g) (Pred: 140-160 mg/dL @ 10:45-11:15 AM)",
+    "title": "Breakfast: Avocado toast (1 slice) with 4 sardines (Peak: 155 mg/dL @ 12:04 PM ✓ within prediction)",
     "type": "Breakfast",
-    "date": "2026-03-22T09:12:00.000-07:00",
+    "date": "2026-03-22T09:12:00-07:00",
     "photo": "https://iili.io/qSJLrFe.jpg",
     "carbs": 21,
     "cals": 340,
-    "delta": 47,
-    "peak": 168
+    "delta": null,
+    "peak": null,
+    "protein": 17,
+    "preMeal": null,
+    "entry_key": "sha256:22fac1cbb56eb3973b68ae6d9fa0715f16331eab0da1e3a9deade9ffdd9a0562"
   },
   {
     "id": "32b85ec7-0668-81d6-91bf-c6fb1bda3769",
-    "title": "Dinner: Pulpo a la Gallega (octopus and potatoes with paprika), dark vegetable medley (mushroom/eggplant stew), 3 strawberries, 5oz milk (BG: 127 mg/dL ➡️) (Pred: 190-210 mg/dL @ 8:45-9:15 PM) (Protein: 26g)",
+    "title": "Dinner: Pulpo a la Gallega (octopus and potatoes with paprika), dark vegetable medley (mushroom/eggplant stew), 3 strawberries, 5oz milk",
     "type": "Dinner",
-    "date": "2026-03-21T18:43:00.000-07:00",
+    "date": "2026-03-21T18:43:00-07:00",
     "photo": "https://iili.io/qvU6O8l.jpg",
     "carbs": 68,
     "cals": 485,
-    "delta": 74,
-    "peak": 201
+    "delta": null,
+    "peak": null,
+    "protein": 26,
+    "preMeal": null,
+    "entry_key": "sha256:377ffd272cfbafde4cafd3e8255dd54ff15b07c3e8cb3b110a38587439d744e3"
   },
   {
     "id": "32a85ec7-0668-81ee-b9a6-fe5ad77abf18",
@@ -933,5 +939,19 @@
     "cals": 50,
     "delta": 16,
     "peak": 125
+  },
+  {
+    "id": "manual-2026-03-22T16-01-00-07-00",
+    "entry_key": "sha256:c07f941a956541cf927470c62cad31face8b6f6fd9967722cc0b519e76ee242d",
+    "title": "Lunch: Toast with peanut butter, low-sugar passion fruit syrup, and hemp seeds + 250ml radler + dried dragon fruit",
+    "type": "Lunch",
+    "date": "2026-03-22T16:01:00-07:00",
+    "photo": "https://iili.io/qSQ09Pj.jpg",
+    "carbs": 70,
+    "cals": 525,
+    "protein": 12,
+    "preMeal": null,
+    "delta": null,
+    "peak": null
   }
 ]
