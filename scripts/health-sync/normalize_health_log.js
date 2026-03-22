@@ -7,10 +7,11 @@ const WORKSPACE = process.cwd();
 const LOG_PATH = path.join(WORKSPACE, 'health_log.md');
 const OUTPUT_PATH = path.join(WORKSPACE, 'data', 'health_log.normalized.json');
 const SYNC_STATE_PATH = path.join(WORKSPACE, 'data', 'sync_state.json');
+const PENDING_PHOTO_PATH = path.join(WORKSPACE, 'data', 'pending_photo_entries.json');
 
 const { loadSyncState, saveSyncState, upsertEntry } = require('./sync_state');
 
-const PHOTO_REGEX = /\[[^\]]*\]\((https?:\/\/[^)]+)\)/g;
+const PHOTO_LINK_REGEX = /\[[^\]]*\]\(([^)]+)\)/g;
 const PRED_REGEX = /\(Pred:\s*([^@)]+?)\s*@\s*([^)]+)\)/i;
 const BG_REGEX = /\(BG:\s*([^)]*?)\)/i;
 const PROTEIN_REGEX = /\(Protein:\s*([^)]+?)\)/i;
@@ -31,11 +32,13 @@ function normalizeTitle(title) {
 }
 
 function extractPhotos(entryText) {
-  return [...entryText.matchAll(PHOTO_REGEX)].map(m => m[1]);
+  return [...entryText.matchAll(PHOTO_LINK_REGEX)]
+    .map(m => cleanWhitespace(m[1]))
+    .filter(url => /^https?:\/\//i.test(url));
 }
 
 function stripPhotos(entryText) {
-  return cleanWhitespace(entryText.replace(PHOTO_REGEX, ''));
+  return cleanWhitespace(entryText.replace(PHOTO_LINK_REGEX, ''));
 }
 
 function extractPredictions(entryText) {
@@ -117,7 +120,47 @@ function buildContentHash(entry) {
   return sha256(JSON.stringify(clone));
 }
 
-function parseRow(line, lineNumber) {
+function loadPendingPhotoEntries() {
+  if (!fs.existsSync(PENDING_PHOTO_PATH)) return [];
+  try {
+    const raw = JSON.parse(fs.readFileSync(PENDING_PHOTO_PATH, 'utf8'));
+    if (!Array.isArray(raw)) return [];
+    return raw.filter(item => item && /^https?:\/\//i.test(String(item.photoUrl || '')));
+  } catch {
+    return [];
+  }
+}
+
+function resolvePendingPhotoUrl(entryText, timestamp, mealType, pendingPhotos) {
+  if (!/\[[^\]]*\]\(\s*pending\s*\)/i.test(entryText)) return null;
+  if (!pendingPhotos || pendingPhotos.length === 0) return null;
+
+  const target = new Date(timestamp).getTime();
+  if (!Number.isFinite(target)) return null;
+
+  const meal = cleanWhitespace(mealType || '').toLowerCase();
+  const candidates = pendingPhotos
+    .map(item => {
+      const t = new Date(item.timestamp).getTime();
+      return {
+        ...item,
+        diffMs: Number.isFinite(t) ? Math.abs(t - target) : Number.POSITIVE_INFINITY,
+        mealMatch: cleanWhitespace(item.mealType || '').toLowerCase() === meal
+      };
+    })
+    .filter(item => item.diffMs <= 5 * 60 * 1000);
+
+  if (candidates.length === 0) return null;
+
+  candidates.sort((a, b) => {
+    if (a.mealMatch !== b.mealMatch) return a.mealMatch ? -1 : 1;
+    return a.diffMs - b.diffMs;
+  });
+
+  return candidates[0].photoUrl || null;
+}
+
+function parseRow(line, lineNumber, pendingPhotos = []) {
   const parts = line.split('|').map(x => x.trim());
   if (parts.length < 9) return null;
   if (!/^202\d-\d\d-\d\d$/.test(parts[1])) return null;
@@ -139,6 +182,10 @@ function parseRow(line, lineNumber) {
 
   const timestamp = toIso(date, time);
   const photos = extractPhotos(entryText);
+  const pendingResolvedPhoto = photos.length === 0
+    ? resolvePendingPhotoUrl(entryText, timestamp, mealType, pendingPhotos)
+    : null;
+  const resolvedPhotos = pendingResolvedPhoto ? [pendingResolvedPhoto] : photos;
   const predictions = extractPredictions(entryText);
   const bgText = extractBgText(entryText);
   const protein = extractProtein(entryText);
@@ -162,7 +209,7 @@ function parseRow(line, lineNumber) {
       protein ? `Protein: ${protein}g` : null,
       predictions.raw ? predictions.raw.replace(/^\(|\)$/g, '') : null
     ].filter(Boolean).join('; ')) || null,
-    photoUrls: photos,
+    photoUrls: resolvedPhotos,
     carbsEst: carbs,
     caloriesEst: cals,
     proteinEst: protein,
@@ -197,9 +244,10 @@ function main() {
   const content = fs.readFileSync(LOG_PATH, 'utf8');
   const lines = content.split('\n');
   const entries = [];
+  const pendingPhotos = loadPendingPhotoEntries();
 
   for (let i = 0; i < lines.length; i++) {
-    const row = parseRow(lines[i], i + 1);
+    const row = parseRow(lines[i], i + 1, pendingPhotos);
     if (row) entries.push(row);
   }
 

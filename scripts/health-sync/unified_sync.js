@@ -337,6 +337,7 @@ function syncGallery(entry, state, galleryItems) {
 
   const match = galleryItems.find(i => i.photo === photo);
   if (match) {
+    match.entry_key = entry.entryKey;
     match.title = displayTitle;
     match.type = entry.mealType || 'Food';
     match.date = entry.timestamp;
