@@ -209,6 +209,11 @@
   },
   "syncHistory": [
     {
+      "date": "2026-02-21",
+      "glucose": 0,
+      "notion": 1
+    },
+    {
       "date": "2026-02-22",
       "glucose": 127,
       "notion": 4
@@ -352,11 +357,6 @@
       "date": "2026-03-21",
       "glucose": 7486,
       "notion": 471
-    },
-    {
-      "date": "2026-03-22",
-      "glucose": 7489,
-      "notion": 472
     }
   ],
   "glucoseTrend": [
