@@ -1,36 +1,36 @@
 [
   {
-    "id": "32b85ec7-0668-81d6-91bf-c6fb1bda3769",
-    "title": "Dinner: Pulpo a la Gallega (octopus and potatoes with paprika), dark vegetable medley (mushroom/eggplant stew), 3 strawberries, 5oz milk (BG: 127 mg/dL ➡️) (Pred: 190-210 mg/dL @ 8:45-9:15 PM) (Protein: 26g)",
+    "id": "32b85ec7-0668-811b-8091-d81c390fafec",
+    "title": "Dinner: Pulpo a la Gallega (octopus and potatoes with paprika), dark vegetable medley (mushroom/eggplant stew), 3 strawberries, 5oz milk (BG: Unknown) (Protein: 26g) (Pred: 190-210 mg/dL @ 8:45-9:15 PM)",
     "type": "Dinner",
     "date": "2026-03-21T18:43:00.000-07:00",
     "photo": "https://iili.io/qvU6O8l.jpg",
     "carbs": 68,
     "cals": 485,
-    "delta": 74,
-    "peak": 201
+    "delta": null,
+    "peak": null
   },
   {
-    "id": "32a85ec7-0668-81ee-b9a6-fe5ad77abf18",
-    "title": "Lunch: Smoked salmon on bread with avocado and apple wedges (BG: 140 mg/dL ➡️) (Peak: 165 mg/dL @ 3:19 PM) (Protein: 17g)",
+    "id": "32b85ec7-0668-8126-a684-dffb1ef56af1",
+    "title": "Lunch: Smoked salmon on bread with avocado and apple wedges (Peak: 165 mg/dL @ 3:19 PM) (BG: 140 mg/dL ➡️) (Protein: 17g)",
     "type": "Lunch",
     "date": "2026-03-21T13:21:00.000-07:00",
     "photo": "https://iili.io/qvI0E6Q.jpg",
     "carbs": 33,
     "cals": 300,
-    "delta": 25,
-    "peak": 165
+    "delta": null,
+    "peak": null
   },
   {
-    "id": "32a85ec7-0668-81b8-9707-c78c54633987",
-    "title": "Breakfast: 2 boiled eggs, 1 slice white bread, 1 small guava (BG: 117 mg/dL ➡️) (Peak: 161 mg/dL @ 10:59 AM)",
+    "id": "32b85ec7-0668-81dd-bc93-e0a89694ab9b",
+    "title": "Breakfast: 2 boiled eggs, 1 slice white bread, 1 small guava (Peak: 161 mg/dL @ 10:59 AM) (BG: 117 mg/dL ➡️) (Protein: 16g)",
     "type": "Breakfast",
     "date": "2026-03-21T10:03:00.000-07:00",
     "photo": "https://iili.io/qkQfYYl.jpg",
     "carbs": 21,
     "cals": 245,
-    "delta": 44,
-    "peak": 161
+    "delta": null,
+    "peak": null
   },
   {
     "id": "32a85ec7-0668-8123-b9f0-e65c9a48cbaa",
@@ -67,7 +67,7 @@
   },
   {
     "id": "32a85ec7-0668-8113-bc76-f9caf8f6e053",
-    "title": "Snack: Protein ball/hazelnut chocolate truffle (BG: 96 mg/dL ↘️) (Pred: 145-165 mg/dL @ 6:00 PM)",
+    "title": "Snack: Protein ball/hazelnut chocolate truffle (BG: Unknown) (Pred: 145-165 mg/dL @ 6:00 PM)",
     "type": "Snack",
     "date": "2026-03-20T16:13:00.000-07:00",
     "photo": "https://iili.io/qe1AVUl.jpg",
@@ -111,7 +111,7 @@
   },
   {
     "id": "32a85ec7-0668-81d1-ac5d-eb70f6d60aa0",
-    "title": "Breakfast: Smoked salmon on ciabatta with cream cheese/butter spread + small guava (Pred: 140-160 mg/dL @ 10:40-11:10 AM)",
+    "title": "Breakfast: Smoked salmon on ciabatta with cream cheese/butter spread + small guava (Pred: 140-160 mg/dL @ 10:40-11:10 AM) (Protein: 18g)",
     "type": "Breakfast",
     "date": "2026-03-20T09:04:00.000-07:00",
     "photo": "https://iili.io/qenMlwl.jpg",
