@@ -98,14 +98,30 @@ function nsRequest(method, endpoint, body) {
   });
 }
 
+function getProteinEst(entry) {
+  if (entry?.proteinEst != null) return entry.proteinEst;
+  const notesMatch = String(entry?.notes || '').match(/Protein:\s*([\d.]+)\s*g/i);
+  if (notesMatch) {
+    const parsed = Number(notesMatch[1]);
+    if (Number.isFinite(parsed)) return parsed;
+  }
+  const titleMatch = String(entry?.title || '').match(/Protein:\s*([\d.]+)\s*g/i);
+  if (titleMatch) {
+    const parsed = Number(titleMatch[1]);
+    if (Number.isFinite(parsed)) return parsed;
+  }
+  return null;
+}
+
 function entryToNightscout(entry) {
   const eventType = entry.category === 'Food' ? 'Meal Bolus' : (entry.category === 'Activity' ? 'Exercise' : 'Note');
   const photo = entry.photoUrls?.[0];
+  const proteinEst = getProteinEst(entry);
   const notes = [
     entry.title,
     entry.notes ? `(${entry.notes.replace(/;\s*/g, ') (')})` : null,
     entry.carbsEst != null ? `(~${entry.carbsEst}g carbs, ~${entry.caloriesEst} kcal)` : null,
-    entry.proteinEst != null ? `(~${entry.proteinEst}g protein)` : null,
+    proteinEst != null ? `(~${proteinEst}g protein)` : null,
     photo ? `📷 ${photo}` : null,
     `[entry_key:${entry.entryKey}]`
   ].filter(Boolean).join(' ');
@@ -114,7 +130,7 @@ function entryToNightscout(entry) {
     enteredBy: 'javordclaw-ssot',
     eventType,
     carbs: entry.carbsEst,
-    protein: entry.proteinEst,
+    protein: proteinEst,
     notes,
     created_at: entry.timestamp
   };
@@ -242,7 +258,7 @@ function notionRequest(method, endpoint, body) {
       method,
       headers: {
         'Authorization': `Bearer ${NOTION_KEY}`,
-        'Notion-Version': '2025-09-03',
+        'Notion-Version': '2022-06-28',
         'Content-Type': 'application/json'
       }
     };
@@ -260,8 +276,48 @@ function notionRequest(method, endpoint, body) {
   });
 }
 
+function parsePredictedPeakBg(entry) {
+  const text = String(entry?.predicted?.peakBgText || '');
+  if (!text) return null;
+  const nums = text.match(/[\d.]+/g)?.map(Number).filter(Number.isFinite) || [];
+  if (nums.length === 0) return null;
+  return nums.length >= 2 ? Math.max(nums[0], nums[1]) : nums[0];
+}
+
+function parsePredictedPeakTimeIso(entry) {
+  const text = String(entry?.predicted?.peakTimeText || '').trim();
+  if (!text) return null;
+
+  const ts = String(entry?.timestamp || '');
+  const datePart = ts.split('T')[0];
+  const offsetMatch = ts.match(/([+-]\d\d:\d\d|Z)$/);
+  const offset = offsetMatch ? offsetMatch[1] : '-07:00';
+
+  let start = text;
+  const rangeSplit = text.split('-');
+  if (rangeSplit.length >= 2) start = rangeSplit[0].trim();
+
+  const ampm = text.match(/\b(AM|PM)\b/i)?.[1]?.toUpperCase() || start.match(/\b(AM|PM)\b/i)?.[1]?.toUpperCase();
+  const hhmm = start.match(/(\d{1,2}):(\d{2})/);
+  if (!hhmm || !datePart) return null;
+
+  let hh = Number(hhmm[1]);
+  const mm = Number(hhmm[2]);
+  if (!Number.isFinite(hh) || !Number.isFinite(mm)) return null;
+
+  if (ampm === 'PM' && hh < 12) hh += 12;
+  if (ampm === 'AM' && hh === 12) hh = 0;
+
+  const h = String(hh).padStart(2, '0');
+  const m = String(mm).padStart(2, '0');
+  return `${datePart}T${h}:${m}:00${offset}`;
+}
+
 function entryToNotion(entry) {
   const photo = entry.photoUrls?.[0];
+  const proteinEst = getProteinEst(entry);
+  const predPeakBg = parsePredictedPeakBg(entry);
+  const predPeakTimeIso = parsePredictedPeakTimeIso(entry);
   const details = entry.notes ? ` (${entry.notes.replace(/;\s*/g, ') (')})` : '';
   const notionTitle = `${entry.title}${details}`.slice(0, 1900);
 
@@ -273,7 +329,9 @@ function entryToNotion(entry) {
     'Meal Type': { select: { name: entry.mealType || '-' } },
     'Carbs (est)': entry.carbsEst != null ? { number: entry.carbsEst } : null,
     'Calories (est)': entry.caloriesEst != null ? { number: entry.caloriesEst } : null,
-    'Proteins': entry.proteinEst != null ? { number: entry.proteinEst } : null,
+    'Proteins': proteinEst != null ? { number: proteinEst } : null,
+    'Predicted Peak BG': predPeakBg != null ? { number: predPeakBg } : null,
+    'Predicted Peak Time': predPeakTimeIso ? { date: { start: predPeakTimeIso } } : null,
     Photo: photo ? { url: photo } : null
   };
   Object.keys(properties).forEach(k => {
@@ -329,6 +387,7 @@ async function syncNotion(entry, state) {
 function syncGallery(entry, state, galleryItems) {
   const existing = getEntry(state, entry.entryKey)?.gallery;
   const photo = entry.photoUrls?.[0];
+  const proteinEst = getProteinEst(entry);
   if (!photo) return { status: 'skipped', reason: 'no_photo' };
 
   const displayTitle = (entry.mealType && !entry.title.startsWith(`${entry.mealType}:`))
@@ -343,7 +402,7 @@ function syncGallery(entry, state, galleryItems) {
     match.date = entry.timestamp;
     match.carbs = entry.carbsEst;
     match.cals = entry.caloriesEst;
-    match.protein = entry.proteinEst;
+    match.protein = proteinEst;
     match.preMeal = entry.actual?.preMealBg || null;
     match.delta = entry.actual?.bgDelta || null;
     match.peak = entry.actual?.peakBg || null;
@@ -364,7 +423,7 @@ function syncGallery(entry, state, galleryItems) {
     photo,
     carbs: entry.carbsEst,
     cals: entry.caloriesEst,
-    protein: entry.proteinEst,
+    protein: proteinEst,
     preMeal: entry.actual?.preMealBg || null,
     delta: entry.actual?.bgDelta || null,
     peak: entry.actual?.peakBg || null
