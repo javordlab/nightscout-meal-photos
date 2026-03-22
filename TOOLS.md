@@ -12,6 +12,7 @@
 8. **IMPACT:** For food, calculate Pre-Meal BG, Predicted Peak (+90-120m), 2hr Peak, and Delta.
 9. **REPORTS:** Every daily health report must explicitly state the model name used to generate it.
 10. **PHOTOS:** Upload to `freeimage.host` (Key: `6d207e02198a847aa98d0a2a901485a5`). Use calibration object (card).
+11. **GALLERY PUBLISH:** If a missing photo is detected in gallery, run sync and then always `git add/commit/push` `nightscout-meal-photos/data/notion_meals.json` (and related gallery data files) to `main`.
 
 ## Formatting
 - **Discord/WhatsApp:** Bullet lists only (no tables).
