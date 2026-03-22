@@ -24,6 +24,7 @@ import os
 import sys
 import time
 from datetime import datetime
+import re
 
 try:
     from agentmail import AgentMail
@@ -31,32 +32,73 @@ except ImportError:
     print("Error: agentmail package not found. Install with: pip install agentmail")
     sys.exit(1)
 
-def format_timestamp(iso_string):
-    """Format ISO timestamp for display"""
+def to_dict(obj):
+    if hasattr(obj, 'dict'):
+        return obj.dict()
+    if hasattr(obj, 'model_dump'):
+        return obj.model_dump()
+    return obj
+
+def format_timestamp(ts):
+    """Format timestamp for display"""
+    if not ts:
+        return 'Unknown'
+    if isinstance(ts, datetime):
+        return ts.strftime('%Y-%m-%d %H:%M:%S')
     try:
-        dt = datetime.fromisoformat(iso_string.replace('Z', '+00:00'))
+        dt = datetime.fromisoformat(ts.replace('Z', '+00:00'))
         return dt.strftime('%Y-%m-%d %H:%M:%S')
     except:
-        return iso_string
+        return str(ts)
 
-def print_message_summary(message):
+def parse_address(addr_str):
+    """Parse address string like 'Name <email@domain.com>' or 'email@domain.com'"""
+    if not isinstance(addr_str, str):
+        return addr_str
+    
+    match = re.match(r'^(.*?) <(.*?)>$', addr_str)
+    if match:
+        return {'name': match.group(1).strip(), 'email': match.group(2).strip()}
+    return {'name': '', 'email': addr_str.strip()}
+
+def get_addr_display(addr_data):
+    """Get display string for an address"""
+    if isinstance(addr_data, str):
+        return addr_data
+    
+    name = addr_data.get('name', '')
+    email = addr_data.get('email', 'Unknown')
+    return f"{name} <{email}>" if name else email
+
+def print_message_summary(message_obj):
     """Print a summary of a message"""
-    from_addr = message.get('from', [{}])[0].get('email', 'Unknown')
-    from_name = message.get('from', [{}])[0].get('name', '')
+    message = to_dict(message_obj)
+    
+    from_data = message.get('from')
+    if isinstance(from_data, list) and from_data:
+        from_display = get_addr_display(from_data[0])
+    elif isinstance(from_data, str):
+        from_display = from_data
+    else:
+        from_display = 'Unknown'
+    
     subject = message.get('subject', '(no subject)')
     timestamp = format_timestamp(message.get('timestamp', ''))
-    preview = message.get('preview', message.get('text', ''))[:100]
+    preview = message.get('preview', message.get('text', '')) or ''
+    preview = preview[:100].replace('\n', ' ')
     
     print(f"📧 {message.get('message_id', 'N/A')}")
-    print(f"   From: {from_name} <{from_addr}>" if from_name else f"   From: {from_addr}")
+    print(f"   From: {from_display}")
     print(f"   Subject: {subject}")
     print(f"   Time: {timestamp}")
     if preview:
         print(f"   Preview: {preview}{'...' if len(preview) == 100 else ''}")
     print()
 
-def print_thread_summary(thread):
+def print_thread_summary(thread_obj):
     """Print a summary of a thread"""
+    thread = to_dict(thread_obj)
+    
     subject = thread.get('subject', '(no subject)')
     participants = ', '.join(thread.get('participants', []))
     count = thread.get('message_count', 0)
@@ -105,17 +147,18 @@ def main():
                     new_messages = []
                     current_message_ids = set()
                     
-                    for message in messages.messages:
+                    for message_obj in messages.messages:
+                        message = to_dict(message_obj)
                         msg_id = message.get('message_id')
                         current_message_ids.add(msg_id)
                         
                         if msg_id not in last_message_ids:
-                            new_messages.append(message)
+                            new_messages.append(message_obj)
                     
                     if new_messages:
                         print(f"🆕 Found {len(new_messages)} new message(s):")
-                        for message in new_messages:
-                            print_message_summary(message)
+                        for message_obj in new_messages:
+                            print_message_summary(message_obj)
                     
                     last_message_ids = current_message_ids
                     
@@ -131,21 +174,28 @@ def main():
     elif args.message:
         # Get specific message
         try:
-            message = client.inboxes.messages.get(
+            message_obj = client.inboxes.messages.get(
                 inbox_id=args.inbox,
                 message_id=args.message
             )
+            message = to_dict(message_obj)
             
             print(f"📧 Message Details:")
             print(f"   ID: {message.get('message_id')}")
             print(f"   Thread: {message.get('thread_id')}")
             
-            from_addr = message.get('from', [{}])[0].get('email', 'Unknown')
-            from_name = message.get('from', [{}])[0].get('name', '')
-            print(f"   From: {from_name} <{from_addr}>" if from_name else f"   From: {from_addr}")
+            from_data = message.get('from')
+            if isinstance(from_data, list) and from_data:
+                from_display = get_addr_display(from_data[0])
+            elif isinstance(from_data, str):
+                from_display = from_data
+            else:
+                from_display = 'Unknown'
+            print(f"   From: {from_display}")
             
-            to_addrs = ', '.join([addr.get('email', '') for addr in message.get('to', [])])
-            print(f"   To: {to_addrs}")
+            to_list = message.get('to', [])
+            to_displays = [get_addr_display(addr) for addr in to_list]
+            print(f"   To: {', '.join(to_displays)}")
             
             print(f"   Subject: {message.get('subject', '(no subject)')}")
             print(f"   Time: {format_timestamp(message.get('timestamp', ''))}")
@@ -163,7 +213,8 @@ def main():
             
             if message.get('attachments'):
                 print(f"\n📎 Attachments ({len(message['attachments'])}):")
-                for att in message['attachments']:
+                for att_obj in message['attachments']:
+                    att = to_dict(att_obj)
                     print(f"   • {att.get('filename', 'unnamed')} ({att.get('content_type', 'unknown type')})")
             
         except Exception as e:
@@ -183,8 +234,8 @@ def main():
                 return
             
             print(f"🧵 Threads in {args.inbox} (showing {len(threads.threads)}):\n")
-            for thread in threads.threads:
-                print_thread_summary(thread)
+            for thread_obj in threads.threads:
+                print_thread_summary(thread_obj)
                 
         except Exception as e:
             print(f"❌ Error listing threads: {e}")
@@ -203,8 +254,8 @@ def main():
                 return
             
             print(f"📧 Messages in {args.inbox} (showing {len(messages.messages)}):\n")
-            for message in messages.messages:
-                print_message_summary(message)
+            for message_obj in messages.messages:
+                print_message_summary(message_obj)
                 
         except Exception as e:
             print(f"❌ Error listing messages: {e}")

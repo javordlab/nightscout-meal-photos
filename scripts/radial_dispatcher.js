@@ -241,6 +241,11 @@ async function main() {
     let cleanText = entryData.text.replace(/\[📷\]\([^\)]+\)/g, '').trim();
     cleanText = injectKnownBgIfUnknown(cleanText, entryData.iso, glucoseEntries);
 
+    if (cleanText.includes('[Photo received - awaiting manual description]')) {
+      console.log(`Skipping draft placeholder: ${entryData.date} ${entryData.time}`);
+      continue;
+    }
+
     console.log(`Checking: ${entryData.date} ${entryData.time} - ${cleanText}`);
 
     // 1. Sync to Nightscout

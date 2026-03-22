@@ -42,16 +42,10 @@ function fetchNightscoutTreatments(sinceIso) {
   });
 }
 
-function fetchNotionPages(sinceIso) {
+function queryNotionDatabase(body) {
   return new Promise((resolve, reject) => {
     const url = `https://api.notion.com/v1/databases/${NOTION_DB_ID}/query`;
-    const data = JSON.stringify({
-      filter: {
-        property: 'Date',
-        date: { on_or_after: sinceIso }
-      },
-      sorts: [{ property: 'Date', direction: 'descending' }]
-    });
+    const data = JSON.stringify(body);
     const options = {
       method: 'POST',
       headers: {
@@ -70,6 +64,55 @@ function fetchNotionPages(sinceIso) {
     });
     req.on('error', reject);
     req.write(data);
+    req.end();
+  });
+}
+
+async function fetchNotionPages(sinceIso) {
+  const results = [];
+  let startCursor = null;
+
+  while (true) {
+    const body = {
+      filter: {
+        property: 'Date',
+        date: { on_or_after: sinceIso }
+      },
+      sorts: [{ property: 'Date', direction: 'descending' }],
+      page_size: 100
+    };
+
+    if (startCursor) body.start_cursor = startCursor;
+
+    const page = await queryNotionDatabase(body);
+    results.push(...(page.results || []));
+
+    if (!page.has_more || !page.next_cursor) break;
+    startCursor = page.next_cursor;
+  }
+
+  return { results };
+}
+
+function fetchNotionPage(pageId) {
+  return new Promise((resolve, reject) => {
+    const url = `https://api.notion.com/v1/pages/${pageId}`;
+    const options = {
+      method: 'GET',
+      headers: {
+        'Authorization': `Bearer ${NOTION_KEY}`,
+        'Notion-Version': '2025-09-03',
+        'Content-Type': 'application/json'
+      }
+    };
+    const req = https.request(url, options, (res) => {
+      let d = '';
+      res.on('data', c => d += c);
+      res.on('end', () => {
+        try { resolve(JSON.parse(d || '{}')); } catch { resolve({}); }
+      });
+    });
+    req.on('error', reject);
     req.end();
   });
 }
@@ -93,6 +136,7 @@ async function main(options = {}) {
   // Build lookup maps
   const nsById = new Map(nsTreatments.map(t => [t._id, t]));
   const notionById = new Map(notionPages.map(p => [p.id, p]));
+  const notionExistsCache = new Map();
   const galleryByPhoto = new Map(galleryItems.filter(i => i.photo).map(i => [i.photo, i]));
 
   // Find entries by entry_key in notes
@@ -167,8 +211,25 @@ async function main(options = {}) {
 
     // Verify Notion page exists
     if (notionLinked && syncEntry.notion?.page_id) {
-      if (!notionById.has(syncEntry.notion.page_id)) {
-        issues.push({ type: 'notion_page_missing', pageId: syncEntry.notion.page_id, severity: 'error' });
+      const pageId = syncEntry.notion.page_id;
+      let exists = notionById.has(pageId);
+
+      if (!exists) {
+        if (notionExistsCache.has(pageId)) {
+          exists = notionExistsCache.get(pageId);
+        } else {
+          try {
+            const page = await fetchNotionPage(pageId);
+            exists = page?.id === pageId && page?.object === 'page';
+            notionExistsCache.set(pageId, exists);
+          } catch {
+            exists = false;
+          }
+        }
+      }
+
+      if (!exists) {
+        issues.push({ type: 'notion_page_missing', pageId, severity: 'error' });
       }
     }
 

@@ -58,22 +58,31 @@ async function main(options = {}) {
     results.enrich = await runStep('Enrich', './enrich_sync_state');
   }
 
-  // Step 3: Sync to Nightscout/Notion/Gallery
+  // Step 3: Validate (hard gate)
+  if (mode === 'full' || mode === 'sync-only') {
+    results.validate = await runStep('Validate', './validate_health_sync', { failOnError: true, since });
+    if (!results.validate.success) {
+      log({ op: 'pipeline_abort', reason: 'validation_failed' });
+      return results;
+    }
+  }
+
+  // Step 4: Sync to Nightscout/Notion/Gallery
   if (mode === 'full' || mode === 'sync-only') {
     results.sync = await runStep('Unified Sync', './unified_sync', { since });
   }
 
-  // Step 4: Backfill outcomes
+  // Step 5: Backfill outcomes
   if (mode === 'full' || mode === 'outcomes-only') {
     results.outcomes = await runStep('Outcome Backfill', './backfill_outcomes', { since, minAgeHours: 3 });
   }
 
-  // Step 5: Audit
+  // Step 6: Audit
   if (mode === 'full' || mode === 'audit-only') {
     results.audit = await runStep('Audit', './audit_health_sync', { since });
   }
 
-  // Step 6: Repair (if audit found issues and not dry-run)
+  // Step 7: Repair (if audit found issues and not dry-run)
   if ((mode === 'full' || mode === 'audit-only') && results.audit?.success && !options.dryRun) {
     const reportPath = path.join(WORKSPACE, 'data', 'health_sync_audit_report.json');
     if (fs.existsSync(reportPath)) {

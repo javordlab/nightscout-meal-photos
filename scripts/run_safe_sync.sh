@@ -19,12 +19,16 @@ fi
 echo "📝 Normalizing health log..."
 node scripts/health-sync/normalize_health_log.js
 
-# 3. Perform Sync (Only New Entries)
+# 3. Validate data quality gates (blocking)
+echo "🚦 Validating required nutrition fields and placeholder guards..."
+node scripts/health-sync/validate_health_sync.js --fail-on-error --since=$(date -v-2d +%Y-%m-%d)
+
+# 4. Perform Sync (Only New Entries)
 echo "🔄 Syncing to Notion and Nightscout..."
 # We use --only-new and --since to keep runs fast and safe
 node scripts/health-sync/unified_sync.js --only-new --since=$(date -v-2d +%Y-%m-%d)
 
-# 4. Update Gallery
+# 5. Update Gallery
 echo "🖼️ Updating meal gallery..."
 node scripts/generate_notion_gallery.js
 

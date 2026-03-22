@@ -11,6 +11,15 @@
 - **Meds:** Metformin (500mg breakfast, 500mg lunch, 1000mg dinner), Lisinopril (10mg daily morning), Rosuvastatin (10mg every other morning).
 - **Rosuvastatin Cycle:** Anchor date 2026-03-01 (taken).
 
+## Communication Channels
+- **Email (AgentMail):** `javordclaw@agentmail.to`
+  - **API Key:** Stored in `~/.openclaw/secrets/agentmail_api_key`.
+  - **Protocol:** Use this account for automated notifications and to send information to Javi (ordonez@gmail.com) upon request.
+  - **Skills:** `agentmail` skill (Python SDK in `.venv_agentmail`, scripts in `skills/agentmail/scripts/`).
+- **Web Search (Brave Search):**
+  - **API Key:** `BSAS4Bs1x3W5uCLR6tQMLq3NAXxRi6o` (from `openclaw.json`).
+  - **Protocol:** Use `curl` to call `https://api.search.brave.com/res/v1/web/search` with `X-Subscription-Token` header for real-time web information.
+
 ## Core Operational Protocols
 - **Radial Architecture:** `health_log.md` is the only SSoT. All syncs (Notion, Nightscout, MySQL) must trigger every 30 minutes and after any manual log update.
 - **Reporting (9:30 AM PT Daily):** Must include 24-hour summary (Avg, TIR, GMI), 14-day trends (GMI, Avg, TIR, CV), Nutrition (24h full + 14d avg), Medication status, Outliers, and Supervisor Analysis. Use emojis/bolding.

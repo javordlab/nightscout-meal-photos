@@ -1,6 +1,9 @@
 # Health Log
 
-| 2026-03-22 | 09:12 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Avocado toast (1 slice) with 4 sardines (BG: 121 mg/dL Flat) (Pred: 140-160 mg/dL @ 10:45-11:15 AM) (Protein: 17g) (Carbs: ~21g | Cals: ~340) [📷](https://iili.io/qSJLrFe.jpg) | 21 | 340 |
+| 2026-03-22 | 16:01 -07:00 | Maria Dennis | Food | Lunch | Lunch: Toast with peanut butter, honey, and hemp seeds + 250ml radler (BG: 146 mg/dL Flat) (Pred: 180-210 mg/dL @ 5:30-6:00 PM) (Carbs: ~65g | Cals: ~515) [📷](pending) | 65 | 515 |
+| 2026-03-22 | 15:28 -07:00 | Maria Dennis | Activity | - | 120 minutes gardening (BG: 133 mg/dL Flat) | null | null |
+| 2026-03-22 | 12:09 -07:00 | Maria Dennis | Activity | - | 60 minutes walk (BG: 155 mg/dL Flat) | null | null |
+| 2026-03-22 | 09:12 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Avocado toast (1 slice) with 4 sardines (BG: 121 mg/dL Flat) (Pred: 140-160 mg/dL @ 10:45-11:15 AM) (Peak: 155 mg/dL @ 12:04 PM ✓ within prediction) (Protein: 17g) (Carbs: ~21g | Cals: ~340) [📷](https://iili.io/qSJLrFe.jpg) | 21 | 340 |
 | 2026-03-21 | 18:58 -07:00 | Maria Dennis | Activity | - | 30 minutes gardening | null | null |
 | 2026-03-21 | 19:00 -07:00 | Maria Dennis | Medication | - | Metformin 1000mg (with dinner) | null | null |
 | 2026-03-21 | 18:43 -07:00 | Maria Dennis | Food | Dinner | Dinner: Pulpo a la Gallega (octopus and potatoes with paprika), dark vegetable medley (mushroom/eggplant stew), 3 strawberries, 5oz milk (BG: Unknown) (Pred: 190-210 mg/dL @ 8:45-9:15 PM) (Protein: 26g) [📷](https://iili.io/qvU6O8l.jpg) | 68 | 485 |
@@ -10,7 +13,7 @@
 | 2026-03-21 | 13:21 -07:00 | Maria Dennis | Food | Lunch | Lunch: Smoked salmon on bread with avocado and apple wedges (BG: 140 mg/dL ➡️) (Peak: 165 mg/dL @ 3:19 PM) (Protein: 17g) [📷](https://iili.io/qvI0E6Q.jpg) | 33 | 300 |
 | 2026-03-21 | 12:31 -07:00 | Maria Dennis | Activity | - | 90 minutes gardening | null | null |
 | 2026-03-21 | 10:56 -07:00 | Maria Dennis | Activity | - | 15 minutes walk | null | null |
-| 2026-03-21 | 10:03 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: 2 boiled eggs, 1 slice white bread, 1 small guava (BG: 117 mg/dL ➡️) (Peak: 161 mg/dL @ 10:59 AM) [📷](https://iili.io/qkQfYYl.jpg) | 21 | 245 |
+| 2026-03-21 | 10:03 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: 2 boiled eggs, 1 slice white bread, 1 small guava (BG: 117 mg/dL ➡️) (Peak: 161 mg/dL @ 10:59 AM) (Protein: 16g) [📷](https://iili.io/qkQfYYl.jpg) | 21 | 245 |
 | 2026-03-21 | 09:05 -07:00 | Maria Dennis | Medication | - | Rosuvastatin 10mg (Scheduled) | null | null |
 | 2026-03-21 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
 | Date | Time | User | Category | Meal Type | Entry | Carbs | Cals |
@@ -21,7 +24,7 @@
 | 2026-03-20 | 18:45 -07:00 | Maria Dennis | Food | Dinner | Dinner: Glass of milk (whole milk, ~8oz) [📷](https://iili.io/qeh3GSI.jpg) | 12 | 150 |
 | 2026-03-20 | 19:00 -07:00 | Maria Dennis | Food | Dinner | Dinner: Small piece of dark chocolate bark/brownie [📷](https://iili.io/qeh6rzX.jpg) | 8 | 70 |
 | 2026-03-20 | 09:14 -07:00 | Maria Dennis | Food | Snack | Snack: Mixed nuts (pecans, Brazil nuts, hazelnuts) + dried goji berries (Pred: 150-160 mg/dL @ 11:00 AM) [📷](https://iili.io/qenM0t2.jpg) | 5.5 | 205 |
-| 2026-03-20 | 09:04 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Smoked salmon on ciabatta with cream cheese/butter spread + small guava (Pred: 140-160 mg/dL @ 10:40-11:10 AM) [📷](https://iili.io/qenMlwl.jpg) | 25 | 300 |
+| 2026-03-20 | 09:04 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Smoked salmon on ciabatta with cream cheese/butter spread + small guava (Pred: 140-160 mg/dL @ 10:40-11:10 AM) (Protein: 18g) [📷](https://iili.io/qenMlwl.jpg) | 25 | 300 |
 | 2026-03-20 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
 | 2026-03-19 | 20:20 -07:00 | Maria Dennis | Activity | - | 15 minutes walk uphill/downhill (BG: ~130 mg/dL estimated) | null | null |
 | 2026-03-19 | 19:14 -07:00 | Maria Dennis | Food | Dinner | Dinner: Pork and rice burrito with beans/cheese, avocado slices (BG: 96 mg/dL Flat) (Pred: 160-180 mg/dL @ 8:45-9:15 PM) [📷](https://iili.io/qNM744f.jpg) | 70 | 750 |

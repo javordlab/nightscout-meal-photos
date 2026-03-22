@@ -13,6 +13,7 @@ const { execSync } = require('child_process');
 const INBOUND_DIR = '/Users/javier/.openclaw/media/inbound/';
 const STATE_FILE = '/Users/javier/.openclaw/workspace/.photo_pipeline_state.json';
 const HEALTH_LOG = '/Users/javier/.openclaw/workspace/health_log.md';
+const PENDING_FILE = '/Users/javier/.openclaw/workspace/data/pending_photo_entries.json';
 const MAX_RETRIES = 3;
 
 // Extract file number prefix (e.g., "file_154" from "file_154---uuid.jpg")
@@ -151,6 +152,21 @@ function addToLog(entry) {
   console.log(`Added: ${entry.mealType} at ${time}`);
 }
 
+function queuePendingPhoto(item) {
+  const pending = fs.existsSync(PENDING_FILE)
+    ? JSON.parse(fs.readFileSync(PENDING_FILE, 'utf8'))
+    : [];
+
+  const exists = pending.find(p => p.filePrefix === item.filePrefix || p.photoUrl === item.photoUrl);
+  if (!exists) {
+    pending.push({
+      queuedAt: new Date().toISOString(),
+      ...item
+    });
+    fs.writeFileSync(PENDING_FILE, JSON.stringify(pending, null, 2) + '\n');
+  }
+}
+
 // Main processing loop
 async function main() {
   console.log('Photo Pipeline Starting...', new Date().toISOString());
@@ -224,6 +240,20 @@ async function main() {
         carbs: null, // Will need manual backfill
         cals: null
       };
+
+      if (analysis.needsManualEntry) {
+        queuePendingPhoto({
+          filePrefix: file.prefix,
+          sourcePath: file.path,
+          timestamp: analysis.timestamp.toISOString(),
+          mealType: analysis.mealType,
+          photoUrl,
+          reason: 'nutrition_metadata_required_before_log'
+        });
+        console.log(`Queued pending nutrition metadata for ${file.prefix}; skipped placeholder log creation.`);
+        state.processed.push(file.prefix);
+        continue;
+      }
       
       // Add to log
       addToLog(entry);
@@ -255,14 +285,22 @@ async function main() {
   console.log(`Failed: ${state.failed.length} total`);
   
   // Run sync after adding entries
-  console.log('\nTriggering radial sync...');
+  console.log('\nTriggering unified sync...');
   try {
-    execSync('cd /Users/javier/.openclaw/workspace && node scripts/radial_dispatcher.js', {
+    execSync('cd /Users/javier/.openclaw/workspace && node scripts/health-sync/unified_sync.js --since=$(date -v-2d +%Y-%m-%d)', {
       stdio: 'inherit',
       timeout: 120000
     });
   } catch (e) {
-    console.error('Sync failed:', e.message);
+    console.error('Unified sync failed, falling back to radial dispatcher:', e.message);
+    try {
+      execSync('cd /Users/javier/.openclaw/workspace && node scripts/radial_dispatcher.js', {
+        stdio: 'inherit',
+        timeout: 120000
+      });
+    } catch (fallbackErr) {
+      console.error('Fallback sync failed:', fallbackErr.message);
+    }
   }
 }
 

@@ -14,6 +14,8 @@
     "validate:staging": "node scripts/validate_sync.js --env=staging",
     "validate:production": "node scripts/validate_sync.js --env=production",
     "dry-run": "node scripts/health-sync/unified_sync.js --dry-run",
+    "validate:health": "node scripts/health-sync/validate_health_sync.js --fail-on-error",
+    "watchdog:report": "node scripts/health-sync/report_watchdog.js",
     "backup": "echo 'Skipping data backup in CI environment'"
   },
   "devDependencies": {

@@ -1,0 +1,5 @@
+FALLBACK HEALTH REPORT
+Generated at: 2026-03-22T17:14:57.537Z
+Reason: Primary 09:30 report was missing by 09:32 PT
+Daily report generated at: /Users/javier/.openclaw/workspace/data/daily_report_2026-03-22.txt
+Action: Fallback report emitted and watchdog heartbeat updated.

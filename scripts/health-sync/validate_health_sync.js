@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const fs = require('fs');
 const path = require('path');
+const { validateEntries } = require('./quality_gates');
 
 const WORKSPACE = '/Users/javier/.openclaw/workspace';
 const NORMALIZED_PATH = path.join(WORKSPACE, 'data', 'health_log.normalized.json');
@@ -15,22 +16,17 @@ function isValidUrl(value) {
   }
 }
 
-function main() {
+function main(options = {}) {
   const normalized = JSON.parse(fs.readFileSync(NORMALIZED_PATH, 'utf8'));
-  const report = {
-    generatedAt: new Date().toISOString(),
-    entryCount: normalized.entryCount || 0,
-    errors: [],
-    warnings: []
-  };
+  const since = options.since ? new Date(options.since) : null;
+  const scopedEntries = (normalized.entries || []).filter((entry) => {
+    if (!since) return true;
+    return new Date(entry.timestamp) >= since;
+  });
 
-  for (const entry of normalized.entries || []) {
-    if (!entry.timestamp) {
-      report.errors.push({ entryKey: entry.entryKey, reason: 'missing_timestamp', title: entry.title });
-    }
-    if (!entry.category) {
-      report.errors.push({ entryKey: entry.entryKey, reason: 'missing_category', title: entry.title });
-    }
+  const report = validateEntries(scopedEntries);
+
+  for (const entry of scopedEntries) {
     if (entry.photoUrls) {
       for (const photo of entry.photoUrls) {
         if (!isValidUrl(photo)) {
@@ -38,27 +34,33 @@ function main() {
         }
       }
     }
-    if (entry.category === 'Food' && !entry.title) {
-      report.errors.push({ entryKey: entry.entryKey, reason: 'missing_food_title', title: entry.title });
-    }
-    if (entry.category === 'Food' && entry.carbsEst == null) {
-      report.warnings.push({ entryKey: entry.entryKey, reason: 'missing_carbs_estimate', title: entry.title });
-    }
-    if (entry.category === 'Food' && (!entry.photoUrls || entry.photoUrls.length === 0)) {
-      report.warnings.push({ entryKey: entry.entryKey, reason: 'missing_photo_urls', title: entry.title });
-    }
   }
+
+  report.entryCount = scopedEntries.length;
 
   fs.writeFileSync(REPORT_PATH, JSON.stringify(report, null, 2) + '\n');
   console.log(`Validation complete. errors=${report.errors.length}, warnings=${report.warnings.length}`);
   console.log(`Wrote ${REPORT_PATH}`);
+
+  if (options.failOnError && report.errors.length > 0) {
+    throw new Error(`validation_failed:${report.errors.length}`);
+  }
+
+  return report;
 }
 
 if (require.main === module) {
   try {
-    main();
+    const sinceArg = process.argv.find(a => a.startsWith('--since='));
+    const since = sinceArg ? sinceArg.split('=')[1] : null;
+    main({
+      failOnError: process.argv.includes('--fail-on-error'),
+      since
+    });
   } catch (error) {
     console.error(error.message);
     process.exit(1);
   }
 }
+
+module.exports = { main };

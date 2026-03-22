@@ -40,11 +40,36 @@ const NIGHTSCOUT_URL = process.env.NIGHTSCOUT_URL || 'https://p01--sefi--s66fclg
 const NIGHTSCOUT_SECRET = process.env.NIGHTSCOUT_SECRET || 'b3170e23f45df7738434cd8be9cd79d86a6d0f01';
 
 const { loadSyncState, saveSyncState, upsertEntry, getEntry } = require('./sync_state');
+const { validateEntry } = require('./quality_gates');
 
 // --- Logging ---
 function log(entry) {
   const line = JSON.stringify({ ts: new Date().toISOString(), ...entry }) + '\n';
   fs.appendFileSync(LOG_PATH, line);
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function withRetries(label, fn, retries = 3, backoffMs = 500) {
+  let lastError = null;
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    try {
+      const value = await fn(attempt);
+      if (attempt > 1) {
+        log({ op: `${label}_retry_success`, attempt });
+      }
+      return value;
+    } catch (error) {
+      lastError = error;
+      log({ op: `${label}_retry_error`, attempt, error: error.message });
+      if (attempt < retries) {
+        await sleep(backoffMs * attempt);
+      }
+    }
+  }
+  throw lastError || new Error(`${label}_failed_after_retries`);
 }
 
 // --- Nightscout ---
@@ -78,8 +103,9 @@ function entryToNightscout(entry) {
   const photo = entry.photoUrls?.[0];
   const notes = [
     entry.title,
-    entry.carbsEst ? `(~${entry.carbsEst}g carbs, ~${entry.caloriesEst} kcal)` : null,
-    entry.proteinEst ? `(~${entry.proteinEst}g protein)` : null,
+    entry.notes ? `(${entry.notes.replace(/;\s*/g, ') (')})` : null,
+    entry.carbsEst != null ? `(~${entry.carbsEst}g carbs, ~${entry.caloriesEst} kcal)` : null,
+    entry.proteinEst != null ? `(~${entry.proteinEst}g protein)` : null,
     photo ? `📷 ${photo}` : null,
     `[entry_key:${entry.entryKey}]`
   ].filter(Boolean).join(' ');
@@ -94,15 +120,77 @@ function entryToNightscout(entry) {
   };
 }
 
+function escapeRegex(value) {
+  return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+async function findNsTreatmentByEntryKey(entryKey) {
+  try {
+    const token = `[entry_key:${entryKey}]`;
+    const escapedToken = escapeRegex(token);
+    const q = encodeURIComponent(escapedToken);
+    const res = await nsRequest('GET', `/api/v1/treatments.json?find[notes][$regex]=${q}&count=10`);
+    if (!Array.isArray(res) || res.length === 0) return null;
+    const exact = res.find(r => (r.notes || '').includes(token));
+    return exact?._id || null;
+  } catch {
+    return null;
+  }
+}
+
+async function verifyNightscoutSync(entryKey, treatmentId) {
+  const token = `[entry_key:${entryKey}]`;
+
+  if (treatmentId) {
+    try {
+      const byId = await nsRequest('GET', `/api/v1/treatments.json?find[_id]=${encodeURIComponent(treatmentId)}&count=1`);
+      if (Array.isArray(byId)) {
+        const match = byId.find(r => r._id === treatmentId && (r.notes || '').includes(token));
+        if (match) {
+          return { ok: true, mode: 'id+token', treatmentId };
+        }
+      }
+    } catch {
+      // fallback below
+    }
+  }
+
+  const foundByKey = await findNsTreatmentByEntryKey(entryKey);
+  if (foundByKey) {
+    return { ok: true, mode: 'entry_key', treatmentId: foundByKey };
+  }
+
+  return { ok: false, mode: 'none', treatmentId: null };
+}
+
 async function syncNightscout(entry, state) {
   const existing = getEntry(state, entry.entryKey)?.nightscout;
   const payload = entryToNightscout(entry);
 
   if (existing?.treatment_id) {
     try {
-      const res = await nsRequest('PUT', '/api/v1/treatments.json', { ...payload, _id: existing.treatment_id });
-      log({ op: 'ns_update', entryKey: entry.entryKey, treatmentId: existing.treatment_id, res });
-      return { status: 'updated', treatmentId: existing.treatment_id };
+      await withRetries('ns_update', async () => {
+        await nsRequest('PUT', '/api/v1/treatments.json', { ...payload, _id: existing.treatment_id });
+      });
+
+      let verified = await withRetries('ns_verify_update', () => verifyNightscoutSync(entry.entryKey, existing.treatment_id));
+
+      if (!verified.ok) {
+        log({ op: 'ns_stale_link_detected', entryKey: entry.entryKey, staleTreatmentId: existing.treatment_id });
+        const recreateRes = await withRetries('ns_recreate', async () => nsRequest('POST', '/api/v1/treatments.json', payload));
+        const recreatedId = (Array.isArray(recreateRes) && recreateRes[0]?._id) || recreateRes?._id || null;
+        verified = await withRetries('ns_verify_recreate', () => verifyNightscoutSync(entry.entryKey, recreatedId));
+        if (!verified.ok) {
+          throw new Error('nightscout_verify_failed_after_recreate');
+        }
+      }
+
+      const treatmentId = verified.treatmentId || existing.treatment_id;
+      upsertEntry(state, entry.entryKey, {
+        nightscout: { treatment_id: treatmentId, last_synced_at: new Date().toISOString() }
+      });
+      log({ op: 'ns_update', entryKey: entry.entryKey, treatmentId, verifyMode: verified.mode });
+      return { status: 'updated', treatmentId };
     } catch (e) {
       log({ op: 'ns_update_error', entryKey: entry.entryKey, error: e.message });
       return { status: 'error', error: e.message };
@@ -110,7 +198,7 @@ async function syncNightscout(entry, state) {
   }
 
   try {
-    const res = await nsRequest('POST', '/api/v1/treatments.json', payload);
+    const res = await withRetries('ns_create', async () => nsRequest('POST', '/api/v1/treatments.json', payload));
     let treatmentId = null;
     const isArray = Array.isArray(res);
     const hasFirstId = isArray && res.length > 0 && res[0] && res[0]._id;
@@ -121,14 +209,24 @@ async function syncNightscout(entry, state) {
       treatmentId = res._id;
     }
     if (!treatmentId) {
-      log({ op: 'ns_create_no_id', entryKey: entry.entryKey, isArray, hasFirstId, hasDirectId, resType: typeof res, resPreview: JSON.stringify(res).slice(0, 200) });
-      return { status: 'error', error: 'no_treatment_id_returned' };
+      treatmentId = await findNsTreatmentByEntryKey(entry.entryKey);
+      if (!treatmentId) {
+        log({ op: 'ns_create_no_id', entryKey: entry.entryKey, isArray, hasFirstId, hasDirectId, resType: typeof res, resPreview: JSON.stringify(res).slice(0, 200) });
+        return { status: 'error', error: 'no_treatment_id_returned' };
+      }
+      log({ op: 'ns_create_recovered_id', entryKey: entry.entryKey, treatmentId });
     }
+
+    const verified = await withRetries('ns_verify_create', () => verifyNightscoutSync(entry.entryKey, treatmentId));
+    if (!verified.ok) {
+      throw new Error('nightscout_verify_failed_after_create');
+    }
+
     upsertEntry(state, entry.entryKey, {
-      nightscout: { treatment_id: treatmentId, last_synced_at: new Date().toISOString() }
+      nightscout: { treatment_id: verified.treatmentId || treatmentId, last_synced_at: new Date().toISOString() }
     });
-    log({ op: 'ns_create', entryKey: entry.entryKey, treatmentId });
-    return { status: 'created', treatmentId };
+    log({ op: 'ns_create', entryKey: entry.entryKey, treatmentId: verified.treatmentId || treatmentId, verifyMode: verified.mode });
+    return { status: 'created', treatmentId: verified.treatmentId || treatmentId };
   } catch (e) {
     log({ op: 'ns_create_error', entryKey: entry.entryKey, error: e.message });
     return { status: 'error', error: e.message };
@@ -164,15 +262,18 @@ function notionRequest(method, endpoint, body) {
 
 function entryToNotion(entry) {
   const photo = entry.photoUrls?.[0];
+  const details = entry.notes ? ` (${entry.notes.replace(/;\s*/g, ') (')})` : '';
+  const notionTitle = `${entry.title}${details}`.slice(0, 1900);
+
   const properties = {
-    Entry: { title: [{ text: { content: entry.title } }] },
+    Entry: { title: [{ text: { content: notionTitle } }] },
     Date: { date: { start: entry.timestamp } },
     User: { select: { name: entry.user } },
     Category: { select: { name: entry.category } },
     'Meal Type': { select: { name: entry.mealType || '-' } },
     'Carbs (est)': entry.carbsEst != null ? { number: entry.carbsEst } : null,
     'Calories (est)': entry.caloriesEst != null ? { number: entry.caloriesEst } : null,
-    'Protein (est)': entry.proteinEst != null ? { number: entry.proteinEst } : null,
+    'Proteins': entry.proteinEst != null ? { number: entry.proteinEst } : null,
     Photo: photo ? { url: photo } : null
   };
   Object.keys(properties).forEach(k => {
@@ -187,7 +288,11 @@ async function syncNotion(entry, state) {
 
   if (existing?.page_id) {
     try {
-      await notionRequest('PATCH', `/pages/${existing.page_id}`, { properties: payload.properties });
+      const res = await notionRequest('PATCH', `/pages/${existing.page_id}`, { properties: payload.properties });
+      if (res?.object === 'error') {
+        log({ op: 'notion_patch_error', entryKey: entry.entryKey, pageId: existing.page_id, error: res.message, code: res.code });
+        return { status: 'error', error: res.message || 'notion_patch_failed' };
+      }
       log({ op: 'notion_patch', entryKey: entry.entryKey, pageId: existing.page_id });
       return { status: 'patched', pageId: existing.page_id };
     } catch (e) {
@@ -198,12 +303,20 @@ async function syncNotion(entry, state) {
 
   try {
     const res = await notionRequest('POST', '/pages', payload);
-    const pageId = res?.id;
-    if (pageId) {
-      upsertEntry(state, entry.entryKey, {
-        notion: { page_id: pageId, last_synced_at: new Date().toISOString() }
-      });
+    if (res?.object === 'error') {
+      log({ op: 'notion_create_error', entryKey: entry.entryKey, error: res.message, code: res.code });
+      return { status: 'error', error: res.message || 'notion_create_failed' };
     }
+
+    const pageId = res?.id;
+    if (!pageId) {
+      log({ op: 'notion_create_error', entryKey: entry.entryKey, error: 'no_page_id_returned', resPreview: JSON.stringify(res).slice(0, 300) });
+      return { status: 'error', error: 'no_page_id_returned' };
+    }
+
+    upsertEntry(state, entry.entryKey, {
+      notion: { page_id: pageId, last_synced_at: new Date().toISOString() }
+    });
     log({ op: 'notion_create', entryKey: entry.entryKey, pageId });
     return { status: 'created', pageId };
   } catch (e) {
@@ -218,26 +331,39 @@ function syncGallery(entry, state, galleryItems) {
   const photo = entry.photoUrls?.[0];
   if (!photo) return { status: 'skipped', reason: 'no_photo' };
 
+  const displayTitle = (entry.mealType && !entry.title.startsWith(`${entry.mealType}:`))
+    ? `${entry.mealType}: ${entry.title}`
+    : entry.title;
+
   const match = galleryItems.find(i => i.photo === photo);
   if (match) {
-    if (!existing?.gallery_id) {
-      upsertEntry(state, entry.entryKey, {
-        gallery: { gallery_id: match.id, last_synced_at: new Date().toISOString() }
-      });
-      log({ op: 'gallery_link', entryKey: entry.entryKey, galleryId: match.id });
-    }
+    match.title = displayTitle;
+    match.type = entry.mealType || 'Food';
+    match.date = entry.timestamp;
+    match.carbs = entry.carbsEst;
+    match.cals = entry.caloriesEst;
+    match.protein = entry.proteinEst;
+    match.preMeal = entry.actual?.preMealBg || null;
+    match.delta = entry.actual?.bgDelta || null;
+    match.peak = entry.actual?.peakBg || null;
+
+    upsertEntry(state, entry.entryKey, {
+      gallery: { gallery_id: match.id, last_synced_at: new Date().toISOString() }
+    });
+    log({ op: 'gallery_link', entryKey: entry.entryKey, galleryId: match.id });
     return { status: 'linked', galleryId: match.id };
   }
 
   const newItem = {
     id: `manual-${entry.timestamp.replace(/:/g, '-')}`,
     entry_key: entry.entryKey,
-    title: `${entry.mealType ? entry.mealType + ': ' : ''}${entry.title}`,
+    title: displayTitle,
     type: entry.mealType || 'Food',
     date: entry.timestamp,
     photo,
     carbs: entry.carbsEst,
     cals: entry.caloriesEst,
+    protein: entry.proteinEst,
     preMeal: entry.actual?.preMealBg || null,
     delta: entry.actual?.bgDelta || null,
     peak: entry.actual?.peakBg || null
@@ -269,7 +395,7 @@ async function main(options = {}) {
   const onlyNew = options.onlyNew || false;
   const since = options.since ? new Date(options.since) : null;
 
-  const results = { nightscout: [], notion: [], gallery: [], errors: [] };
+  const results = { nightscout: [], notion: [], gallery: [], blocked: [], errors: [] };
 
   // Build lookup map for existing entries by timestamp+title
   const existingByTsTitle = {};
@@ -311,6 +437,16 @@ async function main(options = {}) {
       }
     }
     
+    const gate = validateEntry(entry);
+    if (gate.errors.length > 0) {
+      results.blocked.push({ entryKey: entry.entryKey, errors: gate.errors });
+      log({ op: 'entry_blocked', entryKey: entry.entryKey, errors: gate.errors, title: entry.title });
+      continue;
+    }
+    if (gate.warnings.length > 0) {
+      log({ op: 'entry_warnings', entryKey: entry.entryKey, warnings: gate.warnings, title: entry.title });
+    }
+
     if (onlyNew) {
       const s = getEntry(state, entryKey);
       if (s?.nightscout?.treatment_id && s?.notion?.page_id) continue;
@@ -353,8 +489,17 @@ async function main(options = {}) {
     nightscout: results.nightscout.filter(r => r.status === 'created' || r.status === 'updated').length,
     notion: results.notion.filter(r => r.status === 'created' || r.status === 'patched').length,
     gallery: results.gallery.filter(r => r.status === 'created' || r.status === 'linked').length,
+    blocked: results.blocked.length,
     errors: results.errors.length
   };
+
+  if (results.blocked.length > 0 && !options.allowBlocked) {
+    const blockedError = new Error(`blocked_entries:${results.blocked.length}`);
+    blockedError.summary = summary;
+    blockedError.blocked = results.blocked;
+    log({ op: 'sync_blocked_entries', count: results.blocked.length });
+    throw blockedError;
+  }
 
   console.log(JSON.stringify(summary, null, 2));
   return { summary, results };
@@ -366,8 +511,9 @@ if (require.main === module) {
   const onlyNew = args.includes('--only-new');
   const sinceArg = args.find(a => a.startsWith('--since='));
   const since = sinceArg ? sinceArg.split('=')[1] : null;
+  const allowBlocked = args.includes('--allow-blocked');
 
-  main({ dryRun, onlyNew, since })
+  main({ dryRun, onlyNew, since, allowBlocked })
     .then(() => {
       if (!dryRun) releaseLock();
     })
