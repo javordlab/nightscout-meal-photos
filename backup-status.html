@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MySQL Backup Status v1.8 - Health Monitor</title>
+    <title>MySQL Backup Status v1.9 - Health Monitor</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -17,7 +17,7 @@
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center gap-2">
                 <i class="fas fa-database text-blue-600 text-2xl"></i>
-                <h1 class="text-xl font-bold tracking-tight">Maria Health <span class="text-blue-600">Backup Console v1.8</span></h1>
+                <h1 class="text-xl font-bold tracking-tight">Maria Health <span class="text-blue-600">Backup Console v1.9</span></h1>
             </div>
             <div class="text-sm text-gray-500" id="last-updated">Updating...</div>
         </div>
@@ -111,20 +111,14 @@
             });
         }
 
-        function getShiftedDate(isoStr) {
-            // Force -7 hour shift for PDT
-            const d = new Date(isoStr);
-            return new Date(d.getTime() - (7 * 60 * 60 * 1000));
-        }
-
         function setRange(hours) {
             document.querySelectorAll('#range-selector button').forEach(btn => {
                 if (parseInt(btn.dataset.range) === hours) {
-                    btn.classList.replace('bg-white', 'bg-blue-600');
-                    btn.classList.replace('text-gray-500', 'text-white');
+                    btn.classList.add('bg-blue-600', 'text-white');
+                    btn.classList.remove('bg-white', 'text-gray-500');
                 } else {
-                    btn.classList.replace('bg-blue-600', 'bg-white');
-                    btn.classList.replace('text-white', 'text-gray-500');
+                    btn.classList.remove('bg-blue-600', 'text-white');
+                    btn.classList.add('bg-white', 'text-gray-500');
                 }
             });
             updateGlucoseChart(hours);
@@ -136,9 +130,7 @@
             const filtered = dashboardData.glucoseTrend.filter(p => new Date(p.t) >= cutoff);
 
             const labels = filtered.map(p => {
-                const shifted = getShiftedDate(p.t);
-                return shifted.getUTCHours().toString().padStart(2, '0') + ':' + 
-                       shifted.getUTCMinutes().toString().padStart(2, '0');
+                return formatPST(p.t, { hour: '2-digit', minute: '2-digit', hour12: true });
             });
 
             const data = filtered.map(p => p.v);
@@ -181,7 +173,13 @@
                     options: {
                         responsive: true, maintainAspectRatio: false,
                         plugins: { legend: { display: false } },
-                        scales: { y: { min: 40, max: 300 }, x: { grid: { display: false } } }
+                        scales: { 
+                            y: { min: 40, max: 300 }, 
+                            x: { 
+                                grid: { display: false },
+                                ticks: { maxRotation: 0, autoSkip: true, maxTicksLimit: 12 } 
+                            } 
+                        }
                     }
                 });
             }
@@ -221,11 +219,11 @@
                     const commonOptions = { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } } };
                     
                     new Chart(document.getElementById('growthChartGlucose'), {
-                        type: 'line', data: { labels, datasets: [{ data: data.syncHistory.map(h => h.glucose), borderColor: '#3B82F6', fill: true }] },
+                        type: 'line', data: { labels, datasets: [{ data: data.syncHistory.map(h => h.glucose), borderColor: '#3B82F6', fill: true, tension: 0.3 }] },
                         options: commonOptions
                     });
                     new Chart(document.getElementById('growthChartNotion'), {
-                        type: 'line', data: { labels, datasets: [{ data: data.syncHistory.map(h => h.notion), borderColor: '#A855F7', fill: true }] },
+                        type: 'line', data: { labels, datasets: [{ data: data.syncHistory.map(h => h.notion), borderColor: '#A855F7', fill: true, tension: 0.3 }] },
                         options: commonOptions
                     });
                 }
