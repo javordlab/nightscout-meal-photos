@@ -118,6 +118,36 @@ async function notionRequest(method, endpoint, body = null) {
   });
 }
 
+// Parse prediction from health_log.md title text.
+// Returns { bg, peakIso } if found, otherwise null.
+// bg = upper bound of range (e.g. "175-200" → 200), capped at 300.
+// peakIso = midpoint of time range as ISO string, or null if unparseable.
+function parsePredFromText(text, mealIso) {
+  const match = text.match(/\(Pred:\s*([^@)]+?)\s*@\s*([^)]+)\)/i);
+  if (!match) return null;
+
+  const bgNums = match[1].match(/\d+/g);
+  if (!bgNums) return null;
+  const bg = Math.min(parseInt(bgNums[bgNums.length - 1]), 300);
+
+  let peakIso = null;
+  if (mealIso) {
+    const dateStr = mealIso.substring(0, 10);
+    const offset = mealIso.match(/[+-]\d{2}:\d{2}$/)?.[0] || '-07:00';
+    const timeMatches = [...match[2].matchAll(/(\d{1,2}:\d{2})\s*(AM|PM)/gi)];
+    if (timeMatches.length > 0) {
+      const mins = timeMatches.map(t => {
+        const [h, m] = t[1].split(':').map(Number);
+        return (h % 12 + (t[2].toUpperCase() === 'PM' ? 12 : 0)) * 60 + m;
+      });
+      const avg = Math.round(mins.reduce((a, b) => a + b) / mins.length);
+      peakIso = `${dateStr}T${String(Math.floor(avg / 60)).padStart(2, '0')}:${String(avg % 60).padStart(2, '0')}:00${offset}`;
+    }
+  }
+
+  return { bg, peakIso };
+}
+
 function extractPhotos(text) {
   const regex = /\[📷\]\((https?:\/\/[^\)]+)\)/g;
   const matches = [...text.matchAll(regex)];
@@ -348,14 +378,16 @@ async function main() {
     if (activeResults.length === 0) {
       console.log("  -> Pushing to Notion...");
       
-      // Basic prediction for new Food entries
+      // Projection for new Food entries: use agent's context-aware prediction
+      // from health_log.md title if present, fall back to 120 + carbs*3.5.
       if (entryData.category === 'Food' && entryData.carbs > 0) {
         const mealTime = new Date(entryData.iso);
-        const predPeakTime = new Date(mealTime.getTime() + 105 * 60 * 1000); 
-        const predictedBg = Math.round(120 + (entryData.carbs * 3.5));
-        
-        notionBody.properties['Predicted Peak Time'] = { date: { start: predPeakTime.toISOString() } };
-        notionBody.properties['Predicted Peak BG'] = { number: predictedBg > 300 ? 300 : predictedBg };
+        const pred = parsePredFromText(cleanText, entryData.iso);
+        const predictedBg = pred ? pred.bg : Math.min(Math.round(120 + (entryData.carbs * 3.5)), 300);
+        const peakIso = pred?.peakIso || new Date(mealTime.getTime() + 105 * 60 * 1000).toISOString();
+
+        notionBody.properties['Predicted Peak Time'] = { date: { start: peakIso } };
+        notionBody.properties['Predicted Peak BG'] = { number: predictedBg };
       }
 
       await notionRequest("POST", "/pages", notionBody);
