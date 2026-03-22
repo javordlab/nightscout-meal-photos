@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-03-22T03:42:04.733Z",
+  "lastUpdated": "2026-03-22T03:47:06.670Z",
   "tokenUsage": [
     {
       "platform": "Kimi (Ollama)",
       "bucketType": "Free",
-      "realTokens": 64791875,
+      "realTokens": 64854728,
       "link": "https://ollama.com"
     },
     {
@@ -25,6 +25,11 @@
     "notion": 478
   },
   "syncHistory": [
+    {
+      "date": "2026-02-20",
+      "glucose": 0,
+      "notion": 2
+    },
     {
       "date": "2026-02-21",
       "glucose": 0,
@@ -169,11 +174,6 @@
       "date": "2026-03-21",
       "glucose": 7486,
       "notion": 475
-    },
-    {
-      "date": "2026-03-22",
-      "glucose": 7525,
-      "notion": 478
     }
   ],
   "glucoseTrend": [
