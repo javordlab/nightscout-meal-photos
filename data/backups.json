@@ -1,38 +1,46 @@
 {
-  "lastUpdated": "2026-03-21T23:56:37.199Z",
+  "lastUpdated": "2026-03-22T00:02:03.392Z",
   "shipments": [],
   "tokenUsage": [
     {
-      "platform": "Gemini Antigravity",
-      "bucketType": "250K",
-      "managedUsed": 100000,
-      "managedRemaining": 150000,
-      "oauthUsed": 45696028,
-      "percentRemaining": 60
+      "platform": "Kimi (Ollama)",
+      "bucketType": "Free",
+      "managedUsed": 64244027,
+      "managedRemaining": 0,
+      "oauthUsed": 0,
+      "percentRemaining": 100,
+      "realTokens": 64244027,
+      "link": "https://ollama.com"
     },
     {
-      "platform": "Gemini CLI",
-      "bucketType": "250K",
-      "managedUsed": 0,
-      "managedRemaining": 250000,
+      "platform": "Gemini Antigravity",
+      "bucketType": "Pay-as-you-go",
+      "managedUsed": 876627,
+      "managedRemaining": 0,
       "oauthUsed": 0,
-      "percentRemaining": 100
+      "percentRemaining": 100,
+      "realTokens": 876627,
+      "link": "https://aistudio.google.com/app/plan"
     },
     {
       "platform": "OpenAI Codex",
-      "bucketType": "2M",
-      "managedUsed": 25000,
-      "managedRemaining": 2475000,
+      "bucketType": "Pay-as-you-go",
+      "managedUsed": 192786,
+      "managedRemaining": 0,
       "oauthUsed": 0,
-      "percentRemaining": 99
+      "percentRemaining": 100,
+      "realTokens": 192786,
+      "link": "https://platform.openai.com/usage"
     },
     {
-      "platform": "OpenAI GPT 5.3",
-      "bucketType": "2M",
-      "managedUsed": 25000,
-      "managedRemaining": 2475000,
+      "platform": "Gemini CLI",
+      "bucketType": "Preview",
+      "managedUsed": 81316,
+      "managedRemaining": 0,
       "oauthUsed": 0,
-      "percentRemaining": 99
+      "percentRemaining": 100,
+      "realTokens": 81316,
+      "link": "https://aistudio.google.com/app/plan"
     }
   ],
   "database": {
@@ -245,6 +253,11 @@
       "date": "2026-03-14",
       "glucose": 5463,
       "notion": 191
+    },
+    {
+      "date": "2026-03-22",
+      "glucose": 7485,
+      "notion": 471
     }
   ],
   "glucoseTrend": [

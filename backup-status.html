@@ -292,34 +292,24 @@
                 const usageContainer = document.getElementById('usage-container');
                 if (data.tokenUsage && data.tokenUsage.length > 0) {
                     usageContainer.classList.remove('hidden');
-                    // Filter out Codex if it has 0 usage and is 100% full
-                    const filteredUsage = data.tokenUsage.filter(u => u.platform !== 'OpenAI Codex' || u.managedUsed > 0 || u.oauthUsed > 0);
-                    usageContainer.innerHTML = filteredUsage.map(u => `
-                        <div class="bg-white p-5 rounded-2xl border shadow-sm">
+                    usageContainer.innerHTML = data.tokenUsage.map(u => `
+                        <a href="${u.link || '#'}" target="_blank" class="bg-white p-5 rounded-2xl border shadow-sm hover:border-blue-500 transition-all block">
                             <div class="flex justify-between items-start mb-3">
                                 <div class="text-xs font-bold text-gray-400 uppercase tracking-tighter">${u.platform}</div>
                                 <div class="text-[10px] bg-gray-100 px-1.5 py-0.5 rounded text-gray-500 font-mono">${u.bucketType}</div>
                             </div>
                             <div class="flex items-end justify-between mb-2">
-                                <div class="text-2xl font-black text-gray-800">${u.percentRemaining}%</div>
-                                <div class="text-[10px] text-gray-400 font-medium">REMAINING</div>
+                                <div class="text-2xl font-black text-gray-800">${(u.realTokens / 1000000).toFixed(1)}M</div>
+                                <div class="text-[10px] text-gray-400 font-medium">TOKENS USED</div>
                             </div>
                             <div class="w-full bg-gray-100 rounded-full h-1.5 mb-4">
-                                <div class="bg-blue-500 h-1.5 rounded-full" style="width: ${u.percentRemaining}%"></div>
+                                <div class="bg-blue-500 h-1.5 rounded-full w-full opacity-20"></div>
                             </div>
-                            <div class="space-y-1">
-                                <div class="flex justify-between text-[10px]">
-                                    <span class="text-gray-400">Managed Used</span>
-                                    <span class="font-mono text-gray-600">${(u.managedUsed / 1000).toFixed(1)}k</span>
-                                </div>
-                                ${u.oauthUsed > 0 ? `
-                                <div class="flex justify-between text-[10px]">
-                                    <span class="text-blue-400 font-bold">OAuth Used</span>
-                                    <span class="font-mono text-blue-600 font-bold">${(u.oauthUsed / 1000).toFixed(1)}k</span>
-                                </div>
-                                ` : ''}
+                            <div class="flex justify-between text-[10px]">
+                                <span class="text-gray-400">Status</span>
+                                <span class="text-blue-500 font-bold flex items-center gap-1">View Live Data <i class="fas fa-external-link-alt text-[8px]"></i></span>
                             </div>
-                        </div>
+                        </a>
                     `).join('');
                 }
 
