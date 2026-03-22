@@ -1,5 +1,6 @@
 # Health Log
 
+| 2026-03-21 | 18:43 -07:00 | Maria Dennis | Food | Dinner | Dinner: Pulpo a la Gallega (octopus and potatoes with paprika), dark vegetable medley (mushroom/eggplant stew) (BG: Unknown) (Pred: 180-200 mg/dL @ 8:15-8:45 PM) (Protein: 22g) [📷](https://iili.io/qvU6O8l.jpg) | 45 | 420 |
 
 | 2026-03-22 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
 | 2026-03-21 | 14:56 -07:00 | Maria Dennis | Activity | - | 60 minutes gardening | null | null |

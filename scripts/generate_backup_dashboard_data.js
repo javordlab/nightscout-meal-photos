@@ -25,159 +25,85 @@ function getFiles(dir, retentionType) {
         });
 }
 
-const SHIPMENT_PATH = "/Users/javier/.openclaw/workspace/memory/shipment_status.json";
-function getShipments() {
-    if (!fs.existsSync(SHIPMENT_PATH)) return [];
-    try {
-        const raw = fs.readFileSync(SHIPMENT_PATH, 'utf8');
-        const parsed = JSON.parse(raw);
-        return Object.keys(parsed).map(tn => ({
-            trackingNumber: tn,
-            carrier: parsed[tn].carrier,
-            status: parsed[tn].status,
-            expectedDelivery: parsed[tn].expected_delivery,
-            lastEvent: parsed[tn].last_event,
-            lastUpdate: parsed[tn].last_update
-        }));
-    } catch (e) { return []; }
-}
-
-function getUsage() {
-    const SESSIONS_PATH = "/Users/javier/.openclaw/agents/health-guard/sessions/sessions.json";
-    const usageByModel = {};
-    
-    try {
-        if (fs.existsSync(SESSIONS_PATH)) {
-            const sessions = JSON.parse(fs.readFileSync(SESSIONS_PATH, 'utf8'));
-            for (const key in sessions) {
-                const s = sessions[key];
-                const model = s.model || "unknown";
-                const provider = s.modelProvider || "unknown";
-                const label = `${provider}/${model}`;
-                const tokens = (s.totalTokens || 0) + (s.inputTokens || 0) + (s.outputTokens || 0);
-                
-                if (!usageByModel[label]) usageByModel[label] = 0;
-                usageByModel[label] += tokens;
-            }
-        }
-    } catch (e) {
-        console.error("Failed to read sessions for usage:", e.message);
-    }
-
-    // Mapping for dashboard display
-    const platforms = [
-        { id: 'ollama/kimi-k2.5:cloud', name: 'Kimi (Ollama)', bucket: 'Free', link: 'https://ollama.com' },
-        { id: 'google-antigravity/gemini-3-flash', name: 'Gemini Antigravity', bucket: 'Pay-as-you-go', link: 'https://aistudio.google.com/app/plan' },
-        { id: 'openai-codex/gpt-5.3-codex', name: 'OpenAI Codex', bucket: 'Pay-as-you-go', link: 'https://platform.openai.com/usage' },
-        { id: 'google-gemini-cli/gemini-3-flash-preview', name: 'Gemini CLI', bucket: 'Preview', link: 'https://aistudio.google.com/app/plan' }
-    ];
-
-    return platforms.map(p => {
-        const tokens = usageByModel[p.id] || 0;
-        return {
-            platform: p.name,
-            bucketType: p.bucket,
-            managedUsed: tokens,
-            managedRemaining: 0, // No longer using fake percentage
-            oauthUsed: 0,
-            percentRemaining: 100, // Placeholder for UI
-            realTokens: tokens,
-            link: p.link
-        };
-    });
-}
-
 function getDatabaseStats() {
-    const stats = {
-        glucose: 0,
-        notion: 0,
-        lastGlucose: null,
-        lastNotion: null,
-        history: []
-    };
-
+    const stats = { glucose: 0, notion: 0, syncHistory: [] };
     try {
-        // Current counts
         stats.glucose = parseInt(execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT COUNT(*) FROM glucose_measurements;"`).toString().trim());
         stats.notion = parseInt(execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT COUNT(*) FROM maria_health_log;"`).toString().trim());
 
-        // Last record times
-        stats.lastGlucose = execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT MAX(event_time) FROM glucose_measurements;"`).toString().trim();
-        stats.lastNotion = execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT MAX(created_at) FROM maria_health_log;"`).toString().trim();
+        // RECONSTRUCT CUMULATIVE HISTORY
+        const glucoseHistory = execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT DATE(event_time) as d, COUNT(*) FROM glucose_measurements GROUP BY d ORDER BY d ASC;"`).toString().trim().split('\n');
+        const notionHistory = execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT DATE(event_date) as d, COUNT(*) FROM maria_health_log GROUP BY d ORDER BY d ASC;"`).toString().trim().split('\n');
 
-        // Simple growth history (last 30 days by created_at/event_time)
-        const glucoseHistory = execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT DATE(event_time), COUNT(*) FROM glucose_measurements GROUP BY DATE(event_time) ORDER BY DATE(event_time) DESC LIMIT 30;"`).toString().trim().split('\n');
-        const notionHistory = execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT DATE(created_at), COUNT(*) FROM maria_health_log GROUP BY DATE(created_at) ORDER BY DATE(created_at) DESC LIMIT 30;"`).toString().trim().split('\n');
+        const gMap = {}; let gCum = 0;
+        glucoseHistory.forEach(l => { const [d, c] = l.split('\t'); gCum += parseInt(c); gMap[d] = gCum; });
+        const nMap = {}; let nCum = 0;
+        notionHistory.forEach(l => { const [d, c] = l.split('\t'); nCum += parseInt(c); nMap[d] = nCum; });
 
-        stats.history = {
-            glucose: glucoseHistory.map(line => {
-                const [date, count] = line.split('\t');
-                return { date, count: parseInt(count) };
-            }),
-            notion: notionHistory.map(line => {
-                const [date, count] = line.split('\t');
-                return { date, count: parseInt(count) };
-            })
-        };
-    } catch (e) {
-        console.error("Database stats failed:", e.message);
-    }
+        const allDates = [...new Set([...Object.keys(gMap), ...Object.keys(nMap)])].sort();
+        const start = new Date(allDates[0]);
+        const end = new Date();
+        const dateSet = new Set();
+        let curr = new Date(start.getTime());
+        curr.setHours(12,0,0,0);
+        while (curr <= end) { dateSet.add(curr.toISOString().split('T')[0]); curr.setDate(curr.getDate()+1); }
+        
+        const continuousDates = Array.from(dateSet).sort();
+        let lastG = 0, lastN = 0;
+        stats.syncHistory = continuousDates.map(d => {
+            if (gMap[d]) lastG = gMap[d];
+            if (nMap[d]) lastN = nMap[d];
+            return { date: d, glucose: lastG, notion: lastN };
+        }).slice(-30);
+    } catch (e) { console.error(e); }
     return stats;
 }
 
 function getGlucoseTrend() {
     try {
-        // Fetch last 30 days of data from MySQL for the trend
-        // Decimating or averaging might be needed for performance, but for now let's get the raw points
         const raw = execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT event_time, sgv FROM glucose_measurements WHERE event_time >= DATE_SUB(NOW(), INTERVAL 30 DAY) ORDER BY event_time ASC;"`).toString().trim();
-        if (!raw) return [];
         return raw.split('\n').map(line => {
             const [time, sgv] = line.split('\t');
-            return { t: new Date(time).toISOString(), v: parseInt(sgv) };
+            return { t: new Date(time + "Z").toISOString(), v: parseInt(sgv) };
         });
-    } catch (e) {
-        console.error("Glucose trend failed:", e.message);
-        return [];
-    }
+    } catch (e) { return []; }
+}
+
+function getUsage() {
+    const usageByModel = {};
+    try {
+        if (fs.existsSync(SESSIONS_PATH)) {
+            const sessions = JSON.parse(fs.readFileSync(SESSIONS_PATH, 'utf8'));
+            for (const key in sessions) {
+                const s = sessions[key];
+                const label = `${s.modelProvider || 'unknown'}/${s.model || 'unknown'}`;
+                const tokens = (s.totalTokens || 0) + (s.inputTokens || 0) + (s.outputTokens || 0);
+                usageByModel[label] = (usageByModel[label] || 0) + tokens;
+            }
+        }
+    } catch (e) {}
+    
+    const platforms = [
+        { id: 'ollama/kimi-k2.5:cloud', name: 'Kimi (Ollama)', bucket: 'Free', link: 'https://ollama.com' },
+        { id: 'google-antigravity/gemini-3-flash', name: 'Gemini Antigravity', bucket: 'Pay-as-you-go', link: 'https://aistudio.google.com/app/plan' },
+        { id: 'openai-codex/gpt-5.3-codex', name: 'OpenAI Codex', bucket: 'Pay-as-you-go', link: 'https://platform.openai.com/usage' }
+    ];
+
+    return platforms.map(p => ({
+        platform: p.name, bucketType: p.bucket, realTokens: usageByModel[p.id] || 0, link: p.link
+    }));
 }
 
 function main() {
-    console.log("Generating Dashboard Data...");
-    const currentData = fs.existsSync(OUTPUT_PATH) ? JSON.parse(fs.readFileSync(OUTPUT_PATH, 'utf8')) : {};
-    
     const dbStats = getDatabaseStats();
-    const trend = getGlucoseTrend();
-    
-    // Maintain a rolling history of total counts for the growth chart
-    let syncHistory = currentData.syncHistory || [];
-    const today = new Date().toISOString().split('T')[0];
-    
-    // Update or add today's entry
-    const entryIdx = syncHistory.findIndex(h => h.date === today);
-    const newEntry = { date: today, glucose: dbStats.glucose, notion: dbStats.notion };
-    if (entryIdx >= 0) {
-        syncHistory[entryIdx] = newEntry;
-    } else {
-        syncHistory.push(newEntry);
-    }
-    
-    // Keep last 30 entries
-    if (syncHistory.length > 30) syncHistory = syncHistory.slice(-30);
-
     const data = {
         lastUpdated: new Date().toISOString(),
-        shipments: getShipments(),
         tokenUsage: getUsage(),
-        database: dbStats,
-        syncHistory: syncHistory,
-        glucoseTrend: trend,
-        backups: [
-            ...getFiles('daily', 'Daily (7 days)'),
-            ...getFiles('weekly', 'Weekly (1 month)'),
-            ...getFiles('monthly', 'Monthly (Forever)')
-        ].sort((a, b) => new Date(b.created) - new Date(a.created))
+        database: { glucose: dbStats.glucose, notion: dbStats.notion },
+        syncHistory: dbStats.syncHistory,
+        glucoseTrend: getGlucoseTrend(),
+        backups: [...getFiles('daily', 'Daily'), ...getFiles('weekly', 'Weekly')].sort((a,b) => new Date(b.created) - new Date(a.created))
     };
     fs.writeFileSync(OUTPUT_PATH, JSON.stringify(data, null, 2));
-    console.log(`Saved dashboard data to ${OUTPUT_PATH}`);
 }
 main();

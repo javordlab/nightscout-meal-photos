@@ -1,7 +1,18 @@
 [
   {
+    "id": "32b85ec7-0668-81d6-91bf-c6fb1bda3769",
+    "title": "Dinner: Pulpo a la Gallega (octopus and potatoes with paprika), dark vegetable medley (mushroom/eggplant stew) (BG: Unknown) (Pred: 180-200 mg/dL @ 8:15-8:45 PM) (Protein: 22g)",
+    "type": "Dinner",
+    "date": "2026-03-21T18:43:00.000-07:00",
+    "photo": "https://iili.io/qvU6O8l.jpg",
+    "carbs": 45,
+    "cals": 420,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "32a85ec7-0668-81ee-b9a6-fe5ad77abf18",
-    "title": "Lunch: Smoked salmon on bread with avocado and apple wedges (BG: 140 mg/dL ➡️) (Pred: 180-200 mg/dL @ 2:45-3:15 PM) (Protein: 17g)",
+    "title": "Lunch: Smoked salmon on bread with avocado and apple wedges (BG: 140 mg/dL ➡️) (Peak: 165 mg/dL @ 3:19 PM) (Protein: 17g)",
     "type": "Lunch",
     "date": "2026-03-21T13:21:00.000-07:00",
     "photo": "https://iili.io/qvI0E6Q.jpg",
@@ -12,7 +23,7 @@
   },
   {
     "id": "32a85ec7-0668-81b8-9707-c78c54633987",
-    "title": "Breakfast: 2 boiled eggs, 1 slice white bread, 1 small guava (BG: Unknown) (Pred: 145-155 mg/dL @ 11:30 AM-12:00 PM)",
+    "title": "Breakfast: 2 boiled eggs, 1 slice white bread, 1 small guava (BG: 117 mg/dL ➡️) (Peak: 161 mg/dL @ 10:59 AM)",
     "type": "Breakfast",
     "date": "2026-03-21T10:03:00.000-07:00",
     "photo": "https://iili.io/qkQfYYl.jpg",

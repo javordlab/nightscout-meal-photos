@@ -24,17 +24,18 @@ function syncToMysql(data) {
   
   const sql = `
     INSERT INTO maria_health_log 
-    (entry_title, event_date, user_name, category, meal_type, carbs_est, calories_est, photo_url)
+    (entry_title, event_date, user_name, category, meal_type, carbs_est, calories_est, proteins, photo_url)
     VALUES 
     (${mysqlEscape(data.text)}, ${mysqlEscape(data.iso.replace('T', ' ').substring(0, 19))}, 
      ${mysqlEscape(data.user)}, ${mysqlEscape(data.category)}, 
      ${mealType ? mysqlEscape(mealType) : 'NULL'}, 
-     ${data.carbs || 'NULL'}, ${data.cals || 'NULL'}, 
+     ${data.carbs || 'NULL'}, ${data.cals || 'NULL'}, ${data.proteins || 'NULL'},
      ${photoUrl ? mysqlEscape(photoUrl) : 'NULL'})
     ON DUPLICATE KEY UPDATE 
     entry_title = VALUES(entry_title),
     carbs_est = VALUES(carbs_est),
     calories_est = VALUES(calories_est),
+    proteins = VALUES(proteins),
     photo_url = VALUES(photo_url);
   `;
   
@@ -155,7 +156,8 @@ async function main() {
       mealType: p[5],
       text: p[6],
       carbs: parseInt(p[7]) || null,
-      cals: parseInt(p[8]) || null
+      cals: parseInt(p[8]) || null,
+      proteins: p[6].match(/\(Protein: (\d+)g\)/) ? parseInt(p[6].match(/\(Protein: (\d+)g\)/)[1]) : null
     };
     
     // Determine Timezone Offset
@@ -235,6 +237,7 @@ async function main() {
         "User": { select: { name: entryData.user } },
         "Carbs (est)": { number: entryData.carbs },
         "Calories (est)": { number: entryData.cals },
+        "Proteins": { number: entryData.proteins },
         "Photo": { url: photos[0] || null }
       }
     };
