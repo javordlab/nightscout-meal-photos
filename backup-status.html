@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MySQL Backup Status v1.3 - Health Monitor</title>
+    <title>MySQL Backup Status v1.8 - Health Monitor</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -12,12 +12,12 @@
         .bg-glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
     </style>
 </head>
-<body class="bg-red-50 min-h-screen font-sans text-gray-900">
+<body class="bg-gray-50 min-h-screen font-sans text-gray-900">
     <nav class="bg-white border-b sticky top-0 z-10">
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center gap-2">
                 <i class="fas fa-database text-blue-600 text-2xl"></i>
-                <h1 class="text-xl font-bold tracking-tight">Maria Health <span class="text-blue-600">Backup Console v1.3</span></h1>
+                <h1 class="text-xl font-bold tracking-tight">Maria Health <span class="text-blue-600">Backup Console v1.8</span></h1>
             </div>
             <div class="text-sm text-gray-500" id="last-updated">Updating...</div>
         </div>
@@ -25,9 +25,7 @@
 
     <main class="max-w-7xl mx-auto px-4 py-8">
         <!-- Token Usage -->
-        <div id="usage-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 hidden">
-            <!-- Usage cards injected here -->
-        </div>
+        <div id="usage-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 hidden"></div>
 
         <!-- Database Stats -->
         <div id="db-stats-container" class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8 hidden">
@@ -55,12 +53,11 @@
             </div>
             <div class="lg:col-span-2 bg-white p-6 rounded-2xl border shadow-sm">
                 <div class="flex items-center justify-between mb-6">
-                    <h2 class="font-bold">Glucose Trend</h2>
+                    <h2 class="font-bold">Glucose Trend (Pacific Time)</h2>
                     <div class="flex gap-2" id="range-selector">
-                        <button onclick="setRange(24)" class="px-3 py-1 text-[10px] font-bold uppercase rounded-lg border bg-blue-600 text-white transition-all" data-range="24">24h</button>
-                        <button onclick="setRange(72)" class="px-3 py-1 text-[10px] font-bold uppercase rounded-lg border bg-white text-gray-500 hover:bg-gray-50 transition-all" data-range="72">72h</button>
-                        <button onclick="setRange(168)" class="px-3 py-1 text-[10px] font-bold uppercase rounded-lg border bg-white text-gray-500 hover:bg-gray-50 transition-all" data-range="168">1w</button>
-                        <button onclick="setRange(720)" class="px-3 py-1 text-[10px] font-bold uppercase rounded-lg border bg-white text-gray-500 hover:bg-gray-50 transition-all" data-range="720">1m</button>
+                        <button onclick="setRange(24)" class="px-3 py-1 text-[10px] font-bold uppercase rounded-lg border bg-blue-600 text-white" data-range="24">24h</button>
+                        <button onclick="setRange(72)" class="px-3 py-1 text-[10px] font-bold uppercase rounded-lg border bg-white text-gray-500" data-range="72">72h</button>
+                        <button onclick="setRange(168)" class="px-3 py-1 text-[10px] font-bold uppercase rounded-lg border bg-white text-gray-500" data-range="168">1w</button>
                     </div>
                 </div>
                 <div class="h-64">
@@ -72,51 +69,12 @@
         <!-- Sync History (Growth) -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             <div class="bg-white p-6 rounded-2xl border shadow-sm">
-                <div class="flex items-center justify-between mb-4">
-                    <h2 class="font-bold">MySQL Record Growth (Glucose)</h2>
-                </div>
-                <div class="h-48">
-                    <canvas id="growthChartGlucose"></canvas>
-                </div>
+                <h2 class="font-bold mb-4">MySQL Record Growth (Glucose)</h2>
+                <div class="h-48"><canvas id="growthChartGlucose"></canvas></div>
             </div>
             <div class="bg-white p-6 rounded-2xl border shadow-sm">
-                <div class="flex items-center justify-between mb-4">
-                    <h2 class="font-bold">MySQL Record Growth (Notion)</h2>
-                </div>
-                <div class="h-48">
-                    <canvas id="growthChartNotion"></canvas>
-                </div>
-            </div>
-        </div>
-
-        <!-- Retention Overview -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            <div class="bg-white p-6 rounded-2xl border shadow-sm flex items-center gap-4">
-                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
-                    <i class="fas fa-calendar-day"></i>
-                </div>
-                <div>
-                    <h3 class="text-sm font-medium text-gray-500 uppercase tracking-wider">Daily Retention</h3>
-                    <p class="text-2xl font-bold">7 Days</p>
-                </div>
-            </div>
-            <div class="bg-white p-6 rounded-2xl border shadow-sm flex items-center gap-4">
-                <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-600">
-                    <i class="fas fa-calendar-week"></i>
-                </div>
-                <div>
-                    <h3 class="text-sm font-medium text-gray-500 uppercase tracking-wider">Weekly Retention</h3>
-                    <p class="text-2xl font-bold">1 Month</p>
-                </div>
-            </div>
-            <div class="bg-white p-6 rounded-2xl border shadow-sm flex items-center gap-4">
-                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600">
-                    <i class="fas fa-infinity"></i>
-                </div>
-                <div>
-                    <h3 class="text-sm font-medium text-gray-500 uppercase tracking-wider">Monthly Retention</h3>
-                    <p class="text-2xl font-bold">Infinite</p>
-                </div>
+                <h2 class="font-bold mb-4">MySQL Record Growth (Notion)</h2>
+                <div class="h-48"><canvas id="growthChartNotion"></canvas></div>
             </div>
         </div>
 
@@ -130,17 +88,13 @@
                 <table class="w-full text-left">
                     <thead class="bg-gray-50 text-xs text-gray-500 uppercase">
                         <tr>
-                            <th class="px-6 py-3">Created</th>
+                            <th class="px-6 py-3">Created (Pacific)</th>
                             <th class="px-6 py-3">Filename</th>
                             <th class="px-6 py-3">Type</th>
-                            <th class="px-6 py-3 text-center">Local</th>
-                            <th class="px-6 py-3 text-center">GitHub</th>
                             <th class="px-6 py-3 text-right">Size</th>
                         </tr>
                     </thead>
-                    <tbody id="backup-list" class="divide-y">
-                        <!-- Rows injected here -->
-                    </tbody>
+                    <tbody id="backup-list" class="divide-y"></tbody>
                 </table>
             </div>
         </div>
@@ -151,21 +105,26 @@
         let charts = {};
 
         function formatPST(isoStr, options = {}) {
-            // Strict forced Pacific Time formatter
             return new Date(isoStr).toLocaleString('en-US', {
                 timeZone: 'America/Los_Angeles',
                 ...options
             });
         }
 
+        function getShiftedDate(isoStr) {
+            // Force -7 hour shift for PDT
+            const d = new Date(isoStr);
+            return new Date(d.getTime() - (7 * 60 * 60 * 1000));
+        }
+
         function setRange(hours) {
             document.querySelectorAll('#range-selector button').forEach(btn => {
                 if (parseInt(btn.dataset.range) === hours) {
-                    btn.classList.remove('bg-white', 'text-gray-500');
-                    btn.classList.add('bg-blue-600', 'text-white');
+                    btn.classList.replace('bg-white', 'bg-blue-600');
+                    btn.classList.replace('text-gray-500', 'text-white');
                 } else {
-                    btn.classList.add('bg-white', 'text-gray-500');
-                    btn.classList.remove('bg-blue-600', 'text-white');
+                    btn.classList.replace('bg-blue-600', 'bg-white');
+                    btn.classList.replace('text-white', 'text-gray-500');
                 }
             });
             updateGlucoseChart(hours);
@@ -173,21 +132,18 @@
 
         function updateGlucoseChart(hours) {
             if (!dashboardData || !dashboardData.glucoseTrend) return;
-
             const cutoff = new Date(Date.now() - hours * 60 * 60 * 1000);
             const filtered = dashboardData.glucoseTrend.filter(p => new Date(p.t) >= cutoff);
 
             const labels = filtered.map(p => {
-                return hours <= 72 
-                    ? formatPST(p.t, { hour: '2-digit', minute: '2-digit', hour12: true })
-                    : formatPST(p.t, { month: 'numeric', day: 'numeric' });
+                const shifted = getShiftedDate(p.t);
+                return shifted.getUTCHours().toString().padStart(2, '0') + ':' + 
+                       shifted.getUTCMinutes().toString().padStart(2, '0');
             });
 
             const data = filtered.map(p => p.v);
             const sorted = [...data].sort((a, b) => a - b);
-            const median = sorted.length % 2 === 0 
-                ? (sorted[sorted.length / 2 - 1] + sorted[sorted.length / 2]) / 2
-                : sorted[Math.floor(sorted.length / 2)];
+            const median = sorted[Math.floor(sorted.length / 2)] || 0;
 
             if (charts.glucose) {
                 charts.glucose.data.labels = labels;
@@ -207,7 +163,7 @@
                                 borderColor: '#3B82F6',
                                 backgroundColor: 'rgba(59, 130, 246, 0.1)',
                                 borderWidth: 2,
-                                pointRadius: hours <= 48 ? 2 : 0,
+                                pointRadius: 0,
                                 fill: true,
                                 tension: 0.4
                             },
@@ -218,20 +174,14 @@
                                 borderWidth: 2,
                                 borderDash: [5, 5],
                                 pointRadius: 0,
-                                fill: false,
-                                tension: 0
+                                fill: false
                             }
                         ]
                     },
                     options: {
-                        responsive: true,
-                        maintainAspectRatio: false,
-                        interaction: { intersect: false, mode: 'index' },
+                        responsive: true, maintainAspectRatio: false,
                         plugins: { legend: { display: false } },
-                        scales: { 
-                            y: { min: 40, max: 300, grid: { color: '#f3f4f6' } },
-                            x: { grid: { display: false } }
-                        }
+                        scales: { y: { min: 40, max: 300 }, x: { grid: { display: false } } }
                     }
                 });
             }
@@ -239,7 +189,6 @@
 
         async function loadStatus() {
             try {
-                // FORCE FRESH DATA WITH CACHE BUSTER
                 const response = await fetch('./data/backups.json?v=' + Date.now());
                 dashboardData = await response.json();
                 const data = dashboardData;
@@ -247,116 +196,51 @@
                 document.getElementById('last-updated').textContent = `Last sync: ${formatPST(data.lastUpdated)}`;
                 document.getElementById('count-label').textContent = `${data.backups.length} snapshots tracked`;
                 
-                // Token Usage
                 const usageContainer = document.getElementById('usage-container');
-                if (data.tokenUsage && data.tokenUsage.length > 0) {
+                if (data.tokenUsage) {
                     usageContainer.classList.remove('hidden');
                     usageContainer.innerHTML = data.tokenUsage.map(u => `
-                        <a href="${u.link || '#'}" target="_blank" class="bg-white p-5 rounded-2xl border shadow-sm hover:border-blue-500 transition-all block">
-                            <div class="flex justify-between items-start mb-3">
-                                <div class="text-xs font-bold text-gray-400 uppercase tracking-tighter">${u.platform}</div>
-                                <div class="text-[10px] bg-gray-100 px-1.5 py-0.5 rounded text-gray-500 font-mono">${u.bucketType}</div>
-                            </div>
-                            <div class="flex items-end justify-between mb-2">
-                                <div class="text-2xl font-black text-gray-800">${((u.realTokens || 0) / 1000000).toFixed(1)}M</div>
-                                <div class="text-[10px] text-gray-400 font-medium">TOKENS USED</div>
-                            </div>
-                            <div class="w-full bg-gray-100 rounded-full h-1.5 mb-4">
-                                <div class="bg-blue-500 h-1.5 rounded-full w-full opacity-20"></div>
-                            </div>
-                            <div class="flex justify-between text-[10px]">
-                                <span class="text-gray-400">Status</span>
-                                <span class="text-blue-500 font-bold flex items-center gap-1">View Live Data <i class="fas fa-external-link-alt text-[8px]"></i></span>
-                            </div>
+                        <a href="${u.link || '#'}" target="_blank" class="bg-white p-5 rounded-2xl border shadow-sm block">
+                            <div class="text-xs font-bold text-gray-400 uppercase mb-1">${u.platform}</div>
+                            <div class="text-2xl font-black text-gray-800">${((u.realTokens || 0) / 1000000).toFixed(1)}M</div>
+                            <div class="text-[10px] text-gray-400 font-medium">TOKENS USED</div>
                         </a>
                     `).join('');
                 }
 
-                // Database Stats
-                const dbStatsContainer = document.getElementById('db-stats-container');
                 if (data.database) {
-                    dbStatsContainer.classList.remove('hidden');
+                    document.getElementById('db-stats-container').classList.remove('hidden');
                     document.getElementById('glucose-count').textContent = data.database.glucose.toLocaleString();
                     document.getElementById('notion-count').textContent = data.database.notion.toLocaleString();
                 }
 
                 updateGlucoseChart(24);
 
-                // Growth Charts
-                if (data.syncHistory && data.syncHistory.length > 0) {
-                    const labels = data.syncHistory.map(h => formatPST(h.date + 'T12:00:00Z', { month: 'numeric', day: 'numeric' }));
+                if (data.syncHistory) {
+                    const labels = data.syncHistory.map(h => h.date.split('-').slice(1).join('/'));
+                    const commonOptions = { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } } };
                     
-                    const ctxG = document.getElementById('growthChartGlucose').getContext('2d');
-                    new Chart(ctxG, {
-                        type: 'line',
-                        data: {
-                            labels: labels,
-                            datasets: [{
-                                label: 'Total Records',
-                                data: data.syncHistory.map(h => h.glucose),
-                                borderColor: '#3B82F6',
-                                backgroundColor: 'rgba(59, 130, 246, 0.08)',
-                                fill: true,
-                                tension: 0.3
-                            }]
-                        },
-                        options: {
-                            responsive: true, maintainAspectRatio: false,
-                            plugins: { legend: { display: false } },
-                            scales: { y: { beginAtZero: false }, x: { display: true } }
-                        }
+                    new Chart(document.getElementById('growthChartGlucose'), {
+                        type: 'line', data: { labels, datasets: [{ data: data.syncHistory.map(h => h.glucose), borderColor: '#3B82F6', fill: true }] },
+                        options: commonOptions
                     });
-
-                    const ctxN = document.getElementById('growthChartNotion').getContext('2d');
-                    new Chart(ctxN, {
-                        type: 'line',
-                        data: {
-                            labels: labels,
-                            datasets: [{
-                                label: 'Total Syncs',
-                                data: data.syncHistory.map(h => h.notion),
-                                borderColor: '#A855F7',
-                                backgroundColor: 'rgba(168, 85, 247, 0.08)',
-                                fill: true,
-                                tension: 0.3
-                            }]
-                        },
-                        options: {
-                            responsive: true, maintainAspectRatio: false,
-                            plugins: { legend: { display: false } },
-                            scales: { y: { beginAtZero: false }, x: { display: true } }
-                        }
+                    new Chart(document.getElementById('growthChartNotion'), {
+                        type: 'line', data: { labels, datasets: [{ data: data.syncHistory.map(h => h.notion), borderColor: '#A855F7', fill: true }] },
+                        options: commonOptions
                     });
                 }
 
-                const list = document.getElementById('backup-list');
-                list.innerHTML = data.backups.map(b => `
-                    <tr class="hover:bg-gray-50 transition-colors">
-                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                            ${formatPST(b.created, { month: 'numeric', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' })}
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600 font-mono">
-                            ${b.filename}
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            <span class="px-2 py-1 rounded-full text-[10px] font-bold uppercase tracking-tighter ${
-                                b.type.includes('Daily') ? 'bg-blue-50 text-blue-700' : 
-                                b.type.includes('Weekly') ? 'bg-purple-50 text-purple-700' : 'bg-green-50 text-green-700'
-                            }">
-                                ${b.type}
-                            </span>
-                        </td>
-                        <td class="px-6 py-4 text-center"><i class="fas fa-check-circle text-green-500"></i></td>
-                        <td class="px-6 py-4 text-center"><i class="fas fa-cloud-upload-alt text-blue-500"></i></td>
-                        <td class="px-6 py-4 text-right whitespace-nowrap text-sm font-mono text-gray-500">${b.size}</td>
+                document.getElementById('backup-list').innerHTML = data.backups.map(b => `
+                    <tr>
+                        <td class="px-6 py-4 text-sm font-medium">${formatPST(b.created)}</td>
+                        <td class="px-6 py-4 text-sm text-gray-600 font-mono">${b.filename}</td>
+                        <td class="px-6 py-4"><span class="px-2 py-1 rounded-full text-[10px] font-bold uppercase ${b.type.includes('Daily') ? 'bg-blue-50 text-blue-700' : 'bg-purple-50 text-purple-700'}">${b.type}</span></td>
+                        <td class="px-6 py-4 text-right text-sm font-mono text-gray-500">${b.size}</td>
                     </tr>
                 `).join('');
 
-            } catch (error) {
-                console.error('Failed to load backup data:', error);
-            }
+            } catch (error) { console.error(error); }
         }
-
         loadStatus();
     </script>
 </body>
