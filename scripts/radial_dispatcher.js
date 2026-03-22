@@ -1,5 +1,6 @@
 const fs = require('fs');
 const https = require('https');
+const crypto = require('crypto');
 const { execSync } = require('child_process');
 
 // --- Configuration ---
@@ -123,6 +124,19 @@ function extractPhotos(text) {
   return matches.map(m => m[1]);
 }
 
+function buildEntryKey(entryData, cleanText) {
+  return crypto
+    .createHash('sha256')
+    .update(`${entryData.iso}|${entryData.user}|${entryData.category}|${entryData.mealType}|${cleanText}`)
+    .digest('hex');
+}
+
+function buildNightscoutNotes(cleanText, entryData, photos, entryKey) {
+  const nutrition = entryData.carbs !== null ? ` (~${entryData.carbs}g carbs, ~${entryData.cals ?? 'n/a'} kcal)` : '';
+  const photoPart = photos.length ? ` 📷 ${photos.join(' ')}` : '';
+  return `${cleanText}${nutrition}${photoPart} [entry_key:sha256:${entryKey}]`;
+}
+
 async function main() {
   console.log("Starting Radial Dispatcher v2.2...");
   
@@ -187,33 +201,63 @@ async function main() {
     if (entryData.category === "Food") eventType = "Meal Bolus";
     if (entryData.category === "Activity") eventType = "Exercise";
 
+    const entryKey = buildEntryKey(entryData, cleanText);
     const nsBody = {
       enteredBy: "Javordclaw-SSoT",
       eventType: eventType,
       carbs: entryData.carbs,
-      notes: `${cleanText}${entryData.carbs ? ` (~${entryData.carbs}g carbs, ~${entryData.cals} kcal)` : ''}${photos.length ? ' 📷 ' + photos.join(' ') : ''}`,
+      notes: buildNightscoutNotes(cleanText, entryData, photos, entryKey),
       created_at: entryData.iso
     };
 
-    const nsCheckUrl = `/api/v1/treatments.json?find[notes][$regex]=${encodeURIComponent(cleanText.substring(0, 30))}&count=1`;
-    console.log(`  -> Querying NS by notes: ${nsCheckUrl}`);
-    const existingNS = await nsRequest("GET", nsCheckUrl, {});
-    
-    if (!Array.isArray(existingNS)) {
-      console.log(`  !! NS Query Failed (not an array): ${JSON.stringify(existingNS).substring(0, 200)}`);
+    const nsCheckByKeyUrl = `/api/v1/treatments.json?find[notes][$regex]=${encodeURIComponent(`entry_key:sha256:${entryKey}`)}&count=10`;
+    console.log(`  -> Querying NS by entry key: ${nsCheckByKeyUrl}`);
+    let existingNS = await nsRequest("GET", nsCheckByKeyUrl, {});
+    let lookupMode = 'key';
+
+    if (!Array.isArray(existingNS) || existingNS.length === 0) {
+      const nsFallbackUrl = `/api/v1/treatments.json?find[created_at]=${encodeURIComponent(entryData.iso)}&find[enteredBy]=Javordclaw-SSoT&count=10`;
+      console.log(`  -> Fallback NS query by timestamp: ${nsFallbackUrl}`);
+      existingNS = await nsRequest("GET", nsFallbackUrl, {});
+      lookupMode = 'timestamp';
     }
 
-    if (Array.isArray(existingNS) && existingNS.length === 0) {
+    if (!Array.isArray(existingNS)) {
+      console.log(`  !! NS Query Failed (not an array): ${JSON.stringify(existingNS).substring(0, 200)}`);
+      existingNS = [];
+    }
+
+    if (existingNS.length === 0) {
       console.log("  -> Pushing to Nightscout...");
       const postRes = await nsRequest("POST", "/api/v1/treatments.json", nsBody);
       console.log(`  -> POST result: ${JSON.stringify(postRes).substring(0, 50)}`);
-    } else if (Array.isArray(existingNS) && existingNS.length > 0) {
-      const existing = existingNS[0];
-      // Only update if notes are substantially different or carbs changed
-      if (existing.carbs !== nsBody.carbs) {
-        console.log("  -> Updating Nightscout (carb change)...");
+    } else {
+      const existing =
+        existingNS.find(e => (e.notes || '').includes(`entry_key:sha256:${entryKey}`)) ||
+        existingNS.find(e => e.created_at === entryData.iso) ||
+        existingNS[0];
+
+      const notesChanged = (existing.notes || '') !== (nsBody.notes || '');
+      const carbsChanged = existing.carbs !== nsBody.carbs;
+      const typeChanged = (existing.eventType || '') !== (nsBody.eventType || '');
+
+      if (notesChanged || carbsChanged || typeChanged) {
+        const reasons = [
+          carbsChanged ? 'carbs' : null,
+          notesChanged ? 'notes' : null,
+          typeChanged ? 'eventType' : null
+        ].filter(Boolean).join(', ');
+        console.log(`  -> Updating Nightscout (${reasons})...`);
         const putRes = await nsRequest("PUT", "/api/v1/treatments.json", { ...nsBody, _id: existing._id });
         console.log(`  -> PUT result: ${JSON.stringify(putRes).substring(0, 50)}`);
+      }
+
+      if (lookupMode === 'key' && existingNS.length > 1) {
+        const dupes = existingNS.filter(e => e._id && e._id !== existing._id);
+        for (const dupe of dupes) {
+          console.log(`  -> Removing duplicate NS treatment: ${dupe._id}`);
+          await nsRequest("DELETE", `/api/v1/treatments/${dupe._id}`);
+        }
       }
     }
 
@@ -287,9 +331,8 @@ async function main() {
     try {
       console.log("  -> Updating Backup Dashboard...");
       execSync('node /Users/javier/.openclaw/workspace/scripts/generate_backup_dashboard_data.js');
-      execSync('node /Users/javier/.openclaw/workspace/scripts/backfill_dashboard_history.js');
       execSync('node /Users/javier/.openclaw/workspace/scripts/generate_notion_gallery_data.js');
-      execSync('cd /Users/javier/.openclaw/workspace/nightscout-meal-photos && git add . && git commit -m "chore: automated dashboard update" && git push origin main');
+      execSync('cd /Users/javier/.openclaw/workspace/nightscout-meal-photos && git add data/backups.json data/notion-gallery.json && (git commit -m "chore: automated dashboard update" || true) && git push origin main');
     } catch (e) {
       console.error("Dashboard update failed:", e.message);
     }
