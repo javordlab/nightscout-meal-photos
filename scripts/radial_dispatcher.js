@@ -205,7 +205,7 @@ function injectKnownBgIfUnknown(cleanText, mealIso, glucoseEntries) {
 }
 
 async function main() {
-  console.log("Starting Radial Dispatcher v2.2...");
+  console.log("Starting Radial Dispatcher v2.3...");
   
   if (!fs.existsSync(LOG_PATH)) {
     console.error("Error: health_log.md not found.");
@@ -344,12 +344,13 @@ async function main() {
     }
 
     // 2. Sync to Notion
+    // Query by timestamp + user only (NOT title) so title edits update rather than duplicate.
     const notionQuery = await notionRequest("POST", `/databases/${NOTION_DB_ID}/query`, {
-      filter: { 
-        and: [ 
-            { property: "Date", date: { equals: entryData.iso } },
-            { property: "Entry", title: { contains: cleanText.substring(0, 50) } }
-        ] 
+      filter: {
+        and: [
+          { property: "Date", date: { equals: entryData.iso } },
+          { property: "User", select: { equals: entryData.user } }
+        ]
       }
     });
     const activeResults = (notionQuery.results || []).filter(r => !r.archived);
@@ -370,37 +371,45 @@ async function main() {
 
     // Only set Meal Type if Category is Food
     if (entryData.category === "Food") {
-      notionBody.properties["Meal Type"] = { 
-        select: { name: entryData.mealType === "-" ? "Snack" : entryData.mealType } 
+      notionBody.properties["Meal Type"] = {
+        select: { name: entryData.mealType === "-" ? "Snack" : entryData.mealType }
       };
+    }
+
+    // Projection block: use agent's context-aware prediction from title, fall back to formula.
+    if (entryData.category === 'Food' && entryData.carbs > 0) {
+      const mealTime = new Date(entryData.iso);
+      const pred = parsePredFromText(cleanText, entryData.iso);
+      const predictedBg = pred ? pred.bg : Math.min(Math.round(120 + (entryData.carbs * 3.5)), 300);
+      const peakIso = pred?.peakIso || new Date(mealTime.getTime() + 105 * 60 * 1000).toISOString();
+      notionBody.properties['Predicted Peak Time'] = { date: { start: peakIso } };
+      notionBody.properties['Predicted Peak BG'] = { number: predictedBg };
     }
 
     if (activeResults.length === 0) {
       console.log("  -> Pushing to Notion...");
-      
-      // Projection for new Food entries: use agent's context-aware prediction
-      // from health_log.md title if present, fall back to 120 + carbs*3.5.
-      if (entryData.category === 'Food' && entryData.carbs > 0) {
-        const mealTime = new Date(entryData.iso);
-        const pred = parsePredFromText(cleanText, entryData.iso);
-        const predictedBg = pred ? pred.bg : Math.min(Math.round(120 + (entryData.carbs * 3.5)), 300);
-        const peakIso = pred?.peakIso || new Date(mealTime.getTime() + 105 * 60 * 1000).toISOString();
-
-        notionBody.properties['Predicted Peak Time'] = { date: { start: peakIso } };
-        notionBody.properties['Predicted Peak BG'] = { number: predictedBg };
-      }
-
       await notionRequest("POST", "/pages", notionBody);
     } else {
       const existing = activeResults[0];
-      const existingTitle = existing.properties.Entry.title[0]?.plain_text;
-      const existingCarbs = existing.properties["Carbs (est)"].number;
-      const existingPhoto = existing.properties.Photo.url;
+
+      // Archive any duplicates beyond the canonical first result
+      if (activeResults.length > 1) {
+        for (const dupe of activeResults.slice(1)) {
+          console.log(`  -> Archiving duplicate Notion page: ${dupe.id}`);
+          await notionRequest("PATCH", `/pages/${dupe.id}`, { archived: true });
+        }
+      }
+
+      const existingTitle = existing.properties.Entry?.title[0]?.plain_text;
+      const existingCarbs = existing.properties["Carbs (est)"]?.number;
+      const existingPhoto = existing.properties.Photo?.url;
 
       if (existingTitle !== cleanText || existingCarbs !== entryData.carbs || existingPhoto !== (photos[0] || null)) {
         console.log("  -> Updating Notion...");
         delete notionBody.parent;
         await notionRequest("PATCH", `/pages/${existing.id}`, notionBody);
+      } else {
+        console.log("  -> Notion up to date.");
       }
     }
 
