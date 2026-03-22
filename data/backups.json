@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-03-22T02:56:39.326Z",
+  "lastUpdated": "2026-03-22T03:12:22.574Z",
   "tokenUsage": [
     {
       "platform": "Kimi (Ollama)",
       "bucketType": "Free",
-      "realTokens": 64458322,
+      "realTokens": 64655774,
       "link": "https://ollama.com"
     },
     {
       "platform": "Gemini Antigravity",
-      "bucketType": "Pay-as-you-go",
+      "bucketType": "Sign in\nwith your Google Account. This account will be available to other Google apps in the browser.\nEmail or phone\nForgot email?\nNot your computer? Use a private browsing window to sign in. Learn more about using Guest mode\nNext\nCreate account\nAfrikaans\nazərbaycan\nbosanski\ncatalà\nČeština\nCymraeg\nDansk\nDeutsch\neesti\nEnglish (United Kingdom)\nEnglish (United States)\nEspañol (España)\nEspañol (Latinoamérica)\neuskara\nFilipino\nFrançais (Canada)\nFrançais (France)\nGaeilge\ngalego\nHrvatski\nIndonesia\nisiZulu\níslenska\nItaliano\nKiswahili\nlatviešu\nlietuvių\nmagyar\nMelayu\nNederlands\nnorsk\no‘zbek\npolski\nPortuguês (Brasil)\nPortuguês (Portugal)\nromână\nshqip\nSlovenčina\nslovenščina\nsrpski (latinica)\nSuomi\nSvenska\nTiếng Việt\nTürkçe\nΕλληνικά\nбеларуская\nбългарски\nкыргызча\nқазақ тілі\nмакедонски\nмонгол\nРусский\nсрпски (ћирилица)\nУкраїнська\nქართული\nհայերեն\n‫עברית‬\n‫اردو‬\n‫العربية‬\n‫فارسی‬\nአማርኛ\nनेपाली\nमराठी\nहिन्दी\nঅসমীয়া\nবাংলা\nਪੰਜਾਬੀ\nગુજરાતી\nଓଡ଼ିଆ\nதமிழ்\nతెలుగు\nಕನ್ನಡ\nമലയാളം\nසිංහල\nไทย\nລາວ\nမြန်မာ\nខ្មែរ\n한국어\n中文（香港）\n日",
       "realTokens": 876627,
       "link": "https://aistudio.google.com/app/plan"
     },
@@ -22,58 +22,158 @@
   ],
   "database": {
     "glucose": 7521,
-    "notion": 474
+    "notion": 478
   },
   "syncHistory": [
     {
+      "date": "2026-02-20",
+      "glucose": 0,
+      "notion": 2
+    },
+    {
+      "date": "2026-02-21",
+      "glucose": 0,
+      "notion": 2
+    },
+    {
+      "date": "2026-02-22",
+      "glucose": 127,
+      "notion": 5
+    },
+    {
+      "date": "2026-02-23",
+      "glucose": 408,
+      "notion": 21
+    },
+    {
+      "date": "2026-02-24",
+      "glucose": 691,
+      "notion": 41
+    },
+    {
+      "date": "2026-02-25",
+      "glucose": 973,
+      "notion": 59
+    },
+    {
+      "date": "2026-02-26",
+      "glucose": 1238,
+      "notion": 82
+    },
+    {
+      "date": "2026-02-27",
+      "glucose": 1497,
+      "notion": 100
+    },
+    {
+      "date": "2026-02-28",
+      "glucose": 1755,
+      "notion": 116
+    },
+    {
+      "date": "2026-03-01",
+      "glucose": 2019,
+      "notion": 131
+    },
+    {
+      "date": "2026-03-02",
+      "glucose": 2280,
+      "notion": 146
+    },
+    {
+      "date": "2026-03-03",
+      "glucose": 2550,
+      "notion": 161
+    },
+    {
+      "date": "2026-03-04",
+      "glucose": 2815,
+      "notion": 176
+    },
+    {
       "date": "2026-03-05",
       "glucose": 3090,
-      "notion": 0
+      "notion": 194
     },
     {
       "date": "2026-03-06",
       "glucose": 3357,
-      "notion": 0
+      "notion": 212
     },
     {
       "date": "2026-03-07",
       "glucose": 3621,
-      "notion": 0
+      "notion": 228
     },
     {
       "date": "2026-03-08",
       "glucose": 3895,
-      "notion": 0
+      "notion": 248
     },
     {
       "date": "2026-03-09",
       "glucose": 4174,
-      "notion": 0
+      "notion": 263
     },
     {
       "date": "2026-03-10",
       "glucose": 4434,
-      "notion": 0
+      "notion": 272
     },
     {
       "date": "2026-03-11",
       "glucose": 4712,
-      "notion": 0
+      "notion": 282
     },
     {
       "date": "2026-03-12",
       "glucose": 4990,
-      "notion": 184
+      "notion": 293
     },
     {
       "date": "2026-03-13",
       "glucose": 5258,
-      "notion": 191
+      "notion": 308
     },
     {
       "date": "2026-03-14",
-      "glucose": 5463,
-      "notion": 191
+      "glucose": 5527,
+      "notion": 334
+    },
+    {
+      "date": "2026-03-15",
+      "glucose": 5797,
+      "notion": 358
+    },
+    {
+      "date": "2026-03-16",
+      "glucose": 6062,
+      "notion": 383
+    },
+    {
+      "date": "2026-03-17",
+      "glucose": 6341,
+      "notion": 397
+    },
+    {
+      "date": "2026-03-18",
+      "glucose": 6626,
+      "notion": 411
+    },
+    {
+      "date": "2026-03-19",
+      "glucose": 6914,
+      "notion": 431
+    },
+    {
+      "date": "2026-03-20",
+      "glucose": 7198,
+      "notion": 454
+    },
+    {
+      "date": "2026-03-21",
+      "glucose": 7486,
+      "notion": 475
     }
   ],
   "glucoseTrend": [
