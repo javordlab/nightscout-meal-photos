@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MySQL Backup Status v2.2 - Health Monitor</title>
+    <title>MySQL Backup Status v2.7 - Health Monitor</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -13,7 +13,7 @@
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center gap-2">
                 <i class="fas fa-database text-blue-600 text-2xl"></i>
-                <h1 class="text-xl font-bold tracking-tight">Maria Health <span class="text-blue-600">Backup Console v2.2</span></h1>
+                <h1 class="text-xl font-bold tracking-tight">Maria Health <span class="text-blue-600">Backup Console v2.7</span></h1>
             </div>
             <div class="text-sm text-gray-500" id="last-updated">Updating...</div>
         </div>
@@ -21,18 +21,22 @@
 
     <main class="max-w-7xl mx-auto px-4 py-8">
         <!-- Token Usage -->
-        <div id="usage-container" class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 hidden"></div>
+        <div id="usage-container" class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+             <div class="bg-white p-5 rounded-2xl border animate-pulse h-24"></div>
+             <div class="bg-white p-5 rounded-2xl border animate-pulse h-24"></div>
+             <div class="bg-white p-5 rounded-2xl border animate-pulse h-24"></div>
+        </div>
 
-        <!-- Database Stats -->
-        <div id="db-stats-container" class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8 hidden">
+        <!-- Database Stats row -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
             <div class="lg:col-span-1 space-y-6">
                 <div class="bg-white p-6 rounded-2xl border shadow-sm">
                     <div class="flex items-center gap-3 mb-2"><i class="fas fa-tint text-blue-600"></i> <h2 class="font-bold">Glucose Records</h2></div>
-                    <div class="text-3xl font-black text-gray-800" id="glucose-count">0</div>
+                    <div class="text-3xl font-black text-gray-800" id="glucose-count">...</div>
                 </div>
                 <div class="bg-white p-6 rounded-2xl border shadow-sm">
                     <div class="flex items-center gap-3 mb-2"><i class="fas fa-sync text-purple-600"></i> <h2 class="font-bold">Notion Syncs</h2></div>
-                    <div class="text-3xl font-black text-gray-800" id="notion-count">0</div>
+                    <div class="text-3xl font-black text-gray-800" id="notion-count">...</div>
                 </div>
             </div>
             <div class="lg:col-span-2 bg-white p-6 rounded-2xl border shadow-sm">
@@ -62,39 +66,18 @@
 
     <script>
         let dashboardData = null;
-        let charts = {};
 
         function toPST(isoStr) {
-            // Hard-coded PDT offset of -7 hours
-            const d = new Date(isoStr);
-            const pst = new Date(d.getTime() - (7 * 60 * 60 * 1000));
-            return pst.getUTCHours().toString().padStart(2, '0') + ':' + 
-                   pst.getUTCMinutes().toString().padStart(2, '0') + 
-                   (pst.getUTCHours() >= 12 ? ' PM' : ' AM');
-        }
-
-        function updateGlucoseChart() {
-            const data = dashboardData.glucoseTrend;
-            const labels = data.map(p => toPST(p.t));
-            const values = data.map(p => p.v);
-            const sorted = [...values].sort((a,b)=>a-b);
-            const median = sorted[Math.floor(sorted.length/2)];
-
-            new Chart(document.getElementById('glucoseTrendChart').getContext('2d'), {
-                type: 'line',
-                data: {
-                    labels: labels,
-                    datasets: [
-                        { label: 'Glucose', data: values, borderColor: '#3B82F6', tension: 0.4, pointRadius: 0, fill: true, backgroundColor: 'rgba(59,130,246,0.1)' },
-                        { label: 'Median', data: Array(labels.length).fill(median), borderColor: 'red', borderDash: [5,5], pointRadius: 0, fill: false }
-                    ]
-                },
-                options: { 
-                    responsive: true, maintainAspectRatio: false, 
-                    plugins: { legend: { display: false } },
-                    scales: { y: { min: 40, max: 300 }, x: { ticks: { autoSkip: true, maxTicksLimit: 10, maxRotation: 0 } } }
-                }
-            });
+            try {
+                const d = new Date(isoStr);
+                const pst = new Date(d.getTime() - (7 * 60 * 60 * 1000));
+                let h = pst.getUTCHours();
+                const m = pst.getUTCMinutes().toString().padStart(2, '0');
+                const ampm = h >= 12 ? 'PM' : 'AM';
+                h = h % 12;
+                h = h ? h : 12; 
+                return h + ':' + m + ' ' + ampm;
+            } catch(e) { return "??:??"; }
         }
 
         async function loadStatus() {
@@ -108,32 +91,54 @@
                 document.getElementById('notion-count').textContent = d.database.notion.toLocaleString();
                 document.getElementById('count-label').textContent = d.backups.length + ' snapshots';
                 
-                const usage = document.getElementById('usage-container');
-                usage.classList.remove('hidden');
-                usage.innerHTML = d.tokenUsage.map(u => `
-                    <a href="${u.link}" target="_blank" class="bg-white p-5 rounded-2xl border shadow-sm block">
-                        <div class="text-xs font-bold text-gray-400 uppercase">${u.platform}</div>
-                        <div class="text-2xl font-black text-gray-800">${(u.realTokens/1000000).toFixed(1)}M</div>
-                        <div class="text-[10px] text-gray-400">TOKENS USED</div>
-                    </a>
-                `).join('');
+                // Tokens
+                if (d.tokenUsage) {
+                    document.getElementById('usage-container').innerHTML = d.tokenUsage.map(u => `
+                        <a href="${u.link || '#'}" target="_blank" class="bg-white p-5 rounded-2xl border shadow-sm block hover:border-blue-500 transition-all">
+                            <div class="text-xs font-bold text-gray-400 uppercase mb-1">${u.platform}</div>
+                            <div class="text-2xl font-black text-gray-800">${((u.realTokens||0)/1000000).toFixed(1)}M</div>
+                            <div class="text-[10px] text-gray-400">TOKENS USED</div>
+                        </a>
+                    `).join('');
+                }
 
-                updateGlucoseChart();
+                // Glucose Chart
+                if (d.glucoseTrend) {
+                    const values = d.glucoseTrend.map(p => p.v);
+                    const labels = d.glucoseTrend.map(p => toPST(p.t));
+                    const sorted = [...values].sort((a,b)=>a-b);
+                    const median = sorted[Math.floor(sorted.length/2)] || 0;
+                    new Chart(document.getElementById('glucoseTrendChart').getContext('2d'), {
+                        type: 'line',
+                        data: {
+                            labels: labels,
+                            datasets: [
+                                { label: 'Glucose', data: values, borderColor: '#3B82F6', tension: 0.4, pointRadius: 1, borderWidth: 3, fill: true, backgroundColor: 'rgba(59,130,246,0.1)' },
+                                { label: 'Median', data: Array(labels.length).fill(median), borderColor: 'red', borderDash: [5,5], pointRadius: 0, fill: false }
+                            ]
+                        },
+                        options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { min: 40, max: 300 }, x: { ticks: { autoSkip: true, maxTicksLimit: 12, maxRotation: 0 } } } }
+                    });
+                }
 
-                const common = { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } } };
-                new Chart(document.getElementById('growthChartGlucose'), {
-                    type: 'line', data: { labels: d.syncHistory.map(h=>h.date.slice(5)), datasets: [{ data: d.syncHistory.map(h=>h.glucose), borderColor: '#3B82F6', fill: true }] },
-                    options: common
-                });
-                new Chart(document.getElementById('growthChartNotion'), {
-                    type: 'line', data: { labels: d.syncHistory.map(h=>h.date.slice(5)), datasets: [{ data: d.syncHistory.map(h=>h.notion), borderColor: '#A855F7', fill: true }] },
-                    options: common
-                });
+                // Growth Charts
+                if (d.syncHistory) {
+                    const labels = d.syncHistory.map(h=>h.date.slice(5).replace('-','/'));
+                    new Chart(document.getElementById('growthChartGlucose').getContext('2d'), {
+                        type: 'line', data: { labels, datasets: [{ data: d.syncHistory.map(h=>h.glucose), borderColor: '#3B82F6', fill: true, tension: 0.3 }] },
+                        options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } } }
+                    });
+                    new Chart(document.getElementById('growthChartNotion').getContext('2d'), {
+                        type: 'line', data: { labels, datasets: [{ data: d.syncHistory.map(h=>h.notion), borderColor: '#A855F7', fill: true, tension: 0.3 }] },
+                        options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } } }
+                    });
+                }
 
+                // List
                 document.getElementById('backup-list').innerHTML = d.backups.map(b => `
                     <tr><td class="px-6 py-4 text-sm font-medium">${toPST(b.created)}</td><td class="px-6 py-4 text-sm font-mono">${b.filename}</td><td class="px-6 py-4 text-right text-sm font-mono text-gray-500">${b.size}</td></tr>
                 `).join('');
-            } catch (e) { console.error(e); }
+            } catch (e) { console.error('Dashboard Error:', e); }
         }
         loadStatus();
     </script>
