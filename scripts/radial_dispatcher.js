@@ -379,7 +379,7 @@ async function main() {
       console.log("  -> Updating Backup Dashboard...");
       execSync('node /Users/javier/.openclaw/workspace/scripts/generate_backup_dashboard_data.js');
       execSync('node /Users/javier/.openclaw/workspace/scripts/generate_notion_gallery_data.js');
-      execSync('cd /Users/javier/.openclaw/workspace/nightscout-meal-photos && git add data/backups.json data/notion-gallery.json && (git commit -m "chore: automated dashboard update" || true) && git push origin main');
+      execSync('cd /Users/javier/.openclaw/workspace/nightscout-meal-photos && git add data/backups.json data/notion_meals.json && (git commit -m "chore: automated dashboard update" || true) && git push origin main');
     } catch (e) {
       console.error("Dashboard update failed:", e.message);
     }

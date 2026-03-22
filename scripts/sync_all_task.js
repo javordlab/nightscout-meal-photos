@@ -383,7 +383,7 @@ async function main() {
       execSync('node /Users/javier/.openclaw/workspace/scripts/generate_glucose_chart.js');
       execSync('cp /Users/javier/.openclaw/workspace/tmp/*.png /Users/javier/.openclaw/workspace/nightscout-meal-photos/');
       
-      execSync('cd /Users/javier/.openclaw/workspace/nightscout-meal-photos && git add data/backups.json data/notion-gallery.json *.png && (git commit -m "chore: automated dashboard update" || true) && git push origin main');
+      execSync('cd /Users/javier/.openclaw/workspace/nightscout-meal-photos && git add data/backups.json data/notion_meals.json *.png && (git commit -m "chore: automated dashboard update" || true) && git push origin main');
     } catch (e) {
       console.error("Dashboard update failed:", e.message);
     }
