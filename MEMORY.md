@@ -97,3 +97,60 @@
   - **250K/day**: gpt-5.4, gpt-5.2, gpt-5.1, gpt-5.1-codex, gpt-5, gpt-5-codex, gpt-5-chat-latest, gpt-4.1, gpt-4o, o1, o3.
   - **2.5M/day**: gpt-5.1-codex-mini, gpt-5-mini, gpt-5-nano, gpt-4.1-mini, gpt-4.1-nano, gpt-4o-mini, o1-mini, o3-mini, o4-mini, codex-mini-latest.
 - Important correction from Javi: this second tier is **2.5M** (not 2M).
+
+## Critical Fixes Applied (2026-03-22)
+
+### Issue 6: Projections Not Matching Channel Values
+**Root Cause:** `radial_dispatcher.js` and `calculate_notion_projections.js` overwrote Notion "Predicted Peak BG" with `120 + carbs×3.5` formula, ignoring the agent's context-aware prediction in the health_log.md title e.g. `(Pred: 175-200 mg/dL @ 5:30-6:00 PM)`.
+**Fix:** Added `parsePredFromText()` to both scripts. Reads upper bound of BG range and midpoint of time window from title. Falls back to formula only when no `(Pred: ...)` is present.
+**Commit:** `056f45b`
+
+### Issue 7: Duplicate Notion Entries When Title Changes (recurring)
+**Root Cause:** Entry key = `sha256(timestamp|user|title)`. Each title edit changes the key → sync creates a NEW Notion page instead of updating.
+**Workaround:** After title corrections, run validate_sync.js, find orphaned keys (in sync_state but not in normalized JSON), remove them + archive stale Notion pages.
+**Permanent fix (pending):** Sync should query Notion by timestamp+user before creating, and UPDATE if found.
+
+### Issue 8: Stale Pending Photo Alert (new cron)
+**Script:** `scripts/check_pending_photos.js` — runs every 30 min via cron
+**Behavior:** Alerts Javi via Telegram DM (8335333215) ONLY — not food group (-5262020908) — if any photo in `pending_photo_entries.json` has waited 30+ min for manual entry.
+
+## GitHub Backup (2026-03-22)
+All of `~/.openclaw/` and related projects are now versioned on GitHub under `javordlab` (all private). Global git config: `Javier Ordonez <ordonez@gmail.com>`. 27 repos total.
+
+## Critical Fixes Applied (2026-03-22)
+
+### Issue 6: Projections Not Matching Channel Values
+**Root Cause:** `radial_dispatcher.js` and `calculate_notion_projections.js` overwrote Notion "Predicted Peak BG" with `120 + carbs×3.5` formula, ignoring the agent's context-aware prediction in the health_log.md title e.g. `(Pred: 175-200 mg/dL @ 5:30-6:00 PM)`.
+**Fix:** Added `parsePredFromText()` to both scripts. Reads upper bound of BG range and midpoint of time window from title. Falls back to formula only when no `(Pred: ...)` is present.
+**Commit:** `056f45b`
+
+### Issue 7: Duplicate Notion Entries When Title Changes (recurring)
+**Root Cause:** Entry key = `sha256(timestamp|user|title)`. Each title edit changes the key → sync creates a NEW Notion page instead of updating.
+**Workaround:** After title corrections, run validate_sync.js, find orphaned keys (in sync_state but not in normalized JSON), remove them + archive stale Notion pages.
+**Permanent fix (pending):** Sync should query Notion by timestamp+user before creating, and UPDATE if found.
+
+### Issue 8: Stale Pending Photo Alert (new cron)
+**Script:** `scripts/check_pending_photos.js` — runs every 30 min via cron
+**Behavior:** Alerts Javi via Telegram DM (8335333215) ONLY — not food group (-5262020908) — if any photo in `pending_photo_entries.json` has waited 30+ min for manual entry.
+
+## GitHub Backup (2026-03-22)
+All of `~/.openclaw/` and related projects are now versioned on GitHub under `javordlab` (all private). Global git config: `Javier Ordonez <ordonez@gmail.com>`. 27 repos total.
+
+## Critical Fixes Applied (2026-03-22)
+
+### Issue 6: Projections Not Matching Channel Values
+**Root Cause:** `radial_dispatcher.js` and `calculate_notion_projections.js` overwrote Notion "Predicted Peak BG" with `120 + carbs×3.5` formula, ignoring the agent's context-aware prediction in the health_log.md title e.g. `(Pred: 175-200 mg/dL @ 5:30-6:00 PM)`.
+**Fix:** Added `parsePredFromText()` to both scripts. Reads upper bound of BG range and midpoint of time window from title. Falls back to formula only when no `(Pred: ...)` is present.
+**Commit:** `056f45b`
+
+### Issue 7: Duplicate Notion Entries When Title Changes (recurring)
+**Root Cause:** Entry key = `sha256(timestamp|user|title)`. Each title edit changes the key → sync creates a NEW Notion page instead of updating.
+**Workaround:** After title corrections, run validate_sync.js, find orphaned keys (in sync_state but not in normalized JSON), remove them + archive stale Notion pages.
+**Permanent fix (pending):** Sync should query Notion by timestamp+user before creating, and UPDATE if found.
+
+### Issue 8: Stale Pending Photo Alert (new cron)
+**Script:** `scripts/check_pending_photos.js` — runs every 30 min via cron
+**Behavior:** Alerts Javi via Telegram DM (8335333215) ONLY — not food group (-5262020908) — if any photo in `pending_photo_entries.json` has waited 30+ min for manual entry.
+
+## GitHub Backup (2026-03-22)
+All of `~/.openclaw/` and related projects are now versioned on GitHub under `javordlab` (all private). Global git config: `Javier Ordonez <ordonez@gmail.com>`. 27 repos total.
