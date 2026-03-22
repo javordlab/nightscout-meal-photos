@@ -29,13 +29,21 @@ function main() {
     // Get unique dates sorted to find start point
     const allDates = [...new Set([...Object.keys(glucoseHistory), ...Object.keys(notionHistory)])].sort();
 
-    // Generate a continuous list of dates from the first date to today
+    // Generate a continuous list of unique dates from the first date to today
     const start = new Date(allDates[0]);
     const end = new Date();
-    const continuousDates = [];
-    for (let d = new Date(start); d <= end; d.setDate(d.getDate() + 1)) {
-        continuousDates.push(d.toISOString().split('T')[0]);
+    const dateSet = new Set();
+    
+    let current = new Date(start.getTime());
+    // Move to noon to avoid DST jump issues at midnight
+    current.setHours(12, 0, 0, 0);
+
+    while (current <= end) {
+        dateSet.add(current.toISOString().split('T')[0]);
+        current.setDate(current.getDate() + 1);
     }
+    
+    const continuousDates = Array.from(dateSet).sort();
 
     const syncHistory = continuousDates.map(date => ({
         date: date,
