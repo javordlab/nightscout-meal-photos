@@ -1,6 +1,6 @@
 # Health Log
 
-| 2026-03-22 | 09:12 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Avocado toast (1 slice) with 4 sardines (BG: 121 mg/dL Flat) (Pred: 140-160 mg/dL @ 10:45-11:15 AM) (Carbs: ~21g | Cals: ~340) [📷](pending) | 21 | 340 |
+| 2026-03-22 | 09:12 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Avocado toast (1 slice) with 4 sardines (BG: 121 mg/dL Flat) (Pred: 140-160 mg/dL @ 10:45-11:15 AM) (Protein: 17g) (Carbs: ~21g | Cals: ~340) [📷](https://iili.io/qSJLrFe.jpg) | 21 | 340 |
 | 2026-03-21 | 18:58 -07:00 | Maria Dennis | Activity | - | 30 minutes gardening | null | null |
 | 2026-03-21 | 19:00 -07:00 | Maria Dennis | Medication | - | Metformin 1000mg (with dinner) | null | null |
 | 2026-03-21 | 18:43 -07:00 | Maria Dennis | Food | Dinner | Dinner: Pulpo a la Gallega (octopus and potatoes with paprika), dark vegetable medley (mushroom/eggplant stew), 3 strawberries, 5oz milk (BG: Unknown) (Pred: 190-210 mg/dL @ 8:45-9:15 PM) (Protein: 26g) [📷](https://iili.io/qvU6O8l.jpg) | 68 | 485 |

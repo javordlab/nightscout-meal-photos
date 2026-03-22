@@ -3168,30 +3168,6 @@
       "photo_urls": [],
       "outcomes_backfilled": false
     },
-    "sha256:8bc99e2c6d3212f3a71121c26a3d9c9be3bd7edfcdc4225d0abbd8c4129cd50b": {
-      "timestamp": "2026-03-21T10:03:00-07:00",
-      "content_hash": "sha256:b74461907a97f734e2f028ba101515f6ebe385b694f62e08ef64598ba538bee7",
-      "user": "Maria Dennis",
-      "category": "Food",
-      "meal_type": "Breakfast",
-      "title": "Breakfast: 2 boiled eggs, 1 slice white bread, 1 small guava",
-      "photo_urls": [
-        "https://iili.io/qkQfYYl.jpg"
-      ],
-      "outcomes_backfilled": false,
-      "nightscout": {
-        "treatment_id": "69bed40f911a8ea261e674b0",
-        "last_synced_at": "2026-03-21T17:23:27.322Z"
-      },
-      "notion": {
-        "page_id": "32a85ec7-0668-81b8-9707-c78c54633987",
-        "last_synced_at": "2026-03-21T17:23:27.554Z"
-      },
-      "gallery": {
-        "gallery_id": "manual-2026-03-21T10-03-00-07-00",
-        "last_synced_at": "2026-03-21T17:23:27.555Z"
-      }
-    },
     "sha256:c08b420bb06a44b63c364d886e35b6b485e7754e42e407eb730b19dfa0107c51": {
       "timestamp": "2026-03-21T10:56:00-07:00",
       "content_hash": "sha256:8990b7af4b659dbe52134a3c7fcfd042e098014e24a5fb00fefb1589e43064e3",
@@ -3224,45 +3200,93 @@
         "last_synced_at": "2026-03-21T19:54:25.212Z"
       }
     },
-    "sha256:03812b13b41419d44a6324cd1aa60bb640c05df1784decb0f57adc9c9b857ac2": {
+    "sha256:7a49151fd16f40740e337e755eedd20b6cf1644c305c9b048fd53f0ba8dd3407": {
+      "timestamp": "2026-03-21T18:58:00-07:00",
+      "content_hash": "sha256:1fffacf4e229caf2e24d3ba2ce0cf420ec770528631038cf19ca6c2d3302f829",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "30 minutes gardening",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:726122e878fc47fb60083c8d194e331c8531b90f9c35b87e96131148140b6fc4": {
+      "timestamp": "2026-03-21T19:00:00-07:00",
+      "content_hash": "sha256:ac4c340b305ac469097bc97a8cbdffc1be6a7e9f62acf6bc84178d7c8bab1e26",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Metformin 1000mg (with dinner)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:377ffd272cfbafde4cafd3e8255dd54ff15b07c3e8cb3b110a38587439d744e3": {
+      "timestamp": "2026-03-21T18:43:00-07:00",
+      "content_hash": "sha256:78da5f7bf210f130e8304a4c21e5e43f3ef5faae7a8baf511eac13a33d60a343",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Dinner",
+      "title": "Dinner: Pulpo a la Gallega (octopus and potatoes with paprika), dark vegetable medley (mushroom/eggplant stew), 3 strawberries, 5oz milk",
+      "photo_urls": [
+        "https://iili.io/qvU6O8l.jpg"
+      ],
+      "outcomes_backfilled": false
+    },
+    "sha256:157a866a8c6444cb20ca92c4644683dbf57a9caeb9d433de5621c2a1ca967a71": {
+      "timestamp": "2026-03-22T09:00:00-07:00",
+      "content_hash": "sha256:1c14266f12d9900f9b86f60da2bff82faab2d62b7f74b0c94c5ed3383d5d47b3",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "meal_type": "-",
+      "title": "Lisinopril 10mg (Scheduled)",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:6f922e4b79463f8b12027d6e93cec2a7f3682870b53de90d832f1f2e0d7484c1": {
+      "timestamp": "2026-03-21T14:56:00-07:00",
+      "content_hash": "sha256:9c1913a3cd3adfcf8ddb330c32f94fdd52f4ed95c8b07731c1e700efaf7fd83e",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "meal_type": "-",
+      "title": "60 minutes gardening",
+      "photo_urls": [],
+      "outcomes_backfilled": false
+    },
+    "sha256:ba36d8eb9a77ac6180824ca70f996fe3d7e839896f5749c76492d7e505a6ea40": {
       "timestamp": "2026-03-21T13:21:00-07:00",
-      "content_hash": "sha256:ff1374bb23449942abc3c0ccdc87b3e9815388bde0484c09f16da812b708d72e",
+      "content_hash": "sha256:14afdb8d13e118a3c17f09fad061d366b81a445ca701ec23376e87c161cb0b56",
       "user": "Maria Dennis",
       "category": "Food",
       "meal_type": "Lunch",
-      "title": "Lunch: Smoked salmon on bread with avocado and apple wedges",
+      "title": "Lunch: Smoked salmon on bread with avocado and apple wedges (Peak: 165 mg/dL @ 3:19 PM)",
       "photo_urls": [
         "https://iili.io/qvI0E6Q.jpg"
       ],
-      "outcomes_backfilled": false,
-      "notion": {
-        "page_id": "32a85ec7-0668-814b-b8b3-f001c0bba5ff",
-        "last_synced_at": "2026-03-21T20:25:02.416Z"
-      },
-      "gallery": {
-        "gallery_id": "manual-2026-03-21T13-21-00-07-00",
-        "last_synced_at": "2026-03-21T20:25:02.417Z"
-      }
+      "outcomes_backfilled": false
     },
-    "sha256:a4d105c8f914630d5768b9890e5eab13b4296a5ac4cc4a5c9bdaee9d0719347e": {
-      "timestamp": "2026-03-21T13:21:00-07:00",
-      "content_hash": "sha256:ad7bb81ae5661997c87aa6c5e79b40bd502b27d61b778b164a36fe5fb74dac4f",
+    "sha256:ead7c4f9da6e4f03125bf6c81db23df509e5c33cecbdae20d40e9abe90ea071a": {
+      "timestamp": "2026-03-21T10:03:00-07:00",
+      "content_hash": "sha256:5c27d281f419868ce81ca62f4b48c8042f958d7c237522e2b8825ad84bd8943c",
       "user": "Maria Dennis",
       "category": "Food",
-      "meal_type": "Snack",
-      "title": "Snack: Avocado toast with salmon and half apple",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: 2 boiled eggs, 1 slice white bread, 1 small guava (Peak: 161 mg/dL @ 10:59 AM)",
       "photo_urls": [
         "https://iili.io/qkQfYYl.jpg"
       ],
-      "outcomes_backfilled": false,
-      "notion": {
-        "page_id": "32a85ec7-0668-8150-a704-e98a1ca9bdc5",
-        "last_synced_at": "2026-03-21T20:25:02.648Z"
-      },
-      "gallery": {
-        "gallery_id": "sha256:8bc99e2c6d3212f3a71121c",
-        "last_synced_at": "2026-03-21T20:25:02.648Z"
-      }
+      "outcomes_backfilled": false
+    },
+    "sha256:5ac461ba97c5fe8416288aad32b3fa59eef8338be44c147e1e4243a8a0c8f376": {
+      "timestamp": "2026-03-22T09:12:00-07:00",
+      "content_hash": "sha256:6a048ab9746c2970590d54fee2def8005f4bb26cc83c2f11597e60a5db260f75",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Breakfast",
+      "title": "Breakfast: Avocado toast (1 slice) with 4 sardines",
+      "photo_urls": [
+        "https://iili.io/qSJLrFe.jpg"
+      ],
+      "outcomes_backfilled": false
     }
   }
 }

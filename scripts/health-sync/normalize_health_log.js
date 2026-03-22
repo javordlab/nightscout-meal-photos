@@ -10,7 +10,7 @@ const SYNC_STATE_PATH = path.join(WORKSPACE, 'data', 'sync_state.json');
 
 const { loadSyncState, saveSyncState, upsertEntry } = require('./sync_state');
 
-const PHOTO_REGEX = /\[📷\]\((https?:\/\/[^)]+)\)/g;
+const PHOTO_REGEX = /\[[^\]]*\]\((https?:\/\/[^)]+)\)/g;
 const PRED_REGEX = /\(Pred:\s*([^@)]+?)\s*@\s*([^)]+)\)/i;
 const BG_REGEX = /\(BG:\s*([^)]*?)\)/i;
 const PROTEIN_REGEX = /\(Protein:\s*([^)]+?)\)/i;
@@ -67,13 +67,16 @@ function extractProtein(entryText) {
 
 function stripMetadata(entryText) {
   let text = stripPhotos(entryText);
-  text = cleanWhitespace(text.replace(BG_REGEX, '').replace(PRED_REGEX, '').replace(PROTEIN_REGEX, ''));
+  text = cleanWhitespace(text.replace(BG_REGEX, '').replace(PRED_REGEX, '').replace(PROTEIN_REGEX, '').replace(/\(Carbs:[^)]*\)/g, '').replace(/\(Carbs:[^)]*\|[^)]*\)/g, ''));
   return text;
 }
 
 function parseNumber(value) {
   if (!value || value === 'null') return null;
-  const parsed = Number(value);
+  // Extract number from strings like '17g', '~21g', '340 kcal'
+  const numMatch = String(value).match(/[\d.]+/);
+  if (!numMatch) return null;
+  const parsed = Number(numMatch[0]);
   return Number.isFinite(parsed) ? parsed : null;
 }
 
@@ -124,9 +127,15 @@ function parseRow(line, lineNumber) {
   const user = parts[3];
   const category = parts[4];
   const mealType = parts[5];
-  const entryText = parts[6];
-  const carbs = parseNumber(parts[7]);
-  const cals = parseNumber(parts[8]);
+  // Carbs and cals are always at fixed positions from the end
+  // parts structure: | date | time | user | cat | type | entry... | carbs | cals |
+  const carbsIdx = parts.length - 3;  // 3rd from end
+  const calsIdx = parts.length - 2;   // 2nd from end
+  // Entry text is everything from index 6 up to carbs column
+  const entryParts = parts.slice(6, carbsIdx);
+  const entryText = entryParts.join(' | ');
+  const carbs = parseNumber(parts[carbsIdx]);
+  const cals = parseNumber(parts[calsIdx]);
 
   const timestamp = toIso(date, time);
   const photos = extractPhotos(entryText);
