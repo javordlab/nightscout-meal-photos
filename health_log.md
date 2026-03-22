@@ -1,6 +1,6 @@
 # Health Log
 
-| 2026-03-22 | 16:01 -07:00 | Maria Dennis | Food | Lunch | Lunch: Toast with peanut butter, honey, and hemp seeds + 250ml radler (BG: 146 mg/dL Flat) (Pred: 180-210 mg/dL @ 5:30-6:00 PM) (Carbs: ~65g | Cals: ~515) [📷](pending) | 65 | 515 |
+| 2026-03-22 | 16:01 -07:00 | Maria Dennis | Food | Lunch | Lunch: Toast with peanut butter, honey, and hemp seeds + 250ml radler (BG: 146 mg/dL Flat) (Pred: 180-210 mg/dL @ 5:30-6:00 PM) (Protein: 12g) (Carbs: ~65g | Cals: ~515) [📷](pending) | 65 | 515 |
 | 2026-03-22 | 15:28 -07:00 | Maria Dennis | Activity | - | 120 minutes gardening (BG: 133 mg/dL Flat) | null | null |
 | 2026-03-22 | 12:09 -07:00 | Maria Dennis | Activity | - | 60 minutes walk (BG: 155 mg/dL Flat) | null | null |
 | 2026-03-22 | 09:12 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Avocado toast (1 slice) with 4 sardines (BG: 121 mg/dL Flat) (Pred: 140-160 mg/dL @ 10:45-11:15 AM) (Peak: 155 mg/dL @ 12:04 PM ✓ within prediction) (Protein: 17g) (Carbs: ~21g | Cals: ~340) [📷](https://iili.io/qSJLrFe.jpg) | 21 | 340 |
