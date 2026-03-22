@@ -43,33 +43,46 @@ function getShipments() {
 }
 
 function getUsage() {
-    const usage = [
-        { platform: 'Gemini Antigravity', bucket: '250K', percent: 60, oauthUsed: 0 },
-        { platform: 'Gemini CLI', bucket: '250K', percent: 100, oauthUsed: 0 },
-        { platform: 'OpenAI Codex', bucket: '2M', percent: 99, oauthUsed: 0 },
-        { platform: 'OpenAI GPT 5.3', bucket: '2M', percent: 99, oauthUsed: 0 }
+    const SESSIONS_PATH = "/Users/javier/.openclaw/agents/health-guard/sessions/sessions.json";
+    const usageByModel = {};
+    
+    try {
+        if (fs.existsSync(SESSIONS_PATH)) {
+            const sessions = JSON.parse(fs.readFileSync(SESSIONS_PATH, 'utf8'));
+            for (const key in sessions) {
+                const s = sessions[key];
+                const model = s.model || "unknown";
+                const provider = s.modelProvider || "unknown";
+                const label = `${provider}/${model}`;
+                const tokens = (s.totalTokens || 0) + (s.inputTokens || 0) + (s.outputTokens || 0);
+                
+                if (!usageByModel[label]) usageByModel[label] = 0;
+                usageByModel[label] += tokens;
+            }
+        }
+    } catch (e) {
+        console.error("Failed to read sessions for usage:", e.message);
+    }
+
+    // Mapping for dashboard display
+    const platforms = [
+        { id: 'ollama/kimi-k2.5:cloud', name: 'Kimi (Ollama)', bucket: 'Free', link: 'https://ollama.com' },
+        { id: 'google-antigravity/gemini-3-flash', name: 'Gemini Antigravity', bucket: 'Pay-as-you-go', link: 'https://aistudio.google.com/app/plan' },
+        { id: 'openai-codex/gpt-5.3-codex', name: 'OpenAI Codex', bucket: 'Pay-as-you-go', link: 'https://platform.openai.com/usage' },
+        { id: 'google-gemini-cli/gemini-3-flash-preview', name: 'Gemini CLI', bucket: 'Preview', link: 'https://aistudio.google.com/app/plan' }
     ];
 
-    let totalOAuthTokens = 0;
-    try {
-        const sessions = JSON.parse(fs.readFileSync(SESSIONS_PATH, 'utf8'));
-        Object.values(sessions).forEach(s => {
-            totalOAuthTokens += ((s.inputTokens || 0) + (s.outputTokens || 0));
-        });
-    } catch (e) {}
-
-    return usage.map(u => {
-        const bucketSize = u.bucket === '2M' ? 2500000 : 250000;
-        const remaining = Math.round(bucketSize * (u.percent / 100));
-        const managedUsed = bucketSize - remaining;
-        
+    return platforms.map(p => {
+        const tokens = usageByModel[p.id] || 0;
         return {
-            platform: u.platform,
-            bucketType: u.bucket,
-            managedUsed: managedUsed,
-            managedRemaining: remaining,
-            oauthUsed: u.platform === 'Gemini Antigravity' ? totalOAuthTokens : 0,
-            percentRemaining: u.percent
+            platform: p.name,
+            bucketType: p.bucket,
+            managedUsed: tokens,
+            managedRemaining: 0, // No longer using fake percentage
+            oauthUsed: 0,
+            percentRemaining: 100, // Placeholder for UI
+            realTokens: tokens,
+            link: p.link
         };
     });
 }
