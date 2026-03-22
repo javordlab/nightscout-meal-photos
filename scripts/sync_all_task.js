@@ -136,6 +136,43 @@ function buildNightscoutNotes(cleanText, entryData, photos, entryKey) {
   return `${cleanText}${nutrition}${photoPart} [entry_key:sha256:${entryKey}]`;
 }
 
+function directionToArrow(direction) {
+  const map = {
+    Flat: '➡️',
+    FortyFiveUp: '↗️',
+    SingleUp: '⬆️',
+    DoubleUp: '⬆️⬆️',
+    FortyFiveDown: '↘️',
+    SingleDown: '⬇️',
+    DoubleDown: '⬇️⬇️'
+  };
+  return map[direction] || direction || '';
+}
+
+function injectKnownBgIfUnknown(cleanText, mealIso, glucoseEntries) {
+  if (!cleanText.includes('(BG: Unknown)') || !Array.isArray(glucoseEntries) || glucoseEntries.length === 0) {
+    return cleanText;
+  }
+
+  const mealMs = new Date(mealIso).getTime();
+  let best = null;
+  let bestDiff = 20 * 60 * 1000; // <= 20 min window
+
+  for (const e of glucoseEntries) {
+    const t = e.date || e.mills;
+    if (!t || e.sgv == null) continue;
+    const diff = Math.abs(t - mealMs);
+    if (diff <= bestDiff) {
+      best = e;
+      bestDiff = diff;
+    }
+  }
+
+  if (!best) return cleanText;
+  const bgText = `${best.sgv} mg/dL ${directionToArrow(best.direction)}`.trim();
+  return cleanText.replace('(BG: Unknown)', `(BG: ${bgText})`);
+}
+
 async function main() {
   console.log("Starting Radial Dispatcher v2.2...");
   
@@ -156,6 +193,15 @@ async function main() {
   const priorityLines = dataLines.filter(l => l.includes(today));
   const otherLines = dataLines.filter(l => !l.includes(today)).reverse();
   const finalLines = [...priorityLines, ...otherLines];
+
+  let glucoseEntries = [];
+  try {
+    glucoseEntries = await nsRequest("GET", "/api/v1/entries.json?count=5000", {});
+    if (!Array.isArray(glucoseEntries)) glucoseEntries = [];
+  } catch (e) {
+    console.log(`  !! Could not preload glucose entries: ${e.message}`);
+    glucoseEntries = [];
+  }
 
   for (const line of finalLines) {
     const p = line.split('|').map(x => x.trim());
@@ -190,7 +236,8 @@ async function main() {
     }
 
     const photos = extractPhotos(entryData.text);
-    const cleanText = entryData.text.replace(/\[📷\]\([^\)]+\)/g, '').trim();
+    let cleanText = entryData.text.replace(/\[📷\]\([^\)]+\)/g, '').trim();
+    cleanText = injectKnownBgIfUnknown(cleanText, entryData.iso, glucoseEntries);
 
     console.log(`Checking: ${entryData.date} ${entryData.time} - ${cleanText}`);
 
