@@ -7,5 +7,14 @@
     "mealType": "Snack",
     "photoUrl": "https://iili.io/qSQ09Pj.jpg",
     "reason": "nutrition_metadata_required_before_log"
+  },
+  {
+    "queuedAt": "2026-03-22T23:14:08.777Z",
+    "filePrefix": "file_190",
+    "sourcePath": "/Users/javier/.openclaw/media/inbound/file_190---fe917a0c-f2d8-4e5c-aa60-e0919fe0ca2e.jpg",
+    "timestamp": "2026-03-22T23:13:12.869Z",
+    "mealType": "Snack",
+    "photoUrl": "https://iili.io/qSZCCSj.jpg",
+    "reason": "nutrition_metadata_required_before_log"
   }
 ]
