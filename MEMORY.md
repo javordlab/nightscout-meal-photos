@@ -111,6 +111,31 @@
 **Commit:** `699fcb7`
 **Note:** sync_state.json orphaned keys still need manual cleanup after title changes (run validate_sync.js to identify them).
 
+### Issue 9: Entry Key Divergence Between Scripts — FIXED
+**Root Cause:** `radial_dispatcher.js` used `iso|user|category|mealType|cleanText`; `unified_sync.js` used `timestamp|user|title`. Different hashes for same entry → cross-script NS duplicates.
+**Fix:** `radial_dispatcher.js` now uses `normalizeEntryTitle()` (strips BG/Pred/protein/carbs, lowercases) matching `normalize_health_log.js`. Key: `iso|user|normalizedTitle` — identical across all scripts.
+**Commit:** `865e15c`
+
+### Issue 10: Peak Time Timezone Missing in calculate_notion_projections.js — FIXED
+**Root Cause:** `parsePredFromText` received only `YYYY-MM-DD`; produced offset-less ISO → Notion treated as UTC → displayed time off by 7–8h.
+**Fix:** Full ISO date string passed; offset extracted and appended.
+**Commit:** `865e15c`
+
+### Issue 11: No Projection Fallback in unified_sync.js — FIXED
+**Root Cause:** Missing `(Pred: ...)` annotation → predicted peak BG/time omitted from Notion entirely.
+**Fix:** Falls back to `120 + carbs×3.5` / `mealTime + 105min`.
+**Commit:** `865e15c`
+
+### Issue 12: Protein Decimal Parsing — FIXED
+**Root Cause:** `radial_dispatcher.js` used `\d+` / `parseInt` → missed values like `25.5g`.
+**Fix:** `[\d.]+` / `parseFloat`.
+**Commit:** `865e15c`
+
+### Issue 13: Stale Photo Alert Spam — FIXED
+**Root Cause:** `check_pending_photos.js` re-alerted every 30 min indefinitely for unresolved photos.
+**Fix:** `data/pending_photo_alert_state.json` tracks last alert per entry; re-alerts suppressed for 2 hours.
+**Commit:** `865e15c`
+
 ### Issue 8: Stale Pending Photo Alert (new cron)
 **Script:** `scripts/check_pending_photos.js` — runs every 30 min via cron
 **Behavior:** Alerts Javi via Telegram DM (8335333215) ONLY — not food group (-5262020908) — if any photo in `pending_photo_entries.json` has waited 30+ min for manual entry.
