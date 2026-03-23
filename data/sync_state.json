@@ -4139,6 +4139,18 @@
         "gallery_id": "manual-2026-03-22T19-24-00-07-00",
         "last_synced_at": "2026-03-23T03:00:03.562Z"
       }
+    },
+    "sha256:e2e1664b293ccf0ead10dfdb43ac326a5049b744fcc9d26894380f5c6cada14f": {
+      "timestamp": "2026-03-22T20:02:00-07:00",
+      "content_hash": "sha256:b880dc79a6f263c96cf2faf42ccf4d516ea61a691028c2c55e4cb961ba3a4fd0",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "meal_type": "Snack",
+      "title": "Snack: 3 strawberries + glass of whole milk (~8oz)",
+      "photo_urls": [
+        "https://iili.io/qUFEKx9.jpg"
+      ],
+      "outcomes_backfilled": false
     }
   }
 }
