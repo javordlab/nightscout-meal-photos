@@ -241,6 +241,7 @@ async function main() {
   const finalLines = [...priorityLines, ...otherLines];
 
   let glucoseEntries = [];
+  let photoSyncedToNotion = false;
   try {
     glucoseEntries = await nsRequest("GET", "/api/v1/entries.json?count=5000", {});
     if (!Array.isArray(glucoseEntries)) glucoseEntries = [];
@@ -410,6 +411,7 @@ async function main() {
     if (activeResults.length === 0) {
       console.log("  -> Pushing to Notion...");
       await notionRequest("POST", "/pages", notionBody);
+      if (photos[0]) photoSyncedToNotion = true;
     } else {
       const existing = activeResults[0];
 
@@ -429,6 +431,7 @@ async function main() {
         console.log("  -> Updating Notion...");
         delete notionBody.parent;
         await notionRequest("PATCH", `/pages/${existing.id}`, notionBody);
+        if (photos[0] && existingPhoto !== photos[0]) photoSyncedToNotion = true;
       } else {
         console.log("  -> Notion up to date.");
       }
@@ -440,15 +443,15 @@ async function main() {
     }
   }
 
-  // 4. Update Dashboard (paused)
-  if (DASHBOARD_SYNC_ENABLED) {
+  // 4. Update gallery when a photo was written to Notion this run
+  if (photoSyncedToNotion) {
     try {
-      console.log("  -> Updating Backup Dashboard...");
-      execSync('node /Users/javier/.openclaw/workspace/scripts/generate_backup_dashboard_data.js');
-      execSync('node /Users/javier/.openclaw/workspace/scripts/generate_notion_gallery_data.js');
-      execSync('cd /Users/javier/.openclaw/workspace/nightscout-meal-photos && git add data/backups.json data/notion_meals.json && (git commit -m "chore: automated dashboard update" || true) && git push origin main');
+      console.log("  -> Photo synced to Notion — regenerating gallery...");
+      execSync('node /Users/javier/.openclaw/workspace/scripts/generate_notion_gallery_data.js', { stdio: 'inherit' });
+      execSync('cd /Users/javier/.openclaw/workspace/nightscout-meal-photos && git add data/notion_meals.json && (git commit -m "chore: gallery update after photo sync" || true) && git push origin main', { stdio: 'inherit' });
+      console.log("  -> Gallery updated and pushed.");
     } catch (e) {
-      console.error("Dashboard update failed:", e.message);
+      console.error("Gallery update failed:", e.message);
     }
   }
 
