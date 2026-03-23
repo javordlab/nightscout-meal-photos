@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "queuedAt": "2026-03-23T20:08:12.312Z",
+    "filePrefix": "file_195",
+    "sourcePath": "/Users/javier/.openclaw/media/inbound/file_195---b2f4c84f-8716-4fad-97e6-f28a4ccc0676.jpg",
+    "timestamp": "2026-03-23T20:01:21.586Z",
+    "mealType": "Lunch",
+    "photoUrl": "https://iili.io/qr9ztYG.jpg",
+    "reason": "nutrition_metadata_required_before_log"
+  }
+]
