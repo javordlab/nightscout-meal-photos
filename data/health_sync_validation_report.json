@@ -1,25 +1,23 @@
 {
-  "generatedAt": "2026-03-23T16:30:00.983Z",
-  "entryCount": 23,
-  "errors": [
+  "generatedAt": "2026-03-23T17:30:01.099Z",
+  "entryCount": 27,
+  "errors": [],
+  "warnings": [
     {
-      "entryKey": "sha256:916e033ee62547bd2231a6603d60a959b417a66640c6237ef636972a41bb2d02",
-      "timestamp": "2026-03-20T18:45:00-07:00",
-      "title": "Dinner: Four steamed dumplings with braised meat, sautéed vegetable hash, and dipping sauce",
-      "reason": "missing_protein_required_for_food"
+      "entryKey": "sha256:7fdcac113f12599bddb6f0719c98533dff9aa1fc8b64065253f0d6f38f1d807c",
+      "timestamp": "2026-03-23T10:08:00-07:00",
+      "title": "Snack: 2 slices dried dragon fruit",
+      "reason": "photo_missing_but_found_in_internal_folder",
+      "file": "/Users/javier/.openclaw/media/inbound/file_194---5b8e48d5-082a-4e16-a7b5-4161bca83c5c.jpg",
+      "diffMinutes": 16
     },
     {
-      "entryKey": "sha256:b08ef16203e042c5a0d1e4e543218ebe4584721fa6adead44e22b18b2f864b3d",
-      "timestamp": "2026-03-20T18:45:00-07:00",
-      "title": "Dinner: Glass of milk (whole milk, ~8oz)",
-      "reason": "missing_protein_required_for_food"
-    },
-    {
-      "entryKey": "sha256:98f968dabdc11d0dd3bbcc655da3c260878ac382d4a9b4bc24c8cf447ae693b1",
-      "timestamp": "2026-03-20T19:00:00-07:00",
-      "title": "Dinner: Small piece of dark chocolate bark/brownie",
-      "reason": "missing_protein_required_for_food"
+      "entryKey": "sha256:65187b6c944b7d0b00236f420fcdf8274a64c3ce2fb69e4382bb1a4c1839450b",
+      "timestamp": "2026-03-23T09:51:00-07:00",
+      "title": "Breakfast: Egg breakfast taco/burrito with scrambled eggs in tortilla + 4 avocado slices on the side",
+      "reason": "photo_missing_but_found_in_internal_folder",
+      "file": "/Users/javier/.openclaw/media/inbound/file_194---5b8e48d5-082a-4e16-a7b5-4161bca83c5c.jpg",
+      "diffMinutes": 1
     }
-  ],
-  "warnings": []
+  ]
 }

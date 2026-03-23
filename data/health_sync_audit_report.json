@@ -1,20 +1,50 @@
 {
-  "generatedAt": "2026-03-23T16:45:17.964Z",
-  "since": "2026-03-16T16:45:17.515Z",
+  "generatedAt": "2026-03-23T17:19:39.619Z",
+  "since": "2026-03-16T17:19:39.320Z",
   "summary": {
-    "totalEntries": 68,
-    "inSyncState": 68,
-    "nsLinked": 31,
-    "notionLinked": 49,
-    "galleryLinked": 27,
+    "totalEntries": 69,
+    "inSyncState": 69,
+    "nsLinked": 34,
+    "notionLinked": 61,
+    "galleryLinked": 26,
     "outcomesBackfilled": 0,
     "duplicates": 0,
-    "missingNs": 37,
-    "missingNotion": 19,
+    "missingNs": 35,
+    "missingNotion": 8,
     "missingGallery": 0,
-    "missingOutcomes": 33
+    "missingOutcomes": 32
   },
   "discrepancies": [
+    {
+      "entryKey": "sha256:a1155d1a44ea324d8130a3f605cc9a3df6b695d4e96cfb146b0bc4b35f442461",
+      "timestamp": "2026-03-23T09:10:00-07:00",
+      "title": "Metformin 500mg (breakfast)",
+      "issues": [
+        {
+          "type": "missing_ns_link",
+          "severity": "warning"
+        },
+        {
+          "type": "missing_notion_link",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:65187b6c944b7d0b00236f420fcdf8274a64c3ce2fb69e4382bb1a4c1839450b",
+      "timestamp": "2026-03-23T09:51:00-07:00",
+      "title": "Breakfast: Egg breakfast taco/burrito with scrambled eggs in tortilla + 4 avocado slices on the side",
+      "issues": [
+        {
+          "type": "missing_ns_link",
+          "severity": "warning"
+        },
+        {
+          "type": "missing_notion_link",
+          "severity": "warning"
+        }
+      ]
+    },
     {
       "entryKey": "sha256:e2e1664b293ccf0ead10dfdb43ac326a5049b744fcc9d26894380f5c6cada14f",
       "timestamp": "2026-03-22T20:02:00-07:00",
@@ -23,10 +53,6 @@
         {
           "type": "outcomes_not_backfilled",
           "ageHours": 14,
-          "severity": "warning"
-        },
-        {
-          "type": "missing_ns_link",
           "severity": "warning"
         }
       ]
@@ -37,13 +63,8 @@
       "title": "Dinner: Sushi assortment (partial — leftovers: 3 pcs)",
       "issues": [
         {
-          "type": "ns_treatment_missing",
-          "treatmentId": "69c0a7b3911a8ea261e67657",
-          "severity": "error"
-        },
-        {
           "type": "outcomes_not_backfilled",
-          "ageHours": 14,
+          "ageHours": 15,
           "severity": "warning"
         }
       ]
@@ -79,7 +100,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 39,
+          "ageHours": 40,
           "severity": "warning"
         }
       ]
@@ -91,7 +112,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 44,
+          "ageHours": 45,
           "severity": "warning"
         }
       ]
@@ -127,7 +148,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 68,
+          "ageHours": 69,
           "severity": "warning"
         }
       ]
@@ -139,7 +160,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 68,
+          "ageHours": 69,
           "severity": "warning"
         }
       ]
@@ -151,7 +172,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 63,
+          "ageHours": 64,
           "severity": "warning"
         }
       ]
@@ -168,7 +189,7 @@
         },
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 63,
+          "ageHours": 64,
           "severity": "warning"
         }
       ]
@@ -233,18 +254,7 @@
         },
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 88,
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:d46be26667519dd68d54b3db2d671e25eab8f92222f196f25509e17797a13fa4",
-      "timestamp": "2026-03-19T16:09:00-07:00",
-      "title": "90 minutes heavy gardening",
-      "issues": [
-        {
-          "type": "missing_ns_link",
+          "ageHours": 89,
           "severity": "warning"
         }
       ]
@@ -282,24 +292,13 @@
       ]
     },
     {
-      "entryKey": "sha256:0147b9d07aeca082459284f5299c741255138ad40af365ace1038f9cfabdc00e",
-      "timestamp": "2026-03-19T10:30:00-07:00",
-      "title": "3 hours heavy gardening",
-      "issues": [
-        {
-          "type": "missing_ns_link",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
       "entryKey": "sha256:7a4dd1e5a07a0281af513ab6993b36d9013db51a38d738becacf322161cf0345",
       "timestamp": "2026-03-19T09:48:00-07:00",
       "title": "Breakfast: Ciabatta bread (~60g), avocado (~75g), prosciutto (~15g, 1 slice), milk (~1 cup)",
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 96,
+          "ageHours": 97,
           "severity": "warning"
         },
         {
@@ -359,7 +358,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 110,
+          "ageHours": 111,
           "severity": "warning"
         },
         {
@@ -386,7 +385,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 114,
+          "ageHours": 115,
           "severity": "warning"
         },
         {
@@ -407,10 +406,6 @@
         {
           "type": "missing_ns_link",
           "severity": "warning"
-        },
-        {
-          "type": "missing_notion_link",
-          "severity": "warning"
         }
       ]
     },
@@ -421,10 +416,6 @@
       "issues": [
         {
           "type": "missing_ns_link",
-          "severity": "warning"
-        },
-        {
-          "type": "missing_notion_link",
           "severity": "warning"
         }
       ]
@@ -441,7 +432,7 @@
         },
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 116,
+          "ageHours": 117,
           "severity": "warning"
         },
         {
@@ -457,10 +448,6 @@
       "issues": [
         {
           "type": "missing_ns_link",
-          "severity": "warning"
-        },
-        {
-          "type": "missing_notion_link",
           "severity": "warning"
         }
       ]
@@ -493,10 +480,6 @@
         {
           "type": "missing_ns_link",
           "severity": "warning"
-        },
-        {
-          "type": "missing_notion_link",
-          "severity": "warning"
         }
       ]
     },
@@ -508,10 +491,6 @@
         {
           "type": "missing_ns_link",
           "severity": "warning"
-        },
-        {
-          "type": "missing_notion_link",
-          "severity": "warning"
         }
       ]
     },
@@ -522,10 +501,6 @@
       "issues": [
         {
           "type": "missing_ns_link",
-          "severity": "warning"
-        },
-        {
-          "type": "missing_notion_link",
           "severity": "warning"
         }
       ]
@@ -573,7 +548,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 140,
+          "ageHours": 141,
           "severity": "warning"
         },
         {
@@ -593,7 +568,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 144,
+          "ageHours": 145,
           "severity": "warning"
         },
         {
@@ -614,10 +589,6 @@
         {
           "type": "missing_ns_link",
           "severity": "warning"
-        },
-        {
-          "type": "missing_notion_link",
-          "severity": "warning"
         }
       ]
     },
@@ -628,10 +599,6 @@
       "issues": [
         {
           "type": "missing_ns_link",
-          "severity": "warning"
-        },
-        {
-          "type": "missing_notion_link",
           "severity": "warning"
         }
       ]
@@ -644,10 +611,6 @@
         {
           "type": "missing_ns_link",
           "severity": "warning"
-        },
-        {
-          "type": "missing_notion_link",
-          "severity": "warning"
         }
       ]
     },
@@ -658,10 +621,6 @@
       "issues": [
         {
           "type": "missing_ns_link",
-          "severity": "warning"
-        },
-        {
-          "type": "missing_notion_link",
           "severity": "warning"
         }
       ]
@@ -674,10 +633,6 @@
         {
           "type": "missing_ns_link",
           "severity": "warning"
-        },
-        {
-          "type": "missing_notion_link",
-          "severity": "warning"
         }
       ]
     },
@@ -688,7 +643,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 159,
+          "ageHours": 160,
           "severity": "warning"
         },
         {
@@ -704,7 +659,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 159,
+          "ageHours": 160,
           "severity": "warning"
         },
         {
@@ -720,10 +675,6 @@
       "issues": [
         {
           "type": "missing_ns_link",
-          "severity": "warning"
-        },
-        {
-          "type": "missing_notion_link",
           "severity": "warning"
         }
       ]
@@ -751,7 +702,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 166,
+          "ageHours": 167,
           "severity": "warning"
         },
         {
@@ -769,26 +720,6 @@
       "timestamp": "2026-03-16T11:00:00-07:00",
       "title": "35 minutes walk",
       "issues": [
-        {
-          "type": "missing_ns_link",
-          "severity": "warning"
-        },
-        {
-          "type": "missing_notion_link",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:e225d3b5a27949e58720775c47397e1f034a6fff194db1bdebfcf68d05a3a24f",
-      "timestamp": "2026-03-16T10:05:00-07:00",
-      "title": "Breakfast: 2 soft-boiled eggs, seeded toast triangles (1 slice), half a kiwi, and black coffee",
-      "issues": [
-        {
-          "type": "outcomes_not_backfilled",
-          "ageHours": 168,
-          "severity": "warning"
-        },
         {
           "type": "missing_ns_link",
           "severity": "warning"

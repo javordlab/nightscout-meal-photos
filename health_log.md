@@ -1,5 +1,9 @@
 # Health Log
 
+| 2026-03-23 | 10:13 -07:00 | Maria Dennis | Medication | - | Trulicity 0.75 MG/0.5 ML (weekly) | null | null |
+| 2026-03-23 | 10:08 -07:00 | Maria Dennis | Food | Snack | Snack: 2 slices dried dragon fruit (BG: 124 mg/dL Flat) (Pred: 130-140 mg/dL @ 11:15 AM) (Protein: 0.5g | Carbs: ~10g | Cals: ~40) | 10 | 40 |
+| 2026-03-23 | 09:10 -07:00 | Maria Dennis | Medication | - | Metformin 500mg (breakfast) | null | null |
+| 2026-03-23 | 09:51 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Egg breakfast taco/burrito with scrambled eggs in tortilla + 4 avocado slices on the side (BG: 123 mg/dL Flat) (Pred: 160-175 mg/dL @ 11:15-11:45 AM) (Protein: 18g | Carbs: ~30g | Cals: ~340) [📷](https://iili.io/qghz2Np.jpg) | 30 | 340 |
 | 2026-03-22 | 20:30 -07:00 | Maria Dennis | Activity | - | 15 minutes walk (BG: 161 mg/dL Flat) | null | null |
 | 2026-03-22 | 20:02 -07:00 | Maria Dennis | Food | Snack | Snack: 3 strawberries + glass of whole milk (~8oz) (BG: 161 mg/dL Flat) (Pred: 175-185 mg/dL @ 9:47 PM) (Protein: 9g | Carbs: ~21g | Cals: ~190) [📷](https://iili.io/qUFEKx9.jpg) | 21 | 190 |
 | 2026-03-22 | 19:24 -07:00 | Maria Dennis | Food | Dinner | Dinner: Sushi assortment (partial — leftovers: 3 pcs) (BG: 140 mg/dL Flat) (Pred: 160-185 mg/dL @ 8:45-9:15 PM) (Protein: 18g | Carbs: ~45g | Cals: ~340) [📷](https://iili.io/qU2L01s.jpg) | 45 | 340 |
@@ -25,9 +29,9 @@
 | 2026-03-20 | 16:13 -07:00 | Maria Dennis | Food | Snack | Snack: Protein ball/hazelnut chocolate truffle (BG: Unknown) (Pred: 145-165 mg/dL @ 6:00 PM) [📷](https://iili.io/qe1AVUl.jpg) | 25 | 200 |
 | 2026-03-20 | 13:17 -07:00 | Maria Dennis | Food | Snack | Snack: Half apple (~75g) (Pred: 110-120 mg/dL @ 2:45 PM) [📷](https://iili.io/qenMa9f.jpg) | 13 | 50 |
 | 2026-03-20 | 13:16 -07:00 | Maria Dennis | Food | Lunch | Lunch: Prosciutto and brie on toasted ciabatta with milk (~5oz) (Pred: 180-200 mg/dL @ 2:45-3:15 PM) [📷](https://iili.io/qenMcu4.jpg) | 22 | 290 |
-| 2026-03-20 | 18:45 -07:00 | Maria Dennis | Food | Dinner | Dinner: Four steamed dumplings with braised meat, sautéed vegetable hash, and dipping sauce [📷](https://iili.io/qeh3woG.jpg) | 55 | 450 |
-| 2026-03-20 | 18:45 -07:00 | Maria Dennis | Food | Dinner | Dinner: Glass of milk (whole milk, ~8oz) [📷](https://iili.io/qeh3GSI.jpg) | 12 | 150 |
-| 2026-03-20 | 19:00 -07:00 | Maria Dennis | Food | Dinner | Dinner: Small piece of dark chocolate bark/brownie [📷](https://iili.io/qeh6rzX.jpg) | 8 | 70 |
+| 2026-03-20 | 18:45 -07:00 | Maria Dennis | Food | Dinner | Dinner: Four steamed dumplings with braised meat, sautéed vegetable hash, and dipping sauce (Protein: 20g) [📷](https://iili.io/qeh3woG.jpg) | 55 | 450 |
+| 2026-03-20 | 18:45 -07:00 | Maria Dennis | Food | Dinner | Dinner: Glass of milk (whole milk, ~8oz) (Protein: 8g) [📷](https://iili.io/qeh3GSI.jpg) | 12 | 150 |
+| 2026-03-20 | 19:00 -07:00 | Maria Dennis | Food | Dinner | Dinner: Small piece of dark chocolate bark/brownie (Protein: 2g) [📷](https://iili.io/qeh6rzX.jpg) | 8 | 70 |
 | 2026-03-20 | 09:14 -07:00 | Maria Dennis | Food | Snack | Snack: Mixed nuts (pecans, Brazil nuts, hazelnuts) + dried goji berries (Pred: 150-160 mg/dL @ 11:00 AM) [📷](https://iili.io/qenM0t2.jpg) | 5.5 | 205 |
 | 2026-03-20 | 09:04 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Smoked salmon on ciabatta with cream cheese/butter spread + small guava (Pred: 140-160 mg/dL @ 10:40-11:10 AM) (Protein: 18g) [📷](https://iili.io/qenMlwl.jpg) | 25 | 300 |
 | 2026-03-20 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |

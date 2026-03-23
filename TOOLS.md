@@ -16,6 +16,7 @@
 12. **WRITE-THEN-CONFIRM (STRICT):** Never say "logged", "updated", or "done" unless an `edit`/`write` tool call to `/workspace/health_log.md` succeeded in the current turn.
 13. **POST-WRITE READBACK (STRICT):** After every successful log write, immediately `read` `health_log.md` and verify the exact new/updated row exists. Only then send success confirmation.
 14. **FAIL-CLOSED CONFIRMATION:** If write OR readback verification fails, explicitly report "not logged yet" and do not claim completion.
+15. **POST-WRITE SYNC (STRICT):** After every successful log write + readback, immediately run `cd /Users/javier/.openclaw/workspace && node scripts/radial_dispatcher.js` to push the entry to Nightscout, Notion, and MySQL. Do not wait for the cron cycle.
 
 ## Formatting
 - **Discord/WhatsApp:** Bullet lists only (no tables).

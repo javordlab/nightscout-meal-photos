@@ -177,3 +177,22 @@ All of `~/.openclaw/` and related projects are now versioned on GitHub under `ja
 
 ### Issue 22: Quality Gates — Protein Required for ALL Food (not just Breakfast)
 **Change:** `quality_gates.js` now requires protein for all Food category entries. Error code: `missing_protein_required_for_food`. Unit test updated to accept either `missing_protein_required_for_food` or `missing_protein_required_for_breakfast` for compatibility.
+
+## Critical Fixes Applied (2026-03-23)
+
+### Issue 23: Daily Report TIR/Stats Used Rolling Count Instead of Calendar Day — FIXED (commit `29262c2`)
+**Root Cause:** `refresh_glucose_data.js` fetched `count=300` with no date filter for the "24h" window. At 9:30 AM report time, this bled into the prior evening's data (e.g. included Mar 21 highs in the Mar 22 report), producing incorrect TIR, average, GMI, std dev, CV. Also had no `api-secret` header on NS requests.
+**Fix:** Use exact PDT midnight-to-midnight epoch bounds (`$gte`/`$lte`) for both the previous-day window and the 14-day window. Auto-detect PDT/PST offset. Add `api-secret` header.
+**Scope:** Affects ALL stats derived from `glucose_24h.json` and `glucose_14d.json` — TIR, average, GMI, std dev, CV, outliers count.
+**Rule:** Never use `count=N` as a proxy for a time window. Always use explicit timestamp bounds.
+
+### Issue 24: auto_track_meds.js — Rosuvastatin Cycle, Missing Metformin, Timezone — FIXED (commit `0af111e`)
+**Root Cause (3 bugs):**
+1. Rosuvastatin used `dayOfMonth % 2 !== 0` (odd calendar days) instead of anchor-based cycle — diverges at month boundaries (e.g. would wrongly dose on 2026-04-01).
+2. Metformin entirely unimplemented — only a TODO comment. All three daily doses missing from automated tracking.
+3. `getIsoDate()` used `toISOString()` (UTC date). `getOffset()` hardcoded `-07:00`. `getHours()` returned UTC hours.
+**Fix:**
+- Rosuvastatin: anchor date 2026-03-01 (taken = day 0), take on even days since anchor (`daysSince % 2 === 0`). Correct through all month boundaries.
+- Metformin: 500mg breakfast (log when LA hour ≥ 9), 500mg lunch (≥ 12), 1000mg dinner (≥ 19). Each idempotent — skipped if already in log.
+- Timezone: all date/hour/offset derived from `Intl.DateTimeFormat('America/Los_Angeles')`. Auto-detects PDT/PST.
+**Metformin schedule:** 09:10 500mg breakfast | 13:00 500mg lunch | 19:00 1000mg dinner.

@@ -1,17 +1,25 @@
 [
   {
+    "id": "32c85ec7-0668-8169-8427-dcd81d97ab8a",
+    "title": "Breakfast: Egg breakfast taco/burrito with scrambled eggs in tortilla + 4 avocado slices on the side (BG: 123 mg/dL Flat) (Pred: 160-175 mg/dL @ 11:15-11:45 AM) (Protein: 18g | Carbs: ~30g | Cals: ~340)",
+    "type": "Breakfast",
+    "date": "2026-03-23T09:51:00.000-07:00",
+    "photo": "https://iili.io/qghz2Np.jpg",
+    "carbs": 30,
+    "cals": 340,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "32c85ec7-0668-81c5-b380-cd9f2417aca8",
-    "title": "Snack: 3 strawberries + glass of whole milk (~8oz)",
+    "title": "Snack: 3 strawberries + glass of whole milk (~8oz) (BG: 161 mg/dL Flat) (Pred: 175-185 mg/dL @ 9:47 PM) (Protein: 9g | Carbs: ~21g | Cals: ~190)",
     "type": "Snack",
-    "date": "2026-03-22T20:02:00-07:00",
+    "date": "2026-03-22T20:02:00.000-07:00",
     "photo": "https://iili.io/qUFEKx9.jpg",
     "carbs": 21,
     "cals": 190,
-    "delta": null,
-    "peak": null,
-    "entry_key": "sha256:e2e1664b293ccf0ead10dfdb43ac326a5049b744fcc9d26894380f5c6cada14f",
-    "protein": 9,
-    "preMeal": null
+    "delta": 9,
+    "peak": 166
   },
   {
     "id": "32c85ec7-0668-8117-bdc9-f274db85e4c1",
@@ -81,7 +89,7 @@
   },
   {
     "id": "32a85ec7-0668-8123-b9f0-e65c9a48cbaa",
-    "title": "Dinner: Small piece of dark chocolate bark/brownie",
+    "title": "Dinner: Small piece of dark chocolate bark/brownie (Protein: 2g)",
     "type": "Dinner",
     "date": "2026-03-20T19:00:00.000-07:00",
     "photo": "https://iili.io/qeh6rzX.jpg",
@@ -92,7 +100,7 @@
   },
   {
     "id": "32a85ec7-0668-8132-95b6-df9e0655b3d8",
-    "title": "Dinner: Four steamed dumplings with braised meat, sautéed vegetable hash, and dipping sauce",
+    "title": "Dinner: Four steamed dumplings with braised meat, sautéed vegetable hash, and dipping sauce (Protein: 20g)",
     "type": "Dinner",
     "date": "2026-03-20T18:45:00.000-07:00",
     "photo": "https://iili.io/qeh3woG.jpg",
@@ -103,7 +111,7 @@
   },
   {
     "id": "32a85ec7-0668-8113-bc76-f9caf8f6e053",
-    "title": "Snack: Protein ball/hazelnut chocolate truffle (BG: 96 mg/dL ���️) (Pred: 145-165 mg/dL @ 6:00 PM)",
+    "title": "Snack: Protein ball/hazelnut chocolate truffle (BG: 96 mg/dL ↘️) (Pred: 145-165 mg/dL @ 6:00 PM)",
     "type": "Snack",
     "date": "2026-03-20T16:13:00.000-07:00",
     "photo": "https://iili.io/qe1AVUl.jpg",
