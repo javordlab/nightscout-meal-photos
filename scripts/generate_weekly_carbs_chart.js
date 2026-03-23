@@ -5,10 +5,14 @@ const LOG_FILE = "/Users/javier/.openclaw/workspace/health_log.md";
 const CHART_SCRIPT = "/Users/javier/.openclaw/workspace/skills/chart-image/scripts/chart.mjs";
 const OUTPUT_PATH = "/Users/javier/.openclaw/workspace/tmp/weekly_carbs_chart.png";
 
+function getLADateString(d = new Date()) {
+  return new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Los_Angeles', year: 'numeric', month: '2-digit', day: '2-digit' }).format(d);
+}
+
 function main() {
   const content = fs.readFileSync(LOG_FILE, 'utf8');
   const lines = content.split('\n');
-  
+
   const dailyTotals = {};
   const monthlyTotals = {};
 
@@ -16,8 +20,9 @@ function main() {
     if (line.includes('| Food |')) {
       const parts = line.split('|').map(p => p.trim());
       const date = parts[1];
-      const carbs = parseInt(parts[7]);
-      
+      const carbsIdx = parts.length - 3;
+      const carbs = parseInt(parts[carbsIdx]);
+
       if (!isNaN(carbs)) {
         if (!monthlyTotals[date]) monthlyTotals[date] = 0;
         monthlyTotals[date] += carbs;
@@ -28,9 +33,8 @@ function main() {
   // Previous 7 days for the chart (excluding today)
   const chartData = [];
   for (let i = 1; i <= 7; i++) {
-    const d = new Date();
-    d.setDate(d.getDate() - i);
-    const ds = d.toISOString().split('T')[0];
+    const d = new Date(Date.now() - i * 86400000);
+    const ds = getLADateString(d);
     const total = monthlyTotals[ds] || 0;
     chartData.push({
       x: ds.split('-').slice(1).join('/'),
