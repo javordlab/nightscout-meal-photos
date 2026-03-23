@@ -152,19 +152,43 @@ function addToLog(entry) {
   console.log(`Added: ${entry.mealType} at ${time}`);
 }
 
+function detectMediaKind(filePath) {
+  const ext = path.extname(String(filePath || '')).toLowerCase();
+  if (['.jpg', '.jpeg', '.png', '.webp', '.heic', '.heif'].includes(ext)) return 'image';
+  if (['.ogg', '.mp3', '.m4a', '.wav'].includes(ext)) return 'audio';
+  if (['.mp4', '.mov', '.webm'].includes(ext)) return 'video';
+  return 'document';
+}
+
 function queuePendingPhoto(item) {
   const pending = fs.existsSync(PENDING_FILE)
     ? JSON.parse(fs.readFileSync(PENDING_FILE, 'utf8'))
     : [];
 
-  const exists = pending.find(p => p.filePrefix === item.filePrefix || p.photoUrl === item.photoUrl);
-  if (!exists) {
+  const idx = pending.findIndex(p => p.filePrefix === item.filePrefix || (item.messageId && p.messageId === item.messageId));
+  const nowIso = new Date().toISOString();
+  if (idx === -1) {
     pending.push({
-      queuedAt: new Date().toISOString(),
+      queuedAt: nowIso,
+      attempts: 0,
+      uploadStatus: item.photoUrl ? 'uploaded' : 'upload_failed_pending_retry',
+      mediaKind: detectMediaKind(item.sourcePath),
       ...item
     });
-    fs.writeFileSync(PENDING_FILE, JSON.stringify(pending, null, 2) + '\n');
+  } else {
+    const prev = pending[idx];
+    pending[idx] = {
+      ...prev,
+      ...item,
+      queuedAt: prev.queuedAt || nowIso,
+      attempts: Number.isFinite(prev.attempts) ? prev.attempts : 0,
+      uploadStatus: item.photoUrl ? 'uploaded' : (item.uploadStatus || prev.uploadStatus || 'upload_failed_pending_retry'),
+      mediaKind: prev.mediaKind || detectMediaKind(item.sourcePath || prev.sourcePath),
+      updatedAt: nowIso
+    };
   }
+
+  fs.writeFileSync(PENDING_FILE, JSON.stringify(pending, null, 2) + '\n');
 }
 
 // Main processing loop
@@ -216,17 +240,30 @@ async function main() {
     try {
       // Analyze photo
       const analysis = await analyzePhoto(file.path);
-      
-      // Upload to get URL
-      const photoUrl = await uploadPhoto(file.path);
-      if (!photoUrl) {
-        throw new Error('Photo upload failed');
-      }
-      
+
       // Skip if entry already exists
       if (analysis.skip) {
         state.processed.push(file.prefix);
         console.log(`Skipping ${file.name} - entry already exists`);
+        continue;
+      }
+
+      // Upload to get URL (or queue for retry on failure)
+      let photoUrl = await uploadPhoto(file.path);
+      if (!photoUrl) {
+        queuePendingPhoto({
+          filePrefix: file.prefix,
+          sourcePath: file.path,
+          timestamp: analysis.timestamp.toISOString(),
+          mealType: analysis.mealType,
+          photoUrl: null,
+          uploadStatus: 'upload_failed_pending_retry',
+          reason: 'upload_failed_retry_pending',
+          lastError: 'photo_upload_failed',
+          nextAttemptAt: new Date(Date.now() + 60 * 1000).toISOString()
+        });
+        console.log(`Queued upload retry for ${file.prefix} (upload failed).`);
+        state.processed.push(file.prefix);
         continue;
       }
       
@@ -248,6 +285,7 @@ async function main() {
           timestamp: analysis.timestamp.toISOString(),
           mealType: analysis.mealType,
           photoUrl,
+          uploadStatus: 'uploaded',
           reason: 'nutrition_metadata_required_before_log'
         });
         console.log(`Queued pending nutrition metadata for ${file.prefix}; skipped placeholder log creation.`);
