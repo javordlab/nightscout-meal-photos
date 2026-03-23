@@ -233,12 +233,14 @@ async function main() {
   
   console.log(`Found ${dataLines.length} entries in log.`);
 
-  // Process today's entries first, then the rest (using robust local PST date)
+  // Process today's entries first, then last 30 days (using robust local PST date)
   const laDate = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Los_Angeles', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
   const today = laDate; // YYYY-MM-DD
+  const cutoffDate = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Los_Angeles', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date(Date.now() - 30 * 24 * 60 * 60 * 1000));
   const priorityLines = dataLines.filter(l => l.includes(today));
-  const otherLines = dataLines.filter(l => !l.includes(today)).reverse();
+  const otherLines = dataLines.filter(l => !l.includes(today) && l.slice(2, 12) >= cutoffDate).reverse();
   const finalLines = [...priorityLines, ...otherLines];
+  console.log(`Processing ${priorityLines.length} today + ${otherLines.length} recent (cutoff: ${cutoffDate})`);
 
   let glucoseEntries = [];
   let photoSyncedToNotion = false;
@@ -320,8 +322,12 @@ async function main() {
     let lookupMode = 'key';
 
     if (!Array.isArray(existingNS) || existingNS.length === 0) {
-      const nsFallbackUrl = `/api/v1/treatments.json?find[created_at]=${encodeURIComponent(entryData.iso)}&find[enteredBy]=Javordclaw-SSoT&count=10`;
-      console.log(`  -> Fallback NS query by timestamp: ${nsFallbackUrl}`);
+      // Nightscout exact created_at match is broken; use a ±1-minute range in UTC instead
+      const ms = new Date(entryData.iso).getTime();
+      const lo = new Date(ms - 60000).toISOString();
+      const hi = new Date(ms + 60000).toISOString();
+      const nsFallbackUrl = `/api/v1/treatments.json?find[created_at][$gte]=${encodeURIComponent(lo)}&find[created_at][$lte]=${encodeURIComponent(hi)}&find[enteredBy]=Javordclaw-SSoT&count=10`;
+      console.log(`  -> Fallback NS query by time range (UTC): ${nsFallbackUrl}`);
       existingNS = await nsRequest("GET", nsFallbackUrl, {});
       lookupMode = 'timestamp';
     }
