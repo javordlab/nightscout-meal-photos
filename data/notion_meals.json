@@ -10,7 +10,10 @@
     "cals": 525,
     "protein": 12,
     "predictedPeak": "175-200 mg/dL",
-    "predictedTime": "5:30-6:00 PM"
+    "predictedTime": "5:30-6:00 PM",
+    "preMeal": null,
+    "delta": null,
+    "peak": null
   },
   {
     "id": "sha256:22fac1cbb56eb3973b68ae6",
@@ -23,7 +26,10 @@
     "cals": 340,
     "protein": 17,
     "predictedPeak": "140-160 mg/dL",
-    "predictedTime": "10:45-11:15 AM"
+    "predictedTime": "10:45-11:15 AM",
+    "preMeal": null,
+    "delta": null,
+    "peak": null
   },
   {
     "id": "sha256:377ffd272cfbafde4cafd3e",
@@ -36,7 +42,10 @@
     "cals": 485,
     "protein": 26,
     "predictedPeak": "190-210 mg/dL",
-    "predictedTime": "8:45-9:15 PM"
+    "predictedTime": "8:45-9:15 PM",
+    "preMeal": null,
+    "delta": null,
+    "peak": null
   },
   {
     "id": "sha256:ba36d8eb9a77ac6180824ca",
@@ -49,7 +58,10 @@
     "cals": 300,
     "protein": 17,
     "predictedPeak": null,
-    "predictedTime": null
+    "predictedTime": null,
+    "preMeal": null,
+    "delta": null,
+    "peak": null
   },
   {
     "id": "sha256:ead7c4f9da6e4f03125bf6c",
@@ -62,7 +74,10 @@
     "cals": 245,
     "protein": 16,
     "predictedPeak": null,
-    "predictedTime": null
+    "predictedTime": null,
+    "preMeal": null,
+    "delta": null,
+    "peak": null
   },
   {
     "id": "sha256:98f968dabdc11d0dd3bbcc6",
@@ -75,7 +90,10 @@
     "cals": 70,
     "protein": null,
     "predictedPeak": null,
-    "predictedTime": null
+    "predictedTime": null,
+    "preMeal": null,
+    "delta": null,
+    "peak": null
   },
   {
     "id": "sha256:916e033ee62547bd2231a66",
@@ -88,7 +106,10 @@
     "cals": 450,
     "protein": null,
     "predictedPeak": null,
-    "predictedTime": null
+    "predictedTime": null,
+    "preMeal": null,
+    "delta": null,
+    "peak": null
   },
   {
     "id": "sha256:b08ef16203e042c5a0d1e4e",
@@ -101,7 +122,10 @@
     "cals": 150,
     "protein": null,
     "predictedPeak": null,
-    "predictedTime": null
+    "predictedTime": null,
+    "preMeal": null,
+    "delta": null,
+    "peak": null
   },
   {
     "id": "sha256:7c24b1a3277bcdda1500b39",
@@ -113,9 +137,9 @@
     "carbs": 25,
     "cals": 200,
     "protein": null,
-    "preMeal": 96,
-    "delta": 57,
-    "peak": 153,
+    "preMeal": null,
+    "delta": null,
+    "peak": null,
     "predictedPeak": "145-165 mg/dL",
     "predictedTime": "6:00 PM"
   },
@@ -129,9 +153,9 @@
     "carbs": 13,
     "cals": 50,
     "protein": null,
-    "preMeal": 107,
-    "delta": 56,
-    "peak": 163,
+    "preMeal": null,
+    "delta": null,
+    "peak": null,
     "predictedPeak": "110-120 mg/dL",
     "predictedTime": "2:45 PM"
   },
@@ -145,9 +169,9 @@
     "carbs": 22,
     "cals": 290,
     "protein": null,
-    "preMeal": 107,
-    "delta": 56,
-    "peak": 163,
+    "preMeal": null,
+    "delta": null,
+    "peak": null,
     "predictedPeak": "180-200 mg/dL",
     "predictedTime": "2:45-3:15 PM"
   },
@@ -161,9 +185,9 @@
     "carbs": 5.5,
     "cals": 205,
     "protein": null,
-    "preMeal": 129,
-    "delta": 30,
-    "peak": 159,
+    "preMeal": null,
+    "delta": null,
+    "peak": null,
     "predictedPeak": "150-160 mg/dL",
     "predictedTime": "11:00 AM"
   },
@@ -177,9 +201,9 @@
     "carbs": 25,
     "cals": 300,
     "protein": 18,
-    "preMeal": 141,
-    "delta": 18,
-    "peak": 159,
+    "preMeal": null,
+    "delta": null,
+    "peak": null,
     "predictedPeak": "140-160 mg/dL",
     "predictedTime": "10:40-11:10 AM"
   },
@@ -193,9 +217,9 @@
     "carbs": 70,
     "cals": 750,
     "protein": null,
-    "preMeal": 99,
-    "delta": 105,
-    "peak": 204,
+    "preMeal": null,
+    "delta": null,
+    "peak": null,
     "predictedPeak": "160-180 mg/dL",
     "predictedTime": "8:45-9:15 PM"
   },
@@ -209,9 +233,9 @@
     "carbs": 18,
     "cals": 90,
     "protein": null,
-    "preMeal": 85,
-    "delta": 119,
-    "peak": 204,
+    "preMeal": null,
+    "delta": null,
+    "peak": null,
     "predictedPeak": "183 mg/dL",
     "predictedTime": "7:21 PM"
   },
