@@ -3,14 +3,15 @@
 ## Reconciled status (2026-03-23)
 
 ### 1) Immediate sync on new Food/Medication/Activity post (in addition to cron)
-- [ ] Add post-log sync trigger after successful `health_log.md` write+readback verification.
+- [x] Add post-log sync trigger after successful `health_log.md` write+readback verification. *(implemented as file-change immediate trigger script: `scripts/health-sync/trigger_post_log_sync.js`, invoked by 1m photo pipeline cron)*
 - [x] Keep existing async cron sync (`Radial Sync (30m)`) as fallback safety net.
-- [ ] Debounce/coalesce triggers (e.g., 30-90s window) to avoid duplicate sync bursts.
-- [ ] Add idempotency checks so immediate + cron sync cannot create duplicates.
-- [ ] Add telemetry line in logs: `trigger=manual_post_log|cron`.
+- [x] Debounce/coalesce triggers (e.g., 30-90s window) to avoid duplicate sync bursts. *(45s debounce in `trigger_post_log_sync.js`)*
+- [x] Add idempotency checks so immediate + cron sync cannot create duplicates. *(entry_key + safe NS upsert parity path)*
+- [x] Add telemetry line in logs: `trigger=manual_post_log|cron`. *(manual trigger logged in `data/post_log_sync.log.jsonl`)*
 - [ ] **Temporary safeguard:** enforce per-user minimum 2-minute spacing between logged events to avoid NS fallback timestamp collisions.
 - [ ] On collision, shift new event timestamp to `last_event + 2m` and keep original message time in note (`Msg time: ...`) for audit.
 - [ ] Mark this as stopgap to remove after strict key-based Nightscout matching fix is deployed.
+- [x] Add automatic retry of `queued` immediate sync when `sync.lock` clears (without requiring a second external trigger). *(implemented in `trigger_post_log_sync.js` via lock wait/poll with timeout)*
 
 ### 2) Missing photo URL in Notion for Telegram image posts
 - [x] Ensure Telegram media messages always produce a durable photo URL for log rows.
@@ -53,3 +54,11 @@
   - `scripts/health-sync/ns_upsert_safe.js`
   - wired in both `scripts/health-sync/unified_sync.js` and `scripts/radial_dispatcher.js`
   - shared telemetry counters: `fallback_match_count`, `ambiguous_match_count`, `duplicate_key_conflict_count`, `verify_fail_count`
+- [x] Immediate post-log sync trigger dry validation completed:
+  - `scripts/health-sync/trigger_post_log_sync.js` returns expected states (`debounced`, `queued` on lock)
+  - telemetry confirmed in `data/post_log_sync.log.jsonl`
+  - lock-aware fail-safe behavior confirmed with active `data/sync.lock`
+- [x] Lock-clear auto-retry behavior implemented in trigger:
+  - queued trigger now waits/polls for lock release (`POST_LOG_SYNC_LOCK_WAIT_MS`, `POST_LOG_SYNC_LOCK_POLL_MS`)
+  - if lock clears within wait window, sync runs in same invocation (no second trigger required)
+  - timeout path returns `sync_lock_present_timeout`

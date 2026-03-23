@@ -291,6 +291,14 @@ async function main() {
   
   if (filesToProcess.length === 0) {
     console.log('No new photos to process');
+    try {
+      execSync('cd /Users/javier/.openclaw/workspace && node scripts/health-sync/trigger_post_log_sync.js --source=photo_pipeline_idle', {
+        stdio: 'inherit',
+        timeout: 60000
+      });
+    } catch (e) {
+      console.error('Post-log sync trigger failed:', e.message);
+    }
     return;
   }
   
