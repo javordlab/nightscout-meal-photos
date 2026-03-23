@@ -1,5 +1,16 @@
 [
   {
+    "id": "32c85ec7-0668-8169-8427-dcd81d97ab8a",
+    "title": "Breakfast: Egg breakfast taco/burrito with scrambled eggs in tortilla + 4 avocado slices on the side (BG: 123 mg/dL Flat) (Pred: 160-175 mg/dL @ 11:15-11:45 AM) (Protein: 18g | Carbs: ~30g | Cals: ~340)",
+    "type": "Breakfast",
+    "date": "2026-03-23T09:51:00.000-07:00",
+    "photo": "https://iili.io/qghz2Np.jpg",
+    "carbs": 30,
+    "cals": 340,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "32c85ec7-0668-81c5-b380-cd9f2417aca8",
     "title": "Snack: 3 strawberries + glass of whole milk (~8oz) (BG: 161 mg/dL Flat) (Pred: 175-185 mg/dL @ 9:47 PM) (Protein: 9g | Carbs: ~21g | Cals: ~190)",
     "type": "Snack",
