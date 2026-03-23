@@ -313,6 +313,64 @@ function parsePredictedPeakTimeIso(entry) {
   return `${datePart}T${h}:${m}:00${offset}`;
 }
 
+function normalizeDedupTitle(text) {
+  return String(text || '')
+    .replace(/\[[^\]]*\]\(([^)]+)\)/g, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .toLowerCase();
+}
+
+function getNotionEntryTitle(page) {
+  const title = page?.properties?.Entry?.title;
+  if (!Array.isArray(title)) return '';
+  return title.map(t => t?.plain_text || '').join('').trim();
+}
+
+async function findNotionExistingPage(entry) {
+  try {
+    const res = await notionRequest('POST', `/databases/${NOTION_DB_ID}/query`, {
+      filter: {
+        and: [
+          { property: 'Date', date: { equals: entry.timestamp } },
+          { property: 'Category', select: { equals: entry.category } }
+        ]
+      },
+      page_size: 50
+    });
+
+    if (!Array.isArray(res?.results) || res.results.length === 0) return null;
+
+    const wanted = normalizeDedupTitle(entry.title);
+    const candidates = res.results
+      .filter(p => !p.archived)
+      .map(p => {
+        const title = getNotionEntryTitle(p);
+        return {
+          id: p.id,
+          title,
+          normalized: normalizeDedupTitle(title),
+          created: p.created_time || ''
+        };
+      })
+      .filter(p => p.id && p.normalized);
+
+    if (candidates.length === 0) return null;
+
+    const exact = candidates.find(p => p.normalized === wanted);
+    if (exact) return exact.id;
+
+    const fuzzy = candidates.find(p => p.normalized.startsWith(wanted) || wanted.startsWith(p.normalized));
+    if (fuzzy) return fuzzy.id;
+
+    candidates.sort((a, b) => String(a.created).localeCompare(String(b.created)));
+    return candidates[0].id;
+  } catch (error) {
+    log({ op: 'notion_dedup_lookup_error', entryKey: entry.entryKey, error: error.message });
+    return null;
+  }
+}
+
 function entryToNotion(entry) {
   const photo = entry.photoUrls?.[0];
   const proteinEst = getProteinEst(entry);
@@ -363,6 +421,24 @@ async function syncNotion(entry, state) {
     } catch (e) {
       log({ op: 'notion_patch_error', entryKey: entry.entryKey, error: e.message });
       return { status: 'error', error: e.message };
+    }
+  }
+
+  const dedupPageId = await findNotionExistingPage(entry);
+  if (dedupPageId) {
+    try {
+      const res = await notionRequest('PATCH', `/pages/${dedupPageId}`, { archived: false, properties: payload.properties });
+      if (res?.object === 'error') {
+        log({ op: 'notion_dedup_patch_error', entryKey: entry.entryKey, pageId: dedupPageId, error: res.message, code: res.code });
+      } else {
+        upsertEntry(state, entry.entryKey, {
+          notion: { page_id: dedupPageId, last_synced_at: new Date().toISOString() }
+        });
+        log({ op: 'notion_dedup_patch', entryKey: entry.entryKey, pageId: dedupPageId });
+        return { status: 'patched', pageId: dedupPageId };
+      }
+    } catch (e) {
+      log({ op: 'notion_dedup_patch_error', entryKey: entry.entryKey, pageId: dedupPageId, error: e.message });
     }
   }
 
