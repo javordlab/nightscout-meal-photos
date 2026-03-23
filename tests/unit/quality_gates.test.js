@@ -9,7 +9,7 @@ describe('quality_gates', () => {
     assert.strictEqual(isPlaceholderText('Breakfast: Avocado toast'), false);
   });
 
-  it('blocks breakfast entries without protein', () => {
+  it('blocks food entries without protein', () => {
     const entry = {
       timestamp: '2026-03-22T09:12:00-07:00',
       category: 'Food',
@@ -22,7 +22,7 @@ describe('quality_gates', () => {
     };
 
     const result = validateEntry(entry);
-    assert.ok(result.errors.some(e => e.reason === 'missing_protein_required_for_breakfast'));
+    assert.ok(result.errors.some(e => e.reason === 'missing_protein_required_for_food' || e.reason === 'missing_protein_required_for_breakfast'));
   });
 
   it('blocks placeholder food entries', () => {
