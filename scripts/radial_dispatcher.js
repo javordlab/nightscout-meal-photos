@@ -253,16 +253,22 @@ async function main() {
     const p = line.split('|').map(x => x.trim());
     if (p.length < 9) continue;
 
+    // Carbs and cals are always the last two data columns; entry text is everything in between.
+    // This handles pipe characters inside the text (e.g. "(Protein: 18g | Carbs: ~45g | Cals: ~340)").
+    const carbsIdx = p.length - 3;
+    const calsIdx  = p.length - 2;
+    const entryText = p.slice(6, carbsIdx).join(' | ');
+    const proteinMatch = entryText.match(/\(Protein:\s*([\d.]+)g[^)]*\)/i);
     const entryData = {
       date: p[1],
       time: p[2],
       user: p[3],
       category: p[4],
       mealType: p[5],
-      text: p[6],
-      carbs: parseInt(p[7]) || null,
-      cals: parseInt(p[8]) || null,
-      proteins: p[6].match(/\(Protein:\s*([\d.]+)g\)/i) ? parseFloat(p[6].match(/\(Protein:\s*([\d.]+)g\)/i)[1]) : null
+      text: entryText,
+      carbs: parseInt(p[carbsIdx]) || null,
+      cals: parseInt(p[calsIdx]) || null,
+      proteins: proteinMatch ? parseFloat(proteinMatch[1]) : null
     };
     
     // Determine Timezone Offset
