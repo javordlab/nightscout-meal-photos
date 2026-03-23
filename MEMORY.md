@@ -111,6 +111,8 @@
 **Commit:** `699fcb7`
 **Note:** sync_state.json orphaned keys still need manual cleanup after title changes (run validate_sync.js to identify them).
 
+## Critical Fixes Applied (2026-03-22, Round 2 — Opus 4.6 audit)
+
 ### Issue 9: Entry Key Divergence Between Scripts — FIXED
 **Root Cause:** `radial_dispatcher.js` used `iso|user|category|mealType|cleanText`; `unified_sync.js` used `timestamp|user|title`. Different hashes for same entry → cross-script NS duplicates.
 **Fix:** `radial_dispatcher.js` now uses `normalizeEntryTitle()` (strips BG/Pred/protein/carbs, lowercases) matching `normalize_health_log.js`. Key: `iso|user|normalizedTitle` — identical across all scripts.
@@ -135,10 +137,6 @@
 **Root Cause:** `check_pending_photos.js` re-alerted every 30 min indefinitely for unresolved photos.
 **Fix:** `data/pending_photo_alert_state.json` tracks last alert per entry; re-alerts suppressed for 2 hours.
 **Commit:** `865e15c`
-
-### Issue 8: Stale Pending Photo Alert (new cron)
-**Script:** `scripts/check_pending_photos.js` — runs every 30 min via cron
-**Behavior:** Alerts Javi via Telegram DM (8335333215) ONLY — not food group (-5262020908) — if any photo in `pending_photo_entries.json` has waited 30+ min for manual entry.
 
 ## GitHub Backup (2026-03-22)
 All of `~/.openclaw/` and related projects are now versioned on GitHub under `javordlab` (all private). Global git config: `Javier Ordonez <ordonez@gmail.com>`. 27 repos total.
