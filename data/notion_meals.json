@@ -1,5 +1,16 @@
 [
   {
+    "id": "32c85ec7-0668-81c5-b380-cd9f2417aca8",
+    "title": "Snack: 3 strawberries + glass of whole milk (~8oz) (BG: 161 mg/dL Flat) (Pred: 175-185 mg/dL @ 9:47 PM) (Protein: 9g | Carbs: ~21g | Cals: ~190)",
+    "type": "Snack",
+    "date": "2026-03-22T20:02:00.000-07:00",
+    "photo": "https://iili.io/qUFEKx9.jpg",
+    "carbs": 21,
+    "cals": 190,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "32c85ec7-0668-8117-bdc9-f274db85e4c1",
     "title": "Dinner: Sushi assortment (partial — leftovers: 3 pcs) (BG: 140 mg/dL Flat) (Pred: 160-185 mg/dL @ 8:45-9:15 PM) (Protein: 18g | Carbs: ~45g | Cals: ~340)",
     "type": "Dinner",
