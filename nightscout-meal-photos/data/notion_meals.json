@@ -1,14 +1,17 @@
 [
   {
     "id": "32c85ec7-0668-81c5-b380-cd9f2417aca8",
-    "title": "Snack: 3 strawberries + glass of whole milk (~8oz) (BG: 161 mg/dL Flat) (Pred: 175-185 mg/dL @ 9:47 PM) (Protein: 9g | Carbs: ~21g | Cals: ~190)",
+    "title": "Snack: 3 strawberries + glass of whole milk (~8oz)",
     "type": "Snack",
-    "date": "2026-03-22T20:02:00.000-07:00",
+    "date": "2026-03-22T20:02:00-07:00",
     "photo": "https://iili.io/qUFEKx9.jpg",
     "carbs": 21,
     "cals": 190,
-    "delta": 9,
-    "peak": 166
+    "delta": null,
+    "peak": null,
+    "entry_key": "sha256:e2e1664b293ccf0ead10dfdb43ac326a5049b744fcc9d26894380f5c6cada14f",
+    "protein": 9,
+    "preMeal": null
   },
   {
     "id": "32c85ec7-0668-8117-bdc9-f274db85e4c1",

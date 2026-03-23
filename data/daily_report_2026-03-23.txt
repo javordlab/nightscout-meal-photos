@@ -1,0 +1,46 @@
+DAILY HEALTH REPORT
+Date: 2026-03-23
+Coverage window: 2026-03-22 00:00-23:59 PT (full previous day)
+Generated time: 2026-03-23T16:32:01.237Z
+Model: ChatGPT coding assistant (OpenAI)
+
+1) Previous-day Glucose Summary
+- Average glucose: 131.5 mg/dL
+- Time in Range (70-180): 100.0%
+- GMI: 6.45%
+- Standard deviation: 20.6 mg/dL
+- CV: 15.6%
+- Data points used: 286
+
+2) 14-day Trends (ending 2026-03-22)
+- Average glucose: 133.8 mg/dL
+- Time in Range (70-180): 98.4%
+- GMI: 6.51%
+- Standard deviation: 21.3 mg/dL
+- CV: 15.9%
+- Data points used: 1031
+
+3) Nutrition (2026-03-22)
+- Meals logged: 4
+- Total carbs: 157.0 g
+- Total calories: 1395 kcal
+- Total protein: 56.0 g
+
+4) Nutrition (14-day daily average ending 2026-03-22)
+- Average carbs/day: 145.6 g
+- Average calories/day: 1494.0 kcal
+- Average protein/day: 9.5 g
+- Average meals/day: 4.5
+- Days in window with food entries: 14
+
+5) Medication Status (2026-03-22)
+- 2026-03-22T09:00:00-07:00: Lisinopril 10mg (Scheduled)
+
+6) Outliers (2026-03-22)
+- High readings >180: 0
+- Low readings <70: 0
+- Max glucose: 173 mg/dL at 2026-03-23T06:29:41.000Z
+
+7) Supervisor Analysis
+- This report now uses full previous-day midnight-to-midnight coverage to eliminate run-time drift.
+- Continue monitoring post-dinner excursions if repeated peaks >180 appear.
