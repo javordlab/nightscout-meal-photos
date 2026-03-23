@@ -1,5 +1,27 @@
 [
   {
+    "id": "32c85ec7-0668-8110-8028-fc18c37afead",
+    "title": "Snack: Half red apple (~75g) (BG: 111 mg/dL Flat) (Pred: 180-200 mg/dL @ 2:45-3:15 PM) (Protein: 0.3g | Carbs: ~10g | Cals: ~40)",
+    "type": "Snack",
+    "date": "2026-03-23T13:14:00.000-07:00",
+    "photo": "https://iili.io/qrHqxa4.jpg",
+    "carbs": 10,
+    "cals": 40,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "32c85ec7-0668-8180-8cd5-e829759e3acb",
+    "title": "Lunch: Japanese meal set (BG: 118 mg/dL Flat) (Pred: 175-195 mg/dL @ 2:30-3:00 PM) (Protein: 22g | Carbs: ~55g | Cals: ~480)",
+    "type": "Lunch",
+    "date": "2026-03-23T13:01:00.000-07:00",
+    "photo": "https://iili.io/qr9ztYG.jpg",
+    "carbs": 55,
+    "cals": 480,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "32c85ec7-0668-8169-8427-dcd81d97ab8a",
     "title": "Breakfast: Egg breakfast taco/burrito with scrambled eggs in tortilla + 4 avocado slices on the side (BG: 123 mg/dL Flat) (Pred: 160-175 mg/dL @ 11:15-11:45 AM) (Protein: 18g | Carbs: ~30g | Cals: ~340)",
     "type": "Breakfast",
