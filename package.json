@@ -16,6 +16,8 @@
     "dry-run": "node scripts/health-sync/unified_sync.js --dry-run",
     "validate:health": "node scripts/health-sync/validate_health_sync.js --fail-on-error",
     "watchdog:report": "node scripts/health-sync/report_watchdog.js",
+    "photos:retry": "node scripts/health-sync/retry_pending_photo_uploads.js",
+    "watchdog:photo-links": "node scripts/health-sync/photo_link_watchdog.js --lookback-hours=24",
     "backup": "echo 'Skipping data backup in CI environment'"
   },
   "devDependencies": {

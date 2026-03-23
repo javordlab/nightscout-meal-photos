@@ -6,7 +6,17 @@
     "timestamp": "2026-03-23T20:01:21.586Z",
     "mealType": "Lunch",
     "photoUrl": "https://iili.io/qr9ztYG.jpg",
-    "reason": "nutrition_metadata_required_before_log"
+    "reason": "nutrition_metadata_required_before_log",
+    "attempts": 0,
+    "uploadStatus": "uploaded",
+    "mediaKind": "image",
+    "contentType": null,
+    "messageId": null,
+    "updateId": null,
+    "fileId": null,
+    "fileUniqueId": null,
+    "nextAttemptAt": null,
+    "lastError": null
   },
   {
     "queuedAt": "2026-03-23T20:14:50.199Z",
@@ -15,6 +25,16 @@
     "timestamp": "2026-03-23T20:14:39.538Z",
     "mealType": "Lunch",
     "photoUrl": "https://iili.io/qrHqxa4.jpg",
-    "reason": "nutrition_metadata_required_before_log"
+    "reason": "nutrition_metadata_required_before_log",
+    "attempts": 0,
+    "uploadStatus": "uploaded",
+    "mediaKind": "image",
+    "contentType": null,
+    "messageId": null,
+    "updateId": null,
+    "fileId": null,
+    "fileUniqueId": null,
+    "nextAttemptAt": null,
+    "lastError": null
   }
 ]

@@ -115,7 +115,7 @@ function getProteinEst(entry) {
 
 function entryToNightscout(entry) {
   const eventType = entry.category === 'Food' ? 'Meal Bolus' : (entry.category === 'Activity' ? 'Exercise' : 'Note');
-  const photo = entry.photoUrls?.[0];
+  const photo = entry.category === 'Food' ? entry.photoUrls?.[0] : null;
   const proteinEst = getProteinEst(entry);
   const notes = [
     entry.title,
@@ -372,7 +372,7 @@ async function findNotionExistingPage(entry) {
 }
 
 function entryToNotion(entry) {
-  const photo = entry.photoUrls?.[0];
+  const photo = entry.category === 'Food' ? entry.photoUrls?.[0] : null;
   const proteinEst = getProteinEst(entry);
   const carbsForFallback = Number.isFinite(entry.carbsEst) ? entry.carbsEst : 0;
   const predPeakBg = parsePredictedPeakBg(entry) ??
@@ -397,9 +397,11 @@ function entryToNotion(entry) {
     'Proteins': proteinEst != null ? { number: proteinEst } : null,
     'Predicted Peak BG': predPeakBg != null ? { number: predPeakBg } : null,
     'Predicted Peak Time': predPeakTimeIso ? { date: { start: predPeakTimeIso } } : null,
-    Photo: photo ? { url: photo } : null
+    // Keep Photo always present so PATCH can clear stale URLs by sending { url: null }.
+    Photo: { url: photo || null }
   };
   Object.keys(properties).forEach(k => {
+    if (k === 'Photo') return;
     if (properties[k] == null) delete properties[k];
   });
   return { parent: { database_id: NOTION_DB_ID }, properties };
@@ -469,6 +471,7 @@ async function syncNotion(entry, state) {
 // --- Gallery ---
 function syncGallery(entry, state, galleryItems) {
   const existing = getEntry(state, entry.entryKey)?.gallery;
+  if (entry.category !== 'Food') return { status: 'skipped', reason: 'not_food' };
   const photo = entry.photoUrls?.[0];
   const proteinEst = getProteinEst(entry);
   if (!photo) return { status: 'skipped', reason: 'no_photo' };

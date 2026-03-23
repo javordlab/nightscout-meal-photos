@@ -291,7 +291,7 @@ async function main() {
       entryData.iso = dStr + (isPDT ? "-07:00" : "-08:00");
     }
 
-    const photos = extractPhotos(entryData.text);
+    const photos = entryData.category === 'Food' ? extractPhotos(entryData.text) : [];
     let cleanText = entryData.text.replace(/\[📷\]\([^\)]+\)/g, '').trim();
     cleanText = injectKnownBgIfUnknown(cleanText, entryData.iso, glucoseEntries);
 

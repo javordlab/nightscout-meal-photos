@@ -6,6 +6,7 @@ const { validateEntries } = require('./quality_gates');
 const WORKSPACE = '/Users/javier/.openclaw/workspace';
 const NORMALIZED_PATH = path.join(WORKSPACE, 'data', 'health_log.normalized.json');
 const REPORT_PATH = path.join(WORKSPACE, 'data', 'health_sync_validation_report.json');
+const PENDING_PHOTO_PATH = path.join(WORKSPACE, 'data', 'pending_photo_entries.json');
 
 function isValidUrl(value) {
   try {
@@ -16,6 +17,59 @@ function isValidUrl(value) {
   }
 }
 
+function loadPendingPhotoEntries() {
+  if (!fs.existsSync(PENDING_PHOTO_PATH)) return [];
+  try {
+    const raw = JSON.parse(fs.readFileSync(PENDING_PHOTO_PATH, 'utf8'));
+    if (!Array.isArray(raw)) return [];
+    return raw
+      .filter(item => item && item.timestamp)
+      .map(item => {
+        const tsMs = new Date(item.timestamp).getTime();
+        return { ...item, tsMs };
+      })
+      .filter(item => Number.isFinite(item.tsMs));
+  } catch {
+    return [];
+  }
+}
+
+function isImageOriginPending(item) {
+  const mediaKind = String(item.mediaKind || '').toLowerCase();
+  const contentType = String(item.contentType || '').toUpperCase();
+  if (mediaKind === 'image') return true;
+  return ['PHOTO', 'PHOTO_TEXT', 'IMAGE_DOCUMENT'].includes(contentType);
+}
+
+function buildImageOriginMatcher(pendingItems) {
+  const imageItems = pendingItems.filter(isImageOriginPending);
+  return (entry) => {
+    if (!entry || entry.category !== 'Food' || !entry.timestamp) return null;
+    const entryTs = new Date(entry.timestamp).getTime();
+    if (!Number.isFinite(entryTs)) return null;
+    const mealType = String(entry.mealType || '').toLowerCase();
+
+    const candidates = imageItems
+      .map(item => {
+        const diffMs = Math.abs(item.tsMs - entryTs);
+        const pendingMeal = String(item.mealType || '').toLowerCase();
+        return {
+          ...item,
+          diffMs,
+          diffMinutes: Math.round(diffMs / 60000),
+          mealMatch: pendingMeal && mealType ? pendingMeal === mealType : false
+        };
+      })
+      .filter(item => item.diffMs <= 3 * 60 * 1000)
+      .sort((a, b) => {
+        if (a.mealMatch !== b.mealMatch) return a.mealMatch ? -1 : 1;
+        return a.diffMs - b.diffMs;
+      });
+
+    return candidates[0] || null;
+  };
+}
+
 function main(options = {}) {
   const normalized = JSON.parse(fs.readFileSync(NORMALIZED_PATH, 'utf8'));
   const since = options.since ? new Date(options.since) : null;
@@ -24,7 +78,12 @@ function main(options = {}) {
     return new Date(entry.timestamp) >= since;
   });
 
-  const report = validateEntries(scopedEntries);
+  const pendingPhotoEntries = loadPendingPhotoEntries();
+  const findImageOriginMatch = buildImageOriginMatcher(pendingPhotoEntries);
+
+  const report = validateEntries(scopedEntries, {
+    findImageOriginMatch
+  });
 
   for (const entry of scopedEntries) {
     if (entry.photoUrls) {

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-23T21:00:00.277Z",
+  "generatedAt": "2026-03-23T22:00:00.959Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
   "entryCount": 293,
   "entries": [
@@ -49,7 +49,7 @@
       "source": {
         "file": "health_log.md",
         "line": 4,
-        "rawRow": "| 2026-03-23 | 13:14 -07:00 | Maria Dennis | Food | Snack | Snack: Half red apple (~75g) (BG: 111 mg/dL Flat) (Pred: 180-200 mg/dL @ 2:45-3:15 PM) (Protein: 0.3g | Carbs: ~10g | Cals: ~40) | 10 | 40 |"
+        "rawRow": "| 2026-03-23 | 13:14 -07:00 | Maria Dennis | Food | Snack | Snack: Half red apple (~75g) (BG: 111 mg/dL Flat) (Pred: 180-200 mg/dL @ 2:45-3:15 PM) (Protein: 0.3g | Carbs: ~10g | Cals: ~40) [📷](https://iili.io/qrHqxa4.jpg) | 10 | 40 |"
       },
       "timestamp": "2026-03-23T13:14:00-07:00",
       "date": "2026-03-23",
@@ -59,7 +59,9 @@
       "mealType": "Snack",
       "title": "Snack: Half red apple (~75g)",
       "notes": "BG: 111 mg/dL Flat; Protein: 0.3g; Pred: 180-200 mg/dL @ 2:45-3:15 PM",
-      "photoUrls": [],
+      "photoUrls": [
+        "https://iili.io/qrHqxa4.jpg"
+      ],
       "carbsEst": 10,
       "caloriesEst": 40,
       "proteinEst": 0.3,
@@ -84,13 +86,13 @@
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:7613ae88e6644b513530e96cf86f32c587ad290eb4e69851e61d737c72870766",
-      "contentHash": "sha256:c55adf7f687507994d8a1740a30a91db266576f73291f0c853d1c3745f7db9fb"
+      "contentHash": "sha256:dbe3b242352b6403a9f499d938b8841549d9c6d58dbb368a89466f00ded7516e"
     },
     {
       "source": {
         "file": "health_log.md",
         "line": 5,
-        "rawRow": "| 2026-03-23 | 13:01 -07:00 | Maria Dennis | Food | Lunch | Lunch: Japanese meal set (BG: 118 mg/dL Flat) (Pred: 175-195 mg/dL @ 2:30-3:00 PM) (Protein: 22g | Carbs: ~55g | Cals: ~480) | 55 | 480 |"
+        "rawRow": "| 2026-03-23 | 13:01 -07:00 | Maria Dennis | Food | Lunch | Lunch: Japanese meal set (BG: 118 mg/dL Flat) (Pred: 175-195 mg/dL @ 2:30-3:00 PM) (Protein: 22g | Carbs: ~55g | Cals: ~480) [📷](https://iili.io/qr9ztYG.jpg) | 55 | 480 |"
       },
       "timestamp": "2026-03-23T13:01:00-07:00",
       "date": "2026-03-23",
@@ -100,7 +102,9 @@
       "mealType": "Lunch",
       "title": "Lunch: Japanese meal set",
       "notes": "BG: 118 mg/dL Flat; Protein: 22g; Pred: 175-195 mg/dL @ 2:30-3:00 PM",
-      "photoUrls": [],
+      "photoUrls": [
+        "https://iili.io/qr9ztYG.jpg"
+      ],
       "carbsEst": 55,
       "caloriesEst": 480,
       "proteinEst": 22,
@@ -125,7 +129,7 @@
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:a242ff6f86ece92474e4bcb9480ee0c5e01cd0124fbc400fa409a3486fb2cd4f",
-      "contentHash": "sha256:673afbb17b429b8096a1721a358d3a126f269cb0da3fd555941f39a2c66ffdd7"
+      "contentHash": "sha256:a0412dea1cdb97119787136c3a33b00ce13e38055d9083abe978b68b0c95f0c7"
     },
     {
       "source": {

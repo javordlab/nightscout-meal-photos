@@ -78,13 +78,18 @@ function loadPendingPhotos() {
 
 function findPendingPhotoUrl(row, pendingPhotos) {
   if (!row || row.hasPhotoLink) return null;
+
+  const categoryNorm = cleanWhitespace(row.category || '').toLowerCase();
+  // Safety: automatic attachment is only valid for Food entries.
+  // Non-food rows may contain words like lunch/dinner but should never inherit meal photos.
+  if (categoryNorm !== 'food') return null;
   const rowTs = new Date(row.timestamp).getTime();
   if (!Number.isFinite(rowTs)) return null;
 
   const mealTypeNorm = cleanWhitespace(row.mealType || '').toLowerCase();
   const maxDiffMs = row.hasPendingMarker ? 10 * 60 * 1000 : 2 * 60 * 1000;
 
-  const candidates = pendingPhotos
+  const baseCandidates = pendingPhotos
     .filter(item => item.photoUrl)
     .map(item => ({
       ...item,
@@ -92,17 +97,31 @@ function findPendingPhotoUrl(row, pendingPhotos) {
       mealMatch: item.mealTypeNorm === mealTypeNorm,
     }))
     .filter(item => item.diffMs <= maxDiffMs)
-    // For non-marker rows, require meal type match to reduce accidental attachments.
-    .filter(item => row.hasPendingMarker || item.mealMatch);
+    .sort((a, b) => a.diffMs - b.diffMs);
 
-  if (candidates.length === 0) return null;
+  if (baseCandidates.length === 0) return null;
 
-  candidates.sort((a, b) => {
-    if (a.mealMatch !== b.mealMatch) return a.mealMatch ? -1 : 1;
-    return a.diffMs - b.diffMs;
-  });
+  if (row.hasPendingMarker) {
+    baseCandidates.sort((a, b) => {
+      if (a.mealMatch !== b.mealMatch) return a.mealMatch ? -1 : 1;
+      return a.diffMs - b.diffMs;
+    });
+    return baseCandidates[0].photoUrl;
+  }
 
-  return candidates[0].photoUrl;
+  // For rows missing any photo link (no pending marker), prefer strict meal match first.
+  const mealMatched = baseCandidates.filter(c => c.mealMatch);
+  if (mealMatched.length > 0) {
+    return mealMatched[0].photoUrl;
+  }
+
+  // Fallback: if exactly one very-close candidate exists, allow attach even if meal label differs
+  // (e.g. pipeline inferred Lunch but user logged as Snack).
+  if (baseCandidates.length === 1) {
+    return baseCandidates[0].photoUrl;
+  }
+
+  return null;
 }
 
 function rebuildRow(row, entryText) {

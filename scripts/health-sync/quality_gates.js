@@ -59,7 +59,7 @@ function hasInternalPhotoNearTimestamp(entry, maxWindowMinutes = 45) {
   };
 }
 
-function validateEntry(entry) {
+function validateEntry(entry, context = {}) {
   const errors = [];
   const warnings = [];
 
@@ -93,6 +93,19 @@ function validateEntry(entry) {
     }
 
     if (!entry.photoUrls || entry.photoUrls.length === 0) {
+      const imageOriginMatch = typeof context.findImageOriginMatch === 'function'
+        ? context.findImageOriginMatch(entry)
+        : null;
+
+      if (imageOriginMatch) {
+        errors.push({
+          reason: 'missing_photo_url_for_image_origin_entry',
+          imageOriginType: imageOriginMatch.contentType || imageOriginMatch.mediaKind || 'image',
+          imageOriginMessageId: imageOriginMatch.messageId || null,
+          imageOriginDiffMinutes: imageOriginMatch.diffMinutes ?? null
+        });
+      }
+
       const internal = hasInternalPhotoNearTimestamp(entry);
       if (internal.found) {
         warnings.push({
@@ -109,7 +122,7 @@ function validateEntry(entry) {
   return { errors, warnings };
 }
 
-function validateEntries(entries) {
+function validateEntries(entries, context = {}) {
   const report = {
     generatedAt: new Date().toISOString(),
     entryCount: entries.length,
@@ -118,7 +131,7 @@ function validateEntries(entries) {
   };
 
   for (const entry of entries) {
-    const result = validateEntry(entry);
+    const result = validateEntry(entry, context);
     for (const err of result.errors) {
       report.errors.push({
         entryKey: entry.entryKey,

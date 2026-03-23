@@ -1,24 +1,8 @@
 {
-  "generatedAt": "2026-03-23T21:00:00.302Z",
+  "generatedAt": "2026-03-23T22:00:01.043Z",
   "entryCount": 31,
   "errors": [],
   "warnings": [
-    {
-      "entryKey": "sha256:7613ae88e6644b513530e96cf86f32c587ad290eb4e69851e61d737c72870766",
-      "timestamp": "2026-03-23T13:14:00-07:00",
-      "title": "Snack: Half red apple (~75g)",
-      "reason": "photo_missing_but_found_in_internal_folder",
-      "file": "/Users/javier/.openclaw/media/inbound/file_196---a3644e20-0402-4acd-af64-40e66531a8c8.jpg",
-      "diffMinutes": 1
-    },
-    {
-      "entryKey": "sha256:a242ff6f86ece92474e4bcb9480ee0c5e01cd0124fbc400fa409a3486fb2cd4f",
-      "timestamp": "2026-03-23T13:01:00-07:00",
-      "title": "Lunch: Japanese meal set",
-      "reason": "photo_missing_but_found_in_internal_folder",
-      "file": "/Users/javier/.openclaw/media/inbound/file_195---b2f4c84f-8716-4fad-97e6-f28a4ccc0676.jpg",
-      "diffMinutes": 0
-    },
     {
       "entryKey": "sha256:7fdcac113f12599bddb6f0719c98533dff9aa1fc8b64065253f0d6f38f1d807c",
       "timestamp": "2026-03-23T10:08:00-07:00",

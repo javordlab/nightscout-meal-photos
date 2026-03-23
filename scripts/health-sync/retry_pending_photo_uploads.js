@@ -41,6 +41,27 @@ function uploadPhoto(photoPath) {
   }
 }
 
+function computeSinceIso(timestamps) {
+  const valid = timestamps
+    .map(ts => new Date(ts).getTime())
+    .filter(ms => Number.isFinite(ms));
+  if (valid.length === 0) return null;
+  const minMs = Math.min(...valid);
+  return new Date(minMs - 2 * 60 * 60 * 1000).toISOString();
+}
+
+function triggerIncrementalSync(sinceIso) {
+  const sinceArg = sinceIso ? ` --since=${sinceIso}` : '';
+  execSync(`cd ${WORKSPACE} && node scripts/health-sync/normalize_health_log.js`, {
+    stdio: 'inherit',
+    timeout: 120000
+  });
+  execSync(`cd ${WORKSPACE} && node scripts/health-sync/unified_sync.js${sinceArg}`, {
+    stdio: 'inherit',
+    timeout: 180000
+  });
+}
+
 async function main() {
   const pending = loadPending();
   if (pending.length === 0) {
@@ -51,6 +72,7 @@ async function main() {
   const now = Date.now();
   let retried = 0;
   let uploaded = 0;
+  const uploadedTimestamps = [];
 
   for (const item of pending) {
     const hasUrl = /^https?:\/\//i.test(String(item.photoUrl || ''));
@@ -82,6 +104,7 @@ async function main() {
       item.lastError = null;
       item.nextAttemptAt = null;
       uploaded++;
+      uploadedTimestamps.push(item.timestamp || item.updatedAt || new Date().toISOString());
       continue;
     }
 
@@ -98,6 +121,13 @@ async function main() {
       await resolveLinks();
     } catch (e) {
       console.error(`resolve_pending_photo_links_failed:${e.message}`);
+    }
+
+    try {
+      const sinceIso = computeSinceIso(uploadedTimestamps);
+      triggerIncrementalSync(sinceIso);
+    } catch (e) {
+      console.error(`incremental_sync_after_upload_failed:${e.message}`);
     }
   }
 

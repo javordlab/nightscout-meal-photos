@@ -55,4 +55,45 @@ describe('quality_gates', () => {
     const result = validateEntry(entry);
     assert.strictEqual(result.errors.length, 0);
   });
+
+  it('blocks image-origin food entry missing photo url', () => {
+    const entry = {
+      timestamp: '2026-03-23T13:01:00-07:00',
+      category: 'Food',
+      mealType: 'Lunch',
+      title: 'Lunch: Japanese meal set',
+      carbsEst: 55,
+      caloriesEst: 480,
+      proteinEst: 22,
+      photoUrls: []
+    };
+
+    const result = validateEntry(entry, {
+      findImageOriginMatch: () => ({
+        contentType: 'IMAGE_DOCUMENT',
+        messageId: 3267,
+        diffMinutes: 0
+      })
+    });
+
+    assert.ok(result.errors.some(e => e.reason === 'missing_photo_url_for_image_origin_entry'));
+  });
+
+  it('does not apply image-origin photo gate to non-food categories', () => {
+    const entry = {
+      timestamp: '2026-03-23T13:00:00-07:00',
+      category: 'Medication',
+      title: 'Metformin 500mg (lunch)',
+      carbsEst: null,
+      caloriesEst: null,
+      proteinEst: null,
+      photoUrls: []
+    };
+
+    const result = validateEntry(entry, {
+      findImageOriginMatch: () => ({ contentType: 'IMAGE_DOCUMENT', messageId: 3267 })
+    });
+
+    assert.ok(!result.errors.some(e => e.reason === 'missing_photo_url_for_image_origin_entry'));
+  });
 });

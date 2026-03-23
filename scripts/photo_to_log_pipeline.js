@@ -14,6 +14,7 @@ const INBOUND_DIR = '/Users/javier/.openclaw/media/inbound/';
 const STATE_FILE = '/Users/javier/.openclaw/workspace/.photo_pipeline_state.json';
 const HEALTH_LOG = '/Users/javier/.openclaw/workspace/health_log.md';
 const PENDING_FILE = '/Users/javier/.openclaw/workspace/data/pending_photo_entries.json';
+const TELEGRAM_ENVELOPES_PATH = '/Users/javier/.openclaw/workspace/data/telegram_media_envelopes.jsonl';
 const MAX_RETRIES = 3;
 
 // Extract file number prefix (e.g., "file_154" from "file_154---uuid.jpg")
@@ -45,13 +46,66 @@ function loadState() {
       state.processed = [...new Set(state.processed.map(getFilePrefix))];
       state.failed = state.failed.map(f => ({ ...f, file: getFilePrefix(f.file) }));
     }
+    if (!Array.isArray(state.linkedEnvelopeIds)) state.linkedEnvelopeIds = [];
     return state;
   }
-  return { processed: [], failed: [], lastRun: null };
+  return { processed: [], failed: [], linkedEnvelopeIds: [], lastRun: null };
 }
 
 function saveState(state) {
   fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2));
+}
+
+function loadTelegramEnvelopes() {
+  if (!fs.existsSync(TELEGRAM_ENVELOPES_PATH)) return [];
+  const lines = fs.readFileSync(TELEGRAM_ENVELOPES_PATH, 'utf8').split('\n').filter(Boolean);
+  const items = [];
+  for (const line of lines) {
+    try {
+      const obj = JSON.parse(line);
+      if (!obj || !obj.timestamp) continue;
+      obj.tsMs = new Date(obj.timestamp).getTime();
+      if (!Number.isFinite(obj.tsMs)) continue;
+      items.push(obj);
+    } catch {
+      // ignore malformed lines
+    }
+  }
+  return items.sort((a, b) => a.tsMs - b.tsMs);
+}
+
+function mapExtToEnvelopeType(filePath) {
+  const ext = path.extname(String(filePath || '')).toLowerCase();
+  if (['.jpg', '.jpeg', '.png', '.webp', '.heic', '.heif'].includes(ext)) return ['PHOTO', 'IMAGE_DOCUMENT'];
+  if (['.ogg', '.mp3', '.m4a', '.wav'].includes(ext)) return ['VOICE'];
+  if (['.mp4', '.mov', '.webm'].includes(ext)) return ['VIDEO'];
+  return ['DOCUMENT_NON_IMAGE'];
+}
+
+function getEnvelopeKey(envelope) {
+  return envelope?.envelopeId || `${envelope?.updateId}:${envelope?.messageId}`;
+}
+
+function markLinkedEnvelope(state, envelope) {
+  if (!envelope) return;
+  const key = getEnvelopeKey(envelope);
+  if (!key) return;
+  if (!state.linkedEnvelopeIds.includes(key)) state.linkedEnvelopeIds.push(key);
+}
+
+function findEnvelopeForFile(file, envelopes, state) {
+  if (!Array.isArray(envelopes) || envelopes.length === 0) return null;
+  const targetTypes = mapExtToEnvelopeType(file.path);
+  const fileTs = file.mtime.getTime();
+
+  const candidates = envelopes
+    .filter(e => targetTypes.includes(e.contentType))
+    .filter(e => !state.linkedEnvelopeIds.includes(getEnvelopeKey(e)))
+    .map(e => ({ ...e, diffMs: Math.abs(e.tsMs - fileTs) }))
+    .filter(e => e.diffMs <= 3 * 60 * 1000)
+    .sort((a, b) => a.diffMs - b.diffMs);
+
+  return candidates[0] || null;
 }
 
 // Get current BG from Nightscout
@@ -194,8 +248,19 @@ function queuePendingPhoto(item) {
 // Main processing loop
 async function main() {
   console.log('Photo Pipeline Starting...', new Date().toISOString());
-  
+
+  // Refresh Telegram message type envelopes (best effort)
+  try {
+    execSync('cd /Users/javier/.openclaw/workspace && node scripts/telegram_classify_updates.js', {
+      stdio: 'pipe',
+      timeout: 30000
+    });
+  } catch (e) {
+    console.log('Telegram classifier refresh skipped:', e.message);
+  }
+
   const state = loadState();
+  const envelopes = loadTelegramEnvelopes();
   const allFiles = fs.readdirSync(INBOUND_DIR)
     .filter(f => f.match(/\.(jpg|jpeg|png)$/i));
   
@@ -236,13 +301,15 @@ async function main() {
   
   for (const file of filesToProcess) {
     console.log(`\nProcessing: ${file.name} (prefix: ${file.prefix})`);
-    
+    const matchedEnvelope = findEnvelopeForFile(file, envelopes, state);
+
     try {
       // Analyze photo
       const analysis = await analyzePhoto(file.path);
 
       // Skip if entry already exists
       if (analysis.skip) {
+        markLinkedEnvelope(state, matchedEnvelope);
         state.processed.push(file.prefix);
         console.log(`Skipping ${file.name} - entry already exists`);
         continue;
@@ -260,9 +327,16 @@ async function main() {
           uploadStatus: 'upload_failed_pending_retry',
           reason: 'upload_failed_retry_pending',
           lastError: 'photo_upload_failed',
-          nextAttemptAt: new Date(Date.now() + 60 * 1000).toISOString()
+          nextAttemptAt: new Date(Date.now() + 60 * 1000).toISOString(),
+          messageId: matchedEnvelope?.messageId || null,
+          updateId: matchedEnvelope?.updateId || null,
+          contentType: matchedEnvelope?.contentType || null,
+          mediaKind: matchedEnvelope?.mediaKind || detectMediaKind(file.path),
+          fileId: matchedEnvelope?.fileId || null,
+          fileUniqueId: matchedEnvelope?.fileUniqueId || null
         });
         console.log(`Queued upload retry for ${file.prefix} (upload failed).`);
+        markLinkedEnvelope(state, matchedEnvelope);
         state.processed.push(file.prefix);
         continue;
       }
@@ -286,9 +360,16 @@ async function main() {
           mealType: analysis.mealType,
           photoUrl,
           uploadStatus: 'uploaded',
-          reason: 'nutrition_metadata_required_before_log'
+          reason: 'nutrition_metadata_required_before_log',
+          messageId: matchedEnvelope?.messageId || null,
+          updateId: matchedEnvelope?.updateId || null,
+          contentType: matchedEnvelope?.contentType || null,
+          mediaKind: matchedEnvelope?.mediaKind || detectMediaKind(file.path),
+          fileId: matchedEnvelope?.fileId || null,
+          fileUniqueId: matchedEnvelope?.fileUniqueId || null
         });
         console.log(`Queued pending nutrition metadata for ${file.prefix}; skipped placeholder log creation.`);
+        markLinkedEnvelope(state, matchedEnvelope);
         state.processed.push(file.prefix);
         continue;
       }
@@ -297,6 +378,7 @@ async function main() {
       addToLog(entry);
       
       // Mark as processed (by prefix)
+      markLinkedEnvelope(state, matchedEnvelope);
       state.processed.push(file.prefix);
       
     } catch (e) {
