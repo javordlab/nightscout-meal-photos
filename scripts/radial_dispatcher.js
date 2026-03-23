@@ -154,10 +154,25 @@ function extractPhotos(text) {
   return matches.map(m => m[1]);
 }
 
+// Normalize entry title to match normalize_health_log.js's stripMetadata + normalizeTitle.
+// Both scripts must produce identical keys for the same logical entry.
+function normalizeEntryTitle(text) {
+  let t = text.replace(/\[[^\]]*\]\([^)]+\)/g, ''); // strip all markdown links (photos)
+  t = t
+    .replace(/\(BG:[^)]*\)/gi, '')
+    .replace(/\(Pred:\s*[^@)]+?\s*@\s*[^)]+\)/gi, '')
+    .replace(/\(Protein:[^)]*\)/gi, '')
+    .replace(/\(Carbs:[^)]*\|[^)]*\)/g, '')
+    .replace(/\(Carbs:[^)]*\)/g, '');
+  t = t.replace(/\s+/g, ' ').trim();
+  return t.toLowerCase().replace(/[""]/g, '"').replace(/['']/g, "'");
+}
+
 function buildEntryKey(entryData, cleanText) {
+  const title = normalizeEntryTitle(cleanText);
   return crypto
     .createHash('sha256')
-    .update(`${entryData.iso}|${entryData.user}|${entryData.category}|${entryData.mealType}|${cleanText}`)
+    .update(`${entryData.iso}|${entryData.user}|${title}`)
     .digest('hex');
 }
 
@@ -247,7 +262,7 @@ async function main() {
       text: p[6],
       carbs: parseInt(p[7]) || null,
       cals: parseInt(p[8]) || null,
-      proteins: p[6].match(/\(Protein: (\d+)g\)/) ? parseInt(p[6].match(/\(Protein: (\d+)g\)/)[1]) : null
+      proteins: p[6].match(/\(Protein:\s*([\d.]+)g\)/i) ? parseFloat(p[6].match(/\(Protein:\s*([\d.]+)g\)/i)[1]) : null
     };
     
     // Determine Timezone Offset

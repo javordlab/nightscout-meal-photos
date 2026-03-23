@@ -9,9 +9,11 @@ const fs = require('fs');
 const https = require('https');
 
 const PENDING_FILE = '/Users/javier/.openclaw/workspace/data/pending_photo_entries.json';
+const ALERT_STATE_FILE = '/Users/javier/.openclaw/workspace/data/pending_photo_alert_state.json';
 const BOT_TOKEN = '8262629923:AAEdW0HWJN1Y-R32ekvghqrg5bnQydMeop0';
 const JAVI_CHAT_ID = '8335333215';
 const STALE_THRESHOLD_MS = 30 * 60 * 1000; // 30 minutes
+const REPEAT_ALERT_INTERVAL_MS = 2 * 60 * 60 * 1000; // re-alert after 2 hours if still pending
 
 function sendTelegram(chatId, text) {
   return new Promise((resolve, reject) => {
@@ -48,14 +50,24 @@ async function main() {
     return;
   }
 
+  // Load alert state: { [filePrefix]: lastAlertedAt (ISO) }
+  let alertState = {};
+  if (fs.existsSync(ALERT_STATE_FILE)) {
+    try { alertState = JSON.parse(fs.readFileSync(ALERT_STATE_FILE, 'utf8')); } catch (_) {}
+  }
+
   const now = Date.now();
   const stale = pending.filter(entry => {
     const age = now - new Date(entry.queuedAt).getTime();
-    return age >= STALE_THRESHOLD_MS;
+    if (age < STALE_THRESHOLD_MS) return false;
+    // Suppress repeat alerts within the re-alert interval
+    const lastAlerted = alertState[entry.filePrefix];
+    if (lastAlerted && now - new Date(lastAlerted).getTime() < REPEAT_ALERT_INTERVAL_MS) return false;
+    return true;
   });
 
   if (stale.length === 0) {
-    console.log(`${pending.length} pending photo(s) — none stale yet.`);
+    console.log(`${pending.length} pending photo(s) — none need alerting right now.`);
     return;
   }
 
@@ -73,6 +85,9 @@ async function main() {
   const result = await sendTelegram(JAVI_CHAT_ID, message);
 
   if (result.ok) {
+    // Record alert time for each entry to suppress duplicates
+    for (const entry of stale) alertState[entry.filePrefix] = new Date(now).toISOString();
+    fs.writeFileSync(ALERT_STATE_FILE, JSON.stringify(alertState, null, 2));
     console.log('Alert sent successfully.');
   } else {
     console.error('Telegram error:', JSON.stringify(result));

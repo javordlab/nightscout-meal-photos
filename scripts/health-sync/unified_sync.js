@@ -316,8 +316,15 @@ function parsePredictedPeakTimeIso(entry) {
 function entryToNotion(entry) {
   const photo = entry.photoUrls?.[0];
   const proteinEst = getProteinEst(entry);
-  const predPeakBg = parsePredictedPeakBg(entry);
-  const predPeakTimeIso = parsePredictedPeakTimeIso(entry);
+  const carbsForFallback = Number.isFinite(entry.carbsEst) ? entry.carbsEst : 0;
+  const predPeakBg = parsePredictedPeakBg(entry) ??
+    (entry.category === 'Food' && carbsForFallback > 0
+      ? Math.min(Math.round(120 + carbsForFallback * 3.5), 300)
+      : null);
+  const predPeakTimeIso = parsePredictedPeakTimeIso(entry) ??
+    (entry.category === 'Food' && entry.timestamp
+      ? new Date(new Date(entry.timestamp).getTime() + 105 * 60 * 1000).toISOString()
+      : null);
   const details = entry.notes ? ` (${entry.notes.replace(/;\s*/g, ') (')})` : '';
   const notionTitle = `${entry.title}${details}`.slice(0, 1900);
 

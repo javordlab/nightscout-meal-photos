@@ -51,7 +51,8 @@ async function patchJson(id, props) {
 
 // Parse prediction from health_log.md title text embedded in Notion entry.
 // Returns { bg, peakIso } if found, otherwise null.
-function parsePredFromText(text, dateStr) {
+// fullDateIso: full ISO string from Notion (e.g. "2026-03-22T12:00:00-07:00") to preserve offset.
+function parsePredFromText(text, fullDateIso) {
   const match = text.match(/\(Pred:\s*([^@)]+?)\s*@\s*([^)]+)\)/i);
   if (!match) return null;
 
@@ -60,7 +61,9 @@ function parsePredFromText(text, dateStr) {
   const bg = Math.min(parseInt(bgNums[bgNums.length - 1]), 300);
 
   let peakIso = null;
-  if (dateStr) {
+  if (fullDateIso) {
+    const datePart = fullDateIso.substring(0, 10);
+    const offset = fullDateIso.match(/[+-]\d{2}:\d{2}$/)?.[0] || '-07:00';
     const timeMatches = [...match[2].matchAll(/(\d{1,2}:\d{2})\s*(AM|PM)/gi)];
     if (timeMatches.length > 0) {
       const mins = timeMatches.map(t => {
@@ -68,7 +71,7 @@ function parsePredFromText(text, dateStr) {
         return (h % 12 + (t[2].toUpperCase() === 'PM' ? 12 : 0)) * 60 + m;
       });
       const avg = Math.round(mins.reduce((a, b) => a + b) / mins.length);
-      peakIso = `${dateStr}T${String(Math.floor(avg / 60)).padStart(2, '0')}:${String(avg % 60).padStart(2, '0')}:00`;
+      peakIso = `${datePart}T${String(Math.floor(avg / 60)).padStart(2, '0')}:${String(avg % 60).padStart(2, '0')}:00${offset}`;
     }
   }
 
@@ -110,18 +113,17 @@ async function run() {
 
       // Use agent's context-aware prediction from title if present,
       // fall back to formula 120 + carbs*3.5 capped at 300.
-      const pred = parsePredFromText(title || '', date?.substring(0, 10));
+      const pred = parsePredFromText(title || '', date);
       const predictedBg = pred ? pred.bg : Math.min(Math.round(120 + (carbsForCalc * 3.5)), 300);
-      const peakTime = pred?.peakIso
-        ? new Date(pred.peakIso)
-        : new Date(mealTime.getTime() + 105 * 60 * 1000);
+      // Use offset-aware ISO from title parse; fall back to UTC+105min from meal time.
+      const peakTimeIso = pred?.peakIso || new Date(mealTime.getTime() + 105 * 60 * 1000).toISOString();
 
       const source = pred ? 'from title' : `formula (${carbsForCalc}g carbs)`;
       console.log(`Projection for '${title?.substring(0, 60)}': ${predictedBg} mg/dL [${source}]`);
 
       await patchJson(page.id, {
         'Predicted Peak BG': { number: predictedBg },
-        'Predicted Peak Time': { date: { start: peakTime.toISOString() } }
+        'Predicted Peak Time': { date: { start: peakTimeIso } }
       });
     }
   }
