@@ -3,7 +3,7 @@
 ## Silence & Error Handling (STRICT)
 - **HEARTBEAT:** If HEARTBEAT.md checks pass, reply EXACTLY: HEARTBEAT_OK (no summaries/technical noise).
 - **ERRORS:** Handle technical errors (e.g., "edit match failed", "sandbox read-only") silently. Report only critical system failures (e.g., Gateway unreachable).
-- **VERIFICATION:** Use a tool (e.g., `ls`, `curl`) to verify actions *after* they are taken. Never claim success within the same turn as the action.
+- **VERIFICATION:** Use a tool (e.g., `ls`, `curl`, `read`) to verify actions *after* they are taken. For health logging, claim success only after write + readback verification; never claim success without verification evidence.
 
 ## Memory & Continuity
 - **FILES:** Memory is limited to files. Write significant events to `memory/YYYY-MM-DD.md`.

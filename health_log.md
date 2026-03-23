@@ -1,5 +1,6 @@
 # Health Log
 
+| 2026-03-22 | 20:30 -07:00 | Maria Dennis | Activity | - | 15 minutes walk (BG: 161 mg/dL Flat) | null | null |
 | 2026-03-22 | 20:02 -07:00 | Maria Dennis | Food | Snack | Snack: 3 strawberries + glass of whole milk (~8oz) (BG: 161 mg/dL Flat) (Pred: 175-185 mg/dL @ 9:47 PM) (Protein: 9g | Carbs: ~21g | Cals: ~190) [📷](https://iili.io/qUFEKx9.jpg) | 21 | 190 |
 | 2026-03-22 | 19:24 -07:00 | Maria Dennis | Food | Dinner | Dinner: Sushi assortment (partial — leftovers: 3 pcs) (BG: 140 mg/dL Flat) (Pred: 160-185 mg/dL @ 8:45-9:15 PM) (Protein: 18g | Carbs: ~45g | Cals: ~340) [📷](https://iili.io/qU2L01s.jpg) | 45 | 340 |
 | 2026-03-22 | 16:01 -07:00 | Maria Dennis | Food | Lunch | Lunch: Toast with peanut butter, low-sugar passion fruit syrup, and hemp seeds + 250ml radler + dried dragon fruit (BG: 146 mg/dL Flat) (Pred: 175-200 mg/dL @ 5:30-6:00 PM) (Protein: 12g | Carbs: ~70g | Cals: ~525) [📷](https://iili.io/qSQ09Pj.jpg) | 70 | 525 |

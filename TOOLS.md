@@ -13,6 +13,9 @@
 9. **REPORTS:** Every daily health report must explicitly state the model name used to generate it.
 10. **PHOTOS:** Upload to `freeimage.host` (Key: `6d207e02198a847aa98d0a2a901485a5`). Use calibration object (card).
 11. **GALLERY PUBLISH:** If a missing photo is detected in gallery, run sync and then always `git add/commit/push` `nightscout-meal-photos/data/notion_meals.json` (and related gallery data files) to `main`.
+12. **WRITE-THEN-CONFIRM (STRICT):** Never say "logged", "updated", or "done" unless an `edit`/`write` tool call to `/workspace/health_log.md` succeeded in the current turn.
+13. **POST-WRITE READBACK (STRICT):** After every successful log write, immediately `read` `health_log.md` and verify the exact new/updated row exists. Only then send success confirmation.
+14. **FAIL-CLOSED CONFIRMATION:** If write OR readback verification fails, explicitly report "not logged yet" and do not claim completion.
 
 ## Formatting
 - **Discord/WhatsApp:** Bullet lists only (no tables).

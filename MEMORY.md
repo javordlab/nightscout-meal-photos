@@ -140,3 +140,40 @@
 
 ## GitHub Backup (2026-03-22)
 All of `~/.openclaw/` and related projects are now versioned on GitHub under `javordlab` (all private). Global git config: `Javier Ordonez <ordonez@gmail.com>`. 27 repos total.
+
+## Critical Fixes Applied (2026-03-22, Round 3)
+
+### Issue 14: Pipe-Split Bug in radial_dispatcher — FIXED (commit `d135004`)
+**Root Cause:** Nutrition format `(Protein: 18g | Carbs: ~45g | Cals: ~340)` embeds pipe characters inside the entry text column. Fixed-index parsing (`p[7]` for carbs, `p[8]` for cals) broke when these pipes shifted column indices. Result: `carbs: null`, truncated notes, photos not sent to Notion, `proteins: null` in MySQL.
+**Fix:** Use last-two columns as carbs/cals (`p[p.length-3]`, `p[p.length-2]`); join all middle columns as entry text (`p.slice(6, carbsIdx).join(' | ')`). Protein extracted via regex `/\(Protein:\s*([\d.]+)g[^)]*\)/i` (note `[^)]*` to handle embedded pipes before closing paren).
+**Impact:** ALL downstream systems affected — Nightscout carbs, Notion photo field, MySQL proteins, gallery.
+
+### Issue 15: Nightscout Timestamp Fallback Broken — FIXED (commit `d135004`)
+**Root Cause:** `find[created_at]=2026-03-22T19:24:00-07:00` rejected by Nightscout with "Cannot parse - as a valid ISO-8601 date". Both timezone-offset and UTC exact-match formats fail with the `find[field]=value` syntax.
+**Fix:** Use `$gte`/`$lte` ±1-minute UTC range: `find[created_at][$gte]=...&find[created_at][$lte]=...`. The Nightscout API supports range operators but not exact-match on ISO dates.
+**Rule:** Never use `find[created_at]=<value>` in Nightscout queries. Always use range operators with UTC timestamps.
+
+### Issue 16: Radial Dispatcher Creating Duplicates for Old Entries — FIXED (commit `d135004`)
+**Root Cause:** Dispatcher processed ALL 178 entries on every run. Old entries without matching `entry_key` in NS notes failed both key-lookup and (broken) timestamp-fallback → POSTed as new duplicate treatments every 30 minutes.
+**Fix:** Added 30-day rolling cutoff. Only today's entries + last 30 days processed per run.
+
+### Issue 17: Corrupted Nightscout Treatment After Pipe-Split Bug
+**Pattern:** Pipe-split bug created Nightscout entry with `carbs: null` and truncated notes (text cut at first pipe). After pipe-split fix, `normalizeEntryTitle()` strips the full `(Protein:...)` block → new entry key differs from the one stored in NS → key-lookup fails → timestamp fallback also fails → entry stays corrupted indefinitely.
+**Fix procedure:** DELETE the corrupted NS treatment by `_id`; dispatcher will POST a fresh correct one on next run.
+**Lesson:** When entry key generation logic changes (normalization rules updated), old NS entries become invisible to new key-lookups. Must delete-and-recreate, not patch.
+
+### Issue 18: check_pending_photos.js Removed
+**Why removed:** (a) Nutrition estimation is always the agent's job — Maria must never be asked for macros. Alert was therefore moot. (b) State file not written if Telegram API returned `!ok` on first run → duplicate alerts 30 min apart.
+**Status:** Script deleted, cron job `stale-pending-photo-alert` removed from `jobs.json`.
+
+### Issue 19: HealthGuard Persona — Nutrition Always from Vision
+**Change:** `health-guard.md` updated. Old: agent could ask Maria for nutrition details if entry looked incomplete. New: agent **always** estimates carbs, cals, and protein using vision. Maria is never prompted for macros.
+
+### Issue 20: Gallery Now Event-Driven
+**Change:** Gallery regeneration (`generate_notion_gallery_data.js` + git push) now triggered only when `photoSyncedToNotion = true` (a new/changed photo URL was written to Notion). Previously ran on hourly cron regardless.
+
+### Issue 21: MySQL proteins Column Added
+**Change:** `ALTER TABLE maria_health_log ADD COLUMN proteins decimal(5,1) NULL AFTER calories_est`. Required for radial_dispatcher to sync protein values to MySQL.
+
+### Issue 22: Quality Gates — Protein Required for ALL Food (not just Breakfast)
+**Change:** `quality_gates.js` now requires protein for all Food category entries. Error code: `missing_protein_required_for_food`. Unit test updated to accept either `missing_protein_required_for_food` or `missing_protein_required_for_breakfast` for compatibility.
