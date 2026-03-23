@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-23T17:30:01.077Z",
+  "generatedAt": "2026-03-23T18:00:00.883Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
   "entryCount": 289,
   "entries": [
@@ -131,7 +131,7 @@
       "source": {
         "file": "health_log.md",
         "line": 6,
-        "rawRow": "| 2026-03-23 | 09:51 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Egg breakfast taco/burrito with scrambled eggs in tortilla + 4 avocado slices on the side (BG: 123 mg/dL Flat) (Pred: 160-175 mg/dL @ 11:15-11:45 AM) (Protein: 18g | Carbs: ~30g | Cals: ~340) | 30 | 340 |"
+        "rawRow": "| 2026-03-23 | 09:51 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Egg breakfast taco/burrito with scrambled eggs in tortilla + 4 avocado slices on the side (BG: 123 mg/dL Flat) (Pred: 160-175 mg/dL @ 11:15-11:45 AM) (Protein: 18g | Carbs: ~30g | Cals: ~340) [📷](https://iili.io/qghz2Np.jpg) | 30 | 340 |"
       },
       "timestamp": "2026-03-23T09:51:00-07:00",
       "date": "2026-03-23",
@@ -141,7 +141,9 @@
       "mealType": "Breakfast",
       "title": "Breakfast: Egg breakfast taco/burrito with scrambled eggs in tortilla + 4 avocado slices on the side",
       "notes": "BG: 123 mg/dL Flat; Protein: 18g; Pred: 160-175 mg/dL @ 11:15-11:45 AM",
-      "photoUrls": [],
+      "photoUrls": [
+        "https://iili.io/qghz2Np.jpg"
+      ],
       "carbsEst": 30,
       "caloriesEst": 340,
       "proteinEst": 18,
@@ -166,7 +168,7 @@
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:65187b6c944b7d0b00236f420fcdf8274a64c3ce2fb69e4382bb1a4c1839450b",
-      "contentHash": "sha256:d44b81ce492e83769548521956720b0dd1c1ea0296cca037099af0078dd1d66e"
+      "contentHash": "sha256:4e9591ac0955d4fcd6ca6af984727325510e6d717f966420d09efc85d090f24c"
     },
     {
       "source": {
