@@ -25,6 +25,9 @@
 ### 3) Verification / observability
 - [x] Add watchdog check: recent Telegram Food image message IDs must map to Notion entries with `Photo` URL.
 - [ ] Daily audit output should include `missing_photo_link_count` and list entry keys.
+- [ ] Send a **daily comprehensive email report** (previous day) with all detected issues + current pending items.
+- [ ] Include in daily email: sync errors, lock/contention events, ambiguous/conflict counters, missing photo links, pending photo queue size, blocked validation entries, and unresolved retries.
+- [ ] Email should explicitly split sections into: `Resolved yesterday`, `Still pending`, and `Needs manual action`.
 
 ### 4) Telegram content-type decision table (routing)
 - [x] Implement normalized content classifier: `TEXT`, `PHOTO`, `PHOTO_TEXT`, `IMAGE_DOCUMENT`, `DOCUMENT_NON_IMAGE`, `VOICE`, `VIDEO`, `UNSUPPORTED_MEDIA`, `COMPOSITE_EVENT`.
