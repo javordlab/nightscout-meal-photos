@@ -1,5 +1,6 @@
 # Health Log
 
+| 2026-03-23 | 13:14 -07:00 | Maria Dennis | Food | Snack | Snack: Half red apple (~75g) (BG: 111 mg/dL Flat) (Pred: 180-200 mg/dL @ 2:45-3:15 PM) (Protein: 0.3g | Carbs: ~10g | Cals: ~40) | 10 | 40 |
 | 2026-03-23 | 13:01 -07:00 | Maria Dennis | Food | Lunch | Lunch: Japanese meal set (BG: 118 mg/dL Flat) (Pred: 175-195 mg/dL @ 2:30-3:00 PM) (Protein: 22g | Carbs: ~55g | Cals: ~480) | 55 | 480 |
 | 2026-03-23 | 13:00 -07:00 | Maria Dennis | Medication | - | Metformin 500mg (lunch) | null | null |
 | 2026-03-23 | 10:13 -07:00 | Maria Dennis | Medication | - | Trulicity 0.75 MG/0.5 ML (weekly) | null | null |
