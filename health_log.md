@@ -1,5 +1,6 @@
 # Health Log
 
+| 2026-03-23 | 13:00 -07:00 | Maria Dennis | Medication | - | Metformin 500mg (lunch) | null | null |
 | 2026-03-23 | 10:13 -07:00 | Maria Dennis | Medication | - | Trulicity 0.75 MG/0.5 ML (weekly) | null | null |
 | 2026-03-23 | 10:08 -07:00 | Maria Dennis | Food | Snack | Snack: 2 slices dried dragon fruit (BG: 124 mg/dL Flat) (Pred: 130-140 mg/dL @ 11:15 AM) (Protein: 0.5g | Carbs: ~10g | Cals: ~40) | 10 | 40 |
 | 2026-03-23 | 09:10 -07:00 | Maria Dennis | Medication | - | Metformin 500mg (breakfast) | null | null |
