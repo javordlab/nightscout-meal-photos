@@ -16,5 +16,23 @@
     "mealType": "Snack",
     "photoUrl": "https://iili.io/qSZCCSj.jpg",
     "reason": "nutrition_metadata_required_before_log"
+  },
+  {
+    "queuedAt": "2026-03-23T02:25:01.816Z",
+    "filePrefix": "file_191",
+    "sourcePath": "/Users/javier/.openclaw/media/inbound/file_191---9cbc4fcd-b067-4650-b36e-ea4062ab6938.jpg",
+    "timestamp": "2026-03-23T02:24:32.462Z",
+    "mealType": "Dinner",
+    "photoUrl": "https://iili.io/qU2L01s.jpg",
+    "reason": "nutrition_metadata_required_before_log"
+  },
+  {
+    "queuedAt": "2026-03-23T02:38:39.201Z",
+    "filePrefix": "file_192",
+    "sourcePath": "/Users/javier/.openclaw/media/inbound/file_192---4a1f3851-0d31-4d99-8af0-9a2092a5d07e.jpg",
+    "timestamp": "2026-03-23T02:38:09.614Z",
+    "mealType": "Dinner",
+    "photoUrl": "https://iili.io/qU35A8X.jpg",
+    "reason": "nutrition_metadata_required_before_log"
   }
 ]

@@ -1,6 +1,7 @@
 # Health Log
 
-| 2026-03-22 | 16:01 -07:00 | Maria Dennis | Food | Lunch | Lunch: Toast with peanut butter, low-sugar passion fruit syrup, and hemp seeds + 250ml radler + dried dragon fruit (BG: 146 mg/dL Flat) (Pred: 175-200 mg/dL @ 5:30-6:00 PM) (Protein: 12g) (Carbs: ~70g | Cals: ~525) [📷](https://iili.io/qSQ09Pj.jpg) | 70 | 525 |
+| 2026-03-22 | 19:24 -07:00 | Maria Dennis | Food | Dinner | Dinner: Sushi assortment (partial — leftovers: 3 pcs) (BG: 140 mg/dL Flat) (Pred: 160-185 mg/dL @ 8:45-9:15 PM) (Protein: 18g | Carbs: ~45g | Cals: ~340) [📷](pending) | 45 | 340 |
+| 2026-03-22 | 16:01 -07:00 | Maria Dennis | Food | Lunch | Lunch: Toast with peanut butter, low-sugar passion fruit syrup, and hemp seeds + 250ml radler + dried dragon fruit (BG: 146 mg/dL Flat) (Pred: 175-200 mg/dL @ 5:30-6:00 PM) (Protein: 12g | Carbs: ~70g | Cals: ~525) [📷](https://iili.io/qSQ09Pj.jpg) | 70 | 525 |
 | 2026-03-23 | 09:05 -07:00 | Maria Dennis | Medication | - | Rosuvastatin 10mg (Scheduled) | null | null |
 | 2026-03-23 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
 | 2026-03-22 | 15:28 -07:00 | Maria Dennis | Activity | - | 120 minutes gardening (BG: 133 mg/dL Flat) | null | null |
