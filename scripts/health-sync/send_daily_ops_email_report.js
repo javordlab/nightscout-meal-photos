@@ -268,11 +268,13 @@ async function main() {
       missingPhotoLinks: Number(watchdog.missing_photo_link_count || 0),
       pendingPhotosTotal: pendingList.length,
       pendingRetriesUnresolved,
-      pendingNutritionMetadata
+      pendingNutritionMetadata,
+      pendingBacklogCount: pendingBacklogItems.length
     },
     resolved: {
       uploadedFromRetry
     },
+    pendingBacklogItems,
     topBlockedReasons,
     issueDetails
   };
