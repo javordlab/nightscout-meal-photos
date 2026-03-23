@@ -80,9 +80,8 @@ function validateEntry(entry) {
       errors.push({ reason: 'placeholder_food_entry_blocked' });
     }
 
-    const requiresProtein = String(entry.mealType || '').toLowerCase() === 'breakfast';
-    if (requiresProtein && entry.proteinEst == null) {
-      errors.push({ reason: 'missing_protein_required_for_breakfast' });
+    if (entry.proteinEst == null) {
+      errors.push({ reason: 'missing_protein_required_for_food' });
     }
 
     if (entry.carbsEst == null) {

@@ -412,3 +412,25 @@
 {"ts":"2026-03-23T02:30:01.333Z","op":"step_start","name":"Unified Sync"}
 {"ts":"2026-03-23T02:30:17.450Z","op":"step_complete","name":"Unified Sync","duration":16117,"result":"object"}
 {"ts":"2026-03-23T02:30:17.450Z","op":"pipeline_complete","duration":16178,"results":["resolvePendingPhotos","normalize","enrich","validate","sync"]}
+{"ts":"2026-03-23T03:00:01.396Z","op":"pipeline_start","mode":"sync-only","since":"2026-03-20"}
+{"ts":"2026-03-23T03:00:01.403Z","op":"step_start","name":"Resolve Pending Photos"}
+{"ts":"2026-03-23T03:00:01.410Z","op":"step_complete","name":"Resolve Pending Photos","duration":6,"result":"object"}
+{"ts":"2026-03-23T03:00:01.410Z","op":"step_start","name":"Normalize"}
+{"ts":"2026-03-23T03:00:01.437Z","op":"step_complete","name":"Normalize","duration":26}
+{"ts":"2026-03-23T03:00:01.438Z","op":"step_start","name":"Enrich"}
+{"ts":"2026-03-23T03:00:01.452Z","op":"step_complete","name":"Enrich","duration":14}
+{"ts":"2026-03-23T03:00:01.452Z","op":"step_start","name":"Validate"}
+{"ts":"2026-03-23T03:00:01.458Z","op":"step_complete","name":"Validate","duration":6,"result":"object"}
+{"ts":"2026-03-23T03:00:01.459Z","op":"step_start","name":"Unified Sync"}
+{"ts":"2026-03-23T03:00:22.796Z","op":"step_complete","name":"Unified Sync","duration":21337,"result":"object"}
+{"ts":"2026-03-23T03:00:22.796Z","op":"pipeline_complete","duration":21393,"results":["resolvePendingPhotos","normalize","enrich","validate","sync"]}
+{"ts":"2026-03-23T03:30:00.440Z","op":"pipeline_start","mode":"sync-only","since":"2026-03-20"}
+{"ts":"2026-03-23T03:30:00.442Z","op":"step_start","name":"Resolve Pending Photos"}
+{"ts":"2026-03-23T03:30:00.447Z","op":"step_complete","name":"Resolve Pending Photos","duration":5,"result":"object"}
+{"ts":"2026-03-23T03:30:00.448Z","op":"step_start","name":"Normalize"}
+{"ts":"2026-03-23T03:30:00.481Z","op":"step_complete","name":"Normalize","duration":33}
+{"ts":"2026-03-23T03:30:00.481Z","op":"step_start","name":"Enrich"}
+{"ts":"2026-03-23T03:30:00.493Z","op":"step_complete","name":"Enrich","duration":12}
+{"ts":"2026-03-23T03:30:00.493Z","op":"step_start","name":"Validate"}
+{"ts":"2026-03-23T03:30:00.499Z","op":"step_error","name":"Validate","duration":6,"error":"validation_failed:9"}
+{"ts":"2026-03-23T03:30:00.499Z","op":"pipeline_abort","reason":"validation_failed"}
