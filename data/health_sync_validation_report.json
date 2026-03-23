@@ -1,25 +1,7 @@
 {
-  "generatedAt": "2026-03-23T04:30:00.388Z",
-  "entryCount": 32,
+  "generatedAt": "2026-03-23T07:00:01.325Z",
+  "entryCount": 23,
   "errors": [
-    {
-      "entryKey": "sha256:7c24b1a3277bcdda1500b396f3700b2f7a4cc9cc89648cbd39bdf4dfc52faeb3",
-      "timestamp": "2026-03-20T16:13:00-07:00",
-      "title": "Snack: Protein ball/hazelnut chocolate truffle",
-      "reason": "missing_protein_required_for_food"
-    },
-    {
-      "entryKey": "sha256:2894309535e49081570aa3acc9b5806f3a871426e37f1f0932aa3f96bb8e4372",
-      "timestamp": "2026-03-20T13:17:00-07:00",
-      "title": "Snack: Half apple (~75g)",
-      "reason": "missing_protein_required_for_food"
-    },
-    {
-      "entryKey": "sha256:8b7e4b9b9aaa66cbea3fe4896408c11e0d51100c569efd678915affbf326b57a",
-      "timestamp": "2026-03-20T13:16:00-07:00",
-      "title": "Lunch: Prosciutto and brie on toasted ciabatta with milk (~5oz)",
-      "reason": "missing_protein_required_for_food"
-    },
     {
       "entryKey": "sha256:916e033ee62547bd2231a6603d60a959b417a66640c6237ef636972a41bb2d02",
       "timestamp": "2026-03-20T18:45:00-07:00",
@@ -36,24 +18,6 @@
       "entryKey": "sha256:98f968dabdc11d0dd3bbcc655da3c260878ac382d4a9b4bc24c8cf447ae693b1",
       "timestamp": "2026-03-20T19:00:00-07:00",
       "title": "Dinner: Small piece of dark chocolate bark/brownie",
-      "reason": "missing_protein_required_for_food"
-    },
-    {
-      "entryKey": "sha256:394ca775253da5cb3dccd7ff9b2cfed7f1085750c9ded42e7e9cbb9f25901548",
-      "timestamp": "2026-03-20T09:14:00-07:00",
-      "title": "Snack: Mixed nuts (pecans, Brazil nuts, hazelnuts) + dried goji berries",
-      "reason": "missing_protein_required_for_food"
-    },
-    {
-      "entryKey": "sha256:76c1222e9d904ebc593ef205469da84b890ebd64d3a2b88f4df4f76e3390228f",
-      "timestamp": "2026-03-19T19:14:00-07:00",
-      "title": "Dinner: Pork and rice burrito with beans/cheese, avocado slices",
-      "reason": "missing_protein_required_for_food"
-    },
-    {
-      "entryKey": "sha256:0e3cf46dec455abba24ea9d39fac4e17c0b422b51e28172360d7b271adc5c1ff",
-      "timestamp": "2026-03-19T17:36:00-07:00",
-      "title": "Snack: Strawberries and guava",
       "reason": "missing_protein_required_for_food"
     }
   ],
