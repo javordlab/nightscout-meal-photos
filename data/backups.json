@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-03-24T11:13:42.312Z",
+  "lastUpdated": "2026-03-24T11:20:31.818Z",
   "tokenUsage": [
     {
       "platform": "Kimi (Ollama)",
       "bucketType": "Free",
-      "realTokens": 50566679,
+      "realTokens": 50229840,
       "link": "https://ollama.com"
     },
     {
@@ -16,7 +16,7 @@
     {
       "platform": "OpenAI Codex",
       "bucketType": "Pay-as-you-go",
-      "realTokens": 2936348,
+      "realTokens": 2968356,
       "link": "https://platform.openai.com/usage"
     }
   ],
@@ -32940,6 +32940,13 @@
   ],
   "backups": [
     {
+      "filename": "2026-03-24.sql.gz",
+      "type": "Daily",
+      "size": "174.27 KB",
+      "created": "2026-03-24T11:20:31.681Z",
+      "path": "daily/2026-03-24.sql.gz"
+    },
+    {
       "filename": "2026-w13.sql.gz",
       "type": "Weekly",
       "size": "167.44 KB",
@@ -32973,20 +32980,6 @@
       "size": "118.54 KB",
       "created": "2026-03-16T11:20:02.591Z",
       "path": "weekly/2026-w12.sql.gz"
-    },
-    {
-      "filename": "2026-03-16.sql.gz",
-      "type": "Daily",
-      "size": "118.54 KB",
-      "created": "2026-03-16T11:20:02.580Z",
-      "path": "daily/2026-03-16.sql.gz"
-    },
-    {
-      "filename": "2026-03-15.sql.gz",
-      "type": "Daily",
-      "size": "111.71 KB",
-      "created": "2026-03-15T11:21:53.046Z",
-      "path": "daily/2026-03-15.sql.gz"
     }
   ]
 }
