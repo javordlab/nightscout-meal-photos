@@ -1,5 +1,6 @@
 # Health Log
 
+| 2026-03-23 | 19:00 -07:00 | Maria Dennis | Medication | - | Metformin 1000mg (dinner) | null | null |
 | 2026-03-23 | 18:22 -07:00 | Maria Dennis | Food | Dinner | Dinner: Two-plate meal (BG: 107 mg/dL Flat) (Pred: 180-210 mg/dL @ 7:45-8:15 PM) (Protein: 28g | Carbs: ~65g | Cals: ~520) [📷](https://iili.io/qrar7Db.jpg) | 65 | 520 |
 | 2026-03-23 | 16:22 -07:00 | Maria Dennis | Food | Snack | Snack: 1 spoonful peanut butter (~16g) (BG: 137 mg/dL Flat) (Pred: 140-150 mg/dL @ 5:30 PM) (Protein: 4g | Carbs: ~4g | Cals: ~95) | 4 | 95 |
 | 2026-03-23 | 13:59 -07:00 | Maria Dennis | Activity | - | 30 minutes gardening (BG: 145 mg/dL Flat) | null | null |
