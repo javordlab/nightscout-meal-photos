@@ -210,3 +210,12 @@
 {"ts":"2026-03-24T08:05:10.493Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774320306272.1155,"lockTime":"2026-03-24T08:00:01.017Z","lockWaitMs":90000}
 {"ts":"2026-03-24T08:08:20.809Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774320306272.1155,"lockTime":"2026-03-24T08:00:01.017Z","lockWaitMs":90000}
 {"ts":"2026-03-24T08:10:42.884Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774320306272.1155,"lockTime":"2026-03-24T08:00:01.017Z","lockWaitMs":90000}
+{"ts":"2026-03-24T08:12:41.756Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774320306272.1155,"lockTime":"2026-03-24T08:00:01.017Z","lockWaitMs":90000}
+{"ts":"2026-03-24T08:14:47.058Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774320306272.1155,"lockTime":"2026-03-24T08:00:01.017Z","lockWaitMs":90000}
+{"ts":"2026-03-24T08:16:43.792Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774320306272.1155,"lockTime":"2026-03-24T08:00:01.017Z","lockWaitMs":90000}
+{"ts":"2026-03-24T08:18:42.280Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774320306272.1155,"lockTime":"2026-03-24T08:00:01.017Z","lockWaitMs":90000}
+{"ts":"2026-03-24T08:20:43.580Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774320306272.1155,"lockTime":"2026-03-24T08:00:01.017Z","lockWaitMs":90000}
+{"ts":"2026-03-24T08:22:41.048Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774320306272.1155,"lockTime":"2026-03-24T08:00:01.017Z","lockWaitMs":90000}
+{"ts":"2026-03-24T08:24:41.618Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774320306272.1155,"lockTime":"2026-03-24T08:00:01.017Z","lockWaitMs":90000}
+{"ts":"2026-03-24T08:26:47.593Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774320306272.1155,"lockTime":"2026-03-24T08:00:01.017Z","lockWaitMs":90000}
+{"ts":"2026-03-24T08:28:48.186Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774320306272.1155,"lockTime":"2026-03-24T08:00:01.017Z","lockWaitMs":90000}
