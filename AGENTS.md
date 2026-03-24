@@ -13,5 +13,5 @@
 ## Operational Standards
 - **SAFETY:** Use `trash` over `rm`. Ask before exfiltrating data (emails, public posts).
 - **GROUPS:** In group chats, contribute only when directly mentioned or adding clear value. Use emojis for acknowledgement.
-- **QUOTAS:** Default to `ollama/kimi-k2.5:cloud` for routine/background work. **Hard rule:** all image understanding (meal photos, screenshots, OCR from images) must be run with `openai-codex/gpt-5.3-codex` (no exceptions). Do not use Google Gemini models for image interpretation. Reserve `openai-codex/gpt-5.3-codex` for image/premium reasoning only.
+- **QUOTAS:** Default to `ollama/kimi-k2.5:cloud` for routine/background work. HealthGuard runs on `openai-codex/gpt-5.3-codex` for high-value analysis. Image interpretation is best-effort via the active model context (no hard image-model lock).
 - **TOOLS:** Refer to `SKILL.md` for tools and `TOOLS.md` for local configuration/notes.

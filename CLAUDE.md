@@ -100,6 +100,8 @@ API keys are stored in `~/.openclaw/secrets/` and referenced in `TOOLS.md`.
 - On HEARTBEAT checks: reply exactly `HEARTBEAT_OK`, nothing else.
 - Handle tool/edit errors silently. Report only gateway-level failures.
 - Use `trash` not `rm`.
-- Default model: `ollama/kimi-k2.5:cloud` → fallback `openai-codex/gpt-5.3-codex` → `ollama/qwen2.5-coder:7b`. **Hard rule:** all image interpretation must use `openai-codex/gpt-5.3-codex` (never Gemini/Kimi for image understanding).
+- Default model: `ollama/kimi-k2.5:cloud` → fallback `openai-codex/gpt-5.3-codex` → `ollama/qwen2.5-coder:7b`.
+- HealthGuard model: `openai-codex/gpt-5.3-codex`.
+- Image analysis policy: best-effort in active model context (no hard image-model lock).
 - Daily reports must state the model name used to generate them.
 - Read `memory/YYYY-MM-DD.md` (today + yesterday) and `MEMORY.md` at session start.
