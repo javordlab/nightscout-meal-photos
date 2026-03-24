@@ -34,3 +34,10 @@
 {"ts":"2026-03-24T00:55:39.008Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774308166619.0525,"lockTime":"2026-03-24T00:30:01.014Z","lockWaitMs":90000}
 {"ts":"2026-03-24T00:57:39.759Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774308166619.0525,"lockTime":"2026-03-24T00:30:01.014Z","lockWaitMs":90000}
 {"ts":"2026-03-24T00:59:42.442Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774308166619.0525,"lockTime":"2026-03-24T00:30:01.014Z","lockWaitMs":90000}
+{"ts":"2026-03-24T01:03:54.477Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774308166619.0525,"lockTime":"2026-03-24T01:00:00.516Z","lockWaitMs":90000}
+{"ts":"2026-03-24T01:05:01.595Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774308166619.0525,"lockTime":"2026-03-24T01:00:00.516Z","lockWaitMs":90000}
+{"ts":"2026-03-24T01:07:39.196Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774308166619.0525,"lockTime":"2026-03-24T01:00:00.516Z","lockWaitMs":90000}
+{"ts":"2026-03-24T01:09:39.476Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774308166619.0525,"lockTime":"2026-03-24T01:00:00.516Z","lockWaitMs":90000}
+{"ts":"2026-03-24T01:11:39.325Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774308166619.0525,"lockTime":"2026-03-24T01:00:00.516Z","lockWaitMs":90000}
+{"ts":"2026-03-24T01:13:39.381Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774308166619.0525,"lockTime":"2026-03-24T01:00:00.516Z","lockWaitMs":90000}
+{"ts":"2026-03-24T01:15:39.299Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774308166619.0525,"lockTime":"2026-03-24T01:00:00.516Z","lockWaitMs":90000}

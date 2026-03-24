@@ -68,6 +68,76 @@ function extractProtein(entryText) {
   return protein ? parseNumber(protein[1]) : null;
 }
 
+function estimateProteinFromTitle(title, carbsEst = null, caloriesEst = null) {
+  const text = normalizeTitle(title || '');
+  if (!text) return 1;
+
+  let protein = 0;
+
+  // Eggs
+  const eggs = text.match(/(\d+(?:\.\d+)?)\s*(?:soft-boiled|boiled|fried|poached|scrambled)?\s*eggs?\b/);
+  if (eggs) {
+    protein += Number(eggs[1]) * 6;
+  } else if (/\beggs?\b/.test(text)) {
+    protein += 6;
+  }
+
+  // Dairy
+  if (/\bmilk\b/.test(text)) {
+    const oz = text.match(/(\d+(?:\.\d+)?)\s*oz\s*milk|milk[^\d]*(\d+(?:\.\d+)?)\s*oz/);
+    if (oz) {
+      const v = Number(oz[1] || oz[2]);
+      if (Number.isFinite(v)) protein += (v / 8) * 8;
+    } else if (/\bglass of milk\b|\bcup of milk\b|\b1 cup\b/.test(text)) {
+      protein += 8;
+    } else {
+      protein += 6;
+    }
+  }
+  if (/\byogurt\b/.test(text)) protein += /\b1\s*cup\b/.test(text) ? 8 : 6;
+  if (/\bbrie\b|\bcream cheese\b|\bcheese\b/.test(text)) protein += 5;
+
+  // Nuts / seeds / peanut butter
+  if (/\bpecans?\b|\bwalnuts?\b|\bnuts?\b|\bhemp seeds?\b/.test(text)) protein += 5;
+  if (/\bpeanut butter\b/.test(text)) protein += 4;
+
+  // Fish / meat / legumes
+  if (/\bprosciutto\b/.test(text)) {
+    const slices = text.match(/(\d+(?:\.\d+)?)\s*slices?\s+(?:of\s+)?prosciutto/);
+    protein += slices ? Number(slices[1]) * 3 : 6;
+  }
+  if (/\bpastrami\b|\bcorned beef\b|\bbeef\b/.test(text)) protein += 10;
+  if (/\bpork\b|\bpork belly\b|\bham\b/.test(text)) protein += 10;
+  if (/\bchicken\b|\bturkey\b/.test(text)) protein += 12;
+  if (/\bsalmon\b|\bsmoked salmon\b|\bsardines?\b|\btuna\b|\boctopus\b|\bpulpo\b|\bshrimp\b|\bfish\b/.test(text)) protein += 14;
+  if (/\bmeatballs?\b|\bshredded meat\b|\bbraised meat\b|\bpulled meat\b/.test(text)) protein += 14;
+  if (/\bsausage\b/.test(text)) protein += 8;
+  if (/\blentil\b/.test(text)) protein += 8;
+  if (/\bbeans?\b/.test(text)) protein += 7;
+  if (/\btofu\b/.test(text)) protein += 8;
+  if (/\bprotein ball\b|\benergy ball\b|\btruffle\b/.test(text)) protein += 3;
+
+  // Dish-level heuristics
+  if (/\bburrito\b/.test(text)) protein += 6;
+  if (/\bdumplings?\b|\bbao buns?\b/.test(text)) protein += 8;
+  if (/\bramen\b/.test(text)) protein += 8;
+
+  // If nothing matched, infer a minimal value from content style
+  if (protein === 0) {
+    if (/\bapple\b|\bkiwi\b|\borange\b|\bgrapes?\b|\bstrawberr(?:y|ies)\b|\bdragon fruit\b|\bguava\b|\bcake\b|\bcookie\b|\bchocolate\b/.test(text)) {
+      protein = 1;
+    } else if (Number.isFinite(caloriesEst) && caloriesEst > 0) {
+      protein = Math.max(1, Math.min(12, Math.round((caloriesEst * 0.12) / 4)));
+    } else if (Number.isFinite(carbsEst) && carbsEst > 0) {
+      protein = Math.max(1, Math.min(8, Math.round(carbsEst * 0.12)));
+    } else {
+      protein = 1;
+    }
+  }
+
+  return Math.round(protein * 10) / 10;
+}
+
 function stripMetadata(entryText) {
   let text = stripPhotos(entryText);
   text = cleanWhitespace(text.replace(BG_REGEX, '').replace(PRED_REGEX, '').replace(PROTEIN_REGEX, '').replace(/\(Carbs:[^)]*\)/g, '').replace(/\(Carbs:[^)]*\|[^)]*\)/g, ''));
@@ -114,6 +184,7 @@ function buildContentHash(entry) {
     photoUrls: entry.photoUrls,
     carbsEst: entry.carbsEst,
     caloriesEst: entry.caloriesEst,
+    proteinEst: entry.proteinEst,
     predicted: entry.predicted,
     actual: entry.actual
   };
@@ -188,8 +259,12 @@ function parseRow(line, lineNumber, pendingPhotos = []) {
   const resolvedPhotos = pendingResolvedPhoto ? [pendingResolvedPhoto] : photos;
   const predictions = extractPredictions(entryText);
   const bgText = extractBgText(entryText);
-  const protein = extractProtein(entryText);
   const title = stripMetadata(entryText);
+  const explicitProtein = extractProtein(entryText);
+  const inferredProtein = (category === 'Food' && explicitProtein == null)
+    ? estimateProteinFromTitle(title, carbs, cals)
+    : null;
+  const protein = explicitProtein ?? inferredProtein;
 
   const normalized = {
     source: {
@@ -206,7 +281,9 @@ function parseRow(line, lineNumber, pendingPhotos = []) {
     title,
     notes: cleanWhitespace([
       bgText ? `BG: ${bgText}` : null,
-      protein ? `Protein: ${protein}g` : null,
+      protein != null
+        ? `Protein: ${protein}g${explicitProtein == null && category === 'Food' ? ' (inferred)' : ''}`
+        : null,
       predictions.raw ? predictions.raw.replace(/^\(|\)$/g, '') : null
     ].filter(Boolean).join('; ')) || null,
     photoUrls: resolvedPhotos,
