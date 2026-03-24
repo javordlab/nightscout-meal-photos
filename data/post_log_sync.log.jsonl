@@ -92,3 +92,5 @@
 {"ts":"2026-03-24T03:35:09.361Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774320306272.1155,"lockTime":"2026-03-24T03:30:00.596Z","lockWaitMs":90000}
 {"ts":"2026-03-24T03:37:39.518Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774320306272.1155,"lockTime":"2026-03-24T03:30:00.596Z","lockWaitMs":90000}
 {"ts":"2026-03-24T03:39:38.824Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774320306272.1155,"lockTime":"2026-03-24T03:30:00.596Z","lockWaitMs":90000}
+{"ts":"2026-03-24T03:41:42.615Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774320306272.1155,"lockTime":"2026-03-24T03:30:00.596Z","lockWaitMs":90000}
+{"ts":"2026-03-24T03:43:39.125Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774320306272.1155,"lockTime":"2026-03-24T03:30:00.596Z","lockWaitMs":90000}
