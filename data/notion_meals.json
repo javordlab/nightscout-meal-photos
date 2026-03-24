@@ -1,7 +1,7 @@
 [
   {
     "id": "32d85ec7-0668-81da-b08e-d2c7e38e1aad",
-    "title": "Dinner: Two-plate meal (BG: 107 mg/dL Flat) (Pred: 180-210 mg/dL @ 7:45-8:15 PM) (Protein: 28g | Carbs: ~65g | Cals: ~520)",
+    "title": "Dinner: Two-plate meal (BG: 107 mg/dL Flat) (Protein: 28g) (Pred: 180-210 mg/dL @ 7:45-8:15 PM)",
     "type": "Dinner",
     "date": "2026-03-23T18:22:00.000-07:00",
     "photo": "https://iili.io/qrar7Db.jpg",
@@ -12,7 +12,7 @@
   },
   {
     "id": "32c85ec7-0668-8110-8028-fc18c37afead",
-    "title": "Snack: Half red apple (~75g) (BG: 111 mg/dL Flat) (Pred: 180-200 mg/dL @ 2:45-3:15 PM) (Protein: 0.3g | Carbs: ~10g | Cals: ~40)",
+    "title": "Snack: Half red apple (~75g) (BG: 111 mg/dL Flat) (Protein: 0.3g) (Pred: 180-200 mg/dL @ 2:45-3:15 PM)",
     "type": "Snack",
     "date": "2026-03-23T13:14:00.000-07:00",
     "photo": "https://iili.io/qrHqxa4.jpg",
@@ -23,7 +23,7 @@
   },
   {
     "id": "32c85ec7-0668-8180-8cd5-e829759e3acb",
-    "title": "Lunch: Japanese meal set (BG: 118 mg/dL Flat) (Pred: 175-195 mg/dL @ 2:30-3:00 PM) (Protein: 22g | Carbs: ~55g | Cals: ~480)",
+    "title": "Lunch: Japanese meal set (BG: 118 mg/dL Flat) (Protein: 22g) (Pred: 175-195 mg/dL @ 2:30-3:00 PM)",
     "type": "Lunch",
     "date": "2026-03-23T13:01:00.000-07:00",
     "photo": "https://iili.io/qr9ztYG.jpg",
@@ -34,7 +34,7 @@
   },
   {
     "id": "32c85ec7-0668-8169-8427-dcd81d97ab8a",
-    "title": "Breakfast: Egg breakfast taco/burrito with scrambled eggs in tortilla + 4 avocado slices on the side (BG: 123 mg/dL Flat) (Pred: 160-175 mg/dL @ 11:15-11:45 AM) (Protein: 18g | Carbs: ~30g | Cals: ~340)",
+    "title": "Breakfast: Egg breakfast taco/burrito with scrambled eggs in tortilla + 4 avocado slices on the side (BG: 123 mg/dL Flat) (Protein: 18g) (Pred: 160-175 mg/dL @ 11:15-11:45 AM)",
     "type": "Breakfast",
     "date": "2026-03-23T09:51:00.000-07:00",
     "photo": "https://iili.io/qghz2Np.jpg",
@@ -45,7 +45,7 @@
   },
   {
     "id": "32c85ec7-0668-81c5-b380-cd9f2417aca8",
-    "title": "Snack: 3 strawberries + glass of whole milk (~8oz) (BG: 161 mg/dL Flat) (Pred: 175-185 mg/dL @ 9:47 PM) (Protein: 9g | Carbs: ~21g | Cals: ~190)",
+    "title": "Snack: 3 strawberries + glass of whole milk (~8oz) (BG: 161 mg/dL Flat) (Protein: 9g) (Pred: 175-185 mg/dL @ 9:47 PM)",
     "type": "Snack",
     "date": "2026-03-22T20:02:00.000-07:00",
     "photo": "https://iili.io/qUFEKx9.jpg",
@@ -56,7 +56,7 @@
   },
   {
     "id": "32c85ec7-0668-8117-bdc9-f274db85e4c1",
-    "title": "Dinner: Sushi assortment (partial — leftovers: 3 pcs) (BG: 140 mg/dL Flat) (Pred: 160-185 mg/dL @ 8:45-9:15 PM) (Protein: 18g | Carbs: ~45g | Cals: ~340)",
+    "title": "Dinner: Sushi assortment (partial — leftovers: 3 pcs) (BG: 140 mg/dL Flat) (Protein: 18g) (Pred: 160-185 mg/dL @ 8:45-9:15 PM)",
     "type": "Dinner",
     "date": "2026-03-22T19:24:00.000-07:00",
     "photo": "https://iili.io/qU2L01s.jpg",
@@ -67,7 +67,7 @@
   },
   {
     "id": "32b85ec7-0668-814c-b754-e1216d42b8bd",
-    "title": "Lunch: Toast with peanut butter, low-sugar passion fruit syrup, and hemp seeds + 250ml radler + dried dragon fruit (BG: 146 mg/dL Flat) (Pred: 175-200 mg/dL @ 5:30-6:00 PM) (Protein: 12g | Carbs: ~70g | Cals: ~525)",
+    "title": "Lunch: Toast with peanut butter, low-sugar passion fruit syrup, and hemp seeds + 250ml radler + dried dragon fruit (BG: 146 mg/dL Flat) (Protein: 12g) (Pred: 175-200 mg/dL @ 5:30-6:00 PM)",
     "type": "Lunch",
     "date": "2026-03-22T16:01:00.000-07:00",
     "photo": "https://iili.io/qSQ09Pj.jpg",
@@ -78,7 +78,7 @@
   },
   {
     "id": "32b85ec7-0668-812f-bb71-dd52cd7a98b2",
-    "title": "Breakfast: Avocado toast (1 slice) with 4 sardines (BG: 121 mg/dL Flat) (Pred: 140-160 mg/dL @ 10:45-11:15 AM) (Peak: 155 mg/dL @ 12:04 PM ✓ within prediction) (Protein: 17g) (Carbs: ~21g | Cals: ~340)",
+    "title": "Breakfast: Avocado toast (1 slice) with 4 sardines (Peak: 155 mg/dL @ 12:04 PM ✓ within prediction) (BG: 121 mg/dL Flat) (Protein: 17g) (Pred: 140-160 mg/dL @ 10:45-11:15 AM)",
     "type": "Breakfast",
     "date": "2026-03-22T09:12:00.000-07:00",
     "photo": "https://iili.io/qSJLrFe.jpg",
@@ -89,7 +89,7 @@
   },
   {
     "id": "32b85ec7-0668-81d6-91bf-c6fb1bda3769",
-    "title": "Dinner: Pulpo a la Gallega (octopus and potatoes with paprika), dark vegetable medley (mushroom/eggplant stew), 3 strawberries, 5oz milk (BG: 127 mg/dL ➡️) (Pred: 190-210 mg/dL @ 8:45-9:15 PM) (Protein: 26g)",
+    "title": "Dinner: Pulpo a la Gallega (octopus and potatoes with paprika), dark vegetable medley (mushroom/eggplant stew), 3 strawberries, 5oz milk (BG: Unknown) (Protein: 26g) (Pred: 190-210 mg/dL @ 8:45-9:15 PM)",
     "type": "Dinner",
     "date": "2026-03-21T18:43:00.000-07:00",
     "photo": "https://iili.io/qvU6O8l.jpg",
