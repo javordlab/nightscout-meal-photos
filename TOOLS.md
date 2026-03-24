@@ -17,6 +17,8 @@
 13. **POST-WRITE READBACK (STRICT):** After every successful log write, immediately `read` `health_log.md` and verify the exact new/updated row exists. Only then send success confirmation.
 14. **FAIL-CLOSED CONFIRMATION:** If write OR readback verification fails, explicitly report "not logged yet" and do not claim completion.
 15. **POST-WRITE SYNC (STRICT):** After every successful log write + readback, immediately run `cd /Users/javier/.openclaw/workspace && node scripts/radial_dispatcher.js` to push the entry to Nightscout, Notion, and MySQL. Do not wait for the cron cycle.
+16. **IMAGE MODEL ENFORCEMENT (STRICT):** Every image interpretation task (meal photos, OCR from images, screenshot interpretation) must be executed with `google-gemini-cli/gemini-3-flash-preview`. Do not use non-Gemini models for image interpretation.
+17. **PHOTO RESPONSE ATTRIBUTION (STRICT):** Every response that includes photo-derived nutrition must include `Vision model: google-gemini-cli/gemini-3-flash-preview` before any logging confirmation.
 
 ## Formatting
 - **Discord/WhatsApp:** Bullet lists only (no tables).
