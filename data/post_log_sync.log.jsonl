@@ -364,3 +364,4 @@
 {"ts":"2026-03-24T15:46:32.065Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774320306272.1155,"lockTime":"2026-03-24T15:30:00.633Z","lockWaitMs":90000}
 {"ts":"2026-03-24T15:50:15.805Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774320306272.1155,"lockTime":"2026-03-24T15:30:00.633Z","lockWaitMs":90000}
 {"ts":"2026-03-24T15:52:01.332Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774320306272.1155,"lockTime":"2026-03-24T15:30:00.633Z","lockWaitMs":90000}
+{"ts":"2026-03-24T15:57:29.213Z","op":"post_log_sync_queued","trigger":"manual_post_log","source":"photo_pipeline_idle","mtimeMs":1774320306272.1155,"lockTime":"2026-03-24T15:30:00.633Z","lockWaitMs":90000}
