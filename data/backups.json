@@ -1,16 +1,16 @@
 {
-  "lastUpdated": "2026-03-24T04:26:20.408Z",
+  "lastUpdated": "2026-03-24T04:57:34.976Z",
   "tokenUsage": [
     {
       "platform": "Kimi (Ollama)",
       "bucketType": "Free",
-      "realTokens": 68036912,
+      "realTokens": 68651488,
       "link": "https://ollama.com"
     },
     {
       "platform": "Gemini Antigravity",
       "bucketType": "Sign in\nwith your Google Account. This account will be available to other Google apps in the browser.\nEmail or phone\nForgot email?\nNot your computer? Use a private browsing window to sign in. Learn more about using Guest mode\nNext\nCreate account\nAfrikaans\nazərbaycan\nbosanski\ncatalà\nČeština\nCymraeg\nDansk\nDeutsch\neesti\nEnglish (United Kingdom)\nEnglish (United States)\nEspañol (España)\nEspañol (Latinoamérica)\neuskara\nFilipino\nFrançais (Canada)\nFrançais (France)\nGaeilge\ngalego\nHrvatski\nIndonesia\nisiZulu\níslenska\nItaliano\nKiswahili\nlatviešu\nlietuvių\nmagyar\nMelayu\nNederlands\nnorsk\no‘zbek\npolski\nPortuguês (Brasil)\nPortuguês (Portugal)\nromână\nshqip\nSlovenčina\nslovenščina\nsrpski (latinica)\nSuomi\nSvenska\nTiếng Việt\nTürkçe\nΕλληνικά\nбеларуская\nбългарски\nкыргызча\nқазақ тілі\nмакедонски\nмонгол\nРусский\nсрпски (ћирилица)\nУкраїнська\nქართული\nհայերեն\n‫עברית‬\n‫اردو‬\n‫العربية‬\n‫فارسی‬\nአማርኛ\nनेपाली\nमराठी\nहिन्दी\nঅসমীয়া\nবাংলা\nਪੰਜਾਬੀ\nગુજરાતી\nଓଡ଼ିଆ\nதமிழ்\nతెలుగు\nಕನ್ನಡ\nമലയാളം\nසිංහල\nไทย\nລາວ\nမြန်မာ\nខ្មែរ\n한국어\n中文（香港）\n日",
-      "realTokens": 898253,
+      "realTokens": 876627,
       "link": "https://aistudio.google.com/app/plan"
     },
     {
@@ -21,8 +21,8 @@
     }
   ],
   "database": {
-    "glucose": 8109,
-    "notion": 516
+    "glucose": 8115,
+    "notion": 521
   },
   "syncHistory": [
     {
@@ -163,17 +163,17 @@
     {
       "date": "2026-03-21",
       "glucose": 7486,
-      "notion": 486
+      "notion": 488
     },
     {
       "date": "2026-03-22",
       "glucose": 7772,
-      "notion": 501
+      "notion": 506
     },
     {
       "date": "2026-03-23",
       "glucose": 8059,
-      "notion": 516
+      "notion": 521
     }
   ],
   "glucoseTrend": [
@@ -32612,6 +32612,30 @@
     {
       "t": "2026-03-24T04:24:39.000Z",
       "v": 124
+    },
+    {
+      "t": "2026-03-24T04:29:39.000Z",
+      "v": 129
+    },
+    {
+      "t": "2026-03-24T04:34:39.000Z",
+      "v": 126
+    },
+    {
+      "t": "2026-03-24T04:39:40.000Z",
+      "v": 120
+    },
+    {
+      "t": "2026-03-24T04:44:40.000Z",
+      "v": 120
+    },
+    {
+      "t": "2026-03-24T04:49:40.000Z",
+      "v": 118
+    },
+    {
+      "t": "2026-03-24T04:54:49.000Z",
+      "v": 122
     }
   ],
   "backups": [
