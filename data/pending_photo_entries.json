@@ -36,5 +36,22 @@
     "fileUniqueId": null,
     "nextAttemptAt": null,
     "lastError": null
+  },
+  {
+    "queuedAt": "2026-03-24T01:23:41.636Z",
+    "attempts": 0,
+    "uploadStatus": "uploaded",
+    "mediaKind": "image",
+    "filePrefix": "file_197",
+    "sourcePath": "/Users/javier/.openclaw/media/inbound/file_197---f41fd39c-2404-4e22-aba3-79e056f02617.jpg",
+    "timestamp": "2026-03-24T01:22:59.455Z",
+    "mealType": "Dinner",
+    "photoUrl": "https://iili.io/qrar7Db.jpg",
+    "reason": "nutrition_metadata_required_before_log",
+    "messageId": null,
+    "updateId": null,
+    "contentType": null,
+    "fileId": null,
+    "fileUniqueId": null
   }
 ]
