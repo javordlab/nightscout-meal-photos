@@ -1,7 +1,7 @@
 # Daily Health Sync Ops Report
 
-- Window: 2026-03-23T00:08:36.426Z → 2026-03-24T00:08:36.426Z
-- Generated: 2026-03-24T00:08:36.440Z
+- Window: 2026-03-23T00:08:17.821Z → 2026-03-24T00:08:17.821Z
+- Generated: 2026-03-24T00:08:17.845Z
 
 ## Summary
 - Immediate sync attempts (manual_post_log): 15
@@ -9,7 +9,7 @@
 - Immediate sync queued due to lock: 15
 - Immediate sync errors: 0
 - Sync lock currently present: YES
-- Sync lock age (minutes): 9
+- Sync lock age (minutes): 8
 - NS fallback matches: 0
 - NS ambiguous conflicts: 0
 - NS duplicate-key conflicts: 0
@@ -28,7 +28,7 @@
 ## Still pending
 - Pending photo retries unresolved: 0
 - Pending nutrition metadata items: 2
-- Sync lock still present (age ~9 min)
+- Sync lock still present (age ~8 min)
 - Validation warnings currently present: 2
 - Backlog items still open (top):
   - **Temporary safeguard:** enforce per-user minimum 2-minute spacing between logged events to avoid NS fallback timestamp collisions.

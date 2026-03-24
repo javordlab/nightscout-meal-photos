@@ -186,6 +186,48 @@ function loadPendingBacklogItems(todoPath) {
 }
 
 function sendEmail(to, subject, bodyFilePath) {
+  const smtpFrom = process.env.DAILY_REPORT_EMAIL_FROM || process.env.EMAIL_FROM || '';
+  const smtpPass = process.env.DAILY_REPORT_EMAIL_PASS || process.env.EMAIL_PASS || '';
+  const smtpServer = process.env.DAILY_REPORT_SMTP_SERVER || process.env.SMTP_SERVER || 'mail.sonic.net';
+  const smtpPort = Number(process.env.DAILY_REPORT_SMTP_PORT || process.env.SMTP_PORT || 587);
+
+  if (smtpFrom && smtpPass) {
+    const py = [
+      'import os, smtplib, pathlib',
+      'from email.mime.text import MIMEText',
+      'to=os.environ["REPORT_TO"]',
+      'subject=os.environ["REPORT_SUBJECT"]',
+      'body=pathlib.Path(os.environ["REPORT_BODY_FILE"]).read_text()',
+      'sender=os.environ["REPORT_FROM"]',
+      'server=os.environ["REPORT_SMTP_SERVER"]',
+      'port=int(os.environ["REPORT_SMTP_PORT"])',
+      'msg=MIMEText(body)',
+      'msg["Subject"]=subject',
+      'msg["From"]=sender',
+      'msg["To"]=to',
+      's=smtplib.SMTP(server, port, timeout=30)',
+      's.starttls()',
+      's.login(sender, os.environ["REPORT_SMTP_PASS"])',
+      's.sendmail(sender, [to], msg.as_string())',
+      's.quit()'
+    ].join('; ');
+
+    execSync(`/usr/bin/python3 -c ${JSON.stringify(py)}`, {
+      stdio: 'inherit',
+      env: {
+        ...process.env,
+        REPORT_TO: to,
+        REPORT_SUBJECT: subject,
+        REPORT_BODY_FILE: bodyFilePath,
+        REPORT_FROM: smtpFrom,
+        REPORT_SMTP_SERVER: smtpServer,
+        REPORT_SMTP_PORT: String(smtpPort),
+        REPORT_SMTP_PASS: smtpPass
+      }
+    });
+    return;
+  }
+
   const escapedSubject = subject.replace(/"/g, '\\"');
   execSync(`/usr/bin/mail -s "${escapedSubject}" ${to} < "${bodyFilePath}"`, { stdio: 'inherit' });
 }
