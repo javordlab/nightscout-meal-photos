@@ -1,5 +1,7 @@
 # Health Log
 
+| 2026-03-24 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |
+| 2026-03-24 | 09:10 -07:00 | Maria Dennis | Medication | - | Metformin 500mg (breakfast) | null | null |
 | 2026-03-23 | 19:44 -07:00 | Maria Dennis | Activity | - | 15 minutes walk (BG: 120 mg/dL Flat) | null | null |
 | 2026-03-23 | 19:22 -07:00 | Maria Dennis | Food | Snack | Snack: 4 strawberries + 4oz milk (~118ml) (BG: 126 mg/dL Flat) (Pred: 135-145 mg/dL @ 8:30 PM) (Protein: 4g | Carbs: ~12g | Cals: ~75) | 12 | 75 |
 | 2026-03-23 | 19:00 -07:00 | Maria Dennis | Medication | - | Metformin 1000mg (dinner) | null | null |
