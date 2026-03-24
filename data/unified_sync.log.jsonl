@@ -6241,3 +6241,7 @@
 {"ts":"2026-03-24T10:00:24.895Z","op":"gallery_link","entryKey":"sha256:377ffd272cfbafde4cafd3e8255dd54ff15b07c3e8cb3b110a38587439d744e3","galleryId":"32b85ec7-0668-81d6-91bf-c6fb1bda3769"}
 {"ts":"2026-03-24T10:00:24.993Z","op":"ns_recovered_by_id","entryKey":"sha256:157a866a8c6444cb20ca92c4644683dbf57a9caeb9d433de5621c2a1ca967a71","treatmentId":"69bf3194911a8ea261e67506"}
 {"ts":"2026-03-24T10:00:26.208Z","op":"notion_patch","entryKey":"sha256:157a866a8c6444cb20ca92c4644683dbf57a9caeb9d433de5621c2a1ca967a71","pageId":"32b85ec7-0668-81bd-955c-d9253bf91792"}
+{"ts":"2026-03-24T10:18:25.174Z","op":"ns_created","entryKey":"sha256:med-1300","treatmentId":"mock-1"}
+{"ts":"2026-03-24T10:18:25.175Z","op":"ns_created","entryKey":"sha256:food-1301","treatmentId":"mock-2"}
+{"ts":"2026-03-24T10:18:25.176Z","op":"ns_created","entryKey":"sha256:med-1300","treatmentId":"mock-1"}
+{"ts":"2026-03-24T10:18:25.176Z","op":"ns_created","entryKey":"sha256:food-1301","treatmentId":"mock-2"}
