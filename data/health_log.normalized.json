@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-24T01:24:52.976Z",
+  "generatedAt": "2026-03-24T01:30:01.034Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
   "entryCount": 295,
   "entries": [
@@ -8,7 +8,7 @@
       "source": {
         "file": "health_log.md",
         "line": 3,
-        "rawRow": "| 2026-03-23 | 18:22 -07:00 | Maria Dennis | Food | Dinner | Dinner: Two-plate meal (BG: 107 mg/dL Flat) (Pred: 180-210 mg/dL @ 7:45-8:15 PM) (Protein: 28g | Carbs: ~65g | Cals: ~520) | 65 | 520 |"
+        "rawRow": "| 2026-03-23 | 18:22 -07:00 | Maria Dennis | Food | Dinner | Dinner: Two-plate meal (BG: 107 mg/dL Flat) (Pred: 180-210 mg/dL @ 7:45-8:15 PM) (Protein: 28g | Carbs: ~65g | Cals: ~520) [📷](https://iili.io/qrar7Db.jpg) | 65 | 520 |"
       },
       "timestamp": "2026-03-23T18:22:00-07:00",
       "date": "2026-03-23",
@@ -18,7 +18,9 @@
       "mealType": "Dinner",
       "title": "Dinner: Two-plate meal",
       "notes": "BG: 107 mg/dL Flat; Protein: 28g; Pred: 180-210 mg/dL @ 7:45-8:15 PM",
-      "photoUrls": [],
+      "photoUrls": [
+        "https://iili.io/qrar7Db.jpg"
+      ],
       "carbsEst": 65,
       "caloriesEst": 520,
       "proteinEst": 28,
@@ -43,7 +45,7 @@
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:63741a19d140f3f266505fede149decf6d5e9889365771a1c8fc0b378577bd16",
-      "contentHash": "sha256:faa526aae41d0885e3a978df44fa3ea5080c01d02443ce1074ee075a9921799a"
+      "contentHash": "sha256:6df86d8103f6512f0deb4f6771d48a3ebd914359b5d44b5b4330a3e7a504ec61"
     },
     {
       "source": {
