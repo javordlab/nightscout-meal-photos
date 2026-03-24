@@ -1,27 +1,27 @@
 {
-  "lastUpdated": "2026-03-24T16:24:44.099Z",
+  "lastUpdated": "2026-03-24T16:55:32.259Z",
   "tokenUsage": [
     {
       "platform": "Kimi (Ollama)",
       "bucketType": "Free",
-      "realTokens": 38165417,
+      "realTokens": 36602843,
       "link": "https://ollama.com"
     },
     {
       "platform": "Gemini Antigravity",
       "bucketType": "Sign in\nwith your Google Account. This account will be available to other Google apps in the browser.\nEmail or phone\nForgot email?\nNot your computer? Use a private browsing window to sign in. Learn more about using Guest mode\nNext\nCreate account\nAfrikaans\nazərbaycan\nbosanski\ncatalà\nČeština\nCymraeg\nDansk\nDeutsch\neesti\nEnglish (United Kingdom)\nEnglish (United States)\nEspañol (España)\nEspañol (Latinoamérica)\neuskara\nFilipino\nFrançais (Canada)\nFrançais (France)\nGaeilge\ngalego\nHrvatski\nIndonesia\nisiZulu\níslenska\nItaliano\nKiswahili\nlatviešu\nlietuvių\nmagyar\nMelayu\nNederlands\nnorsk\no‘zbek\npolski\nPortuguês (Brasil)\nPortuguês (Portugal)\nromână\nshqip\nSlovenčina\nslovenščina\nsrpski (latinica)\nSuomi\nSvenska\nTiếng Việt\nTürkçe\nΕλληνικά\nбеларуская\nбългарски\nкыргызча\nқазақ тілі\nмакедонски\nмонгол\nРусский\nсрпски (ћирилица)\nУкраїнська\nქართული\nհայերեն\n‫עברית‬\n‫اردو‬\n‫العربية‬\n‫فارسی‬\nአማርኛ\nनेपाली\nमराठी\nहिन्दी\nঅসমীয়া\nবাংলা\nਪੰਜਾਬੀ\nગુજરાતી\nଓଡ଼ିଆ\nதமிழ்\nతెలుగు\nಕನ್ನಡ\nമലയാളം\nසිංහල\nไทย\nລາວ\nမြန်မာ\nខ្មែរ\n한국어\n中文（香港）\n日",
-      "realTokens": 876627,
+      "realTokens": 411597,
       "link": "https://aistudio.google.com/app/plan"
     },
     {
       "platform": "OpenAI Codex",
       "bucketType": "Pay-as-you-go",
-      "realTokens": 4235018,
+      "realTokens": 5070884,
       "link": "https://platform.openai.com/usage"
     }
   ],
   "database": {
-    "glucose": 8252,
+    "glucose": 8259,
     "notion": 523
   },
   "syncHistory": [
@@ -172,7 +172,7 @@
     },
     {
       "date": "2026-03-24",
-      "glucose": 8252,
+      "glucose": 8259,
       "notion": 523
     }
   ],
@@ -33184,6 +33184,34 @@
     {
       "t": "2026-03-24T16:19:38.000Z",
       "v": 117
+    },
+    {
+      "t": "2026-03-24T16:24:39.000Z",
+      "v": 114
+    },
+    {
+      "t": "2026-03-24T16:29:39.000Z",
+      "v": 112
+    },
+    {
+      "t": "2026-03-24T16:34:39.000Z",
+      "v": 111
+    },
+    {
+      "t": "2026-03-24T16:39:40.000Z",
+      "v": 110
+    },
+    {
+      "t": "2026-03-24T16:44:39.000Z",
+      "v": 107
+    },
+    {
+      "t": "2026-03-24T16:49:38.000Z",
+      "v": 105
+    },
+    {
+      "t": "2026-03-24T16:54:47.000Z",
+      "v": 111
     }
   ],
   "backups": [
