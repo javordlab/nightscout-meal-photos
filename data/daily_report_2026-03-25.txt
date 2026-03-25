@@ -1,0 +1,57 @@
+🩺 DAILY HEALTH REPORT
+📅 Date: 2026-03-25
+🕒 Coverage window: 2026-03-25 00:00 – now (America/Los_Angeles)
+⚙️ Generated time: 2026-03-25T16:32:01.108Z
+🤖 Model: anthropic/claude-sonnet-4-6
+
+1) 📊 Today's Glucose Summary
+- Average glucose: 97.4 mg/dL
+- Time in Range (70-180): 100.0%
+- GMI: 5.64%
+- Standard deviation: 7.6 mg/dL
+- CV: 7.8%
+- Data points used: 114
+
+2) 📉 14-day Trends (ending 2026-03-25)
+- Average glucose: 124.5 mg/dL
+- Time in Range (70-180): 99.6%
+- GMI: 6.29%
+- Standard deviation: 21.7 mg/dL
+- CV: 17.4%
+- Data points used: 1138
+
+3) 🍽️ Nutrition (2026-03-25)
+- Meals logged: 0
+- Total carbs: 0.0 g
+- Total calories: 0 kcal
+- Total protein: 0.0 g
+
+4) 🧾 Meal Details (2026-03-25)
+- No food entries logged
+
+5) 📚 Nutrition Baseline (14-day daily average ending 2026-03-25)
+- Average carbs/day: 152.3 g
+- Average calories/day: 1505.3 kcal
+- Average protein/day: 84.7 g
+- Average meals/day: 4.8
+- Days in window with food entries: 13
+
+6) 💊 Medication Status (2026-03-25)
+- No medication entries logged
+
+7) 🚨 Outliers (2026-03-25)
+- High readings >180: 0
+- Low readings <70: 0
+- Max glucose: 130 mg/dL at 2026-03-25T16:19:45.000Z
+
+8) 🧠 Extended Supervisor Analysis
+- Nice work overall today: Strong Time in Range at 100.0% | Limited high excursions (>180 mg/dL): 0 | No hypoglycemia episodes (<70 mg/dL).
+- Key trend signals: avg glucose vs 14-day baseline -27.1 mg/dL, TIR delta 0.4%, carbs delta -152.3 g, calories delta -1505 kcal.
+- Friendly focus for tomorrow: No urgent corrections needed—just keep the same consistency and momentum.
+- You’re doing great—small consistent habits keep adding up. Keep it going 🌟
+
+9) 🛡️ Self-Audit (Data Integrity)
+- Target day enforced: 2026-03-25 PT
+- Glucose points in target window: 114
+- GMI formula check (3.31 + 0.02392 × Avg): 5.64%
+- Reported GMI: 5.64%

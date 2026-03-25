@@ -1,5 +1,10 @@
 # Health Log
 
+| 2026-03-25 | 09:33 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Half bagel with cream cheese and smoked salmon (BG: 112 mg/dL Flat) (Pred: 150-170 mg/dL @ 11:00 AM) (Protein: 22g | Carbs: ~28g | Cals: ~320) |  28 | 320 |
+| 2026-03-25 | 09:33 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 112 mg/dL Flat) | null | null |
+| 2026-03-25 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 112 mg/dL Flat) | null | null |
+| 2026-03-25 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 112 mg/dL Flat) | null | null |
+| 2026-03-25 | 09:05 -07:00 | Maria Dennis | Medication | - | Medication: Rosuvastatin 10mg (Scheduled) (BG: 112 mg/dL Flat) | null | null |
 | 2026-03-24 | 20:06 -07:00 | Maria Dennis | Activity | - | 25 minutes walk | null | null |
 | 2026-03-24 | 19:27 -07:00 | Maria Dennis | Food | Dinner | Dinner: Small slice of sponge cake with 1 tsp peanut butter and 1 small strawberry (BG: 132 mg/dL Flat) (Pred: 165-180 mg/dL @ 9:12 PM) (Protein: ~4g | Carbs: ~16g | Cals: ~135) [📷](https://iili.io/q6t2ubp.jpg) | 16 | 135 |
 | 2026-03-24 | 19:06 -07:00 | Maria Dennis | Food | Dinner | Dinner: Beef and onion stir-fry over rice with sliced cucumber, plus a pink lemonade drink (BG: 115 mg/dL Flat) (Pred: 254-274 mg/dL @ 8:41 PM) (Protein: 24g | Carbs: ~48g | Cals: ~580) [📷](https://iili.io/q6ZFWBt.jpg) | 48 | 580 |

@@ -21,3 +21,6 @@
 {"ts":"2026-03-24T16:32:01.522Z","op":"report_marked_sent","source":"watchdog_fallback","dateLA":"2026-03-24"}
 {"ts":"2026-03-24T16:32:01.550Z","op":"fallback_sent","dateLA":"2026-03-24","command":"/opt/homebrew/bin/node scripts/health-sync/send_fallback_report.js"}
 {"ts":"2026-03-24T16:32:01.551Z","op":"watchdog_alert","generatedAt":"2026-03-24T16:32:01.551Z","severity":"critical","reason":"missing_0930_report","dateLA":"2026-03-24","lastReportAt":"2026-03-23T16:32:01.244Z","fallbackTriggered":true}
+{"ts":"2026-03-25T16:32:05.976Z","op":"report_marked_sent","source":"watchdog_fallback","dateLA":"2026-03-25"}
+{"ts":"2026-03-25T16:32:06.018Z","op":"fallback_sent","dateLA":"2026-03-25","command":"/opt/homebrew/bin/node scripts/health-sync/send_fallback_report.js"}
+{"ts":"2026-03-25T16:32:06.020Z","op":"watchdog_alert","generatedAt":"2026-03-25T16:32:06.019Z","severity":"critical","reason":"missing_0930_report","dateLA":"2026-03-25","lastReportAt":"2026-03-24T16:32:01.521Z","fallbackTriggered":true}
