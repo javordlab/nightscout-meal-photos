@@ -1,12 +1,12 @@
 [
   {
     "id": "32e85ec7-0668-81e2-a1d4-fd5d258a8291",
-    "title": "Dinner: Small slice of sponge cake topped with cream/custard and fresh strawberry slices (BG: 132 mg/dL Flat) (Pred: 170-190 mg/dL @ 9:02 PM) (Protein: 3g | Carbs: ~22g | Cals: ~190)",
+    "title": "Dinner: Small slice of sponge cake with 1 tsp peanut butter and 1 small strawberry (BG: 132 mg/dL Flat) (Pred: 165-180 mg/dL @ 9:12 PM) (Protein: ~4g | Carbs: ~16g | Cals: ~135)",
     "type": "Dinner",
     "date": "2026-03-24T19:27:00.000-07:00",
     "photo": "https://iili.io/q6t2ubp.jpg",
-    "carbs": 22,
-    "cals": 190,
+    "carbs": 16,
+    "cals": 135,
     "delta": null,
     "peak": null
   },
@@ -306,17 +306,6 @@
     "cals": 570,
     "delta": 38,
     "peak": 192
-  },
-  {
-    "id": "32885ec7-0668-81a9-9fa1-c732a8e278fc",
-    "title": "Breakfast: Ciabatta bread (~60g), avocado (~75g), prosciutto (~15g, 1 slice), milk (~1 cup) (BG: 102 mg/dL Flat) (Pred: 140-155 mg/dL @ 11:15-11:45 AM) (Protein: 26g | Carbs: ~48g | Cals: ~360)",
-    "type": "Breakfast",
-    "date": "2026-03-19T09:48:00.000-07:00",
-    "photo": "https://iili.io/qN52xM7.jpg",
-    "carbs": 48,
-    "cals": 360,
-    "delta": 70,
-    "peak": 172
   },
   {
     "id": "32a85ec7-0668-8166-9df9-f27a670ea1ac",
