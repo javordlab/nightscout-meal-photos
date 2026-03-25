@@ -11,6 +11,7 @@
 ## P0 TELEGRAM REPLY RULES (NON-NEGOTIABLE)
 - **BG IN EVERY REPLY:** Before sending any Telegram reply that acknowledges a food/medication/activity log or correction, fetch the current BG from Nightscout (`/api/v1/entries.json?count=1`). Include it in the reply as `Current BG: [value] mg/dL [trend]`. If the fetch fails, state `Current BG: unavailable` — never silently omit it.
 - **NO FAKE CONFIRMATIONS:** Never reply "updated ✅", "logged ✅", or any success language unless the write to `health_log.md` + readback verification + `radial_dispatcher.js` sync have all completed successfully in the current turn. If any step fails, reply with the failure explicitly.
+- **WRITE LEDGER ENFORCEMENT (Added 2026-03-24):** Every successful write to `health_log.md` is automatically recorded to `data/write_ledger.jsonl` by the PostToolUse hook (`record_write_to_ledger.js`). The PreToolUse Telegram guard checks this ledger before any Telegram send — if no matching write exists in the last 30 min, it injects a hard block warning. Do NOT override or bypass this guard. A separate cron audit (`audit_telegram_confirmations.js`, every 2h) cross-references the ledger against the normalized log as a safety net.
 - **CORRECTIONS REQUIRE FULL SYNC:** Any correction received in Telegram (changed description, macros, timing) must: (1) edit `health_log.md`, (2) readback to verify, (3) run `radial_dispatcher.js`, (4) confirm Nightscout and Notion updated. Only then send confirmation.
 
 ## Silence & Error Handling (STRICT)
@@ -39,4 +40,32 @@
 - **FOOD ENTRY FORMAT (REQUIRED):** Use exact pattern `[Meal Type]: [Description] (BG: [Value] [Trend]) (Pred: [Range] mg/dL @ [Time]) (Protein: [P]g | Carbs: ~[C]g | Cals: ~[CAL])`. The meal-type prefix (`Breakfast:`, `Lunch:`, `Snack:`, `Dinner:`, `Dessert:`) must appear in entry text.
 - **FOOD DESCRIPTION ACCURACY (NON-NEGOTIABLE):** Description must match the submitted photo/caption content. Never invent/substitute meal descriptions. If uncertain, mark uncertainty and queue refinement.
 - **TIMEZONE POLICY (SYSTEM-WIDE):** Always use host-local dynamic timezone for timestamps/offsets. Never hardcode timezone offsets (`-07:00`, `-08:00`, etc.) unless a target API explicitly requires a specific format.
+- **MEDICATION FORMAT (REQUIRED):** Every Medication entry must follow: `Medication: [Med Name] [Dose] ([Time Context]) (BG: [Value] [Trend])`. Example: `Medication: Metformin 500mg (breakfast) (BG: 124 mg/dL Flat)`.
+- **SILENT LOGGING:** Food, Medication, and Exercise entries are auto-logged immediately without asking for confirmation. Photos are optional — log the entry either way.
+- **DATA INTEGRITY:** All dashboard data and visual charts must be pushed to GitHub at the end of every sync cycle.
 - **TOOLS:** Refer to `SKILL.md` for tools and `TOOLS.md` for local configuration/notes.
+
+## Radial Architecture & Sync
+- **SSoT:** `health_log.md` is the only source of truth. All syncs (Notion, Nightscout, MySQL) trigger every 30 minutes and after any manual log update. Downstream systems are overwritten — never edit them directly.
+- **PROJECTIONS & OUTCOMES:** Every Food entry MUST have `Predicted Peak BG` and `Predicted Peak Time` calculated immediately upon logging. After ~3 hours, automatically backfill actual outcomes (Pre-Meal BG, 2hr Peak BG, Peak Time, BG Delta, etc.). Backfill runs every 2 hours via cron.
+
+## Reporting (Daily 9:30 AM PT)
+- Must include: 24-hour summary (Avg, TIR, GMI), 14-day trends (GMI, Avg, TIR, CV), Nutrition (24h full + 14d avg), Medication status, Outliers, and Supervisor Analysis.
+- **Accuracy (NON-NEGOTIABLE):** Metrics must use exact script-calculated math from the correct LA timeframe. No stale windows, no approximations.
+- **Tone:** Keep "Extended Supervisor Analysis" as a single combined, casual/friendly grouping — do not split into sub-sections.
+- **Delivery:** Primary 09:30 report sent by `send_daily_health_report_telegram.js` (system crontab), which validates target date/timeframe and fails closed. 09:37 chart cron is fallback-only and idempotent.
+- **Model name:** Every daily report must explicitly state the model name used to generate it.
+
+## Strict Data Rule — NEVER EYEBALL (NON-NEGOTIABLE)
+When reporting any numerical values (glucose, carbs, calories, TIR, GMI, etc.):
+1. Execute the calculation scripts (`calculate_glucose_summary.js`, `calculate_14d_stats.js`)
+2. Use the EXACT output values in reports
+3. Do not round or approximate unless the script already does
+4. Never invent numbers — if data is missing, state "Data unavailable" instead of guessing
+
+## Model Escalation Policy
+| Trigger | Escalate To |
+|---------|-------------|
+| Routine sync / dashboards / CRUD | Keep `ollama/kimi-k2.5:cloud` |
+| Cross-system mismatch after first fix | `google-gemini-cli/gemini-3-flash-preview` |
+| Persistent high-risk bug (idempotency, dedupe, data integrity) | `openai-codex/gpt-5.3-codex` |

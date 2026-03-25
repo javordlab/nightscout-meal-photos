@@ -434,37 +434,17 @@ function writeLinkMetrics(metrics) {
 
 // Main processing loop
 async function main() {
-  console.log('Photo Pipeline Starting...', new Date().toISOString());
-
-  // Refresh Telegram updates via single ingest source, then classify from local cache (best effort)
-  try {
-    execSync('cd /Users/javier/.openclaw/workspace && node scripts/telegram_ingest_updates.js', {
-      stdio: 'pipe',
-      timeout: 30000
-    });
-    execSync('cd /Users/javier/.openclaw/workspace && node scripts/telegram_classify_updates.js', {
-      stdio: 'pipe',
-      timeout: 30000
-    });
-  } catch (e) {
-    console.log('Telegram ingest/classifier refresh skipped:', e.message);
-  }
-
+  // Fast-exit: check for unprocessed files before any network calls
   const state = loadState();
-  const envelopes = loadTelegramEnvelopes();
   const allFiles = fs.readdirSync(INBOUND_DIR)
     .filter(f => f.match(/\.(jpg|jpeg|png)$/i));
-  
-  // Build map of prefixes to actual files
+
   const prefixToFile = new Map();
   for (const f of allFiles) {
     const prefix = getFilePrefix(f);
-    if (!prefixToFile.has(prefix)) {
-      prefixToFile.set(prefix, f);
-    }
+    if (!prefixToFile.has(prefix)) prefixToFile.set(prefix, f);
   }
-  
-  // Filter out already processed (by prefix). Failed items are retried up to MAX_RETRIES.
+
   const filesToProcess = [];
   for (const [prefix, filename] of prefixToFile) {
     const failEntry = state.failed.find(f => f.file === prefix);
@@ -479,7 +459,31 @@ async function main() {
       });
     }
   }
-  
+
+  if (filesToProcess.length === 0) {
+    console.log('No new photos to process');
+    return;
+  }
+
+  console.log('Photo Pipeline Starting...', new Date().toISOString());
+  console.log(`Found ${filesToProcess.length} unprocessed photos`);
+
+  // Refresh Telegram envelopes now that we know there's work to do
+  try {
+    execSync('cd /Users/javier/.openclaw/workspace && node scripts/telegram_ingest_updates.js', {
+      stdio: 'pipe',
+      timeout: 30000
+    });
+    execSync('cd /Users/javier/.openclaw/workspace && node scripts/telegram_classify_updates.js', {
+      stdio: 'pipe',
+      timeout: 30000
+    });
+  } catch (e) {
+    console.log('Telegram ingest/classifier refresh skipped:', e.message);
+  }
+
+  const envelopes = loadTelegramEnvelopes();
+
   // Sort by modification time (oldest first)
   filesToProcess.sort((a, b) => a.mtime - b.mtime);
 
@@ -490,23 +494,7 @@ async function main() {
     unmatched: 0,
     matchedWithCaption: 0
   };
-  
-  if (filesToProcess.length === 0) {
-    console.log('No new photos to process');
-    writeLinkMetrics(linkMetrics);
-    try {
-      execSync('cd /Users/javier/.openclaw/workspace && node scripts/health-sync/trigger_post_log_sync.js --source=photo_pipeline_idle', {
-        stdio: 'inherit',
-        timeout: 60000
-      });
-    } catch (e) {
-      console.error('Post-log sync trigger failed:', e.message);
-    }
-    return;
-  }
-  
-  console.log(`Found ${filesToProcess.length} unprocessed photos`);
-  
+
   for (const file of filesToProcess) {
     console.log(`\nProcessing: ${file.name} (prefix: ${file.prefix})`);
     const envelopeMatch = findEnvelopeForFile(file, envelopes, state);
@@ -639,27 +627,22 @@ async function main() {
 
   state.lastRun = new Date().toISOString();
   saveState(state);
-  
+
+  const newlyProcessed = linkMetrics.totalFiles - linkMetrics.unmatched;
   console.log('\nPipeline Complete');
   console.log(`Processed: ${state.processed.length} total`);
   console.log(`Failed: ${state.failed.length} total`);
-  
-  // Run sync after adding entries
-  console.log('\nTriggering unified sync...');
-  try {
-    execSync('cd /Users/javier/.openclaw/workspace && node scripts/health-sync/unified_sync.js --since=$(date -v-2d +%Y-%m-%d)', {
-      stdio: 'inherit',
-      timeout: 120000
-    });
-  } catch (e) {
-    console.error('Unified sync failed, falling back to radial dispatcher:', e.message);
+
+  // Only trigger sync if entries were actually written; radial_dispatcher cron handles routine sync
+  if (newlyProcessed > 0) {
+    console.log('\nTriggering post-log sync...');
     try {
-      execSync('cd /Users/javier/.openclaw/workspace && node scripts/radial_dispatcher.js', {
+      execSync('cd /Users/javier/.openclaw/workspace && node scripts/health-sync/trigger_post_log_sync.js --source=photo_pipeline', {
         stdio: 'inherit',
-        timeout: 120000
+        timeout: 60000
       });
-    } catch (fallbackErr) {
-      console.error('Fallback sync failed:', fallbackErr.message);
+    } catch (e) {
+      console.error('Post-log sync trigger failed:', e.message);
     }
   }
 }

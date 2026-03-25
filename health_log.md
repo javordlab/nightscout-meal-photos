@@ -6,6 +6,7 @@
 | 2026-03-24 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 110 mg/dL Flat) | null | null |
 | 2026-03-24 | 15:45 -07:00 | Maria Dennis | Food | Snack | Snack: Half large strawberry (BG: 103 mg/dL Flat) (Pred: 108-122 mg/dL @ 5:20 PM) (Protein: 0.1g | Carbs: ~2g | Cals: ~8) [📷](https://iili.io/q6Nvaix.jpg) | 2 | 8 |
 | 2026-03-24 | 15:42 -07:00 | Maria Dennis | Food | Snack | Snack: Milk cheese cake bite (~1/2 piece from packaged milk cheese cake) (BG: 103 mg/dL Flat) (Pred: 145-165 mg/dL @ 5:17 PM) (Protein: 3g | Carbs: ~12g | Cals: ~120) [📷](https://iili.io/q6N1xig.jpg) | 12 | 120 |
+| 2026-03-24 | 11:11 -07:00 | Maria Dennis | Activity | - | 30 minutes walk uphill | null | null |
 | 2026-03-24 | 12:46 -07:00 | Maria Dennis | Food | Lunch | Lunch: Dim sum meal (stir-fried beef with scallions/onions, chicken feet, 2 siu mai dumplings, small noodle bowl, and scallion pancake) (BG: 136 mg/dL Flat) (Pred: 238-258 mg/dL @ 2:21 PM) (Protein: 24g | Carbs: ~45g | Cals: ~540) [📷](https://iili.io/q6TjZVs.jpg) | 45 | 540 |
 | 2026-03-24 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 136 mg/dL Flat) | null | null |
 | 2026-03-24 | 10:08 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Half cheese quesadilla (flour tortilla + cheese), Apple slices (~⅓–½ small apple), Avocado slices (~¼ avocado) (BG: 116 mg/dL Flat) (Pred: 196-216 mg/dL @ 11:43 AM) (Protein: 14g | Carbs: ~30g | Cals: ~320) [📷](https://iili.io/q4tyGBS.jpg) | 30 | 320 |

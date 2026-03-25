@@ -1,0 +1,316 @@
+#!/usr/bin/env node
+/**
+ * cron_health_watchdog.js — Monitor cron job health and alert on staleness.
+ *
+ * Checks all enabled jobs in jobs.json against their expected run intervals.
+ * Sends Telegram DM to Javi (8335333215) if any job is overdue by >2× its interval.
+ * Writes status to data/cron_watchdog_status.json.
+ *
+ * Run: node scripts/health-sync/cron_health_watchdog.js
+ */
+
+'use strict';
+
+const fs = require('fs');
+const https = require('https');
+const path = require('path');
+
+const WORKSPACE = '/Users/javier/.openclaw/workspace';
+const DATA_DIR = path.join(WORKSPACE, 'data');
+const JOBS_PATH = '/Users/javier/.openclaw/cron/jobs.json';
+const REPORT_STATUS_PATH = path.join(DATA_DIR, 'report_status.json');
+const OUTPUT_PATH = path.join(DATA_DIR, 'cron_watchdog_status.json');
+const OPENCLAW_CONFIG = '/Users/javier/.openclaw/openclaw.json';
+const JAVI_CHAT_ID = '8335333215';
+
+// Per-job overrides: max tolerated staleness in ms (default: 2× interval)
+// Keys are job name substrings (case-insensitive match)
+const STALENESS_OVERRIDES = {
+  'photo pipeline':        { maxMs: 10 * 60 * 1000,   label: 'Photo Pipeline' },       // 10 min
+  'photo upload retry':    { maxMs: 15 * 60 * 1000,   label: 'Photo Upload Retry' },   // 15 min
+  'radial sync':           { maxMs: 60 * 60 * 1000,   label: 'Radial Sync' },          // 1h
+  'mysql glucose sync':    { maxMs: 90 * 60 * 1000,   label: 'MySQL Glucose Sync' },   // 1.5h
+  'hourly glucose sync':   { maxMs: 2 * 60 * 60 * 1000, label: 'Hourly Glucose Sync' }, // 2h
+  'hourly-notion-impact':  { maxMs: 2 * 60 * 60 * 1000, label: 'Hourly Notion Impact' },
+  'notion-outcome-backfill': { maxMs: 5 * 60 * 60 * 1000, label: 'Notion Outcome Backfill' }, // 5h
+  'notion to mysql':       { maxMs: 10 * 60 * 60 * 1000, label: 'Notion→MySQL Sync' }, // 10h
+  'mysql daily backup':    { maxMs: 4 * 60 * 60 * 1000, label: 'MySQL Daily Backup' }, // 4h after window
+  'daily-log-review':      { maxMs: 3 * 60 * 60 * 1000, label: 'Daily Log Review' },
+  'health-sync-daily-audit': { maxMs: 3 * 60 * 60 * 1000, label: 'Health Sync Audit' },
+};
+
+function getBotToken() {
+  if (process.env.TELEGRAM_BOT_TOKEN) return process.env.TELEGRAM_BOT_TOKEN;
+  try {
+    const cfg = JSON.parse(fs.readFileSync(OPENCLAW_CONFIG, 'utf8'));
+    return cfg?.channels?.telegram?.botToken || null;
+  } catch {
+    return null;
+  }
+}
+
+function sendTelegram(token, chatId, text) {
+  return new Promise((resolve, reject) => {
+    const body = JSON.stringify({ chat_id: chatId, text, parse_mode: 'Markdown' });
+    const opts = {
+      hostname: 'api.telegram.org',
+      path: `/bot${token}/sendMessage`,
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(body) }
+    };
+    const req = https.request(opts, res => {
+      let d = '';
+      res.on('data', c => d += c);
+      res.on('end', () => resolve(JSON.parse(d)));
+    });
+    req.on('error', reject);
+    req.write(body);
+    req.end();
+  });
+}
+
+function loadJobs() {
+  const raw = JSON.parse(fs.readFileSync(JOBS_PATH, 'utf8'));
+  return raw.jobs.filter(j => j.enabled && j.state);
+}
+
+/** Determine expected interval in ms for a job */
+function getIntervalMs(job) {
+  const sched = job.schedule;
+  if (!sched) return null;
+  if (sched.kind === 'every') return sched.everyMs;
+  if (sched.kind === 'cron') {
+    // Derive from nextRunAtMs - lastRunAtMs if available
+    const last = job.state.lastRunAtMs;
+    const next = job.state.nextRunAtMs;
+    if (last && next && next > last) return next - last;
+    // Fallback: parse cron expression for common patterns
+    const expr = sched.expr || '';
+    if (expr === '*/30 * * * *') return 30 * 60 * 1000;
+    if (expr === '0 * * * *') return 60 * 60 * 1000;
+    if (expr === '0 */4 * * *') return 4 * 60 * 60 * 1000;
+    if (/^\d+ \d+ \* \* \*$/.test(expr)) return 24 * 60 * 60 * 1000; // once daily
+    return null;
+  }
+  return null;
+}
+
+/** Find override config for a job by name substring match */
+function getOverride(jobName) {
+  const name = jobName.toLowerCase();
+  for (const [key, val] of Object.entries(STALENESS_OVERRIDES)) {
+    if (name.includes(key)) return val;
+  }
+  return null;
+}
+
+function checkStaleness(job, now) {
+  const { state } = job;
+  const lastRun = state.lastRunAtMs || state.lastRunAt || null;
+  if (!lastRun) return null; // never run, skip
+
+  const override = getOverride(job.name);
+  const intervalMs = getIntervalMs(job);
+
+  // Primary signal: nextRunAtMs — if in the future, job is on schedule
+  const nextRun = state.nextRunAtMs;
+  if (nextRun && nextRun > now) return null; // scheduled in future, healthy
+
+  // Determine grace period after nextRunAtMs (or after expected next tick)
+  let graceMs;
+  if (override) {
+    // For override jobs, grace = the override maxMs (capped at interval to avoid false positives on daily jobs)
+    graceMs = override.maxMs;
+  } else if (intervalMs) {
+    graceMs = Math.min(intervalMs, 2 * 60 * 60 * 1000); // max 2h grace by default
+  } else {
+    return null;
+  }
+
+  // If nextRunAtMs is known and in the past, check how overdue it is
+  if (nextRun) {
+    const overdueMs = now - nextRun;
+    if (overdueMs > graceMs) {
+      const overdueMin = Math.round(overdueMs / 60000);
+      const graceMin = Math.round(graceMs / 60000);
+      return {
+        jobId: job.id,
+        name: override?.label || job.name,
+        overdueMin,
+        graceMin,
+        lastRunAtMs: lastRun,
+        nextRunAtMs: nextRun,
+        consecutiveErrors: state.consecutiveErrors || 0,
+        lastStatus: state.lastStatus || state.lastRunStatus || 'unknown'
+      };
+    }
+    return null;
+  }
+
+  // Fallback: no nextRunAtMs — check age since last run against 2× interval
+  if (!intervalMs) return null;
+  const maxMs = intervalMs * 2;
+  const ageSinceLastRun = now - lastRun;
+  if (ageSinceLastRun > maxMs) {
+    const ageMin = Math.round(ageSinceLastRun / 60000);
+    const maxMin = Math.round(maxMs / 60000);
+    return {
+      jobId: job.id,
+      name: override?.label || job.name,
+      overdueMin: ageMin,
+      graceMin: maxMin,
+      lastRunAtMs: lastRun,
+      consecutiveErrors: state.consecutiveErrors || 0,
+      lastStatus: state.lastStatus || state.lastRunStatus || 'unknown'
+    };
+  }
+  return null;
+}
+
+/** Format schedule as human-readable string */
+function formatSchedule(sched) {
+  if (!sched) return '?';
+  if (sched.kind === 'every') {
+    const m = sched.everyMs / 60000;
+    if (m < 60) return `every ${m}m`;
+    return `every ${m / 60}h`;
+  }
+  if (sched.kind === 'cron') {
+    const e = sched.expr || '';
+    if (e === '*/30 * * * *') return 'every 30m';
+    if (e === '0 * * * *') return 'every 1h';
+    if (e === '0 */4 * * *') return 'every 4h';
+    const dailyMatch = e.match(/^(\d+) (\d+) \* \* \*$/);
+    if (dailyMatch) return `daily ${dailyMatch[2]}:${dailyMatch[1].padStart(2,'0')} PT`;
+    return e;
+  }
+  return sched.kind;
+}
+
+/** Build full status record for a single job (healthy or not) */
+function buildJobInfo(job, now) {
+  const { state } = job;
+  const override = getOverride(job.name);
+  const lastRun = state.lastRunAtMs || state.lastRunAt || null;
+  const nextRun = state.nextRunAtMs || null;
+  const intervalMs = getIntervalMs(job);
+  const staleResult = checkStaleness(job, now);
+  const hasErrors = (state.consecutiveErrors || 0) > 0;
+
+  let status;
+  if (!lastRun) status = 'never-run';
+  else if (staleResult) status = hasErrors ? 'error' : 'overdue';
+  else if (hasErrors) status = 'warning';
+  else status = 'healthy';
+
+  return {
+    id: job.id,
+    name: override?.label || job.name,
+    status,
+    schedule: formatSchedule(job.schedule),
+    intervalMs: intervalMs || null,
+    lastRunAtMs: lastRun,
+    nextRunAtMs: nextRun,
+    consecutiveErrors: state.consecutiveErrors || 0,
+    lastStatus: state.lastStatus || state.lastRunStatus || null,
+    lastDurationMs: state.lastDurationMs || null,
+    overdueMin: staleResult?.overdueMin || null,
+    graceMin: staleResult?.graceMin || null
+  };
+}
+
+function checkDailyReport(now) {
+  if (!fs.existsSync(REPORT_STATUS_PATH)) return null;
+  try {
+    const status = JSON.parse(fs.readFileSync(REPORT_STATUS_PATH, 'utf8'));
+    // Daily report expected by 9:30 AM PT; alert if it's after 11:30 AM and no report today
+    const nowLA = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Los_Angeles' })
+      .format(new Date(now));
+    if (status.lastReportDateLA !== nowLA) {
+      // Check if it's past 11:30 AM PT
+      const hourLA = parseInt(new Intl.DateTimeFormat('en-US', {
+        timeZone: 'America/Los_Angeles', hour: 'numeric', hour12: false
+      }).format(new Date(now)), 10);
+      if (hourLA >= 11) {
+        const lastReportAgo = now - new Date(status.lastReportAt).getTime();
+        const hoursAgo = Math.round(lastReportAgo / 3600000);
+        return {
+          name: 'Daily Health Report',
+          detail: `No report sent today (${nowLA}). Last report: ${status.lastReportDateLA} (${hoursAgo}h ago). Source: ${status.source || 'unknown'}`
+        };
+      }
+    }
+  } catch {
+    // ignore parse errors
+  }
+  return null;
+}
+
+async function main() {
+  const now = Date.now();
+
+  let jobs;
+  try {
+    jobs = loadJobs();
+  } catch (err) {
+    console.error(`[watchdog] Failed to load jobs.json: ${err.message}`);
+    process.exit(1);
+  }
+
+  const allJobs = jobs.map(j => buildJobInfo(j, now));
+  const stale = allJobs.filter(j => j.status === 'overdue' || j.status === 'error');
+
+  // Check daily report separately
+  const reportIssue = checkDailyReport(now);
+
+  // Write status file
+  const statusOut = {
+    checkedAt: new Date(now).toISOString(),
+    jobsChecked: jobs.length,
+    jobs: allJobs,
+    staleJobs: stale,
+    dailyReportIssue: reportIssue || null,
+    alertSent: false
+  };
+
+  const issues = stale.length + (reportIssue ? 1 : 0);
+
+  if (issues > 0) {
+    const lines = ['⚠️ *Cron Health Alert*', ''];
+
+    for (const s of stale) {
+      const errFlag = s.consecutiveErrors > 0 ? ` ❌ ${s.consecutiveErrors} errors` : '';
+      lines.push(`• *${s.name}*: overdue by ${s.overdueMin}m (grace: ${s.graceMin}m)${errFlag}`);
+    }
+
+    if (reportIssue) {
+      lines.push(`• *${reportIssue.name}*: ${reportIssue.detail}`);
+    }
+
+    const message = lines.join('\n');
+    console.log(`[watchdog] ${issues} stale job(s) found. Alerting Javi.`);
+    console.log(message);
+
+    const token = getBotToken();
+    if (token) {
+      try {
+        await sendTelegram(token, JAVI_CHAT_ID, message);
+        statusOut.alertSent = true;
+        console.log('[watchdog] Alert sent via Telegram.');
+      } catch (err) {
+        console.error(`[watchdog] Telegram send failed: ${err.message}`);
+      }
+    } else {
+      console.warn('[watchdog] No Telegram token available — skipping alert.');
+    }
+  } else {
+    console.log(`[watchdog] All ${jobs.length} jobs healthy.`);
+  }
+
+  fs.writeFileSync(OUTPUT_PATH, JSON.stringify(statusOut, null, 2));
+}
+
+main().catch(err => {
+  console.error(`[watchdog] Fatal: ${err.message}`);
+  process.exit(1);
+});

@@ -55,8 +55,13 @@ node scripts/deploy.js --env=production
 | `scripts/consistency_check.js` | 2-day lookback: duplicates, missing entries |
 | `data/sync_state.json` | State ledger (156 KB) — critical, don't delete |
 | `data/health_log.normalized.json` | Canonical JSON from last normalization |
-| `MEMORY.md` | Long-term curated memory for agents |
+| `MEMORY.md` | Long-term facts (people, infrastructure, model config) |
+| `AGENTS.md` | Canonical operational rules (all rules live here) |
+| `TOOLS.md` | Tool-specific config (credentials, endpoints, formatting) |
+| `docs/CHANGELOG.md` | Historical fix log (Issues 1–24+) |
 | `memory/YYYY-MM-DD.md` | Daily memory snapshots |
+| `scripts/health-sync/confirmation_ledger.js` | Write ledger for Telegram confirmation audit |
+| `data/write_ledger.jsonl` | Proof-of-write records (checked by PreToolUse hook) |
 
 ## Data Entry Rules
 
@@ -95,13 +100,11 @@ API keys are stored in `~/.openclaw/secrets/` and referenced in `TOOLS.md`.
 - **Integration tests** (`tests/integration/`): full Nightscout + Notion sync against real APIs
 - **Fixtures** (`tests/fixtures/`): test data stubs
 
-## Agent Operational Rules (summary of AGENTS.md)
+## Agent Operational Rules
 
-- On HEARTBEAT checks: reply exactly `HEARTBEAT_OK`, nothing else.
-- Handle tool/edit errors silently. Report only gateway-level failures.
-- Use `trash` not `rm`.
-- Default model: `ollama/kimi-k2.5:cloud` for routine/background work.
-- **Sonnet-forced tasks** (must use `anthropic/claude-sonnet-4-6`, no exceptions): any write to `health_log.md`/Nightscout/Notion, entry key computation/dedup, quality gate evaluation, medication entries, glucose outlier detection/alerts, conflict resolution, peak BG projections, HealthGuard analysis, daily reports, image interpretation.
-- Image analysis: `anthropic/claude-sonnet-4-6` → fallback `anthropic/claude-sonnet-4-5` only (never kimi or qwen).
-- Daily reports must state the model name used to generate them.
+All operational rules are canonical in `AGENTS.md`. Key highlights:
+- `AGENTS.md` — ALL rules (format enforcement, Telegram rules, write ledger, model quotas, reporting, strict data rule, escalation policy)
+- `TOOLS.md` — credentials, endpoints, formatting per platform (cross-references AGENTS.md for rules)
+- `MEMORY.md` — facts only (people, infrastructure, model config); no rules
+- `docs/CHANGELOG.md` — historical fix log (Issues 1–24+); agents don't load this every session
 - Read `memory/YYYY-MM-DD.md` (today + yesterday) and `MEMORY.md` at session start.
