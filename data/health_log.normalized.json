@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-25T04:00:00.801Z",
+  "generatedAt": "2026-03-25T05:00:00.533Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
   "entryCount": 308,
   "entries": [
@@ -8,7 +8,7 @@
       "source": {
         "file": "health_log.md",
         "line": 3,
-        "rawRow": "| 2026-03-24 | 19:27 -07:00 | Maria Dennis | Food | Dinner | Dinner: Small slice of sponge cake topped with cream/custard and fresh strawberry slices (BG: 132 mg/dL Flat) (Pred: 170-190 mg/dL @ 9:02 PM) (Protein: 3g | Carbs: ~22g | Cals: ~190) [📷](https://iili.io/q6t2ubp.jpg) | 22 | 190 |"
+        "rawRow": "| 2026-03-24 | 19:27 -07:00 | Maria Dennis | Food | Dinner | Dinner: Small slice of sponge cake with 1 tsp peanut butter and 1 small strawberry (BG: 132 mg/dL Flat) (Pred: 165-180 mg/dL @ 9:12 PM) (Protein: ~4g | Carbs: ~16g | Cals: ~135) [📷](https://iili.io/q6t2ubp.jpg) | 16 | 135 |"
       },
       "timestamp": "2026-03-24T19:27:00-07:00",
       "date": "2026-03-24",
@@ -16,17 +16,17 @@
       "user": "Maria Dennis",
       "category": "Food",
       "mealType": "Dinner",
-      "title": "Dinner: Small slice of sponge cake topped with cream/custard and fresh strawberry slices",
-      "notes": "BG: 132 mg/dL Flat; Protein: 3g; Pred: 170-190 mg/dL @ 9:02 PM",
+      "title": "Dinner: Small slice of sponge cake with 1 tsp peanut butter and 1 small strawberry",
+      "notes": "BG: 132 mg/dL Flat; Protein: 4g; Pred: 165-180 mg/dL @ 9:12 PM",
       "photoUrls": [
         "https://iili.io/q6t2ubp.jpg"
       ],
-      "carbsEst": 22,
-      "caloriesEst": 190,
-      "proteinEst": 3,
+      "carbsEst": 16,
+      "caloriesEst": 135,
+      "proteinEst": 4,
       "predicted": {
-        "peakBgText": "170-190 mg/dL",
-        "peakTimeText": "9:02 PM"
+        "peakBgText": "165-180 mg/dL",
+        "peakTimeText": "9:12 PM"
       },
       "actual": {
         "preMealBg": null,
@@ -44,8 +44,8 @@
         "gallery": "pending",
         "outcomesBackfilled": false
       },
-      "entryKey": "sha256:f78c84c03c9a614aa4ad91f77b499c49b8bcd11a82aafdb7cd98c01c7be6d084",
-      "contentHash": "sha256:637e8022c4246efb1762cb1b28b5107b264b2acb368353136280d006e9deb4c4"
+      "entryKey": "sha256:f2e953b7f791a192bea433c20c1b9ddf4afdceeba279c745840b61c412d32cd4",
+      "contentHash": "sha256:e8c82e2da15350a99fc1ed99a031ffaef0634f7228394d817b9da3b4f0c224b3"
     },
     {
       "source": {
