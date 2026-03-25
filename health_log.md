@@ -1,6 +1,7 @@
 # Health Log
 
-| 2026-03-25 | 09:33 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Half bagel with cream cheese and smoked salmon (BG: 112 mg/dL Flat) (Pred: 150-170 mg/dL @ 11:00 AM) (Protein: 22g | Carbs: ~28g | Cals: ~320) |  28 | 320 |
+| 2026-03-25 | 09:32 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Meal photo (auto-estimated nutrition) (BG: 111 mg/dL Flat) (Pred: 196-216 mg/dL @ 11:07 AM) (Protein: 14g | Carbs: ~30g | Cals: ~320) [📷](https://iili.io/qikEfs4.jpg) | 30 | 320 |
+| 2026-03-25 | 09:33 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Half ciabatta with cream cheese and smoked salmon (BG: 112 mg/dL Flat) (Pred: 145-165 mg/dL @ 11:00 AM) (Protein: 20g | Carbs: ~25g | Cals: ~300) | 25 | 300 |
 | 2026-03-25 | 09:33 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 112 mg/dL Flat) | null | null |
 | 2026-03-25 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 112 mg/dL Flat) | null | null |
 | 2026-03-25 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 112 mg/dL Flat) | null | null |

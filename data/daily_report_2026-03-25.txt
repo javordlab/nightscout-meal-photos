@@ -1,16 +1,16 @@
 🩺 DAILY HEALTH REPORT
 📅 Date: 2026-03-25
 🕒 Coverage window: 2026-03-25 00:00 – now (America/Los_Angeles)
-⚙️ Generated time: 2026-03-25T16:32:01.108Z
+⚙️ Generated time: 2026-03-25T16:37:09.353Z
 🤖 Model: anthropic/claude-sonnet-4-6
 
 1) 📊 Today's Glucose Summary
-- Average glucose: 97.4 mg/dL
+- Average glucose: 97.5 mg/dL
 - Time in Range (70-180): 100.0%
 - GMI: 5.64%
 - Standard deviation: 7.6 mg/dL
 - CV: 7.8%
-- Data points used: 114
+- Data points used: 115
 
 2) 📉 14-day Trends (ending 2026-03-25)
 - Average glucose: 124.5 mg/dL
@@ -46,12 +46,12 @@
 
 8) 🧠 Extended Supervisor Analysis
 - Nice work overall today: Strong Time in Range at 100.0% | Limited high excursions (>180 mg/dL): 0 | No hypoglycemia episodes (<70 mg/dL).
-- Key trend signals: avg glucose vs 14-day baseline -27.1 mg/dL, TIR delta 0.4%, carbs delta -152.3 g, calories delta -1505 kcal.
+- Key trend signals: avg glucose vs 14-day baseline -27.0 mg/dL, TIR delta 0.4%, carbs delta -152.3 g, calories delta -1505 kcal.
 - Friendly focus for tomorrow: No urgent corrections needed—just keep the same consistency and momentum.
 - You’re doing great—small consistent habits keep adding up. Keep it going 🌟
 
 9) 🛡️ Self-Audit (Data Integrity)
 - Target day enforced: 2026-03-25 PT
-- Glucose points in target window: 114
+- Glucose points in target window: 115
 - GMI formula check (3.31 + 0.02392 × Avg): 5.64%
 - Reported GMI: 5.64%

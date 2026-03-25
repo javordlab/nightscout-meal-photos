@@ -172,15 +172,10 @@
     "file_200",
     "file_201",
     "file_202",
-    "file_203"
+    "file_203",
+    "file_204"
   ],
-  "failed": [
-    {
-      "file": "file_204",
-      "retries": 1,
-      "error": "missing_caption_or_description_link"
-    }
-  ],
-  "lastRun": "2026-03-25T16:34:42.595Z",
+  "failed": [],
+  "lastRun": "2026-03-25T16:36:42.312Z",
   "linkedEnvelopeIds": []
 }
