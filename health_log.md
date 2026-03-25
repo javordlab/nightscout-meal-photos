@@ -1,7 +1,7 @@
 # Health Log
 
-| 2026-03-25 | 09:32 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Meal photo (auto-estimated nutrition) (BG: 111 mg/dL Flat) (Pred: 196-216 mg/dL @ 11:07 AM) (Protein: 14g | Carbs: ~30g | Cals: ~320) [📷](https://iili.io/qikEfs4.jpg) | 30 | 320 |
-| 2026-03-25 | 09:33 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Half ciabatta with cream cheese and smoked salmon (BG: 112 mg/dL Flat) (Pred: 145-165 mg/dL @ 11:00 AM) (Protein: 20g | Carbs: ~25g | Cals: ~300) | 25 | 300 |
+| 2026-03-25 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 119 mg/dL Flat) | null | null |
+| 2026-03-25 | 09:33 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Half bagel with cream cheese and smoked salmon (BG: 112 mg/dL Flat) (Pred: 150-170 mg/dL @ 11:00 AM) (Protein: 22g | Carbs: ~28g | Cals: ~320) [📷](https://iili.io/qikEfs4.jpg) | 28 | 320 |
 | 2026-03-25 | 09:33 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 112 mg/dL Flat) | null | null |
 | 2026-03-25 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 112 mg/dL Flat) | null | null |
 | 2026-03-25 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 112 mg/dL Flat) | null | null |
@@ -13,7 +13,7 @@
 | 2026-03-24 | 15:45 -07:00 | Maria Dennis | Food | Snack | Snack: Half large strawberry (BG: 103 mg/dL Flat) (Pred: 108-122 mg/dL @ 5:20 PM) (Protein: 0.1g | Carbs: ~2g | Cals: ~8) [📷](https://iili.io/q6Nvaix.jpg) | 2 | 8 |
 | 2026-03-24 | 15:42 -07:00 | Maria Dennis | Food | Snack | Snack: Milk cheese cake bite (~1/2 piece from packaged milk cheese cake) (BG: 103 mg/dL Flat) (Pred: 145-165 mg/dL @ 5:17 PM) (Protein: 3g | Carbs: ~12g | Cals: ~120) [📷](https://iili.io/q6N1xig.jpg) | 12 | 120 |
 | 2026-03-24 | 11:11 -07:00 | Maria Dennis | Activity | - | 30 minutes walk uphill | null | null |
-| 2026-03-24 | 12:46 -07:00 | Maria Dennis | Food | Lunch | Lunch: Dim sum meal (stir-fried beef with scallions/onions, chicken feet, 2 siu mai dumplings, small noodle bowl, and scallion pancake) (BG: 136 mg/dL Flat) (Pred: 238-258 mg/dL @ 2:21 PM) (Protein: 24g | Carbs: ~45g | Cals: ~540) [📷](https://iili.io/q6TjZVs.jpg) | 45 | 540 |
+| 2026-03-24 | 12:46 -07:00 | Maria Dennis | Food | Lunch | Lunch: Dim sum meal (stir-fried beef with scallions/onions, chicken feet, 2 siu mai dumplings, and small noodle bowl) (BG: 136 mg/dL Flat) (Pred: 225-245 mg/dL @ 2:21 PM) (Protein: 22g | Carbs: ~37g | Cals: ~440) [📷](https://iili.io/q6TjZVs.jpg) | 37 | 440 |
 | 2026-03-24 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 136 mg/dL Flat) | null | null |
 | 2026-03-24 | 10:08 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Half cheese quesadilla (flour tortilla + cheese), Apple slices (~⅓–½ small apple), Avocado slices (~¼ avocado) (BG: 116 mg/dL Flat) (Pred: 196-216 mg/dL @ 11:43 AM) (Protein: 14g | Carbs: ~30g | Cals: ~320) [📷](https://iili.io/q4tyGBS.jpg) | 30 | 320 |
 | 2026-03-24 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 116 mg/dL Flat) | null | null |

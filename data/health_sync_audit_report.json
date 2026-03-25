@@ -1,35 +1,28 @@
 {
-  "generatedAt": "2026-03-25T02:57:42.587Z",
-  "since": "2026-03-18T02:57:42.385Z",
+  "generatedAt": "2026-03-25T16:45:08.005Z",
+  "since": "2026-03-18T16:45:07.773Z",
   "summary": {
-    "totalEntries": 76,
-    "inSyncState": 76,
-    "nsLinked": 55,
-    "notionLinked": 71,
-    "galleryLinked": 31,
+    "totalEntries": 74,
+    "inSyncState": 74,
+    "nsLinked": 59,
+    "notionLinked": 72,
+    "galleryLinked": 33,
     "outcomesBackfilled": 0,
     "duplicates": 0,
-    "missingNs": 21,
-    "missingNotion": 5,
-    "missingGallery": 2,
-    "missingOutcomes": 36
+    "missingNs": 15,
+    "missingNotion": 2,
+    "missingGallery": 0,
+    "missingOutcomes": 37
   },
   "discrepancies": [
     {
-      "entryKey": "sha256:f78c84c03c9a614aa4ad91f77b499c49b8bcd11a82aafdb7cd98c01c7be6d084",
+      "entryKey": "sha256:f2e953b7f791a192bea433c20c1b9ddf4afdceeba279c745840b61c412d32cd4",
       "timestamp": "2026-03-24T19:27:00-07:00",
-      "title": "Dinner: Small slice of sponge cake topped with cream/custard and fresh strawberry slices",
+      "title": "Dinner: Small slice of sponge cake with 1 tsp peanut butter and 1 small strawberry",
       "issues": [
         {
-          "type": "missing_ns_link",
-          "severity": "warning"
-        },
-        {
-          "type": "missing_notion_link",
-          "severity": "warning"
-        },
-        {
-          "type": "missing_gallery_link",
+          "type": "outcomes_not_backfilled",
+          "ageHours": 14,
           "severity": "warning"
         }
       ]
@@ -40,15 +33,8 @@
       "title": "Dinner: Beef and onion stir-fry over rice with sliced cucumber, plus a pink lemonade drink",
       "issues": [
         {
-          "type": "missing_ns_link",
-          "severity": "warning"
-        },
-        {
-          "type": "missing_notion_link",
-          "severity": "warning"
-        },
-        {
-          "type": "missing_gallery_link",
+          "type": "outcomes_not_backfilled",
+          "ageHours": 15,
           "severity": "warning"
         }
       ]
@@ -60,7 +46,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 4,
+          "ageHours": 18,
           "severity": "warning"
         }
       ]
@@ -72,7 +58,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 4,
+          "ageHours": 18,
           "severity": "warning"
         }
       ]
@@ -84,7 +70,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 7,
+          "ageHours": 21,
           "severity": "warning"
         }
       ]
@@ -96,7 +82,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 10,
+          "ageHours": 24,
           "severity": "warning"
         }
       ]
@@ -108,7 +94,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 25,
+          "ageHours": 38,
           "severity": "warning"
         }
       ]
@@ -120,7 +106,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 26,
+          "ageHours": 39,
           "severity": "warning"
         }
       ]
@@ -132,7 +118,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 28,
+          "ageHours": 41,
           "severity": "warning"
         }
       ]
@@ -144,7 +130,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 31,
+          "ageHours": 45,
           "severity": "warning"
         }
       ]
@@ -156,7 +142,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 31,
+          "ageHours": 45,
           "severity": "warning"
         }
       ]
@@ -180,7 +166,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 34,
+          "ageHours": 48,
           "severity": "warning"
         }
       ]
@@ -192,7 +178,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 34,
+          "ageHours": 48,
           "severity": "warning"
         }
       ]
@@ -204,7 +190,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 48,
+          "ageHours": 62,
           "severity": "warning"
         }
       ]
@@ -216,7 +202,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 49,
+          "ageHours": 62,
           "severity": "warning"
         }
       ]
@@ -228,7 +214,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 52,
+          "ageHours": 66,
           "severity": "warning"
         }
       ]
@@ -240,7 +226,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 59,
+          "ageHours": 73,
           "severity": "warning"
         }
       ]
@@ -252,7 +238,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 73,
+          "ageHours": 87,
           "severity": "warning"
         }
       ]
@@ -264,7 +250,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 79,
+          "ageHours": 92,
           "severity": "warning"
         }
       ]
@@ -276,7 +262,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 82,
+          "ageHours": 96,
           "severity": "warning"
         }
       ]
@@ -288,7 +274,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 100,
+          "ageHours": 114,
           "severity": "warning"
         }
       ]
@@ -300,7 +286,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 103,
+          "ageHours": 116,
           "severity": "warning"
         }
       ]
@@ -312,7 +298,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 103,
+          "ageHours": 116,
           "severity": "warning"
         }
       ]
@@ -324,7 +310,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 97,
+          "ageHours": 111,
           "severity": "warning"
         }
       ]
@@ -341,7 +327,7 @@
         },
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 97,
+          "ageHours": 111,
           "severity": "warning"
         }
       ]
@@ -353,7 +339,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 97,
+          "ageHours": 111,
           "severity": "warning"
         }
       ]
@@ -365,7 +351,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 107,
+          "ageHours": 121,
           "severity": "warning"
         }
       ]
@@ -377,7 +363,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 107,
+          "ageHours": 121,
           "severity": "warning"
         }
       ]
@@ -389,7 +375,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 121,
+          "ageHours": 135,
           "severity": "warning"
         }
       ]
@@ -401,7 +387,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 122,
+          "ageHours": 136,
           "severity": "warning"
         }
       ]
@@ -413,7 +399,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 126,
+          "ageHours": 140,
           "severity": "warning"
         },
         {
@@ -429,7 +415,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 126,
+          "ageHours": 140,
           "severity": "warning"
         },
         {
@@ -445,7 +431,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 130,
+          "ageHours": 144,
           "severity": "warning"
         },
         {
@@ -505,7 +491,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 145,
+          "ageHours": 158,
           "severity": "warning"
         },
         {
@@ -532,7 +518,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 148,
+          "ageHours": 162,
           "severity": "warning"
         },
         {
@@ -579,7 +565,7 @@
         },
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 150,
+          "ageHours": 164,
           "severity": "warning"
         },
         {
@@ -606,60 +592,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 154,
-          "severity": "warning"
-        },
-        {
-          "type": "missing_ns_link",
-          "severity": "warning"
-        },
-        {
-          "type": "missing_notion_link",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:d5f1fb0b0bf14d525d4f50d46be34897eb872ae52297607a9acc11887f6d78a4",
-      "timestamp": "2026-03-18T09:00:00-07:00",
-      "title": "Lisinopril 10mg (Scheduled)",
-      "issues": [
-        {
-          "type": "missing_ns_link",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:10960d5ad55805a7f80200a568655940dbd94c88f9411974631ad186c0d2fbb3",
-      "timestamp": "2026-03-17T21:30:00-07:00",
-      "title": "15 minute walk and 15 minutes Qigong",
-      "issues": [
-        {
-          "type": "missing_ns_link",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:83bded06cdfffe0680cc7da03a728b6295aa263e528595fef5cfc347660deebb",
-      "timestamp": "2026-03-17T21:30:00-07:00",
-      "title": "1500mg Metformin HCL (incl. missed lunch dose; Total for day: 2000mg)",
-      "issues": [
-        {
-          "type": "missing_ns_link",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:deeb8b6d654bb9ba41b192bb5cc2d1ce76838dd3fa31c3b11abde25db3a1331b",
-      "timestamp": "2026-03-17T21:00:00-07:00",
-      "title": "Dessert: Small piece of sweet roll",
-      "issues": [
-        {
-          "type": "outcomes_not_backfilled",
-          "ageHours": 167,
+          "ageHours": 168,
           "severity": "warning"
         },
         {
