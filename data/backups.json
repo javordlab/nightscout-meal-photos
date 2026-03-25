@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-25T05:07:58.453Z",
+  "lastUpdated": "2026-03-25T05:14:07.432Z",
   "tokenUsage": [
     {
       "platform": "Kimi (Ollama)",
@@ -16,12 +16,12 @@
     {
       "platform": "OpenAI Codex",
       "bucketType": "Pay-as-you-go",
-      "realTokens": 17301778,
+      "realTokens": 17212464,
       "link": "https://platform.openai.com/usage"
     }
   ],
   "database": {
-    "glucose": 8398,
+    "glucose": 8399,
     "notion": 890
   },
   "syncHistory": [
@@ -177,10 +177,6 @@
     }
   ],
   "glucoseTrend": [
-    {
-      "t": "2026-02-22T22:09:22.000Z",
-      "v": 142
-    },
     {
       "t": "2026-02-22T22:14:24.000Z",
       "v": 146
@@ -33352,6 +33348,10 @@
     {
       "t": "2026-03-25T05:04:39.000Z",
       "v": 106
+    },
+    {
+      "t": "2026-03-25T05:09:38.000Z",
+      "v": 99
     }
   ],
   "backups": [
