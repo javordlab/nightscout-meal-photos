@@ -12103,3 +12103,7 @@
 {"ts":"2026-03-25T16:52:05.947Z","op":"entry_blocked","entryKey":"sha256:84870d7272d774276e47dcfcd75a900b7ee72a4f66c136678bc1c47993889cb0","errors":[{"reason":"missing_meal_type_prefix_in_food_title"},{"reason":"missing_bg_annotation_for_food"}],"title":"Chocolate cake with whipped cream (~10g carbs, ~120 kcal)"}
 {"ts":"2026-03-25T16:52:05.951Z","op":"entry_blocked","entryKey":"sha256:1ede023e510027d41e356281be69f4e58c7ee98057334fece27992dbb8c2873e","errors":[{"reason":"missing_meal_type_prefix_in_food_title"},{"reason":"missing_bg_annotation_for_food"}],"title":"Glass of milk and a spoon of peanut butter (~15g carbs, ~250 kcal)"}
 {"ts":"2026-03-25T16:52:05.959Z","op":"sync_blocked_entries","count":98}
+{"ts":"2026-03-25T23:22:23.738Z","op":"ns_created","entryKey":"sha256:med-1300","treatmentId":"mock-1"}
+{"ts":"2026-03-25T23:22:23.739Z","op":"ns_created","entryKey":"sha256:food-1301","treatmentId":"mock-2"}
+{"ts":"2026-03-25T23:22:23.740Z","op":"ns_created","entryKey":"sha256:med-1300","treatmentId":"mock-1"}
+{"ts":"2026-03-25T23:22:23.740Z","op":"ns_created","entryKey":"sha256:food-1301","treatmentId":"mock-2"}
