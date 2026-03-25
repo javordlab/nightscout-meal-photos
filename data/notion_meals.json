@@ -7,8 +7,8 @@
     "photo": "https://iili.io/q6Nvaix.jpg",
     "carbs": 2,
     "cals": 8,
-    "delta": null,
-    "peak": null
+    "delta": 16,
+    "peak": 126
   },
   {
     "id": "32d85ec7-0668-8155-b32e-f9e7e6cbdda8",
@@ -18,8 +18,8 @@
     "photo": "https://iili.io/q6N1xig.jpg",
     "carbs": 12,
     "cals": 120,
-    "delta": null,
-    "peak": null
+    "delta": 16,
+    "peak": 126
   },
   {
     "id": "32d85ec7-0668-810d-82ac-ee46c87d7d41",
