@@ -136,6 +136,7 @@ async function main() {
   try {
     log({ op: 'post_log_sync_start', trigger: 'manual_post_log', source, mtimeMs, sinceIso });
 
+    runCmd(`cd ${WORKSPACE} && node scripts/health-sync/backfill_nutrition_gaps.js`, 120_000);
     runCmd(`cd ${WORKSPACE} && node scripts/health-sync/normalize_health_log.js`, 120_000);
     runCmd(`cd ${WORKSPACE} && node scripts/health-sync/unified_sync.js --since=${sinceIso} --allow-blocked`, 240_000);
 

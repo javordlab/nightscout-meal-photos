@@ -187,8 +187,8 @@ async function main() {
   
   console.log(`Found ${dataLines.length} entries in log.`);
 
-  // Process today's entries first, then the rest (using robust local PST date)
-  const laDate = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Los_Angeles', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+  // Process today's entries first, then the rest (using robust local date)
+  const laDate = new Intl.DateTimeFormat('en-CA', { timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone, year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
   const today = laDate; // YYYY-MM-DD
   const priorityLines = dataLines.filter(l => l.includes(today));
   const otherLines = dataLines.filter(l => !l.includes(today)).reverse();
@@ -231,8 +231,8 @@ async function main() {
     if (offsetPart) {
       entryData.iso = dStr + offsetPart;
     } else {
-      const isPDT = new Date(dStr + "Z") > new Date("2026-03-08T10:00:00Z");
-      entryData.iso = dStr + (isPDT ? "-07:00" : "-08:00");
+      const _d = new Date(dStr); const _om = -_d.getTimezoneOffset(); const _s = _om >= 0 ? '+' : '-'; const _h = String(Math.floor(Math.abs(_om) / 60)).padStart(2, '0'); const _m = String(Math.abs(_om) % 60).padStart(2, '0');
+      entryData.iso = dStr + `${_s}${_h}:${_m}`;
     }
 
     const photos = extractPhotos(entryData.text);

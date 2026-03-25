@@ -4,6 +4,10 @@ import urllib.request
 import urllib.parse
 from datetime import datetime, timedelta
 
+def _local_tz_offset():
+    _off = datetime.now().astimezone().strftime('%z')  # e.g. "-0700"
+    return f"{_off[:3]}:{_off[3:]}"  # e.g. "-07:00"
+
 NOTION_TOKEN = "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"
 DATABASE_ID = "31685ec7-0668-813e-8b9e-c5b4d5d70fa5"
 
@@ -28,7 +32,7 @@ def get_notion_entries():
     payload = {
         "filter": {
             "property": "Date",
-            "date": { "on_or_after": f"{since}T00:00:00-08:00" }
+            "date": { "on_or_after": f"{since}T00:00:00{_local_tz_offset()}" }
         }
     }
     res = notion_api(f"databases/{DATABASE_ID}/query", payload=payload)
@@ -37,7 +41,7 @@ def get_notion_entries():
 def add_to_notion(date_str, time_str, category, subcat, details, carbs, kcal):
     title = details.split("[")[0].strip()
     if not title: title = f"{category} Entry"
-    notion_date = f"{date_str}T{time_str}:00.000-08:00"
+    notion_date = f"{date_str}T{time_str}:00.000{_local_tz_offset()}"
     
     props = {
         "Entry": {"title": [{"text": {"content": title}}]},
@@ -111,8 +115,9 @@ def main():
     for ne in notion_entries:
         try:
             n_date_full = ne["properties"]["Date"]["date"]["start"]
-            if "-07:00" in n_date_full:
-                new_date = n_date_full.replace("-07:00", "-08:00")
+            local_off = _local_tz_offset()
+            if local_off not in n_date_full and ("-07:00" in n_date_full or "-08:00" in n_date_full):
+                new_date = n_date_full.replace("-07:00", local_off).replace("-08:00", local_off)
                 if notion_api(f"pages/{ne['id']}", method="PATCH", payload={"properties": {"Date": {"date": {"start": new_date}}}}):
                     fixed_offsets += 1
         except: continue

@@ -15,12 +15,23 @@ const STATE_FILE = '/Users/javier/.openclaw/workspace/.photo_pipeline_state.json
 const HEALTH_LOG = '/Users/javier/.openclaw/workspace/health_log.md';
 const PENDING_FILE = '/Users/javier/.openclaw/workspace/data/pending_photo_entries.json';
 const TELEGRAM_ENVELOPES_PATH = '/Users/javier/.openclaw/workspace/data/telegram_media_envelopes.jsonl';
+const PHOTO_LINK_METRICS_PATH = '/Users/javier/.openclaw/workspace/data/photo_link_metrics.json';
+const PHOTO_LINK_METRICS_LOG_PATH = '/Users/javier/.openclaw/workspace/data/photo_link_metrics.log.jsonl';
 const MAX_RETRIES = 3;
+const NIGHTSCOUT_URL = process.env.NIGHTSCOUT_URL || 'https://p01--sefi--s66fclg7g2lm.code.run';
+const NIGHTSCOUT_API_SECRET = process.env.NIGHTSCOUT_API_SECRET || 'b3170e23f45df7738434cd8be9cd79d86a6d0f01';
 
 // Extract file number prefix (e.g., "file_154" from "file_154---uuid.jpg")
 function getFilePrefix(filename) {
   const match = filename.match(/^(file_\d+)/);
   return match ? match[1] : filename;
+}
+
+// Extract suffix token after "---" (best-effort Telegram/media unique id bridge)
+function getFileUniqueCandidate(filename) {
+  const base = path.basename(String(filename || ''));
+  const match = base.match(/^file_\d+---([^./]+)\.[a-z0-9]+$/i);
+  return match ? String(match[1]).trim() : null;
 }
 
 // Find actual file on disk matching a file prefix
@@ -54,6 +65,10 @@ function loadState() {
 
 function saveState(state) {
   fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2));
+}
+
+function clearFailure(state, prefix) {
+  state.failed = (state.failed || []).filter(f => f.file !== prefix);
 }
 
 function loadTelegramEnvelopes() {
@@ -94,33 +109,83 @@ function markLinkedEnvelope(state, envelope) {
 }
 
 function findEnvelopeForFile(file, envelopes, state) {
-  if (!Array.isArray(envelopes) || envelopes.length === 0) return null;
+  if (!Array.isArray(envelopes) || envelopes.length === 0) {
+    return { envelope: null, strategy: 'none' };
+  }
+
   const targetTypes = mapExtToEnvelopeType(file.path);
   const fileTs = file.mtime.getTime();
+  const fileUniqueCandidate = String(file.fileUniqueCandidate || '').trim();
 
-  const candidates = envelopes
+  const base = envelopes
     .filter(e => targetTypes.includes(e.contentType))
-    .filter(e => !state.linkedEnvelopeIds.includes(getEnvelopeKey(e)))
-    .map(e => ({ ...e, diffMs: Math.abs(e.tsMs - fileTs) }))
-    .filter(e => e.diffMs <= 3 * 60 * 1000)
-    .sort((a, b) => a.diffMs - b.diffMs);
+    .filter(e => !state.linkedEnvelopeIds.includes(getEnvelopeKey(e)));
 
-  return candidates[0] || null;
+  // P0 deterministic linking: file_unique_id first (single-source envelope stream)
+  if (fileUniqueCandidate) {
+    const exact = base.find(e => String(e.fileUniqueId || '').trim() === fileUniqueCandidate);
+    if (exact) return { envelope: exact, strategy: 'file_unique_id' };
+  }
+
+  // Fallback: nearest timestamp with caption priority
+  const candidates = base
+    .map(e => ({
+      ...e,
+      diffMs: Math.abs(e.tsMs - fileTs),
+      hasCaption: cleanText(e.captionOrText || '').length > 0
+    }))
+    .filter(e => e.diffMs <= 20 * 60 * 1000)
+    .sort((a, b) => {
+      if (a.hasCaption !== b.hasCaption) return a.hasCaption ? -1 : 1;
+      return a.diffMs - b.diffMs;
+    });
+
+  if (candidates[0]) return { envelope: candidates[0], strategy: 'timestamp_fallback' };
+  return { envelope: null, strategy: 'none' };
 }
 
-// Get current BG from Nightscout
-async function getCurrentBG() {
+function fetchBgEntries(fromMs, toMs, count = 50) {
+  try {
+    const cmd = [
+      'curl -sG',
+      `"${NIGHTSCOUT_URL}/api/v1/entries.json"`,
+      `-H "API-SECRET: ${NIGHTSCOUT_API_SECRET}"`,
+      `--data-urlencode "find[date][$gte]=${fromMs}"`,
+      `--data-urlencode "find[date][$lte]=${toMs}"`,
+      `--data-urlencode "count=${count}"`
+    ].join(' ');
+
+    const result = execSync(cmd, { encoding: 'utf8', timeout: 15000 });
+    const data = JSON.parse(result);
+    return Array.isArray(data) ? data : [];
+  } catch (e) {
+    console.log('BG fetch failed:', e.message);
+    return [];
+  }
+}
+
+// Get nearest BG around a timestamp (preferred), fallback to latest
+async function getBGNearTimestamp(ts) {
+  const targetMs = ts instanceof Date ? ts.getTime() : Date.now();
+  const rows = fetchBgEntries(targetMs - 20 * 60 * 1000, targetMs + 20 * 60 * 1000, 200);
+  if (rows.length > 0) {
+    rows.sort((a, b) => Math.abs((a.date || 0) - targetMs) - Math.abs((b.date || 0) - targetMs));
+    const best = rows[0];
+    return { sgv: best.sgv, direction: best.direction || 'Flat' };
+  }
+
+  // fallback latest
   try {
     const result = execSync(
-      'curl -s "https://p01--sefi--s66fclg7g2lm.code.run/api/v1/entries.json?count=1" -H "API-SECRET: JaviCare2026"',
+      `curl -s "${NIGHTSCOUT_URL}/api/v1/entries.json?count=1" -H "API-SECRET: ${NIGHTSCOUT_API_SECRET}"`,
       { encoding: 'utf8', timeout: 10000 }
     );
     const data = JSON.parse(result);
     if (data && data[0]) {
-      return { sgv: data[0].sgv, direction: data[0].direction };
+      return { sgv: data[0].sgv, direction: data[0].direction || 'Flat' };
     }
   } catch (e) {
-    console.log('BG fetch failed:', e.message);
+    console.log('BG fallback fetch failed:', e.message);
   }
   return null;
 }
@@ -141,36 +206,115 @@ async function uploadPhoto(photoPath) {
   }
 }
 
-// Analyze photo with vision model
-async function analyzePhoto(photoPath) {
-  // Use actual file modification time as timestamp
+function cleanText(value) {
+  return String(value || '').replace(/\s+/g, ' ').trim();
+}
+
+function parseNutritionFromText(text) {
+  const t = cleanText(text);
+  const extract = (regex) => {
+    const m = t.match(regex);
+    if (!m) return null;
+    const v = Number(m[1]);
+    return Number.isFinite(v) ? v : null;
+  };
+
+  return {
+    carbs: extract(/carbs?\s*[:=~]?\s*(\d+(?:\.\d+)?)/i) || extract(/(\d+(?:\.\d+)?)\s*g\s*carbs?/i),
+    cals: extract(/(?:cals?|calories|kcal)\s*[:=~]?\s*(\d+(?:\.\d+)?)/i) || extract(/(\d+(?:\.\d+)?)\s*kcal/i),
+    protein: extract(/protein\s*[:=~]?\s*(\d+(?:\.\d+)?)/i) || extract(/(\d+(?:\.\d+)?)\s*g\s*protein/i)
+  };
+}
+
+function estimateNutritionFromDescription(description, mealType) {
+  const text = cleanText(description).toLowerCase();
+  const defaults = {
+    Breakfast: { carbs: 30, cals: 320, protein: 14 },
+    Lunch: { carbs: 42, cals: 500, protein: 20 },
+    Dinner: { carbs: 48, cals: 580, protein: 24 },
+    Snack: { carbs: 15, cals: 180, protein: 6 },
+    Dessert: { carbs: 24, cals: 240, protein: 3 }
+  };
+
+  const base = { ...(defaults[mealType] || defaults.Snack) };
+
+  if (/apple|orange|grapes?|strawberr|dragon fruit|kiwi|guava/.test(text)) {
+    base.carbs += 8;
+    base.cals += 35;
+  }
+  if (/bread|toast|tortilla|bun|bao|rice|noodle|pasta|potato/.test(text)) {
+    base.carbs += 12;
+    base.cals += 90;
+  }
+  if (/cake|cookie|chocolate|dessert|sweet/.test(text)) {
+    base.carbs += 16;
+    base.cals += 120;
+    base.protein = Math.max(2, base.protein - 2);
+  }
+  if (/egg|eggs|beef|pork|chicken|fish|salmon|tuna|prosciutto|pastrami|meat|tofu|lentil|beans/.test(text)) {
+    base.protein += 8;
+    base.cals += 60;
+  }
+  if (/cheese|milk|yogurt|nuts|peanut butter|avocado/.test(text)) {
+    base.protein += 4;
+    base.cals += 80;
+  }
+
+  base.carbs = Math.max(4, Math.min(95, Math.round(base.carbs)));
+  base.cals = Math.max(60, Math.min(1200, Math.round(base.cals)));
+  base.protein = Math.max(1, Math.min(65, Math.round(base.protein)));
+
+  return base;
+}
+
+function estimatePrediction(carbs, timestamp) {
+  const c = Number.isFinite(carbs) ? carbs : 25;
+  const peak = Math.min(300, Math.max(120, Math.round(110 + c * 3.2)));
+  const low = Math.max(95, peak - 10);
+  const high = Math.min(320, peak + 10);
+
+  const peakTime = new Date(timestamp.getTime() + 95 * 60 * 1000);
+  const hours = peakTime.getHours();
+  const mins = String(peakTime.getMinutes()).padStart(2, '0');
+  const ampm = hours >= 12 ? 'PM' : 'AM';
+  const h12 = ((hours + 11) % 12) + 1;
+
+  return `Pred: ${low}-${high} mg/dL @ ${h12}:${mins} ${ampm}`;
+}
+
+function normalizeDescription(description, mealType) {
+  const text = cleanText(description);
+  if (!text) return 'Meal photo (auto-estimated nutrition)';
+  const prefix = new RegExp(`^${mealType}:\\s*`, 'i');
+  return cleanText(text.replace(prefix, ''));
+}
+
+// Analyze photo + caption text for immediate, best-effort nutrition
+async function analyzePhoto(photoPath, matchedEnvelope = null) {
   const stats = fs.statSync(photoPath);
   const timestamp = stats.mtime;
   const hour = timestamp.getHours();
-  
-  // Determine meal type based on time
+
   let mealType = 'Snack';
   if (hour >= 6 && hour < 11) mealType = 'Breakfast';
   else if (hour >= 11 && hour < 15) mealType = 'Lunch';
   else if (hour >= 17 && hour < 21) mealType = 'Dinner';
-  else if (hour >= 14 && hour < 17) mealType = 'Snack';
   else if (hour >= 20) mealType = 'Dessert';
-  
-  // Try to analyze with image tool if available
-  let description = '[Photo received - awaiting manual description]';
-  let analysis = null;
-  
+
+  let description = normalizeDescription(matchedEnvelope?.captionOrText || '', mealType);
+
   try {
-    // Check if this photo is already in a manual log entry
     const logContent = fs.readFileSync(HEALTH_LOG, 'utf8');
-    const fileName = path.basename(photoPath);
-    const prefix = getFilePrefix(fileName);
-    
-    // If entry with this timestamp already exists with proper description, skip
-    const dateStr = timestamp.toISOString().split('T')[0];
-    const timeStr = timestamp.toISOString().split('T')[1].slice(0, 5);
-    const pattern = new RegExp(`\\| ${dateStr} \\| ${timeStr}.*${mealType}.*(?!\\[Photo - needs description\\])`);
-    
+    // Duplicate-check must use host-local wall clock time (not UTC) to match health_log.md rows.
+    const dtf = new Intl.DateTimeFormat('en-CA', {
+      year: 'numeric', month: '2-digit', day: '2-digit',
+      hour: '2-digit', minute: '2-digit', hour12: false
+    });
+    const parts = dtf.formatToParts(timestamp);
+    const getPart = (type) => parts.find(p => p.type === type)?.value;
+    const dateStr = `${getPart('year')}-${getPart('month')}-${getPart('day')}`;
+    const timeStr = `${getPart('hour')}:${getPart('minute')}`;
+    const pattern = new RegExp(`\\| ${dateStr} \\| ${timeStr}.*${mealType}.*`);
     if (pattern.test(logContent)) {
       console.log(`Entry already exists for ${dateStr} ${timeStr} ${mealType}, skipping`);
       return { skip: true };
@@ -178,30 +322,52 @@ async function analyzePhoto(photoPath) {
   } catch (e) {
     console.log('Could not check existing entries:', e.message);
   }
-  
+
+  const parsed = parseNutritionFromText(description);
+  const estimated = estimateNutritionFromDescription(description, mealType);
+  const carbs = parsed.carbs ?? estimated.carbs;
+  const cals = parsed.cals ?? estimated.cals;
+  const protein = parsed.protein ?? estimated.protein;
+
   return {
-    timestamp: timestamp,
-    mealType: mealType,
-    description: description,
-    needsManualEntry: true
+    timestamp,
+    mealType,
+    description,
+    carbs,
+    cals,
+    protein,
+    predText: estimatePrediction(carbs, timestamp),
+    needsRefinement: !parsed.carbs || !parsed.cals || !parsed.protein
   };
 }
 
 // Add entry to health_log.md
 function addToLog(entry) {
-  const date = entry.timestamp.toISOString().split('T')[0];
-  const time = entry.timestamp.toISOString().split('T')[1].slice(0, 5);
-  const tzOffset = entry.timestamp.getTimezoneOffset() === 480 ? '-08:00' : '-07:00'; // PDT/PST
+  // Use Intl.DateTimeFormat to get parts in the host's actual timezone (no hardcoded offset)
+  const dtf = new Intl.DateTimeFormat('en-CA', { 
+    year: 'numeric', month: '2-digit', day: '2-digit', 
+    hour: '2-digit', minute: '2-digit', hour12: false 
+  });
+  const parts = dtf.formatToParts(entry.timestamp);
+  const getPart = (type) => parts.find(p => p.type === type).value;
   
-  const logLine = `| ${date} | ${time} ${tzOffset} | Maria Dennis | Food | ${entry.mealType} | ${entry.mealType}: ${entry.description} (BG: ${entry.bg || 'Unknown'}) (Pred: TBD) [📷](${entry.photoUrl}) | ${entry.carbs || 'null'} | ${entry.cals || 'null'} |`;
-  
-  // Read current log
+  const date = `${getPart('year')}-${getPart('month')}-${getPart('day')}`;
+  const time = `${getPart('hour')}:${getPart('minute')}`;
+
+  // Get current timezone offset formatted as [+-]HH:mm (e.g., -07:00)
+  const offsetTotalMins = -entry.timestamp.getTimezoneOffset();
+  const offsetSign = offsetTotalMins >= 0 ? '+' : '-';
+  const offsetHrs = String(Math.floor(Math.abs(offsetTotalMins) / 60)).padStart(2, '0');
+  const offsetMins = String(Math.abs(offsetTotalMins) % 60).padStart(2, '0');
+  const tzOffset = `${offsetSign}${offsetHrs}:${offsetMins}`;
+
+  const macros = `(Protein: ${entry.protein}g | Carbs: ~${entry.carbs}g | Cals: ~${entry.cals})`;
+  const logLine = `| ${date} | ${time} ${tzOffset} | Maria Dennis | Food | ${entry.mealType} | ${entry.mealType}: ${entry.description} (BG: ${entry.bg || 'Unknown'}) (${entry.predText}) ${macros} [📷](${entry.photoUrl}) | ${entry.carbs} | ${entry.cals} |`;
+
   let logContent = fs.readFileSync(HEALTH_LOG, 'utf8');
-  
-  // Insert after header (first 2 lines)
   const lines = logContent.split('\n');
   lines.splice(2, 0, logLine);
-  
+
   fs.writeFileSync(HEALTH_LOG, lines.join('\n'));
   console.log(`Added: ${entry.mealType} at ${time}`);
 }
@@ -245,18 +411,43 @@ function queuePendingPhoto(item) {
   fs.writeFileSync(PENDING_FILE, JSON.stringify(pending, null, 2) + '\n');
 }
 
+function writeLinkMetrics(metrics) {
+  const snapshot = {
+    ts: new Date().toISOString(),
+    ...metrics,
+    fileUniqueRate: metrics.totalFiles > 0 ? Number((metrics.matchedByFileUniqueId / metrics.totalFiles).toFixed(3)) : 0,
+    fallbackRate: metrics.totalFiles > 0 ? Number((metrics.matchedByTimestamp / metrics.totalFiles).toFixed(3)) : 0,
+    unmatchedRate: metrics.totalFiles > 0 ? Number((metrics.unmatched / metrics.totalFiles).toFixed(3)) : 0
+  };
+
+  fs.writeFileSync(PHOTO_LINK_METRICS_PATH, JSON.stringify(snapshot, null, 2) + '\n');
+  fs.appendFileSync(PHOTO_LINK_METRICS_LOG_PATH, JSON.stringify(snapshot) + '\n');
+
+  const fallbackHigh = snapshot.fallbackRate >= 0.2;
+  const hasUnmatched = snapshot.unmatched > 0;
+  if (fallbackHigh || hasUnmatched) {
+    console.log(`⚠️ Link quality alert: file_unique_id=${snapshot.fileUniqueRate}, fallback=${snapshot.fallbackRate}, unmatched=${snapshot.unmatched}`);
+  } else {
+    console.log(`✅ Link quality: file_unique_id=${snapshot.fileUniqueRate}, fallback=${snapshot.fallbackRate}, unmatched=${snapshot.unmatched}`);
+  }
+}
+
 // Main processing loop
 async function main() {
   console.log('Photo Pipeline Starting...', new Date().toISOString());
 
-  // Refresh Telegram message type envelopes (best effort)
+  // Refresh Telegram updates via single ingest source, then classify from local cache (best effort)
   try {
+    execSync('cd /Users/javier/.openclaw/workspace && node scripts/telegram_ingest_updates.js', {
+      stdio: 'pipe',
+      timeout: 30000
+    });
     execSync('cd /Users/javier/.openclaw/workspace && node scripts/telegram_classify_updates.js', {
       stdio: 'pipe',
       timeout: 30000
     });
   } catch (e) {
-    console.log('Telegram classifier refresh skipped:', e.message);
+    console.log('Telegram ingest/classifier refresh skipped:', e.message);
   }
 
   const state = loadState();
@@ -273,13 +464,16 @@ async function main() {
     }
   }
   
-  // Filter out already processed (by prefix)
+  // Filter out already processed (by prefix). Failed items are retried up to MAX_RETRIES.
   const filesToProcess = [];
   for (const [prefix, filename] of prefixToFile) {
-    if (!state.processed.includes(prefix) && !state.failed.find(f => f.file === prefix)) {
+    const failEntry = state.failed.find(f => f.file === prefix);
+    const retries = failEntry ? Number(failEntry.retries || 0) : 0;
+    if (!state.processed.includes(prefix) && retries < MAX_RETRIES) {
       filesToProcess.push({
         name: filename,
         prefix: prefix,
+        fileUniqueCandidate: getFileUniqueCandidate(filename),
         path: path.join(INBOUND_DIR, filename),
         mtime: fs.statSync(path.join(INBOUND_DIR, filename)).mtime
       });
@@ -288,9 +482,18 @@ async function main() {
   
   // Sort by modification time (oldest first)
   filesToProcess.sort((a, b) => a.mtime - b.mtime);
+
+  const linkMetrics = {
+    totalFiles: filesToProcess.length,
+    matchedByFileUniqueId: 0,
+    matchedByTimestamp: 0,
+    unmatched: 0,
+    matchedWithCaption: 0
+  };
   
   if (filesToProcess.length === 0) {
     console.log('No new photos to process');
+    writeLinkMetrics(linkMetrics);
     try {
       execSync('cd /Users/javier/.openclaw/workspace && node scripts/health-sync/trigger_post_log_sync.js --source=photo_pipeline_idle', {
         stdio: 'inherit',
@@ -304,20 +507,43 @@ async function main() {
   
   console.log(`Found ${filesToProcess.length} unprocessed photos`);
   
-  // Get current BG once for all entries
-  const bg = await getCurrentBG();
-  
   for (const file of filesToProcess) {
     console.log(`\nProcessing: ${file.name} (prefix: ${file.prefix})`);
-    const matchedEnvelope = findEnvelopeForFile(file, envelopes, state);
+    const envelopeMatch = findEnvelopeForFile(file, envelopes, state);
+    const matchedEnvelope = envelopeMatch?.envelope || null;
+
+    if (envelopeMatch?.strategy === 'file_unique_id') linkMetrics.matchedByFileUniqueId++;
+    else if (envelopeMatch?.strategy === 'timestamp_fallback') linkMetrics.matchedByTimestamp++;
+    else linkMetrics.unmatched++;
+    if (matchedEnvelope && cleanText(matchedEnvelope.captionOrText || '')) linkMetrics.matchedWithCaption++;
 
     try {
-      // Analyze photo
-      const analysis = await analyzePhoto(file.path);
+      const matchedText = cleanText(matchedEnvelope?.captionOrText || '');
+      if (!matchedText) {
+        const failEntry = state.failed.find(f => f.file === file.prefix);
+        if (failEntry) {
+          failEntry.retries = (failEntry.retries || 0) + 1;
+          failEntry.error = 'missing_caption_or_description_link';
+        } else {
+          state.failed.push({ file: file.prefix, retries: 1, error: 'missing_caption_or_description_link' });
+        }
+
+        const retries = (state.failed.find(f => f.file === file.prefix)?.retries) || 1;
+        if (retries < MAX_RETRIES) {
+          console.log(`Deferring ${file.prefix}: missing caption/description link (retry ${retries}/${MAX_RETRIES})`);
+          continue;
+        }
+
+        console.log(`Proceeding with heuristic description for ${file.prefix} after ${MAX_RETRIES} missing-link retries.`);
+      }
+
+      // Analyze photo + caption metadata
+      const analysis = await analyzePhoto(file.path, matchedEnvelope);
 
       // Skip if entry already exists
       if (analysis.skip) {
         markLinkedEnvelope(state, matchedEnvelope);
+        clearFailure(state, file.prefix);
         state.processed.push(file.prefix);
         console.log(`Skipping ${file.name} - entry already exists`);
         continue;
@@ -345,22 +571,31 @@ async function main() {
         });
         console.log(`Queued upload retry for ${file.prefix} (upload failed).`);
         markLinkedEnvelope(state, matchedEnvelope);
+        clearFailure(state, file.prefix);
         state.processed.push(file.prefix);
         continue;
       }
       
-      // Create entry
+      const bgAtMeal = await getBGNearTimestamp(analysis.timestamp);
+
+      // Create entry with immediate nutrition estimates (no manual gate)
       const entry = {
         timestamp: analysis.timestamp,
         mealType: analysis.mealType,
         description: analysis.description,
         photoUrl: photoUrl,
-        bg: bg ? `${bg.sgv} mg/dL ${bg.direction}` : 'Unknown',
-        carbs: null, // Will need manual backfill
-        cals: null
+        bg: bgAtMeal ? `${bgAtMeal.sgv} mg/dL ${bgAtMeal.direction || 'Flat'}` : 'Unknown',
+        carbs: analysis.carbs,
+        cals: analysis.cals,
+        protein: analysis.protein,
+        predText: analysis.predText
       };
 
-      if (analysis.needsManualEntry) {
+      // Add to log immediately
+      addToLog(entry);
+
+      // If any nutrition field was inferred (not explicitly parsed), queue for asynchronous refinement.
+      if (analysis.needsRefinement) {
         queuePendingPhoto({
           filePrefix: file.prefix,
           sourcePath: file.path,
@@ -368,7 +603,7 @@ async function main() {
           mealType: analysis.mealType,
           photoUrl,
           uploadStatus: 'uploaded',
-          reason: 'nutrition_metadata_required_before_log',
+          reason: 'nutrition_inferred_needs_refinement',
           messageId: matchedEnvelope?.messageId || null,
           updateId: matchedEnvelope?.updateId || null,
           contentType: matchedEnvelope?.contentType || null,
@@ -376,17 +611,12 @@ async function main() {
           fileId: matchedEnvelope?.fileId || null,
           fileUniqueId: matchedEnvelope?.fileUniqueId || null
         });
-        console.log(`Queued pending nutrition metadata for ${file.prefix}; skipped placeholder log creation.`);
-        markLinkedEnvelope(state, matchedEnvelope);
-        state.processed.push(file.prefix);
-        continue;
+        console.log(`Queued nutrition refinement for ${file.prefix} (auto-inferred macros).`);
       }
-      
-      // Add to log
-      addToLog(entry);
       
       // Mark as processed (by prefix)
       markLinkedEnvelope(state, matchedEnvelope);
+      clearFailure(state, file.prefix);
       state.processed.push(file.prefix);
       
     } catch (e) {
@@ -405,6 +635,8 @@ async function main() {
     }
   }
   
+  writeLinkMetrics(linkMetrics);
+
   state.lastRun = new Date().toISOString();
   saveState(state);
   

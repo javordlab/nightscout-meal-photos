@@ -69,7 +69,7 @@ const missing = [
 
 async function run() {
     for (const m of missing) {
-        // Convert to PDT (UTC-7)
+        // Parse local time for this historical entry (March 9, 2026 = PDT)
         const dt = new Date(`${m.date}T${m.time}:00-07:00`);
         const treatment = {
             created_at: dt.toISOString(),

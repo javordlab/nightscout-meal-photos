@@ -56,7 +56,7 @@ function updateHealthLog() {
   // Add the three correct dinner entries
   const newEntries = DINNERS.map(d => {
     const date = d.timestamp.slice(0, 10);
-    const time = d.timestamp.slice(11, 16) + ' -07:00';
+    const time = d.timestamp.slice(11, 16) + ' ' + d.timestamp.slice(-6);
     return `| ${date} | ${time} | Maria Dennis | Food | Dinner | ${d.description} [📷](${d.photoUrl}) | ${d.carbs} | ${d.cals} |`;
   });
   

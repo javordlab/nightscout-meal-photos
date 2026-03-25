@@ -12,3 +12,6 @@
 {"ts":"2026-03-22T23:13:37.564Z","op":"audit_complete","since":"2026-03-22","discrepancies":3}
 {"ts":"2026-03-23T16:45:28.200Z","op":"audit_complete","since":"2026-03-16T16:45:17.515Z","discrepancies":53}
 {"ts":"2026-03-23T17:19:54.205Z","op":"audit_complete","since":"2026-03-16T17:19:39.320Z","discrepancies":52}
+{"ts":"2026-03-24T16:46:13.520Z","op":"audit_complete","since":"2026-03-17T16:45:57.117Z","discrepancies":46}
+{"ts":"2026-03-24T16:47:22.406Z","op":"audit_complete","since":"2026-03-22T16:45:00-07:00","discrepancies":10}
+{"ts":"2026-03-25T02:57:53.085Z","op":"audit_complete","since":"2026-03-18T02:57:42.385Z","discrepancies":50}

@@ -26,7 +26,7 @@ function saveStatus(status) {
 function nowInLosAngeles() {
   const now = new Date();
   const fmt = new Intl.DateTimeFormat('en-CA', {
-    timeZone: 'America/Los_Angeles',
+    timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
     year: 'numeric',
     month: '2-digit',
     day: '2-digit',

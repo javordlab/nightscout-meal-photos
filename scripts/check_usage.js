@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const AGENTS_DIR = '/Users/javier/.openclaw/agents';
-const TZ = 'America/Los_Angeles';
+const TZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
 function getTodayStart() {
   const d = new Date();

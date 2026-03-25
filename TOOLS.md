@@ -7,7 +7,7 @@
 3. **GATE:** Run `node scripts/consistency_check.js 2` before/after sync.
 4. **NIGHTSCOUT:** Use `eventType` (Meal Bolus, Note, Exercise). Never leave null.
 5. **NOTION:** Sync to DB `31685ec7-0668-813e-8b9e-c5b4d5d70fa5`. Confirm success.
-6. **TIMEZONE:** Use PST/PDT offsets (e.g., `-08:00`). No raw UTC.
+6. **TIMEZONE:** Use the host machine's local timezone offset (auto-detected at runtime). No raw UTC. Never hardcode `-07:00` or `-08:00`.
 7. **SYNC GUARD:** Audit `health_log.md` daily (9:45 AM) and run Sync Guard every 4h.
 8. **IMPACT:** For food, calculate Pre-Meal BG, Predicted Peak (+90-120m), 2hr Peak, and Delta.
 9. **REPORTS:** Every daily health report must explicitly state the model name used to generate it.

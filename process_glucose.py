@@ -5,9 +5,9 @@ from datetime import datetime, timedelta, timezone
 with open('entries.json', 'r') as f:
     entries = json.load(f)
 
-# PST is UTC-8.
-# Current time provided: Tuesday, March 3rd, 2026 — 9:30 AM PST
-now_pst = datetime(2026, 3, 3, 9, 30, tzinfo=timezone(timedelta(hours=-8)))
+# Use host system timezone.
+# Current time provided: Tuesday, March 3rd, 2026 — 9:30 AM (host timezone)
+now_pst = datetime(2026, 3, 3, 9, 30).astimezone()
 now_utc = now_pst.astimezone(timezone.utc)
 
 # Ranges in UTC
@@ -61,7 +61,7 @@ metrics_14d = calculate_metrics(entries_last_14d)
 outliers = []
 # Thresholds: High > 180, Low < 70
 for e in sorted(entries_last_24h, key=lambda x: x['date']):
-    dt_pst = datetime.fromtimestamp(e['date'] / 1000, tz=timezone.utc).astimezone(timezone(timedelta(hours=-8)))
+    dt_pst = datetime.fromtimestamp(e['date'] / 1000, tz=timezone.utc).astimezone(datetime.now().astimezone().tzinfo)
     if e['sgv'] > 220 or e['sgv'] < 65: # Looking for significant outliers
         outliers.append((dt_pst.strftime('%I:%M %p'), e['sgv']))
 
@@ -84,8 +84,8 @@ if outliers:
     max_entry = next(e for e in entries_last_24h if e['sgv'] == max_sgv)
     min_entry = next(e for e in entries_last_24h if e['sgv'] == min_sgv)
     
-    max_time = datetime.fromtimestamp(max_entry['date'] / 1000, tz=timezone.utc).astimezone(timezone(timedelta(hours=-8))).strftime('%I:%M %p')
-    min_time = datetime.fromtimestamp(min_entry['date'] / 1000, tz=timezone.utc).astimezone(timezone(timedelta(hours=-8))).strftime('%I:%M %p')
+    max_time = datetime.fromtimestamp(max_entry['date'] / 1000, tz=timezone.utc).astimezone(datetime.now().astimezone().tzinfo).strftime('%I:%M %p')
+    min_time = datetime.fromtimestamp(min_entry['date'] / 1000, tz=timezone.utc).astimezone(datetime.now().astimezone().tzinfo).strftime('%I:%M %p')
 
 print(json.dumps({
     'metrics_24h': metrics_24h,

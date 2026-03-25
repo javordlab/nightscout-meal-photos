@@ -43,7 +43,7 @@ function parseHealthLog() {
       id: `manual-${date}-${time}`,
       title: title,
       type: mealType,
-      date: `${date}T${time.split(' ')[0]}:00.000-07:00`,
+      date: (() => { const _tg = time.split(' '); const _og = _tg[1] || (() => { const m = -new Date().getTimezoneOffset(); const s = m >= 0 ? '+' : '-'; return `${s}${String(Math.floor(Math.abs(m)/60)).padStart(2,'0')}:${String(Math.abs(m)%60).padStart(2,'0')}`; })(); return `${date}T${_tg[0]}:00.000${_og}`; })(),
       photo: photoUrl,
       carbs: carbsNum,
       cals: calsNum,

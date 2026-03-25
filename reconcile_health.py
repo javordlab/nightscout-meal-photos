@@ -2,6 +2,10 @@ import requests
 import json
 from datetime import datetime
 
+def _local_tz_offset():
+    _off = datetime.now().astimezone().strftime('%z')  # e.g. "-0700"
+    return f"{_off[:3]}:{_off[3:]}"  # e.g. "-07:00"
+
 NOTION_TOKEN = "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"
 DATABASE_ID = "31685ec7-0668-813e-8b9e-c5b4d5d70fa5"
 HEADERS = {
@@ -15,7 +19,7 @@ def get_notion_entries():
     payload = {
         "filter": {
             "property": "Date",
-            "date": { "on_or_after": "2026-03-08T00:00:00-08:00" }
+            "date": { "on_or_after": f"2026-03-08T00:00:00{_local_tz_offset()}" }
         }
     }
     res = requests.post(url, headers=HEADERS, json=payload)
@@ -53,36 +57,19 @@ for page in entries:
     time_str = dt_part[1][:5] # HH:MM
     offset = date_val[-6:]
     
-    # Normalize time: if it is -07:00, it might be the "Set 2" shifted time.
-    # Set 1 09:43 -> Set 2 10:43.
-    # We want everything at the Set 1 time with -08:00.
-    
-    # Heuristic: if title + date matches, check if we have a duplicate with 1h difference
+    # Normalize offset: any entry not using the current host timezone offset gets updated.
+    # Clock time (HH:MM) is preserved — only the offset is corrected.
     key = (title, date_str, time_str)
-    
-    if offset == "-07:00":
-        # Check if there is a corresponding entry with HH-1:MM and -08:00
-        hour = int(time_str[:2])
-        p_hour = f"{hour-1:02d}"
-        p_time = f"{p_hour}:{time_str[3:]}"
-        p_key = (title, date_str, p_time)
-        
-        # Or maybe it just needs updating to -08:00 (keeping the hour)
-        # The prompt says "Ensure all Notion timestamps use the -08:00 offset."
-        # If I have 10:43-07:00 and 09:43-08:00, I should delete the 10:43 one.
-        # If I only have 10:43-07:00, I should update it to 10:43-08:00 (or 09:43-08:00?)
-        # Let's assume the "Set 1" times in the log are the "correct" ones.
-        pass
 
     # Simplified approach:
-    # 1. Update all -07:00 to -08:00 (keeping clock time same for now)
+    # 1. Update any hardcoded offset to the host's current local offset
     # 2. Remove exact duplicates (Title, Date, Time)
-    
-    new_date_str = f"{date_str}T{time_str}:00.000-08:00"
-    if offset != "-08:00":
+    local_off = _local_tz_offset()
+    new_date_str = f"{date_str}T{time_str}:00.000{local_off}"
+    if offset != local_off:
         update_notion_date(page["id"], new_date_str)
         actions_taken.append(f"Updated offset for {title} at {time_str}")
-        offset = "-08:00"
+        offset = local_off
     
     key = (title, date_str, time_str)
     if key in seen:

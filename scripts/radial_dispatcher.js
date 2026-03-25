@@ -138,7 +138,7 @@ function parsePredFromText(text, mealIso) {
   let peakIso = null;
   if (mealIso) {
     const dateStr = mealIso.substring(0, 10);
-    const offset = mealIso.match(/[+-]\d{2}:\d{2}$/)?.[0] || '-07:00';
+    const offset = mealIso.match(/[+-]\d{2}:\d{2}$/)?.[0] || (() => { const m = -new Date().getTimezoneOffset(); const s = m >= 0 ? '+' : '-'; return `${s}${String(Math.floor(Math.abs(m)/60)).padStart(2,'0')}:${String(Math.abs(m)%60).padStart(2,'0')}`; })();
     const timeMatches = [...match[2].matchAll(/(\d{1,2}:\d{2})\s*(AM|PM)/gi)];
     if (timeMatches.length > 0) {
       const mins = timeMatches.map(t => {
@@ -238,10 +238,11 @@ async function main() {
   
   console.log(`Found ${dataLines.length} entries in log.`);
 
-  // Process today's entries first, then last 30 days (using robust local PST date)
-  const laDate = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Los_Angeles', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+  // Process today's entries first, then last 30 days (using robust local date)
+  const _sysTz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  const laDate = new Intl.DateTimeFormat('en-CA', { timeZone: _sysTz, year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
   const today = laDate; // YYYY-MM-DD
-  const cutoffDate = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Los_Angeles', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date(Date.now() - 30 * 24 * 60 * 60 * 1000));
+  const cutoffDate = new Intl.DateTimeFormat('en-CA', { timeZone: _sysTz, year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date(Date.now() - 30 * 24 * 60 * 60 * 1000));
   const priorityLines = dataLines.filter(l => l.includes(today));
   const otherLines = dataLines.filter(l => !l.includes(today) && l.slice(2, 12) >= cutoffDate).reverse();
   const finalLines = [...priorityLines, ...otherLines];
@@ -293,8 +294,8 @@ async function main() {
     if (offsetPart) {
       entryData.iso = dStr + offsetPart;
     } else {
-      const isPDT = new Date(dStr + "Z") > new Date("2026-03-08T10:00:00Z");
-      entryData.iso = dStr + (isPDT ? "-07:00" : "-08:00");
+      const _d = new Date(dStr); const _om = -_d.getTimezoneOffset(); const _s = _om >= 0 ? '+' : '-'; const _h = String(Math.floor(Math.abs(_om) / 60)).padStart(2, '0'); const _m = String(Math.abs(_om) % 60).padStart(2, '0');
+      entryData.iso = dStr + `${_s}${_h}:${_m}`;
     }
 
     const photos = entryData.category === 'Food' ? extractPhotos(entryData.text) : [];

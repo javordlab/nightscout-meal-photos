@@ -26,7 +26,7 @@ async function fetchJson(url) {
 async function main() {
   try {
     const now = new Date();
-    // End of yesterday (Start of today PST)
+    // End of yesterday (Start of today local time)
     const end = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, 0).toISOString();
     // Start of yesterday (24h before end)
     const start = new Date(new Date(end).getTime() - 24 * 60 * 60 * 1000).toISOString();

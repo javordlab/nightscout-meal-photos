@@ -64,7 +64,8 @@ async function main() {
     const entryText = parts[6];
     
     // Build timestamp
-    const timestamp = `${date}T${time.split(' ')[0]}:00${time.includes('-07:00') ? '-07:00' : '-08:00'}`;
+    const _tp2 = time.split(' '); const _off2 = _tp2[1] || (() => { const m = -new Date().getTimezoneOffset(); const s = m >= 0 ? '+' : '-'; return `${s}${String(Math.floor(Math.abs(m)/60)).padStart(2,'0')}:${String(Math.abs(m)%60).padStart(2,'0')}`; })();
+    const timestamp = `${date}T${_tp2[0]}:00${_off2}`;
     
     // Extract title
     const titleMatch = entryText.match(/^[^:]+:\s*(.+)/);
@@ -90,12 +91,12 @@ async function main() {
   
   for (const t of treatments) {
     const tTime = new Date(t.created_at);
-    const tPDT = new Date(tTime.toLocaleString('en-US', { timeZone: 'America/Los_Angeles' }));
+    const tLocal = new Date(tTime.toLocaleString('en-US', { timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone }));
     
     // Find matching log entry
     const match = logEntries.find(e => {
       const eTime = new Date(e.timestamp);
-      const diff = Math.abs(eTime.getTime() - tPDT.getTime());
+      const diff = Math.abs(eTime.getTime() - tLocal.getTime());
       return diff < 60 * 1000; // Within 1 minute
     });
     

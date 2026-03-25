@@ -6,7 +6,7 @@ const CHART_SCRIPT = "/Users/javier/.openclaw/workspace/skills/chart-image/scrip
 const OUTPUT_PATH = "/Users/javier/.openclaw/workspace/tmp/weekly_calories_chart.png";
 
 function getLADateString(d = new Date()) {
-  return new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Los_Angeles', year: 'numeric', month: '2-digit', day: '2-digit' }).format(d);
+  return new Intl.DateTimeFormat('en-CA', { timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone, year: 'numeric', month: '2-digit', day: '2-digit' }).format(d);
 }
 
 function main() {

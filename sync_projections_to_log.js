@@ -51,7 +51,7 @@ async function run() {
     const predTime = props['Predicted Peak Time']?.date?.start;
 
     if (predBg && predTime) {
-      const pTime = new Date(predTime).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true, timeZone: 'America/Los_Angeles' });
+      const pTime = new Date(predTime).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true, timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone });
       const predTag = `(Pred: ${predBg} mg/dL @ ${pTime})`;
       
       // Find the line in health_log.md

@@ -1,40 +1,21 @@
 #!/usr/bin/env node
-const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
 const WORKSPACE = '/Users/javier/.openclaw/workspace';
 const DATA_DIR = path.join(WORKSPACE, 'data');
+const RAW_UPDATES_PATH = path.join(DATA_DIR, 'telegram_updates_raw.jsonl');
 const OUT_PATH = path.join(DATA_DIR, 'telegram_media_envelopes.jsonl');
 const STATE_PATH = path.join(DATA_DIR, 'telegram_media_state.json');
 
-const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || '8262629923:AAEdW0HWJN1Y-R32ekvghqrg5bnQydMeop0';
-
-function callTelegram(method, params = {}) {
-  const query = new URLSearchParams(params).toString();
-  const url = `https://api.telegram.org/bot${BOT_TOKEN}/${method}${query ? `?${query}` : ''}`;
-  return new Promise((resolve, reject) => {
-    https.get(url, res => {
-      let data = '';
-      res.on('data', chunk => (data += chunk));
-      res.on('end', () => {
-        try {
-          const json = JSON.parse(data);
-          resolve(json);
-        } catch (e) {
-          reject(e);
-        }
-      });
-    }).on('error', reject);
-  });
-}
-
 function loadState() {
-  if (!fs.existsSync(STATE_PATH)) return { lastUpdateId: 0 };
+  if (!fs.existsSync(STATE_PATH)) return { lastClassifiedUpdateId: 0 };
   try {
-    return JSON.parse(fs.readFileSync(STATE_PATH, 'utf8'));
+    const parsed = JSON.parse(fs.readFileSync(STATE_PATH, 'utf8'));
+    if (!Number.isFinite(parsed.lastClassifiedUpdateId)) parsed.lastClassifiedUpdateId = 0;
+    return parsed;
   } catch {
-    return { lastUpdateId: 0 };
+    return { lastClassifiedUpdateId: 0 };
   }
 }
 
@@ -139,42 +120,62 @@ function toEnvelope(update) {
   };
 }
 
+function loadRawUpdates() {
+  if (!fs.existsSync(RAW_UPDATES_PATH)) return [];
+  const lines = fs.readFileSync(RAW_UPDATES_PATH, 'utf8').split('\n').filter(Boolean);
+  const updates = [];
+  for (const line of lines) {
+    try {
+      const obj = JSON.parse(line);
+      if (!obj || !Number.isFinite(obj.update_id)) continue;
+      updates.push(obj);
+    } catch {
+      // ignore malformed line
+    }
+  }
+  updates.sort((a, b) => a.update_id - b.update_id);
+  return updates;
+}
+
+function appendEnvelopes(envelopes) {
+  if (!envelopes.length) return;
+  fs.mkdirSync(DATA_DIR, { recursive: true });
+  const lines = envelopes.map((e) => JSON.stringify(e)).join('\n') + '\n';
+  fs.appendFileSync(OUT_PATH, lines);
+}
+
 async function main() {
   const state = loadState();
-  const updates = await callTelegram('getUpdates', {
-    offset: state.lastUpdateId + 1,
-    limit: 100
-  });
+  const updates = loadRawUpdates();
+  const startId = Number(state.lastClassifiedUpdateId || 0);
 
-  if (!updates.ok) throw new Error(`telegram_getUpdates_failed:${JSON.stringify(updates)}`);
-
+  const pending = updates.filter((u) => u.update_id > startId);
   const envelopes = [];
-  let maxUpdateId = state.lastUpdateId;
-  for (const update of updates.result || []) {
+  let maxUpdateId = startId;
+
+  for (const update of pending) {
     if (update.update_id > maxUpdateId) maxUpdateId = update.update_id;
     const env = toEnvelope(update);
     if (!env) continue;
     envelopes.push(env);
   }
 
-  if (envelopes.length > 0) {
-    fs.mkdirSync(DATA_DIR, { recursive: true });
-    const lines = envelopes.map(e => JSON.stringify(e)).join('\n') + '\n';
-    fs.appendFileSync(OUT_PATH, lines);
-  }
+  appendEnvelopes(envelopes);
 
   saveState({
-    lastUpdateId: maxUpdateId,
+    ...state,
+    lastClassifiedUpdateId: maxUpdateId,
     lastRun: new Date().toISOString(),
     appended: envelopes.length
   });
 
-  console.log(JSON.stringify({ appended: envelopes.length, lastUpdateId: maxUpdateId }, null, 2));
-  return { appended: envelopes.length, lastUpdateId: maxUpdateId };
+  const summary = { appended: envelopes.length, lastClassifiedUpdateId: maxUpdateId };
+  console.log(JSON.stringify(summary, null, 2));
+  return summary;
 }
 
 if (require.main === module) {
-  main().catch(e => {
+  main().catch((e) => {
     console.error(e.message);
     process.exit(1);
   });

@@ -145,7 +145,8 @@ async function run() {
         
         const entryDate = parts[1];
         const entryTime = parts[2];
-        const entryIso = `${entryDate}T${entryTime}:00-07:00`;
+        const _tSgc = entryTime.split(' '); const _oSgc = _tSgc[1] || (() => { const m = -new Date().getTimezoneOffset(); const s = m >= 0 ? '+' : '-'; return `${s}${String(Math.floor(Math.abs(m)/60)).padStart(2,'0')}:${String(Math.abs(m)%60).padStart(2,'0')}`; })();
+        const entryIso = `${entryDate}T${_tSgc[0]}:00${_oSgc}`;
         const entryDt = new Date(entryIso);
 
         if (entryDt >= yesterday) {

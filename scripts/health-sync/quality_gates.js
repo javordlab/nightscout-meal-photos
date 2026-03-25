@@ -11,8 +11,13 @@ const INTERNAL_PHOTO_DIRS = [
 const PLACEHOLDER_PATTERNS = [
   /\[photo received - awaiting manual description\]/i,
   /photo\s*-?\s*needs\s*description/i,
+  /meal photo\s*\(auto-estimated nutrition\)/i,
   /pred:\s*tbd/i
 ];
+
+const BG_TAG_REGEX = /\bBG:\s*[^;()]+/i;
+const PRED_TAG_REGEX = /\bPred:\s*[^;()]+/i;
+const MEAL_TYPE_PREFIX_REGEX = /^(Breakfast|Lunch|Snack|Dinner|Dessert):\s+/i;
 
 function isPlaceholderText(text) {
   const value = String(text || '');
@@ -75,9 +80,40 @@ function validateEntry(entry, context = {}) {
       errors.push({ reason: 'missing_food_title' });
     }
 
-    const combinedText = `${entry.title || ''} ${entry.notes || ''}`.trim();
+    const title = String(entry.title || '').trim();
+    const notes = String(entry.notes || '').trim();
+    const combinedText = `${title} ${notes}`.trim();
+
     if (isPlaceholderText(combinedText)) {
       errors.push({ reason: 'placeholder_food_entry_blocked' });
+    }
+
+    // REQUIRED format guardrails for all Food entries:
+    // 1) Meal type prefix in title (e.g., "Dinner: ...")
+    // 2) BG annotation present (value + trend text is expected upstream)
+    // 3) Pred annotation present (range/time is expected upstream)
+    if (!MEAL_TYPE_PREFIX_REGEX.test(title)) {
+      errors.push({ reason: 'missing_meal_type_prefix_in_food_title' });
+    }
+
+    if (entry.mealType && title) {
+      const normalizedMealType = String(entry.mealType).trim().toLowerCase();
+      const titlePrefix = (title.match(/^([A-Za-z]+):/) || [])[1];
+      if (titlePrefix && titlePrefix.toLowerCase() !== normalizedMealType) {
+        errors.push({
+          reason: 'meal_type_prefix_mismatch',
+          expectedMealType: entry.mealType,
+          titlePrefix
+        });
+      }
+    }
+
+    if (!BG_TAG_REGEX.test(combinedText)) {
+      errors.push({ reason: 'missing_bg_annotation_for_food' });
+    }
+
+    if (!PRED_TAG_REGEX.test(combinedText)) {
+      errors.push({ reason: 'missing_prediction_annotation_for_food' });
     }
 
     if (entry.proteinEst == null) {

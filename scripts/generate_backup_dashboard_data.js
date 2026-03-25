@@ -6,7 +6,7 @@ const BACKUP_ROOT = "/Users/javier/.openclaw/workspace/backups/mysql";
 const OUTPUT_PATH = "/Users/javier/.openclaw/workspace/nightscout-meal-photos/data/backups.json";
 const SESSIONS_PATH = "/Users/javier/.openclaw/agents/health-guard/sessions/sessions.json";
 const MYSQL_BIN = "/opt/homebrew/opt/mysql@8.4/bin/mysql";
-const DASHBOARD_TZ = 'America/Los_Angeles';
+const DASHBOARD_TZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
 function getDateStringInTZ(date, timeZone) {
     const parts = new Intl.DateTimeFormat('en-US', {

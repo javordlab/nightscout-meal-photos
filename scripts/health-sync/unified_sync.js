@@ -213,7 +213,7 @@ function parsePredictedPeakTimeIso(entry) {
   const ts = String(entry?.timestamp || '');
   const datePart = ts.split('T')[0];
   const offsetMatch = ts.match(/([+-]\d\d:\d\d|Z)$/);
-  const offset = offsetMatch ? offsetMatch[1] : '-07:00';
+  const offset = offsetMatch ? offsetMatch[1] : (() => { const m = -new Date().getTimezoneOffset(); const s = m >= 0 ? '+' : '-'; return `${s}${String(Math.floor(Math.abs(m)/60)).padStart(2,'0')}:${String(Math.abs(m)%60).padStart(2,'0')}`; })();
 
   let start = text;
   const rangeSplit = text.split('-');

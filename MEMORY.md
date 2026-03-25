@@ -23,9 +23,18 @@
 ## Core Operational Protocols
 - **Radial Architecture:** `health_log.md` is the only SSoT. All syncs (Notion, Nightscout, MySQL) must trigger every 30 minutes and after any manual log update.
 - **Reporting (9:30 AM PT Daily):** Must include 24-hour summary (Avg, TIR, GMI), 14-day trends (GMI, Avg, TIR, CV), Nutrition (24h full + 14d avg), Medication status, Outliers, and Supervisor Analysis. Use emojis/bolding.
+- **Reporting Accuracy (NON-NEGOTIABLE):** Daily report metrics must always use the correct LA timeframe and exact script-calculated math. No stale windows, no approximations, no inferred numbers.
+- **Report Tone/Format Preference:** Keep the “Extended Supervisor Analysis” as a single combined, casual/friendly grouping (do not split into separate sub-sections like “went well”, “improve”, and “encouragement”).
+- **Deterministic Report Delivery:** Primary 09:30 report is sent by `scripts/health-sync/send_daily_health_report_telegram.js` (system crontab), which validates target date/timeframe and fails closed on invalid window. 09:37 chart cron is fallback-only and idempotent.
 - **Projections & Outcomes:** Every Food entry MUST have `Predicted Peak BG` and `Predicted Peak Time` calculated immediately upon logging. After meal completion (~3 hours), automatically backfill actual outcomes: `Pre-Meal BG`, `2hr Peak BG`, `Peak Time`, `BG Delta`, `Time to Peak (min)`, `Peak BG Delta`, and `Peak Time Delta (min)`. Automated backfill runs every 2 hours via cron.
 - **Silent Logging:** Food, Medication, and Exercise entries are auto-logged immediately without confirmation. Photos are optional — log the entry either way.
-- **Real-time Context:** Every manual log entry (Food, Medication, Activity) MUST include the most recent glucose value from Nightscout in the response and the log note.
+- **Real-time Context:** Every manual or automated log entry (Food, Medication, Activity) MUST include the most recent glucose value from Nightscout in the response and the log note.
+- **Strict Format (Food):** Every Food entry must follow this exact pattern: `[Meal Type]: [Description] (BG: [Value] [Trend]) (Pred: [Range] mg/dL @ [Time]) (Protein: [P]g | Carbs: ~[C]g | Cals: ~[CAL])`. Example: `Lunch: Half cheese quesadilla (flour tortilla + cheese), Apple slices (~⅓–½ small apple), Avocado slices (~¼ avocado) (BG: 116 mg/dL Flat) (Pred: 196-216 mg/dL @ 11:43 AM) (Protein: 14g | Carbs: ~30g | Cals: ~320)`.
+- **P0 Channel + Log Submission Guardrail (Meals):** For every meal posted to channel AND every Food row written to `health_log.md`, always include BOTH current BG (value + trend) and prediction (`Pred` range + time), plus explicit meal-type prefix in entry text. Never omit fields; if unavailable, write explicit placeholders (`BG: Unknown`, `Pred: Pending`).
+- **Food Description Accuracy (NON-NEGOTIABLE):** Food descriptions must reflect the actual submitted photo/caption content. Never invent or substitute meal descriptions. If image understanding is unavailable or uncertain, mark explicitly as uncertain and queue refinement instead of writing an inaccurate description.
+- **Meal Type in Entry Text (REQUIRED):** Food entry text must always include the explicit meal type prefix (`Breakfast:`, `Lunch:`, `Snack:`, `Dinner:`, `Dessert:`) in addition to the structured Meal Type column.
+- **Strict Format (Medication):** Every Medication entry must follow this pattern: `Medication: [Med Name] [Dose] ([Time Context]) (BG: [Value] [Trend])`. Example: `Medication: Metformin 500mg (breakfast) (BG: 124 mg/dL Flat)`.
+- **Timezone Policy (SYSTEM-WIDE):** Always use the host machine timezone dynamically for all timestamps and offsets. Never hardcode timezone offsets (`-07:00`, `-08:00`, etc.) anywhere in scripts or generated entries.
 - **Data Integrity:** All dashboard data and visual charts must be pushed to GitHub at the end of every sync cycle.
 - **STRICT DATA RULE — NEVER EYEBALL:** When reporting any numerical values (glucose, carbs, calories, TIR, GMI, etc.), **NEVER estimate or eyeball**. Always:
   1. Execute the calculation scripts (`scripts/calculate_glucose_summary.js`, `scripts/calculate_14d_stats.js`)
@@ -194,5 +203,5 @@ All of `~/.openclaw/` and related projects are now versioned on GitHub under `ja
 **Fix:**
 - Rosuvastatin: anchor date 2026-03-01 (taken = day 0), take on even days since anchor (`daysSince % 2 === 0`). Correct through all month boundaries.
 - Metformin: 500mg breakfast (log when LA hour ≥ 9), 500mg lunch (≥ 12), 1000mg dinner (≥ 19). Each idempotent — skipped if already in log.
-- Timezone: all date/hour/offset derived from `Intl.DateTimeFormat('America/Los_Angeles')`. Auto-detects PDT/PST.
+- Timezone: all date/hour/offset derived from `Intl.DateTimeFormat().resolvedOptions().timeZone` (host system timezone). Never hardcoded.
 **Metformin schedule:** 09:10 500mg breakfast | 13:00 500mg lunch | 19:00 1000mg dinner.

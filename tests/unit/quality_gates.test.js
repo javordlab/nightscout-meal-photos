@@ -45,7 +45,7 @@ describe('quality_gates', () => {
       timestamp: '2026-03-22T09:12:00-07:00',
       category: 'Food',
       title: 'Breakfast: Avocado toast',
-      notes: 'BG: 121 mg/dL Flat; Protein: 17g',
+      notes: 'BG: 121 mg/dL Flat; Pred: 140-160 mg/dL @ 10:45 AM; Protein: 17g',
       carbsEst: 21,
       caloriesEst: 340,
       proteinEst: 17,

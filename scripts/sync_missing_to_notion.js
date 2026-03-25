@@ -114,7 +114,7 @@ function parseEntryLine(line) {
   if (!timeMatch) return null;
   
   const time = timeMatch[1];
-  const offset = timeMatch[2] || '-08:00';
+  const offset = timeMatch[2] || (() => { const m = -new Date().getTimezoneOffset(); const s = m >= 0 ? '+' : '-'; return `${s}${String(Math.floor(Math.abs(m)/60)).padStart(2,'0')}:${String(Math.abs(m)%60).padStart(2,'0')}`; })();
   const timestamp = `${date}T${time}:00${offset}`;
   
   // Extract title (before parenthetical)
@@ -190,7 +190,8 @@ async function createNotionPage(entry) {
     if (isPM && peakHours !== 12) peakHours += 12;
     if (!isPM && peakHours === 12) peakHours = 0;
     
-    const peakTimeIso = `${entry.date}T${String(peakHours).padStart(2, '0')}:${minutes}:00-07:00`;
+    const _pm = -new Date().getTimezoneOffset(); const _ps = _pm >= 0 ? '+' : '-'; const _localOff = `${_ps}${String(Math.floor(Math.abs(_pm)/60)).padStart(2,'0')}:${String(Math.abs(_pm)%60).padStart(2,'0')}`;
+    const peakTimeIso = `${entry.date}T${String(peakHours).padStart(2, '0')}:${minutes}:00${_localOff}`;
     properties['Predicted Peak Time'] = { date: { start: peakTimeIso } };
   }
   

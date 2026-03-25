@@ -56,8 +56,8 @@ async function main() {
   console.log('\nNightscout treatments:');
   treatments.filter(t => t.created_at?.startsWith('2026-03-2')).forEach(t => {
     const utc = new Date(t.created_at).toISOString();
-    const pdt = new Date(t.created_at).toLocaleString('en-US', { timeZone: 'America/Los_Angeles' });
-    console.log(`  UTC: ${utc} | PDT: ${pdt} | ${t.notes?.slice(0, 50)}`);
+    const pdt = new Date(t.created_at).toLocaleString('en-US', { timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone });
+    console.log(`  UTC: ${utc} | Local: ${pdt} | ${t.notes?.slice(0, 50)}`);
   });
   
   // Find suspect treatments (no matching log entry)
@@ -65,9 +65,9 @@ async function main() {
   const suspect = treatments.filter(t => {
     if (!t.created_at?.startsWith('2026-03-2')) return false;
     const tDate = new Date(t.created_at);
-    const tPDT = new Date(tDate.toLocaleString('en-US', { timeZone: 'America/Los_Angeles' }));
-    const dateStr = tPDT.toISOString().slice(0, 10);
-    const timeStr = tPDT.toTimeString().slice(0, 5);
+    const tLocal = new Date(tDate.toLocaleString('en-US', { timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone }));
+    const dateStr = tLocal.toISOString().slice(0, 10);
+    const timeStr = tLocal.toTimeString().slice(0, 5);
     
     // Check if this matches any log entry
     const match = logLines.find(l => {

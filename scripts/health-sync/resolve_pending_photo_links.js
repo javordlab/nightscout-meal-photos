@@ -11,10 +11,12 @@ function cleanWhitespace(value) {
 }
 
 function inferOffset(dateValue) {
-  const d = new Date(`${dateValue}T00:00:00Z`);
-  const dstStart = new Date('2026-03-08T00:00:00Z');
-  const dstEnd = new Date('2026-11-01T00:00:00Z');
-  return (d >= dstStart && d < dstEnd) ? '-07:00' : '-08:00';
+  const d = new Date(`${dateValue}T12:00:00`);
+  const mins = -d.getTimezoneOffset();
+  const sign = mins >= 0 ? '+' : '-';
+  const h = String(Math.floor(Math.abs(mins) / 60)).padStart(2, '0');
+  const m = String(Math.abs(mins) % 60).padStart(2, '0');
+  return `${sign}${h}:${m}`;
 }
 
 function toIso(date, timeCell) {

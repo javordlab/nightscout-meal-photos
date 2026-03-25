@@ -258,7 +258,11 @@ async function main() {
 
   const pendingList = Array.isArray(pendingPhotos) ? pendingPhotos : [];
   const pendingRetriesUnresolved = pendingList.filter(p => !/^https?:\/\//i.test(String(p.photoUrl || ''))).length;
-  const pendingNutritionMetadata = pendingList.filter(p => p.reason === 'nutrition_metadata_required_before_log').length;
+  const pendingNutritionMetadata = pendingList.filter(p =>
+    p.reason === 'nutrition_metadata_required_before_log' ||
+    p.reason === 'nutrition_metadata_required_after_placeholder_log' ||
+    p.reason === 'nutrition_inferred_needs_refinement'
+  ).length;
   const uploadedFromRetry = pendingList.filter(p => {
     const ts = new Date(p.uploadedAt || 0).getTime();
     return Number.isFinite(ts) && ts >= sinceMs && ts <= nowMs;

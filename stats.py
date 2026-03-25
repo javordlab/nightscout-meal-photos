@@ -5,8 +5,8 @@ def calculate_gmi(mean_glucose):
     return 3.31 + (0.02392 * mean_glucose)
 
 def get_pst_time(utc_dt):
-    # PST is UTC-8
-    return utc_dt.astimezone(timezone(timedelta(hours=-8)))
+    # Use host system timezone
+    return utc_dt.astimezone()
 
 def process_data():
     with open('glucose_data.json', 'r') as f:
@@ -69,7 +69,7 @@ def process_data():
     for dt, sgv in outliers:
         pst_time = get_pst_time(dt).strftime('%I:%M %p')
         type_str = "Spike" if sgv > 250 else "Low"
-        outlier_reports.append(f"- {type_str}: {sgv} mg/dL at {pst_time} PST")
+        outlier_reports.append(f"- {type_str}: {sgv} mg/dL at {pst_time}")
 
     # 5. Reality Check & Recommendations
     # Find treatments in the last 24h

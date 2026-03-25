@@ -100,7 +100,7 @@ Date | Time | User | Category | Meal Type | Entry | Carbs | Cals
 ```
 
 ### Normalization rules
-- `Date + Time` -> ISO timestamp with PST/PDT offset preserved
+- `Date + Time` -> ISO timestamp with host local timezone offset preserved
 - `Entry` -> split into:
   - `title`
   - `notes`

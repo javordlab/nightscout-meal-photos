@@ -60,7 +60,7 @@ node scripts/deploy.js --env=production
 
 ## Data Entry Rules
 
-- **Timezone:** Always use PST/PDT offsets (e.g., `2026-03-22 09:00 -07:00`). Never raw UTC.
+- **Timezone:** Always use the host machine's local timezone offset (auto-detected at runtime, never hardcoded). Example format: `2026-03-22 09:00 -07:00`. Never raw UTC.
 - **Entry key:** `sha256(timestamp|user|title)` — used for deduplication across all systems.
 - **Food entries:** Must include BG at meal time, predicted peak (`meal_time + 105 min`, `peak = 120 + carbs * 3.5` capped at 300), protein, carbs, cals, and photo link.
 - **Medications:** Use `Note` eventType in Nightscout.
@@ -100,8 +100,8 @@ API keys are stored in `~/.openclaw/secrets/` and referenced in `TOOLS.md`.
 - On HEARTBEAT checks: reply exactly `HEARTBEAT_OK`, nothing else.
 - Handle tool/edit errors silently. Report only gateway-level failures.
 - Use `trash` not `rm`.
-- Default model: `ollama/kimi-k2.5:cloud` → fallback `openai-codex/gpt-5.3-codex` → `ollama/qwen2.5-coder:7b`.
-- HealthGuard model: `openai-codex/gpt-5.3-codex`.
-- Image analysis policy: best-effort in active model context (no hard image-model lock).
+- Default model: `ollama/kimi-k2.5:cloud` for routine/background work.
+- **Sonnet-forced tasks** (must use `anthropic/claude-sonnet-4-6`, no exceptions): any write to `health_log.md`/Nightscout/Notion, entry key computation/dedup, quality gate evaluation, medication entries, glucose outlier detection/alerts, conflict resolution, peak BG projections, HealthGuard analysis, daily reports, image interpretation.
+- Image analysis: `anthropic/claude-sonnet-4-6` → fallback `anthropic/claude-sonnet-4-5` only (never kimi or qwen).
 - Daily reports must state the model name used to generate them.
 - Read `memory/YYYY-MM-DD.md` (today + yesterday) and `MEMORY.md` at session start.

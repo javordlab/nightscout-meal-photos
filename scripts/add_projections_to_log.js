@@ -42,11 +42,11 @@ function main() {
     const dateStr = `${date}T${time.split(' ')[0]}`;
     const mealTime = new Date(dateStr);
     const peakTime = new Date(mealTime.getTime() + 105 * 60 * 1000);
-    const peakTimeStr = peakTime.toLocaleTimeString('en-US', { 
-      hour: 'numeric', 
+    const peakTimeStr = peakTime.toLocaleTimeString('en-US', {
+      hour: 'numeric',
       minute: '2-digit',
       hour12: true,
-      timeZone: 'America/Los_Angeles'
+      timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone
     });
     
     // Add projection to entry text

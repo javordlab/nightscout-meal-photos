@@ -10,7 +10,7 @@ function notionRequest(endpoint, body, method = 'POST') {
       method,
       headers: {
         'Authorization': `Bearer ${NOTION_KEY}`,
-        'Notion-Version': '2025-09-03',
+        'Notion-Version': '2022-06-28',
         'Content-Type': 'application/json'
       }
     };
@@ -44,10 +44,12 @@ async function main() {
     url: dbInfo.url
   }, null, 2));
   
-  // Query with NO filter to get all pages
-  console.log('\nQuerying with no filter...');
+  console.log('\nQuerying with no filter (sorted desc)...');
   const result = await notionRequest('/databases/31685ec7-0668-813e-8b9e-c5b4d5d70fa5/query', {
-    page_size: 100
+    page_size: 100,
+    sorts: [
+      { property: 'Date', direction: 'descending' }
+    ]
   });
   
   console.log('Total results:', result.results?.length || 0);
@@ -55,10 +57,12 @@ async function main() {
   
   if (result.results && result.results.length > 0) {
     console.log('\nRecent entries:');
-    result.results.slice(0, 10).forEach(p => {
+    result.results.slice(0, 20).forEach(p => {
       const date = p.properties?.Date?.date?.start;
       const title = p.properties?.Entry?.title?.[0]?.plain_text;
-      console.log(`  ${date} | ${title?.slice(0, 50)} | ${p.id}`);
+      const user = p.properties?.User?.select?.name || 'Unknown';
+      const category = p.properties?.Category?.select?.name || 'Unknown';
+      console.log(`  ${date} | ${category.slice(0, 4)} | ${user.slice(0, 5)} | ${title?.slice(0, 40)} | ${p.id}`);
     });
     
     // Check for duplicates
@@ -67,9 +71,10 @@ async function main() {
     result.results.forEach(p => {
       const date = p.properties?.Date?.date?.start;
       const title = p.properties?.Entry?.title?.[0]?.plain_text;
-      const key = `${date}|${title}`;
+      const user = p.properties?.User?.select?.name || 'Unknown';
+      const key = `${date}|${user}|${title}`;
       if (byTitleDate[key]) {
-        duplicates.push({ first: byTitleDate[key], duplicate: p });
+        duplicates.push({ first: byTitleDate[key], duplicate: p, key });
       } else {
         byTitleDate[key] = p;
       }

@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "chats": {
+    "-5262020908": {
+      "2026-03-24": {
+        "sent": {
+          "daily_glucose_chart.png": {
+            "sentAt": "2026-03-24T16:53:39.361Z",
+            "messageId": 3305,
+            "size": 54231,
+            "mtimeMs": 1774371215676.0017
+          },
+          "glucose_chart.png": {
+            "sentAt": "2026-03-24T16:53:40.421Z",
+            "messageId": 3306,
+            "size": 89295,
+            "mtimeMs": 1774371217117.4019
+          },
+          "weekly_calories_chart.png": {
+            "sentAt": "2026-03-24T16:53:41.079Z",
+            "messageId": 3307,
+            "size": 29636,
+            "mtimeMs": 1774371217377.439
+          },
+          "weekly_carbs_chart.png": {
+            "sentAt": "2026-03-24T16:53:41.784Z",
+            "messageId": 3308,
+            "size": 26914,
+            "mtimeMs": 1774371217664.0396
+          }
+        }
+      }
+    }
+  }
+}

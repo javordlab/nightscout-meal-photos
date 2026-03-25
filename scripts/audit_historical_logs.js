@@ -143,7 +143,8 @@ async function main() {
   console.log(`Auditing ${localLogData.length} local entries against ${notionItems.length} Notion entries...`);
 
   for (const local of localLogData) {
-    const localDateTime = new Date(`${local.date}T${local.time}:00-08:00`);
+    const _tAh = local.time.split(' '); const _oAh = _tAh[1] || (() => { const m = -new Date().getTimezoneOffset(); const s = m >= 0 ? '+' : '-'; return `${s}${String(Math.floor(Math.abs(m)/60)).padStart(2,'0')}:${String(Math.abs(m)%60).padStart(2,'0')}`; })();
+    const localDateTime = new Date(`${local.date}T${_tAh[0]}:00${_oAh}`);
     
     // Find matching Notion item by looking for same day and similar title
     const match = notionItems.find(n => {

@@ -11,8 +11,8 @@
 - **Verification:** Every sync must verify Notion and MySQL status; if failure occurs, retry once then alert.
 
 ## Data Entry Standards
-- **Timestamps:** EVERY entry must include the explicit PST/PDT offset.
-  - Example: `2026-03-14 | 09:00 -07:00`
+- **Timestamps:** EVERY entry must include the explicit host timezone offset (auto-detected at runtime, never hardcoded).
+  - Example: `2026-03-14 | 09:00 -07:00` (offset derived from host, not hardcoded)
 - **Real-time Context:** Manual entries (Food, Activity, Medication) MUST fetch the most recent glucose value from Nightscout and include it in the log note: `(BG: 145 mg/dL Rising)`.
 - **Food Projections:** Every Food entry MUST have a `Predicted Peak BG` and `Predicted Peak Time`.
   - Formula: `Peak = 120 + (carbs * 3.5)`, capped at 300.

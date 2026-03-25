@@ -5,7 +5,8 @@ from datetime import datetime, timedelta, timezone
 GMI_FORMULA = lambda avg: 3.31 + (0.02392 * avg)
 TIR_MIN = 70
 TIR_MAX = 180
-PST_OFFSET = -8
+import datetime as _dt
+_LOCAL_TZ = _dt.datetime.now().astimezone().tzinfo
 
 # Load data
 with open('entries.json', 'r') as f:
@@ -23,9 +24,7 @@ with open('entries.json', 'r') as f:
     else:
         entries = json.loads(content)
 
-# current_time (PST) = March 1, 9:30 AM
-# current_time (UTC) = March 1, 17:30
-current_time_utc = datetime(2026, 3, 1, 17, 30, tzinfo=timezone.utc)
+current_time_utc = datetime.now(timezone.utc)
 now_minus_24h = current_time_utc - timedelta(hours=24)
 now_minus_48h = current_time_utc - timedelta(hours=48)
 now_minus_14d = current_time_utc - timedelta(days=14)
@@ -34,7 +33,7 @@ def parse_date(date_str):
     return datetime.fromisoformat(date_str.replace('Z', '+00:00'))
 
 def format_pst(date_utc):
-    pst = date_utc + timedelta(hours=PST_OFFSET)
+    pst = date_utc.astimezone()
     return pst.strftime('%I:%M %p')
 
 def calculate_stats(data_subset):

@@ -182,7 +182,8 @@ async function main() {
 
   console.log(`Repopulating with ${sourceData.length} clean source entries...`);
   for (const entry of sourceData) {
-    const isoDate = `${entry.date}T${entry.time}:00-08:00`;
+    const _tp = entry.time.split(' '); const _fOff = _tp[1] || (() => { const m = -new Date().getTimezoneOffset(); const s = m >= 0 ? '+' : '-'; return `${s}${String(Math.floor(Math.abs(m)/60)).padStart(2,'0')}:${String(Math.abs(m)%60).padStart(2,'0')}`; })();
+    const isoDate = `${entry.date}T${_tp[0]}:00${_fOff}`;
     const payload = {
       parent: { database_id: DATABASE_ID },
       properties: {

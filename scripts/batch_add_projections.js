@@ -59,7 +59,7 @@ async function main() {
       console.log(`FAILED: ${result.error}`);
       failed++;
     } else {
-      console.log(`OK (${predictedBg} mg/dL @ ${peakTime.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Los_Angeles' })})`);
+      console.log(`OK (${predictedBg} mg/dL @ ${peakTime.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone })})`);
       success++;
     }
     

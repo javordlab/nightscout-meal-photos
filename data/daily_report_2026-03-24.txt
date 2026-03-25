@@ -1,0 +1,65 @@
+🩺 DAILY HEALTH REPORT
+📅 Date: 2026-03-24
+🕒 Coverage window: 2026-03-24 00:00 – now (America/Los_Angeles)
+⚙️ Generated time: 2026-03-25T03:51:07.570Z
+🤖 Model: anthropic/claude-sonnet-4-6
+
+1) 📊 Today's Glucose Summary
+- Average glucose: 117.9 mg/dL
+- Time in Range (70-180): 100.0%
+- GMI: 6.13%
+- Standard deviation: 19.3 mg/dL
+- CV: 16.3%
+- Data points used: 244
+
+2) 📉 14-day Trends (ending 2026-03-24)
+- Average glucose: 126.8 mg/dL
+- Time in Range (70-180): 99.6%
+- GMI: 6.34%
+- Standard deviation: 20.1 mg/dL
+- CV: 15.8%
+- Data points used: 1140
+
+3) 🍽️ Nutrition (2026-03-24)
+- Meals logged: 6
+- Total carbs: 159.0 g
+- Total calories: 1758 kcal
+- Total protein: 68.1 g
+
+4) 🧾 Meal Details (2026-03-24)
+- 10:08 AM — Breakfast: Half cheese quesadilla (flour tortilla + cheese), Apple slices (~⅓–½ small apple), Avocado slices (~¼ avocado) — 30.0g carbs, 320 kcal, 14.0g protein — BG at meal: 116 mg/dL
+- 12:46 PM — Lunch: Dim sum meal (stir-fried beef with scallions/onions, chicken feet, 2 siu mai dumplings, small noodle bowl, and scallion pancake) — 45.0g carbs, 540 kcal, 24.0g protein — BG at meal: 130 mg/dL
+- 3:42 PM — Snack: Milk cheese cake bite (~1/2 piece from packaged milk cheese cake) — 12.0g carbs, 120 kcal, 3.0g protein — BG at meal: 110 mg/dL
+- 3:45 PM — Snack: Half large strawberry — 2.0g carbs, 8 kcal, 0.1g protein — BG at meal: 110 mg/dL
+- 7:06 PM — Dinner: Beef and onion stir-fry over rice with sliced cucumber, plus a pink lemonade drink — 48.0g carbs, 580 kcal, 24.0g protein — BG at meal: 116 mg/dL
+- 7:27 PM — Dinner: Small slice of sponge cake topped with cream/custard and fresh strawberry slices — 22.0g carbs, 190 kcal, 3.0g protein — BG at meal: 132 mg/dL
+
+5) 📚 Nutrition Baseline (14-day daily average ending 2026-03-24)
+- Average carbs/day: 152.7 g
+- Average calories/day: 1536.0 kcal
+- Average protein/day: 84.9 g
+- Average meals/day: 4.8
+- Days in window with food entries: 14
+
+6) 💊 Medication Status (2026-03-24)
+- 2026-03-24T19:00:00-07:00: Medication: Metformin 1000mg (dinner)
+- 2026-03-24T13:00:00-07:00: Medication: Metformin 500mg (lunch)
+- 2026-03-24T09:00:00-07:00: Medication: Lisinopril 10mg (Scheduled)
+- 2026-03-24T09:10:00-07:00: Medication: Metformin 500mg (breakfast)
+
+7) 🚨 Outliers (2026-03-24)
+- High readings >180: 0
+- Low readings <70: 0
+- Max glucose: 176 mg/dL at 2026-03-24T18:14:48.000Z
+
+8) 🧠 Extended Supervisor Analysis
+- Nice work overall today: Strong Time in Range at 100.0% | Limited high excursions (>180 mg/dL): 0 | No hypoglycemia episodes (<70 mg/dL) | Good protein intake (68.1g).
+- Key trend signals: avg glucose vs 14-day baseline -8.9 mg/dL, TIR delta 0.4%, carbs delta 6.3 g, calories delta 222 kcal.
+- Friendly focus for tomorrow: No urgent corrections needed—just keep the same consistency and momentum.
+- You’re doing great—small consistent habits keep adding up. Keep it going 🌟
+
+9) 🛡️ Self-Audit (Data Integrity)
+- Target day enforced: 2026-03-24 PT
+- Glucose points in target window: 244
+- GMI formula check (3.31 + 0.02392 × Avg): 6.13%
+- Reported GMI: 6.13%

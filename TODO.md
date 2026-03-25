@@ -46,9 +46,9 @@
 - [x] On later upload success, patch `health_log.md` row with real URL and re-upsert Notion/Nightscout.
 
 ### 6) Improvements: timezone handling (remove hardcoded Los Angeles)
-- [ ] Replace hardcoded `America/Los_Angeles` usage with system timezone detection at runtime.
+- [x] Replace hardcoded `America/Los_Angeles` usage with system timezone detection at runtime.
 - [ ] Standardize timezone source in one utility (single `getSystemTimezone()` + offset helper) and reuse across scripts.
-- [ ] Ensure reports, log writes, sync timestamps, cron displays, and prediction windows all use detected system timezone consistently.
+- [x] Ensure reports, log writes, sync timestamps, cron displays, and prediction windows all use detected system timezone consistently.
 - [ ] Add explicit override env var (e.g., `HEALTH_TZ`) for travel/manual control, defaulting to system timezone.
 - [ ] Add regression tests for timezone change scenario (e.g., LA -> Europe) to verify date boundaries and report windows remain correct.
 

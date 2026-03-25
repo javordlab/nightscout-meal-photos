@@ -63,7 +63,7 @@ function parsePredFromText(text, fullDateIso) {
   let peakIso = null;
   if (fullDateIso) {
     const datePart = fullDateIso.substring(0, 10);
-    const offset = fullDateIso.match(/[+-]\d{2}:\d{2}$/)?.[0] || '-07:00';
+    const offset = fullDateIso.match(/[+-]\d{2}:\d{2}$/)?.[0] || (() => { const m = -new Date().getTimezoneOffset(); const s = m >= 0 ? '+' : '-'; return `${s}${String(Math.floor(Math.abs(m)/60)).padStart(2,'0')}:${String(Math.abs(m)%60).padStart(2,'0')}`; })();
     const timeMatches = [...match[2].matchAll(/(\d{1,2}:\d{2})\s*(AM|PM)/gi)];
     if (timeMatches.length > 0) {
       const mins = timeMatches.map(t => {
@@ -81,7 +81,7 @@ function parsePredFromText(text, fullDateIso) {
 async function run() {
   console.log('Starting Projections Audit...');
 
-  // Retroactive window: last 7 days in America/Los_Angeles business context
+  // Retroactive window: last 7 days in local (host) timezone context
   const now = new Date();
   const sevenDaysAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
   const onOrAfter = sevenDaysAgo.toISOString().slice(0, 10);

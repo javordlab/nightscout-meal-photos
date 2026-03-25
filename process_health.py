@@ -11,23 +11,20 @@ with open('glucose_14d.json', 'r') as f:
 with open('treatments_48h.json', 'r') as f:
     treatments_48h = json.load(f)
 
-# Helper: UTC to PST (UTC-8)
+# Helper: UTC to host system timezone
 def to_pst(dt_utc):
-    return dt_utc - timedelta(hours=8)
+    return dt_utc.astimezone()
 
 now_utc = datetime.now(timezone.utc)
-# Overriding now_utc to the prompt's context time
-# Prompt says: Thursday, March 5th, 2026 — 9:30 AM (America/Los_Angeles)
-# 9:30 AM PST = 17:30 UTC
-now_utc = datetime(2026, 3, 5, 17, 30, tzinfo=timezone.utc)
 yesterday_utc = now_utc - timedelta(days=1)
 two_days_ago_utc = now_utc - timedelta(days=2)
 
-# Previous calendar day (PST): Wednesday, March 4th
-# March 4th 00:00 PST = March 4th 08:00 UTC
-# March 4th 23:59 PST = March 5th 07:59 UTC
-cal_start_utc = datetime(2026, 3, 4, 8, 0, tzinfo=timezone.utc)
-cal_end_utc = datetime(2026, 3, 5, 8, 0, tzinfo=timezone.utc)
+# Previous calendar day midnight bounds in local timezone → UTC
+_now_local = datetime.now().astimezone()
+_today = _now_local.date()
+_yesterday = _today - timedelta(days=1)
+cal_start_utc = datetime(_yesterday.year, _yesterday.month, _yesterday.day).astimezone(timezone.utc)
+cal_end_utc = datetime(_today.year, _today.month, _today.day).astimezone(timezone.utc)
 
 # 2. Glucose metrics (last 24h)
 last_24h_sgv = [e['sgv'] for e in glucose_48h if yesterday_utc <= datetime.fromisoformat(e['dateString'].replace('Z', '+00:00')) < now_utc]
@@ -56,7 +53,7 @@ for e in glucose_48h:
             pst_time = to_pst(dt).strftime('%I:%M %p')
             outliers.append(f"{pst_time}: {e['sgv']} mg/dL")
 
-# 5. Calories and Carbs (Previous PST calendar day)
+# 5. Calories and Carbs (Previous local calendar day)
 total_carbs = 0
 total_calories = 0
 for t in treatments_48h:

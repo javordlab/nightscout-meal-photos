@@ -134,7 +134,7 @@ async function main() {
     const peakTime = new Date(result.projection.peakTime);
     console.log(`\n✅ Projection added:`);
     console.log(`   Predicted Peak: ${result.projection.peakBg} mg/dL`);
-    console.log(`   Peak Time: ${peakTime.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Los_Angeles' })} PT`);
+    console.log(`   Peak Time: ${peakTime.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone })}`);
   } else {
     console.log('\n❌ Failed:', result.error || result.reason);
     process.exit(1);

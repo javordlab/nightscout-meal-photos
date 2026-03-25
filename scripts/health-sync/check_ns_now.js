@@ -14,8 +14,8 @@ https.get(`${NS_URL}/api/v1/treatments.json?find[created_at][$gte]=2026-03-21&co
       console.log('March 21 treatments:', j.length);
       j.forEach(t => {
         const utc = new Date(t.created_at).toISOString();
-        const pdt = new Date(t.created_at).toLocaleString('en-US', { timeZone: 'America/Los_Angeles' });
-        console.log(`  PDT: ${pdt} | UTC: ${utc}`);
+        const pdt = new Date(t.created_at).toLocaleString('en-US', { timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone });
+        console.log(`  Local: ${pdt} | UTC: ${utc}`);
         console.log(`       ${t.notes?.slice(0, 60)}...`);
       });
     } catch(e) {

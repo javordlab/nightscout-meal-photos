@@ -14,8 +14,8 @@ function backfillOffsets() {
             
             if (time && !time.includes(' ')) {
                 const dStr = `${date}T${time}:00`;
-                const isPDT = new Date(dStr + "Z") > new Date("2026-03-08T10:00:00Z");
-                const offset = isPDT ? "-07:00" : "-08:00";
+                const _d = new Date(dStr); const _om = -_d.getTimezoneOffset(); const _s = _om >= 0 ? '+' : '-'; const _h = String(Math.floor(Math.abs(_om) / 60)).padStart(2, '0'); const _m = String(Math.abs(_om) % 60).padStart(2, '0');
+                const offset = `${_s}${_h}:${_m}`;
                 
                 parts[2] = ` ${time} ${offset} `;
                 lines[i] = parts.join('|');

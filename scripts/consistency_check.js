@@ -7,7 +7,7 @@ const NS_URL = 'https://p01--sefi--s66fclg7g2lm.code.run';
 const NS_SECRET = 'b3170e23f45df7738434cd8be9cd79d86a6d0f01';
 const NOTION_KEY = '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';
 const NOTION_DB_ID = '31685ec7-0668-813e-8b9e-c5b4d5d70fa5';
-const TZ = 'America/Los_Angeles';
+const TZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
 const daysArg = Number(process.argv[2] || 2);
 const lookbackDays = Number.isFinite(daysArg) && daysArg > 0 ? daysArg : 2;
@@ -65,7 +65,7 @@ function parseLocalRows() {
     if (p.length < 9) continue;
     const [date, time, user, category, mealType, entry, carbsRaw, calsRaw] = p.slice(1, 9);
     const localIso = `${date}T${time}:00`;
-    const d = new Date(localIso + '-08:00');
+    const d = new Date(localIso);
     if (isNaN(d.getTime())) continue;
     if (d < cutoff) continue;
 
