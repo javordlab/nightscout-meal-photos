@@ -308,6 +308,17 @@
     "peak": 192
   },
   {
+    "id": "32885ec7-0668-81a9-9fa1-c732a8e278fc",
+    "title": "Breakfast: Ciabatta bread (~60g), avocado (~75g), prosciutto (~15g, 1 slice), milk (~1 cup) (BG: 102 mg/dL Flat) (Pred: 140-155 mg/dL @ 11:15-11:45 AM) (Protein: 26g | Carbs: ~48g | Cals: ~360)",
+    "type": "Breakfast",
+    "date": "2026-03-19T09:48:00.000-07:00",
+    "photo": "https://iili.io/qN52xM7.jpg",
+    "carbs": 48,
+    "cals": 360,
+    "delta": 70,
+    "peak": 172
+  },
+  {
     "id": "32a85ec7-0668-8166-9df9-f27a670ea1ac",
     "title": "Dinner: 3 steamed dumplings + octopus and potato stew with carrots + loquats, grapes, and one strawberry (BG: 144 mg/dL ↗️) (Pred: 300 mg/dL @ 9:05 PM) (Protein: 24g | Carbs: ~72g | Cals: ~518)",
     "type": "Dinner",
