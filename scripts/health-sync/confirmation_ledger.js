@@ -15,7 +15,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const WORKSPACE = '/Users/javier/.openclaw/workspace';
+const WORKSPACE = process.cwd();
 const LEDGER_PATH = path.join(WORKSPACE, 'data', 'write_ledger.jsonl');
 
 /**
