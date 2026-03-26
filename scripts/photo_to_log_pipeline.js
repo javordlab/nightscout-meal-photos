@@ -564,6 +564,17 @@ async function main() {
         continue;
       }
       
+      // URL-based duplicate check: if this photo URL already exists in the log,
+      // the agent already logged this photo (possibly under a different time or mealType).
+      const existingLogContent = fs.readFileSync(HEALTH_LOG, 'utf8');
+      if (existingLogContent.includes(photoUrl)) {
+        console.log(`Photo URL already in log (${photoUrl}), skipping duplicate`);
+        markLinkedEnvelope(state, matchedEnvelope);
+        clearFailure(state, file.prefix);
+        state.processed.push(file.prefix);
+        continue;
+      }
+
       const bgAtMeal = await getBGNearTimestamp(analysis.timestamp);
 
       // Create entry with immediate nutrition estimates (no manual gate)

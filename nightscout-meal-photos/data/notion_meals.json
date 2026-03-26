@@ -1,14 +1,36 @@
 [
   {
-    "id": "32f85ec7-0668-816a-b063-e121a429efa6",
-    "title": "Snack: Meal photo (auto-estimated nutrition) (BG: 114 mg/dL Flat) (Pred: 148-168 mg/dL @ 6:32 PM) (Protein: 6g | Carbs: ~15g | Cals: ~180)",
-    "type": "Snack",
-    "date": "2026-03-25T16:57:00.000-07:00",
+    "id": "32f85ec7-0668-8131-a1df-e7b8b4170a28",
+    "title": "Dinner: Braised mushrooms, eggplant, and 3 soft-boiled egg halves (1.5 eggs) over shirataki/glass noodles with soy-based sauce (BG: 111 mg/dL Flat) (Pred: 130-150 mg/dL @ 7:46 PM) (Protein: 15g | Carbs: ~11g | Cals: ~265)",
+    "type": "Dinner",
+    "date": "2026-03-25T18:16:00.000-07:00",
+    "photo": "https://iili.io/qsmRiIp.jpg",
+    "carbs": 11,
+    "cals": 265,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "32e85ec7-0668-817c-948e-f4bd3a1f7a31",
+    "title": "Lunch: 1 apple and 1oz Korean tofu snack with pine nut (기평장 두부라자) (BG: 115 mg/dL Flat) (Pred: 150-170 mg/dL @ 6:26 PM) (Protein: 2g | Carbs: ~34g | Cals: ~175)",
+    "type": "Lunch",
+    "date": "2026-03-25T16:56:00.000-07:00",
     "photo": "https://iili.io/qsS8myx.jpg",
-    "carbs": 15,
-    "cals": 180,
+    "carbs": 34,
+    "cals": 175,
     "delta": 7,
     "peak": 122
+  },
+  {
+    "id": "32f85ec7-0668-8170-ace7-ecefba79c614",
+    "title": "Breakfast: Half ciabatta with cream cheese and smoked salmon (BG: 112 mg/dL Flat) (Pred: 145-165 mg/dL @ 11:00 AM) (Protein: 20g | Carbs: ~25g | Cals: ~300)",
+    "type": "Breakfast",
+    "date": "2026-03-25T09:33:00.000-07:00",
+    "photo": "https://iili.io/qikEfs4.jpg",
+    "carbs": 25,
+    "cals": 300,
+    "delta": null,
+    "peak": null
   },
   {
     "id": "32e85ec7-0668-81e2-a1d4-fd5d258a8291",
