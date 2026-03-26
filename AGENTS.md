@@ -38,6 +38,7 @@
   - HealthGuard high-value analysis and daily reports
   - Image interpretation: `anthropic/claude-sonnet-4-6` (fallback `anthropic/claude-sonnet-4-5` only — never kimi or qwen for images)
 - **FOOD ENTRY FORMAT (REQUIRED):** Use exact pattern `[Meal Type]: [Description] (BG: [Value] [Trend]) (Pred: [Range] mg/dL @ [Time]) (Protein: [P]g | Carbs: ~[C]g | Cals: ~[CAL])`. The meal-type prefix (`Breakfast:`, `Lunch:`, `Snack:`, `Dinner:`, `Dessert:`) must appear in entry text.
+- **CUMULATIVE MEAL PREDICTION (NON-NEGOTIABLE):** When a new food entry shares the same meal type (e.g., a second Breakfast item) and was logged within 2 hours of the first, the peak BG prediction MUST be based on the **sum of all carbs for that meal**, not the new item's carbs alone. Adding food to a meal always increases (or holds) the predicted peak — never decreases it. Annotate with `[Cumulative [MealType]: Xg carbs total]` when applicable.
 - **FOOD DESCRIPTION ACCURACY (NON-NEGOTIABLE):** Description must match the submitted photo/caption content. Never invent/substitute meal descriptions. If uncertain, mark uncertainty and queue refinement.
 - **TIMEZONE POLICY (SYSTEM-WIDE):** Always use host-local dynamic timezone for timestamps/offsets. Never hardcode timezone offsets (`-07:00`, `-08:00`, etc.) unless a target API explicitly requires a specific format.
 - **MEDICATION FORMAT (REQUIRED):** Every Medication entry must follow: `Medication: [Med Name] [Dose] ([Time Context]) (BG: [Value] [Trend])`. Example: `Medication: Metformin 500mg (breakfast) (BG: 124 mg/dL Flat)`.
