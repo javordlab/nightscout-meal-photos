@@ -1,5 +1,6 @@
 # Health Log
 
+| 2026-03-26 | 10:21 -07:00 | Maria Dennis | Activity | - | 25 minutes walk up/down hill | null | null |
 | 2026-03-26 | 09:38 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: 1 slice dragon fruit and handful of mixed nuts (BG: 102 mg/dL Flat) (Pred: 115-130 mg/dL @ 11:08 AM) (Protein: 5g | Carbs: ~12g | Cals: ~130) | 12 | 130 |
 | 2026-03-26 | 09:22 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Half sandwich on seeded multigrain bread with peanut butter and low sugar jam (BG: 100 mg/dL Flat) (Pred: 135-155 mg/dL @ 10:52 AM) (Protein: 8g | Carbs: ~22g | Cals: ~230) [📷](https://iili.io/qQ7Uut9.jpg) | 22 | 230 |
 

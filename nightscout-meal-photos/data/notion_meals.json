@@ -1,87 +1,69 @@
 [
   {
     "id": "32f85ec7-0668-8135-8cd6-d7c292f9306b",
-    "title": "Breakfast: Half sandwich on seeded multigrain bread with peanut butter and low sugar jam",
+    "title": "Breakfast: Half sandwich on seeded multigrain bread with peanut butter and low sugar jam (BG: 100 mg/dL Flat) (Pred: 135-155 mg/dL @ 10:52 AM) (Protein: 8g | Carbs: ~22g | Cals: ~230)",
     "type": "Breakfast",
-    "date": "2026-03-26T09:22:00-07:00",
+    "date": "2026-03-26T09:22:00.000-07:00",
     "photo": "https://iili.io/qQ7Uut9.jpg",
     "carbs": 22,
     "cals": 230,
     "delta": null,
-    "peak": null,
-    "entry_key": "sha256:580922719246518f29de9e80ab2830d24061f6f8b8db48790779a2aaf4997839",
-    "protein": 8,
-    "preMeal": null
+    "peak": null
   },
   {
     "id": "32f85ec7-0668-8131-a1df-e7b8b4170a28",
-    "title": "Dinner: Braised mushrooms, eggplant, and 3 soft-boiled egg halves (1.5 eggs) over shirataki/glass noodles with soy-based sauce",
+    "title": "Dinner: Braised mushrooms, eggplant, and 3 soft-boiled egg halves (1.5 eggs) over shirataki/glass noodles with soy-based sauce (BG: 111 mg/dL Flat) (Pred: 130-150 mg/dL @ 7:46 PM) (Protein: 15g | Carbs: ~11g | Cals: ~265)",
     "type": "Dinner",
-    "date": "2026-03-25T18:16:00-07:00",
+    "date": "2026-03-25T18:16:00.000-07:00",
     "photo": "https://iili.io/qsmRiIp.jpg",
     "carbs": 11,
     "cals": 265,
     "delta": 23,
-    "peak": 134,
-    "entry_key": "sha256:532477ed4edbb1ace2f1482a72d44796994b09204c3e5ec9655ced0624c39b27",
-    "protein": 15,
-    "preMeal": 111
+    "peak": 134
   },
   {
     "id": "32e85ec7-0668-817c-948e-f4bd3a1f7a31",
-    "title": "Lunch: 1 apple and 1oz Korean tofu snack with pine nut (기평장 두부라자)",
+    "title": "Lunch: 1 apple and 1oz Korean tofu snack with pine nut (기평장 두부라자) (BG: 115 mg/dL Flat) (Pred: 150-170 mg/dL @ 6:26 PM) (Protein: 2g | Carbs: ~34g | Cals: ~175)",
     "type": "Lunch",
-    "date": "2026-03-25T16:56:00-07:00",
+    "date": "2026-03-25T16:56:00.000-07:00",
     "photo": "https://iili.io/qsS8myx.jpg",
     "carbs": 34,
     "cals": 175,
     "delta": 7,
-    "peak": 122,
-    "entry_key": "sha256:fcf910a2ac2be2e3dccc99ea1e85d8db48423602cc8637c0622190db740845a3",
-    "protein": 2,
-    "preMeal": 115
+    "peak": 122
   },
   {
     "id": "32f85ec7-0668-8170-ace7-ecefba79c614",
-    "title": "Breakfast: Half ciabatta with cream cheese and smoked salmon",
+    "title": "Breakfast: Half ciabatta with cream cheese and smoked salmon (BG: 112 mg/dL Flat) (Pred: 145-165 mg/dL @ 11:00 AM) (Protein: 20g | Carbs: ~25g | Cals: ~300)",
     "type": "Breakfast",
-    "date": "2026-03-25T09:33:00-07:00",
+    "date": "2026-03-25T09:33:00.000-07:00",
     "photo": "https://iili.io/qikEfs4.jpg",
     "carbs": 25,
     "cals": 300,
     "delta": 71,
-    "peak": 182,
-    "entry_key": "sha256:da7b2f97ee5646c0c53545bb8608dd671948d89e82dbdc42d0c2c8051ff211f4",
-    "protein": 20,
-    "preMeal": 111
+    "peak": 182
   },
   {
     "id": "32e85ec7-0668-81e2-a1d4-fd5d258a8291",
-    "title": "Dinner: Small slice of sponge cake with 1 tsp peanut butter and 1 small strawberry",
+    "title": "Dinner: Small slice of sponge cake with 1 tsp peanut butter and 1 small strawberry (BG: 132 mg/dL Flat) (Pred: 165-180 mg/dL @ 9:12 PM) (Protein: ~4g | Carbs: ~16g | Cals: ~135)",
     "type": "Dinner",
-    "date": "2026-03-24T19:27:00-07:00",
+    "date": "2026-03-24T19:27:00.000-07:00",
     "photo": "https://iili.io/q6t2ubp.jpg",
     "carbs": 16,
     "cals": 135,
     "delta": 41,
-    "peak": 173,
-    "entry_key": "sha256:f2e953b7f791a192bea433c20c1b9ddf4afdceeba279c745840b61c412d32cd4",
-    "protein": 4,
-    "preMeal": 132
+    "peak": 173
   },
   {
     "id": "32e85ec7-0668-81e7-9c33-e589d56f3324",
-    "title": "Dinner: Beef and onion stir-fry over rice with sliced cucumber, plus a pink lemonade drink",
+    "title": "Dinner: Beef and onion stir-fry over rice with sliced cucumber, plus a pink lemonade drink (BG: 115 mg/dL Flat) (Pred: 254-274 mg/dL @ 8:41 PM) (Protein: 24g | Carbs: ~48g | Cals: ~580)",
     "type": "Dinner",
-    "date": "2026-03-24T19:06:00-07:00",
+    "date": "2026-03-24T19:06:00.000-07:00",
     "photo": "https://iili.io/q6ZFWBt.jpg",
     "carbs": 48,
     "cals": 580,
     "delta": 57,
-    "peak": 173,
-    "entry_key": "sha256:6e28cc1d0cb77350301abf680e1ef5e61658f4ab2e5f76813dc00d6576a5fc18",
-    "protein": 24,
-    "preMeal": 116
+    "peak": 173
   },
   {
     "id": "32d85ec7-0668-819c-b777-e32516cc6d4a",
