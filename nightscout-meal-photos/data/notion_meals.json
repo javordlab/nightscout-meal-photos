@@ -1,5 +1,27 @@
 [
   {
+    "id": "32f85ec7-0668-8175-b6f6-c0d2f63f97b3",
+    "title": "Lunch: 7 loquats (fresh off stem) (BG: 107 mg/dL Flat) (Pred: 160-175 mg/dL @ 2:27 PM) [Cumulative Lunch: 46g carbs total] (Protein: 1g | Carbs: ~13g | Cals: ~55)",
+    "type": "Lunch",
+    "date": "2026-03-26T12:57:00.000-07:00",
+    "photo": "https://iili.io/qQQ7scu.jpg",
+    "carbs": 13,
+    "cals": 55,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "32f85ec7-0668-81a3-8a3e-e80ac0e38e3f",
+    "title": "Lunch: Braised pork belly (2 pieces) with eggplant/mushrooms in dark adobo-style sauce over rice (~1/3 cup) (BG: 109 mg/dL Flat) (Pred: 150-165 mg/dL @ 2:14 PM) (Protein: 32g | Carbs: ~33g | Cals: ~520)",
+    "type": "Lunch",
+    "date": "2026-03-26T12:44:00.000-07:00",
+    "photo": "https://iili.io/qQsa4rg.jpg",
+    "carbs": 33,
+    "cals": 520,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "32f85ec7-0668-8135-8cd6-d7c292f9306b",
     "title": "Breakfast: Half sandwich on seeded multigrain bread with peanut butter and low sugar jam (BG: 100 mg/dL Flat) (Pred: 135-155 mg/dL @ 10:52 AM) (Protein: 8g | Carbs: ~22g | Cals: ~230)",
     "type": "Breakfast",
@@ -7,8 +29,8 @@
     "photo": "https://iili.io/qQ7Uut9.jpg",
     "carbs": 22,
     "cals": 230,
-    "delta": null,
-    "peak": null
+    "delta": 58,
+    "peak": 158
   },
   {
     "id": "32f85ec7-0668-8131-a1df-e7b8b4170a28",
