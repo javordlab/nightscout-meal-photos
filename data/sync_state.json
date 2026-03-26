@@ -5157,31 +5157,6 @@
       },
       "needs_outcome_backfill": true
     },
-    "sha256:a0e9e0be849d84f14edc12297850ffa9bcd9cefc5868b4b80bc6f38d5fb6ab77": {
-      "timestamp": "2026-03-24T12:46:00-07:00",
-      "content_hash": "sha256:2baa9700972c7bee78e9887d1a70b5ec2c292143acd6228c9b8ffc364ef8cdb5",
-      "user": "Maria Dennis",
-      "category": "Food",
-      "meal_type": "Lunch",
-      "title": "Lunch: Dim sum meal (stir-fried beef with scallions/onions, chicken feet, 2 siu mai dumplings, small noodle bowl, and scallion pancake)",
-      "photo_urls": [
-        "https://iili.io/q6TjZVs.jpg"
-      ],
-      "outcomes_backfilled": false,
-      "gallery": {
-        "gallery_id": "32d85ec7-0668-810d-82ac-ee46c87d7d41",
-        "last_synced_at": "2026-03-25T16:50:01.159Z"
-      },
-      "notion": {
-        "page_id": "32d85ec7-0668-810d-82ac-ee46c87d7d41",
-        "last_synced_at": "2026-03-25T16:30:01.105Z"
-      },
-      "nightscout": {
-        "treatment_id": "69c2eb10911a8ea261e67866",
-        "last_synced_at": "2026-03-25T16:49:57.503Z"
-      },
-      "needs_outcome_backfill": true
-    },
     "sha256:2c13497d20459b5a76159c578b8aef5260f68e57743bb07fee732c21eb1bc2ea": {
       "timestamp": "2026-03-24T19:00:00-07:00",
       "content_hash": "sha256:caaa4a47792b7c3e4469b74c19b0de41cf3057a63d5829c99237137ac8e2b40a",
@@ -5319,30 +5294,6 @@
       "notion": {
         "page_id": "32e85ec7-0668-8180-ba4a-edf43d348d02",
         "last_synced_at": "2026-03-25T07:00:09.372Z"
-      }
-    },
-    "sha256:e7d5d49d3f86b6bf2aa5ea1d1d9ff2d9006632471b7b1b1b74a2546f161f67e5": {
-      "timestamp": "2026-03-25T09:33:00-07:00",
-      "content_hash": "sha256:6bea36eb5482a5d389a91cba5742e9e3ee6cf48586a0dd34c505d09ac2f59ee5",
-      "user": "Maria Dennis",
-      "category": "Food",
-      "meal_type": "Breakfast",
-      "title": "Breakfast: Half bagel with cream cheese and smoked salmon",
-      "photo_urls": [
-        "https://iili.io/qikEfs4.jpg"
-      ],
-      "outcomes_backfilled": false,
-      "nightscout": {
-        "treatment_id": "69c40e91911a8ea261e67965",
-        "last_synced_at": "2026-03-25T23:30:03.160Z"
-      },
-      "notion": {
-        "page_id": "32e85ec7-0668-81f9-9b0f-d789333d76e1",
-        "last_synced_at": "2026-03-25T16:49:49.594Z"
-      },
-      "gallery": {
-        "gallery_id": "manual-2026-03-25T09-33-00-07-00",
-        "last_synced_at": "2026-03-25T23:30:03.313Z"
       }
     },
     "sha256:cc88a47ea1f32973dd2ed8a402efe5f8bac8a8cf83d0bb7b20cf19245740f956": {
