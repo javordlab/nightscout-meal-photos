@@ -1,5 +1,9 @@
 # Health Log
 
+| 2026-03-26 | 09:22 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Half sandwich on seeded multigrain bread with chicken or tuna salad and roasted red peppers (BG: 100 mg/dL Flat) (Pred: 130-150 mg/dL @ 10:52 AM) (Protein: 12g | Carbs: ~18g | Cals: ~210) [📷](https://iili.io/qQ7Uut9.jpg) | 18 | 210 |
+
+| 2026-03-26 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 105 mg/dL Flat) | null | null |
+| 2026-03-26 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 105 mg/dL Flat) | null | null |
 | 2026-03-25 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 117 mg/dL Flat) | null | null |
 | 2026-03-25 | 20:27 -07:00 | Maria Dennis | Activity | - | 15 minutes tai chi | null | null |
 | 2026-03-25 | 20:00 -07:00 | Maria Dennis | Activity | - | 20 minutes walk | null | null |
