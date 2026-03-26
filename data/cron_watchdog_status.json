@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-03-26T17:30:00.600Z",
+  "checkedAt": "2026-03-26T17:45:00.974Z",
   "jobsChecked": 13,
   "jobs": [
     {
@@ -49,12 +49,12 @@
       "name": "Radial Sync",
       "status": "healthy",
       "schedule": "every 30m",
-      "intervalMs": 1796628,
-      "lastRunAtMs": 1774544403372,
-      "nextRunAtMs": 1774546200000,
+      "intervalMs": 1799991,
+      "lastRunAtMs": 1774546200009,
+      "nextRunAtMs": 1774548000000,
       "consecutiveErrors": 0,
       "lastStatus": "ok",
-      "lastDurationMs": 365697,
+      "lastDurationMs": 350645,
       "overdueMin": null,
       "graceMin": null
     },
@@ -106,11 +106,11 @@
       "status": "healthy",
       "schedule": "every 1m",
       "intervalMs": 60000,
-      "lastRunAtMs": 1774546189454,
-      "nextRunAtMs": 1774546249454,
+      "lastRunAtMs": 1774547093227,
+      "nextRunAtMs": 1774547153227,
       "consecutiveErrors": 0,
       "lastStatus": "ok",
-      "lastDurationMs": 8365,
+      "lastDurationMs": 7394,
       "overdueMin": null,
       "graceMin": null
     },
@@ -148,11 +148,11 @@
       "status": "healthy",
       "schedule": "every 5m",
       "intervalMs": 300000,
-      "lastRunAtMs": 1774546023090,
-      "nextRunAtMs": 1774546323090,
+      "lastRunAtMs": 1774546872276,
+      "nextRunAtMs": 1774547172276,
       "consecutiveErrors": 0,
       "lastStatus": "ok",
-      "lastDurationMs": 6842,
+      "lastDurationMs": 9238,
       "overdueMin": null,
       "graceMin": null
     },
