@@ -4,3 +4,7 @@
 {"ts":"2026-03-25T16:37:00.255Z","op":"daily_report_delivery_error","error":"invalid_target_date: expected 2026-03-24, got 2026-03-25"}
 {"ts":"2026-03-25T16:37:09.353Z","op":"daily_report_delivery_error","error":"invalid_target_date: expected 2026-03-24, got 2026-03-25"}
 {"ts":"2026-03-26T16:30:01.480Z","op":"daily_report_delivery_error","error":"invalid_target_date: expected 2026-03-25, got 2026-03-26"}
+{"ts":"2026-03-26T16:39:10.381Z","op":"daily_report_send_dry_run","reportDateLA":"2026-03-26","chatId":"-5262020908","targetDate":"2026-03-25"}
+{"ts":"2026-03-26T16:39:10.440Z","op":"daily_report_charts_triggered","reportDateLA":"2026-03-26","chatId":"-5262020908","dryRun":true}
+{"ts":"2026-03-26T16:39:18.350Z","op":"daily_report_sent","reportDateLA":"2026-03-26","targetDate":"2026-03-25","chatId":"-5262020908","messageId":3413,"statsDay":{"count":282,"average":114.28014184397163,"gmi":6.043580992907802,"tir":99.29078014184397}}
+{"ts":"2026-03-26T16:39:18.453Z","op":"daily_report_charts_triggered","reportDateLA":"2026-03-26","chatId":"-5262020908","dryRun":false}

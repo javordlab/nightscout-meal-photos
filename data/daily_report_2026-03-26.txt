@@ -1,57 +1,64 @@
 🩺 DAILY HEALTH REPORT
 📅 Date: 2026-03-26
-🕒 Coverage window: 2026-03-26 00:00 – 2026-03-27 00:00 (America/Los_Angeles)
-⚙️ Generated time: 2026-03-26T16:30:01.477Z
+🕒 Coverage window: 2026-03-25 00:00 – 2026-03-26 00:00 (America/Los_Angeles)
+⚙️ Generated time: 2026-03-26T16:39:16.869Z
 🤖 Model: anthropic/claude-sonnet-4-6
 
 1) 📊 Today's Glucose Summary
-- Average glucose: 104.9 mg/dL
-- Time in Range (70-180): 100.0%
-- GMI: 5.82%
-- Standard deviation: 4.7 mg/dL
-- CV: 4.5%
-- Data points used: 90
+- Average glucose: 114.3 mg/dL
+- Time in Range (70-180): 99.3%
+- GMI: 6.04%
+- Standard deviation: 22.6 mg/dL
+- CV: 19.8%
+- Data points used: 282
 
-2) 📉 14-day Trends (ending 2026-03-26)
-- Average glucose: 122.3 mg/dL
+2) 📉 14-day Trends (ending 2026-03-25)
+- Average glucose: 123.8 mg/dL
 - Time in Range (70-180): 99.7%
-- GMI: 6.24%
-- Standard deviation: 21.7 mg/dL
+- GMI: 6.27%
+- Standard deviation: 22.0 mg/dL
 - CV: 17.7%
-- Data points used: 1109
+- Data points used: 1018
 
-3) 🍽️ Nutrition (2026-03-26)
-- Meals logged: 0
-- Total carbs: 0.0 g
-- Total calories: 0 kcal
-- Total protein: 0.0 g
+3) 🍽️ Nutrition (2026-03-25)
+- Meals logged: 4
+- Total carbs: 80.0 g
+- Total calories: 840 kcal
+- Total protein: 42.0 g
 
-4) 🧾 Meal Details (2026-03-26)
-- No food entries logged
+4) 🧾 Meal Details (2026-03-25)
+- 9:33 AM — Breakfast: Half ciabatta with cream cheese and smoked salmon — 25.0g carbs, 300 kcal, 20.0g protein — BG at meal: 111 mg/dL
+- 4:56 PM — Lunch: 1 apple and 1oz Korean tofu snack with pine nut (기평장 두부라자) — 34.0g carbs, 175 kcal, 2.0g protein — BG at meal: 115 mg/dL
+- 6:16 PM — Dinner: Braised mushrooms, eggplant, and 3 soft-boiled egg halves (1.5 eggs) over shirataki/glass noodles with soy-based sauce — 11.0g carbs, 265 kcal, 15.0g protein — BG at meal: 111 mg/dL
+- 8:00 PM — Snack: 1 protein ball — 10.0g carbs, 100 kcal, 5.0g protein — BG at meal: 114 mg/dL
 
-5) 📚 Nutrition Baseline (14-day daily average ending 2026-03-26)
-- Average carbs/day: 146.0 g
-- Average calories/day: 1457.6 kcal
-- Average protein/day: 80.7 g
+5) 📚 Nutrition Baseline (14-day daily average ending 2026-03-25)
+- Average carbs/day: 146.5 g
+- Average calories/day: 1450.6 kcal
+- Average protein/day: 81.5 g
 - Average meals/day: 4.8
-- Days in window with food entries: 13
+- Days in window with food entries: 14
 
-6) 💊 Medication Status (2026-03-26)
-- No medication entries logged
+6) 💊 Medication Status (2026-03-25)
+- 2026-03-25T19:00:00-07:00: Medication: Metformin 1000mg (dinner)
+- 2026-03-25T13:00:00-07:00: Medication: Metformin 500mg (lunch)
+- 2026-03-25T09:00:00-07:00: Medication: Lisinopril 10mg (Scheduled)
+- 2026-03-25T09:10:00-07:00: Medication: Metformin 500mg (breakfast)
+- 2026-03-25T09:05:00-07:00: Medication: Rosuvastatin 10mg (Scheduled)
 
-7) 🚨 Outliers (2026-03-26)
-- High readings >180: 0
+7) 🚨 Outliers (2026-03-25)
+- High readings >180: 2
 - Low readings <70: 0
-- Max glucose: 118 mg/dL at 2026-03-26T08:04:44.000Z
+- Max glucose: 182 mg/dL at 2026-03-25T17:44:38.000Z
 
 8) 🧠 Extended Supervisor Analysis
-- Nice work overall today: Strong Time in Range at 100.0% | Limited high excursions (>180 mg/dL): 0 | No hypoglycemia episodes (<70 mg/dL).
-- Key trend signals: avg glucose vs 14-day baseline -17.4 mg/dL, TIR delta 0.3%, carbs delta -146.0 g, calories delta -1458 kcal.
-- Friendly focus for tomorrow: No urgent corrections needed—just keep the same consistency and momentum.
+- Nice work overall today: Strong Time in Range at 99.3% | Limited high excursions (>180 mg/dL): 2 | No hypoglycemia episodes (<70 mg/dL).
+- Key trend signals: avg glucose vs 14-day baseline -9.5 mg/dL, TIR delta -0.4%, carbs delta -66.5 g, calories delta -611 kcal.
+- Friendly focus for tomorrow: There was 2 reading(s) >180 mg/dL; keep an eye on post-meal spacing/activity.
 - You’re doing great—small consistent habits keep adding up. Keep it going 🌟
 
 9) 🛡️ Self-Audit (Data Integrity)
-- Target day enforced: 2026-03-26 PT
-- Glucose points in target window: 90
-- GMI formula check (3.31 + 0.02392 × Avg): 5.82%
-- Reported GMI: 5.82%
+- Target day enforced: 2026-03-25 PT
+- Glucose points in target window: 282
+- GMI formula check (3.31 + 0.02392 × Avg): 6.04%
+- Reported GMI: 6.04%

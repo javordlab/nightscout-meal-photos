@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "chats": {
+    "-5262020908": {
+      "2026-03-26": {
+        "sentAt": "2026-03-26T16:39:18.344Z",
+        "targetDate": "2026-03-25",
+        "reportPath": "/Users/javier/.openclaw/workspace/data/daily_report_2026-03-26.txt",
+        "messageId": 3413,
+        "statsDay": {
+          "count": 282,
+          "average": 114.28014184397163,
+          "gmi": 6.043580992907802,
+          "tir": 99.29078014184397
+        }
+      }
+    }
+  }
+}

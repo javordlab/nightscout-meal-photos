@@ -149,7 +149,7 @@ function nearestBg(entries, mealIso, windowMinutes = 20) {
 async function main(options = {}) {
   const now = new Date();
   const reportDate = options.reportDate || laDateString(now); // date report runs
-  const targetDate = options.targetDate || reportDate; // current calendar day
+  const targetDate = options.targetDate || addDays(reportDate, -1); // always report on PREVIOUS day
 
   const start14 = addDays(targetDate, -13);
   const normalized = JSON.parse(fs.readFileSync(NORMALIZED_PATH, 'utf8'));

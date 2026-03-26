@@ -1,8 +1,16 @@
 {
-  "generatedAt": "2026-03-26T16:30:00.461Z",
-  "entryCount": 30,
+  "generatedAt": "2026-03-26T17:00:01.234Z",
+  "entryCount": 31,
   "errors": [],
   "warnings": [
+    {
+      "entryKey": "sha256:4197a5dd32ab3419a665ad2eedf80ab0eee044a31cba1820c36785eae8604087",
+      "timestamp": "2026-03-26T09:38:00-07:00",
+      "title": "Breakfast: 1 slice dragon fruit and handful of mixed nuts",
+      "reason": "photo_missing_but_found_in_internal_folder",
+      "file": "/Users/javier/.openclaw/media/inbound/file_207---17f2420b-5ca4-44a0-b642-a3ce489f5048.jpg",
+      "diffMinutes": 15
+    },
     {
       "entryKey": "sha256:17cbc4d1ac4178ed70e73553d379767bdf5154fe5c5fe9e21e31dd8522e92073",
       "timestamp": "2026-03-25T20:00:00-07:00",
