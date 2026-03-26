@@ -128,8 +128,8 @@
     "photo": "https://iili.io/qrHqxa4.jpg",
     "carbs": 10,
     "cals": 40,
-    "delta": null,
-    "peak": null
+    "delta": 54,
+    "peak": 165
   },
   {
     "id": "32f85ec7-0668-816b-a064-eb9561d8b1c6",
@@ -139,8 +139,8 @@
     "photo": "https://iili.io/qr9ztYG.jpg",
     "carbs": 55,
     "cals": 480,
-    "delta": null,
-    "peak": null
+    "delta": 47,
+    "peak": 165
   },
   {
     "id": "32f85ec7-0668-81f9-b411-dbaf30d2b97f",
@@ -150,8 +150,8 @@
     "photo": "https://iili.io/qghz2Np.jpg",
     "carbs": 30,
     "cals": 340,
-    "delta": null,
-    "peak": null
+    "delta": 59,
+    "peak": 182
   },
   {
     "id": "32c85ec7-0668-81c5-b380-cd9f2417aca8",
@@ -172,8 +172,8 @@
     "photo": "https://iili.io/qU2L01s.jpg",
     "carbs": 45,
     "cals": 340,
-    "delta": null,
-    "peak": null
+    "delta": 31,
+    "peak": 166
   },
   {
     "id": "32f85ec7-0668-8113-ade0-ebe755701f95",
@@ -183,8 +183,8 @@
     "photo": "https://iili.io/qSQ09Pj.jpg",
     "carbs": 70,
     "cals": 525,
-    "delta": null,
-    "peak": null
+    "delta": 27,
+    "peak": 173
   },
   {
     "id": "32f85ec7-0668-81a8-a8b0-d3a5cd211df1",
@@ -957,7 +957,7 @@
     "peak": null
   },
   {
-    "id": "32e85ec7-0668-816f-b6a2-e6764982f72c",
+    "id": "31685ec7-0668-810a-83c7-ccf82558f83e",
     "title": "Dinner: Meatballs, fried potatoes, sourdough bread with butter, and a side of greens with grapes (Pred: 300 mg/dL @ 8:42 PM) (Protein: 32g | Carbs: ~55g | Cals: ~550)",
     "type": "Dinner",
     "date": "2026-03-03T18:57:00.000-08:00",

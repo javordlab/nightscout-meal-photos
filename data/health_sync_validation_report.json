@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-26T17:30:00.650Z",
-  "entryCount": 32,
+  "generatedAt": "2026-03-26T18:30:00.414Z",
+  "entryCount": 33,
   "errors": [],
   "warnings": [
     {
-      "entryKey": "sha256:4197a5dd32ab3419a665ad2eedf80ab0eee044a31cba1820c36785eae8604087",
+      "entryKey": "sha256:bd318c7d542fc5b33fbe3fbbdd16e1ecae98855f999ad7578bc0d07716460528",
       "timestamp": "2026-03-26T09:38:00-07:00",
-      "title": "Breakfast: 1 slice dragon fruit and handful of mixed nuts",
+      "title": "Breakfast: 1 slice dragon fruit and handful of mixed nuts [Cumulative breakfast: 34g carbs total with prior sandwich]",
       "reason": "photo_missing_but_found_in_internal_folder",
       "file": "/Users/javier/.openclaw/media/inbound/file_207---17f2420b-5ca4-44a0-b642-a3ce489f5048.jpg",
       "diffMinutes": 15
