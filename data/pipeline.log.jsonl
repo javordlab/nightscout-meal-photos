@@ -2248,3 +2248,5 @@
 {"ts":"2026-03-26T16:30:00.457Z","op":"step_start","name":"Validate"}
 {"ts":"2026-03-26T16:30:00.466Z","op":"step_complete","name":"Validate","duration":9,"result":"object"}
 {"ts":"2026-03-26T16:30:00.466Z","op":"step_start","name":"Unified Sync"}
+{"ts":"2026-03-26T16:30:39.095Z","op":"step_complete","name":"Unified Sync","duration":38629,"result":"object"}
+{"ts":"2026-03-26T16:30:39.095Z","op":"pipeline_complete","duration":38697,"results":["resolvePendingPhotos","normalize","enrich","validate","sync"]}

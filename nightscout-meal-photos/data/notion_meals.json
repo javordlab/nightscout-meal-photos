@@ -1,5 +1,16 @@
 [
   {
+    "id": "32f85ec7-0668-8135-8cd6-d7c292f9306b",
+    "title": "Breakfast: Half sandwich on seeded multigrain bread with peanut butter and low sugar jam (BG: 100 mg/dL Flat) (Pred: 135-155 mg/dL @ 10:52 AM) (Protein: 8g | Carbs: ~22g | Cals: ~230)",
+    "type": "Breakfast",
+    "date": "2026-03-26T09:22:00.000-07:00",
+    "photo": "https://iili.io/qQ7Uut9.jpg",
+    "carbs": 22,
+    "cals": 230,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "32f85ec7-0668-8131-a1df-e7b8b4170a28",
     "title": "Dinner: Braised mushrooms, eggplant, and 3 soft-boiled egg halves (1.5 eggs) over shirataki/glass noodles with soy-based sauce (BG: 111 mg/dL Flat) (Pred: 130-150 mg/dL @ 7:46 PM) (Protein: 15g | Carbs: ~11g | Cals: ~265)",
     "type": "Dinner",
@@ -89,7 +100,7 @@
   },
   {
     "id": "32d85ec7-0668-81b0-9e53-ff0367f408e8",
-    "title": "Breakfast: Half cheese quesadilla (flour tortilla + cheese), Apple slices (~⅓–½ small apple), Avocado slices (~¼ avocado) (BG: 116 mg/dL Flat) (Pred: 196-216 mg/dL @ 11:43 AM) (Protein: 14g | Carbs: ~30g | Cals: ~320)",
+    "title": "Breakfast: Half cheese quesadilla (flour tortilla + cheese), Apple slices (~⅓–½ small apple), Avocado slices (~¼ avocado) (BG: 116 mg/dL Flat) (Protein: 14g) (Pred: 196-216 mg/dL @ 11:43 AM)",
     "type": "Breakfast",
     "date": "2026-03-24T10:08:00.000-07:00",
     "photo": "https://iili.io/q4tyGBS.jpg",
@@ -100,7 +111,7 @@
   },
   {
     "id": "32d85ec7-0668-81da-b08e-d2c7e38e1aad",
-    "title": "Dinner: Two-plate meal (BG: 107 mg/dL Flat) (Pred: 180-210 mg/dL @ 7:45-8:15 PM) (Protein: 28g | Carbs: ~65g | Cals: ~520)",
+    "title": "Dinner: Two-plate meal (BG: 107 mg/dL Flat) (Protein: 28g) (Pred: 180-210 mg/dL @ 7:45-8:15 PM)",
     "type": "Dinner",
     "date": "2026-03-23T18:22:00.000-07:00",
     "photo": "https://iili.io/qrar7Db.jpg",
