@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-26T03:00:00.981Z",
-  "entryCount": 40,
+  "generatedAt": "2026-03-26T03:30:00.540Z",
+  "entryCount": 43,
   "errors": [
     {
       "entryKey": "sha256:eb0c2a944330fa73279692163bd8102442472d0b4693d4b39db7d01e69c70ba4",
@@ -10,6 +10,12 @@
     }
   ],
   "warnings": [
+    {
+      "entryKey": "sha256:17cbc4d1ac4178ed70e73553d379767bdf5154fe5c5fe9e21e31dd8522e92073",
+      "timestamp": "2026-03-25T20:00:00-07:00",
+      "title": "Snack: 1 protein ball",
+      "reason": "missing_photo_urls"
+    },
     {
       "entryKey": "sha256:532477ed4edbb1ace2f1482a72d44796994b09204c3e5ec9655ced0624c39b27",
       "timestamp": "2026-03-25T18:16:00-07:00",
