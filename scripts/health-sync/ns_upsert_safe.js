@@ -116,6 +116,14 @@ async function upsertNightscoutTreatment({
     if (strong.length === 1) {
       t.fallback_match_count += 1;
       existing = strong[0];
+      // Immediately patch the entry_key token into notes so future runs find it by key (not fallback)
+      if (!notesContainEntryKey(existing.notes, entryKey)) {
+        const patchedNotes = `${(existing.notes || '').trim()} [entry_key:${entryKey}]`;
+        await run('ns_patch_entry_key', () =>
+          nsRequest('PUT', '/api/v1/treatments.json', { ...existing, notes: patchedNotes })
+        );
+        existing = { ...existing, notes: patchedNotes };
+      }
       logger({ op: 'ns_fallback_match', entryKey, treatmentId: existing._id });
     } else if (strong.length > 1) {
       t.ambiguous_match_count += 1;
@@ -131,6 +139,8 @@ async function upsertNightscoutTreatment({
   }
 
   let mode = 'noop';
+  let resolvedId = existing?._id || null;
+
   if (existing) {
     if (hasMeaningfulDiff(existing, payload)) {
       await run('ns_update', () => nsRequest('PUT', '/api/v1/treatments.json', { ...payload, _id: existing._id }));
@@ -138,11 +148,21 @@ async function upsertNightscoutTreatment({
     }
   } else {
     const postRes = await run('ns_create', () => nsRequest('POST', '/api/v1/treatments.json', payload));
-    const createdId = parsePostTreatmentId(postRes);
-    logger({ op: 'ns_created', entryKey, treatmentId: createdId });
+    resolvedId = parsePostTreatmentId(postRes);
+    logger({ op: 'ns_created', entryKey, treatmentId: resolvedId });
     mode = 'created';
   }
 
+  // Verify by _id (NS regex search on notes is unreliable; skip it)
+  if (resolvedId) {
+    return {
+      status: mode === 'noop' ? 'updated' : mode,
+      treatmentId: resolvedId,
+      telemetry: t
+    };
+  }
+
+  // Fallback: try regex verify only when we have no id at all
   const verified = await run('ns_verify', verifyByKey);
   if (!verified.ok) {
     return {

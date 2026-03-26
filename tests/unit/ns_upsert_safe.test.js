@@ -168,7 +168,7 @@ describe('ns_upsert_safe', () => {
     assert.strictEqual(mock.calls.delete, 0);
   });
 
-  it('returns verify error when post succeeds but key verification cannot find a unique match', async () => {
+  it('returns created with treatmentId when post succeeds (verify-by-id, no regex needed)', async () => {
     const entryKey = 'sha256:verify-fail';
     const payload = {
       enteredBy: 'Javordclaw-SSoT',
@@ -187,9 +187,10 @@ describe('ns_upsert_safe', () => {
       titleForMatch: 'Metformin 500mg'
     });
 
-    assert.strictEqual(res.status, 'error');
-    assert.strictEqual(res.error, 'nightscout_verify_failed');
-    assert.strictEqual(res.telemetry.verify_fail_count, 1);
+    // With verify-by-id: post returns a treatmentId so status is 'created', not 'error'
+    assert.strictEqual(res.status, 'created');
+    assert.ok(res.treatmentId, 'should have a treatmentId from POST response');
+    assert.strictEqual(res.telemetry.verify_fail_count, 0);
     assert.strictEqual(mock.calls.post, 1);
   });
 });
