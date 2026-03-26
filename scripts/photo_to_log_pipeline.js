@@ -314,10 +314,16 @@ async function analyzePhoto(photoPath, matchedEnvelope = null) {
     const getPart = (type) => parts.find(p => p.type === type)?.value;
     const dateStr = `${getPart('year')}-${getPart('month')}-${getPart('day')}`;
     const timeStr = `${getPart('hour')}:${getPart('minute')}`;
-    const pattern = new RegExp(`\\| ${dateStr} \\| ${timeStr}.*${mealType}.*`);
-    if (pattern.test(logContent)) {
-      console.log(`Entry already exists for ${dateStr} ${timeStr} ${mealType}, skipping`);
-      return { skip: true };
+    const pattern = new RegExp(`\\| ${dateStr} \\| ${timeStr}[^|]*\\| Food \\| ${mealType} \\|[^\\n]*`);
+    const match = logContent.match(pattern);
+    if (match) {
+      if (match[0].includes('📷')) {
+        console.log(`Entry already exists with photo for ${dateStr} ${timeStr} ${mealType}, skipping`);
+        return { skip: true };
+      }
+      // Entry exists but has no photo — upload and patch
+      console.log(`Entry exists without photo for ${dateStr} ${timeStr} ${mealType}, will add photo`);
+      return { skip: false, patchExisting: true, existingLine: match[0] };
     }
   } catch (e) {
     console.log('Could not check existing entries:', e.message);
@@ -370,6 +376,24 @@ function addToLog(entry) {
 
   fs.writeFileSync(HEALTH_LOG, lines.join('\n'));
   console.log(`Added: ${entry.mealType} at ${time}`);
+}
+
+// Patch an existing health_log.md line to add a photo URL
+function patchPhotoUrl(existingLine, photoUrl) {
+  const logContent = fs.readFileSync(HEALTH_LOG, 'utf8');
+  // Insert [📷](url) before the last two pipe-separated fields (carbs | cals |)
+  // The line ends with: ...) | carbs | cals |
+  // We want: ...) [📷](url) | carbs | cals |
+  const patched = existingLine.replace(/(\s*\|\s*\d+\s*\|\s*[\d.]+\s*\|)$/, ` [📷](${photoUrl})$1`);
+  if (patched === existingLine) {
+    // Fallback: append before trailing |
+    const fallback = existingLine.replace(/\|([^|]*)$/, `[📷](${photoUrl}) |$1`);
+    fs.writeFileSync(HEALTH_LOG, logContent.replace(existingLine, fallback));
+    console.log(`Patched photo URL (fallback) into existing entry`);
+    return;
+  }
+  fs.writeFileSync(HEALTH_LOG, logContent.replace(existingLine, patched));
+  console.log(`Patched photo URL into existing entry`);
 }
 
 function detectMediaKind(filePath) {
@@ -572,6 +596,16 @@ async function main() {
         markLinkedEnvelope(state, matchedEnvelope);
         clearFailure(state, file.prefix);
         state.processed.push(file.prefix);
+        continue;
+      }
+
+      // Patch existing entry that was logged without a photo
+      if (analysis.patchExisting) {
+        patchPhotoUrl(analysis.existingLine, photoUrl);
+        markLinkedEnvelope(state, matchedEnvelope);
+        clearFailure(state, file.prefix);
+        state.processed.push(file.prefix);
+        console.log(`Patched photo into existing entry for ${file.name}`);
         continue;
       }
 
