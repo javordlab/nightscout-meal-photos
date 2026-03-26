@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-26T06:30:00.350Z",
-  "entryCount": 41,
+  "generatedAt": "2026-03-26T11:00:00.376Z",
+  "entryCount": 27,
   "errors": [],
   "warnings": [
     {
@@ -14,20 +14,6 @@
       "timestamp": "2026-03-23T19:22:00-07:00",
       "title": "Snack: 4 strawberries + 4oz milk (~118ml)",
       "reason": "missing_photo_urls"
-    },
-    {
-      "entryKey": "sha256:4ba7bec3c1b61741bc769cfd91abe0d1671cfbc1febe3c1d91c022652bceb372",
-      "timestamp": "2026-03-23T16:22:00-07:00",
-      "title": "Snack: 1 spoonful peanut butter (~16g)",
-      "reason": "missing_photo_urls"
-    },
-    {
-      "entryKey": "sha256:7fdcac113f12599bddb6f0719c98533dff9aa1fc8b64065253f0d6f38f1d807c",
-      "timestamp": "2026-03-23T10:08:00-07:00",
-      "title": "Snack: 2 slices dried dragon fruit",
-      "reason": "photo_missing_but_found_in_internal_folder",
-      "file": "/Users/javier/.openclaw/media/inbound/file_194---5b8e48d5-082a-4e16-a7b5-4161bca83c5c.jpg",
-      "diffMinutes": 16
     }
   ]
 }
