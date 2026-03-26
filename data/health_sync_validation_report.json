@@ -1,8 +1,16 @@
 {
-  "generatedAt": "2026-03-25T16:30:01.118Z",
-  "entryCount": 30,
+  "generatedAt": "2026-03-26T00:00:01.323Z",
+  "entryCount": 37,
   "errors": [],
   "warnings": [
+    {
+      "entryKey": "sha256:fcf910a2ac2be2e3dccc99ea1e85d8db48423602cc8637c0622190db740845a3",
+      "timestamp": "2026-03-25T16:56:00-07:00",
+      "title": "Lunch: 1 apple and 1oz Korean tofu snack with pine nut (기평장 두부라자)",
+      "reason": "photo_missing_but_found_in_internal_folder",
+      "file": "/Users/javier/.openclaw/media/inbound/file_205---ea21b0fd-d5a8-44ca-beb9-680124a496f0.jpg",
+      "diffMinutes": 1
+    },
     {
       "entryKey": "sha256:9251ad9556cc0d509b102b359feec73e5cd6fe6e970df95c9c4ee363100684cc",
       "timestamp": "2026-03-23T19:22:00-07:00",

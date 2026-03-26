@@ -1,7 +1,8 @@
 # Health Log
 
+| 2026-03-25 | 16:56 -07:00 | Maria Dennis | Food | Lunch | Lunch: 1 apple and 1oz Korean tofu snack with pine nut (기평장 두부라자) (BG: 115 mg/dL Flat) (Pred: 150-170 mg/dL @ 6:26 PM) (Protein: 2g | Carbs: ~34g | Cals: ~175) | 34 | 175 |
 | 2026-03-25 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 119 mg/dL Flat) | null | null |
-| 2026-03-25 | 09:33 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Half bagel with cream cheese and smoked salmon (BG: 112 mg/dL Flat) (Pred: 150-170 mg/dL @ 11:00 AM) (Protein: 22g | Carbs: ~28g | Cals: ~320) [📷](https://iili.io/qikEfs4.jpg) | 28 | 320 |
+| 2026-03-25 | 09:33 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Half ciabatta with cream cheese and smoked salmon (BG: 112 mg/dL Flat) (Pred: 145-165 mg/dL @ 11:00 AM) (Protein: 20g | Carbs: ~25g | Cals: ~300) [📷](https://iili.io/qikEfs4.jpg) | 25 | 300 |
 | 2026-03-25 | 09:33 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 112 mg/dL Flat) | null | null |
 | 2026-03-25 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 112 mg/dL Flat) | null | null |
 | 2026-03-25 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 112 mg/dL Flat) | null | null |
