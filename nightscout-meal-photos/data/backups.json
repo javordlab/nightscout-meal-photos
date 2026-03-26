@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-26T02:56:22.213Z",
+  "lastUpdated": "2026-03-26T02:56:46.663Z",
   "tokenUsage": [
     {
       "platform": "Kimi (Ollama)",
@@ -16,7 +16,7 @@
     {
       "platform": "OpenAI Codex",
       "bucketType": "Pay-as-you-go",
-      "realTokens": 819974,
+      "realTokens": 732925,
       "link": "https://platform.openai.com/usage"
     }
   ],
