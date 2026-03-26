@@ -1,6 +1,7 @@
 # Health Log
 
 | 2026-03-26 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 132 mg/dL Flat) | null | null |
+| 2026-03-26 | 15:59 -07:00 | Maria Dennis | Food | Snack | Snack: 2 slices dragon fruit and handful of walnuts (BG: 91 mg/dL Flat) (Pred: 110-125 mg/dL @ 5:29 PM) (Protein: 5g | Carbs: ~16g | Cals: ~155) | 16 | 155 |
 | 2026-03-26 | 14:06 -07:00 | Maria Dennis | Activity | - | 39 minutes gardening | null | null |
 | 2026-03-26 | 12:57 -07:00 | Maria Dennis | Food | Lunch | Lunch: 7 loquats (fresh off stem) (BG: 107 mg/dL Flat) (Pred: 160-175 mg/dL @ 2:27 PM) [Cumulative Lunch: 46g carbs total] (Protein: 1g | Carbs: ~13g | Cals: ~55) [📷](https://iili.io/qQQ7scu.jpg) | 13 | 55 |
 | 2026-03-26 | 12:44 -07:00 | Maria Dennis | Food | Lunch | Lunch: Braised pork belly (2 pieces) with eggplant/mushrooms in dark adobo-style sauce over rice (~1/3 cup) (BG: 109 mg/dL Flat) (Pred: 150-165 mg/dL @ 2:14 PM) (Protein: 32g | Carbs: ~33g | Cals: ~520) [📷](https://iili.io/qQsa4rg.jpg) | 33 | 520 |

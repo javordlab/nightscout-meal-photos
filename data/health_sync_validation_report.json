@@ -1,8 +1,14 @@
 {
-  "generatedAt": "2026-03-26T22:30:00.227Z",
-  "entryCount": 37,
+  "generatedAt": "2026-03-26T23:00:00.443Z",
+  "entryCount": 38,
   "errors": [],
   "warnings": [
+    {
+      "entryKey": "sha256:a04d3b3d6d87e27a666c2477f9fcc97486049f6388108e17aae4aadbe953b49d",
+      "timestamp": "2026-03-26T15:59:00-07:00",
+      "title": "Snack: 2 slices dragon fruit and handful of walnuts",
+      "reason": "missing_photo_urls"
+    },
     {
       "entryKey": "sha256:bd318c7d542fc5b33fbe3fbbdd16e1ecae98855f999ad7578bc0d07716460528",
       "timestamp": "2026-03-26T09:38:00-07:00",
