@@ -11,17 +11,6 @@
     "peak": null
   },
   {
-    "id": "32e85ec7-0668-813f-ad11-c7da90a3d79b",
-    "title": "Breakfast: Half ciabatta with cream cheese and smoked salmon (BG: 112 mg/dL Flat) (Pred: 145-165 mg/dL @ 11:00 AM) (Protein: 20g | Carbs: ~25g | Cals: ~300)",
-    "type": "Breakfast",
-    "date": "2026-03-25T09:33:00.000-07:00",
-    "photo": "https://iili.io/qikEfs4.jpg",
-    "carbs": 25,
-    "cals": 300,
-    "delta": null,
-    "peak": null
-  },
-  {
     "id": "32e85ec7-0668-81e2-a1d4-fd5d258a8291",
     "title": "Dinner: Small slice of sponge cake with 1 tsp peanut butter and 1 small strawberry (BG: 132 mg/dL Flat) (Pred: 165-180 mg/dL @ 9:12 PM) (Protein: ~4g | Carbs: ~16g | Cals: ~135)",
     "type": "Dinner",
@@ -177,7 +166,7 @@
   },
   {
     "id": "32b85ec7-0668-81d6-91bf-c6fb1bda3769",
-    "title": "Dinner: Pulpo a la Gallega (octopus and potatoes with paprika), dark vegetable medley (mushroom/eggplant stew), 3 strawberries, 5oz milk (BG: 127 mg/dL ➡️) (Pred: 190-210 mg/dL @ 8:45-9:15 PM) (Protein: 26g | Carbs: ~68g | Cals: ~485)",
+    "title": "Dinner: Pulpo a la Gallega (octopus and potatoes with paprika), dark vegetable medley (mushroom/eggplant stew), 3 strawberries, 5oz milk (BG: Unknown) (Pred: 190-210 mg/dL @ 8:45-9:15 PM) (Protein: 26g | Carbs: ~68g | Cals: ~485)",
     "type": "Dinner",
     "date": "2026-03-21T18:43:00.000-07:00",
     "photo": "https://iili.io/qvU6O8l.jpg",

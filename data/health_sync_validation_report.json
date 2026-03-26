@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-26T01:00:00.488Z",
-  "entryCount": 38,
+  "generatedAt": "2026-03-26T02:00:00.922Z",
+  "entryCount": 39,
   "errors": [
     {
       "entryKey": "sha256:eb0c2a944330fa73279692163bd8102442472d0b4693d4b39db7d01e69c70ba4",
@@ -10,6 +10,14 @@
     }
   ],
   "warnings": [
+    {
+      "entryKey": "sha256:532477ed4edbb1ace2f1482a72d44796994b09204c3e5ec9655ced0624c39b27",
+      "timestamp": "2026-03-25T18:16:00-07:00",
+      "title": "Dinner: Braised mushrooms, eggplant, and 3 soft-boiled egg halves (1.5 eggs) over shirataki/glass noodles with soy-based sauce",
+      "reason": "photo_missing_but_found_in_internal_folder",
+      "file": "/Users/javier/.openclaw/media/inbound/file_206---9b785b9c-49ca-44c8-9bce-4e50a098a464.jpg",
+      "diffMinutes": 0
+    },
     {
       "entryKey": "sha256:9251ad9556cc0d509b102b359feec73e5cd6fe6e970df95c9c4ee363100684cc",
       "timestamp": "2026-03-23T19:22:00-07:00",
