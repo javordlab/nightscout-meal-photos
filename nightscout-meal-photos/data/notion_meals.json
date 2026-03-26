@@ -1,5 +1,27 @@
 [
   {
+    "id": "32f85ec7-0668-816a-b063-e121a429efa6",
+    "title": "Snack: Meal photo (auto-estimated nutrition) (BG: 114 mg/dL Flat) (Pred: 148-168 mg/dL @ 6:32 PM) (Protein: 6g | Carbs: ~15g | Cals: ~180)",
+    "type": "Snack",
+    "date": "2026-03-25T16:57:00.000-07:00",
+    "photo": "https://iili.io/qsS8myx.jpg",
+    "carbs": 15,
+    "cals": 180,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "32e85ec7-0668-813f-ad11-c7da90a3d79b",
+    "title": "Breakfast: Half ciabatta with cream cheese and smoked salmon (BG: 112 mg/dL Flat) (Pred: 145-165 mg/dL @ 11:00 AM) (Protein: 20g | Carbs: ~25g | Cals: ~300)",
+    "type": "Breakfast",
+    "date": "2026-03-25T09:33:00.000-07:00",
+    "photo": "https://iili.io/qikEfs4.jpg",
+    "carbs": 25,
+    "cals": 300,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "32e85ec7-0668-81e2-a1d4-fd5d258a8291",
     "title": "Dinner: Small slice of sponge cake with 1 tsp peanut butter and 1 small strawberry (BG: 132 mg/dL Flat) (Pred: 165-180 mg/dL @ 9:12 PM) (Protein: ~4g | Carbs: ~16g | Cals: ~135)",
     "type": "Dinner",

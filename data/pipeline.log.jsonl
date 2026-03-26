@@ -1868,3 +1868,23 @@
 {"ts":"2026-03-26T00:00:01.335Z","op":"step_start","name":"Unified Sync"}
 {"ts":"2026-03-26T00:00:57.460Z","op":"step_complete","name":"Unified Sync","duration":56125,"result":"object"}
 {"ts":"2026-03-26T00:00:57.460Z","op":"pipeline_complete","duration":56215,"results":["resolvePendingPhotos","normalize","enrich","validate","sync"]}
+{"ts":"2026-03-26T00:30:01.302Z","op":"pipeline_start","mode":"sync-only","since":"2026-03-23"}
+{"ts":"2026-03-26T00:30:01.305Z","op":"step_start","name":"Resolve Pending Photos"}
+{"ts":"2026-03-26T00:30:01.314Z","op":"step_complete","name":"Resolve Pending Photos","duration":9,"result":"object"}
+{"ts":"2026-03-26T00:30:01.315Z","op":"step_start","name":"Normalize"}
+{"ts":"2026-03-26T00:30:01.385Z","op":"step_complete","name":"Normalize","duration":70}
+{"ts":"2026-03-26T00:30:01.386Z","op":"step_start","name":"Enrich"}
+{"ts":"2026-03-26T00:30:01.408Z","op":"step_complete","name":"Enrich","duration":22}
+{"ts":"2026-03-26T00:30:01.409Z","op":"step_start","name":"Validate"}
+{"ts":"2026-03-26T00:30:01.462Z","op":"step_error","name":"Validate","duration":53,"error":"validation_failed:1"}
+{"ts":"2026-03-26T00:30:01.462Z","op":"pipeline_abort","reason":"validation_failed"}
+{"ts":"2026-03-26T01:00:00.406Z","op":"pipeline_start","mode":"sync-only","since":"2026-03-23"}
+{"ts":"2026-03-26T01:00:00.409Z","op":"step_start","name":"Resolve Pending Photos"}
+{"ts":"2026-03-26T01:00:00.416Z","op":"step_complete","name":"Resolve Pending Photos","duration":7,"result":"object"}
+{"ts":"2026-03-26T01:00:00.416Z","op":"step_start","name":"Normalize"}
+{"ts":"2026-03-26T01:00:00.464Z","op":"step_complete","name":"Normalize","duration":47}
+{"ts":"2026-03-26T01:00:00.465Z","op":"step_start","name":"Enrich"}
+{"ts":"2026-03-26T01:00:00.482Z","op":"step_complete","name":"Enrich","duration":17}
+{"ts":"2026-03-26T01:00:00.482Z","op":"step_start","name":"Validate"}
+{"ts":"2026-03-26T01:00:00.502Z","op":"step_error","name":"Validate","duration":20,"error":"validation_failed:1"}
+{"ts":"2026-03-26T01:00:00.503Z","op":"pipeline_abort","reason":"validation_failed"}

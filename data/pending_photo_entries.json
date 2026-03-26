@@ -1,1 +1,19 @@
-[]
+[
+  {
+    "queuedAt": "2026-03-26T00:07:06.445Z",
+    "attempts": 0,
+    "uploadStatus": "uploaded",
+    "mediaKind": "image",
+    "filePrefix": "file_205",
+    "sourcePath": "/Users/javier/.openclaw/media/inbound/file_205---ea21b0fd-d5a8-44ca-beb9-680124a496f0.jpg",
+    "timestamp": "2026-03-25T23:57:16.376Z",
+    "mealType": "Snack",
+    "photoUrl": "https://iili.io/qsS8myx.jpg",
+    "reason": "nutrition_inferred_needs_refinement",
+    "messageId": null,
+    "updateId": null,
+    "contentType": null,
+    "fileId": null,
+    "fileUniqueId": null
+  }
+]
