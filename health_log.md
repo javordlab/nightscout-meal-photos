@@ -2,6 +2,8 @@
 
 | 2026-03-25 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 117 mg/dL Flat) | null | null |
 | 2026-03-25 | 16:57 -07:00 | Maria Dennis | Food | Snack | Snack: Meal photo (auto-estimated nutrition) (BG: 114 mg/dL Flat) (Pred: 148-168 mg/dL @ 6:32 PM) (Protein: 6g | Carbs: ~15g | Cals: ~180) [📷](https://iili.io/qsS8myx.jpg) | 15 | 180 |
+| 2026-03-25 | 20:00 -07:00 | Maria Dennis | Activity | - | 20 minutes walk | null | null |
+| 2026-03-25 | 20:00 -07:00 | Maria Dennis | Food | Snack | Snack: 1 protein ball (BG: 114 mg/dL Flat) (Pred: 125-135 mg/dL @ 9:30 PM) (Protein: 5g | Carbs: ~10g | Cals: ~100) | 10 | 100 |
 | 2026-03-25 | 18:16 -07:00 | Maria Dennis | Food | Dinner | Dinner: Braised mushrooms, eggplant, and 3 soft-boiled egg halves (1.5 eggs) over shirataki/glass noodles with soy-based sauce (BG: 111 mg/dL Flat) (Pred: 130-150 mg/dL @ 7:46 PM) (Protein: 15g | Carbs: ~11g | Cals: ~265) | 11 | 265 |
 | 2026-03-25 | 16:56 -07:00 | Maria Dennis | Food | Lunch | Lunch: 1 apple and 1oz Korean tofu snack with pine nut (기평장 두부라자) (BG: 115 mg/dL Flat) (Pred: 150-170 mg/dL @ 6:26 PM) (Protein: 2g | Carbs: ~34g | Cals: ~175) [📷](https://iili.io/qsS8myx.jpg) | 34 | 175 |
 | 2026-03-25 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 119 mg/dL Flat) | null | null |
