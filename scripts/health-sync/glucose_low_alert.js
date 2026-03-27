@@ -89,6 +89,17 @@ function getBotToken() {
 }
 
 async function main() {
+  // Only alert between 8:30 AM and midnight PT
+  const nowLA = new Date().toLocaleString('en-US', { timeZone: 'America/Los_Angeles', hour: 'numeric', minute: 'numeric', hour12: false });
+  const [h, m] = nowLA.split(':').map(Number);
+  const minutesNow = h * 60 + m;
+  const start = 8 * 60 + 30;  // 08:30
+  const end   = 24 * 60;       // 00:00 (midnight)
+  if (minutesNow < start) {
+    console.log(`Outside alert window (${nowLA} PT). Skipping.`);
+    return;
+  }
+
   const entries = await nsGet('/api/v1/entries.json?count=2');
   if (!Array.isArray(entries) || entries.length === 0) {
     console.log('No entries from Nightscout');
