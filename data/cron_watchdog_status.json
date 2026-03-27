@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-03-27T19:45:00.344Z",
+  "checkedAt": "2026-03-27T20:00:01.274Z",
   "jobsChecked": 14,
   "jobs": [
     {
@@ -22,11 +22,11 @@
       "status": "healthy",
       "schedule": "every 30m",
       "intervalMs": 1800000,
-      "lastRunAtMs": 1774639193926,
-      "nextRunAtMs": 1774640993926,
+      "lastRunAtMs": 1774641496393,
+      "nextRunAtMs": 1774643296393,
       "consecutiveErrors": 0,
       "lastStatus": "ok",
-      "lastDurationMs": 30239,
+      "lastDurationMs": 28596,
       "overdueMin": null,
       "graceMin": null
     },
@@ -36,11 +36,11 @@
       "status": "healthy",
       "schedule": "every 1h",
       "intervalMs": 3600000,
-      "lastRunAtMs": 1774637884854,
-      "nextRunAtMs": 1774641484854,
+      "lastRunAtMs": 1774641524989,
+      "nextRunAtMs": 1774645124989,
       "consecutiveErrors": 0,
       "lastStatus": "ok",
-      "lastDurationMs": 27883,
+      "lastDurationMs": 27221,
       "overdueMin": null,
       "graceMin": null
     },
@@ -49,12 +49,12 @@
       "name": "Radial Sync",
       "status": "healthy",
       "schedule": "every 30m",
-      "intervalMs": 1799994,
-      "lastRunAtMs": 1774638000006,
-      "nextRunAtMs": 1774639800000,
+      "intervalMs": 1795867,
+      "lastRunAtMs": 1774639804133,
+      "nextRunAtMs": 1774641600000,
       "consecutiveErrors": 0,
       "lastStatus": "ok",
-      "lastDurationMs": 460796,
+      "lastDurationMs": 1689021,
       "overdueMin": null,
       "graceMin": null
     },
@@ -103,16 +103,16 @@
     {
       "id": "10284fc2-46fc-474d-9c29-881a5c7767f6",
       "name": "Photo Pipeline",
-      "status": "overdue",
+      "status": "healthy",
       "schedule": "every 1m",
       "intervalMs": 60000,
-      "lastRunAtMs": 1774639782921,
-      "nextRunAtMs": 1774639842921,
+      "lastRunAtMs": 1774641552210,
+      "nextRunAtMs": 1774641612210,
       "consecutiveErrors": 0,
       "lastStatus": "ok",
-      "lastDurationMs": 19204,
-      "overdueMin": 14,
-      "graceMin": 10
+      "lastDurationMs": 10577,
+      "overdueMin": null,
+      "graceMin": null
     },
     {
       "id": "notion-to-mysql-async-sync",
@@ -148,11 +148,11 @@
       "status": "healthy",
       "schedule": "every 5m",
       "intervalMs": 300000,
-      "lastRunAtMs": 1774639757224,
-      "nextRunAtMs": 1774640057224,
+      "lastRunAtMs": 1774641562787,
+      "nextRunAtMs": 1774641862787,
       "consecutiveErrors": 0,
       "lastStatus": "ok",
-      "lastDurationMs": 8718,
+      "lastDurationMs": 10845,
       "overdueMin": null,
       "graceMin": null
     },
@@ -176,8 +176,8 @@
       "status": "healthy",
       "schedule": "every 30m",
       "intervalMs": 1800000,
-      "lastRunAtMs": 1774639235371,
-      "nextRunAtMs": 1774641035371,
+      "lastRunAtMs": 1774641573632,
+      "nextRunAtMs": 1774643373632,
       "consecutiveErrors": 0,
       "lastStatus": "skipped",
       "lastDurationMs": null,
@@ -187,48 +187,19 @@
     {
       "id": "d507f10e-6c8a-4168-8e42-73b4d7ddc574",
       "name": "Glucose Low Alert (≤90 + trending down)",
-      "status": "overdue",
+      "status": "healthy",
       "schedule": "every 5m",
       "intervalMs": 300000,
-      "lastRunAtMs": 1774639768651,
-      "nextRunAtMs": 1774640068651,
+      "lastRunAtMs": 1774641573632,
+      "nextRunAtMs": 1774641873632,
       "consecutiveErrors": 0,
       "lastStatus": "ok",
-      "lastDurationMs": 13467,
-      "overdueMin": 11,
-      "graceMin": 5
+      "lastDurationMs": 10998,
+      "overdueMin": null,
+      "graceMin": null
     }
   ],
-  "staleJobs": [
-    {
-      "id": "10284fc2-46fc-474d-9c29-881a5c7767f6",
-      "name": "Photo Pipeline",
-      "status": "overdue",
-      "schedule": "every 1m",
-      "intervalMs": 60000,
-      "lastRunAtMs": 1774639782921,
-      "nextRunAtMs": 1774639842921,
-      "consecutiveErrors": 0,
-      "lastStatus": "ok",
-      "lastDurationMs": 19204,
-      "overdueMin": 14,
-      "graceMin": 10
-    },
-    {
-      "id": "d507f10e-6c8a-4168-8e42-73b4d7ddc574",
-      "name": "Glucose Low Alert (≤90 + trending down)",
-      "status": "overdue",
-      "schedule": "every 5m",
-      "intervalMs": 300000,
-      "lastRunAtMs": 1774639768651,
-      "nextRunAtMs": 1774640068651,
-      "consecutiveErrors": 0,
-      "lastStatus": "ok",
-      "lastDurationMs": 13467,
-      "overdueMin": 11,
-      "graceMin": 5
-    }
-  ],
+  "staleJobs": [],
   "dailyReportIssue": null,
-  "alertSent": true
+  "alertSent": false
 }
