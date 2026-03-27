@@ -1,7 +1,18 @@
 [
   {
+    "id": "33085ec7-0668-81d0-884b-e303ca18b387",
+    "title": "Dessert: Thin slice of chocolate layer cake (flour-based) with sliced strawberries and whipped cream (DairyStar) (BG: 127 mg/dL Flat) (Pred: 165-185 mg/dL @ 8:12 PM) (Protein: 4g | Carbs: ~30g | Cals: ~270)",
+    "type": "Dessert",
+    "date": "2026-03-26T18:42:00.000-07:00",
+    "photo": "https://iili.io/qZl6pfe.jpg",
+    "carbs": 28,
+    "cals": 280,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "33085ec7-0668-81d6-8f84-f93c146df6ef",
-    "title": "Dinner: 2 pieces white bread (pandesal-style) with braised pork belly (BG: 131 mg/dL Flat) (Pred: 175-190 mg/dL @ 7:58 PM) [Cumulative Dinner: 43g carbs total] (Protein: 16g | Carbs: ~28g | Cals: ~300)",
+    "title": "Dinner: 2 pieces white bread with pork belly (BG: 131 mg/dL Flat) (Pred: 180-195 mg/dL @ 7:58 PM) [Cumulative Dinner: 48g carbs total] (Protein: 16g | Carbs: ~28g | Cals: ~300)",
     "type": "Dinner",
     "date": "2026-03-26T18:28:00.000-07:00",
     "photo": "https://iili.io/qZcmeKN.jpg",
@@ -12,12 +23,12 @@
   },
   {
     "id": "33085ec7-0668-81c8-897d-c9c46fd440ec",
-    "title": "Dinner: Bowl of sinigang-style sour soup with kangkong/spinach and braised pork in tamarind broth (BG: 131 mg/dL Flat) (Pred: 150-165 mg/dL @ 7:55 PM) (Protein: 14g | Carbs: ~15g | Cals: ~190)",
+    "title": "Dinner: Spanish green bean stew (judías verdes) with potatoes, garlic, and paprika (BG: 131 mg/dL Flat) (Pred: 155-170 mg/dL @ 7:55 PM) (Protein: 6g | Carbs: ~20g | Cals: ~160)",
     "type": "Dinner",
     "date": "2026-03-26T18:25:00.000-07:00",
     "photo": "https://iili.io/qZcPbAQ.jpg",
-    "carbs": 15,
-    "cals": 190,
+    "carbs": 20,
+    "cals": 160,
     "delta": null,
     "peak": null
   },

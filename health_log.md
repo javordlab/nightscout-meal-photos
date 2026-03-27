@@ -1,5 +1,6 @@
 # Health Log
 
+| 2026-03-26 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 130 mg/dL Flat) | null | null |
 | 2026-03-26 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 132 mg/dL Flat) | null | null |
 | 2026-03-26 | 18:42 -07:00 | Maria Dennis | Food | Dessert | Dessert: Thin slice of chocolate layer cake (flour-based) with sliced strawberries and whipped cream (DairyStar) (BG: 127 mg/dL Flat) (Pred: 165-185 mg/dL @ 8:12 PM) (Protein: 4g | Carbs: ~30g | Cals: ~270) [📷](https://iili.io/qZl6pfe.jpg) | 28 | 280 |
 | 2026-03-26 | 18:28 -07:00 | Maria Dennis | Food | Dinner | Dinner: 2 pieces white bread with pork belly (BG: 131 mg/dL Flat) (Pred: 180-195 mg/dL @ 7:58 PM) [Cumulative Dinner: 48g carbs total] (Protein: 16g | Carbs: ~28g | Cals: ~300) [📷](https://iili.io/qZcmeKN.jpg) | 28 | 300 |
