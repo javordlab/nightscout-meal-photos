@@ -1,5 +1,7 @@
 # Health Log
 
+| 2026-03-27 | 10:42 -07:00 | Maria Dennis | Food | Snack | Snack: Small mix of spicy puffed corn snacks and mixed nuts (hazelnuts, peanuts, cashews) — very small portion (BG: 104 mg/dL Flat) (Pred: 145-165 mg/dL @ 12:15 PM) (Protein: 5g | Carbs: ~10g | Cals: ~140) [📷](https://iili.io/qDusDX9.jpg) | 10 | 140 |
+
 | 2026-03-27 | 10:33 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Egg and avocado tortilla quesadilla — 1 flour tortilla, 2 scrambled eggs, 1/3 avocado (BG: 104 mg/dL Flat) (Pred: 145-165 mg/dL @ 12:03 PM) (Protein: 17g | Carbs: ~31g | Cals: ~370) [📷](https://iili.io/qDTIhUG.jpg) | 31 | 370 |
 
 | 2026-03-27 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 100 mg/dL Flat) | null | null |
