@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-27T06:30:01.101Z",
-  "entryCount": 44,
+  "generatedAt": "2026-03-27T07:00:00.462Z",
+  "entryCount": 32,
   "errors": [],
   "warnings": [
     {
@@ -21,12 +21,6 @@
       "entryKey": "sha256:17cbc4d1ac4178ed70e73553d379767bdf5154fe5c5fe9e21e31dd8522e92073",
       "timestamp": "2026-03-25T20:00:00-07:00",
       "title": "Snack: 1 protein ball",
-      "reason": "missing_photo_urls"
-    },
-    {
-      "entryKey": "sha256:9251ad9556cc0d509b102b359feec73e5cd6fe6e970df95c9c4ee363100684cc",
-      "timestamp": "2026-03-23T19:22:00-07:00",
-      "title": "Snack: 4 strawberries + 4oz milk (~118ml)",
       "reason": "missing_photo_urls"
     }
   ]
