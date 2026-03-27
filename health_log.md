@@ -1,6 +1,8 @@
 # Health Log
 
 | 2026-03-26 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 132 mg/dL Flat) | null | null |
+| 2026-03-26 | 18:28 -07:00 | Maria Dennis | Food | Dinner | Dinner: 2 pieces white bread with pork belly (BG: 131 mg/dL Flat) (Pred: 180-195 mg/dL @ 7:58 PM) [Cumulative Dinner: 48g carbs total] (Protein: 16g | Carbs: ~28g | Cals: ~300) [📷](https://iili.io/qZcmeKN.jpg) | 28 | 300 |
+| 2026-03-26 | 18:25 -07:00 | Maria Dennis | Food | Dinner | Dinner: Spanish green bean stew (judías verdes) with potatoes, garlic, and paprika (BG: 131 mg/dL Flat) (Pred: 155-170 mg/dL @ 7:55 PM) (Protein: 6g | Carbs: ~20g | Cals: ~160) [📷](https://iili.io/qZcPbAQ.jpg) | 20 | 160 |
 | 2026-03-26 | 15:59 -07:00 | Maria Dennis | Food | Snack | Snack: 2 slices dragon fruit and handful of walnuts (BG: 91 mg/dL Flat) (Pred: 110-125 mg/dL @ 5:29 PM) (Protein: 5g | Carbs: ~16g | Cals: ~155) | 16 | 155 |
 | 2026-03-26 | 14:06 -07:00 | Maria Dennis | Activity | - | 39 minutes gardening | null | null |
 | 2026-03-26 | 12:57 -07:00 | Maria Dennis | Food | Lunch | Lunch: 7 loquats (fresh off stem) (BG: 107 mg/dL Flat) (Pred: 160-175 mg/dL @ 2:27 PM) [Cumulative Lunch: 46g carbs total] (Protein: 1g | Carbs: ~13g | Cals: ~55) [📷](https://iili.io/qQQ7scu.jpg) | 13 | 55 |
