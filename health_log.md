@@ -1,5 +1,6 @@
 # Health Log
 
+| 2026-03-27 | 13:38 -07:00 | Maria Dennis | Food | Snack | Snack: 3 small slices braised/glazed pork belly (BG: 118 mg/dL Flat) (Pred: 125-135 mg/dL @ 3:08 PM) (Protein: 9g | Carbs: ~2g | Cals: ~120) [📷](https://iili.io/qDZwLrb.jpg) | 2 | 120 |
 | 2026-03-27 | 13:36 -07:00 | Maria Dennis | Food | Lunch | Lunch: Braised eggplant and shiitake mushrooms in dark garlic/soy sauce over white rice (BG: 122 mg/dL Flat) (Pred: 175-195 mg/dL @ 3:06 PM) (Protein: 6g | Carbs: ~40g | Cals: ~240) [📷](https://iili.io/qDS9d41.jpg) | 40 | 240 |
 | 2026-03-27 | 13:36 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 122 mg/dL Flat) | null | null |
 
