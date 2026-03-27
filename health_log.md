@@ -1,5 +1,8 @@
 # Health Log
 
+| 2026-03-27 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 100 mg/dL Flat) | null | null |
+| 2026-03-27 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 100 mg/dL Flat) | null | null |
+| 2026-03-27 | 09:05 -07:00 | Maria Dennis | Medication | - | Medication: Rosuvastatin 10mg (Scheduled) (BG: 100 mg/dL Flat) | null | null |
 | 2026-03-26 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 130 mg/dL Flat) | null | null |
 | 2026-03-26 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 132 mg/dL Flat) | null | null |
 | 2026-03-26 | 20:09 -07:00 | Maria Dennis | Activity | - | 15 minutes Qigong | null | null |
