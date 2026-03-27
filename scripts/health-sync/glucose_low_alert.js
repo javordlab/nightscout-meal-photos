@@ -89,14 +89,14 @@ function getBotToken() {
 }
 
 async function main() {
-  // Only alert between 8:30 AM and midnight PT
-  const nowLA = new Date().toLocaleString('en-US', { timeZone: 'America/Los_Angeles', hour: 'numeric', minute: 'numeric', hour12: false });
-  const [h, m] = nowLA.split(':').map(Number);
+  // Only alert between 8:30 AM and midnight (system timezone)
+  const sysTZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  const nowLocal = new Date().toLocaleString('en-US', { timeZone: sysTZ, hour: 'numeric', minute: 'numeric', hour12: false });
+  const [h, m] = nowLocal.split(':').map(Number);
   const minutesNow = h * 60 + m;
   const start = 8 * 60 + 30;  // 08:30
-  const end   = 24 * 60;       // 00:00 (midnight)
   if (minutesNow < start) {
-    console.log(`Outside alert window (${nowLA} PT). Skipping.`);
+    console.log(`Outside alert window (${nowLocal} ${sysTZ}). Skipping.`);
     return;
   }
 
