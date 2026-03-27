@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-03-27T06:15:00.685Z",
+  "checkedAt": "2026-03-27T06:45:00.868Z",
   "jobsChecked": 13,
   "jobs": [
     {
@@ -22,11 +22,11 @@
       "status": "healthy",
       "schedule": "every 30m",
       "intervalMs": 1800000,
-      "lastRunAtMs": 1774590491816,
-      "nextRunAtMs": 1774592291816,
+      "lastRunAtMs": 1774592291825,
+      "nextRunAtMs": 1774594091825,
       "consecutiveErrors": 0,
       "lastStatus": "ok",
-      "lastDurationMs": 28863,
+      "lastDurationMs": 43559,
       "overdueMin": null,
       "graceMin": null
     },
@@ -49,12 +49,12 @@
       "name": "Radial Sync",
       "status": "healthy",
       "schedule": "every 30m",
-      "intervalMs": 3599993,
-      "lastRunAtMs": 1774587600007,
-      "nextRunAtMs": 1774591200000,
+      "intervalMs": 1789552,
+      "lastRunAtMs": 1774593010448,
+      "nextRunAtMs": 1774594800000,
       "consecutiveErrors": 0,
       "lastStatus": "ok",
-      "lastDurationMs": 402715,
+      "lastDurationMs": 453636,
       "overdueMin": null,
       "graceMin": null
     },
@@ -77,12 +77,12 @@
       "name": "Hourly Notion Impact",
       "status": "healthy",
       "schedule": "every 1h",
-      "intervalMs": 3337676,
-      "lastRunAtMs": 1774588008425,
-      "nextRunAtMs": 1774591346101,
+      "intervalMs": 2772823,
+      "lastRunAtMs": 1774592173278,
+      "nextRunAtMs": 1774594946101,
       "consecutiveErrors": 0,
       "lastStatus": "ok",
-      "lastDurationMs": 43306,
+      "lastDurationMs": 42228,
       "overdueMin": null,
       "graceMin": null
     },
@@ -103,16 +103,16 @@
     {
       "id": "10284fc2-46fc-474d-9c29-881a5c7767f6",
       "name": "Photo Pipeline",
-      "status": "overdue",
+      "status": "healthy",
       "schedule": "every 1m",
       "intervalMs": 60000,
-      "lastRunAtMs": 1774591164747,
-      "nextRunAtMs": 1774591224747,
+      "lastRunAtMs": 1774593887154,
+      "nextRunAtMs": 1774593947154,
       "consecutiveErrors": 0,
       "lastStatus": "ok",
-      "lastDurationMs": 10510,
-      "overdueMin": 15,
-      "graceMin": 10
+      "lastDurationMs": 8892,
+      "overdueMin": null,
+      "graceMin": null
     },
     {
       "id": "notion-to-mysql-async-sync",
@@ -148,11 +148,11 @@
       "status": "healthy",
       "schedule": "every 5m",
       "intervalMs": 300000,
-      "lastRunAtMs": 1774591033583,
-      "nextRunAtMs": 1774591333583,
+      "lastRunAtMs": 1774593779108,
+      "nextRunAtMs": 1774594079108,
       "consecutiveErrors": 0,
       "lastStatus": "ok",
-      "lastDurationMs": 9950,
+      "lastDurationMs": 19700,
       "overdueMin": null,
       "graceMin": null
     },
@@ -176,31 +176,16 @@
       "status": "healthy",
       "schedule": "every 30m",
       "intervalMs": 1800000,
-      "lastRunAtMs": 1774591177266,
-      "nextRunAtMs": 1774592977266,
+      "lastRunAtMs": 1774592977275,
+      "nextRunAtMs": 1774594777275,
       "consecutiveErrors": 0,
       "lastStatus": "skipped",
-      "lastDurationMs": 1,
+      "lastDurationMs": null,
       "overdueMin": null,
       "graceMin": null
     }
   ],
-  "staleJobs": [
-    {
-      "id": "10284fc2-46fc-474d-9c29-881a5c7767f6",
-      "name": "Photo Pipeline",
-      "status": "overdue",
-      "schedule": "every 1m",
-      "intervalMs": 60000,
-      "lastRunAtMs": 1774591164747,
-      "nextRunAtMs": 1774591224747,
-      "consecutiveErrors": 0,
-      "lastStatus": "ok",
-      "lastDurationMs": 10510,
-      "overdueMin": 15,
-      "graceMin": 10
-    }
-  ],
+  "staleJobs": [],
   "dailyReportIssue": null,
-  "alertSent": true
+  "alertSent": false
 }
