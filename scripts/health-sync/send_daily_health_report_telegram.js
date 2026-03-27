@@ -191,7 +191,7 @@ async function main() {
   }
 
   if (opts.sendCharts) {
-    const cmd = `cd ${WORKSPACE} && /opt/homebrew/bin/node scripts/health-sync/send_daily_charts_telegram.js --date-la=${opts.reportDateLA} --no-regenerate${opts.dryRun ? ' --dry-run' : ''}`;
+    const cmd = `cd ${WORKSPACE} && /opt/homebrew/bin/node scripts/health-sync/send_daily_charts_telegram.js --date-la=${opts.reportDateLA}${opts.dryRun ? ' --dry-run' : ''}`;
     execSync(cmd, { stdio: 'inherit' });
     summary.chartsTriggered = true;
     log({ op: 'daily_report_charts_triggered', reportDateLA: opts.reportDateLA, chatId: opts.chatId, dryRun: opts.dryRun });
