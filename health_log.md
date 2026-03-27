@@ -1,5 +1,8 @@
 # Health Log
 
+| 2026-03-27 | 13:36 -07:00 | Maria Dennis | Food | Lunch | Lunch: Braised eggplant and shiitake mushrooms in dark garlic/soy sauce over white rice (BG: 122 mg/dL Flat) (Pred: 175-195 mg/dL @ 3:06 PM) (Protein: 6g | Carbs: ~40g | Cals: ~240) [📷](https://iili.io/qDS9d41.jpg) | 40 | 240 |
+| 2026-03-27 | 13:36 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 122 mg/dL Flat) | null | null |
+
 | 2026-03-27 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 136 mg/dL Flat) | null | null |
 | 2026-03-27 | 10:42 -07:00 | Maria Dennis | Food | Snack | Snack: Moon cheese, mixed nuts (hazelnuts, peanuts, cashews), and a few goji berries — small portion (BG: 104 mg/dL Flat) (Pred: 145-165 mg/dL @ 12:15 PM) (Protein: 12g | Carbs: ~12g | Cals: ~190) [📷](https://iili.io/qDusDX9.jpg) | 12 | 190 |
 
