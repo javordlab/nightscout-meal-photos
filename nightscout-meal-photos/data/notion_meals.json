@@ -275,15 +275,15 @@
     "peak": 138
   },
   {
-    "id": "33185ec7-0668-8101-8e6e-df9bff60e41b",
+    "id": "32f85ec7-0668-8163-9ec9-e232223a0d12",
     "title": "Snack: Half red apple (~75g) (BG: 111 mg/dL Flat) (Pred: 180-200 mg/dL @ 2:45-3:15 PM) (Protein: 0.3g | Carbs: ~10g | Cals: ~40)",
     "type": "Snack",
     "date": "2026-03-23T13:14:00.000-07:00",
     "photo": "https://iili.io/qrHqxa4.jpg",
     "carbs": 10,
     "cals": 40,
-    "delta": null,
-    "peak": null
+    "delta": 54,
+    "peak": 165
   },
   {
     "id": "32f85ec7-0668-816b-a064-eb9561d8b1c6",
@@ -627,7 +627,7 @@
     "peak": null
   },
   {
-    "id": "32f85ec7-0668-81d5-b8a4-f04150805c3d",
+    "id": "33185ec7-0668-816d-b30e-f2e8bf54e64d",
     "title": "Lunch: Flour tortilla wrap with peppers and meat, and 4 orange wedges (BG: 140 mg/dL Flat) (Protein: 28g | Carbs: ~45g | Cals: ~365)  (Pred: 278 mg/dL @ 2:30 PM)",
     "type": "Lunch",
     "date": "2026-03-15T12:45:00.000-07:00",
@@ -1375,7 +1375,7 @@
     "peak": null
   },
   {
-    "id": "33085ec7-0668-8124-975d-cf291140d86e",
+    "id": "33185ec7-0668-81ea-865a-fab778cb94d8",
     "title": "Lunch: Noodles with avocado, greens, and shaved cheese (Pred: 278 mg/dL @ 2:26 PM) (Protein: 24g | Carbs: ~45g | Cals: ~450)",
     "type": "Lunch",
     "date": "2026-02-27T12:41:00.000-08:00",
@@ -1397,7 +1397,7 @@
     "peak": null
   },
   {
-    "id": "33185ec7-0668-81be-89b2-d773532b3e5f",
+    "id": "33085ec7-0668-81ba-baf1-c58cda384d24",
     "title": "Breakfast: Two slices toasted sourdough with cream cheese and smoked salmon (Pred: 225 mg/dL @ 11:00 AM) (Protein: 26g | Carbs: ~30g | Cals: ~350)",
     "type": "Breakfast",
     "date": "2026-02-27T09:15:00.000-08:00",
