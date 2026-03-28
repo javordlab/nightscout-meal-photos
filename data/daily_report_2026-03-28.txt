@@ -1,0 +1,70 @@
+🩺 DAILY HEALTH REPORT
+📅 Date: 2026-03-28
+🕒 Coverage window: 2026-03-27 00:00 – 2026-03-28 00:00 (America/Los_Angeles)
+⚙️ Generated time: 2026-03-28T16:30:01.312Z
+🤖 Model: anthropic/claude-sonnet-4-6
+
+1) 📊 Today's Glucose Summary
+- Average glucose: 115.2 mg/dL
+- Time in Range (70-180): 100.0%
+- GMI: 6.07%
+- Standard deviation: 16.8 mg/dL
+- CV: 14.6%
+- Data points used: 267
+
+2) 📉 14-day Trends (ending 2026-03-27)
+- Average glucose: 119.0 mg/dL
+- Time in Range (70-180): 99.8%
+- GMI: 6.16%
+- Standard deviation: 21.4 mg/dL
+- CV: 18.0%
+- Data points used: 971
+
+3) 🍽️ Nutrition (2026-03-27)
+- Meals logged: 10
+- Total carbs: 190.0 g
+- Total calories: 2095 kcal
+- Total protein: 106.0 g
+
+4) 🧾 Meal Details (2026-03-27)
+- 10:33 AM — Breakfast: Egg and avocado tortilla quesadilla — 1 flour tortilla, 2 scrambled eggs, 1/3 avocado — 31.0g carbs, 370 kcal, 17.0g protein — BG at meal: 106 mg/dL
+- 10:42 AM — Snack: Mixed nuts (hazelnuts, peanuts, cashews) and a few goji berries — small portion — 8.0g carbs, 130 kcal, 6.0g protein — BG at meal: 104 mg/dL
+- 1:36 PM — Lunch: Braised eggplant and shiitake mushrooms in dark garlic/soy sauce over white rice — 40.0g carbs, 240 kcal, 6.0g protein — BG at meal: 118 mg/dL
+- 1:38 PM — Snack: 3 small slices braised/glazed pork belly — 2.0g carbs, 120 kcal, 9.0g protein — BG at meal: 118 mg/dL
+- 5:43 PM — Snack: 1 oatmeal cookie with chocolate chips/raisins and a glass of milk — 30.0g carbs, 230 kcal, 9.0g protein — BG at meal: 115 mg/dL
+- 7:03 PM — Dinner: Home-made sea bass and clams with green onions, and home-grown French fries — 41.0g carbs, 530 kcal, 45.0g protein — BG at meal: 142 mg/dL
+- 7:04 PM — Dinner: 6 fresh oysters on the half shell — 4.0g carbs, 50 kcal, 9.0g protein — BG at meal: 142 mg/dL
+- 7:04 PM — Dinner: 1 glass nigori sake (~150ml) with dinner — 8.0g carbs, 170 kcal, 1.0g protein — BG at meal: 142 mg/dL
+- 7:16 PM — Dinner: 1 Persian cucumber — 2.0g carbs, 15 kcal, 1.0g protein — BG at meal: 144 mg/dL
+- 10:18 PM — Dessert: Meal photo (auto-estimated nutrition) — 24.0g carbs, 240 kcal, 3.0g protein — BG at meal: 98 mg/dL
+
+5) 📚 Nutrition Baseline (14-day daily average ending 2026-03-27)
+- Average carbs/day: 150.3 g
+- Average calories/day: 1501.0 kcal
+- Average protein/day: 81.3 g
+- Average meals/day: 5.5
+- Days in window with food entries: 14
+
+6) 💊 Medication Status (2026-03-27)
+- 2026-03-27T19:00:00-07:00: Medication: Metformin 1000mg (dinner)
+- 2026-03-27T13:36:00-07:00: Medication: Metformin 500mg (lunch)
+- 2026-03-27T09:00:00-07:00: Medication: Lisinopril 10mg (Scheduled)
+- 2026-03-27T09:10:00-07:00: Medication: Metformin 500mg (breakfast)
+- 2026-03-27T09:05:00-07:00: Medication: Rosuvastatin 10mg (Scheduled)
+
+7) 🚨 Outliers (2026-03-27)
+- High readings >180: 0
+- Low readings <70: 0
+- Max glucose: 153 mg/dL at 2026-03-28T02:49:33.000Z
+
+8) 🧠 Extended Supervisor Analysis
+- Nice work overall today: Strong Time in Range at 100.0% | Limited high excursions (>180 mg/dL): 0 | No hypoglycemia episodes (<70 mg/dL) | Good protein intake (106.0g).
+- Key trend signals: avg glucose vs 14-day baseline -3.8 mg/dL, TIR delta 0.2%, carbs delta 39.7 g, calories delta 594 kcal.
+- Friendly focus for tomorrow: Carbs were above 14-day baseline by 39.7g; consider smaller late-day carb load. Calories were above baseline by 594 kcal; consider portion tightening at dinner/snacks.
+- You’re doing great—small consistent habits keep adding up. Keep it going 🌟
+
+9) 🛡️ Self-Audit (Data Integrity)
+- Target day enforced: 2026-03-27 PT
+- Glucose points in target window: 267
+- GMI formula check (3.31 + 0.02392 × Avg): 6.07%
+- Reported GMI: 6.07%
