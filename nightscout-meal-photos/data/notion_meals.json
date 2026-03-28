@@ -11,17 +11,6 @@
     "peak": null
   },
   {
-    "id": "33185ec7-0668-8135-a444-f97a63eede6b",
-    "title": "Dessert: Meal photo (auto-estimated nutrition) (BG: 98 mg/dL Flat) (Pred: 177-197 mg/dL @ 11:53 PM) (Protein: 3g | Carbs: ~24g | Cals: ~240)",
-    "type": "Dessert",
-    "date": "2026-03-27T22:18:00.000-07:00",
-    "photo": "https://iili.io/qbAumQt.jpg",
-    "carbs": 24,
-    "cals": 240,
-    "delta": 47,
-    "peak": 145
-  },
-  {
     "id": "33185ec7-0668-8155-bf32-f3fcb9bba0a6",
     "title": "Dinner: 1 Persian cucumber (BG: 113 mg/dL Flat) (Pred: 165-185 mg/dL @ 8:33 PM) (Protein: 1g | Carbs: ~2g | Cals: ~15)",
     "type": "Dinner",
@@ -31,6 +20,17 @@
     "cals": 15,
     "delta": 9,
     "peak": 153
+  },
+  {
+    "id": "33185ec7-0668-81e6-a2ba-ccf58cbed95a",
+    "title": "Dinner: 1 glass nigori sake (~150ml) with dinner (BG: 113 mg/dL Flat) (Pred: 165-185 mg/dL @ 8:33 PM) (Protein: 1g | Carbs: ~8g | Cals: ~170)",
+    "type": "Dinner",
+    "date": "2026-03-27T19:04:00.000-07:00",
+    "photo": "https://iili.io/qbqPG1f.jpg",
+    "carbs": 8,
+    "cals": 170,
+    "delta": null,
+    "peak": null
   },
   {
     "id": "33185ec7-0668-813f-9102-eac3a1beb434",

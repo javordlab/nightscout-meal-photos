@@ -4,7 +4,7 @@
 
 | 2026-03-28 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 108 mg/dL Flat) | null | null |
 | 2026-03-28 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 108 mg/dL Flat) | null | null |
-| 2026-03-27 | 22:18 -07:00 | Maria Dennis | Food | Dessert | Dessert: Meal photo (auto-estimated nutrition) (BG: 98 mg/dL Flat) (Pred: 177-197 mg/dL @ 11:53 PM) (Protein: 3g | Carbs: ~24g | Cals: ~240) [📷](https://iili.io/qbAumQt.jpg) | 24 | 240 |
+
 
 | 2026-03-27 | 19:16 -07:00 | Maria Dennis | Food | Dinner | Dinner: 1 Persian cucumber (BG: 113 mg/dL Flat) (Pred: 165-185 mg/dL @ 8:33 PM) (Protein: 1g | Carbs: ~2g | Cals: ~15) [📷](https://iili.io/qbButMN.jpg) | 2 | 15 |
 

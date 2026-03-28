@@ -4534,10 +4534,6 @@
         "https://iili.io/qvI0E6Q.jpg"
       ],
       "outcomes_backfilled": false,
-      "nightscout": {
-        "treatment_id": "69c0195a911a8ea261e675d9",
-        "last_synced_at": "2026-03-25T16:50:19.071Z"
-      },
       "notion": {
         "page_id": "32f85ec7-0668-81da-92bb-cbda530fd4f2",
         "last_synced_at": "2026-03-28T16:30:00.281Z"
@@ -4559,10 +4555,6 @@
         "https://iili.io/qkQfYYl.jpg"
       ],
       "outcomes_backfilled": false,
-      "nightscout": {
-        "treatment_id": "69c0195a911a8ea261e675d9",
-        "last_synced_at": "2026-03-25T16:50:20.700Z"
-      },
       "notion": {
         "page_id": "32f85ec7-0668-817b-89ca-f69ed66f0657",
         "last_synced_at": "2026-03-28T16:30:00.282Z"
@@ -5410,7 +5402,8 @@
       "nightscout": {
         "treatment_id": "69c2eb10911a8ea261e67866",
         "last_synced_at": "2026-03-27T06:30:36.783Z"
-      }
+      },
+      "needs_outcome_backfill": true
     },
     "sha256:fcf910a2ac2be2e3dccc99ea1e85d8db48423602cc8637c0622190db740845a3": {
       "timestamp": "2026-03-25T16:56:00-07:00",
@@ -5444,7 +5437,8 @@
         "peakBgDelta": null,
         "peakTimeDeltaMin": null,
         "twoHourPeakBg": 120
-      }
+      },
+      "needs_outcome_backfill": true
     },
     "sha256:da7b2f97ee5646c0c53545bb8608dd671948d89e82dbdc42d0c2c8051ff211f4": {
       "timestamp": "2026-03-25T09:33:00-07:00",
@@ -5478,7 +5472,8 @@
         "peakBgDelta": null,
         "peakTimeDeltaMin": null,
         "twoHourPeakBg": 182
-      }
+      },
+      "needs_outcome_backfill": true
     },
     "sha256:532477ed4edbb1ace2f1482a72d44796994b09204c3e5ec9655ced0624c39b27": {
       "timestamp": "2026-03-25T18:16:00-07:00",
@@ -5512,7 +5507,8 @@
         "peakBgDelta": null,
         "peakTimeDeltaMin": null,
         "twoHourPeakBg": 122
-      }
+      },
+      "needs_outcome_backfill": true
     },
     "sha256:c51e55423d7e56e23aa2355c808420f79658c216a3e4fba12c201c0fe319604c": {
       "timestamp": "2026-03-25T19:00:00-07:00",
@@ -5594,7 +5590,8 @@
         "peakBgDelta": null,
         "peakTimeDeltaMin": null,
         "twoHourPeakBg": 138
-      }
+      },
+      "needs_outcome_backfill": true
     },
     "sha256:580922719246518f29de9e80ab2830d24061f6f8b8db48790779a2aaf4997839": {
       "timestamp": "2026-03-26T09:22:00-07:00",
@@ -5618,7 +5615,8 @@
       "gallery": {
         "gallery_id": "32f85ec7-0668-8135-8cd6-d7c292f9306b",
         "last_synced_at": "2026-03-28T16:30:00.281Z"
-      }
+      },
+      "needs_outcome_backfill": true
     },
     "sha256:c17160c06fb948953213305f497d70846ad767e51d97f9d7954b8d39c15a7152": {
       "timestamp": "2026-03-26T09:00:00-07:00",
@@ -5690,7 +5688,8 @@
       "notion": {
         "page_id": "32f85ec7-0668-81c5-b0bd-d4ef562b0449",
         "last_synced_at": "2026-03-26T18:00:04.468Z"
-      }
+      },
+      "needs_outcome_backfill": true
     },
     "sha256:5b85eae7ca498c164a617df45cdc862b84c018798874e64c05392120621df7a5": {
       "timestamp": "2026-03-26T11:01:00-07:00",
@@ -5750,7 +5749,8 @@
       "gallery": {
         "gallery_id": "32f85ec7-0668-8175-b6f6-c0d2f63f97b3",
         "last_synced_at": "2026-03-28T16:30:00.281Z"
-      }
+      },
+      "needs_outcome_backfill": true
     },
     "sha256:9c63faab208befa46d29afb7dbf52d26600ccbdaab976d89c9efeae8aad2c7ee": {
       "timestamp": "2026-03-26T12:44:00-07:00",
@@ -5774,7 +5774,8 @@
       "gallery": {
         "gallery_id": "32f85ec7-0668-81a3-8a3e-e80ac0e38e3f",
         "last_synced_at": "2026-03-28T16:30:00.281Z"
-      }
+      },
+      "needs_outcome_backfill": true
     },
     "sha256:009c72eaae8c805d97dc2e23b011d65aaa1a3a8e48ed8f21663243f4ff59026c": {
       "timestamp": "2026-03-26T14:06:00-07:00",
@@ -5810,7 +5811,8 @@
       "notion": {
         "page_id": "32f85ec7-0668-8153-abe7-c34b09258c9f",
         "last_synced_at": "2026-03-26T23:00:03.666Z"
-      }
+      },
+      "needs_outcome_backfill": true
     },
     "sha256:8485eada3d186e8855d6e50e217d865b065a89553db6f97d1b03a264ec0a952e": {
       "timestamp": "2026-03-26T18:42:00-07:00",
@@ -5844,7 +5846,8 @@
         "peakBgDelta": null,
         "peakTimeDeltaMin": null,
         "twoHourPeakBg": 165
-      }
+      },
+      "needs_outcome_backfill": true
     },
     "sha256:74ee53d5c741b1a977e4aca4c4c3c5bc645815dd094d093d7b58956a4e4b49f5": {
       "timestamp": "2026-03-26T18:28:00-07:00",
@@ -5878,7 +5881,8 @@
         "peakBgDelta": null,
         "peakTimeDeltaMin": null,
         "twoHourPeakBg": 165
-      }
+      },
+      "needs_outcome_backfill": true
     },
     "sha256:838968912d8874667730fd72e1f7c4fa2991f40056bfd19d46062c21d6f2753e": {
       "timestamp": "2026-03-26T18:25:00-07:00",
@@ -5912,7 +5916,8 @@
         "peakBgDelta": null,
         "peakTimeDeltaMin": null,
         "twoHourPeakBg": 165
-      }
+      },
+      "needs_outcome_backfill": true
     },
     "sha256:574db3f1f7ed626010264ba9d0d43b0ce9355f1cacbc0c75cf20807597029d67": {
       "timestamp": "2026-03-26T19:00:00-07:00",
@@ -6054,7 +6059,8 @@
         "peakBgDelta": null,
         "peakTimeDeltaMin": null,
         "twoHourPeakBg": 147
-      }
+      },
+      "needs_outcome_backfill": true
     },
     "sha256:f23aab33bdc05c49e7047a9872a475206ea88a4fad5566091463a88d652d9319": {
       "timestamp": "2026-03-27T13:36:00-07:00",
@@ -6088,7 +6094,8 @@
         "peakBgDelta": null,
         "peakTimeDeltaMin": null,
         "twoHourPeakBg": 153
-      }
+      },
+      "needs_outcome_backfill": true
     },
     "sha256:de977b5849021127ce3bbba8f2c0813d2fd587c472f934a1e0b9de25b92a9821": {
       "timestamp": "2026-03-27T13:36:00-07:00",
@@ -6140,7 +6147,8 @@
         "peakBgDelta": null,
         "peakTimeDeltaMin": null,
         "twoHourPeakBg": 153
-      }
+      },
+      "needs_outcome_backfill": true
     },
     "sha256:d9d9e6be50427e5ecba911f84457b64d9964dc620e4db41fd4a9447e33041bcb": {
       "timestamp": "2026-03-27T10:42:00-07:00",
@@ -6174,7 +6182,8 @@
         "peakBgDelta": null,
         "peakTimeDeltaMin": null,
         "twoHourPeakBg": 147
-      }
+      },
+      "needs_outcome_backfill": true
     },
     "sha256:62525b31564d7838ccaeee32c8450299d6ae073d9e8434128b961d6a7c2f3ff7": {
       "timestamp": "2026-03-27T17:43:00-07:00",
@@ -6198,7 +6207,8 @@
       "nightscout": {
         "treatment_id": "69c72486911a8ea261e67bf9",
         "last_synced_at": "2026-03-28T04:30:14.063Z"
-      }
+      },
+      "needs_outcome_backfill": true
     },
     "sha256:4fb831274b7a7d7538b1573b76fd232c601677c25f1ddb1c6c72fe47d746d12a": {
       "timestamp": "2026-03-27T19:16:00-07:00",
@@ -6222,7 +6232,8 @@
       "nightscout": {
         "treatment_id": "69c73ae1911a8ea261e67bfd",
         "last_synced_at": "2026-03-28T04:30:01.253Z"
-      }
+      },
+      "needs_outcome_backfill": true
     },
     "sha256:588f94924e486c786ed8dac5fbf17458408c8b218205215ebd3f6c158e529381": {
       "timestamp": "2026-03-27T19:04:00-07:00",
@@ -6246,7 +6257,8 @@
       "gallery": {
         "gallery_id": "33185ec7-0668-813f-9102-eac3a1beb434",
         "last_synced_at": "2026-03-28T16:30:00.280Z"
-      }
+      },
+      "needs_outcome_backfill": true
     },
     "sha256:8e65bed6361d9e25bee94d175f507bb52689608be6db7cbd1cbb7a3431c3bc9c": {
       "timestamp": "2026-03-27T19:04:00-07:00",
@@ -6259,10 +6271,6 @@
         "https://iili.io/qbqPG1f.jpg"
       ],
       "outcomes_backfilled": false,
-      "gallery": {
-        "gallery_id": "33185ec7-0668-813f-9102-eac3a1beb434",
-        "last_synced_at": "2026-03-28T07:00:00.831Z"
-      },
       "notion": {
         "page_id": "33185ec7-0668-813f-9102-eac3a1beb434",
         "last_synced_at": "2026-03-28T07:00:00.831Z"
@@ -6270,7 +6278,8 @@
       "nightscout": {
         "treatment_id": "69c73869911a8ea261e67bfc",
         "last_synced_at": "2026-03-28T04:30:04.317Z"
-      }
+      },
+      "needs_outcome_backfill": true
     },
     "sha256:1774f037591bbd98f52baa51bf3e3ab49af4a181afed3b7d7465c3f1a6b057bc": {
       "timestamp": "2026-03-27T19:03:00-07:00",
@@ -6294,7 +6303,8 @@
       "nightscout": {
         "treatment_id": "69c7371f911a8ea261e67bfb",
         "last_synced_at": "2026-03-28T04:30:05.062Z"
-      }
+      },
+      "needs_outcome_backfill": true
     },
     "sha256:6af7652bf1f212b08e84dcc0d1daa361c79e764257ea9acd8b9f2f76e826dd55": {
       "timestamp": "2026-03-27T19:00:00-07:00",
@@ -6350,7 +6360,8 @@
       "notion": {
         "page_id": "33185ec7-0668-8135-a444-f97a63eede6b",
         "last_synced_at": "2026-03-28T16:30:00.280Z"
-      }
+      },
+      "needs_outcome_backfill": true
     },
     "sha256:8cd4f2494b41ebe5d3e7bdbdf357ac5a21dc96cfa9b1ed3d3b468e8ff953cdc9": {
       "timestamp": "2026-03-28T09:08:00-07:00",
