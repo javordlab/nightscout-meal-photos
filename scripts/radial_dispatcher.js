@@ -348,7 +348,8 @@ async function main() {
       filter: {
         and: [
           { property: "Date", date: { equals: entryData.iso } },
-          { property: "User", select: { equals: entryData.user } }
+          { property: "User", select: { equals: entryData.user } },
+          { property: "Category", select: { equals: entryData.category } }
         ]
       }
     });

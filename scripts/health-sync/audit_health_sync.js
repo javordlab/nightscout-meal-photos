@@ -289,7 +289,73 @@ async function main(options = {}) {
   console.log(JSON.stringify(report.summary, null, 2));
   console.log(`\nWrote ${REPORT_PATH}`);
 
+  // ── Active alert: send Telegram DM if any sync gaps found ──────────────────
+  const errorCount = report.discrepancies.filter(d =>
+    d.issues.some(i => i.severity === 'error')
+  ).length;
+  const warnCount = report.discrepancies.filter(d =>
+    d.issues.every(i => i.severity !== 'error') && d.issues.length > 0
+  ).length;
+
+  if (errorCount > 0 || warnCount > 0) {
+    await sendSyncGapAlert(report, errorCount, warnCount);
+  }
+
   return report;
+}
+
+function getBotToken() {
+  try {
+    return JSON.parse(fs.readFileSync('/Users/javier/.openclaw/openclaw.json', 'utf8'))
+      ?.channels?.telegram?.botToken || null;
+  } catch { return null; }
+}
+
+async function sendSyncGapAlert(report, errorCount, warnCount) {
+  const botToken = getBotToken();
+  if (!botToken) { console.warn('⚠️ No bot token — skipping Telegram alert'); return; }
+
+  const sysTZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  const now = new Date().toLocaleString('en-US', { timeZone: sysTZ, hour: '2-digit', minute: '2-digit', month: 'short', day: 'numeric' });
+
+  const lines = [`🔴 Sync Audit Gap Detected (${now})\n`];
+  if (errorCount > 0) lines.push(`❌ ${errorCount} entries with sync errors (missing Notion/NS)`);
+  if (warnCount > 0) lines.push(`⚠️ ${warnCount} entries with warnings`);
+
+  // List up to 5 specific affected entries
+  const toShow = report.discrepancies.slice(0, 5);
+  for (const d of toShow) {
+    const t = new Date(d.timestamp).toLocaleString('en-US', { timeZone: sysTZ, month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+    const types = d.issues.map(i => i.type.replace(/_/g, ' ')).join(', ');
+    lines.push(`  • ${t} — ${(d.title || '').substring(0, 50)}: ${types}`);
+  }
+  if (report.discrepancies.length > 5) {
+    lines.push(`  ... and ${report.discrepancies.length - 5} more`);
+  }
+
+  lines.push(`\nRun: node scripts/health-sync/health_sync_pipeline.js --mode=full --since=$(date -v-2d +%F)`);
+
+  const text = lines.join('\n');
+  const body = new URLSearchParams({ chat_id: '8335333215', text }).toString();
+  const opts = {
+    method: 'POST', hostname: 'api.telegram.org',
+    path: `/bot${botToken}/sendMessage`,
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'Content-Length': Buffer.byteLength(body) }
+  };
+
+  return new Promise((resolve) => {
+    const req = https.request(opts, res => {
+      let d = ''; res.on('data', c => d += c);
+      res.on('end', () => {
+        const r = JSON.parse(d || '{}');
+        if (r.ok) console.log('📱 Sync gap alert sent to Javi');
+        else console.warn('⚠️ Alert send failed:', r.description);
+        resolve();
+      });
+    });
+    req.on('error', e => { console.warn('⚠️ Alert send error:', e.message); resolve(); });
+    req.write(body); req.end();
+  });
 }
 
 if (require.main === module) {
