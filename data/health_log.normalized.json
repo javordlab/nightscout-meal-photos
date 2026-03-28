@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-28T16:30:00.263Z",
+  "generatedAt": "2026-03-28T17:00:00.964Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
-  "entryCount": 357,
+  "entryCount": 356,
   "entries": [
     {
       "source": {
@@ -128,49 +128,6 @@
       },
       "entryKey": "sha256:7788980dea9da5760a09425563e8b56eed057016f072015c8a532e8a82c2f61c",
       "contentHash": "sha256:7ea7bc9ed83b0e780dd81322ca0e9dccd4a8119cb00300571d5cf3483a784525"
-    },
-    {
-      "source": {
-        "file": "health_log.md",
-        "line": 7,
-        "rawRow": "| 2026-03-27 | 22:18 -07:00 | Maria Dennis | Food | Dessert | Dessert: Meal photo (auto-estimated nutrition) (BG: 98 mg/dL Flat) (Pred: 177-197 mg/dL @ 11:53 PM) (Protein: 3g | Carbs: ~24g | Cals: ~240) [📷](https://iili.io/qbAumQt.jpg) | 24 | 240 |"
-      },
-      "timestamp": "2026-03-27T22:18:00-07:00",
-      "date": "2026-03-27",
-      "time": "22:18 -07:00",
-      "user": "Maria Dennis",
-      "category": "Food",
-      "mealType": "Dessert",
-      "title": "Dessert: Meal photo (auto-estimated nutrition)",
-      "notes": "BG: 98 mg/dL Flat; Protein: 3g; Pred: 177-197 mg/dL @ 11:53 PM",
-      "photoUrls": [
-        "https://iili.io/qbAumQt.jpg"
-      ],
-      "carbsEst": 24,
-      "caloriesEst": 240,
-      "proteinEst": 3,
-      "predicted": {
-        "peakBgText": "177-197 mg/dL",
-        "peakTimeText": "11:53 PM"
-      },
-      "actual": {
-        "preMealBg": null,
-        "peakBg": null,
-        "peakTime": null,
-        "bgDelta": null,
-        "timeToPeakMin": null,
-        "peakBgDelta": null,
-        "peakTimeDeltaMin": null,
-        "twoHourPeakBg": null
-      },
-      "sync": {
-        "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
-        "outcomesBackfilled": false
-      },
-      "entryKey": "sha256:b430173a60f3886fbef87f3ba36f07690d8db0574f62534fd0daacdc39b7c528",
-      "contentHash": "sha256:d54cd650e60981be108e06e40c2dc270cb2c53f8fe5bdb24632c00fb176f39aa"
     },
     {
       "source": {

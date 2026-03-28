@@ -1,14 +1,7 @@
 {
-  "generatedAt": "2026-03-28T16:30:00.293Z",
-  "entryCount": 41,
-  "errors": [
-    {
-      "entryKey": "sha256:b430173a60f3886fbef87f3ba36f07690d8db0574f62534fd0daacdc39b7c528",
-      "timestamp": "2026-03-27T22:18:00-07:00",
-      "title": "Dessert: Meal photo (auto-estimated nutrition)",
-      "reason": "placeholder_food_entry_blocked"
-    }
-  ],
+  "generatedAt": "2026-03-28T17:00:00.992Z",
+  "entryCount": 40,
+  "errors": [],
   "warnings": [
     {
       "entryKey": "sha256:a04d3b3d6d87e27a666c2477f9fcc97486049f6388108e17aae4aadbe953b49d",
