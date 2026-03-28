@@ -1,5 +1,6 @@
 # Health Log
 
+| 2026-03-27 | 21:32 -07:00 | Maria Dennis | Food | Dessert | Dessert: Meal photo (auto-estimated nutrition) (BG: 92 mg/dL Flat) (Pred: 177-197 mg/dL @ 11:07 PM) (Protein: 3g | Carbs: ~24g | Cals: ~240) [📷](https://iili.io/qbTv4tI.jpg) | 24 | 240 |
 | 2026-03-27 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 93 mg/dL Flat) | null | null |
 | 2026-03-27 | 19:16 -07:00 | Maria Dennis | Food | Dinner | Dinner: 1 Persian cucumber (BG: 113 mg/dL Flat) (Pred: 165-185 mg/dL @ 8:33 PM) (Protein: 1g | Carbs: ~2g | Cals: ~15) [📷](https://iili.io/qbButMN.jpg) | 2 | 15 |
 
