@@ -3102,3 +3102,5 @@
 {"ts":"2026-03-28T02:00:01.194Z","op":"step_start","name":"Validate"}
 {"ts":"2026-03-28T02:00:01.208Z","op":"step_complete","name":"Validate","duration":14,"result":"object"}
 {"ts":"2026-03-28T02:00:01.208Z","op":"step_start","name":"Unified Sync"}
+{"ts":"2026-03-28T02:00:39.884Z","op":"step_complete","name":"Unified Sync","duration":38676,"result":"object"}
+{"ts":"2026-03-28T02:00:39.885Z","op":"pipeline_complete","duration":38737,"results":["resolvePendingPhotos","normalize","enrich","validate","sync"]}

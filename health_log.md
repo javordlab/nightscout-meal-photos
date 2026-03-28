@@ -1,5 +1,8 @@
 # Health Log
 
+| 2026-03-27 | 19:03 -07:00 | Maria Dennis | Food | Dinner | Dinner: Grilled white fish (cod/sea bass) with sautéed onions and scallions, 2 clams, and thick-cut fried potato wedges — restaurant meal at Marina Food (BG: 113 mg/dL Flat) (Pred: 165-185 mg/dL @ 8:33 PM) (Protein: 45g | Carbs: ~41g | Cals: ~530) [📷](https://iili.io/qbqWikQ.jpg) | 41 | 530 |
+
+| 2026-03-27 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 113 mg/dL Flat) | null | null |
 | 2026-03-27 | 17:43 -07:00 | Maria Dennis | Food | Snack | Snack: 1 oatmeal cookie with chocolate chips/raisins and a glass of milk (BG: 113 mg/dL Flat) (Pred: 155-175 mg/dL @ 7:13 PM) (Protein: 9g | Carbs: ~30g | Cals: ~230) [📷](https://iili.io/qb2DFN1.jpg) | 30 | 230 |
 
 | 2026-03-27 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 113 mg/dL Flat) | null | null |
