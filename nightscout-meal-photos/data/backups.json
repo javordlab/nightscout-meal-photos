@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-28T04:59:53.205Z",
+  "lastUpdated": "2026-03-28T05:29:23.322Z",
   "tokenUsage": [
     {
       "platform": "Kimi (Ollama)",
@@ -21,8 +21,8 @@
     }
   ],
   "database": {
-    "glucose": 9207,
-    "notion": 965
+    "glucose": 9211,
+    "notion": 987
   },
   "syncHistory": [
     {
@@ -48,159 +48,135 @@
     {
       "date": "2026-03-02",
       "glucose": 2280,
-      "notion": 258
+      "notion": 259
     },
     {
       "date": "2026-03-03",
       "glucose": 2550,
-      "notion": 283
+      "notion": 285
     },
     {
       "date": "2026-03-04",
       "glucose": 2815,
-      "notion": 308
+      "notion": 312
     },
     {
       "date": "2026-03-05",
       "glucose": 3090,
-      "notion": 336
+      "notion": 341
     },
     {
       "date": "2026-03-06",
       "glucose": 3357,
-      "notion": 366
+      "notion": 371
     },
     {
       "date": "2026-03-07",
       "glucose": 3621,
-      "notion": 394
+      "notion": 400
     },
     {
       "date": "2026-03-08",
       "glucose": 3895,
-      "notion": 428
+      "notion": 434
     },
     {
       "date": "2026-03-09",
       "glucose": 4174,
-      "notion": 458
+      "notion": 465
     },
     {
       "date": "2026-03-10",
       "glucose": 4434,
-      "notion": 471
+      "notion": 478
     },
     {
       "date": "2026-03-11",
       "glucose": 4712,
-      "notion": 495
+      "notion": 505
     },
     {
       "date": "2026-03-12",
       "glucose": 4990,
-      "notion": 518
+      "notion": 528
     },
     {
       "date": "2026-03-13",
       "glucose": 5258,
-      "notion": 545
+      "notion": 555
     },
     {
       "date": "2026-03-14",
       "glucose": 5527,
-      "notion": 588
+      "notion": 599
     },
     {
       "date": "2026-03-15",
       "glucose": 5797,
-      "notion": 622
+      "notion": 634
     },
     {
       "date": "2026-03-16",
       "glucose": 6062,
-      "notion": 658
+      "notion": 671
     },
     {
       "date": "2026-03-17",
       "glucose": 6341,
-      "notion": 681
+      "notion": 695
     },
     {
       "date": "2026-03-18",
       "glucose": 6626,
-      "notion": 704
+      "notion": 720
     },
     {
       "date": "2026-03-19",
       "glucose": 6914,
-      "notion": 734
+      "notion": 751
     },
     {
       "date": "2026-03-20",
       "glucose": 7198,
-      "notion": 789
+      "notion": 806
     },
     {
       "date": "2026-03-21",
       "glucose": 7486,
-      "notion": 825
+      "notion": 843
     },
     {
       "date": "2026-03-22",
       "glucose": 7772,
-      "notion": 845
+      "notion": 863
     },
     {
       "date": "2026-03-23",
       "glucose": 8059,
-      "notion": 860
+      "notion": 878
     },
     {
       "date": "2026-03-24",
       "glucose": 8341,
-      "notion": 895
+      "notion": 913
     },
     {
       "date": "2026-03-25",
       "glucose": 8623,
-      "notion": 913
+      "notion": 931
     },
     {
       "date": "2026-03-26",
       "glucose": 8879,
-      "notion": 942
+      "notion": 961
     },
     {
       "date": "2026-03-27",
       "glucose": 9151,
-      "notion": 965
+      "notion": 986
     }
   ],
   "glucoseTrend": [
-    {
-      "t": "2026-02-25T22:04:17.000Z",
-      "v": 107
-    },
-    {
-      "t": "2026-02-25T22:09:18.000Z",
-      "v": 111
-    },
-    {
-      "t": "2026-02-25T22:14:16.000Z",
-      "v": 112
-    },
-    {
-      "t": "2026-02-25T22:19:18.000Z",
-      "v": 112
-    },
-    {
-      "t": "2026-02-25T22:24:17.000Z",
-      "v": 111
-    },
-    {
-      "t": "2026-02-25T22:29:18.000Z",
-      "v": 110
-    },
     {
       "t": "2026-02-25T22:34:16.000Z",
       "v": 109
@@ -33208,6 +33184,22 @@
     {
       "t": "2026-03-28T04:52:32.000Z",
       "v": 99
+    },
+    {
+      "t": "2026-03-28T04:59:33.000Z",
+      "v": 97
+    },
+    {
+      "t": "2026-03-28T05:02:34.000Z",
+      "v": 99
+    },
+    {
+      "t": "2026-03-28T05:07:33.000Z",
+      "v": 97
+    },
+    {
+      "t": "2026-03-28T05:16:33.000Z",
+      "v": 98
     }
   ],
   "backups": [

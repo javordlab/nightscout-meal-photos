@@ -40,8 +40,8 @@
     "photo": "https://iili.io/qbBHoyg.jpg",
     "carbs": 4,
     "cals": 50,
-    "delta": null,
-    "peak": null
+    "delta": 11,
+    "peak": 153
   },
   {
     "id": "33185ec7-0668-81cb-8c08-f33fa5a42376",
@@ -51,8 +51,8 @@
     "photo": "https://iili.io/qbqWikQ.jpg",
     "carbs": 41,
     "cals": 530,
-    "delta": null,
-    "peak": null
+    "delta": 11,
+    "peak": 153
   },
   {
     "id": "33185ec7-0668-81ec-bdec-c8bbd8207b14",
@@ -62,8 +62,8 @@
     "photo": "https://iili.io/qb2DFN1.jpg",
     "carbs": 30,
     "cals": 230,
-    "delta": null,
-    "peak": null
+    "delta": 38,
+    "peak": 153
   },
   {
     "id": "33085ec7-0668-8189-b495-f32aaf8ab2ae",
@@ -249,8 +249,8 @@
     "photo": "https://iili.io/q6N1xig.jpg",
     "carbs": 12,
     "cals": 120,
-    "delta": null,
-    "peak": null
+    "delta": 16,
+    "peak": 126
   },
   {
     "id": "33085ec7-0668-8145-8189-eae3b4d928b8",
