@@ -3336,3 +3336,13 @@
 {"ts":"2026-03-28T13:30:00.746Z","op":"step_start","name":"Validate"}
 {"ts":"2026-03-28T13:30:00.761Z","op":"step_error","name":"Validate","duration":15,"error":"validation_failed:1"}
 {"ts":"2026-03-28T13:30:00.762Z","op":"pipeline_abort","reason":"validation_failed"}
+{"ts":"2026-03-28T14:00:01.248Z","op":"pipeline_start","mode":"sync-only","since":"2026-03-26"}
+{"ts":"2026-03-28T14:00:01.250Z","op":"step_start","name":"Resolve Pending Photos"}
+{"ts":"2026-03-28T14:00:01.258Z","op":"step_complete","name":"Resolve Pending Photos","duration":8,"result":"object"}
+{"ts":"2026-03-28T14:00:01.259Z","op":"step_start","name":"Normalize"}
+{"ts":"2026-03-28T14:00:01.293Z","op":"step_complete","name":"Normalize","duration":34}
+{"ts":"2026-03-28T14:00:01.293Z","op":"step_start","name":"Enrich"}
+{"ts":"2026-03-28T14:00:01.308Z","op":"step_complete","name":"Enrich","duration":15}
+{"ts":"2026-03-28T14:00:01.308Z","op":"step_start","name":"Validate"}
+{"ts":"2026-03-28T14:00:01.322Z","op":"step_error","name":"Validate","duration":14,"error":"validation_failed:1"}
+{"ts":"2026-03-28T14:00:01.322Z","op":"pipeline_abort","reason":"validation_failed"}
