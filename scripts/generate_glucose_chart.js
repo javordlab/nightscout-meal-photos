@@ -72,7 +72,7 @@ async function main() {
 
     if (isDark) args.push('--dark');
 
-    const child = spawn('node', args);
+    const child = spawn('/opt/homebrew/bin/node', args);
     child.stdin.write(JSON.stringify(chartData));
     child.stdin.end();
 
