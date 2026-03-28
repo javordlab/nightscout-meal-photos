@@ -4,6 +4,29 @@ const fs = require('fs');
 const { execSync } = require('child_process');
 
 const LOG_PATH = "/Users/javier/.openclaw/workspace/health_log.md";
+const SUPPRESSION_PATH = "/Users/javier/.openclaw/workspace/data/med_suppression.json";
+
+// Load suppression list — entries the auto-tracker must never re-log
+// Format: [{ date: "YYYY-MM-DD", description: "Metformin 500mg (lunch)", suppressedAt: ISO }]
+function loadSuppression() {
+  try { return JSON.parse(fs.readFileSync(SUPPRESSION_PATH, 'utf8')); }
+  catch { return []; }
+}
+
+function isSuppressed(today, description) {
+  const list = loadSuppression();
+  return list.some(s => s.date === today && s.description === description);
+}
+
+function suppress(today, description) {
+  const list = loadSuppression();
+  if (!isSuppressed(today, description)) {
+    list.push({ date: today, description, suppressedAt: new Date().toISOString() });
+    fs.mkdirSync(require('path').dirname(SUPPRESSION_PATH), { recursive: true });
+    fs.writeFileSync(SUPPRESSION_PATH, JSON.stringify(list, null, 2) + '\n');
+    console.log(`  suppress: ${today} ${description}`);
+  }
+}
 
 // Rosuvastatin every-other-day anchor: 2026-03-01 was taken (day 0).
 // Take on even days since anchor (0, 2, 4, ...).
@@ -81,10 +104,22 @@ function autoLog() {
   const toInsert = [];
   let currentBg = null;
 
-  // Helper: only add if not already present anywhere in the file for today
+  // Helper: only add if not already present AND not suppressed
   function addIfMissing(time, description) {
-    const marker = `${today} | ${time} ${offset} | Maria Dennis | Medication | - | Medication: ${description}`;
-    if (!content.includes(marker)) {
+    // Check suppression list first (manually deleted entries)
+    if (isSuppressed(today, description)) {
+      console.log(`  skip (suppressed): Medication: ${description}`);
+      return;
+    }
+    // Check if any variant of this medication description already exists today
+    // Use loose match: date + description keyword (ignores exact time/offset)
+    const descLower = description.toLowerCase();
+    const alreadyLogged = lines.some(l => {
+      if (!l.includes(today) || !l.includes('Medication')) return false;
+      return l.toLowerCase().includes(descLower.split(' ')[0]) && // e.g. "metformin", "lisinopril"
+             l.toLowerCase().includes(descLower.split('(')[1]?.replace(')', '').trim() || ''); // e.g. "lunch", "breakfast"
+    });
+    if (!alreadyLogged) {
       if (!currentBg) currentBg = getBG();
       toInsert.push(entry(today, time, offset, description, currentBg));
       console.log(`  + Queuing: Medication: ${description} ${currentBg}`);
@@ -122,4 +157,13 @@ function autoLog() {
   console.log(`auto_track_meds: logged ${toInsert.length} entry/entries for ${today}.`);
 }
 
-autoLog();
+// CLI: node auto_track_meds.js --suppress "2026-03-27" "Metformin 500mg (lunch)"
+const args = process.argv.slice(2);
+if (args[0] === '--suppress') {
+  const [, date, description] = args;
+  if (!date || !description) { console.error('Usage: --suppress <date> <description>'); process.exit(1); }
+  suppress(date, description);
+  console.log(`Suppressed "${description}" for ${date}`);
+} else {
+  autoLog();
+}
