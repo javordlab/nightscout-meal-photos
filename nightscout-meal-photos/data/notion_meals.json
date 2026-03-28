@@ -1,5 +1,16 @@
 [
   {
+    "id": "33185ec7-0668-81b3-8d0b-ec7420489f41",
+    "title": "Dinner: 1 glass nigori sake (~150ml) with dinner (BG: 113 mg/dL Flat) (Pred: 165-185 mg/dL @ 8:33 PM) (Protein: 1g | Carbs: ~8g | Cals: ~170)",
+    "type": "Dinner",
+    "date": "2026-03-27T19:04:00.000-07:00",
+    "photo": "https://iili.io/qbqPG1f.jpg",
+    "carbs": 8,
+    "cals": 170,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "33185ec7-0668-81cb-8c08-f33fa5a42376",
     "title": "Dinner: Grilled white fish (cod/sea bass) with sautéed onions and scallions, 2 clams, and thick-cut fried potato wedges — restaurant meal at Marina Food (BG: 113 mg/dL Flat) (Pred: 165-185 mg/dL @ 8:33 PM) (Protein: 45g | Carbs: ~41g | Cals: ~530)",
     "type": "Dinner",
@@ -429,7 +440,7 @@
     "peak": null
   },
   {
-    "id": "32f85ec7-0668-810c-83f2-f59b8fdf4b9a",
+    "id": "33185ec7-0668-8112-9869-cbf81741c336",
     "title": "Dinner: Pork and rice burrito with beans/cheese, avocado slices (BG: 96 mg/dL Flat) (Pred: 160-180 mg/dL @ 8:45-9:15 PM) (Protein: 36g | Carbs: ~70g | Cals: ~750)",
     "type": "Dinner",
     "date": "2026-03-19T19:14:00.000-07:00",
