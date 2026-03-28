@@ -18,17 +18,17 @@
     "photo": "https://iili.io/qbButMN.jpg",
     "carbs": 2,
     "cals": 15,
-    "delta": null,
-    "peak": null
+    "delta": 9,
+    "peak": 153
   },
   {
     "id": "33185ec7-0668-813f-9102-eac3a1beb434",
-    "title": "Dinner: 1 glass nigori sake (~150ml) with dinner (BG: 113 mg/dL Flat) (Pred: 165-185 mg/dL @ 8:33 PM) (Protein: 1g | Carbs: ~8g | Cals: ~170)",
+    "title": "Dinner: 6 fresh oysters on the half shell (BG: 113 mg/dL Flat) (Pred: 165-185 mg/dL @ 8:33 PM) (Protein: 9g | Carbs: ~4g | Cals: ~50)",
     "type": "Dinner",
     "date": "2026-03-27T19:04:00.000-07:00",
-    "photo": "https://iili.io/qbqPG1f.jpg",
-    "carbs": 8,
-    "cals": 170,
+    "photo": "https://iili.io/qbBHoyg.jpg",
+    "carbs": 4,
+    "cals": 50,
     "delta": 11,
     "peak": 153
   },
@@ -1540,7 +1540,7 @@
     "peak": null
   },
   {
-    "id": "33085ec7-0668-812a-8609-c8787a83ece8",
+    "id": "33185ec7-0668-810f-83dd-e0f853d308d9",
     "title": "Snack: Dinner: Green vegetable soup, octopus with potatoes (Pred: 243 mg/dL @ 4:33 AM) (Protein: 6g | Carbs: ~35g | Cals: ~450)",
     "type": "Snack",
     "date": "2026-02-25T02:48:00.000-08:00",
