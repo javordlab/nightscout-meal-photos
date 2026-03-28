@@ -246,21 +246,6 @@ async function main() {
   const priorityLines = dataLines.filter(l => l.includes(today));
   const otherLines = dataLines.filter(l => !l.includes(today) && l.slice(2, 12) >= cutoffDate).reverse();
   const finalLines = [...priorityLines, ...otherLines];
-
-  // Build ISO-timestamp collision map: if multiple entries share the same timestamp,
-  // offset each by +1s per position so Notion treats them as distinct pages.
-  const isoSeenCount = new Map();
-  const isoOffsetMap = new Map(); // line index -> extra seconds to add
-  finalLines.forEach((line, idx) => {
-    const parts = line.split('|').map(p => p.trim());
-    if (parts.length < 5) return;
-    const dStr = `${parts[1]}T${parts[2].split(' ')[0]}:00`;
-    const key = `${parts[1]}|${parts[2]}|${parts[4]}`; // date|time|category
-    const baseKey = `${parts[1]}|${parts[2]}`; // date|time only for collision detection
-    const count = isoSeenCount.get(baseKey) || 0;
-    isoSeenCount.set(baseKey, count + 1);
-    if (count > 0) isoOffsetMap.set(idx, count); // offset by 1s per duplicate
-  });
   console.log(`Processing ${priorityLines.length} today + ${otherLines.length} recent (cutoff: ${cutoffDate})`);
 
   let glucoseEntries = [];
@@ -274,8 +259,7 @@ async function main() {
     glucoseEntries = [];
   }
 
-  for (let _lineIdx = 0; _lineIdx < finalLines.length; _lineIdx++) {
-    const line = finalLines[_lineIdx];
+  for (const line of finalLines) {
     const p = line.split('|').map(x => x.trim());
     if (p.length < 9) continue;
 
@@ -312,14 +296,6 @@ async function main() {
     } else {
       const _d = new Date(dStr); const _om = -_d.getTimezoneOffset(); const _s = _om >= 0 ? '+' : '-'; const _h = String(Math.floor(Math.abs(_om) / 60)).padStart(2, '0'); const _m = String(Math.abs(_om) % 60).padStart(2, '0');
       entryData.iso = dStr + `${_s}${_h}:${_m}`;
-    }
-
-    // Apply timestamp collision offset (+1s per duplicate at same timestamp)
-    const _collisionOffset = isoOffsetMap.get(_lineIdx) || 0;
-    if (_collisionOffset > 0) {
-      const _isoDate = new Date(entryData.iso);
-      _isoDate.setSeconds(_isoDate.getSeconds() + _collisionOffset);
-      entryData.iso = _isoDate.toISOString().replace('Z', entryData.iso.slice(-6));
     }
 
     const photos = entryData.category === 'Food' ? extractPhotos(entryData.text) : [];
