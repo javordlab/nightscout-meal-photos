@@ -275,15 +275,15 @@
     "peak": 138
   },
   {
-    "id": "32f85ec7-0668-8163-9ec9-e232223a0d12",
+    "id": "33185ec7-0668-8101-8e6e-df9bff60e41b",
     "title": "Snack: Half red apple (~75g) (BG: 111 mg/dL Flat) (Pred: 180-200 mg/dL @ 2:45-3:15 PM) (Protein: 0.3g | Carbs: ~10g | Cals: ~40)",
     "type": "Snack",
     "date": "2026-03-23T13:14:00.000-07:00",
     "photo": "https://iili.io/qrHqxa4.jpg",
     "carbs": 10,
     "cals": 40,
-    "delta": 54,
-    "peak": 165
+    "delta": null,
+    "peak": null
   },
   {
     "id": "32f85ec7-0668-816b-a064-eb9561d8b1c6",
@@ -1397,7 +1397,7 @@
     "peak": null
   },
   {
-    "id": "33085ec7-0668-81ba-baf1-c58cda384d24",
+    "id": "33185ec7-0668-81be-89b2-d773532b3e5f",
     "title": "Breakfast: Two slices toasted sourdough with cream cheese and smoked salmon (Pred: 225 mg/dL @ 11:00 AM) (Protein: 26g | Carbs: ~30g | Cals: ~350)",
     "type": "Breakfast",
     "date": "2026-02-27T09:15:00.000-08:00",
