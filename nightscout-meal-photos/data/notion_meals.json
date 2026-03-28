@@ -1,5 +1,16 @@
 [
   {
+    "id": "33185ec7-0668-81c4-a452-c73bde60e268",
+    "title": "Breakfast: 2 slices toasted sourdough bread with peanut butter and strawberry jam (BG: 107 mg/dL Flat) (Pred: 180-200 mg/dL @ 10:45 AM) (Protein: 10g | Carbs: ~68g | Cals: ~400)",
+    "type": "Breakfast",
+    "date": "2026-03-28T09:08:00.000-07:00",
+    "photo": "https://iili.io/qmee0wx.jpg",
+    "carbs": 68,
+    "cals": 400,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "33185ec7-0668-8135-a444-f97a63eede6b",
     "title": "Dessert: Meal photo (auto-estimated nutrition) (BG: 98 mg/dL Flat) (Pred: 177-197 mg/dL @ 11:53 PM) (Protein: 3g | Carbs: ~24g | Cals: ~240)",
     "type": "Dessert",
