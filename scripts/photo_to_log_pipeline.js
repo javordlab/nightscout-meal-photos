@@ -117,8 +117,10 @@ function findEnvelopeForFile(file, envelopes, state) {
   const fileTs = file.mtime.getTime();
   const fileUniqueCandidate = String(file.fileUniqueCandidate || '').trim();
 
+  const FOOD_LOG_CHAT_ID = -5262020908;
   const base = envelopes
     .filter(e => targetTypes.includes(e.contentType))
+    .filter(e => e.chatId === FOOD_LOG_CHAT_ID) // Only process photos from the Food Log group
     .filter(e => !state.linkedEnvelopeIds.includes(getEnvelopeKey(e)));
 
   // P0 deterministic linking: file_unique_id first (single-source envelope stream)
