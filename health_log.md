@@ -1,5 +1,6 @@
 # Health Log
 
+| 2026-03-28 | 10:12 -07:00 | Maria Dennis | Activity | - | 15 minutes walk |  |  |
 | 2026-03-28 | 09:08 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: 2 slices toasted sourdough bread with peanut butter and 50%-less-sugar strawberry jam (BG: 107 mg/dL Flat) (Pred: 165-185 mg/dL @ 10:45 AM) (Protein: 10g | Carbs: ~58g | Cals: ~380) [📷](https://iili.io/qmee0wx.jpg) | 58 | 380 |
 
 | 2026-03-28 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 108 mg/dL Flat) | null | null |
