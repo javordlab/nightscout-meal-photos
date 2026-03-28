@@ -3266,3 +3266,23 @@
 {"ts":"2026-03-28T10:00:00.447Z","op":"step_start","name":"Validate"}
 {"ts":"2026-03-28T10:00:00.461Z","op":"step_error","name":"Validate","duration":14,"error":"validation_failed:1"}
 {"ts":"2026-03-28T10:00:00.461Z","op":"pipeline_abort","reason":"validation_failed"}
+{"ts":"2026-03-28T10:30:00.311Z","op":"pipeline_start","mode":"sync-only","since":"2026-03-26"}
+{"ts":"2026-03-28T10:30:00.312Z","op":"step_start","name":"Resolve Pending Photos"}
+{"ts":"2026-03-28T10:30:00.317Z","op":"step_complete","name":"Resolve Pending Photos","duration":5,"result":"object"}
+{"ts":"2026-03-28T10:30:00.317Z","op":"step_start","name":"Normalize"}
+{"ts":"2026-03-28T10:30:00.346Z","op":"step_complete","name":"Normalize","duration":29}
+{"ts":"2026-03-28T10:30:00.347Z","op":"step_start","name":"Enrich"}
+{"ts":"2026-03-28T10:30:00.361Z","op":"step_complete","name":"Enrich","duration":14}
+{"ts":"2026-03-28T10:30:00.361Z","op":"step_start","name":"Validate"}
+{"ts":"2026-03-28T10:30:00.403Z","op":"step_error","name":"Validate","duration":42,"error":"validation_failed:1"}
+{"ts":"2026-03-28T10:30:00.403Z","op":"pipeline_abort","reason":"validation_failed"}
+{"ts":"2026-03-28T11:00:00.418Z","op":"pipeline_start","mode":"sync-only","since":"2026-03-26"}
+{"ts":"2026-03-28T11:00:00.420Z","op":"step_start","name":"Resolve Pending Photos"}
+{"ts":"2026-03-28T11:00:00.425Z","op":"step_complete","name":"Resolve Pending Photos","duration":5,"result":"object"}
+{"ts":"2026-03-28T11:00:00.426Z","op":"step_start","name":"Normalize"}
+{"ts":"2026-03-28T11:00:00.458Z","op":"step_complete","name":"Normalize","duration":32}
+{"ts":"2026-03-28T11:00:00.458Z","op":"step_start","name":"Enrich"}
+{"ts":"2026-03-28T11:00:00.475Z","op":"step_complete","name":"Enrich","duration":17}
+{"ts":"2026-03-28T11:00:00.476Z","op":"step_start","name":"Validate"}
+{"ts":"2026-03-28T11:00:00.489Z","op":"step_error","name":"Validate","duration":13,"error":"validation_failed:1"}
+{"ts":"2026-03-28T11:00:00.490Z","op":"pipeline_abort","reason":"validation_failed"}
