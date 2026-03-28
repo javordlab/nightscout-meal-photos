@@ -2,17 +2,18 @@
 
 | 2026-03-27 | 19:16 -07:00 | Maria Dennis | Food | Dinner | Dinner: 1 Persian cucumber (BG: 113 mg/dL Flat) (Pred: 165-185 mg/dL @ 8:33 PM) (Protein: 1g | Carbs: ~2g | Cals: ~15) [📷](https://iili.io/qbButMN.jpg) | 2 | 15 |
 
-| 2026-03-27 | 19:16 -07:00 | Maria Dennis | Food | Dinner | Dinner: Meal photo (auto-estimated nutrition) (BG: 113 mg/dL Flat) (Pred: 254-274 mg/dL @ 8:51 PM) (Protein: 24g | Carbs: ~48g | Cals: ~580) [📷](https://iili.io/qbButMN.jpg) | 48 | 580 |
+
 | 2026-03-27 | 19:04 -07:00 | Maria Dennis | Food | Dinner | Dinner: 6 fresh oysters on the half shell (BG: 113 mg/dL Flat) (Pred: 165-185 mg/dL @ 8:33 PM) (Protein: 9g | Carbs: ~4g | Cals: ~50) [📷](https://iili.io/qbBHoyg.jpg) | 4 | 50 |
 
 | 2026-03-27 | 19:04 -07:00 | Maria Dennis | Food | Dinner | Dinner: 1 glass nigori sake (~150ml) with dinner (BG: 113 mg/dL Flat) (Pred: 165-185 mg/dL @ 8:33 PM) (Protein: 1g | Carbs: ~8g | Cals: ~170) [📷](https://iili.io/qbqPG1f.jpg) | 8 | 170 |
 
 | 2026-03-27 | 19:03 -07:00 | Maria Dennis | Food | Dinner | Dinner: Home-made sea bass and clams with green onions, and home-grown French fries (BG: 113 mg/dL Flat) (Pred: 165-185 mg/dL @ 8:33 PM) (Protein: 45g | Carbs: ~41g | Cals: ~530) [📷](https://iili.io/qbqWikQ.jpg) | 41 | 530 |
 
+| 2026-03-27 | 20:07 -07:00 | Maria Dennis | Activity | - | 20 minutes walk (BG: 102 mg/dL Flat) | null | null |
 | 2026-03-27 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 113 mg/dL Flat) | null | null |
 | 2026-03-27 | 17:43 -07:00 | Maria Dennis | Food | Snack | Snack: 1 oatmeal cookie with chocolate chips/raisins and a glass of milk (BG: 113 mg/dL Flat) (Pred: 155-175 mg/dL @ 7:13 PM) (Protein: 9g | Carbs: ~30g | Cals: ~230) [📷](https://iili.io/qb2DFN1.jpg) | 30 | 230 |
 
-| 2026-03-27 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 113 mg/dL Flat) | null | null |
+
 | 2026-03-27 | 13:38 -07:00 | Maria Dennis | Food | Snack | Snack: 3 small slices braised/glazed pork belly (BG: 118 mg/dL Flat) (Pred: 125-135 mg/dL @ 3:08 PM) (Protein: 9g | Carbs: ~2g | Cals: ~120) [📷](https://iili.io/qDZwLrb.jpg) | 2 | 120 |
 | 2026-03-27 | 13:36 -07:00 | Maria Dennis | Food | Lunch | Lunch: Braised eggplant and shiitake mushrooms in dark garlic/soy sauce over white rice (BG: 122 mg/dL Flat) (Pred: 175-195 mg/dL @ 3:06 PM) (Protein: 6g | Carbs: ~40g | Cals: ~240) [📷](https://iili.io/qDS9d41.jpg) | 40 | 240 |
 | 2026-03-27 | 13:36 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 122 mg/dL Flat) | null | null |
