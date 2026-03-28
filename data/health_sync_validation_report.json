@@ -1,27 +1,6 @@
 {
-  "generatedAt": "2026-03-27T23:30:00.989Z",
-  "entryCount": 41,
+  "generatedAt": "2026-03-28T00:05:39.240Z",
+  "entryCount": 15,
   "errors": [],
-  "warnings": [
-    {
-      "entryKey": "sha256:a04d3b3d6d87e27a666c2477f9fcc97486049f6388108e17aae4aadbe953b49d",
-      "timestamp": "2026-03-26T15:59:00-07:00",
-      "title": "Snack: 2 slices dragon fruit and handful of walnuts",
-      "reason": "missing_photo_urls"
-    },
-    {
-      "entryKey": "sha256:bd318c7d542fc5b33fbe3fbbdd16e1ecae98855f999ad7578bc0d07716460528",
-      "timestamp": "2026-03-26T09:38:00-07:00",
-      "title": "Breakfast: 1 slice dragon fruit and handful of mixed nuts [Cumulative breakfast: 34g carbs total with prior sandwich]",
-      "reason": "photo_missing_but_found_in_internal_folder",
-      "file": "/Users/javier/.openclaw/media/inbound/file_207---17f2420b-5ca4-44a0-b642-a3ce489f5048.jpg",
-      "diffMinutes": 15
-    },
-    {
-      "entryKey": "sha256:17cbc4d1ac4178ed70e73553d379767bdf5154fe5c5fe9e21e31dd8522e92073",
-      "timestamp": "2026-03-25T20:00:00-07:00",
-      "title": "Snack: 1 protein ball",
-      "reason": "missing_photo_urls"
-    }
-  ]
+  "warnings": []
 }
