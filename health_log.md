@@ -1,5 +1,8 @@
 # Health Log
 
+| 2026-03-27 | 19:16 -07:00 | Maria Dennis | Food | Dinner | Dinner: Meal photo (auto-estimated nutrition) (BG: 113 mg/dL Flat) (Pred: 254-274 mg/dL @ 8:51 PM) (Protein: 24g | Carbs: ~48g | Cals: ~580) [📷](https://iili.io/qbButMN.jpg) | 48 | 580 |
+| 2026-03-27 | 19:04 -07:00 | Maria Dennis | Food | Dinner | Dinner: 6 fresh oysters on the half shell (BG: 113 mg/dL Flat) (Pred: 165-185 mg/dL @ 8:33 PM) (Protein: 9g | Carbs: ~4g | Cals: ~50) [📷](https://iili.io/qbBHoyg.jpg) | 4 | 50 |
+
 | 2026-03-27 | 19:04 -07:00 | Maria Dennis | Food | Dinner | Dinner: 1 glass nigori sake (~150ml) with dinner (BG: 113 mg/dL Flat) (Pred: 165-185 mg/dL @ 8:33 PM) (Protein: 1g | Carbs: ~8g | Cals: ~170) [📷](https://iili.io/qbqPG1f.jpg) | 8 | 170 |
 
 | 2026-03-27 | 19:03 -07:00 | Maria Dennis | Food | Dinner | Dinner: Grilled white fish (cod/sea bass) with sautéed onions and scallions, 2 clams, and thick-cut fried potato wedges — restaurant meal at Marina Food (BG: 113 mg/dL Flat) (Pred: 165-185 mg/dL @ 8:33 PM) (Protein: 45g | Carbs: ~41g | Cals: ~530) [📷](https://iili.io/qbqWikQ.jpg) | 41 | 530 |
