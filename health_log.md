@@ -1,6 +1,7 @@
 # Health Log
 
-| 2026-03-28 | 12:38 -07:00 | Maria Dennis | Food | Lunch | Lunch: Fried rice with egg and sliced cucumber side, plus a small cake (BG: 129 mg/dL Flat) (Pred: 210-235 mg/dL @ 2:10 PM) (Protein: 12g | Carbs: ~74g | Cals: ~520) [📷](https://iili.io/qpfl8w7.jpg) | 74 | 520 |
+| 2026-03-28 | 12:49 -07:00 | Maria Dennis | Food | Dessert | Dessert: Small chocolate brownie/cupcake with whipped cream and cashews (BG: 132 mg/dL Flat) (Pred: 210-235 mg/dL @ 2:20 PM) (Protein: 5g | Carbs: ~36g | Cals: ~335) [📷](https://iili.io/qpB2sse.jpg) | 36 | 335 |
+| 2026-03-28 | 12:38 -07:00 | Maria Dennis | Food | Lunch | Lunch: Fried rice with one egg and cucumber (BG: 129 mg/dL Flat) (Pred: 185-205 mg/dL @ 2:10 PM) (Protein: 10g | Carbs: ~55g | Cals: ~380) [📷](https://iili.io/qpfl8w7.jpg) | 55 | 380 |
 | 2026-03-28 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 123 mg/dL Flat) | null | null |
 | 2026-03-28 | 11:56 -07:00 | Maria Dennis | Activity | - | 2 hours house chores |  |  |
 | 2026-03-28 | 10:12 -07:00 | Maria Dennis | Activity | - | 15 minutes walk |  |  |

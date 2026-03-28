@@ -1,12 +1,23 @@
 [
   {
+    "id": "33185ec7-0668-8126-8f03-ff6204237c39",
+    "title": "Dessert: Small chocolate brownie/cupcake with whipped cream and cashews (BG: 132 mg/dL Flat) (Pred: 210-235 mg/dL @ 2:20 PM) (Protein: 5g | Carbs: ~36g | Cals: ~335)",
+    "type": "Dessert",
+    "date": "2026-03-28T12:49:00.000-07:00",
+    "photo": "https://iili.io/qpB2sse.jpg",
+    "carbs": 36,
+    "cals": 335,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "33185ec7-0668-811d-bf6e-f0a5f7b61dcc",
-    "title": "Lunch: Fried rice with egg and sliced cucumber side, plus a small cake (BG: 129 mg/dL Flat) (Pred: 210-235 mg/dL @ 2:10 PM) (Protein: 12g | Carbs: ~74g | Cals: ~520)",
+    "title": "Lunch: Fried rice with one egg and cucumber (BG: 129 mg/dL Flat) (Pred: 185-205 mg/dL @ 2:10 PM) (Protein: 10g | Carbs: ~55g | Cals: ~380)",
     "type": "Lunch",
     "date": "2026-03-28T12:38:00.000-07:00",
     "photo": "https://iili.io/qpfl8w7.jpg",
-    "carbs": 74,
-    "cals": 520,
+    "carbs": 55,
+    "cals": 380,
     "delta": null,
     "peak": null
   },
