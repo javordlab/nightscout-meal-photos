@@ -1,5 +1,6 @@
 # Health Log
 
+| 2026-03-28 | 12:38 -07:00 | Maria Dennis | Food | Lunch | Lunch: Fried rice with egg and sliced cucumber side, plus a small cake (BG: 129 mg/dL Flat) (Pred: 210-235 mg/dL @ 2:10 PM) (Protein: 12g | Carbs: ~74g | Cals: ~520) [📷](https://iili.io/qpfl8w7.jpg) | 74 | 520 |
 | 2026-03-28 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 123 mg/dL Flat) | null | null |
 | 2026-03-28 | 11:56 -07:00 | Maria Dennis | Activity | - | 2 hours house chores |  |  |
 | 2026-03-28 | 10:12 -07:00 | Maria Dennis | Activity | - | 15 minutes walk |  |  |
