@@ -21,7 +21,9 @@ function acquireLock() {
     // Check if the PID in the lock file is still alive
     let pidAlive = false;
     try {
-      const pid = parseInt(fs.readFileSync(LOCK_PATH, 'utf8').trim(), 10);
+      const raw = fs.readFileSync(LOCK_PATH, 'utf8').trim();
+      const lockData = raw.startsWith('{') ? JSON.parse(raw) : { pid: parseInt(raw, 10) };
+      const pid = lockData.pid;
       if (Number.isFinite(pid) && pid > 0) {
         process.kill(pid, 0); // throws if pid not found
         pidAlive = true;
@@ -37,11 +39,18 @@ function acquireLock() {
       console.warn(`⚠️ Stale lock detected (${reason}, age: ${Math.round(ageMs / 1000)}s). Auto-releasing...`);
       releaseLock();
     } else {
-      console.error(`❌ Sync already in progress (Lock created at: ${lockTime.toISOString()}, PID: ${fs.readFileSync(LOCK_PATH, 'utf8').trim()})`);
+      const raw = fs.readFileSync(LOCK_PATH, 'utf8').trim();
+      const lockData = raw.startsWith('{') ? JSON.parse(raw) : { pid: parseInt(raw, 10) };
+      console.error(`❌ Sync already in progress — PID: ${lockData.pid}, started: ${lockData.createdAt || lockTime.toISOString()}, script: ${lockData.script || 'unknown'}, args: ${JSON.stringify(lockData.args || [])}`);
       process.exit(1);
     }
   }
-  fs.writeFileSync(LOCK_PATH, process.pid.toString());
+  fs.writeFileSync(LOCK_PATH, JSON.stringify({
+    pid: process.pid,
+    createdAt: new Date().toISOString(),
+    script: path.relative(WORKSPACE, __filename),
+    args: process.argv.slice(2)
+  }, null, 2));
 }
 
 function releaseLock() {
