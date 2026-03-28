@@ -1,21 +1,10 @@
 [
   {
-    "id": "33185ec7-0668-81b5-9c8f-c4e2df92c5b9",
-    "title": "Dinner: 1 glass nigori sake (~150ml) with dinner (BG: 113 mg/dL Flat) (Pred: 165-185 mg/dL @ 8:33 PM) (Protein: 1g | Carbs: ~8g | Cals: ~170)",
-    "type": "Dinner",
-    "date": "2026-03-28T02:04:00.000-07:00",
-    "photo": "https://iili.io/qbqPG1f.jpg",
-    "carbs": 8,
-    "cals": 170,
-    "delta": null,
-    "peak": null
-  },
-  {
-    "id": "33185ec7-0668-81e6-953a-e7b0af25cb14",
-    "title": "Dessert: Meal photo (auto-estimated nutrition) (BG: 92 mg/dL Flat) (Pred: 177-197 mg/dL @ 11:07 PM) (Protein: 3g | Carbs: ~24g | Cals: ~240)",
+    "id": "33185ec7-0668-8135-a444-f97a63eede6b",
+    "title": "Dessert: Meal photo (auto-estimated nutrition) (BG: 98 mg/dL Flat) (Pred: 177-197 mg/dL @ 11:53 PM) (Protein: 3g | Carbs: ~24g | Cals: ~240)",
     "type": "Dessert",
-    "date": "2026-03-27T21:32:00.000-07:00",
-    "photo": "https://iili.io/qbTv4tI.jpg",
+    "date": "2026-03-27T22:18:00.000-07:00",
+    "photo": "https://iili.io/qbAumQt.jpg",
     "carbs": 24,
     "cals": 240,
     "delta": null,
@@ -34,12 +23,12 @@
   },
   {
     "id": "33185ec7-0668-813f-9102-eac3a1beb434",
-    "title": "Dinner: 6 fresh oysters on the half shell (BG: 113 mg/dL Flat) (Pred: 165-185 mg/dL @ 8:33 PM) (Protein: 9g | Carbs: ~4g | Cals: ~50)",
+    "title": "Dinner: 1 glass nigori sake (~150ml) with dinner (BG: 113 mg/dL Flat) (Pred: 165-185 mg/dL @ 8:33 PM) (Protein: 1g | Carbs: ~8g | Cals: ~170)",
     "type": "Dinner",
     "date": "2026-03-27T19:04:00.000-07:00",
-    "photo": "https://iili.io/qbBHoyg.jpg",
-    "carbs": 4,
-    "cals": 50,
+    "photo": "https://iili.io/qbqPG1f.jpg",
+    "carbs": 8,
+    "cals": 170,
     "delta": 11,
     "peak": 153
   },
@@ -242,7 +231,7 @@
     "peak": 126
   },
   {
-    "id": "33185ec7-0668-81bd-9fe4-dda66034424b",
+    "id": "33085ec7-0668-8120-8b4e-ca87c6846a93",
     "title": "Snack: Milk cheese cake bite (~1/2 piece from packaged milk cheese cake) (BG: 103 mg/dL Flat) (Pred: 145-165 mg/dL @ 5:17 PM) (Protein: 3g | Carbs: ~12g | Cals: ~120)",
     "type": "Snack",
     "date": "2026-03-24T15:42:00.000-07:00",
@@ -414,17 +403,6 @@
     "photo": "https://iili.io/qeh6rzX.jpg",
     "carbs": 8,
     "cals": 70,
-    "delta": null,
-    "peak": null
-  },
-  {
-    "id": "32f85ec7-0668-8125-923f-efb37196ba2d",
-    "title": "Dinner: Glass of milk (whole milk, ~8oz) (BG: Unknown) (Protein: 8g | Carbs: ~12g | Cals: ~150)  (Pred: 138-158 mg/dL @ 8:20 PM)",
-    "type": "Dinner",
-    "date": "2026-03-20T18:45:00.000-07:00",
-    "photo": "https://iili.io/qeh3GSI.jpg",
-    "carbs": 12,
-    "cals": 150,
     "delta": null,
     "peak": null
   },
@@ -1287,7 +1265,7 @@
     "peak": null
   },
   {
-    "id": "33085ec7-0668-8158-a6df-e52dac3c966a",
+    "id": "33185ec7-0668-81df-bd80-f180f44dd953",
     "title": "Snack: Small wedge of brie cheese (Protein: 10g | Carbs: ~0g | Cals: ~120)  (Pred: 110-130 mg/dL @ 6:15 PM)",
     "type": "Snack",
     "date": "2026-03-01T16:40:00.000-08:00",
@@ -1353,7 +1331,7 @@
     "peak": null
   },
   {
-    "id": "33085ec7-0668-812a-a101-de282643f35c",
+    "id": "33185ec7-0668-81d3-a771-e4663fb0d795",
     "title": "Snack: 1 Japanese Cream Sand cookie (Pred: 162 mg/dL @ 3:11 PM) (Protein: 4g | Carbs: ~12g | Cals: ~80)",
     "type": "Snack",
     "date": "2026-02-28T13:26:00.000-08:00",
@@ -1375,7 +1353,7 @@
     "peak": null
   },
   {
-    "id": "33185ec7-0668-8100-bafe-fd5d4cefd1b0",
+    "id": "33085ec7-0668-81a1-a40e-d207caaddcea",
     "title": "Breakfast: Scallion pancake, smoked salmon, scrambled eggs, avocado, orange, and 3 loquats (Pred: 278 mg/dL @ 10:49 AM) (Protein: 24g | Carbs: ~45g | Cals: ~550)",
     "type": "Breakfast",
     "date": "2026-02-28T09:04:00.000-08:00",

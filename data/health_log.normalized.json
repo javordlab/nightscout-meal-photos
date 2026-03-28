@@ -1,32 +1,32 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-28T05:00:01.178Z",
+  "generatedAt": "2026-03-28T05:30:00.929Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
-  "entryCount": 355,
+  "entryCount": 354,
   "entries": [
     {
       "source": {
         "file": "health_log.md",
         "line": 3,
-        "rawRow": "| 2026-03-27 | 21:32 -07:00 | Maria Dennis | Food | Dessert | Dessert: Meal photo (auto-estimated nutrition) (BG: 92 mg/dL Flat) (Pred: 177-197 mg/dL @ 11:07 PM) (Protein: 3g | Carbs: ~24g | Cals: ~240) [📷](https://iili.io/qbTv4tI.jpg) | 24 | 240 |"
+        "rawRow": "| 2026-03-27 | 22:18 -07:00 | Maria Dennis | Food | Dessert | Dessert: Meal photo (auto-estimated nutrition) (BG: 98 mg/dL Flat) (Pred: 177-197 mg/dL @ 11:53 PM) (Protein: 3g | Carbs: ~24g | Cals: ~240) [📷](https://iili.io/qbAumQt.jpg) | 24 | 240 |"
       },
-      "timestamp": "2026-03-27T21:32:00-07:00",
+      "timestamp": "2026-03-27T22:18:00-07:00",
       "date": "2026-03-27",
-      "time": "21:32 -07:00",
+      "time": "22:18 -07:00",
       "user": "Maria Dennis",
       "category": "Food",
       "mealType": "Dessert",
       "title": "Dessert: Meal photo (auto-estimated nutrition)",
-      "notes": "BG: 92 mg/dL Flat; Protein: 3g; Pred: 177-197 mg/dL @ 11:07 PM",
+      "notes": "BG: 98 mg/dL Flat; Protein: 3g; Pred: 177-197 mg/dL @ 11:53 PM",
       "photoUrls": [
-        "https://iili.io/qbTv4tI.jpg"
+        "https://iili.io/qbAumQt.jpg"
       ],
       "carbsEst": 24,
       "caloriesEst": 240,
       "proteinEst": 3,
       "predicted": {
         "peakBgText": "177-197 mg/dL",
-        "peakTimeText": "11:07 PM"
+        "peakTimeText": "11:53 PM"
       },
       "actual": {
         "preMealBg": null,
@@ -44,49 +44,8 @@
         "gallery": "pending",
         "outcomesBackfilled": false
       },
-      "entryKey": "sha256:842491de2d047c470feffa120e6106eeea9c4388a29cac0d43472e4a37031564",
-      "contentHash": "sha256:f1eb7bbb9df90dfad90cb053a9cdfee38566380858a01361f5ab4e1fc726c46a"
-    },
-    {
-      "source": {
-        "file": "health_log.md",
-        "line": 4,
-        "rawRow": "| 2026-03-27 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 93 mg/dL Flat) | null | null |"
-      },
-      "timestamp": "2026-03-27T13:00:00-07:00",
-      "date": "2026-03-27",
-      "time": "13:00 -07:00",
-      "user": "Maria Dennis",
-      "category": "Medication",
-      "mealType": "-",
-      "title": "Medication: Metformin 500mg (lunch)",
-      "notes": "BG: 93 mg/dL Flat",
-      "photoUrls": [],
-      "carbsEst": null,
-      "caloriesEst": null,
-      "proteinEst": null,
-      "predicted": {
-        "peakBgText": null,
-        "peakTimeText": null
-      },
-      "actual": {
-        "preMealBg": null,
-        "peakBg": null,
-        "peakTime": null,
-        "bgDelta": null,
-        "timeToPeakMin": null,
-        "peakBgDelta": null,
-        "peakTimeDeltaMin": null,
-        "twoHourPeakBg": null
-      },
-      "sync": {
-        "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
-        "outcomesBackfilled": false
-      },
-      "entryKey": "sha256:9f3be24e50301564c85a91b3e90e1ee9ee958c96d72a15d091c7d6f5d8556eb4",
-      "contentHash": "sha256:a1214863c62dec71249590407e625936733200daf25e51bf6eda7884dfea0f86"
+      "entryKey": "sha256:b430173a60f3886fbef87f3ba36f07690d8db0574f62534fd0daacdc39b7c528",
+      "contentHash": "sha256:d54cd650e60981be108e06e40c2dc270cb2c53f8fe5bdb24632c00fb176f39aa"
     },
     {
       "source": {
