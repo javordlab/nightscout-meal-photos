@@ -1,5 +1,16 @@
 [
   {
+    "id": "33185ec7-0668-8155-bf32-f3fcb9bba0a6",
+    "title": "Dinner: Meal photo (auto-estimated nutrition) (BG: 113 mg/dL Flat) (Pred: 254-274 mg/dL @ 8:51 PM) (Protein: 24g | Carbs: ~48g | Cals: ~580)",
+    "type": "Dinner",
+    "date": "2026-03-27T19:16:00.000-07:00",
+    "photo": "https://iili.io/qbButMN.jpg",
+    "carbs": 48,
+    "cals": 580,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "33185ec7-0668-81b3-8d0b-ec7420489f41",
     "title": "Dinner: 1 glass nigori sake (~150ml) with dinner (BG: 113 mg/dL Flat) (Pred: 165-185 mg/dL @ 8:33 PM) (Protein: 1g | Carbs: ~8g | Cals: ~170)",
     "type": "Dinner",
@@ -12,7 +23,7 @@
   },
   {
     "id": "33185ec7-0668-81cb-8c08-f33fa5a42376",
-    "title": "Dinner: Grilled white fish (cod/sea bass) with sautéed onions and scallions, 2 clams, and thick-cut fried potato wedges — restaurant meal at Marina Food (BG: 113 mg/dL Flat) (Pred: 165-185 mg/dL @ 8:33 PM) (Protein: 45g | Carbs: ~41g | Cals: ~530)",
+    "title": "Dinner: Home-made sea bass and clams with green onions, and home-grown French fries (BG: 113 mg/dL Flat) (Pred: 165-185 mg/dL @ 8:33 PM) (Protein: 45g | Carbs: ~41g | Cals: ~530)",
     "type": "Dinner",
     "date": "2026-03-27T19:03:00.000-07:00",
     "photo": "https://iili.io/qbqWikQ.jpg",
@@ -726,7 +737,7 @@
     "peak": null
   },
   {
-    "id": "33185ec7-0668-8153-8be5-dc5ac0697942",
+    "id": "33085ec7-0668-81a7-8c00-e708557db5ef",
     "title": "Lunch: 1.5 shrimp/fish tacos and ~60% of roasted potatoes (Leftovers deducted) (Pred: 278 mg/dL @ 3:29 PM) (BG: Unknown) (Protein: 28g | Carbs: ~45g | Cals: ~360)",
     "type": "Lunch",
     "date": "2026-03-12T13:44:00.000-07:00",
@@ -935,7 +946,7 @@
     "peak": null
   },
   {
-    "id": "33085ec7-0668-810d-ba41-e19bdc40ac9d",
+    "id": "33185ec7-0668-81a9-9172-faea0a221eeb",
     "title": "Oatmeal chocolate cookie (Pred: 162 mg/dL @ 6:14 PM) (Protein: 4g | Carbs: ~12g | Cals: ~150)",
     "type": "Snack",
     "date": "2026-03-07T16:29:00.000-08:00",
@@ -1463,7 +1474,7 @@
     "peak": null
   },
   {
-    "id": "33185ec7-0668-81bf-bf47-e40016c19f1c",
+    "id": "33085ec7-0668-8152-b4a1-f6d3e1feff20",
     "title": "Breakfast: Apple slices + small cup of yogurt (Pred: 190 mg/dL @ 11:12 AM) (Protein: 18g | Carbs: ~20g | Cals: ~220)",
     "type": "Breakfast",
     "date": "2026-02-26T09:27:00.000-08:00",

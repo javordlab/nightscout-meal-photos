@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-03-28T02:15:00.856Z",
+  "checkedAt": "2026-03-28T02:30:01.091Z",
   "jobsChecked": 14,
   "jobs": [
     {
@@ -22,11 +22,11 @@
       "status": "healthy",
       "schedule": "every 30m",
       "intervalMs": 1800000,
-      "lastRunAtMs": 1774663123182,
-      "nextRunAtMs": 1774664923182,
+      "lastRunAtMs": 1774664928789,
+      "nextRunAtMs": 1774666728789,
       "consecutiveErrors": 0,
       "lastStatus": "ok",
-      "lastDurationMs": 27265,
+      "lastDurationMs": 37531,
       "overdueMin": null,
       "graceMin": null
     },
@@ -106,11 +106,11 @@
       "status": "healthy",
       "schedule": "every 1m",
       "intervalMs": 60000,
-      "lastRunAtMs": 1774664060822,
-      "nextRunAtMs": 1774664120822,
+      "lastRunAtMs": 1774664966320,
+      "nextRunAtMs": 1774665026320,
       "consecutiveErrors": 0,
       "lastStatus": "ok",
-      "lastDurationMs": 20850,
+      "lastDurationMs": 22551,
       "overdueMin": null,
       "graceMin": null
     },
@@ -148,11 +148,11 @@
       "status": "healthy",
       "schedule": "every 5m",
       "intervalMs": 300000,
-      "lastRunAtMs": 1774663956481,
-      "nextRunAtMs": 1774664256481,
+      "lastRunAtMs": 1774664880822,
+      "nextRunAtMs": 1774665180822,
       "consecutiveErrors": 0,
       "lastStatus": "ok",
-      "lastDurationMs": 9204,
+      "lastDurationMs": 22086,
       "overdueMin": null,
       "graceMin": null
     },
@@ -187,14 +187,14 @@
     {
       "id": "d507f10e-6c8a-4168-8e42-73b4d7ddc574",
       "name": "Glucose Low Alert (≤90 + trending down)",
-      "status": "warning",
+      "status": "healthy",
       "schedule": "every 5m",
       "intervalMs": 300000,
-      "lastRunAtMs": 1774663967695,
-      "nextRunAtMs": 1774664267695,
-      "consecutiveErrors": 1,
-      "lastStatus": "error",
-      "lastDurationMs": 30011,
+      "lastRunAtMs": 1774664906077,
+      "nextRunAtMs": 1774665206077,
+      "consecutiveErrors": 0,
+      "lastStatus": "ok",
+      "lastDurationMs": 20701,
       "overdueMin": null,
       "graceMin": null
     }
