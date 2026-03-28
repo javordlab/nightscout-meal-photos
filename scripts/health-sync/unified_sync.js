@@ -16,12 +16,28 @@ function acquireLock() {
   if (fs.existsSync(LOCK_PATH)) {
     const lockTime = fs.statSync(LOCK_PATH).mtime;
     const now = new Date();
-    // Auto-release lock if older than 10 minutes
-    if (now - lockTime > 10 * 60 * 1000) {
-      console.warn('⚠️ Found stale lock file, auto-releasing...');
+    const ageMs = now - lockTime;
+
+    // Check if the PID in the lock file is still alive
+    let pidAlive = false;
+    try {
+      const pid = parseInt(fs.readFileSync(LOCK_PATH, 'utf8').trim(), 10);
+      if (Number.isFinite(pid) && pid > 0) {
+        process.kill(pid, 0); // throws if pid not found
+        pidAlive = true;
+      }
+    } catch {
+      // PID not found or unreadable — lock is stale
+      pidAlive = false;
+    }
+
+    // Release if: PID is dead OR lock is older than 10 minutes
+    if (!pidAlive || ageMs > 10 * 60 * 1000) {
+      const reason = !pidAlive ? 'PID no longer running' : 'lock older than 10 minutes';
+      console.warn(`⚠️ Stale lock detected (${reason}, age: ${Math.round(ageMs / 1000)}s). Auto-releasing...`);
       releaseLock();
     } else {
-      console.error(`❌ Sync already in progress (Lock created at: ${lockTime.toISOString()})`);
+      console.error(`❌ Sync already in progress (Lock created at: ${lockTime.toISOString()}, PID: ${fs.readFileSync(LOCK_PATH, 'utf8').trim()})`);
       process.exit(1);
     }
   }
