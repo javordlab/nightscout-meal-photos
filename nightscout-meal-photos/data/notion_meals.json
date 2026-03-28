@@ -1,5 +1,16 @@
 [
   {
+    "id": "33185ec7-0668-81ec-bdec-c8bbd8207b14",
+    "title": "Snack: 1 oatmeal cookie with chocolate chips/raisins and a glass of milk (BG: 113 mg/dL Flat) (Pred: 155-175 mg/dL @ 7:13 PM) (Protein: 9g | Carbs: ~30g | Cals: ~230)",
+    "type": "Snack",
+    "date": "2026-03-27T17:43:00.000-07:00",
+    "photo": "https://iili.io/qb2DFN1.jpg",
+    "carbs": 30,
+    "cals": 230,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "33085ec7-0668-8189-b495-f32aaf8ab2ae",
     "title": "Snack: 3 small slices braised/glazed pork belly (BG: 118 mg/dL Flat) (Pred: 125-135 mg/dL @ 3:08 PM) (Protein: 9g | Carbs: ~2g | Cals: ~120)",
     "type": "Snack",
