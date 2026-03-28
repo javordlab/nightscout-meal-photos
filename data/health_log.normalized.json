@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-28T00:05:39.229Z",
+  "generatedAt": "2026-03-28T00:30:01.039Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
-  "entryCount": 347,
+  "entryCount": 346,
   "entries": [
     {
       "source": {
@@ -130,47 +130,6 @@
       },
       "entryKey": "sha256:de977b5849021127ce3bbba8f2c0813d2fd587c472f934a1e0b9de25b92a9821",
       "contentHash": "sha256:7991a4c394d7895835f5986956c765a400e5ad1db138d665908369775acc5f0d"
-    },
-    {
-      "source": {
-        "file": "health_log.md",
-        "line": 7,
-        "rawRow": "| 2026-03-27 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 136 mg/dL Flat) | null | null |"
-      },
-      "timestamp": "2026-03-27T13:00:00-07:00",
-      "date": "2026-03-27",
-      "time": "13:00 -07:00",
-      "user": "Maria Dennis",
-      "category": "Medication",
-      "mealType": "-",
-      "title": "Medication: Metformin 500mg (lunch)",
-      "notes": "BG: 136 mg/dL Flat",
-      "photoUrls": [],
-      "carbsEst": null,
-      "caloriesEst": null,
-      "proteinEst": null,
-      "predicted": {
-        "peakBgText": null,
-        "peakTimeText": null
-      },
-      "actual": {
-        "preMealBg": null,
-        "peakBg": null,
-        "peakTime": null,
-        "bgDelta": null,
-        "timeToPeakMin": null,
-        "peakBgDelta": null,
-        "peakTimeDeltaMin": null,
-        "twoHourPeakBg": null
-      },
-      "sync": {
-        "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
-        "outcomesBackfilled": false
-      },
-      "entryKey": "sha256:9f3be24e50301564c85a91b3e90e1ee9ee958c96d72a15d091c7d6f5d8556eb4",
-      "contentHash": "sha256:453f40ce936d57cc7b0c8a670be779422f5845c2a7349a3bf588e2584a16074d"
     },
     {
       "source": {
