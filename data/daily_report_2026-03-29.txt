@@ -1,0 +1,64 @@
+🩺 DAILY HEALTH REPORT
+📅 Date: 2026-03-29
+🕒 Coverage window: 2026-03-28 00:00 – 2026-03-29 00:00 (America/Los_Angeles)
+⚙️ Generated time: 2026-03-29T16:30:02.115Z
+🤖 Model: anthropic/claude-sonnet-4-6
+
+1) 📊 Today's Glucose Summary
+- Average glucose: 120.8 mg/dL
+- Time in Range (70-180): 100.0%
+- GMI: 6.20%
+- Standard deviation: 18.5 mg/dL
+- CV: 15.3%
+- Data points used: 262
+
+2) 📉 14-day Trends (ending 2026-03-28)
+- Average glucose: 120.3 mg/dL
+- Time in Range (70-180): 99.8%
+- GMI: 6.19%
+- Standard deviation: 20.2 mg/dL
+- CV: 16.8%
+- Data points used: 953
+
+3) 🍽️ Nutrition (2026-03-28)
+- Meals logged: 4
+- Total carbs: 204.0 g
+- Total calories: 1675 kcal
+- Total protein: 53.0 g
+
+4) 🧾 Meal Details (2026-03-28)
+- 9:08 AM — Breakfast: 2 slices toasted sourdough bread with peanut butter and 50%-less-sugar strawberry jam — 58.0g carbs, 380 kcal, 10.0g protein — BG at meal: 109 mg/dL
+- 12:38 PM — Lunch: Fried rice with one egg and cucumber — 55.0g carbs, 380 kcal, 10.0g protein — BG at meal: 135 mg/dL
+- 12:49 PM — Dessert: Small chocolate brownie/cupcake with whipped cream and cashews — 36.0g carbs, 335 kcal, 5.0g protein — BG at meal: 132 mg/dL
+- 7:30 PM — Dinner: 8 oysters, 2oz beef, cooked leeks, 2 small bread slices, a few homemade fries, 2oz wine, 1 slice dragon fruit, 1-inch plain cake with whipped cream — 55.0g carbs, 580 kcal, 28.0g protein — BG at meal: 124 mg/dL
+
+5) 📚 Nutrition Baseline (14-day daily average ending 2026-03-28)
+- Average carbs/day: 151.8 g
+- Average calories/day: 1490.6 kcal
+- Average protein/day: 78.1 g
+- Average meals/day: 5.4
+- Days in window with food entries: 14
+
+6) 💊 Medication Status (2026-03-28)
+- 2026-03-28T19:30:00-07:00: Medication: Berberine (dinner, no evening walk)
+- 2026-03-28T19:30:00-07:00: Medication: Metformin 1000mg (dinner)
+- 2026-03-28T13:00:00-07:00: Medication: Metformin 500mg (lunch)
+- 2026-03-28T09:00:00-07:00: Medication: Lisinopril 10mg (Scheduled)
+- 2026-03-28T09:10:00-07:00: Medication: Metformin 500mg (breakfast)
+
+7) 🚨 Outliers (2026-03-28)
+- High readings >180: 0
+- Low readings <70: 0
+- Max glucose: 180 mg/dL at 2026-03-28T18:04:32.000Z
+
+8) 🧠 Extended Supervisor Analysis
+- Nice work overall today: Strong Time in Range at 100.0% | Limited high excursions (>180 mg/dL): 0 | No hypoglycemia episodes (<70 mg/dL).
+- Key trend signals: avg glucose vs 14-day baseline 0.5 mg/dL, TIR delta 0.2%, carbs delta 52.2 g, calories delta 184 kcal.
+- Friendly focus for tomorrow: Carbs were above 14-day baseline by 52.2g; consider smaller late-day carb load.
+- You’re doing great—small consistent habits keep adding up. Keep it going 🌟
+
+9) 🛡️ Self-Audit (Data Integrity)
+- Target day enforced: 2026-03-28 PT
+- Glucose points in target window: 262
+- GMI formula check (3.31 + 0.02392 × Avg): 6.20%
+- Reported GMI: 6.20%

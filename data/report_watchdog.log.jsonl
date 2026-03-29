@@ -32,3 +32,5 @@
 {"ts":"2026-03-27T16:32:00.348Z","op":"watchdog_check_ok","dateLA":"2026-03-27","lastReportAt":"2026-03-27T16:30:02.267Z"}
 {"ts":"2026-03-28T16:30:01.990Z","op":"report_marked_sent","source":"primary_deterministic","dateLA":"2026-03-28"}
 {"ts":"2026-03-28T16:32:00.538Z","op":"watchdog_check_ok","dateLA":"2026-03-28","lastReportAt":"2026-03-28T16:30:01.988Z"}
+{"ts":"2026-03-29T16:30:02.922Z","op":"report_marked_sent","source":"primary_deterministic","dateLA":"2026-03-29"}
+{"ts":"2026-03-29T16:32:00.601Z","op":"watchdog_check_ok","dateLA":"2026-03-29","lastReportAt":"2026-03-29T16:30:02.922Z"}

@@ -12,3 +12,5 @@
 {"ts":"2026-03-27T16:30:04.641Z","op":"daily_report_charts_triggered","reportDateLA":"2026-03-27","chatId":"-5262020908","dryRun":false}
 {"ts":"2026-03-28T16:30:01.991Z","op":"daily_report_sent","reportDateLA":"2026-03-28","targetDate":"2026-03-27","chatId":"-5262020908","messageId":3706,"statsDay":{"count":267,"average":115.2247191011236,"gmi":6.066175280898877,"tir":100}}
 {"ts":"2026-03-28T16:30:03.030Z","op":"daily_report_delivery_error","error":"Command failed: cd /Users/javier/.openclaw/workspace && /opt/homebrew/bin/node scripts/health-sync/send_daily_charts_telegram.js --date-la=2026-03-28"}
+{"ts":"2026-03-29T16:30:02.923Z","op":"daily_report_sent","reportDateLA":"2026-03-29","targetDate":"2026-03-28","chatId":"-5262020908","messageId":3785,"statsDay":{"count":262,"average":120.82442748091603,"gmi":6.200120305343511,"tir":100}}
+{"ts":"2026-03-29T16:30:12.448Z","op":"daily_report_charts_triggered","reportDateLA":"2026-03-29","chatId":"-5262020908","dryRun":false}
