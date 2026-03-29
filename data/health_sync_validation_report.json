@@ -1,8 +1,14 @@
 {
-  "generatedAt": "2026-03-29T04:30:00.644Z",
-  "entryCount": 47,
+  "generatedAt": "2026-03-29T05:00:00.835Z",
+  "entryCount": 49,
   "errors": [],
   "warnings": [
+    {
+      "entryKey": "sha256:10330856ec728f3d97dddab84efa0cb13e42f96b97adf49a0bd9a6bb3e00c180",
+      "timestamp": "2026-03-28T19:30:00-07:00",
+      "title": "Dinner: 8 oysters, 2oz beef, cooked leeks, 2 small bread slices, a few homemade fries, 2oz wine, 1 slice dragon fruit, 1-inch plain cake with whipped cream",
+      "reason": "missing_photo_urls"
+    },
     {
       "entryKey": "sha256:a04d3b3d6d87e27a666c2477f9fcc97486049f6388108e17aae4aadbe953b49d",
       "timestamp": "2026-03-26T15:59:00-07:00",

@@ -1,5 +1,6 @@
 # Health Log
 
+| 2026-03-28 | 22:06 -07:00 | Maria Dennis | Activity | - | 15 minutes tai chi |  |  |
 | 2026-03-28 | 19:30 -07:00 | Maria Dennis | Medication | - | Medication: Berberine (dinner, no evening walk) (BG: 139 mg/dL Flat) | null | null |
 | 2026-03-28 | 19:30 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 139 mg/dL Flat) | null | null |
 | 2026-03-28 | 19:30 -07:00 | Maria Dennis | Food | Dinner | Dinner: 8 oysters, 2oz beef, cooked leeks, 2 small bread slices, a few homemade fries, 2oz wine, 1 slice dragon fruit, 1-inch plain cake with whipped cream (BG: 139 mg/dL Flat) (Pred: 220-245 mg/dL @ 9:00 PM) (Protein: 28g | Carbs: ~55g | Cals: ~580) | 55 | 580 |
