@@ -1,78 +1,64 @@
 {
-  "generatedAt": "2026-03-28T16:49:23.491Z",
-  "since": "2026-03-21T16:49:22.979Z",
+  "generatedAt": "2026-03-29T16:45:16.336Z",
+  "since": "2026-03-22T16:45:15.917Z",
   "summary": {
-    "totalEntries": 90,
-    "inSyncState": 90,
-    "nsLinked": 84,
-    "notionLinked": 88,
-    "galleryLinked": 36,
+    "totalEntries": 93,
+    "inSyncState": 93,
+    "nsLinked": 93,
+    "notionLinked": 93,
+    "galleryLinked": 35,
     "outcomesBackfilled": 0,
     "duplicates": 0,
-    "missingNs": 6,
-    "missingNotion": 2,
-    "missingGallery": 1,
-    "missingOutcomes": 42
+    "missingNs": 0,
+    "missingNotion": 0,
+    "missingGallery": 0,
+    "missingOutcomes": 41
   },
   "discrepancies": [
+    {
+      "entryKey": "sha256:10330856ec728f3d97dddab84efa0cb13e42f96b97adf49a0bd9a6bb3e00c180",
+      "timestamp": "2026-03-28T19:30:00-07:00",
+      "title": "Dinner: 8 oysters, 2oz beef, cooked leeks, 2 small bread slices, a few homemade fries, 2oz wine, 1 slice dragon fruit, 1-inch plain cake with whipped cream",
+      "issues": [
+        {
+          "type": "outcomes_not_backfilled",
+          "ageHours": 14,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:2c120d76ed3f01067677ae4e63d5a599a5c07d76eb5382cc008c39a8f120b5f1",
+      "timestamp": "2026-03-28T12:49:00-07:00",
+      "title": "Dessert: Small chocolate brownie/cupcake with whipped cream and cashews",
+      "issues": [
+        {
+          "type": "outcomes_not_backfilled",
+          "ageHours": 21,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:1461cd7ddd7ae1a048bf25297f5d981277f4331f47ff82dcc6db84aa56e85f86",
+      "timestamp": "2026-03-28T12:38:00-07:00",
+      "title": "Lunch: Fried rice with one egg and cucumber",
+      "issues": [
+        {
+          "type": "outcomes_not_backfilled",
+          "ageHours": 21,
+          "severity": "warning"
+        }
+      ]
+    },
     {
       "entryKey": "sha256:8cd4f2494b41ebe5d3e7bdbdf357ac5a21dc96cfa9b1ed3d3b468e8ff953cdc9",
       "timestamp": "2026-03-28T09:08:00-07:00",
       "title": "Breakfast: 2 slices toasted sourdough bread with peanut butter and 50%-less-sugar strawberry jam",
       "issues": [
         {
-          "type": "missing_ns_link",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:0244621c6246b6fee7e2c77ef477a53755cf06ce449394a3e17f1e0e0bd1c65f",
-      "timestamp": "2026-03-28T09:00:00-07:00",
-      "title": "Medication: Lisinopril 10mg (Scheduled)",
-      "issues": [
-        {
-          "type": "missing_ns_link",
-          "severity": "warning"
-        },
-        {
-          "type": "missing_notion_link",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:7788980dea9da5760a09425563e8b56eed057016f072015c8a532e8a82c2f61c",
-      "timestamp": "2026-03-28T09:10:00-07:00",
-      "title": "Medication: Metformin 500mg (breakfast)",
-      "issues": [
-        {
-          "type": "missing_ns_link",
-          "severity": "warning"
-        },
-        {
-          "type": "missing_notion_link",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:b430173a60f3886fbef87f3ba36f07690d8db0574f62534fd0daacdc39b7c528",
-      "timestamp": "2026-03-27T22:18:00-07:00",
-      "title": "Dessert: Meal photo (auto-estimated nutrition)",
-      "issues": [
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33185ec7-0668-8135-a444-f97a63eede6b",
-          "severity": "warning"
-        },
-        {
           "type": "outcomes_not_backfilled",
-          "ageHours": 12,
-          "severity": "warning"
-        },
-        {
-          "type": "missing_ns_link",
+          "ageHours": 25,
           "severity": "warning"
         }
       ]
@@ -84,7 +70,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 15,
+          "ageHours": 38,
           "severity": "warning"
         }
       ]
@@ -96,7 +82,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 15,
+          "ageHours": 39,
           "severity": "warning"
         }
       ]
@@ -107,12 +93,13 @@
       "title": "Dinner: 1 glass nigori sake (~150ml) with dinner",
       "issues": [
         {
-          "type": "outcomes_not_backfilled",
-          "ageHours": 15,
+          "type": "gallery_item_missing",
+          "galleryId": "manual-2026-03-27T19-04-00-07-00",
           "severity": "warning"
         },
         {
-          "type": "missing_gallery_link",
+          "type": "outcomes_not_backfilled",
+          "ageHours": 39,
           "severity": "warning"
         }
       ]
@@ -124,7 +111,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 15,
+          "ageHours": 39,
           "severity": "warning"
         }
       ]
@@ -136,7 +123,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 16,
+          "ageHours": 40,
           "severity": "warning"
         }
       ]
@@ -148,7 +135,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 20,
+          "ageHours": 44,
           "severity": "warning"
         }
       ]
@@ -160,7 +147,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 20,
+          "ageHours": 44,
           "severity": "warning"
         }
       ]
@@ -172,7 +159,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 23,
+          "ageHours": 47,
           "severity": "warning"
         }
       ]
@@ -184,7 +171,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 23,
+          "ageHours": 47,
           "severity": "warning"
         }
       ]
@@ -196,7 +183,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 39,
+          "ageHours": 63,
           "severity": "warning"
         }
       ]
@@ -208,7 +195,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 39,
+          "ageHours": 63,
           "severity": "warning"
         }
       ]
@@ -220,7 +207,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 39,
+          "ageHours": 63,
           "severity": "warning"
         }
       ]
@@ -232,7 +219,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 42,
+          "ageHours": 66,
           "severity": "warning"
         }
       ]
@@ -244,7 +231,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 45,
+          "ageHours": 69,
           "severity": "warning"
         }
       ]
@@ -256,7 +243,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 45,
+          "ageHours": 69,
           "severity": "warning"
         }
       ]
@@ -268,7 +255,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 48,
+          "ageHours": 72,
           "severity": "warning"
         }
       ]
@@ -280,7 +267,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 48,
+          "ageHours": 72,
           "severity": "warning"
         }
       ]
@@ -292,7 +279,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 62,
+          "ageHours": 86,
           "severity": "warning"
         }
       ]
@@ -304,7 +291,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 64,
+          "ageHours": 87,
           "severity": "warning"
         }
       ]
@@ -316,7 +303,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 65,
+          "ageHours": 89,
           "severity": "warning"
         }
       ]
@@ -328,7 +315,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 72,
+          "ageHours": 96,
           "severity": "warning"
         }
       ]
@@ -340,7 +327,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 86,
+          "ageHours": 110,
           "severity": "warning"
         }
       ]
@@ -352,7 +339,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 87,
+          "ageHours": 111,
           "severity": "warning"
         }
       ]
@@ -364,7 +351,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 90,
+          "ageHours": 114,
           "severity": "warning"
         }
       ]
@@ -376,7 +363,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 90,
+          "ageHours": 114,
           "severity": "warning"
         }
       ]
@@ -388,7 +375,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 93,
+          "ageHours": 117,
           "severity": "warning"
         }
       ]
@@ -400,7 +387,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 96,
+          "ageHours": 120,
           "severity": "warning"
         }
       ]
@@ -412,7 +399,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 110,
+          "ageHours": 134,
           "severity": "warning"
         }
       ]
@@ -424,7 +411,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 111,
+          "ageHours": 135,
           "severity": "warning"
         }
       ]
@@ -436,7 +423,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 113,
+          "ageHours": 137,
           "severity": "warning"
         }
       ]
@@ -448,7 +435,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 117,
+          "ageHours": 141,
           "severity": "warning"
         }
       ]
@@ -460,7 +447,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 117,
+          "ageHours": 141,
           "severity": "warning"
         }
       ]
@@ -472,7 +459,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 120,
+          "ageHours": 144,
           "severity": "warning"
         }
       ]
@@ -484,7 +471,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 120,
+          "ageHours": 144,
           "severity": "warning"
         }
       ]
@@ -496,7 +483,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 134,
+          "ageHours": 158,
           "severity": "warning"
         }
       ]
@@ -508,7 +495,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 134,
+          "ageHours": 158,
           "severity": "warning"
         }
       ]
@@ -520,63 +507,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 138,
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:22fac1cbb56eb3973b68ae6d9fa0715f16331eab0da1e3a9deade9ffdd9a0562",
-      "timestamp": "2026-03-22T09:12:00-07:00",
-      "title": "Breakfast: Avocado toast (1 slice) with 4 sardines (Peak: 155 mg/dL @ 12:04 PM ✓ within prediction)",
-      "issues": [
-        {
-          "type": "outcomes_not_backfilled",
-          "ageHours": 145,
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:377ffd272cfbafde4cafd3e8255dd54ff15b07c3e8cb3b110a38587439d744e3",
-      "timestamp": "2026-03-21T18:43:00-07:00",
-      "title": "Dinner: Pulpo a la Gallega (octopus and potatoes with paprika), dark vegetable medley (mushroom/eggplant stew), 3 strawberries, 5oz milk",
-      "issues": [
-        {
-          "type": "outcomes_not_backfilled",
-          "ageHours": 159,
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:ba36d8eb9a77ac6180824ca70f996fe3d7e839896f5749c76492d7e505a6ea40",
-      "timestamp": "2026-03-21T13:21:00-07:00",
-      "title": "Lunch: Smoked salmon on bread with avocado and apple wedges (Peak: 165 mg/dL @ 3:19 PM)",
-      "issues": [
-        {
-          "type": "outcomes_not_backfilled",
-          "ageHours": 164,
-          "severity": "warning"
-        },
-        {
-          "type": "missing_ns_link",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:ead7c4f9da6e4f03125bf6c81db23df509e5c33cecbdae20d40e9abe90ea071a",
-      "timestamp": "2026-03-21T10:03:00-07:00",
-      "title": "Breakfast: 2 boiled eggs, 1 slice white bread, 1 small guava (Peak: 161 mg/dL @ 10:59 AM)",
-      "issues": [
-        {
-          "type": "outcomes_not_backfilled",
-          "ageHours": 168,
-          "severity": "warning"
-        },
-        {
-          "type": "missing_ns_link",
+          "ageHours": 162,
           "severity": "warning"
         }
       ]
