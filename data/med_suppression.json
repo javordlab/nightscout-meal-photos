@@ -3,5 +3,10 @@
     "date": "2026-03-27",
     "description": "Metformin 500mg (lunch)",
     "suppressedAt": "2026-03-28T04:42:32.645Z"
+  },
+  {
+    "date": "2026-03-28",
+    "description": "Metformin 1000mg (dinner)",
+    "suppressedAt": "2026-03-29T16:51:42.813Z"
   }
 ]
