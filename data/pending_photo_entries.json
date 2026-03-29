@@ -66,5 +66,22 @@
     "contentType": null,
     "fileId": null,
     "fileUniqueId": null
+  },
+  {
+    "queuedAt": "2026-03-29T19:10:16.128Z",
+    "attempts": 0,
+    "uploadStatus": "uploaded",
+    "mediaKind": "image",
+    "filePrefix": "file_229",
+    "sourcePath": "/Users/javier/.openclaw/media/inbound/file_229---307c9d76-ed71-424a-af23-4913065baa77.jpg",
+    "timestamp": "2026-03-29T19:05:17.834Z",
+    "mealType": "Lunch",
+    "photoUrl": "https://iili.io/B9Nv5ge.jpg",
+    "reason": "nutrition_inferred_needs_refinement",
+    "messageId": null,
+    "updateId": null,
+    "contentType": null,
+    "fileId": null,
+    "fileUniqueId": null
   }
 ]

@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-03-29T19:00:00.445Z",
-  "entryCount": 38,
-  "errors": [],
+  "generatedAt": "2026-03-29T19:30:00.700Z",
+  "entryCount": 41,
+  "errors": [
+    {
+      "entryKey": "sha256:cc77a6b76d5fc9ed87ef10b5dc2aebd64d706da17a53c9ebe018c4038ed0ac11",
+      "timestamp": "2026-03-29T12:05:00-07:00",
+      "title": "Lunch: Meal photo (auto-estimated nutrition)",
+      "reason": "placeholder_food_entry_blocked"
+    }
+  ],
   "warnings": [
     {
       "entryKey": "sha256:10330856ec728f3d97dddab84efa0cb13e42f96b97adf49a0bd9a6bb3e00c180",

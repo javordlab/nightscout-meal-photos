@@ -1,5 +1,27 @@
 [
   {
+    "id": "33285ec7-0668-818a-9d02-f3002885e9f8",
+    "title": "Lunch: Meal photo (auto-estimated nutrition) (BG: 82 mg/dL FortyFiveDown) (Pred: 234-254 mg/dL @ 1:40 PM) (Protein: 20g | Carbs: ~42g | Cals: ~500)",
+    "type": "Lunch",
+    "date": "2026-03-29T12:05:00.000-07:00",
+    "photo": "https://iili.io/B9Nv5ge.jpg",
+    "carbs": 42,
+    "cals": 500,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "33285ec7-0668-813f-a75d-ceab8c2a477e",
+    "title": "Snack: Cashews and tofu & pine nut crackers (7g) (BG: 90 mg/dL FortyFiveDown) (Pred: 110-125 mg/dL @ 1:30 PM) (Protein: 6g | Carbs: ~13g | Cals: ~197)",
+    "type": "Snack",
+    "date": "2026-03-29T12:02:00.000-07:00",
+    "photo": "https://iili.io/B9w8t5b.jpg",
+    "carbs": 13,
+    "cals": 197,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "33285ec7-0668-8193-9c24-d0c257f34965",
     "title": "Breakfast: Onion/cheese bread, avocado, fried egg, guava (BG: 116 mg/dL Flat) (Pred: 155-175 mg/dL @ 10:30 AM) (Protein: 21g | Carbs: ~43g | Cals: ~590)",
     "type": "Breakfast",
@@ -7,8 +29,8 @@
     "photo": "https://iili.io/B9z9PGp.jpg",
     "carbs": 43,
     "cals": 590,
-    "delta": null,
-    "peak": null
+    "delta": 84,
+    "peak": 200
   },
   {
     "id": "33185ec7-0668-8126-8f03-ff6204237c39",
