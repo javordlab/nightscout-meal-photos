@@ -1,5 +1,16 @@
 [
   {
+    "id": "33285ec7-0668-8193-9c24-d0c257f34965",
+    "title": "Breakfast: Onion/cheese bread, avocado, fried egg, guava (BG: 116 mg/dL Flat) (Pred: 155-175 mg/dL @ 10:30 AM) (Protein: 21g | Carbs: ~43g | Cals: ~590)",
+    "type": "Breakfast",
+    "date": "2026-03-29T08:56:00.000-07:00",
+    "photo": "https://iili.io/B9z9PGp.jpg",
+    "carbs": 43,
+    "cals": 590,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "33185ec7-0668-8126-8f03-ff6204237c39",
     "title": "Dessert: Small chocolate brownie/cupcake with whipped cream and cashews (BG: 132 mg/dL Flat) (Pred: 210-235 mg/dL @ 2:20 PM) (Protein: 5g | Carbs: ~36g | Cals: ~335)",
     "type": "Dessert",
