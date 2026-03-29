@@ -1,8 +1,8 @@
 # Health Log
 
-| 2026-03-28 | 21:37 -07:00 | Maria Dennis | Medication | - | Medication: Berberine (dinner, no evening walk) (BG: 139 mg/dL Flat) | null | null |
-| 2026-03-28 | 21:37 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 139 mg/dL Flat) | null | null |
-| 2026-03-28 | 21:37 -07:00 | Maria Dennis | Food | Dinner | Dinner: 8 oysters, 2oz beef, cooked leeks, 2 small bread slices, a few homemade fries, 2oz wine, 1 slice dragon fruit, 1-inch plain cake with whipped cream (BG: 139 mg/dL Flat) (Pred: 220-245 mg/dL @ 11:10 PM) (Protein: 28g | Carbs: ~55g | Cals: ~580) | 55 | 580 |
+| 2026-03-28 | 19:30 -07:00 | Maria Dennis | Medication | - | Medication: Berberine (dinner, no evening walk) (BG: 139 mg/dL Flat) | null | null |
+| 2026-03-28 | 19:30 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 139 mg/dL Flat) | null | null |
+| 2026-03-28 | 19:30 -07:00 | Maria Dennis | Food | Dinner | Dinner: 8 oysters, 2oz beef, cooked leeks, 2 small bread slices, a few homemade fries, 2oz wine, 1 slice dragon fruit, 1-inch plain cake with whipped cream (BG: 139 mg/dL Flat) (Pred: 220-245 mg/dL @ 9:00 PM) (Protein: 28g | Carbs: ~55g | Cals: ~580) | 55 | 580 |
 | 2026-03-28 | 13:35 -07:00 | Maria Dennis | Activity | - | 30 minutes walk up and down hills |  |  |
 | 2026-03-28 | 12:49 -07:00 | Maria Dennis | Food | Dessert | Dessert: Small chocolate brownie/cupcake with whipped cream and cashews (BG: 132 mg/dL Flat) (Pred: 210-235 mg/dL @ 2:20 PM) (Protein: 5g | Carbs: ~36g | Cals: ~335) [📷](https://iili.io/qpB2sse.jpg) | 36 | 335 |
 | 2026-03-28 | 12:38 -07:00 | Maria Dennis | Food | Lunch | Lunch: Fried rice with one egg and cucumber (BG: 129 mg/dL Flat) (Pred: 185-205 mg/dL @ 2:10 PM) (Protein: 10g | Carbs: ~55g | Cals: ~380) [📷](https://iili.io/qpfl8w7.jpg) | 55 | 380 |
