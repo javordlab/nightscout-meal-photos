@@ -1,5 +1,16 @@
 [
   {
+    "id": "33285ec7-0668-81c1-8c37-e0fbf8b85de2",
+    "title": "Snack: Meal photo (auto-estimated nutrition) (BG: 139 mg/dL Flat) (Pred: 148-168 mg/dL @ 4:51 PM) (Protein: 6g | Carbs: ~15g | Cals: ~180)",
+    "type": "Snack",
+    "date": "2026-03-29T15:16:00.000-07:00",
+    "photo": "https://iili.io/BHHd4f9.jpg",
+    "carbs": 15,
+    "cals": 180,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "33285ec7-0668-81f4-a9ad-d042b2ce0d89",
     "title": "Lunch: Ham & cheese quesadilla with guacamole, guavas, and 2 slices dragon fruit (BG: 101 mg/dL Flat) (Pred: 185-205 mg/dL @ 2:45 PM) [Cumulative Lunch: ~66g carbs total] (Protein: 28g | Carbs: ~66g | Cals: ~645)",
     "type": "Lunch",
@@ -11,26 +22,15 @@
     "peak": null
   },
   {
-    "id": "33285ec7-0668-818a-9d02-f3002885e9f8",
-    "title": "Lunch: Meal photo (auto-estimated nutrition) (BG: 82 mg/dL FortyFiveDown) (Pred: 234-254 mg/dL @ 1:40 PM) (Protein: 20g | Carbs: ~42g | Cals: ~500)",
-    "type": "Lunch",
-    "date": "2026-03-29T12:05:00.000-07:00",
-    "photo": "https://iili.io/B9Nv5ge.jpg",
-    "carbs": 42,
-    "cals": 500,
-    "delta": null,
-    "peak": null
-  },
-  {
     "id": "33285ec7-0668-813f-a75d-ceab8c2a477e",
-    "title": "Snack: Cashews and tofu & pine nut crackers (7g) (BG: 90 mg/dL FortyFiveDown) (Pred: 110-125 mg/dL @ 1:30 PM) (Protein: 6g | Carbs: ~13g | Cals: ~197)",
+    "title": "Snack: Cashews (small handful ~15g) and Tofu Snack with Pine Nut crackers (~7g, ¼ serving) (BG: 90 mg/dL FortyFiveDown) (Pred: 110-125 mg/dL @ 1:30 PM) (Protein: 4g | Carbs: ~8g | Cals: ~122)",
     "type": "Snack",
     "date": "2026-03-29T12:02:00.000-07:00",
     "photo": "https://iili.io/B9w8t5b.jpg",
-    "carbs": 13,
-    "cals": 197,
-    "delta": null,
-    "peak": null
+    "carbs": 8,
+    "cals": 122,
+    "delta": 36,
+    "peak": 120
   },
   {
     "id": "33285ec7-0668-8193-9c24-d0c257f34965",

@@ -1,6 +1,7 @@
 # Health Log
 
-| 2026-03-29 | 12:05 -07:00 | Maria Dennis | Food | Lunch | Lunch: Meal photo (auto-estimated nutrition) (BG: 82 mg/dL FortyFiveDown) (Pred: 234-254 mg/dL @ 1:40 PM) (Protein: 20g | Carbs: ~42g | Cals: ~500) [📷](https://iili.io/B9Nv5ge.jpg) | 42 | 500 |
+| 2026-03-29 | 15:16 -07:00 | Maria Dennis | Food | Snack | Snack: Meal photo (auto-estimated nutrition) (BG: 139 mg/dL Flat) (Pred: 148-168 mg/dL @ 4:51 PM) (Protein: 6g | Carbs: ~15g | Cals: ~180) [📷](https://iili.io/BHHd4f9.jpg) | 15 | 180 |
+
 | 2026-03-29 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 90 mg/dL FortyFiveDown) | null | null |
 | 2026-03-29 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 114 mg/dL Flat) | null | null |
 | 2026-03-29 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 114 mg/dL Flat) | null | null |
@@ -395,5 +396,5 @@
 | 2026-03-09 | 21:30 -07:00 | Maria Dennis | Food | Snack | Glass of milk and a spoon of peanut butter (~15g carbs, ~250 kcal) (Pred: 173 mg/dL @ 11:15 PM) (Protein: 10g | Carbs: ~15g | Cals: ~250) | 15 | 250 |
 | 2026-03-29 | 08:56 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Onion/cheese bread, avocado, fried egg, guava (BG: 116 mg/dL Flat) (Pred: 155-175 mg/dL @ 10:30 AM) (Protein: 21g | Carbs: ~43g | Cals: ~590) [📷](https://iili.io/B9z9PGp.jpg) | 43 | 590 |
 | 2026-03-29 | 10:32 -07:00 | Maria Dennis | Activity | 15 minute walk + 1 hour housework |
-| 2026-03-29 | 12:02 -07:00 | Maria Dennis | Food | Snack | Snack: Cashews and tofu & pine nut crackers (7g) (BG: 90 mg/dL FortyFiveDown) (Pred: 110-125 mg/dL @ 1:30 PM) (Protein: 6g | Carbs: ~13g | Cals: ~197) [📷](https://iili.io/B9w8t5b.jpg) | 13 | 197 |
+| 2026-03-29 | 12:02 -07:00 | Maria Dennis | Food | Snack | Snack: Cashews (small handful ~15g) and Tofu Snack with Pine Nut crackers (~7g, ¼ serving) (BG: 90 mg/dL FortyFiveDown) (Pred: 110-125 mg/dL @ 1:30 PM) (Protein: 4g | Carbs: ~8g | Cals: ~122) [📷](https://iili.io/B9w8t5b.jpg) | 8 | 122 |
 | 2026-03-29 | 13:16 -07:00 | Maria Dennis | Food | Lunch | Lunch: Ham & cheese quesadilla with guacamole, guavas, and 2 slices dragon fruit (BG: 101 mg/dL Flat) (Pred: 185-205 mg/dL @ 2:45 PM) [Cumulative Lunch: ~66g carbs total] (Protein: 28g | Carbs: ~66g | Cals: ~645) [📷](https://iili.io/B9rLqFI.jpg) | 66 | 645 |
