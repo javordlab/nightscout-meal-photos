@@ -392,3 +392,4 @@
 | 2026-03-09 | 20:30 -07:00 | Maria Dennis | Activity | 15 minutes walk |
 | 2026-03-09 | 21:30 -07:00 | Maria Dennis | Food | Snack | Glass of milk and a spoon of peanut butter (~15g carbs, ~250 kcal) (Pred: 173 mg/dL @ 11:15 PM) (Protein: 10g | Carbs: ~15g | Cals: ~250) | 15 | 250 |
 | 2026-03-29 | 08:56 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Onion/cheese bread, avocado, fried egg, guava (BG: 116 mg/dL Flat) (Pred: 155-175 mg/dL @ 10:30 AM) (Protein: 21g | Carbs: ~43g | Cals: ~590) [📷](https://iili.io/B9z9PGp.jpg) | 43 | 590 |
+| 2026-03-29 | 10:32 -07:00 | Maria Dennis | Activity | 15 minute walk + 1 hour housework |
