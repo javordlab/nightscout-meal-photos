@@ -1,5 +1,16 @@
 [
   {
+    "id": "33285ec7-0668-81f4-a9ad-d042b2ce0d89",
+    "title": "Lunch: Ham & cheese quesadilla with guacamole, guavas, and 2 slices dragon fruit (BG: 101 mg/dL Flat) (Pred: 185-205 mg/dL @ 2:45 PM) [Cumulative Lunch: ~66g carbs total] (Protein: 28g | Carbs: ~66g | Cals: ~645)",
+    "type": "Lunch",
+    "date": "2026-03-29T13:16:00.000-07:00",
+    "photo": "https://iili.io/B9rLqFI.jpg",
+    "carbs": 66,
+    "cals": 645,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "33285ec7-0668-818a-9d02-f3002885e9f8",
     "title": "Lunch: Meal photo (auto-estimated nutrition) (BG: 82 mg/dL FortyFiveDown) (Pred: 234-254 mg/dL @ 1:40 PM) (Protein: 20g | Carbs: ~42g | Cals: ~500)",
     "type": "Lunch",

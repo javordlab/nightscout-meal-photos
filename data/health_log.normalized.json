@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-29T20:00:00.566Z",
+  "generatedAt": "2026-03-29T20:30:00.708Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
-  "entryCount": 373,
+  "entryCount": 374,
   "entries": [
     {
       "source": {
@@ -15605,6 +15605,49 @@
       },
       "entryKey": "sha256:5ec9cc77c51e74cb9a61cd680a736898a44074f7b509a819f219fec750005927",
       "contentHash": "sha256:fdeb8480fac9eb963431eb307bb8d4f550a6a9f816d801753f798c8c97acadf6"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 399,
+        "rawRow": "| 2026-03-29 | 13:16 -07:00 | Maria Dennis | Food | Lunch | Lunch: Ham & cheese quesadilla with guacamole, guavas, and 2 slices dragon fruit (BG: 101 mg/dL Flat) (Pred: 185-205 mg/dL @ 2:45 PM) [Cumulative Lunch: ~66g carbs total] (Protein: 28g | Carbs: ~66g | Cals: ~645) [📷](https://iili.io/B9rLqFI.jpg) | 66 | 645 |"
+      },
+      "timestamp": "2026-03-29T13:16:00-07:00",
+      "date": "2026-03-29",
+      "time": "13:16 -07:00",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "mealType": "Lunch",
+      "title": "Lunch: Ham & cheese quesadilla with guacamole, guavas, and 2 slices dragon fruit [Cumulative Lunch: ~66g carbs total]",
+      "notes": "BG: 101 mg/dL Flat; Protein: 28g; Pred: 185-205 mg/dL @ 2:45 PM",
+      "photoUrls": [
+        "https://iili.io/B9rLqFI.jpg"
+      ],
+      "carbsEst": 66,
+      "caloriesEst": 645,
+      "proteinEst": 28,
+      "predicted": {
+        "peakBgText": "185-205 mg/dL",
+        "peakTimeText": "2:45 PM"
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:26c543b25a2e8e3e7c3d570334ee23513dee1a70215f76cd5ac8f207777ab418",
+      "contentHash": "sha256:4eeaa3ac72774a7142319651b700f6a5fbea82301a94fb8cac8dd5f9d5affff8"
     }
   ]
 }
