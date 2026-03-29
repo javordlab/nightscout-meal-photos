@@ -6676,26 +6676,6 @@
         "last_synced_at": "2026-03-29T16:30:08.386Z"
       }
     },
-    "sha256:cc77a6b76d5fc9ed87ef10b5dc2aebd64d706da17a53c9ebe018c4038ed0ac11": {
-      "timestamp": "2026-03-29T12:05:00-07:00",
-      "content_hash": "sha256:f2b39f4f0608d8b1e41652013e51c9611a07275284200cfedd074f40da59543b",
-      "user": "Maria Dennis",
-      "category": "Food",
-      "meal_type": "Lunch",
-      "title": "Lunch: Meal photo (auto-estimated nutrition)",
-      "photo_urls": [
-        "https://iili.io/B9Nv5ge.jpg"
-      ],
-      "outcomes_backfilled": false,
-      "gallery": {
-        "gallery_id": "33285ec7-0668-818a-9d02-f3002885e9f8",
-        "last_synced_at": "2026-03-29T22:00:01.210Z"
-      },
-      "notion": {
-        "page_id": "33285ec7-0668-818a-9d02-f3002885e9f8",
-        "last_synced_at": "2026-03-29T22:00:01.210Z"
-      }
-    },
     "sha256:87ee93eb0a27104c31df2646331da6723f7d38219c887beac66eabccc6c84def": {
       "timestamp": "2026-03-29T13:00:00-07:00",
       "content_hash": "sha256:8c25167bf049f752ea3a271b265c5b4203060d093b65220688db7cbe5e53d4be",
@@ -6705,26 +6685,6 @@
       "title": "Medication: Metformin 500mg (lunch)",
       "photo_urls": [],
       "outcomes_backfilled": false
-    },
-    "sha256:5ec9cc77c51e74cb9a61cd680a736898a44074f7b509a819f219fec750005927": {
-      "timestamp": "2026-03-29T12:02:00-07:00",
-      "content_hash": "sha256:fdeb8480fac9eb963431eb307bb8d4f550a6a9f816d801753f798c8c97acadf6",
-      "user": "Maria Dennis",
-      "category": "Food",
-      "meal_type": "Snack",
-      "title": "Snack: Cashews and tofu & pine nut crackers (7g)",
-      "photo_urls": [
-        "https://iili.io/B9w8t5b.jpg"
-      ],
-      "outcomes_backfilled": false,
-      "gallery": {
-        "gallery_id": "33285ec7-0668-813f-a75d-ceab8c2a477e",
-        "last_synced_at": "2026-03-29T22:00:01.217Z"
-      },
-      "notion": {
-        "page_id": "33285ec7-0668-813f-a75d-ceab8c2a477e",
-        "last_synced_at": "2026-03-29T22:00:01.217Z"
-      }
     },
     "sha256:26c543b25a2e8e3e7c3d570334ee23513dee1a70215f76cd5ac8f207777ab418": {
       "timestamp": "2026-03-29T13:16:00-07:00",
