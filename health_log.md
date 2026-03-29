@@ -1,5 +1,6 @@
 # Health Log
 
+| 2026-03-29 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 90 mg/dL FortyFiveDown) | null | null |
 | 2026-03-29 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 114 mg/dL Flat) | null | null |
 | 2026-03-29 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 114 mg/dL Flat) | null | null |
 | 2026-03-29 | 09:05 -07:00 | Maria Dennis | Medication | - | Medication: Rosuvastatin 10mg (Scheduled) (BG: 114 mg/dL Flat) | null | null |
@@ -393,3 +394,4 @@
 | 2026-03-09 | 21:30 -07:00 | Maria Dennis | Food | Snack | Glass of milk and a spoon of peanut butter (~15g carbs, ~250 kcal) (Pred: 173 mg/dL @ 11:15 PM) (Protein: 10g | Carbs: ~15g | Cals: ~250) | 15 | 250 |
 | 2026-03-29 | 08:56 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Onion/cheese bread, avocado, fried egg, guava (BG: 116 mg/dL Flat) (Pred: 155-175 mg/dL @ 10:30 AM) (Protein: 21g | Carbs: ~43g | Cals: ~590) [📷](https://iili.io/B9z9PGp.jpg) | 43 | 590 |
 | 2026-03-29 | 10:32 -07:00 | Maria Dennis | Activity | 15 minute walk + 1 hour housework |
+| 2026-03-29 | 12:02 -07:00 | Maria Dennis | Food | Snack | Snack: Cashews and tofu & pine nut crackers (1 serving) (BG: 90 mg/dL FortyFiveDown) (Pred: 130-150 mg/dL @ 1:30 PM) (Protein: 7g | Carbs: ~27g | Cals: ~320) [📷](https://iili.io/B9w8t5b.jpg) | 27 | 320 |
