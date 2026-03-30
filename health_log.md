@@ -409,3 +409,4 @@
 | 2026-03-30 | 10:31 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Open-face turkey/ham and melted cheese (cheddar/jack blend) on English muffin + small bowl of yogurt + tea (BG: 119 mg/dL Flat) (Pred: 185-210 mg/dL @ 12:15 PM) (Protein: 32g | Carbs: ~33g | Cals: ~430) [📷](https://iili.io/BdBfoCl.jpg) | 33 | 430 |
 | 2026-03-30 | 11:22 -07:00 | Maria Dennis | Activity | - | 30 minute walk | null | null |
 | 2026-03-30 | 13:30 -07:00 | Maria Dennis | Food | Lunch | Lunch: Chicken noodle soup with thin soba-style noodles, carrots, and savory broth (BG: 128 mg/dL Flat) (Pred: 185-205 mg/dL @ 3:00 PM) (Protein: 25g | Carbs: ~31g | Cals: ~290) [📷](https://iili.io/BdUmQl2.jpg) | 31 | 290 |
+| 2026-03-30 | 13:46 -07:00 | Maria Dennis | Food | Lunch | Lunch: 4 prunes + 1 tbsp peanut butter (BG: 128 mg/dL Flat) (Pred: 200-220 mg/dL @ 3:15 PM) [Cumulative Lunch: ~51g carbs total] (Protein: 4g | Carbs: ~20g | Cals: ~130) | 20 | 130 |
