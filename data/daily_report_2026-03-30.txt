@@ -1,0 +1,66 @@
+🩺 DAILY HEALTH REPORT
+📅 Date: 2026-03-30
+🕒 Coverage window: 2026-03-29 00:00 – 2026-03-30 00:00 (America/Los_Angeles)
+⚙️ Generated time: 2026-03-30T16:30:01.716Z
+🤖 Model: anthropic/claude-sonnet-4-6
+
+1) 📊 Today's Glucose Summary
+- Average glucose: 124.8 mg/dL
+- Time in Range (70-180): 95.4%
+- GMI: 6.29%
+- Standard deviation: 22.6 mg/dL
+- CV: 18.1%
+- Data points used: 281
+
+2) 📉 14-day Trends (ending 2026-03-29)
+- Average glucose: 122.1 mg/dL
+- Time in Range (70-180): 98.7%
+- GMI: 6.23%
+- Standard deviation: 20.9 mg/dL
+- CV: 17.1%
+- Data points used: 976
+
+3) 🍽️ Nutrition (2026-03-29)
+- Meals logged: 6
+- Total carbs: 164.0 g
+- Total calories: 1992 kcal
+- Total protein: 82.0 g
+
+4) 🧾 Meal Details (2026-03-29)
+- 8:56 AM — Breakfast: Onion/cheese bread, avocado, fried egg, guava — 43.0g carbs, 590 kcal, 21.0g protein — BG at meal: 116 mg/dL
+- 12:02 PM — Snack: Cashews (small handful ~15g) and Tofu Snack with Pine Nut crackers (~7g, ¼ serving) — 8.0g carbs, 122 kcal, 4.0g protein — BG at meal: 90 mg/dL
+- 1:16 PM — Lunch: Ham & cheese quesadilla with guacamole, guavas, and 2 slices dragon fruit [Cumulative Lunch: ~66g carbs total] — 66.0g carbs, 645 kcal, 28.0g protein — BG at meal: 101 mg/dL
+- 6:36 PM — Dinner: Creamed vegetable soup (squash/zucchini based, ~1.5 cups) — 18.0g carbs, 180 kcal, 4.0g protein — BG at meal: 114 mg/dL
+- 6:42 PM — Dinner: Pork belly slices + toasted sourdough bread [Cumulative Dinner: ~33g carbs total] — 15.0g carbs, 360 kcal, 21.0g protein — BG at meal: 109 mg/dL
+- 6:50 PM — Dinner: 8 red grapes + bite of cheese [Cumulative Dinner: ~47g carbs total] — 14.0g carbs, 95 kcal, 4.0g protein — BG at meal: 116 mg/dL
+
+5) 📚 Nutrition Baseline (14-day daily average ending 2026-03-29)
+- Average carbs/day: 154.7 g
+- Average calories/day: 1538.3 kcal
+- Average protein/day: 77.7 g
+- Average meals/day: 5.5
+- Days in window with food entries: 14
+
+6) 💊 Medication Status (2026-03-29)
+- 2026-03-29T19:00:00-07:00: Medication: Metformin 1000mg (dinner)
+- 2026-03-29T13:00:00-07:00: Medication: Metformin 500mg (lunch)
+- 2026-03-29T09:00:00-07:00: Medication: Lisinopril 10mg (Scheduled)
+- 2026-03-29T09:10:00-07:00: Medication: Metformin 500mg (breakfast)
+- 2026-03-29T09:05:00-07:00: Medication: Rosuvastatin 10mg (Scheduled)
+
+7) 🚨 Outliers (2026-03-29)
+- High readings >180: 13
+- Low readings <70: 0
+- Max glucose: 200 mg/dL at 2026-03-29T17:29:29.000Z
+
+8) 🧠 Extended Supervisor Analysis
+- Nice work overall today: Strong Time in Range at 95.4% | No hypoglycemia episodes (<70 mg/dL) | Good protein intake (82.0g).
+- Key trend signals: avg glucose vs 14-day baseline 2.7 mg/dL, TIR delta -3.3%, carbs delta 9.3 g, calories delta 454 kcal.
+- Friendly focus for tomorrow: Calories were above baseline by 454 kcal; consider portion tightening at dinner/snacks. There was 13 reading(s) >180 mg/dL; keep an eye on post-meal spacing/activity.
+- You’re doing great—small consistent habits keep adding up. Keep it going 🌟
+
+9) 🛡️ Self-Audit (Data Integrity)
+- Target day enforced: 2026-03-29 PT
+- Glucose points in target window: 281
+- GMI formula check (3.31 + 0.02392 × Avg): 6.29%
+- Reported GMI: 6.29%

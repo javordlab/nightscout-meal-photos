@@ -86,3 +86,8 @@
 {"ts":"2026-03-29T16:37:00.401Z","op":"chart_skipped_already_sent","reportDateLA":"2026-03-29","chatId":"-5262020908","chart":"glucose_chart.png"}
 {"ts":"2026-03-29T16:37:00.401Z","op":"chart_skipped_already_sent","reportDateLA":"2026-03-29","chatId":"-5262020908","chart":"weekly_calories_chart.png"}
 {"ts":"2026-03-29T16:37:00.401Z","op":"chart_skipped_already_sent","reportDateLA":"2026-03-29","chatId":"-5262020908","chart":"weekly_carbs_chart.png"}
+{"ts":"2026-03-30T16:30:07.461Z","op":"chart_regenerated","reportDateLA":"2026-03-30"}
+{"ts":"2026-03-30T16:30:09.211Z","op":"chart_sent","reportDateLA":"2026-03-30","chatId":"-5262020908","chart":"daily_glucose_chart.png","messageId":3872}
+{"ts":"2026-03-30T16:30:10.494Z","op":"chart_sent","reportDateLA":"2026-03-30","chatId":"-5262020908","chart":"glucose_chart.png","messageId":3873}
+{"ts":"2026-03-30T16:30:11.028Z","op":"chart_sent","reportDateLA":"2026-03-30","chatId":"-5262020908","chart":"weekly_calories_chart.png","messageId":3874}
+{"ts":"2026-03-30T16:30:12.122Z","op":"chart_sent","reportDateLA":"2026-03-30","chatId":"-5262020908","chart":"weekly_carbs_chart.png","messageId":3875}
