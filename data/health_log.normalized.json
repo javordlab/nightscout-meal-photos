@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-30T21:00:00.870Z",
+  "generatedAt": "2026-03-30T21:30:00.832Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
-  "entryCount": 384,
+  "entryCount": 385,
   "entries": [
     {
       "source": {
@@ -16066,6 +16066,47 @@
       },
       "entryKey": "sha256:e5515ffeeed913ab4b0d43d56a28a8fb138d55548eae4d0e97a84e3a51f806dc",
       "contentHash": "sha256:bc81646ca1b67bfee278ba0252184efff1020eef11cea1a41dc890f1ef45a294"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 413,
+        "rawRow": "| 2026-03-30 | 14:20 -07:00 | Maria Dennis | Activity | - | 30 minute walk | null | null |"
+      },
+      "timestamp": "2026-03-30T14:20:00-07:00",
+      "date": "2026-03-30",
+      "time": "14:20 -07:00",
+      "user": "Maria Dennis",
+      "category": "Activity",
+      "mealType": "-",
+      "title": "30 minute walk",
+      "notes": null,
+      "photoUrls": [],
+      "carbsEst": null,
+      "caloriesEst": null,
+      "proteinEst": null,
+      "predicted": {
+        "peakBgText": null,
+        "peakTimeText": null
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:dda1558c68e355ca67a80a59c161ef71eabd6b595771755923efe044a0fcc70d",
+      "contentHash": "sha256:0ad34a963ab0a13e64657e019405fabde66eea0392f63aea3cc07c758199dbf2"
     }
   ]
 }
