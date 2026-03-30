@@ -402,3 +402,4 @@
 | 2026-03-29 | 18:36 -07:00 | Maria Dennis | Food | Dinner | Dinner: Creamed vegetable soup (squash/zucchini based, ~1.5 cups) (BG: 114 mg/dL Flat) (Pred: 150-165 mg/dL @ 8:00 PM) (Protein: 4g | Carbs: ~18g | Cals: ~180) [📷](https://iili.io/BHzMUJI.jpg) | 18 | 180 |
 | 2026-03-29 | 18:42 -07:00 | Maria Dennis | Food | Dinner | Dinner: Pork belly slices + toasted sourdough bread (BG: 114 mg/dL Flat) (Pred: 165-180 mg/dL @ 8:15 PM) [Cumulative Dinner: ~33g carbs total] (Protein: 21g | Carbs: ~15g | Cals: ~360) [📷](https://iili.io/BHzP3B4.jpg) | 15 | 360 |
 | 2026-03-29 | 18:50 -07:00 | Maria Dennis | Food | Dinner | Dinner: 8 red grapes + bite of cheese (BG: 114 mg/dL Flat) (Pred: 165-180 mg/dL @ 8:15 PM) [Cumulative Dinner: ~47g carbs total] (Protein: 4g | Carbs: ~14g | Cals: ~95) [📷](https://iili.io/BHIFSov.jpg) | 14 | 95 |
+| 2026-03-29 | 20:08 -07:00 | Maria Dennis | Activity | 20 minute walk |
