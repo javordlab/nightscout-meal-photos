@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-30T20:30:00.862Z",
+  "generatedAt": "2026-03-30T21:00:00.870Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
-  "entryCount": 382,
+  "entryCount": 384,
   "entries": [
     {
       "source": {
@@ -15982,6 +15982,90 @@
       },
       "entryKey": "sha256:d6bd1ffbaaf89d2474e9bf27558e3ca3a9c79a8a2af8533c70597d2d9acdb9ad",
       "contentHash": "sha256:01dd7c216bce24ba62d0471f377ab79b05b14a6037bc3c5b4ec450f42ba6dd74"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 411,
+        "rawRow": "| 2026-03-30 | 13:30 -07:00 | Maria Dennis | Food | Lunch | Lunch: Chicken noodle soup with thin soba-style noodles, carrots, and savory broth (BG: 128 mg/dL Flat) (Pred: 185-205 mg/dL @ 3:00 PM) (Protein: 25g | Carbs: ~31g | Cals: ~290) [📷](https://iili.io/BdUmQl2.jpg) | 31 | 290 |"
+      },
+      "timestamp": "2026-03-30T13:30:00-07:00",
+      "date": "2026-03-30",
+      "time": "13:30 -07:00",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "mealType": "Lunch",
+      "title": "Lunch: Chicken noodle soup with thin soba-style noodles, carrots, and savory broth",
+      "notes": "BG: 128 mg/dL Flat; Protein: 25g; Pred: 185-205 mg/dL @ 3:00 PM",
+      "photoUrls": [
+        "https://iili.io/BdUmQl2.jpg"
+      ],
+      "carbsEst": 31,
+      "caloriesEst": 290,
+      "proteinEst": 25,
+      "predicted": {
+        "peakBgText": "185-205 mg/dL",
+        "peakTimeText": "3:00 PM"
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:55f679cc88c5aefe17f387d324e40daa4db84130a652b22d9b00d7b7519a03fb",
+      "contentHash": "sha256:c8080c541f01293654ae523864a2b6417ecc862e921950eeba21a3d7b082d074"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 412,
+        "rawRow": "| 2026-03-30 | 13:46 -07:00 | Maria Dennis | Food | Lunch | Lunch: 4 prunes + 1 tbsp peanut butter (BG: 128 mg/dL Flat) (Pred: 200-220 mg/dL @ 3:15 PM) [Cumulative Lunch: ~51g carbs total] (Protein: 4g | Carbs: ~20g | Cals: ~130) | 20 | 130 |"
+      },
+      "timestamp": "2026-03-30T13:46:00-07:00",
+      "date": "2026-03-30",
+      "time": "13:46 -07:00",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "mealType": "Lunch",
+      "title": "Lunch: 4 prunes + 1 tbsp peanut butter [Cumulative Lunch: ~51g carbs total]",
+      "notes": "BG: 128 mg/dL Flat; Protein: 4g; Pred: 200-220 mg/dL @ 3:15 PM",
+      "photoUrls": [],
+      "carbsEst": 20,
+      "caloriesEst": 130,
+      "proteinEst": 4,
+      "predicted": {
+        "peakBgText": "200-220 mg/dL",
+        "peakTimeText": "3:15 PM"
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:e5515ffeeed913ab4b0d43d56a28a8fb138d55548eae4d0e97a84e3a51f806dc",
+      "contentHash": "sha256:bc81646ca1b67bfee278ba0252184efff1020eef11cea1a41dc890f1ef45a294"
     }
   ]
 }

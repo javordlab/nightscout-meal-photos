@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-30T20:30:00.900Z",
-  "entryCount": 36,
+  "generatedAt": "2026-03-30T21:00:00.921Z",
+  "entryCount": 38,
   "errors": [],
   "warnings": [
     {
@@ -8,6 +8,14 @@
       "timestamp": "2026-03-28T19:30:00-07:00",
       "title": "Dinner: 8 oysters, 2oz beef, cooked leeks, 2 small bread slices, a few homemade fries, 2oz wine, 1 slice dragon fruit, 1-inch plain cake with whipped cream",
       "reason": "missing_photo_urls"
+    },
+    {
+      "entryKey": "sha256:e5515ffeeed913ab4b0d43d56a28a8fb138d55548eae4d0e97a84e3a51f806dc",
+      "timestamp": "2026-03-30T13:46:00-07:00",
+      "title": "Lunch: 4 prunes + 1 tbsp peanut butter [Cumulative Lunch: ~51g carbs total]",
+      "reason": "photo_missing_but_found_in_internal_folder",
+      "file": "/Users/javier/.openclaw/media/inbound/file_236---470e45f7-2910-4a15-959c-2c3947684d85.jpg",
+      "diffMinutes": 16
     }
   ]
 }
