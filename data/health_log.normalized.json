@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-30T17:30:01.063Z",
+  "generatedAt": "2026-03-30T18:00:01.044Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
-  "entryCount": 379,
+  "entryCount": 380,
   "entries": [
     {
       "source": {
@@ -15857,6 +15857,49 @@
       },
       "entryKey": "sha256:c4b52c4819876cf8a6be16919c3a46e6be29c884a3560f1b22fe46c396834267",
       "contentHash": "sha256:f6021392a9d3c23c35a85c2067fa83511e9a2b1a86457edcc506e7642503170d"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 408,
+        "rawRow": "| 2026-03-30 | 10:31 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Open-face turkey/ham and melted cheese (cheddar/jack blend) on English muffin + small bowl of yogurt + tea (BG: 119 mg/dL Flat) (Pred: 185-210 mg/dL @ 12:15 PM) (Protein: 32g | Carbs: ~33g | Cals: ~430) [📷](https://iili.io/BdBfoCl.jpg) | 33 | 430 |"
+      },
+      "timestamp": "2026-03-30T10:31:00-07:00",
+      "date": "2026-03-30",
+      "time": "10:31 -07:00",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "mealType": "Breakfast",
+      "title": "Breakfast: Open-face turkey/ham and melted cheese (cheddar/jack blend) on English muffin + small bowl of yogurt + tea",
+      "notes": "BG: 119 mg/dL Flat; Protein: 32g; Pred: 185-210 mg/dL @ 12:15 PM",
+      "photoUrls": [
+        "https://iili.io/BdBfoCl.jpg"
+      ],
+      "carbsEst": 33,
+      "caloriesEst": 430,
+      "proteinEst": 32,
+      "predicted": {
+        "peakBgText": "185-210 mg/dL",
+        "peakTimeText": "12:15 PM"
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:70a03048c3b46c7fc9c1aa6e270a1185d85d822ce14dd2cf82277940b8cca390",
+      "contentHash": "sha256:004d332c8a66eabab44d4996222b6d3069d32453b2556286e7e94550b58c6615"
     }
   ]
 }

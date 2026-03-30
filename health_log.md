@@ -406,3 +406,4 @@
 | 2026-03-29 | 18:50 -07:00 | Maria Dennis | Food | Dinner | Dinner: 8 red grapes + bite of cheese (BG: 114 mg/dL Flat) (Pred: 165-180 mg/dL @ 8:15 PM) [Cumulative Dinner: ~47g carbs total] (Protein: 4g | Carbs: ~14g | Cals: ~95) [📷](https://iili.io/BHIFSov.jpg) | 14 | 95 |
 | 2026-03-29 | 20:08 -07:00 | Maria Dennis | Activity | 20 minute walk |
 | 2026-03-30 | 10:31 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Open-face turkey/ham and melted cheese (cheddar/jack blend) on English muffin + small bowl of yogurt + tea (BG: 119 mg/dL Flat) (Pred: 185-210 mg/dL @ 12:15 PM) (Protein: 32g | Carbs: ~33g | Cals: ~430) [📷](https://iili.io/BdBfoCl.jpg) | 33 | 430 |
+| 2026-03-30 | 11:22 -07:00 | Maria Dennis | Activity | - | 30 minute walk | null | null |
