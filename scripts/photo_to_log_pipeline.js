@@ -548,7 +548,12 @@ async function main() {
           continue;
         }
 
-        console.log(`Proceeding with heuristic description for ${file.prefix} after ${MAX_RETRIES} missing-link retries.`);
+        // No envelope from the Food Log group found after all retries — photo came from a DM or
+        // unknown source. Skip permanently to avoid logging non-meal photos.
+        console.log(`Skipping ${file.prefix} permanently: no Food Log group envelope found after ${MAX_RETRIES} retries. Photo likely from a DM — not a meal entry.`);
+        state.processed.push(file.prefix);
+        clearFailure(state, file.prefix);
+        continue;
       }
 
       // Analyze photo + caption metadata
