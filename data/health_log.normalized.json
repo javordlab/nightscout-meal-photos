@@ -1,52 +1,9 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-30T00:30:01.240Z",
+  "generatedAt": "2026-03-30T02:00:00.944Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
-  "entryCount": 374,
+  "entryCount": 376,
   "entries": [
-    {
-      "source": {
-        "file": "health_log.md",
-        "line": 3,
-        "rawRow": "| 2026-03-29 | 15:16 -07:00 | Maria Dennis | Food | Snack | Snack: Meal photo (auto-estimated nutrition) (BG: 139 mg/dL Flat) (Pred: 148-168 mg/dL @ 4:51 PM) (Protein: 6g | Carbs: ~15g | Cals: ~180) [📷](https://iili.io/BHHd4f9.jpg) | 15 | 180 |"
-      },
-      "timestamp": "2026-03-29T15:16:00-07:00",
-      "date": "2026-03-29",
-      "time": "15:16 -07:00",
-      "user": "Maria Dennis",
-      "category": "Food",
-      "mealType": "Snack",
-      "title": "Snack: Meal photo (auto-estimated nutrition)",
-      "notes": "BG: 139 mg/dL Flat; Protein: 6g; Pred: 148-168 mg/dL @ 4:51 PM",
-      "photoUrls": [
-        "https://iili.io/BHHd4f9.jpg"
-      ],
-      "carbsEst": 15,
-      "caloriesEst": 180,
-      "proteinEst": 6,
-      "predicted": {
-        "peakBgText": "148-168 mg/dL",
-        "peakTimeText": "4:51 PM"
-      },
-      "actual": {
-        "preMealBg": null,
-        "peakBg": null,
-        "peakTime": null,
-        "bgDelta": null,
-        "timeToPeakMin": null,
-        "peakBgDelta": null,
-        "peakTimeDeltaMin": null,
-        "twoHourPeakBg": null
-      },
-      "sync": {
-        "nightscout": "pending",
-        "notion": "pending",
-        "gallery": "pending",
-        "outcomesBackfilled": false
-      },
-      "entryKey": "sha256:f55d0fb34a04b4ccda50f1a819d6e66d9464b6a45f81f753a86ec5687fb834b0",
-      "contentHash": "sha256:7925382d658ade1693cad16b51a09042bd43f438d0bffa5ec95453365fa006a8"
-    },
     {
       "source": {
         "file": "health_log.md",
@@ -15648,6 +15605,135 @@
       },
       "entryKey": "sha256:26c543b25a2e8e3e7c3d570334ee23513dee1a70215f76cd5ac8f207777ab418",
       "contentHash": "sha256:4eeaa3ac72774a7142319651b700f6a5fbea82301a94fb8cac8dd5f9d5affff8"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 401,
+        "rawRow": "| 2026-03-29 | 18:36 -07:00 | Maria Dennis | Food | Dinner | Dinner: Creamed vegetable soup (squash/zucchini based, ~1.5 cups) (BG: 114 mg/dL Flat) (Pred: 150-165 mg/dL @ 8:00 PM) (Protein: 4g | Carbs: ~18g | Cals: ~180) [📷](https://iili.io/BHzMUJI.jpg) | 18 | 180 |"
+      },
+      "timestamp": "2026-03-29T18:36:00-07:00",
+      "date": "2026-03-29",
+      "time": "18:36 -07:00",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "mealType": "Dinner",
+      "title": "Dinner: Creamed vegetable soup (squash/zucchini based, ~1.5 cups)",
+      "notes": "BG: 114 mg/dL Flat; Protein: 4g; Pred: 150-165 mg/dL @ 8:00 PM",
+      "photoUrls": [
+        "https://iili.io/BHzMUJI.jpg"
+      ],
+      "carbsEst": 18,
+      "caloriesEst": 180,
+      "proteinEst": 4,
+      "predicted": {
+        "peakBgText": "150-165 mg/dL",
+        "peakTimeText": "8:00 PM"
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:8b353e90f28f11f479ac08403eb915a97b90228cbfe13e04361a5e741e5bb14c",
+      "contentHash": "sha256:47866154b72e0e70923ee39093fd49bffc6b7475ae045a74ca5a308660d40172"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 402,
+        "rawRow": "| 2026-03-29 | 18:42 -07:00 | Maria Dennis | Food | Dinner | Dinner: Pork belly slices + toasted sourdough bread + caramelized onion/mushroom topping (BG: 114 mg/dL Flat) (Pred: 170-185 mg/dL @ 8:15 PM) [Cumulative Dinner: ~41g carbs total] (Protein: 22g | Carbs: ~23g | Cals: ~420) [📷](https://iili.io/BHzP3B4.jpg) | 23 | 420 |"
+      },
+      "timestamp": "2026-03-29T18:42:00-07:00",
+      "date": "2026-03-29",
+      "time": "18:42 -07:00",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "mealType": "Dinner",
+      "title": "Dinner: Pork belly slices + toasted sourdough bread + caramelized onion/mushroom topping [Cumulative Dinner: ~41g carbs total]",
+      "notes": "BG: 114 mg/dL Flat; Protein: 22g; Pred: 170-185 mg/dL @ 8:15 PM",
+      "photoUrls": [
+        "https://iili.io/BHzP3B4.jpg"
+      ],
+      "carbsEst": 23,
+      "caloriesEst": 420,
+      "proteinEst": 22,
+      "predicted": {
+        "peakBgText": "170-185 mg/dL",
+        "peakTimeText": "8:15 PM"
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:24debf403a70d7ca3024dcf98a2cc1f96d920fe5d91e73e59b668da1ef8bf9eb",
+      "contentHash": "sha256:0fd670ebb985af9fd06011ec66801e034f8d6a1e0fd4b1f58832a2f0d9d58b71"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 403,
+        "rawRow": "| 2026-03-29 | 18:50 -07:00 | Maria Dennis | Food | Dinner | Dinner: 8 red grapes (BG: 114 mg/dL Flat) (Pred: 175-190 mg/dL @ 8:15 PM) [Cumulative Dinner: ~55g carbs total] (Protein: 1g | Carbs: ~14g | Cals: ~55) [📷](https://iili.io/BHIFSov.jpg) | 14 | 55 |"
+      },
+      "timestamp": "2026-03-29T18:50:00-07:00",
+      "date": "2026-03-29",
+      "time": "18:50 -07:00",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "mealType": "Dinner",
+      "title": "Dinner: 8 red grapes [Cumulative Dinner: ~55g carbs total]",
+      "notes": "BG: 114 mg/dL Flat; Protein: 1g; Pred: 175-190 mg/dL @ 8:15 PM",
+      "photoUrls": [
+        "https://iili.io/BHIFSov.jpg"
+      ],
+      "carbsEst": 14,
+      "caloriesEst": 55,
+      "proteinEst": 1,
+      "predicted": {
+        "peakBgText": "175-190 mg/dL",
+        "peakTimeText": "8:15 PM"
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:1a85c27a6535ad2b9fffb01bc0c7d50238ec1ffc809a55e941f1be4900313402",
+      "contentHash": "sha256:142f298066c3a273a833f5210f7e1a771c4cb72e1e8ed7c7c1b41cafa55460f5"
     }
   ]
 }

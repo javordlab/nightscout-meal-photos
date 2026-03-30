@@ -1,14 +1,7 @@
 {
-  "generatedAt": "2026-03-30T00:30:01.270Z",
-  "entryCount": 42,
-  "errors": [
-    {
-      "entryKey": "sha256:f55d0fb34a04b4ccda50f1a819d6e66d9464b6a45f81f753a86ec5687fb834b0",
-      "timestamp": "2026-03-29T15:16:00-07:00",
-      "title": "Snack: Meal photo (auto-estimated nutrition)",
-      "reason": "placeholder_food_entry_blocked"
-    }
-  ],
+  "generatedAt": "2026-03-30T02:00:00.981Z",
+  "entryCount": 44,
+  "errors": [],
   "warnings": [
     {
       "entryKey": "sha256:10330856ec728f3d97dddab84efa0cb13e42f96b97adf49a0bd9a6bb3e00c180",

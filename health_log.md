@@ -1,6 +1,7 @@
 # Health Log
 
-| 2026-03-29 | 15:16 -07:00 | Maria Dennis | Food | Snack | Snack: Meal photo (auto-estimated nutrition) (BG: 139 mg/dL Flat) (Pred: 148-168 mg/dL @ 4:51 PM) (Protein: 6g | Carbs: ~15g | Cals: ~180) [📷](https://iili.io/BHHd4f9.jpg) | 15 | 180 |
+| 2026-03-29 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 118 mg/dL Flat) | null | null |
+
 
 | 2026-03-29 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 90 mg/dL FortyFiveDown) | null | null |
 | 2026-03-29 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 114 mg/dL Flat) | null | null |
@@ -398,3 +399,6 @@
 | 2026-03-29 | 10:32 -07:00 | Maria Dennis | Activity | 15 minute walk + 1 hour housework |
 | 2026-03-29 | 12:02 -07:00 | Maria Dennis | Food | Snack | Snack: Cashews (small handful ~15g) and Tofu Snack with Pine Nut crackers (~7g, ¼ serving) (BG: 90 mg/dL FortyFiveDown) (Pred: 110-125 mg/dL @ 1:30 PM) (Protein: 4g | Carbs: ~8g | Cals: ~122) [📷](https://iili.io/B9w8t5b.jpg) | 8 | 122 |
 | 2026-03-29 | 13:16 -07:00 | Maria Dennis | Food | Lunch | Lunch: Ham & cheese quesadilla with guacamole, guavas, and 2 slices dragon fruit (BG: 101 mg/dL Flat) (Pred: 185-205 mg/dL @ 2:45 PM) [Cumulative Lunch: ~66g carbs total] (Protein: 28g | Carbs: ~66g | Cals: ~645) [📷](https://iili.io/B9rLqFI.jpg) | 66 | 645 |
+| 2026-03-29 | 18:36 -07:00 | Maria Dennis | Food | Dinner | Dinner: Creamed vegetable soup (squash/zucchini based, ~1.5 cups) (BG: 114 mg/dL Flat) (Pred: 150-165 mg/dL @ 8:00 PM) (Protein: 4g | Carbs: ~18g | Cals: ~180) [📷](https://iili.io/BHzMUJI.jpg) | 18 | 180 |
+| 2026-03-29 | 18:42 -07:00 | Maria Dennis | Food | Dinner | Dinner: Pork belly slices + toasted sourdough bread (BG: 114 mg/dL Flat) (Pred: 165-180 mg/dL @ 8:15 PM) [Cumulative Dinner: ~33g carbs total] (Protein: 21g | Carbs: ~15g | Cals: ~360) [📷](https://iili.io/BHzP3B4.jpg) | 15 | 360 |
+| 2026-03-29 | 18:50 -07:00 | Maria Dennis | Food | Dinner | Dinner: 8 red grapes + bite of cheese (BG: 114 mg/dL Flat) (Pred: 165-180 mg/dL @ 8:15 PM) [Cumulative Dinner: ~47g carbs total] (Protein: 4g | Carbs: ~14g | Cals: ~95) [📷](https://iili.io/BHIFSov.jpg) | 14 | 95 |
