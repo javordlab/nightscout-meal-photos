@@ -1,8 +1,16 @@
 {
-  "generatedAt": "2026-03-31T19:00:00.471Z",
-  "entryCount": 35,
+  "generatedAt": "2026-03-31T19:30:00.341Z",
+  "entryCount": 37,
   "errors": [],
   "warnings": [
+    {
+      "entryKey": "sha256:479101314c097b4b497a73ddb19497d287746c7f1d787d00b8b01d8b4c55fa34",
+      "timestamp": "2026-03-31T12:02:00-07:00",
+      "title": "Snack: Papaya slices (~3–4 slices) and tea",
+      "reason": "photo_missing_but_found_in_internal_folder",
+      "file": "/Users/javier/.openclaw/media/inbound/file_243---27b63122-d9dc-47b7-9a99-547d82aa1cc9.jpg",
+      "diffMinutes": 0
+    },
     {
       "entryKey": "sha256:43bfe14a4044bc0654127e192e606ad5a0ef92ca2f3b607f913e16e9a6d6c73b",
       "timestamp": "2026-03-31T09:33:00-07:00",
