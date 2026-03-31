@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-31T01:00:01.239Z",
+  "generatedAt": "2026-03-31T01:30:00.741Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
-  "entryCount": 385,
+  "entryCount": 386,
   "entries": [
     {
       "source": {
@@ -16107,6 +16107,49 @@
       },
       "entryKey": "sha256:dda1558c68e355ca67a80a59c161ef71eabd6b595771755923efe044a0fcc70d",
       "contentHash": "sha256:0ad34a963ab0a13e64657e019405fabde66eea0392f63aea3cc07c758199dbf2"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 414,
+        "rawRow": "| 2026-03-30 | 18:18 -07:00 | Maria Dennis | Food | Dinner | Dinner: Whole-grain toast with avocado spread, scrambled eggs, and fresh cucumber spears (BG: 127 mg/dL Flat) (Pred: 185-200 mg/dL @ 8:00 PM) (Protein: 26g | Carbs: ~28g | Cals: ~380) [📷](https://iili.io/B2xVC3N.jpg) | 28 | 380 |"
+      },
+      "timestamp": "2026-03-30T18:18:00-07:00",
+      "date": "2026-03-30",
+      "time": "18:18 -07:00",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "mealType": "Dinner",
+      "title": "Dinner: Whole-grain toast with avocado spread, scrambled eggs, and fresh cucumber spears",
+      "notes": "BG: 127 mg/dL Flat; Protein: 26g; Pred: 185-200 mg/dL @ 8:00 PM",
+      "photoUrls": [
+        "https://iili.io/B2xVC3N.jpg"
+      ],
+      "carbsEst": 28,
+      "caloriesEst": 380,
+      "proteinEst": 26,
+      "predicted": {
+        "peakBgText": "185-200 mg/dL",
+        "peakTimeText": "8:00 PM"
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:246591f92e15252c9523bc6a3e654ad87542cc3fdbeb9152a87f773427ad596f",
+      "contentHash": "sha256:039096c61ec8f35df3f78ff7e4d0a3d945fa1d570681127282ccb25b5d48436c"
     }
   ]
 }
