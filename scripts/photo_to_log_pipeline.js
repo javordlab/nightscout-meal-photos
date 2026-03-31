@@ -576,8 +576,12 @@ async function main() {
       }
 
       // Upload to get URL (or queue for retry on failure)
+      console.log(`[UPLOAD] Attempting to upload: ${file.path}`);
       let photoUrl = await uploadPhoto(file.path);
+      console.log(`[UPLOAD] Result for ${file.prefix}: ${photoUrl ? 'SUCCESS (' + photoUrl.substring(0, 30) + '...)' : 'FAILED (null)'}`);
+      
       if (!photoUrl) {
+        console.log(`[UPLOAD] Queueing ${file.prefix} for retry (upload returned null)`);
         queuePendingPhoto({
           filePrefix: file.prefix,
           sourcePath: file.path,
@@ -665,6 +669,7 @@ async function main() {
       };
 
       // Add to log immediately (with URL verified above)
+      console.log(`[LOG] Adding entry: ${entry.mealType} @ ${entry.timestamp} with URL: ${entry.photoUrl}`);
       addToLog(entry);
 
       // If any nutrition field was inferred (not explicitly parsed), queue for asynchronous refinement.
