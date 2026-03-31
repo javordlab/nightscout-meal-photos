@@ -1,6 +1,7 @@
 # Health Log
 
 | 2026-03-31 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 112 mg/dL Flat) | null | null |
+| 2026-03-31 | 09:22 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Smoked salmon/prosciutto (~4oz, 4-5 slices) on whole grain toast (1 slice) with fresh avocado (~½ fruit, sliced) (BG: 112 mg/dL Flat) (Pred: 140-160 mg/dL @ 10:45 AM) (Protein: 27g | Carbs: ~31g | Cals: ~400) [📷](file_239---9d69ff79-9b79-4e4b-8b60-2f145817860e.jpg) | 31 | 400 |
 | 2026-03-31 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 112 mg/dL Flat) | null | null |
 | 2026-03-31 | 09:05 -07:00 | Maria Dennis | Medication | - | Medication: Rosuvastatin 10mg (Scheduled) (BG: 112 mg/dL Flat) | null | null |
 | 2026-03-30 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 143 mg/dL Flat) | null | null |
