@@ -412,3 +412,4 @@
 | 2026-03-30 | 13:46 -07:00 | Maria Dennis | Food | Lunch | Lunch: 4 prunes + 1 tbsp peanut butter (BG: 128 mg/dL Flat) (Pred: 200-220 mg/dL @ 3:15 PM) [Cumulative Lunch: ~51g carbs total] (Protein: 4g | Carbs: ~20g | Cals: ~130) | 20 | 130 |
 | 2026-03-30 | 14:20 -07:00 | Maria Dennis | Activity | - | 30 minute walk | null | null |
 | 2026-03-30 | 18:18 -07:00 | Maria Dennis | Food | Dinner | Dinner: Whole-grain toast with avocado spread, scrambled eggs, and fresh cucumber spears (BG: 127 mg/dL Flat) (Pred: 185-200 mg/dL @ 8:00 PM) (Protein: 26g | Carbs: ~28g | Cals: ~380) [📷](https://iili.io/B2xVC3N.jpg) | 28 | 380 |
+| 2026-03-30 | 18:40 -07:00 | Maria Dennis | Food | Dinner | Dinner: 1 slice dried dragon fruit (BG: 145 mg/dL Flat) (Pred: 205-220 mg/dL @ 8:15 PM) [Cumulative Dinner: ~39g carbs total] (Protein: 1g | Carbs: ~11g | Cals: ~40) | 11 | 40 |
