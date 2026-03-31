@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-31T22:00:00.977Z",
+  "generatedAt": "2026-03-31T23:30:00.613Z",
   "entryCount": 40,
   "errors": [],
   "warnings": [
@@ -10,38 +10,6 @@
       "reason": "photo_missing_but_found_in_internal_folder",
       "file": "/Users/javier/.openclaw/media/inbound/file_244---5f2e78ad-c559-4852-a5c0-160610b3a210.jpg",
       "diffMinutes": 8
-    },
-    {
-      "entryKey": "sha256:0f35fae8a214cb1a91421517eba15391a502d403a16b77c822ad9d9446b35a5c",
-      "timestamp": "2026-03-31T13:01:00-07:00",
-      "title": "Lunch: Fried rice with pork and egg (~¾ cup) and cucumber slices (~8–10 slices)",
-      "reason": "photo_missing_but_found_in_internal_folder",
-      "file": "/Users/javier/.openclaw/media/inbound/file_244---5f2e78ad-c559-4852-a5c0-160610b3a210.jpg",
-      "diffMinutes": 0
-    },
-    {
-      "entryKey": "sha256:479101314c097b4b497a73ddb19497d287746c7f1d787d00b8b01d8b4c55fa34",
-      "timestamp": "2026-03-31T12:02:00-07:00",
-      "title": "Snack: Papaya slices (~3–4 slices) and tea",
-      "reason": "photo_missing_but_found_in_internal_folder",
-      "file": "/Users/javier/.openclaw/media/inbound/file_243---27b63122-d9dc-47b7-9a99-547d82aa1cc9.jpg",
-      "diffMinutes": 0
-    },
-    {
-      "entryKey": "sha256:43bfe14a4044bc0654127e192e606ad5a0ef92ca2f3b607f913e16e9a6d6c73b",
-      "timestamp": "2026-03-31T09:33:00-07:00",
-      "title": "Snack: ~10 cashews and tea",
-      "reason": "photo_missing_but_found_in_internal_folder",
-      "file": "/Users/javier/.openclaw/media/inbound/file_240---c2c78e49-1e01-41ce-aaac-71b383172671.jpg",
-      "diffMinutes": 1
-    },
-    {
-      "entryKey": "sha256:ff3dfc4f1f0e31ad971ede13ea7cc5aeb360e280f91e6387d56ed8fc6890afb6",
-      "timestamp": "2026-03-31T09:22:00-07:00",
-      "title": "Breakfast: 1 slice bread, 1 slice cheese, 1 slice prosciutto, ¼ avocado",
-      "reason": "photo_missing_but_found_in_internal_folder",
-      "file": "/Users/javier/.openclaw/media/inbound/file_239---9d69ff79-9b79-4e4b-8b60-2f145817860e.jpg",
-      "diffMinutes": 1
     },
     {
       "entryKey": "sha256:10330856ec728f3d97dddab84efa0cb13e42f96b97adf49a0bd9a6bb3e00c180",

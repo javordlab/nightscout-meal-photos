@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-31T22:00:00.940Z",
+  "generatedAt": "2026-03-31T23:30:00.578Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
   "entryCount": 402,
   "entries": [
@@ -90,7 +90,7 @@
       "source": {
         "file": "health_log.md",
         "line": 5,
-        "rawRow": "| 2026-03-31 | 13:01 -07:00 | Maria Dennis | Food | Lunch | Lunch: Fried rice with pork and egg (~¾ cup) and cucumber slices (~8–10 slices) (BG: 118 mg/dL Flat) (Pred: 150-170 mg/dL @ 2:30 PM) (Protein: 15g | Carbs: ~31g | Cals: ~295) [📷](file_244---5f2e78ad-c559-4852-a5c0-160610b3a210.jpg) | 31 | 295 |"
+        "rawRow": "| 2026-03-31 | 13:01 -07:00 | Maria Dennis | Food | Lunch | Lunch: Fried rice with pork and egg (~¾ cup) and cucumber slices (~8–10 slices) (BG: 118 mg/dL Flat) (Pred: 150-170 mg/dL @ 2:30 PM) (Protein: 15g | Carbs: ~31g | Cals: ~295) [📷](https://iili.io/BFZI9KF.jpg) | 31 | 295 |"
       },
       "timestamp": "2026-03-31T13:01:00-07:00",
       "date": "2026-03-31",
@@ -100,7 +100,9 @@
       "mealType": "Lunch",
       "title": "Lunch: Fried rice with pork and egg (~¾ cup) and cucumber slices (~8–10 slices)",
       "notes": "BG: 118 mg/dL Flat; Protein: 15g; Pred: 150-170 mg/dL @ 2:30 PM",
-      "photoUrls": [],
+      "photoUrls": [
+        "https://iili.io/BFZI9KF.jpg"
+      ],
       "carbsEst": 31,
       "caloriesEst": 295,
       "proteinEst": 15,
@@ -125,7 +127,7 @@
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:0f35fae8a214cb1a91421517eba15391a502d403a16b77c822ad9d9446b35a5c",
-      "contentHash": "sha256:d2608284712b729c2fdde021d3e896602dce0ca6a511e35fd1cd004cd2b6df4f"
+      "contentHash": "sha256:005c46c9acd6d290705cbab31761ac34b45d8438e04768b4535272a582c7f2e9"
     },
     {
       "source": {
@@ -213,7 +215,7 @@
       "source": {
         "file": "health_log.md",
         "line": 8,
-        "rawRow": "| 2026-03-31 | 12:02 -07:00 | Maria Dennis | Food | Snack | Snack: Papaya slices (~3–4 slices) and tea (BG: 112 mg/dL Flat) (Pred: 118-130 mg/dL @ 1:30 PM) (Protein: 0.6g | Carbs: ~11g | Cals: ~55) [📷](file_243---27b63122-d9dc-47b7-9a99-547d82aa1cc9.jpg) | 11 | 55 |"
+        "rawRow": "| 2026-03-31 | 12:02 -07:00 | Maria Dennis | Food | Snack | Snack: Papaya slices (~3–4 slices) and tea (BG: 112 mg/dL Flat) (Pred: 118-130 mg/dL @ 1:30 PM) (Protein: 0.6g | Carbs: ~11g | Cals: ~55) [📷](https://iili.io/BFZzttV.jpg) | 11 | 55 |"
       },
       "timestamp": "2026-03-31T12:02:00-07:00",
       "date": "2026-03-31",
@@ -223,7 +225,9 @@
       "mealType": "Snack",
       "title": "Snack: Papaya slices (~3–4 slices) and tea",
       "notes": "BG: 112 mg/dL Flat; Protein: 0.6g; Pred: 118-130 mg/dL @ 1:30 PM",
-      "photoUrls": [],
+      "photoUrls": [
+        "https://iili.io/BFZzttV.jpg"
+      ],
       "carbsEst": 11,
       "caloriesEst": 55,
       "proteinEst": 0.6,
@@ -248,7 +252,7 @@
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:479101314c097b4b497a73ddb19497d287746c7f1d787d00b8b01d8b4c55fa34",
-      "contentHash": "sha256:6387156abcf2ee94110e59c90cdaf93fda34eff91a26235538881d8283e3d4e7"
+      "contentHash": "sha256:fc782f54223bb094290989ad0d8d2d2e7f962318665ae3671a699ca55aac306c"
     },
     {
       "source": {
@@ -295,7 +299,7 @@
       "source": {
         "file": "health_log.md",
         "line": 10,
-        "rawRow": "| 2026-03-31 | 09:33 -07:00 | Maria Dennis | Food | Snack | Snack: ~10 cashews and tea (BG: 112 mg/dL Flat) (Pred: 115-125 mg/dL @ 10:45 AM) (Protein: 2g | Carbs: ~3.5g | Cals: ~65) [📷](file_240---c2c78e49-1e01-41ce-aaac-71b383172671.jpg) | 3.5 | 65 |"
+        "rawRow": "| 2026-03-31 | 09:33 -07:00 | Maria Dennis | Food | Snack | Snack: ~10 cashews and tea (BG: 112 mg/dL Flat) (Pred: 115-125 mg/dL @ 10:45 AM) (Protein: 2g | Carbs: ~3.5g | Cals: ~65) [📷](https://iili.io/BFZzku4.jpg) | 3.5 | 65 |"
       },
       "timestamp": "2026-03-31T09:33:00-07:00",
       "date": "2026-03-31",
@@ -305,7 +309,9 @@
       "mealType": "Snack",
       "title": "Snack: ~10 cashews and tea",
       "notes": "BG: 112 mg/dL Flat; Protein: 2g; Pred: 115-125 mg/dL @ 10:45 AM",
-      "photoUrls": [],
+      "photoUrls": [
+        "https://iili.io/BFZzku4.jpg"
+      ],
       "carbsEst": 3.5,
       "caloriesEst": 65,
       "proteinEst": 2,
@@ -330,13 +336,13 @@
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:43bfe14a4044bc0654127e192e606ad5a0ef92ca2f3b607f913e16e9a6d6c73b",
-      "contentHash": "sha256:500f03a612f58fe8c9e1b61bc28e23b1b46e9c1badac49278effee3c95057006"
+      "contentHash": "sha256:4222980b39150f195525251fd6bd3ed031f6878f4da72017c101841088dca479"
     },
     {
       "source": {
         "file": "health_log.md",
         "line": 11,
-        "rawRow": "| 2026-03-31 | 09:22 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: 1 slice bread, 1 slice cheese, 1 slice prosciutto, ¼ avocado (BG: 112 mg/dL Flat) (Pred: 125-140 mg/dL @ 10:45 AM) (Protein: 14g | Carbs: ~18g | Cals: ~255) | 18 | 255 |"
+        "rawRow": "| 2026-03-31 | 09:22 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: 1 slice bread, 1 slice cheese, 1 slice prosciutto, ¼ avocado (BG: 112 mg/dL Flat) (Pred: 125-140 mg/dL @ 10:45 AM) (Protein: 14g | Carbs: ~18g | Cals: ~255) [📷](https://iili.io/BFteBn4.jpg) | 18 | 255 |"
       },
       "timestamp": "2026-03-31T09:22:00-07:00",
       "date": "2026-03-31",
@@ -346,7 +352,9 @@
       "mealType": "Breakfast",
       "title": "Breakfast: 1 slice bread, 1 slice cheese, 1 slice prosciutto, ¼ avocado",
       "notes": "BG: 112 mg/dL Flat; Protein: 14g; Pred: 125-140 mg/dL @ 10:45 AM",
-      "photoUrls": [],
+      "photoUrls": [
+        "https://iili.io/BFteBn4.jpg"
+      ],
       "carbsEst": 18,
       "caloriesEst": 255,
       "proteinEst": 14,
@@ -371,7 +379,7 @@
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:ff3dfc4f1f0e31ad971ede13ea7cc5aeb360e280f91e6387d56ed8fc6890afb6",
-      "contentHash": "sha256:24cd7d719842081a5fc3a2f52ca235f5e75848407b34716985e1afb7ba3ed9c9"
+      "contentHash": "sha256:ae27846caa9ae05e6b8e0027cecebae6ef299713178f69a05a2442f1d491c8da"
     },
     {
       "source": {
