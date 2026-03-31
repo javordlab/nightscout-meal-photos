@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-31T01:30:00.771Z",
-  "entryCount": 40,
+  "generatedAt": "2026-03-31T02:00:00.499Z",
+  "entryCount": 42,
   "errors": [],
   "warnings": [
     {
@@ -16,6 +16,20 @@
       "reason": "photo_missing_but_found_in_internal_folder",
       "file": "/Users/javier/.openclaw/media/inbound/file_236---470e45f7-2910-4a15-959c-2c3947684d85.jpg",
       "diffMinutes": 16
+    },
+    {
+      "entryKey": "sha256:c81f4c72b5e9caf88a16fab3cd1d134364c70bc72a0c448c5005b7d8d84f0003",
+      "timestamp": "2026-03-30T16:00:00-07:00",
+      "title": "Snack: 2\" piece of cake with whipped cream and a few nuts",
+      "reason": "missing_photo_urls"
+    },
+    {
+      "entryKey": "sha256:202739d1f9b29c149d58acb8621bff47858ca53691c0bbd42e5162a15e119423",
+      "timestamp": "2026-03-30T18:40:00-07:00",
+      "title": "Dinner: 1 slice dried dragon fruit [Cumulative Dinner: ~39g carbs total]",
+      "reason": "photo_missing_but_found_in_internal_folder",
+      "file": "/Users/javier/.openclaw/media/inbound/file_237---83977228-2d44-42cc-ab37-9b18fa321517.jpg",
+      "diffMinutes": 21
     }
   ]
 }

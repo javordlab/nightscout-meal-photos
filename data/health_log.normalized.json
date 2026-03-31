@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-31T01:30:00.741Z",
+  "generatedAt": "2026-03-31T02:00:00.465Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
-  "entryCount": 386,
+  "entryCount": 388,
   "entries": [
     {
       "source": {
@@ -16112,6 +16112,47 @@
       "source": {
         "file": "health_log.md",
         "line": 414,
+        "rawRow": "| 2026-03-30 | 16:00 -07:00 | Maria Dennis | Food | Snack | Snack: 2\" piece of cake with whipped cream and a few nuts (BG: Unknown) (Pred: 175-195 mg/dL @ 5:45 PM) (Protein: 4g | Carbs: ~26g | Cals: ~200) | 26 | 200 |"
+      },
+      "timestamp": "2026-03-30T16:00:00-07:00",
+      "date": "2026-03-30",
+      "time": "16:00 -07:00",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "mealType": "Snack",
+      "title": "Snack: 2\" piece of cake with whipped cream and a few nuts",
+      "notes": "BG: Unknown; Protein: 4g; Pred: 175-195 mg/dL @ 5:45 PM",
+      "photoUrls": [],
+      "carbsEst": 26,
+      "caloriesEst": 200,
+      "proteinEst": 4,
+      "predicted": {
+        "peakBgText": "175-195 mg/dL",
+        "peakTimeText": "5:45 PM"
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:c81f4c72b5e9caf88a16fab3cd1d134364c70bc72a0c448c5005b7d8d84f0003",
+      "contentHash": "sha256:ae08974f5c5c1b6a6aa8e023aafcd4ba6543877ff33eb120dccc43a043e64485"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 415,
         "rawRow": "| 2026-03-30 | 18:18 -07:00 | Maria Dennis | Food | Dinner | Dinner: Whole-grain toast with avocado spread, scrambled eggs, and fresh cucumber spears (BG: 127 mg/dL Flat) (Pred: 185-200 mg/dL @ 8:00 PM) (Protein: 26g | Carbs: ~28g | Cals: ~380) [📷](https://iili.io/B2xVC3N.jpg) | 28 | 380 |"
       },
       "timestamp": "2026-03-30T18:18:00-07:00",
@@ -16150,6 +16191,47 @@
       },
       "entryKey": "sha256:246591f92e15252c9523bc6a3e654ad87542cc3fdbeb9152a87f773427ad596f",
       "contentHash": "sha256:039096c61ec8f35df3f78ff7e4d0a3d945fa1d570681127282ccb25b5d48436c"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 416,
+        "rawRow": "| 2026-03-30 | 18:40 -07:00 | Maria Dennis | Food | Dinner | Dinner: 1 slice dried dragon fruit (BG: 145 mg/dL Flat) (Pred: 205-220 mg/dL @ 8:15 PM) [Cumulative Dinner: ~39g carbs total] (Protein: 1g | Carbs: ~11g | Cals: ~40) | 11 | 40 |"
+      },
+      "timestamp": "2026-03-30T18:40:00-07:00",
+      "date": "2026-03-30",
+      "time": "18:40 -07:00",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "mealType": "Dinner",
+      "title": "Dinner: 1 slice dried dragon fruit [Cumulative Dinner: ~39g carbs total]",
+      "notes": "BG: 145 mg/dL Flat; Protein: 1g; Pred: 205-220 mg/dL @ 8:15 PM",
+      "photoUrls": [],
+      "carbsEst": 11,
+      "caloriesEst": 40,
+      "proteinEst": 1,
+      "predicted": {
+        "peakBgText": "205-220 mg/dL",
+        "peakTimeText": "8:15 PM"
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:202739d1f9b29c149d58acb8621bff47858ca53691c0bbd42e5162a15e119423",
+      "contentHash": "sha256:4e75337bac26a8f32aa5b4c466a9fa8fd2a5041aa26657abfa37d5aa1f22c0c2"
     }
   ]
 }

@@ -1,5 +1,6 @@
 # Health Log
 
+| 2026-03-30 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 143 mg/dL Flat) | null | null |
 | 2026-03-30 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 158 mg/dL Flat) | null | null |
 | 2026-03-30 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 120 mg/dL Flat) | null | null |
 | 2026-03-30 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 120 mg/dL Flat) | null | null |
@@ -411,5 +412,6 @@
 | 2026-03-30 | 13:30 -07:00 | Maria Dennis | Food | Lunch | Lunch: Chicken noodle soup with thin soba-style noodles, carrots, and savory broth (BG: 128 mg/dL Flat) (Pred: 185-205 mg/dL @ 3:00 PM) (Protein: 25g | Carbs: ~31g | Cals: ~290) [📷](https://iili.io/BdUmQl2.jpg) | 31 | 290 |
 | 2026-03-30 | 13:46 -07:00 | Maria Dennis | Food | Lunch | Lunch: 4 prunes + 1 tbsp peanut butter (BG: 128 mg/dL Flat) (Pred: 200-220 mg/dL @ 3:15 PM) [Cumulative Lunch: ~51g carbs total] (Protein: 4g | Carbs: ~20g | Cals: ~130) | 20 | 130 |
 | 2026-03-30 | 14:20 -07:00 | Maria Dennis | Activity | - | 30 minute walk | null | null |
+| 2026-03-30 | 16:00 -07:00 | Maria Dennis | Food | Snack | Snack: 2" piece of cake with whipped cream and a few nuts (BG: Unknown) (Pred: 175-195 mg/dL @ 5:45 PM) (Protein: 4g | Carbs: ~26g | Cals: ~200) | 26 | 200 |
 | 2026-03-30 | 18:18 -07:00 | Maria Dennis | Food | Dinner | Dinner: Whole-grain toast with avocado spread, scrambled eggs, and fresh cucumber spears (BG: 127 mg/dL Flat) (Pred: 185-200 mg/dL @ 8:00 PM) (Protein: 26g | Carbs: ~28g | Cals: ~380) [📷](https://iili.io/B2xVC3N.jpg) | 28 | 380 |
 | 2026-03-30 | 18:40 -07:00 | Maria Dennis | Food | Dinner | Dinner: 1 slice dried dragon fruit (BG: 145 mg/dL Flat) (Pred: 205-220 mg/dL @ 8:15 PM) [Cumulative Dinner: ~39g carbs total] (Protein: 1g | Carbs: ~11g | Cals: ~40) | 11 | 40 |
