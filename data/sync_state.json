@@ -7197,7 +7197,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69c8ade4911a8ea261e67d5a",
-        "last_synced_at": "2026-03-31T15:30:19.994Z"
+        "last_synced_at": "2026-03-31T16:00:29.545Z"
       },
       "notion": {
         "page_id": "33285ec7-0668-8161-aa33-eae68037e92e",
@@ -7215,7 +7215,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69c8ade4911a8ea261e67d5a",
-        "last_synced_at": "2026-03-31T15:30:21.766Z"
+        "last_synced_at": "2026-03-31T16:00:31.774Z"
       },
       "notion": {
         "page_id": "33285ec7-0668-8161-aa33-eae68037e92e",
@@ -7233,7 +7233,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69c8ade7911a8ea261e67d5b",
-        "last_synced_at": "2026-03-31T15:30:23.963Z"
+        "last_synced_at": "2026-03-31T16:00:33.871Z"
       },
       "notion": {
         "page_id": "33285ec7-0668-81fd-9e5f-c24d84a89bab",
@@ -7261,7 +7261,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69c8b357911a8ea261e67d61",
-        "last_synced_at": "2026-03-31T15:30:17.897Z"
+        "last_synced_at": "2026-03-31T16:00:27.159Z"
       },
       "notion": {
         "page_id": "33285ec7-0668-8128-bba2-c0bdab1e162d",
@@ -7281,7 +7281,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69c94bcd911a8ea261e67de4",
-        "last_synced_at": "2026-03-31T15:30:26.290Z"
+        "last_synced_at": "2026-03-31T16:00:37.541Z"
       },
       "notion": {
         "page_id": "33285ec7-0668-8193-9c24-d0c257f34965",
@@ -7289,7 +7289,7 @@
       },
       "gallery": {
         "gallery_id": "33285ec7-0668-8193-9c24-d0c257f34965",
-        "last_synced_at": "2026-03-31T16:00:00.808Z"
+        "last_synced_at": "2026-03-31T16:00:39.115Z"
       },
       "actual_outcomes": {
         "preMealBg": 116,
@@ -7313,7 +7313,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69c94c9b911a8ea261e67de6",
-        "last_synced_at": "2026-03-31T15:30:13.703Z"
+        "last_synced_at": "2026-03-31T16:00:17.085Z"
       },
       "notion": {
         "page_id": "33285ec7-0668-813e-97fc-cbffb264599f",
@@ -7331,7 +7331,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69c94c9f911a8ea261e67de7",
-        "last_synced_at": "2026-03-31T15:30:15.076Z"
+        "last_synced_at": "2026-03-31T16:00:18.344Z"
       },
       "notion": {
         "page_id": "33285ec7-0668-81c1-8d5b-dbf3692b0851",
@@ -7349,7 +7349,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69c94ca1911a8ea261e67de8",
-        "last_synced_at": "2026-03-31T15:30:16.728Z"
+        "last_synced_at": "2026-03-31T16:00:25.065Z"
       },
       "notion": {
         "page_id": "33285ec7-0668-81ae-9204-cd6a0178ecfe",
@@ -7367,7 +7367,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69c976d7911a8ea261e67e0d",
-        "last_synced_at": "2026-03-31T15:30:11.902Z"
+        "last_synced_at": "2026-03-31T16:00:13.091Z"
       },
       "notion": {
         "page_id": "33285ec7-0668-81c6-8df0-eb009fb94425",
@@ -7387,7 +7387,7 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33285ec7-0668-81f4-a9ad-d042b2ce0d89",
-        "last_synced_at": "2026-03-31T16:00:00.808Z"
+        "last_synced_at": "2026-03-31T16:00:44.422Z"
       },
       "notion": {
         "page_id": "33285ec7-0668-81f4-a9ad-d042b2ce0d89",
@@ -7395,7 +7395,7 @@
       },
       "nightscout": {
         "treatment_id": "69c98be7911a8ea261e67e22",
-        "last_synced_at": "2026-03-31T15:30:31.737Z"
+        "last_synced_at": "2026-03-31T16:00:42.620Z"
       },
       "actual_outcomes": {
         "preMealBg": 101,
@@ -7421,7 +7421,7 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33285ec7-0668-813f-a75d-ceab8c2a477e",
-        "last_synced_at": "2026-03-31T16:00:00.808Z"
+        "last_synced_at": "2026-03-31T16:00:42.288Z"
       },
       "notion": {
         "page_id": "33285ec7-0668-813f-a75d-ceab8c2a477e",
@@ -7429,7 +7429,7 @@
       },
       "nightscout": {
         "treatment_id": "69c97dd4911a8ea261e67e15",
-        "last_synced_at": "2026-03-31T15:30:28.910Z"
+        "last_synced_at": "2026-03-31T16:00:39.431Z"
       },
       "actual_outcomes": {
         "preMealBg": 84,
@@ -7455,7 +7455,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69c9d94e911a8ea261e67e64",
-        "last_synced_at": "2026-03-31T15:30:34.370Z"
+        "last_synced_at": "2026-03-31T16:00:44.742Z"
       },
       "notion": {
         "page_id": "33385ec7-0668-818f-91cd-d19810d4fe72",
@@ -7463,7 +7463,7 @@
       },
       "gallery": {
         "gallery_id": "33385ec7-0668-818f-91cd-d19810d4fe72",
-        "last_synced_at": "2026-03-31T16:00:00.808Z"
+        "last_synced_at": "2026-03-31T16:00:47.570Z"
       },
       "actual_outcomes": {
         "preMealBg": 114,
@@ -7487,7 +7487,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69c9d94d911a8ea261e67e63",
-        "last_synced_at": "2026-03-31T15:30:09.613Z"
+        "last_synced_at": "2026-03-31T16:00:11.614Z"
       },
       "notion": {
         "page_id": "33385ec7-0668-81ae-899a-df1dda2064dc",
@@ -7507,7 +7507,7 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33385ec7-0668-8127-b47d-d9354d85bd93",
-        "last_synced_at": "2026-03-31T16:00:00.808Z"
+        "last_synced_at": "2026-03-31T16:00:50.172Z"
       },
       "notion": {
         "page_id": "33385ec7-0668-8127-b47d-d9354d85bd93",
@@ -7515,7 +7515,7 @@
       },
       "nightscout": {
         "treatment_id": "69c9d94f911a8ea261e67e65",
-        "last_synced_at": "2026-03-31T15:30:36.458Z"
+        "last_synced_at": "2026-03-31T16:00:47.935Z"
       },
       "actual_outcomes": {
         "preMealBg": 109,
@@ -7541,7 +7541,7 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33385ec7-0668-8186-8423-f15f819f7401",
-        "last_synced_at": "2026-03-31T16:00:00.808Z"
+        "last_synced_at": "2026-03-31T16:00:53.466Z"
       },
       "notion": {
         "page_id": "33385ec7-0668-8186-8423-f15f819f7401",
@@ -7549,7 +7549,7 @@
       },
       "nightscout": {
         "treatment_id": "69c9d950911a8ea261e67e66",
-        "last_synced_at": "2026-03-31T15:30:38.697Z"
+        "last_synced_at": "2026-03-31T16:00:50.531Z"
       },
       "actual_outcomes": {
         "preMealBg": 116,
@@ -7573,7 +7573,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69ca9e14911a8ea261e67f0b",
-        "last_synced_at": "2026-03-31T15:30:05.528Z"
+        "last_synced_at": "2026-03-31T16:00:07.745Z"
       },
       "notion": {
         "page_id": "33385ec7-0668-8128-a5c1-e2eb2abe0098",
@@ -7591,7 +7591,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69ca9e16911a8ea261e67f0c",
-        "last_synced_at": "2026-03-31T15:30:07.014Z"
+        "last_synced_at": "2026-03-31T16:00:10.372Z"
       },
       "notion": {
         "page_id": "33385ec7-0668-8119-afcb-f3c57696ef69",
@@ -7611,7 +7611,7 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33385ec7-0668-81bb-9072-dea249f3dbf7",
-        "last_synced_at": "2026-03-31T16:00:00.808Z"
+        "last_synced_at": "2026-03-31T16:00:56.206Z"
       },
       "notion": {
         "page_id": "33385ec7-0668-81bb-9072-dea249f3dbf7",
@@ -7619,7 +7619,7 @@
       },
       "nightscout": {
         "treatment_id": "69cab3ee911a8ea261e67f1f",
-        "last_synced_at": "2026-03-31T15:30:41.703Z"
+        "last_synced_at": "2026-03-31T16:00:53.797Z"
       }
     },
     "sha256:d6bd1ffbaaf89d2474e9bf27558e3ca3a9c79a8a2af8533c70597d2d9acdb9ad": {
@@ -7633,7 +7633,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cabf8a911a8ea261e67f2a",
-        "last_synced_at": "2026-03-31T15:30:43.926Z"
+        "last_synced_at": "2026-03-31T16:00:56.418Z"
       },
       "notion": {
         "page_id": "33385ec7-0668-8176-96e0-e7f570d2fd26",
@@ -7651,7 +7651,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cac846911a8ea261e67f33",
-        "last_synced_at": "2026-03-31T15:30:03.847Z"
+        "last_synced_at": "2026-03-31T16:00:05.827Z"
       },
       "notion": {
         "page_id": "33385ec7-0668-81b3-9301-cf0e88cccc98",
@@ -7671,7 +7671,7 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33385ec7-0668-81d9-952b-f060bad127ac",
-        "last_synced_at": "2026-03-31T16:00:00.808Z"
+        "last_synced_at": "2026-03-31T16:01:01.663Z"
       },
       "notion": {
         "page_id": "33385ec7-0668-81d9-952b-f060bad127ac",
@@ -7679,7 +7679,7 @@
       },
       "nightscout": {
         "treatment_id": "69cadd86911a8ea261e67f3e",
-        "last_synced_at": "2026-03-31T15:30:44.852Z"
+        "last_synced_at": "2026-03-31T16:00:59.040Z"
       }
     },
     "sha256:e5515ffeeed913ab4b0d43d56a28a8fb138d55548eae4d0e97a84e3a51f806dc": {
@@ -7693,7 +7693,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cae154911a8ea261e67f3f",
-        "last_synced_at": "2026-03-31T15:30:46.738Z"
+        "last_synced_at": "2026-03-31T16:01:02.062Z"
       },
       "notion": {
         "page_id": "33385ec7-0668-81bb-a6df-fde79c01e3fa",
@@ -7711,7 +7711,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cae937911a8ea261e67f44",
-        "last_synced_at": "2026-03-31T15:30:50.388Z"
+        "last_synced_at": "2026-03-31T16:01:05.113Z"
       },
       "notion": {
         "page_id": "33385ec7-0668-8191-9429-eb68d951e108",
@@ -7731,7 +7731,7 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33485ec7-0668-811b-9eb5-e59a3a3620a5",
-        "last_synced_at": "2026-03-31T16:00:00.808Z"
+        "last_synced_at": "2026-03-31T16:01:14.498Z"
       },
       "notion": {
         "page_id": "33485ec7-0668-811b-9eb5-e59a3a3620a5",
@@ -7739,7 +7739,7 @@
       },
       "nightscout": {
         "treatment_id": "69cb2145911a8ea261e67f75",
-        "last_synced_at": "2026-03-31T15:30:54.257Z"
+        "last_synced_at": "2026-03-31T16:01:09.844Z"
       }
     },
     "sha256:c81f4c72b5e9caf88a16fab3cd1d134364c70bc72a0c448c5005b7d8d84f0003": {
@@ -7753,7 +7753,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cb29a0911a8ea261e67f7e",
-        "last_synced_at": "2026-03-31T15:30:52.158Z"
+        "last_synced_at": "2026-03-31T16:01:07.112Z"
       },
       "notion": {
         "page_id": "33485ec7-0668-81f8-b2da-f8201cb931b4",
@@ -7771,7 +7771,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cb2659911a8ea261e67f7a",
-        "last_synced_at": "2026-03-31T15:30:55.932Z"
+        "last_synced_at": "2026-03-31T16:01:15.034Z"
       },
       "notion": {
         "page_id": "33485ec7-0668-8165-b3c8-d84b04c8250d",
@@ -7789,7 +7789,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cb2afc911a8ea261e67f80",
-        "last_synced_at": "2026-03-31T15:30:01.758Z"
+        "last_synced_at": "2026-03-31T16:00:01.466Z"
       },
       "notion": {
         "page_id": "33485ec7-0668-8198-9587-c424fdd78e7a",
@@ -7809,7 +7809,7 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33485ec7-0668-81d9-9424-f55e2d1a4b28",
-        "last_synced_at": "2026-03-31T16:00:00.809Z"
+        "last_synced_at": "2026-03-31T16:01:21.149Z"
       },
       "notion": {
         "page_id": "33485ec7-0668-81d9-9424-f55e2d1a4b28",
@@ -7817,7 +7817,7 @@
       },
       "nightscout": {
         "treatment_id": "69cb2b05911a8ea261e67f81",
-        "last_synced_at": "2026-03-31T15:30:57.924Z"
+        "last_synced_at": "2026-03-31T16:01:17.704Z"
       }
     },
     "sha256:73cabab8dc7689131fbf59f7dfb4741990d08fd660948ad72a558b003d574b91": {
@@ -7831,7 +7831,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cb346c911a8ea261e67f8a",
-        "last_synced_at": "2026-03-31T15:31:00.985Z"
+        "last_synced_at": "2026-03-31T16:01:21.351Z"
       },
       "notion": {
         "page_id": "33485ec7-0668-8102-b16f-ea9c8f42b2bf",

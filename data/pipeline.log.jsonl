@@ -5084,3 +5084,5 @@
 {"ts":"2026-03-31T16:00:00.811Z","op":"step_start","name":"Validate"}
 {"ts":"2026-03-31T16:00:00.825Z","op":"step_complete","name":"Validate","duration":14,"result":"object"}
 {"ts":"2026-03-31T16:00:00.825Z","op":"step_start","name":"Unified Sync"}
+{"ts":"2026-03-31T16:01:24.827Z","op":"step_complete","name":"Unified Sync","duration":84002,"result":"object"}
+{"ts":"2026-03-31T16:01:24.827Z","op":"pipeline_complete","duration":84069,"results":["resolvePendingPhotos","normalize","enrich","validate","sync"]}
