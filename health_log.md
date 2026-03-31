@@ -1,5 +1,7 @@
 # Health Log
 
+| 2026-03-31 | 13:09 -07:00 | Maria Dennis | Food | Dessert | Dessert: 2" cake piece with 1 tsp peanut butter and whipped cream (BG: 118 mg/dL Flat) (Pred: 180-210 mg/dL @ 2:45 PM) [Cumulative Lunch: 55g carbs total] (Protein: 4.5g | Carbs: ~24g | Cals: ~255) | 24 | 255 |
+| 2026-03-31 | 13:01 -07:00 | Maria Dennis | Food | Lunch | Lunch: Fried rice with pork and egg (~¾ cup) and cucumber slices (~8–10 slices) (BG: 118 mg/dL Flat) (Pred: 150-170 mg/dL @ 2:30 PM) (Protein: 15g | Carbs: ~31g | Cals: ~295) [📷](file_244---5f2e78ad-c559-4852-a5c0-160610b3a210.jpg) | 31 | 295 |
 | 2026-03-31 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 118 mg/dL Flat) | null | null |
 | 2026-03-31 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 112 mg/dL Flat) | null | null |
 | 2026-03-31 | 12:02 -07:00 | Maria Dennis | Food | Snack | Snack: Papaya slices (~3–4 slices) and tea (BG: 112 mg/dL Flat) (Pred: 118-130 mg/dL @ 1:30 PM) (Protein: 0.6g | Carbs: ~11g | Cals: ~55) [📷](file_243---27b63122-d9dc-47b7-9a99-547d82aa1cc9.jpg) | 11 | 55 |
