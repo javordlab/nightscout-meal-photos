@@ -416,3 +416,4 @@
 | 2026-03-30 | 18:18 -07:00 | Maria Dennis | Food | Dinner | Dinner: Whole-grain toast with avocado spread, scrambled eggs, and fresh cucumber spears (BG: 127 mg/dL Flat) (Pred: 185-200 mg/dL @ 8:00 PM) (Protein: 26g | Carbs: ~28g | Cals: ~380) [📷](https://iili.io/B2xVC3N.jpg) | 28 | 380 |
 | 2026-03-30 | 18:40 -07:00 | Maria Dennis | Food | Dinner | Dinner: 1 slice dried dragon fruit (BG: 145 mg/dL Flat) (Pred: 205-220 mg/dL @ 8:15 PM) [Cumulative Dinner: ~39g carbs total] (Protein: 1g | Carbs: ~11g | Cals: ~40) | 11 | 40 |
 | 2026-03-30 | 18:58 -07:00 | Maria Dennis | Food | Snack | Snack: 1 orange (medium, freshly peeled) (BG: 143 mg/dL Flat) (Pred: 170-185 mg/dL @ 8:45 PM) (Protein: 1g | Carbs: ~15g | Cals: ~62) [📷](https://iili.io/B2T99Hb.jpg) | 15 | 62 |
+| 2026-03-30 | 19:40 -07:00 | Maria Dennis | Activity | - | 30 minute walk | null | null |
