@@ -1,8 +1,16 @@
 {
-  "generatedAt": "2026-03-31T16:30:00.853Z",
-  "entryCount": 33,
+  "generatedAt": "2026-03-31T17:00:00.297Z",
+  "entryCount": 34,
   "errors": [],
   "warnings": [
+    {
+      "entryKey": "sha256:43bfe14a4044bc0654127e192e606ad5a0ef92ca2f3b607f913e16e9a6d6c73b",
+      "timestamp": "2026-03-31T09:33:00-07:00",
+      "title": "Snack: ~10 cashews and tea",
+      "reason": "photo_missing_but_found_in_internal_folder",
+      "file": "/Users/javier/.openclaw/media/inbound/file_240---c2c78e49-1e01-41ce-aaac-71b383172671.jpg",
+      "diffMinutes": 1
+    },
     {
       "entryKey": "sha256:ff3dfc4f1f0e31ad971ede13ea7cc5aeb360e280f91e6387d56ed8fc6890afb6",
       "timestamp": "2026-03-31T09:22:00-07:00",

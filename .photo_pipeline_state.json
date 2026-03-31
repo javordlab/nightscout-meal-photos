@@ -208,9 +208,21 @@
     "file_236",
     "file_237",
     "file_238",
-    "file_239"
+    "file_239",
+    "file_240"
   ],
-  "failed": [],
-  "lastRun": "2026-03-31T16:27:11.356Z",
+  "failed": [
+    {
+      "file": "file_241",
+      "retries": 1,
+      "error": "missing_caption_or_description_link"
+    },
+    {
+      "file": "file_242",
+      "retries": 1,
+      "error": "missing_caption_or_description_link"
+    }
+  ],
+  "lastRun": "2026-03-31T16:58:48.015Z",
   "linkedEnvelopeIds": []
 }
