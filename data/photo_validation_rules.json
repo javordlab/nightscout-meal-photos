@@ -1,0 +1,24 @@
+{
+  "rules": {
+    "no_temp_file_refs": {
+      "name": "No temporary file references in health log",
+      "pattern": "\\[📷\\]\\(file_\\d+---[a-f0-9\\-]+\\.jpg\\)",
+      "severity": "error",
+      "message": "Health log contains temporary photo refs (file_XXX---uuid.jpg). These must be replaced with real iili.io URLs before commit.",
+      "enabled": true
+    },
+    "all_photos_must_have_urls": {
+      "name": "All food entries with photos must link to real URLs",
+      "checks": "If entry has [📷], the URL must be https://iili.io/ or https://files.catbox.moe/",
+      "severity": "error",
+      "enabled": true
+    },
+    "no_missing_photo_links": {
+      "name": "Photo references must exist",
+      "checks": "All [📷](url) URLs must be accessible (return 200 OK)",
+      "severity": "warning",
+      "enabled": true
+    }
+  },
+  "lastUpdated": "2026-03-31T22:59:00-07:00"
+}
