@@ -36,3 +36,4 @@
 {"ts":"2026-03-29T16:32:00.601Z","op":"watchdog_check_ok","dateLA":"2026-03-29","lastReportAt":"2026-03-29T16:30:02.922Z"}
 {"ts":"2026-03-30T16:30:02.499Z","op":"report_marked_sent","source":"primary_deterministic","dateLA":"2026-03-30"}
 {"ts":"2026-03-30T16:32:00.331Z","op":"watchdog_check_ok","dateLA":"2026-03-30","lastReportAt":"2026-03-30T16:30:02.498Z"}
+{"ts":"2026-03-31T16:30:03.054Z","op":"report_marked_sent","source":"primary_deterministic","dateLA":"2026-03-31"}

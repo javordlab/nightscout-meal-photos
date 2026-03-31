@@ -1,0 +1,66 @@
+🩺 DAILY HEALTH REPORT
+📅 Date: 2026-03-31
+🕒 Coverage window: 2026-03-30 00:00 – 2026-03-31 00:00 (America/Los_Angeles)
+⚙️ Generated time: 2026-03-31T16:30:02.354Z
+🤖 Model: anthropic/claude-sonnet-4-6
+
+1) 📊 Today's Glucose Summary
+- Average glucose: 127.0 mg/dL
+- Time in Range (70-180): 100.0%
+- GMI: 6.35%
+- Standard deviation: 14.9 mg/dL
+- CV: 11.8%
+- Data points used: 274
+
+2) 📉 14-day Trends (ending 2026-03-30)
+- Average glucose: 123.9 mg/dL
+- Time in Range (70-180): 98.7%
+- GMI: 6.27%
+- Standard deviation: 18.6 mg/dL
+- CV: 15.0%
+- Data points used: 975
+
+3) 🍽️ Nutrition (2026-03-30)
+- Meals logged: 7
+- Total carbs: 164.0 g
+- Total calories: 1532 kcal
+- Total protein: 93.0 g
+
+4) 🧾 Meal Details (2026-03-30)
+- 10:31 AM — Breakfast: Open-face turkey/ham and melted cheese (cheddar/jack blend) on English muffin + small bowl of yogurt + tea — 33.0g carbs, 430 kcal, 32.0g protein — BG at meal: 119 mg/dL
+- 1:30 PM — Lunch: Chicken noodle soup with thin soba-style noodles, carrots, and savory broth — 31.0g carbs, 290 kcal, 25.0g protein — BG at meal: N/A
+- 1:46 PM — Lunch: 4 prunes + 1 tbsp peanut butter [Cumulative Lunch: ~51g carbs total] — 20.0g carbs, 130 kcal, 4.0g protein — BG at meal: 126 mg/dL
+- 4:00 PM — Snack: 2" piece of cake with whipped cream and a few nuts — 26.0g carbs, 200 kcal, 4.0g protein — BG at meal: 128 mg/dL
+- 6:18 PM — Dinner: Whole-grain toast with avocado spread, scrambled eggs, and fresh cucumber spears — 28.0g carbs, 380 kcal, 26.0g protein — BG at meal: 128 mg/dL
+- 6:40 PM — Dinner: 1 slice dried dragon fruit [Cumulative Dinner: ~39g carbs total] — 11.0g carbs, 40 kcal, 1.0g protein — BG at meal: 145 mg/dL
+- 6:58 PM — Snack: 1 orange (medium, freshly peeled) — 15.0g carbs, 62 kcal, 1.0g protein — BG at meal: 143 mg/dL
+
+5) 📚 Nutrition Baseline (14-day daily average ending 2026-03-30)
+- Average carbs/day: 157.1 g
+- Average calories/day: 1524.6 kcal
+- Average protein/day: 77.4 g
+- Average meals/day: 5.6
+- Days in window with food entries: 14
+
+6) 💊 Medication Status (2026-03-30)
+- 2026-03-30T19:00:00-07:00: Medication: Metformin 1000mg (dinner)
+- 2026-03-30T13:00:00-07:00: Medication: Metformin 500mg (lunch)
+- 2026-03-30T09:00:00-07:00: Medication: Lisinopril 10mg (Scheduled)
+- 2026-03-30T09:10:00-07:00: Medication: Metformin 500mg (breakfast)
+
+7) 🚨 Outliers (2026-03-30)
+- High readings >180: 0
+- Low readings <70: 0
+- Max glucose: 178 mg/dL at 2026-03-31T05:54:03.000Z
+
+8) 🧠 Extended Supervisor Analysis
+- Nice work overall today: Strong Time in Range at 100.0% | Limited high excursions (>180 mg/dL): 0 | No hypoglycemia episodes (<70 mg/dL) | Good protein intake (93.0g).
+- Key trend signals: avg glucose vs 14-day baseline 3.1 mg/dL, TIR delta 1.3%, carbs delta 6.9 g, calories delta 7 kcal.
+- Friendly focus for tomorrow: No urgent corrections needed—just keep the same consistency and momentum.
+- You’re doing great—small consistent habits keep adding up. Keep it going 🌟
+
+9) 🛡️ Self-Audit (Data Integrity)
+- Target day enforced: 2026-03-30 PT
+- Glucose points in target window: 274
+- GMI formula check (3.31 + 0.02392 × Avg): 6.35%
+- Reported GMI: 6.35%
