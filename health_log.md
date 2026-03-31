@@ -8,7 +8,7 @@
 | 2026-03-31 | 12:02 -07:00 | Maria Dennis | Food | Snack | Snack: Papaya slices (~3–4 slices) and tea (BG: 112 mg/dL Flat) (Pred: 118-130 mg/dL @ 1:30 PM) (Protein: 0.6g | Carbs: ~11g | Cals: ~55) [📷](https://iili.io/BFZzttV.jpg) | 11 | 55 |
 | 2026-03-31 | 11:01 -07:00 | Maria Dennis | Activity | - | 60 minutes walk | null | null |
 | 2026-03-31 | 09:33 -07:00 | Maria Dennis | Food | Snack | Snack: ~10 cashews and tea (BG: 112 mg/dL Flat) (Pred: 115-125 mg/dL @ 10:45 AM) (Protein: 2g | Carbs: ~3.5g | Cals: ~65) [📷](https://iili.io/BFZzku4.jpg) | 3.5 | 65 |
-| 2026-03-31 | 09:22 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: 1 slice bread, 1 slice cheese, 1 slice prosciutto, ¼ avocado (BG: 112 mg/dL Flat) (Pred: 125-140 mg/dL @ 10:45 AM) (Protein: 14g | Carbs: ~18g | Cals: ~255) | 18 | 255 |
+| 2026-03-31 | 09:22 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: 1 slice bread, 1 slice cheese, 1 slice prosciutto, ¼ avocado (BG: 112 mg/dL Flat) (Pred: 125-140 mg/dL @ 10:45 AM) (Protein: 14g | Carbs: ~18g | Cals: ~255) [📷](https://iili.io/BFteBn4.jpg) | 18 | 255 |
 | 2026-03-31 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 112 mg/dL Flat) | null | null |
 | 2026-03-31 | 09:05 -07:00 | Maria Dennis | Medication | - | Medication: Rosuvastatin 10mg (Scheduled) (BG: 112 mg/dL Flat) | null | null |
 | 2026-03-30 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 143 mg/dL Flat) | null | null |
