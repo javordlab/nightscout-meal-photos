@@ -1,8 +1,24 @@
 {
-  "generatedAt": "2026-03-31T20:00:01.120Z",
-  "entryCount": 37,
+  "generatedAt": "2026-03-31T21:00:00.429Z",
+  "entryCount": 39,
   "errors": [],
   "warnings": [
+    {
+      "entryKey": "sha256:73841db1a6210766cfd2aec5879a15b6d5401f56e95162651840db5fc1b18a48",
+      "timestamp": "2026-03-31T13:09:00-07:00",
+      "title": "Dessert: 2\" cake piece with 1 tsp peanut butter and whipped cream [Cumulative Lunch: 55g carbs total]",
+      "reason": "photo_missing_but_found_in_internal_folder",
+      "file": "/Users/javier/.openclaw/media/inbound/file_244---5f2e78ad-c559-4852-a5c0-160610b3a210.jpg",
+      "diffMinutes": 8
+    },
+    {
+      "entryKey": "sha256:0f35fae8a214cb1a91421517eba15391a502d403a16b77c822ad9d9446b35a5c",
+      "timestamp": "2026-03-31T13:01:00-07:00",
+      "title": "Lunch: Fried rice with pork and egg (~¾ cup) and cucumber slices (~8–10 slices)",
+      "reason": "photo_missing_but_found_in_internal_folder",
+      "file": "/Users/javier/.openclaw/media/inbound/file_244---5f2e78ad-c559-4852-a5c0-160610b3a210.jpg",
+      "diffMinutes": 0
+    },
     {
       "entryKey": "sha256:479101314c097b4b497a73ddb19497d287746c7f1d787d00b8b01d8b4c55fa34",
       "timestamp": "2026-03-31T12:02:00-07:00",
