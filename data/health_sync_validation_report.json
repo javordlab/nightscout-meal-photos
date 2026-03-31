@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-31T02:00:00.499Z",
-  "entryCount": 42,
+  "generatedAt": "2026-03-31T02:30:00.376Z",
+  "entryCount": 44,
   "errors": [],
   "warnings": [
     {
@@ -28,8 +28,8 @@
       "timestamp": "2026-03-30T18:40:00-07:00",
       "title": "Dinner: 1 slice dried dragon fruit [Cumulative Dinner: ~39g carbs total]",
       "reason": "photo_missing_but_found_in_internal_folder",
-      "file": "/Users/javier/.openclaw/media/inbound/file_237---83977228-2d44-42cc-ab37-9b18fa321517.jpg",
-      "diffMinutes": 21
+      "file": "/Users/javier/.openclaw/media/inbound/file_238---3eeb6c79-7ed2-4e5c-ae4a-060b98e503af.jpg",
+      "diffMinutes": 20
     }
   ]
 }
