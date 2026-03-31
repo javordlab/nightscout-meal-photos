@@ -201,9 +201,16 @@ async function uploadPhoto(photoPath) {
       { encoding: 'utf8', timeout: 30000 }
     );
     const data = JSON.parse(result);
-    return data.image?.url || null;
+    const url = data.image?.url || null;
+    
+    if (!url) {
+      console.error(`Upload did not return URL. Response keys: ${Object.keys(data).join(', ')}`);
+      console.error(`Full response (first 500 chars): ${JSON.stringify(data).substring(0, 500)}`);
+    }
+    
+    return url;
   } catch (e) {
-    console.error('Upload failed:', e.message);
+    console.error(`Upload failed for ${photoPath}: ${e.message}`);
     return null;
   }
 }
@@ -616,6 +623,32 @@ async function main() {
         continue;
       }
 
+      // SAFETY CHECK: Never add entry without a real URL
+      if (!photoUrl || !photoUrl.startsWith('http')) {
+        console.error(`SAFETY BLOCK: Cannot add entry without valid URL. Got: "${photoUrl}"`);
+        console.error(`  This would create a broken entry with file ref instead of real URL.`);
+        console.error(`  Queueing for retry instead.`);
+        
+        queuePendingPhoto({
+          filePrefix: file.prefix,
+          sourcePath: file.path,
+          timestamp: analysis.timestamp.toISOString(),
+          mealType: analysis.mealType,
+          photoUrl: null,
+          uploadStatus: 'upload_failed_pending_retry',
+          reason: 'safety_block_no_valid_url',
+          lastError: 'upload_returned_invalid_url',
+          nextAttemptAt: new Date(Date.now() + 60 * 1000).toISOString(),
+          messageId: matchedEnvelope?.messageId || null,
+          updateId: matchedEnvelope?.updateId || null
+        });
+        
+        markLinkedEnvelope(state, matchedEnvelope);
+        clearFailure(state, file.prefix);
+        state.processed.push(file.prefix);
+        continue;
+      }
+
       const bgAtMeal = await getBGNearTimestamp(analysis.timestamp);
 
       // Create entry with immediate nutrition estimates (no manual gate)
@@ -631,7 +664,7 @@ async function main() {
         predText: analysis.predText
       };
 
-      // Add to log immediately
+      // Add to log immediately (with URL verified above)
       addToLog(entry);
 
       // If any nutrition field was inferred (not explicitly parsed), queue for asynchronous refinement.
