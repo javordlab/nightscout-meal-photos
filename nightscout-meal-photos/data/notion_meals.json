@@ -1,5 +1,27 @@
 [
   {
+    "id": "33585ec7-0668-8145-9949-c7730ca6e8db",
+    "title": "Breakfast: 3 prunes (BG: 118 mg/dL Flat) (Pred: 175-195 mg/dL @ 11:30 AM) [Cumulative Breakfast: ~56g carbs total] (Protein: 1g | Carbs: ~16g | Cals: ~60)",
+    "type": "Breakfast",
+    "date": "2026-04-01T09:59:00.000-07:00",
+    "photo": "https://iili.io/BqJxV7j.jpg",
+    "carbs": 16,
+    "cals": 60,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "33585ec7-0668-81a0-a6ba-cdd7d9a0444c",
+    "title": "Breakfast: English muffin with melted cheese and prosciutto + orange wedges (~half orange) (BG: 119 mg/dL Flat) (Pred: 165-185 mg/dL @ 11:30 AM) (Protein: 24g | Carbs: ~40g | Cals: ~370)",
+    "type": "Breakfast",
+    "date": "2026-04-01T09:56:00.000-07:00",
+    "photo": "https://iili.io/BqHOHmv.jpg",
+    "carbs": 40,
+    "cals": 370,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "33585ec7-0668-8111-8dc4-d6b9ed8d1065",
     "title": "Dinner: Creamed vegetable soup (~1.5 cups), chicken breast (~4 oz), and broccoli florets (~1 cup) (BG: 118 mg/dL Flat) (Pred: 150-170 mg/dL @ 8:00 PM) (Protein: 47g | Carbs: ~25g | Cals: ~420)",
     "type": "Dinner",
