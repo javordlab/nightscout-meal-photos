@@ -1,20 +1,92 @@
 {
-  "generatedAt": "2026-03-31T16:46:12.657Z",
-  "since": "2026-03-24T16:46:11.671Z",
+  "generatedAt": "2026-04-01T16:45:13.334Z",
+  "since": "2026-03-25T16:45:12.806Z",
   "summary": {
-    "totalEntries": 95,
-    "inSyncState": 95,
-    "nsLinked": 95,
-    "notionLinked": 95,
-    "galleryLinked": 37,
+    "totalEntries": 94,
+    "inSyncState": 94,
+    "nsLinked": 94,
+    "notionLinked": 94,
+    "galleryLinked": 35,
     "outcomesBackfilled": 0,
     "duplicates": 0,
     "missingNs": 0,
     "missingNotion": 0,
     "missingGallery": 0,
-    "missingOutcomes": 44
+    "missingOutcomes": 43
   },
   "discrepancies": [
+    {
+      "entryKey": "sha256:ce5b18336a45c58e5790455c31f2781f21c98cd81ef8407285550b744c1d25cc",
+      "timestamp": "2026-03-31T18:38:00-07:00",
+      "title": "Dinner: Creamed vegetable soup (~1.5 cups), chicken breast (~4 oz), and broccoli florets (~1 cup)",
+      "issues": [
+        {
+          "type": "outcomes_not_backfilled",
+          "ageHours": 15,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:73841db1a6210766cfd2aec5879a15b6d5401f56e95162651840db5fc1b18a48",
+      "timestamp": "2026-03-31T13:09:00-07:00",
+      "title": "Dessert: 2\" cake piece with 1 tsp peanut butter and whipped cream [Cumulative Lunch: 55g carbs total]",
+      "issues": [
+        {
+          "type": "outcomes_not_backfilled",
+          "ageHours": 21,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:0f35fae8a214cb1a91421517eba15391a502d403a16b77c822ad9d9446b35a5c",
+      "timestamp": "2026-03-31T13:01:00-07:00",
+      "title": "Lunch: Fried rice with pork and egg (~¾ cup) and cucumber slices (~8–10 slices)",
+      "issues": [
+        {
+          "type": "outcomes_not_backfilled",
+          "ageHours": 21,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:479101314c097b4b497a73ddb19497d287746c7f1d787d00b8b01d8b4c55fa34",
+      "timestamp": "2026-03-31T12:02:00-07:00",
+      "title": "Snack: Papaya slices (~3–4 slices) and tea",
+      "issues": [
+        {
+          "type": "outcomes_not_backfilled",
+          "ageHours": 22,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:43bfe14a4044bc0654127e192e606ad5a0ef92ca2f3b607f913e16e9a6d6c73b",
+      "timestamp": "2026-03-31T09:33:00-07:00",
+      "title": "Snack: ~10 cashews and tea",
+      "issues": [
+        {
+          "type": "outcomes_not_backfilled",
+          "ageHours": 24,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:ff3dfc4f1f0e31ad971ede13ea7cc5aeb360e280f91e6387d56ed8fc6890afb6",
+      "timestamp": "2026-03-31T09:22:00-07:00",
+      "title": "Breakfast: 1 slice bread, 1 slice cheese, 1 slice prosciutto, ¼ avocado",
+      "issues": [
+        {
+          "type": "outcomes_not_backfilled",
+          "ageHours": 24,
+          "severity": "warning"
+        }
+      ]
+    },
     {
       "entryKey": "sha256:10330856ec728f3d97dddab84efa0cb13e42f96b97adf49a0bd9a6bb3e00c180",
       "timestamp": "2026-03-28T19:30:00-07:00",
@@ -22,7 +94,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 62,
+          "ageHours": 86,
           "severity": "warning"
         }
       ]
@@ -34,7 +106,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 69,
+          "ageHours": 93,
           "severity": "warning"
         }
       ]
@@ -46,7 +118,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 69,
+          "ageHours": 93,
           "severity": "warning"
         }
       ]
@@ -58,7 +130,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 73,
+          "ageHours": 97,
           "severity": "warning"
         }
       ]
@@ -70,7 +142,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 87,
+          "ageHours": 110,
           "severity": "warning"
         }
       ]
@@ -82,7 +154,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 87,
+          "ageHours": 111,
           "severity": "warning"
         }
       ]
@@ -93,13 +165,18 @@
       "title": "Dinner: 1 glass nigori sake (~150ml) with dinner",
       "issues": [
         {
+          "type": "notion_page_missing",
+          "pageId": "35f5b301-d90b-47e1-9ac3-7042f9852d0b",
+          "severity": "error"
+        },
+        {
           "type": "gallery_item_missing",
-          "galleryId": "manual-2026-03-27T19-04-00-07-00",
+          "galleryId": "35f5b301-d90b-47e1-9ac3-7042f9852d0b",
           "severity": "warning"
         },
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 87,
+          "ageHours": 111,
           "severity": "warning"
         }
       ]
@@ -111,7 +188,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 87,
+          "ageHours": 111,
           "severity": "warning"
         }
       ]
@@ -123,7 +200,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 88,
+          "ageHours": 112,
           "severity": "warning"
         }
       ]
@@ -135,7 +212,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 92,
+          "ageHours": 116,
           "severity": "warning"
         }
       ]
@@ -147,7 +224,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 92,
+          "ageHours": 116,
           "severity": "warning"
         }
       ]
@@ -159,7 +236,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 95,
+          "ageHours": 119,
           "severity": "warning"
         }
       ]
@@ -171,7 +248,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 95,
+          "ageHours": 119,
           "severity": "warning"
         }
       ]
@@ -183,7 +260,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 111,
+          "ageHours": 135,
           "severity": "warning"
         }
       ]
@@ -195,7 +272,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 111,
+          "ageHours": 135,
           "severity": "warning"
         }
       ]
@@ -207,7 +284,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 111,
+          "ageHours": 135,
           "severity": "warning"
         }
       ]
@@ -219,7 +296,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 114,
+          "ageHours": 138,
           "severity": "warning"
         }
       ]
@@ -231,7 +308,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 117,
+          "ageHours": 141,
           "severity": "warning"
         }
       ]
@@ -243,7 +320,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 117,
+          "ageHours": 141,
           "severity": "warning"
         }
       ]
@@ -255,7 +332,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 120,
+          "ageHours": 144,
           "severity": "warning"
         }
       ]
@@ -267,7 +344,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 120,
+          "ageHours": 144,
           "severity": "warning"
         }
       ]
@@ -279,7 +356,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 134,
+          "ageHours": 158,
           "severity": "warning"
         }
       ]
@@ -291,7 +368,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 136,
+          "ageHours": 159,
           "severity": "warning"
         }
       ]
@@ -303,91 +380,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 137,
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:da7b2f97ee5646c0c53545bb8608dd671948d89e82dbdc42d0c2c8051ff211f4",
-      "timestamp": "2026-03-25T09:33:00-07:00",
-      "title": "Breakfast: Half ciabatta with cream cheese and smoked salmon",
-      "issues": [
-        {
-          "type": "outcomes_not_backfilled",
-          "ageHours": 144,
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:f2e953b7f791a192bea433c20c1b9ddf4afdceeba279c745840b61c412d32cd4",
-      "timestamp": "2026-03-24T19:27:00-07:00",
-      "title": "Dinner: Small slice of sponge cake with 1 tsp peanut butter and 1 small strawberry",
-      "issues": [
-        {
-          "type": "outcomes_not_backfilled",
-          "ageHours": 158,
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:6e28cc1d0cb77350301abf680e1ef5e61658f4ab2e5f76813dc00d6576a5fc18",
-      "timestamp": "2026-03-24T19:06:00-07:00",
-      "title": "Dinner: Beef and onion stir-fry over rice with sliced cucumber, plus a pink lemonade drink",
-      "issues": [
-        {
-          "type": "outcomes_not_backfilled",
-          "ageHours": 159,
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:ead53a08251e766c421476635c6485f268b77616ae0aaa7401552800847307a6",
-      "timestamp": "2026-03-24T15:45:00-07:00",
-      "title": "Snack: Half large strawberry",
-      "issues": [
-        {
-          "type": "outcomes_not_backfilled",
-          "ageHours": 162,
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:0ea7cd5a56fb4efc0d4c2d58a54c60e0db3857ded8342836a3eb9a2d28fcdce1",
-      "timestamp": "2026-03-24T15:42:00-07:00",
-      "title": "Snack: Milk cheese cake bite (~1/2 piece from packaged milk cheese cake)",
-      "issues": [
-        {
-          "type": "outcomes_not_backfilled",
-          "ageHours": 162,
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:8669b2dc5e1a1ae43724ddb37fdcf9bb53f146072ad891b03e39e05af4e75dbf",
-      "timestamp": "2026-03-24T12:46:00-07:00",
-      "title": "Lunch: Dim sum meal (stir-fried beef with scallions/onions, chicken feet, 2 siu mai dumplings, and small noodle bowl)",
-      "issues": [
-        {
-          "type": "outcomes_not_backfilled",
-          "ageHours": 165,
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:23321a85f4f1fcaf6d4e58ba91773fbaf1060bb0c4a475265a03d485b3e4ba7b",
-      "timestamp": "2026-03-24T10:08:00-07:00",
-      "title": "Breakfast: Half cheese quesadilla (flour tortilla + cheese), Apple slices (~⅓–½ small apple), Avocado slices (~¼ avocado)",
-      "issues": [
-        {
-          "type": "outcomes_not_backfilled",
-          "ageHours": 168,
+          "ageHours": 161,
           "severity": "warning"
         }
       ]
@@ -399,7 +392,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 49,
+          "ageHours": 73,
           "severity": "warning"
         }
       ]
@@ -411,7 +404,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 46,
+          "ageHours": 70,
           "severity": "warning"
         }
       ]
@@ -423,7 +416,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 45,
+          "ageHours": 68,
           "severity": "warning"
         }
       ]
@@ -435,7 +428,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 39,
+          "ageHours": 63,
           "severity": "warning"
         }
       ]
@@ -447,7 +440,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 39,
+          "ageHours": 63,
           "severity": "warning"
         }
       ]
@@ -459,7 +452,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 39,
+          "ageHours": 63,
           "severity": "warning"
         }
       ]
@@ -471,7 +464,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 23,
+          "ageHours": 47,
           "severity": "warning"
         }
       ]
@@ -483,7 +476,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 20,
+          "ageHours": 44,
           "severity": "warning"
         }
       ]
@@ -495,7 +488,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 20,
+          "ageHours": 44,
           "severity": "warning"
         }
       ]
@@ -507,7 +500,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 18,
+          "ageHours": 42,
           "severity": "warning"
         }
       ]
@@ -519,7 +512,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 15,
+          "ageHours": 39,
           "severity": "warning"
         }
       ]
@@ -531,7 +524,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 15,
+          "ageHours": 39,
           "severity": "warning"
         }
       ]
@@ -543,7 +536,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 15,
+          "ageHours": 39,
           "severity": "warning"
         }
       ]

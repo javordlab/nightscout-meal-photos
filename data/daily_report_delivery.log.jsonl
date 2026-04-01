@@ -18,3 +18,4 @@
 {"ts":"2026-03-30T16:30:12.135Z","op":"daily_report_charts_triggered","reportDateLA":"2026-03-30","chatId":"-5262020908","dryRun":false}
 {"ts":"2026-03-31T16:30:03.055Z","op":"daily_report_sent","reportDateLA":"2026-03-31","targetDate":"2026-03-30","chatId":"-5262020908","messageId":3948,"statsDay":{"count":274,"average":127,"gmi":6.34784,"tir":100}}
 {"ts":"2026-03-31T16:30:12.145Z","op":"daily_report_charts_triggered","reportDateLA":"2026-03-31","chatId":"-5262020908","dryRun":false}
+{"ts":"2026-04-01T16:30:01.275Z","op":"daily_report_delivery_error","error":"Unterminated string in JSON at position 40936 (line 1236 column 21)"}
