@@ -1,5 +1,16 @@
 [
   {
+    "id": "33585ec7-0668-8194-a53a-ea11d9293da0",
+    "title": "Lunch: Small handful of cashews (~15-18 nuts) (BG: 109 mg/dL Flat) (Pred: 170-190 mg/dL @ 2:30 PM) [Cumulative Lunch: ~44g carbs total] (Protein: 5g | Carbs: ~9g | Cals: ~157)",
+    "type": "Lunch",
+    "date": "2026-04-01T13:05:00.000-07:00",
+    "photo": "https://iili.io/BqE7jLv.jpg",
+    "carbs": 9,
+    "cals": 157,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "33585ec7-0668-8141-9e63-db74b2ee1870",
     "title": "Lunch: Small tortilla with 2 slices turkey and 1 slice cheese (folded quesadilla-style) + 3 slices papaya (BG: 107 mg/dL Flat) (Pred: 165-185 mg/dL @ 2:30 PM) (Protein: 15g | Carbs: ~35g | Cals: ~260)",
     "type": "Lunch",
@@ -397,7 +408,7 @@
   },
   {
     "id": "33085ec7-0668-8178-8d88-cecd4508a333",
-    "title": "Lunch: 1 apple and 1oz Korean tofu snack with pine nut (기평장 두부라자) (BG: 115 mg/dL Flat) (Pred: 150-170 mg/dL @ 6:26 PM) (Protein: 2g | Carbs: ~34g | Cals: ~175)",
+    "title": "Lunch: 1 apple and 1oz Korean tofu snack with pine nut (기평장 두부���자) (BG: 115 mg/dL Flat) (Pred: 150-170 mg/dL @ 6:26 PM) (Protein: 2g | Carbs: ~34g | Cals: ~175)",
     "type": "Lunch",
     "date": "2026-03-25T16:56:00.000-07:00",
     "photo": "https://iili.io/qsS8myx.jpg",
