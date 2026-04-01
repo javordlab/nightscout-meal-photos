@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-01T20:00:00.269Z",
+  "generatedAt": "2026-04-01T20:30:00.736Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
-  "entryCount": 414,
+  "entryCount": 415,
   "entries": [
     {
       "source": {
@@ -17316,6 +17316,49 @@
       },
       "entryKey": "sha256:abfd460114e1c01468c15a6ea09ef49a738fddb49de6a8c3b7e654bedee6049d",
       "contentHash": "sha256:adfdc9d24d6bc4d3fd930d6281c2368c960efbc453ea69d3e38b960f67d69f8d"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 443,
+        "rawRow": "| 2026-04-01 | 13:05 -07:00 | Maria Dennis | Food | Lunch | Lunch: Small handful of cashews (~15-18 nuts) (BG: 109 mg/dL Flat) (Pred: 170-190 mg/dL @ 2:30 PM) [Cumulative Lunch: ~44g carbs total] (Protein: 5g | Carbs: ~9g | Cals: ~157) [📷](https://iili.io/BqE7jLv.jpg) | 9 | 157 |"
+      },
+      "timestamp": "2026-04-01T13:05:00-07:00",
+      "date": "2026-04-01",
+      "time": "13:05 -07:00",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "mealType": "Lunch",
+      "title": "Lunch: Small handful of cashews (~15-18 nuts) [Cumulative Lunch: ~44g carbs total]",
+      "notes": "BG: 109 mg/dL Flat; Protein: 5g; Pred: 170-190 mg/dL @ 2:30 PM",
+      "photoUrls": [
+        "https://iili.io/BqE7jLv.jpg"
+      ],
+      "carbsEst": 9,
+      "caloriesEst": 157,
+      "proteinEst": 5,
+      "predicted": {
+        "peakBgText": "170-190 mg/dL",
+        "peakTimeText": "2:30 PM"
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:c77fcd0463474dd8951904dfd57a07408bf41ab249a5a4e7fdcd6bc6ded24dad",
+      "contentHash": "sha256:dbee8fbaf691648e09aecb798037146aaf1a0a4b3228362d860fe6ee295e617c"
     }
   ]
 }
