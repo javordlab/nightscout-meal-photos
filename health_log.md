@@ -1,5 +1,6 @@
 # Health Log
 
+| 2026-03-31 | 18:38 -07:00 | Maria Dennis | Food | Dinner | Dinner: Chicken breast (~4 oz), broccoli florets (~1 cup), roasted potatoes/carrots (~½ cup) (BG: 118 mg/dL Flat) (Pred: 140-160 mg/dL @ 8:00 PM) (Protein: 40g | Carbs: ~21g | Cals: ~275) [📷](https://iili.io/BKq5N5P.jpg) | 21 | 275 |
 | 2026-03-31 | 14:02 -07:00 | Maria Dennis | Activity | - | 30 minutes walk | null | null |
 | 2026-03-31 | 13:09 -07:00 | Maria Dennis | Food | Dessert | Dessert: 2" cake piece with 1 tsp peanut butter and whipped cream (BG: 118 mg/dL Flat) (Pred: 180-210 mg/dL @ 2:45 PM) [Cumulative Lunch: 55g carbs total] (Protein: 4.5g | Carbs: ~24g | Cals: ~255) | 24 | 255 |
 | 2026-03-31 | 13:01 -07:00 | Maria Dennis | Food | Lunch | Lunch: Fried rice with pork and egg (~¾ cup) and cucumber slices (~8–10 slices) (BG: 118 mg/dL Flat) (Pred: 150-170 mg/dL @ 2:30 PM) (Protein: 15g | Carbs: ~31g | Cals: ~295) [📷](https://iili.io/BFZI9KF.jpg) | 31 | 295 |
