@@ -437,3 +437,4 @@
 | 2026-04-01 | 09:56 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: English muffin with melted cheese and prosciutto + orange wedges (~half orange) (BG: 119 mg/dL Flat) (Pred: 165-185 mg/dL @ 11:30 AM) (Protein: 24g | Carbs: ~40g | Cals: ~370) [📷](https://iili.io/BqHOHmv.jpg) | 40 | 370 |
 | 2026-04-01 | 09:56 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 119 mg/dL Flat) | null | null |
 | 2026-04-01 | 09:59 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: 3 prunes (BG: 118 mg/dL Flat) (Pred: 175-195 mg/dL @ 11:30 AM) [Cumulative Breakfast: ~56g carbs total] (Protein: 1g | Carbs: ~16g | Cals: ~60) [📷](https://iili.io/BqJxV7j.jpg) | 16 | 60 |
+| 2026-04-01 | 11:19 -07:00 | Maria Dennis | Activity | - | 30 minute walk | null | null |
