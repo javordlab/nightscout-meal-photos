@@ -439,3 +439,4 @@
 | 2026-04-01 | 09:56 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 119 mg/dL Flat) | null | null |
 | 2026-04-01 | 09:59 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: 3 prunes (BG: 118 mg/dL Flat) (Pred: 175-195 mg/dL @ 11:30 AM) [Cumulative Breakfast: ~56g carbs total] (Protein: 1g | Carbs: ~16g | Cals: ~60) [📷](https://iili.io/BqJxV7j.jpg) | 16 | 60 |
 | 2026-04-01 | 11:19 -07:00 | Maria Dennis | Activity | - | 30 minute walk | null | null |
+| 2026-04-01 | 12:56 -07:00 | Maria Dennis | Food | Lunch | Lunch: Small tortilla with 2 slices turkey and 1 slice cheese (folded quesadilla-style) + 3 slices papaya (BG: 107 mg/dL Flat) (Pred: 165-185 mg/dL @ 2:30 PM) (Protein: 15g | Carbs: ~35g | Cals: ~260) [📷](https://iili.io/Bq0pPCN.jpg) | 35 | 260 |

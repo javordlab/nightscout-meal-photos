@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-01T19:30:01.098Z",
+  "generatedAt": "2026-04-01T20:00:00.269Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
-  "entryCount": 413,
+  "entryCount": 414,
   "entries": [
     {
       "source": {
@@ -17273,6 +17273,49 @@
       },
       "entryKey": "sha256:51a57d0db1269221cdbe49b883dabd81c4ac2b847729ec03ebe4d8b8df086b86",
       "contentHash": "sha256:93419e0e85e0fba5ecdaf35a964ecfcaa2ebfb311c5fbccc82e9b36c9287ed79"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 442,
+        "rawRow": "| 2026-04-01 | 12:56 -07:00 | Maria Dennis | Food | Lunch | Lunch: Small tortilla with 2 slices turkey and 1 slice cheese (folded quesadilla-style) + 3 slices papaya (BG: 107 mg/dL Flat) (Pred: 165-185 mg/dL @ 2:30 PM) (Protein: 15g | Carbs: ~35g | Cals: ~260) [📷](https://iili.io/Bq0pPCN.jpg) | 35 | 260 |"
+      },
+      "timestamp": "2026-04-01T12:56:00-07:00",
+      "date": "2026-04-01",
+      "time": "12:56 -07:00",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "mealType": "Lunch",
+      "title": "Lunch: Small tortilla with 2 slices turkey and 1 slice cheese (folded quesadilla-style) + 3 slices papaya",
+      "notes": "BG: 107 mg/dL Flat; Protein: 15g; Pred: 165-185 mg/dL @ 2:30 PM",
+      "photoUrls": [
+        "https://iili.io/Bq0pPCN.jpg"
+      ],
+      "carbsEst": 35,
+      "caloriesEst": 260,
+      "proteinEst": 15,
+      "predicted": {
+        "peakBgText": "165-185 mg/dL",
+        "peakTimeText": "2:30 PM"
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:abfd460114e1c01468c15a6ea09ef49a738fddb49de6a8c3b7e654bedee6049d",
+      "contentHash": "sha256:adfdc9d24d6bc4d3fd930d6281c2368c960efbc453ea69d3e38b960f67d69f8d"
     }
   ]
 }
