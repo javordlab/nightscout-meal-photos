@@ -606,9 +606,26 @@ async function main() {
         continue;
       }
       
+      // Check if agent already logged an entry WITH A TEMP FILE REF for this file
+      // If so, replace temp ref with real URL
+      const existingLogContent = fs.readFileSync(HEALTH_LOG, 'utf8');
+      const tempRefPattern = new RegExp(`\\[📷\\]\\(${file.prefix}---[a-f0-9\\-]+\\.jpg\\)`, 'g');
+      if (tempRefPattern.test(existingLogContent)) {
+        console.log(`[PATCH-TEMP-REF] Found temp ref in log for ${file.prefix}, replacing with real URL`);
+        const updatedLog = existingLogContent.replace(
+          tempRefPattern,
+          `[📷](${photoUrl})`
+        );
+        fs.writeFileSync(HEALTH_LOG, updatedLog);
+        console.log(`[PATCH-TEMP-REF] Successfully patched ${file.prefix} temp ref → ${photoUrl}`);
+        markLinkedEnvelope(state, matchedEnvelope);
+        clearFailure(state, file.prefix);
+        state.processed.push(file.prefix);
+        continue;
+      }
+      
       // URL-based duplicate check: if this photo URL already exists in the log,
       // the agent already logged this photo (possibly under a different time or mealType).
-      const existingLogContent = fs.readFileSync(HEALTH_LOG, 'utf8');
       if (existingLogContent.includes(photoUrl)) {
         console.log(`Photo URL already in log (${photoUrl}), skipping duplicate`);
         markLinkedEnvelope(state, matchedEnvelope);
