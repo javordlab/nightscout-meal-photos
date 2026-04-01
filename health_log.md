@@ -442,3 +442,4 @@
 | 2026-04-01 | 12:56 -07:00 | Maria Dennis | Food | Lunch | Lunch: Small tortilla with 2 slices turkey and 1 slice cheese (folded quesadilla-style) + 3 slices papaya (BG: 107 mg/dL Flat) (Pred: 165-185 mg/dL @ 2:30 PM) (Protein: 15g | Carbs: ~35g | Cals: ~260) [📷](https://iili.io/Bq0pPCN.jpg) | 35 | 260 |
 | 2026-04-01 | 13:05 -07:00 | Maria Dennis | Food | Lunch | Lunch: Small handful of cashews (~15-18 nuts) (BG: 109 mg/dL Flat) (Pred: 170-190 mg/dL @ 2:30 PM) [Cumulative Lunch: ~44g carbs total] (Protein: 5g | Carbs: ~9g | Cals: ~157) [📷](https://iili.io/BqE7jLv.jpg) | 9 | 157 |
 | 2026-04-01 | 13:32 -07:00 | Maria Dennis | Activity | - | 15 minute walk | null | null |
+| 2026-04-01 | 14:25 -07:00 | Maria Dennis | Activity | - | 1 hour gardening | null | null |

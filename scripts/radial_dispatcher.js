@@ -15,7 +15,7 @@ const NIGHTSCOUT_SECRET = "b3170e23f45df7738434cd8be9cd79d86a6d0f01"; // SHA1 of
 const NOTION_KEY = "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";
 const NOTION_DB_ID = "31685ec7-0668-813e-8b9e-c5b4d5d70fa5";
 const MYSQL_BIN = "/opt/homebrew/opt/mysql@8.4/bin/mysql";
-const MYSQL_SYNC_ENABLED = true;
+const MYSQL_SYNC_ENABLED = false; // paused — toggled by cron
 const DASHBOARD_SYNC_ENABLED = false;
 
 // --- Helpers ---
