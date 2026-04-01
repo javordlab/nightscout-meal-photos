@@ -434,3 +434,6 @@
 | 2026-03-30 | 18:40 -07:00 | Maria Dennis | Food | Dinner | Dinner: 1 slice dried dragon fruit (BG: 145 mg/dL Flat) (Pred: 205-220 mg/dL @ 8:15 PM) [Cumulative Dinner: ~39g carbs total] (Protein: 1g | Carbs: ~11g | Cals: ~40) | 11 | 40 |
 | 2026-03-30 | 18:58 -07:00 | Maria Dennis | Food | Snack | Snack: 1 orange (medium, freshly peeled) (BG: 143 mg/dL Flat) (Pred: 170-185 mg/dL @ 8:45 PM) (Protein: 1g | Carbs: ~15g | Cals: ~62) [📷](https://iili.io/B2T99Hb.jpg) | 15 | 62 |
 | 2026-03-30 | 19:40 -07:00 | Maria Dennis | Activity | - | 30 minute walk | null | null |
+| 2026-04-01 | 09:56 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: English muffin with melted cheese and prosciutto + orange wedges (~half orange) (BG: 119 mg/dL Flat) (Pred: 165-185 mg/dL @ 11:30 AM) (Protein: 24g | Carbs: ~40g | Cals: ~370) [📷](https://iili.io/BqHOHmv.jpg) | 40 | 370 |
+| 2026-04-01 | 09:56 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 119 mg/dL Flat) | null | null |
+| 2026-04-01 | 09:59 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: 3 prunes (BG: 118 mg/dL Flat) (Pred: 175-195 mg/dL @ 11:30 AM) [Cumulative Breakfast: ~56g carbs total] (Protein: 1g | Carbs: ~16g | Cals: ~60) [📷](https://iili.io/BqJxV7j.jpg) | 16 | 60 |

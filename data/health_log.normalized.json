@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-01T16:30:01.269Z",
+  "generatedAt": "2026-04-01T17:00:00.700Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
-  "entryCount": 408,
+  "entryCount": 410,
   "entries": [
     {
       "source": {
@@ -17064,6 +17064,90 @@
       },
       "entryKey": "sha256:73cabab8dc7689131fbf59f7dfb4741990d08fd660948ad72a558b003d574b91",
       "contentHash": "sha256:061b6b219bba0cd6a4557bb59a3dae54b9545dbe8857ad64a1b0fdb55b12c34a"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 437,
+        "rawRow": "| 2026-04-01 | 09:56 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: English muffin with melted cheese and prosciutto + orange wedges (~half orange) (BG: 119 mg/dL Flat) (Pred: 165-185 mg/dL @ 11:30 AM) (Protein: 24g | Carbs: ~40g | Cals: ~370) [📷](https://iili.io/BqHOHmv.jpg) | 40 | 370 |"
+      },
+      "timestamp": "2026-04-01T09:56:00-07:00",
+      "date": "2026-04-01",
+      "time": "09:56 -07:00",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "mealType": "Breakfast",
+      "title": "Breakfast: English muffin with melted cheese and prosciutto + orange wedges (~half orange)",
+      "notes": "BG: 119 mg/dL Flat; Protein: 24g; Pred: 165-185 mg/dL @ 11:30 AM",
+      "photoUrls": [
+        "https://iili.io/BqHOHmv.jpg"
+      ],
+      "carbsEst": 40,
+      "caloriesEst": 370,
+      "proteinEst": 24,
+      "predicted": {
+        "peakBgText": "165-185 mg/dL",
+        "peakTimeText": "11:30 AM"
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:4fe87cbf68e5c5c0341483da637cde4edb9a98fa564af41786b7c9df1a0030c3",
+      "contentHash": "sha256:210a511f1dbddd34190f7910b133436bffcb3c6878b2893374757965108e63e0"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 438,
+        "rawRow": "| 2026-04-01 | 09:56 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 119 mg/dL Flat) | null | null |"
+      },
+      "timestamp": "2026-04-01T09:56:00-07:00",
+      "date": "2026-04-01",
+      "time": "09:56 -07:00",
+      "user": "Maria Dennis",
+      "category": "Medication",
+      "mealType": "-",
+      "title": "Medication: Metformin 500mg (breakfast)",
+      "notes": "BG: 119 mg/dL Flat",
+      "photoUrls": [],
+      "carbsEst": null,
+      "caloriesEst": null,
+      "proteinEst": null,
+      "predicted": {
+        "peakBgText": null,
+        "peakTimeText": null
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:d5ec415818bcccde8825f8f805d303fbac95d8ec1a1da8c14eba092c34c6acdd",
+      "contentHash": "sha256:7bfd7de11dd4f43804683dd8c849b84d96b868591ad8b08fe43fe6bc0b070f98"
     }
   ]
 }
