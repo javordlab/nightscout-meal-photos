@@ -1,5 +1,6 @@
 # Health Log
 
+| 2026-03-31 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 129 mg/dL Flat) | null | null |
 | 2026-03-31 | 18:38 -07:00 | Maria Dennis | Food | Dinner | Dinner: Creamed vegetable soup (~1.5 cups), chicken breast (~4 oz), and broccoli florets (~1 cup) (BG: 118 mg/dL Flat) (Pred: 150-170 mg/dL @ 8:00 PM) (Protein: 47g | Carbs: ~25g | Cals: ~420) [📷](https://iili.io/BKq5N5P.jpg) | 25 | 420 |
 | 2026-03-31 | 14:02 -07:00 | Maria Dennis | Activity | - | 30 minutes walk | null | null |
 | 2026-03-31 | 13:09 -07:00 | Maria Dennis | Food | Dessert | Dessert: 2" cake piece with 1 tsp peanut butter and whipped cream (BG: 118 mg/dL Flat) (Pred: 180-210 mg/dL @ 2:45 PM) [Cumulative Lunch: 55g carbs total] (Protein: 4.5g | Carbs: ~24g | Cals: ~255) | 24 | 255 |
