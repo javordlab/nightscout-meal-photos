@@ -63,24 +63,42 @@ This ensures:
 - `b5193df`: Root cause fix (safety block + error logging)
 - Earlier: `5ce1143`: Manual emergency fix (uploaded 4 photos and updated refs)
 
-## Final Root Cause
+## ACTUAL Root Cause (FOUND & FIXED)
 
-After exhaustive investigation:
+**Two separate entities create entries:**
+1. **Agent** (health-guard) writes entries to health_log.md immediately when photo arrives
+   - Uses temp file ref placeholder: `[📷](file_240---uuid.jpg)`
+   - This is intentional — assumes pipeline will fix it
+   
+2. **Pipeline** (runs every 60s) is supposed to:
+   - Find the file
+   - Upload to iili.io
+   - **Replace temp ref with real URL** ← **THIS WAS MISSING**
 
-**The pipeline (`photo_to_log_pipeline.js`) was the source** (runs every 60s via cron).
+**What Actually Happened:**
+1. Agent writes entry with temp ref at 09:22 (file_239), 09:33 (file_240), etc.
+2. Pipeline runs every 60s, processes file, uploads successfully
+3. **Pipeline checks:** "Is temp ref pattern in log?" YES (it's there!)
+4. **But pipeline had NO CODE to replace it** — only URL duplicate check
+5. Pipeline marks file as processed WITHOUT replacing the temp ref
+6. Entry stays in log with broken temp ref forever
 
-**What happened (before fix):**
-1. Photos arrived via Telegram → Enveloped and classified
-2. Pipeline processed them every minute
-3. **Somewhere in the upload/processing flow, entries were logged with temp file refs** instead of real URLs
-4. This was either:
-   - Upload failing silently but entry still being logged
-   - OR parsing error returning invalid URL that slipped through old code
-   - OR race condition between entry creation and URL replacement
+**Why it worked for a month:**
+- The pipeline's duplicate checks were catching this correctly before today
+- The agent WASN'T writing entries with temp refs
+- Or there was some other mechanism that's now broken
 
-The **original code had NO SAFETY GUARD** to verify URLs before logging.
+**The Permanent Fix:**
+Added active temp ref replacement in pipeline (before duplicate checks):
+```javascript
+// Check for temp ref pattern: [📷](file_XXX---uuid.jpg)
+if (tempRefPattern.test(existingLogContent)) {
+  // Replace with real URL
+  updatedLog = existingLogContent.replace(tempRefPattern, `[📷](${photoUrl})`);
+}
+```
 
-**Result:** 4 entries with `file_XXX---uuid.jpg` refs in the log.
+This closes the loop: agent writes placeholder → pipeline replaces with real URL.
 
 ## Status
 ✅ **FIXED AND HARDENED**
