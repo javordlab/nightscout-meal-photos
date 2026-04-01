@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-01T17:00:00.700Z",
+  "generatedAt": "2026-04-01T17:30:01.188Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
-  "entryCount": 410,
+  "entryCount": 411,
   "entries": [
     {
       "source": {
@@ -17148,6 +17148,49 @@
       },
       "entryKey": "sha256:d5ec415818bcccde8825f8f805d303fbac95d8ec1a1da8c14eba092c34c6acdd",
       "contentHash": "sha256:7bfd7de11dd4f43804683dd8c849b84d96b868591ad8b08fe43fe6bc0b070f98"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 439,
+        "rawRow": "| 2026-04-01 | 09:59 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: 3 prunes (BG: 118 mg/dL Flat) (Pred: 175-195 mg/dL @ 11:30 AM) [Cumulative Breakfast: ~56g carbs total] (Protein: 1g | Carbs: ~16g | Cals: ~60) [📷](https://iili.io/BqJxV7j.jpg) | 16 | 60 |"
+      },
+      "timestamp": "2026-04-01T09:59:00-07:00",
+      "date": "2026-04-01",
+      "time": "09:59 -07:00",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "mealType": "Breakfast",
+      "title": "Breakfast: 3 prunes [Cumulative Breakfast: ~56g carbs total]",
+      "notes": "BG: 118 mg/dL Flat; Protein: 1g; Pred: 175-195 mg/dL @ 11:30 AM",
+      "photoUrls": [
+        "https://iili.io/BqJxV7j.jpg"
+      ],
+      "carbsEst": 16,
+      "caloriesEst": 60,
+      "proteinEst": 1,
+      "predicted": {
+        "peakBgText": "175-195 mg/dL",
+        "peakTimeText": "11:30 AM"
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:fde4c330926697830436f0afba69e2c360e1f86123047d6aecd46a9bf356947f",
+      "contentHash": "sha256:1dbdcfc96999749c9d2c7c7fd2d370dafcbbc1347ebc1c9d88e388cf98f81c51"
     }
   ]
 }
