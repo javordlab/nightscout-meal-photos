@@ -216,15 +216,11 @@
     "file_244",
     "file_245",
     "file_246",
-    "file_247"
+    "file_247",
+    "file_248",
+    "file_249"
   ],
-  "failed": [
-    {
-      "file": "file_248",
-      "retries": 2,
-      "error": "missing_caption_or_description_link"
-    }
-  ],
-  "lastRun": "2026-04-01T19:58:07.556Z",
+  "failed": [],
+  "lastRun": "2026-04-01T20:10:16.495Z",
   "linkedEnvelopeIds": []
 }
