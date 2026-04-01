@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-01T02:30:00.913Z",
-  "entryCount": 42,
+  "generatedAt": "2026-04-01T11:00:00.382Z",
+  "entryCount": 33,
   "errors": [],
   "warnings": [
     {
@@ -10,12 +10,6 @@
       "reason": "photo_missing_but_found_in_internal_folder",
       "file": "/Users/javier/.openclaw/media/inbound/file_244---5f2e78ad-c559-4852-a5c0-160610b3a210.jpg",
       "diffMinutes": 8
-    },
-    {
-      "entryKey": "sha256:10330856ec728f3d97dddab84efa0cb13e42f96b97adf49a0bd9a6bb3e00c180",
-      "timestamp": "2026-03-28T19:30:00-07:00",
-      "title": "Dinner: 8 oysters, 2oz beef, cooked leeks, 2 small bread slices, a few homemade fries, 2oz wine, 1 slice dragon fruit, 1-inch plain cake with whipped cream",
-      "reason": "missing_photo_urls"
     },
     {
       "entryKey": "sha256:e5515ffeeed913ab4b0d43d56a28a8fb138d55548eae4d0e97a84e3a51f806dc",

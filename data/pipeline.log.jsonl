@@ -5326,3 +5326,123 @@
 {"ts":"2026-04-01T02:30:00.925Z","op":"step_start","name":"Unified Sync"}
 {"ts":"2026-04-01T02:30:44.361Z","op":"step_complete","name":"Unified Sync","duration":43436,"result":"object"}
 {"ts":"2026-04-01T02:30:44.361Z","op":"pipeline_complete","duration":43515,"results":["resolvePendingPhotos","normalize","enrich","validate","sync"]}
+{"ts":"2026-04-01T06:30:01.098Z","op":"pipeline_start","mode":"sync-only","since":"2026-03-29"}
+{"ts":"2026-04-01T06:30:01.100Z","op":"step_start","name":"Resolve Pending Photos"}
+{"ts":"2026-04-01T06:30:01.105Z","op":"step_complete","name":"Resolve Pending Photos","duration":5,"result":"object"}
+{"ts":"2026-04-01T06:30:01.105Z","op":"step_start","name":"Normalize"}
+{"ts":"2026-04-01T06:30:01.136Z","op":"step_complete","name":"Normalize","duration":31}
+{"ts":"2026-04-01T06:30:01.136Z","op":"step_start","name":"Enrich"}
+{"ts":"2026-04-01T06:30:01.155Z","op":"step_complete","name":"Enrich","duration":19}
+{"ts":"2026-04-01T06:30:01.155Z","op":"step_start","name":"Validate"}
+{"ts":"2026-04-01T06:30:01.172Z","op":"step_complete","name":"Validate","duration":17,"result":"object"}
+{"ts":"2026-04-01T06:30:01.172Z","op":"step_start","name":"Unified Sync"}
+{"ts":"2026-04-01T06:30:57.691Z","op":"step_complete","name":"Unified Sync","duration":56519,"result":"object"}
+{"ts":"2026-04-01T06:30:57.692Z","op":"pipeline_complete","duration":56592,"results":["resolvePendingPhotos","normalize","enrich","validate","sync"]}
+{"ts":"2026-04-01T07:00:00.652Z","op":"pipeline_start","mode":"sync-only","since":"2026-03-30"}
+{"ts":"2026-04-01T07:00:00.661Z","op":"step_start","name":"Resolve Pending Photos"}
+{"ts":"2026-04-01T07:00:00.671Z","op":"step_complete","name":"Resolve Pending Photos","duration":10,"result":"object"}
+{"ts":"2026-04-01T07:00:00.672Z","op":"step_start","name":"Normalize"}
+{"ts":"2026-04-01T07:00:00.722Z","op":"step_complete","name":"Normalize","duration":50}
+{"ts":"2026-04-01T07:00:00.723Z","op":"step_start","name":"Enrich"}
+{"ts":"2026-04-01T07:00:00.747Z","op":"step_complete","name":"Enrich","duration":24}
+{"ts":"2026-04-01T07:00:00.748Z","op":"step_start","name":"Validate"}
+{"ts":"2026-04-01T07:00:00.769Z","op":"step_complete","name":"Validate","duration":21,"result":"object"}
+{"ts":"2026-04-01T07:00:00.769Z","op":"step_start","name":"Unified Sync"}
+{"ts":"2026-04-01T07:00:43.450Z","op":"step_complete","name":"Unified Sync","duration":42681,"result":"object"}
+{"ts":"2026-04-01T07:00:43.450Z","op":"pipeline_complete","duration":42790,"results":["resolvePendingPhotos","normalize","enrich","validate","sync"]}
+{"ts":"2026-04-01T07:30:01.154Z","op":"pipeline_start","mode":"sync-only","since":"2026-03-30"}
+{"ts":"2026-04-01T07:30:01.156Z","op":"step_start","name":"Resolve Pending Photos"}
+{"ts":"2026-04-01T07:30:01.163Z","op":"step_complete","name":"Resolve Pending Photos","duration":7,"result":"object"}
+{"ts":"2026-04-01T07:30:01.163Z","op":"step_start","name":"Normalize"}
+{"ts":"2026-04-01T07:30:01.200Z","op":"step_complete","name":"Normalize","duration":36}
+{"ts":"2026-04-01T07:30:01.200Z","op":"step_start","name":"Enrich"}
+{"ts":"2026-04-01T07:30:01.220Z","op":"step_complete","name":"Enrich","duration":20}
+{"ts":"2026-04-01T07:30:01.220Z","op":"step_start","name":"Validate"}
+{"ts":"2026-04-01T07:30:01.236Z","op":"step_complete","name":"Validate","duration":16,"result":"object"}
+{"ts":"2026-04-01T07:30:01.236Z","op":"step_start","name":"Unified Sync"}
+{"ts":"2026-04-01T07:30:47.567Z","op":"step_complete","name":"Unified Sync","duration":46330,"result":"object"}
+{"ts":"2026-04-01T07:30:47.568Z","op":"pipeline_complete","duration":46412,"results":["resolvePendingPhotos","normalize","enrich","validate","sync"]}
+{"ts":"2026-04-01T08:00:00.513Z","op":"pipeline_start","mode":"sync-only","since":"2026-03-30"}
+{"ts":"2026-04-01T08:00:00.515Z","op":"step_start","name":"Resolve Pending Photos"}
+{"ts":"2026-04-01T08:00:00.521Z","op":"step_complete","name":"Resolve Pending Photos","duration":5,"result":"object"}
+{"ts":"2026-04-01T08:00:00.522Z","op":"step_start","name":"Normalize"}
+{"ts":"2026-04-01T08:00:00.552Z","op":"step_complete","name":"Normalize","duration":30}
+{"ts":"2026-04-01T08:00:00.552Z","op":"step_start","name":"Enrich"}
+{"ts":"2026-04-01T08:00:00.568Z","op":"step_complete","name":"Enrich","duration":16}
+{"ts":"2026-04-01T08:00:00.569Z","op":"step_start","name":"Validate"}
+{"ts":"2026-04-01T08:00:00.583Z","op":"step_complete","name":"Validate","duration":14,"result":"object"}
+{"ts":"2026-04-01T08:00:00.583Z","op":"step_start","name":"Unified Sync"}
+{"ts":"2026-04-01T08:00:41.859Z","op":"step_complete","name":"Unified Sync","duration":41276,"result":"object"}
+{"ts":"2026-04-01T08:00:41.859Z","op":"pipeline_complete","duration":41344,"results":["resolvePendingPhotos","normalize","enrich","validate","sync"]}
+{"ts":"2026-04-01T08:30:00.761Z","op":"pipeline_start","mode":"sync-only","since":"2026-03-30"}
+{"ts":"2026-04-01T08:30:00.764Z","op":"step_start","name":"Resolve Pending Photos"}
+{"ts":"2026-04-01T08:30:00.771Z","op":"step_complete","name":"Resolve Pending Photos","duration":7,"result":"object"}
+{"ts":"2026-04-01T08:30:00.771Z","op":"step_start","name":"Normalize"}
+{"ts":"2026-04-01T08:30:00.812Z","op":"step_complete","name":"Normalize","duration":41}
+{"ts":"2026-04-01T08:30:00.813Z","op":"step_start","name":"Enrich"}
+{"ts":"2026-04-01T08:30:00.834Z","op":"step_complete","name":"Enrich","duration":20}
+{"ts":"2026-04-01T08:30:00.834Z","op":"step_start","name":"Validate"}
+{"ts":"2026-04-01T08:30:00.851Z","op":"step_complete","name":"Validate","duration":17,"result":"object"}
+{"ts":"2026-04-01T08:30:00.851Z","op":"step_start","name":"Unified Sync"}
+{"ts":"2026-04-01T08:30:36.820Z","op":"step_complete","name":"Unified Sync","duration":35968,"result":"object"}
+{"ts":"2026-04-01T08:30:36.821Z","op":"pipeline_complete","duration":36057,"results":["resolvePendingPhotos","normalize","enrich","validate","sync"]}
+{"ts":"2026-04-01T09:00:00.874Z","op":"pipeline_start","mode":"sync-only","since":"2026-03-30"}
+{"ts":"2026-04-01T09:00:00.876Z","op":"step_start","name":"Resolve Pending Photos"}
+{"ts":"2026-04-01T09:00:00.882Z","op":"step_complete","name":"Resolve Pending Photos","duration":6,"result":"object"}
+{"ts":"2026-04-01T09:00:00.883Z","op":"step_start","name":"Normalize"}
+{"ts":"2026-04-01T09:00:00.918Z","op":"step_complete","name":"Normalize","duration":35}
+{"ts":"2026-04-01T09:00:00.919Z","op":"step_start","name":"Enrich"}
+{"ts":"2026-04-01T09:00:00.939Z","op":"step_complete","name":"Enrich","duration":20}
+{"ts":"2026-04-01T09:00:00.940Z","op":"step_start","name":"Validate"}
+{"ts":"2026-04-01T09:00:00.957Z","op":"step_complete","name":"Validate","duration":17,"result":"object"}
+{"ts":"2026-04-01T09:00:00.957Z","op":"step_start","name":"Unified Sync"}
+{"ts":"2026-04-01T09:00:39.812Z","op":"step_complete","name":"Unified Sync","duration":38855,"result":"object"}
+{"ts":"2026-04-01T09:00:39.812Z","op":"pipeline_complete","duration":38936,"results":["resolvePendingPhotos","normalize","enrich","validate","sync"]}
+{"ts":"2026-04-01T09:30:00.960Z","op":"pipeline_start","mode":"sync-only","since":"2026-03-30"}
+{"ts":"2026-04-01T09:30:00.963Z","op":"step_start","name":"Resolve Pending Photos"}
+{"ts":"2026-04-01T09:30:00.970Z","op":"step_complete","name":"Resolve Pending Photos","duration":7,"result":"object"}
+{"ts":"2026-04-01T09:30:00.970Z","op":"step_start","name":"Normalize"}
+{"ts":"2026-04-01T09:30:01.008Z","op":"step_complete","name":"Normalize","duration":38}
+{"ts":"2026-04-01T09:30:01.008Z","op":"step_start","name":"Enrich"}
+{"ts":"2026-04-01T09:30:01.028Z","op":"step_complete","name":"Enrich","duration":20}
+{"ts":"2026-04-01T09:30:01.028Z","op":"step_start","name":"Validate"}
+{"ts":"2026-04-01T09:30:01.045Z","op":"step_complete","name":"Validate","duration":17,"result":"object"}
+{"ts":"2026-04-01T09:30:01.045Z","op":"step_start","name":"Unified Sync"}
+{"ts":"2026-04-01T09:30:42.087Z","op":"step_complete","name":"Unified Sync","duration":41042,"result":"object"}
+{"ts":"2026-04-01T09:30:42.088Z","op":"pipeline_complete","duration":41125,"results":["resolvePendingPhotos","normalize","enrich","validate","sync"]}
+{"ts":"2026-04-01T10:00:01.233Z","op":"pipeline_start","mode":"sync-only","since":"2026-03-30"}
+{"ts":"2026-04-01T10:00:01.235Z","op":"step_start","name":"Resolve Pending Photos"}
+{"ts":"2026-04-01T10:00:01.242Z","op":"step_complete","name":"Resolve Pending Photos","duration":6,"result":"object"}
+{"ts":"2026-04-01T10:00:01.243Z","op":"step_start","name":"Normalize"}
+{"ts":"2026-04-01T10:00:01.279Z","op":"step_complete","name":"Normalize","duration":36}
+{"ts":"2026-04-01T10:00:01.279Z","op":"step_start","name":"Enrich"}
+{"ts":"2026-04-01T10:00:01.298Z","op":"step_complete","name":"Enrich","duration":19}
+{"ts":"2026-04-01T10:00:01.299Z","op":"step_start","name":"Validate"}
+{"ts":"2026-04-01T10:00:01.316Z","op":"step_complete","name":"Validate","duration":17,"result":"object"}
+{"ts":"2026-04-01T10:00:01.316Z","op":"step_start","name":"Unified Sync"}
+{"ts":"2026-04-01T10:00:46.148Z","op":"step_complete","name":"Unified Sync","duration":44832,"result":"object"}
+{"ts":"2026-04-01T10:00:46.148Z","op":"pipeline_complete","duration":44913,"results":["resolvePendingPhotos","normalize","enrich","validate","sync"]}
+{"ts":"2026-04-01T10:30:01.005Z","op":"pipeline_start","mode":"sync-only","since":"2026-03-30"}
+{"ts":"2026-04-01T10:30:01.008Z","op":"step_start","name":"Resolve Pending Photos"}
+{"ts":"2026-04-01T10:30:01.014Z","op":"step_complete","name":"Resolve Pending Photos","duration":6,"result":"object"}
+{"ts":"2026-04-01T10:30:01.014Z","op":"step_start","name":"Normalize"}
+{"ts":"2026-04-01T10:30:01.052Z","op":"step_complete","name":"Normalize","duration":37}
+{"ts":"2026-04-01T10:30:01.053Z","op":"step_start","name":"Enrich"}
+{"ts":"2026-04-01T10:30:01.074Z","op":"step_complete","name":"Enrich","duration":21}
+{"ts":"2026-04-01T10:30:01.074Z","op":"step_start","name":"Validate"}
+{"ts":"2026-04-01T10:30:01.093Z","op":"step_complete","name":"Validate","duration":19,"result":"object"}
+{"ts":"2026-04-01T10:30:01.094Z","op":"step_start","name":"Unified Sync"}
+{"ts":"2026-04-01T10:30:32.064Z","op":"step_complete","name":"Unified Sync","duration":30970,"result":"object"}
+{"ts":"2026-04-01T10:30:32.082Z","op":"pipeline_complete","duration":31075,"results":["resolvePendingPhotos","normalize","enrich","validate","sync"]}
+{"ts":"2026-04-01T11:00:00.319Z","op":"pipeline_start","mode":"sync-only","since":"2026-03-30"}
+{"ts":"2026-04-01T11:00:00.326Z","op":"step_start","name":"Resolve Pending Photos"}
+{"ts":"2026-04-01T11:00:00.332Z","op":"step_complete","name":"Resolve Pending Photos","duration":6,"result":"object"}
+{"ts":"2026-04-01T11:00:00.332Z","op":"step_start","name":"Normalize"}
+{"ts":"2026-04-01T11:00:00.361Z","op":"step_complete","name":"Normalize","duration":29}
+{"ts":"2026-04-01T11:00:00.361Z","op":"step_start","name":"Enrich"}
+{"ts":"2026-04-01T11:00:00.378Z","op":"step_complete","name":"Enrich","duration":17}
+{"ts":"2026-04-01T11:00:00.378Z","op":"step_start","name":"Validate"}
+{"ts":"2026-04-01T11:00:00.393Z","op":"step_complete","name":"Validate","duration":15,"result":"object"}
+{"ts":"2026-04-01T11:00:00.394Z","op":"step_start","name":"Unified Sync"}
+{"ts":"2026-04-01T11:00:36.800Z","op":"step_complete","name":"Unified Sync","duration":36406,"result":"object"}
+{"ts":"2026-04-01T11:00:36.800Z","op":"pipeline_complete","duration":36474,"results":["resolvePendingPhotos","normalize","enrich","validate","sync"]}

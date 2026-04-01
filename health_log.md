@@ -1,5 +1,7 @@
 # Health Log
 
+| 2026-03-31 | 21:15 -07:00 | Maria Dennis | Activity | - | 15 minutes tai chi | null | null |
+| 2026-03-31 | 20:12 -07:00 | Maria Dennis | Activity | - | 20 minutes walk | null | null |
 | 2026-03-31 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 129 mg/dL Flat) | null | null |
 | 2026-03-31 | 18:38 -07:00 | Maria Dennis | Food | Dinner | Dinner: Creamed vegetable soup (~1.5 cups), chicken breast (~4 oz), and broccoli florets (~1 cup) (BG: 118 mg/dL Flat) (Pred: 150-170 mg/dL @ 8:00 PM) (Protein: 47g | Carbs: ~25g | Cals: ~420) [📷](https://iili.io/BKq5N5P.jpg) | 25 | 420 |
 | 2026-03-31 | 14:02 -07:00 | Maria Dennis | Activity | - | 30 minutes walk | null | null |
