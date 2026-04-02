@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-02T06:30:00.766Z",
-  "entryCount": 49,
+  "generatedAt": "2026-04-02T07:00:00.469Z",
+  "entryCount": 36,
   "errors": [],
   "warnings": [
     {
@@ -10,20 +10,6 @@
       "reason": "photo_missing_but_found_in_internal_folder",
       "file": "/Users/javier/.openclaw/media/inbound/file_244---5f2e78ad-c559-4852-a5c0-160610b3a210.jpg",
       "diffMinutes": 8
-    },
-    {
-      "entryKey": "sha256:e5515ffeeed913ab4b0d43d56a28a8fb138d55548eae4d0e97a84e3a51f806dc",
-      "timestamp": "2026-03-30T13:46:00-07:00",
-      "title": "Lunch: 4 prunes + 1 tbsp peanut butter [Cumulative Lunch: ~51g carbs total]",
-      "reason": "photo_missing_but_found_in_internal_folder",
-      "file": "/Users/javier/.openclaw/media/inbound/file_236---470e45f7-2910-4a15-959c-2c3947684d85.jpg",
-      "diffMinutes": 16
-    },
-    {
-      "entryKey": "sha256:c81f4c72b5e9caf88a16fab3cd1d134364c70bc72a0c448c5005b7d8d84f0003",
-      "timestamp": "2026-03-30T16:00:00-07:00",
-      "title": "Snack: 2\" piece of cake with whipped cream and a few nuts",
-      "reason": "missing_photo_urls"
     },
     {
       "entryKey": "sha256:202739d1f9b29c149d58acb8621bff47858ca53691c0bbd42e5162a15e119423",
