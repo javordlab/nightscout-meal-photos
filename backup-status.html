@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySQL Backup Status v2.8 - Health Monitor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 min-h-screen font-sans text-gray-900">
+    <nav class="bg-white border-b sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <i class="fas fa-database text-blue-600 text-2xl"></i>
+                <h1 class="text-xl font-bold tracking-tight">Maria Health <span class="text-blue-600">Backup Console v2.8</span></h1>
+            </div>
+            <div class="text-sm text-gray-500" id="last-updated">Updating...</div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        <!-- Token Usage -->
+        <div id="usage-container" class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8"></div>
+
+        <!-- Database Stats row -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+            <div class="lg:col-span-1 space-y-6">
+                <div class="bg-white p-6 rounded-2xl border shadow-sm">
+                    <div class="flex items-center gap-3 mb-2"><i class="fas fa-tint text-blue-600"></i> <h2 class="font-bold">Glucose Records</h2></div>
+                    <div class="text-3xl font-black text-gray-800" id="glucose-count">...</div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border shadow-sm">
+                    <div class="flex items-center gap-3 mb-2"><i class="fas fa-sync text-purple-600"></i> <h2 class="font-bold">Notion Syncs</h2></div>
+                    <div class="text-3xl font-black text-gray-800" id="notion-count">...</div>
+                </div>
+            </div>
+            <div class="lg:col-span-2 bg-white p-6 rounded-2xl border shadow-sm">
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="font-bold">Glucose Trend (Pacific Time)</h2>
+                    <div class="flex gap-2" id="range-selector">
+                        <button onclick="setRange(24)" class="px-3 py-1 text-[10px] font-bold uppercase rounded-lg border bg-blue-600 text-white" data-range="24">24h</button>
+                        <button onclick="setRange(72)" class="px-3 py-1 text-[10px] font-bold uppercase rounded-lg border bg-white text-gray-500" data-range="72">72h</button>
+                        <button onclick="setRange(168)" class="px-3 py-1 text-[10px] font-bold uppercase rounded-lg border bg-white text-gray-500" data-range="168">1w</button>
+                        <button onclick="setRange(720)" class="px-3 py-1 text-[10px] font-bold uppercase rounded-lg border bg-white text-gray-500" data-range="720">1m</button>
+                    </div>
+                </div>
+                <div class="h-64"><canvas id="glucoseTrendChart"></canvas></div>
+            </div>
+        </div>
+
+        <!-- Growth History -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <div class="bg-white p-6 rounded-2xl border shadow-sm">
+                <h2 class="font-bold mb-4">MySQL Record Growth (Glucose)</h2>
+                <div class="h-48"><canvas id="growthChartGlucose"></canvas></div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border shadow-sm">
+                <h2 class="font-bold mb-4">MySQL Record Growth (Notion)</h2>
+                <div class="h-48"><canvas id="growthChartNotion"></canvas></div>
+            </div>
+        </div>
+
+        <!-- Backups List -->
+        <div class="bg-white rounded-2xl border shadow-sm overflow-hidden">
+            <div class="px-6 py-4 border-b bg-gray-50 flex justify-between items-center"><h2 class="font-bold">Snapshots</h2><span class="text-xs" id="count-label">0 total</span></div>
+            <div class="overflow-x-auto"><table class="w-full text-left"><thead class="bg-gray-50 text-xs text-gray-500 uppercase"><tr><th class="px-6 py-3">Created</th><th class="px-6 py-3">Filename</th><th class="px-6 py-3 text-right">Size</th></tr></thead><tbody id="backup-list" class="divide-y"></tbody></table></div>
+        </div>
+    </main>
+
+    <script>
+        let dashboardData = null;
+        let mainChart = null;
+
+        function toPST(isoStr) {
+            try {
+                const d = new Date(isoStr);
+                const pst = new Date(d.getTime() - (7 * 60 * 60 * 1000));
+                let h = pst.getUTCHours();
+                const m = pst.getUTCMinutes().toString().padStart(2, '0');
+                const ampm = h >= 12 ? 'PM' : 'AM';
+                h = h % 12;
+                h = h ? h : 12; 
+                return h + ':' + m + ' ' + ampm;
+            } catch(e) { return "??:??"; }
+        }
+
+        function formatGrowthDateLabel(dateStr) {
+            const m = String(dateStr || '').match(/^(\d{4})-(\d{2})-(\d{2})$/);
+            if (!m) return String(dateStr || '');
+            const [, y, mo, d] = m;
+            return `${mo}/${d}/${y.slice(2)}`;
+        }
+
+        function setRange(hours) {
+            document.querySelectorAll('#range-selector button').forEach(btn => {
+                if (parseInt(btn.dataset.range) === hours) {
+                    btn.classList.add('bg-blue-600', 'text-white');
+                    btn.classList.remove('bg-white', 'text-gray-500');
+                } else {
+                    btn.classList.remove('bg-blue-600', 'text-white');
+                    btn.classList.add('bg-white', 'text-gray-500');
+                }
+            });
+            renderGlucoseChart(hours);
+        }
+
+        function renderGlucoseChart(hours = 24) {
+            if (!dashboardData || !dashboardData.glucoseTrend) return;
+            
+            const cutoff = new Date(Date.now() - hours * 60 * 60 * 1000);
+            const filtered = dashboardData.glucoseTrend.filter(p => new Date(p.t) >= cutoff);
+            
+            const values = filtered.map(p => p.v);
+            const labels = filtered.map(p => toPST(p.t));
+            const sorted = [...values].sort((a,b)=>a-b);
+            const median = sorted[Math.floor(sorted.length/2)] || 0;
+
+            const ctx = document.getElementById('glucoseTrendChart').getContext('2d');
+            if (mainChart) mainChart.destroy();
+            
+            mainChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [
+                        { label: 'Glucose', data: values, borderColor: '#3B82F6', tension: 0.4, pointRadius: 1, borderWidth: 3, fill: true, backgroundColor: 'rgba(59,130,246,0.1)' },
+                        { label: 'Median', data: Array(labels.length).fill(median), borderColor: 'red', borderDash: [5,5], pointRadius: 0, fill: false }
+                    ]
+                },
+                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { min: 40, max: 300 }, x: { ticks: { autoSkip: true, maxTicksLimit: 12, maxRotation: 0 } } } }
+            });
+        }
+
+        async function loadStatus() {
+            try {
+                const res = await fetch('./data/backups.json?v=' + Date.now());
+                dashboardData = await res.json();
+                const d = dashboardData;
+                
+                document.getElementById('last-updated').textContent = 'Last sync: ' + toPST(d.lastUpdated);
+                document.getElementById('glucose-count').textContent = d.database.glucose.toLocaleString();
+                document.getElementById('notion-count').textContent = d.database.notion.toLocaleString();
+                document.getElementById('count-label').textContent = d.backups.length + ' snapshots';
+                
+                // Tokens
+                if (d.tokenUsage) {
+                    document.getElementById('usage-container').innerHTML = d.tokenUsage.map(u => `
+                        <a href="${u.link || '#'}" target="_blank" class="bg-white p-5 rounded-2xl border shadow-sm block hover:border-blue-500 transition-all">
+                            <div class="text-xs font-bold text-gray-400 uppercase mb-1">${u.platform}</div>
+                            <div class="text-2xl font-black text-gray-800">${((u.realTokens||0)/1000000).toFixed(1)}M</div>
+                            <div class="text-[10px] text-gray-400">TOKENS USED</div>
+                        </a>
+                    `).join('');
+                }
+
+                renderGlucoseChart(24);
+
+                // Growth Charts
+                if (Array.isArray(d.syncHistory) && d.syncHistory.length) {
+                    const fullDates = d.syncHistory.map(h => String(h.date || ''));
+                    const displayDates = fullDates.map(formatGrowthDateLabel);
+                    const commonOptions = {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: { display: false },
+                            tooltip: {
+                                callbacks: {
+                                    title: (items) => {
+                                        const idx = items?.[0]?.dataIndex ?? 0;
+                                        return fullDates[idx] || '';
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            x: {
+                                ticks: {
+                                    autoSkip: true,
+                                    maxTicksLimit: 10,
+                                    maxRotation: 45,
+                                    minRotation: 45,
+                                    callback: (_, idx) => displayDates[idx] || ''
+                                }
+                            }
+                        }
+                    };
+
+                    new Chart(document.getElementById('growthChartGlucose'), {
+                        type: 'line',
+                        data: {
+                            labels: fullDates,
+                            datasets: [{ data: d.syncHistory.map(h => h.glucose), borderColor: '#3B82F6', fill: true, tension: 0.3 }]
+                        },
+                        options: commonOptions
+                    });
+
+                    new Chart(document.getElementById('growthChartNotion'), {
+                        type: 'line',
+                        data: {
+                            labels: fullDates,
+                            datasets: [{ data: d.syncHistory.map(h => h.notion), borderColor: '#A855F7', fill: true, tension: 0.3 }]
+                        },
+                        options: commonOptions
+                    });
+                }
+
+                // List
+                document.getElementById('backup-list').innerHTML = d.backups.map(b => `
+                    <tr><td class="px-6 py-4 text-sm font-medium">${toPST(b.created)}</td><td class="px-6 py-4 text-sm font-mono">${b.filename}</td><td class="px-6 py-4 text-right text-sm font-mono text-gray-500">${b.size}</td></tr>
+                `).join('');
+            } catch (e) { console.error('Dashboard Error:', e); }
+        }
+        loadStatus();
+    </script>
+</body>
+</html>
