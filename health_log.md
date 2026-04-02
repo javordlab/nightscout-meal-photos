@@ -1,8 +1,10 @@
 # Health Log
 
+| 2026-04-02 | 12:46 -07:00 | Maria Dennis | Food | Lunch | Lunch: 1 protein ball (BG: 136 mg/dL Flat) (Pred: 155-170 mg/dL @ 14:00-14:30 PM) [Cumulative Lunch: ~14g carbs total] (Protein: 5g | Carbs: ~10g | Cals: ~110) | 10 | 110 |
+| 2026-04-02 | 12:40 -07:00 | Maria Dennis | Food | Lunch | Lunch: 2 boiled chicken wings and small cucumber sliced (BG: 141 mg/dL Flat) (Pred: 150-160 mg/dL @ 14:00-14:15 PM) (Protein: 23g | Carbs: ~4g | Cals: ~240) | 4 | 240 |
 | 2026-04-02 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 161 mg/dL Flat) | null | null |
 | 2026-04-02 | 11:48 -07:00 | Maria Dennis | Activity | - | 90 minutes gardening - moderate/vigorous (hedge pruning and cleaning) (BG: 158 mg/dL Flat) | null | null |
-| 2026-04-02 | 10:09 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Open-faced roll with carnitas, avocado slices, and cream cheese (BG: 113 mg/dL Flat) (Pred: 160-185 mg/dL @ 11:30-12:00 PM) (Protein: 31g | Carbs: ~32g | Cals: ~570) [photo](https://iili.io/BCM6nNj.jpg) | 32 | 570 |
+| 2026-04-02 | 09:30 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Open-faced roll with carnitas, avocado slices, and cream cheese (BG: 113 mg/dL Flat) (Pred: 160-185 mg/dL @ 11:30-12:00 PM) (Protein: 31g | Carbs: ~32g | Cals: ~570) [photo](https://iili.io/BCM6nNj.jpg) | 32 | 570 |
 | 2026-04-02 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 106 mg/dL Flat) | null | null |
 | 2026-04-02 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 106 mg/dL Flat) | null | null |
 | 2026-04-02 | 09:05 -07:00 | Maria Dennis | Medication | - | Medication: Rosuvastatin 10mg (Scheduled) (BG: 106 mg/dL Flat) | null | null |
