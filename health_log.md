@@ -443,3 +443,4 @@
 | 2026-04-01 | 13:05 -07:00 | Maria Dennis | Food | Lunch | Lunch: Small handful of cashews (~15-18 nuts) (BG: 109 mg/dL Flat) (Pred: 170-190 mg/dL @ 2:30 PM) [Cumulative Lunch: ~44g carbs total] (Protein: 5g | Carbs: ~9g | Cals: ~157) [📷](https://iili.io/BqE7jLv.jpg) | 9 | 157 |
 | 2026-04-01 | 13:32 -07:00 | Maria Dennis | Activity | - | 15 minute walk | null | null |
 | 2026-04-01 | 14:25 -07:00 | Maria Dennis | Activity | - | 1 hour gardening | null | null |
+| 2026-04-01 | 16:00 -07:00 | Maria Dennis | Food | Snack | Snack: Small piece of cake with whipped cream and peanut butter (BG: Unknown) (Pred: 165-185 mg/dL @ 5:30 PM) (Protein: 5g | Carbs: ~28g | Cals: ~280) | 28 | 280 |
