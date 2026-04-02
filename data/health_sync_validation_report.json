@@ -1,8 +1,24 @@
 {
-  "generatedAt": "2026-04-02T19:30:01.109Z",
-  "entryCount": 41,
+  "generatedAt": "2026-04-02T20:00:00.392Z",
+  "entryCount": 43,
   "errors": [],
   "warnings": [
+    {
+      "entryKey": "sha256:e419ec1657e809fce643db5aa1612e77d1bcd98ff79d9b41845a9158e45d9b1a",
+      "timestamp": "2026-04-02T12:46:00-07:00",
+      "title": "Lunch: 1 protein ball [Cumulative Lunch: ~14g carbs total]",
+      "reason": "photo_missing_but_found_in_internal_folder",
+      "file": "/Users/javier/.openclaw/media/inbound/file_252---de779c6d-343b-4306-bb5b-19193563cd83.jpg",
+      "diffMinutes": 5
+    },
+    {
+      "entryKey": "sha256:15665ed61f024160d67ab73558ecfb6da9bf577d75abd465452314bfe7998d52",
+      "timestamp": "2026-04-02T12:40:00-07:00",
+      "title": "Lunch: 2 boiled chicken wings and small cucumber sliced",
+      "reason": "photo_missing_but_found_in_internal_folder",
+      "file": "/Users/javier/.openclaw/media/inbound/file_252---de779c6d-343b-4306-bb5b-19193563cd83.jpg",
+      "diffMinutes": 1
+    },
     {
       "entryKey": "sha256:73841db1a6210766cfd2aec5879a15b6d5401f56e95162651840db5fc1b18a48",
       "timestamp": "2026-03-31T13:09:00-07:00",
