@@ -1,9 +1,9 @@
 {
-  "pid": 20993,
-  "createdAt": "2026-04-02T18:48:55.701Z",
+  "pid": 27852,
+  "createdAt": "2026-04-02T19:00:00.690Z",
   "script": "scripts/health-sync/unified_sync.js",
   "args": [
     "--mode=sync-only",
-    "--since=2026-04-02"
+    "--since=2026-03-31"
   ]
 }

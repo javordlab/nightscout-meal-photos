@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-02T18:48:55.679Z",
+  "generatedAt": "2026-04-02T19:00:00.620Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
   "entryCount": 426,
   "entries": [
@@ -8,7 +8,7 @@
       "source": {
         "file": "health_log.md",
         "line": 3,
-        "rawRow": "| 2026-04-02 | 11:48 -07:00 | Maria Dennis | Activity | - | 90 minutes gardening (BG: 158 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-04-02 | 11:48 -07:00 | Maria Dennis | Activity | - | 90 minutes gardening - moderate/vigorous (hedge pruning and cleaning) (BG: 158 mg/dL Flat) | null | null |"
       },
       "timestamp": "2026-04-02T11:48:00-07:00",
       "date": "2026-04-02",
@@ -16,7 +16,7 @@
       "user": "Maria Dennis",
       "category": "Activity",
       "mealType": "-",
-      "title": "90 minutes gardening",
+      "title": "90 minutes gardening - moderate/vigorous (hedge pruning and cleaning)",
       "notes": "BG: 158 mg/dL Flat",
       "photoUrls": [],
       "carbsEst": null,
@@ -42,8 +42,8 @@
         "gallery": "pending",
         "outcomesBackfilled": false
       },
-      "entryKey": "sha256:9936c1fafbdfe3e07800748cb44a60c7b762199e72885127155b624db7cf54e9",
-      "contentHash": "sha256:55b5e602dddafb893267060d6d32dc799e1c4bb6d13d5bf839ef2bcaa9475fb4"
+      "entryKey": "sha256:a965f901bdb52fbff760975be7b4b4a5ddfdd6ca2ffb56b716097e9e9691eea7",
+      "contentHash": "sha256:0ed91740916be737ca503f779cd1ae549b9cb9fc7aeedca7624b7a0335dc7a8c"
     },
     {
       "source": {
