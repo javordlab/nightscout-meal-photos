@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-02T01:30:00.435Z",
+  "generatedAt": "2026-04-02T02:00:00.541Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
-  "entryCount": 418,
+  "entryCount": 419,
   "entries": [
     {
       "source": {
@@ -17482,6 +17482,49 @@
       },
       "entryKey": "sha256:340d859537a3bf2e17ddac02cac414f39dd2db07c8d0127f1a9d3fd1c26cf980",
       "contentHash": "sha256:9f18d51d49626bcd26f7b7952243ac02e459fe9d98d56ff4aedbebf83fb23f85"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 447,
+        "rawRow": "| 2026-04-01 | 18:38 -07:00 | Maria Dennis | Food | Dinner | Dinner: Large flour tortilla with shredded pork, roasted peppers (red & green), red onion, shredded cheddar cheese, guacamole, lettuce, and cilantro (BG: 134 mg/dL Flat) (Pred: 195-215 mg/dL @ 8:15 PM) (Protein: 28g | Carbs: ~40g | Cals: ~500) [📷](https://iili.io/BqQAZGI.jpg) | 40 | 500 |"
+      },
+      "timestamp": "2026-04-01T18:38:00-07:00",
+      "date": "2026-04-01",
+      "time": "18:38 -07:00",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "mealType": "Dinner",
+      "title": "Dinner: Large flour tortilla with shredded pork, roasted peppers (red & green), red onion, shredded cheddar cheese, guacamole, lettuce, and cilantro",
+      "notes": "BG: 134 mg/dL Flat; Protein: 28g; Pred: 195-215 mg/dL @ 8:15 PM",
+      "photoUrls": [
+        "https://iili.io/BqQAZGI.jpg"
+      ],
+      "carbsEst": 40,
+      "caloriesEst": 500,
+      "proteinEst": 28,
+      "predicted": {
+        "peakBgText": "195-215 mg/dL",
+        "peakTimeText": "8:15 PM"
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:0ec2c811f306f5bdb4be543081f2e9a02fef6584974ddb536fa411701ea0318a",
+      "contentHash": "sha256:a8468deb443995f222b3242e4f0ae3873cec2a637dc17f552fad9839f475c75d"
     }
   ]
 }
