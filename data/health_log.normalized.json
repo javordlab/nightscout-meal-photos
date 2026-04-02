@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-02T01:00:00.896Z",
+  "generatedAt": "2026-04-02T01:30:00.435Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
-  "entryCount": 417,
+  "entryCount": 418,
   "entries": [
     {
       "source": {
@@ -17441,6 +17441,47 @@
       },
       "entryKey": "sha256:99c38720db78322e027278f5ee223b611403505758d47279cf5cfcbf2d67c84f",
       "contentHash": "sha256:6ca51eb7a68d66fe393bd2d7edb7030a88e7366fffbeec05656e433916451838"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 446,
+        "rawRow": "| 2026-04-01 | 16:00 -07:00 | Maria Dennis | Food | Snack | Snack: Small piece of cake with whipped cream and peanut butter (BG: Unknown) (Pred: 165-185 mg/dL @ 5:30 PM) (Protein: 5g | Carbs: ~28g | Cals: ~280) | 28 | 280 |"
+      },
+      "timestamp": "2026-04-01T16:00:00-07:00",
+      "date": "2026-04-01",
+      "time": "16:00 -07:00",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "mealType": "Snack",
+      "title": "Snack: Small piece of cake with whipped cream and peanut butter",
+      "notes": "BG: Unknown; Protein: 5g; Pred: 165-185 mg/dL @ 5:30 PM",
+      "photoUrls": [],
+      "carbsEst": 28,
+      "caloriesEst": 280,
+      "proteinEst": 5,
+      "predicted": {
+        "peakBgText": "165-185 mg/dL",
+        "peakTimeText": "5:30 PM"
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:340d859537a3bf2e17ddac02cac414f39dd2db07c8d0127f1a9d3fd1c26cf980",
+      "contentHash": "sha256:9f18d51d49626bcd26f7b7952243ac02e459fe9d98d56ff4aedbebf83fb23f85"
     }
   ]
 }
