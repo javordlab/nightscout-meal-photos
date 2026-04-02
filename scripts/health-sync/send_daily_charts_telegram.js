@@ -123,6 +123,27 @@ function ensureCharts() {
       throw new Error(`chart_generate_failed: ${cmd}\nstdout: ${stdout}\nstderr: ${stderr}`);
     }
   }
+
+  // Copy PNGs into nightscout-meal-photos/ so they are included in gh-pages deploy
+  const SITE_DIR = '/Users/javier/.openclaw/workspace/nightscout-meal-photos';
+  const chartFiles = [
+    ['daily_glucose_chart.png', 'daily_glucose_chart.png'],
+    ['glucose_chart.png', 'glucose_chart.png'],
+    ['weekly_calories_chart.png', 'weekly_calories_chart.png'],
+    ['weekly_carbs_chart.png', 'weekly_carbs_chart.png']
+  ];
+  for (const [src, dst] of chartFiles) {
+    const srcPath = `/Users/javier/.openclaw/workspace/tmp/${src}`;
+    const dstPath = `${SITE_DIR}/${dst}`;
+    if (fs.existsSync(srcPath)) fs.copyFileSync(srcPath, dstPath);
+  }
+
+  // Deploy updated PNGs to gh-pages
+  try {
+    execSync('node /Users/javier/.openclaw/workspace/scripts/health-sync/deploy_gh_pages.js', { stdio: 'pipe' });
+  } catch (e) {
+    console.error('gh-pages chart deploy failed:', e.message);
+  }
 }
 
 function sendPhoto(botToken, chatId, chartPath, caption) {

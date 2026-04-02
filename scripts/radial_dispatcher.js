@@ -426,8 +426,8 @@ async function main() {
     try {
       console.log("  -> Photo synced to Notion — regenerating gallery...");
       execSync('node /Users/javier/.openclaw/workspace/scripts/generate_notion_gallery_data.js', { stdio: 'inherit' });
-      execSync('cd /Users/javier/.openclaw/workspace/nightscout-meal-photos && git add data/notion_meals.json && (git commit -m "chore: gallery update after photo sync" || true) && git push origin main', { stdio: 'inherit' });
-      console.log("  -> Gallery updated and pushed.");
+      // generate_notion_gallery_data.js now calls deploy_gh_pages.js internally
+      console.log("  -> Gallery updated and deployed to gh-pages.");
     } catch (e) {
       console.error("Gallery update failed:", e.message);
     }

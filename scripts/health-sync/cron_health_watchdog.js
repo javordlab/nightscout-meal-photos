@@ -263,6 +263,26 @@ async function main() {
   // Check daily report separately
   const reportIssue = checkDailyReport(now);
 
+  // Check gh-pages staleness: notion_meals.json should not be older than 2 hours
+  let ghPagesIssue = null;
+  try {
+    const notionMealsPath = '/Users/javier/.openclaw/workspace/nightscout-meal-photos/data/notion_meals.json';
+    const backupsPath = '/Users/javier/.openclaw/workspace/nightscout-meal-photos/data/backups.json';
+    if (fs.existsSync(notionMealsPath)) {
+      const mtime = fs.statSync(notionMealsPath).mtimeMs;
+      const ageMin = (now - mtime) / 60000;
+      if (ageMin > 120) ghPagesIssue = `notion_meals.json stale by ${Math.round(ageMin)}m`;
+    }
+    if (!ghPagesIssue && fs.existsSync(backupsPath)) {
+      const bdata = JSON.parse(fs.readFileSync(backupsPath, 'utf8'));
+      const lastUpdated = new Date(bdata.lastUpdated || 0).getTime();
+      const ageMin = (now - lastUpdated) / 60000;
+      if (ageMin > 70) ghPagesIssue = `backups.json glucose data stale by ${Math.round(ageMin)}m`;
+    }
+  } catch (e) {
+    console.warn('[watchdog] gh-pages staleness check failed:', e.message);
+  }
+
   // Write status file
   const statusOut = {
     checkedAt: new Date(now).toISOString(),
@@ -270,10 +290,11 @@ async function main() {
     jobs: allJobs,
     staleJobs: stale,
     dailyReportIssue: reportIssue || null,
+    ghPagesIssue: ghPagesIssue || null,
     alertSent: false
   };
 
-  const issues = stale.length + (reportIssue ? 1 : 0);
+  const issues = stale.length + (reportIssue ? 1 : 0) + (ghPagesIssue ? 1 : 0);
 
   if (issues > 0) {
     const lines = ['⚠️ *Cron Health Alert*', ''];
@@ -285,6 +306,10 @@ async function main() {
 
     if (reportIssue) {
       lines.push(`• *${reportIssue.name}*: ${reportIssue.detail}`);
+    }
+
+    if (ghPagesIssue) {
+      lines.push(`• *gh-pages*: ${ghPagesIssue}`);
     }
 
     const message = lines.join('\n');

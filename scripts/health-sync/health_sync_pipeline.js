@@ -112,6 +112,17 @@ async function main(options = {}) {
   console.log(`Duration: ${pipelineDuration}ms`);
   console.log(`Results:`, Object.entries(results).map(([k, v]) => `${k}: ${v.success ? '✓' : '✗'}`).join(', '));
 
+  // Always regenerate gallery + deploy to gh-pages after every pipeline run
+  if (!dryRun) {
+    try {
+      const { execSync } = require('child_process');
+      execSync('node /Users/javier/.openclaw/workspace/scripts/generate_notion_gallery_data.js', { stdio: 'inherit' });
+      // generate_notion_gallery_data.js calls deploy_gh_pages.js internally
+    } catch (e) {
+      console.error('Post-pipeline gallery/deploy failed:', e.message);
+    }
+  }
+
   return results;
 }
 
