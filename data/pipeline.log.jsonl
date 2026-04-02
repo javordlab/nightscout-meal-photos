@@ -6166,3 +6166,25 @@
 {"ts":"2026-04-02T17:00:00.427Z","op":"step_start","name":"Unified Sync"}
 {"ts":"2026-04-02T17:01:14.625Z","op":"step_complete","name":"Unified Sync","duration":74198,"result":"object"}
 {"ts":"2026-04-02T17:01:14.626Z","op":"pipeline_complete","duration":74295,"results":["resolvePendingPhotos","normalize","enrich","validate","sync"]}
+{"ts":"2026-04-02T17:30:00.658Z","op":"pipeline_start","mode":"sync-only","since":"2026-03-31"}
+{"ts":"2026-04-02T17:30:00.660Z","op":"step_start","name":"Resolve Pending Photos"}
+{"ts":"2026-04-02T17:30:00.671Z","op":"step_complete","name":"Resolve Pending Photos","duration":10,"result":"object"}
+{"ts":"2026-04-02T17:30:00.672Z","op":"step_start","name":"Normalize"}
+{"ts":"2026-04-02T17:30:00.707Z","op":"step_complete","name":"Normalize","duration":35}
+{"ts":"2026-04-02T17:30:00.708Z","op":"step_start","name":"Enrich"}
+{"ts":"2026-04-02T17:30:00.728Z","op":"step_complete","name":"Enrich","duration":20}
+{"ts":"2026-04-02T17:30:00.728Z","op":"step_start","name":"Validate"}
+{"ts":"2026-04-02T17:30:00.751Z","op":"step_error","name":"Validate","duration":23,"error":"validation_failed:2"}
+{"ts":"2026-04-02T17:30:00.751Z","op":"pipeline_abort","reason":"validation_failed"}
+{"ts":"2026-04-02T17:46:55.095Z","op":"pipeline_start","mode":"sync-only","since":"2026-04-02"}
+{"ts":"2026-04-02T17:46:55.096Z","op":"step_start","name":"Resolve Pending Photos"}
+{"ts":"2026-04-02T17:46:55.100Z","op":"step_complete","name":"Resolve Pending Photos","duration":4,"result":"object"}
+{"ts":"2026-04-02T17:46:55.100Z","op":"step_start","name":"Normalize"}
+{"ts":"2026-04-02T17:46:55.114Z","op":"step_complete","name":"Normalize","duration":14}
+{"ts":"2026-04-02T17:46:55.114Z","op":"step_start","name":"Enrich"}
+{"ts":"2026-04-02T17:46:55.122Z","op":"step_complete","name":"Enrich","duration":8}
+{"ts":"2026-04-02T17:46:55.122Z","op":"step_start","name":"Validate"}
+{"ts":"2026-04-02T17:46:55.126Z","op":"step_complete","name":"Validate","duration":4,"result":"object"}
+{"ts":"2026-04-02T17:46:55.126Z","op":"step_start","name":"Unified Sync"}
+{"ts":"2026-04-02T17:47:08.614Z","op":"step_complete","name":"Unified Sync","duration":13488,"result":"object"}
+{"ts":"2026-04-02T17:47:08.616Z","op":"pipeline_complete","duration":13520,"results":["resolvePendingPhotos","normalize","enrich","validate","sync"]}
