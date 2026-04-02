@@ -111,13 +111,18 @@ function autoLog() {
       console.log(`  skip (suppressed): Medication: ${description}`);
       return;
     }
-    // Check if any variant of this medication description already exists today
-    // Use loose match: date + description keyword (ignores exact time/offset)
+    // Strict dedup: if ANY Medication entry exists for this date containing the drug name
+    // AND the meal context (breakfast/lunch/dinner), skip — even if from a photo confirmation.
+    // A medication photo = confirmation of the scheduled dose, NOT a new entry.
     const descLower = description.toLowerCase();
+    const drugName = descLower.split(' ')[0]; // e.g. "metformin", "lisinopril"
+    const mealCtx = (descLower.match(/\(([^)]+)\)/) || [])[1]?.trim().toLowerCase() || ''; // e.g. "breakfast"
     const alreadyLogged = lines.some(l => {
       if (!l.includes(today) || !l.includes('Medication')) return false;
-      return l.toLowerCase().includes(descLower.split(' ')[0]) && // e.g. "metformin", "lisinopril"
-             l.toLowerCase().includes(descLower.split('(')[1]?.replace(')', '').trim() || ''); // e.g. "lunch", "breakfast"
+      const ll = l.toLowerCase();
+      const drugMatch = ll.includes(drugName);
+      const ctxMatch = mealCtx ? ll.includes(mealCtx) : true;
+      return drugMatch && ctxMatch;
     });
     if (!alreadyLogged) {
       if (!currentBg) currentBg = getBG();

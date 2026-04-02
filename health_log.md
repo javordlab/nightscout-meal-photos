@@ -1,5 +1,6 @@
 # Health Log
 
+| 2026-04-02 | 10:09 -07:00 | Maria Dennis | Food | - | Breakfast: Open-faced roll with carnitas, avocado slices, and cream cheese (BG: 113 mg/dL Flat) (Pred: 160-185 mg/dL @ 11:30-12:00 PM) (Protein: 31g | Carbs: ~32g | Cals: ~570) | null | null |
 | 2026-04-02 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 106 mg/dL Flat) | null | null |
 | 2026-04-02 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 106 mg/dL Flat) | null | null |
 | 2026-04-02 | 09:05 -07:00 | Maria Dennis | Medication | - | Medication: Rosuvastatin 10mg (Scheduled) (BG: 106 mg/dL Flat) | null | null |
@@ -440,7 +441,6 @@
 | 2026-03-30 | 18:58 -07:00 | Maria Dennis | Food | Snack | Snack: 1 orange (medium, freshly peeled) (BG: 143 mg/dL Flat) (Pred: 170-185 mg/dL @ 8:45 PM) (Protein: 1g | Carbs: ~15g | Cals: ~62) [📷](https://iili.io/B2T99Hb.jpg) | 15 | 62 |
 | 2026-03-30 | 19:40 -07:00 | Maria Dennis | Activity | - | 30 minute walk | null | null |
 | 2026-04-01 | 09:56 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: English muffin with melted cheese and prosciutto + orange wedges (~half orange) (BG: 119 mg/dL Flat) (Pred: 165-185 mg/dL @ 11:30 AM) (Protein: 24g | Carbs: ~40g | Cals: ~370) [📷](https://iili.io/BqHOHmv.jpg) | 40 | 370 |
-| 2026-04-01 | 09:56 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 119 mg/dL Flat) | null | null |
 | 2026-04-01 | 09:59 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: 3 prunes (BG: 118 mg/dL Flat) (Pred: 175-195 mg/dL @ 11:30 AM) [Cumulative Breakfast: ~56g carbs total] (Protein: 1g | Carbs: ~16g | Cals: ~60) [📷](https://iili.io/BqJxV7j.jpg) | 16 | 60 |
 | 2026-04-01 | 11:19 -07:00 | Maria Dennis | Activity | - | 30 minute walk | null | null |
 | 2026-04-01 | 12:56 -07:00 | Maria Dennis | Food | Lunch | Lunch: Small tortilla with 2 slices turkey and 1 slice cheese (folded quesadilla-style) + 3 slices papaya (BG: 107 mg/dL Flat) (Pred: 165-185 mg/dL @ 2:30 PM) (Protein: 15g | Carbs: ~35g | Cals: ~260) [📷](https://iili.io/Bq0pPCN.jpg) | 35 | 260 |

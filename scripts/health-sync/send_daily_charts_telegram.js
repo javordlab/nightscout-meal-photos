@@ -114,7 +114,15 @@ function ensureCharts() {
     'cd /Users/javier/.openclaw/workspace && /opt/homebrew/bin/node scripts/generate_weekly_carbs_chart.js'
   ];
 
-  for (const cmd of cmds) execSync(cmd, { stdio: 'pipe' });
+  for (const cmd of cmds) {
+    try {
+      execSync(cmd, { stdio: 'pipe' });
+    } catch (e) {
+      const stderr = e.stderr ? e.stderr.toString().trim() : '';
+      const stdout = e.stdout ? e.stdout.toString().trim() : '';
+      throw new Error(`chart_generate_failed: ${cmd}\nstdout: ${stdout}\nstderr: ${stderr}`);
+    }
+  }
 }
 
 function sendPhoto(botToken, chatId, chartPath, caption) {
