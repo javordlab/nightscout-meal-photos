@@ -2700,3 +2700,31 @@
 {"ts":"2026-04-02T09:07:09.373Z","entryKey":"sha256:first","timestamp":"2026-03-24T10:00:00-07:00","category":"Food","description":"Breakfast: Oatmeal"}
 {"ts":"2026-04-02T09:07:09.373Z","entryKey":"sha256:second","timestamp":"2026-03-24T12:00:00-07:00","category":"Medication","description":"Metformin 500mg (lunch)"}
 {"ts":"2026-04-02T09:07:09.384Z","entryKey":"sha256:longdesc","timestamp":"2026-03-24T15:00:00-07:00","category":"Food","description":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"}
+{"ts":"2026-04-02T09:07:44.028Z","entryKey":"sha256:abc123","timestamp":"2026-03-24T20:06:00-07:00","category":"Activity","description":"25 minutes walk"}
+{"ts":"2026-04-02T09:07:44.030Z","entryKey":"sha256:first","timestamp":"2026-03-24T10:00:00-07:00","category":"Food","description":"Breakfast: Oatmeal"}
+{"ts":"2026-04-02T09:07:44.030Z","entryKey":"sha256:second","timestamp":"2026-03-24T12:00:00-07:00","category":"Medication","description":"Metformin 500mg (lunch)"}
+{"ts":"2026-04-02T09:07:44.039Z","entryKey":"sha256:longdesc","timestamp":"2026-03-24T15:00:00-07:00","category":"Food","description":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"}
+{"ts":"2026-04-02T09:11:17.339Z","entryKey":"sha256:abc123","timestamp":"2026-03-24T20:06:00-07:00","category":"Activity","description":"25 minutes walk"}
+{"ts":"2026-04-02T09:11:17.342Z","entryKey":"sha256:first","timestamp":"2026-03-24T10:00:00-07:00","category":"Food","description":"Breakfast: Oatmeal"}
+{"ts":"2026-04-02T09:11:17.342Z","entryKey":"sha256:second","timestamp":"2026-03-24T12:00:00-07:00","category":"Medication","description":"Metformin 500mg (lunch)"}
+{"ts":"2026-04-02T09:11:17.349Z","entryKey":"sha256:longdesc","timestamp":"2026-03-24T15:00:00-07:00","category":"Food","description":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"}
+{"ts":"2026-04-02T09:13:44.699Z","entryKey":"sha256:abc123","timestamp":"2026-03-24T20:06:00-07:00","category":"Activity","description":"25 minutes walk"}
+{"ts":"2026-04-02T09:13:44.702Z","entryKey":"sha256:first","timestamp":"2026-03-24T10:00:00-07:00","category":"Food","description":"Breakfast: Oatmeal"}
+{"ts":"2026-04-02T09:13:44.702Z","entryKey":"sha256:second","timestamp":"2026-03-24T12:00:00-07:00","category":"Medication","description":"Metformin 500mg (lunch)"}
+{"ts":"2026-04-02T09:13:44.711Z","entryKey":"sha256:longdesc","timestamp":"2026-03-24T15:00:00-07:00","category":"Food","description":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"}
+{"ts":"2026-04-02T09:14:43.368Z","entryKey":"sha256:abc123","timestamp":"2026-03-24T20:06:00-07:00","category":"Activity","description":"25 minutes walk"}
+{"ts":"2026-04-02T09:14:43.371Z","entryKey":"sha256:first","timestamp":"2026-03-24T10:00:00-07:00","category":"Food","description":"Breakfast: Oatmeal"}
+{"ts":"2026-04-02T09:14:43.371Z","entryKey":"sha256:second","timestamp":"2026-03-24T12:00:00-07:00","category":"Medication","description":"Metformin 500mg (lunch)"}
+{"ts":"2026-04-02T09:14:43.379Z","entryKey":"sha256:longdesc","timestamp":"2026-03-24T15:00:00-07:00","category":"Food","description":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"}
+{"ts":"2026-04-02T09:24:32.987Z","entryKey":"sha256:abc123","timestamp":"2026-03-24T20:06:00-07:00","category":"Activity","description":"25 minutes walk"}
+{"ts":"2026-04-02T09:24:32.990Z","entryKey":"sha256:first","timestamp":"2026-03-24T10:00:00-07:00","category":"Food","description":"Breakfast: Oatmeal"}
+{"ts":"2026-04-02T09:24:32.990Z","entryKey":"sha256:second","timestamp":"2026-03-24T12:00:00-07:00","category":"Medication","description":"Metformin 500mg (lunch)"}
+{"ts":"2026-04-02T09:24:33.000Z","entryKey":"sha256:longdesc","timestamp":"2026-03-24T15:00:00-07:00","category":"Food","description":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"}
+{"ts":"2026-04-02T09:25:49.918Z","entryKey":"sha256:abc123","timestamp":"2026-03-24T20:06:00-07:00","category":"Activity","description":"25 minutes walk"}
+{"ts":"2026-04-02T09:25:49.922Z","entryKey":"sha256:first","timestamp":"2026-03-24T10:00:00-07:00","category":"Food","description":"Breakfast: Oatmeal"}
+{"ts":"2026-04-02T09:25:49.922Z","entryKey":"sha256:second","timestamp":"2026-03-24T12:00:00-07:00","category":"Medication","description":"Metformin 500mg (lunch)"}
+{"ts":"2026-04-02T09:25:49.933Z","entryKey":"sha256:longdesc","timestamp":"2026-03-24T15:00:00-07:00","category":"Food","description":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"}
+{"ts":"2026-04-02T09:36:45.467Z","entryKey":"sha256:abc123","timestamp":"2026-03-24T20:06:00-07:00","category":"Activity","description":"25 minutes walk"}
+{"ts":"2026-04-02T09:36:45.471Z","entryKey":"sha256:first","timestamp":"2026-03-24T10:00:00-07:00","category":"Food","description":"Breakfast: Oatmeal"}
+{"ts":"2026-04-02T09:36:45.471Z","entryKey":"sha256:second","timestamp":"2026-03-24T12:00:00-07:00","category":"Medication","description":"Metformin 500mg (lunch)"}
+{"ts":"2026-04-02T09:36:45.481Z","entryKey":"sha256:longdesc","timestamp":"2026-03-24T15:00:00-07:00","category":"Food","description":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"}
