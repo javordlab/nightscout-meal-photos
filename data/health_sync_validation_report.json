@@ -1,8 +1,16 @@
 {
-  "generatedAt": "2026-04-02T21:30:01.269Z",
-  "entryCount": 44,
+  "generatedAt": "2026-04-02T22:00:01.080Z",
+  "entryCount": 45,
   "errors": [],
   "warnings": [
+    {
+      "entryKey": "sha256:edd2a9ff49e9e2e7c73ea00af1de45aebe0c69fda1a3c7dfb3bf15933479a915",
+      "timestamp": "2026-04-02T14:34:00-07:00",
+      "title": "Snack: Papaya, 3 slices (~200g)",
+      "reason": "photo_missing_but_found_in_internal_folder",
+      "file": "/Users/javier/.openclaw/media/inbound/file_253---c34d5b40-1c00-4ea9-9303-fac955bdd821.jpg",
+      "diffMinutes": 1
+    },
     {
       "entryKey": "sha256:e419ec1657e809fce643db5aa1612e77d1bcd98ff79d9b41845a9158e45d9b1a",
       "timestamp": "2026-04-02T12:46:00-07:00",
