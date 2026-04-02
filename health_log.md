@@ -1,6 +1,6 @@
 # Health Log
 
-| 2026-04-02 | 10:09 -07:00 | Maria Dennis | Food | - | Breakfast: Open-faced roll with carnitas, avocado slices, and cream cheese (BG: 113 mg/dL Flat) (Pred: 160-185 mg/dL @ 11:30-12:00 PM) (Protein: 31g | Carbs: ~32g | Cals: ~570) | null | null |
+| 2026-04-02 | 10:09 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Open-faced roll with carnitas, avocado slices, and cream cheese (BG: 113 mg/dL Flat) (Pred: 160-185 mg/dL @ 11:30-12:00 PM) (Protein: 31g | Carbs: ~32g | Cals: ~570) | 32 | 570 |
 | 2026-04-02 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 106 mg/dL Flat) | null | null |
 | 2026-04-02 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 106 mg/dL Flat) | null | null |
 | 2026-04-02 | 09:05 -07:00 | Maria Dennis | Medication | - | Medication: Rosuvastatin 10mg (Scheduled) (BG: 106 mg/dL Flat) | null | null |
