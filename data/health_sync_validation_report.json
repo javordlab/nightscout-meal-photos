@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-02T03:30:00.947Z",
-  "entryCount": 48,
+  "generatedAt": "2026-04-02T04:00:00.876Z",
+  "entryCount": 49,
   "errors": [],
   "warnings": [
     {
@@ -37,6 +37,12 @@
       "entryKey": "sha256:340d859537a3bf2e17ddac02cac414f39dd2db07c8d0127f1a9d3fd1c26cf980",
       "timestamp": "2026-04-01T16:00:00-07:00",
       "title": "Snack: Small piece of cake with whipped cream and peanut butter",
+      "reason": "missing_photo_urls"
+    },
+    {
+      "entryKey": "sha256:b4d14362084e075dca29f67523c07171dc26c0c4358e533ead035772a951f549",
+      "timestamp": "2026-04-01T20:32:00-07:00",
+      "title": "Snack: 1 protein ball",
       "reason": "missing_photo_urls"
     }
   ]
