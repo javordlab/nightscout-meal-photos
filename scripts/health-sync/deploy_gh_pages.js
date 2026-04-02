@@ -14,7 +14,8 @@ const SITE_DIR = path.join(WORKSPACE, 'nightscout-meal-photos');
 const WORKTREE = '/tmp/gh-pages-deploy';
 
 function run(cmd, opts = {}) {
-  return execSync(cmd, { stdio: opts.silent ? 'pipe' : 'inherit', ...opts }).toString().trim();
+  const result = execSync(cmd, { stdio: opts.silent ? 'pipe' : 'inherit', ...opts });
+  return result ? result.toString().trim() : '';
 }
 
 async function main() {
@@ -31,7 +32,7 @@ async function main() {
   run(`rsync -av --delete --exclude='.git' ${SITE_DIR}/ ${WORKTREE}/`);
 
   // Stage and commit if anything changed
-  const status = run('git status --porcelain', { cwd: WORKTREE, silent: true });
+  const status = run('git status --porcelain', { cwd: WORKTREE, silent: true }) || '';
   if (!status) {
     console.log('gh-pages: nothing to deploy.');
     return;
