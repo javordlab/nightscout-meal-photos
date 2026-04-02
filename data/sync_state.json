@@ -50,7 +50,7 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33285ec7-0668-8114-b200-f2218ef94584",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "actual_outcomes": {
         "preMealBg": 96,
@@ -68,7 +68,7 @@
       },
       "notion": {
         "page_id": "33285ec7-0668-8114-b200-f2218ef94584",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "needs_outcome_backfill": true
     },
@@ -85,7 +85,7 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33285ec7-0668-815f-9367-e22087291f80",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "actual_outcomes": {
         "preMealBg": 107,
@@ -103,7 +103,7 @@
       },
       "notion": {
         "page_id": "33285ec7-0668-815f-9367-e22087291f80",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "needs_outcome_backfill": true
     },
@@ -120,7 +120,7 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33285ec7-0668-8186-9c1e-cf24c2563e08",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "actual_outcomes": {
         "preMealBg": 107,
@@ -138,7 +138,7 @@
       },
       "notion": {
         "page_id": "33285ec7-0668-8186-9c1e-cf24c2563e08",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "needs_outcome_backfill": true
     },
@@ -155,11 +155,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33185ec7-0668-8173-938b-db1843c1f497",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "notion": {
         "page_id": "33185ec7-0668-8173-938b-db1843c1f497",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "nightscout": {
         "treatment_id": "69c0195a911a8ea261e675d9",
@@ -225,11 +225,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "31685ec7-0668-810a-83c7-ccf82558f83e",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "notion": {
         "page_id": "31685ec7-0668-810a-83c7-ccf82558f83e",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "nightscout": {
         "treatment_id": "69c0195a911a8ea261e675d9",
@@ -260,7 +260,7 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33285ec7-0668-814d-b7ae-ef698b8f350a",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "actual_outcomes": {
         "preMealBg": 129,
@@ -278,7 +278,7 @@
       },
       "notion": {
         "page_id": "33285ec7-0668-814d-b7ae-ef698b8f350a",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "needs_outcome_backfill": true
     },
@@ -295,7 +295,7 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33285ec7-0668-81ad-a2d0-c2c4048a0a0c",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "actual_outcomes": {
         "preMealBg": 141,
@@ -313,7 +313,7 @@
       },
       "notion": {
         "page_id": "33285ec7-0668-81ad-a2d0-c2c4048a0a0c",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "needs_outcome_backfill": true
     },
@@ -366,7 +366,7 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33285ec7-0668-8158-a507-e7b24f4b627d",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "actual_outcomes": {
         "preMealBg": 99,
@@ -384,7 +384,7 @@
       },
       "notion": {
         "page_id": "33285ec7-0668-8158-a507-e7b24f4b627d",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "needs_outcome_backfill": true
     },
@@ -411,7 +411,7 @@
       },
       "gallery": {
         "gallery_id": "33085ec7-0668-81c6-b6ed-c7049c22767f",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "nightscout": {
         "treatment_id": "69bde86a911a8ea261e673dd",
@@ -419,7 +419,7 @@
       },
       "notion": {
         "page_id": "33085ec7-0668-81c6-b6ed-c7049c22767f",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "needs_outcome_backfill": true
     },
@@ -454,11 +454,11 @@
       "outcomes_backfilled": false,
       "notion": {
         "page_id": "33285ec7-0668-81ae-a408-f9e94ab499c1",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "gallery": {
         "gallery_id": "33285ec7-0668-81ae-a408-f9e94ab499c1",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "needs_outcome_backfill": true,
       "actual_outcomes": {
@@ -485,11 +485,11 @@
       "outcomes_backfilled": false,
       "notion": {
         "page_id": "33085ec7-0668-81ea-8bc5-dfc485fbb5ec",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "gallery": {
         "gallery_id": "33085ec7-0668-81ea-8bc5-dfc485fbb5ec",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "needs_outcome_backfill": true,
       "actual_outcomes": {
@@ -534,11 +534,11 @@
       "outcomes_backfilled": false,
       "notion": {
         "page_id": "33185ec7-0668-818b-940a-db90730ebf38",
-        "last_synced_at": "2026-04-02T23:00:01.316Z"
+        "last_synced_at": "2026-04-02T23:30:00.339Z"
       },
       "gallery": {
         "gallery_id": "33185ec7-0668-818b-940a-db90730ebf38",
-        "last_synced_at": "2026-04-02T23:00:01.316Z"
+        "last_synced_at": "2026-04-02T23:30:00.339Z"
       },
       "needs_outcome_backfill": true,
       "actual_outcomes": {
@@ -624,11 +624,11 @@
       "outcomes_backfilled": false,
       "notion": {
         "page_id": "33285ec7-0668-8141-bd20-ea0303ea91ae",
-        "last_synced_at": "2026-04-02T23:00:01.316Z"
+        "last_synced_at": "2026-04-02T23:30:00.339Z"
       },
       "gallery": {
         "gallery_id": "33285ec7-0668-8141-bd20-ea0303ea91ae",
-        "last_synced_at": "2026-04-02T23:00:01.316Z"
+        "last_synced_at": "2026-04-02T23:30:00.339Z"
       },
       "needs_outcome_backfill": true,
       "actual_outcomes": {
@@ -722,12 +722,12 @@
       "outcomes_backfilled": false,
       "notion": {
         "page_id": "33185ec7-0668-819f-9ba8-d1fead93532b",
-        "last_synced_at": "2026-04-02T23:00:01.316Z"
+        "last_synced_at": "2026-04-02T23:30:00.339Z"
       },
       "needs_outcome_backfill": true,
       "gallery": {
         "gallery_id": "33185ec7-0668-819f-9ba8-d1fead93532b",
-        "last_synced_at": "2026-04-02T23:00:01.316Z"
+        "last_synced_at": "2026-04-02T23:30:00.339Z"
       },
       "actual_outcomes": {
         "preMealBg": 148,
@@ -859,11 +859,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33685ec7-0668-818f-b57e-f60261171df5",
-        "last_synced_at": "2026-04-02T23:00:01.316Z"
+        "last_synced_at": "2026-04-02T23:30:00.340Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-818f-b57e-f60261171df5",
-        "last_synced_at": "2026-04-02T23:00:01.316Z"
+        "last_synced_at": "2026-04-02T23:30:00.340Z"
       },
       "actual_outcomes": {
         "preMealBg": 93,
@@ -993,11 +993,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33185ec7-0668-81f0-bbe1-d05f491efda4",
-        "last_synced_at": "2026-04-02T23:00:01.316Z"
+        "last_synced_at": "2026-04-02T23:30:00.340Z"
       },
       "notion": {
         "page_id": "33185ec7-0668-81f0-bbe1-d05f491efda4",
-        "last_synced_at": "2026-04-02T23:00:01.316Z"
+        "last_synced_at": "2026-04-02T23:30:00.340Z"
       },
       "actual_outcomes": {
         "preMealBg": 91,
@@ -1065,11 +1065,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33685ec7-0668-8141-846e-d3e81db1c132",
-        "last_synced_at": "2026-04-02T23:00:01.317Z"
+        "last_synced_at": "2026-04-02T23:30:00.340Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-8141-846e-d3e81db1c132",
-        "last_synced_at": "2026-04-02T23:00:01.317Z"
+        "last_synced_at": "2026-04-02T23:30:00.340Z"
       },
       "actual_outcomes": {
         "preMealBg": 108,
@@ -1096,11 +1096,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33285ec7-0668-8137-8efc-e2b15e93590f",
-        "last_synced_at": "2026-04-02T23:00:01.317Z"
+        "last_synced_at": "2026-04-02T23:30:00.340Z"
       },
       "notion": {
         "page_id": "33285ec7-0668-8137-8efc-e2b15e93590f",
-        "last_synced_at": "2026-04-02T23:00:01.317Z"
+        "last_synced_at": "2026-04-02T23:30:00.340Z"
       },
       "actual_outcomes": {
         "preMealBg": 106,
@@ -1142,11 +1142,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33285ec7-0668-8145-8234-c1d3689a2887",
-        "last_synced_at": "2026-04-02T23:00:01.317Z"
+        "last_synced_at": "2026-04-02T23:30:00.340Z"
       },
       "notion": {
         "page_id": "33285ec7-0668-8145-8234-c1d3689a2887",
-        "last_synced_at": "2026-04-02T23:00:01.317Z"
+        "last_synced_at": "2026-04-02T23:30:00.340Z"
       },
       "actual_outcomes": {
         "preMealBg": 133,
@@ -1210,11 +1210,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33285ec7-0668-813b-843c-c298cc7f88f6",
-        "last_synced_at": "2026-04-02T23:00:01.317Z"
+        "last_synced_at": "2026-04-02T23:30:00.340Z"
       },
       "notion": {
         "page_id": "33285ec7-0668-813b-843c-c298cc7f88f6",
-        "last_synced_at": "2026-04-02T23:00:01.317Z"
+        "last_synced_at": "2026-04-02T23:30:00.340Z"
       },
       "actual_outcomes": {
         "preMealBg": 123,
@@ -1268,11 +1268,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33285ec7-0668-819b-bdcd-e1ba85b3235f",
-        "last_synced_at": "2026-04-02T23:00:01.317Z"
+        "last_synced_at": "2026-04-02T23:30:00.340Z"
       },
       "notion": {
         "page_id": "33285ec7-0668-819b-bdcd-e1ba85b3235f",
-        "last_synced_at": "2026-04-02T23:00:01.317Z"
+        "last_synced_at": "2026-04-02T23:30:00.340Z"
       }
     },
     "sha256:ea326cbe2e8d058db4326a277f574b8aaec6cc22fd184e9ede006651ad324dff": {
@@ -1288,11 +1288,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33285ec7-0668-815a-8fe2-d1b5d089a0e8",
-        "last_synced_at": "2026-04-02T23:00:01.317Z"
+        "last_synced_at": "2026-04-02T23:30:00.340Z"
       },
       "notion": {
         "page_id": "33285ec7-0668-815a-8fe2-d1b5d089a0e8",
-        "last_synced_at": "2026-04-02T23:00:01.317Z"
+        "last_synced_at": "2026-04-02T23:30:00.340Z"
       },
       "actual_outcomes": {
         "preMealBg": 140,
@@ -1332,11 +1332,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33185ec7-0668-8135-8450-f81db4292bef",
-        "last_synced_at": "2026-04-02T23:00:01.317Z"
+        "last_synced_at": "2026-04-02T23:30:00.340Z"
       },
       "notion": {
         "page_id": "33185ec7-0668-8135-8450-f81db4292bef",
-        "last_synced_at": "2026-04-02T23:00:01.317Z"
+        "last_synced_at": "2026-04-02T23:30:00.340Z"
       },
       "actual_outcomes": {
         "preMealBg": 132,
@@ -1418,11 +1418,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33285ec7-0668-8112-94f0-f1eedcd1275d",
-        "last_synced_at": "2026-04-02T23:00:01.317Z"
+        "last_synced_at": "2026-04-02T23:30:00.340Z"
       },
       "notion": {
         "page_id": "33285ec7-0668-8112-94f0-f1eedcd1275d",
-        "last_synced_at": "2026-04-02T23:00:01.317Z"
+        "last_synced_at": "2026-04-02T23:30:00.340Z"
       },
       "actual_outcomes": {
         "preMealBg": 168,
@@ -1463,11 +1463,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33285ec7-0668-81b1-adfe-cc61515df53a",
-        "last_synced_at": "2026-04-02T23:00:01.317Z"
+        "last_synced_at": "2026-04-02T23:30:00.340Z"
       },
       "notion": {
         "page_id": "33285ec7-0668-81b1-adfe-cc61515df53a",
-        "last_synced_at": "2026-04-02T23:00:01.317Z"
+        "last_synced_at": "2026-04-02T23:30:00.340Z"
       },
       "actual_outcomes": {
         "preMealBg": 104,
@@ -1545,11 +1545,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33185ec7-0668-81e4-b93f-f5a8f3bd1be8",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "notion": {
         "page_id": "33185ec7-0668-81e4-b93f-f5a8f3bd1be8",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "actual_outcomes": {
         "preMealBg": 172,
@@ -1603,11 +1603,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33285ec7-0668-8161-9e0f-d95ce30cae3d",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "notion": {
         "page_id": "33285ec7-0668-8161-9e0f-d95ce30cae3d",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "actual_outcomes": {
         "preMealBg": 120,
@@ -1677,11 +1677,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33685ec7-0668-81be-abcf-dba0df64191f",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-81be-abcf-dba0df64191f",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "actual_outcomes": {
         "preMealBg": 125,
@@ -1721,11 +1721,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33685ec7-0668-8118-b008-c54a3aa49cc4",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-8118-b008-c54a3aa49cc4",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "actual_outcomes": {
         "preMealBg": 111,
@@ -1765,11 +1765,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33685ec7-0668-81f0-ba05-e72324ce38d8",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-81f0-ba05-e72324ce38d8",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "actual_outcomes": {
         "preMealBg": 162,
@@ -1809,11 +1809,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33685ec7-0668-8107-9480-d10b65c5e29b",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-8107-9480-d10b65c5e29b",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "actual_outcomes": {
         "preMealBg": 117,
@@ -1867,11 +1867,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33685ec7-0668-819d-885f-ece8a0b04367",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-819d-885f-ece8a0b04367",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "actual_outcomes": {
         "preMealBg": 101,
@@ -1897,11 +1897,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33685ec7-0668-8167-8e28-e5263a7083ef",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-8167-8e28-e5263a7083ef",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "actual_outcomes": {
         "preMealBg": 105,
@@ -1928,11 +1928,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-81a7-8c00-e708557db5ef",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-81a7-8c00-e708557db5ef",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "actual_outcomes": {
         "preMealBg": 125,
@@ -1958,11 +1958,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33685ec7-0668-8130-b1c3-e33e9be89ab9",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-8130-b1c3-e33e9be89ab9",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "actual_outcomes": {
         "preMealBg": 118,
@@ -2003,11 +2003,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-817b-bfc2-ef90be9b6f0b",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-817b-bfc2-ef90be9b6f0b",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       }
     },
     "sha256:7d0e9de2d0af4e01546980ad8ecf27c25bcbf42c68eb0c07050ac63714c7c3b6": {
@@ -2051,11 +2051,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33185ec7-0668-81b4-93d9-e6e76fc679ad",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "notion": {
         "page_id": "33185ec7-0668-81b4-93d9-e6e76fc679ad",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       }
     },
     "sha256:bd252bab74ef0f34b26e79d2f802093075cddf75f9ccdb9d361ba3308b30fa5a": {
@@ -2141,11 +2141,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33685ec7-0668-8141-8d49-ec56229b77e7",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-8141-8d49-ec56229b77e7",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       }
     },
     "sha256:68083b1b2a921a232f9c73943abc04c94f636c4748fdb8c906ba202c5c6bc098": {
@@ -2185,11 +2185,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-81cc-a1aa-da245ea70ab0",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-81cc-a1aa-da245ea70ab0",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       }
     },
     "sha256:3e39c53f482d27537f80622945f3e061c7836be51dad5c20ffca58b072d25a79": {
@@ -2243,11 +2243,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-81ca-a28f-d54b2eb674bf",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-81ca-a28f-d54b2eb674bf",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       }
     },
     "sha256:3068bd02e0f18e2d75daafc28ba415237d60393125bad2fa9cb288e6eb0472c5": {
@@ -2263,11 +2263,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-819d-a666-cb44040773ab",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-819d-a666-cb44040773ab",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       }
     },
     "sha256:870e1392028c4e5035ec530837905ec2fd47af06806378262c0ae76637b10cc3": {
@@ -2283,11 +2283,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33285ec7-0668-8163-8ec8-dd0e225e6bbb",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "notion": {
         "page_id": "33285ec7-0668-8163-8ec8-dd0e225e6bbb",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       }
     },
     "sha256:e1c5093f0c0b0a066b8eaaf12a1cd41b8720b761ac6cf7fff75aa102a7cf877f": {
@@ -2317,11 +2317,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-81f8-b8bd-c599e1bc22ad",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-81f8-b8bd-c599e1bc22ad",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       }
     },
     "sha256:3d2c30d1f4ef11512091a7ba24f0bf679a1f4ba42f179d7bced3a333e470700f": {
@@ -2375,11 +2375,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33185ec7-0668-8172-a525-f28f161da261",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "notion": {
         "page_id": "33185ec7-0668-8172-a525-f28f161da261",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       }
     },
     "sha256:4545b158679af07fa59ac8547a0f4ed8c782945aa4e595bf52db8694b08ea775": {
@@ -2409,11 +2409,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-8195-8a24-ee8d1bd1f4ee",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-8195-8a24-ee8d1bd1f4ee",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       }
     },
     "sha256:5205f7e20b80102d192e7044392fdc9030cbd6680e05a275bf161544593870be": {
@@ -2429,11 +2429,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-81f9-a67f-c03e5fdf7a7d",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-81f9-a67f-c03e5fdf7a7d",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       }
     },
     "sha256:1fe28a6ebd9d0eb2dd53994e8f376f13c9926afc0d2227ae7b4f347b9299a2ca": {
@@ -2449,11 +2449,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33685ec7-0668-8172-9e09-c2d3f44cfb01",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-8172-9e09-c2d3f44cfb01",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       }
     },
     "sha256:4a84a3a2b44d600ff687432782f4f40be1abad9f987420b03c5b2b34ede925d4": {
@@ -2469,11 +2469,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33685ec7-0668-813b-bc0c-c96e04799931",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-813b-bc0c-c96e04799931",
-        "last_synced_at": "2026-04-02T23:00:01.318Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       }
     },
     "sha256:b901ea3223487b01ebc3743846f9f44aac8d34ebcd0ef054796949a883ac1533": {
@@ -2503,11 +2503,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-81fa-88d2-c1e8c868dda7",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-81fa-88d2-c1e8c868dda7",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.341Z"
       }
     },
     "sha256:b696c66fcb6d35e8baf4d19cf196070da47f0158affe6bd043b44f567a7c7489": {
@@ -2551,11 +2551,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33185ec7-0668-8192-a272-d9313c49dd38",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       },
       "notion": {
         "page_id": "33185ec7-0668-8192-a272-d9313c49dd38",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       }
     },
     "sha256:a4bad08934cf1c7887739e3af4f80bc32398183856f6ac31714b9d3024daf903": {
@@ -2571,11 +2571,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-8187-82c9-eaa53060f86c",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-8187-82c9-eaa53060f86c",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       }
     },
     "sha256:04d14d113b1ff30a3ed046d314c069673e3d3ad87906346b56c63f27d805575b": {
@@ -2619,11 +2619,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-81a0-8dff-c27407cd8de8",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-81a0-8dff-c27407cd8de8",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       }
     },
     "sha256:ff562076ec7566034b670db4357de8da4e0dddcb9041d5c53c376f72d417bd5f": {
@@ -2639,11 +2639,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-81e5-b014-ced7f5fa2b08",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-81e5-b014-ced7f5fa2b08",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       }
     },
     "sha256:6006c5c6b1a6b443cb0d03122378a7cfda8b5657fc98b098030af70e22630847": {
@@ -2659,11 +2659,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-8178-ac33-c23faa172b2d",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-8178-ac33-c23faa172b2d",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       }
     },
     "sha256:dff6f11b49e1a0df1795908b3c33b2ae243de009143efdbeb25efb3314dd313f": {
@@ -2693,11 +2693,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-8182-be2a-df5457cc928d",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-8182-be2a-df5457cc928d",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       }
     },
     "sha256:ca7376601c337f9c9c202e1e22d98faf4abdfa337ff18546f6f00b22f3528219": {
@@ -2741,11 +2741,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33685ec7-0668-81d0-8a97-f1e0491416e5",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-81d0-8a97-f1e0491416e5",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       }
     },
     "sha256:7256332d49b234bfb48dcb1f8217b3ee54b1c444d3be4c24f39d1b90fa19b7db": {
@@ -2785,11 +2785,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-817c-8c5c-e41d985257ec",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-817c-8c5c-e41d985257ec",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       }
     },
     "sha256:7233142bd12b11affaf512843e85e5eaee7c900f389bf431a9a53e028a4f006b": {
@@ -2819,11 +2819,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-81a1-997e-c3cf300acaf8",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-81a1-997e-c3cf300acaf8",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       }
     },
     "sha256:0138336f08dc320b79d7abf8ab2c8ec41bcbaa252f8f7b3a0059db042d0b49c1": {
@@ -2853,11 +2853,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33685ec7-0668-810a-887e-dde6f0886eab",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-810a-887e-dde6f0886eab",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       }
     },
     "sha256:7d83914cad5b5fb61d49a2eb58c30a4f04b417972aab6820cddac9fecec6f591": {
@@ -2901,11 +2901,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33185ec7-0668-81ae-aabc-e7d6a6930d30",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       },
       "notion": {
         "page_id": "33185ec7-0668-81ae-aabc-e7d6a6930d30",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       }
     },
     "sha256:b97bbecb5484e0087ea2d68f2034b453125c9a1e1fe7a2d916527af2befc8952": {
@@ -2949,11 +2949,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33685ec7-0668-81a7-85c4-c3dc20c63190",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-81a7-85c4-c3dc20c63190",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       }
     },
     "sha256:e6d08018b6d01f2d79f50970c65830066a2e2ffbe0a58a49a1b36765472c7a48": {
@@ -2969,11 +2969,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-81e3-a8b6-e2d1db915739",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-81e3-a8b6-e2d1db915739",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       }
     },
     "sha256:0e2c9eee45e5697459d50935fb65255fa014f805cae374ce9d5f4ad7c1e2c2a5": {
@@ -3003,11 +3003,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33685ec7-0668-819d-b6a2-e710e0d30cf0",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-819d-b6a2-e710e0d30cf0",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       }
     },
     "sha256:eeec14fe61e66de8eb5fcb46e8c6763b2847cc8fd2e2432954f714f8ef3748c7": {
@@ -3037,11 +3037,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33685ec7-0668-81e1-990e-f475e31fb416",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-81e1-990e-f475e31fb416",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       }
     },
     "sha256:6a666ee2eaac64d9692b9294e17e763b88bf0a1489beddd72aef25c22ac6eb3f": {
@@ -3057,11 +3057,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-81e4-bd6c-f4808e5a052b",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-81e4-bd6c-f4808e5a052b",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       }
     },
     "sha256:2b571542db6c60b88cfdaca9430f6f66916b34003364f5c21223f2a04e920d0d": {
@@ -3143,11 +3143,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33685ec7-0668-8199-8e6a-d97c67919180",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-8199-8e6a-d97c67919180",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       }
     },
     "sha256:1a70f0414779ebfe0a0fbb5599337790c42e3bb8e367751948b8d4de7759f75e": {
@@ -3163,11 +3163,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-81e3-bc74-e66b45fa3f2e",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-81e3-bc74-e66b45fa3f2e",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       }
     },
     "sha256:6dede62bdb53baef86d1d87f5256359dcfca5bdc7565df40cc9f23f4053211ee": {
@@ -3183,11 +3183,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33685ec7-0668-8153-a69a-e54dd7266e4b",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-8153-a69a-e54dd7266e4b",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       }
     },
     "sha256:a77bc536fe6ab38c50be91f9b50d37d9b92a57f20de0b5aabe5360adf2d4d2a8": {
@@ -3203,11 +3203,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33185ec7-0668-8111-9cc8-c1a4646a8ff0",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       },
       "notion": {
         "page_id": "33185ec7-0668-8111-9cc8-c1a4646a8ff0",
-        "last_synced_at": "2026-04-02T23:00:01.319Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       }
     },
     "sha256:f771cbd087f2d4190caa282911c50b53a672e4f91038ff34601c8a7d1179dbc0": {
@@ -3391,11 +3391,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-81da-aaca-f064f7b08a7c",
-        "last_synced_at": "2026-04-02T23:00:01.320Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-81da-aaca-f064f7b08a7c",
-        "last_synced_at": "2026-04-02T23:00:01.320Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       }
     },
     "sha256:8762a7c91759d1303c22f75da03191d0b7ed75cc3c27cbae280680832373f4a6": {
@@ -3411,11 +3411,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-818c-946d-c021d6e604ac",
-        "last_synced_at": "2026-04-02T23:00:01.320Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-818c-946d-c021d6e604ac",
-        "last_synced_at": "2026-04-02T23:00:01.320Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       }
     },
     "sha256:cbb5a8fcc2b2c64e8169d83c89a50a8eccdd52567323d9a3d9aa9ade4e7bfa4d": {
@@ -3431,11 +3431,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-81df-9b9d-e6ac9d6427af",
-        "last_synced_at": "2026-04-02T23:00:01.320Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-81df-9b9d-e6ac9d6427af",
-        "last_synced_at": "2026-04-02T23:00:01.320Z"
+        "last_synced_at": "2026-04-02T23:30:00.342Z"
       }
     },
     "sha256:04e6cd62c241cb5dfd0464df73eac66cd409ba1640dfbd6cdf1697b17d60cad3": {
@@ -3485,11 +3485,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-81a2-aefe-d651af5ed8a2",
-        "last_synced_at": "2026-04-02T23:00:01.320Z"
+        "last_synced_at": "2026-04-02T23:30:00.343Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-81a2-aefe-d651af5ed8a2",
-        "last_synced_at": "2026-04-02T23:00:01.320Z"
+        "last_synced_at": "2026-04-02T23:30:00.343Z"
       }
     },
     "sha256:15fb0337d1c480dfd6d9307f3d94bb5962514d6f04f07d9dd020faec094b4fc2": {
@@ -3589,11 +3589,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-81b9-89bc-f982cddc3aa1",
-        "last_synced_at": "2026-04-02T23:00:01.320Z"
+        "last_synced_at": "2026-04-02T23:30:00.343Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-81b9-89bc-f982cddc3aa1",
-        "last_synced_at": "2026-04-02T23:00:01.320Z"
+        "last_synced_at": "2026-04-02T23:30:00.343Z"
       }
     },
     "sha256:1586ae193979365df9d2f1047d02730027a4d1757776863d683018a22d12a627": {
@@ -3629,11 +3629,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-81a5-8d19-d92cab04842b",
-        "last_synced_at": "2026-04-02T23:00:01.320Z"
+        "last_synced_at": "2026-04-02T23:30:00.343Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-81a5-8d19-d92cab04842b",
-        "last_synced_at": "2026-04-02T23:00:01.320Z"
+        "last_synced_at": "2026-04-02T23:30:00.343Z"
       }
     },
     "sha256:6c34c414a62f95f77edddd475706c5c08420de3dda03f37026f8ec0293afc56f": {
@@ -3663,11 +3663,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-81a1-a40e-d207caaddcea",
-        "last_synced_at": "2026-04-02T23:00:01.320Z"
+        "last_synced_at": "2026-04-02T23:30:00.343Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-81a1-a40e-d207caaddcea",
-        "last_synced_at": "2026-04-02T23:00:01.320Z"
+        "last_synced_at": "2026-04-02T23:30:00.343Z"
       }
     },
     "sha256:68b8dca0312a34f91b7bfd26d26b929cdf2b360cbd1a82142cc08e5d43c54040": {
@@ -3711,11 +3711,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-8190-886a-da35c5bdb06c",
-        "last_synced_at": "2026-04-02T23:00:01.320Z"
+        "last_synced_at": "2026-04-02T23:30:00.343Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-8190-886a-da35c5bdb06c",
-        "last_synced_at": "2026-04-02T23:00:01.320Z"
+        "last_synced_at": "2026-04-02T23:30:00.343Z"
       }
     },
     "sha256:9ace033fd88da55837a708f8cbdb06e047c39ab46d2c1c05e1a22dd2ac5de8a5": {
@@ -3803,11 +3803,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-8195-90cd-dddd84010080",
-        "last_synced_at": "2026-04-02T23:00:01.320Z"
+        "last_synced_at": "2026-04-02T23:30:00.343Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-8195-90cd-dddd84010080",
-        "last_synced_at": "2026-04-02T23:00:01.320Z"
+        "last_synced_at": "2026-04-02T23:30:00.343Z"
       }
     },
     "sha256:aaace7401cdaa29176308dba0bceaf4eaed392477b33a71fe9f2fe9d6de72519": {
@@ -3823,11 +3823,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-81ba-baf1-c58cda384d24",
-        "last_synced_at": "2026-04-02T23:00:01.320Z"
+        "last_synced_at": "2026-04-02T23:30:00.343Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-81ba-baf1-c58cda384d24",
-        "last_synced_at": "2026-04-02T23:00:01.320Z"
+        "last_synced_at": "2026-04-02T23:30:00.343Z"
       }
     },
     "sha256:8fbf9d63d7cb9121fc62d30d2ef6ae152648a8a38702a08614d12ea839a66270": {
@@ -3843,11 +3843,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-81dc-a294-dcd47fec308c",
-        "last_synced_at": "2026-04-02T23:00:01.320Z"
+        "last_synced_at": "2026-04-02T23:30:00.343Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-81dc-a294-dcd47fec308c",
-        "last_synced_at": "2026-04-02T23:00:01.320Z"
+        "last_synced_at": "2026-04-02T23:30:00.343Z"
       }
     },
     "sha256:6b47b434ddf3c2a48ed55ce51675b7fae44d1b02dead4f51eb37e1f7e6a79c3c": {
@@ -3883,11 +3883,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-81c8-a43f-e0beeff62f18",
-        "last_synced_at": "2026-04-02T23:00:01.320Z"
+        "last_synced_at": "2026-04-02T23:30:00.343Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-81c8-a43f-e0beeff62f18",
-        "last_synced_at": "2026-04-02T23:00:01.320Z"
+        "last_synced_at": "2026-04-02T23:30:00.343Z"
       }
     },
     "sha256:346a537e68a27a710d76c81de36e1646d5191c5a4a5f1ee8b6c1b94e36bb867c": {
@@ -4217,11 +4217,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-817c-a56a-d04aa6af400c",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-817c-a56a-d04aa6af400c",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       }
     },
     "sha256:436764d31fef7f652f7fbea3fa68e07468bdd662b8821afeea4872f58146a40d": {
@@ -4663,11 +4663,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33685ec7-0668-8136-a1f5-eb1c925cca5a",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-8136-a1f5-eb1c925cca5a",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       }
     },
     "sha256:5b7b3d59c6202c55d650df76257a420b0dcccd41f3cffbdbebb25113ecbb6f69": {
@@ -4683,11 +4683,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33185ec7-0668-813d-91b5-f1d6d01b9af0",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       },
       "notion": {
         "page_id": "33185ec7-0668-813d-91b5-f1d6d01b9af0",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       }
     },
     "sha256:c9f2a6844975abe9fe8bd2bbd79676ec29f0fc36cc489188cb14bc47c0119b6b": {
@@ -4703,11 +4703,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33685ec7-0668-81dd-b040-efd04cad12bf",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-81dd-b040-efd04cad12bf",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       }
     },
     "sha256:84870d7272d774276e47dcfcd75a900b7ee72a4f66c136678bc1c47993889cb0": {
@@ -4723,11 +4723,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-819a-b60f-e6d71c640d3f",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-819a-b60f-e6d71c640d3f",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       }
     },
     "sha256:1ede023e510027d41e356281be69f4e58c7ee98057334fece27992dbb8c2873e": {
@@ -4829,11 +4829,11 @@
       },
       "notion": {
         "page_id": "33285ec7-0668-81b4-9751-dd8b1075a627",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "gallery": {
         "gallery_id": "33285ec7-0668-81b4-9751-dd8b1075a627",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "needs_outcome_backfill": true,
       "actual_outcomes": {
@@ -4896,11 +4896,11 @@
       "outcomes_backfilled": false,
       "notion": {
         "page_id": "33685ec7-0668-815e-913a-cbeabe6feda2",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "gallery": {
         "gallery_id": "33685ec7-0668-815e-913a-cbeabe6feda2",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "needs_outcome_backfill": true,
       "actual_outcomes": {
@@ -4927,11 +4927,11 @@
       "outcomes_backfilled": false,
       "notion": {
         "page_id": "33285ec7-0668-8128-8065-fbb4efc9a151",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "gallery": {
         "gallery_id": "33285ec7-0668-8128-8065-fbb4efc9a151",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "needs_outcome_backfill": true,
       "actual_outcomes": {
@@ -4980,11 +4980,11 @@
       },
       "notion": {
         "page_id": "33285ec7-0668-81ef-8410-f4d29d4ee6e2",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "gallery": {
         "gallery_id": "33285ec7-0668-81ef-8410-f4d29d4ee6e2",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "needs_outcome_backfill": true,
       "actual_outcomes": {
@@ -5029,7 +5029,7 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33285ec7-0668-81ec-befb-fabd6545343c",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "nightscout": {
         "treatment_id": "69c074f9911a8ea261e6762a",
@@ -5037,7 +5037,7 @@
       },
       "notion": {
         "page_id": "33285ec7-0668-81ec-befb-fabd6545343c",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "needs_outcome_backfill": true,
       "actual_outcomes": {
@@ -5104,11 +5104,11 @@
       },
       "notion": {
         "page_id": "33285ec7-0668-81e4-8c5a-eded3636282b",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "gallery": {
         "gallery_id": "33285ec7-0668-81e4-8c5a-eded3636282b",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "needs_outcome_backfill": true,
       "actual_outcomes": {
@@ -5135,11 +5135,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33685ec7-0668-8129-97b3-c9a612d05961",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-8129-97b3-c9a612d05961",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "nightscout": {
         "treatment_id": "69c0b66f911a8ea261e67665",
@@ -5210,11 +5210,11 @@
       },
       "notion": {
         "page_id": "33685ec7-0668-81c3-936d-c71a21abb8a9",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "gallery": {
         "gallery_id": "33685ec7-0668-81c3-936d-c71a21abb8a9",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "needs_outcome_backfill": true,
       "actual_outcomes": {
@@ -5310,11 +5310,11 @@
       },
       "notion": {
         "page_id": "33285ec7-0668-81dc-9443-d5abe1939ed2",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "gallery": {
         "gallery_id": "33285ec7-0668-81dc-9443-d5abe1939ed2",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "needs_outcome_backfill": true,
       "actual_outcomes": {
@@ -5345,11 +5345,11 @@
       },
       "notion": {
         "page_id": "33285ec7-0668-8137-8322-d96396e93c7c",
-        "last_synced_at": "2026-04-02T23:00:01.315Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "gallery": {
         "gallery_id": "33285ec7-0668-8137-8322-d96396e93c7c",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.338Z"
       },
       "needs_outcome_backfill": true,
       "actual_outcomes": {
@@ -5427,11 +5427,11 @@
       },
       "notion": {
         "page_id": "33085ec7-0668-81f4-a2c6-e899593d26d1",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "gallery": {
         "gallery_id": "33085ec7-0668-81f4-a2c6-e899593d26d1",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "needs_outcome_backfill": true,
       "actual_outcomes": {
@@ -5523,11 +5523,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33685ec7-0668-81b8-826c-dd6a3ddceeac",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-81b8-826c-dd6a3ddceeac",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "nightscout": {
         "treatment_id": "69c2cfc1911a8ea261e67844",
@@ -5612,11 +5612,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-817a-b040-cab1609a91fd",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-817a-b040-cab1609a91fd",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "nightscout": {
         "treatment_id": "69c314d4911a8ea261e6788b",
@@ -5647,11 +5647,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33685ec7-0668-8177-a85b-e8645225d8df",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-8177-a85b-e8645225d8df",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "nightscout": {
         "treatment_id": "69c314d5911a8ea261e6788c",
@@ -5715,11 +5715,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-8178-9053-f0dd60f4fc1c",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-8178-9053-f0dd60f4fc1c",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       }
     },
     "sha256:6e28cc1d0cb77350301abf680e1ef5e61658f4ab2e5f76813dc00d6576a5fc18": {
@@ -5735,11 +5735,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-81bc-bc90-faf859d630c9",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-81bc-bc90-faf859d630c9",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "nightscout": {
         "treatment_id": "69c344ac911a8ea261e678b5",
@@ -5770,11 +5770,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-81a7-8f62-d751a8b0ce69",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-81a7-8f62-d751a8b0ce69",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "nightscout": {
         "treatment_id": "69c348ac911a8ea261e678ba",
@@ -5913,11 +5913,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33685ec7-0668-81d5-94e7-c6052534b4d1",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-81d5-94e7-c6052534b4d1",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "nightscout": {
         "treatment_id": "69c2eb10911a8ea261e67866",
@@ -5952,11 +5952,11 @@
       },
       "notion": {
         "page_id": "33685ec7-0668-8143-a653-dc1c100d9d6e",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "gallery": {
         "gallery_id": "33685ec7-0668-8143-a653-dc1c100d9d6e",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "actual_outcomes": {
         "preMealBg": 115,
@@ -5987,11 +5987,11 @@
       },
       "notion": {
         "page_id": "33285ec7-0668-8165-9cc0-e3a0415ed6d4",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "gallery": {
         "gallery_id": "33285ec7-0668-8165-9cc0-e3a0415ed6d4",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "actual_outcomes": {
         "preMealBg": 111,
@@ -6022,11 +6022,11 @@
       },
       "notion": {
         "page_id": "33285ec7-0668-812a-8118-fa92182df9dd",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "gallery": {
         "gallery_id": "33285ec7-0668-812a-8118-fa92182df9dd",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "actual_outcomes": {
         "preMealBg": 111,
@@ -6140,11 +6140,11 @@
       },
       "notion": {
         "page_id": "33285ec7-0668-81f2-9c9b-e9bbf3738a43",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "gallery": {
         "gallery_id": "33285ec7-0668-81f2-9c9b-e9bbf3738a43",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "needs_outcome_backfill": true,
       "actual_outcomes": {
@@ -6294,11 +6294,11 @@
       },
       "notion": {
         "page_id": "33285ec7-0668-8199-ba14-e3da26c2bba4",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "gallery": {
         "gallery_id": "33285ec7-0668-8199-ba14-e3da26c2bba4",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "needs_outcome_backfill": true,
       "actual_outcomes": {
@@ -6329,11 +6329,11 @@
       },
       "notion": {
         "page_id": "33285ec7-0668-8156-aebc-d9df5bdf48bc",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "gallery": {
         "gallery_id": "33285ec7-0668-8156-aebc-d9df5bdf48bc",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "needs_outcome_backfill": true,
       "actual_outcomes": {
@@ -6411,11 +6411,11 @@
       },
       "notion": {
         "page_id": "33085ec7-0668-81d0-884b-e303ca18b387",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "gallery": {
         "gallery_id": "33085ec7-0668-81d0-884b-e303ca18b387",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "actual_outcomes": {
         "preMealBg": 127,
@@ -6442,11 +6442,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-81d6-8f84-f93c146df6ef",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-81d6-8f84-f93c146df6ef",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "nightscout": {
         "treatment_id": "69c5de8c911a8ea261e67ae9",
@@ -6477,11 +6477,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-81c8-897d-c9c46fd440ec",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-81c8-897d-c9c46fd440ec",
-        "last_synced_at": "2026-04-02T23:00:01.314Z"
+        "last_synced_at": "2026-04-02T23:30:00.337Z"
       },
       "nightscout": {
         "treatment_id": "69c5de8c911a8ea261e67ae8",
@@ -6620,11 +6620,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33685ec7-0668-8180-bc51-fb31da193124",
-        "last_synced_at": "2026-04-02T23:00:01.313Z"
+        "last_synced_at": "2026-04-02T23:30:00.336Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-8180-bc51-fb31da193124",
-        "last_synced_at": "2026-04-02T23:00:01.313Z"
+        "last_synced_at": "2026-04-02T23:30:00.336Z"
       },
       "nightscout": {
         "treatment_id": "69c6bf8e911a8ea261e67baa",
@@ -6659,11 +6659,11 @@
       },
       "notion": {
         "page_id": "33085ec7-0668-81ca-bf7e-cd233e78f071",
-        "last_synced_at": "2026-04-02T23:00:01.313Z"
+        "last_synced_at": "2026-04-02T23:30:00.336Z"
       },
       "gallery": {
         "gallery_id": "33085ec7-0668-81ca-bf7e-cd233e78f071",
-        "last_synced_at": "2026-04-02T23:00:01.313Z"
+        "last_synced_at": "2026-04-02T23:30:00.336Z"
       },
       "actual_outcomes": {
         "preMealBg": 118,
@@ -6708,11 +6708,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33085ec7-0668-8189-b495-f32aaf8ab2ae",
-        "last_synced_at": "2026-04-02T23:00:01.313Z"
+        "last_synced_at": "2026-04-02T23:30:00.336Z"
       },
       "notion": {
         "page_id": "33085ec7-0668-8189-b495-f32aaf8ab2ae",
-        "last_synced_at": "2026-04-02T23:00:01.313Z"
+        "last_synced_at": "2026-04-02T23:30:00.336Z"
       },
       "nightscout": {
         "treatment_id": "69c702b9911a8ea261e67be8",
@@ -6743,11 +6743,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33685ec7-0668-81c6-bedf-f4d3575efa67",
-        "last_synced_at": "2026-04-02T23:00:01.313Z"
+        "last_synced_at": "2026-04-02T23:30:00.336Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-81c6-bedf-f4d3575efa67",
-        "last_synced_at": "2026-04-02T23:00:01.313Z"
+        "last_synced_at": "2026-04-02T23:30:00.336Z"
       },
       "nightscout": {
         "treatment_id": "69c6c23e911a8ea261e67bae",
@@ -6778,11 +6778,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33185ec7-0668-81e1-9c8e-fd28d279db6a",
-        "last_synced_at": "2026-04-02T23:00:01.313Z"
+        "last_synced_at": "2026-04-02T23:30:00.336Z"
       },
       "notion": {
         "page_id": "33185ec7-0668-81e1-9c8e-fd28d279db6a",
-        "last_synced_at": "2026-04-02T23:00:01.313Z"
+        "last_synced_at": "2026-04-02T23:30:00.336Z"
       },
       "nightscout": {
         "treatment_id": "69c72486911a8ea261e67bf9",
@@ -6813,11 +6813,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33185ec7-0668-8155-bf32-f3fcb9bba0a6",
-        "last_synced_at": "2026-04-02T23:00:01.313Z"
+        "last_synced_at": "2026-04-02T23:30:00.336Z"
       },
       "notion": {
         "page_id": "33185ec7-0668-8155-bf32-f3fcb9bba0a6",
-        "last_synced_at": "2026-04-02T23:00:01.313Z"
+        "last_synced_at": "2026-04-02T23:30:00.336Z"
       },
       "nightscout": {
         "treatment_id": "69c8079c911a8ea261e67cca",
@@ -6852,11 +6852,11 @@
       },
       "notion": {
         "page_id": "33185ec7-0668-813f-9102-eac3a1beb434",
-        "last_synced_at": "2026-04-02T23:00:01.313Z"
+        "last_synced_at": "2026-04-02T23:30:00.336Z"
       },
       "gallery": {
         "gallery_id": "33185ec7-0668-813f-9102-eac3a1beb434",
-        "last_synced_at": "2026-04-02T23:00:01.313Z"
+        "last_synced_at": "2026-04-02T23:30:00.336Z"
       },
       "needs_outcome_backfill": true,
       "actual_outcomes": {
@@ -6918,11 +6918,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33185ec7-0668-81cb-8c08-f33fa5a42376",
-        "last_synced_at": "2026-04-02T23:00:01.313Z"
+        "last_synced_at": "2026-04-02T23:30:00.336Z"
       },
       "notion": {
         "page_id": "33185ec7-0668-81cb-8c08-f33fa5a42376",
-        "last_synced_at": "2026-04-02T23:00:01.313Z"
+        "last_synced_at": "2026-04-02T23:30:00.336Z"
       },
       "nightscout": {
         "treatment_id": "69c8079e911a8ea261e67ccc",
@@ -6989,11 +6989,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33185ec7-0668-81c4-a452-c73bde60e268",
-        "last_synced_at": "2026-04-02T23:00:01.313Z"
+        "last_synced_at": "2026-04-02T23:30:00.336Z"
       },
       "notion": {
         "page_id": "33185ec7-0668-81c4-a452-c73bde60e268",
-        "last_synced_at": "2026-04-02T23:00:01.313Z"
+        "last_synced_at": "2026-04-02T23:30:00.336Z"
       },
       "nightscout": {
         "treatment_id": "69c7fd5e911a8ea261e67cc2",
@@ -7113,11 +7113,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33185ec7-0668-8126-8f03-ff6204237c39",
-        "last_synced_at": "2026-04-02T23:00:01.313Z"
+        "last_synced_at": "2026-04-02T23:30:00.336Z"
       },
       "notion": {
         "page_id": "33185ec7-0668-8126-8f03-ff6204237c39",
-        "last_synced_at": "2026-04-02T23:00:01.313Z"
+        "last_synced_at": "2026-04-02T23:30:00.336Z"
       },
       "nightscout": {
         "treatment_id": "69c83156911a8ea261e67cf5",
@@ -7147,11 +7147,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33185ec7-0668-811d-bf6e-f0a5f7b61dcc",
-        "last_synced_at": "2026-04-02T23:00:01.313Z"
+        "last_synced_at": "2026-04-02T23:30:00.336Z"
       },
       "notion": {
         "page_id": "33185ec7-0668-811d-bf6e-f0a5f7b61dcc",
-        "last_synced_at": "2026-04-02T23:00:01.313Z"
+        "last_synced_at": "2026-04-02T23:30:00.336Z"
       },
       "nightscout": {
         "treatment_id": "69c82e86911a8ea261e67cf1",
@@ -7285,11 +7285,11 @@
       },
       "notion": {
         "page_id": "33285ec7-0668-8193-9c24-d0c257f34965",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       },
       "gallery": {
         "gallery_id": "33285ec7-0668-8193-9c24-d0c257f34965",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       },
       "actual_outcomes": {
         "preMealBg": 116,
@@ -7387,11 +7387,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33285ec7-0668-81f4-a9ad-d042b2ce0d89",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       },
       "notion": {
         "page_id": "33285ec7-0668-81f4-a9ad-d042b2ce0d89",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       },
       "nightscout": {
         "treatment_id": "69c98be7911a8ea261e67e22",
@@ -7421,11 +7421,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33285ec7-0668-813f-a75d-ceab8c2a477e",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       },
       "notion": {
         "page_id": "33285ec7-0668-813f-a75d-ceab8c2a477e",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       },
       "nightscout": {
         "treatment_id": "69c97dd4911a8ea261e67e15",
@@ -7459,11 +7459,11 @@
       },
       "notion": {
         "page_id": "33385ec7-0668-818f-91cd-d19810d4fe72",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       },
       "gallery": {
         "gallery_id": "33385ec7-0668-818f-91cd-d19810d4fe72",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       },
       "actual_outcomes": {
         "preMealBg": 114,
@@ -7507,11 +7507,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33385ec7-0668-8127-b47d-d9354d85bd93",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       },
       "notion": {
         "page_id": "33385ec7-0668-8127-b47d-d9354d85bd93",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       },
       "nightscout": {
         "treatment_id": "69c9d94f911a8ea261e67e65",
@@ -7541,11 +7541,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33385ec7-0668-8186-8423-f15f819f7401",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       },
       "notion": {
         "page_id": "33385ec7-0668-8186-8423-f15f819f7401",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       },
       "nightscout": {
         "treatment_id": "69c9d950911a8ea261e67e66",
@@ -7611,11 +7611,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33385ec7-0668-81bb-9072-dea249f3dbf7",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       },
       "notion": {
         "page_id": "33385ec7-0668-81bb-9072-dea249f3dbf7",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       },
       "nightscout": {
         "treatment_id": "69cab3ee911a8ea261e67f1f",
@@ -7671,11 +7671,11 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33385ec7-0668-81d9-952b-f060bad127ac",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       },
       "notion": {
         "page_id": "33385ec7-0668-81d9-952b-f060bad127ac",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       },
       "nightscout": {
         "treatment_id": "69cadd86911a8ea261e67f3e",
@@ -7731,15 +7731,15 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33485ec7-0668-811b-9eb5-e59a3a3620a5",
-        "last_synced_at": "2026-04-02T23:00:32.100Z"
+        "last_synced_at": "2026-04-02T23:30:32.862Z"
       },
       "notion": {
         "page_id": "33485ec7-0668-811b-9eb5-e59a3a3620a5",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       },
       "nightscout": {
         "treatment_id": "69cb2145911a8ea261e67f75",
-        "last_synced_at": "2026-04-02T23:00:30.923Z"
+        "last_synced_at": "2026-04-02T23:30:31.782Z"
       }
     },
     "sha256:c81f4c72b5e9caf88a16fab3cd1d134364c70bc72a0c448c5005b7d8d84f0003": {
@@ -7771,7 +7771,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cb2659911a8ea261e67f7a",
-        "last_synced_at": "2026-04-02T23:00:32.489Z"
+        "last_synced_at": "2026-04-02T23:30:33.184Z"
       },
       "notion": {
         "page_id": "33485ec7-0668-8165-b3c8-d84b04c8250d",
@@ -7789,7 +7789,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cb2afc911a8ea261e67f80",
-        "last_synced_at": "2026-04-02T23:00:30.293Z"
+        "last_synced_at": "2026-04-02T23:30:31.135Z"
       },
       "notion": {
         "page_id": "33485ec7-0668-8198-9587-c424fdd78e7a",
@@ -7809,15 +7809,15 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33485ec7-0668-81d9-9424-f55e2d1a4b28",
-        "last_synced_at": "2026-04-02T23:00:34.716Z"
+        "last_synced_at": "2026-04-02T23:30:35.456Z"
       },
       "notion": {
         "page_id": "33485ec7-0668-81d9-9424-f55e2d1a4b28",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       },
       "nightscout": {
         "treatment_id": "69cb2b05911a8ea261e67f81",
-        "last_synced_at": "2026-04-02T23:00:33.687Z"
+        "last_synced_at": "2026-04-02T23:30:34.507Z"
       }
     },
     "sha256:73cabab8dc7689131fbf59f7dfb4741990d08fd660948ad72a558b003d574b91": {
@@ -7831,7 +7831,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cb346c911a8ea261e67f8a",
-        "last_synced_at": "2026-04-02T23:00:34.916Z"
+        "last_synced_at": "2026-04-02T23:30:35.656Z"
       },
       "notion": {
         "page_id": "33485ec7-0668-8102-b16f-ea9c8f42b2bf",
@@ -7849,7 +7849,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cbefe7763bd01671f73169",
-        "last_synced_at": "2026-04-02T23:00:25.049Z"
+        "last_synced_at": "2026-04-02T23:30:20.571Z"
       },
       "notion": {
         "page_id": "33485ec7-0668-81eb-9368-dc4e36c0e076",
@@ -7869,15 +7869,15 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cbf68d763bd01671f73172",
-        "last_synced_at": "2026-04-02T23:00:28.297Z"
+        "last_synced_at": "2026-04-02T23:30:24.266Z"
       },
       "notion": {
         "page_id": "33485ec7-0668-8191-8fe0-dec194e01ab4",
-        "last_synced_at": "2026-04-02T23:00:01.313Z"
+        "last_synced_at": "2026-04-02T23:30:00.336Z"
       },
       "gallery": {
         "gallery_id": "33485ec7-0668-8191-8fe0-dec194e01ab4",
-        "last_synced_at": "2026-04-02T23:00:28.763Z"
+        "last_synced_at": "2026-04-02T23:30:29.321Z"
       }
     },
     "sha256:a7a38adc630d2fa994e9df6c81cadc73731086d7346963d2520fb16a9d9cfa9a": {
@@ -7891,7 +7891,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cbeff0763bd01671f7316a",
-        "last_synced_at": "2026-04-02T23:00:29.068Z"
+        "last_synced_at": "2026-04-02T23:30:29.882Z"
       },
       "notion": {
         "page_id": "33485ec7-0668-813a-a656-e563325f7597",
@@ -7909,7 +7909,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cbeff6763bd01671f7316b",
-        "last_synced_at": "2026-04-02T23:00:29.666Z"
+        "last_synced_at": "2026-04-02T23:30:30.529Z"
       },
       "notion": {
         "page_id": "33485ec7-0668-8111-af9b-fea36c13e23b",
@@ -7929,15 +7929,15 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cbfd94763bd01671f73179",
-        "last_synced_at": "2026-04-02T23:00:27.554Z"
+        "last_synced_at": "2026-04-02T23:30:22.970Z"
       },
       "notion": {
         "page_id": "33485ec7-0668-81d2-9c7b-c267298d20e3",
-        "last_synced_at": "2026-04-02T23:00:01.313Z"
+        "last_synced_at": "2026-04-02T23:30:00.336Z"
       },
       "gallery": {
         "gallery_id": "33485ec7-0668-81d2-9c7b-c267298d20e3",
-        "last_synced_at": "2026-04-02T23:00:27.960Z"
+        "last_synced_at": "2026-04-02T23:30:23.978Z"
       }
     },
     "sha256:e7ef8392b9f6960d50a6d4774c613ae2258398bb7d12fda3b80a09ba9a55b286": {
@@ -7951,7 +7951,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cc0c2d763bd01671f73186",
-        "last_synced_at": "2026-04-02T23:00:26.956Z"
+        "last_synced_at": "2026-04-02T23:30:22.043Z"
       },
       "notion": {
         "page_id": "33485ec7-0668-81d8-8d0c-ebc00fa4c078",
@@ -7969,7 +7969,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cc1a00763bd01671f73193",
-        "last_synced_at": "2026-04-02T23:00:22.785Z"
+        "last_synced_at": "2026-04-02T23:30:20.051Z"
       },
       "notion": {
         "page_id": "33485ec7-0668-8101-9225-db0e7aeac5b4",
@@ -7989,15 +7989,15 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cc20c2763bd01671f7319a",
-        "last_synced_at": "2026-04-02T23:00:25.779Z"
+        "last_synced_at": "2026-04-02T23:30:21.291Z"
       },
       "notion": {
         "page_id": "33485ec7-0668-81b8-8ab0-e94017085a8c",
-        "last_synced_at": "2026-04-02T23:00:01.313Z"
+        "last_synced_at": "2026-04-02T23:30:00.336Z"
       },
       "gallery": {
         "gallery_id": "33485ec7-0668-81b8-8ab0-e94017085a8c",
-        "last_synced_at": "2026-04-02T23:00:26.734Z"
+        "last_synced_at": "2026-04-02T23:30:21.735Z"
       }
     },
     "sha256:73841db1a6210766cfd2aec5879a15b6d5401f56e95162651840db5fc1b18a48": {
@@ -8011,7 +8011,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cc2ec9763bd01671f731a7",
-        "last_synced_at": "2026-04-02T23:00:20.201Z"
+        "last_synced_at": "2026-04-02T23:30:18.152Z"
       },
       "notion": {
         "page_id": "33485ec7-0668-8158-aae2-d0427262a35f",
@@ -8031,15 +8031,15 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cc2ecb763bd01671f731a8",
-        "last_synced_at": "2026-04-02T23:00:21.589Z"
+        "last_synced_at": "2026-04-02T23:30:19.199Z"
       },
       "notion": {
         "page_id": "33485ec7-0668-8164-9784-cb89677588c4",
-        "last_synced_at": "2026-04-02T23:00:01.313Z"
+        "last_synced_at": "2026-04-02T23:30:00.336Z"
       },
       "gallery": {
         "gallery_id": "33485ec7-0668-8164-9784-cb89677588c4",
-        "last_synced_at": "2026-04-02T23:00:22.482Z"
+        "last_synced_at": "2026-04-02T23:30:19.733Z"
       }
     },
     "sha256:a4c5fbdcfbc9050494e3735e99338c663522597df6bfa70c6b05b67c9ba3fbe6": {
@@ -8053,7 +8053,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cc3cd9763bd01671f731b5",
-        "last_synced_at": "2026-04-02T23:00:19.583Z"
+        "last_synced_at": "2026-04-02T23:30:17.103Z"
       },
       "notion": {
         "page_id": "33485ec7-0668-81c7-add9-f4a2d6d5e26c",
@@ -8073,15 +8073,15 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cc77ac763bd01671f731e6",
-        "last_synced_at": "2026-04-02T23:00:17.397Z"
+        "last_synced_at": "2026-04-02T23:30:16.355Z"
       },
       "notion": {
         "page_id": "33585ec7-0668-8111-8dc4-d6b9ed8d1065",
-        "last_synced_at": "2026-04-02T23:00:01.312Z"
+        "last_synced_at": "2026-04-02T23:30:00.335Z"
       },
       "gallery": {
         "gallery_id": "33585ec7-0668-8111-8dc4-d6b9ed8d1065",
-        "last_synced_at": "2026-04-02T23:00:19.358Z"
+        "last_synced_at": "2026-04-02T23:30:16.857Z"
       }
     },
     "sha256:4d8bb9f79a8df65c0e4296b3c325c7496f5870e04877a3deb4ba523307d624f8": {
@@ -8095,7 +8095,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cc8329763bd01671f731f1",
-        "last_synced_at": "2026-04-02T23:00:16.759Z"
+        "last_synced_at": "2026-04-02T23:30:15.829Z"
       },
       "notion": {
         "page_id": "33585ec7-0668-8173-b893-da031b4428cf",
@@ -8113,7 +8113,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69ccb9e7763bd01671f73220",
-        "last_synced_at": "2026-04-02T23:00:14.800Z"
+        "last_synced_at": "2026-04-02T23:30:14.744Z"
       },
       "notion": {
         "page_id": "33585ec7-0668-81bf-9bf4-f0d7e1269103",
@@ -8131,7 +8131,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69ccb9ea763bd01671f73221",
-        "last_synced_at": "2026-04-02T23:00:15.937Z"
+        "last_synced_at": "2026-04-02T23:30:15.222Z"
       },
       "notion": {
         "page_id": "33585ec7-0668-81be-bfbf-d4c99878617a",
@@ -8149,7 +8149,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cd4163763bd01671f73296",
-        "last_synced_at": "2026-04-02T23:00:13.195Z"
+        "last_synced_at": "2026-04-02T23:30:13.672Z"
       },
       "notion": {
         "page_id": "33585ec7-0668-8170-9c4e-c9ac558697dc",
@@ -8167,7 +8167,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cd4164763bd01671f73297",
-        "last_synced_at": "2026-04-02T23:00:14.283Z"
+        "last_synced_at": "2026-04-02T23:30:14.263Z"
       },
       "notion": {
         "page_id": "33585ec7-0668-8154-84db-ec25e3a464db",
@@ -8187,15 +8187,15 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cd4e8e763bd01671f732a3",
-        "last_synced_at": "2026-04-02T23:00:35.909Z"
+        "last_synced_at": "2026-04-02T23:30:36.500Z"
       },
       "notion": {
         "page_id": "33585ec7-0668-81a0-a6ba-cdd7d9a0444c",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       },
       "gallery": {
         "gallery_id": "33585ec7-0668-81a0-a6ba-cdd7d9a0444c",
-        "last_synced_at": "2026-04-02T23:00:36.916Z"
+        "last_synced_at": "2026-04-02T23:30:37.102Z"
       }
     },
     "sha256:fde4c330926697830436f0afba69e2c360e1f86123047d6aecd46a9bf356947f": {
@@ -8211,15 +8211,15 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33585ec7-0668-8145-9949-c7730ca6e8db",
-        "last_synced_at": "2026-04-02T23:00:39.442Z"
+        "last_synced_at": "2026-04-02T23:30:38.081Z"
       },
       "notion": {
         "page_id": "33585ec7-0668-8145-9949-c7730ca6e8db",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       },
       "nightscout": {
         "treatment_id": "69cd4f92763bd01671f732a6",
-        "last_synced_at": "2026-04-02T23:00:37.220Z"
+        "last_synced_at": "2026-04-02T23:30:37.413Z"
       }
     },
     "sha256:51a57d0db1269221cdbe49b883dabd81c4ac2b847729ec03ebe4d8b8df086b86": {
@@ -8233,7 +8233,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cd6456763bd01671f732b9",
-        "last_synced_at": "2026-04-02T23:00:39.636Z"
+        "last_synced_at": "2026-04-02T23:30:38.286Z"
       },
       "notion": {
         "page_id": "33585ec7-0668-8123-8988-e5553cc5b645",
@@ -8251,7 +8251,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cd6b81763bd01671f732c0",
-        "last_synced_at": "2026-04-02T23:00:12.575Z"
+        "last_synced_at": "2026-04-02T23:30:12.793Z"
       },
       "notion": {
         "page_id": "33585ec7-0668-81a4-b5dd-eb652bf55179",
@@ -8271,15 +8271,15 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cd7886763bd01671f732cc",
-        "last_synced_at": "2026-04-02T23:00:40.259Z"
+        "last_synced_at": "2026-04-02T23:30:39.284Z"
       },
       "notion": {
         "page_id": "33585ec7-0668-8141-9e63-db74b2ee1870",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       },
       "gallery": {
         "gallery_id": "33585ec7-0668-8141-9e63-db74b2ee1870",
-        "last_synced_at": "2026-04-02T23:00:41.563Z"
+        "last_synced_at": "2026-04-02T23:30:40.239Z"
       }
     },
     "sha256:c77fcd0463474dd8951904dfd57a07408bf41ab249a5a4e7fdcd6bc6ded24dad": {
@@ -8295,15 +8295,15 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33585ec7-0668-8194-a53a-ea11d9293da0",
-        "last_synced_at": "2026-04-02T23:00:42.791Z"
+        "last_synced_at": "2026-04-02T23:30:41.068Z"
       },
       "notion": {
         "page_id": "33585ec7-0668-8194-a53a-ea11d9293da0",
-        "last_synced_at": "2026-04-02T23:00:01.321Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       },
       "nightscout": {
         "treatment_id": "69cd7ab3763bd01671f732cf",
-        "last_synced_at": "2026-04-02T23:00:41.926Z"
+        "last_synced_at": "2026-04-02T23:30:40.585Z"
       }
     },
     "sha256:49ae91033c110f6b1f945060987269eefe8a57e58a96799ff6ccf9bb0b9d4e2f": {
@@ -8317,7 +8317,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cd877d763bd01671f732db",
-        "last_synced_at": "2026-04-02T23:00:43.083Z"
+        "last_synced_at": "2026-04-02T23:30:41.318Z"
       },
       "notion": {
         "page_id": "33585ec7-0668-81c1-8ea8-fd75dbabea4f",
@@ -8335,7 +8335,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cd8e8a763bd01671f732e2",
-        "last_synced_at": "2026-04-02T23:00:43.815Z"
+        "last_synced_at": "2026-04-02T23:30:41.845Z"
       },
       "notion": {
         "page_id": "33585ec7-0668-8159-8a71-f9e87eb9f758",
@@ -8353,7 +8353,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cdc100763bd01671f7330e",
-        "last_synced_at": "2026-04-02T23:00:44.554Z"
+        "last_synced_at": "2026-04-02T23:30:42.563Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-818a-afab-e3ca9636377e",
@@ -8373,15 +8373,15 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "33685ec7-0668-819d-8970-fd73f2e5bc3b",
-        "last_synced_at": "2026-04-02T23:00:48.117Z"
+        "last_synced_at": "2026-04-02T23:30:44.242Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-819d-8970-fd73f2e5bc3b",
-        "last_synced_at": "2026-04-02T23:00:01.322Z"
+        "last_synced_at": "2026-04-02T23:30:00.344Z"
       },
       "nightscout": {
         "treatment_id": "69cdc8c4763bd01671f73315",
-        "last_synced_at": "2026-04-02T23:00:45.275Z"
+        "last_synced_at": "2026-04-02T23:30:43.560Z"
       }
     },
     "sha256:c069c6821759965eb1fa36a8457e239642d2001091aa324d6fbd98c1afca0891": {
@@ -8395,7 +8395,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cdce14763bd01671f7331b",
-        "last_synced_at": "2026-04-02T23:00:11.415Z"
+        "last_synced_at": "2026-04-02T23:30:12.246Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-81fc-a31c-d8a0726d96d1",
@@ -8413,7 +8413,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cde2e5763bd01671f7332e",
-        "last_synced_at": "2026-04-02T23:00:48.346Z"
+        "last_synced_at": "2026-04-02T23:30:44.464Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-81b9-bcc6-f516cd04e167",
@@ -8431,7 +8431,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cde35c763bd01671f7332f",
-        "last_synced_at": "2026-04-02T23:00:49.384Z"
+        "last_synced_at": "2026-04-02T23:30:44.991Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-816a-8839-c13893f535c3",
@@ -8449,7 +8449,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69ce92ff763bd01671f733c6",
-        "last_synced_at": "2026-04-02T23:00:08.797Z"
+        "last_synced_at": "2026-04-02T23:30:09.554Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-810d-9d1e-ece53706003a",
@@ -8467,7 +8467,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69ce9304763bd01671f733c7",
-        "last_synced_at": "2026-04-02T23:00:09.847Z"
+        "last_synced_at": "2026-04-02T23:30:11.051Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-8182-ad31-d415e263832d",
@@ -8485,7 +8485,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69ce9305763bd01671f733c8",
-        "last_synced_at": "2026-04-02T23:00:10.564Z"
+        "last_synced_at": "2026-04-02T23:30:11.706Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-81ca-9fe0-fe0c3a230dc1",
@@ -8503,7 +8503,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69ceb9fb763bd01671f733eb",
-        "last_synced_at": "2026-04-02T23:00:06.999Z"
+        "last_synced_at": "2026-04-02T23:30:07.768Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-810d-9115-cd29c03ada62",
@@ -8521,7 +8521,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cebd24763bd01671f733ef",
-        "last_synced_at": "2026-04-02T23:00:06.488Z"
+        "last_synced_at": "2026-04-02T23:30:07.240Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-81d3-b1fa-cfb117165a22",
@@ -8539,7 +8539,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cecac0763bd01671f733fc",
-        "last_synced_at": "2026-04-02T23:00:03.864Z"
+        "last_synced_at": "2026-04-02T23:30:03.063Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-8136-a329-e2daf0751501",
@@ -8557,7 +8557,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cecac3763bd01671f733fd",
-        "last_synced_at": "2026-04-02T23:00:04.814Z"
+        "last_synced_at": "2026-04-02T23:30:06.250Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-81a9-8965-f3f2fa983941",
@@ -8577,7 +8577,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cecac6763bd01671f733fe",
-        "last_synced_at": "2026-04-02T23:00:08.087Z"
+        "last_synced_at": "2026-04-02T23:30:08.503Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-81ac-9853-e69bebe66454",
@@ -8585,7 +8585,7 @@
       },
       "gallery": {
         "gallery_id": "manual-2026-04-02T09-30-00-07-00",
-        "last_synced_at": "2026-04-02T23:00:08.453Z"
+        "last_synced_at": "2026-04-02T23:30:09.241Z"
       }
     },
     "sha256:c5323dc6af71dcade7ccb3f76ed156a694757f219d3337984e5a5190fda5fa99": {
@@ -8599,7 +8599,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69ceda3d763bd01671f7340c",
-        "last_synced_at": "2026-04-02T23:00:03.247Z"
+        "last_synced_at": "2026-04-02T23:30:02.168Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-81c3-837c-d58157e754b0",
@@ -8617,7 +8617,7 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "69cee6e1763bd01671f73416",
-        "last_synced_at": "2026-04-02T23:00:01.983Z"
+        "last_synced_at": "2026-04-02T23:30:00.958Z"
       },
       "notion": {
         "page_id": "33685ec7-0668-817e-bd89-ccc4751ff686",
