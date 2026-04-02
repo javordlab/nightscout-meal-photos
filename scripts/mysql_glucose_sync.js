@@ -111,7 +111,7 @@ async function main() {
     try {
         console.log("  -> Updating Backup Dashboard...");
         execSync('node /Users/javier/.openclaw/workspace/scripts/generate_backup_dashboard_data.js');
-        execSync('cd /Users/javier/.openclaw/workspace/nightscout-meal-photos && git add data/backups.json && (git commit -m "chore: automated glucose dashboard update" || true) && git push origin main');
+        execSync('node /Users/javier/.openclaw/workspace/scripts/health-sync/deploy_gh_pages.js', { stdio: 'inherit' });
     } catch (e) {
         console.error("Dashboard update failed:", e.message);
     }
