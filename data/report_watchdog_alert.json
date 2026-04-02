@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-04-01T16:32:05.125Z",
+  "generatedAt": "2026-04-02T16:32:04.968Z",
   "severity": "critical",
   "reason": "missing_0930_report",
-  "dateLA": "2026-04-01",
-  "lastReportAt": "2026-03-31T16:30:03.054Z",
+  "dateLA": "2026-04-02",
+  "lastReportAt": "2026-04-01T16:32:05.096Z",
   "fallbackTriggered": true
 }

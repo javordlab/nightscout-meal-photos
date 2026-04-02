@@ -1,0 +1,67 @@
+🩺 DAILY HEALTH REPORT
+📅 Date: 2026-04-02
+🕒 Coverage window: 2026-04-01 00:00 – 2026-04-02 00:00 (America/Los_Angeles)
+⚙️ Generated time: 2026-04-02T16:32:01.810Z
+🤖 Model: anthropic/claude-sonnet-4-6
+
+1) 📊 Today's Glucose Summary
+- Average glucose: 123.5 mg/dL
+- Time in Range (70-180): 95.8%
+- GMI: 6.27%
+- Standard deviation: 18.9 mg/dL
+- CV: 15.3%
+- Data points used: 288
+
+2) 📉 14-day Trends (ending 2026-04-01)
+- Average glucose: 125.5 mg/dL
+- Time in Range (70-180): 97.5%
+- GMI: 6.31%
+- Standard deviation: 19.4 mg/dL
+- CV: 15.5%
+- Data points used: 1013
+
+3) 🍽️ Nutrition (2026-04-01)
+- Meals logged: 7
+- Total carbs: 178.0 g
+- Total calories: 1707 kcal
+- Total protein: 82.0 g
+
+4) 🧾 Meal Details (2026-04-01)
+- 9:56 AM — Breakfast: English muffin with melted cheese and prosciutto + orange wedges (~half orange) — 40.0g carbs, 370 kcal, 24.0g protein — BG at meal: 119 mg/dL
+- 9:59 AM — Breakfast: 3 prunes [Cumulative Breakfast: ~56g carbs total] — 16.0g carbs, 60 kcal, 1.0g protein — BG at meal: 118 mg/dL
+- 12:56 PM — Lunch: Small tortilla with 2 slices turkey and 1 slice cheese (folded quesadilla-style) + 3 slices papaya — 35.0g carbs, 260 kcal, 15.0g protein — BG at meal: 107 mg/dL
+- 1:05 PM — Lunch: Small handful of cashews (~15-18 nuts) [Cumulative Lunch: ~44g carbs total] — 9.0g carbs, 157 kcal, 5.0g protein — BG at meal: 109 mg/dL
+- 4:00 PM — Snack: Small piece of cake with whipped cream and peanut butter — 28.0g carbs, 280 kcal, 5.0g protein — BG at meal: 128 mg/dL
+- 6:38 PM — Dinner: Large flour tortilla with shredded pork, roasted peppers (red & green), red onion, shredded cheddar cheese, guacamole, lettuce, and cilantro — 40.0g carbs, 500 kcal, 28.0g protein — BG at meal: 130 mg/dL
+- 8:32 PM — Snack: 1 protein ball — 10.0g carbs, 80 kcal, 4.0g protein — BG at meal: 133 mg/dL
+
+5) 📚 Nutrition Baseline (14-day daily average ending 2026-04-01)
+- Average carbs/day: 159.8 g
+- Average calories/day: 1568.5 kcal
+- Average protein/day: 76.9 g
+- Average meals/day: 6.0
+- Days in window with food entries: 14
+
+6) 💊 Medication Status (2026-04-01)
+- 2026-04-01T19:00:00-07:00: Medication: Metformin 1000mg (dinner)
+- 2026-04-01T13:00:00-07:00: Medication: Metformin 500mg (lunch)
+- 2026-04-01T09:00:00-07:00: Medication: Lisinopril 10mg (Scheduled)
+- 2026-04-01T09:10:00-07:00: Medication: Metformin 500mg (breakfast)
+- 2026-04-01T09:56:00-07:00: Medication: Metformin 500mg (breakfast)
+
+7) 🚨 Outliers (2026-04-01)
+- High readings >180: 12
+- Low readings <70: 0
+- Max glucose: 195 mg/dL at 2026-04-01T18:24:01.000Z
+
+8) 🧠 Extended Supervisor Analysis
+- Nice work overall today: Strong Time in Range at 95.8% | No hypoglycemia episodes (<70 mg/dL) | Good protein intake (82.0g).
+- Key trend signals: avg glucose vs 14-day baseline -2.0 mg/dL, TIR delta -1.7%, carbs delta 18.2 g, calories delta 139 kcal.
+- Friendly focus for tomorrow: There was 12 reading(s) >180 mg/dL; keep an eye on post-meal spacing/activity.
+- You’re doing great—small consistent habits keep adding up. Keep it going 🌟
+
+9) 🛡️ Self-Audit (Data Integrity)
+- Target day enforced: 2026-04-01 PT
+- Glucose points in target window: 288
+- GMI formula check (3.31 + 0.02392 × Avg): 6.27%
+- Reported GMI: 6.27%
