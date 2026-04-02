@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-04-01T16:45:13.334Z",
-  "since": "2026-03-25T16:45:12.806Z",
+  "generatedAt": "2026-04-02T16:45:06.172Z",
+  "since": "2026-03-26T16:45:05.698Z",
   "summary": {
-    "totalEntries": 94,
-    "inSyncState": 94,
-    "nsLinked": 94,
-    "notionLinked": 94,
-    "galleryLinked": 35,
+    "totalEntries": 100,
+    "inSyncState": 100,
+    "nsLinked": 100,
+    "notionLinked": 100,
+    "galleryLinked": 37,
     "outcomesBackfilled": 0,
     "duplicates": 0,
     "missingNs": 0,
     "missingNotion": 0,
     "missingGallery": 0,
-    "missingOutcomes": 43
+    "missingOutcomes": 45
   },
   "discrepancies": [
     {
@@ -22,7 +22,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 15,
+          "ageHours": 39,
           "severity": "warning"
         }
       ]
@@ -34,7 +34,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 21,
+          "ageHours": 45,
           "severity": "warning"
         }
       ]
@@ -46,7 +46,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 21,
+          "ageHours": 45,
           "severity": "warning"
         }
       ]
@@ -58,7 +58,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 22,
+          "ageHours": 46,
           "severity": "warning"
         }
       ]
@@ -70,7 +70,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 24,
+          "ageHours": 48,
           "severity": "warning"
         }
       ]
@@ -82,7 +82,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 24,
+          "ageHours": 48,
           "severity": "warning"
         }
       ]
@@ -94,7 +94,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 86,
+          "ageHours": 110,
           "severity": "warning"
         }
       ]
@@ -106,7 +106,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 93,
+          "ageHours": 117,
           "severity": "warning"
         }
       ]
@@ -118,7 +118,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 93,
+          "ageHours": 117,
           "severity": "warning"
         }
       ]
@@ -130,7 +130,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 97,
+          "ageHours": 121,
           "severity": "warning"
         }
       ]
@@ -142,7 +142,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 110,
+          "ageHours": 134,
           "severity": "warning"
         }
       ]
@@ -154,7 +154,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 111,
+          "ageHours": 135,
           "severity": "warning"
         }
       ]
@@ -176,7 +176,7 @@
         },
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 111,
+          "ageHours": 135,
           "severity": "warning"
         }
       ]
@@ -188,7 +188,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 111,
+          "ageHours": 135,
           "severity": "warning"
         }
       ]
@@ -200,7 +200,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 112,
+          "ageHours": 136,
           "severity": "warning"
         }
       ]
@@ -212,7 +212,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 116,
+          "ageHours": 140,
           "severity": "warning"
         }
       ]
@@ -224,7 +224,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 116,
+          "ageHours": 140,
           "severity": "warning"
         }
       ]
@@ -236,7 +236,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 119,
+          "ageHours": 143,
           "severity": "warning"
         }
       ]
@@ -248,7 +248,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 119,
+          "ageHours": 143,
           "severity": "warning"
         }
       ]
@@ -260,7 +260,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 135,
+          "ageHours": 159,
           "severity": "warning"
         }
       ]
@@ -272,7 +272,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 135,
+          "ageHours": 159,
           "severity": "warning"
         }
       ]
@@ -284,7 +284,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 135,
+          "ageHours": 159,
           "severity": "warning"
         }
       ]
@@ -296,7 +296,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 138,
+          "ageHours": 162,
           "severity": "warning"
         }
       ]
@@ -308,7 +308,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 141,
+          "ageHours": 165,
           "severity": "warning"
         }
       ]
@@ -320,67 +320,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 141,
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:bd318c7d542fc5b33fbe3fbbdd16e1ecae98855f999ad7578bc0d07716460528",
-      "timestamp": "2026-03-26T09:38:00-07:00",
-      "title": "Breakfast: 1 slice dragon fruit and handful of mixed nuts [Cumulative breakfast: 34g carbs total with prior sandwich]",
-      "issues": [
-        {
-          "type": "outcomes_not_backfilled",
-          "ageHours": 144,
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:580922719246518f29de9e80ab2830d24061f6f8b8db48790779a2aaf4997839",
-      "timestamp": "2026-03-26T09:22:00-07:00",
-      "title": "Breakfast: Half sandwich on seeded multigrain bread with peanut butter and low sugar jam",
-      "issues": [
-        {
-          "type": "outcomes_not_backfilled",
-          "ageHours": 144,
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:17cbc4d1ac4178ed70e73553d379767bdf5154fe5c5fe9e21e31dd8522e92073",
-      "timestamp": "2026-03-25T20:00:00-07:00",
-      "title": "Snack: 1 protein ball",
-      "issues": [
-        {
-          "type": "outcomes_not_backfilled",
-          "ageHours": 158,
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:532477ed4edbb1ace2f1482a72d44796994b09204c3e5ec9655ced0624c39b27",
-      "timestamp": "2026-03-25T18:16:00-07:00",
-      "title": "Dinner: Braised mushrooms, eggplant, and 3 soft-boiled egg halves (1.5 eggs) over shirataki/glass noodles with soy-based sauce",
-      "issues": [
-        {
-          "type": "outcomes_not_backfilled",
-          "ageHours": 159,
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:fcf910a2ac2be2e3dccc99ea1e85d8db48423602cc8637c0622190db740845a3",
-      "timestamp": "2026-03-25T16:56:00-07:00",
-      "title": "Lunch: 1 apple and 1oz Korean tofu snack with pine nut (기평장 두부라자)",
-      "issues": [
-        {
-          "type": "outcomes_not_backfilled",
-          "ageHours": 161,
+          "ageHours": 165,
           "severity": "warning"
         }
       ]
@@ -392,7 +332,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 73,
+          "ageHours": 97,
           "severity": "warning"
         }
       ]
@@ -404,7 +344,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 70,
+          "ageHours": 94,
           "severity": "warning"
         }
       ]
@@ -416,7 +356,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 68,
+          "ageHours": 92,
           "severity": "warning"
         }
       ]
@@ -428,7 +368,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 63,
+          "ageHours": 87,
           "severity": "warning"
         }
       ]
@@ -440,7 +380,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 63,
+          "ageHours": 87,
           "severity": "warning"
         }
       ]
@@ -452,7 +392,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 63,
+          "ageHours": 87,
           "severity": "warning"
         }
       ]
@@ -464,7 +404,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 47,
+          "ageHours": 71,
           "severity": "warning"
         }
       ]
@@ -476,7 +416,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 44,
+          "ageHours": 68,
           "severity": "warning"
         }
       ]
@@ -488,7 +428,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 44,
+          "ageHours": 68,
           "severity": "warning"
         }
       ]
@@ -500,7 +440,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 42,
+          "ageHours": 66,
           "severity": "warning"
         }
       ]
@@ -512,7 +452,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 39,
+          "ageHours": 63,
           "severity": "warning"
         }
       ]
@@ -524,7 +464,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 39,
+          "ageHours": 63,
           "severity": "warning"
         }
       ]
@@ -536,7 +476,91 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 39,
+          "ageHours": 63,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:4fe87cbf68e5c5c0341483da637cde4edb9a98fa564af41786b7c9df1a0030c3",
+      "timestamp": "2026-04-01T09:56:00-07:00",
+      "title": "Breakfast: English muffin with melted cheese and prosciutto + orange wedges (~half orange)",
+      "issues": [
+        {
+          "type": "outcomes_not_backfilled",
+          "ageHours": 24,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:fde4c330926697830436f0afba69e2c360e1f86123047d6aecd46a9bf356947f",
+      "timestamp": "2026-04-01T09:59:00-07:00",
+      "title": "Breakfast: 3 prunes [Cumulative Breakfast: ~56g carbs total]",
+      "issues": [
+        {
+          "type": "outcomes_not_backfilled",
+          "ageHours": 24,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:abfd460114e1c01468c15a6ea09ef49a738fddb49de6a8c3b7e654bedee6049d",
+      "timestamp": "2026-04-01T12:56:00-07:00",
+      "title": "Lunch: Small tortilla with 2 slices turkey and 1 slice cheese (folded quesadilla-style) + 3 slices papaya",
+      "issues": [
+        {
+          "type": "outcomes_not_backfilled",
+          "ageHours": 21,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:c77fcd0463474dd8951904dfd57a07408bf41ab249a5a4e7fdcd6bc6ded24dad",
+      "timestamp": "2026-04-01T13:05:00-07:00",
+      "title": "Lunch: Small handful of cashews (~15-18 nuts) [Cumulative Lunch: ~44g carbs total]",
+      "issues": [
+        {
+          "type": "outcomes_not_backfilled",
+          "ageHours": 21,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:340d859537a3bf2e17ddac02cac414f39dd2db07c8d0127f1a9d3fd1c26cf980",
+      "timestamp": "2026-04-01T16:00:00-07:00",
+      "title": "Snack: Small piece of cake with whipped cream and peanut butter",
+      "issues": [
+        {
+          "type": "outcomes_not_backfilled",
+          "ageHours": 18,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:0ec2c811f306f5bdb4be543081f2e9a02fef6584974ddb536fa411701ea0318a",
+      "timestamp": "2026-04-01T18:38:00-07:00",
+      "title": "Dinner: Large flour tortilla with shredded pork, roasted peppers (red & green), red onion, shredded cheddar cheese, guacamole, lettuce, and cilantro",
+      "issues": [
+        {
+          "type": "outcomes_not_backfilled",
+          "ageHours": 15,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "entryKey": "sha256:b4d14362084e075dca29f67523c07171dc26c0c4358e533ead035772a951f549",
+      "timestamp": "2026-04-01T20:32:00-07:00",
+      "title": "Snack: 1 protein ball",
+      "issues": [
+        {
+          "type": "outcomes_not_backfilled",
+          "ageHours": 13,
           "severity": "warning"
         }
       ]
