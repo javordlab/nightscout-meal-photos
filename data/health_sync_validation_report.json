@@ -1,8 +1,14 @@
 {
-  "generatedAt": "2026-04-03T03:30:00.811Z",
-  "entryCount": 49,
+  "generatedAt": "2026-04-03T04:00:01.008Z",
+  "entryCount": 50,
   "errors": [],
   "warnings": [
+    {
+      "entryKey": "sha256:ba496d07c2ab559c18c1fb08ed2e78f2c34d07bce846ef6c729d4e0b5d86b0f8",
+      "timestamp": "2026-04-02T20:35:00-07:00",
+      "title": "Snack: 2 slices dried dragon fruit (~20g)",
+      "reason": "missing_photo_urls"
+    },
     {
       "entryKey": "sha256:e419ec1657e809fce643db5aa1612e77d1bcd98ff79d9b41845a9158e45d9b1a",
       "timestamp": "2026-04-02T12:46:00-07:00",
