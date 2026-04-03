@@ -253,6 +253,9 @@ async function main() {
   const finalLines = [...priorityLines, ...otherLines];
   console.log(`Processing ${priorityLines.length} today + ${otherLines.length} recent (cutoff: ${cutoffDate})`);
 
+  // Load sync state once outside the loop — not per-entry
+  const syncState = loadSyncState(SYNC_STATE_PATH);
+
   let glucoseEntries = [];
   let photoSyncedToNotion = false;
   const nsTelemetry = createNsTelemetry();
@@ -313,8 +316,6 @@ async function main() {
     }
 
     // Skip if already fully synced: look up by timestamp+user in sync_state
-    // (avoids hash mismatch between radial_dispatcher and normalize_health_log key algorithms)
-    const syncState = loadSyncState(SYNC_STATE_PATH);
     const existing = Object.values(syncState.entries || {}).find(
       e => e.timestamp === entryData.iso && e.user === entryData.user
     );
