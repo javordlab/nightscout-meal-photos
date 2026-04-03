@@ -1,5 +1,6 @@
 # Health Log
 
+| 2026-04-02 | 18:26 -07:00 | Maria Dennis | Food | Dinner | Dinner: Sopa de cocido (broth with angel hair noodles/fideos) (BG: 133 mg/dL Flat) (Pred: 165-185 mg/dL @ 19:45-20:00 PM) (Protein: 6g | Carbs: ~29g | Cals: ~155) | 29 | 155 |
 | 2026-04-02 | 14:34 -07:00 | Maria Dennis | Food | Snack | Snack: Papaya, 3 slices (~200g) (BG: 106 mg/dL Flat) (Pred: 130-145 mg/dL @ 15:45-16:00 PM) (Protein: 1g | Carbs: ~14g | Cals: ~78) [photo](https://iili.io/BnfhXwu.jpg) | 14 | 78 |
 | 2026-04-02 | 14:03 -07:00 | Maria Dennis | Activity | - | 40 minute walk (BG: 112 mg/dL Flat) | null | null |
 | 2026-04-02 | 12:46 -07:00 | Maria Dennis | Food | Lunch | Lunch: 1 protein ball (BG: 136 mg/dL Flat) (Pred: 155-170 mg/dL @ 14:00-14:30 PM) [Cumulative Lunch: ~14g carbs total] (Protein: 5g | Carbs: ~10g | Cals: ~110) | 10 | 110 |
