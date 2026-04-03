@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-04-03T23:21:01.880Z",
+  "checkedAt": "2026-04-03T23:30:00.326Z",
   "jobsChecked": 4,
   "jobs": [
     {
@@ -50,17 +50,17 @@
       "status": "healthy",
       "schedule": "every 30m",
       "intervalMs": 1800000,
-      "lastRunAtMs": 1775256645742,
-      "nextRunAtMs": 1775258445742,
+      "lastRunAtMs": 1775258445752,
+      "nextRunAtMs": 1775260245752,
       "consecutiveErrors": 0,
       "lastStatus": "ok",
-      "lastDurationMs": 7755,
+      "lastDurationMs": 24382,
       "overdueMin": null,
       "graceMin": null
     }
   ],
   "staleJobs": [],
   "dailyReportIssue": null,
-  "ghPagesIssue": "backups.json glucose data stale by 167m",
+  "ghPagesIssue": "backups.json glucose data stale by 176m",
   "alertSent": true
 }

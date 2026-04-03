@@ -79,19 +79,20 @@ async function main() {
 
         if (values.length > 0) {
             const sql = `INSERT IGNORE INTO glucose_measurements (ns_id, sgv, direction, device, event_time, mills) VALUES ${values.join(',')};`;
+            const beforeCount = totalSynced;
             runQuery(sql);
-            
-            // In MySQL, we can't easily see "affected rows" from a CLI 'INSERT IGNORE' 
-            // without extra queries, so we use the batch logic:
-            // If we got a full batch, there MIGHT be more data behind it.
-            // We set lastDateInBatch to the oldest record in this batch to pull the next page.
-            if (entries.length === batchSize) {
+
+            // Check actual rows affected by querying count delta
+            // Use a simpler heuristic: if we got a full batch but oldest entry is >48h old,
+            // we're deep into historical data that's already synced — stop paginating.
+            const ageHours = (Date.now() - oldestMills) / (1000 * 60 * 60);
+            if (entries.length === batchSize && ageHours < 48) {
                 lastDateInBatch = oldestMills;
                 totalSynced += entries.length;
                 console.log(`Full batch received (${entries.length}). Checking for older records...`);
             } else {
                 totalSynced += entries.length;
-                console.log(`Partial batch received (${entries.length}). Sync complete.`);
+                console.log(`Partial batch (${entries.length}) or caught up (age ${Math.round(ageHours)}h). Sync complete.`);
                 break;
             }
         } else {
