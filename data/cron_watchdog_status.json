@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-04-03T20:15:00.315Z",
+  "checkedAt": "2026-04-03T20:20:50.368Z",
   "jobsChecked": 10,
   "jobs": [
     {
@@ -120,11 +120,11 @@
       "status": "healthy",
       "schedule": "every 5m",
       "intervalMs": 300000,
-      "lastRunAtMs": 1775247248688,
-      "nextRunAtMs": 1775247548688,
+      "lastRunAtMs": 1775247548698,
+      "nextRunAtMs": 1775247848698,
       "consecutiveErrors": 0,
       "lastStatus": "ok",
-      "lastDurationMs": 5495,
+      "lastDurationMs": 4864,
       "overdueMin": null,
       "graceMin": null
     },
