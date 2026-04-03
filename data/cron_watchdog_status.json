@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-04-03T18:30:00.745Z",
+  "checkedAt": "2026-04-03T19:00:01.203Z",
   "jobsChecked": 10,
   "jobs": [
     {
@@ -103,14 +103,14 @@
     {
       "id": "cron-health-watchdog",
       "name": "Cron Health Watchdog",
-      "status": "warning",
+      "status": "healthy",
       "schedule": "every 30m",
       "intervalMs": 1800000,
-      "lastRunAtMs": 1775240445666,
-      "nextRunAtMs": 1775242245666,
-      "consecutiveErrors": 1,
-      "lastStatus": "error",
-      "lastDurationMs": 398,
+      "lastRunAtMs": 1775242245674,
+      "nextRunAtMs": 1775244045674,
+      "consecutiveErrors": 0,
+      "lastStatus": "ok",
+      "lastDurationMs": 17960,
       "overdueMin": null,
       "graceMin": null
     },
@@ -120,11 +120,11 @@
       "status": "healthy",
       "schedule": "every 5m",
       "intervalMs": 300000,
-      "lastRunAtMs": 1775240948502,
-      "nextRunAtMs": 1775241248502,
+      "lastRunAtMs": 1775242748553,
+      "nextRunAtMs": 1775243048553,
       "consecutiveErrors": 0,
       "lastStatus": "skipped",
-      "lastDurationMs": 4,
+      "lastDurationMs": 3,
       "overdueMin": null,
       "graceMin": null
     },
@@ -134,11 +134,11 @@
       "status": "healthy",
       "schedule": "every 30m",
       "intervalMs": 1800000,
-      "lastRunAtMs": 1775239348636,
-      "nextRunAtMs": 1775241148636,
+      "lastRunAtMs": 1775241148645,
+      "nextRunAtMs": 1775242948645,
       "consecutiveErrors": 0,
       "lastStatus": "skipped",
-      "lastDurationMs": 19,
+      "lastDurationMs": 2,
       "overdueMin": null,
       "graceMin": null
     }
