@@ -1,5 +1,6 @@
 # Health Log
 
+| 2026-04-02 | 20:35 -07:00 | Maria Dennis | Food | Snack | Snack: 2 slices dried dragon fruit (~20g) (BG: 162 mg/dL Flat) (Pred: 180-195 mg/dL @ 21:30 PM) (Protein: 0g | Carbs: ~15g | Cals: ~65) | 15 | 65 |
 | 2026-04-02 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 152 mg/dL Flat) | null | null |
 | 2026-04-02 | 19:31 -07:00 | Maria Dennis | Activity | - | 30 minute walk (BG: 143 mg/dL Flat) | null | null |
 | 2026-04-02 | 18:37 -07:00 | Maria Dennis | Food | Dinner | Dinner: Cocido madrileño - segundo plato, partially eaten (chickpeas, potato, chicken, chorizo, cabbage — left ~half) (BG: 136 mg/dL Flat) (Pred: 175-195 mg/dL @ 20:00-20:30 PM) [Cumulative Dinner: ~44g carbs total] (Protein: 15g | Carbs: ~15g | Cals: ~191) [photo](https://iili.io/Bnxzbb2.jpg) | 15 | 191 |
