@@ -68,11 +68,7 @@ async function patchJson(id, props) {
  *   Snack:      +4 mg/dL
  *   Dessert:   -14 mg/dL  (usually follows a meal, BG partially blunted)
  *
- * Layer 3 — preBG dampener:
- *   When preBG ≥ 140: subtract 15 mg/dL (near ceiling, body resists further rise)
- *   When preBG ≥ 130: subtract 8 mg/dL
- *
- * Layer 4 — Cumulative meal preBG anchor (Layer 2 data quality fix):
+ * Layer 3 — Cumulative meal preBG anchor (data quality fix):
  *   For cumulative meals, use the FIRST item's preBG in the meal session,
  *   not the live BG at time of logging subsequent items (which is mid-digestion).
  *   Session window: same meal type within 2 hours.
@@ -184,16 +180,6 @@ function resolveAnchorPreBg(page, allPages) {
   return ownPreBg;
 }
 
-/**
- * Apply preBG dampener: when preBG is already elevated,
- * the body resists further large rises (Metformin ceiling effect).
- */
-function getPreBgDampener(preBg) {
-  if (preBg >= 140) return -15;
-  if (preBg >= 130) return -8;
-  return 0;
-}
-
 // Parse prediction from health_log.md title text embedded in Notion entry.
 // Returns { bg, peakIso } if found, otherwise null.
 // fullDateIso: full ISO string from Notion (e.g. "2026-03-22T12:00:00-07:00") to preserve offset.
@@ -289,16 +275,15 @@ async function run() {
         const preBg = rawPreBg ?? 115; // 115 = Maria's typical pre-meal fallback
 
         const factor = getCarbFactor(carbsForCalc);
-        const dampener = getPreBgDampener(preBg);
 
         predictedBg = Math.min(
-          Math.round(preBg + carbsForCalc * factor + intercept + dampener),
+          Math.round(preBg + carbsForCalc * factor + intercept),
           300
         );
 
         const ttpMin = getTTPMinutes(title);
         peakTimeIso = new Date(mealTime.getTime() + ttpMin * 60 * 1000).toISOString();
-        source = `formula v3 (preBG=${preBg} + ${carbsForCalc}g×${factor} + intercept=${intercept} + damp=${dampener}, ttp=${ttpMin}min)`;
+        source = `formula v3 (preBG=${preBg} + ${carbsForCalc}g×${factor} + intercept=${intercept}, ttp=${ttpMin}min)`;
       }
 
       console.log(`Projection for '${title?.substring(0, 60)}': ${predictedBg} mg/dL [${source}]`);

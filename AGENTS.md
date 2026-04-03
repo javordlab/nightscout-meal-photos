@@ -51,11 +51,7 @@
     - Dinner:     −2 mg/dL
     - Snack:      +4 mg/dL
     - Dessert:   −14 mg/dL (typically follows a meal, partially blunted)
-  - **Layer 3 — preBG dampener (apply after intercept):**
-    - preBG ≥ 140: subtract 15 mg/dL
-    - preBG ≥ 130: subtract 8 mg/dL
-    - preBG < 130: no adjustment
-  - **Layer 4 — Cumulative meal preBG anchor (data quality fix):**
+  - **Layer 3 — Cumulative meal preBG anchor (data quality fix):**
     - If this is a cumulative item (added to an ongoing meal within 2 hours of the first item), use the **FIRST item's preBG** as the anchor — NOT the current live BG (which is mid-digestion and artificially elevated). Failure to do this causes ~47–56 mg/dL underestimate errors on cumulative items.
 - **TIME-TO-PEAK DEFAULTS (median observed):** Breakfast: +87 min | Dinner: +76 min | Lunch: +113 min | Snack: +126 min | Dessert: +102 min. Do NOT use flat +90 min for all meal types.
 - **CUMULATIVE MEAL PREDICTION (NON-NEGOTIABLE):** When a new food entry shares the same meal type (e.g., a second Breakfast item) and was logged within 2 hours of the first, the peak BG prediction MUST be based on the **sum of all carbs for that meal**, not the new item's carbs alone. Adding food to a meal always increases (or holds) the predicted peak — never decreases it. Annotate with `[Cumulative [MealType]: Xg carbs total]` when applicable.
