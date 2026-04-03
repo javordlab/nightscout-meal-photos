@@ -1,14 +1,17 @@
 [
   {
     "id": "33685ec7-0668-819d-8970-fd73f2e5bc3b",
-    "title": "Dinner: Large flour tortilla with shredded pork, roasted peppers (red & green), red onion, shredded cheddar cheese, guacamole, lettuce, and cilantro (BG: 134 mg/dL Flat) (Pred: 195-215 mg/dL @ 8:15 PM) (Protein: 28g | Carbs: ~40g | Cals: ~500)",
+    "title": "Dinner: Large flour tortilla with shredded pork, roasted peppers (red & green), red onion, shredded cheddar cheese, guacamole, lettuce, and cilantro",
     "type": "Dinner",
-    "date": "2026-04-01T18:38:00.000-07:00",
+    "date": "2026-04-01T18:38:00-07:00",
     "photo": "https://iili.io/BqQAZGI.jpg",
     "carbs": 40,
     "cals": 500,
-    "delta": 14,
-    "peak": 144
+    "delta": null,
+    "peak": null,
+    "entry_key": "sha256:0ec2c811f306f5bdb4be543081f2e9a02fef6584974ddb536fa411701ea0318a",
+    "protein": 28,
+    "preMeal": null
   },
   {
     "id": "33585ec7-0668-8194-a53a-ea11d9293da0",
@@ -1580,6 +1583,48 @@
     "photo": "https://files.catbox.moe/xw7qza.jpg",
     "carbs": 3,
     "cals": 50,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "manual-2026-04-02T14-34-00-07-00",
+    "entry_key": "sha256:edd2a9ff49e9e2e7c73ea00af1de45aebe0c69fda1a3c7dfb3bf15933479a915",
+    "title": "Snack: Papaya, 3 slices (~200g)",
+    "type": "Snack",
+    "date": "2026-04-02T14:34:00-07:00",
+    "photo": "https://iili.io/BnfhXwu.jpg",
+    "carbs": 14,
+    "cals": 78,
+    "protein": 1,
+    "preMeal": null,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "manual-2026-04-02T12-40-00-07-00",
+    "entry_key": "sha256:15665ed61f024160d67ab73558ecfb6da9bf577d75abd465452314bfe7998d52",
+    "title": "Lunch: 2 boiled chicken wings and small cucumber sliced",
+    "type": "Lunch",
+    "date": "2026-04-02T12:40:00-07:00",
+    "photo": "https://iili.io/Bnfhwnj.jpg",
+    "carbs": 4,
+    "cals": 240,
+    "protein": 23,
+    "preMeal": null,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "manual-2026-04-02T09-30-00-07-00",
+    "entry_key": "sha256:69bd36083cf4a383ba15b93edbab639840fd09d3fb14a8d5c92b8f495982dd0a",
+    "title": "Breakfast: Open-faced roll with carnitas, avocado slices, and cream cheese",
+    "type": "Breakfast",
+    "date": "2026-04-02T09:30:00-07:00",
+    "photo": "https://iili.io/BCM6nNj.jpg",
+    "carbs": 32,
+    "cals": 570,
+    "protein": 31,
+    "preMeal": null,
     "delta": null,
     "peak": null
   }

@@ -1,16 +1,8 @@
 {
-  "generatedAt": "2026-04-03T00:00:00.931Z",
-  "entryCount": 45,
+  "generatedAt": "2026-04-03T00:56:24.296Z",
+  "entryCount": 14,
   "errors": [],
   "warnings": [
-    {
-      "entryKey": "sha256:edd2a9ff49e9e2e7c73ea00af1de45aebe0c69fda1a3c7dfb3bf15933479a915",
-      "timestamp": "2026-04-02T14:34:00-07:00",
-      "title": "Snack: Papaya, 3 slices (~200g)",
-      "reason": "photo_missing_but_found_in_internal_folder",
-      "file": "/Users/javier/.openclaw/media/inbound/file_253---c34d5b40-1c00-4ea9-9303-fac955bdd821.jpg",
-      "diffMinutes": 1
-    },
     {
       "entryKey": "sha256:e419ec1657e809fce643db5aa1612e77d1bcd98ff79d9b41845a9158e45d9b1a",
       "timestamp": "2026-04-02T12:46:00-07:00",
@@ -18,36 +10,6 @@
       "reason": "photo_missing_but_found_in_internal_folder",
       "file": "/Users/javier/.openclaw/media/inbound/file_252---de779c6d-343b-4306-bb5b-19193563cd83.jpg",
       "diffMinutes": 5
-    },
-    {
-      "entryKey": "sha256:15665ed61f024160d67ab73558ecfb6da9bf577d75abd465452314bfe7998d52",
-      "timestamp": "2026-04-02T12:40:00-07:00",
-      "title": "Lunch: 2 boiled chicken wings and small cucumber sliced",
-      "reason": "photo_missing_but_found_in_internal_folder",
-      "file": "/Users/javier/.openclaw/media/inbound/file_252---de779c6d-343b-4306-bb5b-19193563cd83.jpg",
-      "diffMinutes": 1
-    },
-    {
-      "entryKey": "sha256:73841db1a6210766cfd2aec5879a15b6d5401f56e95162651840db5fc1b18a48",
-      "timestamp": "2026-03-31T13:09:00-07:00",
-      "title": "Dessert: 2\" cake piece with 1 tsp peanut butter and whipped cream [Cumulative Lunch: 55g carbs total]",
-      "reason": "photo_missing_but_found_in_internal_folder",
-      "file": "/Users/javier/.openclaw/media/inbound/file_244---5f2e78ad-c559-4852-a5c0-160610b3a210.jpg",
-      "diffMinutes": 8
-    },
-    {
-      "entryKey": "sha256:202739d1f9b29c149d58acb8621bff47858ca53691c0bbd42e5162a15e119423",
-      "timestamp": "2026-03-30T18:40:00-07:00",
-      "title": "Dinner: 1 slice dried dragon fruit [Cumulative Dinner: ~39g carbs total]",
-      "reason": "photo_missing_but_found_in_internal_folder",
-      "file": "/Users/javier/.openclaw/media/inbound/file_238---3eeb6c79-7ed2-4e5c-ae4a-060b98e503af.jpg",
-      "diffMinutes": 20
-    },
-    {
-      "entryKey": "sha256:340d859537a3bf2e17ddac02cac414f39dd2db07c8d0127f1a9d3fd1c26cf980",
-      "timestamp": "2026-04-01T16:00:00-07:00",
-      "title": "Snack: Small piece of cake with whipped cream and peanut butter",
-      "reason": "missing_photo_urls"
     },
     {
       "entryKey": "sha256:b4d14362084e075dca29f67523c07171dc26c0c4358e533ead035772a951f549",

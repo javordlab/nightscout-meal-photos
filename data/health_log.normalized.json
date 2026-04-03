@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-03T00:00:00.891Z",
+  "generatedAt": "2026-04-03T00:56:24.276Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
   "entryCount": 431,
   "entries": [
@@ -8,7 +8,7 @@
       "source": {
         "file": "health_log.md",
         "line": 3,
-        "rawRow": "| 2026-04-02 | 14:34 -07:00 | Maria Dennis | Food | Snack | Snack: Papaya, 3 slices (~200g) (BG: 106 mg/dL Flat) (Pred: 130-145 mg/dL @ 15:45-16:00 PM) (Protein: 1g | Carbs: ~14g | Cals: ~78) | 14 | 78 |"
+        "rawRow": "| 2026-04-02 | 14:34 -07:00 | Maria Dennis | Food | Snack | Snack: Papaya, 3 slices (~200g) (BG: 106 mg/dL Flat) (Pred: 130-145 mg/dL @ 15:45-16:00 PM) (Protein: 1g | Carbs: ~14g | Cals: ~78) [photo](https://iili.io/BnfhXwu.jpg) | 14 | 78 |"
       },
       "timestamp": "2026-04-02T14:34:00-07:00",
       "date": "2026-04-02",
@@ -18,7 +18,9 @@
       "mealType": "Snack",
       "title": "Snack: Papaya, 3 slices (~200g)",
       "notes": "BG: 106 mg/dL Flat; Protein: 1g; Pred: 130-145 mg/dL @ 15:45-16:00 PM",
-      "photoUrls": [],
+      "photoUrls": [
+        "https://iili.io/BnfhXwu.jpg"
+      ],
       "carbsEst": 14,
       "caloriesEst": 78,
       "proteinEst": 1,
@@ -43,7 +45,7 @@
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:edd2a9ff49e9e2e7c73ea00af1de45aebe0c69fda1a3c7dfb3bf15933479a915",
-      "contentHash": "sha256:d72180af5414a297949f3a9c6f7a599974161bcf2c9a30d08c19eed303cb05d8"
+      "contentHash": "sha256:00a4805a34ab9a117b67fb4019abc61970d60c102fc8634572e03c53973a457c"
     },
     {
       "source": {
@@ -131,7 +133,7 @@
       "source": {
         "file": "health_log.md",
         "line": 6,
-        "rawRow": "| 2026-04-02 | 12:40 -07:00 | Maria Dennis | Food | Lunch | Lunch: 2 boiled chicken wings and small cucumber sliced (BG: 141 mg/dL Flat) (Pred: 150-160 mg/dL @ 14:00-14:15 PM) (Protein: 23g | Carbs: ~4g | Cals: ~240) | 4 | 240 |"
+        "rawRow": "| 2026-04-02 | 12:40 -07:00 | Maria Dennis | Food | Lunch | Lunch: 2 boiled chicken wings and small cucumber sliced (BG: 141 mg/dL Flat) (Pred: 150-160 mg/dL @ 14:00-14:15 PM) (Protein: 23g | Carbs: ~4g | Cals: ~240) [photo](https://iili.io/Bnfhwnj.jpg) | 4 | 240 |"
       },
       "timestamp": "2026-04-02T12:40:00-07:00",
       "date": "2026-04-02",
@@ -141,7 +143,9 @@
       "mealType": "Lunch",
       "title": "Lunch: 2 boiled chicken wings and small cucumber sliced",
       "notes": "BG: 141 mg/dL Flat; Protein: 23g; Pred: 150-160 mg/dL @ 14:00-14:15 PM",
-      "photoUrls": [],
+      "photoUrls": [
+        "https://iili.io/Bnfhwnj.jpg"
+      ],
       "carbsEst": 4,
       "caloriesEst": 240,
       "proteinEst": 23,
@@ -166,7 +170,7 @@
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:15665ed61f024160d67ab73558ecfb6da9bf577d75abd465452314bfe7998d52",
-      "contentHash": "sha256:4de6db502b33612f211aa58ff20d05a20f12b5d814d998535b0c49055ae71e98"
+      "contentHash": "sha256:48395dfd967e6ecd07ea8552fcbb965cbed3bc73d360a027dbf44096ce786145"
     },
     {
       "source": {
