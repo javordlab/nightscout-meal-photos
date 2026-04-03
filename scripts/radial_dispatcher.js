@@ -2,10 +2,14 @@ const fs = require('fs');
 const https = require('https');
 const crypto = require('crypto');
 const { execSync } = require('child_process');
+const path = require('path');
 const {
   NS_ENTERED_BY,
   createNsTelemetry
 } = require('./health-sync/ns_identity');
+const { loadSyncState } = require('./health-sync/sync_state');
+const SYNC_STATE_PATH = path.join(__dirname, '../data/sync_state.json') ||
+  '/Users/javier/.openclaw/workspace/data/sync_state.json';
 const { upsertNightscoutTreatment } = require('./health-sync/ns_upsert_safe');
 
 // --- Configuration ---
@@ -300,7 +304,7 @@ async function main() {
     }
 
     const photos = entryData.category === 'Food' ? extractPhotos(entryData.text) : [];
-    let cleanText = entryData.text.replace(/\[📷\]\([^\)]+\)/g, '').trim();
+    let cleanText = entryData.text.replace(/\[(?:📷|photo)\]\([^\)]+\)/gi, '').trim();
     cleanText = injectKnownBgIfUnknown(cleanText, entryData.iso, glucoseEntries);
 
     if (cleanText.includes('[Photo received - awaiting manual description]')) {
@@ -308,14 +312,29 @@ async function main() {
       continue;
     }
 
-    console.log(`Checking: ${entryData.date} ${entryData.time} - ${cleanText}`);
+    // Skip if already fully synced: look up by timestamp+user in sync_state
+    // (avoids hash mismatch between radial_dispatcher and normalize_health_log key algorithms)
+    const syncState = loadSyncState(SYNC_STATE_PATH);
+    const existing = Object.values(syncState.entries || {}).find(
+      e => e.timestamp === entryData.iso && e.user === entryData.user
+    );
+    if (existing?.nightscout?.treatment_id && existing?.notion?.page_id) {
+      const photosSynced = photos.length === 0 ||
+        (existing.photo_urls?.length > 0 && photos.every(u => existing.photo_urls.includes(u)));
+      if (photosSynced) {
+        console.log(`Skip (synced): ${entryData.date} ${entryData.time.slice(0,5)}`);
+        continue;
+      }
+    }
+
+    const entryKey = buildEntryKey(entryData, cleanText);
+    console.log(`Checking: ${entryData.date} ${entryData.time} - ${cleanText.slice(0, 60)}`);
 
     // 1. Sync to Nightscout
     let eventType = "Note";
     if (entryData.category === "Food") eventType = "Meal Bolus";
     if (entryData.category === "Activity") eventType = "Exercise";
 
-    const entryKey = buildEntryKey(entryData, cleanText);
     const nsBody = {
       enteredBy: NS_ENTERED_BY,
       eventType: eventType,
