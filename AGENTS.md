@@ -38,6 +38,13 @@
   - HealthGuard high-value analysis and daily reports
   - Image interpretation: `anthropic/claude-sonnet-4-6` (fallback `anthropic/claude-sonnet-4-5` only — never kimi or qwen for images)
 - **FOOD ENTRY FORMAT (REQUIRED):** Use exact pattern `[Meal Type]: [Description] (BG: [Value] [Trend]) (Pred: [Range] mg/dL @ [Time]) (Protein: [P]g | Carbs: ~[C]g | Cals: ~[CAL])`. The meal-type prefix (`Breakfast:`, `Lunch:`, `Snack:`, `Dinner:`, `Dessert:`) must appear in entry text.
+- **PEAK BG PREDICTION FORMULA (CALIBRATED 2026-04-02, n=57):** Predictions MUST anchor to current preBG (never use flat 120 as baseline). Use Metformin-adjusted carb factors — Maria's response is blunted at higher carb loads:
+  - 0–15g carbs:  `preBG + carbs × 2.0`
+  - 16–30g carbs: `preBG + carbs × 1.3`
+  - 31–50g carbs: `preBG + carbs × 1.2`
+  - 51+g carbs:   `preBG + carbs × 0.8` (Metformin strongly blunts large meals)
+  - Cap at 300 mg/dL. Using the old ×3.5 factor causes ~24 mg/dL systematic overestimate (75% overshoot rate).
+- **TIME-TO-PEAK DEFAULTS (median observed):** Breakfast: +87 min | Dinner: +76 min | Lunch: +113 min | Snack: +126 min | Dessert: +102 min. Do NOT use flat +90 min for all meal types.
 - **CUMULATIVE MEAL PREDICTION (NON-NEGOTIABLE):** When a new food entry shares the same meal type (e.g., a second Breakfast item) and was logged within 2 hours of the first, the peak BG prediction MUST be based on the **sum of all carbs for that meal**, not the new item's carbs alone. Adding food to a meal always increases (or holds) the predicted peak — never decreases it. Annotate with `[Cumulative [MealType]: Xg carbs total]` when applicable.
 - **FOOD DESCRIPTION ACCURACY (NON-NEGOTIABLE):** Description must match the submitted photo/caption content. Never invent/substitute meal descriptions. If uncertain, mark uncertainty and queue refinement.
 - **TIMEZONE POLICY (SYSTEM-WIDE):** Always use host-local dynamic timezone for timestamps/offsets. Never hardcode timezone offsets (`-07:00`, `-08:00`, etc.) unless a target API explicitly requires a specific format.

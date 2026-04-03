@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-04-03T05:30:00.394Z",
+  "checkedAt": "2026-04-03T05:50:50.781Z",
   "jobsChecked": 10,
   "jobs": [
     {
@@ -35,12 +35,12 @@
       "name": "Radial Sync",
       "status": "healthy",
       "schedule": "every 1h",
-      "intervalMs": 7199991,
-      "lastRunAtMs": 1775189086951,
+      "intervalMs": 1671781,
+      "lastRunAtMs": 1775194615161,
       "nextRunAtMs": 1775196286942,
       "consecutiveErrors": 0,
-      "lastStatus": "ok",
-      "lastDurationMs": 360734,
+      "lastStatus": "skipped",
+      "lastDurationMs": 1,
       "overdueMin": null,
       "graceMin": null
     },
@@ -123,7 +123,7 @@
       "lastRunAtMs": 1775193645372,
       "nextRunAtMs": 1775195445372,
       "consecutiveErrors": 0,
-      "lastStatus": "skipped",
+      "lastStatus": "ok",
       "lastDurationMs": 2,
       "overdueMin": null,
       "graceMin": null
@@ -131,14 +131,14 @@
     {
       "id": "d507f10e-6c8a-4168-8e42-73b4d7ddc574",
       "name": "Glucose Low Alert (≤90 + trending down)",
-      "status": "warning",
+      "status": "healthy",
       "schedule": "every 5m",
       "intervalMs": 300000,
-      "lastRunAtMs": 1775194147229,
-      "nextRunAtMs": 1775194447229,
-      "consecutiveErrors": 1,
-      "lastStatus": "error",
-      "lastDurationMs": 30014,
+      "lastRunAtMs": 1775195347260,
+      "nextRunAtMs": 1775195647260,
+      "consecutiveErrors": 0,
+      "lastStatus": "ok",
+      "lastDurationMs": 6437,
       "overdueMin": null,
       "graceMin": null
     }

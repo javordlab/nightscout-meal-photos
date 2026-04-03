@@ -49,6 +49,63 @@ async function patchJson(id, props) {
   });
 }
 
+/**
+ * Empirical carb-to-rise factors derived from 3-week prediction vs actual analysis
+ * (2026-03-12 to 2026-04-02, n=57 meals with matched outcomes).
+ *
+ * Key findings:
+ *   - Maria is on Metformin, which flattens post-prandial response on larger meals.
+ *   - BG rise per gram drops sharply at higher carb loads.
+ *   - Using a flat factor of 3.5 overestimates by ~24 mg/dL (75% overshoot rate).
+ *   - Best-fit MAE by carb range:
+ *       0-15g: factor 2.0  (avg actual rise 25 mg/dL)
+ *      16-30g: factor 1.3  (avg actual rise 38 mg/dL)
+ *      31-50g: factor 1.2  (avg actual rise 44 mg/dL)
+ *        51+g: factor 0.8  (Metformin strongly blunts large loads)
+ *
+ * All predictions MUST anchor to preBG, never flat 120.
+ * If preBG unknown, fall back to 115 (Maria typical pre-meal average).
+ */
+const CARB_FACTORS = [
+  { maxCarbs: 15,       factor: 2.0 },
+  { maxCarbs: 30,       factor: 1.3 },
+  { maxCarbs: 50,       factor: 1.2 },
+  { maxCarbs: Infinity, factor: 0.8 },
+];
+
+/**
+ * Empirical time-to-peak defaults by meal type (57-meal analysis medians):
+ *   Breakfast: 87 min  (morning insulin sensitivity, fastest)
+ *   Dinner:    76 min  (often post-activity, faster absorption)
+ *   Lunch:    113 min
+ *   Snack:    126 min  (small bolus, slowest peak)
+ *   Dessert:  102 min
+ *   Default:   96 min  (overall median)
+ */
+const TTP_DEFAULTS_MIN = {
+  breakfast: 87,
+  lunch: 113,
+  dinner: 76,
+  snack: 126,
+  dessert: 102,
+  default: 96,
+};
+
+function getCarbFactor(carbs) {
+  for (const { maxCarbs, factor } of CARB_FACTORS) {
+    if (carbs <= maxCarbs) return factor;
+  }
+  return 0.8;
+}
+
+function getTTPMinutes(title) {
+  const lower = (title || '').toLowerCase();
+  for (const [type, mins] of Object.entries(TTP_DEFAULTS_MIN)) {
+    if (type !== 'default' && lower.startsWith(type)) return mins;
+  }
+  return TTP_DEFAULTS_MIN.default;
+}
+
 // Parse prediction from health_log.md title text embedded in Notion entry.
 // Returns { bg, peakIso } if found, otherwise null.
 // fullDateIso: full ISO string from Notion (e.g. "2026-03-22T12:00:00-07:00") to preserve offset.
@@ -111,14 +168,26 @@ async function run() {
       const carbsForCalc = Number.isFinite(carbs) ? carbs : 0;
       const mealTime = new Date(date);
 
-      // Use agent's context-aware prediction from title if present,
-      // fall back to formula 120 + carbs*3.5 capped at 300.
+      // Priority 1: agent-provided prediction embedded in entry title ("Pred: X-Y mg/dL @ HH:MM")
       const pred = parsePredFromText(title || '', date);
-      const predictedBg = pred ? pred.bg : Math.min(Math.round(120 + (carbsForCalc * 3.5)), 300);
-      // Use offset-aware ISO from title parse; fall back to UTC+105min from meal time.
-      const peakTimeIso = pred?.peakIso || new Date(mealTime.getTime() + 105 * 60 * 1000).toISOString();
 
-      const source = pred ? 'from title' : `formula (${carbsForCalc}g carbs)`;
+      let predictedBg, peakTimeIso, source;
+
+      if (pred) {
+        predictedBg = pred.bg;
+        peakTimeIso = pred.peakIso || new Date(mealTime.getTime() + getTTPMinutes(title) * 60 * 1000).toISOString();
+        source = 'from title (agent)';
+      } else {
+        // Fallback: preBG-anchored with empirical Metformin-adjusted carb factors.
+        // Never use flat 120 as baseline — anchor to actual preBG.
+        const preBg = props['Pre-Meal BG']?.number || 115;
+        const factor = getCarbFactor(carbsForCalc);
+        predictedBg = Math.min(Math.round(preBg + carbsForCalc * factor), 300);
+        const ttpMin = getTTPMinutes(title);
+        peakTimeIso = new Date(mealTime.getTime() + ttpMin * 60 * 1000).toISOString();
+        source = `formula (preBG=${preBg} + ${carbsForCalc}g x${factor}, ttp=${ttpMin}min)`;
+      }
+
       console.log(`Projection for '${title?.substring(0, 60)}': ${predictedBg} mg/dL [${source}]`);
 
       await patchJson(page.id, {

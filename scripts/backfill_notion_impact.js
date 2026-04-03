@@ -110,7 +110,8 @@ function getPeak2Hr(entries, mealTime) {
 
 async function run() {
   console.log('Starting Impact Variance Audit...');
-  const nsEntries = await fetchJson(`${NS_URL}/api/v1/entries.json?count=5000`);
+  // 576 = 48h of CGM at 5-min intervals; enough for any backfill window
+  const nsEntries = await fetchJson(`${NS_URL}/api/v1/entries.json?count=576`);
   
   let results = [];
   let hasMore = true;
