@@ -465,3 +465,4 @@
 | 2026-04-01 | 20:14 -07:00 | Maria Dennis | Activity | - | 30 minute walk | null | null |
 | 2026-04-01 | 20:32 -07:00 | Maria Dennis | Food | Snack | Snack: 1 protein ball (BG: 127 mg/dL Flat) (Pred: 140-155 mg/dL @ 10:00 PM) (Protein: 4g | Carbs: ~10g | Cals: ~80) | 10 | 80 |
 | 2026-04-03 | 10:54 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Fried egg on white toast with deli ham/prosciutto and orange wedges (BG: 111 mg/dL Flat) (Pred: 168-188 mg/dL @ 12:21 PM) (Protein: 19g | Carbs: ~28g | Cals: ~280) | 28 | 280 |
+| 2026-04-03 | 12:32 -07:00 | Maria Dennis | Activity | - | 90 minutes gardening — hedge pruning and cleaning | null | null |
