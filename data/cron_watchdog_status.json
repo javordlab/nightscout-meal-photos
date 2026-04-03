@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-04-03T06:00:00.699Z",
+  "checkedAt": "2026-04-03T06:20:51.313Z",
   "jobsChecked": 10,
   "jobs": [
     {
@@ -35,12 +35,12 @@
       "name": "Radial Sync",
       "status": "healthy",
       "schedule": "every 1h",
-      "intervalMs": 1671781,
-      "lastRunAtMs": 1775194615161,
-      "nextRunAtMs": 1775196286942,
+      "intervalMs": 3599993,
+      "lastRunAtMs": 1775196286949,
+      "nextRunAtMs": 1775199886942,
       "consecutiveErrors": 0,
       "lastStatus": "skipped",
-      "lastDurationMs": 1,
+      "lastDurationMs": 2,
       "overdueMin": null,
       "graceMin": null
     },
@@ -49,12 +49,12 @@
       "name": "Hourly Notion Impact",
       "status": "healthy",
       "schedule": "every 1h",
-      "intervalMs": 3599995,
-      "lastRunAtMs": 1775192546106,
-      "nextRunAtMs": 1775196146101,
+      "intervalMs": 3599992,
+      "lastRunAtMs": 1775196146109,
+      "nextRunAtMs": 1775199746101,
       "consecutiveErrors": 0,
-      "lastStatus": "ok",
-      "lastDurationMs": 50321,
+      "lastStatus": "skipped",
+      "lastDurationMs": 4,
       "overdueMin": null,
       "graceMin": null
     },
@@ -131,14 +131,14 @@
     {
       "id": "d507f10e-6c8a-4168-8e42-73b4d7ddc574",
       "name": "Glucose Low Alert (≤90 + trending down)",
-      "status": "warning",
+      "status": "healthy",
       "schedule": "every 5m",
       "intervalMs": 300000,
-      "lastRunAtMs": 1775195947274,
-      "nextRunAtMs": 1775196247274,
-      "consecutiveErrors": 1,
-      "lastStatus": "error",
-      "lastDurationMs": 30016,
+      "lastRunAtMs": 1775197147307,
+      "nextRunAtMs": 1775197447307,
+      "consecutiveErrors": 0,
+      "lastStatus": "ok",
+      "lastDurationMs": 7311,
       "overdueMin": null,
       "graceMin": null
     }
