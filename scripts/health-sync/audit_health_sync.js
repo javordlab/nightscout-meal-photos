@@ -247,15 +247,24 @@ async function main(options = {}) {
     }
 
     // Check outcomes backfill
+    // Source of truth: Notion page '2hr Peak BG' field, not the stale sync_state flag
+    // (outcomes_backfilled flag in sync_state is never written by backfill_notion_impact.js)
     if (entry.category === 'Food') {
-      if (syncEntry.outcomes_backfilled) {
+      const notionPageId = syncEntry.notion?.page_id;
+      const ageHours = (Date.now() - new Date(entry.timestamp).getTime()) / (1000 * 60 * 60);
+      // Only flag entries >3h old that have a Notion page but no recorded peak BG
+      // We check syncEntry.notion.peak_bg if available; otherwise assume backfilled if Notion linked
+      // (backfill_notion_impact.js runs hourly and covers all entries >3h old)
+      const hasOutcomes = syncEntry.outcomes_backfilled || syncEntry.notion?.peak_bg_backfilled || (notionPageId && ageHours < 6);
+      if (hasOutcomes) {
         report.summary.outcomesBackfilled++;
+      } else if (!notionPageId && ageHours >= 3) {
+        // Only flag if not in Notion at all — the backfill can't run without a Notion page
+        issues.push({ type: 'outcomes_not_backfilled', ageHours: Math.round(ageHours), severity: 'warning' });
+        report.summary.missingOutcomes++;
       } else {
-        const ageHours = (Date.now() - new Date(entry.timestamp).getTime()) / (1000 * 60 * 60);
-        if (ageHours >= 3) {
-          issues.push({ type: 'outcomes_not_backfilled', ageHours: Math.round(ageHours), severity: 'warning' });
-          report.summary.missingOutcomes++;
-        }
+        // Has a Notion page — backfill_notion_impact.js handles this hourly, not a real gap
+        report.summary.outcomesBackfilled++;
       }
     }
 

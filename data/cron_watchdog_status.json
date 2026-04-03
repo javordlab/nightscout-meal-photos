@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-04-03T16:30:00.912Z",
+  "checkedAt": "2026-04-03T16:45:00.341Z",
   "jobsChecked": 10,
   "jobs": [
     {
@@ -131,14 +131,14 @@
     {
       "id": "d507f10e-6c8a-4168-8e42-73b4d7ddc574",
       "name": "Glucose Low Alert (≤90 + trending down)",
-      "status": "warning",
+      "status": "healthy",
       "schedule": "every 5m",
       "intervalMs": 300000,
-      "lastRunAtMs": 1775233748303,
-      "nextRunAtMs": 1775234048303,
-      "consecutiveErrors": 1,
-      "lastStatus": "error",
-      "lastDurationMs": 30017,
+      "lastRunAtMs": 1775234648329,
+      "nextRunAtMs": 1775234948329,
+      "consecutiveErrors": 0,
+      "lastStatus": "ok",
+      "lastDurationMs": 5626,
       "overdueMin": null,
       "graceMin": null
     }
