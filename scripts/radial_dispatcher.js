@@ -243,18 +243,20 @@ async function main() {
   
   console.log(`Found ${dataLines.length} entries in log.`);
 
-  // Process today's entries first, then last 30 days (using robust local date)
-  const _sysTz = Intl.DateTimeFormat().resolvedOptions().timeZone;
-  const laDate = new Intl.DateTimeFormat('en-CA', { timeZone: _sysTz, year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
-  const today = laDate; // YYYY-MM-DD
-  const cutoffDate = new Intl.DateTimeFormat('en-CA', { timeZone: _sysTz, year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date(Date.now() - 30 * 24 * 60 * 60 * 1000));
-  const priorityLines = dataLines.filter(l => l.includes(today));
-  const otherLines = dataLines.filter(l => !l.includes(today) && l.slice(2, 12) >= cutoffDate).reverse();
-  const finalLines = [...priorityLines, ...otherLines];
-  console.log(`Processing ${priorityLines.length} today + ${otherLines.length} recent (cutoff: ${cutoffDate})`);
-
-  // Load sync state once outside the loop — not per-entry
+  // Load sync state once — used to skip already-synced entries
   const syncState = loadSyncState(SYNC_STATE_PATH);
+  const syncedTimestamps = new Set(
+    Object.values(syncState.entries || {}).map(e => e.timestamp)
+  );
+
+  // Today's entries always processed (may have new photos/edits).
+  // Older entries only processed if NOT yet in sync_state (never synced).
+  const _sysTz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  const today = new Intl.DateTimeFormat('en-CA', { timeZone: _sysTz, year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+  const priorityLines = dataLines.filter(l => l.includes(today));
+  const otherLines = dataLines.filter(l => !l.includes(today)).reverse();
+  const finalLines = [...priorityLines, ...otherLines];
+  console.log(`Processing ${priorityLines.length} today + ${otherLines.length} historical (skip-eligible)`);
 
   let glucoseEntries = [];
   let photoSyncedToNotion = false;
@@ -315,7 +317,8 @@ async function main() {
       continue;
     }
 
-    // Skip if already fully synced: look up by timestamp+user in sync_state
+    // Skip if already fully synced: look up by timestamp+user in sync_state.
+    // Today's entries always proceed past this check (handled by priorityLines above).
     const existing = Object.values(syncState.entries || {}).find(
       e => e.timestamp === entryData.iso && e.user === entryData.user
     );

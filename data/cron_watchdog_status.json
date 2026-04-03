@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-04-03T04:45:00.514Z",
+  "checkedAt": "2026-04-03T05:00:00.475Z",
   "jobsChecked": 13,
   "jobs": [
     {
@@ -22,11 +22,11 @@
       "status": "healthy",
       "schedule": "every 30m",
       "intervalMs": 1800000,
-      "lastRunAtMs": 1775190318476,
-      "nextRunAtMs": 1775192118476,
+      "lastRunAtMs": 1775192118485,
+      "nextRunAtMs": 1775193918485,
       "consecutiveErrors": 0,
       "lastStatus": "ok",
-      "lastDurationMs": 26293,
+      "lastDurationMs": 26488,
       "overdueMin": null,
       "graceMin": null
     },
@@ -148,11 +148,11 @@
       "status": "healthy",
       "schedule": "every 30m",
       "intervalMs": 1800000,
-      "lastRunAtMs": 1775190045356,
-      "nextRunAtMs": 1775191845356,
+      "lastRunAtMs": 1775191845365,
+      "nextRunAtMs": 1775193645365,
       "consecutiveErrors": 0,
       "lastStatus": "skipped",
-      "lastDurationMs": 4,
+      "lastDurationMs": 3,
       "overdueMin": null,
       "graceMin": null
     },
@@ -162,11 +162,11 @@
       "status": "healthy",
       "schedule": "every 5m",
       "intervalMs": 300000,
-      "lastRunAtMs": 1775191264469,
-      "nextRunAtMs": 1775191564469,
+      "lastRunAtMs": 1775192164494,
+      "nextRunAtMs": 1775192464494,
       "consecutiveErrors": 0,
       "lastStatus": "ok",
-      "lastDurationMs": 5932,
+      "lastDurationMs": 6685,
       "overdueMin": null,
       "graceMin": null
     },
