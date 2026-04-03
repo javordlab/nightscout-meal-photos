@@ -154,7 +154,8 @@ function parsePredFromText(text, mealIso) {
 }
 
 function extractPhotos(text) {
-  const regex = /\[📷\]\((https?:\/\/[^\)]+)\)/g;
+  // Match both [📷](url) and [photo](url) formats
+  const regex = /\[(?:📷|photo)\]\((https?:\/\/[^\)]+)\)/gi;
   const matches = [...text.matchAll(regex)];
   return matches.map(m => m[1]);
 }
