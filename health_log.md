@@ -1,5 +1,7 @@
 # Health Log
 
+| 2026-04-03 | 11:07 -07:00 | Maria Dennis | Food | Snack | Snack: Small Japanese sweet potato tart [Cumulative Breakfast: ~36g carbs total] (BG: 113 mg/dL Flat) (Pred: 120-128 mg/dL @ 12:49 PM) (Protein: 2g | Carbs: ~8g | Cals: ~120) | 8 | 120 |
+| 2026-04-03 | 11:05 -07:00 | Maria Dennis | Food | Snack | Snack: 1/2 yogurt [Cumulative Breakfast: ~36g carbs total] (BG: 113 mg/dL Flat) (Pred: 130-133 mg/dL @ 12:51 PM) (Protein: 5g | Carbs: ~8g | Cals: ~60) | 8 | 60 |
 | 2026-04-02 | 20:35 -07:00 | Maria Dennis | Food | Snack | Snack: 2 slices dried dragon fruit (~20g) (BG: 162 mg/dL Flat) (Pred: 180-195 mg/dL @ 21:30 PM) (Protein: 0g | Carbs: ~15g | Cals: ~65) | 15 | 65 |
 | 2026-04-02 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 152 mg/dL Flat) | null | null |
 | 2026-04-02 | 19:31 -07:00 | Maria Dennis | Activity | - | 30 minute walk (BG: 143 mg/dL Flat) | null | null |
