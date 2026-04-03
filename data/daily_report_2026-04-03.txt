@@ -1,0 +1,67 @@
+🩺 DAILY HEALTH REPORT
+📅 Date: 2026-04-03
+🕒 Coverage window: 2026-04-02 00:00 – 2026-04-03 00:00 (America/Los_Angeles)
+⚙️ Generated time: 2026-04-03T16:30:02.276Z
+🤖 Model: anthropic/claude-sonnet-4-6
+
+1) 📊 Today's Glucose Summary
+- Average glucose: 119.9 mg/dL
+- Time in Range (70-180): 100.0%
+- GMI: 6.18%
+- Standard deviation: 18.6 mg/dL
+- CV: 15.5%
+- Data points used: 284
+
+2) 📉 14-day Trends (ending 2026-04-02)
+- Average glucose: 123.8 mg/dL
+- Time in Range (70-180): 98.8%
+- GMI: 6.27%
+- Standard deviation: 18.4 mg/dL
+- CV: 14.9%
+- Data points used: 1016
+
+3) 🍽️ Nutrition (2026-04-02)
+- Meals logged: 7
+- Total carbs: 119.0 g
+- Total calories: 1409 kcal
+- Total protein: 81.0 g
+
+4) 🧾 Meal Details (2026-04-02)
+- 9:30 AM — Breakfast: Open-faced roll with carnitas, avocado slices, and cream cheese — 32.0g carbs, 570 kcal, 31.0g protein — BG at meal: 105 mg/dL
+- 12:40 PM — Lunch: 2 boiled chicken wings and small cucumber sliced — 4.0g carbs, 240 kcal, 23.0g protein — BG at meal: 141 mg/dL
+- 12:46 PM — Lunch: 1 protein ball [Cumulative Lunch: ~14g carbs total] — 10.0g carbs, 110 kcal, 5.0g protein — BG at meal: 136 mg/dL
+- 2:34 PM — Snack: Papaya, 3 slices (~200g) — 14.0g carbs, 78 kcal, 1.0g protein — BG at meal: 110 mg/dL
+- 6:26 PM — Dinner: Sopa de cocido (broth with angel hair noodles/fideos) — 29.0g carbs, 155 kcal, 6.0g protein — BG at meal: 133 mg/dL
+- 6:37 PM — Dinner: Cocido madrileño - segundo plato, partially eaten (chickpeas, potato, chicken, chorizo, cabbage — left ~half) [Cumulative Dinner: ~44g carbs total] — 15.0g carbs, 191 kcal, 15.0g protein — BG at meal: 136 mg/dL
+- 8:35 PM — Snack: 2 slices dried dragon fruit (~20g) — 15.0g carbs, 65 kcal, 0.0g protein — BG at meal: 143 mg/dL
+
+5) 📚 Nutrition Baseline (14-day daily average ending 2026-04-02)
+- Average carbs/day: 152.5 g
+- Average calories/day: 1537.0 kcal
+- Average protein/day: 75.4 g
+- Average meals/day: 6.1
+- Days in window with food entries: 14
+
+6) 💊 Medication Status (2026-04-02)
+- 2026-04-02T19:00:00-07:00: Medication: Metformin 1000mg (dinner)
+- 2026-04-02T13:00:00-07:00: Medication: Metformin 500mg (lunch)
+- 2026-04-02T09:00:00-07:00: Medication: Lisinopril 10mg (Scheduled)
+- 2026-04-02T09:10:00-07:00: Medication: Metformin 500mg (breakfast)
+- 2026-04-02T09:05:00-07:00: Medication: Rosuvastatin 10mg (Scheduled)
+
+7) 🚨 Outliers (2026-04-02)
+- High readings >180: 0
+- Low readings <70: 0
+- Max glucose: 162 mg/dL at 2026-04-03T03:29:59.000Z
+
+8) 🧠 Extended Supervisor Analysis
+- Nice work overall today: Strong Time in Range at 100.0% | Limited high excursions (>180 mg/dL): 0 | No hypoglycemia episodes (<70 mg/dL) | Good protein intake (81.0g).
+- Key trend signals: avg glucose vs 14-day baseline -3.9 mg/dL, TIR delta 1.2%, carbs delta -33.5 g, calories delta -128 kcal.
+- Friendly focus for tomorrow: No urgent corrections needed—just keep the same consistency and momentum.
+- You’re doing great—small consistent habits keep adding up. Keep it going 🌟
+
+9) 🛡️ Self-Audit (Data Integrity)
+- Target day enforced: 2026-04-02 PT
+- Glucose points in target window: 284
+- GMI formula check (3.31 + 0.02392 × Avg): 6.18%
+- Reported GMI: 6.18%

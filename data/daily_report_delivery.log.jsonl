@@ -20,3 +20,5 @@
 {"ts":"2026-03-31T16:30:12.145Z","op":"daily_report_charts_triggered","reportDateLA":"2026-03-31","chatId":"-5262020908","dryRun":false}
 {"ts":"2026-04-01T16:30:01.275Z","op":"daily_report_delivery_error","error":"Unterminated string in JSON at position 40936 (line 1236 column 21)"}
 {"ts":"2026-04-02T16:30:00.796Z","op":"daily_report_delivery_error","error":"Unterminated string in JSON at position 40938 (line 1251 column 67)"}
+{"ts":"2026-04-03T16:30:03.173Z","op":"daily_report_sent","reportDateLA":"2026-04-03","targetDate":"2026-04-02","chatId":"-5262020908","messageId":4583,"statsDay":{"count":284,"average":119.86619718309859,"gmi":6.177199436619718,"tir":100}}
+{"ts":"2026-04-03T16:30:14.620Z","op":"daily_report_charts_triggered","reportDateLA":"2026-04-03","chatId":"-5262020908","dryRun":false}

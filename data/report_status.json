@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "lastReportAt": "2026-04-02T16:32:04.935Z",
-  "lastReportDateLA": "2026-04-02",
-  "source": "watchdog_fallback",
-  "fallbackSentAt": "2026-04-02T16:32:04.966Z"
+  "lastReportAt": "2026-04-03T16:30:03.172Z",
+  "lastReportDateLA": "2026-04-03",
+  "source": "primary_deterministic",
+  "fallbackSentAt": null
 }

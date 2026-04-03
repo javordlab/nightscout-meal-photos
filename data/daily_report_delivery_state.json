@@ -73,6 +73,18 @@
           "gmi": 6.34784,
           "tir": 100
         }
+      },
+      "2026-04-03": {
+        "sentAt": "2026-04-03T16:30:03.168Z",
+        "targetDate": "2026-04-02",
+        "reportPath": "/Users/javier/.openclaw/workspace/data/daily_report_2026-04-03.txt",
+        "messageId": 4583,
+        "statsDay": {
+          "count": 284,
+          "average": 119.86619718309859,
+          "gmi": 6.177199436619718,
+          "tir": 100
+        }
       }
     }
   }
