@@ -1,5 +1,8 @@
 # Health Log
 
+| 2026-04-03 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 160 mg/dL Flat) | null | null |
+| 2026-04-03 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 160 mg/dL Flat) | null | null |
+| 2026-04-03 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 160 mg/dL Flat) | null | null |
 | 2026-04-03 | 11:07 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Small Japanese sweet potato tart [Cumulative Breakfast: ~44g carbs total] (BG: 113 mg/dL Flat) (Pred: 190-195 mg/dL @ 12:21 PM) (Protein: 2g | Carbs: ~8g | Cals: ~120) | 8 | 120 |
 | 2026-04-03 | 11:05 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: 1/2 yogurt [Cumulative Breakfast: ~44g carbs total] (BG: 113 mg/dL Flat) (Pred: 190-195 mg/dL @ 12:21 PM) (Protein: 5g | Carbs: ~8g | Cals: ~60) | 8 | 60 |
 | 2026-04-02 | 20:35 -07:00 | Maria Dennis | Food | Snack | Snack: 2 slices dried dragon fruit (~20g) (BG: 162 mg/dL Flat) (Pred: 180-195 mg/dL @ 21:30 PM) (Protein: 0g | Carbs: ~15g | Cals: ~65) | 15 | 65 |
@@ -466,3 +469,4 @@
 | 2026-04-01 | 20:32 -07:00 | Maria Dennis | Food | Snack | Snack: 1 protein ball (BG: 127 mg/dL Flat) (Pred: 140-155 mg/dL @ 10:00 PM) (Protein: 4g | Carbs: ~10g | Cals: ~80) | 10 | 80 |
 | 2026-04-03 | 10:54 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Fried egg on white toast with deli ham/prosciutto and orange wedges (BG: 111 mg/dL Flat) (Pred: 168-188 mg/dL @ 12:21 PM) (Protein: 19g | Carbs: ~28g | Cals: ~280) | 28 | 280 |
 | 2026-04-03 | 12:32 -07:00 | Maria Dennis | Activity | - | 90 minutes gardening — hedge pruning and cleaning | null | null |
+| 2026-04-03 | 13:10 -07:00 | Maria Dennis | Food | Lunch | Lunch: Creamed vegetable soup with broccoli and cashews (~1 oz) (BG: 149 mg/dL Flat) (Pred: 162-182 mg/dL @ 3:03 PM) (Protein: 13g | Carbs: ~27g | Cals: ~337) [📷](https://iili.io/Boy8XWJ.jpg) | 27 | 337 |

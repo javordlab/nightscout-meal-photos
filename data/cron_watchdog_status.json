@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-04-03T20:00:01.126Z",
+  "checkedAt": "2026-04-03T20:15:00.315Z",
   "jobsChecked": 10,
   "jobs": [
     {
@@ -21,12 +21,12 @@
       "name": "Radial Sync",
       "status": "healthy",
       "schedule": "every 1h",
-      "intervalMs": 3599993,
-      "lastRunAtMs": 1775243086949,
-      "nextRunAtMs": 1775246686942,
+      "intervalMs": 3599994,
+      "lastRunAtMs": 1775246686948,
+      "nextRunAtMs": 1775250286942,
       "consecutiveErrors": 0,
-      "lastStatus": "skipped",
-      "lastDurationMs": 3,
+      "lastStatus": "ok",
+      "lastDurationMs": 72008,
       "overdueMin": null,
       "graceMin": null
     },
@@ -35,12 +35,12 @@
       "name": "Hourly Notion Impact",
       "status": "healthy",
       "schedule": "every 1h",
-      "intervalMs": 3599993,
-      "lastRunAtMs": 1775242946108,
-      "nextRunAtMs": 1775246546101,
+      "intervalMs": 3599991,
+      "lastRunAtMs": 1775246546110,
+      "nextRunAtMs": 1775250146101,
       "consecutiveErrors": 0,
-      "lastStatus": "skipped",
-      "lastDurationMs": 3,
+      "lastStatus": "ok",
+      "lastDurationMs": 45772,
       "overdueMin": null,
       "graceMin": null
     },
@@ -120,11 +120,11 @@
       "status": "healthy",
       "schedule": "every 5m",
       "intervalMs": 300000,
-      "lastRunAtMs": 1775246048654,
-      "nextRunAtMs": 1775246348654,
+      "lastRunAtMs": 1775247248688,
+      "nextRunAtMs": 1775247548688,
       "consecutiveErrors": 0,
-      "lastStatus": "skipped",
-      "lastDurationMs": 6,
+      "lastStatus": "ok",
+      "lastDurationMs": 5495,
       "overdueMin": null,
       "graceMin": null
     },
@@ -134,17 +134,17 @@
       "status": "healthy",
       "schedule": "every 30m",
       "intervalMs": 1800000,
-      "lastRunAtMs": 1775244748658,
-      "nextRunAtMs": 1775246548658,
+      "lastRunAtMs": 1775246593891,
+      "nextRunAtMs": 1775248393891,
       "consecutiveErrors": 0,
-      "lastStatus": "skipped",
-      "lastDurationMs": 4,
+      "lastStatus": "ok",
+      "lastDurationMs": 24409,
       "overdueMin": null,
       "graceMin": null
     }
   ],
   "staleJobs": [],
   "dailyReportIssue": null,
-  "ghPagesIssue": "backups.json glucose data stale by 94m",
-  "alertSent": true
+  "ghPagesIssue": null,
+  "alertSent": false
 }
