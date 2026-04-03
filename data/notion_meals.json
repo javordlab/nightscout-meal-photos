@@ -320,12 +320,12 @@
   },
   {
     "id": "33185ec7-0668-813f-9102-eac3a1beb434",
-    "title": "Dinner: 6 fresh oysters on the half shell (BG: 113 mg/dL Flat) (Pred: 165-185 mg/dL @ 8:33 PM) (Protein: 9g | Carbs: ~4g | Cals: ~50)",
+    "title": "Dinner: 1 glass nigori sake (~150ml) with dinner (BG: 113 mg/dL Flat) (Pred: 165-185 mg/dL @ 8:33 PM) (Protein: 1g | Carbs: ~8g | Cals: ~170)",
     "type": "Dinner",
     "date": "2026-03-27T19:04:00.000-07:00",
-    "photo": "https://iili.io/qbBHoyg.jpg",
-    "carbs": 4,
-    "cals": 50,
+    "photo": "https://iili.io/qbqPG1f.jpg",
+    "carbs": 8,
+    "cals": 170,
     "delta": 11,
     "peak": 153
   },
@@ -700,6 +700,17 @@
     "photo": "https://iili.io/qeh6rzX.jpg",
     "carbs": 8,
     "cals": 70,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "33285ec7-0668-8101-90cd-e6a1b72e4e23",
+    "title": "Dinner: Glass of milk (whole milk, ~8oz) (BG: Unknown) (Protein: 8g | Carbs: ~12g | Cals: ~150)  (Pred: 138-158 mg/dL @ 8:20 PM)",
+    "type": "Dinner",
+    "date": "2026-03-20T18:45:00.000-07:00",
+    "photo": "https://iili.io/qeh3GSI.jpg",
+    "carbs": 12,
+    "cals": 150,
     "delta": null,
     "peak": null
   },
