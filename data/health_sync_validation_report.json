@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-03T00:56:24.296Z",
-  "entryCount": 14,
+  "generatedAt": "2026-04-03T01:00:00.400Z",
+  "entryCount": 45,
   "errors": [],
   "warnings": [
     {
@@ -10,6 +10,28 @@
       "reason": "photo_missing_but_found_in_internal_folder",
       "file": "/Users/javier/.openclaw/media/inbound/file_252---de779c6d-343b-4306-bb5b-19193563cd83.jpg",
       "diffMinutes": 5
+    },
+    {
+      "entryKey": "sha256:73841db1a6210766cfd2aec5879a15b6d5401f56e95162651840db5fc1b18a48",
+      "timestamp": "2026-03-31T13:09:00-07:00",
+      "title": "Dessert: 2\" cake piece with 1 tsp peanut butter and whipped cream [Cumulative Lunch: 55g carbs total]",
+      "reason": "photo_missing_but_found_in_internal_folder",
+      "file": "/Users/javier/.openclaw/media/inbound/file_244---5f2e78ad-c559-4852-a5c0-160610b3a210.jpg",
+      "diffMinutes": 8
+    },
+    {
+      "entryKey": "sha256:202739d1f9b29c149d58acb8621bff47858ca53691c0bbd42e5162a15e119423",
+      "timestamp": "2026-03-30T18:40:00-07:00",
+      "title": "Dinner: 1 slice dried dragon fruit [Cumulative Dinner: ~39g carbs total]",
+      "reason": "photo_missing_but_found_in_internal_folder",
+      "file": "/Users/javier/.openclaw/media/inbound/file_238---3eeb6c79-7ed2-4e5c-ae4a-060b98e503af.jpg",
+      "diffMinutes": 20
+    },
+    {
+      "entryKey": "sha256:340d859537a3bf2e17ddac02cac414f39dd2db07c8d0127f1a9d3fd1c26cf980",
+      "timestamp": "2026-04-01T16:00:00-07:00",
+      "title": "Snack: Small piece of cake with whipped cream and peanut butter",
+      "reason": "missing_photo_urls"
     },
     {
       "entryKey": "sha256:b4d14362084e075dca29f67523c07171dc26c0c4358e533ead035772a951f549",
