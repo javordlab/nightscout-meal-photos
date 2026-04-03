@@ -1,18 +1,18 @@
 [
   {
     "id": "33785ec7-0668-8117-ac00-e39816aa114a",
-    "title": "Dinner: Cocido madrileño - segundo plato, partially eaten (chickpeas, potato, chicken, chorizo, cabbage — left ~half) (BG: 136 mg/dL Flat) (Pred: 175-195 mg/dL @ 20:00-20:30 PM) [Cumulative Dinner: ~44g carbs total] (Protein: 15g | Carbs: ~15g | Cals: ~191)",
+    "title": "Dinner: Cocido madrileño - segundo plato, partially eaten (chickpeas, potato, chicken, chorizo, cabbage — left ~half) [Cumulative Dinner: ~44g carbs total] (BG: 136 mg/dL Flat) (Protein: 15g) (Pred: 175-195 mg/dL @ 20:00-20:30 PM)",
     "type": "Dinner",
     "date": "2026-04-02T18:37:00.000-07:00",
     "photo": "https://iili.io/Bnxzbb2.jpg",
     "carbs": 15,
     "cals": 191,
-    "delta": null,
-    "peak": null
+    "delta": 26,
+    "peak": 162
   },
   {
     "id": "33785ec7-0668-8149-8b5a-e9380faf96ed",
-    "title": "Dinner: Sopa de cocido (broth with angel hair noodles/fideos) (BG: 133 mg/dL Flat) (Pred: 165-185 mg/dL @ 19:45-20:00 PM) (Protein: 6g | Carbs: ~29g | Cals: ~155)",
+    "title": "Dinner: Sopa de cocido (broth with angel hair noodles/fideos) (BG: 133 mg/dL Flat) (Protein: 6g) (Pred: 165-185 mg/dL @ 19:45-20:00 PM)",
     "type": "Dinner",
     "date": "2026-04-02T18:26:00.000-07:00",
     "photo": "https://iili.io/BnxzLUG.jpg",
@@ -23,7 +23,7 @@
   },
   {
     "id": "33685ec7-0668-817e-bd89-ccc4751ff686",
-    "title": "Snack: Papaya, 3 slices (~200g) (BG: 106 mg/dL Flat) (Pred: 130-145 mg/dL @ 15:45-16:00 PM) (Protein: 1g | Carbs: ~14g | Cals: ~78)",
+    "title": "Snack: Papaya, 3 slices (~200g) (BG: 106 mg/dL Flat) (Protein: 1g) (Pred: 130-145 mg/dL @ 15:45-16:00 PM)",
     "type": "Snack",
     "date": "2026-04-02T14:34:00.000-07:00",
     "photo": "https://iili.io/BnfhXwu.jpg",
@@ -34,7 +34,7 @@
   },
   {
     "id": "33685ec7-0668-81a9-8965-f3f2fa983941",
-    "title": "Lunch: 2 boiled chicken wings and small cucumber sliced (BG: 141 mg/dL Flat) (Pred: 150-160 mg/dL @ 14:00-14:15 PM) (Protein: 23g | Carbs: ~4g | Cals: ~240)",
+    "title": "Lunch: 2 boiled chicken wings and small cucumber sliced (BG: 141 mg/dL Flat) (Protein: 23g) (Pred: 150-160 mg/dL @ 14:00-14:15 PM)",
     "type": "Lunch",
     "date": "2026-04-02T12:40:00.000-07:00",
     "photo": "https://iili.io/Bnfhwnj.jpg",
@@ -45,7 +45,7 @@
   },
   {
     "id": "33685ec7-0668-81ac-9853-e69bebe66454",
-    "title": "Breakfast: Open-faced roll with carnitas, avocado slices, and cream cheese (BG: 113 mg/dL Flat) (Pred: 160-185 mg/dL @ 11:30-12:00 PM) (Protein: 31g | Carbs: ~32g | Cals: ~570)",
+    "title": "Breakfast: Open-faced roll with carnitas, avocado slices, and cream cheese (BG: 113 mg/dL Flat) (Protein: 31g) (Pred: 160-185 mg/dL @ 11:30-12:00 PM)",
     "type": "Breakfast",
     "date": "2026-04-02T09:30:00.000-07:00",
     "photo": "https://iili.io/BCM6nNj.jpg",
@@ -56,7 +56,7 @@
   },
   {
     "id": "33685ec7-0668-819d-8970-fd73f2e5bc3b",
-    "title": "Dinner: Large flour tortilla with shredded pork, roasted peppers (red & green), red onion, shredded cheddar cheese, guacamole, lettuce, and cilantro (BG: 134 mg/dL Flat) (Pred: 195-215 mg/dL @ 8:15 PM) (Protein: 28g | Carbs: ~40g | Cals: ~500)",
+    "title": "Dinner: Large flour tortilla with shredded pork, roasted peppers (red & green), red onion, shredded cheddar cheese, guacamole, lettuce, and cilantro (BG: 134 mg/dL Flat) (Protein: 28g) (Pred: 195-215 mg/dL @ 8:15 PM)",
     "type": "Dinner",
     "date": "2026-04-01T18:38:00.000-07:00",
     "photo": "https://iili.io/BqQAZGI.jpg",
@@ -67,7 +67,7 @@
   },
   {
     "id": "33585ec7-0668-8194-a53a-ea11d9293da0",
-    "title": "Lunch: Small handful of cashews (~15-18 nuts) (BG: 109 mg/dL Flat) (Pred: 170-190 mg/dL @ 2:30 PM) [Cumulative Lunch: ~44g carbs total] (Protein: 5g | Carbs: ~9g | Cals: ~157)",
+    "title": "Lunch: Small handful of cashews (~15-18 nuts) [Cumulative Lunch: ~44g carbs total] (BG: 109 mg/dL Flat) (Protein: 5g) (Pred: 170-190 mg/dL @ 2:30 PM)",
     "type": "Lunch",
     "date": "2026-04-01T13:05:00.000-07:00",
     "photo": "https://iili.io/BqE7jLv.jpg",
@@ -78,7 +78,7 @@
   },
   {
     "id": "33585ec7-0668-8141-9e63-db74b2ee1870",
-    "title": "Lunch: Small tortilla with 2 slices turkey and 1 slice cheese (folded quesadilla-style) + 3 slices papaya (BG: 107 mg/dL Flat) (Pred: 165-185 mg/dL @ 2:30 PM) (Protein: 15g | Carbs: ~35g | Cals: ~260)",
+    "title": "Lunch: Small tortilla with 2 slices turkey and 1 slice cheese (folded quesadilla-style) + 3 slices papaya (BG: 107 mg/dL Flat) (Protein: 15g) (Pred: 165-185 mg/dL @ 2:30 PM)",
     "type": "Lunch",
     "date": "2026-04-01T12:56:00.000-07:00",
     "photo": "https://iili.io/Bq0pPCN.jpg",
@@ -89,7 +89,7 @@
   },
   {
     "id": "33585ec7-0668-8145-9949-c7730ca6e8db",
-    "title": "Breakfast: 3 prunes (BG: 118 mg/dL Flat) (Pred: 175-195 mg/dL @ 11:30 AM) [Cumulative Breakfast: ~56g carbs total] (Protein: 1g | Carbs: ~16g | Cals: ~60)",
+    "title": "Breakfast: 3 prunes [Cumulative Breakfast: ~56g carbs total] (BG: 118 mg/dL Flat) (Protein: 1g) (Pred: 175-195 mg/dL @ 11:30 AM)",
     "type": "Breakfast",
     "date": "2026-04-01T09:59:00.000-07:00",
     "photo": "https://iili.io/BqJxV7j.jpg",
@@ -100,7 +100,7 @@
   },
   {
     "id": "33585ec7-0668-81a0-a6ba-cdd7d9a0444c",
-    "title": "Breakfast: English muffin with melted cheese and prosciutto + orange wedges (~half orange) (BG: 119 mg/dL Flat) (Pred: 165-185 mg/dL @ 11:30 AM) (Protein: 24g | Carbs: ~40g | Cals: ~370)",
+    "title": "Breakfast: English muffin with melted cheese and prosciutto + orange wedges (~half orange) (BG: 119 mg/dL Flat) (Protein: 24g) (Pred: 165-185 mg/dL @ 11:30 AM)",
     "type": "Breakfast",
     "date": "2026-04-01T09:56:00.000-07:00",
     "photo": "https://iili.io/BqHOHmv.jpg",
@@ -111,7 +111,7 @@
   },
   {
     "id": "33585ec7-0668-8111-8dc4-d6b9ed8d1065",
-    "title": "Dinner: Creamed vegetable soup (~1.5 cups), chicken breast (~4 oz), and broccoli florets (~1 cup) (BG: 118 mg/dL Flat) (Pred: 150-170 mg/dL @ 8:00 PM) (Protein: 47g | Carbs: ~25g | Cals: ~420)",
+    "title": "Dinner: Creamed vegetable soup (~1.5 cups), chicken breast (~4 oz), and broccoli florets (~1 cup) (BG: 118 mg/dL Flat) (Protein: 47g) (Pred: 150-170 mg/dL @ 8:00 PM)",
     "type": "Dinner",
     "date": "2026-03-31T18:38:00.000-07:00",
     "photo": "https://iili.io/BKq5N5P.jpg",
@@ -122,7 +122,7 @@
   },
   {
     "id": "33485ec7-0668-8164-9784-cb89677588c4",
-    "title": "Lunch: Fried rice with pork and egg (~¾ cup) and cucumber slices (~8–10 slices) (BG: 118 mg/dL Flat) (Pred: 150-170 mg/dL @ 2:30 PM) (Protein: 15g | Carbs: ~31g | Cals: ~295)",
+    "title": "Lunch: Fried rice with pork and egg (~¾ cup) and cucumber slices (~8–10 slices) (BG: 118 mg/dL Flat) (Protein: 15g) (Pred: 150-170 mg/dL @ 2:30 PM)",
     "type": "Lunch",
     "date": "2026-03-31T13:01:00.000-07:00",
     "photo": "https://iili.io/BFZI9KF.jpg",
@@ -133,7 +133,7 @@
   },
   {
     "id": "33485ec7-0668-81b8-8ab0-e94017085a8c",
-    "title": "Snack: Papaya slices (~3–4 slices) and tea (BG: 112 mg/dL Flat) (Pred: 118-130 mg/dL @ 1:30 PM) (Protein: 0.6g | Carbs: ~11g | Cals: ~55)",
+    "title": "Snack: Papaya slices (~3–4 slices) and tea (BG: 112 mg/dL Flat) (Protein: 0.6g) (Pred: 118-130 mg/dL @ 1:30 PM)",
     "type": "Snack",
     "date": "2026-03-31T12:02:00.000-07:00",
     "photo": "https://iili.io/BFZzttV.jpg",
@@ -144,18 +144,18 @@
   },
   {
     "id": "33485ec7-0668-81d2-9c7b-c267298d20e3",
-    "title": "Snack: ~10 cashews and tea (BG: 112 mg/dL Flat) (Pred: 115-125 mg/dL @ 10:45 AM) (Protein: 2g | Carbs: ~3.5g | Cals: ~65)",
+    "title": "Snack: ~10 cashews and tea (BG: 112 mg/dL Flat) (Protein: 2g) (Pred: 115-125 mg/dL @ 10:45 AM)",
     "type": "Snack",
     "date": "2026-03-31T09:33:00.000-07:00",
     "photo": "https://iili.io/BFZzku4.jpg",
-    "carbs": 3,
+    "carbs": 3.5,
     "cals": 65,
     "delta": 58,
     "peak": 174
   },
   {
     "id": "33485ec7-0668-8191-8fe0-dec194e01ab4",
-    "title": "Breakfast: 1 slice bread, 1 slice cheese, 1 slice prosciutto, ¼ avocado (BG: 112 mg/dL Flat) (Pred: 125-140 mg/dL @ 10:45 AM) (Protein: 14g | Carbs: ~18g | Cals: ~255)",
+    "title": "Breakfast: 1 slice bread, 1 slice cheese, 1 slice prosciutto, ¼ avocado (BG: 112 mg/dL Flat) (Protein: 14g) (Pred: 125-140 mg/dL @ 10:45 AM)",
     "type": "Breakfast",
     "date": "2026-03-31T09:22:00.000-07:00",
     "photo": "https://iili.io/BFteBn4.jpg",
@@ -166,7 +166,7 @@
   },
   {
     "id": "33485ec7-0668-81d9-9424-f55e2d1a4b28",
-    "title": "Snack: 1 orange (medium, freshly peeled) (BG: 143 mg/dL Flat) (Pred: 170-185 mg/dL @ 8:45 PM) (Protein: 1g | Carbs: ~15g | Cals: ~62)",
+    "title": "Snack: 1 orange (medium, freshly peeled) (BG: 143 mg/dL Flat) (Protein: 1g) (Pred: 170-185 mg/dL @ 8:45 PM)",
     "type": "Snack",
     "date": "2026-03-30T18:58:00.000-07:00",
     "photo": "https://iili.io/B2T99Hb.jpg",
@@ -177,7 +177,7 @@
   },
   {
     "id": "33485ec7-0668-811b-9eb5-e59a3a3620a5",
-    "title": "Dinner: Whole-grain toast with avocado spread, scrambled eggs, and fresh cucumber spears (BG: 127 mg/dL Flat) (Pred: 185-200 mg/dL @ 8:00 PM) (Protein: 26g | Carbs: ~28g | Cals: ~380)",
+    "title": "Dinner: Whole-grain toast with avocado spread, scrambled eggs, and fresh cucumber spears (BG: 127 mg/dL Flat) (Protein: 26g) (Pred: 185-200 mg/dL @ 8:00 PM)",
     "type": "Dinner",
     "date": "2026-03-30T18:18:00.000-07:00",
     "photo": "https://iili.io/B2xVC3N.jpg",
