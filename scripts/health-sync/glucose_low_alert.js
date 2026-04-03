@@ -100,7 +100,18 @@ async function main() {
     return;
   }
 
-  const entries = await nsGet('/api/v1/entries.json?count=2');
+  // Retry once on failure before giving up (avoids spurious watchdog errors on transient NS timeouts)
+  let entries;
+  for (let attempt = 1; attempt <= 2; attempt++) {
+    try {
+      entries = await nsGet('/api/v1/entries.json?count=2');
+      if (Array.isArray(entries) && entries.length > 0) break;
+    } catch (e) {
+      if (attempt === 2) { console.log('Nightscout unreachable after 2 attempts:', e.message); return; }
+      console.log(`NS attempt ${attempt} failed, retrying...`);
+      await new Promise(r => setTimeout(r, 5000));
+    }
+  }
   if (!Array.isArray(entries) || entries.length === 0) {
     console.log('No entries from Nightscout');
     return;
