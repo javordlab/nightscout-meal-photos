@@ -1,49 +1,7 @@
 {
-  "checkedAt": "2026-04-03T20:45:00.284Z",
-  "jobsChecked": 10,
+  "checkedAt": "2026-04-03T20:50:49.431Z",
+  "jobsChecked": 4,
   "jobs": [
-    {
-      "id": "649f1140-14af-405c-b5a8-64c8c95bbe42",
-      "name": "MySQL Daily Backup",
-      "status": "healthy",
-      "schedule": "daily 4:20 PT",
-      "intervalMs": 86399992,
-      "lastRunAtMs": 1775215200008,
-      "nextRunAtMs": 1775301600000,
-      "consecutiveErrors": 0,
-      "lastStatus": "ok",
-      "lastDurationMs": 11401,
-      "overdueMin": null,
-      "graceMin": null
-    },
-    {
-      "id": "ea974315-a846-493d-8aa5-475554d9468c",
-      "name": "Radial Sync",
-      "status": "healthy",
-      "schedule": "every 1h",
-      "intervalMs": 3599994,
-      "lastRunAtMs": 1775246686948,
-      "nextRunAtMs": 1775250286942,
-      "consecutiveErrors": 0,
-      "lastStatus": "ok",
-      "lastDurationMs": 72008,
-      "overdueMin": null,
-      "graceMin": null
-    },
-    {
-      "id": "72655603-969c-409e-8dcd-a47da10a34f0",
-      "name": "Hourly Notion Impact",
-      "status": "healthy",
-      "schedule": "every 1h",
-      "intervalMs": 3599991,
-      "lastRunAtMs": 1775246546110,
-      "nextRunAtMs": 1775250146101,
-      "consecutiveErrors": 0,
-      "lastStatus": "ok",
-      "lastDurationMs": 45772,
-      "overdueMin": null,
-      "graceMin": null
-    },
     {
       "id": "d8810b23-d4f7-4dc2-8ee8-7cf68a224fee",
       "name": "Daily Log Review",
@@ -55,20 +13,6 @@
       "consecutiveErrors": 0,
       "lastStatus": "ok",
       "lastDurationMs": 12184,
-      "overdueMin": null,
-      "graceMin": null
-    },
-    {
-      "id": "notion-to-mysql-async-sync",
-      "name": "Notion→MySQL Sync",
-      "status": "healthy",
-      "schedule": "every 4h",
-      "intervalMs": 14399990,
-      "lastRunAtMs": 1775242906063,
-      "nextRunAtMs": 1775257306053,
-      "consecutiveErrors": 0,
-      "lastStatus": "ok",
-      "lastDurationMs": 18543,
       "overdueMin": null,
       "graceMin": null
     },
@@ -111,34 +55,6 @@
       "consecutiveErrors": 0,
       "lastStatus": "ok",
       "lastDurationMs": 6923,
-      "overdueMin": null,
-      "graceMin": null
-    },
-    {
-      "id": "d507f10e-6c8a-4168-8e42-73b4d7ddc574",
-      "name": "Glucose Low Alert (≤90 + trending down)",
-      "status": "healthy",
-      "schedule": "every 5m",
-      "intervalMs": 300000,
-      "lastRunAtMs": 1775249048737,
-      "nextRunAtMs": 1775249348737,
-      "consecutiveErrors": 0,
-      "lastStatus": "ok",
-      "lastDurationMs": 6291,
-      "overdueMin": null,
-      "graceMin": null
-    },
-    {
-      "id": "mysql-glucose-sync",
-      "name": "MySQL Glucose Sync",
-      "status": "healthy",
-      "schedule": "every 30m",
-      "intervalMs": 1800000,
-      "lastRunAtMs": 1775248393897,
-      "nextRunAtMs": 1775250193897,
-      "consecutiveErrors": 0,
-      "lastStatus": "ok",
-      "lastDurationMs": 24795,
       "overdueMin": null,
       "graceMin": null
     }
