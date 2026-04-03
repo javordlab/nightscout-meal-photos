@@ -13,6 +13,12 @@ Operational rules live in `AGENTS.md` (canonical). Historical fixes live in `doc
 - **Meds:** Metformin (500mg breakfast, 500mg lunch, 1000mg dinner), Lisinopril (10mg daily morning), Rosuvastatin (10mg every other morning).
 - **Rosuvastatin Cycle:** Anchor date 2026-03-01 (taken).
 
+## Photo Recovery
+When a meal entry is logged but missing a photo URL (e.g., after an API timeout mid-session), **never ask Javi to resubmit**. Instead:
+1. Check `/Users/javier/.openclaw/media/inbound/` — all Telegram photo attachments are saved there with timestamps.
+2. Match the most recent file to the entry timestamp to identify the correct image.
+3. Upload it to freeimage.host (Key: `6d207e02198a847aa98d0a2a901485a5`) and attach the URL to the Notion entry + health_log.md.
+
 ## Communication Channels
 - **Email (AgentMail):** `javordclaw@agentmail.to`
   - **API Key:** Stored in `~/.openclaw/secrets/agentmail_api_key`.
