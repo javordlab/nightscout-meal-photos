@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-04-03T05:50:50.781Z",
+  "checkedAt": "2026-04-03T06:00:00.699Z",
   "jobsChecked": 10,
   "jobs": [
     {
@@ -22,11 +22,11 @@
       "status": "healthy",
       "schedule": "every 30m",
       "intervalMs": 1800000,
-      "lastRunAtMs": 1775193918489,
-      "nextRunAtMs": 1775195718489,
+      "lastRunAtMs": 1775195718498,
+      "nextRunAtMs": 1775197518498,
       "consecutiveErrors": 0,
       "lastStatus": "ok",
-      "lastDurationMs": 25841,
+      "lastDurationMs": 25287,
       "overdueMin": null,
       "graceMin": null
     },
@@ -120,25 +120,25 @@
       "status": "healthy",
       "schedule": "every 30m",
       "intervalMs": 1800000,
-      "lastRunAtMs": 1775193645372,
-      "nextRunAtMs": 1775195445372,
+      "lastRunAtMs": 1775195445377,
+      "nextRunAtMs": 1775197245377,
       "consecutiveErrors": 0,
       "lastStatus": "ok",
-      "lastDurationMs": 2,
+      "lastDurationMs": 9912,
       "overdueMin": null,
       "graceMin": null
     },
     {
       "id": "d507f10e-6c8a-4168-8e42-73b4d7ddc574",
       "name": "Glucose Low Alert (≤90 + trending down)",
-      "status": "healthy",
+      "status": "warning",
       "schedule": "every 5m",
       "intervalMs": 300000,
-      "lastRunAtMs": 1775195347260,
-      "nextRunAtMs": 1775195647260,
-      "consecutiveErrors": 0,
-      "lastStatus": "ok",
-      "lastDurationMs": 6437,
+      "lastRunAtMs": 1775195947274,
+      "nextRunAtMs": 1775196247274,
+      "consecutiveErrors": 1,
+      "lastStatus": "error",
+      "lastDurationMs": 30016,
       "overdueMin": null,
       "graceMin": null
     }
