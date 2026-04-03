@@ -1,7 +1,7 @@
 [
   {
     "id": "33785ec7-0668-8117-ac00-e39816aa114a",
-    "title": "Dinner: Cocido madrileño - segundo plato, partially eaten (chickpeas, potato, chicken, chorizo, cabbage — left ~half) (BG: 136 mg/dL Flat) (Pred: 175-195 mg/dL @ 20:00-20:30 PM) [Cumulative Dinner: ~44g carbs total] (Protein: 15g | Carbs: ~15g | Cals: ~191) [photo](https://iili.io/Bnxzbb2.jpg)",
+    "title": "Dinner: Cocido madrileño - segundo plato, partially eaten (chickpeas, potato, chicken, chorizo, cabbage — left ~half) (BG: 136 mg/dL Flat) (Pred: 175-195 mg/dL @ 20:00-20:30 PM) [Cumulative Dinner: ~44g carbs total] (Protein: 15g | Carbs: ~15g | Cals: ~191)",
     "type": "Dinner",
     "date": "2026-04-02T18:37:00.000-07:00",
     "photo": "https://iili.io/Bnxzbb2.jpg",
@@ -12,18 +12,18 @@
   },
   {
     "id": "33785ec7-0668-8149-8b5a-e9380faf96ed",
-    "title": "Dinner: Sopa de cocido (broth with angel hair noodles/fideos) (BG: 133 mg/dL Flat) (Pred: 165-185 mg/dL @ 19:45-20:00 PM) (Protein: 6g | Carbs: ~29g | Cals: ~155) [photo](https://iili.io/BnxzLUG.jpg)",
+    "title": "Dinner: Sopa de cocido (broth with angel hair noodles/fideos) (BG: 133 mg/dL Flat) (Pred: 165-185 mg/dL @ 19:45-20:00 PM) (Protein: 6g | Carbs: ~29g | Cals: ~155)",
     "type": "Dinner",
     "date": "2026-04-02T18:26:00.000-07:00",
     "photo": "https://iili.io/BnxzLUG.jpg",
     "carbs": 29,
     "cals": 155,
-    "delta": null,
-    "peak": null
+    "delta": 29,
+    "peak": 162
   },
   {
     "id": "33685ec7-0668-817e-bd89-ccc4751ff686",
-    "title": "Snack: Papaya, 3 slices (~200g) (BG: 106 mg/dL Flat) (Pred: 130-145 mg/dL @ 15:45-16:00 PM) (Protein: 1g | Carbs: ~14g | Cals: ~78) [photo](https://iili.io/BnfhXwu.jpg)",
+    "title": "Snack: Papaya, 3 slices (~200g) (BG: 106 mg/dL Flat) (Pred: 130-145 mg/dL @ 15:45-16:00 PM) (Protein: 1g | Carbs: ~14g | Cals: ~78)",
     "type": "Snack",
     "date": "2026-04-02T14:34:00.000-07:00",
     "photo": "https://iili.io/BnfhXwu.jpg",
@@ -34,7 +34,7 @@
   },
   {
     "id": "33685ec7-0668-81a9-8965-f3f2fa983941",
-    "title": "Lunch: 2 boiled chicken wings and small cucumber sliced (BG: 141 mg/dL Flat) (Pred: 150-160 mg/dL @ 14:00-14:15 PM) (Protein: 23g | Carbs: ~4g | Cals: ~240) [photo](https://iili.io/Bnfhwnj.jpg)",
+    "title": "Lunch: 2 boiled chicken wings and small cucumber sliced (BG: 141 mg/dL Flat) (Pred: 150-160 mg/dL @ 14:00-14:15 PM) (Protein: 23g | Carbs: ~4g | Cals: ~240)",
     "type": "Lunch",
     "date": "2026-04-02T12:40:00.000-07:00",
     "photo": "https://iili.io/Bnfhwnj.jpg",
@@ -45,7 +45,7 @@
   },
   {
     "id": "33685ec7-0668-81ac-9853-e69bebe66454",
-    "title": "Breakfast: Open-faced roll with carnitas, avocado slices, and cream cheese (BG: 113 mg/dL Flat) (Pred: 160-185 mg/dL @ 11:30-12:00 PM) (Protein: 31g | Carbs: ~32g | Cals: ~570) [photo](https://iili.io/BCM6nNj.jpg)",
+    "title": "Breakfast: Open-faced roll with carnitas, avocado slices, and cream cheese (BG: 113 mg/dL Flat) (Pred: 160-185 mg/dL @ 11:30-12:00 PM) (Protein: 31g | Carbs: ~32g | Cals: ~570)",
     "type": "Breakfast",
     "date": "2026-04-02T09:30:00.000-07:00",
     "photo": "https://iili.io/BCM6nNj.jpg",
