@@ -89,7 +89,7 @@
   },
   {
     "id": "33585ec7-0668-8111-8dc4-d6b9ed8d1065",
-    "title": "Dinner: Creamed vegetable soup (~1.5 cups), chicken breast (~4 oz), and broccoli florets (~1 cup) (BG: 118 mg/dL Flat) (Protein: 47g) (Pred: 150-170 mg/dL @ 8:00 PM)",
+    "title": "Dinner: Creamed vegetable soup (~1.5 cups), chicken breast (~4 oz), and broccoli florets (~1 cup) (BG: 118 mg/dL Flat) (Pred: 150-170 mg/dL @ 8:00 PM) (Protein: 47g | Carbs: ~25g | Cals: ~420)",
     "type": "Dinner",
     "date": "2026-03-31T18:38:00.000-07:00",
     "photo": "https://iili.io/BKq5N5P.jpg",
@@ -100,7 +100,7 @@
   },
   {
     "id": "33485ec7-0668-8164-9784-cb89677588c4",
-    "title": "Lunch: Fried rice with pork and egg (~¾ cup) and cucumber slices (~8–10 slices) (BG: 118 mg/dL Flat) (Protein: 15g) (Pred: 150-170 mg/dL @ 2:30 PM)",
+    "title": "Lunch: Fried rice with pork and egg (~¾ cup) and cucumber slices (~8–10 slices) (BG: 118 mg/dL Flat) (Pred: 150-170 mg/dL @ 2:30 PM) (Protein: 15g | Carbs: ~31g | Cals: ~295)",
     "type": "Lunch",
     "date": "2026-03-31T13:01:00.000-07:00",
     "photo": "https://iili.io/BFZI9KF.jpg",
@@ -111,7 +111,7 @@
   },
   {
     "id": "33485ec7-0668-81b8-8ab0-e94017085a8c",
-    "title": "Snack: Papaya slices (~3–4 slices) and tea (BG: 112 mg/dL Flat) (Protein: 0.6g) (Pred: 118-130 mg/dL @ 1:30 PM)",
+    "title": "Snack: Papaya slices (~3–4 slices) and tea (BG: 112 mg/dL Flat) (Pred: 118-130 mg/dL @ 1:30 PM) (Protein: 0.6g | Carbs: ~11g | Cals: ~55)",
     "type": "Snack",
     "date": "2026-03-31T12:02:00.000-07:00",
     "photo": "https://iili.io/BFZzttV.jpg",
@@ -122,18 +122,18 @@
   },
   {
     "id": "33485ec7-0668-81d2-9c7b-c267298d20e3",
-    "title": "Snack: ~10 cashews and tea (BG: 112 mg/dL Flat) (Protein: 2g) (Pred: 115-125 mg/dL @ 10:45 AM)",
+    "title": "Snack: ~10 cashews and tea (BG: 112 mg/dL Flat) (Pred: 115-125 mg/dL @ 10:45 AM) (Protein: 2g | Carbs: ~3.5g | Cals: ~65)",
     "type": "Snack",
     "date": "2026-03-31T09:33:00.000-07:00",
     "photo": "https://iili.io/BFZzku4.jpg",
-    "carbs": 3.5,
+    "carbs": 3,
     "cals": 65,
     "delta": 58,
     "peak": 174
   },
   {
     "id": "33485ec7-0668-8191-8fe0-dec194e01ab4",
-    "title": "Breakfast: 1 slice bread, 1 slice cheese, 1 slice prosciutto, ¼ avocado (BG: 112 mg/dL Flat) (Protein: 14g) (Pred: 125-140 mg/dL @ 10:45 AM)",
+    "title": "Breakfast: 1 slice bread, 1 slice cheese, 1 slice prosciutto, ¼ avocado (BG: 112 mg/dL Flat) (Pred: 125-140 mg/dL @ 10:45 AM) (Protein: 14g | Carbs: ~18g | Cals: ~255)",
     "type": "Breakfast",
     "date": "2026-03-31T09:22:00.000-07:00",
     "photo": "https://iili.io/BFteBn4.jpg",
