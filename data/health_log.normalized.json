@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-03T17:30:00.702Z",
+  "generatedAt": "2026-04-03T18:00:00.870Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
-  "entryCount": 436,
+  "entryCount": 437,
   "entries": [
     {
       "source": {
@@ -18232,6 +18232,47 @@
       },
       "entryKey": "sha256:b4d14362084e075dca29f67523c07171dc26c0c4358e533ead035772a951f549",
       "contentHash": "sha256:bf9744e8ffe2b94a706d99e34d57fff4f4e682425c491bd4b18a4601eeb9d18b"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 465,
+        "rawRow": "| 2026-04-03 | 10:54 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Fried egg on white toast with deli ham/prosciutto and orange wedges (BG: 111 mg/dL Flat) (Pred: 168-188 mg/dL @ 12:21 PM) (Protein: 19g | Carbs: ~28g | Cals: ~280) | 28 | 280 |"
+      },
+      "timestamp": "2026-04-03T10:54:00-07:00",
+      "date": "2026-04-03",
+      "time": "10:54 -07:00",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "mealType": "Breakfast",
+      "title": "Breakfast: Fried egg on white toast with deli ham/prosciutto and orange wedges",
+      "notes": "BG: 111 mg/dL Flat; Protein: 19g; Pred: 168-188 mg/dL @ 12:21 PM",
+      "photoUrls": [],
+      "carbsEst": 28,
+      "caloriesEst": 280,
+      "proteinEst": 19,
+      "predicted": {
+        "peakBgText": "168-188 mg/dL",
+        "peakTimeText": "12:21 PM"
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:d9038c69cd423a887d348861e86425d8028982bfef08ada2268a8fc791781a84",
+      "contentHash": "sha256:02dc8b837545c53097e30960c262a49258acdfd797299dd67a5b8f604d9bc469"
     }
   ]
 }
