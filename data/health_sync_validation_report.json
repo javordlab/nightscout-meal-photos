@@ -1,24 +1,8 @@
 {
-  "generatedAt": "2026-04-03T02:30:00.698Z",
-  "entryCount": 48,
+  "generatedAt": "2026-04-03T03:00:01.138Z",
+  "entryCount": 49,
   "errors": [],
   "warnings": [
-    {
-      "entryKey": "sha256:220fffa23a8acb14bd7cba18e3c8c27ed9f356075b4e240beaa926166c8a3e81",
-      "timestamp": "2026-04-02T18:37:00-07:00",
-      "title": "Dinner: Cocido madrileño - segundo plato, partially eaten (chickpeas, potato, chicken, chorizo, cabbage — left ~half) [Cumulative Dinner: ~44g carbs total]",
-      "reason": "photo_missing_but_found_in_internal_folder",
-      "file": "/Users/javier/.openclaw/media/inbound/file_255---dbcf9457-59cb-440e-81e7-e5214a289436.jpg",
-      "diffMinutes": 0
-    },
-    {
-      "entryKey": "sha256:605fa6b61b8f0e6a645e3b6825352bc15088750e3b99af0356b9cdc7a34b3468",
-      "timestamp": "2026-04-02T18:26:00-07:00",
-      "title": "Dinner: Sopa de cocido (broth with angel hair noodles/fideos)",
-      "reason": "photo_missing_but_found_in_internal_folder",
-      "file": "/Users/javier/.openclaw/media/inbound/file_254---b5538640-1099-426f-ad9e-eb6aeb6810f8.jpg",
-      "diffMinutes": 0
-    },
     {
       "entryKey": "sha256:e419ec1657e809fce643db5aa1612e77d1bcd98ff79d9b41845a9158e45d9b1a",
       "timestamp": "2026-04-02T12:46:00-07:00",
