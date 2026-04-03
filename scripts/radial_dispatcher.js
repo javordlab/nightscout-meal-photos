@@ -262,7 +262,8 @@ async function main() {
   let photoSyncedToNotion = false;
   const nsTelemetry = createNsTelemetry();
   try {
-    glucoseEntries = await nsRequest("GET", "/api/v1/entries.json?count=5000", {});
+    // 576 = 48h of CGM readings at 5-min intervals — enough for any projection window
+    glucoseEntries = await nsRequest("GET", "/api/v1/entries.json?count=576", {});
     if (!Array.isArray(glucoseEntries)) glucoseEntries = [];
   } catch (e) {
     console.log(`  !! Could not preload glucose entries: ${e.message}`);
