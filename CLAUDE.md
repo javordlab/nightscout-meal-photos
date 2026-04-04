@@ -1,110 +1,127 @@
-# CLAUDE.md
+# CLAUDE.md — Bootstrap for Claude Code Sessions
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This is the health monitoring and automation workspace for **Maria Dennis** (73yo, T2D), managed by **Javier Ordonez**.
 
-## What This Workspace Is
+## Start Every Session By Reading These Files
 
-A production health data orchestration system for Maria Dennis (Type 2 Diabetic) managed by Javier Ordonez. It maintains a single source of truth (SSoT) health log and syncs it across Nightscout, Notion, and MySQL.
-
-**Radial architecture:** `health_log.md` → `scripts/radial_dispatcher.js` → (Nightscout + Notion + MySQL + Gallery). Downstream systems are overwritten on every sync — changes made directly to Notion/MySQL/Nightscout are ephemeral.
-
-## Commands
-
-```bash
-# Run all tests
-npm test
-
-# Unit / integration / validation tests individually
-node --test tests/unit/*.test.js
-node --test tests/integration/*.test.js
-node scripts/health-sync/validate_health_sync.js --fail-on-error
-
-# Lint
-npx eslint scripts/
-
-# Dry-run sync (no writes)
-node scripts/health-sync/unified_sync.js --dry-run
-
-# Consistency check (always run before/after sync)
-node scripts/consistency_check.js 2
-
-# Daily report
-node scripts/generate_daily_report.js
-
-# Watchdog (alert if 9:30 AM report missed)
-node scripts/health-sync/report_watchdog.js
-
-# Deploy
-node scripts/deploy.js --env=staging
-node scripts/validate_sync.js --env=staging
-node scripts/deploy.js --env=production
+```
+AGENTS.md        — All operational rules (NON-NEGOTIABLE). Read this first.
+MEMORY.md        — Long-term curated facts (people, infrastructure, model config)
+TOOLS.md         — Credentials, logging protocol, Nightscout/Notion endpoints
+memory/          — Daily session memory files (YYYY-MM-DD.md). Read today + yesterday.
 ```
 
-**Node.js >= 18 required.**
+Do NOT read SOUL.md, HEARTBEAT.md, or BOOTSTRAP.md — those are OpenClaw runtime files.
 
-## Key Files
+## What This Workspace Does
 
-| Path | Purpose |
-|------|---------|
-| `health_log.md` | SSoT — never edit downstream systems directly |
-| `scripts/radial_dispatcher.js` | Main sync orchestrator (cron every 30 min) |
-| `scripts/health-sync/unified_sync.js` | Idempotent Nightscout + Notion + Gallery sync |
-| `scripts/health-sync/normalize_health_log.js` | Parses `health_log.md` → canonical JSON |
-| `scripts/health-sync/quality_gates.js` | Validation — blocks placeholders, enforces protein/carbs |
-| `scripts/health-sync/sync_state.js` | Sync ledger tracking entry keys and hashes |
-| `scripts/consistency_check.js` | 2-day lookback: duplicates, missing entries |
-| `data/sync_state.json` | State ledger (156 KB) — critical, don't delete |
-| `data/health_log.normalized.json` | Canonical JSON from last normalization |
-| `MEMORY.md` | Long-term facts (people, infrastructure, model config) |
-| `AGENTS.md` | Canonical operational rules (all rules live here) |
-| `TOOLS.md` | Tool-specific config (credentials, endpoints, formatting) |
-| `docs/CHANGELOG.md` | Historical fix log (Issues 1–24+) |
-| `memory/YYYY-MM-DD.md` | Daily memory snapshots |
-| `scripts/health-sync/confirmation_ledger.js` | Write ledger for Telegram confirmation audit |
-| `data/write_ledger.jsonl` | Proof-of-write records (checked by PreToolUse hook) |
+A fully automated health logging pipeline for a Type 2 Diabetic patient:
+- **Intake:** Maria sends food/medication/exercise via Telegram → logged to `health_log.md`
+- **Prediction:** Peak BG predicted immediately using Model v3 formula (see AGENTS.md)
+- **Sync:** Every 30 min, `radial_dispatcher.js` pushes to Nightscout + Notion + MySQL
+- **Monitoring:** Glucose low alerts every 5 min, daily report at 9:30 AM PT
+- **Backfill:** Actual outcomes written ~3h after each meal entry
 
-## Data Entry Rules
+## Architecture
 
-- **Timezone:** Always use the host machine's local timezone offset (auto-detected at runtime, never hardcoded). Example format: `2026-03-22 09:00 -07:00`. Never raw UTC.
-- **Entry key:** `sha256(timestamp|user|title)` — used for deduplication across all systems.
-- **Food entries:** Must include BG at meal time, predicted peak (`meal_time + 105 min`, `peak = 120 + carbs * 3.5` capped at 300), protein, carbs, cals, and photo link.
-- **Medications:** Use `Note` eventType in Nightscout.
-- **Activity:** Use `Exercise` eventType in Nightscout.
-- **No placeholders:** Quality gates hard-block entries like `[Photo received - awaiting manual description]`.
+```
+health_log.md (SSoT)
+    └── radial_dispatcher.js (every 30 min via system cron)
+            ├── Nightscout API  (CGM treatments)
+            ├── Notion DB       (31685ec7-0668-813e-8b9e-c5b4d5d70fa5)
+            └── MySQL           (local backup)
+```
 
-## External Integrations
+## Key Scripts Reference
 
-| System | Detail |
-|--------|--------|
-| **Nightscout** | `https://p01--sefi--s66fclg7g2lm.code.run` — secret is SHA1-hashed |
-| **Notion DB** | `31685ec7-0668-813e-8b9e-c5b4d5d70fa5` (Maria Health Log) |
-| **MySQL** | Database `health_monitor`, table `maria_health_log`, binary at `/opt/homebrew/opt/mysql@8.4/bin/mysql` |
-| **Gallery** | `nightscout-meal-photos/data/notion_meals.json` (GitHub-hosted) |
-| **Telegram** | Group `-5262020908` ("Food log"), bot `@Javordclaws_bot` |
+| Script | Purpose |
+|--------|---------|
+| `scripts/radial_dispatcher.js` | Master sync: health_log → Nightscout + Notion + MySQL |
+| `scripts/calculate_notion_projections.js` | Peak BG prediction (Model v3, 4-layer formula) |
+| `scripts/calculate_glucose_summary.js` | 24h glucose stats for daily report |
+| `scripts/calculate_14d_stats.js` | 14-day trend stats for daily report |
+| `scripts/mysql_glucose_sync.js` | CGM data → MySQL (48h age cutoff pagination) |
+| `scripts/consistency_check.js` | Pre/post-sync validation gate |
+| `scripts/health-sync/audit_health_sync.js` | Detects entries missing from Notion/NS |
+| `scripts/health-sync/quality_gates.js` | Blocks malformed entries before they persist |
+| `scripts/health-sync/ns_upsert_safe.js` | Idempotent Nightscout write with dedup |
+| `scripts/health-sync/cron_health_watchdog.js` | Checks system cron job freshness |
+| `scripts/health-sync/send_daily_health_report_telegram.js` | 9:30 AM daily report |
+| `scripts/health-sync/glucose_low_alert.js` | Real-time low BG alert (<70 mg/dL) |
+| `scripts/auto_track_meds.js` | Auto-logs Metformin/Lisinopril/Rosuvastatin on schedule |
+| `scripts/health-sync/confirmation_ledger.js` | Write ledger — guards against fake confirmations |
 
-API keys are stored in `~/.openclaw/secrets/` and referenced in `TOOLS.md`.
+## System Cron Jobs (pure scripts, no LLM)
 
-## Cron Jobs (Active)
+| Schedule | Script |
+|----------|--------|
+| `5,35 * * * *` | Radial Sync pipeline |
+| `20,50 * * * *` | MySQL Glucose Sync |
+| `0 * * * *` | Notion impact backfill |
+| `*/5 * * * *` | Glucose Low Alert |
+| `20 4 * * *` | MySQL Daily Backup |
+| `0 */4 * * *` | Notion → MySQL Async Sync |
+| `30 9 * * *` | Daily health report (Telegram) |
 
-| Schedule | Job | Script |
-|----------|-----|--------|
-| Every 30 min | Radial sync | `radial_dispatcher.js` |
-| Every hour | Impact projections | backfill + projections |
-| Every 2h | Outcome backfill | `backfill_notion_impact.js` |
-| 9:15 AM PT | Daily audit | audit health_log vs Notion |
-| 9:30 AM PT | Daily report | `generate_daily_report.js` → Telegram |
+## OpenClaw Cron Jobs (LLM-assisted, isolated sessions)
 
-## Testing Strategy
+| Job | Model | Purpose |
+|-----|-------|---------|
+| cron-health-watchdog (every 30m) | Haiku | Checks cron freshness, alerts if stale |
+| daily-log-review (9:15 AM) | Haiku | Reviews gateway logs for actionable issues |
+| health-sync-daily-audit (9:45 AM) | Haiku | Audits Notion/NS for missing entries |
+| weekly-memory-summary (Sun 11 PM) | Codex | Synthesizes weekly memory files |
 
-- **Unit tests** (`tests/unit/`): quality gate logic, entry key/dedup in sync_state
-- **Integration tests** (`tests/integration/`): full Nightscout + Notion sync against real APIs
-- **Fixtures** (`tests/fixtures/`): test data stubs
+## Model Routing (CRITICAL — follow AGENTS.md exactly)
 
-## Agent Operational Rules
+| Task | Model |
+|------|-------|
+| Health log writes, BG alerts, image analysis, quality gates | `anthropic/claude-sonnet-4-6` |
+| Cron monitoring, log review, simple acks | `anthropic/claude-haiku-4-5` |
+| Weekly summaries, non-critical background | `openai-codex/gpt-5.3-codex` |
+| Interactive dev sessions (you're in one now) | Claude Code subscription — free |
 
-All operational rules are canonical in `AGENTS.md`. Key highlights:
-- `AGENTS.md` — ALL rules (format enforcement, Telegram rules, write ledger, model quotas, reporting, strict data rule, escalation policy)
-- `TOOLS.md` — credentials, endpoints, formatting per platform (cross-references AGENTS.md for rules)
-- `MEMORY.md` — facts only (people, infrastructure, model config); no rules
-- `docs/CHANGELOG.md` — historical fix log (Issues 1–24+); agents don't load this every session
-- Read `memory/YYYY-MM-DD.md` (today + yesterday) and `MEMORY.md` at session start.
+## Infrastructure
+
+- **Nightscout:** `https://p01--sefi--s66fclg7g2lm.code.run`
+  - API Secret (SHA1): `b3170e23f45df7738434cd8be9cd79d86a6d0f01`
+- **Notion DB:** `31685ec7-0668-813e-8b9e-c5b4d5d70fa5`
+- **Photo hosting:** `freeimage.host` (Key: `6d207e02198a847aa98d0a2a901485a5`)
+- **Telegram group:** `-5262020908` | Bot: `@Javordclaws_bot`
+- **GitHub:** `javordlab` (all private, 27 repos)
+
+## Data Integrity Rules
+
+1. **Never edit Nightscout or Notion directly** — always edit `health_log.md` first, then sync
+2. **Always run `node scripts/consistency_check.js 2`** before and after major changes
+3. **All paths use absolute paths** — system cron has no `$HOME`
+4. **Node binary:** always `/opt/homebrew/bin/node` in scripts (system cron PATH is minimal)
+5. **Timezone:** always derive dynamically — never hardcode `-07:00` or `-08:00`
+6. **Entry keys:** SHA256-based, computed by `health-sync/sync_state.js` — never guess or hand-roll
+
+## Common Tasks
+
+```bash
+# Run full sync manually
+node scripts/radial_dispatcher.js
+
+# Check sync consistency
+node scripts/consistency_check.js 2
+
+# Audit Notion for missing entries (last 2 days)
+node scripts/health-sync/audit_health_sync.js --lookback=2
+
+# Run daily report manually
+node scripts/health-sync/send_daily_health_report_telegram.js
+
+# Check glucose stats
+node scripts/calculate_glucose_summary.js
+node scripts/calculate_14d_stats.js
+```
+
+## Git Workflow
+
+- All changes committed to `main` before considering done
+- Pre-commit hooks run unit tests + sync state validation — do not skip
+- Commit messages follow conventional commits: `fix:`, `feat:`, `chore:`
+- After infra changes: always verify with `node scripts/consistency_check.js 2`
