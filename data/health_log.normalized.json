@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-04T17:30:00.377Z",
+  "generatedAt": "2026-04-04T18:00:00.376Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
-  "entryCount": 452,
+  "entryCount": 453,
   "entries": [
     {
       "source": {
@@ -18896,6 +18896,47 @@
       },
       "entryKey": "sha256:c0bfc6fef4dd7094a128c114eb87c95c9e51921b947b66b80d292527b6b0c1ee",
       "contentHash": "sha256:9b0a93fb2c35e73bce43eb0ca3b17e6d4f1715356eb139539c1bdb6b9d5a3f8e"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 481,
+        "rawRow": "| 2026-04-04 | 10:41 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Turkey slices with avocado and mustard vinaigrette drizzle (BG: 117 mg/dL Flat) (Pred: 155-165 mg/dL @ 12:08 PM) (Protein: 27g | Carbs: ~6g | Cals: ~230) | null | null |"
+      },
+      "timestamp": "2026-04-04T10:41:00-07:00",
+      "date": "2026-04-04",
+      "time": "10:41 -07:00",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "mealType": "Breakfast",
+      "title": "Breakfast: Turkey slices with avocado and mustard vinaigrette drizzle",
+      "notes": "BG: 117 mg/dL Flat; Protein: 27g; Pred: 155-165 mg/dL @ 12:08 PM",
+      "photoUrls": [],
+      "carbsEst": null,
+      "caloriesEst": null,
+      "proteinEst": 27,
+      "predicted": {
+        "peakBgText": "155-165 mg/dL",
+        "peakTimeText": "12:08 PM"
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:e9886615bdc62ff486efac7ebc8f74a0facf88c0b5eba0e6c5c5c2400d4d6ae9",
+      "contentHash": "sha256:ada2eb97bfb8c5db4b55432361566f038f1fc600ffe29a90a42e43544c65abc5"
     }
   ]
 }
