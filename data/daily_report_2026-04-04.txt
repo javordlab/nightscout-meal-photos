@@ -1,0 +1,67 @@
+🩺 DAILY HEALTH REPORT
+📅 Date: 2026-04-04
+🕒 Coverage window: 2026-04-03 00:00 – 2026-04-04 00:00 (America/Los_Angeles)
+⚙️ Generated time: 2026-04-04T16:32:02.366Z
+🤖 Model: anthropic/claude-sonnet-4-6
+
+1) 📊 Today's Glucose Summary
+- Average glucose: 118.4 mg/dL
+- Time in Range (70-180): 98.2%
+- GMI: 6.14%
+- Standard deviation: 22.0 mg/dL
+- CV: 18.6%
+- Data points used: 283
+
+2) 📉 14-day Trends (ending 2026-04-03)
+- Average glucose: 122.1 mg/dL
+- Time in Range (70-180): 98.3%
+- GMI: 6.23%
+- Standard deviation: 19.9 mg/dL
+- CV: 16.3%
+- Data points used: 1027
+
+3) 🍽️ Nutrition (2026-04-03)
+- Meals logged: 8
+- Total carbs: 162.0 g
+- Total calories: 1652 kcal
+- Total protein: 78.0 g
+
+4) 🧾 Meal Details (2026-04-03)
+- 10:54 AM — Breakfast: Fried egg on white toast with deli ham/prosciutto and orange wedges — 28.0g carbs, 280 kcal, 19.0g protein — BG at meal: 111 mg/dL
+- 11:05 AM — Breakfast: 1/2 yogurt [Cumulative Breakfast: ~44g carbs total] — 8.0g carbs, 60 kcal, 5.0g protein — BG at meal: 113 mg/dL
+- 11:07 AM — Breakfast: Small Japanese sweet potato tart [Cumulative Breakfast: ~44g carbs total] — 8.0g carbs, 120 kcal, 2.0g protein — BG at meal: 116 mg/dL
+- 1:10 PM — Lunch: Creamed vegetable soup with broccoli and cashews (~1 oz) — 27.0g carbs, 337 kcal, 13.0g protein — BG at meal: 149 mg/dL
+- 1:22 PM — Lunch: Protein ball (prunes, peanut butter, hemp hearts, flaxseed, dark chocolate coating, oatmeal) [Cumulative Lunch: ~38g carbs total] — 11.0g carbs, 130 kcal, 5.0g protein — BG at meal: 152 mg/dL
+- 7:21 PM — Dinner: Sopa de cocido with crusty ciabatta bread and braised roasted pork pieces — 40.0g carbs, 390 kcal, 21.0g protein — BG at meal: 115 mg/dL
+- 7:40 PM — Dinner: Deviled eggs (2 halves), papaya, grapes, and 2 water crackers [Cumulative Dinner: ~69g carbs total] — 29.0g carbs, 205 kcal, 8.0g protein — BG at meal: 127 mg/dL
+- 7:55 PM — Dinner: Protein ball (prunes, peanut butter, hemp hearts, flaxseed, dark chocolate, oatmeal) [Cumulative Dinner: ~80g carbs total] — 11.0g carbs, 130 kcal, 5.0g protein — BG at meal: 134 mg/dL
+
+5) 📚 Nutrition Baseline (14-day daily average ending 2026-04-03)
+- Average carbs/day: 152.3 g
+- Average calories/day: 1532.5 kcal
+- Average protein/day: 73.8 g
+- Average meals/day: 6.1
+- Days in window with food entries: 14
+
+6) 💊 Medication Status (2026-04-03)
+- 2026-04-03T19:00:00-07:00: Medication: Metformin 1000mg (dinner)
+- 2026-04-03T09:00:00-07:00: Medication: Lisinopril 10mg (Scheduled)
+- 2026-04-03T09:10:00-07:00: Medication: Metformin 500mg (breakfast)
+- 2026-04-03T13:00:00-07:00: Medication: Metformin 500mg (lunch)
+
+7) 🚨 Outliers (2026-04-03)
+- High readings >180: 5
+- Low readings <70: 0
+- Max glucose: 189 mg/dL at 2026-04-03T18:59:00.000Z
+
+8) 🧠 Extended Supervisor Analysis
+- Nice work overall today: Strong Time in Range at 98.2% | No hypoglycemia episodes (<70 mg/dL) | Good protein intake (78.0g).
+- Key trend signals: avg glucose vs 14-day baseline -3.7 mg/dL, TIR delta -0.1%, carbs delta 9.8 g, calories delta 120 kcal.
+- Friendly focus for tomorrow: There was 5 reading(s) >180 mg/dL; keep an eye on post-meal spacing/activity.
+- You’re doing great—small consistent habits keep adding up. Keep it going 🌟
+
+9) 🛡️ Self-Audit (Data Integrity)
+- Target day enforced: 2026-04-03 PT
+- Glucose points in target window: 283
+- GMI formula check (3.31 + 0.02392 × Avg): 6.14%
+- Reported GMI: 6.14%
