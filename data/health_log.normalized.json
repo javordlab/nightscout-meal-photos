@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-04T20:30:00.410Z",
+  "generatedAt": "2026-04-04T21:00:01.242Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
-  "entryCount": 455,
+  "entryCount": 456,
   "entries": [
     {
       "source": {
@@ -18942,7 +18942,7 @@
       "source": {
         "file": "health_log.md",
         "line": 482,
-        "rawRow": "| 2026-04-04 | 10:41 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Turkey slices with avocado and mustard vinaigrette drizzle (BG: 117 mg/dL Flat) (Pred: 155-165 mg/dL @ 12:08 PM) (Protein: 27g | Carbs: ~6g | Cals: ~230) | null | null |"
+        "rawRow": "| 2026-04-04 | 10:41 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Turkey slices with avocado and mustard vinaigrette drizzle (BG: 117 mg/dL Flat) (Pred: 155-165 mg/dL @ 12:08 PM) (Protein: 27g | Carbs: ~6g | Cals: ~230) [📷](https://iili.io/BIzWYqx.jpg) | 6 | 230 |"
       },
       "timestamp": "2026-04-04T10:41:00-07:00",
       "date": "2026-04-04",
@@ -18952,9 +18952,11 @@
       "mealType": "Breakfast",
       "title": "Breakfast: Turkey slices with avocado and mustard vinaigrette drizzle",
       "notes": "BG: 117 mg/dL Flat; Protein: 27g; Pred: 155-165 mg/dL @ 12:08 PM",
-      "photoUrls": [],
-      "carbsEst": null,
-      "caloriesEst": null,
+      "photoUrls": [
+        "https://iili.io/BIzWYqx.jpg"
+      ],
+      "carbsEst": 6,
+      "caloriesEst": 230,
       "proteinEst": 27,
       "predicted": {
         "peakBgText": "155-165 mg/dL",
@@ -18977,13 +18979,13 @@
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:e9886615bdc62ff486efac7ebc8f74a0facf88c0b5eba0e6c5c5c2400d4d6ae9",
-      "contentHash": "sha256:ada2eb97bfb8c5db4b55432361566f038f1fc600ffe29a90a42e43544c65abc5"
+      "contentHash": "sha256:ae5da872acaa06a2a86775a6e62c0dcc93683db64745fbe04d98797ad37f9ba4"
     },
     {
       "source": {
         "file": "health_log.md",
         "line": 483,
-        "rawRow": "| 2026-04-04 | 12:42 -07:00 | Maria Dennis | Food | Lunch | Lunch: Folded wrap or quesadilla with filling, orange juice, 2 prunes, and a handful of nuts [Cumulative Lunch: 59g carbs total] (BG: 144 mg/dL Flat) (Pred: 175-190 mg/dL @ 2:35 PM) (Protein: 21g | Carbs: ~59g | Cals: ~530) | null | null |"
+        "rawRow": "| 2026-04-04 | 12:42 -07:00 | Maria Dennis | Food | Lunch | Lunch: Folded wrap or quesadilla with filling, orange juice, 2 prunes, and a handful of nuts [Cumulative Lunch: 59g carbs total] (BG: 144 mg/dL Flat) (Pred: 175-190 mg/dL @ 2:35 PM) (Protein: 21g | Carbs: ~59g | Cals: ~530) [📷](https://iili.io/BIxDbeI.jpg) | 59 | 530 |"
       },
       "timestamp": "2026-04-04T12:42:00-07:00",
       "date": "2026-04-04",
@@ -18993,9 +18995,11 @@
       "mealType": "Lunch",
       "title": "Lunch: Folded wrap or quesadilla with filling, orange juice, 2 prunes, and a handful of nuts [Cumulative Lunch: 59g carbs total]",
       "notes": "BG: 144 mg/dL Flat; Protein: 21g; Pred: 175-190 mg/dL @ 2:35 PM",
-      "photoUrls": [],
-      "carbsEst": null,
-      "caloriesEst": null,
+      "photoUrls": [
+        "https://iili.io/BIxDbeI.jpg"
+      ],
+      "carbsEst": 59,
+      "caloriesEst": 530,
       "proteinEst": 21,
       "predicted": {
         "peakBgText": "175-190 mg/dL",
@@ -19018,7 +19022,48 @@
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:493c1a964b851f6e2f739a156689f30dede294350673bf6c5333453ed5cd403d",
-      "contentHash": "sha256:a7cac958ebf6deb715a8b7e6d70a6bd4c42354dc50e8750b4e3dd3b54832d756"
+      "contentHash": "sha256:507580abd536a81a7ad6f21e7ee4da04ee1cc9cd09362e6c843a9479bac22dfc"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 484,
+        "rawRow": "| 2026-04-04 | 13:35 -07:00 | Maria Dennis | Exercise | - | Exercise: 20 minute walk and 30 minutes housework (BG: 135 mg/dL Flat) | null | null |"
+      },
+      "timestamp": "2026-04-04T13:35:00-07:00",
+      "date": "2026-04-04",
+      "time": "13:35 -07:00",
+      "user": "Maria Dennis",
+      "category": "Exercise",
+      "mealType": "-",
+      "title": "Exercise: 20 minute walk and 30 minutes housework",
+      "notes": "BG: 135 mg/dL Flat",
+      "photoUrls": [],
+      "carbsEst": null,
+      "caloriesEst": null,
+      "proteinEst": null,
+      "predicted": {
+        "peakBgText": null,
+        "peakTimeText": null
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:c5da5f679039aa86192a51102f88144a3366b27cb013996b4f66fa37abd67227",
+      "contentHash": "sha256:e5beb2b15d5dd73a95325163b48933d27fba96dc87fac8ff3ec23d4bf80e43bc"
     }
   ]
 }
