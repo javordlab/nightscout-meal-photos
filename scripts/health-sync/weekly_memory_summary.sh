@@ -94,27 +94,37 @@ $(cat "$COMBINED")" 2>/dev/null) || {
 echo "$RESPONSE" > "$OUTPUT_FILE"
 log "Wrote weekly summary to $OUTPUT_FILE ($(wc -l < "$OUTPUT_FILE" | tr -d ' ') lines)"
 
-# Send Telegram notification with a useful preview (first ~3 bullets per section)
+# Send full content to Telegram (split into multiple messages if >4096 chars)
 "$NODE" -e "
-  const { sendAlert } = require('$WORKSPACE/scripts/health-sync/telegram_alert');
+  const https = require('https');
   const fs = require('fs');
-  const summary = fs.readFileSync('$OUTPUT_FILE', 'utf8');
-  // Extract each section: header + first few bullet points
-  const sections = summary.split(/^## /m).slice(1); // skip preamble
-  const preview = sections.map(s => {
-    const lines = s.trim().split('\n');
-    const header = '## ' + lines[0];
-    const bullets = lines.slice(1).filter(l => l.match(/^[-*•]/)).slice(0, 3);
-    if (bullets.length === 0) return header + '\nNo notable changes this week.';
-    return header + '\n' + bullets.join('\n');
-  }).join('\n\n');
-  // Telegram has a 4096 char limit — truncate if needed
-  // Strip markdown formatting that breaks Telegram's parser
-  const clean = preview.replace(/\*\*/g, '').replace(/\`/g, '').slice(0, 3500);
-  const msg = '📝 Weekly Memory Summary (${WEEK_LABEL})\n\n' + clean;
-  sendAlert(msg)
-    .then(r => { if (r.ok) console.log('Telegram sent'); else console.error('Send failed:', JSON.stringify(r)); })
-    .catch(e => console.error('Error:', e.message));
+  const { getBridgeBotToken, JAVI_CHAT_ID } = require('$WORKSPACE/scripts/health-sync/telegram_alert');
+  const raw = fs.readFileSync('$OUTPUT_FILE', 'utf8');
+  const clean = raw + '\n---\nFile: $OUTPUT_FILE';
+  // Split at 4096 char limit
+  const chunks = [];
+  for (let i = 0; i < clean.length; i += 4000) chunks.push(clean.slice(i, i + 4000));
+  // Send as plain text (no parse_mode) to avoid Markdown parsing issues
+  function sendPlain(text) {
+    const token = getBridgeBotToken();
+    const body = JSON.stringify({ chat_id: JAVI_CHAT_ID, text });
+    return new Promise(resolve => {
+      const req = https.request({
+        hostname: 'api.telegram.org', path: '/bot' + token + '/sendMessage',
+        method: 'POST', headers: { 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(body) }
+      }, res => { let d=''; res.on('data',c=>d+=c); res.on('end',()=>resolve(JSON.parse(d))); });
+      req.on('error', ()=>resolve({ok:false}));
+      req.write(body); req.end();
+    });
+  }
+  (async () => {
+    for (let i = 0; i < chunks.length; i++) {
+      const prefix = chunks.length > 1 ? '(' + (i+1) + '/' + chunks.length + ') ' : '';
+      const r = await sendPlain(prefix + chunks[i]);
+      if (!r.ok) console.error('Send failed:', JSON.stringify(r));
+      else console.log('Telegram sent' + (chunks.length > 1 ? ' part ' + (i+1) : ''));
+    }
+  })();
 " 2>/dev/null
 
 log "Weekly memory summary complete"

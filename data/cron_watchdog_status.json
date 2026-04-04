@@ -1,22 +1,7 @@
 {
-  "checkedAt": "2026-04-04T05:45:00.388Z",
-  "jobsChecked": 1,
-  "jobs": [
-    {
-      "id": "weekly-memory-summary",
-      "name": "Weekly Memory Summary",
-      "status": "warning",
-      "schedule": "0 23 * * 0",
-      "intervalMs": 604276235,
-      "lastRunAtMs": 1774850923765,
-      "nextRunAtMs": 1775455200000,
-      "consecutiveErrors": 1,
-      "lastStatus": "error",
-      "lastDurationMs": 120012,
-      "overdueMin": null,
-      "graceMin": null
-    }
-  ],
+  "checkedAt": "2026-04-04T06:00:01.295Z",
+  "jobsChecked": 0,
+  "jobs": [],
   "staleJobs": [],
   "dailyReportIssue": null,
   "ghPagesIssue": null,
