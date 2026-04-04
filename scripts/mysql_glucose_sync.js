@@ -111,8 +111,9 @@ async function main() {
     // 4. Update Dashboard
     try {
         console.log("  -> Updating Backup Dashboard...");
-        execSync('node /Users/javier/.openclaw/workspace/scripts/generate_backup_dashboard_data.js');
-        execSync('node /Users/javier/.openclaw/workspace/scripts/health-sync/deploy_gh_pages.js', { stdio: 'inherit' });
+        const NODE = '/opt/homebrew/bin/node';
+        execSync(`${NODE} /Users/javier/.openclaw/workspace/scripts/generate_backup_dashboard_data.js`);
+        execSync(`${NODE} /Users/javier/.openclaw/workspace/scripts/health-sync/deploy_gh_pages.js`, { stdio: 'inherit' });
     } catch (e) {
         console.error("Dashboard update failed:", e.message);
     }

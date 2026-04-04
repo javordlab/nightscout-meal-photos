@@ -116,7 +116,7 @@ async function main(options = {}) {
   if (!dryRun) {
     try {
       const { execSync } = require('child_process');
-      execSync('node /Users/javier/.openclaw/workspace/scripts/generate_notion_gallery_data.js', { stdio: 'inherit' });
+      execSync('/opt/homebrew/bin/node /Users/javier/.openclaw/workspace/scripts/generate_notion_gallery_data.js', { stdio: 'inherit' });
       // generate_notion_gallery_data.js calls deploy_gh_pages.js internally
     } catch (e) {
       console.error('Post-pipeline gallery/deploy failed:', e.message);

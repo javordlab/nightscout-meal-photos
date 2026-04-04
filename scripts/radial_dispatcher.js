@@ -450,7 +450,7 @@ async function main() {
   if (photoSyncedToNotion) {
     try {
       console.log("  -> Photo synced to Notion — regenerating gallery...");
-      execSync('node /Users/javier/.openclaw/workspace/scripts/generate_notion_gallery_data.js', { stdio: 'inherit' });
+      execSync('/opt/homebrew/bin/node /Users/javier/.openclaw/workspace/scripts/generate_notion_gallery_data.js', { stdio: 'inherit' });
       // generate_notion_gallery_data.js now calls deploy_gh_pages.js internally
       console.log("  -> Gallery updated and deployed to gh-pages.");
     } catch (e) {

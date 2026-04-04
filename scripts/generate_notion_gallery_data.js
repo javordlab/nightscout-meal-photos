@@ -104,7 +104,7 @@ async function main() {
 main().then(() => {
   const { execSync } = require('child_process');
   try {
-    execSync('node /Users/javier/.openclaw/workspace/scripts/health-sync/deploy_gh_pages.js', { stdio: 'inherit' });
+    execSync('/opt/homebrew/bin/node /Users/javier/.openclaw/workspace/scripts/health-sync/deploy_gh_pages.js', { stdio: 'inherit' });
   } catch (e) {
     console.error('gh-pages deploy failed:', e.message);
   }
