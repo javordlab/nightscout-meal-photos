@@ -260,6 +260,20 @@ Expected accuracy: ~87–89% within ±20 mg/dL.
 
 ---
 
+## ⚠️ Sandbox Limitation — Live System State
+
+Claude Code runs in a sandbox. `crontab -l`, OpenClaw API calls, and live process queries will return empty/fail.
+**Do not tell the user there are no cron jobs.** There are 11 system cron entries and 4 OpenClaw jobs.
+
+To get a current snapshot of live state, run:
+```bash
+bash scripts/dump_system_state.sh
+cat data/system_state.md
+```
+This queries the real `crontab -l` and `openclaw cron list` outside the sandbox and writes results to a file you can read.
+
+---
+
 ## Common Commands
 
 ```bash
