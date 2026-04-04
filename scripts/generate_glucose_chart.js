@@ -27,15 +27,15 @@ async function main() {
   try {
     // Exclude current day, show previous 7
     const now = new Date();
-    // Start of current day (local time)
-    const end = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, 0).toISOString();
+    // Start of current day (local time) — epoch ms for reliable NS filtering
+    const endMs = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, 0).getTime();
     // 7 days before start of today
-    const start = new Date(new Date(end).getTime() - 7 * 24 * 60 * 60 * 1000).toISOString();
-    
-    console.log(`Generating 7-day chart (excluding today): ${start} to ${end}`);
-    
+    const startMs = endMs - 7 * 24 * 60 * 60 * 1000;
+
+    console.log(`Generating 7-day chart (excluding today): ${new Date(startMs).toISOString()} to ${new Date(endMs).toISOString()}`);
+
     // Fetch entries for the range
-    const url = `${NS_URL}/api/v1/entries/sgv.json?find[dateString][$gte]=${start}&find[dateString][$lte]=${end}&count=2500`;
+    const url = `${NS_URL}/api/v1/entries/sgv.json?find[date][$gte]=${startMs}&find[date][$lte]=${endMs}&count=2500`;
     const entries = await fetchJson(url);
     
     // Format data for Vega-Lite

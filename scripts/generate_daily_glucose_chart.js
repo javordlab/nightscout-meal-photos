@@ -26,14 +26,14 @@ async function fetchJson(url) {
 async function main() {
   try {
     const now = new Date();
-    // End of yesterday (Start of today local time)
-    const end = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, 0).toISOString();
+    // End of yesterday (start of today local time) — epoch ms for reliable NS filtering
+    const endMs = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, 0).getTime();
     // Start of yesterday (24h before end)
-    const start = new Date(new Date(end).getTime() - 24 * 60 * 60 * 1000).toISOString();
-    
-    console.log(`Generating Daily chart: ${start} to ${end}`);
-    
-    const url = `${NS_URL}/api/v1/entries/sgv.json?find[dateString][$gte]=${start}&find[dateString][$lte]=${end}&count=300`;
+    const startMs = endMs - 24 * 60 * 60 * 1000;
+
+    console.log(`Generating Daily chart: ${new Date(startMs).toISOString()} to ${new Date(endMs).toISOString()}`);
+
+    const url = `${NS_URL}/api/v1/entries/sgv.json?find[date][$gte]=${startMs}&find[date][$lte]=${endMs}&count=300`;
     const entries = await fetchJson(url);
     
     const chartData = entries

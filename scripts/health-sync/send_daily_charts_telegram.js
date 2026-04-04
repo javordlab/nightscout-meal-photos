@@ -114,14 +114,22 @@ function ensureCharts() {
     'cd /Users/javier/.openclaw/workspace && /opt/homebrew/bin/node scripts/generate_weekly_carbs_chart.js'
   ];
 
+  const failures = [];
   for (const cmd of cmds) {
     try {
       execSync(cmd, { stdio: 'pipe' });
     } catch (e) {
       const stderr = e.stderr ? e.stderr.toString().trim() : '';
       const stdout = e.stdout ? e.stdout.toString().trim() : '';
-      throw new Error(`chart_generate_failed: ${cmd}\nstdout: ${stdout}\nstderr: ${stderr}`);
+      const msg = `chart_generate_failed: ${cmd}\nstdout: ${stdout}\nstderr: ${stderr}`;
+      console.error(msg);
+      failures.push(msg);
     }
+  }
+  if (failures.length > 0) {
+    // Log failures but only throw if ALL charts failed (nothing usable to send)
+    if (failures.length === cmds.length) throw new Error(failures.join('\n---\n'));
+    console.warn(`[charts] ${failures.length}/${cmds.length} chart(s) failed to regenerate — sending available charts`);
   }
 
   // Copy PNGs into nightscout-meal-photos/ so they are included in gh-pages deploy
