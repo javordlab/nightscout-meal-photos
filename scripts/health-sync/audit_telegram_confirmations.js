@@ -13,27 +13,14 @@
 
 const fs = require('fs');
 const path = require('path');
-const https = require('https');
 
 const WORKSPACE = '/Users/javier/.openclaw/workspace';
 const DATA_DIR = path.join(WORKSPACE, 'data');
 const NORMALIZED_PATH = path.join(DATA_DIR, 'health_log.normalized.json');
 const AUDIT_REPORT_PATH = path.join(DATA_DIR, 'telegram_confirmation_audit.json');
 const VIOLATIONS_LOG = path.join(DATA_DIR, 'violations.log');
-const OPENCLAW_CONFIG = '/Users/javier/.openclaw/openclaw.json';
-const JAVI_CHAT_ID = '8335333215';
-
 const { loadLedgerLastHours } = require('./confirmation_ledger');
-
-function getBotToken() {
-  if (process.env.TELEGRAM_BOT_TOKEN) return process.env.TELEGRAM_BOT_TOKEN;
-  try {
-    const cfg = JSON.parse(fs.readFileSync(OPENCLAW_CONFIG, 'utf8'));
-    return cfg?.channels?.telegram?.botToken || null;
-  } catch {
-    return null;
-  }
-}
+const { sendAlert } = require('./telegram_alert');
 
 function loadNormalizedEntries() {
   if (!fs.existsSync(NORMALIZED_PATH)) return [];
@@ -44,35 +31,6 @@ function loadNormalizedEntries() {
   }
 }
 
-function sendTelegramAlert(botToken, text) {
-  return new Promise((resolve, reject) => {
-    const postData = new URLSearchParams({
-      chat_id: JAVI_CHAT_ID,
-      text,
-      disable_notification: 'false'
-    }).toString();
-
-    const options = {
-      hostname: 'api.telegram.org',
-      port: 443,
-      path: `/bot${botToken}/sendMessage`,
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-        'Content-Length': Buffer.byteLength(postData)
-      }
-    };
-
-    const req = https.request(options, res => {
-      let d = '';
-      res.on('data', c => d += c);
-      res.on('end', () => resolve(d));
-    });
-    req.on('error', reject);
-    req.write(postData);
-    req.end();
-  });
-}
 
 function appendViolation(entry) {
   try {
@@ -142,28 +100,25 @@ async function main() {
       });
     }
 
-    // Alert Javi via Telegram DM
-    const botToken = getBotToken();
-    if (botToken) {
-      const phantomList = phantoms.map(p =>
-        `  - ${p.timestamp} ${p.category}: ${p.description}`
-      ).join('\n');
+    // Alert Javi via Telegram DM (bridge bot)
+    const phantomList = phantoms.map(p =>
+      `  - ${p.timestamp} ${p.category}: ${p.description}`
+    ).join('\n');
 
-      const alertText = [
-        `⛔ PHANTOM CONFIRMATION AUDIT`,
-        `${phantoms.length} entry(ies) claimed written but MISSING from health_log.md:`,
-        phantomList,
-        ``,
-        `These entries were recorded in the write ledger but are not in the normalized log.`,
-        `Check health_log.md and recover if needed.`
-      ].join('\n');
+    const alertText = [
+      `⛔ PHANTOM CONFIRMATION AUDIT`,
+      `${phantoms.length} entry(ies) claimed written but MISSING from health_log.md:`,
+      phantomList,
+      ``,
+      `These entries were recorded in the write ledger but are not in the normalized log.`,
+      `Check health_log.md and recover if needed.`
+    ].join('\n');
 
-      try {
-        await sendTelegramAlert(botToken, alertText);
-        console.log(`[audit] Alert sent to Javi DM.`);
-      } catch (err) {
-        console.error(`[audit] Failed to send Telegram alert: ${err.message}`);
-      }
+    try {
+      await sendAlert(alertText);
+      console.log(`[audit] Alert sent to Javi DM.`);
+    } catch (err) {
+      console.error(`[audit] Failed to send Telegram alert: ${err.message}`);
     }
 
     console.log(`[audit] ⛔ ${phantoms.length} phantom(s) detected. See ${AUDIT_REPORT_PATH}`);

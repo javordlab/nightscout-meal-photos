@@ -313,16 +313,9 @@ async function main(options = {}) {
   return report;
 }
 
-function getBotToken() {
-  try {
-    return JSON.parse(fs.readFileSync('/Users/javier/.openclaw/openclaw.json', 'utf8'))
-      ?.channels?.telegram?.botToken || null;
-  } catch { return null; }
-}
+const { sendAlert } = require('./telegram_alert');
 
 async function sendSyncGapAlert(report, errorCount, warnCount) {
-  const botToken = getBotToken();
-  if (!botToken) { console.warn('⚠️ No bot token — skipping Telegram alert'); return; }
 
   const sysTZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
   const now = new Date().toLocaleString('en-US', { timeZone: sysTZ, hour: '2-digit', minute: '2-digit', month: 'short', day: 'numeric' });
@@ -345,26 +338,9 @@ async function sendSyncGapAlert(report, errorCount, warnCount) {
   lines.push(`\nRun: node scripts/health-sync/health_sync_pipeline.js --mode=full --since=$(date -v-2d +%F)`);
 
   const text = lines.join('\n');
-  const body = new URLSearchParams({ chat_id: '8335333215', text }).toString();
-  const opts = {
-    method: 'POST', hostname: 'api.telegram.org',
-    path: `/bot${botToken}/sendMessage`,
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'Content-Length': Buffer.byteLength(body) }
-  };
-
-  return new Promise((resolve) => {
-    const req = https.request(opts, res => {
-      let d = ''; res.on('data', c => d += c);
-      res.on('end', () => {
-        const r = JSON.parse(d || '{}');
-        if (r.ok) console.log('📱 Sync gap alert sent to Javi');
-        else console.warn('⚠️ Alert send failed:', r.description);
-        resolve();
-      });
-    });
-    req.on('error', e => { console.warn('⚠️ Alert send error:', e.message); resolve(); });
-    req.write(body); req.end();
-  });
+  const r = await sendAlert(text);
+  if (r.ok) console.log('📱 Sync gap alert sent to Javi');
+  else console.warn('⚠️ Alert send failed:', r.description);
 }
 
 if (require.main === module) {

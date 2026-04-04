@@ -39,15 +39,7 @@ const STALENESS_OVERRIDES = {
   'health-sync-daily-audit': { maxMs: 3 * 60 * 60 * 1000, label: 'Health Sync Audit' },
 };
 
-function getBotToken() {
-  if (process.env.TELEGRAM_BOT_TOKEN) return process.env.TELEGRAM_BOT_TOKEN;
-  try {
-    const cfg = JSON.parse(fs.readFileSync(OPENCLAW_CONFIG, 'utf8'));
-    return cfg?.channels?.telegram?.botToken || null;
-  } catch {
-    return null;
-  }
-}
+const { sendAlert } = require('./telegram_alert');
 
 function sendTelegram(token, chatId, text) {
   return new Promise((resolve, reject) => {
@@ -316,16 +308,14 @@ async function main() {
     console.log(`[watchdog] ${issues} stale job(s) found. Alerting Javi.`);
     console.log(message);
 
-    const token = getBotToken();
-    if (token) {
-      try {
-        await sendTelegram(token, JAVI_CHAT_ID, message);
-        statusOut.alertSent = true;
-        console.log('[watchdog] Alert sent via Telegram.');
-      } catch (err) {
-        console.error(`[watchdog] Telegram send failed: ${err.message}`);
-      }
-    } else {
+    try {
+      await sendAlert(message);
+      statusOut.alertSent = true;
+      console.log('[watchdog] Alert sent via Telegram.');
+    } catch (err) {
+      console.error(`[watchdog] Telegram send failed: ${err.message}`);
+    }
+    if (false) {  // keep old block unreachable for reference
       console.warn('[watchdog] No Telegram token available — skipping alert.');
     }
   } else {

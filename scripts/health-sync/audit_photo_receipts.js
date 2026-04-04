@@ -26,28 +26,10 @@ const INBOUND_DIR    = '/Users/javier/.openclaw/media/inbound/';
 const STATE_FILE     = '/Users/javier/.openclaw/workspace/.photo_pipeline_state.json';
 const HEALTH_LOG     = '/Users/javier/.openclaw/workspace/health_log.md';
 const PENDING_FILE   = '/Users/javier/.openclaw/workspace/data/pending_photo_entries.json';
-const OPENCLAW_CFG   = '/Users/javier/.openclaw/openclaw.json';
-const ALERT_TO       = '8335333215';
 const LOOKBACK_HOURS = 12;
-
 const DRY_RUN = process.argv.includes('--dry-run');
 
-function getBotToken() {
-  try { return JSON.parse(fs.readFileSync(OPENCLAW_CFG, 'utf8'))?.channels?.telegram?.botToken || null; }
-  catch { return null; }
-}
-
-function sendTelegram(botToken, chatId, text) {
-  const body = new URLSearchParams({ chat_id: String(chatId), text }).toString();
-  const opts = { method: 'POST', hostname: 'api.telegram.org',
-    path: `/bot${botToken}/sendMessage`,
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'Content-Length': Buffer.byteLength(body) } };
-  return new Promise((resolve, reject) => {
-    const req = https.request(opts, res => {
-      let d = ''; res.on('data', c => d += c); res.on('end', () => resolve(JSON.parse(d || '{}')));
-    });
-    req.on('error', reject); req.write(body); req.end();
-  });
+const { sendAlert } = require('./telegram_alert');
 }
 
 function getFilePrefix(filename) {
@@ -137,10 +119,8 @@ async function main() {
   console.log('\n' + msg);
 
   if (!DRY_RUN) {
-    const token = getBotToken();
-    if (!token) { console.error('No bot token'); process.exit(1); }
-    const res = await sendTelegram(token, ALERT_TO, msg);
-    if (res.ok) console.log('Alert sent to', ALERT_TO);
+    const res = await sendAlert(msg);
+    if (res.ok) console.log('Alert sent to Javi');
     else console.error('Send failed:', JSON.stringify(res));
   } else {
     console.log('[DRY RUN — no message sent]');
