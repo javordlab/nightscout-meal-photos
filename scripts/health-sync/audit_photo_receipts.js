@@ -30,7 +30,6 @@ const LOOKBACK_HOURS = 12;
 const DRY_RUN = process.argv.includes('--dry-run');
 
 const { sendAlert } = require('./telegram_alert');
-}
 
 function getFilePrefix(filename) {
   return filename.match(/^(file_\d+)/)?.[1] || null;
@@ -77,25 +76,31 @@ async function main() {
     }
   } catch {}
 
-  // 5. Find gaps: file in inbound but pipeline never processed it
-  const notProcessed = allInbound.filter(f => !processed.has(f.prefix));
-
-  // 6. Find gaps: processed but no photo URL in health_log AND not in pending with uploaded URL
-  const processedNoLog = allInbound.filter(f => {
-    if (!processed.has(f.prefix)) return false;
-    const pending = pendingByPrefix.get(f.prefix);
-    if (pending?.photoUrl && loggedPhotoUrls.has(pending.photoUrl)) return false; // logged ok
-    if (pending?.photoUrl) return true; // uploaded but not in log
-    // No pending entry at all — check if any freeimage URL exists for this file via log scan
-    // We can't directly link prefix to URL without the pending record, so skip (assume ok)
+  // 5. Find gaps: file in inbound with no photo URL in health_log within ±30 min of file timestamp.
+  //    NOTE: pipeline_state.json is no longer updated (HealthGuard handles uploads directly).
+  //    The only reliable source of truth is health_log.md itself.
+  const LOG_LINES = logContent.split('\n');
+  function hasPhotoNearTimestamp(fileTimestampMs) {
+    const windowMs = 30 * 60 * 1000; // ±30 min
+    for (const line of LOG_LINES) {
+      if (!line.includes('📷')) continue;
+      // Extract date+time from log line: | 2026-04-03 | 13:10 -07:00 |
+      const m = line.match(/\|\s*(\d{4}-\d{2}-\d{2})\s*\|\s*(\d{2}:\d{2}[^|]*)\|/);
+      if (!m) continue;
+      try {
+        // Format: '13:10 -07:00' → '13:10:00-07:00'
+        const timePart = m[2].trim().replace(/(\d{2}:\d{2}) (-\d{2}:\d{2})/, '$1:00$2');
+        const logMs = new Date(`${m[1]}T${timePart}`).getTime();
+        if (!isNaN(logMs) && Math.abs(logMs - fileTimestampMs) <= windowMs) return true;
+      } catch {}
+    }
     return false;
-  });
+  }
 
-  const gaps = [...notProcessed, ...processedNoLog];
+  const gaps = allInbound.filter(f => !hasPhotoNearTimestamp(f.mtime));
 
   console.log(`Inbound files in last ${LOOKBACK_HOURS}h: ${allInbound.length}`);
-  console.log(`Not in pipeline state: ${notProcessed.length}`);
-  console.log(`Processed but missing from health_log: ${processedNoLog.length}`);
+  console.log(`Missing photo URL in health_log (±30min): ${gaps.length}`);
 
   if (gaps.length === 0) {
     console.log('All photos accounted for. ✅');
