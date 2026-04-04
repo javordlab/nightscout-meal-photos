@@ -11,6 +11,17 @@
     "peak": null
   },
   {
+    "id": "33885ec7-0668-8192-a386-ee056f121c68",
+    "title": "Breakfast: Turkey slices with avocado and mustard vinaigrette drizzle (BG: 117 mg/dL Flat) (Pred: 155-165 mg/dL @ 12:08 PM) (Protein: 27g | Carbs: ~6g | Cals: ~230)",
+    "type": "Breakfast",
+    "date": "2026-04-04T10:41:00.000-07:00",
+    "photo": "https://iili.io/BIzWYqx.jpg",
+    "carbs": 6,
+    "cals": 230,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "33885ec7-0668-814e-9377-dd668d806a4e",
     "title": "Dinner: Sopa de cocido with crusty ciabatta bread and braised roasted pork pieces (BG: 115 mg/dL Flat) (Protein: 21g) (Pred: 158-178 mg/dL @ 8:37 PM)",
     "type": "Dinner",
