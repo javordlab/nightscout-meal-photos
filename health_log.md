@@ -1,5 +1,6 @@
 # Health Log
 
+| 2026-04-03 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 113 mg/dL Flat) | null | null |
 | 2026-04-03 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 160 mg/dL Flat) | null | null |
 | 2026-04-03 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 160 mg/dL Flat) | null | null |
 | 2026-04-03 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 160 mg/dL Flat) | null | null |
@@ -471,3 +472,4 @@
 | 2026-04-03 | 12:32 -07:00 | Maria Dennis | Activity | - | 90 minutes gardening — hedge pruning and cleaning | null | null |
 | 2026-04-03 | 13:10 -07:00 | Maria Dennis | Food | Lunch | Lunch: Creamed vegetable soup with broccoli and cashews (~1 oz) (BG: 149 mg/dL Flat) (Pred: 162-182 mg/dL @ 3:03 PM) (Protein: 13g | Carbs: ~27g | Cals: ~337) [📷](https://iili.io/Boy8XWJ.jpg) | 27 | 337 |
 | 2026-04-03 | 13:22 -07:00 | Maria Dennis | Food | Lunch | Lunch: Protein ball (prunes, peanut butter, hemp hearts, flaxseed, dark chocolate coating, oatmeal) [Cumulative Lunch: ~38g carbs total] (BG: 146 mg/dL Flat) (Pred: 173-193 mg/dL @ 3:10 PM) (Protein: 5g | Carbs: ~11g | Cals: ~130) [📷](https://iili.io/BxHoQwv.jpg) | 11 | 130 |
+| 2026-04-03 | 19:21 -07:00 | Maria Dennis | Food | Dinner | Dinner: Pumpkin/butternut squash soup with crusty ciabatta bread and braised roasted pork pieces (BG: 115 mg/dL Flat) (Pred: 163-183 mg/dL @ 8:37 PM) (Protein: 21g | Carbs: ~50g | Cals: ~440) [📷](https://iili.io/Bx0D54S.jpg) | 50 | 440 |
