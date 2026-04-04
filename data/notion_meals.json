@@ -1,15 +1,15 @@
 [
   {
     "id": "33885ec7-0668-814e-9377-dd668d806a4e",
-    "title": "Dinner: Pumpkin/butternut squash soup with crusty ciabatta bread and braised roasted pork pieces",
+    "title": "Dinner: Sopa de cocido with crusty ciabatta bread and braised roasted pork pieces",
     "type": "Dinner",
     "date": "2026-04-03T19:21:00-07:00",
     "photo": "https://iili.io/Bx0D54S.jpg",
-    "carbs": 50,
-    "cals": 440,
+    "carbs": 40,
+    "cals": 390,
     "delta": null,
     "peak": null,
-    "entry_key": "sha256:c4eb3e1f8efd6a0f47534641032620c3e67affe6e5fb6a4c229695ad7d851079",
+    "entry_key": "sha256:357ff60cf1fddf02d8da16092eacfd6d34152dbebda9f41ee8ce7e412628ee44",
     "protein": 21,
     "preMeal": null
   },
