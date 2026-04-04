@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-04-04T23:00:00.444Z",
-  "entryCount": 39,
-  "errors": [],
+  "generatedAt": "2026-04-04T23:30:01.372Z",
+  "entryCount": 40,
+  "errors": [
+    {
+      "entryKey": "sha256:e2d90088d150dee97f7890655dc3ed63e4aa572407c0912e44f5ee6888866099",
+      "timestamp": "2026-04-04T16:26:00-07:00",
+      "title": "Snack: 1 cup papaya",
+      "reason": "missing_carbs_required"
+    }
+  ],
   "warnings": [
     {
       "entryKey": "sha256:d75d8ff3da8405e40ab41cec6637d01f6101b5b6a6bd52bef9ef45e20c5b58ac",
@@ -54,6 +61,18 @@
       "reason": "photo_missing_but_found_in_internal_folder",
       "file": "/Users/javier/.openclaw/media/inbound/file_260---fc7a505b-7248-4434-b14f-d736584ce8df.jpg",
       "diffMinutes": 33
+    },
+    {
+      "entryKey": "sha256:e2d90088d150dee97f7890655dc3ed63e4aa572407c0912e44f5ee6888866099",
+      "timestamp": "2026-04-04T16:26:00-07:00",
+      "title": "Snack: 1 cup papaya",
+      "reason": "missing_calories_estimate"
+    },
+    {
+      "entryKey": "sha256:e2d90088d150dee97f7890655dc3ed63e4aa572407c0912e44f5ee6888866099",
+      "timestamp": "2026-04-04T16:26:00-07:00",
+      "title": "Snack: 1 cup papaya",
+      "reason": "missing_photo_urls"
     }
   ]
 }

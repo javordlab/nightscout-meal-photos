@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-04T23:00:00.395Z",
+  "generatedAt": "2026-04-04T23:30:01.325Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
-  "entryCount": 456,
+  "entryCount": 457,
   "entries": [
     {
       "source": {
@@ -19064,6 +19064,47 @@
       },
       "entryKey": "sha256:c5da5f679039aa86192a51102f88144a3366b27cb013996b4f66fa37abd67227",
       "contentHash": "sha256:e5beb2b15d5dd73a95325163b48933d27fba96dc87fac8ff3ec23d4bf80e43bc"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 485,
+        "rawRow": "| 2026-04-04 | 16:26 -07:00 | Maria Dennis | Food | Snack | Snack: 1 cup papaya (BG: 112 mg/dL Flat) (Pred: 132-142 mg/dL @ 6:32 PM) (Protein: 1g | Carbs: ~16g | Cals: ~62) | null | null |"
+      },
+      "timestamp": "2026-04-04T16:26:00-07:00",
+      "date": "2026-04-04",
+      "time": "16:26 -07:00",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "mealType": "Snack",
+      "title": "Snack: 1 cup papaya",
+      "notes": "BG: 112 mg/dL Flat; Protein: 1g; Pred: 132-142 mg/dL @ 6:32 PM",
+      "photoUrls": [],
+      "carbsEst": null,
+      "caloriesEst": null,
+      "proteinEst": 1,
+      "predicted": {
+        "peakBgText": "132-142 mg/dL",
+        "peakTimeText": "6:32 PM"
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:e2d90088d150dee97f7890655dc3ed63e4aa572407c0912e44f5ee6888866099",
+      "contentHash": "sha256:e6fc01ec9088a4591258634a9b32752d26ea7ae3c2a4f21b0efe4143a65d4951"
     }
   ]
 }
