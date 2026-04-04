@@ -161,7 +161,8 @@ Monitoring:
 ### System Crontab (pure scripts, no LLM, run even if OpenClaw is down)
 | Schedule | Script | Notes |
 |----------|--------|-------|
-| `5,35 * * * *` | `radial_dispatcher.js` | Master sync — staggered from MySQL |
+| `0,30 * * * *` | `health_sync_pipeline.js` | Normalize + validate + unified sync |
+| `5,35 * * * *` | `auto_track_meds.js` + `calculate_notion_projections.js` + `radial_dispatcher.js` | Meds auto-log + projections + master sync |
 | `20,50 * * * *` | `mysql_glucose_sync.js` | CGM → MySQL, 48h age cutoff |
 | `0 * * * *` | `backfill_notion_impact.js` | Actual outcomes backfill |
 | `*/5 * * * *` | `glucose_low_alert.js` | Low BG (<70) alert |
@@ -169,6 +170,8 @@ Monitoring:
 | `0 */4 * * *` | `sync_notion_to_mysql.js` | Notion → MySQL async |
 | `30 9 * * *` | `send_daily_health_report_telegram.js` | Daily report |
 | `32 9 * * *` | `report_watchdog.js` | Report fallback if 9:30 fails |
+| `37 9 * * *` | `send_daily_charts_telegram.js --no-regenerate` | Chart fallback |
+| `*/15 * * * *` | `cron_health_watchdog.js` | Infrastructure health check |
 
 > **Critical:** All scripts must use `/opt/homebrew/bin/node` explicitly. System cron PATH is `/usr/bin:/bin` — bare `node` fails silently. This was the root cause of backups.json staleness alerts (fixed 2026-04-03).
 
