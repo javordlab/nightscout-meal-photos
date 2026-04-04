@@ -1,5 +1,5 @@
 # System State Snapshot
-Generated: 2026-04-03 20:55:15 PDT
+Generated: 2026-04-03 22:49:20 PDT
 
 ## System Crontab (crontab -l)
 ```
@@ -14,19 +14,16 @@ Generated: 2026-04-03 20:55:15 PDT
 32 9 * * * cd /Users/javier/.openclaw/workspace && REPORT_FALLBACK_CMD="/opt/homebrew/bin/node scripts/health-sync/send_fallback_report.js" /opt/homebrew/bin/node scripts/health-sync/report_watchdog.js >> data/cron_health.log 2>&1
 37 9 * * * cd /Users/javier/.openclaw/workspace && /opt/homebrew/bin/node scripts/health-sync/send_daily_charts_telegram.js --no-regenerate >> data/cron_health.log 2>&1
 */15 * * * * cd /Users/javier/.openclaw/workspace && /opt/homebrew/bin/node scripts/health-sync/cron_health_watchdog.js >> data/cron_watchdog.log 2>&1
+0 8 * * * cd /Users/javier/.openclaw/workspace && /opt/homebrew/bin/node scripts/health-sync/check_provider_auth.js >> data/cron_health.log 2>&1
+15 9 * * * cd /Users/javier/.openclaw/workspace && /bin/bash scripts/health-sync/daily_log_review.sh >> data/cron_health.log 2>&1
+45 9 * * * cd /Users/javier/.openclaw/workspace && /opt/homebrew/bin/node scripts/health-sync/audit_health_sync.js --lookback=2 >> data/cron_health.log 2>&1
+0 23 * * 0 /bin/bash scripts/health-sync/weekly_memory_summary.sh >> data/cron_health.log 2>&1
 ```
 
 ## OpenClaw Cron Jobs
-ID                                   Name                     Schedule                         Next       Last       Status    Target    Agent ID   Model               
-cron-health-watchdog                 Cron Health Watchdog     every 30m                        in 25m     5m ago     ok        isolated  health-... anthropic/claude-...
-d8810b23-d4f7-4dc2-8ee8-7cf68a224fee daily-log-review         cron 15 9 * * * @ America/Los... in 12h     12h ago    ok        isolated  main       anthropic/claude-...
-f97ed139-e463-4c4d-a0df-3008be17af43 health-sync-daily-audit  cron 45 9 * * * @ America/Los... in 13h     11h ago    ok        isolated  health-... anthropic/claude-...
-weekly-memory-summary                Weekly Memory Summary    cron 0 23 * * 0 @ America/Los... in 2d      5d ago     error     isolated  health-... openai-codex/gpt-...
+No cron jobs.
 ## Recent Cron Activity (last 20 lines)
 ```
-Fetching batch of 100...
-Full batch received (100). Checking for older records...
-Fetching batch of 100...
 Full batch received (100). Checking for older records...
 Fetching batch of 100...
 Full batch received (100). Checking for older records...
@@ -36,18 +33,21 @@ Sync Process Finished. Total records processed: 600
   -> Updating Backup Dashboard...
 Transfer starting: 50 files
 data/backups.json
+data/notion_meals.json
 
-sent 569994 bytes  received 42 bytes  56439207 bytes/sec
-total size is 5692506  speedup is 9.99
-[gh-pages 97a72f8] deploy: auto-sync site files 2026-04-04T03:50:02.663Z
- 1 file changed, 10 insertions(+), 6 deletions(-)
-To https://github.com/javordlab/nightscout-meal-photos.git
-   096be38..97a72f8  gh-pages -> gh-pages
-gh-pages: deployed at 2026-04-04T03:50:02.663Z
+sent 635590 bytes  received 64 bytes  104205573 bytes/sec
+total size is 5692435  speedup is 8.96
+[gh-pages 6100a54] deploy: auto-sync site files 2026-04-04T05:44:25.854Z
+ 1 file changed, 18 insertions(+), 14 deletions(-)
+gh-pages: deployed at 2026-04-04T05:44:25.854Z
+[2026-04-03 22:47:27] [weekly-memory] Starting weekly memory summary
+[2026-04-03 22:47:27] [weekly-memory] Found 3 daily memory files for 2026-W14
+[2026-04-03 22:48:40] [weekly-memory] Wrote weekly summary to /Users/javier/.openclaw/workspace/memory/weekly/2026-W14.md (135 lines)
+[2026-04-03 22:48:41] [weekly-memory] Weekly memory summary complete
 ```
 
 ## Backup Dashboard Freshness
-backups.json last updated: 2026-04-04T03:50:02.252Z (5 min ago)
+backups.json last updated: 2026-04-04T05:44:25.668Z (5 min ago)
 Status: ✅ FRESH
 
 ## Sync State Summary

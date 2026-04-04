@@ -111,7 +111,8 @@ Monitoring:
 |--------|---------|
 | `scripts/health-sync/glucose_low_alert.js` | Alerts Javi if BG < 70 mg/dL. Runs every 5 min. |
 | `scripts/health-sync/cron_health_watchdog.js` | Checks cron job freshness, alerts if stale. Every 30 min. |
-| `scripts/health-sync/audit_health_sync.js` | Detects entries missing from Notion or Nightscout |
+| `scripts/health-sync/audit_health_sync.js` | Detects entries missing from Notion or Nightscout. System cron 9:45 AM. |
+| `scripts/health-sync/daily_log_review.sh` | Reviews gateway logs via `claude -p` OAuth (Haiku). System cron 9:15 AM. |
 | `scripts/health-sync/report_watchdog.js` | Verifies daily report was sent; triggers fallback if not |
 
 ### Daily Report
@@ -158,7 +159,7 @@ Monitoring:
 
 ## Cron Jobs
 
-### System Crontab (pure scripts, no LLM, run even if OpenClaw is down)
+### System Crontab (run even if OpenClaw is down)
 | Schedule | Script | Notes |
 |----------|--------|-------|
 | `0,30 * * * *` | `health_sync_pipeline.js` | Normalize + validate + unified sync |
@@ -168,20 +169,20 @@ Monitoring:
 | `*/5 * * * *` | `glucose_low_alert.js` | Low BG (<70) alert |
 | `20 4 * * *` | `mysql_backup.sh` | Daily MySQL backup |
 | `0 */4 * * *` | `sync_notion_to_mysql.js` | Notion → MySQL async |
+| `15 9 * * *` | `daily_log_review.sh` | Gateway log review via `claude -p` OAuth (Haiku). Migrated from OpenClaw 2026-04-03. |
 | `30 9 * * *` | `send_daily_health_report_telegram.js` | Daily report |
 | `32 9 * * *` | `report_watchdog.js` | Report fallback if 9:30 fails |
 | `37 9 * * *` | `send_daily_charts_telegram.js --no-regenerate` | Chart fallback |
+| `45 9 * * *` | `audit_health_sync.js --lookback=2` | Daily sync audit. Migrated from OpenClaw 2026-04-03. |
 | `*/15 * * * *` | `cron_health_watchdog.js` | Infrastructure health check |
+| `0 23 * * 0` | `weekly_memory_summary.sh` | Weekly memory rollup via `claude -p` OAuth (Sonnet). Migrated from OpenClaw 2026-04-03. |
 
-> **Critical:** All scripts must use `/opt/homebrew/bin/node` explicitly. System cron PATH is `/usr/bin:/bin` — bare `node` fails silently. This was the root cause of backups.json staleness alerts (fixed 2026-04-03).
+> **Critical:** All scripts must use `/opt/homebrew/bin/node` explicitly (or `/Users/javier/.local/bin/claude` for OAuth calls). System cron PATH is `/usr/bin:/bin` — bare `node`/`claude` fails silently.
 
-### OpenClaw Cron Jobs (LLM-assisted, isolated sessions)
-| Job ID | Schedule | Model | Purpose |
-|--------|----------|-------|---------|
-| `cron-health-watchdog` | every 30 min | Haiku | Runs `cron_health_watchdog.js`, alerts if stale |
-| `daily-log-review` | 9:15 AM | Haiku | Reviews gateway logs for actionable issues |
-| `health-sync-daily-audit` | 9:45 AM | Haiku | Audits Notion/NS for missing entries |
-| `weekly-memory-summary` | Sun 11 PM | Codex | Synthesizes 7 daily memory files into weekly rollup |
+### OpenClaw Cron Jobs
+All 4 LLM-assisted jobs migrated to system crontab (2026-04-03). Zero OpenClaw cron dependency remaining.
+
+> **Migrated:** `cron-health-watchdog` (pure script), `daily-log-review` (`claude -p` Haiku OAuth), `health-sync-daily-audit` (pure script), `weekly-memory-summary` (`claude -p` Sonnet OAuth). All OpenClaw jobs disabled.
 
 ---
 
@@ -197,7 +198,7 @@ Monitoring:
 | Daily health report narration | **Sonnet 4.6** | Clinical interpretation required |
 | Conflict resolution (Notion/NS mismatch) | **Sonnet 4.6** | Data integrity |
 | Cron monitoring, log review, acks | **Haiku 4.5** | Cheap, fast, no health data writes |
-| Weekly memory summary | **openai-codex/gpt-5.3-codex** | Free tier, good at structured docs |
+| Weekly memory summary | **Sonnet 4.6** via `claude -p` OAuth | Replaced Codex (was timing out). Runs locally in system cron. |
 | Interactive dev sessions (like this one) | **Claude Code subscription** | Free — doesn't hit API tokens |
 
 ---
