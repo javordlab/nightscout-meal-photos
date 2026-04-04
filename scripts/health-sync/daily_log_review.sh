@@ -13,6 +13,8 @@ NODE="/opt/homebrew/bin/node"
 GATEWAY_LOG="/Users/javier/.openclaw/logs/gateway.log"
 GATEWAY_ERR="/Users/javier/.openclaw/logs/gateway.err.log"
 LOG_FILE="$WORKSPACE/data/cron_health.log"
+OLLAMA_URL="http://127.0.0.1:11434"
+OLLAMA_MODEL="deepseek-v3.2:cloud"
 
 log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] [daily-log-review] $*" >> "$LOG_FILE"; }
 
@@ -47,16 +49,27 @@ if [ "$LINE_COUNT" -lt 5 ]; then
   exit 0
 fi
 
-# Call Claude via OAuth (subscription, not API key)
-RESPONSE=$("$CLAUDE" -p --model haiku \
-  "You are reviewing OpenClaw gateway logs for the last 24 hours.
+PROMPT="You are reviewing OpenClaw gateway logs for the last 24 hours.
 Report ONLY actionable items: service down, repeated auth failures, crash loops, security issues.
 Be concise. If nothing actionable, respond with exactly: NO_REPLY
 
 Here are the logs:
-$(cat "$COMBINED")" 2>/dev/null) || true
+$(cat "$COMBINED")"
 
-log "Claude response: $(echo "$RESPONSE" | head -1)"
+# Primary: Claude via OAuth
+RESPONSE=$("$CLAUDE" -p --model haiku "$PROMPT" 2>/dev/null) || true
+
+# Fallback: Ollama cloud (DeepSeek V3.2) if Claude failed or returned empty
+if [ -z "$RESPONSE" ] || echo "$RESPONSE" | grep -qi "not logged in\|error\|unauthorized"; then
+  log "Claude unavailable, falling back to Ollama cloud ($OLLAMA_MODEL)"
+  RESPONSE=$(curl -s --max-time 120 "$OLLAMA_URL/api/chat" \
+    -d "$(jq -n --arg model "$OLLAMA_MODEL" --arg content "$PROMPT" \
+      '{model: $model, messages: [{role: "user", content: $content}], stream: false}')" \
+    | jq -r '.message.content // empty' 2>/dev/null) || true
+  [ -n "$RESPONSE" ] && log "Ollama fallback succeeded" || log "Ollama fallback also failed"
+fi
+
+log "LLM response: $(echo "$RESPONSE" | head -1)"
 
 # If actionable, send Telegram alert
 if [ -n "$RESPONSE" ] && [ "$RESPONSE" != "NO_REPLY" ] && ! echo "$RESPONSE" | grep -qi "^no.reply"; then

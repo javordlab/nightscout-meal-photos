@@ -13,6 +13,8 @@ NODE="/opt/homebrew/bin/node"
 MEMORY_DIR="$WORKSPACE/memory"
 WEEKLY_DIR="$MEMORY_DIR/weekly"
 LOG_FILE="$WORKSPACE/data/cron_health.log"
+OLLAMA_URL="http://127.0.0.1:11434"
+OLLAMA_MODEL="deepseek-v3.2:cloud"
 
 log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] [weekly-memory] $*" >> "$LOG_FILE"; }
 
@@ -54,8 +56,7 @@ NEWEST=$(date '+%b %d')
 OUTPUT_FILE="$WEEKLY_DIR/${WEEK_LABEL}.md"
 mkdir -p "$WEEKLY_DIR"
 
-RESPONSE=$("$CLAUDE" -p --model sonnet \
-  "You are synthesizing daily memory files for the HealthGuard system into a weekly rollup.
+PROMPT="You are synthesizing daily memory files for the HealthGuard system into a weekly rollup.
 Write a structured markdown document with these exact sections:
 
 # Weekly Memory Summary — ${WEEK_LABEL} (${OLDEST}–${NEWEST})
@@ -85,10 +86,20 @@ Be concise but thorough. Extract facts from the daily files — don't invent. If
 
 Here are the daily memory files:
 
-$(cat "$COMBINED")" 2>/dev/null) || {
-  log "ERROR: claude -p failed"
-  exit 1
-}
+$(cat "$COMBINED")"
+
+# Primary: Claude via OAuth
+RESPONSE=$("$CLAUDE" -p --model sonnet "$PROMPT" 2>/dev/null) || true
+
+# Fallback: Ollama cloud (DeepSeek V3.2) if Claude failed or returned empty
+if [ -z "$RESPONSE" ] || echo "$RESPONSE" | grep -qi "not logged in\|error\|unauthorized"; then
+  log "Claude unavailable, falling back to Ollama cloud ($OLLAMA_MODEL)"
+  RESPONSE=$(curl -s --max-time 300 "$OLLAMA_URL/api/chat" \
+    -d "$(jq -n --arg model "$OLLAMA_MODEL" --arg content "$PROMPT" \
+      '{model: $model, messages: [{role: "user", content: $content}], stream: false}')" \
+    | jq -r '.message.content // empty' 2>/dev/null) || true
+  [ -n "$RESPONSE" ] && log "Ollama fallback succeeded" || { log "ERROR: both Claude and Ollama failed"; exit 1; }
+fi
 
 # Write the output file
 echo "$RESPONSE" > "$OUTPUT_FILE"
