@@ -27,7 +27,7 @@
 ## Operational Standards
 - **SAFETY:** Use `trash` over `rm`. Ask before exfiltrating data (emails, public posts).
 - **GROUPS:** In group chats, contribute only when directly mentioned or adding clear value. Use emojis for acknowledgement.
-- **QUOTAS:** Default to `ollama/kimi-k2.5:cloud` for routine/background work. The following tasks MUST use `anthropic/claude-sonnet-4-6` regardless of classification — no exceptions, no fallback to kimi or qwen:
+- **QUOTAS:** Default to `ollama/gemini-3-flash-preview:cloud` for routine/background work. Use `anthropic/claude-haiku-4-5` for lightweight Anthropic tasks (monitoring, acks, simple routing). The following tasks MUST use `anthropic/claude-sonnet-4-6` regardless of classification — no exceptions, no fallback to cheaper models:
   - Any write to `health_log.md`, Nightscout, or Notion
   - Entry key computation and deduplication decisions (sha256 normalization errors silently corrupt the SSoT)
   - Quality gate evaluation (wrong pass lets garbage into health_log.md)
@@ -36,7 +36,10 @@
   - Conflict resolution when reconcile or consistency_check finds a mismatch between systems
   - Peak BG projection calculations (feeds bolus timing guidance)
   - HealthGuard high-value analysis and daily reports
-  - Image interpretation: `anthropic/claude-sonnet-4-6` (fallback `anthropic/claude-sonnet-4-5` only — never kimi or qwen for images)
+  - Image interpretation: `anthropic/claude-sonnet-4-6` (fallback `anthropic/claude-sonnet-4-5` only — never gemini-via-ollama or codex for images)
+- **HAIKU tasks** (use `anthropic/claude-haiku-4-5`): cron health watchdog, heartbeat checks, daily log review, simple Telegram routing/acks that do NOT involve health data writes
+- **FREE tier tasks** (use `ollama/gemini-3-flash-preview:cloud`): weekly memory summaries, non-critical background summarization, informational agentTurn jobs with no health data writes
+- **Dev/engineering tasks** (use `openai-codex/gpt-5.3-codex`): code generation, script writing, debugging — prefer Claude Code CLI (subscription) for interactive sessions to avoid API costs entirely
 - **FOOD ENTRY FORMAT (REQUIRED):** Use exact pattern `[Meal Type]: [Description] (BG: [Value] [Trend]) (Pred: [Range] mg/dL @ [Time]) (Protein: [P]g | Carbs: ~[C]g | Cals: ~[CAL])`. The meal-type prefix (`Breakfast:`, `Lunch:`, `Snack:`, `Dinner:`, `Dessert:`) must appear in entry text.
 - **PEAK BG PREDICTION FORMULA v3 (CALIBRATED 2026-04-02, n=57):** Four-layer model. Apply all layers:
   - **Layer 1 — Carb factor (preBG-anchored, Metformin-adjusted):**
