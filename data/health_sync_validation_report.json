@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-04T02:30:00.712Z",
-  "entryCount": 45,
+  "generatedAt": "2026-04-04T03:30:00.818Z",
+  "entryCount": 47,
   "errors": [],
   "warnings": [
     {
@@ -52,6 +52,22 @@
       "reason": "photo_missing_but_found_in_internal_folder",
       "file": "/Users/javier/.openclaw/media/inbound/file_257---f0908e25-d8d8-4e66-b5b2-4d39c227995c.jpg",
       "diffMinutes": 1
+    },
+    {
+      "entryKey": "sha256:6d71ff79e011e769f61ff0dd78d7bea1686bbc7b9279acfd5169a7f0b47e0115",
+      "timestamp": "2026-04-03T19:40:00-07:00",
+      "title": "Dinner: Deviled eggs (2 halves), papaya, grapes, and 2 water crackers [Cumulative Dinner: ~69g carbs total]",
+      "reason": "photo_missing_but_found_in_internal_folder",
+      "file": "/Users/javier/.openclaw/media/inbound/file_260---fc7a505b-7248-4434-b14f-d736584ce8df.jpg",
+      "diffMinutes": 18
+    },
+    {
+      "entryKey": "sha256:c0bfc6fef4dd7094a128c114eb87c95c9e51921b947b66b80d292527b6b0c1ee",
+      "timestamp": "2026-04-03T19:55:00-07:00",
+      "title": "Dinner: Protein ball (prunes, peanut butter, hemp hearts, flaxseed, dark chocolate, oatmeal) [Cumulative Dinner: ~80g carbs total]",
+      "reason": "photo_missing_but_found_in_internal_folder",
+      "file": "/Users/javier/.openclaw/media/inbound/file_260---fc7a505b-7248-4434-b14f-d736584ce8df.jpg",
+      "diffMinutes": 33
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-04T02:30:00.669Z",
+  "generatedAt": "2026-04-04T03:30:00.782Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
-  "entryCount": 447,
+  "entryCount": 449,
   "entries": [
     {
       "source": {
@@ -18651,7 +18651,7 @@
       "source": {
         "file": "health_log.md",
         "line": 475,
-        "rawRow": "| 2026-04-03 | 19:21 -07:00 | Maria Dennis | Food | Dinner | Dinner: Pumpkin/butternut squash soup with crusty ciabatta bread and braised roasted pork pieces (BG: 115 mg/dL Flat) (Pred: 163-183 mg/dL @ 8:37 PM) (Protein: 21g | Carbs: ~50g | Cals: ~440) [📷](https://iili.io/Bx0D54S.jpg) | 50 | 440 |"
+        "rawRow": "| 2026-04-03 | 19:21 -07:00 | Maria Dennis | Food | Dinner | Dinner: Sopa de cocido with crusty ciabatta bread and braised roasted pork pieces (BG: 115 mg/dL Flat) (Pred: 158-178 mg/dL @ 8:37 PM) (Protein: 21g | Carbs: ~40g | Cals: ~390) [📷](https://iili.io/Bx0D54S.jpg) | 40 | 390 |"
       },
       "timestamp": "2026-04-03T19:21:00-07:00",
       "date": "2026-04-03",
@@ -18659,16 +18659,16 @@
       "user": "Maria Dennis",
       "category": "Food",
       "mealType": "Dinner",
-      "title": "Dinner: Pumpkin/butternut squash soup with crusty ciabatta bread and braised roasted pork pieces",
-      "notes": "BG: 115 mg/dL Flat; Protein: 21g; Pred: 163-183 mg/dL @ 8:37 PM",
+      "title": "Dinner: Sopa de cocido with crusty ciabatta bread and braised roasted pork pieces",
+      "notes": "BG: 115 mg/dL Flat; Protein: 21g; Pred: 158-178 mg/dL @ 8:37 PM",
       "photoUrls": [
         "https://iili.io/Bx0D54S.jpg"
       ],
-      "carbsEst": 50,
-      "caloriesEst": 440,
+      "carbsEst": 40,
+      "caloriesEst": 390,
       "proteinEst": 21,
       "predicted": {
-        "peakBgText": "163-183 mg/dL",
+        "peakBgText": "158-178 mg/dL",
         "peakTimeText": "8:37 PM"
       },
       "actual": {
@@ -18687,8 +18687,90 @@
         "gallery": "pending",
         "outcomesBackfilled": false
       },
-      "entryKey": "sha256:c4eb3e1f8efd6a0f47534641032620c3e67affe6e5fb6a4c229695ad7d851079",
-      "contentHash": "sha256:240acabfd5bca78f3a6b6d8c9735021275ccd1a0cdc4b5a9087ab7edd7f6231a"
+      "entryKey": "sha256:357ff60cf1fddf02d8da16092eacfd6d34152dbebda9f41ee8ce7e412628ee44",
+      "contentHash": "sha256:8b432280347d4843f25b4feeb25cca285964e22c1929d6dfb55aa31b5453ca67"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 476,
+        "rawRow": "| 2026-04-03 | 19:40 -07:00 | Maria Dennis | Food | Dinner | Dinner: Deviled eggs (2 halves), papaya, grapes, and 2 water crackers [Cumulative Dinner: ~69g carbs total] (BG: 127 mg/dL Flat) (Pred: 158-178 mg/dL @ 8:37 PM) (Protein: 8g | Carbs: ~29g | Cals: ~205) | 29 | 205 |"
+      },
+      "timestamp": "2026-04-03T19:40:00-07:00",
+      "date": "2026-04-03",
+      "time": "19:40 -07:00",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "mealType": "Dinner",
+      "title": "Dinner: Deviled eggs (2 halves), papaya, grapes, and 2 water crackers [Cumulative Dinner: ~69g carbs total]",
+      "notes": "BG: 127 mg/dL Flat; Protein: 8g; Pred: 158-178 mg/dL @ 8:37 PM",
+      "photoUrls": [],
+      "carbsEst": 29,
+      "caloriesEst": 205,
+      "proteinEst": 8,
+      "predicted": {
+        "peakBgText": "158-178 mg/dL",
+        "peakTimeText": "8:37 PM"
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:6d71ff79e011e769f61ff0dd78d7bea1686bbc7b9279acfd5169a7f0b47e0115",
+      "contentHash": "sha256:f26680f9435c81e5c0f83b39de58893efd2b99c43d1b8a113f81f0c5bba9109b"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 477,
+        "rawRow": "| 2026-04-03 | 19:55 -07:00 | Maria Dennis | Food | Dinner | Dinner: Protein ball (prunes, peanut butter, hemp hearts, flaxseed, dark chocolate, oatmeal) [Cumulative Dinner: ~80g carbs total] (BG: 134 mg/dL Flat) (Pred: 167-187 mg/dL @ 8:37 PM) (Protein: 5g | Carbs: ~11g | Cals: ~130) | 11 | 130 |"
+      },
+      "timestamp": "2026-04-03T19:55:00-07:00",
+      "date": "2026-04-03",
+      "time": "19:55 -07:00",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "mealType": "Dinner",
+      "title": "Dinner: Protein ball (prunes, peanut butter, hemp hearts, flaxseed, dark chocolate, oatmeal) [Cumulative Dinner: ~80g carbs total]",
+      "notes": "BG: 134 mg/dL Flat; Protein: 5g; Pred: 167-187 mg/dL @ 8:37 PM",
+      "photoUrls": [],
+      "carbsEst": 11,
+      "caloriesEst": 130,
+      "proteinEst": 5,
+      "predicted": {
+        "peakBgText": "167-187 mg/dL",
+        "peakTimeText": "8:37 PM"
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:c0bfc6fef4dd7094a128c114eb87c95c9e51921b947b66b80d292527b6b0c1ee",
+      "contentHash": "sha256:9b0a93fb2c35e73bce43eb0ca3b17e6d4f1715356eb139539c1bdb6b9d5a3f8e"
     }
   ]
 }
