@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-04T19:30:00.831Z",
+  "generatedAt": "2026-04-04T20:00:00.317Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
-  "entryCount": 454,
+  "entryCount": 455,
   "entries": [
     {
       "source": {
@@ -18978,6 +18978,47 @@
       },
       "entryKey": "sha256:e9886615bdc62ff486efac7ebc8f74a0facf88c0b5eba0e6c5c5c2400d4d6ae9",
       "contentHash": "sha256:ada2eb97bfb8c5db4b55432361566f038f1fc600ffe29a90a42e43544c65abc5"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 483,
+        "rawRow": "| 2026-04-04 | 12:42 -07:00 | Maria Dennis | Food | Lunch | Lunch: Folded wrap or quesadilla with filling, orange juice, 2 prunes, and a handful of nuts [Cumulative Lunch: 59g carbs total] (BG: 144 mg/dL Flat) (Pred: 175-190 mg/dL @ 2:35 PM) (Protein: 21g | Carbs: ~59g | Cals: ~530) | null | null |"
+      },
+      "timestamp": "2026-04-04T12:42:00-07:00",
+      "date": "2026-04-04",
+      "time": "12:42 -07:00",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "mealType": "Lunch",
+      "title": "Lunch: Folded wrap or quesadilla with filling, orange juice, 2 prunes, and a handful of nuts [Cumulative Lunch: 59g carbs total]",
+      "notes": "BG: 144 mg/dL Flat; Protein: 21g; Pred: 175-190 mg/dL @ 2:35 PM",
+      "photoUrls": [],
+      "carbsEst": null,
+      "caloriesEst": null,
+      "proteinEst": 21,
+      "predicted": {
+        "peakBgText": "175-190 mg/dL",
+        "peakTimeText": "2:35 PM"
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:493c1a964b851f6e2f739a156689f30dede294350673bf6c5333453ed5cd403d",
+      "contentHash": "sha256:a7cac958ebf6deb715a8b7e6d70a6bd4c42354dc50e8750b4e3dd3b54832d756"
     }
   ]
 }

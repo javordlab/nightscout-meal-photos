@@ -1,11 +1,17 @@
 {
-  "generatedAt": "2026-04-04T19:30:00.876Z",
-  "entryCount": 37,
+  "generatedAt": "2026-04-04T20:00:00.369Z",
+  "entryCount": 38,
   "errors": [
     {
       "entryKey": "sha256:e9886615bdc62ff486efac7ebc8f74a0facf88c0b5eba0e6c5c5c2400d4d6ae9",
       "timestamp": "2026-04-04T10:41:00-07:00",
       "title": "Breakfast: Turkey slices with avocado and mustard vinaigrette drizzle",
+      "reason": "missing_carbs_required"
+    },
+    {
+      "entryKey": "sha256:493c1a964b851f6e2f739a156689f30dede294350673bf6c5333453ed5cd403d",
+      "timestamp": "2026-04-04T12:42:00-07:00",
+      "title": "Lunch: Folded wrap or quesadilla with filling, orange juice, 2 prunes, and a handful of nuts [Cumulative Lunch: 59g carbs total]",
       "reason": "missing_carbs_required"
     }
   ],
@@ -74,6 +80,20 @@
       "title": "Breakfast: Turkey slices with avocado and mustard vinaigrette drizzle",
       "reason": "photo_missing_but_found_in_internal_folder",
       "file": "/Users/javier/.openclaw/media/inbound/file_261---d13732d3-5c0f-41cf-8b88-7332aa38359c.jpg",
+      "diffMinutes": 0
+    },
+    {
+      "entryKey": "sha256:493c1a964b851f6e2f739a156689f30dede294350673bf6c5333453ed5cd403d",
+      "timestamp": "2026-04-04T12:42:00-07:00",
+      "title": "Lunch: Folded wrap or quesadilla with filling, orange juice, 2 prunes, and a handful of nuts [Cumulative Lunch: 59g carbs total]",
+      "reason": "missing_calories_estimate"
+    },
+    {
+      "entryKey": "sha256:493c1a964b851f6e2f739a156689f30dede294350673bf6c5333453ed5cd403d",
+      "timestamp": "2026-04-04T12:42:00-07:00",
+      "title": "Lunch: Folded wrap or quesadilla with filling, orange juice, 2 prunes, and a handful of nuts [Cumulative Lunch: 59g carbs total]",
+      "reason": "photo_missing_but_found_in_internal_folder",
+      "file": "/Users/javier/.openclaw/media/inbound/file_262---6982f0d6-3bcb-4cd6-94fb-2bc355bb8342.jpg",
       "diffMinutes": 0
     }
   ]
