@@ -25,7 +25,8 @@ const { sendAlert } = require('./telegram_alert');
 function loadNormalizedEntries() {
   if (!fs.existsSync(NORMALIZED_PATH)) return [];
   try {
-    return JSON.parse(fs.readFileSync(NORMALIZED_PATH, 'utf8'));
+    const data = JSON.parse(fs.readFileSync(NORMALIZED_PATH, 'utf8'));
+    return Array.isArray(data) ? data : (data.entries || []);
   } catch {
     return [];
   }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-04T06:00:01.361Z",
+  "generatedAt": "2026-04-04T06:30:00.769Z",
   "entryCount": 47,
   "errors": [],
   "warnings": [
@@ -44,14 +44,6 @@
       "timestamp": "2026-04-01T20:32:00-07:00",
       "title": "Snack: 1 protein ball",
       "reason": "missing_photo_urls"
-    },
-    {
-      "entryKey": "sha256:d9038c69cd423a887d348861e86425d8028982bfef08ada2268a8fc791781a84",
-      "timestamp": "2026-04-03T10:54:00-07:00",
-      "title": "Breakfast: Fried egg on white toast with deli ham/prosciutto and orange wedges",
-      "reason": "photo_missing_but_found_in_internal_folder",
-      "file": "/Users/javier/.openclaw/media/inbound/file_257---f0908e25-d8d8-4e66-b5b2-4d39c227995c.jpg",
-      "diffMinutes": 1
     },
     {
       "entryKey": "sha256:6d71ff79e011e769f61ff0dd78d7bea1686bbc7b9279acfd5169a7f0b47e0115",

@@ -1,0 +1,177 @@
+{
+  "lastRunAt": "2026-04-04T06:19:15.375Z",
+  "lookbackHours": 1,
+  "totalLedgerEntries": 24,
+  "phantomCount": 24,
+  "phantoms": [
+    {
+      "entryKey": "sha256:abc123",
+      "timestamp": "2026-03-24T20:06:00-07:00",
+      "category": "Activity",
+      "description": "25 minutes walk",
+      "ledgerTs": "2026-04-04T05:22:22.077Z"
+    },
+    {
+      "entryKey": "sha256:first",
+      "timestamp": "2026-03-24T10:00:00-07:00",
+      "category": "Food",
+      "description": "Breakfast: Oatmeal",
+      "ledgerTs": "2026-04-04T05:22:22.079Z"
+    },
+    {
+      "entryKey": "sha256:second",
+      "timestamp": "2026-03-24T12:00:00-07:00",
+      "category": "Medication",
+      "description": "Metformin 500mg (lunch)",
+      "ledgerTs": "2026-04-04T05:22:22.079Z"
+    },
+    {
+      "entryKey": "sha256:longdesc",
+      "timestamp": "2026-03-24T15:00:00-07:00",
+      "category": "Food",
+      "description": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "ledgerTs": "2026-04-04T05:22:22.091Z"
+    },
+    {
+      "entryKey": "sha256:abc123",
+      "timestamp": "2026-03-24T20:06:00-07:00",
+      "category": "Activity",
+      "description": "25 minutes walk",
+      "ledgerTs": "2026-04-04T05:22:33.803Z"
+    },
+    {
+      "entryKey": "sha256:first",
+      "timestamp": "2026-03-24T10:00:00-07:00",
+      "category": "Food",
+      "description": "Breakfast: Oatmeal",
+      "ledgerTs": "2026-04-04T05:22:33.806Z"
+    },
+    {
+      "entryKey": "sha256:second",
+      "timestamp": "2026-03-24T12:00:00-07:00",
+      "category": "Medication",
+      "description": "Metformin 500mg (lunch)",
+      "ledgerTs": "2026-04-04T05:22:33.806Z"
+    },
+    {
+      "entryKey": "sha256:longdesc",
+      "timestamp": "2026-03-24T15:00:00-07:00",
+      "category": "Food",
+      "description": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "ledgerTs": "2026-04-04T05:22:33.818Z"
+    },
+    {
+      "entryKey": "sha256:abc123",
+      "timestamp": "2026-03-24T20:06:00-07:00",
+      "category": "Activity",
+      "description": "25 minutes walk",
+      "ledgerTs": "2026-04-04T05:22:55.156Z"
+    },
+    {
+      "entryKey": "sha256:first",
+      "timestamp": "2026-03-24T10:00:00-07:00",
+      "category": "Food",
+      "description": "Breakfast: Oatmeal",
+      "ledgerTs": "2026-04-04T05:22:55.159Z"
+    },
+    {
+      "entryKey": "sha256:second",
+      "timestamp": "2026-03-24T12:00:00-07:00",
+      "category": "Medication",
+      "description": "Metformin 500mg (lunch)",
+      "ledgerTs": "2026-04-04T05:22:55.159Z"
+    },
+    {
+      "entryKey": "sha256:longdesc",
+      "timestamp": "2026-03-24T15:00:00-07:00",
+      "category": "Food",
+      "description": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "ledgerTs": "2026-04-04T05:22:55.170Z"
+    },
+    {
+      "entryKey": "sha256:abc123",
+      "timestamp": "2026-03-24T20:06:00-07:00",
+      "category": "Activity",
+      "description": "25 minutes walk",
+      "ledgerTs": "2026-04-04T05:52:21.199Z"
+    },
+    {
+      "entryKey": "sha256:first",
+      "timestamp": "2026-03-24T10:00:00-07:00",
+      "category": "Food",
+      "description": "Breakfast: Oatmeal",
+      "ledgerTs": "2026-04-04T05:52:21.201Z"
+    },
+    {
+      "entryKey": "sha256:second",
+      "timestamp": "2026-03-24T12:00:00-07:00",
+      "category": "Medication",
+      "description": "Metformin 500mg (lunch)",
+      "ledgerTs": "2026-04-04T05:52:21.201Z"
+    },
+    {
+      "entryKey": "sha256:longdesc",
+      "timestamp": "2026-03-24T15:00:00-07:00",
+      "category": "Food",
+      "description": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "ledgerTs": "2026-04-04T05:52:21.211Z"
+    },
+    {
+      "entryKey": "sha256:abc123",
+      "timestamp": "2026-03-24T20:06:00-07:00",
+      "category": "Activity",
+      "description": "25 minutes walk",
+      "ledgerTs": "2026-04-04T06:02:50.110Z"
+    },
+    {
+      "entryKey": "sha256:first",
+      "timestamp": "2026-03-24T10:00:00-07:00",
+      "category": "Food",
+      "description": "Breakfast: Oatmeal",
+      "ledgerTs": "2026-04-04T06:02:50.113Z"
+    },
+    {
+      "entryKey": "sha256:second",
+      "timestamp": "2026-03-24T12:00:00-07:00",
+      "category": "Medication",
+      "description": "Metformin 500mg (lunch)",
+      "ledgerTs": "2026-04-04T06:02:50.113Z"
+    },
+    {
+      "entryKey": "sha256:longdesc",
+      "timestamp": "2026-03-24T15:00:00-07:00",
+      "category": "Food",
+      "description": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "ledgerTs": "2026-04-04T06:02:50.124Z"
+    },
+    {
+      "entryKey": "sha256:abc123",
+      "timestamp": "2026-03-24T20:06:00-07:00",
+      "category": "Activity",
+      "description": "25 minutes walk",
+      "ledgerTs": "2026-04-04T06:14:25.626Z"
+    },
+    {
+      "entryKey": "sha256:first",
+      "timestamp": "2026-03-24T10:00:00-07:00",
+      "category": "Food",
+      "description": "Breakfast: Oatmeal",
+      "ledgerTs": "2026-04-04T06:14:25.627Z"
+    },
+    {
+      "entryKey": "sha256:second",
+      "timestamp": "2026-03-24T12:00:00-07:00",
+      "category": "Medication",
+      "description": "Metformin 500mg (lunch)",
+      "ledgerTs": "2026-04-04T06:14:25.627Z"
+    },
+    {
+      "entryKey": "sha256:longdesc",
+      "timestamp": "2026-03-24T15:00:00-07:00",
+      "category": "Food",
+      "description": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "ledgerTs": "2026-04-04T06:14:25.639Z"
+    }
+  ],
+  "status": "phantom_detected"
+}

@@ -1,31 +1,18 @@
 {
-  "generatedAt": "2026-04-03T16:48:09.795Z",
-  "since": "2026-03-27T16:48:09.371Z",
+  "generatedAt": "2026-04-04T06:18:29.231Z",
+  "since": "2026-03-28T06:18:28.692Z",
   "summary": {
-    "totalEntries": 95,
-    "inSyncState": 95,
-    "nsLinked": 95,
-    "notionLinked": 95,
-    "galleryLinked": 37,
-    "outcomesBackfilled": 46,
+    "totalEntries": 96,
+    "inSyncState": 96,
+    "nsLinked": 96,
+    "notionLinked": 96,
+    "galleryLinked": 31,
+    "outcomesBackfilled": 45,
     "duplicates": 0,
     "missingNs": 0,
     "missingNotion": 0,
     "missingGallery": 0,
     "missingOutcomes": 0
   },
-  "discrepancies": [
-    {
-      "entryKey": "sha256:588f94924e486c786ed8dac5fbf17458408c8b218205215ebd3f6c158e529381",
-      "timestamp": "2026-03-27T19:04:00-07:00",
-      "title": "Dinner: 6 fresh oysters on the half shell",
-      "issues": [
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33185ec7-0668-813f-9102-eac3a1beb434",
-          "severity": "warning"
-        }
-      ]
-    }
-  ]
+  "discrepancies": []
 }

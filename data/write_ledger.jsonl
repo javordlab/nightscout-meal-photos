@@ -3560,3 +3560,12 @@
 {"ts":"2026-04-04T06:02:50.113Z","entryKey":"sha256:first","timestamp":"2026-03-24T10:00:00-07:00","category":"Food","description":"Breakfast: Oatmeal"}
 {"ts":"2026-04-04T06:02:50.113Z","entryKey":"sha256:second","timestamp":"2026-03-24T12:00:00-07:00","category":"Medication","description":"Metformin 500mg (lunch)"}
 {"ts":"2026-04-04T06:02:50.124Z","entryKey":"sha256:longdesc","timestamp":"2026-03-24T15:00:00-07:00","category":"Food","description":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"}
+{"ts":"2026-04-04T06:14:25.626Z","entryKey":"sha256:abc123","timestamp":"2026-03-24T20:06:00-07:00","category":"Activity","description":"25 minutes walk"}
+{"ts":"2026-04-04T06:14:25.627Z","entryKey":"sha256:first","timestamp":"2026-03-24T10:00:00-07:00","category":"Food","description":"Breakfast: Oatmeal"}
+{"ts":"2026-04-04T06:14:25.627Z","entryKey":"sha256:second","timestamp":"2026-03-24T12:00:00-07:00","category":"Medication","description":"Metformin 500mg (lunch)"}
+{"ts":"2026-04-04T06:14:25.639Z","entryKey":"sha256:longdesc","timestamp":"2026-03-24T15:00:00-07:00","category":"Food","description":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"}
+{"ts":"2026-04-04T06:24:02.059Z","entryKey":"sha256:3f00d22ecabffd29a985a54cab8893347a09f3c44fea82fcc8d6e18de1b7b012","timestamp":"2026-04-03T19:00:00-07:00","category":"Medication","description":"Medication: Metformin 1000mg (dinner) (BG: 113 mg/dL Flat)"}
+{"ts":"2026-04-04T06:33:38.372Z","entryKey":"sha256:abc123","timestamp":"2026-03-24T20:06:00-07:00","category":"Activity","description":"25 minutes walk"}
+{"ts":"2026-04-04T06:33:38.375Z","entryKey":"sha256:first","timestamp":"2026-03-24T10:00:00-07:00","category":"Food","description":"Breakfast: Oatmeal"}
+{"ts":"2026-04-04T06:33:38.375Z","entryKey":"sha256:second","timestamp":"2026-03-24T12:00:00-07:00","category":"Medication","description":"Metformin 500mg (lunch)"}
+{"ts":"2026-04-04T06:33:38.390Z","entryKey":"sha256:longdesc","timestamp":"2026-03-24T15:00:00-07:00","category":"Food","description":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"}

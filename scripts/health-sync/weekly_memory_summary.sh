@@ -14,7 +14,7 @@ MEMORY_DIR="$WORKSPACE/memory"
 WEEKLY_DIR="$MEMORY_DIR/weekly"
 LOG_FILE="$WORKSPACE/data/cron_health.log"
 OLLAMA_URL="http://127.0.0.1:11434"
-OLLAMA_MODEL="deepseek-v3.2:cloud"
+OLLAMA_MODELS=("deepseek-v3.2:cloud" "gpt-oss:120b-cloud")
 
 log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] [weekly-memory] $*" >> "$LOG_FILE"; }
 
@@ -91,14 +91,22 @@ $(cat "$COMBINED")"
 # Primary: Claude via OAuth
 RESPONSE=$("$CLAUDE" -p --model sonnet "$PROMPT" 2>/dev/null) || true
 
-# Fallback: Ollama cloud (DeepSeek V3.2) if Claude failed or returned empty
+# Fallback chain: gpt-oss (Codex-equivalent) → DeepSeek V3.2 via Ollama
 if [ -z "$RESPONSE" ] || echo "$RESPONSE" | grep -qi "not logged in\|error\|unauthorized"; then
-  log "Claude unavailable, falling back to Ollama cloud ($OLLAMA_MODEL)"
-  RESPONSE=$(curl -s --max-time 300 "$OLLAMA_URL/api/chat" \
-    -d "$(jq -n --arg model "$OLLAMA_MODEL" --arg content "$PROMPT" \
-      '{model: $model, messages: [{role: "user", content: $content}], stream: false}')" \
-    | jq -r '.message.content // empty' 2>/dev/null) || true
-  [ -n "$RESPONSE" ] && log "Ollama fallback succeeded" || { log "ERROR: both Claude and Ollama failed"; exit 1; }
+  for OLLAMA_MODEL in "${OLLAMA_MODELS[@]}"; do
+    log "Claude unavailable, trying fallback: $OLLAMA_MODEL"
+    RESPONSE=$(curl -s --max-time 300 "$OLLAMA_URL/api/chat" \
+      -d "$(jq -n --arg model "$OLLAMA_MODEL" --arg content "$PROMPT" \
+        '{model: $model, messages: [{role: "user", content: $content}], stream: false}')" \
+      | jq -r '.message.content // empty' 2>/dev/null) || true
+    if [ -n "$RESPONSE" ] && ! echo "$RESPONSE" | grep -qi "error"; then
+      log "Fallback $OLLAMA_MODEL succeeded"
+      break
+    fi
+    log "Fallback $OLLAMA_MODEL failed"
+    RESPONSE=""
+  done
+  [ -z "$RESPONSE" ] && { log "ERROR: all models failed"; exit 1; }
 fi
 
 # Write the output file

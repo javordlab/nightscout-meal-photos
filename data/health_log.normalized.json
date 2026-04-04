@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-04T06:00:01.316Z",
+  "generatedAt": "2026-04-04T06:30:00.722Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
   "entryCount": 449,
   "entries": [
@@ -18483,7 +18483,7 @@
       "source": {
         "file": "health_log.md",
         "line": 471,
-        "rawRow": "| 2026-04-03 | 10:54 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Fried egg on white toast with deli ham/prosciutto and orange wedges (BG: 111 mg/dL Flat) (Pred: 168-188 mg/dL @ 12:21 PM) (Protein: 19g | Carbs: ~28g | Cals: ~280) | 28 | 280 |"
+        "rawRow": "| 2026-04-03 | 10:54 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Fried egg on white toast with deli ham/prosciutto and orange wedges (BG: 111 mg/dL Flat) (Pred: 168-188 mg/dL @ 12:21 PM) (Protein: 19g | Carbs: ~28g | Cals: ~280) [📷](https://iili.io/BogWLwN.jpg) | 28 | 280 |"
       },
       "timestamp": "2026-04-03T10:54:00-07:00",
       "date": "2026-04-03",
@@ -18493,7 +18493,9 @@
       "mealType": "Breakfast",
       "title": "Breakfast: Fried egg on white toast with deli ham/prosciutto and orange wedges",
       "notes": "BG: 111 mg/dL Flat; Protein: 19g; Pred: 168-188 mg/dL @ 12:21 PM",
-      "photoUrls": [],
+      "photoUrls": [
+        "https://iili.io/BogWLwN.jpg"
+      ],
       "carbsEst": 28,
       "caloriesEst": 280,
       "proteinEst": 19,
@@ -18518,7 +18520,7 @@
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:d9038c69cd423a887d348861e86425d8028982bfef08ada2268a8fc791781a84",
-      "contentHash": "sha256:02dc8b837545c53097e30960c262a49258acdfd797299dd67a5b8f604d9bc469"
+      "contentHash": "sha256:fdc5b3b7d72b95d93a8d240aa633e378467b40146fcdc72e8b80124092af9d34"
     },
     {
       "source": {

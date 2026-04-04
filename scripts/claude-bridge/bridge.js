@@ -24,7 +24,7 @@ const path = require('path');
 const config = require('./config.json');
 const BOT_TOKEN = process.env.CLAUDE_BRIDGE_TOKEN || config.botToken;
 const MODEL = process.env.CLAUDE_BRIDGE_MODEL || config.model || 'sonnet';
-const ALLOWED_USERS = [8335333215]; // Javi only — Maria uses OpenClaw
+const ALLOWED_USERS = [8335333215, 8738167445]; // Javi + Maria
 const WORKSPACE = '/Users/javier/.openclaw/workspace';
 const CLAUDE_BIN = '/Users/javier/.local/bin/claude';
 const INBOUND_DIR = '/Users/javier/.openclaw/media/inbound';
@@ -34,9 +34,9 @@ const LOG_FILE = path.join(WORKSPACE, 'data/claude_bridge.log');
 const POLL_INTERVAL_MS = 1500;
 const MAX_MESSAGE_LENGTH = 4096; // Telegram limit
 
-// Ollama cloud fallback
+// Ollama cloud fallback chain: try gpt-oss first (Codex-equivalent), then DeepSeek
 const OLLAMA_URL = 'http://127.0.0.1:11434';
-const OLLAMA_MODEL = 'deepseek-v3.2:cloud';
+const OLLAMA_FALLBACKS = ['deepseek-v3.2:cloud', 'gpt-oss:120b-cloud'];
 
 // ── Logging ────────────────────────────────────────────────────────────────
 function log(msg) {
@@ -194,10 +194,10 @@ function runClaude(userId, prompt, sessionId, photoPath) {
 }
 
 // ── Ollama fallback ─────────────────────────────────────────────────────────
-function runOllama(prompt) {
+function runOllama(prompt, model) {
   return new Promise((resolve, reject) => {
     const body = JSON.stringify({
-      model: OLLAMA_MODEL,
+      model,
       messages: [{ role: 'user', content: prompt }],
       stream: false,
     });
@@ -216,8 +216,8 @@ function runOllama(prompt) {
         try {
           const parsed = JSON.parse(data);
           const content = parsed.message?.content;
-          if (content) resolve({ text: content, sessionId: null, source: 'ollama' });
-          else reject(new Error('Empty Ollama response'));
+          if (content) resolve({ text: content, sessionId: null, source: `ollama/${model}` });
+          else reject(new Error(`Empty Ollama response (${model})`));
         } catch { reject(new Error('Invalid Ollama JSON')); }
       });
     });
@@ -262,7 +262,7 @@ async function handleMessage(msg) {
   if (text === '/status') {
     const sid = state.sessions[userId];
     await sendMessage(chatId, sid
-      ? `Active session: ${sid.slice(0, 8)}...\nModel: ${MODEL}\nFallback: ${OLLAMA_MODEL}\nWorkspace: ${WORKSPACE}`
+      ? `Active session: ${sid.slice(0, 8)}...\nModel: ${MODEL}\nFallbacks: ${OLLAMA_FALLBACKS.join(' > ')}\nWorkspace: ${WORKSPACE}`
       : `No active session. Model: ${MODEL}. Send any message to start one.`,
       msgId);
     return;
@@ -278,7 +278,7 @@ async function handleMessage(msg) {
       '  /status — show current session info',
       '  /help   — this message',
       '',
-      `Model: ${MODEL} | Fallback: ${OLLAMA_MODEL}`,
+      `Model: ${MODEL} | Fallbacks: ${OLLAMA_FALLBACKS.join(' > ')}`,
       `Workspace: ${WORKSPACE}`,
       'CLAUDE.md + AGENTS.md load automatically.',
     ].join('\n'), msgId);
@@ -313,28 +313,38 @@ async function handleMessage(msg) {
     ).catch(() => {}), 240_000);
 
     let result;
+    let lastErr;
+    // Primary: Claude OAuth
     try {
       result = await runClaude(userId, prompt, sessionId, photoPath);
     } catch (claudeErr) {
-      log(`Claude failed: ${claudeErr.message} — trying Ollama fallback`);
-      try {
-        const fallbackPrompt = photoPath
-          ? `${prompt}\n\n(Note: a photo was attached at ${photoPath} but this fallback model cannot see it)`
-          : prompt;
-        result = await runOllama(fallbackPrompt);
-      } catch (ollamaErr) {
-        log(`Ollama fallback also failed: ${ollamaErr.message}`);
-        // Reset session on double failure
-        delete state.sessions[userId];
-        saveState();
-        clearTimeout(warnTimeout);
-        clearInterval(typingInterval);
-        await sendMessage(chatId,
-          `Both Claude and fallback failed.\nClaude: ${claudeErr.message}\nOllama: ${ollamaErr.message}\n\nSession reset.`, msgId);
-        return;
+      log(`Claude failed: ${claudeErr.message}`);
+      lastErr = claudeErr;
+    }
+    // Fallback chain: try each Ollama model in order
+    if (!result) {
+      const fallbackPrompt = photoPath
+        ? `${prompt}\n\n(Note: a photo was attached at ${photoPath} but this fallback model cannot see it)`
+        : prompt;
+      for (const model of OLLAMA_FALLBACKS) {
+        try {
+          log(`Trying fallback: ${model}`);
+          result = await runOllama(fallbackPrompt, model);
+          break;
+        } catch (err) {
+          log(`Fallback ${model} failed: ${err.message}`);
+          lastErr = err;
+        }
       }
-    } finally {
-      clearTimeout(warnTimeout);
+    }
+    clearTimeout(warnTimeout);
+    if (!result) {
+      delete state.sessions[userId];
+      saveState();
+      clearInterval(typingInterval);
+      await sendMessage(chatId,
+        `All models failed. Last error: ${lastErr?.message}\n\nSession reset.`, msgId);
+      return;
     }
 
     clearInterval(typingInterval);
@@ -345,7 +355,7 @@ async function handleMessage(msg) {
       saveState();
     }
 
-    const sourceTag = result.source === 'ollama' ? '\n\n[via Ollama fallback — no session context]' : '';
+    const sourceTag = result.source !== 'claude' ? `\n\n[via ${result.source} fallback — no session context]` : '';
     await sendMessage(chatId, result.text + sourceTag, msgId);
     log(`Replied to ${userId} via ${result.source} (${result.text.length} chars)`);
   } catch (err) {
@@ -381,7 +391,7 @@ async function poll() {
 }
 
 // ── Start ─────────────────────────────────────────────────────────────────────
-log(`Starting — model: ${MODEL}, fallback: ${OLLAMA_MODEL}, workspace: ${WORKSPACE}`);
+log(`Starting — model: ${MODEL}, fallbacks: ${OLLAMA_FALLBACKS.join(' > ')}, workspace: ${WORKSPACE}`);
 tgApi('getMe').then(r => {
   if (!r.ok) { log(`Bad token or Telegram unreachable: ${JSON.stringify(r)}`); process.exit(1); }
   log(`Bot: @${r.result.username}`);

@@ -42,6 +42,20 @@
     "preMeal": null
   },
   {
+    "id": "33785ec7-0668-8182-a6e2-f4a7b9406233",
+    "title": "Breakfast: Fried egg on white toast with deli ham/prosciutto and orange wedges",
+    "type": "Breakfast",
+    "date": "2026-04-03T10:54:00-07:00",
+    "photo": "https://iili.io/BogWLwN.jpg",
+    "carbs": 28,
+    "cals": 280,
+    "delta": null,
+    "peak": null,
+    "entry_key": "sha256:d9038c69cd423a887d348861e86425d8028982bfef08ada2268a8fc791781a84",
+    "protein": 19,
+    "preMeal": null
+  },
+  {
     "id": "33785ec7-0668-8117-ac00-e39816aa114a",
     "title": "Dinner: Cocido madrileño - segundo plato, partially eaten (chickpeas, potato, chicken, chorizo, cabbage — left ~half) [Cumulative Dinner: ~44g carbs total]",
     "type": "Dinner",
