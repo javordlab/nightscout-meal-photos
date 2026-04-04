@@ -3569,3 +3569,11 @@
 {"ts":"2026-04-04T06:33:38.375Z","entryKey":"sha256:first","timestamp":"2026-03-24T10:00:00-07:00","category":"Food","description":"Breakfast: Oatmeal"}
 {"ts":"2026-04-04T06:33:38.375Z","entryKey":"sha256:second","timestamp":"2026-03-24T12:00:00-07:00","category":"Medication","description":"Metformin 500mg (lunch)"}
 {"ts":"2026-04-04T06:33:38.390Z","entryKey":"sha256:longdesc","timestamp":"2026-03-24T15:00:00-07:00","category":"Food","description":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"}
+{"ts":"2026-04-04T06:44:26.147Z","entryKey":"sha256:abc123","timestamp":"2026-03-24T20:06:00-07:00","category":"Activity","description":"25 minutes walk"}
+{"ts":"2026-04-04T06:44:26.150Z","entryKey":"sha256:first","timestamp":"2026-03-24T10:00:00-07:00","category":"Food","description":"Breakfast: Oatmeal"}
+{"ts":"2026-04-04T06:44:26.151Z","entryKey":"sha256:second","timestamp":"2026-03-24T12:00:00-07:00","category":"Medication","description":"Metformin 500mg (lunch)"}
+{"ts":"2026-04-04T06:44:26.162Z","entryKey":"sha256:longdesc","timestamp":"2026-03-24T15:00:00-07:00","category":"Food","description":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"}
+{"ts":"2026-04-04T07:14:27.312Z","entryKey":"sha256:abc123","timestamp":"2026-03-24T20:06:00-07:00","category":"Activity","description":"25 minutes walk"}
+{"ts":"2026-04-04T07:14:27.315Z","entryKey":"sha256:first","timestamp":"2026-03-24T10:00:00-07:00","category":"Food","description":"Breakfast: Oatmeal"}
+{"ts":"2026-04-04T07:14:27.315Z","entryKey":"sha256:second","timestamp":"2026-03-24T12:00:00-07:00","category":"Medication","description":"Metformin 500mg (lunch)"}
+{"ts":"2026-04-04T07:14:27.327Z","entryKey":"sha256:longdesc","timestamp":"2026-03-24T15:00:00-07:00","category":"Food","description":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"}

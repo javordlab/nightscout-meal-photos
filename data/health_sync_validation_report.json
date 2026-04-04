@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-04T06:30:00.769Z",
-  "entryCount": 47,
+  "generatedAt": "2026-04-04T07:00:00.855Z",
+  "entryCount": 32,
   "errors": [],
   "warnings": [
     {
@@ -32,12 +32,6 @@
       "reason": "photo_missing_but_found_in_internal_folder",
       "file": "/Users/javier/.openclaw/media/inbound/file_252---de779c6d-343b-4306-bb5b-19193563cd83.jpg",
       "diffMinutes": 5
-    },
-    {
-      "entryKey": "sha256:340d859537a3bf2e17ddac02cac414f39dd2db07c8d0127f1a9d3fd1c26cf980",
-      "timestamp": "2026-04-01T16:00:00-07:00",
-      "title": "Snack: Small piece of cake with whipped cream and peanut butter",
-      "reason": "missing_photo_urls"
     },
     {
       "entryKey": "sha256:b4d14362084e075dca29f67523c07171dc26c0c4358e533ead035772a951f549",

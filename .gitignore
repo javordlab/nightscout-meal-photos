@@ -44,3 +44,4 @@ node_modules/
 **/auth.json
 **/.env
 scripts/claude-bridge/config.json
+cc_mini_api.txt

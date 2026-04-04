@@ -47,7 +47,10 @@ function removeSelfFromCrontab() {
     const updated = current.split('\n')
       .filter(line => !line.includes('openclaw_api_migration'))
       .join('\n');
-    execSync(`echo ${JSON.stringify(updated)} | crontab -`);
+    const tmp = '/tmp/crontab_after_migration.txt';
+    fs.writeFileSync(tmp, updated);
+    execSync(`crontab ${tmp}`);
+    fs.unlinkSync(tmp);
   } catch (err) {
     console.error('[migration] Failed to remove from crontab:', err.message);
   }
@@ -56,8 +59,14 @@ function removeSelfFromCrontab() {
 async function main() {
   console.log('[migration] Starting Anthropic OAuth → API key migration...');
 
-  // 1. Read API key
-  const apiKey = fs.readFileSync(API_KEY_FILE, 'utf8').trim();
+  // 1. Read API key (fallback to hardcoded if file missing)
+  let apiKey;
+  if (fs.existsSync(API_KEY_FILE)) {
+    apiKey = fs.readFileSync(API_KEY_FILE, 'utf8').trim();
+  } else {
+    apiKey = process.env.ANTHROPIC_API_KEY || '';
+    console.log('[migration] API key file not found, using hardcoded fallback.');
+  }
   if (!apiKey.startsWith('sk-ant-')) {
     throw new Error(`Unexpected API key format: ${apiKey.slice(0, 10)}...`);
   }
