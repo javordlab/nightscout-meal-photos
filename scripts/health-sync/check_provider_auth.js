@@ -14,12 +14,21 @@
 const https = require('https');
 const { execSync } = require('child_process');
 const fs = require('fs');
+const path = require('path');
 
 const WORKSPACE = '/Users/javier/.openclaw/workspace';
 const OPENCLAW_CONFIG = '/Users/javier/.openclaw/openclaw.json';
 const JAVI_CHAT_ID = '8335333215';
 
+const BRIDGE_CONFIG_PATH = path.join(WORKSPACE, 'scripts/claude-bridge/config.json');
+
 function getBotToken() {
+  // Send auth alerts via the Claude Code bridge bot (not the HealthGuard bot)
+  try {
+    const bridge = JSON.parse(fs.readFileSync(BRIDGE_CONFIG_PATH, 'utf8'));
+    if (bridge.botToken) return bridge.botToken;
+  } catch {}
+  // Fallback to OpenClaw bot
   const cfg = JSON.parse(fs.readFileSync(OPENCLAW_CONFIG, 'utf8'));
   return cfg?.channels?.telegram?.botToken;
 }
