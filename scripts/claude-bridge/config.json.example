@@ -1,3 +1,4 @@
 {
-  "botToken": "YOUR_BOT_TOKEN_HERE"
+  "botToken": "YOUR_BOT_TOKEN_HERE",
+  "model": "sonnet"
 }

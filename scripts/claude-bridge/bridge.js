@@ -22,7 +22,9 @@ const fs = require('fs');
 const path = require('path');
 
 // ── Config ─────────────────────────────────────────────────────────────────
-const BOT_TOKEN = process.env.CLAUDE_BRIDGE_TOKEN || require('./config.json').botToken;
+const config = require('./config.json');
+const BOT_TOKEN = process.env.CLAUDE_BRIDGE_TOKEN || config.botToken;
+const MODEL = process.env.CLAUDE_BRIDGE_MODEL || config.model || 'sonnet';
 const ALLOWED_USERS = [8335333215, 8738167445]; // Javi, Maria
 const WORKSPACE = '/Users/javier/.openclaw/workspace';
 const CLAUDE_BIN = '/Users/javier/.local/bin/claude';
@@ -93,6 +95,7 @@ function runClaude(userId, prompt, sessionId) {
       '--print',
       '--dangerously-skip-permissions',
       '--output-format', 'json',
+      '--model', MODEL,
     ];
     if (sessionId) args.push('--resume', sessionId);
 
@@ -166,8 +169,8 @@ async function handleMessage(msg) {
   if (text === '/status') {
     const sid = state.sessions[userId];
     await sendMessage(chatId, sid
-      ? `✅ Active session: \`${sid.slice(0, 8)}...\`\nWorkspace: \`${WORKSPACE}\``
-      : '💤 No active session. Send any message to start one.',
+      ? `✅ Active session: \`${sid.slice(0, 8)}...\`\nModel: \`${MODEL}\`\nWorkspace: \`${WORKSPACE}\``
+      : `💤 No active session. Model: \`${MODEL}\`. Send any message to start one.`,
       msgId);
     return;
   }
