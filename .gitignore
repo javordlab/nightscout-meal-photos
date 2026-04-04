@@ -43,3 +43,4 @@ node_modules/
 **/token.json
 **/auth.json
 **/.env
+scripts/claude-bridge/config.json
