@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-04-04T02:30:00.647Z",
+  "checkedAt": "2026-04-04T02:45:00.347Z",
   "jobsChecked": 4,
   "jobs": [
     {
@@ -61,6 +61,6 @@
   ],
   "staleJobs": [],
   "dailyReportIssue": null,
-  "ghPagesIssue": "backups.json glucose data stale by 175m",
-  "alertSent": true
+  "ghPagesIssue": null,
+  "alertSent": false
 }
