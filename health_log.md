@@ -482,3 +482,4 @@
 | 2026-04-04 | 10:41 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Turkey slices with avocado and mustard vinaigrette drizzle (BG: 117 mg/dL Flat) (Pred: 155-165 mg/dL @ 12:08 PM) (Protein: 27g | Carbs: ~6g | Cals: ~230) [📷](https://iili.io/BIzWYqx.jpg) | 6 | 230 |
 | 2026-04-04 | 12:42 -07:00 | Maria Dennis | Food | Lunch | Lunch: Folded wrap or quesadilla with filling, orange juice, 2 prunes, and a handful of nuts [Cumulative Lunch: 59g carbs total] (BG: 144 mg/dL Flat) (Pred: 175-190 mg/dL @ 2:35 PM) (Protein: 21g | Carbs: ~59g | Cals: ~530) [📷](https://iili.io/BIxDbeI.jpg) | 59 | 530 |
 | 2026-04-04 | 13:35 -07:00 | Maria Dennis | Exercise | - | Exercise: 20 minute walk and 30 minutes housework (BG: 135 mg/dL Flat) | null | null |
+| 2026-04-04 | 16:26 -07:00 | Maria Dennis | Food | Snack | Snack: 1 cup papaya (BG: 112 mg/dL Flat) (Pred: 132-142 mg/dL @ 6:32 PM) (Protein: 1g | Carbs: ~16g | Cals: ~62) | null | null |
