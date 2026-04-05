@@ -1,5 +1,16 @@
 [
   {
+    "id": "33985ec7-0668-81b3-880f-cbe4395d2d26",
+    "title": "Breakfast: Small handful of cashews [Cumulative Breakfast: 38g carbs total] (BG: 106 mg/dL Flat) (Pred: 178-198 mg/dL @ 12:00 PM) (Protein: 2g | Carbs: ~3g | Cals: ~65)",
+    "type": "Breakfast",
+    "date": "2026-04-05T10:42:00.000-07:00",
+    "photo": "https://iili.io/Bu94NNn.jpg",
+    "carbs": 3,
+    "cals": 65,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "33985ec7-0668-8119-9d34-cf2b6f405d5b",
     "title": "Breakfast: Open-faced toast with melted cheese, prosciutto/ham, and 2 small guavas (BG: 111 mg/dL Flat) (Pred: 174-194 mg/dL @ 12:00 PM) (Protein: 24g | Carbs: ~35g | Cals: ~380)",
     "type": "Breakfast",
