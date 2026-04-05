@@ -1,9 +1,9 @@
 {
-  "checkedAt": "2026-04-05T01:00:01.242Z",
+  "checkedAt": "2026-04-05T01:30:00.440Z",
   "jobsChecked": 0,
   "jobs": [],
   "staleJobs": [],
   "dailyReportIssue": null,
-  "ghPagesIssue": null,
-  "alertSent": false
+  "ghPagesIssue": "notion_meals.json stale by 149m",
+  "alertSent": true
 }
