@@ -484,3 +484,4 @@
 | 2026-04-04 | 12:42 -07:00 | Maria Dennis | Food | Lunch | Lunch: Folded wrap or quesadilla with filling, orange juice, 2 prunes, and a handful of nuts [Cumulative Lunch: 59g carbs total] (BG: 144 mg/dL Flat) (Pred: 175-190 mg/dL @ 2:35 PM) (Protein: 21g | Carbs: ~59g | Cals: ~530) [📷](https://iili.io/BIxDbeI.jpg) | 59 | 530 |
 | 2026-04-04 | 13:35 -07:00 | Maria Dennis | Exercise | - | Exercise: 20 minute walk and 30 minutes housework (BG: 135 mg/dL Flat) | null | null |
 | 2026-04-04 | 16:26 -07:00 | Maria Dennis | Food | Snack | Snack: 1 cup papaya (BG: 112 mg/dL Flat) (Pred: 132-142 mg/dL @ 6:32 PM) (Protein: 1g | Carbs: ~16g | Cals: ~62) | null | null |
+| 2026-04-04 | 19:47 -07:00 | Maria Dennis | Food | Dinner | Dinner: Chickpea, cabbage, sausage, and meat stew with bread roll, and 8 oz Radler [Cumulative Dinner: 49g carbs total] (BG: 123 mg/dL Flat) (Pred: 175-185 mg/dL @ 9:03 PM) (Protein: 25g | Carbs: ~49g | Cals: ~530) | null | null |
