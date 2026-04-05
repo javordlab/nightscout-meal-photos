@@ -491,3 +491,4 @@
 | 2026-04-05 | 10:33 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Open-faced toast with melted cheese, prosciutto/ham, and 2 small guavas (BG: 111 mg/dL Flat) (Pred: 174-194 mg/dL @ 12:00 PM) (Protein: 24g | Carbs: ~35g | Cals: ~380) [📷](https://iili.io/BTy8Sj4.jpg) | 35 | 380 |
 | 2026-04-05 | 10:42 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Small handful of cashews [Cumulative Breakfast: 38g carbs total] (BG: 106 mg/dL Flat) (Pred: 178-198 mg/dL @ 12:00 PM) (Protein: 2g | Carbs: ~3g | Cals: ~65) [📷](https://iili.io/Bu94NNn.jpg) | 3 | 65 |
 | 2026-04-05 | 11:28 -07:00 | Maria Dennis | Exercise | - | Exercise: 20 minute walk (BG: 181 mg/dL FortyFiveUp) | - | - |
+| 2026-04-05 | 14:05 -07:00 | Maria Dennis | Food | Snack | Snack: Sliced red apple with peanut butter (BG: 88 mg/dL Flat) (Pred: 126-136 mg/dL @ 4:11 PM) (Protein: 7g | Carbs: ~29g | Cals: ~240) [📷](https://iili.io/BulxrAB.jpg) | 29 | 240 |
