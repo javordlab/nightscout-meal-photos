@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-05T21:00:01.311Z",
+  "generatedAt": "2026-04-05T21:30:01.131Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
-  "entryCount": 465,
+  "entryCount": 467,
   "entries": [
     {
       "source": {
@@ -19439,6 +19439,92 @@
       },
       "entryKey": "sha256:bf750b6f9ef23a987dbbafbcc099de59012d2c33d7212ebff0611420198bae9f",
       "contentHash": "sha256:255c943bd0150096df3dceff6293a7d40c1c1c7600b9d93c0d52df5bb4b1ffb9"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 494,
+        "rawRow": "| 2026-04-05 | 14:05 -07:00 | Maria Dennis | Food | Snack | Snack: Sliced red apple with peanut butter (BG: 88 mg/dL Flat) (Pred: 126-136 mg/dL @ 4:11 PM) (Protein: 7g | Carbs: ~29g | Cals: ~240) [📷](https://iili.io/BulxrAB.jpg) | 29 | 240 |"
+      },
+      "timestamp": "2026-04-05T14:05:00-07:00",
+      "date": "2026-04-05",
+      "time": "14:05 -07:00",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "mealType": "Snack",
+      "title": "Snack: Sliced red apple with peanut butter",
+      "notes": "BG: 88 mg/dL Flat; Protein: 7g; Pred: 126-136 mg/dL @ 4:11 PM",
+      "photoUrls": [
+        "https://iili.io/BulxrAB.jpg"
+      ],
+      "carbsEst": 29,
+      "caloriesEst": 240,
+      "proteinEst": 7,
+      "predicted": {
+        "peakBgText": "126-136 mg/dL",
+        "peakTimeText": "4:11 PM"
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:acfca2f8a8d1b212a452a64347fb6b2136b92668067ce8415a4a506ca61797c2",
+      "contentHash": "sha256:30e86952fedcaed9a3fdbb4ec16f73df2a19b247e5c50c8f9adf32e11b44a57a"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 495,
+        "rawRow": "| 2026-04-05 | 14:06 -07:00 | Maria Dennis | Food | Snack | Snack: 5 dumplings / potstickers [Cumulative Snack: 61g carbs total] (BG: 88 mg/dL Flat) (Pred: 131-151 mg/dL @ 4:11 PM) (Protein: 12g | Carbs: ~32g | Cals: ~280) [📷](https://iili.io/Bul0bBR.jpg) | 32 | 280 |"
+      },
+      "timestamp": "2026-04-05T14:06:00-07:00",
+      "date": "2026-04-05",
+      "time": "14:06 -07:00",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "mealType": "Snack",
+      "title": "Snack: 5 dumplings / potstickers [Cumulative Snack: 61g carbs total]",
+      "notes": "BG: 88 mg/dL Flat; Protein: 12g; Pred: 131-151 mg/dL @ 4:11 PM",
+      "photoUrls": [
+        "https://iili.io/Bul0bBR.jpg"
+      ],
+      "carbsEst": 32,
+      "caloriesEst": 280,
+      "proteinEst": 12,
+      "predicted": {
+        "peakBgText": "131-151 mg/dL",
+        "peakTimeText": "4:11 PM"
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:aba5b3d5bfded6bbae74872fb42fceb1e2357205b07bbeafdc816a8ae6c25d4e",
+      "contentHash": "sha256:4ee85b1eaa2f3fb21dc764d0b40c36b13ec5ec95611b95e1a29dbd7102319105"
     }
   ]
 }

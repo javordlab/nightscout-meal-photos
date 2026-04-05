@@ -1,7 +1,7 @@
 [
   {
     "id": "33985ec7-0668-812c-838b-c39d0cebbb39",
-    "title": "Snack: 5 dumplings / potstickers [Cumulative Snack: 61g carbs total] (BG: 88 mg/dL Flat) (Pred: 131-151 mg/dL @ 4:11 PM) (Protein: 12g | Carbs: ~32g | Cals: ~280)",
+    "title": "Snack: 5 dumplings / potstickers [Cumulative Snack: 61g carbs total] (BG: 88 mg/dL Flat) (Protein: 12g) (Pred: 131-151 mg/dL @ 4:11 PM)",
     "type": "Snack",
     "date": "2026-04-05T14:06:00.000-07:00",
     "photo": "https://iili.io/Bul0bBR.jpg",
@@ -12,7 +12,7 @@
   },
   {
     "id": "33985ec7-0668-8104-8d97-d6e4468ca15d",
-    "title": "Snack: Sliced red apple with peanut butter (BG: 88 mg/dL Flat) (Pred: 126-136 mg/dL @ 4:11 PM) (Protein: 7g | Carbs: ~29g | Cals: ~240)",
+    "title": "Snack: Sliced red apple with peanut butter (BG: 88 mg/dL Flat) (Protein: 7g) (Pred: 126-136 mg/dL @ 4:11 PM)",
     "type": "Snack",
     "date": "2026-04-05T14:05:00.000-07:00",
     "photo": "https://iili.io/BulxrAB.jpg",
@@ -975,6 +975,17 @@
     "photo": "https://iili.io/qAS2gVV.jpg",
     "carbs": 12,
     "cals": 250,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "33985ec7-0668-81ae-98c4-c692b874d0dc",
+    "title": "Sliced apple and kiwi (~22g carbs, ~90 kcal) (Pred: 197 mg/dL @ 3:24 PM) (Protein: 6g | Carbs: ~22g | Cals: ~90)",
+    "type": "Snack",
+    "date": "2026-03-09T13:39:00.000-07:00",
+    "photo": "https://iili.io/qAWYFjf.jpg",
+    "carbs": 22,
+    "cals": 90,
     "delta": null,
     "peak": null
   },
