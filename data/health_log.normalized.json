@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-05T02:30:00.454Z",
+  "generatedAt": "2026-04-05T03:00:00.719Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
-  "entryCount": 458,
+  "entryCount": 459,
   "entries": [
     {
       "source": {
@@ -19146,6 +19146,47 @@
       },
       "entryKey": "sha256:e2d90088d150dee97f7890655dc3ed63e4aa572407c0912e44f5ee6888866099",
       "contentHash": "sha256:e6fc01ec9088a4591258634a9b32752d26ea7ae3c2a4f21b0efe4143a65d4951"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 487,
+        "rawRow": "| 2026-04-04 | 19:47 -07:00 | Maria Dennis | Food | Dinner | Dinner: Chickpea, cabbage, sausage, and meat stew with bread roll, and 8 oz Radler [Cumulative Dinner: 49g carbs total] (BG: 123 mg/dL Flat) (Pred: 175-185 mg/dL @ 9:03 PM) (Protein: 25g | Carbs: ~49g | Cals: ~530) | null | null |"
+      },
+      "timestamp": "2026-04-04T19:47:00-07:00",
+      "date": "2026-04-04",
+      "time": "19:47 -07:00",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "mealType": "Dinner",
+      "title": "Dinner: Chickpea, cabbage, sausage, and meat stew with bread roll, and 8 oz Radler [Cumulative Dinner: 49g carbs total]",
+      "notes": "BG: 123 mg/dL Flat; Protein: 25g; Pred: 175-185 mg/dL @ 9:03 PM",
+      "photoUrls": [],
+      "carbsEst": null,
+      "caloriesEst": null,
+      "proteinEst": 25,
+      "predicted": {
+        "peakBgText": "175-185 mg/dL",
+        "peakTimeText": "9:03 PM"
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:82396b1c13aa96594fd999fa6ffe0fa3822dc6cb609d0dd7e0bbdf4da574ff15",
+      "contentHash": "sha256:124f680732849691c3028361d3cde4847814f64a77cf71957c5ed4de6913bb3b"
     }
   ]
 }
