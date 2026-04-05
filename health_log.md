@@ -492,3 +492,4 @@
 | 2026-04-05 | 10:42 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Small handful of cashews [Cumulative Breakfast: 38g carbs total] (BG: 106 mg/dL Flat) (Pred: 178-198 mg/dL @ 12:00 PM) (Protein: 2g | Carbs: ~3g | Cals: ~65) [📷](https://iili.io/Bu94NNn.jpg) | 3 | 65 |
 | 2026-04-05 | 11:28 -07:00 | Maria Dennis | Exercise | - | Exercise: 20 minute walk (BG: 181 mg/dL FortyFiveUp) | - | - |
 | 2026-04-05 | 14:05 -07:00 | Maria Dennis | Food | Snack | Snack: Sliced red apple with peanut butter (BG: 88 mg/dL Flat) (Pred: 126-136 mg/dL @ 4:11 PM) (Protein: 7g | Carbs: ~29g | Cals: ~240) [📷](https://iili.io/BulxrAB.jpg) | 29 | 240 |
+| 2026-04-05 | 14:06 -07:00 | Maria Dennis | Food | Snack | Snack: 5 dumplings / potstickers [Cumulative Snack: 61g carbs total] (BG: 88 mg/dL Flat) (Pred: 131-151 mg/dL @ 4:11 PM) (Protein: 12g | Carbs: ~32g | Cals: ~280) [📷](https://iili.io/Bul0bBR.jpg) | 32 | 280 |
