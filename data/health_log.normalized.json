@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-05T17:30:00.992Z",
+  "generatedAt": "2026-04-05T18:00:00.633Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
-  "entryCount": 461,
+  "entryCount": 463,
   "entries": [
     {
       "source": {
@@ -19271,6 +19271,92 @@
       },
       "entryKey": "sha256:82396b1c13aa96594fd999fa6ffe0fa3822dc6cb609d0dd7e0bbdf4da574ff15",
       "contentHash": "sha256:67f5826e67e724c504be71aceff0851aa01038ba0edf233e7460dce2542af43a"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 490,
+        "rawRow": "| 2026-04-05 | 10:33 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Open-faced toast with melted cheese, prosciutto/ham, and 2 small guavas (BG: 111 mg/dL Flat) (Pred: 174-194 mg/dL @ 12:00 PM) (Protein: 24g | Carbs: ~35g | Cals: ~380) [📷](https://iili.io/BTy8Sj4.jpg) | 35 | 380 |"
+      },
+      "timestamp": "2026-04-05T10:33:00-07:00",
+      "date": "2026-04-05",
+      "time": "10:33 -07:00",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "mealType": "Breakfast",
+      "title": "Breakfast: Open-faced toast with melted cheese, prosciutto/ham, and 2 small guavas",
+      "notes": "BG: 111 mg/dL Flat; Protein: 24g; Pred: 174-194 mg/dL @ 12:00 PM",
+      "photoUrls": [
+        "https://iili.io/BTy8Sj4.jpg"
+      ],
+      "carbsEst": 35,
+      "caloriesEst": 380,
+      "proteinEst": 24,
+      "predicted": {
+        "peakBgText": "174-194 mg/dL",
+        "peakTimeText": "12:00 PM"
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:f03c7dd26c6c5aa279ab83aa02b2761e698a0a810d87fba3935bb77c70395e3c",
+      "contentHash": "sha256:277ceb558b1ae7615872b2b97d85b5356abae9b200f23f22b33797a2c8edddda"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 491,
+        "rawRow": "| 2026-04-05 | 10:42 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Small handful of cashews [Cumulative Breakfast: 38g carbs total] (BG: 106 mg/dL Flat) (Pred: 178-198 mg/dL @ 12:00 PM) (Protein: 2g | Carbs: ~3g | Cals: ~65) [📷](https://iili.io/Bu94NNn.jpg) | 3 | 65 |"
+      },
+      "timestamp": "2026-04-05T10:42:00-07:00",
+      "date": "2026-04-05",
+      "time": "10:42 -07:00",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "mealType": "Breakfast",
+      "title": "Breakfast: Small handful of cashews [Cumulative Breakfast: 38g carbs total]",
+      "notes": "BG: 106 mg/dL Flat; Protein: 2g; Pred: 178-198 mg/dL @ 12:00 PM",
+      "photoUrls": [
+        "https://iili.io/Bu94NNn.jpg"
+      ],
+      "carbsEst": 3,
+      "caloriesEst": 65,
+      "proteinEst": 2,
+      "predicted": {
+        "peakBgText": "178-198 mg/dL",
+        "peakTimeText": "12:00 PM"
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:ab6247f655aa83acbc268cfec8f37a3ac55a31dc54216cb2eb1cd347b9c0bd1e",
+      "contentHash": "sha256:7fd3c3ccfe4986e9b0d7ac2b891d0d87838c9a9e187ebdde352991444a14573a"
     }
   ]
 }
