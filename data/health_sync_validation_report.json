@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-05T06:30:01.320Z",
-  "entryCount": 42,
+  "generatedAt": "2026-04-05T07:00:00.831Z",
+  "entryCount": 28,
   "errors": [],
   "warnings": [
     {
@@ -23,20 +23,6 @@
       "entryKey": "sha256:ba496d07c2ab559c18c1fb08ed2e78f2c34d07bce846ef6c729d4e0b5d86b0f8",
       "timestamp": "2026-04-02T20:35:00-07:00",
       "title": "Snack: 2 slices dried dragon fruit (~20g)",
-      "reason": "missing_photo_urls"
-    },
-    {
-      "entryKey": "sha256:e419ec1657e809fce643db5aa1612e77d1bcd98ff79d9b41845a9158e45d9b1a",
-      "timestamp": "2026-04-02T12:46:00-07:00",
-      "title": "Lunch: 1 protein ball [Cumulative Lunch: ~14g carbs total]",
-      "reason": "photo_missing_but_found_in_internal_folder",
-      "file": "/Users/javier/.openclaw/media/inbound/file_252---de779c6d-343b-4306-bb5b-19193563cd83.jpg",
-      "diffMinutes": 5
-    },
-    {
-      "entryKey": "sha256:b4d14362084e075dca29f67523c07171dc26c0c4358e533ead035772a951f549",
-      "timestamp": "2026-04-01T20:32:00-07:00",
-      "title": "Snack: 1 protein ball",
       "reason": "missing_photo_urls"
     },
     {
