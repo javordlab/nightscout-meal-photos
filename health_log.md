@@ -487,3 +487,4 @@
 | 2026-04-04 | 13:35 -07:00 | Maria Dennis | Exercise | - | Exercise: 20 minute walk and 30 minutes housework (BG: 135 mg/dL Flat) | - | - |
 | 2026-04-04 | 16:26 -07:00 | Maria Dennis | Food | Snack | Snack: 1 cup papaya (BG: 112 mg/dL Flat) (Pred: 132-142 mg/dL @ 6:32 PM) (Protein: 1g | Carbs: ~16g | Cals: ~62) | 16 | 62 |
 | 2026-04-04 | 19:47 -07:00 | Maria Dennis | Food | Dinner | Dinner: Chickpea, cabbage, sausage, and meat stew with bread roll, and 8 oz Radler [Cumulative Dinner: 49g carbs total] (BG: 123 mg/dL Flat) (Pred: 175-185 mg/dL @ 9:03 PM) (Protein: 25g | Carbs: ~49g | Cals: ~530) [📷](https://iili.io/BIgFyrl.jpg) | 49 | 530 |
+| 2026-04-05 | 10:33 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Open-faced toast with melted cheese, prosciutto/ham, and 2 small guavas (BG: 111 mg/dL Flat) (Pred: 174-194 mg/dL @ 12:00 PM) (Protein: 24g | Carbs: ~35g | Cals: ~380) [📷](https://iili.io/BTy8Sj4.jpg) | 35 | 380 |
