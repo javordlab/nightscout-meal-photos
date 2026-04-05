@@ -1,20 +1,7 @@
 {
-  "generatedAt": "2026-04-05T05:00:00.448Z",
+  "generatedAt": "2026-04-05T05:30:00.867Z",
   "entryCount": 42,
-  "errors": [
-    {
-      "entryKey": "sha256:e2d90088d150dee97f7890655dc3ed63e4aa572407c0912e44f5ee6888866099",
-      "timestamp": "2026-04-04T16:26:00-07:00",
-      "title": "Snack: 1 cup papaya",
-      "reason": "missing_carbs_required"
-    },
-    {
-      "entryKey": "sha256:82396b1c13aa96594fd999fa6ffe0fa3822dc6cb609d0dd7e0bbdf4da574ff15",
-      "timestamp": "2026-04-04T19:47:00-07:00",
-      "title": "Dinner: Chickpea, cabbage, sausage, and meat stew with bread roll, and 8 oz Radler [Cumulative Dinner: 49g carbs total]",
-      "reason": "missing_carbs_required"
-    }
-  ],
+  "errors": [],
   "warnings": [
     {
       "entryKey": "sha256:d75d8ff3da8405e40ab41cec6637d01f6101b5b6a6bd52bef9ef45e20c5b58ac",
@@ -72,27 +59,7 @@
       "entryKey": "sha256:e2d90088d150dee97f7890655dc3ed63e4aa572407c0912e44f5ee6888866099",
       "timestamp": "2026-04-04T16:26:00-07:00",
       "title": "Snack: 1 cup papaya",
-      "reason": "missing_calories_estimate"
-    },
-    {
-      "entryKey": "sha256:e2d90088d150dee97f7890655dc3ed63e4aa572407c0912e44f5ee6888866099",
-      "timestamp": "2026-04-04T16:26:00-07:00",
-      "title": "Snack: 1 cup papaya",
       "reason": "missing_photo_urls"
-    },
-    {
-      "entryKey": "sha256:82396b1c13aa96594fd999fa6ffe0fa3822dc6cb609d0dd7e0bbdf4da574ff15",
-      "timestamp": "2026-04-04T19:47:00-07:00",
-      "title": "Dinner: Chickpea, cabbage, sausage, and meat stew with bread roll, and 8 oz Radler [Cumulative Dinner: 49g carbs total]",
-      "reason": "missing_calories_estimate"
-    },
-    {
-      "entryKey": "sha256:82396b1c13aa96594fd999fa6ffe0fa3822dc6cb609d0dd7e0bbdf4da574ff15",
-      "timestamp": "2026-04-04T19:47:00-07:00",
-      "title": "Dinner: Chickpea, cabbage, sausage, and meat stew with bread roll, and 8 oz Radler [Cumulative Dinner: 49g carbs total]",
-      "reason": "photo_missing_but_found_in_internal_folder",
-      "file": "/Users/javier/.openclaw/media/inbound/file_263---784dface-b317-43ea-b4f6-7c8a98750e3b.jpg",
-      "diffMinutes": 1
     }
   ]
 }

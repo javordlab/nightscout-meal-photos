@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-05T05:00:00.400Z",
+  "generatedAt": "2026-04-05T05:30:00.819Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
   "entryCount": 459,
   "entries": [
@@ -8,7 +8,7 @@
       "source": {
         "file": "health_log.md",
         "line": 3,
-        "rawRow": "| 2026-04-04 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 100 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-04-04 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 100 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-04-04T19:00:00-07:00",
       "date": "2026-04-04",
@@ -49,7 +49,7 @@
       "source": {
         "file": "health_log.md",
         "line": 4,
-        "rawRow": "| 2026-04-04 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 158 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-04-04 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 158 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-04-04T13:00:00-07:00",
       "date": "2026-04-04",
@@ -90,7 +90,7 @@
       "source": {
         "file": "health_log.md",
         "line": 5,
-        "rawRow": "| 2026-04-04 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 110 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-04-04 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 110 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-04-04T09:00:00-07:00",
       "date": "2026-04-04",
@@ -131,7 +131,7 @@
       "source": {
         "file": "health_log.md",
         "line": 6,
-        "rawRow": "| 2026-04-04 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 110 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-04-04 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 110 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-04-04T09:10:00-07:00",
       "date": "2026-04-04",
@@ -172,7 +172,7 @@
       "source": {
         "file": "health_log.md",
         "line": 7,
-        "rawRow": "| 2026-04-04 | 09:05 -07:00 | Maria Dennis | Medication | - | Medication: Rosuvastatin 10mg (Scheduled) (BG: 110 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-04-04 | 09:05 -07:00 | Maria Dennis | Medication | - | Medication: Rosuvastatin 10mg (Scheduled) (BG: 110 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-04-04T09:05:00-07:00",
       "date": "2026-04-04",
@@ -213,7 +213,7 @@
       "source": {
         "file": "health_log.md",
         "line": 8,
-        "rawRow": "| 2026-04-03 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 113 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-04-03 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 113 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-04-03T19:00:00-07:00",
       "date": "2026-04-03",
@@ -254,7 +254,7 @@
       "source": {
         "file": "health_log.md",
         "line": 9,
-        "rawRow": "| 2026-04-03 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 160 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-04-03 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 160 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-04-03T09:00:00-07:00",
       "date": "2026-04-03",
@@ -295,7 +295,7 @@
       "source": {
         "file": "health_log.md",
         "line": 10,
-        "rawRow": "| 2026-04-03 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 160 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-04-03 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 160 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-04-03T09:10:00-07:00",
       "date": "2026-04-03",
@@ -336,7 +336,7 @@
       "source": {
         "file": "health_log.md",
         "line": 11,
-        "rawRow": "| 2026-04-03 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 160 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-04-03 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 160 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-04-03T13:00:00-07:00",
       "date": "2026-04-03",
@@ -500,7 +500,7 @@
       "source": {
         "file": "health_log.md",
         "line": 15,
-        "rawRow": "| 2026-04-02 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 152 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-04-02 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 152 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-04-02T19:00:00-07:00",
       "date": "2026-04-02",
@@ -541,7 +541,7 @@
       "source": {
         "file": "health_log.md",
         "line": 16,
-        "rawRow": "| 2026-04-02 | 19:31 -07:00 | Maria Dennis | Activity | - | 30 minute walk (BG: 143 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-04-02 | 19:31 -07:00 | Maria Dennis | Activity | - | 30 minute walk (BG: 143 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-04-02T19:31:00-07:00",
       "date": "2026-04-02",
@@ -711,7 +711,7 @@
       "source": {
         "file": "health_log.md",
         "line": 20,
-        "rawRow": "| 2026-04-02 | 14:03 -07:00 | Maria Dennis | Activity | - | 40 minute walk (BG: 112 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-04-02 | 14:03 -07:00 | Maria Dennis | Activity | - | 40 minute walk (BG: 112 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-04-02T14:03:00-07:00",
       "date": "2026-04-02",
@@ -836,7 +836,7 @@
       "source": {
         "file": "health_log.md",
         "line": 23,
-        "rawRow": "| 2026-04-02 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 161 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-04-02 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 161 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-04-02T13:00:00-07:00",
       "date": "2026-04-02",
@@ -877,7 +877,7 @@
       "source": {
         "file": "health_log.md",
         "line": 24,
-        "rawRow": "| 2026-04-02 | 11:48 -07:00 | Maria Dennis | Activity | - | 90 minutes gardening - moderate/vigorous (hedge pruning and cleaning) (BG: 158 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-04-02 | 11:48 -07:00 | Maria Dennis | Activity | - | 90 minutes gardening - moderate/vigorous (hedge pruning and cleaning) (BG: 158 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-04-02T11:48:00-07:00",
       "date": "2026-04-02",
@@ -961,7 +961,7 @@
       "source": {
         "file": "health_log.md",
         "line": 26,
-        "rawRow": "| 2026-04-02 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 106 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-04-02 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 106 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-04-02T09:00:00-07:00",
       "date": "2026-04-02",
@@ -1002,7 +1002,7 @@
       "source": {
         "file": "health_log.md",
         "line": 27,
-        "rawRow": "| 2026-04-02 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 106 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-04-02 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 106 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-04-02T09:10:00-07:00",
       "date": "2026-04-02",
@@ -1043,7 +1043,7 @@
       "source": {
         "file": "health_log.md",
         "line": 28,
-        "rawRow": "| 2026-04-02 | 09:05 -07:00 | Maria Dennis | Medication | - | Medication: Rosuvastatin 10mg (Scheduled) (BG: 106 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-04-02 | 09:05 -07:00 | Maria Dennis | Medication | - | Medication: Rosuvastatin 10mg (Scheduled) (BG: 106 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-04-02T09:05:00-07:00",
       "date": "2026-04-02",
@@ -1084,7 +1084,7 @@
       "source": {
         "file": "health_log.md",
         "line": 29,
-        "rawRow": "| 2026-04-01 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 123 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-04-01 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 123 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-04-01T19:00:00-07:00",
       "date": "2026-04-01",
@@ -1125,7 +1125,7 @@
       "source": {
         "file": "health_log.md",
         "line": 30,
-        "rawRow": "| 2026-04-01 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 174 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-04-01 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 174 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-04-01T13:00:00-07:00",
       "date": "2026-04-01",
@@ -1166,7 +1166,7 @@
       "source": {
         "file": "health_log.md",
         "line": 31,
-        "rawRow": "| 2026-04-01 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 105 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-04-01 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 105 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-04-01T09:00:00-07:00",
       "date": "2026-04-01",
@@ -1207,7 +1207,7 @@
       "source": {
         "file": "health_log.md",
         "line": 32,
-        "rawRow": "| 2026-04-01 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 105 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-04-01 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 105 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-04-01T09:10:00-07:00",
       "date": "2026-04-01",
@@ -1248,7 +1248,7 @@
       "source": {
         "file": "health_log.md",
         "line": 33,
-        "rawRow": "| 2026-03-31 | 21:15 -07:00 | Maria Dennis | Activity | - | 15 minutes tai chi | null | null |"
+        "rawRow": "| 2026-03-31 | 21:15 -07:00 | Maria Dennis | Activity | - | 15 minutes tai chi | - | - |"
       },
       "timestamp": "2026-03-31T21:15:00-07:00",
       "date": "2026-03-31",
@@ -1289,7 +1289,7 @@
       "source": {
         "file": "health_log.md",
         "line": 34,
-        "rawRow": "| 2026-03-31 | 20:12 -07:00 | Maria Dennis | Activity | - | 20 minutes walk | null | null |"
+        "rawRow": "| 2026-03-31 | 20:12 -07:00 | Maria Dennis | Activity | - | 20 minutes walk | - | - |"
       },
       "timestamp": "2026-03-31T20:12:00-07:00",
       "date": "2026-03-31",
@@ -1330,7 +1330,7 @@
       "source": {
         "file": "health_log.md",
         "line": 35,
-        "rawRow": "| 2026-03-31 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 129 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-31 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 129 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-31T19:00:00-07:00",
       "date": "2026-03-31",
@@ -1414,7 +1414,7 @@
       "source": {
         "file": "health_log.md",
         "line": 37,
-        "rawRow": "| 2026-03-31 | 14:02 -07:00 | Maria Dennis | Activity | - | 30 minutes walk | null | null |"
+        "rawRow": "| 2026-03-31 | 14:02 -07:00 | Maria Dennis | Activity | - | 30 minutes walk | - | - |"
       },
       "timestamp": "2026-03-31T14:02:00-07:00",
       "date": "2026-03-31",
@@ -1539,7 +1539,7 @@
       "source": {
         "file": "health_log.md",
         "line": 40,
-        "rawRow": "| 2026-03-31 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 118 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-31 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 118 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-31T13:00:00-07:00",
       "date": "2026-03-31",
@@ -1580,7 +1580,7 @@
       "source": {
         "file": "health_log.md",
         "line": 41,
-        "rawRow": "| 2026-03-31 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 112 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-31 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 112 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-31T09:00:00-07:00",
       "date": "2026-03-31",
@@ -1664,7 +1664,7 @@
       "source": {
         "file": "health_log.md",
         "line": 43,
-        "rawRow": "| 2026-03-31 | 11:01 -07:00 | Maria Dennis | Activity | - | 60 minutes walk | null | null |"
+        "rawRow": "| 2026-03-31 | 11:01 -07:00 | Maria Dennis | Activity | - | 60 minutes walk | - | - |"
       },
       "timestamp": "2026-03-31T11:01:00-07:00",
       "date": "2026-03-31",
@@ -1791,7 +1791,7 @@
       "source": {
         "file": "health_log.md",
         "line": 46,
-        "rawRow": "| 2026-03-31 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 112 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-31 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 112 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-31T09:10:00-07:00",
       "date": "2026-03-31",
@@ -1832,7 +1832,7 @@
       "source": {
         "file": "health_log.md",
         "line": 47,
-        "rawRow": "| 2026-03-31 | 09:05 -07:00 | Maria Dennis | Medication | - | Medication: Rosuvastatin 10mg (Scheduled) (BG: 112 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-31 | 09:05 -07:00 | Maria Dennis | Medication | - | Medication: Rosuvastatin 10mg (Scheduled) (BG: 112 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-31T09:05:00-07:00",
       "date": "2026-03-31",
@@ -1873,7 +1873,7 @@
       "source": {
         "file": "health_log.md",
         "line": 48,
-        "rawRow": "| 2026-03-30 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 143 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-30 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 143 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-30T19:00:00-07:00",
       "date": "2026-03-30",
@@ -1914,7 +1914,7 @@
       "source": {
         "file": "health_log.md",
         "line": 49,
-        "rawRow": "| 2026-03-30 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 158 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-30 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 158 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-30T13:00:00-07:00",
       "date": "2026-03-30",
@@ -1955,7 +1955,7 @@
       "source": {
         "file": "health_log.md",
         "line": 50,
-        "rawRow": "| 2026-03-30 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 120 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-30 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 120 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-30T09:00:00-07:00",
       "date": "2026-03-30",
@@ -1996,7 +1996,7 @@
       "source": {
         "file": "health_log.md",
         "line": 51,
-        "rawRow": "| 2026-03-30 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 120 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-30 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 120 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-30T09:10:00-07:00",
       "date": "2026-03-30",
@@ -2037,7 +2037,7 @@
       "source": {
         "file": "health_log.md",
         "line": 52,
-        "rawRow": "| 2026-03-29 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 118 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-29 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 118 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-29T19:00:00-07:00",
       "date": "2026-03-29",
@@ -2078,7 +2078,7 @@
       "source": {
         "file": "health_log.md",
         "line": 55,
-        "rawRow": "| 2026-03-29 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 90 mg/dL FortyFiveDown) | null | null |"
+        "rawRow": "| 2026-03-29 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 90 mg/dL FortyFiveDown) | - | - |"
       },
       "timestamp": "2026-03-29T13:00:00-07:00",
       "date": "2026-03-29",
@@ -2119,7 +2119,7 @@
       "source": {
         "file": "health_log.md",
         "line": 56,
-        "rawRow": "| 2026-03-29 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 114 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-29 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 114 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-29T09:00:00-07:00",
       "date": "2026-03-29",
@@ -2160,7 +2160,7 @@
       "source": {
         "file": "health_log.md",
         "line": 57,
-        "rawRow": "| 2026-03-29 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 114 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-29 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 114 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-29T09:10:00-07:00",
       "date": "2026-03-29",
@@ -2201,7 +2201,7 @@
       "source": {
         "file": "health_log.md",
         "line": 58,
-        "rawRow": "| 2026-03-29 | 09:05 -07:00 | Maria Dennis | Medication | - | Medication: Rosuvastatin 10mg (Scheduled) (BG: 114 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-29 | 09:05 -07:00 | Maria Dennis | Medication | - | Medication: Rosuvastatin 10mg (Scheduled) (BG: 114 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-29T09:05:00-07:00",
       "date": "2026-03-29",
@@ -2283,7 +2283,7 @@
       "source": {
         "file": "health_log.md",
         "line": 60,
-        "rawRow": "| 2026-03-28 | 19:30 -07:00 | Maria Dennis | Medication | - | Medication: Berberine (dinner, no evening walk) (BG: 139 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-28 | 19:30 -07:00 | Maria Dennis | Medication | - | Medication: Berberine (dinner, no evening walk) (BG: 139 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-28T19:30:00-07:00",
       "date": "2026-03-28",
@@ -2324,7 +2324,7 @@
       "source": {
         "file": "health_log.md",
         "line": 61,
-        "rawRow": "| 2026-03-28 | 19:30 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 139 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-28 | 19:30 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 139 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-28T19:30:00-07:00",
       "date": "2026-03-28",
@@ -2533,7 +2533,7 @@
       "source": {
         "file": "health_log.md",
         "line": 66,
-        "rawRow": "| 2026-03-28 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 123 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-28 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 123 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-28T13:00:00-07:00",
       "date": "2026-03-28",
@@ -2699,7 +2699,7 @@
       "source": {
         "file": "health_log.md",
         "line": 71,
-        "rawRow": "| 2026-03-28 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 108 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-28 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 108 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-28T09:00:00-07:00",
       "date": "2026-03-28",
@@ -2740,7 +2740,7 @@
       "source": {
         "file": "health_log.md",
         "line": 72,
-        "rawRow": "| 2026-03-28 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 108 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-28 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 108 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-28T09:10:00-07:00",
       "date": "2026-03-28",
@@ -2953,7 +2953,7 @@
       "source": {
         "file": "health_log.md",
         "line": 84,
-        "rawRow": "| 2026-03-27 | 20:07 -07:00 | Maria Dennis | Activity | - | 20 minutes walk (BG: 102 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-27 | 20:07 -07:00 | Maria Dennis | Activity | - | 20 minutes walk (BG: 102 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-27T20:07:00-07:00",
       "date": "2026-03-27",
@@ -2994,7 +2994,7 @@
       "source": {
         "file": "health_log.md",
         "line": 85,
-        "rawRow": "| 2026-03-27 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 113 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-27 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 113 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-27T19:00:00-07:00",
       "date": "2026-03-27",
@@ -3164,7 +3164,7 @@
       "source": {
         "file": "health_log.md",
         "line": 91,
-        "rawRow": "| 2026-03-27 | 13:36 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 122 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-27 | 13:36 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 122 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-27T13:36:00-07:00",
       "date": "2026-03-27",
@@ -3291,7 +3291,7 @@
       "source": {
         "file": "health_log.md",
         "line": 98,
-        "rawRow": "| 2026-03-27 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 100 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-27 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 100 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-27T09:00:00-07:00",
       "date": "2026-03-27",
@@ -3332,7 +3332,7 @@
       "source": {
         "file": "health_log.md",
         "line": 99,
-        "rawRow": "| 2026-03-27 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 100 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-27 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 100 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-27T09:10:00-07:00",
       "date": "2026-03-27",
@@ -3373,7 +3373,7 @@
       "source": {
         "file": "health_log.md",
         "line": 100,
-        "rawRow": "| 2026-03-27 | 09:05 -07:00 | Maria Dennis | Medication | - | Medication: Rosuvastatin 10mg (Scheduled) (BG: 100 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-27 | 09:05 -07:00 | Maria Dennis | Medication | - | Medication: Rosuvastatin 10mg (Scheduled) (BG: 100 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-27T09:05:00-07:00",
       "date": "2026-03-27",
@@ -3414,7 +3414,7 @@
       "source": {
         "file": "health_log.md",
         "line": 101,
-        "rawRow": "| 2026-03-26 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 130 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-26 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 130 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-26T19:00:00-07:00",
       "date": "2026-03-26",
@@ -3455,7 +3455,7 @@
       "source": {
         "file": "health_log.md",
         "line": 102,
-        "rawRow": "| 2026-03-26 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 132 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-26 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 132 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-26T13:00:00-07:00",
       "date": "2026-03-26",
@@ -3496,7 +3496,7 @@
       "source": {
         "file": "health_log.md",
         "line": 103,
-        "rawRow": "| 2026-03-26 | 20:09 -07:00 | Maria Dennis | Activity | - | 15 minutes Qigong | null | null |"
+        "rawRow": "| 2026-03-26 | 20:09 -07:00 | Maria Dennis | Activity | - | 15 minutes Qigong | - | - |"
       },
       "timestamp": "2026-03-26T20:09:00-07:00",
       "date": "2026-03-26",
@@ -3537,7 +3537,7 @@
       "source": {
         "file": "health_log.md",
         "line": 104,
-        "rawRow": "| 2026-03-26 | 19:51 -07:00 | Maria Dennis | Activity | - | 20 minutes walk | null | null |"
+        "rawRow": "| 2026-03-26 | 19:51 -07:00 | Maria Dennis | Activity | - | 20 minutes walk | - | - |"
       },
       "timestamp": "2026-03-26T19:51:00-07:00",
       "date": "2026-03-26",
@@ -3748,7 +3748,7 @@
       "source": {
         "file": "health_log.md",
         "line": 109,
-        "rawRow": "| 2026-03-26 | 14:06 -07:00 | Maria Dennis | Activity | - | 39 minutes gardening | null | null |"
+        "rawRow": "| 2026-03-26 | 14:06 -07:00 | Maria Dennis | Activity | - | 39 minutes gardening | - | - |"
       },
       "timestamp": "2026-03-26T14:06:00-07:00",
       "date": "2026-03-26",
@@ -3875,7 +3875,7 @@
       "source": {
         "file": "health_log.md",
         "line": 112,
-        "rawRow": "| 2026-03-26 | 11:01 -07:00 | Maria Dennis | Activity | - | 40 minutes gardening | null | null |"
+        "rawRow": "| 2026-03-26 | 11:01 -07:00 | Maria Dennis | Activity | - | 40 minutes gardening | - | - |"
       },
       "timestamp": "2026-03-26T11:01:00-07:00",
       "date": "2026-03-26",
@@ -3916,7 +3916,7 @@
       "source": {
         "file": "health_log.md",
         "line": 113,
-        "rawRow": "| 2026-03-26 | 10:21 -07:00 | Maria Dennis | Activity | - | 25 minutes walk up/down hill | null | null |"
+        "rawRow": "| 2026-03-26 | 10:21 -07:00 | Maria Dennis | Activity | - | 25 minutes walk up/down hill | - | - |"
       },
       "timestamp": "2026-03-26T10:21:00-07:00",
       "date": "2026-03-26",
@@ -4041,7 +4041,7 @@
       "source": {
         "file": "health_log.md",
         "line": 117,
-        "rawRow": "| 2026-03-26 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 105 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-26 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 105 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-26T09:00:00-07:00",
       "date": "2026-03-26",
@@ -4082,7 +4082,7 @@
       "source": {
         "file": "health_log.md",
         "line": 118,
-        "rawRow": "| 2026-03-26 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 105 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-26 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 105 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-26T09:10:00-07:00",
       "date": "2026-03-26",
@@ -4123,7 +4123,7 @@
       "source": {
         "file": "health_log.md",
         "line": 119,
-        "rawRow": "| 2026-03-25 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 117 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-25 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 117 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-25T19:00:00-07:00",
       "date": "2026-03-25",
@@ -4164,7 +4164,7 @@
       "source": {
         "file": "health_log.md",
         "line": 120,
-        "rawRow": "| 2026-03-25 | 20:27 -07:00 | Maria Dennis | Activity | - | 15 minutes tai chi | null | null |"
+        "rawRow": "| 2026-03-25 | 20:27 -07:00 | Maria Dennis | Activity | - | 15 minutes tai chi | - | - |"
       },
       "timestamp": "2026-03-25T20:27:00-07:00",
       "date": "2026-03-25",
@@ -4205,7 +4205,7 @@
       "source": {
         "file": "health_log.md",
         "line": 121,
-        "rawRow": "| 2026-03-25 | 20:00 -07:00 | Maria Dennis | Activity | - | 20 minutes walk | null | null |"
+        "rawRow": "| 2026-03-25 | 20:00 -07:00 | Maria Dennis | Activity | - | 20 minutes walk | - | - |"
       },
       "timestamp": "2026-03-25T20:00:00-07:00",
       "date": "2026-03-25",
@@ -4373,7 +4373,7 @@
       "source": {
         "file": "health_log.md",
         "line": 125,
-        "rawRow": "| 2026-03-25 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 119 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-25 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 119 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-25T13:00:00-07:00",
       "date": "2026-03-25",
@@ -4457,7 +4457,7 @@
       "source": {
         "file": "health_log.md",
         "line": 127,
-        "rawRow": "| 2026-03-25 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 112 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-25 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 112 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-25T09:00:00-07:00",
       "date": "2026-03-25",
@@ -4498,7 +4498,7 @@
       "source": {
         "file": "health_log.md",
         "line": 128,
-        "rawRow": "| 2026-03-25 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 112 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-25 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 112 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-25T09:10:00-07:00",
       "date": "2026-03-25",
@@ -4539,7 +4539,7 @@
       "source": {
         "file": "health_log.md",
         "line": 129,
-        "rawRow": "| 2026-03-25 | 09:05 -07:00 | Maria Dennis | Medication | - | Medication: Rosuvastatin 10mg (Scheduled) (BG: 112 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-25 | 09:05 -07:00 | Maria Dennis | Medication | - | Medication: Rosuvastatin 10mg (Scheduled) (BG: 112 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-25T09:05:00-07:00",
       "date": "2026-03-25",
@@ -4580,7 +4580,7 @@
       "source": {
         "file": "health_log.md",
         "line": 130,
-        "rawRow": "| 2026-03-24 | 20:06 -07:00 | Maria Dennis | Activity | - | 25 minutes walk | null | null |"
+        "rawRow": "| 2026-03-24 | 20:06 -07:00 | Maria Dennis | Activity | - | 25 minutes walk | - | - |"
       },
       "timestamp": "2026-03-24T20:06:00-07:00",
       "date": "2026-03-24",
@@ -4707,7 +4707,7 @@
       "source": {
         "file": "health_log.md",
         "line": 133,
-        "rawRow": "| 2026-03-24 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 110 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-24 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 110 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-24T19:00:00-07:00",
       "date": "2026-03-24",
@@ -4834,7 +4834,7 @@
       "source": {
         "file": "health_log.md",
         "line": 136,
-        "rawRow": "| 2026-03-24 | 11:11 -07:00 | Maria Dennis | Activity | - | 30 minutes walk uphill | null | null |"
+        "rawRow": "| 2026-03-24 | 11:11 -07:00 | Maria Dennis | Activity | - | 30 minutes walk uphill | - | - |"
       },
       "timestamp": "2026-03-24T11:11:00-07:00",
       "date": "2026-03-24",
@@ -4918,7 +4918,7 @@
       "source": {
         "file": "health_log.md",
         "line": 138,
-        "rawRow": "| 2026-03-24 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 136 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-24 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 136 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-24T13:00:00-07:00",
       "date": "2026-03-24",
@@ -5002,7 +5002,7 @@
       "source": {
         "file": "health_log.md",
         "line": 140,
-        "rawRow": "| 2026-03-24 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 116 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-24 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 116 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-24T09:00:00-07:00",
       "date": "2026-03-24",
@@ -5043,7 +5043,7 @@
       "source": {
         "file": "health_log.md",
         "line": 141,
-        "rawRow": "| 2026-03-24 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 116 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-24 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 116 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-24T09:10:00-07:00",
       "date": "2026-03-24",
@@ -5084,7 +5084,7 @@
       "source": {
         "file": "health_log.md",
         "line": 142,
-        "rawRow": "| 2026-03-23 | 19:44 -07:00 | Maria Dennis | Activity | - | 15 minutes walk (BG: 120 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-23 | 19:44 -07:00 | Maria Dennis | Activity | - | 15 minutes walk (BG: 120 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-23T19:44:00-07:00",
       "date": "2026-03-23",
@@ -5166,7 +5166,7 @@
       "source": {
         "file": "health_log.md",
         "line": 144,
-        "rawRow": "| 2026-03-23 | 19:00 -07:00 | Maria Dennis | Medication | - | Metformin 1000mg (dinner) | null | null |"
+        "rawRow": "| 2026-03-23 | 19:00 -07:00 | Maria Dennis | Medication | - | Metformin 1000mg (dinner) | - | - |"
       },
       "timestamp": "2026-03-23T19:00:00-07:00",
       "date": "2026-03-23",
@@ -5291,7 +5291,7 @@
       "source": {
         "file": "health_log.md",
         "line": 147,
-        "rawRow": "| 2026-03-23 | 13:59 -07:00 | Maria Dennis | Activity | - | 30 minutes gardening (BG: 145 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-23 | 13:59 -07:00 | Maria Dennis | Activity | - | 30 minutes gardening (BG: 145 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-23T13:59:00-07:00",
       "date": "2026-03-23",
@@ -5418,7 +5418,7 @@
       "source": {
         "file": "health_log.md",
         "line": 150,
-        "rawRow": "| 2026-03-23 | 13:00 -07:00 | Maria Dennis | Medication | - | Metformin 500mg (lunch) | null | null |"
+        "rawRow": "| 2026-03-23 | 13:00 -07:00 | Maria Dennis | Medication | - | Metformin 500mg (lunch) | - | - |"
       },
       "timestamp": "2026-03-23T13:00:00-07:00",
       "date": "2026-03-23",
@@ -5459,7 +5459,7 @@
       "source": {
         "file": "health_log.md",
         "line": 151,
-        "rawRow": "| 2026-03-23 | 10:13 -07:00 | Maria Dennis | Medication | - | Trulicity 0.75 MG/0.5 ML (weekly) | null | null |"
+        "rawRow": "| 2026-03-23 | 10:13 -07:00 | Maria Dennis | Medication | - | Trulicity 0.75 MG/0.5 ML (weekly) | - | - |"
       },
       "timestamp": "2026-03-23T10:13:00-07:00",
       "date": "2026-03-23",
@@ -5541,7 +5541,7 @@
       "source": {
         "file": "health_log.md",
         "line": 153,
-        "rawRow": "| 2026-03-23 | 09:10 -07:00 | Maria Dennis | Medication | - | Metformin 500mg (breakfast) | null | null |"
+        "rawRow": "| 2026-03-23 | 09:10 -07:00 | Maria Dennis | Medication | - | Metformin 500mg (breakfast) | - | - |"
       },
       "timestamp": "2026-03-23T09:10:00-07:00",
       "date": "2026-03-23",
@@ -5625,7 +5625,7 @@
       "source": {
         "file": "health_log.md",
         "line": 155,
-        "rawRow": "| 2026-03-22 | 20:30 -07:00 | Maria Dennis | Activity | - | 15 minutes walk (BG: 161 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-22 | 20:30 -07:00 | Maria Dennis | Activity | - | 15 minutes walk (BG: 161 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-22T20:30:00-07:00",
       "date": "2026-03-22",
@@ -5795,7 +5795,7 @@
       "source": {
         "file": "health_log.md",
         "line": 159,
-        "rawRow": "| 2026-03-23 | 09:05 -07:00 | Maria Dennis | Medication | - | Rosuvastatin 10mg (Scheduled) | null | null |"
+        "rawRow": "| 2026-03-23 | 09:05 -07:00 | Maria Dennis | Medication | - | Rosuvastatin 10mg (Scheduled) | - | - |"
       },
       "timestamp": "2026-03-23T09:05:00-07:00",
       "date": "2026-03-23",
@@ -5836,7 +5836,7 @@
       "source": {
         "file": "health_log.md",
         "line": 160,
-        "rawRow": "| 2026-03-23 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |"
+        "rawRow": "| 2026-03-23 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | - | - |"
       },
       "timestamp": "2026-03-23T09:00:00-07:00",
       "date": "2026-03-23",
@@ -5877,7 +5877,7 @@
       "source": {
         "file": "health_log.md",
         "line": 161,
-        "rawRow": "| 2026-03-22 | 15:28 -07:00 | Maria Dennis | Activity | - | 120 minutes gardening (BG: 133 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-22 | 15:28 -07:00 | Maria Dennis | Activity | - | 120 minutes gardening (BG: 133 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-22T15:28:00-07:00",
       "date": "2026-03-22",
@@ -5918,7 +5918,7 @@
       "source": {
         "file": "health_log.md",
         "line": 162,
-        "rawRow": "| 2026-03-22 | 12:09 -07:00 | Maria Dennis | Activity | - | 60 minutes walk (BG: 155 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-22 | 12:09 -07:00 | Maria Dennis | Activity | - | 60 minutes walk (BG: 155 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-22T12:09:00-07:00",
       "date": "2026-03-22",
@@ -6002,7 +6002,7 @@
       "source": {
         "file": "health_log.md",
         "line": 164,
-        "rawRow": "| 2026-03-21 | 18:58 -07:00 | Maria Dennis | Activity | - | 30 minutes gardening | null | null |"
+        "rawRow": "| 2026-03-21 | 18:58 -07:00 | Maria Dennis | Activity | - | 30 minutes gardening | - | - |"
       },
       "timestamp": "2026-03-21T18:58:00-07:00",
       "date": "2026-03-21",
@@ -6043,7 +6043,7 @@
       "source": {
         "file": "health_log.md",
         "line": 165,
-        "rawRow": "| 2026-03-21 | 19:00 -07:00 | Maria Dennis | Medication | - | Metformin 1000mg (with dinner) | null | null |"
+        "rawRow": "| 2026-03-21 | 19:00 -07:00 | Maria Dennis | Medication | - | Metformin 1000mg (with dinner) | - | - |"
       },
       "timestamp": "2026-03-21T19:00:00-07:00",
       "date": "2026-03-21",
@@ -6127,7 +6127,7 @@
       "source": {
         "file": "health_log.md",
         "line": 168,
-        "rawRow": "| 2026-03-22 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |"
+        "rawRow": "| 2026-03-22 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | - | - |"
       },
       "timestamp": "2026-03-22T09:00:00-07:00",
       "date": "2026-03-22",
@@ -6168,7 +6168,7 @@
       "source": {
         "file": "health_log.md",
         "line": 169,
-        "rawRow": "| 2026-03-21 | 14:56 -07:00 | Maria Dennis | Activity | - | 60 minutes gardening | null | null |"
+        "rawRow": "| 2026-03-21 | 14:56 -07:00 | Maria Dennis | Activity | - | 60 minutes gardening | - | - |"
       },
       "timestamp": "2026-03-21T14:56:00-07:00",
       "date": "2026-03-21",
@@ -6252,7 +6252,7 @@
       "source": {
         "file": "health_log.md",
         "line": 171,
-        "rawRow": "| 2026-03-21 | 12:31 -07:00 | Maria Dennis | Activity | - | 90 minutes gardening | null | null |"
+        "rawRow": "| 2026-03-21 | 12:31 -07:00 | Maria Dennis | Activity | - | 90 minutes gardening | - | - |"
       },
       "timestamp": "2026-03-21T12:31:00-07:00",
       "date": "2026-03-21",
@@ -6293,7 +6293,7 @@
       "source": {
         "file": "health_log.md",
         "line": 172,
-        "rawRow": "| 2026-03-21 | 10:56 -07:00 | Maria Dennis | Activity | - | 15 minutes walk | null | null |"
+        "rawRow": "| 2026-03-21 | 10:56 -07:00 | Maria Dennis | Activity | - | 15 minutes walk | - | - |"
       },
       "timestamp": "2026-03-21T10:56:00-07:00",
       "date": "2026-03-21",
@@ -6377,7 +6377,7 @@
       "source": {
         "file": "health_log.md",
         "line": 174,
-        "rawRow": "| 2026-03-21 | 09:05 -07:00 | Maria Dennis | Medication | - | Rosuvastatin 10mg (Scheduled) | null | null |"
+        "rawRow": "| 2026-03-21 | 09:05 -07:00 | Maria Dennis | Medication | - | Rosuvastatin 10mg (Scheduled) | - | - |"
       },
       "timestamp": "2026-03-21T09:05:00-07:00",
       "date": "2026-03-21",
@@ -6418,7 +6418,7 @@
       "source": {
         "file": "health_log.md",
         "line": 175,
-        "rawRow": "| 2026-03-21 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |"
+        "rawRow": "| 2026-03-21 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | - | - |"
       },
       "timestamp": "2026-03-21T09:00:00-07:00",
       "date": "2026-03-21",
@@ -6803,7 +6803,7 @@
       "source": {
         "file": "health_log.md",
         "line": 185,
-        "rawRow": "| 2026-03-20 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |"
+        "rawRow": "| 2026-03-20 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | - | - |"
       },
       "timestamp": "2026-03-20T09:00:00-07:00",
       "date": "2026-03-20",
@@ -6844,7 +6844,7 @@
       "source": {
         "file": "health_log.md",
         "line": 186,
-        "rawRow": "| 2026-03-19 | 20:20 -07:00 | Maria Dennis | Activity | - | 15 minutes walk uphill/downhill (BG: ~130 mg/dL estimated) | null | null |"
+        "rawRow": "| 2026-03-19 | 20:20 -07:00 | Maria Dennis | Activity | - | 15 minutes walk uphill/downhill (BG: ~130 mg/dL estimated) | - | - |"
       },
       "timestamp": "2026-03-19T20:20:00-07:00",
       "date": "2026-03-19",
@@ -6971,7 +6971,7 @@
       "source": {
         "file": "health_log.md",
         "line": 189,
-        "rawRow": "| 2026-03-19 | 16:09 -07:00 | Maria Dennis | Activity | - | 90 minutes heavy gardening (BG: 176 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-19 | 16:09 -07:00 | Maria Dennis | Activity | - | 90 minutes heavy gardening (BG: 176 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-19T16:09:00-07:00",
       "date": "2026-03-19",
@@ -7098,7 +7098,7 @@
       "source": {
         "file": "health_log.md",
         "line": 192,
-        "rawRow": "| 2026-03-19 | 10:30 -07:00 | Maria Dennis | Activity | - | 3 hours heavy gardening (BG: ~110 mg/dL estimated) | null | null |"
+        "rawRow": "| 2026-03-19 | 10:30 -07:00 | Maria Dennis | Activity | - | 3 hours heavy gardening (BG: ~110 mg/dL estimated) | - | - |"
       },
       "timestamp": "2026-03-19T10:30:00-07:00",
       "date": "2026-03-19",
@@ -7182,7 +7182,7 @@
       "source": {
         "file": "health_log.md",
         "line": 194,
-        "rawRow": "| 2026-03-19 | 09:48 -07:00 | Maria Dennis | Medication | - | Metformin 500mg (with breakfast) | null | null |"
+        "rawRow": "| 2026-03-19 | 09:48 -07:00 | Maria Dennis | Medication | - | Metformin 500mg (with breakfast) | - | - |"
       },
       "timestamp": "2026-03-19T09:48:00-07:00",
       "date": "2026-03-19",
@@ -7223,7 +7223,7 @@
       "source": {
         "file": "health_log.md",
         "line": 195,
-        "rawRow": "| 2026-03-19 | 09:05 -07:00 | Maria Dennis | Medication | - | Rosuvastatin 10mg (Scheduled) | null | null |"
+        "rawRow": "| 2026-03-19 | 09:05 -07:00 | Maria Dennis | Medication | - | Rosuvastatin 10mg (Scheduled) | - | - |"
       },
       "timestamp": "2026-03-19T09:05:00-07:00",
       "date": "2026-03-19",
@@ -7264,7 +7264,7 @@
       "source": {
         "file": "health_log.md",
         "line": 196,
-        "rawRow": "| 2026-03-19 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |"
+        "rawRow": "| 2026-03-19 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | - | - |"
       },
       "timestamp": "2026-03-19T09:00:00-07:00",
       "date": "2026-03-19",
@@ -7305,7 +7305,7 @@
       "source": {
         "file": "health_log.md",
         "line": 197,
-        "rawRow": "| 2026-03-18 | 20:55 -07:00 | Maria Dennis | Activity | - | 20 minutes walk (BG: 102 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-18 | 20:55 -07:00 | Maria Dennis | Activity | - | 20 minutes walk (BG: 102 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-18T20:55:00-07:00",
       "date": "2026-03-18",
@@ -7392,7 +7392,7 @@
       "source": {
         "file": "health_log.md",
         "line": 199,
-        "rawRow": "| 2026-03-18 | 19:15 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL (Dinner dose) | null | null |"
+        "rawRow": "| 2026-03-18 | 19:15 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL (Dinner dose) | - | - |"
       },
       "timestamp": "2026-03-18T19:15:00-07:00",
       "date": "2026-03-18",
@@ -7474,7 +7474,7 @@
       "source": {
         "file": "health_log.md",
         "line": 201,
-        "rawRow": "| 2026-03-18 | 15:35 -07:00 | Maria Dennis | Activity | - | 2 hours heavy gardening (BG: 230 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-18 | 15:35 -07:00 | Maria Dennis | Activity | - | 2 hours heavy gardening (BG: 230 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-18T15:35:00-07:00",
       "date": "2026-03-18",
@@ -7515,7 +7515,7 @@
       "source": {
         "file": "health_log.md",
         "line": 202,
-        "rawRow": "| 2026-03-18 | 13:30 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL (Lunch/Scheduled) | null | null |"
+        "rawRow": "| 2026-03-18 | 13:30 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL (Lunch/Scheduled) | - | - |"
       },
       "timestamp": "2026-03-18T13:30:00-07:00",
       "date": "2026-03-18",
@@ -7599,7 +7599,7 @@
       "source": {
         "file": "health_log.md",
         "line": 204,
-        "rawRow": "| 2026-03-18 | 11:35 -07:00 | Maria Dennis | Activity | - | 30 minutes walk (BG: 111 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-18 | 11:35 -07:00 | Maria Dennis | Activity | - | 30 minutes walk (BG: 111 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-18T11:35:00-07:00",
       "date": "2026-03-18",
@@ -7681,7 +7681,7 @@
       "source": {
         "file": "health_log.md",
         "line": 206,
-        "rawRow": "| 2026-03-18 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |"
+        "rawRow": "| 2026-03-18 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | - | - |"
       },
       "timestamp": "2026-03-18T09:00:00-07:00",
       "date": "2026-03-18",
@@ -7722,7 +7722,7 @@
       "source": {
         "file": "health_log.md",
         "line": 207,
-        "rawRow": "| 2026-03-17 | 21:30 -07:00 | Maria Dennis | Activity | - | 15 minute walk and 15 minutes Qigong (BG: 162 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-17 | 21:30 -07:00 | Maria Dennis | Activity | - | 15 minute walk and 15 minutes Qigong (BG: 162 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-17T21:30:00-07:00",
       "date": "2026-03-17",
@@ -7763,7 +7763,7 @@
       "source": {
         "file": "health_log.md",
         "line": 208,
-        "rawRow": "| 2026-03-17 | 21:30 -07:00 | Maria Dennis | Medication | - | 1500mg Metformin HCL (incl. missed lunch dose; Total for day: 2000mg) | null | null |"
+        "rawRow": "| 2026-03-17 | 21:30 -07:00 | Maria Dennis | Medication | - | 1500mg Metformin HCL (incl. missed lunch dose; Total for day: 2000mg) | - | - |"
       },
       "timestamp": "2026-03-17T21:30:00-07:00",
       "date": "2026-03-17",
@@ -7971,7 +7971,7 @@
       "source": {
         "file": "health_log.md",
         "line": 213,
-        "rawRow": "| 2026-03-17 | 09:30 -07:00 | Maria Dennis | Medication | - | 500mg Metformin HCL | null | null |"
+        "rawRow": "| 2026-03-17 | 09:30 -07:00 | Maria Dennis | Medication | - | 500mg Metformin HCL | - | - |"
       },
       "timestamp": "2026-03-17T09:30:00-07:00",
       "date": "2026-03-17",
@@ -8012,7 +8012,7 @@
       "source": {
         "file": "health_log.md",
         "line": 214,
-        "rawRow": "| 2026-03-17 | 09:05 -07:00 | Maria Dennis | Medication | - | Rosuvastatin 10mg (Scheduled) | null | null |"
+        "rawRow": "| 2026-03-17 | 09:05 -07:00 | Maria Dennis | Medication | - | Rosuvastatin 10mg (Scheduled) | - | - |"
       },
       "timestamp": "2026-03-17T09:05:00-07:00",
       "date": "2026-03-17",
@@ -8053,7 +8053,7 @@
       "source": {
         "file": "health_log.md",
         "line": 215,
-        "rawRow": "| 2026-03-17 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |"
+        "rawRow": "| 2026-03-17 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | - | - |"
       },
       "timestamp": "2026-03-17T09:00:00-07:00",
       "date": "2026-03-17",
@@ -8094,7 +8094,7 @@
       "source": {
         "file": "health_log.md",
         "line": 216,
-        "rawRow": "| 2026-03-15 | 19:50 -07:00 | Maria Dennis | Activity | - | 40 minutes walk (BG: 159 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-15 | 19:50 -07:00 | Maria Dennis | Activity | - | 40 minutes walk (BG: 159 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-15T19:50:00-07:00",
       "date": "2026-03-15",
@@ -8178,7 +8178,7 @@
       "source": {
         "file": "health_log.md",
         "line": 218,
-        "rawRow": "| 2026-03-15 | 18:45 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL (2x 500mg) | null | null |"
+        "rawRow": "| 2026-03-15 | 18:45 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL (2x 500mg) | - | - |"
       },
       "timestamp": "2026-03-15T18:45:00-07:00",
       "date": "2026-03-15",
@@ -8219,7 +8219,7 @@
       "source": {
         "file": "health_log.md",
         "line": 219,
-        "rawRow": "| 2026-03-16 | 21:00 -07:00 | Maria Dennis | Medication | - | Half a Prunelax tablet | null | null |"
+        "rawRow": "| 2026-03-16 | 21:00 -07:00 | Maria Dennis | Medication | - | Half a Prunelax tablet | - | - |"
       },
       "timestamp": "2026-03-16T21:00:00-07:00",
       "date": "2026-03-16",
@@ -8260,7 +8260,7 @@
       "source": {
         "file": "health_log.md",
         "line": 220,
-        "rawRow": "| 2026-03-16 | 19:45 -07:00 | Maria Dennis | Activity | - | 20 minutes walk (BG: 167 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-16 | 19:45 -07:00 | Maria Dennis | Activity | - | 20 minutes walk (BG: 167 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-16T19:45:00-07:00",
       "date": "2026-03-16",
@@ -8388,7 +8388,7 @@
       "source": {
         "file": "health_log.md",
         "line": 223,
-        "rawRow": "| 2026-03-16 | 14:15 -07:00 | Maria Dennis | Activity | - | 30 minutes walk (BG: 175 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-16 | 14:15 -07:00 | Maria Dennis | Activity | - | 30 minutes walk (BG: 175 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-16T14:15:00-07:00",
       "date": "2026-03-16",
@@ -8515,7 +8515,7 @@
       "source": {
         "file": "health_log.md",
         "line": 226,
-        "rawRow": "| 2026-03-16 | 11:00 -07:00 | Maria Dennis | Activity | - | 35 minutes walk (BG: 192 mg/dL ↗️) | null | null |"
+        "rawRow": "| 2026-03-16 | 11:00 -07:00 | Maria Dennis | Activity | - | 35 minutes walk (BG: 192 mg/dL ↗️) | - | - |"
       },
       "timestamp": "2026-03-16T11:00:00-07:00",
       "date": "2026-03-16",
@@ -8599,7 +8599,7 @@
       "source": {
         "file": "health_log.md",
         "line": 228,
-        "rawRow": "| 2026-03-16 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |"
+        "rawRow": "| 2026-03-16 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | - | - |"
       },
       "timestamp": "2026-03-16T09:00:00-07:00",
       "date": "2026-03-16",
@@ -8640,7 +8640,7 @@
       "source": {
         "file": "health_log.md",
         "line": 229,
-        "rawRow": "| 2026-03-15 | 13:05 -07:00 | Maria Dennis | Medication | - | 500mg Metformin HCL | null | null |"
+        "rawRow": "| 2026-03-15 | 13:05 -07:00 | Maria Dennis | Medication | - | 500mg Metformin HCL | - | - |"
       },
       "timestamp": "2026-03-15T13:05:00-07:00",
       "date": "2026-03-15",
@@ -8767,7 +8767,7 @@
       "source": {
         "file": "health_log.md",
         "line": 232,
-        "rawRow": "| 2026-03-15 | 10:45 -07:00 | Maria Dennis | Activity | - | 1 hr walk (BG: 191 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-15 | 10:45 -07:00 | Maria Dennis | Activity | - | 1 hr walk (BG: 191 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-15T10:45:00-07:00",
       "date": "2026-03-15",
@@ -8851,7 +8851,7 @@
       "source": {
         "file": "health_log.md",
         "line": 234,
-        "rawRow": "| 2026-03-15 | 09:05 -07:00 | Maria Dennis | Medication | - | Rosuvastatin 10mg (Scheduled) | null | null |"
+        "rawRow": "| 2026-03-15 | 09:05 -07:00 | Maria Dennis | Medication | - | Rosuvastatin 10mg (Scheduled) | - | - |"
       },
       "timestamp": "2026-03-15T09:05:00-07:00",
       "date": "2026-03-15",
@@ -8892,7 +8892,7 @@
       "source": {
         "file": "health_log.md",
         "line": 235,
-        "rawRow": "| 2026-03-15 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |"
+        "rawRow": "| 2026-03-15 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | - | - |"
       },
       "timestamp": "2026-03-15T09:00:00-07:00",
       "date": "2026-03-15",
@@ -8933,7 +8933,7 @@
       "source": {
         "file": "health_log.md",
         "line": 236,
-        "rawRow": "| 2026-03-14 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | null | null |"
+        "rawRow": "| 2026-03-14 | 09:00 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Scheduled) | - | - |"
       },
       "timestamp": "2026-03-14T09:00:00-07:00",
       "date": "2026-03-14",
@@ -8974,7 +8974,7 @@
       "source": {
         "file": "health_log.md",
         "line": 238,
-        "rawRow": "| 2026-03-14 | 20:00 -07:00 | Maria Dennis | Activity | - | 15 minute walk and 20 minutes Qigong (BG: 164 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-03-14 | 20:00 -07:00 | Maria Dennis | Activity | - | 15 minute walk and 20 minutes Qigong (BG: 164 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-03-14T20:00:00-07:00",
       "date": "2026-03-14",
@@ -9058,7 +9058,7 @@
       "source": {
         "file": "health_log.md",
         "line": 240,
-        "rawRow": "| 2026-03-14 | 19:15 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL | null | null |"
+        "rawRow": "| 2026-03-14 | 19:15 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL | - | - |"
       },
       "timestamp": "2026-03-14T19:15:00-07:00",
       "date": "2026-03-14",
@@ -9184,7 +9184,7 @@
       "source": {
         "file": "health_log.md",
         "line": 243,
-        "rawRow": "| 2026-03-14 | 14:45 -07:00 | Maria Dennis | Activity | - | 25 minutes walk | null | null |"
+        "rawRow": "| 2026-03-14 | 14:45 -07:00 | Maria Dennis | Activity | - | 25 minutes walk | - | - |"
       },
       "timestamp": "2026-03-14T14:45:00-07:00",
       "date": "2026-03-14",
@@ -9225,7 +9225,7 @@
       "source": {
         "file": "health_log.md",
         "line": 244,
-        "rawRow": "| 2026-03-14 | 14:15 -07:00 | Maria Dennis | Medication | - | 500mg Metformin HCL | null | null |"
+        "rawRow": "| 2026-03-14 | 14:15 -07:00 | Maria Dennis | Medication | - | 500mg Metformin HCL | - | - |"
       },
       "timestamp": "2026-03-14T14:15:00-07:00",
       "date": "2026-03-14",
@@ -9309,7 +9309,7 @@
       "source": {
         "file": "health_log.md",
         "line": 246,
-        "rawRow": "| 2026-03-14 | 11:20 -07:00 | Maria Dennis | Medication | - | 500mg Metformin HCL | null | null |"
+        "rawRow": "| 2026-03-14 | 11:20 -07:00 | Maria Dennis | Medication | - | 500mg Metformin HCL | - | - |"
       },
       "timestamp": "2026-03-14T11:20:00-07:00",
       "date": "2026-03-14",
@@ -9350,7 +9350,7 @@
       "source": {
         "file": "health_log.md",
         "line": 247,
-        "rawRow": "| 2026-03-14 | 10:45 -07:00 | Maria Dennis | Activity | - | 30 minutes walk | null | null |"
+        "rawRow": "| 2026-03-14 | 10:45 -07:00 | Maria Dennis | Activity | - | 30 minutes walk | - | - |"
       },
       "timestamp": "2026-03-14T10:45:00-07:00",
       "date": "2026-03-14",
@@ -9434,7 +9434,7 @@
       "source": {
         "file": "health_log.md",
         "line": 249,
-        "rawRow": "| 2026-03-13 | 20:43 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL | null | null |"
+        "rawRow": "| 2026-03-13 | 20:43 -07:00 | Maria Dennis | Medication | - | 1000mg Metformin HCL | - | - |"
       },
       "timestamp": "2026-03-13T20:43:00-07:00",
       "date": "2026-03-13",
@@ -9475,7 +9475,7 @@
       "source": {
         "file": "health_log.md",
         "line": 250,
-        "rawRow": "| 2026-03-13 | 19:50 -07:00 | Maria Dennis | Activity | - | 15 minutes Qigong | null | null |"
+        "rawRow": "| 2026-03-13 | 19:50 -07:00 | Maria Dennis | Activity | - | 15 minutes Qigong | - | - |"
       },
       "timestamp": "2026-03-13T19:50:00-07:00",
       "date": "2026-03-13",
@@ -9516,7 +9516,7 @@
       "source": {
         "file": "health_log.md",
         "line": 251,
-        "rawRow": "| 2026-03-13 | 19:30 -07:00 | Maria Dennis | Activity | - | 20 minutes walk uphill/down hill | null | null |"
+        "rawRow": "| 2026-03-13 | 19:30 -07:00 | Maria Dennis | Activity | - | 20 minutes walk uphill/down hill | - | - |"
       },
       "timestamp": "2026-03-13T19:30:00-07:00",
       "date": "2026-03-13",
@@ -9602,7 +9602,7 @@
       "source": {
         "file": "health_log.md",
         "line": 253,
-        "rawRow": "| 2026-03-13 | 13:55 -07:00 | Maria Dennis | Activity | - | 15 minutes walk | null | null |"
+        "rawRow": "| 2026-03-13 | 13:55 -07:00 | Maria Dennis | Activity | - | 15 minutes walk | - | - |"
       },
       "timestamp": "2026-03-13T13:55:00-07:00",
       "date": "2026-03-13",
@@ -9686,7 +9686,7 @@
       "source": {
         "file": "health_log.md",
         "line": 255,
-        "rawRow": "| 2026-03-13 | 12:49 -07:00 | Maria Dennis | Activity | - | 30 minutes gardening | null | null |"
+        "rawRow": "| 2026-03-13 | 12:49 -07:00 | Maria Dennis | Activity | - | 30 minutes gardening | - | - |"
       },
       "timestamp": "2026-03-13T12:49:00-07:00",
       "date": "2026-03-13",
@@ -9770,7 +9770,7 @@
       "source": {
         "file": "health_log.md",
         "line": 257,
-        "rawRow": "| 2026-03-13 | 12:44 -07:00 | Maria Dennis | Activity | - | 45 minutes walk | null | null |"
+        "rawRow": "| 2026-03-13 | 12:44 -07:00 | Maria Dennis | Activity | - | 45 minutes walk | - | - |"
       },
       "timestamp": "2026-03-13T12:44:00-07:00",
       "date": "2026-03-13",
@@ -9854,7 +9854,7 @@
       "source": {
         "file": "health_log.md",
         "line": 259,
-        "rawRow": "| 2026-03-12 | 19:48 -07:00 | Maria Dennis | Medication | - | 1500mg Metformin HCL | null | null |"
+        "rawRow": "| 2026-03-12 | 19:48 -07:00 | Maria Dennis | Medication | - | 1500mg Metformin HCL | - | - |"
       },
       "timestamp": "2026-03-12T19:48:00-07:00",
       "date": "2026-03-12",
@@ -9895,7 +9895,7 @@
       "source": {
         "file": "health_log.md",
         "line": 260,
-        "rawRow": "| 2026-03-12 | 19:15 -07:00 | Maria Dennis | Activity | - | 45 minutes walk and Qigong | null | null |"
+        "rawRow": "| 2026-03-12 | 19:15 -07:00 | Maria Dennis | Activity | - | 45 minutes walk and Qigong | - | - |"
       },
       "timestamp": "2026-03-12T19:15:00-07:00",
       "date": "2026-03-12",
@@ -10109,7 +10109,7 @@
       "source": {
         "file": "health_log.md",
         "line": 265,
-        "rawRow": "| 2026-03-11 | 19:30 -07:00 | Maria Dennis | Activity | - | 45 minutes exercise (After dinner) | null | null |"
+        "rawRow": "| 2026-03-11 | 19:30 -07:00 | Maria Dennis | Activity | - | 45 minutes exercise (After dinner) | - | - |"
       },
       "timestamp": "2026-03-11T19:30:00-07:00",
       "date": "2026-03-11",
@@ -10235,7 +10235,7 @@
       "source": {
         "file": "health_log.md",
         "line": 268,
-        "rawRow": "| 2026-03-11 | 14:15 -07:00 | Maria Dennis | Activity | - | 45 minutes walk (After lunch) | null | null |"
+        "rawRow": "| 2026-03-11 | 14:15 -07:00 | Maria Dennis | Activity | - | 45 minutes walk (After lunch) | - | - |"
       },
       "timestamp": "2026-03-11T14:15:00-07:00",
       "date": "2026-03-11",
@@ -10276,7 +10276,7 @@
       "source": {
         "file": "health_log.md",
         "line": 269,
-        "rawRow": "| 2026-03-11 | 13:30 -07:00 | Maria Dennis | Medication | - | 500mg Metformin HCL | null | null |"
+        "rawRow": "| 2026-03-11 | 13:30 -07:00 | Maria Dennis | Medication | - | 500mg Metformin HCL | - | - |"
       },
       "timestamp": "2026-03-11T13:30:00-07:00",
       "date": "2026-03-11",
@@ -10401,7 +10401,7 @@
       "source": {
         "file": "health_log.md",
         "line": 272,
-        "rawRow": "| 2026-03-11 | 09:56 -07:00 | Maria Dennis | Medication | - | 500mg Metformin HCL | null | null |"
+        "rawRow": "| 2026-03-11 | 09:56 -07:00 | Maria Dennis | Medication | - | 500mg Metformin HCL | - | - |"
       },
       "timestamp": "2026-03-11T09:56:00-07:00",
       "date": "2026-03-11",
@@ -10442,7 +10442,7 @@
       "source": {
         "file": "health_log.md",
         "line": 273,
-        "rawRow": "| 2026-03-11 | 09:56 -07:00 | Maria Dennis | Activity | - | 30 minutes walk | null | null |"
+        "rawRow": "| 2026-03-11 | 09:56 -07:00 | Maria Dennis | Activity | - | 30 minutes walk | - | - |"
       },
       "timestamp": "2026-03-11T09:56:00-07:00",
       "date": "2026-03-11",
@@ -10483,7 +10483,7 @@
       "source": {
         "file": "health_log.md",
         "line": 274,
-        "rawRow": "| 2026-03-10 | 18:30 -07:00 | Maria Dennis | Medication | - | 1500mg Metformin HCL | null | null |"
+        "rawRow": "| 2026-03-10 | 18:30 -07:00 | Maria Dennis | Medication | - | 1500mg Metformin HCL | - | - |"
       },
       "timestamp": "2026-03-10T18:30:00-07:00",
       "date": "2026-03-10",
@@ -10524,7 +10524,7 @@
       "source": {
         "file": "health_log.md",
         "line": 275,
-        "rawRow": "| 2026-03-10 | 14:30 -07:00 | Maria Dennis | Medication | - | 500mg Metformin HCL | null | null |"
+        "rawRow": "| 2026-03-10 | 14:30 -07:00 | Maria Dennis | Medication | - | 500mg Metformin HCL | - | - |"
       },
       "timestamp": "2026-03-10T14:30:00-07:00",
       "date": "2026-03-10",
@@ -10649,7 +10649,7 @@
       "source": {
         "file": "health_log.md",
         "line": 278,
-        "rawRow": "| 2026-03-10 | 04:49 -07:00 | Maria Dennis | Medication | - | Half anti-acid tablet | null | null |"
+        "rawRow": "| 2026-03-10 | 04:49 -07:00 | Maria Dennis | Medication | - | Half anti-acid tablet | - | - |"
       },
       "timestamp": "2026-03-10T04:49:00-07:00",
       "date": "2026-03-10",
@@ -10733,7 +10733,7 @@
       "source": {
         "file": "health_log.md",
         "line": 280,
-        "rawRow": "| 2026-03-09 | 09:24 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg, Rosuvastatin 10mg (Routine) | null | null |"
+        "rawRow": "| 2026-03-09 | 09:24 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg, Rosuvastatin 10mg (Routine) | - | - |"
       },
       "timestamp": "2026-03-09T09:24:00-07:00",
       "date": "2026-03-09",
@@ -10815,7 +10815,7 @@
       "source": {
         "file": "health_log.md",
         "line": 282,
-        "rawRow": "| 2026-03-08 | 19:51 -07:00 | Maria Dennis | Activity | - | 30 minutes Qigong/Tai Chi | null | null |"
+        "rawRow": "| 2026-03-08 | 19:51 -07:00 | Maria Dennis | Activity | - | 30 minutes Qigong/Tai Chi | - | - |"
       },
       "timestamp": "2026-03-08T19:51:00-07:00",
       "date": "2026-03-08",
@@ -10985,7 +10985,7 @@
       "source": {
         "file": "health_log.md",
         "line": 286,
-        "rawRow": "| 2026-03-08 | 16:45 -07:00 | Maria Dennis | Activity | - | 30 minutes gardening (After nuts) | null | null |"
+        "rawRow": "| 2026-03-08 | 16:45 -07:00 | Maria Dennis | Activity | - | 30 minutes gardening (After nuts) | - | - |"
       },
       "timestamp": "2026-03-08T16:45:00-07:00",
       "date": "2026-03-08",
@@ -11069,7 +11069,7 @@
       "source": {
         "file": "health_log.md",
         "line": 288,
-        "rawRow": "| 2026-03-08 | 13:40 -07:00 | Maria Dennis | Activity | - | 90 minutes gardening | null | null |"
+        "rawRow": "| 2026-03-08 | 13:40 -07:00 | Maria Dennis | Activity | - | 90 minutes gardening | - | - |"
       },
       "timestamp": "2026-03-08T13:40:00-07:00",
       "date": "2026-03-08",
@@ -11110,7 +11110,7 @@
       "source": {
         "file": "health_log.md",
         "line": 289,
-        "rawRow": "| 2026-03-08 | 10:43 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Routine) | null | null |"
+        "rawRow": "| 2026-03-08 | 10:43 -07:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Routine) | - | - |"
       },
       "timestamp": "2026-03-08T10:43:00-07:00",
       "date": "2026-03-08",
@@ -11235,7 +11235,7 @@
       "source": {
         "file": "health_log.md",
         "line": 292,
-        "rawRow": "| 2026-03-07 | 20:30 -08:00 | Maria Dennis | Activity | - | 20 minutes walk and 10 minutes tai chi | null | null |"
+        "rawRow": "| 2026-03-07 | 20:30 -08:00 | Maria Dennis | Activity | - | 20 minutes walk and 10 minutes tai chi | - | - |"
       },
       "timestamp": "2026-03-07T20:30:00-08:00",
       "date": "2026-03-07",
@@ -11448,7 +11448,7 @@
       "source": {
         "file": "health_log.md",
         "line": 297,
-        "rawRow": "| 2026-03-07 | 13:58 -08:00 | Maria Dennis | Activity | - | 30 minutes housework | null | null |"
+        "rawRow": "| 2026-03-07 | 13:58 -08:00 | Maria Dennis | Activity | - | 30 minutes housework | - | - |"
       },
       "timestamp": "2026-03-07T13:58:00-08:00",
       "date": "2026-03-07",
@@ -11532,7 +11532,7 @@
       "source": {
         "file": "health_log.md",
         "line": 299,
-        "rawRow": "| 2026-03-07 | 11:27 -08:00 | Maria Dennis | Activity | - | 1 hour gardening | null | null |"
+        "rawRow": "| 2026-03-07 | 11:27 -08:00 | Maria Dennis | Activity | - | 1 hour gardening | - | - |"
       },
       "timestamp": "2026-03-07T11:27:00-08:00",
       "date": "2026-03-07",
@@ -11573,7 +11573,7 @@
       "source": {
         "file": "health_log.md",
         "line": 300,
-        "rawRow": "| 2026-03-07 | 09:59 -08:00 | Maria Dennis | Medication | - | Lisinopril 10mg, Rosuvastatin 10mg (Routine) | null | null |"
+        "rawRow": "| 2026-03-07 | 09:59 -08:00 | Maria Dennis | Medication | - | Lisinopril 10mg, Rosuvastatin 10mg (Routine) | - | - |"
       },
       "timestamp": "2026-03-07T09:59:00-08:00",
       "date": "2026-03-07",
@@ -11700,7 +11700,7 @@
       "source": {
         "file": "health_log.md",
         "line": 303,
-        "rawRow": "| 2026-03-06 | 20:54 -08:00 | Maria Dennis | Medication | - | 1500mg Metformin HCL, Vitamin D 1000 IU, 1 tablet Prunelax | null | null |"
+        "rawRow": "| 2026-03-06 | 20:54 -08:00 | Maria Dennis | Medication | - | 1500mg Metformin HCL, Vitamin D 1000 IU, 1 tablet Prunelax | - | - |"
       },
       "timestamp": "2026-03-06T20:54:00-08:00",
       "date": "2026-03-06",
@@ -11741,7 +11741,7 @@
       "source": {
         "file": "health_log.md",
         "line": 304,
-        "rawRow": "| 2026-03-06 | 20:30 -08:00 | Maria Dennis | Activity | - | 20 minutes tai chi/qigong | null | null |"
+        "rawRow": "| 2026-03-06 | 20:30 -08:00 | Maria Dennis | Activity | - | 20 minutes tai chi/qigong | - | - |"
       },
       "timestamp": "2026-03-06T20:30:00-08:00",
       "date": "2026-03-06",
@@ -11911,7 +11911,7 @@
       "source": {
         "file": "health_log.md",
         "line": 308,
-        "rawRow": "| 2026-03-06 | 16:30 -08:00 | Maria Dennis | Activity | - | 30 minutes gardening | null | null |"
+        "rawRow": "| 2026-03-06 | 16:30 -08:00 | Maria Dennis | Activity | - | 30 minutes gardening | - | - |"
       },
       "timestamp": "2026-03-06T16:30:00-08:00",
       "date": "2026-03-06",
@@ -11995,7 +11995,7 @@
       "source": {
         "file": "health_log.md",
         "line": 310,
-        "rawRow": "| 2026-03-06 | 13:58 -08:00 | Maria Dennis | Activity | - | 90 minutes gardening | null | null |"
+        "rawRow": "| 2026-03-06 | 13:58 -08:00 | Maria Dennis | Activity | - | 90 minutes gardening | - | - |"
       },
       "timestamp": "2026-03-06T13:58:00-08:00",
       "date": "2026-03-06",
@@ -12036,7 +12036,7 @@
       "source": {
         "file": "health_log.md",
         "line": 311,
-        "rawRow": "| 2026-03-06 | 12:05 -08:00 | Maria Dennis | Activity | - | 30 minutes heavy gardening | null | null |"
+        "rawRow": "| 2026-03-06 | 12:05 -08:00 | Maria Dennis | Activity | - | 30 minutes heavy gardening | - | - |"
       },
       "timestamp": "2026-03-06T12:05:00-08:00",
       "date": "2026-03-06",
@@ -12120,7 +12120,7 @@
       "source": {
         "file": "health_log.md",
         "line": 313,
-        "rawRow": "| 2026-03-05 | 20:30 -08:00 | Maria Dennis | Activity | - | 15 minutes tai chi | null | null |"
+        "rawRow": "| 2026-03-05 | 20:30 -08:00 | Maria Dennis | Activity | - | 15 minutes tai chi | - | - |"
       },
       "timestamp": "2026-03-05T20:30:00-08:00",
       "date": "2026-03-05",
@@ -12245,7 +12245,7 @@
       "source": {
         "file": "health_log.md",
         "line": 316,
-        "rawRow": "| 2026-03-05 | 17:40 -08:00 | Maria Dennis | Activity | - | 1 hour gardening | null | null |"
+        "rawRow": "| 2026-03-05 | 17:40 -08:00 | Maria Dennis | Activity | - | 1 hour gardening | - | - |"
       },
       "timestamp": "2026-03-05T17:40:00-08:00",
       "date": "2026-03-05",
@@ -12329,7 +12329,7 @@
       "source": {
         "file": "health_log.md",
         "line": 318,
-        "rawRow": "| 2026-03-05 | 13:10 -08:00 | Maria Dennis | Activity | - | 2 hours gardening | null | null |"
+        "rawRow": "| 2026-03-05 | 13:10 -08:00 | Maria Dennis | Activity | - | 2 hours gardening | - | - |"
       },
       "timestamp": "2026-03-05T13:10:00-08:00",
       "date": "2026-03-05",
@@ -12413,7 +12413,7 @@
       "source": {
         "file": "health_log.md",
         "line": 320,
-        "rawRow": "| 2026-03-05 | 11:00 -08:00 | Maria Dennis | Activity | - | 90 minutes gardening | null | null |"
+        "rawRow": "| 2026-03-05 | 11:00 -08:00 | Maria Dennis | Activity | - | 90 minutes gardening | - | - |"
       },
       "timestamp": "2026-03-05T11:00:00-08:00",
       "date": "2026-03-05",
@@ -12454,7 +12454,7 @@
       "source": {
         "file": "health_log.md",
         "line": 321,
-        "rawRow": "| 2026-03-05 | 10:41 -08:00 | Maria Dennis | Medication | - | 1 Advil tablet, Vitamin D 1000 IU | null | null |"
+        "rawRow": "| 2026-03-05 | 10:41 -08:00 | Maria Dennis | Medication | - | 1 Advil tablet, Vitamin D 1000 IU | - | - |"
       },
       "timestamp": "2026-03-05T10:41:00-08:00",
       "date": "2026-03-05",
@@ -12538,7 +12538,7 @@
       "source": {
         "file": "health_log.md",
         "line": 323,
-        "rawRow": "| 2026-03-05 | 10:05 -08:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Routine) | null | null |"
+        "rawRow": "| 2026-03-05 | 10:05 -08:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Routine) | - | - |"
       },
       "timestamp": "2026-03-05T10:05:00-08:00",
       "date": "2026-03-05",
@@ -12579,7 +12579,7 @@
       "source": {
         "file": "health_log.md",
         "line": 324,
-        "rawRow": "| 2026-03-04 | 19:35 -08:00 | Maria Dennis | Medication | - | 1500mg Metformin HCL | null | null |"
+        "rawRow": "| 2026-03-04 | 19:35 -08:00 | Maria Dennis | Medication | - | 1500mg Metformin HCL | - | - |"
       },
       "timestamp": "2026-03-04T19:35:00-08:00",
       "date": "2026-03-04",
@@ -12706,7 +12706,7 @@
       "source": {
         "file": "health_log.md",
         "line": 327,
-        "rawRow": "| 2026-03-04 | 12:45 -08:00 | Maria Dennis | Activity | - | 40 minutes walk | null | null |"
+        "rawRow": "| 2026-03-04 | 12:45 -08:00 | Maria Dennis | Activity | - | 40 minutes walk | - | - |"
       },
       "timestamp": "2026-03-04T12:45:00-08:00",
       "date": "2026-03-04",
@@ -12790,7 +12790,7 @@
       "source": {
         "file": "health_log.md",
         "line": 329,
-        "rawRow": "| 2026-03-04 | 10:45 -08:00 | Maria Dennis | Medication | - | Lisnopril 10mg (Routine) | null | null |"
+        "rawRow": "| 2026-03-04 | 10:45 -08:00 | Maria Dennis | Medication | - | Lisnopril 10mg (Routine) | - | - |"
       },
       "timestamp": "2026-03-04T10:45:00-08:00",
       "date": "2026-03-04",
@@ -12958,7 +12958,7 @@
       "source": {
         "file": "health_log.md",
         "line": 333,
-        "rawRow": "| 2026-03-03 | 20:35 -08:00 | Maria Dennis | Medication | - | Prunelax tablet | null | null |"
+        "rawRow": "| 2026-03-03 | 20:35 -08:00 | Maria Dennis | Medication | - | Prunelax tablet | - | - |"
       },
       "timestamp": "2026-03-03T20:35:00-08:00",
       "date": "2026-03-03",
@@ -12999,7 +12999,7 @@
       "source": {
         "file": "health_log.md",
         "line": 334,
-        "rawRow": "| 2026-03-03 | 20:30 -08:00 | Maria Dennis | Medication | - | Vitamin D 1000 IU | null | null |"
+        "rawRow": "| 2026-03-03 | 20:30 -08:00 | Maria Dennis | Medication | - | Vitamin D 1000 IU | - | - |"
       },
       "timestamp": "2026-03-03T20:30:00-08:00",
       "date": "2026-03-03",
@@ -13040,7 +13040,7 @@
       "source": {
         "file": "health_log.md",
         "line": 335,
-        "rawRow": "| 2026-03-03 | 20:30 -08:00 | Maria Dennis | Medication | - | 1500mg Metformin HCL | null | null |"
+        "rawRow": "| 2026-03-03 | 20:30 -08:00 | Maria Dennis | Medication | - | 1500mg Metformin HCL | - | - |"
       },
       "timestamp": "2026-03-03T20:30:00-08:00",
       "date": "2026-03-03",
@@ -13081,7 +13081,7 @@
       "source": {
         "file": "health_log.md",
         "line": 336,
-        "rawRow": "| 2026-03-03 | 20:30 -08:00 | Maria Dennis | Activity | - | 29 minutes tai chi | null | null |"
+        "rawRow": "| 2026-03-03 | 20:30 -08:00 | Maria Dennis | Activity | - | 29 minutes tai chi | - | - |"
       },
       "timestamp": "2026-03-03T20:30:00-08:00",
       "date": "2026-03-03",
@@ -13294,7 +13294,7 @@
       "source": {
         "file": "health_log.md",
         "line": 341,
-        "rawRow": "| 2026-03-03 | 09:56 -08:00 | Maria Dennis | Medication | - | Lisinopril 10mg, Rosuvastatin 10mg (Routine) | null | null |"
+        "rawRow": "| 2026-03-03 | 09:56 -08:00 | Maria Dennis | Medication | - | Lisinopril 10mg, Rosuvastatin 10mg (Routine) | - | - |"
       },
       "timestamp": "2026-03-03T09:56:00-08:00",
       "date": "2026-03-03",
@@ -13335,7 +13335,7 @@
       "source": {
         "file": "health_log.md",
         "line": 342,
-        "rawRow": "| 2026-03-02 | 20:50 -08:00 | Maria Dennis | Medication | - | Half prunlax tablet | null | null |"
+        "rawRow": "| 2026-03-02 | 20:50 -08:00 | Maria Dennis | Medication | - | Half prunlax tablet | - | - |"
       },
       "timestamp": "2026-03-02T20:50:00-08:00",
       "date": "2026-03-02",
@@ -13376,7 +13376,7 @@
       "source": {
         "file": "health_log.md",
         "line": 343,
-        "rawRow": "| 2026-03-02 | 20:20 -08:00 | Maria Dennis | Activity | - | 25 minutes tai chi | null | null |"
+        "rawRow": "| 2026-03-02 | 20:20 -08:00 | Maria Dennis | Activity | - | 25 minutes tai chi | - | - |"
       },
       "timestamp": "2026-03-02T20:20:00-08:00",
       "date": "2026-03-02",
@@ -13417,7 +13417,7 @@
       "source": {
         "file": "health_log.md",
         "line": 344,
-        "rawRow": "| 2026-03-02 | 19:46 -08:00 | Maria Dennis | Medication | - | 1500mg Metformin HCL | null | null |"
+        "rawRow": "| 2026-03-02 | 19:46 -08:00 | Maria Dennis | Medication | - | 1500mg Metformin HCL | - | - |"
       },
       "timestamp": "2026-03-02T19:46:00-08:00",
       "date": "2026-03-02",
@@ -13544,7 +13544,7 @@
       "source": {
         "file": "health_log.md",
         "line": 347,
-        "rawRow": "| 2026-03-02 | 18:00 -08:00 | Maria Dennis | Medication | - | Trulicity 0.75 MG/0.5 ML | null | null |"
+        "rawRow": "| 2026-03-02 | 18:00 -08:00 | Maria Dennis | Medication | - | Trulicity 0.75 MG/0.5 ML | - | - |"
       },
       "timestamp": "2026-03-02T18:00:00-08:00",
       "date": "2026-03-02",
@@ -13669,7 +13669,7 @@
       "source": {
         "file": "health_log.md",
         "line": 350,
-        "rawRow": "| 2026-03-02 | 08:49 -08:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Routine) | null | null |"
+        "rawRow": "| 2026-03-02 | 08:49 -08:00 | Maria Dennis | Medication | - | Lisinopril 10mg (Routine) | - | - |"
       },
       "timestamp": "2026-03-02T08:49:00-08:00",
       "date": "2026-03-02",
@@ -13710,7 +13710,7 @@
       "source": {
         "file": "health_log.md",
         "line": 351,
-        "rawRow": "| 2026-03-01 | 19:35 -08:00 | Maria Dennis | Medication | - | 1500mg Metformin HCL (Manual correction) | null | null |"
+        "rawRow": "| 2026-03-01 | 19:35 -08:00 | Maria Dennis | Medication | - | 1500mg Metformin HCL (Manual correction) | - | - |"
       },
       "timestamp": "2026-03-01T19:35:00-08:00",
       "date": "2026-03-01",
@@ -13923,7 +13923,7 @@
       "source": {
         "file": "health_log.md",
         "line": 356,
-        "rawRow": "| 2026-03-01 | 22:22 -08:00 | Maria Dennis | Activity | - | 1 hr housework | null | null |"
+        "rawRow": "| 2026-03-01 | 22:22 -08:00 | Maria Dennis | Activity | - | 1 hr housework | - | - |"
       },
       "timestamp": "2026-03-01T22:22:00-08:00",
       "date": "2026-03-01",
@@ -14007,7 +14007,7 @@
       "source": {
         "file": "health_log.md",
         "line": 358,
-        "rawRow": "| 2026-03-01 | 19:15 -08:00 | Maria Dennis | Activity | - | 1 hr heavy housework | null | null |"
+        "rawRow": "| 2026-03-01 | 19:15 -08:00 | Maria Dennis | Activity | - | 1 hr heavy housework | - | - |"
       },
       "timestamp": "2026-03-01T19:15:00-08:00",
       "date": "2026-03-01",
@@ -14347,7 +14347,7 @@
       "source": {
         "file": "health_log.md",
         "line": 366,
-        "rawRow": "| 2026-02-28 | 18:05 -08:00 | Maria Dennis | Activity | - | 30 minute walk | null | null |"
+        "rawRow": "| 2026-02-28 | 18:05 -08:00 | Maria Dennis | Activity | - | 30 minute walk | - | - |"
       },
       "timestamp": "2026-02-28T18:05:00-08:00",
       "date": "2026-02-28",
@@ -14431,7 +14431,7 @@
       "source": {
         "file": "health_log.md",
         "line": 368,
-        "rawRow": "| 2026-02-28 | 17:04 -08:00 | Maria Dennis | Medication | - | CORRECTION: Maria did NOT take Rosuvastatin today. Only Lisinopril 10mg. | null | null |"
+        "rawRow": "| 2026-02-28 | 17:04 -08:00 | Maria Dennis | Medication | - | CORRECTION: Maria did NOT take Rosuvastatin today. Only Lisinopril 10mg. | - | - |"
       },
       "timestamp": "2026-02-28T17:04:00-08:00",
       "date": "2026-02-28",
@@ -14472,7 +14472,7 @@
       "source": {
         "file": "health_log.md",
         "line": 369,
-        "rawRow": "| 2026-02-28 | 05:03 -08:00 | Maria Dennis | Activity | - | 25 minutes tai chi | null | null |"
+        "rawRow": "| 2026-02-28 | 05:03 -08:00 | Maria Dennis | Activity | - | 25 minutes tai chi | - | - |"
       },
       "timestamp": "2026-02-28T05:03:00-08:00",
       "date": "2026-02-28",
@@ -14556,7 +14556,7 @@
       "source": {
         "file": "health_log.md",
         "line": 371,
-        "rawRow": "| 2026-02-28 | 04:33 -08:00 | Maria Dennis | Medication | - | 1 tablet prunelax | null | null |"
+        "rawRow": "| 2026-02-28 | 04:33 -08:00 | Maria Dennis | Medication | - | 1 tablet prunelax | - | - |"
       },
       "timestamp": "2026-02-28T04:33:00-08:00",
       "date": "2026-02-28",
@@ -14597,7 +14597,7 @@
       "source": {
         "file": "health_log.md",
         "line": 372,
-        "rawRow": "| 2026-02-27 | 21:15 -08:00 | Maria Dennis | Activity | - | 1 hr walk | null | null |"
+        "rawRow": "| 2026-02-27 | 21:15 -08:00 | Maria Dennis | Activity | - | 1 hr walk | - | - |"
       },
       "timestamp": "2026-02-27T21:15:00-08:00",
       "date": "2026-02-27",
@@ -14722,7 +14722,7 @@
       "source": {
         "file": "health_log.md",
         "line": 375,
-        "rawRow": "| 2026-02-27 | 18:23 -08:00 | Maria Dennis | Activity | - | Gardening | null | null |"
+        "rawRow": "| 2026-02-27 | 18:23 -08:00 | Maria Dennis | Activity | - | Gardening | - | - |"
       },
       "timestamp": "2026-02-27T18:23:00-08:00",
       "date": "2026-02-27",
@@ -15107,7 +15107,7 @@
       "source": {
         "file": "health_log.md",
         "line": 384,
-        "rawRow": "| 2026-02-26 | 17:44 -08:00 | Maria Dennis | Activity | - | Gardening (90 minutes | null | null |"
+        "rawRow": "| 2026-02-26 | 17:44 -08:00 | Maria Dennis | Activity | - | Gardening (90 minutes | - | - |"
       },
       "timestamp": "2026-02-26T17:44:00-08:00",
       "date": "2026-02-26",
@@ -15234,7 +15234,7 @@
       "source": {
         "file": "health_log.md",
         "line": 387,
-        "rawRow": "| 2026-02-26 | 17:27 -08:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg, Rosuvastatin 10mg | null | null |"
+        "rawRow": "| 2026-02-26 | 17:27 -08:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg, Rosuvastatin 10mg | - | - |"
       },
       "timestamp": "2026-02-26T17:27:00-08:00",
       "date": "2026-02-26",
@@ -15316,7 +15316,7 @@
       "source": {
         "file": "health_log.md",
         "line": 389,
-        "rawRow": "| 2026-02-26 | 06:03 -08:00 | Maria Dennis | Medication | - | 1 ibuprofen | null | null |"
+        "rawRow": "| 2026-02-26 | 06:03 -08:00 | Maria Dennis | Medication | - | 1 ibuprofen | - | - |"
       },
       "timestamp": "2026-02-26T06:03:00-08:00",
       "date": "2026-02-26",
@@ -15357,7 +15357,7 @@
       "source": {
         "file": "health_log.md",
         "line": 390,
-        "rawRow": "| 2026-02-26 | 06:02 -08:00 | Maria Dennis | Medication | - | 1 prunlax | null | null |"
+        "rawRow": "| 2026-02-26 | 06:02 -08:00 | Maria Dennis | Medication | - | 1 prunlax | - | - |"
       },
       "timestamp": "2026-02-26T06:02:00-08:00",
       "date": "2026-02-26",
@@ -15605,7 +15605,7 @@
       "source": {
         "file": "health_log.md",
         "line": 396,
-        "rawRow": "| 2026-02-26 | 02:02 -08:00 | Maria Dennis | Activity | - | 2 hour walk | null | null |"
+        "rawRow": "| 2026-02-26 | 02:02 -08:00 | Maria Dennis | Activity | - | 2 hour walk | - | - |"
       },
       "timestamp": "2026-02-26T02:02:00-08:00",
       "date": "2026-02-26",
@@ -15687,7 +15687,7 @@
       "source": {
         "file": "health_log.md",
         "line": 398,
-        "rawRow": "| 2026-02-26 | 00:01 -08:00 | Maria Dennis | Activity | - | 1 hour heavy housework | null | null |"
+        "rawRow": "| 2026-02-26 | 00:01 -08:00 | Maria Dennis | Activity | - | 1 hour heavy housework | - | - |"
       },
       "timestamp": "2026-02-26T00:01:00-08:00",
       "date": "2026-02-26",
@@ -15941,7 +15941,7 @@
       "source": {
         "file": "health_log.md",
         "line": 404,
-        "rawRow": "| 2026-02-25 | 10:00 -08:00 | Maria Dennis | Medication | - | 500 mg Tylenol | null | null |"
+        "rawRow": "| 2026-02-25 | 10:00 -08:00 | Maria Dennis | Medication | - | 500 mg Tylenol | - | - |"
       },
       "timestamp": "2026-02-25T10:00:00-08:00",
       "date": "2026-02-25",
@@ -15982,7 +15982,7 @@
       "source": {
         "file": "health_log.md",
         "line": 405,
-        "rawRow": "| 2026-02-25 | 08:33 -08:00 | Maria Dennis | Sleep | - | Sleep Report: 5.31 hours total. Breakdown received: 4.66, 1.4. | null | null |"
+        "rawRow": "| 2026-02-25 | 08:33 -08:00 | Maria Dennis | Sleep | - | Sleep Report: 5.31 hours total. Breakdown received: 4.66, 1.4. | - | - |"
       },
       "timestamp": "2026-02-25T08:33:00-08:00",
       "date": "2026-02-25",
@@ -16023,7 +16023,7 @@
       "source": {
         "file": "health_log.md",
         "line": 406,
-        "rawRow": "| 2026-02-25 | 05:36 -08:00 | Maria Dennis | Medication | - | 1500mg Metformin HCL | null | null |"
+        "rawRow": "| 2026-02-25 | 05:36 -08:00 | Maria Dennis | Medication | - | 1500mg Metformin HCL | - | - |"
       },
       "timestamp": "2026-02-25T05:36:00-08:00",
       "date": "2026-02-25",
@@ -16269,7 +16269,7 @@
       "source": {
         "file": "health_log.md",
         "line": 412,
-        "rawRow": "| 2026-02-24 | 19:47 -08:00 | Maria Dennis | Activity | - | 30 minutes housework | null | null |"
+        "rawRow": "| 2026-02-24 | 19:47 -08:00 | Maria Dennis | Activity | - | 30 minutes housework | - | - |"
       },
       "timestamp": "2026-02-24T19:47:00-08:00",
       "date": "2026-02-24",
@@ -16310,7 +16310,7 @@
       "source": {
         "file": "health_log.md",
         "line": 413,
-        "rawRow": "| 2026-02-24 | 19:18 -08:00 | Maria Dennis | Activity | - | 1 hour heavy gardening pruning and weeding | null | null |"
+        "rawRow": "| 2026-02-24 | 19:18 -08:00 | Maria Dennis | Activity | - | 1 hour heavy gardening pruning and weeding | - | - |"
       },
       "timestamp": "2026-02-24T19:18:00-08:00",
       "date": "2026-02-24",
@@ -16392,7 +16392,7 @@
       "source": {
         "file": "health_log.md",
         "line": 415,
-        "rawRow": "| 2026-02-24 | 17:25 -08:00 | Maria Dennis | Sleep | - | Sleep Report: 7h 20m total (Core: 5h, Deep: 1h, REM: 1h 20m | null | null |"
+        "rawRow": "| 2026-02-24 | 17:25 -08:00 | Maria Dennis | Sleep | - | Sleep Report: 7h 20m total (Core: 5h, Deep: 1h, REM: 1h 20m | - | - |"
       },
       "timestamp": "2026-02-24T17:25:00-08:00",
       "date": "2026-02-24",
@@ -16433,7 +16433,7 @@
       "source": {
         "file": "health_log.md",
         "line": 416,
-        "rawRow": "| 2026-02-24 | 17:00 -08:00 | Maria Dennis | Medication | - | Lisinopril 10mg, Rosuvastatin 10mg | null | null |"
+        "rawRow": "| 2026-02-24 | 17:00 -08:00 | Maria Dennis | Medication | - | Lisinopril 10mg, Rosuvastatin 10mg | - | - |"
       },
       "timestamp": "2026-02-24T17:00:00-08:00",
       "date": "2026-02-24",
@@ -16474,7 +16474,7 @@
       "source": {
         "file": "health_log.md",
         "line": 417,
-        "rawRow": "| 2026-02-24 | 04:45 -08:00 | Maria Dennis | Medication | - | 1500mg Metformin HCL | null | null |"
+        "rawRow": "| 2026-02-24 | 04:45 -08:00 | Maria Dennis | Medication | - | 1500mg Metformin HCL | - | - |"
       },
       "timestamp": "2026-02-24T04:45:00-08:00",
       "date": "2026-02-24",
@@ -16556,7 +16556,7 @@
       "source": {
         "file": "health_log.md",
         "line": 419,
-        "rawRow": "| 2026-02-24 | 04:33 -08:00 | Maria Dennis | Activity | - | 15 minute walk | null | null |"
+        "rawRow": "| 2026-02-24 | 04:33 -08:00 | Maria Dennis | Activity | - | 15 minute walk | - | - |"
       },
       "timestamp": "2026-02-24T04:33:00-08:00",
       "date": "2026-02-24",
@@ -16638,7 +16638,7 @@
       "source": {
         "file": "health_log.md",
         "line": 421,
-        "rawRow": "| 2026-02-24 | 01:34 -08:00 | Maria Dennis | Medication | - | 1 500mg Tylenol tablet | null | null |"
+        "rawRow": "| 2026-02-24 | 01:34 -08:00 | Maria Dennis | Medication | - | 1 500mg Tylenol tablet | - | - |"
       },
       "timestamp": "2026-02-24T01:34:00-08:00",
       "date": "2026-02-24",
@@ -16679,7 +16679,7 @@
       "source": {
         "file": "health_log.md",
         "line": 422,
-        "rawRow": "| 2026-02-24 | 00:04 -08:00 | Maria Dennis | Medication | - | Trulicity 0.75 MG/0.5 ML | null | null |"
+        "rawRow": "| 2026-02-24 | 00:04 -08:00 | Maria Dennis | Medication | - | Trulicity 0.75 MG/0.5 ML | - | - |"
       },
       "timestamp": "2026-02-24T00:04:00-08:00",
       "date": "2026-02-24",
@@ -16761,7 +16761,7 @@
       "source": {
         "file": "health_log.md",
         "line": 424,
-        "rawRow": "| 2026-02-23 | 23:05 -08:00 | Maria Dennis | Activity | - | 90 mins heavy gardening: digging, pruning | null | null |"
+        "rawRow": "| 2026-02-23 | 23:05 -08:00 | Maria Dennis | Activity | - | 90 mins heavy gardening: digging, pruning | - | - |"
       },
       "timestamp": "2026-02-23T23:05:00-08:00",
       "date": "2026-02-23",
@@ -16843,7 +16843,7 @@
       "source": {
         "file": "health_log.md",
         "line": 426,
-        "rawRow": "| 2026-02-23 | 20:00 -08:00 | Maria Dennis | Activity | - | 2 hours housework (corrected from 1h | null | null |"
+        "rawRow": "| 2026-02-23 | 20:00 -08:00 | Maria Dennis | Activity | - | 2 hours housework (corrected from 1h | - | - |"
       },
       "timestamp": "2026-02-23T20:00:00-08:00",
       "date": "2026-02-23",
@@ -16925,7 +16925,7 @@
       "source": {
         "file": "health_log.md",
         "line": 428,
-        "rawRow": "| 2026-02-23 | 18:00 -08:00 | Maria Dennis | Medication | - | 1 cup black coffee | null | null |"
+        "rawRow": "| 2026-02-23 | 18:00 -08:00 | Maria Dennis | Medication | - | 1 cup black coffee | - | - |"
       },
       "timestamp": "2026-02-23T18:00:00-08:00",
       "date": "2026-02-23",
@@ -17007,7 +17007,7 @@
       "source": {
         "file": "health_log.md",
         "line": 430,
-        "rawRow": "| 2026-02-23 | 17:25 -08:00 | Maria Dennis | Sleep | - | Sleep Report (Apple Watch): 5h 3m total. Core: 3h 19m, Deep: 54m, REM: 50m. Awake: 10m. | null | null |"
+        "rawRow": "| 2026-02-23 | 17:25 -08:00 | Maria Dennis | Sleep | - | Sleep Report (Apple Watch): 5h 3m total. Core: 3h 19m, Deep: 54m, REM: 50m. Awake: 10m. | - | - |"
       },
       "timestamp": "2026-02-23T17:25:00-08:00",
       "date": "2026-02-23",
@@ -17048,7 +17048,7 @@
       "source": {
         "file": "health_log.md",
         "line": 431,
-        "rawRow": "| 2026-02-23 | 17:00 -08:00 | Maria Dennis | Medication | - | Medication: Rosuvastatin 10mg, Lisinopril 10mg | null | null |"
+        "rawRow": "| 2026-02-23 | 17:00 -08:00 | Maria Dennis | Medication | - | Medication: Rosuvastatin 10mg, Lisinopril 10mg | - | - |"
       },
       "timestamp": "2026-02-23T17:00:00-08:00",
       "date": "2026-02-23",
@@ -17089,7 +17089,7 @@
       "source": {
         "file": "health_log.md",
         "line": 432,
-        "rawRow": "| 2026-02-23 | 12:00 -08:00 | Maria Dennis | Medication | - | Medication: 1 Sudafed tablet | null | null |"
+        "rawRow": "| 2026-02-23 | 12:00 -08:00 | Maria Dennis | Medication | - | Medication: 1 Sudafed tablet | - | - |"
       },
       "timestamp": "2026-02-23T12:00:00-08:00",
       "date": "2026-02-23",
@@ -17130,7 +17130,7 @@
       "source": {
         "file": "health_log.md",
         "line": 433,
-        "rawRow": "| 2026-02-23 | 05:00 -08:00 | Maria Dennis | Medication | - | Medication: 1500mg Metformin HCL | null | null |"
+        "rawRow": "| 2026-02-23 | 05:00 -08:00 | Maria Dennis | Medication | - | Medication: 1500mg Metformin HCL | - | - |"
       },
       "timestamp": "2026-02-23T05:00:00-08:00",
       "date": "2026-02-23",
@@ -17253,7 +17253,7 @@
       "source": {
         "file": "health_log.md",
         "line": 436,
-        "rawRow": "| 2026-02-22 | 22:30 -08:00 | Maria Dennis | Activity | - | Gardening (1 hour | null | null |"
+        "rawRow": "| 2026-02-22 | 22:30 -08:00 | Maria Dennis | Activity | - | Gardening (1 hour | - | - |"
       },
       "timestamp": "2026-02-22T22:30:00-08:00",
       "date": "2026-02-22",
@@ -17852,7 +17852,7 @@
       "source": {
         "file": "health_log.md",
         "line": 456,
-        "rawRow": "| 2026-03-30 | 11:22 -07:00 | Maria Dennis | Activity | - | 30 minute walk | null | null |"
+        "rawRow": "| 2026-03-30 | 11:22 -07:00 | Maria Dennis | Activity | - | 30 minute walk | - | - |"
       },
       "timestamp": "2026-03-30T11:22:00-07:00",
       "date": "2026-03-30",
@@ -17977,7 +17977,7 @@
       "source": {
         "file": "health_log.md",
         "line": 459,
-        "rawRow": "| 2026-03-30 | 14:20 -07:00 | Maria Dennis | Activity | - | 30 minute walk | null | null |"
+        "rawRow": "| 2026-03-30 | 14:20 -07:00 | Maria Dennis | Activity | - | 30 minute walk | - | - |"
       },
       "timestamp": "2026-03-30T14:20:00-07:00",
       "date": "2026-03-30",
@@ -18186,7 +18186,7 @@
       "source": {
         "file": "health_log.md",
         "line": 464,
-        "rawRow": "| 2026-03-30 | 19:40 -07:00 | Maria Dennis | Activity | - | 30 minute walk | null | null |"
+        "rawRow": "| 2026-03-30 | 19:40 -07:00 | Maria Dennis | Activity | - | 30 minute walk | - | - |"
       },
       "timestamp": "2026-03-30T19:40:00-07:00",
       "date": "2026-03-30",
@@ -18313,7 +18313,7 @@
       "source": {
         "file": "health_log.md",
         "line": 467,
-        "rawRow": "| 2026-04-01 | 11:19 -07:00 | Maria Dennis | Activity | - | 30 minute walk | null | null |"
+        "rawRow": "| 2026-04-01 | 11:19 -07:00 | Maria Dennis | Activity | - | 30 minute walk | - | - |"
       },
       "timestamp": "2026-04-01T11:19:00-07:00",
       "date": "2026-04-01",
@@ -18440,7 +18440,7 @@
       "source": {
         "file": "health_log.md",
         "line": 470,
-        "rawRow": "| 2026-04-01 | 13:32 -07:00 | Maria Dennis | Activity | - | 15 minute walk | null | null |"
+        "rawRow": "| 2026-04-01 | 13:32 -07:00 | Maria Dennis | Activity | - | 15 minute walk | - | - |"
       },
       "timestamp": "2026-04-01T13:32:00-07:00",
       "date": "2026-04-01",
@@ -18481,7 +18481,7 @@
       "source": {
         "file": "health_log.md",
         "line": 471,
-        "rawRow": "| 2026-04-01 | 14:25 -07:00 | Maria Dennis | Activity | - | 1 hour gardening | null | null |"
+        "rawRow": "| 2026-04-01 | 14:25 -07:00 | Maria Dennis | Activity | - | 1 hour gardening | - | - |"
       },
       "timestamp": "2026-04-01T14:25:00-07:00",
       "date": "2026-04-01",
@@ -18606,7 +18606,7 @@
       "source": {
         "file": "health_log.md",
         "line": 474,
-        "rawRow": "| 2026-04-01 | 20:14 -07:00 | Maria Dennis | Activity | - | 30 minute walk | null | null |"
+        "rawRow": "| 2026-04-01 | 20:14 -07:00 | Maria Dennis | Activity | - | 30 minute walk | - | - |"
       },
       "timestamp": "2026-04-01T20:14:00-07:00",
       "date": "2026-04-01",
@@ -18731,7 +18731,7 @@
       "source": {
         "file": "health_log.md",
         "line": 477,
-        "rawRow": "| 2026-04-03 | 12:32 -07:00 | Maria Dennis | Activity | - | 90 minutes gardening — hedge pruning and cleaning | null | null |"
+        "rawRow": "| 2026-04-03 | 12:32 -07:00 | Maria Dennis | Activity | - | 90 minutes gardening — hedge pruning and cleaning | - | - |"
       },
       "timestamp": "2026-04-03T12:32:00-07:00",
       "date": "2026-04-03",
@@ -19069,7 +19069,7 @@
       "source": {
         "file": "health_log.md",
         "line": 485,
-        "rawRow": "| 2026-04-04 | 13:35 -07:00 | Maria Dennis | Exercise | - | Exercise: 20 minute walk and 30 minutes housework (BG: 135 mg/dL Flat) | null | null |"
+        "rawRow": "| 2026-04-04 | 13:35 -07:00 | Maria Dennis | Exercise | - | Exercise: 20 minute walk and 30 minutes housework (BG: 135 mg/dL Flat) | - | - |"
       },
       "timestamp": "2026-04-04T13:35:00-07:00",
       "date": "2026-04-04",
@@ -19110,7 +19110,7 @@
       "source": {
         "file": "health_log.md",
         "line": 486,
-        "rawRow": "| 2026-04-04 | 16:26 -07:00 | Maria Dennis | Food | Snack | Snack: 1 cup papaya (BG: 112 mg/dL Flat) (Pred: 132-142 mg/dL @ 6:32 PM) (Protein: 1g | Carbs: ~16g | Cals: ~62) | null | null |"
+        "rawRow": "| 2026-04-04 | 16:26 -07:00 | Maria Dennis | Food | Snack | Snack: 1 cup papaya (BG: 112 mg/dL Flat) (Pred: 132-142 mg/dL @ 6:32 PM) (Protein: 1g | Carbs: ~16g | Cals: ~62) | 16 | 62 |"
       },
       "timestamp": "2026-04-04T16:26:00-07:00",
       "date": "2026-04-04",
@@ -19121,8 +19121,8 @@
       "title": "Snack: 1 cup papaya",
       "notes": "BG: 112 mg/dL Flat; Protein: 1g; Pred: 132-142 mg/dL @ 6:32 PM",
       "photoUrls": [],
-      "carbsEst": null,
-      "caloriesEst": null,
+      "carbsEst": 16,
+      "caloriesEst": 62,
       "proteinEst": 1,
       "predicted": {
         "peakBgText": "132-142 mg/dL",
@@ -19145,13 +19145,13 @@
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:e2d90088d150dee97f7890655dc3ed63e4aa572407c0912e44f5ee6888866099",
-      "contentHash": "sha256:e6fc01ec9088a4591258634a9b32752d26ea7ae3c2a4f21b0efe4143a65d4951"
+      "contentHash": "sha256:6a7a9cdb2f99a88ce1b792928b5e44f8381b7984c7f8ad79dd7ae9fb96fdbf70"
     },
     {
       "source": {
         "file": "health_log.md",
         "line": 487,
-        "rawRow": "| 2026-04-04 | 19:47 -07:00 | Maria Dennis | Food | Dinner | Dinner: Chickpea, cabbage, sausage, and meat stew with bread roll, and 8 oz Radler [Cumulative Dinner: 49g carbs total] (BG: 123 mg/dL Flat) (Pred: 175-185 mg/dL @ 9:03 PM) (Protein: 25g | Carbs: ~49g | Cals: ~530) | null | null |"
+        "rawRow": "| 2026-04-04 | 19:47 -07:00 | Maria Dennis | Food | Dinner | Dinner: Chickpea, cabbage, sausage, and meat stew with bread roll, and 8 oz Radler [Cumulative Dinner: 49g carbs total] (BG: 123 mg/dL Flat) (Pred: 175-185 mg/dL @ 9:03 PM) (Protein: 25g | Carbs: ~49g | Cals: ~530) [📷](https://iili.io/BIgFyrl.jpg) | 49 | 530 |"
       },
       "timestamp": "2026-04-04T19:47:00-07:00",
       "date": "2026-04-04",
@@ -19161,9 +19161,11 @@
       "mealType": "Dinner",
       "title": "Dinner: Chickpea, cabbage, sausage, and meat stew with bread roll, and 8 oz Radler [Cumulative Dinner: 49g carbs total]",
       "notes": "BG: 123 mg/dL Flat; Protein: 25g; Pred: 175-185 mg/dL @ 9:03 PM",
-      "photoUrls": [],
-      "carbsEst": null,
-      "caloriesEst": null,
+      "photoUrls": [
+        "https://iili.io/BIgFyrl.jpg"
+      ],
+      "carbsEst": 49,
+      "caloriesEst": 530,
       "proteinEst": 25,
       "predicted": {
         "peakBgText": "175-185 mg/dL",
@@ -19186,7 +19188,7 @@
         "outcomesBackfilled": false
       },
       "entryKey": "sha256:82396b1c13aa96594fd999fa6ffe0fa3822dc6cb609d0dd7e0bbdf4da574ff15",
-      "contentHash": "sha256:124f680732849691c3028361d3cde4847814f64a77cf71957c5ed4de6913bb3b"
+      "contentHash": "sha256:67f5826e67e724c504be71aceff0851aa01038ba0edf233e7460dce2542af43a"
     }
   ]
 }

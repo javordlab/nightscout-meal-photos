@@ -89,7 +89,7 @@ function shouldTakeRosuvastatin(todayStr) {
 // --- Log entry builder ---
 
 function entry(today, time, offset, description, bg) {
-  return `| ${today} | ${time} ${offset} | Maria Dennis | Medication | - | Medication: ${description} ${bg} | null | null |`;
+  return `| ${today} | ${time} ${offset} | Maria Dennis | Medication | - | Medication: ${description} ${bg} | - | - |`;
 }
 
 // --- Main ---

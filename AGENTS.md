@@ -41,6 +41,7 @@
 - **FREE tier tasks** (use `ollama/gemini-3-flash-preview:cloud`): weekly memory summaries, non-critical background summarization, informational agentTurn jobs with no health data writes
 - **Dev/engineering tasks** (use `openai-codex/gpt-5.3-codex`): code generation, script writing, debugging — prefer Claude Code CLI (subscription) for interactive sessions to avoid API costs entirely
 - **FOOD ENTRY FORMAT (REQUIRED):** Use exact pattern `[Meal Type]: [Description] (BG: [Value] [Trend]) (Pred: [Range] mg/dL @ [Time]) (Protein: [P]g | Carbs: ~[C]g | Cals: ~[CAL])`. The meal-type prefix (`Breakfast:`, `Lunch:`, `Snack:`, `Dinner:`, `Dessert:`) must appear in entry text.
+- **TABLE COLUMN VALUES (REQUIRED):** The last two columns of every health_log.md row are `| Carbs | Cals |`. For Food entries, these MUST be numeric (e.g. `| 49 | 530 |`) — extract from the description text. For non-Food entries (Medication, Activity, Exercise, Sleep), use `| - | - |`. NEVER write `| null | null |`.
 - **PEAK BG PREDICTION FORMULA v3 (CALIBRATED 2026-04-02, n=57):** Four-layer model. Apply all layers:
   - **Layer 1 — Carb factor (preBG-anchored, Metformin-adjusted):**
     - 0–15g:  `preBG + carbs × 2.0`

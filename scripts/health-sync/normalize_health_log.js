@@ -250,8 +250,16 @@ function parseRow(line, lineNumber, pendingPhotos = []) {
   // Entry text is everything from index 6 up to carbs column
   const entryParts = parts.slice(6, carbsIdx);
   const entryText = entryParts.join(' | ');
-  const carbs = parseNumber(parts[carbsIdx]);
-  const cals = parseNumber(parts[calsIdx]);
+  let carbs = parseNumber(parts[carbsIdx]);
+  let cals = parseNumber(parts[calsIdx]);
+
+  // Safety net: if carbs/cals columns are null for Food entries, extract from description text
+  if (category === 'Food' && (carbs == null || cals == null)) {
+    const carbMatch = entryText.match(/Carbs:\s*~?(\d+)/i);
+    const calMatch = entryText.match(/Cals?:\s*~?(\d+)/i);
+    if (carbs == null && carbMatch) carbs = Number(carbMatch[1]);
+    if (cals == null && calMatch) cals = Number(calMatch[1]);
+  }
 
   const timestamp = toIso(date, time);
   const photos = extractPhotos(entryText);

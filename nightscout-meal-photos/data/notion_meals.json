@@ -1,5 +1,19 @@
 [
   {
+    "id": "33985ec7-0668-81b3-8e40-ea0a9e34c2ad",
+    "title": "Dinner: Chickpea, cabbage, sausage, and meat stew with bread roll, and 8 oz Radler [Cumulative Dinner: 49g carbs total]",
+    "type": "Dinner",
+    "date": "2026-04-04T19:47:00-07:00",
+    "photo": "https://iili.io/BIgFyrl.jpg",
+    "carbs": 49,
+    "cals": 530,
+    "delta": null,
+    "peak": null,
+    "entry_key": "sha256:82396b1c13aa96594fd999fa6ffe0fa3822dc6cb609d0dd7e0bbdf4da574ff15",
+    "protein": 25,
+    "preMeal": null
+  },
+  {
     "id": "33885ec7-0668-8188-b39c-c53e76133316",
     "title": "Lunch: Folded wrap or quesadilla with filling, orange juice, 2 prunes, and a handful of nuts [Cumulative Lunch: 59g carbs total]",
     "type": "Lunch",
