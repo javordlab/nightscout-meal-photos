@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-05T18:00:00.633Z",
+  "generatedAt": "2026-04-05T18:30:00.763Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
-  "entryCount": 463,
+  "entryCount": 464,
   "entries": [
     {
       "source": {
@@ -19357,6 +19357,47 @@
       },
       "entryKey": "sha256:ab6247f655aa83acbc268cfec8f37a3ac55a31dc54216cb2eb1cd347b9c0bd1e",
       "contentHash": "sha256:7fd3c3ccfe4986e9b0d7ac2b891d0d87838c9a9e187ebdde352991444a14573a"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 492,
+        "rawRow": "| 2026-04-05 | 11:28 -07:00 | Maria Dennis | Exercise | - | Exercise: 20 minute walk (BG: 181 mg/dL FortyFiveUp) | - | - |"
+      },
+      "timestamp": "2026-04-05T11:28:00-07:00",
+      "date": "2026-04-05",
+      "time": "11:28 -07:00",
+      "user": "Maria Dennis",
+      "category": "Exercise",
+      "mealType": "-",
+      "title": "Exercise: 20 minute walk",
+      "notes": "BG: 181 mg/dL FortyFiveUp",
+      "photoUrls": [],
+      "carbsEst": null,
+      "caloriesEst": null,
+      "proteinEst": null,
+      "predicted": {
+        "peakBgText": null,
+        "peakTimeText": null
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:bf750b6f9ef23a987dbbafbcc099de59012d2c33d7212ebff0611420198bae9f",
+      "contentHash": "sha256:255c943bd0150096df3dceff6293a7d40c1c1c7600b9d93c0d52df5bb4b1ffb9"
     }
   ]
 }
