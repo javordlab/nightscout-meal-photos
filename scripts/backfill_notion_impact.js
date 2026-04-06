@@ -1,5 +1,6 @@
 const https = require('https');
 const fs = require('fs');
+const { writeReceipt } = require('./health-sync/cron_receipt');
 
 const NOTION_KEY = "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";
 const DATA_SOURCE_ID = "31685ec7-0668-813e-8b9e-c5b4d5d70fa5";
@@ -110,19 +111,32 @@ function getPeak2Hr(entries, mealTime) {
 
 async function run() {
   console.log('Starting Impact Variance Audit...');
+
+  const metrics = {
+    notion_total_fetched: 0,
+    food_entries: 0,
+    too_recent: 0,
+    archived_skipped: 0,
+    already_current: 0,
+    peak_data_backfilled: 0,
+    variance_calculated: 0,
+    updated: 0,
+    errors: 0
+  };
+
   // 576 = 48h of CGM at 5-min intervals; enough for any backfill window
   const nsEntries = await fetchJson(`${NS_URL}/api/v1/entries.json?count=576`);
-  
+
   let results = [];
   let hasMore = true;
   let cursor = undefined;
 
   while (hasMore) {
-    const res = await postJson(`https://api.notion.com/v1/databases/${DATA_SOURCE_ID}/query`, { 
+    const res = await postJson(`https://api.notion.com/v1/databases/${DATA_SOURCE_ID}/query`, {
       filter: { property: 'Date', date: { on_or_after: '2026-03-06' } },
       start_cursor: cursor
     });
-    
+
     if (res.results) {
       results = results.concat(res.results);
     }
@@ -130,22 +144,25 @@ async function run() {
     cursor = res.next_cursor;
     console.log(`Fetched ${results.length} entries from Notion...`);
   }
+  metrics.notion_total_fetched = results.length;
 
   for (const item of results) {
-    if (item.archived) continue;
+    if (item.archived) { metrics.archived_skipped++; continue; }
     const props = item.properties;
     if (props.Category.select.name !== 'Food') continue;
-    
+    metrics.food_entries++;
+
     const titleText = props.Entry.title[0]?.plain_text;
     const dateStr = props.Date.date.start;
-    
+
     // MATURITY CHECK: Only process meals that are at least 3 hours old
     const mealTime = new Date(dateStr);
     const now = new Date();
     const ageInHours = (now - mealTime) / (1000 * 60 * 60);
-    
+
     if (ageInHours < 3) {
       console.log(`Skipping '${titleText}' (${dateStr}): Too recent (age: ${ageInHours.toFixed(1)}h)`);
+      metrics.too_recent++;
       continue;
     }
 
@@ -155,6 +172,7 @@ async function run() {
     let currentPeakBg = props['2hr Peak BG']?.number;
     let currentPeakTimeStr = props['Peak Time']?.date?.start;
     let currentPreBg = props['Pre-Meal BG']?.number;
+    const hadPeakDataBefore = !!(currentPeakBg && currentPreBg);
 
     if (!currentPeakBg || !currentPreBg) {
         const preBg = getBgAt(nsEntries, dateStr);
@@ -165,12 +183,13 @@ async function run() {
             currentPeakTimeStr = peakTime;
             const delta = peakBg - preBg;
             const timeToPeak = Math.round((new Date(peakTime) - new Date(dateStr)) / (1000 * 60));
-            
+
             updatePayload.properties['Pre-Meal BG'] = { number: preBg };
             updatePayload.properties['2hr Peak BG'] = { number: peakBg };
             updatePayload.properties['BG Delta'] = { number: delta };
             updatePayload.properties['Peak Time'] = { date: { start: peakTime } };
             updatePayload.properties['Time to Peak (min)'] = { number: timeToPeak };
+            metrics.peak_data_backfilled++;
         }
     }
 
@@ -181,20 +200,50 @@ async function run() {
     if (predPeakBg != null && currentPeakBg != null) {
       const bgVar = currentPeakBg - predPeakBg;
       updatePayload.properties['Peak BG Delta'] = { number: bgVar };
-      
+
       if (currentPeakTimeStr && predPeakTimeStr) {
         const predDate = new Date(predPeakTimeStr);
         const peakDate = new Date(currentPeakTimeStr);
         const timeVar = Math.round((peakDate - predDate) / (1000 * 60));
         updatePayload.properties['Peak Time Delta (min)'] = { number: timeVar };
       }
+      metrics.variance_calculated++;
     }
 
     if (Object.keys(updatePayload.properties).length > 0) {
         console.log(`Updating '${titleText}' (${dateStr}): Pre ${currentPreBg}, Peak ${currentPeakBg}`);
-        await patchJson(`https://api.notion.com/v1/pages/${item.id}`, updatePayload);
+        try {
+            await patchJson(`https://api.notion.com/v1/pages/${item.id}`, updatePayload);
+            metrics.updated++;
+        } catch (e) {
+            console.error(`  !! Update failed for ${item.id}:`, e.message);
+            metrics.errors++;
+        }
+    } else if (hadPeakDataBefore) {
+        metrics.already_current++;
     }
   }
   console.log('Variance Audit Complete.');
+
+  // --- Outcome receipt for cron dashboard ---
+  let status;
+  if (metrics.errors > 0) {
+    status = metrics.errors >= metrics.updated ? 'error' : 'partial';
+  } else if (metrics.updated === 0 && metrics.food_entries === 0) {
+    status = 'noop';
+  } else {
+    status = 'ok';
+  }
+  const summary =
+    `Reviewed ${metrics.food_entries} food entries — ` +
+    `${metrics.updated} updated (${metrics.peak_data_backfilled} peak backfill, ${metrics.variance_calculated} variance), ` +
+    `${metrics.already_current} already current, ${metrics.too_recent} too recent` +
+    (metrics.errors > 0 ? `, ${metrics.errors} errors` : '');
+  writeReceipt({ status, summary, metrics });
 }
-run();
+
+run().catch(e => {
+  console.error(e);
+  writeReceipt({ status: 'error', summary: `Impact variance audit crashed: ${e.message || e}`, metrics: null });
+  process.exit(1);
+});

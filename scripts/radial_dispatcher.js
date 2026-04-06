@@ -442,12 +442,48 @@ async function main() {
     } else {
       const existing = activeResults[0];
 
-      // Archive any duplicates beyond the canonical first result
+      // Archive any duplicates beyond the canonical first result.
+      //
+      // SAFETY RAIL (added 2026-04-06 after runaway archival incident):
+      // Before archiving anything, verify each "duplicate" actually matches the
+      // entry being processed. The incident (Mar 1 – Apr 3) archived 203 pages
+      // across 6 events, many of them unrelated (different dates/categories/
+      // titles) because the Notion query silently returned non-matching rows.
+      // Treat any result whose Date+Category doesn't match the current entry
+      // as a query failure, not a duplicate. Also cap total archives per entry.
       if (activeResults.length > 1) {
-        for (const dupe of activeResults.slice(1)) {
-          console.log(`  -> Archiving duplicate Notion page: ${dupe.id}`);
-          await notionRequest("PATCH", `/pages/${dupe.id}`, { archived: true });
-          metrics.notion_duplicates_archived++;
+        const candidates = activeResults.slice(1);
+        const verified = [];
+        const rejected = [];
+        for (const dupe of candidates) {
+          const dupeDate = dupe.properties?.Date?.date?.start || null;
+          const dupeCat = dupe.properties?.Category?.select?.name || null;
+          const dupeUser = dupe.properties?.User?.select?.name || null;
+          const dateMatches = dupeDate === entryData.iso;
+          const catMatches = dupeCat === entryData.category;
+          const userMatches = dupeUser === entryData.user;
+          if (dateMatches && catMatches && userMatches) {
+            verified.push(dupe);
+          } else {
+            rejected.push({ id: dupe.id, dupeDate, dupeCat, dupeUser });
+          }
+        }
+        if (rejected.length > 0) {
+          console.warn(`  !! DEDUP SAFETY: query returned ${rejected.length} non-matching results for entry ${entryData.iso} ${entryData.category} — skipping their archival. Query is broken or Notion filter is unreliable.`);
+          console.warn(`  !! First rejected: ${JSON.stringify(rejected[0])}`);
+          metrics.notion_dedup_query_unreliable = (metrics.notion_dedup_query_unreliable || 0) + rejected.length;
+        }
+        // Hard cap: never archive more than 2 duplicates from one entry. Real
+        // dedup scenarios have 1 extra page at most; anything higher is noise.
+        if (verified.length > 2) {
+          console.warn(`  !! DEDUP SAFETY: ${verified.length} verified duplicates exceeds cap of 2 — skipping to avoid runaway archival. Investigate manually.`);
+          metrics.notion_dedup_capped = (metrics.notion_dedup_capped || 0) + verified.length;
+        } else {
+          for (const dupe of verified) {
+            console.log(`  -> Archiving duplicate Notion page: ${dupe.id}`);
+            await notionRequest("PATCH", `/pages/${dupe.id}`, { archived: true });
+            metrics.notion_duplicates_archived++;
+          }
         }
       }
 

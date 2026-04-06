@@ -12,6 +12,7 @@
 const https = require('https');
 const fs = require('fs');
 const path = require('path');
+const { writeReceipt } = require('./cron_receipt');
 
 const NS_URL    = 'https://p01--sefi--s66fclg7g2lm.code.run';
 const NS_SECRET = 'b3170e23f45df7738434cd8be9cd79d86a6d0f01';
@@ -89,6 +90,18 @@ function getBotToken() {
 }
 
 async function main() {
+  // Track everything for the dashboard receipt
+  const metrics = {
+    bg: null,
+    trend: null,
+    inAlertWindow: true,
+    alertFired: false,
+    alertSkippedAlreadySent: false,
+    recoveryReset: false,
+    nsUnreachable: false,
+    telegramError: false
+  };
+
   // Only alert between 8:30 AM and midnight (system timezone)
   const sysTZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
   const nowLocal = new Date().toLocaleString('en-US', { timeZone: sysTZ, hour: 'numeric', minute: 'numeric', hour12: false });
@@ -97,7 +110,8 @@ async function main() {
   const start = 8 * 60 + 30;  // 08:30
   if (minutesNow < start) {
     console.log(`Outside alert window (${nowLocal} ${sysTZ}). Skipping.`);
-    return;
+    metrics.inAlertWindow = false;
+    return { status: 'noop', summary: `Outside alert window (${nowLocal} ${sysTZ})`, metrics };
   }
 
   // Retry once on failure before giving up (avoids spurious watchdog errors on transient NS timeouts)
@@ -107,14 +121,19 @@ async function main() {
       entries = await nsGet('/api/v1/entries.json?count=2');
       if (Array.isArray(entries) && entries.length > 0) break;
     } catch (e) {
-      if (attempt === 2) { console.log('Nightscout unreachable after 2 attempts:', e.message); return; }
+      if (attempt === 2) {
+        console.log('Nightscout unreachable after 2 attempts:', e.message);
+        metrics.nsUnreachable = true;
+        return { status: 'warn', summary: `Nightscout unreachable: ${e.message}`, metrics };
+      }
       console.log(`NS attempt ${attempt} failed, retrying...`);
       await new Promise(r => setTimeout(r, 5000));
     }
   }
   if (!Array.isArray(entries) || entries.length === 0) {
     console.log('No entries from Nightscout');
-    return;
+    metrics.nsUnreachable = true;
+    return { status: 'warn', summary: 'Nightscout returned no entries', metrics };
   }
 
   const latest = entries[0];
@@ -122,6 +141,9 @@ async function main() {
   const trend     = latest.direction || 'NOT COMPUTABLE';
   const arrow     = TREND_ARROWS[trend] || '?';
   const timestamp = new Date(latest.date).toLocaleTimeString('en-US', { timeZone: 'America/Los_Angeles', hour: '2-digit', minute: '2-digit' });
+
+  metrics.bg = bg;
+  metrics.trend = trend;
 
   console.log(`Latest BG: ${bg} mg/dL | Trend: ${trend} | Time: ${timestamp}`);
 
@@ -131,7 +153,8 @@ async function main() {
   if (bg > RECOVERY_THRESHOLD && state.alertSent) {
     console.log(`BG recovered to ${bg} (>${RECOVERY_THRESHOLD}). Resetting alert state.`);
     writeState({ alertSent: false, alertSentAt: null, lastBg: bg });
-    return;
+    metrics.recoveryReset = true;
+    return { status: 'ok', summary: `BG recovered to ${bg} ${arrow} — alert state reset`, metrics };
   }
 
   state.lastBg = bg;
@@ -140,12 +163,16 @@ async function main() {
   if (bg <= ALERT_THRESHOLD && DOWN_TRENDS.has(trend)) {
     if (state.alertSent) {
       console.log(`Alert already sent at ${state.alertSentAt}. Skipping.`);
-      return;
+      metrics.alertSkippedAlreadySent = true;
+      return { status: 'ok', summary: `BG ${bg} ${arrow} — alert already active since ${state.alertSentAt}`, metrics };
     }
 
     // Send alert
     const botToken = getBotToken();
-    if (!botToken) { console.error('No bot token'); process.exit(1); }
+    if (!botToken) {
+      console.error('No bot token');
+      return { status: 'error', summary: 'No Telegram bot token configured', metrics };
+    }
 
     const msg = `⚠️ LOW GLUCOSE ALERT\n\n🩸 BG: ${bg} mg/dL ${arrow}\n📉 Trend: ${trend}\n🕐 Time: ${timestamp} PT\n\nMaria's glucose is at or below 90 and dropping. Consider a small snack.`;
 
@@ -153,14 +180,25 @@ async function main() {
     if (result.ok) {
       console.log(`Alert sent! Message ID: ${result.result?.message_id}`);
       writeState({ alertSent: true, alertSentAt: new Date().toISOString(), lastBg: bg });
+      metrics.alertFired = true;
+      return { status: 'ok', summary: `⚠ LOW BG alert fired: ${bg} ${arrow} ${trend}`, metrics };
     } else {
       console.error('Failed to send alert:', JSON.stringify(result));
-      process.exit(1);
+      metrics.telegramError = true;
+      return { status: 'error', summary: `Telegram send failed: ${result.description || 'unknown'}`, metrics };
     }
   } else {
     console.log(`No alert needed (BG: ${bg}, trend: ${trend}, alertSent: ${state.alertSent})`);
     writeState({ ...state, lastBg: bg });
+    return { status: 'ok', summary: `BG ${bg} ${arrow} (no alert needed)`, metrics };
   }
 }
 
-main().catch(e => { console.error(e); process.exit(1); });
+main().then(outcome => {
+  if (outcome) writeReceipt(outcome);
+  if (outcome && outcome.status === 'error') process.exit(1);
+}).catch(e => {
+  console.error(e);
+  writeReceipt({ status: 'error', summary: `Crashed: ${e.message || e}`, metrics: null });
+  process.exit(1);
+});

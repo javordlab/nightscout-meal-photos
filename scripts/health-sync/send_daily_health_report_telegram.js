@@ -6,6 +6,7 @@ const { execSync } = require('child_process');
 
 const { main: generateDailyReport, addDays } = require('../generate_daily_report');
 const { markReportSent } = require('./report_watchdog');
+const { writeReceipt } = require('./cron_receipt');
 
 const WORKSPACE = '/Users/javier/.openclaw/workspace';
 const DATA_DIR = path.join(WORKSPACE, 'data');
@@ -201,12 +202,69 @@ async function main() {
   return summary;
 }
 
+/**
+ * Turn the script's internal summary object into a cron dashboard receipt.
+ * Only called when invoked as main (not when required by report_watchdog.js).
+ */
+function summaryToReceipt(summary) {
+  const stats = summary.messageId && summary.statsDay ? summary.statsDay : null;
+  const statsBits = stats
+    ? ` · avg ${Math.round(stats.average)} mg/dL, GMI ${stats.gmi.toFixed(1)}%, TIR ${Math.round(stats.tir)}%`
+    : '';
+
+  let status;
+  let text;
+  if (summary.skippedReportAlreadySent) {
+    status = 'noop';
+    text = `Report for ${summary.reportDateLA} already sent — skipped`;
+  } else if (summary.dryRun && summary.reportSent) {
+    status = 'ok';
+    text = `Dry run for ${summary.reportDateLA} (no message sent)`;
+  } else if (summary.reportSent && summary.messageId) {
+    status = 'ok';
+    text = `Report delivered (msg ${summary.messageId}) for ${summary.targetDate}${statsBits}` +
+           (summary.chartsTriggered ? ' · charts triggered' : '');
+  } else if (summary.reportSent) {
+    // reportSent=true but no messageId — unusual but not an error
+    status = 'warn';
+    text = `Report sent for ${summary.targetDate} but no message_id returned${statsBits}`;
+  } else {
+    status = 'error';
+    text = `Report not sent (reportDateLA=${summary.reportDateLA})`;
+  }
+
+  return {
+    status,
+    summary: text,
+    metrics: {
+      reportDateLA: summary.reportDateLA,
+      targetDate: summary.targetDate,
+      chatId: summary.chatId,
+      reportSent: summary.reportSent,
+      messageId: summary.messageId || null,
+      chartsTriggered: summary.chartsTriggered,
+      skippedAlreadySent: summary.skippedReportAlreadySent,
+      dryRun: summary.dryRun,
+      statsDay: stats
+    }
+  };
+}
+
 if (require.main === module) {
-  main().catch((e) => {
-    log({ op: 'daily_report_delivery_error', error: e.message });
-    console.error(e.message);
-    process.exit(1);
-  });
+  main()
+    .then((summary) => {
+      if (summary) writeReceipt(summaryToReceipt(summary));
+    })
+    .catch((e) => {
+      log({ op: 'daily_report_delivery_error', error: e.message });
+      console.error(e.message);
+      writeReceipt({
+        status: 'error',
+        summary: `Daily report delivery crashed: ${e.message || e}`,
+        metrics: null
+      });
+      process.exit(1);
+    });
 }
 
 module.exports = { main };
