@@ -497,3 +497,4 @@
 | 2026-04-05 | 18:42 -07:00 | Maria Dennis | Food | Dinner | Dinner: 2 eggs over mixed vegetable tomato hash / shakshuka-style vegetables (BG: 97 mg/dL Flat) (Pred: 114-134 mg/dL @ 7:58 PM) (Protein: 17g | Carbs: ~22g | Cals: ~360) [📷](https://iili.io/Bu4UJcb.jpg) | 22 | 360 |
 | 2026-04-05 | 18:45 -07:00 | Maria Dennis | Food | Dinner | Dinner: 2 dumplings / potstickers [Cumulative Dinner: 35g carbs total] (BG: 102 mg/dL Flat) (Pred: 127-147 mg/dL @ 7:58 PM) (Protein: 5g | Carbs: ~13g | Cals: ~125) [📷](https://iili.io/Bu4PMtR.jpg) | 13 | 125 |
 | 2026-04-05 | 19:45 -07:00 | Maria Dennis | Exercise | - | Exercise: 20 minute walk (BG: 111 mg/dL Flat) | - | - |
+| 2026-04-05 | 20:09 -07:00 | Maria Dennis | Food | Dinner | Dinner: Half protein ball [Cumulative Dinner: 41g carbs total] (BG: 124 mg/dL Flat) (Pred: 134-154 mg/dL @ 9:25 PM) (Protein: 3g | Carbs: ~6g | Cals: ~65) | 6 | 65 |
