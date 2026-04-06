@@ -1,5 +1,6 @@
 # Health Log
 
+| 2026-04-06 | 10:36 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: English muffin with melted cheese and prosciutto/ham, plus coffee with milk (BG: 110 mg/dL Flat) (Pred: 175-190 mg/dL @ 12:03 PM) (Protein: 22g | Carbs: ~29g | Cals: ~350) [photo](https://iili.io/BRcjmej.jpg) | 29 | 350 |
 | 2026-04-06 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 112 mg/dL Flat) | - | - |
 | 2026-04-06 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 112 mg/dL Flat) | - | - |
 | 2026-04-06 | 09:05 -07:00 | Maria Dennis | Medication | - | Medication: Rosuvastatin 10mg (Scheduled) (BG: 112 mg/dL Flat) | - | - |
