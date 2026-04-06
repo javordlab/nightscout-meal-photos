@@ -1,5 +1,6 @@
 # Health Log
 
+| 2026-04-06 | 16:21 -07:00 | Maria Dennis | Food | Snack | Snack: Half protein ball (BG: 120 mg/dL Flat) (Pred: 132-142 mg/dL @ 6:27 PM) (Protein: 3g | Carbs: ~6g | Cals: ~65) | 6 | 65 |
 | 2026-04-06 | 14:21 -07:00 | Maria Dennis | Exercise | - | Exercise: 20 minute walk (BG: 127 mg/dL Flat) | - | - |
 | 2026-04-06 | 13:16 -07:00 | Maria Dennis | Food | Lunch | Lunch: Thin noodles with broccoli and sliced meatballs/sausage in a light savory sauce (BG: 117 mg/dL Flat) (Pred: 145-160 mg/dL @ 3:09 PM) (Protein: 21g | Carbs: ~33g | Cals: ~360) [photo](https://iili.io/BRrmNwB.jpg) | 33 | 360 |
 | 2026-04-06 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 174 mg/dL Flat) | - | - |
