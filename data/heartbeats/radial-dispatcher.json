@@ -1,8 +1,8 @@
 {
   "jobId": "radial-dispatcher",
-  "lastRunAtMs": 1775509506931,
-  "lastFinishAtMs": 1775509730970,
-  "lastDurationMs": 224039,
+  "lastRunAtMs": 1775511302528,
+  "lastFinishAtMs": 1775511535988,
+  "lastDurationMs": 233460,
   "exitCode": 0,
   "lastStatus": "ok",
   "consecutiveErrors": 0,
@@ -13,7 +13,7 @@
     "summary": "Synced 255 entries — NS: 254 ok / 0 err / 1 conflict · Notion: 0 new / 2 upd / 253 unchanged",
     "metrics": {
       "processed": 255,
-      "skipped": 224,
+      "skipped": 225,
       "ns_ok": 254,
       "ns_errors": 0,
       "ns_conflicts": 1,
