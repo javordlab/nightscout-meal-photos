@@ -1,8 +1,8 @@
 {
   "jobId": "health-sync-pipeline",
-  "lastRunAtMs": 1775500200696,
-  "lastFinishAtMs": 1775500238318,
-  "lastDurationMs": 37622,
+  "lastRunAtMs": 1775502000510,
+  "lastFinishAtMs": 1775502033980,
+  "lastDurationMs": 33470,
   "exitCode": 0,
   "lastStatus": "ok",
   "consecutiveErrors": 0,
