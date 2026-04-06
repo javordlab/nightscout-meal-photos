@@ -1,8 +1,8 @@
 {
   "jobId": "backfill-notion-impact",
-  "lastRunAtMs": 1775509201104,
-  "lastFinishAtMs": 1775509235289,
-  "lastDurationMs": 34185,
+  "lastRunAtMs": 1775512801275,
+  "lastFinishAtMs": 1775512827597,
+  "lastDurationMs": 26322,
   "exitCode": 0,
   "lastStatus": "ok",
   "consecutiveErrors": 0,
@@ -10,14 +10,14 @@
   "spawnError": null,
   "outcome": {
     "status": "ok",
-    "summary": "Reviewed 123 food entries — 41 updated (1 peak backfill, 41 variance), 0 already current, 1 too recent",
+    "summary": "Reviewed 123 food entries — 41 updated (0 peak backfill, 41 variance), 0 already current, 1 too recent",
     "metrics": {
-      "notion_total_fetched": 227,
+      "notion_total_fetched": 228,
       "food_entries": 123,
       "too_recent": 1,
       "archived_skipped": 0,
       "already_current": 0,
-      "peak_data_backfilled": 1,
+      "peak_data_backfilled": 0,
       "variance_calculated": 41,
       "updated": 41,
       "errors": 0
