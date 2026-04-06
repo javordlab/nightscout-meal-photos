@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-06T03:00:00.405Z",
+  "generatedAt": "2026-04-06T03:30:00.370Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
-  "entryCount": 471,
+  "entryCount": 472,
   "entries": [
     {
       "source": {
@@ -19693,6 +19693,47 @@
       },
       "entryKey": "sha256:b3e1886f38702f2e3abae72a05bb130f7ed28c8c0e2fcce5660c912adf0ad1b6",
       "contentHash": "sha256:d52669721ce847eece62928894208145f5800d53442582956575b315479977dc"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 500,
+        "rawRow": "| 2026-04-05 | 20:09 -07:00 | Maria Dennis | Food | Dinner | Dinner: Half protein ball [Cumulative Dinner: 41g carbs total] (BG: 124 mg/dL Flat) (Pred: 134-154 mg/dL @ 9:25 PM) (Protein: 3g | Carbs: ~6g | Cals: ~65) | 6 | 65 |"
+      },
+      "timestamp": "2026-04-05T20:09:00-07:00",
+      "date": "2026-04-05",
+      "time": "20:09 -07:00",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "mealType": "Dinner",
+      "title": "Dinner: Half protein ball [Cumulative Dinner: 41g carbs total]",
+      "notes": "BG: 124 mg/dL Flat; Protein: 3g; Pred: 134-154 mg/dL @ 9:25 PM",
+      "photoUrls": [],
+      "carbsEst": 6,
+      "caloriesEst": 65,
+      "proteinEst": 3,
+      "predicted": {
+        "peakBgText": "134-154 mg/dL",
+        "peakTimeText": "9:25 PM"
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:ab4fe248a4afb4c31749731609afe77529e4ca5449e821d05876f7748940f54b",
+      "contentHash": "sha256:a1eac2cd28d095021ff4816af4b28d2ee3012c83396bc305865d5eaf571df2bf"
     }
   ]
 }
