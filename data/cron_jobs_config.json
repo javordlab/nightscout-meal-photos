@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "_comment": "Declarative config for the HealthGuard cron dashboard. Monitored by scripts/health-sync/cron_health_watchdog.js. Freshness/outcome come from data/heartbeats/<id>.json (written by scripts/health-sync/heartbeat_wrap.js). staleMaxMs = grace after nextRunAtMs before overdue. maxDurationMs = duration threshold — exceeding it flags the job as warning. Scripts can write {status,summary,metrics} to $CRON_RECEIPT_FILE to report outcome beyond exit code.",
+  "jobs": [
+    {
+      "id": "health-sync-pipeline",
+      "name": "Health Sync Pipeline",
+      "cronExpr": "0,30 * * * *",
+      "staleMaxMs": 3600000,
+      "maxDurationMs": 180000
+    },
+    {
+      "id": "auto-track-meds",
+      "name": "Auto Track Meds",
+      "cronExpr": "5,35 * * * *",
+      "staleMaxMs": 3600000,
+      "maxDurationMs": 60000
+    },
+    {
+      "id": "calc-notion-projections",
+      "name": "Notion Projections",
+      "cronExpr": "5,35 * * * *",
+      "staleMaxMs": 3600000,
+      "maxDurationMs": 120000
+    },
+    {
+      "id": "radial-dispatcher",
+      "name": "Radial Sync",
+      "cronExpr": "5,35 * * * *",
+      "staleMaxMs": 3600000,
+      "maxDurationMs": 240000
+    },
+    {
+      "id": "backfill-notion-impact",
+      "name": "Hourly Notion Impact",
+      "cronExpr": "0 * * * *",
+      "staleMaxMs": 7200000,
+      "maxDurationMs": 300000
+    },
+    {
+      "id": "mysql-glucose-sync",
+      "name": "MySQL Glucose Sync",
+      "cronExpr": "20,50 * * * *",
+      "staleMaxMs": 5400000,
+      "maxDurationMs": 120000
+    },
+    {
+      "id": "glucose-low-alert",
+      "name": "Glucose Low Alert",
+      "cronExpr": "*/5 * * * *",
+      "staleMaxMs": 900000,
+      "maxDurationMs": 30000
+    },
+    {
+      "id": "mysql-backup",
+      "name": "MySQL Daily Backup",
+      "cronExpr": "20 4 * * *",
+      "staleMaxMs": 100800000,
+      "maxDurationMs": 600000
+    },
+    {
+      "id": "notion-to-mysql",
+      "name": "Notion→MySQL Sync",
+      "cronExpr": "0 */4 * * *",
+      "staleMaxMs": 36000000,
+      "maxDurationMs": 600000
+    },
+    {
+      "id": "daily-report",
+      "name": "Daily Health Report",
+      "cronExpr": "30 9 * * *",
+      "staleMaxMs": 93600000,
+      "maxDurationMs": 60000
+    },
+    {
+      "id": "report-watchdog",
+      "name": "Daily Report Watchdog",
+      "cronExpr": "32 9 * * *",
+      "staleMaxMs": 93600000,
+      "maxDurationMs": 60000
+    },
+    {
+      "id": "daily-charts",
+      "name": "Daily Charts",
+      "cronExpr": "37 9 * * *",
+      "staleMaxMs": 93600000,
+      "maxDurationMs": 120000
+    },
+    {
+      "id": "cron-health-watchdog",
+      "name": "Cron Health Watchdog",
+      "cronExpr": "*/15 * * * *",
+      "staleMaxMs": 2700000,
+      "maxDurationMs": 30000
+    },
+    {
+      "id": "check-provider-auth",
+      "name": "Provider Auth Check",
+      "cronExpr": "0 8 * * *",
+      "staleMaxMs": 93600000,
+      "maxDurationMs": 30000
+    }
+  ]
+}

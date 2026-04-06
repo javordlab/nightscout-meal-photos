@@ -17,7 +17,8 @@ const path = require('path');
 
 const WORKSPACE = '/Users/javier/.openclaw/workspace';
 const DATA_DIR = path.join(WORKSPACE, 'data');
-const JOBS_PATH = '/Users/javier/.openclaw/cron/jobs.json';
+const JOBS_CONFIG_PATH = path.join(DATA_DIR, 'cron_jobs_config.json');
+const HEARTBEAT_DIR = path.join(DATA_DIR, 'heartbeats');
 const REPORT_STATUS_PATH = path.join(DATA_DIR, 'report_status.json');
 const OUTPUT_PATH = path.join(DATA_DIR, 'cron_watchdog_status.json');
 const OPENCLAW_CONFIG = '/Users/javier/.openclaw/openclaw.json';
@@ -61,9 +62,111 @@ function sendTelegram(token, chatId, text) {
   });
 }
 
+/** Parse one cron field into a Set of valid integer values, or null for "any" (*). */
+function parseCronField(field, min, max) {
+  if (field === '*') return null;
+  const values = new Set();
+  for (const part of field.split(',')) {
+    // step form: */n  or  a-b/n
+    const stepMatch = part.match(/^(\*|(\d+)-(\d+))\/(\d+)$/);
+    if (stepMatch) {
+      const step = parseInt(stepMatch[4], 10);
+      const lo = stepMatch[1] === '*' ? min : parseInt(stepMatch[2], 10);
+      const hi = stepMatch[1] === '*' ? max : parseInt(stepMatch[3], 10);
+      for (let i = lo; i <= hi; i += step) values.add(i);
+      continue;
+    }
+    const rangeMatch = part.match(/^(\d+)-(\d+)$/);
+    if (rangeMatch) {
+      const lo = parseInt(rangeMatch[1], 10);
+      const hi = parseInt(rangeMatch[2], 10);
+      for (let i = lo; i <= hi; i++) values.add(i);
+      continue;
+    }
+    if (/^\d+$/.test(part)) {
+      values.add(parseInt(part, 10));
+      continue;
+    }
+    return null; // unsupported syntax
+  }
+  return values;
+}
+
+/**
+ * Compute the next cron fire time strictly after `from` (local time).
+ * Supports minute + hour + dom/month/dow = * (sufficient for our crontab).
+ * Returns ms since epoch, or null if unparseable.
+ */
+function nextCronTime(expr, from) {
+  const parts = expr.trim().split(/\s+/);
+  if (parts.length !== 5) return null;
+  const minutes = parseCronField(parts[0], 0, 59);
+  const hours = parseCronField(parts[1], 0, 23);
+  // We only require dom/mon/dow = * for our crontab.
+  if (parts[2] !== '*' || parts[3] !== '*' || parts[4] !== '*') return null;
+
+  const d = new Date(from.getTime());
+  d.setSeconds(0, 0);
+  d.setMinutes(d.getMinutes() + 1); // strictly after `from`
+  // Iterate up to 2 days of minutes — covers any daily schedule.
+  for (let i = 0; i < 2 * 24 * 60; i++) {
+    const mn = d.getMinutes();
+    const hr = d.getHours();
+    if ((!minutes || minutes.has(mn)) && (!hours || hours.has(hr))) {
+      return d.getTime();
+    }
+    d.setMinutes(d.getMinutes() + 1);
+  }
+  return null;
+}
+
+/**
+ * Load monitored jobs from cron_jobs_config.json + per-job heartbeat files.
+ * Returns job objects shaped like the old OpenClaw jobs.json entries, so the
+ * existing buildJobInfo / checkStaleness pipeline can consume them unchanged.
+ */
 function loadJobs() {
-  const raw = JSON.parse(fs.readFileSync(JOBS_PATH, 'utf8'));
-  return raw.jobs.filter(j => j.enabled && j.state);
+  const config = JSON.parse(fs.readFileSync(JOBS_CONFIG_PATH, 'utf8'));
+  const now = Date.now();
+  const nowDate = new Date(now);
+
+  return config.jobs.map(cfg => {
+    const state = {
+      lastRunAtMs: null,
+      lastFinishAtMs: null,
+      nextRunAtMs: null,
+      lastStatus: null,
+      lastDurationMs: null,
+      consecutiveErrors: 0,
+      outcome: null
+    };
+
+    // Heartbeat — written by heartbeat_wrap.js after every wrapped run.
+    try {
+      const hbPath = path.join(HEARTBEAT_DIR, cfg.id + '.json');
+      const hb = JSON.parse(fs.readFileSync(hbPath, 'utf8'));
+      state.lastRunAtMs = hb.lastFinishAtMs || hb.lastRunAtMs || null;
+      state.lastFinishAtMs = hb.lastFinishAtMs || null;
+      state.lastStatus = hb.lastStatus || null;
+      state.lastDurationMs = Number.isFinite(hb.lastDurationMs) ? hb.lastDurationMs : null;
+      state.consecutiveErrors = Number.isFinite(hb.consecutiveErrors) ? hb.consecutiveErrors : 0;
+      state.outcome = hb.outcome || null;
+    } catch {
+      // no heartbeat yet — job will show as "never-run" until it fires once
+    }
+
+    state.nextRunAtMs = nextCronTime(cfg.cronExpr, nowDate);
+
+    return {
+      id: cfg.id,
+      name: cfg.name,
+      enabled: true,
+      schedule: { kind: 'cron', expr: cfg.cronExpr },
+      staleMaxMs: cfg.staleMaxMs || null,
+      maxDurationMs: cfg.maxDurationMs || null,
+      state
+    };
+  });
 }
 
 /** Determine expected interval in ms for a job */
@@ -87,9 +190,16 @@ function getIntervalMs(job) {
   return null;
 }
 
-/** Find override config for a job by name substring match */
-function getOverride(jobName) {
-  const name = jobName.toLowerCase();
+/**
+ * Find override config for a job.
+ * Prefers explicit per-job staleMaxMs from cron_jobs_config.json, falls back
+ * to name-substring match against the legacy STALENESS_OVERRIDES table.
+ */
+function getOverride(job) {
+  if (job && typeof job === 'object' && Number.isFinite(job.staleMaxMs)) {
+    return { maxMs: job.staleMaxMs, label: job.name };
+  }
+  const name = (typeof job === 'string' ? job : job?.name || '').toLowerCase();
   for (const [key, val] of Object.entries(STALENESS_OVERRIDES)) {
     if (name.includes(key)) return val;
   }
@@ -101,7 +211,7 @@ function checkStaleness(job, now) {
   const lastRun = state.lastRunAtMs || state.lastRunAt || null;
   if (!lastRun) return null; // never run, skip
 
-  const override = getOverride(job.name);
+  const override = getOverride(job);
   const intervalMs = getIntervalMs(job);
 
   // Primary signal: nextRunAtMs — if in the future, job is on schedule
@@ -182,18 +292,34 @@ function formatSchedule(sched) {
 /** Build full status record for a single job (healthy or not) */
 function buildJobInfo(job, now) {
   const { state } = job;
-  const override = getOverride(job.name);
+  const override = getOverride(job);
   const lastRun = state.lastRunAtMs || state.lastRunAt || null;
   const nextRun = state.nextRunAtMs || null;
   const intervalMs = getIntervalMs(job);
   const staleResult = checkStaleness(job, now);
   const hasErrors = (state.consecutiveErrors || 0) > 0;
+  const outcome = state.outcome || null;
+  const outcomeStatus = outcome?.status || null;
 
+  // Duration threshold: the script finished, but took too long
+  const durationWarn =
+    Number.isFinite(job.maxDurationMs) &&
+    Number.isFinite(state.lastDurationMs) &&
+    state.lastDurationMs > job.maxDurationMs;
+
+  // Unified status derivation — combines liveness, outcome, duration
   let status;
-  if (!lastRun) status = 'never-run';
-  else if (staleResult) status = hasErrors ? 'error' : 'overdue';
-  else if (hasErrors) status = 'warning';
-  else status = 'healthy';
+  if (!lastRun) {
+    status = 'never-run';
+  } else if (staleResult) {
+    status = hasErrors || outcomeStatus === 'error' ? 'error' : 'overdue';
+  } else if (hasErrors || outcomeStatus === 'error') {
+    status = 'error';
+  } else if (outcomeStatus === 'partial' || outcomeStatus === 'warn' || durationWarn) {
+    status = 'warning';
+  } else {
+    status = 'healthy';
+  }
 
   return {
     id: job.id,
@@ -206,6 +332,9 @@ function buildJobInfo(job, now) {
     consecutiveErrors: state.consecutiveErrors || 0,
     lastStatus: state.lastStatus || state.lastRunStatus || null,
     lastDurationMs: state.lastDurationMs || null,
+    maxDurationMs: job.maxDurationMs || null,
+    durationWarn: durationWarn || false,
+    outcome: outcome,
     overdueMin: staleResult?.overdueMin || null,
     graceMin: staleResult?.graceMin || null
   };
@@ -292,8 +421,16 @@ async function main() {
     const lines = ['⚠️ *Cron Health Alert*', ''];
 
     for (const s of stale) {
-      const errFlag = s.consecutiveErrors > 0 ? ` ❌ ${s.consecutiveErrors} errors` : '';
-      lines.push(`• *${s.name}*: overdue by ${s.overdueMin}m (grace: ${s.graceMin}m)${errFlag}`);
+      const bits = [];
+      if (s.overdueMin) bits.push(`overdue by ${s.overdueMin}m (grace: ${s.graceMin}m)`);
+      if (s.outcome && s.outcome.status && s.outcome.status !== 'ok') {
+        const summary = s.outcome.summary ? ` — ${s.outcome.summary}` : '';
+        bits.push(`outcome: ${s.outcome.status}${summary}`);
+      }
+      if (s.consecutiveErrors > 0) bits.push(`❌ ${s.consecutiveErrors} consecutive errors`);
+      if (s.durationWarn) bits.push(`slow: ${Math.round(s.lastDurationMs/1000)}s > ${Math.round(s.maxDurationMs/1000)}s`);
+      if (bits.length === 0) bits.push('error');
+      lines.push(`• *${s.name}*: ${bits.join(' · ')}`);
     }
 
     if (reportIssue) {

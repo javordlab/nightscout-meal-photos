@@ -31,7 +31,8 @@ const portArg = process.argv.find(a => a.startsWith('--port='));
 const PORT = parseInt(process.env.PORT || (portArg ? portArg.split('=')[1] : '4242'), 10);
 
 function runWatchdog() {
-  execSync(`node "${WATCHDOG}"`, { timeout: 20000, stdio: 'pipe' });
+  // Always use full node path — Apache / cron env has no Homebrew in PATH.
+  execSync(`/opt/homebrew/bin/node "${WATCHDOG}"`, { timeout: 20000, stdio: 'pipe' });
 }
 
 function readStatus() {

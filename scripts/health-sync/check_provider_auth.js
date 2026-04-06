@@ -136,6 +136,32 @@ async function checkGemini() {
   }
 }
 
+async function checkClaudeOAuth() {
+  // Pings the Claude Code OAuth session used by daily_log_review.sh (Haiku)
+  // and weekly_memory_summary.sh (Sonnet) from system cron.
+  // If OAuth has expired, `claude -p` prints a login prompt or errors non-zero.
+  const CLAUDE_BIN = '/Users/javier/.local/bin/claude';
+  let out;
+  try {
+    out = execSync(
+      `${CLAUDE_BIN} -p --model haiku "reply with just OK" 2>&1`,
+      { timeout: 45000, encoding: 'utf8' }
+    );
+  } catch (err) {
+    const msg = (err.stdout || '') + (err.stderr || '') + err.message;
+    if (/login|oauth|unauthorized|expired|not authenticated|invalid.*token/i.test(msg)) {
+      throw new Error('OAuth expired — run: /Users/javier/.local/bin/claude login');
+    }
+    throw new Error(`claude -p failed: ${err.message.slice(0, 120)}`);
+  }
+  if (/please.*log.?in|oauth|unauthorized|not authenticated/i.test(out)) {
+    throw new Error('OAuth expired — run: /Users/javier/.local/bin/claude login');
+  }
+  if (!/ok/i.test(out)) {
+    throw new Error(`Unexpected response: ${out.trim().slice(0, 120)}`);
+  }
+}
+
 // ── Main ─────────────────────────────────────────────────────────────────────
 
 const CHECKS = [
@@ -143,6 +169,7 @@ const CHECKS = [
   { name: 'Notion',          fn: checkNotion,       critical: true },
   { name: 'OpenAI Codex',    fn: checkOpenAICodex,  critical: false },
   { name: 'Google Gemini',   fn: checkGemini,       critical: false },
+  { name: 'Claude OAuth',    fn: checkClaudeOAuth,  critical: true  },
 ];
 
 (async () => {

@@ -1,0 +1,12 @@
+{
+  "jobId": "mysql-glucose-sync",
+  "lastRunAtMs": 1775496000414,
+  "lastFinishAtMs": 1775496003911,
+  "lastDurationMs": 3497,
+  "exitCode": 0,
+  "lastStatus": "ok",
+  "consecutiveErrors": 0,
+  "signal": null,
+  "spawnError": null,
+  "outcome": null
+}

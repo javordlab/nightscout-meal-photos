@@ -11,6 +11,7 @@ const { loadSyncState } = require('./health-sync/sync_state');
 const SYNC_STATE_PATH = path.join(__dirname, '../data/sync_state.json') ||
   '/Users/javier/.openclaw/workspace/data/sync_state.json';
 const { upsertNightscoutTreatment } = require('./health-sync/ns_upsert_safe');
+const { writeReceipt } = require('./health-sync/cron_receipt');
 
 // --- Configuration ---
 const LOG_PATH = "/Users/javier/.openclaw/workspace/health_log.md";
@@ -231,16 +232,32 @@ function injectKnownBgIfUnknown(cleanText, mealIso, glucoseEntries) {
 
 async function main() {
   console.log("Starting Radial Dispatcher v2.3...");
-  
+
+  // Outcome metrics for the cron dashboard receipt (see scripts/health-sync/cron_receipt.js).
+  const metrics = {
+    processed: 0,
+    skipped: 0,
+    ns_ok: 0,
+    ns_errors: 0,
+    ns_conflicts: 0,
+    notion_new: 0,
+    notion_updated: 0,
+    notion_unchanged: 0,
+    notion_duplicates_archived: 0,
+    entry_errors: 0,
+    gallery_updated: 0
+  };
+
   if (!fs.existsSync(LOG_PATH)) {
     console.error("Error: health_log.md not found.");
+    writeReceipt({ status: 'error', summary: 'health_log.md not found', metrics });
     process.exit(1);
   }
 
   const content = fs.readFileSync(LOG_PATH, 'utf8');
   const allLines = content.split('\n');
   const dataLines = allLines.filter(l => l.startsWith('| 202'));
-  
+
   console.log(`Found ${dataLines.length} entries in log.`);
 
   // Load sync state once — used to skip already-synced entries
@@ -315,6 +332,7 @@ async function main() {
 
     if (cleanText.includes('[Photo received - awaiting manual description]')) {
       console.log(`Skipping draft placeholder: ${entryData.date} ${entryData.time}`);
+      metrics.skipped++;
       continue;
     }
 
@@ -328,10 +346,12 @@ async function main() {
         (existing.photo_urls?.length > 0 && photos.every(u => existing.photo_urls.includes(u)));
       if (photosSynced) {
         console.log(`Skip (synced): ${entryData.date} ${entryData.time.slice(0,5)}`);
+        metrics.skipped++;
         continue;
       }
     }
 
+    metrics.processed++;
     const entryKey = buildEntryKey(entryData, cleanText);
     console.log(`Checking: ${entryData.date} ${entryData.time} - ${cleanText.slice(0, 60)}`);
 
@@ -361,10 +381,13 @@ async function main() {
 
     if (nsRes.status === 'error') {
       console.log(`  !! NS sync error (${nsRes.error}) for ${nsEntryKey}`);
+      metrics.ns_errors++;
     } else if (nsRes.status === 'conflict') {
       console.log(`  !! NS conflict (${nsRes.reason}) for ${nsEntryKey}; candidates=${(nsRes.candidateIds || []).join(',')}`);
+      metrics.ns_conflicts++;
     } else {
       console.log(`  -> NS ${nsRes.status}: ${nsRes.treatmentId || 'n/a'}`);
+      metrics.ns_ok++;
     }
 
     // 2. Sync to Notion
@@ -414,6 +437,7 @@ async function main() {
     if (activeResults.length === 0) {
       console.log("  -> Pushing to Notion...");
       await notionRequest("POST", "/pages", notionBody);
+      metrics.notion_new++;
       if (photos[0]) photoSyncedToNotion = true;
     } else {
       const existing = activeResults[0];
@@ -423,6 +447,7 @@ async function main() {
         for (const dupe of activeResults.slice(1)) {
           console.log(`  -> Archiving duplicate Notion page: ${dupe.id}`);
           await notionRequest("PATCH", `/pages/${dupe.id}`, { archived: true });
+          metrics.notion_duplicates_archived++;
         }
       }
 
@@ -434,9 +459,11 @@ async function main() {
         console.log("  -> Updating Notion...");
         delete notionBody.parent;
         await notionRequest("PATCH", `/pages/${existing.id}`, notionBody);
+        metrics.notion_updated++;
         if (photos[0] && existingPhoto !== photos[0]) photoSyncedToNotion = true;
       } else {
         console.log("  -> Notion up to date.");
+        metrics.notion_unchanged++;
       }
     }
 
@@ -453,13 +480,50 @@ async function main() {
       execSync('/opt/homebrew/bin/node /Users/javier/.openclaw/workspace/scripts/generate_notion_gallery_data.js', { stdio: 'inherit' });
       // generate_notion_gallery_data.js now calls deploy_gh_pages.js internally
       console.log("  -> Gallery updated and deployed to gh-pages.");
+      metrics.gallery_updated = 1;
     } catch (e) {
       console.error("Gallery update failed:", e.message);
+      metrics.entry_errors++;
     }
   }
 
   console.log(`NS Telemetry: ${JSON.stringify(nsTelemetry)}`);
   console.log("Radial Sync Complete.");
+
+  // --- Outcome receipt for cron dashboard ---
+  // Fold NS telemetry into metrics so the dashboard has the full picture.
+  Object.assign(metrics, {
+    ns_fallback_matches: nsTelemetry.fallback_match_count || 0,
+    ns_ambiguous_matches: nsTelemetry.ambiguous_match_count || 0,
+    ns_verify_fails: nsTelemetry.verify_fail_count || 0
+  });
+
+  const totalErrors = metrics.ns_errors + metrics.entry_errors + metrics.ns_verify_fails;
+  let status;
+  if (totalErrors === 0) {
+    status = metrics.processed === 0 ? 'noop' : 'ok';
+  } else if (totalErrors >= metrics.processed && metrics.processed > 0) {
+    status = 'error';
+  } else {
+    status = 'partial';
+  }
+
+  const summary =
+    metrics.processed === 0
+      ? `No entries needed sync (${metrics.skipped} already synced)`
+      : `Synced ${metrics.processed} entries — NS: ${metrics.ns_ok} ok / ${metrics.ns_errors} err / ${metrics.ns_conflicts} conflict · ` +
+        `Notion: ${metrics.notion_new} new / ${metrics.notion_updated} upd / ${metrics.notion_unchanged} unchanged` +
+        (metrics.gallery_updated ? ' · gallery updated' : '');
+
+  writeReceipt({ status, summary, metrics });
 }
 
-main().catch(console.error);
+main().catch(err => {
+  console.error(err);
+  writeReceipt({
+    status: 'error',
+    summary: `Radial Sync crashed: ${err.message || err}`,
+    metrics: null
+  });
+  process.exit(1);
+});

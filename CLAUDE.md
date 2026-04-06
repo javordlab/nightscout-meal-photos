@@ -184,6 +184,31 @@ All 4 LLM-assisted jobs migrated to system crontab (2026-04-03). Zero OpenClaw c
 
 > **Migrated:** `cron-health-watchdog` (pure script), `daily-log-review` (`claude -p` Haiku OAuth), `health-sync-daily-audit` (pure script), `weekly-memory-summary` (`claude -p` Sonnet OAuth). All OpenClaw jobs disabled.
 
+### Cron Monitoring — Heartbeat + Receipt Architecture (2026-04-06)
+
+The HealthGuard cron dashboard at http://localhost/healthguard monitors three dimensions per job:
+
+1. **Liveness** — did it run? (`lastRunAtMs` vs `nextRunAtMs` + grace window)
+2. **Duration** — did it finish in expected time? (`lastDurationMs` vs `maxDurationMs`)
+3. **Outcome** — did it achieve its purpose? (script-reported `status` + `summary` + `metrics`)
+
+**How it works:**
+
+- Every crontab entry is wrapped with `scripts/health-sync/heartbeat_wrap.js <job-id> -- <command...>`. The wrapper runs the command, preserves exit code, and writes `data/heartbeats/<job-id>.json` with timing + exit info.
+- The wrapper sets `CRON_RECEIPT_FILE=<tmp>` in the child env. Scripts that want to report outcome beyond "it exited 0" call `writeReceipt()` before exiting:
+  ```js
+  const { writeReceipt } = require('./health-sync/cron_receipt'); // path is relative to the script
+  writeReceipt({
+    status: errors === 0 ? 'ok' : (errors < processed ? 'partial' : 'error'),
+    summary: `Synced ${processed} entries — ${ok} ok / ${errors} errors`,
+    metrics: { processed, ok, errors }
+  });
+  ```
+  Valid statuses: `ok` | `partial` | `warn` | `error` | `noop`. Scripts that don't call `writeReceipt` keep working — they fall back to exit-code-only monitoring.
+- `scripts/health-sync/cron_health_watchdog.js` runs every 15 min, reads `data/cron_jobs_config.json` + heartbeats, computes status, writes `data/cron_watchdog_status.json`, and Telegrams Javi if anything is overdue, errored, or exceeded its duration threshold.
+- To add/remove a monitored job, edit `data/cron_jobs_config.json` (id, cronExpr, staleMaxMs, maxDurationMs) and update the crontab to wrap the new command with `heartbeat_wrap.js`.
+- **Reference implementation:** `scripts/radial_dispatcher.js` is the exemplar retrofit — tracks NS/Notion outcomes per entry and writes a structured receipt.
+
 ---
 
 ## Model Routing (MANDATORY — see AGENTS.md for full rules)
