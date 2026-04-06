@@ -14,6 +14,7 @@
 const fs = require('fs');
 const https = require('https');
 const path = require('path');
+const { execSync } = require('child_process');
 
 const WORKSPACE = '/Users/javier/.openclaw/workspace';
 const DATA_DIR = path.join(WORKSPACE, 'data');
@@ -340,6 +341,92 @@ function buildJobInfo(job, now) {
   };
 }
 
+/**
+ * Reconcile `crontab -l` against cron_jobs_config.json.
+ *
+ * Catches the class of bug where a job was "migrated" or "installed" but the
+ * crontab entry was never actually added (or was added without being
+ * registered in the config, so the watchdog never notices it's missing).
+ *
+ * Extracts job IDs from lines matching `heartbeat_wrap.js <id> --`. Compares
+ * both sets + cron expressions, and returns a list of drift issues.
+ *
+ * Returns null if crontab cannot be read (sandboxed env). Empty array = clean.
+ */
+function reconcileCrontabAgainstConfig() {
+  let crontabRaw;
+  try {
+    crontabRaw = execSync('crontab -l 2>&1', { encoding: 'utf8', timeout: 5000 });
+  } catch {
+    return null; // crontab unavailable — don't false-alarm
+  }
+  if (/no crontab|command not found/i.test(crontabRaw)) return null;
+
+  // id → { cronExpr, rawLine }  for every heartbeat-wrapped entry in crontab
+  const crontabJobs = new Map();
+  for (const rawLine of crontabRaw.split('\n')) {
+    const line = rawLine.trim();
+    if (!line || line.startsWith('#')) continue;
+    // Split first 5 whitespace-separated tokens as the cron expression, rest is command
+    const m = line.match(/^(\S+\s+\S+\s+\S+\s+\S+\s+\S+)\s+(.*)$/);
+    if (!m) continue;
+    const cronExpr = m[1];
+    const command = m[2];
+    // Multiple heartbeat_wrap.js invocations can be chained in one crontab line
+    // (e.g. the 5,35 * * * * line chains 3 jobs with &&). Extract each id.
+    const idRegex = /heartbeat_wrap\.js\s+([a-z][a-z0-9-]*)\s+--/gi;
+    let match;
+    while ((match = idRegex.exec(command)) !== null) {
+      const id = match[1];
+      if (!crontabJobs.has(id)) {
+        crontabJobs.set(id, { cronExpr, rawLine: line });
+      }
+    }
+  }
+
+  const config = JSON.parse(fs.readFileSync(JOBS_CONFIG_PATH, 'utf8'));
+  const configJobs = new Map(config.jobs.map(j => [j.id, j]));
+
+  const issues = [];
+
+  // (1) In config but missing from crontab → unscheduled
+  for (const [id, cfg] of configJobs) {
+    if (!crontabJobs.has(id)) {
+      issues.push({
+        kind: 'unscheduled',
+        id,
+        detail: `declared in cron_jobs_config.json (${cfg.cronExpr}) but no matching crontab entry`
+      });
+    }
+  }
+
+  // (2) In crontab but not in config → unmonitored
+  for (const [id, entry] of crontabJobs) {
+    if (!configJobs.has(id)) {
+      issues.push({
+        kind: 'unmonitored',
+        id,
+        detail: `scheduled in crontab (${entry.cronExpr}) but not in cron_jobs_config.json — watchdog cannot monitor it`
+      });
+    }
+  }
+
+  // (3) Both sides have it but cronExpr differs → drift
+  for (const [id, cfg] of configJobs) {
+    const entry = crontabJobs.get(id);
+    if (!entry) continue;
+    if (entry.cronExpr !== cfg.cronExpr) {
+      issues.push({
+        kind: 'schedule-drift',
+        id,
+        detail: `config says \`${cfg.cronExpr}\`, crontab says \`${entry.cronExpr}\``
+      });
+    }
+  }
+
+  return issues;
+}
+
 function checkDailyReport(now) {
   if (!fs.existsSync(REPORT_STATUS_PATH)) return null;
   try {
@@ -384,6 +471,14 @@ async function main() {
   // Check daily report separately
   const reportIssue = checkDailyReport(now);
 
+  // Reconcile crontab ↔ config to catch unscheduled/unmonitored/drifted jobs
+  let driftIssues = null;
+  try {
+    driftIssues = reconcileCrontabAgainstConfig();
+  } catch (e) {
+    console.warn('[watchdog] crontab reconciliation failed:', e.message);
+  }
+
   // Check gh-pages staleness: notion_meals.json should not be older than 2 hours
   let ghPagesIssue = null;
   try {
@@ -412,10 +507,12 @@ async function main() {
     staleJobs: stale,
     dailyReportIssue: reportIssue || null,
     ghPagesIssue: ghPagesIssue || null,
+    driftIssues: driftIssues || null,
     alertSent: false
   };
 
-  const issues = stale.length + (reportIssue ? 1 : 0) + (ghPagesIssue ? 1 : 0);
+  const driftCount = Array.isArray(driftIssues) ? driftIssues.length : 0;
+  const issues = stale.length + (reportIssue ? 1 : 0) + (ghPagesIssue ? 1 : 0) + driftCount;
 
   if (issues > 0) {
     const lines = ['⚠️ *Cron Health Alert*', ''];
@@ -439,6 +536,17 @@ async function main() {
 
     if (ghPagesIssue) {
       lines.push(`• *gh-pages*: ${ghPagesIssue}`);
+    }
+
+    if (driftCount > 0) {
+      lines.push('');
+      lines.push('🚨 *Cron ↔ Config Drift*');
+      for (const d of driftIssues) {
+        const icon = d.kind === 'unscheduled' ? '❌'
+                   : d.kind === 'unmonitored' ? '👻'
+                   : '⚠️';
+        lines.push(`${icon} \`${d.id}\` (${d.kind}): ${d.detail}`);
+      }
     }
 
     const message = lines.join('\n');

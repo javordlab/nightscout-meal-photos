@@ -169,20 +169,50 @@ Monitoring:
 | `*/5 * * * *` | `glucose_low_alert.js` | Low BG (<70) alert |
 | `20 4 * * *` | `mysql_backup.sh` | Daily MySQL backup |
 | `0 */4 * * *` | `sync_notion_to_mysql.js` | Notion → MySQL async |
-| `15 9 * * *` | `daily_log_review.sh` | Gateway log review via `claude -p` OAuth (Haiku). Migrated from OpenClaw 2026-04-03. |
+| `0 8 * * *` | `check_provider_auth.js` | OAuth token health check (Nightscout/Notion/Codex/Gemini/Anthropic/Claude OAuth). Log-scan based, not CLI probes. |
+| `15 9 * * *` | `daily_log_review.sh` | Gateway log review via `claude -p` OAuth (Haiku). Migrated from OpenClaw 2026-04-03. **Crontab entry was missing Apr 3–6 despite migration claim** — restored 2026-04-06. |
 | `30 9 * * *` | `send_daily_health_report_telegram.js` | Daily report |
 | `32 9 * * *` | `report_watchdog.js` | Report fallback if 9:30 fails |
 | `37 9 * * *` | `send_daily_charts_telegram.js --no-regenerate` | Chart fallback |
-| `45 9 * * *` | `audit_health_sync.js --lookback=2` | Daily sync audit. Migrated from OpenClaw 2026-04-03. |
-| `*/15 * * * *` | `cron_health_watchdog.js` | Infrastructure health check |
-| `0 23 * * 0` | `weekly_memory_summary.sh` | Weekly memory rollup via `claude -p` OAuth (Sonnet). Migrated from OpenClaw 2026-04-03. |
+| `45 9 * * *` | `audit_health_sync.js --lookback=2` | Daily sync audit. Migrated from OpenClaw 2026-04-03. **Crontab entry was missing Apr 3–6 despite migration claim** — restored 2026-04-06. |
+| `*/15 * * * *` | `cron_health_watchdog.js` | Infrastructure health check + crontab/config drift detection |
+| `0 23 * * 0` | `weekly_memory_summary.sh` | Weekly memory rollup via `claude -p` OAuth (Sonnet). Migrated from OpenClaw 2026-04-03. **Crontab entry was missing Apr 3–6 despite migration claim** — restored 2026-04-06. |
 
 > **Critical:** All scripts must use `/opt/homebrew/bin/node` explicitly (or `/Users/javier/.local/bin/claude` for OAuth calls). System cron PATH is `/usr/bin:/bin` — bare `node`/`claude` fails silently.
 
-### OpenClaw Cron Jobs
-All 4 LLM-assisted jobs migrated to system crontab (2026-04-03). Zero OpenClaw cron dependency remaining.
+> **Also critical — all crontab entries must `cd /Users/javier/.openclaw/workspace &&` before invoking scripts.** Heartbeat_wrap and all relative paths (`scripts/...`, `data/...`) break silently without it. Drift detector in `cron_health_watchdog.js` catches missing entries but not a missing `cd` prefix — review crontab by hand when adding new jobs.
 
-> **Migrated:** `cron-health-watchdog` (pure script), `daily-log-review` (`claude -p` Haiku OAuth), `health-sync-daily-audit` (pure script), `weekly-memory-summary` (`claude -p` Sonnet OAuth). All OpenClaw jobs disabled.
+### OpenClaw Cron Jobs
+All 4 LLM-assisted jobs **intended** to migrate to system crontab 2026-04-03; 3 of 4 were actually installed in crontab only on 2026-04-06 after the drift was discovered. See "Trust drift incident" note below. Zero OpenClaw cron dependency now.
+
+> **Migrated (verified in live crontab 2026-04-06):** `cron-health-watchdog`, `daily-log-review` (`claude -p` Haiku OAuth), `health-sync-daily-audit`, `weekly-memory-summary` (`claude -p` Sonnet OAuth).
+
+### ⚠️ Trust Drift Incident (2026-04-03 → 2026-04-06)
+
+On 2026-04-03, CLAUDE.md was updated to claim 4 OpenClaw cron jobs had been migrated to system crontab. In reality only 1 (`cron-health-watchdog`) was actually installed — the other 3 were removed from OpenClaw but the crontab entries were never added. They lived in the docs and the scripts directory but nowhere the OS would ever run them.
+
+**Consequences, discovered 2026-04-06:**
+- `daily_log_review.sh` — the script whose entire purpose is to scan gateway logs for actionable issues and alert — never ran. It would have caught the `openai-codex` OAuth `refresh_token_reused` failures that were printing hourly into `gateway.err.log` (902 occurrences by 2026-04-06).
+- `audit_health_sync.js` — daily Notion/Nightscout sync audit never ran.
+- `weekly_memory_summary.sh` — weekly memory rollup never ran.
+
+**Why the cron watchdog didn't catch it:** the watchdog only alerts on jobs it knows about. These 3 jobs weren't in `data/cron_jobs_config.json` either, so the watchdog had no baseline to notice they were missing.
+
+**Fix (2026-04-06):**
+1. All 3 crontab entries installed + verified in live `crontab -l`.
+2. All 3 registered in `data/cron_jobs_config.json` so the watchdog tracks them.
+3. **New: crontab ↔ config drift detector** added to `cron_health_watchdog.js`. Every 15 min it parses `crontab -l`, extracts `heartbeat_wrap.js <id>` tokens, diffs against the config, and alerts on three drift classes:
+   - `unscheduled` — in config, not in crontab
+   - `unmonitored` — in crontab, not in config
+   - `schedule-drift` — both sides have it but cronExpr differs
+4. Drift issues appear in `data/cron_watchdog_status.json` under `driftIssues` and in the Telegram alert as a dedicated "Cron ↔ Config Drift" section.
+
+**Rule going forward — the three-way source of truth:**
+- `data/cron_jobs_config.json` = declared truth (what should run)
+- `crontab -l` = scheduler truth (what IS scheduled)
+- `data/heartbeats/<id>.json` = observed truth (what DID run)
+
+A job is only "really running" if all three agree. The drift detector now enforces (1) ↔ (2); the stale-heartbeat detector enforces (1) ↔ (3). Docs (CLAUDE.md) are not a fourth source of truth — they describe state but cannot guarantee it. Never treat a CLAUDE.md entry as proof that something runs.
 
 ### Cron Monitoring — Heartbeat + Receipt Architecture (2026-04-06)
 

@@ -1,0 +1,12 @@
+{
+  "jobId": "auto-track-meds",
+  "lastRunAtMs": 1775496900770,
+  "lastFinishAtMs": 1775496900912,
+  "lastDurationMs": 142,
+  "exitCode": 0,
+  "lastStatus": "ok",
+  "consecutiveErrors": 0,
+  "signal": null,
+  "spawnError": null,
+  "outcome": null
+}

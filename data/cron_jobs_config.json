@@ -99,6 +99,27 @@
       "cronExpr": "0 8 * * *",
       "staleMaxMs": 93600000,
       "maxDurationMs": 30000
+    },
+    {
+      "id": "daily-log-review",
+      "name": "Daily Gateway Log Review",
+      "cronExpr": "15 9 * * *",
+      "staleMaxMs": 93600000,
+      "maxDurationMs": 180000
+    },
+    {
+      "id": "health-sync-daily-audit",
+      "name": "Daily Health-Sync Audit",
+      "cronExpr": "45 9 * * *",
+      "staleMaxMs": 93600000,
+      "maxDurationMs": 120000
+    },
+    {
+      "id": "weekly-memory-summary",
+      "name": "Weekly Memory Summary",
+      "cronExpr": "0 23 * * 0",
+      "staleMaxMs": 691200000,
+      "maxDurationMs": 600000
     }
   ]
 }

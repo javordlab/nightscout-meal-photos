@@ -92,47 +92,66 @@ async function checkNotion() {
   if (res.status !== 200) throw new Error(`HTTP ${res.status}`);
 }
 
-async function checkOpenAICodex() {
-  // Test by asking openclaw to make a minimal call via its CLI
-  // If auth is expired, openclaw will error
+// Scan OpenClaw gateway.err.log for recent `[<provider>] Token refresh failed`
+// or `refresh_token_reused` lines. This is the authoritative signal — the
+// gateway prints these whenever it fails to refresh an OAuth token while
+// servicing real traffic, which is what actually matters.
+function scanGatewayErrLogForProvider(provider, { windowMinutes = 120 } = {}) {
+  const logPath = '/Users/javier/.openclaw/logs/gateway.err.log';
+  let content;
   try {
-    const result = execSync(
-      `openclaw auth status openai-codex 2>&1`,
-      { timeout: 10000, encoding: 'utf8' }
+    content = fs.readFileSync(logPath, 'utf8');
+  } catch {
+    return null; // log not readable — inconclusive
+  }
+  const cutoff = Date.now() - windowMinutes * 60 * 1000;
+  const lines = content.split('\n');
+  const hits = [];
+  for (const line of lines) {
+    if (!line.includes(`[${provider}]`)) continue;
+    if (!/Token refresh failed|refresh_token_reused|invalid_grant/i.test(line)) continue;
+    const m = line.match(/^(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?[-+Z][^ ]*)/);
+    if (!m) continue;
+    const ts = Date.parse(m[1]);
+    if (!Number.isFinite(ts)) continue;
+    if (ts >= cutoff) hits.push(ts);
+  }
+  return hits;
+}
+
+async function checkOpenAICodex() {
+  const hits = scanGatewayErrLogForProvider('openai-codex', { windowMinutes: 120 });
+  if (hits === null) return; // inconclusive, don't alert
+  if (hits.length > 0) {
+    const latest = new Date(Math.max(...hits)).toISOString();
+    throw new Error(
+      `${hits.length} token refresh failure(s) in last 2h (latest ${latest}) — run: openclaw models auth login openai-codex`
     );
-    if (/expired|invalid|unauthorized|not logged/i.test(result)) {
-      throw new Error('Auth expired — run: openclaw auth login openai-codex');
-    }
-  } catch (err) {
-    if (err.message.includes('Auth expired')) throw err;
-    // openclaw auth status might not exist — fall back to a model ping
-    try {
-      const result2 = execSync(
-        `echo "hi" | openclaw run --model openai-codex/gpt-5.3-codex --print 2>&1`,
-        { timeout: 30000, encoding: 'utf8' }
-      );
-      if (/unauthorized|expired|login|auth/i.test(result2)) {
-        throw new Error('Auth expired — run: openclaw auth login openai-codex');
-      }
-    } catch (err2) {
-      if (/unauthorized|expired|login|auth/i.test(err2.message)) throw err2;
-      // If it's just a different error (model not responding etc), don't alert
-    }
   }
 }
 
 async function checkGemini() {
-  try {
-    const result = execSync(
-      `openclaw auth status google-gemini-cli 2>&1`,
-      { timeout: 10000, encoding: 'utf8' }
+  const hits = scanGatewayErrLogForProvider('google-gemini-cli', { windowMinutes: 120 });
+  if (hits === null) return;
+  if (hits.length > 0) {
+    const latest = new Date(Math.max(...hits)).toISOString();
+    throw new Error(
+      `${hits.length} token refresh failure(s) in last 2h (latest ${latest}) — run: openclaw models auth login google-gemini-cli`
     );
-    if (/expired|invalid|unauthorized|not logged/i.test(result)) {
-      throw new Error('Auth expired — run: openclaw auth login google-gemini-cli');
-    }
-  } catch (err) {
-    if (err.message.includes('Auth expired')) throw err;
-    // Not a hard failure if we can't check
+  }
+}
+
+async function checkAnthropicOAuth() {
+  // The Anthropic provider inside OpenClaw is separate from the Claude Code
+  // CLI OAuth (checked by checkClaudeOAuth). This one powers `openclaw agent`
+  // turns and model fallbacks.
+  const hits = scanGatewayErrLogForProvider('anthropic', { windowMinutes: 120 });
+  if (hits === null) return;
+  if (hits.length > 0) {
+    const latest = new Date(Math.max(...hits)).toISOString();
+    throw new Error(
+      `${hits.length} token refresh failure(s) in last 2h (latest ${latest}) — run: openclaw models auth login anthropic`
+    );
   }
 }
 
@@ -165,11 +184,12 @@ async function checkClaudeOAuth() {
 // ── Main ─────────────────────────────────────────────────────────────────────
 
 const CHECKS = [
-  { name: 'Nightscout',      fn: checkNightscout,  critical: true },
-  { name: 'Notion',          fn: checkNotion,       critical: true },
-  { name: 'OpenAI Codex',    fn: checkOpenAICodex,  critical: false },
-  { name: 'Google Gemini',   fn: checkGemini,       critical: false },
-  { name: 'Claude OAuth',    fn: checkClaudeOAuth,  critical: true  },
+  { name: 'Nightscout',      fn: checkNightscout,      critical: true  },
+  { name: 'Notion',          fn: checkNotion,          critical: true  },
+  { name: 'OpenAI Codex',    fn: checkOpenAICodex,     critical: true  },
+  { name: 'Google Gemini',   fn: checkGemini,          critical: false },
+  { name: 'Anthropic OAuth', fn: checkAnthropicOAuth,  critical: true  },
+  { name: 'Claude OAuth',    fn: checkClaudeOAuth,     critical: true  },
 ];
 
 (async () => {
