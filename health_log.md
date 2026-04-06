@@ -1,5 +1,6 @@
 # Health Log
 
+| 2026-04-05 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 123 mg/dL Flat) | - | - |
 | 2026-04-05 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 180 mg/dL Flat) | - | - |
 | 2026-04-05 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 100 mg/dL Flat) | - | - |
 | 2026-04-05 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 100 mg/dL Flat) | - | - |

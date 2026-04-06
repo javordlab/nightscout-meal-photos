@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-06T01:30:01.077Z",
+  "generatedAt": "2026-04-06T02:00:00.495Z",
   "source": "/Users/javier/.openclaw/workspace/health_log.md",
-  "entryCount": 467,
+  "entryCount": 469,
   "entries": [
     {
       "source": {
@@ -19525,6 +19525,92 @@
       },
       "entryKey": "sha256:aba5b3d5bfded6bbae74872fb42fceb1e2357205b07bbeafdc816a8ae6c25d4e",
       "contentHash": "sha256:4ee85b1eaa2f3fb21dc764d0b40c36b13ec5ec95611b95e1a29dbd7102319105"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 496,
+        "rawRow": "| 2026-04-05 | 18:42 -07:00 | Maria Dennis | Food | Dinner | Dinner: 2 eggs over mixed vegetable tomato hash / shakshuka-style vegetables (BG: 97 mg/dL Flat) (Pred: 114-134 mg/dL @ 7:58 PM) (Protein: 17g | Carbs: ~22g | Cals: ~360) [📷](https://iili.io/Bu4UJcb.jpg) | 22 | 360 |"
+      },
+      "timestamp": "2026-04-05T18:42:00-07:00",
+      "date": "2026-04-05",
+      "time": "18:42 -07:00",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "mealType": "Dinner",
+      "title": "Dinner: 2 eggs over mixed vegetable tomato hash / shakshuka-style vegetables",
+      "notes": "BG: 97 mg/dL Flat; Protein: 17g; Pred: 114-134 mg/dL @ 7:58 PM",
+      "photoUrls": [
+        "https://iili.io/Bu4UJcb.jpg"
+      ],
+      "carbsEst": 22,
+      "caloriesEst": 360,
+      "proteinEst": 17,
+      "predicted": {
+        "peakBgText": "114-134 mg/dL",
+        "peakTimeText": "7:58 PM"
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:95d0bef61faedd2e199fb13a62e070a3db19fe786bda0aaf995406ca7bca4861",
+      "contentHash": "sha256:5bad4dccba39954e5090fe9b2b698882c02dca1114743b8e8246ab5c6c03ab04"
+    },
+    {
+      "source": {
+        "file": "health_log.md",
+        "line": 497,
+        "rawRow": "| 2026-04-05 | 18:45 -07:00 | Maria Dennis | Food | Dinner | Dinner: 2 dumplings / potstickers [Cumulative Dinner: 35g carbs total] (BG: 102 mg/dL Flat) (Pred: 127-147 mg/dL @ 7:58 PM) (Protein: 5g | Carbs: ~13g | Cals: ~125) [📷](https://iili.io/Bu4PMtR.jpg) | 13 | 125 |"
+      },
+      "timestamp": "2026-04-05T18:45:00-07:00",
+      "date": "2026-04-05",
+      "time": "18:45 -07:00",
+      "user": "Maria Dennis",
+      "category": "Food",
+      "mealType": "Dinner",
+      "title": "Dinner: 2 dumplings / potstickers [Cumulative Dinner: 35g carbs total]",
+      "notes": "BG: 102 mg/dL Flat; Protein: 5g; Pred: 127-147 mg/dL @ 7:58 PM",
+      "photoUrls": [
+        "https://iili.io/Bu4PMtR.jpg"
+      ],
+      "carbsEst": 13,
+      "caloriesEst": 125,
+      "proteinEst": 5,
+      "predicted": {
+        "peakBgText": "127-147 mg/dL",
+        "peakTimeText": "7:58 PM"
+      },
+      "actual": {
+        "preMealBg": null,
+        "peakBg": null,
+        "peakTime": null,
+        "bgDelta": null,
+        "timeToPeakMin": null,
+        "peakBgDelta": null,
+        "peakTimeDeltaMin": null,
+        "twoHourPeakBg": null
+      },
+      "sync": {
+        "nightscout": "pending",
+        "notion": "pending",
+        "gallery": "pending",
+        "outcomesBackfilled": false
+      },
+      "entryKey": "sha256:4407eb9cf8908de6df867658f1a7c23159c0f099bd82387054360c5761e90b2b",
+      "contentHash": "sha256:57b30c664df461d847439246b68475f38bb586be2c56999f00ebf680d94c5a26"
     }
   ]
 }
