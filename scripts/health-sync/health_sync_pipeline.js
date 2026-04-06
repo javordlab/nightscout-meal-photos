@@ -113,7 +113,7 @@ async function main(options = {}) {
   console.log(`Results:`, Object.entries(results).map(([k, v]) => `${k}: ${v.success ? '✓' : '✗'}`).join(', '));
 
   // Always regenerate gallery + deploy to gh-pages after every pipeline run
-  if (!dryRun) {
+  if (!options.dryRun) {
     try {
       const { execSync } = require('child_process');
       execSync('/opt/homebrew/bin/node /Users/javier/.openclaw/workspace/scripts/generate_notion_gallery_data.js', { stdio: 'inherit' });

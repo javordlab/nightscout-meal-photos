@@ -147,8 +147,9 @@ function ensureCharts() {
   }
 
   // Deploy updated PNGs to gh-pages
+  // Full node path — cron PATH has no Homebrew. Same class as the Apr 3 bug fix.
   try {
-    execSync('node /Users/javier/.openclaw/workspace/scripts/health-sync/deploy_gh_pages.js', { stdio: 'pipe' });
+    execSync('/opt/homebrew/bin/node /Users/javier/.openclaw/workspace/scripts/health-sync/deploy_gh_pages.js', { stdio: 'pipe' });
   } catch (e) {
     console.error('gh-pages chart deploy failed:', e.message);
   }
