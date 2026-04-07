@@ -1,8 +1,14 @@
 {
-  "generatedAt": "2026-04-07T03:30:01.347Z",
-  "entryCount": 40,
+  "generatedAt": "2026-04-07T04:30:01.351Z",
+  "entryCount": 41,
   "errors": [],
   "warnings": [
+    {
+      "entryKey": "sha256:1d1a7fa93f36f5a53b9d1ee001c9b26747d97d61d2eef1dcee3286e9c568c2a0",
+      "timestamp": "2026-04-06T20:53:00-07:00",
+      "title": "Dinner: Handful of cashews and a small piece of dry mango [Cumulative Dinner: 56g carbs total]",
+      "reason": "missing_photo_urls"
+    },
     {
       "entryKey": "sha256:fc8483579b2b23dec6c42a1498a7e6d1aed3231bca424f7c0d49b7cd3aae74db",
       "timestamp": "2026-04-06T16:21:00-07:00",
