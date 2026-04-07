@@ -8802,3 +8802,5 @@
 {"ts":"2026-04-07T04:30:01.345Z","op":"step_start","name":"Validate"}
 {"ts":"2026-04-07T04:30:01.367Z","op":"step_complete","name":"Validate","duration":21,"result":"object"}
 {"ts":"2026-04-07T04:30:01.367Z","op":"step_start","name":"Unified Sync"}
+{"ts":"2026-04-07T04:30:30.316Z","op":"step_complete","name":"Unified Sync","duration":28947,"result":"object"}
+{"ts":"2026-04-07T04:30:30.316Z","op":"pipeline_complete","duration":29044,"results":["resolvePendingPhotos","normalize","enrich","validate","sync"]}
