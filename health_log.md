@@ -3,6 +3,7 @@
 | 2026-04-07 | 13:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 127 mg/dL Flat) | - | - |
 | 2026-04-07 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 99 mg/dL Flat) | - | - |
 | 2026-04-07 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 99 mg/dL Flat) | - | - |
+| 2026-04-07 | 14:48 -07:00 | Maria Dennis | Exercise | - | Exercise: 40 minutes gardening (BG: 126 mg/dL Flat) | - | - |
 | 2026-04-07 | 13:56 -07:00 | Maria Dennis | Food | Lunch | Lunch: Protein ball (prunes, peanut butter, hemp hearts, flaxseed, dark chocolate coating, oatmeal) [Cumulative Lunch: 46g carbs total] (BG: 105 mg/dL Flat) (Pred: 143-153 mg/dL @ 3:36 PM) (Protein: 5g | Carbs: ~11g | Cals: ~130) [photo](https://iili.io/BY5Xub1.jpg) | 11 | 130 |
 | 2026-04-07 | 13:43 -07:00 | Maria Dennis | Food | Lunch | Lunch: Kale salad with green grapes, bean sprouts, hemp hearts, and red pepper flakes (BG: 103 mg/dL Flat) (Pred: 128-138 mg/dL @ 3:36 PM) (Protein: 9g | Carbs: ~35g | Cals: ~270) [photo](https://iili.io/BYAQZe1.jpg) | 35 | 270 |
 | 2026-04-07 | 09:48 -07:00 | Maria Dennis | Food | Breakfast | Breakfast: Small orange, one medium tortilla with one egg and one slice of cheese (BG: 106 mg/dL Flat) (Pred: 178-188 mg/dL @ 11:15 AM) (Protein: 16g | Carbs: ~32g | Cals: ~340) [photo](https://iili.io/B76XosS.jpg) | 32 | 340 |
