@@ -1,5 +1,6 @@
 # Health Log
 
+| 2026-04-06 | 18:43 -07:00 | Maria Dennis | Food | Dinner | Dinner: Hamburger steak / Salisbury-style beef patty with mushroom gravy and 1 slice rustic bread (BG: 106 mg/dL Flat) (Pred: 128-140 mg/dL @ 7:59 PM) (Protein: 31g | Carbs: ~20g | Cals: ~450) [photo](https://iili.io/B5xUbs4.jpg) | 20 | 450 |
 | 2026-04-06 | 16:21 -07:00 | Maria Dennis | Food | Snack | Snack: Half protein ball (BG: 120 mg/dL Flat) (Pred: 132-142 mg/dL @ 6:27 PM) (Protein: 3g | Carbs: ~6g | Cals: ~65) | 6 | 65 |
 | 2026-04-06 | 14:21 -07:00 | Maria Dennis | Exercise | - | Exercise: 20 minute walk (BG: 127 mg/dL Flat) | - | - |
 | 2026-04-06 | 13:16 -07:00 | Maria Dennis | Food | Lunch | Lunch: Thin noodles with broccoli and sliced meatballs/sausage in a light savory sauce (BG: 117 mg/dL Flat) (Pred: 145-160 mg/dL @ 3:09 PM) (Protein: 21g | Carbs: ~33g | Cals: ~360) [photo](https://iili.io/BRrmNwB.jpg) | 33 | 360 |
