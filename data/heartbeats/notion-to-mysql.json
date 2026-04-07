@@ -1,8 +1,8 @@
 {
   "jobId": "notion-to-mysql",
-  "lastRunAtMs": 1775545200957,
-  "lastFinishAtMs": 1775545223313,
-  "lastDurationMs": 22356,
+  "lastRunAtMs": 1775559601180,
+  "lastFinishAtMs": 1775559617732,
+  "lastDurationMs": 16552,
   "exitCode": 0,
   "lastStatus": "ok",
   "consecutiveErrors": 0,

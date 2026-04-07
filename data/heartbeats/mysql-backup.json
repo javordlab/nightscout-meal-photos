@@ -1,0 +1,12 @@
+{
+  "jobId": "mysql-backup",
+  "lastRunAtMs": 1775560801247,
+  "lastFinishAtMs": 1775560803082,
+  "lastDurationMs": 1835,
+  "exitCode": 0,
+  "lastStatus": "ok",
+  "consecutiveErrors": 0,
+  "signal": null,
+  "spawnError": null,
+  "outcome": null
+}

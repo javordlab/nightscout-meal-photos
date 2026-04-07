@@ -1,11 +1,11 @@
 {
   "jobId": "radial-dispatcher",
-  "lastRunAtMs": 1775549101717,
-  "lastFinishAtMs": 1775549394867,
-  "lastDurationMs": 293150,
+  "lastRunAtMs": 1775559902040,
+  "lastFinishAtMs": 1775560219836,
+  "lastDurationMs": 317796,
   "exitCode": 0,
   "lastStatus": "warn",
-  "consecutiveErrors": 5,
+  "consecutiveErrors": 11,
   "signal": null,
   "spawnError": null,
   "outcome": {
