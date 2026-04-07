@@ -37,3 +37,6 @@
 {"ts":"2026-04-07T04:13:31.456Z","op":"audit_complete","since":"2026-03-31T04:13:09.458Z","discrepancies":0}
 {"ts":"2026-04-07T04:15:21.866Z","op":"audit_complete","since":"2026-03-01T00:00:00.000Z","discrepancies":246}
 {"ts":"2026-04-07T04:17:33.718Z","op":"audit_complete","since":"2026-01-01T00:00:00.000Z","discrepancies":317}
+{"ts":"2026-04-07T05:13:11.227Z","op":"audit_complete","since":"2026-02-22T00:00:00.000Z","discrepancies":288}
+{"ts":"2026-04-07T05:14:33.745Z","op":"audit_complete","since":"2026-02-22T00:00:00.000Z","discrepancies":290}
+{"ts":"2026-04-07T05:15:53.563Z","op":"audit_complete","since":"2026-02-22T00:00:00.000Z","discrepancies":290}

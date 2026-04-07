@@ -1,0 +1,22 @@
+{
+  "jobId": "ssot-mysql-sync",
+  "lastRunAtMs": 1775539387987,
+  "lastFinishAtMs": 1775539388070,
+  "lastDurationMs": 83,
+  "exitCode": 0,
+  "lastStatus": "ok",
+  "consecutiveErrors": 0,
+  "signal": null,
+  "spawnError": null,
+  "outcome": {
+    "status": "ok",
+    "summary": "SSoT→MySQL: 486 entries — 0 new / 0 updated / 486 unchanged / 0 soft-deleted",
+    "metrics": {
+      "ssot_entries": 486,
+      "inserted": 0,
+      "updated": 0,
+      "unchanged": 486,
+      "soft_deleted": 0
+    }
+  }
+}

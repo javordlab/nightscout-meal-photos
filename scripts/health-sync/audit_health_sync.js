@@ -50,7 +50,9 @@ function queryNotionDatabase(body) {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${NOTION_KEY}`,
-        'Notion-Version': '2025-09-03',
+        // 2025-09-03 dropped /databases/{id}/query — keep 2022-06-28 to match
+        // radial_dispatcher.js. Bumping requires migrating to /data_sources/{id}/query.
+        'Notion-Version': '2022-06-28',
         'Content-Type': 'application/json',
         'Content-Length': Buffer.byteLength(data)
       }
@@ -59,7 +61,17 @@ function queryNotionDatabase(body) {
       let d = '';
       res.on('data', c => d += c);
       res.on('end', () => {
-        try { resolve(JSON.parse(d || '{}')); } catch { resolve({}); }
+        let parsed;
+        try { parsed = JSON.parse(d || '{}'); }
+        catch (e) { return reject(new Error(`Notion query: invalid JSON (status=${res.statusCode}): ${d.slice(0, 200)}`)); }
+        // FAIL LOUD: any non-2xx OR Notion-level error must reject. The pre-2026-04-06
+        // version silently returned `{}`, which masked the runaway-archival incident
+        // for ~2 weeks because a `select option not found` validation_error looked
+        // like "no entries to flag".
+        if (res.statusCode >= 400 || parsed.object === 'error') {
+          return reject(new Error(`Notion query failed (status=${res.statusCode}, code=${parsed.code}): ${parsed.message || d.slice(0, 200)}`));
+        }
+        resolve(parsed);
       });
     });
     req.on('error', reject);
@@ -101,7 +113,7 @@ function fetchNotionPage(pageId) {
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${NOTION_KEY}`,
-        'Notion-Version': '2025-09-03',
+        'Notion-Version': '2022-06-28',
         'Content-Type': 'application/json'
       }
     };
@@ -115,6 +127,160 @@ function fetchNotionPage(pageId) {
     req.on('error', reject);
     req.end();
   });
+}
+
+// SSoT-leading round-trip audit. Compares every SSoT entry against the live
+// Notion result by (timestamp, user) — independent of sync_state.json — and
+// flags four divergence classes:
+//   1. notion_missing      — SSoT entry has no live Notion page at that ts+user.
+//                            This is the runaway-archival case (Mar 19 – Apr 1, 2026).
+//   2. notion_archived     — Notion page exists at sync_state.notion.page_id
+//                            but is in_trash. Won't be returned by query, so case 1
+//                            also covers this — kept for clarity in the alert.
+//   3. notion_pageid_drift — sync_state has a notion.page_id, but the page it
+//                            points to belongs to a different SSoT entry
+//                            (different Date or User). This is the chocolate-brownie
+//                            case from 2026-04-06.
+//   4. notion_extra        — Notion has a page at a (ts+user) with no SSoT entry.
+//                            Possible orphan from a deleted SSoT row.
+//
+// User name normalization: SSoT uses "Maria"; the Notion select option is
+// "Maria Dennis". The mapping below is required — passing the SSoT name
+// straight through used to silently fail with a select-option-not-found error.
+const SSOT_TO_NOTION_USER = {
+  'Maria': 'Maria Dennis',
+  'Maria Dennis': 'Maria Dennis',
+  'Javi': 'Javi',
+  'System': 'System'
+};
+
+function normalizeNotionIso(iso) {
+  // Notion stores '2026-02-22T19:30:00.000-08:00'; SSoT stores '2026-02-22T19:30:00-08:00'.
+  // Strip subsecond fragment so timestamps compare cleanly.
+  return (iso || '').replace(/\.\d+/, '');
+}
+
+async function fetchNotionPagePresence(pageId) {
+  // Lightweight existence + archive check used by the page_id drift detector.
+  // Returns { exists, archived, date, user } or null on hard error.
+  return new Promise((resolve) => {
+    const url = `https://api.notion.com/v1/pages/${pageId}`;
+    const options = {
+      method: 'GET',
+      headers: {
+        'Authorization': `Bearer ${NOTION_KEY}`,
+        'Notion-Version': '2022-06-28'
+      }
+    };
+    const req = https.request(url, options, (res) => {
+      let d = '';
+      res.on('data', c => d += c);
+      res.on('end', () => {
+        try {
+          const p = JSON.parse(d || '{}');
+          if (p.object === 'page') {
+            resolve({
+              exists: true,
+              archived: !!p.archived || !!p.in_trash,
+              date: normalizeNotionIso(p.properties?.Date?.date?.start),
+              user: p.properties?.User?.select?.name || null
+            });
+          } else {
+            resolve({ exists: false, archived: false, date: null, user: null });
+          }
+        } catch { resolve(null); }
+      });
+    });
+    req.on('error', () => resolve(null));
+    req.end();
+  });
+}
+
+async function roundTripNotionAudit(report, normalized, state, since) {
+  // Pull every Notion page in the audit window in one paginated sweep, then
+  // diff against SSoT. The function mutates `report.discrepancies` with
+  // notion_missing / notion_pageid_drift / notion_extra issues. Costs ≤ N/100
+  // queries plus a per-drift verify (typically zero in steady state).
+  const notionResponse = await fetchNotionPages(since);
+  const notionPages = notionResponse.results || [];
+
+  // Index by (normalized iso | user)
+  const notionByKey = new Map();
+  for (const p of notionPages) {
+    if (p.archived || p.in_trash) continue;
+    const iso = normalizeNotionIso(p.properties?.Date?.date?.start);
+    const user = p.properties?.User?.select?.name || '';
+    if (!iso) continue;
+    const key = `${iso}|${user}`;
+    if (!notionByKey.has(key)) notionByKey.set(key, []);
+    notionByKey.get(key).push(p);
+  }
+
+  // SSoT-leading: every SSoT entry must have a corresponding Notion page.
+  const sinceMs = new Date(since).getTime();
+  const ssotEntries = (normalized.entries || []).filter(e => new Date(e.timestamp) >= new Date(sinceMs));
+  const seenSsotKeys = new Set();
+  for (const e of ssotEntries) {
+    const notionUser = SSOT_TO_NOTION_USER[e.user] || e.user;
+    const key = `${e.timestamp}|${notionUser}`;
+    seenSsotKeys.add(key);
+    if (!notionByKey.has(key)) {
+      report.summary.notion_missing_roundtrip = (report.summary.notion_missing_roundtrip || 0) + 1;
+      report.discrepancies.push({
+        entryKey: e.entryKey,
+        timestamp: e.timestamp,
+        title: e.title,
+        issues: [{ type: 'notion_missing', severity: 'error',
+                   note: 'No live Notion page at this (timestamp, user) — likely archived or never created' }]
+      });
+    }
+  }
+
+  // Notion-leading: any Notion page with no matching SSoT row is suspect.
+  for (const [key, pages] of notionByKey) {
+    if (seenSsotKeys.has(key)) continue;
+    for (const p of pages) {
+      report.summary.notion_extra = (report.summary.notion_extra || 0) + 1;
+      report.discrepancies.push({
+        entryKey: null,
+        timestamp: normalizeNotionIso(p.properties?.Date?.date?.start),
+        title: p.properties?.Entry?.title?.[0]?.plain_text,
+        issues: [{ type: 'notion_extra', severity: 'warning', pageId: p.id,
+                   note: 'Notion page with no SSoT entry at this (timestamp, user)' }]
+      });
+    }
+  }
+
+  // Page-id drift: sync_state.notion.page_id exists but points to a Notion page
+  // whose Date/User no longer match the SSoT entry it's bound to. We only verify
+  // entries already flagged with notion_missing — for the rest, the index check
+  // above is sufficient.
+  for (const e of ssotEntries) {
+    const sync = state.entries[e.entryKey] || {};
+    const pageId = sync.notion?.page_id;
+    if (!pageId) continue;
+    const notionUser = SSOT_TO_NOTION_USER[e.user] || e.user;
+    const expectedKey = `${e.timestamp}|${notionUser}`;
+    // If the SSoT entry has a live match at the right key, no need to verify.
+    if (notionByKey.has(expectedKey)) continue;
+    // Otherwise, fetch the page directly and check what it actually points to.
+    const presence = await fetchNotionPagePresence(pageId);
+    if (!presence) continue;
+    if (presence.exists && !presence.archived) {
+      const actualKey = `${presence.date}|${presence.user}`;
+      if (actualKey !== expectedKey) {
+        report.summary.notion_pageid_drift = (report.summary.notion_pageid_drift || 0) + 1;
+        report.discrepancies.push({
+          entryKey: e.entryKey,
+          timestamp: e.timestamp,
+          title: e.title,
+          issues: [{ type: 'notion_pageid_drift', severity: 'error', pageId,
+                     expected: expectedKey, actual: actualKey,
+                     note: 'sync_state.notion.page_id points to a different SSoT entry — clear and re-sync' }]
+        });
+      }
+    }
+  }
 }
 
 async function main(options = {}) {
@@ -290,6 +456,50 @@ async function main(options = {}) {
         issues
       });
     }
+  }
+
+  // ── sync_state.json integrity validator ───────────────────────────────────
+  // Catches the failure mode where two SSoT entries' sync_state records point
+  // to the same Notion page_id. That happened on 2026-04-06: entry
+  // sha256:98f968dabd (chocolate brownie 2026-03-20) was cross-linked to the
+  // page that legitimately belonged to sha256:c045397fe2 (green grapes
+  // 2026-03-01), so dispatcher rewrites would clobber the grapes entry.
+  const pageIdToKeys = new Map();
+  for (const [entryKey, syncEntry] of Object.entries(state.entries || {})) {
+    const pid = syncEntry.notion?.page_id;
+    if (!pid) continue;
+    if (!pageIdToKeys.has(pid)) pageIdToKeys.set(pid, []);
+    pageIdToKeys.get(pid).push(entryKey);
+  }
+  for (const [pid, keys] of pageIdToKeys) {
+    if (keys.length < 2) continue;
+    report.summary.sync_state_pageid_collision = (report.summary.sync_state_pageid_collision || 0) + 1;
+    report.discrepancies.push({
+      entryKey: null,
+      timestamp: new Date().toISOString(),
+      title: `sync_state collision: ${keys.length} entries → ${pid}`,
+      issues: [{ type: 'sync_state_pageid_collision', severity: 'error', pageId: pid, entryKeys: keys,
+                 note: 'Multiple SSoT entries point to the same Notion page_id — clear all but the canonical one and re-sync' }]
+    });
+  }
+
+  // ── SSoT-leading round-trip Notion audit ──────────────────────────────────
+  // This is the authoritative check post-2026-04-06. The legacy sync_state-based
+  // checks above remain as a secondary signal but cannot detect the failure
+  // modes that bit us in March: archived/in_trash pages, page_id drift, and
+  // pages that never reached Notion at all.
+  try {
+    await roundTripNotionAudit(report, normalized, state, since);
+  } catch (e) {
+    console.error(`Round-trip Notion audit failed: ${e.message}`);
+    report.discrepancies.push({
+      entryKey: null,
+      timestamp: new Date().toISOString(),
+      title: 'AUDIT INFRASTRUCTURE FAILURE',
+      issues: [{ type: 'audit_failure', severity: 'error', error: e.message,
+                 note: 'Round-trip audit could not run — sync gaps may be undetected' }]
+    });
+    report.summary.audit_failures = (report.summary.audit_failures || 0) + 1;
   }
 
   fs.writeFileSync(REPORT_PATH, JSON.stringify(report, null, 2) + '\n');

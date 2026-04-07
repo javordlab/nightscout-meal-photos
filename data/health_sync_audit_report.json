@@ -1,68 +1,21 @@
 {
-  "generatedAt": "2026-04-07T04:15:42.703Z",
-  "since": "2026-01-01T00:00:00.000Z",
+  "generatedAt": "2026-04-07T05:15:19.098Z",
+  "since": "2026-02-22T00:00:00.000Z",
   "summary": {
-    "totalEntries": 485,
-    "inSyncState": 485,
-    "nsLinked": 232,
-    "notionLinked": 455,
+    "totalEntries": 486,
+    "inSyncState": 486,
+    "nsLinked": 233,
+    "notionLinked": 456,
     "galleryLinked": 187,
-    "outcomesBackfilled": 218,
+    "outcomesBackfilled": 219,
     "duplicates": 0,
     "missingNs": 253,
     "missingNotion": 30,
     "missingGallery": 0,
-    "missingOutcomes": 30
+    "missingOutcomes": 30,
+    "sync_state_pageid_collision": 2
   },
   "discrepancies": [
-    {
-      "entryKey": "sha256:2c120d76ed3f01067677ae4e63d5a599a5c07d76eb5382cc008c39a8f120b5f1",
-      "timestamp": "2026-03-28T12:49:00-07:00",
-      "title": "Dessert: Small chocolate brownie/cupcake with whipped cream and cashews",
-      "issues": [
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33185ec7-0668-8126-8f03-ff6204237c39",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:1461cd7ddd7ae1a048bf25297f5d981277f4331f47ff82dcc6db84aa56e85f86",
-      "timestamp": "2026-03-28T12:38:00-07:00",
-      "title": "Lunch: Fried rice with one egg and cucumber",
-      "issues": [
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33185ec7-0668-811d-bf6e-f0a5f7b61dcc",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:8cd4f2494b41ebe5d3e7bdbdf357ac5a21dc96cfa9b1ed3d3b468e8ff953cdc9",
-      "timestamp": "2026-03-28T09:08:00-07:00",
-      "title": "Breakfast: 2 slices toasted sourdough bread with peanut butter and 50%-less-sugar strawberry jam",
-      "issues": [
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33185ec7-0668-81c4-a452-c73bde60e268",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:4fb831274b7a7d7538b1573b76fd232c601677c25f1ddb1c6c72fe47d746d12a",
-      "timestamp": "2026-03-27T19:16:00-07:00",
-      "title": "Dinner: 1 Persian cucumber",
-      "issues": [
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33185ec7-0668-8155-bf32-f3fcb9bba0a6",
-          "severity": "warning"
-        }
-      ]
-    },
     {
       "entryKey": "sha256:588f94924e486c786ed8dac5fbf17458408c8b218205215ebd3f6c158e529381",
       "timestamp": "2026-03-27T19:04:00-07:00",
@@ -71,222 +24,6 @@
         {
           "type": "gallery_item_missing",
           "galleryId": "33185ec7-0668-813f-9102-eac3a1beb434",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:1774f037591bbd98f52baa51bf3e3ab49af4a181afed3b7d7465c3f1a6b057bc",
-      "timestamp": "2026-03-27T19:03:00-07:00",
-      "title": "Dinner: Home-made sea bass and clams with green onions, and home-grown French fries",
-      "issues": [
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33185ec7-0668-81cb-8c08-f33fa5a42376",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:62525b31564d7838ccaeee32c8450299d6ae073d9e8434128b961d6a7c2f3ff7",
-      "timestamp": "2026-03-27T17:43:00-07:00",
-      "title": "Snack: 1 oatmeal cookie with chocolate chips/raisins and a glass of milk",
-      "issues": [
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33185ec7-0668-81e1-9c8e-fd28d279db6a",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:9b44680e2e4ff3606f1cf84a66658f40dc39eed7a3e3773314ca3a7bdf425aa6",
-      "timestamp": "2026-03-27T13:38:00-07:00",
-      "title": "Snack: 3 small slices braised/glazed pork belly",
-      "issues": [
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33085ec7-0668-8189-b495-f32aaf8ab2ae",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:f23aab33bdc05c49e7047a9872a475206ea88a4fad5566091463a88d652d9319",
-      "timestamp": "2026-03-27T13:36:00-07:00",
-      "title": "Lunch: Braised eggplant and shiitake mushrooms in dark garlic/soy sauce over white rice",
-      "issues": [
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33085ec7-0668-81ca-bf7e-cd233e78f071",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:8485eada3d186e8855d6e50e217d865b065a89553db6f97d1b03a264ec0a952e",
-      "timestamp": "2026-03-26T18:42:00-07:00",
-      "title": "Dessert: Thin slice of chocolate layer cake (flour-based) with sliced strawberries and whipped cream (DairyStar)",
-      "issues": [
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33085ec7-0668-81d0-884b-e303ca18b387",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:74ee53d5c741b1a977e4aca4c4c3c5bc645815dd094d093d7b58956a4e4b49f5",
-      "timestamp": "2026-03-26T18:28:00-07:00",
-      "title": "Dinner: 2 pieces white bread with pork belly [Cumulative Dinner: 48g carbs total]",
-      "issues": [
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33085ec7-0668-81d6-8f84-f93c146df6ef",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:838968912d8874667730fd72e1f7c4fa2991f40056bfd19d46062c21d6f2753e",
-      "timestamp": "2026-03-26T18:25:00-07:00",
-      "title": "Dinner: Spanish green bean stew (judías verdes) with potatoes, garlic, and paprika",
-      "issues": [
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33085ec7-0668-81c8-897d-c9c46fd440ec",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:97ac6bc35f59cde00f8ca4ada0ae63b401898007bc21df464acb0b9771cd7a9f",
-      "timestamp": "2026-03-26T12:57:00-07:00",
-      "title": "Lunch: 7 loquats (fresh off stem) [Cumulative Lunch: 46g carbs total]",
-      "issues": [
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33285ec7-0668-8199-ba14-e3da26c2bba4",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:9c63faab208befa46d29afb7dbf52d26600ccbdaab976d89c9efeae8aad2c7ee",
-      "timestamp": "2026-03-26T12:44:00-07:00",
-      "title": "Lunch: Braised pork belly (2 pieces) with eggplant/mushrooms in dark adobo-style sauce over rice (~1/3 cup)",
-      "issues": [
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33285ec7-0668-8156-aebc-d9df5bdf48bc",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:580922719246518f29de9e80ab2830d24061f6f8b8db48790779a2aaf4997839",
-      "timestamp": "2026-03-26T09:22:00-07:00",
-      "title": "Breakfast: Half sandwich on seeded multigrain bread with peanut butter and low sugar jam",
-      "issues": [
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33285ec7-0668-81f2-9c9b-e9bbf3738a43",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:532477ed4edbb1ace2f1482a72d44796994b09204c3e5ec9655ced0624c39b27",
-      "timestamp": "2026-03-25T18:16:00-07:00",
-      "title": "Dinner: Braised mushrooms, eggplant, and 3 soft-boiled egg halves (1.5 eggs) over shirataki/glass noodles with soy-based sauce",
-      "issues": [
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33285ec7-0668-812a-8118-fa92182df9dd",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:da7b2f97ee5646c0c53545bb8608dd671948d89e82dbdc42d0c2c8051ff211f4",
-      "timestamp": "2026-03-25T09:33:00-07:00",
-      "title": "Breakfast: Half ciabatta with cream cheese and smoked salmon",
-      "issues": [
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33285ec7-0668-8165-9cc0-e3a0415ed6d4",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:f2e953b7f791a192bea433c20c1b9ddf4afdceeba279c745840b61c412d32cd4",
-      "timestamp": "2026-03-24T19:27:00-07:00",
-      "title": "Dinner: Small slice of sponge cake with 1 tsp peanut butter and 1 small strawberry",
-      "issues": [
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33085ec7-0668-81a7-8f62-d751a8b0ce69",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:6e28cc1d0cb77350301abf680e1ef5e61658f4ab2e5f76813dc00d6576a5fc18",
-      "timestamp": "2026-03-24T19:06:00-07:00",
-      "title": "Dinner: Beef and onion stir-fry over rice with sliced cucumber, plus a pink lemonade drink",
-      "issues": [
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33085ec7-0668-81bc-bc90-faf859d630c9",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:ead53a08251e766c421476635c6485f268b77616ae0aaa7401552800847307a6",
-      "timestamp": "2026-03-24T15:45:00-07:00",
-      "title": "Snack: Half large strawberry",
-      "issues": [
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33085ec7-0668-817a-b040-cab1609a91fd",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:63741a19d140f3f266505fede149decf6d5e9889365771a1c8fc0b378577bd16",
-      "timestamp": "2026-03-23T18:22:00-07:00",
-      "title": "Dinner: Two-plate meal",
-      "issues": [
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33085ec7-0668-81f4-a2c6-e899593d26d1",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:7613ae88e6644b513530e96cf86f32c587ad290eb4e69851e61d737c72870766",
-      "timestamp": "2026-03-23T13:14:00-07:00",
-      "title": "Snack: Half red apple (~75g)",
-      "issues": [
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33285ec7-0668-81dc-9443-d5abe1939ed2",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:a242ff6f86ece92474e4bcb9480ee0c5e01cd0124fbc400fa409a3486fb2cd4f",
-      "timestamp": "2026-03-23T13:01:00-07:00",
-      "title": "Lunch: Japanese meal set",
-      "issues": [
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33285ec7-0668-8137-8322-d96396e93c7c",
           "severity": "warning"
         }
       ]
@@ -348,11 +85,6 @@
           "type": "ns_treatment_missing",
           "treatmentId": "69c0a7b3911a8ea261e67657",
           "severity": "error"
-        },
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33285ec7-0668-81e4-8c5a-eded3636282b",
-          "severity": "warning"
         }
       ]
     },
@@ -365,11 +97,6 @@
           "type": "ns_treatment_missing",
           "treatmentId": "69c074f9911a8ea261e6762a",
           "severity": "error"
-        },
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33285ec7-0668-81ec-befb-fabd6545343c",
-          "severity": "warning"
         }
       ]
     },
@@ -430,11 +157,6 @@
           "type": "ns_treatment_missing",
           "treatmentId": "69c02019911a8ea261e675e0",
           "severity": "error"
-        },
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33285ec7-0668-81ef-8410-f4d29d4ee6e2",
-          "severity": "warning"
         }
       ]
     },
@@ -471,11 +193,6 @@
           "type": "ns_treatment_missing",
           "treatmentId": "69bf49ce911a8ea261e6751c",
           "severity": "error"
-        },
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33285ec7-0668-81b4-9751-dd8b1075a627",
-          "severity": "warning"
         }
       ]
     },
@@ -582,11 +299,6 @@
           "type": "ns_treatment_missing",
           "treatmentId": "69bde76a911a8ea261e673da",
           "severity": "error"
-        },
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33285ec7-0668-8114-b200-f2218ef94584",
-          "severity": "warning"
         }
       ]
     },
@@ -599,11 +311,6 @@
           "type": "ns_treatment_missing",
           "treatmentId": "69bdb0ea911a8ea261e67306",
           "severity": "error"
-        },
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33285ec7-0668-815f-9367-e22087291f80",
-          "severity": "warning"
         }
       ]
     },
@@ -616,11 +323,6 @@
           "type": "ns_treatment_missing",
           "treatmentId": "69bdb0eb911a8ea261e67307",
           "severity": "error"
-        },
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33285ec7-0668-8186-9c1e-cf24c2563e08",
-          "severity": "warning"
         }
       ]
     },
@@ -662,11 +364,6 @@
           "type": "ns_treatment_missing",
           "treatmentId": "69c0195a911a8ea261e675d9",
           "severity": "error"
-        },
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "31685ec7-0668-810a-83c7-ccf82558f83e",
-          "severity": "warning"
         }
       ]
     },
@@ -679,11 +376,6 @@
           "type": "ns_treatment_missing",
           "treatmentId": "69bded9e911a8ea261e673e3",
           "severity": "error"
-        },
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33285ec7-0668-814d-b7ae-ef698b8f350a",
-          "severity": "warning"
         }
       ]
     },
@@ -696,11 +388,6 @@
           "type": "ns_treatment_missing",
           "treatmentId": "69bde824911a8ea261e673dc",
           "severity": "error"
-        },
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33285ec7-0668-81ad-a2d0-c2c4048a0a0c",
-          "severity": "warning"
         }
       ]
     },
@@ -737,11 +424,6 @@
           "type": "ns_treatment_missing",
           "treatmentId": "69bcbf45911a8ea261e67217",
           "severity": "error"
-        },
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33285ec7-0668-8158-a507-e7b24f4b627d",
-          "severity": "warning"
         }
       ]
     },
@@ -754,11 +436,6 @@
           "type": "ns_treatment_missing",
           "treatmentId": "69bde86a911a8ea261e673dd",
           "severity": "error"
-        },
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33085ec7-0668-81c6-b6ed-c7049c22767f",
-          "severity": "warning"
         }
       ]
     },
@@ -1728,7 +1405,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 659,
+          "ageHours": 660,
           "severity": "warning"
         },
         {
@@ -1781,7 +1458,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 695,
+          "ageHours": 696,
           "severity": "warning"
         },
         {
@@ -1889,7 +1566,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 706,
+          "ageHours": 707,
           "severity": "warning"
         },
         {
@@ -2162,7 +1839,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 768,
+          "ageHours": 769,
           "severity": "warning"
         },
         {
@@ -2369,7 +2046,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 815,
+          "ageHours": 816,
           "severity": "warning"
         },
         {
@@ -2565,7 +2242,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 851,
+          "ageHours": 852,
           "severity": "warning"
         },
         {
@@ -2695,7 +2372,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 889,
+          "ageHours": 890,
           "severity": "warning"
         },
         {
@@ -2858,7 +2535,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 920,
+          "ageHours": 921,
           "severity": "warning"
         },
         {
@@ -3021,7 +2698,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 950,
+          "ageHours": 951,
           "severity": "warning"
         },
         {
@@ -3074,7 +2751,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 962,
+          "ageHours": 963,
           "severity": "warning"
         },
         {
@@ -3094,7 +2771,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 962,
+          "ageHours": 963,
           "severity": "warning"
         },
         {
@@ -3114,7 +2791,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 962,
+          "ageHours": 963,
           "severity": "warning"
         },
         {
@@ -3134,7 +2811,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 962,
+          "ageHours": 963,
           "severity": "warning"
         },
         {
@@ -3165,7 +2842,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 964,
+          "ageHours": 965,
           "severity": "warning"
         },
         {
@@ -3218,7 +2895,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 975,
+          "ageHours": 976,
           "severity": "warning"
         },
         {
@@ -3293,7 +2970,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 983,
+          "ageHours": 984,
           "severity": "warning"
         },
         {
@@ -3313,7 +2990,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 985,
+          "ageHours": 986,
           "severity": "warning"
         },
         {
@@ -3333,7 +3010,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 985,
+          "ageHours": 986,
           "severity": "warning"
         },
         {
@@ -3353,7 +3030,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 988,
+          "ageHours": 989,
           "severity": "warning"
         },
         {
@@ -3373,7 +3050,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 991,
+          "ageHours": 992,
           "severity": "warning"
         },
         {
@@ -3415,7 +3092,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 994,
+          "ageHours": 995,
           "severity": "warning"
         },
         {
@@ -3468,7 +3145,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 1008,
+          "ageHours": 1009,
           "severity": "warning"
         },
         {
@@ -3499,7 +3176,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 1009,
+          "ageHours": 1010,
           "severity": "warning"
         },
         {
@@ -3541,7 +3218,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 1013,
+          "ageHours": 1014,
           "severity": "warning"
         },
         {
@@ -3572,7 +3249,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 1016,
+          "ageHours": 1017,
           "severity": "warning"
         },
         {
@@ -3603,7 +3280,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 1018,
+          "ageHours": 1019,
           "severity": "warning"
         },
         {
@@ -3634,7 +3311,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 1019,
+          "ageHours": 1020,
           "severity": "warning"
         },
         {
@@ -3698,7 +3375,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 1032,
+          "ageHours": 1033,
           "severity": "warning"
         },
         {
@@ -3718,7 +3395,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 1033,
+          "ageHours": 1034,
           "severity": "warning"
         },
         {
@@ -3804,7 +3481,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 672,
+          "ageHours": 673,
           "severity": "warning"
         },
         {
@@ -3818,86 +3495,36 @@
       ]
     },
     {
-      "entryKey": "sha256:5ff00d9a0c0e5cd2777c6df3c5329797fd203b36cba9c5c521c1b4c306d5396f",
-      "timestamp": "2026-03-29T08:56:00-07:00",
-      "title": "Breakfast: Onion/cheese bread, avocado, fried egg, guava",
+      "entryKey": null,
+      "timestamp": "2026-04-07T05:15:51.088Z",
+      "title": "sync_state collision: 2 entries → 31985ec7-0668-8156-b79d-c9374e59373e",
       "issues": [
         {
-          "type": "gallery_item_missing",
-          "galleryId": "33285ec7-0668-8193-9c24-d0c257f34965",
-          "severity": "warning"
+          "type": "sync_state_pageid_collision",
+          "severity": "error",
+          "pageId": "31985ec7-0668-8156-b79d-c9374e59373e",
+          "entryKeys": [
+            "sha256:52fa55361e1bd53d48a380e92901eae89f40b96b891b3ff55f6b792733152208",
+            "sha256:4f4245b3cf17c371b516a0ef367f558f0c14769a1450b550a42524bf646820ee"
+          ],
+          "note": "Multiple SSoT entries point to the same Notion page_id — clear all but the canonical one and re-sync"
         }
       ]
     },
     {
-      "entryKey": "sha256:0548de682c3b35a0ef1c3dfdf0bd08a210d744871ebb5043ec017cb39567be5e",
-      "timestamp": "2026-03-29T12:02:00-07:00",
-      "title": "Snack: Cashews (small handful ~15g) and Tofu Snack with Pine Nut crackers (~7g, ¼ serving)",
+      "entryKey": null,
+      "timestamp": "2026-04-07T05:15:51.088Z",
+      "title": "sync_state collision: 2 entries → 33285ec7-0668-8161-aa33-eae68037e92e",
       "issues": [
         {
-          "type": "gallery_item_missing",
-          "galleryId": "33285ec7-0668-813f-a75d-ceab8c2a477e",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:26c543b25a2e8e3e7c3d570334ee23513dee1a70215f76cd5ac8f207777ab418",
-      "timestamp": "2026-03-29T13:16:00-07:00",
-      "title": "Lunch: Ham & cheese quesadilla with guacamole, guavas, and 2 slices dragon fruit [Cumulative Lunch: ~66g carbs total]",
-      "issues": [
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33285ec7-0668-81f4-a9ad-d042b2ce0d89",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:8b353e90f28f11f479ac08403eb915a97b90228cbfe13e04361a5e741e5bb14c",
-      "timestamp": "2026-03-29T18:36:00-07:00",
-      "title": "Dinner: Creamed vegetable soup (squash/zucchini based, ~1.5 cups)",
-      "issues": [
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33385ec7-0668-818f-91cd-d19810d4fe72",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:1589e7f710a1597e53e48787ebcef245fa768c0c1d897fe9fa716a8d1f6ff680",
-      "timestamp": "2026-03-29T18:42:00-07:00",
-      "title": "Dinner: Pork belly slices + toasted sourdough bread [Cumulative Dinner: ~33g carbs total]",
-      "issues": [
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33385ec7-0668-8127-b47d-d9354d85bd93",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:c4b52c4819876cf8a6be16919c3a46e6be29c884a3560f1b22fe46c396834267",
-      "timestamp": "2026-03-29T18:50:00-07:00",
-      "title": "Dinner: 8 red grapes + bite of cheese [Cumulative Dinner: ~47g carbs total]",
-      "issues": [
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33385ec7-0668-8186-8423-f15f819f7401",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "entryKey": "sha256:70a03048c3b46c7fc9c1aa6e270a1185d85d822ce14dd2cf82277940b8cca390",
-      "timestamp": "2026-03-30T10:31:00-07:00",
-      "title": "Breakfast: Open-face turkey/ham and melted cheese (cheddar/jack blend) on English muffin + small bowl of yogurt + tea",
-      "issues": [
-        {
-          "type": "gallery_item_missing",
-          "galleryId": "33385ec7-0668-81bb-9072-dea249f3dbf7",
-          "severity": "warning"
+          "type": "sync_state_pageid_collision",
+          "severity": "error",
+          "pageId": "33285ec7-0668-8161-aa33-eae68037e92e",
+          "entryKeys": [
+            "sha256:4ed3e139830cae7eed59252c7e73b6ec9e32406efaa65ad16c4d967d4fea5876",
+            "sha256:05d8a834bd2590813ea85f710d5d2152e44f54d0bf3879aa94f6bdef36ec0693"
+          ],
+          "note": "Multiple SSoT entries point to the same Notion page_id — clear all but the canonical one and re-sync"
         }
       ]
     }

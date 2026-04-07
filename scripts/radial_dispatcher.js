@@ -391,17 +391,53 @@ async function main() {
     }
 
     // 2. Sync to Notion
-    // Query by timestamp + user only (NOT title) so title edits update rather than duplicate.
-    const notionQuery = await notionRequest("POST", `/databases/${NOTION_DB_ID}/query`, {
+    //
+    // Resolution order (added 2026-04-06 after the (Date,User,Category)
+    // collision discovered between same-minute entries like Berberine +
+    // Metformin at 2026-03-28 19:30):
+    //   1. Query by Entry Key — the only truly unique identifier per SSoT
+    //      entry. Survives title edits and disambiguates same-minute entries.
+    //   2. If no Entry Key match (legacy pre-backfill rows), fall back to
+    //      (Date, User, Category) and post-filter by title to avoid clobbering
+    //      a different entry at the same minute. We also write Entry Key on
+    //      the matched page so future runs use the fast path.
+    let activeResults = [];
+    let notionQuery = await notionRequest("POST", `/databases/${NOTION_DB_ID}/query`, {
       filter: {
-        and: [
-          { property: "Date", date: { equals: entryData.iso } },
-          { property: "User", select: { equals: entryData.user } },
-          { property: "Category", select: { equals: entryData.category } }
-        ]
+        property: "Entry Key",
+        rich_text: { equals: nsEntryKey }
       }
     });
-    const activeResults = (notionQuery.results || []).filter(r => !r.archived);
+    activeResults = (notionQuery.results || []).filter(r => !r.archived);
+
+    if (activeResults.length === 0) {
+      notionQuery = await notionRequest("POST", `/databases/${NOTION_DB_ID}/query`, {
+        filter: {
+          and: [
+            { property: "Date", date: { equals: entryData.iso } },
+            { property: "User", select: { equals: entryData.user } },
+            { property: "Category", select: { equals: entryData.category } }
+          ]
+        }
+      });
+      const legacyMatches = (notionQuery.results || []).filter(r => !r.archived);
+      // Post-filter by title or empty Entry Key to avoid binding to a sibling
+      // entry at the same minute that already owns its own Notion page.
+      activeResults = legacyMatches.filter(r => {
+        const existingKey = r.properties?.["Entry Key"]?.rich_text?.[0]?.plain_text || '';
+        if (existingKey && existingKey !== nsEntryKey) return false; // belongs to a sibling
+        const existingTitle = r.properties?.Entry?.title?.[0]?.plain_text || '';
+        // If multiple results, prefer one whose title matches; otherwise take
+        // the first un-keyed result and let the update path stamp it.
+        return !existingKey || existingTitle === cleanText;
+      });
+      // If post-filter dropped all matches but there were sibling-keyed pages,
+      // treat as "no match" → we'll create a new page below.
+      if (activeResults.length === 0 && legacyMatches.length > 0) {
+        const unkeyed = legacyMatches.filter(r => !(r.properties?.["Entry Key"]?.rich_text?.[0]?.plain_text));
+        if (unkeyed.length > 0) activeResults = [unkeyed[0]];
+      }
+    }
 
     const notionBody = {
       parent: { database_id: NOTION_DB_ID },
@@ -413,7 +449,10 @@ async function main() {
         "Carbs (est)": { number: entryData.carbs },
         "Calories (est)": { number: entryData.cals },
         "Proteins": { number: entryData.proteins },
-        "Photo": { url: photos[0] || null }
+        "Photo": { url: photos[0] || null },
+        // Stable per-entry identity. Added 2026-04-06 to disambiguate
+        // same-minute entries that previously collided on (Date,User,Category).
+        "Entry Key": { rich_text: [{ text: { content: nsEntryKey } }] }
       }
     };
 

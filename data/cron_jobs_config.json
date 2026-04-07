@@ -120,6 +120,13 @@
       "cronExpr": "0 23 * * 0",
       "staleMaxMs": 691200000,
       "maxDurationMs": 600000
+    },
+    {
+      "id": "ssot-mysql-sync",
+      "name": "SSoT \u2192 health_ssot Sync",
+      "cronExpr": "10,40 * * * *",
+      "staleMaxMs": 3600000,
+      "maxDurationMs": 60000
     }
   ]
 }
