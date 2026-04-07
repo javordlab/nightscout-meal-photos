@@ -1,5 +1,16 @@
 [
   {
+    "id": "33b85ec7-0668-8141-a153-df16d0d9fb9d",
+    "title": "Breakfast: Small orange, one medium tortilla with one egg and one slice of cheese (BG: 106 mg/dL Flat) (Pred: 178-188 mg/dL @ 11:15 AM) (Protein: 16g | Carbs: ~32g | Cals: ~340)",
+    "type": "Breakfast",
+    "date": "2026-04-07T09:48:00.000-07:00",
+    "photo": "https://iili.io/B76XosS.jpg",
+    "carbs": 32,
+    "cals": 340,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "33b85ec7-0668-81e2-9cbb-d3f564ee0549",
     "title": "Dinner: Half red apple [Cumulative Dinner: 40g carbs total] (BG: 104 mg/dL Flat) (Protein: 0g) (Pred: 148-158 mg/dL @ 7:59 PM)",
     "type": "Dinner",
