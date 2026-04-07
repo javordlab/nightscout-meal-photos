@@ -1,8 +1,8 @@
 {
   "jobId": "ssot-mysql-sync",
-  "lastRunAtMs": 1775562001135,
-  "lastFinishAtMs": 1775562001386,
-  "lastDurationMs": 251,
+  "lastRunAtMs": 1775563800337,
+  "lastFinishAtMs": 1775563800602,
+  "lastDurationMs": 265,
   "exitCode": 0,
   "lastStatus": "ok",
   "consecutiveErrors": 0,
