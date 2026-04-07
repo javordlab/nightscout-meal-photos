@@ -1,8 +1,8 @@
 {
   "jobId": "glucose-low-alert",
-  "lastRunAtMs": 1775590500736,
-  "lastFinishAtMs": 1775590501230,
-  "lastDurationMs": 494,
+  "lastRunAtMs": 1775592300852,
+  "lastFinishAtMs": 1775592301371,
+  "lastDurationMs": 519,
   "exitCode": 0,
   "lastStatus": "ok",
   "consecutiveErrors": 0,
