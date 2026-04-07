@@ -1,0 +1,7 @@
+{
+  "instanceLabel": "codex",
+  "botToken": "8672430993:AAFmOUoATRF1B7sgmgh702kwJkMj7tIO7NE",
+  "backend": "openclaw-agent",
+  "agentId": "codex-bridge",
+  "model": "openai-codex/gpt-5.4"
+}

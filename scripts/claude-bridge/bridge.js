@@ -21,16 +21,48 @@ const fs = require('fs');
 const path = require('path');
 
 // ── Config ─────────────────────────────────────────────────────────────────
-const config = require('./config.json');
+// Multi-instance support (added 2026-04-06): bridge.js can be run as several
+// independent processes, each with its own bot, model, backend, state, and log.
+// Pass BRIDGE_CONFIG=/path/to/config.<instance>.json (or argv[2]) to select.
+// If neither is set, fall back to ./config.json for backwards compat with the
+// original single-instance "cc_mini" cc_mini Sonnet bridge.
+const CONFIG_PATH = process.env.BRIDGE_CONFIG
+  || process.argv[2]
+  || path.join(__dirname, 'config.json');
+const config = require(CONFIG_PATH);
+
+const INSTANCE_LABEL = config.instanceLabel || 'main';
 const BOT_TOKEN = process.env.CLAUDE_BRIDGE_TOKEN || config.botToken;
 const MODEL = process.env.CLAUDE_BRIDGE_MODEL || config.model || 'sonnet';
-const ALLOWED_USERS = [8335333215, 8738167445]; // Javi + Maria
+// Backend selects how a turn is executed:
+//   'claude-cli'     → spawn /Users/javier/.local/bin/claude -p --model <model>
+//                      (uses Claude Code subscription OAuth — for sonnet/haiku/opus)
+//   'openclaw-agent' → spawn `openclaw agent --agent <agentId> -m <prompt> --json`
+//                      (uses OpenClaw routing + that agent's configured model — for codex)
+const BACKEND = config.backend || 'claude-cli';
+const OPENCLAW_AGENT_ID = config.agentId || null; // required when BACKEND === 'openclaw-agent'
+const ALLOWED_USERS = config.allowedUsers || [8335333215, 8738167445]; // Javi + Maria
+
 const WORKSPACE = '/Users/javier/.openclaw/workspace';
 const CLAUDE_BIN = '/Users/javier/.local/bin/claude';
+const OPENCLAW_BIN = '/opt/homebrew/bin/openclaw';
 const INBOUND_DIR = '/Users/javier/.openclaw/media/inbound';
-const SYSTEM_PROMPT_FILE = path.join(WORKSPACE, 'AGENTS.md');
-const STATE_FILE = path.join(WORKSPACE, 'data/claude_bridge_state.json');
-const LOG_FILE = path.join(WORKSPACE, 'data/claude_bridge.log');
+const SYSTEM_PROMPT_FILE = config.systemPromptFile || path.join(WORKSPACE, 'AGENTS.md');
+
+// State + log default to instance-suffixed names IF instanceLabel is provided
+// (so multi-instance launches don't clobber each other), or to the legacy
+// unsuffixed names if not (so the original cc_mini bridge keeps working).
+const STATE_FILE = config.stateFile
+  ? path.join(WORKSPACE, config.stateFile)
+  : (config.instanceLabel
+      ? path.join(WORKSPACE, `data/claude_bridge_state_${INSTANCE_LABEL}.json`)
+      : path.join(WORKSPACE, 'data/claude_bridge_state.json'));
+const LOG_FILE = config.logFile
+  ? path.join(WORKSPACE, config.logFile)
+  : (config.instanceLabel
+      ? path.join(WORKSPACE, `data/claude_bridge_${INSTANCE_LABEL}.log`)
+      : path.join(WORKSPACE, 'data/claude_bridge.log'));
+
 const POLL_INTERVAL_MS = 1500;
 const MAX_MESSAGE_LENGTH = 4096; // Telegram limit
 
@@ -38,10 +70,17 @@ const MAX_MESSAGE_LENGTH = 4096; // Telegram limit
 const OLLAMA_URL = 'http://127.0.0.1:11434';
 const OLLAMA_FALLBACKS = ['deepseek-v3.2:cloud', 'gpt-oss:120b-cloud'];
 
+// Validate config
+if (!BOT_TOKEN) { console.error(`[claude-bridge] FATAL: no botToken in ${CONFIG_PATH}`); process.exit(1); }
+if (BACKEND === 'openclaw-agent' && !OPENCLAW_AGENT_ID) {
+  console.error(`[claude-bridge] FATAL: backend=openclaw-agent requires "agentId" in ${CONFIG_PATH}`);
+  process.exit(1);
+}
+
 // ── Logging ────────────────────────────────────────────────────────────────
 function log(msg) {
   const ts = new Date().toISOString().replace('T', ' ').slice(0, 19);
-  const line = `[${ts}] [claude-bridge] ${msg}`;
+  const line = `[${ts}] [claude-bridge:${INSTANCE_LABEL}] ${msg}`;
   console.log(line);
   try { fs.appendFileSync(LOG_FILE, line + '\n'); } catch {}
 }
@@ -193,6 +232,66 @@ function runClaude(userId, prompt, sessionId, photoPath) {
   });
 }
 
+// ── OpenClaw agent runner (used by codex backend) ──────────────────────────
+// Spawns `openclaw agent --agent <id> -m <prompt> --json --thinking off`.
+// The agent's own configured model + auth profile + workspace AGENTS.md
+// are used — no model override at the call site (openclaw agent has no
+// --model flag). To switch models, edit the agent's config via openclaw CLI.
+// Sessions are persisted via session-id in state.sessions[userId] just like
+// the claude-cli path; if openclaw agent's JSON output includes session_id /
+// sessionId, we capture it for /resume.
+function runOpenclawAgent(userId, prompt, sessionId, photoPath) {
+  return new Promise((resolve, reject) => {
+    const args = ['agent', '--agent', OPENCLAW_AGENT_ID, '--json', '-m', prompt];
+    if (sessionId) { args.push('--session-id', sessionId); }
+    // Photos: openclaw agent doesn't have a --photo flag; we inject the path
+    // into the message body so the agent's tools can read it if vision-capable.
+    if (photoPath) {
+      args[args.indexOf(prompt)] = `[Photo attached at: ${photoPath}]\n\n${prompt}`;
+    }
+
+    const env = {
+      ...process.env,
+      HOME: '/Users/javier',
+      PATH: '/Users/javier/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin',
+    };
+    const child = spawn(OPENCLAW_BIN, args, { cwd: WORKSPACE, env, stdio: ['ignore', 'pipe', 'pipe'] });
+
+    let stdout = '';
+    let stderr = '';
+    child.stdout.on('data', d => stdout += d);
+    child.stderr.on('data', d => stderr += d);
+
+    const killTimer = setTimeout(() => { child.kill(); reject(new Error('openclaw agent timed out after 8 minutes')); }, 480_000);
+
+    child.on('close', code => {
+      clearTimeout(killTimer);
+      if (code !== 0 && !stdout.trim()) {
+        return reject(new Error(stderr.trim() || `openclaw agent exited with code ${code}`));
+      }
+      // openclaw agent --json shape (verified 2026-04-06):
+      //   { runId, status, summary, result: { payloads: [{ text, mediaUrl }], meta: { agentMeta: { sessionId } } } }
+      // Concatenate all text payloads (a single turn can return >1 payload).
+      try {
+        const parsed = JSON.parse(stdout);
+        if (parsed.status && parsed.status !== 'ok') {
+          return reject(new Error(`openclaw agent status=${parsed.status}: ${JSON.stringify(parsed.summary || parsed).slice(0, 300)}`));
+        }
+        const payloads = parsed.result?.payloads || [];
+        const text = payloads.map(p => p.text).filter(Boolean).join('\n\n').trim()
+          || parsed.result?.text
+          || stdout.trim();
+        const sid = parsed.result?.meta?.agentMeta?.sessionId || sessionId || null;
+        resolve({ text, sessionId: sid, source: `openclaw/${OPENCLAW_AGENT_ID}` });
+      } catch {
+        // Non-JSON output — return raw stdout
+        resolve({ text: stdout.trim() || stderr.trim(), sessionId, source: `openclaw/${OPENCLAW_AGENT_ID}` });
+      }
+    });
+    child.on('error', reject);
+  });
+}
+
 // ── Ollama fallback ─────────────────────────────────────────────────────────
 function runOllama(prompt, model) {
   return new Promise((resolve, reject) => {
@@ -314,12 +413,16 @@ async function handleMessage(msg) {
 
     let result;
     let lastErr;
-    // Primary: Claude OAuth
+    // Primary: pick runner based on backend
     try {
-      result = await runClaude(userId, prompt, sessionId, photoPath);
-    } catch (claudeErr) {
-      log(`Claude failed: ${claudeErr.message}`);
-      lastErr = claudeErr;
+      if (BACKEND === 'openclaw-agent') {
+        result = await runOpenclawAgent(userId, prompt, sessionId, photoPath);
+      } else {
+        result = await runClaude(userId, prompt, sessionId, photoPath);
+      }
+    } catch (primaryErr) {
+      log(`Primary backend (${BACKEND}) failed: ${primaryErr.message}`);
+      lastErr = primaryErr;
     }
     // Fallback chain: try each Ollama model in order
     if (!result) {
@@ -391,7 +494,7 @@ async function poll() {
 }
 
 // ── Start ─────────────────────────────────────────────────────────────────────
-log(`Starting — model: ${MODEL}, fallbacks: ${OLLAMA_FALLBACKS.join(' > ')}, workspace: ${WORKSPACE}`);
+log(`Starting — instance=${INSTANCE_LABEL}, backend=${BACKEND}, model=${MODEL}${OPENCLAW_AGENT_ID ? `, agent=${OPENCLAW_AGENT_ID}` : ''}, fallbacks=${OLLAMA_FALLBACKS.join(' > ')}, config=${CONFIG_PATH}, state=${STATE_FILE}`);
 tgApi('getMe').then(r => {
   if (!r.ok) { log(`Bad token or Telegram unreachable: ${JSON.stringify(r)}`); process.exit(1); }
   log(`Bot: @${r.result.username}`);

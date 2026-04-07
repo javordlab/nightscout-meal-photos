@@ -1,0 +1,6 @@
+{
+  "instanceLabel": "haiku",
+  "botToken": "8532288209:AAFGPqC2NK8VG1OY-6u51nGfQtWNcTal-TQ",
+  "backend": "claude-cli",
+  "model": "haiku"
+}
