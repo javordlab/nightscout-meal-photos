@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "profiles": {
+    "ollama:local": {
+      "type": "token",
+      "provider": "ollama",
+      "token": "ollama-local"
+    },
+    "openai-codex:default": {
+      "type": "oauth",
+      "provider": "openai-codex",
+      "access": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfRU1vYW1FRVo3M2YwQ2tYYVhwN2hyYW5uIiwiZXhwIjoxNzc1MjMyMDExLCJodHRwczovL2FwaS5vcGVuYWkuY29tL2F1dGgiOnsiY2hhdGdwdF9hY2NvdW50X2lkIjoiMTgyZDIyOWYtMzFkMi00MjZiLWEzOGMtNDcyODVhYjQxNTZjIiwiY2hhdGdwdF9hY2NvdW50X3VzZXJfaWQiOiJ1c2VyLXluTWlQT0NVSEYxU0VwWXM3c2hYY3lNSF9fMTgyZDIyOWYtMzFkMi00MjZiLWEzOGMtNDcyODVhYjQxNTZjIiwiY2hhdGdwdF9jb21wdXRlX3Jlc2lkZW5jeSI6Im5vX2NvbnN0cmFpbnQiLCJjaGF0Z3B0X3BsYW5fdHlwZSI6InBsdXMiLCJjaGF0Z3B0X3VzZXJfaWQiOiJ1c2VyLXluTWlQT0NVSEYxU0VwWXM3c2hYY3lNSCIsImxvY2FsaG9zdCI6dHJ1ZSwidXNlcl9pZCI6InVzZXIteW5NaVBPQ1VIRjFTRXBZczdzaFhjeU1IIn0sImh0dHBzOi8vYXBpLm9wZW5haS5jb20vcHJvZmlsZSI6eyJlbWFpbCI6Im9wZW5haUBqYXZpZXJvcmRvbmV6LmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlfSwiaWF0IjoxNzc0MzY4MDExLCJpc3MiOiJodHRwczovL2F1dGgub3BlbmFpLmNvbSIsImp0aSI6IjI0N2RhMTZiLTViNmItNGZmNy1hMWQ2LTg5ZjI2ZGIxNzExZiIsIm5iZiI6MTc3NDM2ODAxMSwicHdkX2F1dGhfdGltZSI6MTc3NDM2ODAxMDg1Miwic2NwIjpbIm9wZW5pZCIsInByb2ZpbGUiLCJlbWFpbCIsIm9mZmxpbmVfYWNjZXNzIl0sInNlc3Npb25faWQiOiJhdXRoc2Vzc183YnA4RDkzV2pERUhOMm14T1ZNZXk2WGQiLCJzbCI6dHJ1ZSwic3ViIjoiYXV0aDB8NjNiYzQzYjcxN2MxOTU5MTUyMjc4ZjA0In0.lNyci-mbB29my7mth542fwEhVkZBx09GPmDVHBqGFwUV0xErDuRsaCAUmoMs3Oofd8aSHxfGQyaFrEI2EJCiN9e_xwGtvHWMcANZ9tL0Dp2JuCjkTLRstxO_zMD_U41JvBTra5b2g9r3mLD9hULeXWq5iOIiQBR1jGWv8iW68i_svUBPMWw1XD4XGgPHhTCCPxV1T8g98NqEMNlgvEaNhU1VWjkj8RcqOOrTg7_O1E_b_Kel3hcvsNWKanBADf9_BNrVR1wgkQuL9eqmRjMVEWYUPEU5B2y5SNyPwxaox0XICStgWQhaGv93x29ILwjKC8KiFNejgNNL-K0rNLvTebIM5gDxUq8541U0gM4VSFwU8hhuK_6suFA4kKLkKiJsYzO4DTDHinA6WLK1AjVCuuodIWlUxpgSWOrqhzu65cBXN3-XVfo-_uSNvECmz6R0N6RnSdnXV-t8TRqqqHTBTLRKeUThBPu33Lr7VLUM7uTEv-PsDkFEzRy7ITSTcYGmS7BbRwW8KVVdGzEciW_XU0uS_LWvzjq9SZV-8zOn0PQssildsA08tAJUNTYjAVDo-84I6o7rDUjovLYGr3SS_4u2wiRHslflvIMzP_B_grLGyO_jfCP1j8bA15awBhSPNLzbGX5cGYuVTZmbvv_5t-t17tdoKS-NpKPhXcd2V_M",
+      "refresh": "oaistb_rt_U9siNGv2lBEobMVebe7NVo7wzUztBOEloc7Oz0KGXGw.NFvry6_kfVZR34cAOj4rkh5abiiwuibYomuNEqBBg7s",
+      "expires": 1775232010550
+    },
+    "google:manual": {
+      "type": "token",
+      "provider": "google",
+      "token": "AIzaSyCR-xrtM6cMiWIY9a7Ppj7suCUfY09uj3Y"
+    },
+    "openai:manual": {
+      "type": "api_key",
+      "provider": "openai",
+      "key": "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"
+    },
+    "openai:oauth": {
+      "type": "oauth",
+      "provider": "openai",
+      "access": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfRU1vYW1FRVo3M2YwQ2tYYVhwN2hyYW5uIiwiZXhwIjoxNzczNzk3OTYwLCJodHRwczovL2FwaS5vcGVuYWkuY29tL2F1dGgiOnsiY2hhdGdwdF9hY2NvdW50X2lkIjoiMTgyZDIyOWYtMzFkMi00MjZiLWEzOGMtNDcyODVhYjQxNTZjIiwiY2hhdGdwdF9hY2NvdW50X3VzZXJfaWQiOiJ1c2VyLXluTWlQT0NVSEYxU0VwWXM3c2hYY3lNSF9fMTgyZDIyOWYtMzFkMi00MjZiLWEzOGMtNDcyODVhYjQxNTZjIiwiY2hhdGdwdF9jb21wdXRlX3Jlc2lkZW5jeSI6Im5vX2NvbnN0cmFpbnQiLCJjaGF0Z3B0X3BsYW5fdHlwZSI6InBsdXMiLCJjaGF0Z3B0X3VzZXJfaWQiOiJ1c2VyLXluTWlQT0NVSEYxU0VwWXM3c2hYY3lNSCIsInVzZXJfaWQiOiJ1c2VyLXluTWlQT0NVSEYxU0VwWXM3c2hYY3lNSCJ9LCJodHRwczovL2FwaS5vcGVuYWkuY29tL3Byb2ZpbGUiOnsiZW1haWwiOiJvcGVuYWlAamF2aWVyb3Jkb25lei5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sImlhdCI6MTc3MjkzMzk2MCwiaXNzIjoiaHR0cHM6Ly9hdXRoLm9wZW5haS5jb20iLCJqdGkiOiI2YTVjYzk5Ny00Y2E5LTQwZWQtYjdiOC01Zjg5YjIyNWM2OWIiLCJuYmYiOjE3NzI5MzM5NjAsInB3ZF9hdXRoX3RpbWUiOjE3NzI5MzM4ODM4ODgsInNjcCI6WyJvcGVuaWQiLCJwcm9maWxlIiwiZW1haWwiLCJvZmZsaW5lX2FjY2VzcyJdLCJzZXNzaW9uX2lkIjoiYXV0aHNlc3NfWktyUk12enRMd2JBNW9QdWtBaWxVbzFlIiwic2wiOnRydWUsInN1YiI6ImF1dGgwfDYzYmM0M2I3MTdjMTk1OTE1MjI3OGYwNCJ9.qPwqOrXjjC1U_S6mLArDQdmAR8OAWt0dE-7sr2uKiCg4MHX98KRbhoSR_qtlHKqKk7IJ67BV4LEGb_6iNQFPTgAyCwEGjZ-Pv9JWN8QfCLVAfvSIN6ScqQNK-D-IKyNZodIuxXDCWalbuO1HAQmx91Z1hEr_tMvDWUYi-BRxCaRIIlFfh_pwrd9_H8PPLWIIEFf8Pa26SsdeeiaUmBKvwr4hr5l8BJenKPp-YbJaepAE4PrrLjlXQxAObNlW5vm5bzC6NhpwUi2g9U9GDa6852BmTq_JavBULG8uOkP1s8LuwAoWZxj740y8xDZHuwOuic6f7Ws1sg42z7CD29GjXu1maE6-759mo3U5hITwB0IUAnsPfOwQk8qCthvtbK1PwTGB9uY-4zNrnoKOymR6JrGwa83PdBFxUQS_jlYkCVEXlB6SU8OV6meeXmOYfx5iCf4Qs7OY4E2QPDeCX0jUfl0A-uOARTakwuJVs2WMl67hKr4N9GgV4sx-1izbmNA_tgFARM1Iv_zH001fLGw0Zhr7lPo-a_BdSpu5RnUsn2_Z9-mOxV7Qhl7B1FcJxZcDldlYKN-mipNOGdpWHCwIN2WXiWFiIvCl0TkMQANzMtcgp_RK354UjlRg_Z3gOCCdTwJcRRZo69L5Khcj7eJtoJON60Pd0l47eEr5cZ-Btjw",
+      "refresh": "rt_hyqOyAQHh0_pGAGEmwiVytk8rMjTzup5x2xaH8SSGeE.cia2dB0sAvQDYK5lNRDOUSaQFBnAkTVh9B04_CIUCZI",
+      "expires": 1773797959257,
+      "accountId": "182d229f-31d2-426b-a38c-47285ab4156c"
+    },
+    "ollama:default": {
+      "type": "api_key",
+      "provider": "ollama",
+      "key": "ollama-local"
+    },
+    "anthropic:claude@javierordonez.com": {
+      "type": "oauth",
+      "provider": "anthropic",
+      "access": "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",
+      "refresh": "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",
+      "expires": 1774238461944
+    },
+    "google-gemini-cli:ordonez@gmail.com": {
+      "type": "oauth",
+      "provider": "google-gemini-cli",
+      "access": "ya29.a0Aa7MYipgYtZMZaaqqXc2hRWs1BwXjCJ8QYzme_onKXN-9Bv1WHZ5Yf79Xx_F_dviXfoNvCQsUAHBLVGQSqgPf7gFhbuzWRecwxQ0mp6vZ9j30CAVLNUYN_Eea0Ilu3RFb-9c6D9knhxCSmvalAYnGd_JXcWlemO6Qiwaa2cSIy_7AEuJGd5mPeFW3ui-AsxR_515lg03zHEGzwaCgYKAakSARASFQHGX2Miu12AjLzvf7xbkYepVsrI8w0213",
+      "refresh": "1//06qXnJRnFaoFDCgYIARAAGAYSNwF-L9Ir-Q4NLL5P6vsqJgqCOSGUBgLGhq1xQ-aN81Yqqj7ooxijijF-7wRHVvZWx9CE9w9kdXs",
+      "expires": 1775340290120,
+      "email": "ordonez@gmail.com",
+      "projectId": "tidy-campaign-402406"
+    },
+    "anthropic:default": {
+      "type": "oauth",
+      "provider": "anthropic",
+      "access": "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",
+      "refresh": "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",
+      "expires": 1774238461944
+    },
+    "openai-codex:openai@javierordonez.com": {
+      "type": "oauth",
+      "provider": "openai-codex",
+      "access": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfRU1vYW1FRVo3M2YwQ2tYYVhwN2hyYW5uIiwiZXhwIjoxNzc2MTQ2OTM0LCJodHRwczovL2FwaS5vcGVuYWkuY29tL2F1dGgiOnsiY2hhdGdwdF9hY2NvdW50X2lkIjoiMTgyZDIyOWYtMzFkMi00MjZiLWEzOGMtNDcyODVhYjQxNTZjIiwiY2hhdGdwdF9hY2NvdW50X3VzZXJfaWQiOiJ1c2VyLXluTWlQT0NVSEYxU0VwWXM3c2hYY3lNSF9fMTgyZDIyOWYtMzFkMi00MjZiLWEzOGMtNDcyODVhYjQxNTZjIiwiY2hhdGdwdF9jb21wdXRlX3Jlc2lkZW5jeSI6Im5vX2NvbnN0cmFpbnQiLCJjaGF0Z3B0X3BsYW5fdHlwZSI6InBsdXMiLCJjaGF0Z3B0X3VzZXJfaWQiOiJ1c2VyLXluTWlQT0NVSEYxU0VwWXM3c2hYY3lNSCIsImxvY2FsaG9zdCI6dHJ1ZSwidXNlcl9pZCI6InVzZXIteW5NaVBPQ1VIRjFTRXBZczdzaFhjeU1IIn0sImh0dHBzOi8vYXBpLm9wZW5haS5jb20vcHJvZmlsZSI6eyJlbWFpbCI6Im9wZW5haUBqYXZpZXJvcmRvbmV6LmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlfSwiaWF0IjoxNzc1MjgyOTM0LCJpc3MiOiJodHRwczovL2F1dGgub3BlbmFpLmNvbSIsImp0aSI6IjA5YWRkNDEzLWJjMzAtNGVhYi05Nzk2LTEyOGI5NTg2MDhhNSIsIm5iZiI6MTc3NTI4MjkzNCwicHdkX2F1dGhfdGltZSI6MTc3NTI4MjkzMzUyOSwic2NwIjpbIm9wZW5pZCIsInByb2ZpbGUiLCJlbWFpbCIsIm9mZmxpbmVfYWNjZXNzIl0sInNlc3Npb25faWQiOiJhdXRoc2Vzc19wRk90cUZ6aXhYZjZ3T0xmVVkzcDl1aFgiLCJzbCI6dHJ1ZSwic3ViIjoiYXV0aDB8NjNiYzQzYjcxN2MxOTU5MTUyMjc4ZjA0In0.aUz_x8UNOAImgCFl1fAA0Vy7AYzFdp3AhTUqublnZw_7CqhMtPPgsPllBPL1LSVB58c6IGMcJkooMOcxt1QPjFYQ3adysJGUlloB-a5ufY_r9djYeB5rh01nvO0WTeG2mNsap37isUoSpSy0JzfS4Fqio_KP-vlYLXleH9v1-P6nuPE99F_1kMdFG7uey7NpTLDoDD8ZzDUQC1X8ow7rgJOsMWPmxWMP77r4y2Fi4_oBu6horRDyceGvAfT9n5135KuILiQxAQtoqxdLAsbxB9NGTK6_V_K9jv0iF1W5CKt6zMguhu6i1VXoGYspWpcScbdmVt4SOjlQwOE2ssYTRGgNvdgRHaKtTdEhkiWC1NvFkO6J9y3XftWxhqnfVyAHKroEngQKv9yj5sG55bafdzHEGfD0rBkX7DusMialgh6qZciNKIVYRTM34ebe5Ssid5sIb6jX-bwJGdNCpj6TQKdEZ4qW4MwFUD_DrdOIgMhpYeLOPSS2tVGVy7Isjl4Dhr6u9RFhpvVKZuMy04rJLNt7HL9zmpE4an1vjMl-3aKT1s7518XjGwANRC2BY9jmhKA1_Vle0xlNVXK9L2t-NvhsiqZtjRdS3kOcvuLBJMQKHeLVaJqb7lvcY8ourDTBc89NnCqB_R0hkjxMSayKRkTu9Yc0WfPe2XqtaYQ-xDc",
+      "refresh": "rt_E-cFK9ZLKIhDD907obzgM0z7m5Dy4ZTpovE1KzEWZJs.IxDQLgzEE4Dewfibk5hHFJ9JKq-MrO8WK21MoW9R1xs",
+      "expires": 1776146933454,
+      "email": "openai@javierordonez.com"
+    }
+  },
+  "lastGood": {
+    "openai-codex": "openai-codex:openai@javierordonez.com",
+    "google": "google:manual",
+    "ollama": "ollama:default",
+    "openai": "openai:manual",
+    "anthropic": "anthropic:default"
+  },
+  "usageStats": {
+    "openai-codex:default": {
+      "lastUsed": 1775357474960,
+      "errorCount": 0,
+      "lastFailureAt": 1773876610004
+    },
+    "google:manual": {
+      "errorCount": 3,
+      "lastFailureAt": 1773194388784,
+      "lastUsed": 1771711967543,
+      "failureCounts": {
+        "model_not_found": 3
+      },
+      "cooldownUntil": 1773195888784
+    },
+    "openai:manual": {
+      "errorCount": 0,
+      "lastFailureAt": 1771785472516,
+      "lastUsed": 1773728231629
+    },
+    "ollama:local": {
+      "lastUsed": 1772040802353,
+      "errorCount": 3,
+      "failureCounts": {
+        "timeout": 3
+      },
+      "lastFailureAt": 1773194398366,
+      "cooldownUntil": 1773195898366
+    },
+    "openai:oauth": {
+      "errorCount": 7,
+      "failureCounts": {
+        "auth": 7
+      },
+      "lastFailureAt": 1773728211218,
+      "cooldownUntil": 1773731811218
+    },
+    "anthropic:default": {
+      "errorCount": 0,
+      "lastUsed": 1775326591177
+    },
+    "google-gemini-cli:ordonez@gmail.com": {
+      "errorCount": 1,
+      "failureCounts": {
+        "auth": 1
+      },
+      "lastFailureAt": 1775240275421,
+      "cooldownUntil": 1775240305421,
+      "cooldownReason": "auth"
+    },
+    "ollama:default": {
+      "errorCount": 0,
+      "lastUsed": 1775282532378
+    },
+    "openai-codex:openai@javierordonez.com": {
+      "errorCount": 0,
+      "lastUsed": 1775359121425
+    }
+  }
+}
