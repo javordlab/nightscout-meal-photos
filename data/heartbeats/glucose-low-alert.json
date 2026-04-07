@@ -1,8 +1,8 @@
 {
   "jobId": "glucose-low-alert",
-  "lastRunAtMs": 1775520900591,
-  "lastFinishAtMs": 1775520901184,
-  "lastDurationMs": 593,
+  "lastRunAtMs": 1775522700865,
+  "lastFinishAtMs": 1775522701365,
+  "lastDurationMs": 500,
   "exitCode": 0,
   "lastStatus": "ok",
   "consecutiveErrors": 0,
@@ -10,9 +10,9 @@
   "spawnError": null,
   "outcome": {
     "status": "ok",
-    "summary": "BG 118 ➡️ (no alert needed)",
+    "summary": "BG 99 ➡️ (no alert needed)",
     "metrics": {
-      "bg": 118,
+      "bg": 99,
       "trend": "Flat",
       "inAlertWindow": true,
       "alertFired": false,
