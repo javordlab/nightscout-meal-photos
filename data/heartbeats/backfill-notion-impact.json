@@ -1,8 +1,8 @@
 {
   "jobId": "backfill-notion-impact",
-  "lastRunAtMs": 1775599200926,
-  "lastFinishAtMs": 1775599247027,
-  "lastDurationMs": 46101,
+  "lastRunAtMs": 1775602800431,
+  "lastFinishAtMs": 1775602861120,
+  "lastDurationMs": 60689,
   "exitCode": 0,
   "lastStatus": "ok",
   "consecutiveErrors": 0,

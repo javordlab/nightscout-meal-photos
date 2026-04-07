@@ -1,8 +1,8 @@
 {
   "jobId": "calc-notion-projections",
-  "lastRunAtMs": 1775601301286,
-  "lastFinishAtMs": 1775601302291,
-  "lastDurationMs": 1005,
+  "lastRunAtMs": 1775603101102,
+  "lastFinishAtMs": 1775603102118,
+  "lastDurationMs": 1016,
   "exitCode": 0,
   "lastStatus": "ok",
   "consecutiveErrors": 0,
