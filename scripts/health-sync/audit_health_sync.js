@@ -16,7 +16,7 @@ const NIGHTSCOUT_URL = process.env.NIGHTSCOUT_URL || 'https://p01--sefi--s66fclg
 const NIGHTSCOUT_SECRET = process.env.NIGHTSCOUT_SECRET || 'b3170e23f45df7738434cd8be9cd79d86a6d0f01';
 const NOTION_DB_ID = process.env.NOTION_DB_ID || '31685ec7-0668-813e-8b9e-c5b4d5d70fa5';
 
-const { loadSyncState } = require('./sync_state');
+const { loadSyncState, saveSyncState } = require('./sync_state');
 
 function log(entry) {
   const line = JSON.stringify({ ts: new Date().toISOString(), ...entry }) + '\n';
@@ -464,6 +464,13 @@ async function main(options = {}) {
   // sha256:98f968dabd (chocolate brownie 2026-03-20) was cross-linked to the
   // page that legitimately belonged to sha256:c045397fe2 (green grapes
   // 2026-03-01), so dispatcher rewrites would clobber the grapes entry.
+  //
+  // With `--fix`, the validator additionally clears the duplicate notion.page_id
+  // from all but ONE entry per collision (the one whose entryKey lexicographically
+  // sorts first — deterministic choice; arbitrary but stable). The next
+  // dispatcher run will then create a fresh Notion page for each cleared entry.
+  // Rationale: any deterministic tiebreaker is correct here because the dispatcher
+  // (post-2026-04-06 entry_key fix) will discover the right page via Entry Key.
   const pageIdToKeys = new Map();
   for (const [entryKey, syncEntry] of Object.entries(state.entries || {})) {
     const pid = syncEntry.notion?.page_id;
@@ -471,6 +478,7 @@ async function main(options = {}) {
     if (!pageIdToKeys.has(pid)) pageIdToKeys.set(pid, []);
     pageIdToKeys.get(pid).push(entryKey);
   }
+  let collisionsCleared = 0;
   for (const [pid, keys] of pageIdToKeys) {
     if (keys.length < 2) continue;
     report.summary.sync_state_pageid_collision = (report.summary.sync_state_pageid_collision || 0) + 1;
@@ -481,6 +489,24 @@ async function main(options = {}) {
       issues: [{ type: 'sync_state_pageid_collision', severity: 'error', pageId: pid, entryKeys: keys,
                  note: 'Multiple SSoT entries point to the same Notion page_id — clear all but the canonical one and re-sync' }]
     });
+    if (options.fix) {
+      // Keep the lexicographically-smallest entry_key as the canonical owner;
+      // clear notion link from the rest.
+      const sortedKeys = [...keys].sort();
+      const losers = sortedKeys.slice(1);
+      for (const loser of losers) {
+        if (state.entries[loser]?.notion) {
+          delete state.entries[loser].notion;
+          collisionsCleared++;
+          console.log(`  --fix: cleared notion link from ${loser.slice(0,17)} (collision with ${sortedKeys[0].slice(0,17)})`);
+        }
+      }
+    }
+  }
+  if (options.fix && collisionsCleared > 0) {
+    saveSyncState(SYNC_STATE_PATH, state);
+    console.log(`  --fix: persisted ${collisionsCleared} sync_state cleanups → ${SYNC_STATE_PATH}`);
+    report.summary.sync_state_collisions_fixed = collisionsCleared;
   }
 
   // ── SSoT-leading round-trip Notion audit ──────────────────────────────────
@@ -557,8 +583,9 @@ if (require.main === module) {
   const args = process.argv.slice(2);
   const sinceArg = args.find(a => a.startsWith('--since='));
   const since = sinceArg ? sinceArg.split('=')[1] : null;
+  const fix = args.includes('--fix');
 
-  main({ since }).catch(e => {
+  main({ since, fix }).catch(e => {
     console.error(e.message);
     process.exit(1);
   });

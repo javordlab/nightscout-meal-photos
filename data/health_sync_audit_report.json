@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-07T05:15:19.098Z",
+  "generatedAt": "2026-04-07T05:39:53.832Z",
   "since": "2026-02-22T00:00:00.000Z",
   "summary": {
     "totalEntries": 486,
@@ -13,7 +13,8 @@
     "missingNotion": 30,
     "missingGallery": 0,
     "missingOutcomes": 30,
-    "sync_state_pageid_collision": 2
+    "sync_state_pageid_collision": 2,
+    "sync_state_collisions_fixed": 2
   },
   "discrepancies": [
     {
@@ -1405,7 +1406,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 660,
+          "ageHours": 661,
           "severity": "warning"
         },
         {
@@ -1458,7 +1459,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 696,
+          "ageHours": 697,
           "severity": "warning"
         },
         {
@@ -1566,7 +1567,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 707,
+          "ageHours": 708,
           "severity": "warning"
         },
         {
@@ -2242,7 +2243,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 852,
+          "ageHours": 853,
           "severity": "warning"
         },
         {
@@ -2698,7 +2699,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 951,
+          "ageHours": 952,
           "severity": "warning"
         },
         {
@@ -2842,7 +2843,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 965,
+          "ageHours": 966,
           "severity": "warning"
         },
         {
@@ -3010,7 +3011,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 986,
+          "ageHours": 987,
           "severity": "warning"
         },
         {
@@ -3030,7 +3031,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 989,
+          "ageHours": 990,
           "severity": "warning"
         },
         {
@@ -3092,7 +3093,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 995,
+          "ageHours": 996,
           "severity": "warning"
         },
         {
@@ -3218,7 +3219,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 1014,
+          "ageHours": 1015,
           "severity": "warning"
         },
         {
@@ -3249,7 +3250,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 1017,
+          "ageHours": 1018,
           "severity": "warning"
         },
         {
@@ -3280,7 +3281,7 @@
       "issues": [
         {
           "type": "outcomes_not_backfilled",
-          "ageHours": 1019,
+          "ageHours": 1020,
           "severity": "warning"
         },
         {
@@ -3496,7 +3497,7 @@
     },
     {
       "entryKey": null,
-      "timestamp": "2026-04-07T05:15:51.088Z",
+      "timestamp": "2026-04-07T05:40:26.723Z",
       "title": "sync_state collision: 2 entries → 31985ec7-0668-8156-b79d-c9374e59373e",
       "issues": [
         {
@@ -3513,7 +3514,7 @@
     },
     {
       "entryKey": null,
-      "timestamp": "2026-04-07T05:15:51.088Z",
+      "timestamp": "2026-04-07T05:40:26.724Z",
       "title": "sync_state collision: 2 entries → 33285ec7-0668-8161-aa33-eae68037e92e",
       "issues": [
         {

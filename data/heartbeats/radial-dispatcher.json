@@ -1,31 +1,31 @@
 {
   "jobId": "radial-dispatcher",
-  "lastRunAtMs": 1775538302624,
-  "lastFinishAtMs": 1775538505951,
-  "lastDurationMs": 203327,
+  "lastRunAtMs": 1775543702456,
+  "lastFinishAtMs": 1775544009283,
+  "lastDurationMs": 306827,
   "exitCode": 0,
-  "lastStatus": "ok",
-  "consecutiveErrors": 0,
+  "lastStatus": "warn",
+  "consecutiveErrors": 2,
   "signal": null,
   "spawnError": null,
   "outcome": {
-    "status": "ok",
-    "summary": "Synced 255 entries — NS: 254 ok / 0 err / 1 conflict · Notion: 0 new / 2 upd / 253 unchanged",
+    "status": "partial",
+    "summary": "Synced 258 entries — NS: 255 ok / 2 err / 1 conflict · Notion: 0 new / 0 upd / 258 unchanged",
     "metrics": {
-      "processed": 255,
-      "skipped": 231,
-      "ns_ok": 254,
-      "ns_errors": 0,
+      "processed": 258,
+      "skipped": 228,
+      "ns_ok": 255,
+      "ns_errors": 2,
       "ns_conflicts": 1,
       "notion_new": 0,
-      "notion_updated": 2,
-      "notion_unchanged": 253,
+      "notion_updated": 0,
+      "notion_unchanged": 258,
       "notion_duplicates_archived": 0,
       "entry_errors": 0,
       "gallery_updated": 0,
-      "ns_fallback_matches": 254,
+      "ns_fallback_matches": 255,
       "ns_ambiguous_matches": 1,
-      "ns_verify_fails": 0
+      "ns_verify_fails": 2
     }
   }
 }

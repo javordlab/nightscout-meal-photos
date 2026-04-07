@@ -15,6 +15,7 @@ const { writeReceipt } = require('./health-sync/cron_receipt');
 
 // --- Configuration ---
 const LOG_PATH = "/Users/javier/.openclaw/workspace/health_log.md";
+const NORMALIZED_PATH = "/Users/javier/.openclaw/workspace/data/health_log.normalized.json";
 const NIGHTSCOUT_URL = "https://p01--sefi--s66fclg7g2lm.code.run";
 const NIGHTSCOUT_SECRET = "b3170e23f45df7738434cd8be9cd79d86a6d0f01"; // SHA1 of JaviCare2026
 const NOTION_KEY = "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";
@@ -266,6 +267,29 @@ async function main() {
     Object.values(syncState.entries || {}).map(e => e.timestamp)
   );
 
+  // Load normalized SSoT so we can use the SAME entry_key that
+  // normalize_health_log.js / unified_sync.js / sync_state.json use. Recomputing
+  // it locally produced a different hash (this script's cleanText includes BG
+  // annotations like "(BG: 139 mg/dL Flat)" while the normalized title strips
+  // them), which made the Notion `Entry Key` lookup miss for legitimate
+  // matches and silently create duplicates.
+  //
+  // Indexed by (iso|user|category|normalizedTitle) — the normalized title is
+  // required to disambiguate same-minute siblings like the 2026-03-28 19:30
+  // pair (Berberine + Metformin both Medication).
+  let normalizedByKey = new Map();
+  try {
+    if (fs.existsSync(NORMALIZED_PATH)) {
+      const norm = JSON.parse(fs.readFileSync(NORMALIZED_PATH, 'utf8'));
+      for (const e of (norm.entries || [])) {
+        const titleKey = normalizeEntryTitle(e.title || '');
+        normalizedByKey.set(`${e.timestamp}|${e.user}|${e.category}|${titleKey}`, e);
+      }
+    }
+  } catch (e) {
+    console.warn(`  !! Could not load normalized SSoT: ${e.message}`);
+  }
+
   // Today's entries always processed (may have new photos/edits).
   // Older entries only processed if NOT yet in sync_state (never synced).
   const _sysTz = Intl.DateTimeFormat().resolvedOptions().timeZone;
@@ -352,7 +376,14 @@ async function main() {
     }
 
     metrics.processed++;
-    const entryKey = buildEntryKey(entryData, cleanText);
+    // Prefer the normalized SSoT's precomputed entry_key (consistent with
+    // sync_state.json + Notion `Entry Key` property). Fall back to local
+    // recompute only if the entry isn't in the normalized index.
+    const lookupTitle = normalizeEntryTitle(cleanText);
+    const normalizedEntry = normalizedByKey.get(
+      `${entryData.iso}|${entryData.user}|${entryData.category}|${lookupTitle}`
+    );
+    const entryKey = normalizedEntry?.entryKey?.replace(/^sha256:/, '') || buildEntryKey(entryData, cleanText);
     console.log(`Checking: ${entryData.date} ${entryData.time} - ${cleanText.slice(0, 60)}`);
 
     // 1. Sync to Nightscout
@@ -421,21 +452,25 @@ async function main() {
         }
       });
       const legacyMatches = (notionQuery.results || []).filter(r => !r.archived);
-      // Post-filter by title or empty Entry Key to avoid binding to a sibling
-      // entry at the same minute that already owns its own Notion page.
-      activeResults = legacyMatches.filter(r => {
-        const existingKey = r.properties?.["Entry Key"]?.rich_text?.[0]?.plain_text || '';
-        if (existingKey && existingKey !== nsEntryKey) return false; // belongs to a sibling
+      // Disambiguation among same-(date,user,category) siblings:
+      //   1. Exact match on the SSoT-normalized title — strongest signal,
+      //      survives stale Entry Key values from legacy backfill.
+      //   2. Page with no Entry Key yet — we'll stamp it on update.
+      //   3. Page with the matching Entry Key (already stamped correctly).
+      // Anything with a *different* Entry Key AND a different title belongs
+      // to a sibling — leave it alone, create a new page for the current entry.
+      const pickByTitle = legacyMatches.filter(r => {
         const existingTitle = r.properties?.Entry?.title?.[0]?.plain_text || '';
-        // If multiple results, prefer one whose title matches; otherwise take
-        // the first un-keyed result and let the update path stamp it.
-        return !existingKey || existingTitle === cleanText;
+        return existingTitle === cleanText;
       });
-      // If post-filter dropped all matches but there were sibling-keyed pages,
-      // treat as "no match" → we'll create a new page below.
-      if (activeResults.length === 0 && legacyMatches.length > 0) {
-        const unkeyed = legacyMatches.filter(r => !(r.properties?.["Entry Key"]?.rich_text?.[0]?.plain_text));
-        if (unkeyed.length > 0) activeResults = [unkeyed[0]];
+      if (pickByTitle.length > 0) {
+        activeResults = pickByTitle;
+      } else {
+        const pickByKeyOrEmpty = legacyMatches.filter(r => {
+          const existingKey = r.properties?.["Entry Key"]?.rich_text?.[0]?.plain_text || '';
+          return !existingKey || existingKey === nsEntryKey;
+        });
+        if (pickByKeyOrEmpty.length > 0) activeResults = [pickByKeyOrEmpty[0]];
       }
     }
 
