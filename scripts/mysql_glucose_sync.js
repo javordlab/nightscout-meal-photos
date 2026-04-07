@@ -162,7 +162,8 @@ async function main() {
         metrics.dashboardUpdated = true;
     } catch (e) {
         console.error("Dashboard update failed:", e.message);
-        metrics.queryErrors++;
+        // Don't count dashboard deploy failures as query errors — they don't affect data integrity
+        metrics.dashboardDeployFailed = true;
     }
 
     // --- Outcome receipt for cron dashboard ---

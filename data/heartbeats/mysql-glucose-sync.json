@@ -1,26 +1,26 @@
 {
   "jobId": "mysql-glucose-sync",
-  "lastRunAtMs": 1775571601050,
-  "lastFinishAtMs": 1775571603622,
-  "lastDurationMs": 2572,
+  "lastRunAtMs": 1775578801191,
+  "lastFinishAtMs": 1775578804591,
+  "lastDurationMs": 3400,
   "exitCode": 0,
-  "lastStatus": "warn",
-  "consecutiveErrors": 15,
+  "lastStatus": "ok",
+  "consecutiveErrors": 0,
   "signal": null,
   "spawnError": null,
   "outcome": {
-    "status": "partial",
-    "summary": "1 query error(s) — fetched 600, inserted 6",
+    "status": "ok",
+    "summary": "Inserted 1 new rows (fetched 600 in 6 batches) — hit 48h age cutoff",
     "metrics": {
       "batches": 6,
       "totalFetched": 600,
-      "rowsInserted": 6,
-      "rowsBefore": 12116,
-      "rowsAfter": 12122,
+      "rowsInserted": 1,
+      "rowsBefore": 12145,
+      "rowsAfter": 12146,
       "safetyLimitHit": false,
       "ageCutoffReached": true,
-      "queryErrors": 1,
-      "dashboardUpdated": false
+      "queryErrors": 0,
+      "dashboardUpdated": true
     }
   }
 }

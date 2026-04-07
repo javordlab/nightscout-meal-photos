@@ -97,6 +97,18 @@
           "gmi": 6.108723636363637,
           "tir": 97.2027972027972
         }
+      },
+      "2026-04-07": {
+        "sentAt": "2026-04-07T16:30:02.673Z",
+        "targetDate": "2026-04-06",
+        "reportPath": "/Users/javier/.openclaw/workspace/data/daily_report_2026-04-07.txt",
+        "messageId": 5044,
+        "statsDay": {
+          "count": 286,
+          "average": 112.16083916083916,
+          "gmi": 5.992887272727273,
+          "tir": 100
+        }
       }
     }
   }

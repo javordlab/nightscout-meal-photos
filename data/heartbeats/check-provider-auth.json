@@ -1,0 +1,12 @@
+{
+  "jobId": "check-provider-auth",
+  "lastRunAtMs": 1775574001210,
+  "lastFinishAtMs": 1775574024727,
+  "lastDurationMs": 23517,
+  "exitCode": 1,
+  "lastStatus": "ok",
+  "consecutiveErrors": 0,
+  "signal": null,
+  "spawnError": null,
+  "outcome": null
+}

@@ -400,10 +400,13 @@ async function main() {
     };
 
     const nsEntryKey = `sha256:${entryKey}`;
+    const syncStateEntry = (syncState.entries || {})[nsEntryKey];
+    const knownNsTreatmentId = syncStateEntry?.nightscout?.treatment_id || null;
     const nsRes = await upsertNightscoutTreatment({
       nsRequest,
       payload: nsBody,
       entryKey: nsEntryKey,
+      knownTreatmentId: knownNsTreatmentId,
       titleForMatch: cleanText,
       normalizeForMatch: normalizeEntryTitle,
       telemetry: nsTelemetry,

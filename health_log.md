@@ -1,5 +1,7 @@
 # Health Log
 
+| 2026-04-07 | 09:00 -07:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 99 mg/dL Flat) | - | - |
+| 2026-04-07 | 09:10 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 99 mg/dL Flat) | - | - |
 | 2026-04-06 | 20:53 -07:00 | Maria Dennis | Food | Dinner | Dinner: Handful of cashews and a small piece of dry mango [Cumulative Dinner: 56g carbs total] (BG: 166 mg/dL Flat) (Pred: 144-154 mg/dL @ 10:09 PM) (Protein: 5g | Carbs: ~16g | Cals: ~110) | 16 | 110 |
 | 2026-04-06 | 20:05 -07:00 | Maria Dennis | Exercise | - | Exercise: 20 minutes walking (BG: 121 mg/dL Flat) | - | - |
 | 2026-04-06 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 105 mg/dL Flat) | - | - |

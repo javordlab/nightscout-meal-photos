@@ -1,0 +1,66 @@
+🩺 DAILY HEALTH REPORT
+📅 Date: 2026-04-07
+🕒 Coverage window: 2026-04-06 00:00 – 2026-04-07 00:00 (America/Los_Angeles)
+⚙️ Generated time: 2026-04-07T16:30:01.914Z
+🤖 Model: anthropic/claude-sonnet-4-6
+
+1) 📊 Today's Glucose Summary
+- Average glucose: 112.2 mg/dL
+- Time in Range (70-180): 100.0%
+- GMI: 5.99%
+- Standard deviation: 17.6 mg/dL
+- CV: 15.7%
+- Data points used: 286
+
+2) 📉 14-day Trends (ending 2026-04-06)
+- Average glucose: 119.4 mg/dL
+- Time in Range (70-180): 98.6%
+- GMI: 6.17%
+- Standard deviation: 20.3 mg/dL
+- CV: 17.0%
+- Data points used: 1023
+
+3) 🍽️ Nutrition (2026-04-06)
+- Meals logged: 6
+- Total carbs: 124.0 g
+- Total calories: 1415 kcal
+- Total protein: 82.0 g
+
+4) 🧾 Meal Details (2026-04-06)
+- 10:36 AM — Breakfast: English muffin with melted cheese and prosciutto/ham, plus coffee with milk — 29.0g carbs, 350 kcal, 22.0g protein — BG at meal: 110 mg/dL
+- 1:16 PM — Lunch: Thin noodles with broccoli and sliced meatballs/sausage in a light savory sauce — 33.0g carbs, 360 kcal, 21.0g protein — BG at meal: 117 mg/dL
+- 4:21 PM — Snack: Half protein ball — 6.0g carbs, 65 kcal, 3.0g protein — BG at meal: 120 mg/dL
+- 6:43 PM — Dinner: Hamburger steak / Salisbury-style beef patty with mushroom gravy and 1 slice rustic bread — 20.0g carbs, 450 kcal, 31.0g protein — BG at meal: 105 mg/dL
+- 6:54 PM — Dinner: Half red apple [Cumulative Dinner: 40g carbs total] — 20.0g carbs, 80 kcal, 0.0g protein — BG at meal: 104 mg/dL
+- 8:53 PM — Dinner: Handful of cashews and a small piece of dry mango [Cumulative Dinner: 56g carbs total] — 16.0g carbs, 110 kcal, 5.0g protein — BG at meal: 157 mg/dL
+
+5) 📚 Nutrition Baseline (14-day daily average ending 2026-04-06)
+- Average carbs/day: 147.2 g
+- Average calories/day: 1551.6 kcal
+- Average protein/day: 76.2 g
+- Average meals/day: 6.4
+- Days in window with food entries: 14
+
+6) 💊 Medication Status (2026-04-06)
+- 2026-04-06T19:00:00-07:00: Medication: Metformin 1000mg (dinner)
+- 2026-04-06T13:00:00-07:00: Medication: Metformin 500mg (lunch)
+- 2026-04-06T09:00:00-07:00: Medication: Lisinopril 10mg (Scheduled)
+- 2026-04-06T09:10:00-07:00: Medication: Metformin 500mg (breakfast)
+- 2026-04-06T09:05:00-07:00: Medication: Rosuvastatin 10mg (Scheduled)
+
+7) 🚨 Outliers (2026-04-06)
+- High readings >180: 0
+- Low readings <70: 0
+- Max glucose: 175 mg/dL at 2026-04-06T19:09:58.000Z
+
+8) 🧠 Extended Supervisor Analysis
+- Nice work overall today: Strong Time in Range at 100.0% | Limited high excursions (>180 mg/dL): 0 | No hypoglycemia episodes (<70 mg/dL) | Good protein intake (82.0g).
+- Key trend signals: avg glucose vs 14-day baseline -7.3 mg/dL, TIR delta 1.4%, carbs delta -23.2 g, calories delta -137 kcal.
+- Friendly focus for tomorrow: No urgent corrections needed—just keep the same consistency and momentum.
+- You’re doing great—small consistent habits keep adding up. Keep it going 🌟
+
+9) 🛡️ Self-Audit (Data Integrity)
+- Target day enforced: 2026-04-06 PT
+- Glucose points in target window: 286
+- GMI formula check (3.31 + 0.02392 × Avg): 5.99%
+- Reported GMI: 5.99%

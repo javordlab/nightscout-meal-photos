@@ -1,0 +1,26 @@
+{
+  "jobId": "daily-report",
+  "lastRunAtMs": 1775579400390,
+  "lastFinishAtMs": 1775579414002,
+  "lastDurationMs": 13612,
+  "exitCode": 0,
+  "lastStatus": "ok",
+  "consecutiveErrors": 0,
+  "signal": null,
+  "spawnError": null,
+  "outcome": {
+    "status": "ok",
+    "summary": "Report delivered (msg 5044) for 2026-04-06 · charts triggered",
+    "metrics": {
+      "reportDateLA": "2026-04-07",
+      "targetDate": "2026-04-06",
+      "chatId": "-5262020908",
+      "reportSent": true,
+      "messageId": 5044,
+      "chartsTriggered": true,
+      "skippedAlreadySent": false,
+      "dryRun": false,
+      "statsDay": null
+    }
+  }
+}

@@ -393,6 +393,34 @@
             "mtimeMs": 1775493008367.5603
           }
         }
+      },
+      "2026-04-07": {
+        "sent": {
+          "daily_glucose_chart.png": {
+            "sentAt": "2026-04-07T16:30:11.813Z",
+            "messageId": 5045,
+            "size": 53051,
+            "mtimeMs": 1775579404416.045
+          },
+          "glucose_chart.png": {
+            "sentAt": "2026-04-07T16:30:12.913Z",
+            "messageId": 5046,
+            "size": 86883,
+            "mtimeMs": 1775579406794.1355
+          },
+          "weekly_calories_chart.png": {
+            "sentAt": "2026-04-07T16:30:13.416Z",
+            "messageId": 5047,
+            "size": 29814,
+            "mtimeMs": 1775579407449.2922
+          },
+          "weekly_carbs_chart.png": {
+            "sentAt": "2026-04-07T16:30:13.933Z",
+            "messageId": 5048,
+            "size": 26598,
+            "mtimeMs": 1775579408261.5044
+          }
+        }
       }
     }
   }
