@@ -1,8 +1,8 @@
 {
   "jobId": "glucose-low-alert",
-  "lastRunAtMs": 1775561401026,
-  "lastFinishAtMs": 1775561401177,
-  "lastDurationMs": 151,
+  "lastRunAtMs": 1775563200466,
+  "lastFinishAtMs": 1775563200625,
+  "lastDurationMs": 159,
   "exitCode": 0,
   "lastStatus": "ok",
   "consecutiveErrors": 0,
@@ -10,7 +10,7 @@
   "spawnError": null,
   "outcome": {
     "status": "noop",
-    "summary": "Outside alert window (04:30 America/Los_Angeles)",
+    "summary": "Outside alert window (05:00 America/Los_Angeles)",
     "metrics": {
       "bg": null,
       "trend": null,
