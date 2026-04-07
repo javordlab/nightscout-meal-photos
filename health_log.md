@@ -1,5 +1,6 @@
 # Health Log
 
+| 2026-04-06 | 20:53 -07:00 | Maria Dennis | Food | Dinner | Dinner: Handful of cashews and a small piece of dry mango [Cumulative Dinner: 56g carbs total] (BG: 166 mg/dL Flat) (Pred: 144-154 mg/dL @ 10:09 PM) (Protein: 5g | Carbs: ~16g | Cals: ~110) | 16 | 110 |
 | 2026-04-06 | 20:05 -07:00 | Maria Dennis | Exercise | - | Exercise: 20 minutes walking (BG: 121 mg/dL Flat) | - | - |
 | 2026-04-06 | 19:00 -07:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 105 mg/dL Flat) | - | - |
 | 2026-04-06 | 18:54 -07:00 | Maria Dennis | Food | Dinner | Dinner: Half red apple [Cumulative Dinner: 40g carbs total] (BG: 104 mg/dL Flat) (Pred: 148-158 mg/dL @ 7:59 PM) (Protein: 0g | Carbs: ~20g | Cals: ~80) [photo](https://iili.io/B5zYgRe.jpg) | 20 | 80 |

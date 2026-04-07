@@ -1,8 +1,8 @@
 {
   "jobId": "cron-health-watchdog",
-  "lastRunAtMs": 1775530801023,
-  "lastFinishAtMs": 1775530801318,
-  "lastDurationMs": 295,
+  "lastRunAtMs": 1775533500757,
+  "lastFinishAtMs": 1775533500933,
+  "lastDurationMs": 176,
   "exitCode": 0,
   "lastStatus": "ok",
   "consecutiveErrors": 0,
