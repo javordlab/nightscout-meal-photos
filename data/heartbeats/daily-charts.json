@@ -1,0 +1,12 @@
+{
+  "jobId": "daily-charts",
+  "lastRunAtMs": 1775579820584,
+  "lastFinishAtMs": 1775579825913,
+  "lastDurationMs": 5329,
+  "exitCode": 0,
+  "lastStatus": "ok",
+  "consecutiveErrors": 0,
+  "signal": null,
+  "spawnError": null,
+  "outcome": null
+}

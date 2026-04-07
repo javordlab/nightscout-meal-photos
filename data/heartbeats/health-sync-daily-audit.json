@@ -1,8 +1,8 @@
 {
   "jobId": "health-sync-daily-audit",
-  "lastRunAtMs": 1775497087894,
-  "lastFinishAtMs": 1775497109708,
-  "lastDurationMs": 21814,
+  "lastRunAtMs": 1775580301229,
+  "lastFinishAtMs": 1775580303178,
+  "lastDurationMs": 1949,
   "exitCode": 0,
   "lastStatus": "ok",
   "consecutiveErrors": 0,
