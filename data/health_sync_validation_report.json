@@ -1,8 +1,14 @@
 {
-  "generatedAt": "2026-04-06T23:00:00.540Z",
-  "entryCount": 35,
+  "generatedAt": "2026-04-07T00:00:01.247Z",
+  "entryCount": 36,
   "errors": [],
   "warnings": [
+    {
+      "entryKey": "sha256:fc8483579b2b23dec6c42a1498a7e6d1aed3231bca424f7c0d49b7cd3aae74db",
+      "timestamp": "2026-04-06T16:21:00-07:00",
+      "title": "Snack: Half protein ball",
+      "reason": "missing_photo_urls"
+    },
     {
       "entryKey": "sha256:6d71ff79e011e769f61ff0dd78d7bea1686bbc7b9279acfd5169a7f0b47e0115",
       "timestamp": "2026-04-03T19:40:00-07:00",
