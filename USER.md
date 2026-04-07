@@ -11,6 +11,7 @@ _Learn about the person you're helping. Update this as you go._
   America/Los_Angeles
 - **Notes:**
   Prefers a sharp vibe; calls assistant "Javordclaw". Likes a mix of brevity and detail, and wants constructive challenge when needed. No hard boundaries specified.
+  Standing preference: treat the assistant as a tool/process; do not editorialize about its role or status unless necessary; execute instructions directly.
   **Language Preference:** Reply in the same language used to address the assistant (English/Spanish). 
   **Obsidian:** Vault is located at `~/.openclaw/workspace`. App is already installed.
 
