@@ -1,12 +1,23 @@
 [
   {
-    "id": "33b85ec7-0668-8113-8245-c02e438cbc64",
-    "title": "Lunch: Kale salad with green grapes, avocado, bean sprouts, hemp hearts, and red pepper flakes (BG: 103 mg/dL Flat) (Pred: 130-140 mg/dL @ 3:36 PM) (Protein: 11g | Carbs: ~35g | Cals: ~350)",
+    "id": "33b85ec7-0668-812e-a1ff-ebc1871e3610",
+    "title": "Lunch: Protein ball (prunes, peanut butter, hemp hearts, flaxseed, dark chocolate coating, oatmeal) [Cumulative Lunch: 46g carbs total] (BG: 105 mg/dL Flat) (Protein: 5g) (Pred: 143-153 mg/dL @ 3:36 PM)",
+    "type": "Lunch",
+    "date": "2026-04-07T13:56:00.000-07:00",
+    "photo": "https://iili.io/BY5Xub1.jpg",
+    "carbs": 11,
+    "cals": 130,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "33b85ec7-0668-81b3-9720-df6bca8bf1d9",
+    "title": "Lunch: Kale salad with green grapes, bean sprouts, hemp hearts, and red pepper flakes (BG: 103 mg/dL Flat) (Pred: 128-138 mg/dL @ 3:36 PM) (Protein: 9g | Carbs: ~35g | Cals: ~270)",
     "type": "Lunch",
     "date": "2026-04-07T13:43:00.000-07:00",
     "photo": "https://iili.io/BYAQZe1.jpg",
     "carbs": 35,
-    "cals": 350,
+    "cals": 270,
     "delta": null,
     "peak": null
   },
@@ -1298,7 +1309,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-8187-81c1-c077508fe618",
+    "id": "33b85ec7-0668-8179-b1fd-e73708855a0d",
     "title": "Lunch: Fried rice with pork and veggies, plus a few grapes (Pred: 300 mg/dL @ 3:15 PM) (BG: Unknown) (Protein: 28g | Carbs: ~52g | Cals: ~550)  (~52g carbs, ~550 kcal)",
     "type": "Lunch",
     "date": "2026-03-11T13:30:00.000-07:00",
