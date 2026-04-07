@@ -1,7 +1,18 @@
 [
   {
+    "id": "33b85ec7-0668-8194-9fb3-d3b847bcce9e",
+    "title": "Breakfast: Follow-up breakfast item [Cumulative Breakfast: 42g carbs total] (BG: 101 mg/dL Flat) (Protein: 5g) (Pred: 182-192 mg/dL @ 11:24 AM)",
+    "type": "Breakfast",
+    "date": "2026-04-07T09:57:00.000-07:00",
+    "photo": "https://iili.io/B7PEbqX.jpg",
+    "carbs": 10,
+    "cals": 100,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "33b85ec7-0668-8141-a153-df16d0d9fb9d",
-    "title": "Breakfast: Small orange, one medium tortilla with one egg and one slice of cheese (BG: 106 mg/dL Flat) (Pred: 178-188 mg/dL @ 11:15 AM) (Protein: 16g | Carbs: ~32g | Cals: ~340)",
+    "title": "Breakfast: Small orange, one medium tortilla with one egg and one slice of cheese (BG: 106 mg/dL Flat) (Protein: 16g) (Pred: 178-188 mg/dL @ 11:15 AM)",
     "type": "Breakfast",
     "date": "2026-04-07T09:48:00.000-07:00",
     "photo": "https://iili.io/B76XosS.jpg",
