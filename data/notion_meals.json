@@ -1,5 +1,16 @@
 [
   {
+    "id": "33c85ec7-0668-81c7-b81b-c0d62f2143b8",
+    "title": "Dinner: Cashews and mango pieces [Cumulative Dinner: 16g carbs total] (BG: 112 mg/dL Flat) (Protein: 5g) (Pred: 126-136 mg/dL @ 7:39 PM)",
+    "type": "Dinner",
+    "date": "2026-04-07T19:15:00.000-07:00",
+    "photo": "https://iili.io/BY46qhb.jpg",
+    "carbs": 12,
+    "cals": 160,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "33c85ec7-0668-81cd-a1d8-ce9320f5cb25",
     "title": "Dinner: Salmon and sliced heirloom tomatoes (BG: 98 mg/dL Flat) (Protein: 31g) (Pred: 100-110 mg/dL @ 7:39 PM)",
     "type": "Dinner",
