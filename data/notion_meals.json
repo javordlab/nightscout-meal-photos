@@ -1,5 +1,16 @@
 [
   {
+    "id": "33c85ec7-0668-8171-9fab-e48762416f29",
+    "title": "Breakfast: Arepa with ground beef patty and sliced tomatoes (BG: 107 mg/dL Flat) (Pred: 171-181 mg/dL @ 11:32 AM) (Protein: 23g | Carbs: ~29g | Cals: ~375)",
+    "type": "Breakfast",
+    "date": "2026-04-08T10:05:00.000-07:00",
+    "photo": "https://iili.io/BcAMwkN.jpg",
+    "carbs": 29,
+    "cals": 375,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "33c85ec7-0668-81c7-b81b-c0d62f2143b8",
     "title": "Dinner: Cashews and mango pieces [Cumulative Dinner: 16g carbs total] (BG: 112 mg/dL Flat) (Protein: 5g) (Pred: 126-136 mg/dL @ 7:39 PM)",
     "type": "Dinner",
