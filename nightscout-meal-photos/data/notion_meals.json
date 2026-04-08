@@ -1,5 +1,16 @@
 [
   {
+    "id": "33c85ec7-0668-81cd-a1d8-ce9320f5cb25",
+    "title": "Dinner: Sautéed mushrooms with onion, wilted spinach, and chickpeas (BG: 98 mg/dL Flat) (Protein: 19g) (Pred: 145-155 mg/dL @ 7:39 PM)",
+    "type": "Dinner",
+    "date": "2026-04-07T18:23:00.000-07:00",
+    "photo": "https://iili.io/BYg3sI4.jpg",
+    "carbs": 45,
+    "cals": 380,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "33b85ec7-0668-812e-a1ff-ebc1871e3610",
     "title": "Lunch: Protein ball (prunes, peanut butter, hemp hearts, flaxseed, dark chocolate coating, oatmeal) [Cumulative Lunch: 46g carbs total] (BG: 105 mg/dL Flat) (Protein: 5g) (Pred: 143-153 mg/dL @ 3:36 PM)",
     "type": "Lunch",
@@ -7,8 +18,8 @@
     "photo": "https://iili.io/BY5Xub1.jpg",
     "carbs": 11,
     "cals": 130,
-    "delta": null,
-    "peak": null
+    "delta": 28,
+    "peak": 133
   },
   {
     "id": "33b85ec7-0668-81b3-9720-df6bca8bf1d9",
@@ -18,8 +29,8 @@
     "photo": "https://iili.io/BYAQZe1.jpg",
     "carbs": 35,
     "cals": 270,
-    "delta": null,
-    "peak": null
+    "delta": 30,
+    "peak": 133
   },
   {
     "id": "33b85ec7-0668-8194-9fb3-d3b847bcce9e",
