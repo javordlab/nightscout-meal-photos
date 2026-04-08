@@ -1,5 +1,16 @@
 [
   {
+    "id": "33c85ec7-0668-81e6-a195-d3f4e2ed1709",
+    "title": "Lunch: Stewed vegetables with 1 egg + green grapes (~18) (BG: 82 mg/dL Flat) (Pred: 108-118 mg/dL @ 4:08 PM) (Protein: 9g | Carbs: ~36g | Cals: ~223)",
+    "type": "Lunch",
+    "date": "2026-04-08T14:15:00.000-07:00",
+    "photo": "https://iili.io/Bcsi6np.jpg",
+    "carbs": 36,
+    "cals": 223,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "33c85ec7-0668-8171-9fab-e48762416f29",
     "title": "Breakfast: Arepa with ground beef patty and sliced tomatoes (BG: 107 mg/dL Flat) (Protein: 23g) (Pred: 171-181 mg/dL @ 11:32 AM)",
     "type": "Breakfast",
@@ -7,8 +18,8 @@
     "photo": "https://iili.io/BcAMwkN.jpg",
     "carbs": 29,
     "cals": 375,
-    "delta": null,
-    "peak": null
+    "delta": 76,
+    "peak": 183
   },
   {
     "id": "33c85ec7-0668-81c7-b81b-c0d62f2143b8",
