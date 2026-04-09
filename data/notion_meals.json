@@ -1,5 +1,16 @@
 [
   {
+    "id": "33d85ec7-0668-81b9-80dc-c64c132d8981",
+    "title": "Breakfast: 2 slices toast with butter, yogurt with walnuts, diced papaya, coffee (BG: 104 mg/dL Flat) (Pred: 171-181 mg/dL @ 10:51 AM) (Protein: 19g | Carbs: ~51g | Cals: ~367)",
+    "type": "Breakfast",
+    "date": "2026-04-09T09:24:00.000-07:00",
+    "photo": "https://iili.io/B08LVoP.jpg",
+    "carbs": 51,
+    "cals": 367,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "33d85ec7-0668-815e-a0ad-d0c6eee5015c",
     "title": "Dinner: 1 square dark chocolate, small raisins/dried fruit, small walnuts [Cumulative Dinner: ~67g carbs total] (BG: 137 mg/dL Flat) (Protein: 3g) (Pred: 166-176 mg/dL @ 8:31 PM)",
     "type": "Dinner",
