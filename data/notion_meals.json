@@ -45,14 +45,14 @@
   },
   {
     "id": "33d85ec7-0668-81d7-b008-f37fbf9ef9ca",
-    "title": "Breakfast: Small arepa with sausage patty and papaya (BG: 107 mg/dL Flat) (Protein: 15g) (Pred: 176-186 mg/dL @ 11:32 AM)",
+    "title": "Breakfast: Small arepa with sausage patty and papaya (BG: 107 mg/dL Flat) (Pred: 176-186 mg/dL @ 11:32 AM) (Protein: 15g | Carbs: ~36g | Cals: ~380)",
     "type": "Breakfast",
     "date": "2026-04-08T10:05:00.000-07:00",
     "photo": "https://iili.io/BcAMwkN.jpg",
     "carbs": 36,
     "cals": 380,
-    "delta": null,
-    "peak": null
+    "delta": 76,
+    "peak": 183
   },
   {
     "id": "33c85ec7-0668-81c7-b81b-c0d62f2143b8",
@@ -627,7 +627,7 @@
     "peak": 153
   },
   {
-    "id": "33b85ec7-0668-81d2-aad7-f13fb861d6d4",
+    "id": "33d85ec7-0668-8114-96a3-dcc7cea78190",
     "title": "Dinner: 1 glass nigori sake (~150ml) with dinner (BG: 113 mg/dL Flat) (Pred: 165-185 mg/dL @ 8:33 PM) (Protein: 1g | Carbs: ~8g | Cals: ~170)",
     "type": "Dinner",
     "date": "2026-03-27T19:04:00.000-07:00",
@@ -968,7 +968,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-81d2-86b5-e21bf87e9fbc",
+    "id": "33d85ec7-0668-810f-a772-f2ec7c529726",
     "title": "Lunch: Smoked salmon on bread with avocado and apple wedges (BG: 140 mg/dL ➡️) (Peak: 165 mg/dL @ 3:19 PM) (Protein: 17g | Carbs: ~33g | Cals: ~300)  (Pred: 206-226 mg/dL @ 2:56 PM)",
     "type": "Lunch",
     "date": "2026-03-21T13:21:00.000-07:00",
@@ -979,7 +979,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-8103-b326-e89c58e8d7a9",
+    "id": "33d85ec7-0668-81f1-9a34-f8f091f5c5de",
     "title": "Breakfast: 2 boiled eggs, 1 slice white bread, 1 small guava (BG: 117 mg/dL ➡️) (Peak: 161 mg/dL @ 10:59 AM) (Protein: 16g | Carbs: ~21g | Cals: ~245)  (Pred: 167-187 mg/dL @ 11:38 AM)",
     "type": "Breakfast",
     "date": "2026-03-21T10:03:00.000-07:00",
@@ -1001,7 +1001,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-8121-bcd9-e63a5740f925",
+    "id": "33d85ec7-0668-811a-9434-ea103fb0dc86",
     "title": "Dinner: Glass of milk (whole milk, ~8oz) (BG: Unknown) (Protein: 8g | Carbs: ~12g | Cals: ~150)  (Pred: 138-158 mg/dL @ 8:20 PM)",
     "type": "Dinner",
     "date": "2026-03-20T18:45:00.000-07:00",
@@ -1089,7 +1089,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-81b0-bbc5-e6688309655c",
+    "id": "33d85ec7-0668-8156-bc63-ed48706f02e1",
     "title": "Snack: 2 dried dragon fruit slices (BG: 152 mg/dL Flat) (Pred: 173 mg/dL @ 3:52 PM) (Protein: 6g | Carbs: ~15g | Cals: ~80)",
     "type": "Snack",
     "date": "2026-03-19T14:07:00.000-07:00",
@@ -1100,7 +1100,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-8170-87be-d9ae6ebec046",
+    "id": "33d85ec7-0668-81fb-b8d4-f24c122c8e76",
     "title": "Lunch: 2 pork belly bao buns, green grapes, green tea (BG: 154 mg/dL Flat) (Protein: 28g | Carbs: ~70g | Cals: ~570)  (Pred: 180-200 mg/dL @ 3:30-4:00 PM; lowered due to 3hr pre-meal gardening)",
     "type": "Lunch",
     "date": "2026-03-19T13:55:00.000-07:00",
@@ -1111,7 +1111,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-81cc-aa13-e0a374d0068d",
+    "id": "33d85ec7-0668-81e9-a851-d70816bd0e4b",
     "title": "Breakfast: Ciabatta bread (~60g), avocado (~75g), prosciutto (~15g, 1 slice), milk (~1 cup) (BG: 102 mg/dL Flat) (Pred: 140-155 mg/dL @ 11:15-11:45 AM) (Protein: 26g | Carbs: ~48g | Cals: ~360)",
     "type": "Breakfast",
     "date": "2026-03-19T09:48:00.000-07:00",
@@ -1122,7 +1122,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-81ed-a029-e73cc694f9bf",
+    "id": "33d85ec7-0668-8144-a6ee-c8460cde018e",
     "title": "Dinner: 3 steamed dumplings + octopus and potato stew with carrots + loquats, grapes, and one strawberry (BG: 144 mg/dL ↗️) (Pred: 300 mg/dL @ 9:05 PM) (Protein: 24g | Carbs: ~72g | Cals: ~518)",
     "type": "Dinner",
     "date": "2026-03-18T19:20:00.000-07:00",
@@ -1133,7 +1133,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-8102-9e82-e216e6b8d727",
+    "id": "33d85ec7-0668-813c-9311-f52db3ec4222",
     "title": "Lunch: Cured meat sandwich on baguette with spread and a small guava (BG: 148 mg/dL Flat) (Protein: 28g | Carbs: ~45g | Cals: ~375)  (Pred: 278 mg/dL @ 3:15 PM)",
     "type": "Lunch",
     "date": "2026-03-18T13:30:00.000-07:00",
@@ -1144,7 +1144,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-8185-a767-cd2c96328842",
+    "id": "33d85ec7-0668-815d-85f6-eceaa76a4321",
     "title": "Dinner: Poached eggs on a vegetable stew (eggplant, carrots, dill) with pearl barley, rustic bread with brie, and Nigori sake (BG: 93 mg/dL Flat) (Pred: 300 mg/dL @ 8:55 PM) (Protein: 32g | Carbs: ~65g | Cals: ~650)",
     "type": "Dinner",
     "date": "2026-03-17T19:10:00.000-07:00",
@@ -1155,7 +1155,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-816e-acb8-edba9f4b947b",
+    "id": "33d85ec7-0668-817c-ba4a-d9fd339abdb8",
     "title": "Snack: One small guava (BG: 110 mg/dL Flat) (Protein: 6g | Carbs: ~7g | Cals: ~35)  (Pred: 145 mg/dL @ 8:30 PM)",
     "type": "Snack",
     "date": "2026-03-16T18:45:00.000-07:00",
@@ -1166,7 +1166,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-811f-8ffc-e1c6e23dc696",
+    "id": "33d85ec7-0668-81fa-a60e-c09b6ad449ad",
     "title": "Dinner: Roasted pork with glaze, pearl barley, and broccoli, plus rustic bread with brie (BG: 106 mg/dL Flat) (Protein: 32g | Carbs: ~47g | Cals: ~585)   (Pred: 285 mg/dL @ 8:15 PM)",
     "type": "Dinner",
     "date": "2026-03-16T18:30:00.000-07:00",
@@ -1177,7 +1177,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-8148-96e1-f3e475bff914",
+    "id": "33d85ec7-0668-810b-8328-da0d6fcfd86d",
     "title": "Lunch: Open-faced pastrami sandwich, mixed nuts, cheese balls, and 1/2 orange (BG: 134 mg/dL Flat) (Protein: 32g | Carbs: ~44g | Cals: ~775)    (Pred: 274 mg/dL @ 2:50 PM)",
     "type": "Lunch",
     "date": "2026-03-16T13:05:00.000-07:00",
@@ -1188,7 +1188,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-8131-8aff-c6551eee5230",
+    "id": "33d85ec7-0668-8156-984b-ce63b77421e3",
     "title": "Breakfast: 2 soft-boiled eggs, seeded toast triangles (1 slice), half a kiwi, and black coffee (BG: 123 mg/dL Flat) (Protein: 22g | Carbs: ~24g | Cals: ~288)  (Pred: 204 mg/dL @ 11:50 AM)",
     "type": "Breakfast",
     "date": "2026-03-16T10:05:00.000-07:00",
@@ -1199,7 +1199,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-81ed-89bc-eb4a4e15bf42",
+    "id": "33d85ec7-0668-81b5-9af9-dbe7dccc75bc",
     "title": "Dinner: 3 meatballs, purple potato, zucchini, half glass white wine, and brie cheese (BG: Unknown) (Protein: 36g | Carbs: ~35g | Cals: ~470)  (Pred: 243 mg/dL @ 8:30 PM)",
     "type": "Dinner",
     "date": "2026-03-15T18:45:00.000-07:00",
@@ -1210,7 +1210,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-8188-ae18-ffa27331f0c8",
+    "id": "33d85ec7-0668-810e-bf25-d1992c9d8b2c",
     "title": "Dessert: Small slice of dark chocolate cake with whipped cream (BG: Unknown) (Protein: 2g | Carbs: ~22g | Cals: ~240)  (Pred: 197 mg/dL @ 2:50 PM)",
     "type": "Dessert",
     "date": "2026-03-15T13:04:00.000-07:00",
@@ -1221,7 +1221,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-813f-aee4-f496cd0417bc",
+    "id": "33d85ec7-0668-818d-bbab-d03051529eec",
     "title": "Lunch: Flour tortilla wrap with peppers and meat, and 4 orange wedges (BG: 140 mg/dL Flat) (Protein: 28g | Carbs: ~45g | Cals: ~365)  (Pred: 278 mg/dL @ 2:30 PM)",
     "type": "Lunch",
     "date": "2026-03-15T12:45:00.000-07:00",
@@ -1232,7 +1232,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-815f-9292-de7d91b4f061",
+    "id": "33d85ec7-0668-81bc-b45b-c53699ad4e16",
     "title": "Breakfast: Seeded toast with 2 slices of prosciutto and 2 slices of tomato (BG: 130 mg/dL Flat) (Protein: 22g | Carbs: ~22g | Cals: ~250)  (Pred: 197 mg/dL @ 10:50 AM)",
     "type": "Breakfast",
     "date": "2026-03-15T09:05:00.000-07:00",
@@ -1243,7 +1243,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-81e7-93db-d551838d271f",
+    "id": "33d85ec7-0668-81de-8565-e7c118ceb8ab",
     "title": "Dessert: Very small slice of dark chocolate cake with whipped cream (BG: Unknown) (Protein: 2g | Carbs: ~28g | Cals: ~250)  (Pred: 218 mg/dL @ 9:30 PM)",
     "type": "Dessert",
     "date": "2026-03-14T19:45:00.000-07:00",
@@ -1254,7 +1254,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-817e-9c6e-d8ffa6387cdf",
+    "id": "33d85ec7-0668-8176-b424-efbfa48a7736",
     "title": "Dinner: Salmon with dill, small purple potato, sautéed cabbage/carrot slaw with broccoli, and a slice of rustic bread (BG: Unknown) (Protein: 32g | Carbs: ~62g | Cals: ~565)   (Pred: 300 mg/dL @ 8:30 PM)",
     "type": "Dinner",
     "date": "2026-03-14T18:45:00.000-07:00",
@@ -1265,7 +1265,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-817c-918f-e917e64e81b2",
+    "id": "33d85ec7-0668-8187-bdbd-dd20ce3faaca",
     "title": "Lunch: Open-faced pastrami sandwich on seeded bread, carrot sticks, orange slices, and 10 green grapes (BG: Unknown) (Protein: 28g | Carbs: ~43g | Cals: ~325)  (Pred: 271 mg/dL @ 4:00 PM)",
     "type": "Lunch",
     "date": "2026-03-14T14:15:00.000-07:00",
@@ -1276,7 +1276,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-811f-b57f-f0b5d32511ec",
+    "id": "33d85ec7-0668-8135-96be-e1d1079bda36",
     "title": "Breakfast: 2 fried eggs on 1 slice of toast, half a kiwi, and black coffee (BG: Unknown) (Protein: 22g | Carbs: ~22g | Cals: ~260)  (Pred: 197 mg/dL @ 11:40 AM)",
     "type": "Breakfast",
     "date": "2026-03-14T09:55:00.000-07:00",
@@ -1287,7 +1287,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-812f-9dc5-f1970c68fc31",
+    "id": "33d85ec7-0668-8112-a97b-feb4de9c7b91",
     "title": "Dinner: Burrito (pulled meat, cabbage/carrots, white wine), sweet roll (walnut), and a slice of bread (Pred: 300 mg/dL @ 8:34 PM) (BG: Unknown) (Protein: 30g | Carbs: ~80g | Cals: ~930)",
     "type": "Dinner",
     "date": "2026-03-13T18:49:00.000-07:00",
@@ -1298,7 +1298,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-812c-89bc-de262b6f1d50",
+    "id": "33d85ec7-0668-81ae-bcb4-ed560d15cc89",
     "title": "Lunch: Fried rice, prosciutto, and a sliced orange (Pred: 271 mg/dL @ 3:29 PM) (BG: Unknown) (Protein: 28g | Carbs: ~43g | Cals: ~310)",
     "type": "Lunch",
     "date": "2026-03-13T13:44:00.000-07:00",
@@ -1309,7 +1309,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-8128-a1a8-cb17404542c8",
+    "id": "33d85ec7-0668-8187-9a8b-fd2d28791736",
     "title": "Snack: Mixed nuts and cheese balls (Pred: 155 mg/dL @ 2:32 PM) (BG: Unknown) (Protein: 10g | Carbs: ~10g | Cals: ~250)",
     "type": "Snack",
     "date": "2026-03-13T12:47:00.000-07:00",
@@ -1320,7 +1320,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-8110-9b81-cfdf8d28e1f6",
+    "id": "33d85ec7-0668-81e4-9282-e403d3c5bf58",
     "title": "Breakfast: Open-faced corned beef and cheese sandwich with half a kiwi and black coffee (Pred: 201 mg/dL @ 12:02 PM) (BG: Unknown) (Protein: 26g | Carbs: ~23g | Cals: ~370)",
     "type": "Breakfast",
     "date": "2026-03-13T10:17:00.000-07:00",
@@ -1331,7 +1331,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-813f-b7b5-fb175f882100",
+    "id": "33d85ec7-0668-8179-8b38-feacb35b6ea3",
     "title": "Dessert: Yogurt with walnuts and honey/jam (Pred: 208 mg/dL @ 8:45 PM) (BG: Unknown) (Protein: 6g | Carbs: ~25g | Cals: ~230)",
     "type": "Dessert",
     "date": "2026-03-12T19:00:00.000-07:00",
@@ -1342,7 +1342,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-81a6-85c3-f3792005e46a",
+    "id": "33d85ec7-0668-81f7-acb9-ece987912f11",
     "title": "Dinner: Leftover lunch (shrimp/fish taco fillings, roasted potatoes) and one orange (Pred: 300 mg/dL @ 8:30 PM) (BG: Unknown) (Protein: 32g | Carbs: ~55g | Cals: ~380)",
     "type": "Dinner",
     "date": "2026-03-12T18:45:00.000-07:00",
@@ -1353,7 +1353,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-81fb-b203-fd387ab41478",
+    "id": "33d85ec7-0668-81bb-b851-df26bf9fa247",
     "title": "Lunch: 1.5 shrimp/fish tacos and ~60% of roasted potatoes (Leftovers deducted) (Pred: 278 mg/dL @ 3:29 PM) (BG: Unknown) (Protein: 28g | Carbs: ~45g | Cals: ~360)",
     "type": "Lunch",
     "date": "2026-03-12T13:44:00.000-07:00",
@@ -1364,7 +1364,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-8167-871c-c1a5cc1586d8",
+    "id": "33d85ec7-0668-81a1-9f37-f660c8a21666",
     "title": "Breakfast: Flour tortilla with cheese, pastrami, and half a sliced apple (Pred: 218 mg/dL @ 12:08 PM) (BG: Unknown) (Protein: 26g | Carbs: ~28g | Cals: ~390)",
     "type": "Breakfast",
     "date": "2026-03-12T10:23:00.000-07:00",
@@ -1375,7 +1375,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-8105-8549-eafe220b3dac",
+    "id": "33d85ec7-0668-81a6-b23b-c410e196978d",
     "title": "Dinner: Spanish tortilla (egg/potato) wedge, sautéed cabbage/carrots, bread with butter, and 2 slices prosciutto (Pred: 260 mg/dL @ 8:43 PM) (BG: Unknown) (Protein: 32g | Carbs: ~40g | Cals: ~600)",
     "type": "Dinner",
     "date": "2026-03-11T18:58:00.000-07:00",
@@ -1386,7 +1386,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-8179-b1fd-e73708855a0d",
+    "id": "33d85ec7-0668-8190-a2da-c5ead2edd3fd",
     "title": "Lunch: Fried rice with pork and veggies, plus a few grapes (Pred: 300 mg/dL @ 3:15 PM) (BG: Unknown) (Protein: 28g | Carbs: ~52g | Cals: ~550)  (~52g carbs, ~550 kcal)",
     "type": "Lunch",
     "date": "2026-03-11T13:30:00.000-07:00",
@@ -1397,7 +1397,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-8164-ab44-e0475bcd3ab3",
+    "id": "33d85ec7-0668-81b8-9ed8-d1e2320f3642",
     "title": "Snack: Small handful of goji berries (Pred: 162 mg/dL @ 12:07 PM) (Protein: 6g | Carbs: ~12g | Cals: ~110)",
     "type": "Snack",
     "date": "2026-03-10T10:22:00.000-07:00",
@@ -1463,7 +1463,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-81ab-a835-d6cde89b3321",
+    "id": "33d85ec7-0668-811a-b2f5-f209b85401d6",
     "title": "Breakfast: Scallion pancake with cheese, fried egg, kiwi, and black coffee (Pred: 271 mg/dL @ 12:09 PM) (Protein: 24g | Carbs: ~43g | Cals: ~410)",
     "type": "Breakfast",
     "date": "2026-03-09T10:24:00.000-07:00",
@@ -1474,7 +1474,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-813f-be90-f3bce5f8a00c",
+    "id": "33d85ec7-0668-81f2-846c-e44191ea2c62",
     "title": "Chocolate cake with whipped cream and grapes (Pred: 183 mg/dL @ 9:24 PM) (Protein: 4g | Carbs: ~18g | Cals: ~200)",
     "type": "Snack",
     "date": "2026-03-08T19:39:00.000-07:00",
@@ -1485,7 +1485,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-81fa-a19d-c74868bebd23",
+    "id": "33d85ec7-0668-8144-bd4c-ede3799ab69f",
     "title": "Lentil stew with half a sausage, potatoes, and sauteed greens (Pred: 300 mg/dL @ 9:00 PM) (Protein: 14g | Carbs: ~58g | Cals: ~600)",
     "type": "Snack",
     "date": "2026-03-08T19:15:00.000-07:00",
@@ -1496,7 +1496,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-8126-809d-cf6bbd319e0a",
+    "id": "33d85ec7-0668-81a5-b469-fd0f4187f730",
     "title": "Sliced prosciutto (Protein: 14g | Carbs: ~0g | Cals: ~100)  (Pred: 110-130 mg/dL @ 7:15 PM)",
     "type": "Snack",
     "date": "2026-03-08T17:40:00.000-07:00",
@@ -1507,7 +1507,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-8176-9993-f7a531edeade",
+    "id": "33d85ec7-0668-815e-87b5-c48ad06ba943",
     "title": "Mixed nuts, goji berries, and cheese balls (Pred: 148 mg/dL @ 6:25 PM) (Protein: 10g | Carbs: ~8g | Cals: ~200)",
     "type": "Snack",
     "date": "2026-03-08T16:40:00.000-07:00",
