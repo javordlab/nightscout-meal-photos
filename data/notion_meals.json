@@ -44,15 +44,15 @@
     "peak": 131
   },
   {
-    "id": "33c85ec7-0668-8171-9fab-e48762416f29",
-    "title": "Breakfast: Small arepa with sausage patty and papaya (BG: 107 mg/dL Flat) (Protein: 15g) (Pred: 176-186 mg/dL @ 11:32 AM)",
+    "id": "33d85ec7-0668-81d7-b008-f37fbf9ef9ca",
+    "title": "Breakfast: Small arepa with sausage patty and papaya (BG: 107 mg/dL Flat) (Pred: 176-186 mg/dL @ 11:32 AM) (Protein: 15g | Carbs: ~36g | Cals: ~380)",
     "type": "Breakfast",
     "date": "2026-04-08T10:05:00.000-07:00",
     "photo": "https://iili.io/BcAMwkN.jpg",
     "carbs": 36,
     "cals": 380,
-    "delta": 76,
-    "peak": 183
+    "delta": null,
+    "peak": null
   },
   {
     "id": "33c85ec7-0668-81c7-b81b-c0d62f2143b8",
