@@ -1,5 +1,16 @@
 [
   {
+    "id": "33d85ec7-0668-815e-a0ad-d0c6eee5015c",
+    "title": "Dinner: 1 square dark chocolate, small raisins/dried fruit, small walnuts [Cumulative Dinner: ~67g carbs total] (BG: 137 mg/dL Flat) (Pred: 166-176 mg/dL @ 8:31 PM) (Protein: 3g | Carbs: ~22g | Cals: ~198)",
+    "type": "Dinner",
+    "date": "2026-04-08T20:11:00.000-07:00",
+    "photo": "https://iili.io/BlzXp07.jpg",
+    "carbs": 22,
+    "cals": 198,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "33d85ec7-0668-81cc-bbdc-df459c4fa8d3",
     "title": "Dinner: Seafood paella with mussels (BG: 119 mg/dL Flat) (Protein: 15g) (Pred: 166-176 mg/dL @ 8:31 PM)",
     "type": "Dinner",
@@ -18,8 +29,8 @@
     "photo": "https://iili.io/Bcsi6np.jpg",
     "carbs": 36,
     "cals": 223,
-    "delta": null,
-    "peak": null
+    "delta": 49,
+    "peak": 131
   },
   {
     "id": "33c85ec7-0668-8171-9fab-e48762416f29",
