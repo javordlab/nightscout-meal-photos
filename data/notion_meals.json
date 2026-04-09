@@ -1,27 +1,5 @@
 [
   {
-    "id": "33d85ec7-0668-817e-a14f-e0ce2161219a",
-    "title": "Breakfast: Fried egg on toast with prosciutto and orange wedges [Cumulative Breakfast: ~135g carbs total] [Coach: The egg and prosciutto add great protein here. But combined across today's three breakfast items you're at ~135g carbs total — a heavy load for one meal window. Next time choose one starch instead of stacking bread, stew, and toast together to keep the glucose peak more manageable.] (BG: 122 mg/dL Flat) (Protein: 18g) (Pred: 238-248 mg/dL @ 10:51 AM)",
-    "type": "Breakfast",
-    "date": "2026-04-09T10:25:00.000-07:00",
-    "photo": "https://iili.io/B0PepX1.jpg",
-    "carbs": 41,
-    "cals": 325,
-    "delta": null,
-    "peak": null
-  },
-  {
-    "id": "33d85ec7-0668-8153-bdeb-e5135e7673de",
-    "title": "Breakfast: Cocido stew with braised pork, chickpeas, and cabbage, with bread roll [Cumulative Breakfast: ~94g carbs total] [Coach: Good protein boost from the pork and chickpeas — combined with your earlier breakfast you're getting ~52g protein this morning, well done. The chickpeas add fiber that helps slow the spike. With ~94g carbs total at breakfast, skipping the bread roll next time would ease the glucose load noticeably.] (BG: 113 mg/dL Flat) (Protein: 33g) (Pred: 205-215 mg/dL @ 10:51 AM)",
-    "type": "Breakfast",
-    "date": "2026-04-09T10:18:00.000-07:00",
-    "photo": "https://iili.io/B068fQ1.jpg",
-    "carbs": 43,
-    "cals": 435,
-    "delta": null,
-    "peak": null
-  },
-  {
     "id": "33d85ec7-0668-81b9-80dc-c64c132d8981",
     "title": "Breakfast: 2 slices toast with butter, yogurt with walnuts, diced papaya, coffee (BG: 104 mg/dL Flat) (Protein: 19g) (Pred: 171-181 mg/dL @ 10:51 AM)",
     "type": "Breakfast",
@@ -67,7 +45,7 @@
   },
   {
     "id": "33d85ec7-0668-81d7-b008-f37fbf9ef9ca",
-    "title": "Breakfast: Small arepa with sausage patty and papaya (BG: 107 mg/dL Flat) (Pred: 176-186 mg/dL @ 11:32 AM) (Protein: 15g | Carbs: ~36g | Cals: ~380)",
+    "title": "Breakfast: Small arepa with sausage patty and papaya (BG: 107 mg/dL Flat) (Protein: 15g) (Pred: 176-186 mg/dL @ 11:32 AM)",
     "type": "Breakfast",
     "date": "2026-04-08T10:05:00.000-07:00",
     "photo": "https://iili.io/BcAMwkN.jpg",
