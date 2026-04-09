@@ -1,7 +1,7 @@
 [
   {
     "id": "33d85ec7-0668-8108-bfbf-dea805e3e97e",
-    "title": "Lunch: Kale salad with 2 hard-boiled eggs, hemp hearts, 3 walnuts, goji berries, dressing (BG: 114 mg/dL Flat) (Protein: 22g) (Pred: 120-130 mg/dL @ 2:28 PM)",
+    "title": "Lunch: Kale salad with 2 hard-boiled eggs, hemp hearts, 3 walnuts, goji berries, dressing [Coach: Beautiful lunch, Maria — kale with two eggs hits exactly what we want at midday: leafy greens plus 22g of lean protein. Hemp hearts and walnuts add great healthy fats and the goji berries bring a touch of natural sweetness without spiking carbs. Lovely balance.] (BG: 114 mg/dL Flat) (Protein: 22g) (Pred: 120-130 mg/dL @ 2:28 PM)",
     "type": "Lunch",
     "date": "2026-04-09T12:35:00.000-07:00",
     "photo": "https://iili.io/B1fvvrN.jpg",
@@ -56,14 +56,14 @@
   },
   {
     "id": "33d85ec7-0668-8126-af41-cefc430dc055",
-    "title": "Breakfast: Small arepa with sausage patty and papaya (BG: 107 mg/dL Flat) (Pred: 176-186 mg/dL @ 11:32 AM) (Protein: 15g | Carbs: ~36g | Cals: ~380)",
+    "title": "Breakfast: Small arepa with sausage patty and papaya (BG: 107 mg/dL Flat) (Protein: 15g) (Pred: 176-186 mg/dL @ 11:32 AM)",
     "type": "Breakfast",
     "date": "2026-04-08T10:05:00.000-07:00",
     "photo": "https://iili.io/BcAMwkN.jpg",
     "carbs": 36,
     "cals": 380,
-    "delta": null,
-    "peak": null
+    "delta": 76,
+    "peak": 183
   },
   {
     "id": "33c85ec7-0668-81c7-b81b-c0d62f2143b8",
