@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-10T10:50:02.943Z",
+  "lastUpdated": "2026-04-10T11:00:28.085Z",
   "tokenUsage": [
     {
       "platform": "Kimi (Ollama)",
@@ -21,170 +21,162 @@
     }
   ],
   "database": {
-    "glucose": 12940,
-    "notion": 1213
+    "glucose": 12942,
+    "notion": 1214
   },
   "syncHistory": [
     {
       "date": "2026-03-12",
       "glucose": 4990,
-      "notion": 537
+      "notion": 538
     },
     {
       "date": "2026-03-13",
       "glucose": 5258,
-      "notion": 564
+      "notion": 565
     },
     {
       "date": "2026-03-14",
       "glucose": 5527,
-      "notion": 609
+      "notion": 610
     },
     {
       "date": "2026-03-15",
       "glucose": 5797,
-      "notion": 645
+      "notion": 646
     },
     {
       "date": "2026-03-16",
       "glucose": 6062,
-      "notion": 683
+      "notion": 684
     },
     {
       "date": "2026-03-17",
       "glucose": 6341,
-      "notion": 708
+      "notion": 709
     },
     {
       "date": "2026-03-18",
       "glucose": 6626,
-      "notion": 735
+      "notion": 736
     },
     {
       "date": "2026-03-19",
       "glucose": 6914,
-      "notion": 770
+      "notion": 771
     },
     {
       "date": "2026-03-20",
       "glucose": 7198,
-      "notion": 825
+      "notion": 826
     },
     {
       "date": "2026-03-21",
       "glucose": 7486,
-      "notion": 863
+      "notion": 864
     },
     {
       "date": "2026-03-22",
       "glucose": 7772,
-      "notion": 883
+      "notion": 884
     },
     {
       "date": "2026-03-23",
       "glucose": 8059,
-      "notion": 898
+      "notion": 899
     },
     {
       "date": "2026-03-24",
       "glucose": 8341,
-      "notion": 934
+      "notion": 935
     },
     {
       "date": "2026-03-25",
       "glucose": 8623,
-      "notion": 955
+      "notion": 956
     },
     {
       "date": "2026-03-26",
       "glucose": 8879,
-      "notion": 987
+      "notion": 988
     },
     {
       "date": "2026-03-27",
       "glucose": 9151,
-      "notion": 1015
+      "notion": 1016
     },
     {
       "date": "2026-03-28",
       "glucose": 9410,
-      "notion": 1035
+      "notion": 1036
     },
     {
       "date": "2026-03-29",
       "glucose": 9691,
-      "notion": 1055
+      "notion": 1056
     },
     {
       "date": "2026-03-30",
       "glucose": 9958,
-      "notion": 1078
+      "notion": 1079
     },
     {
       "date": "2026-03-31",
       "glucose": 10242,
-      "notion": 1103
+      "notion": 1104
     },
     {
       "date": "2026-04-01",
       "glucose": 10530,
-      "notion": 1123
+      "notion": 1124
     },
     {
       "date": "2026-04-02",
       "glucose": 10816,
-      "notion": 1139
+      "notion": 1140
     },
     {
       "date": "2026-04-03",
       "glucose": 11099,
-      "notion": 1152
+      "notion": 1153
     },
     {
       "date": "2026-04-04",
       "glucose": 11379,
-      "notion": 1161
+      "notion": 1162
     },
     {
       "date": "2026-04-05",
       "glucose": 11666,
-      "notion": 1172
+      "notion": 1173
     },
     {
       "date": "2026-04-06",
       "glucose": 11951,
-      "notion": 1183
+      "notion": 1184
     },
     {
       "date": "2026-04-07",
       "glucose": 12238,
-      "notion": 1196
+      "notion": 1197
     },
     {
       "date": "2026-04-08",
       "glucose": 12524,
-      "notion": 1208
+      "notion": 1209
     },
     {
       "date": "2026-04-09",
       "glucose": 12812,
-      "notion": 1213
+      "notion": 1214
     },
     {
       "date": "2026-04-10",
-      "glucose": 12940,
-      "notion": 1213
+      "glucose": 12942,
+      "notion": 1214
     }
   ],
   "glucoseTrend": [
-    {
-      "t": "2026-03-11T03:54:31.000Z",
-      "v": 137
-    },
-    {
-      "t": "2026-03-11T03:59:31.000Z",
-      "v": 136
-    },
     {
       "t": "2026-03-11T04:04:30.000Z",
       "v": 133
@@ -34016,6 +34008,14 @@
     {
       "t": "2026-04-10T10:49:55.000Z",
       "v": 90
+    },
+    {
+      "t": "2026-04-10T10:54:55.000Z",
+      "v": 90
+    },
+    {
+      "t": "2026-04-10T10:59:55.000Z",
+      "v": 92
     }
   ],
   "backups": [
