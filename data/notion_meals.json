@@ -1,7 +1,7 @@
 [
   {
-    "id": "33e85ec7-0668-8192-a41c-f85e59829ea2",
-    "title": "Breakfast: Plain yogurt with papaya and hemp seeds + small baguette slice with peanut butter and reduced-sugar jam (BG: 103 mg/dL Flat) (Pred: 173-183 mg/dL @ 11:23 AM) (Protein: 20g | Carbs: ~37g | Cals: ~375) [Coach: Plain yogurt with papaya and hemp seeds is a great base — papaya is gentler than most fruits on blood sugar, and hemp seeds add protein and healthy fats. Peanut butter on the baguette slows carb absorption, and the reduced-sugar jam is a smart choice. Solid breakfast.]",
+    "id": "33e85ec7-0668-811e-992e-ff84e423ebe8",
+    "title": "Breakfast: Plain yogurt with papaya and hemp seeds + small baguette slice with peanut butter and reduced-sugar jam [Coach: Plain yogurt with papaya and hemp seeds is a great base — papaya is gentler than most fruits on blood sugar, and hemp seeds add protein and healthy fats. Peanut butter on the baguette slows carb absorption, and the reduced-sugar jam is a smart choice. Solid breakfast.] (BG: 103 mg/dL Flat) (Protein: 20g) (Pred: 173-183 mg/dL @ 11:23 AM)",
     "type": "Breakfast",
     "date": "2026-04-10T09:56:00.000-07:00",
     "photo": "https://iili.io/BGfBkva.jpg",
@@ -1485,7 +1485,7 @@
     "peak": null
   },
   {
-    "id": "33d85ec7-0668-8169-8af9-d690c4aaede7",
+    "id": "33e85ec7-0668-8143-8c3d-ca1d4040f074",
     "title": "Breakfast: Scallion pancake with cheese, fried egg, kiwi, and black coffee (Pred: 271 mg/dL @ 12:09 PM) (Protein: 24g | Carbs: ~43g | Cals: ~410)",
     "type": "Breakfast",
     "date": "2026-03-09T10:24:00.000-07:00",
@@ -1496,7 +1496,7 @@
     "peak": null
   },
   {
-    "id": "33d85ec7-0668-8171-adb9-c2227a276e6b",
+    "id": "33e85ec7-0668-81ef-bdda-f2e4b61d2a98",
     "title": "Chocolate cake with whipped cream and grapes (Pred: 183 mg/dL @ 9:24 PM) (Protein: 4g | Carbs: ~18g | Cals: ~200)",
     "type": "Snack",
     "date": "2026-03-08T19:39:00.000-07:00",
@@ -1507,7 +1507,7 @@
     "peak": null
   },
   {
-    "id": "33d85ec7-0668-812d-b692-e472ba3c489d",
+    "id": "33e85ec7-0668-8126-bd0d-d9ad8a4258d8",
     "title": "Lentil stew with half a sausage, potatoes, and sauteed greens (Pred: 300 mg/dL @ 9:00 PM) (Protein: 14g | Carbs: ~58g | Cals: ~600)",
     "type": "Snack",
     "date": "2026-03-08T19:15:00.000-07:00",
@@ -1518,7 +1518,7 @@
     "peak": null
   },
   {
-    "id": "33d85ec7-0668-8109-9a97-fda200392da3",
+    "id": "33e85ec7-0668-81dc-840f-d685eb37e6c5",
     "title": "Sliced prosciutto (Protein: 14g | Carbs: ~0g | Cals: ~100)  (Pred: 110-130 mg/dL @ 7:15 PM)",
     "type": "Snack",
     "date": "2026-03-08T17:40:00.000-07:00",
@@ -1529,7 +1529,7 @@
     "peak": null
   },
   {
-    "id": "33d85ec7-0668-81fb-92ec-c901282cd232",
+    "id": "33e85ec7-0668-81df-8e8c-db3f0a76b8b6",
     "title": "Mixed nuts, goji berries, and cheese balls (Pred: 148 mg/dL @ 6:25 PM) (Protein: 10g | Carbs: ~8g | Cals: ~200)",
     "type": "Snack",
     "date": "2026-03-08T16:40:00.000-07:00",
