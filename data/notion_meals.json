@@ -1,7 +1,7 @@
 [
   {
     "id": "33e85ec7-0668-81b1-b2ce-f753b4fdde73",
-    "title": "Lunch: Barley bowl with sautéed mushrooms, sliced avocado, and fried egg, small orange on the side (BG: 136 mg/dL Flat) (Pred: 166-176 mg/dL @ 2:32 PM) (Protein: 13g | Carbs: ~39g | Cals: ~344) [Coach: Barley is a great whole-grain choice — high fiber and lower GI than rice means a gradual rise. Mushrooms add flavor with almost no carbs. Protein is a bit light at ~13g — adding a second egg or some chicken next time would get you closer to the 20-30g target. Good bowl.]",
+    "title": "Lunch: Barley bowl with sautéed mushrooms, sliced avocado, and fried egg, small orange on the side [Coach: Barley is a great whole-grain choice — high fiber and lower GI than rice means a gradual rise. Mushrooms add flavor with almost no carbs. Protein is a bit light at ~13g — adding a second egg or some chicken next time would get you closer to the 20-30g target. Good bowl.] (BG: 136 mg/dL Flat) (Protein: 13g) (Pred: 166-176 mg/dL @ 2:32 PM)",
     "type": "Lunch",
     "date": "2026-04-10T12:39:00.000-07:00",
     "photo": "https://iili.io/BG0Uwua.jpg",
@@ -18,8 +18,8 @@
     "photo": "https://iili.io/BGfBkva.jpg",
     "carbs": 37,
     "cals": 375,
-    "delta": null,
-    "peak": null
+    "delta": 60,
+    "peak": 163
   },
   {
     "id": "33d85ec7-0668-8108-bfbf-dea805e3e97e",
@@ -78,7 +78,7 @@
   },
   {
     "id": "33e85ec7-0668-819e-be39-f69f77003ee8",
-    "title": "Breakfast: Small arepa with sausage patty and papaya (BG: 107 mg/dL Flat) (Pred: 176-186 mg/dL @ 11:32 AM) (Protein: 15g | Carbs: ~36g | Cals: ~380)",
+    "title": "Breakfast: Small arepa with sausage patty and papaya (BG: 107 mg/dL Flat) (Protein: 15g) (Pred: 176-186 mg/dL @ 11:32 AM)",
     "type": "Breakfast",
     "date": "2026-04-08T10:05:00.000-07:00",
     "photo": "https://iili.io/BcAMwkN.jpg",
