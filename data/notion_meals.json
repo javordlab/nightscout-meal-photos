@@ -1,5 +1,16 @@
 [
   {
+    "id": "33f85ec7-0668-812c-bd33-c3e9efd38bb6",
+    "title": "Lunch: Congee with fish/seafood and green onion, sautéed leafy greens, Chinese tea [Coach: Congee has a high glycemic index — the broken-down rice digests quickly despite moderate carbs, so watch the peak timing. The leafy greens are excellent for fiber. Protein is light at ~10g for lunch; a tea egg, fish fillet, or tofu added would round this out nicely.] (BG: 96 mg/dL Flat) (Protein: 10g) (Pred: 116-126 mg/dL @ 3:21 PM)",
+    "type": "Lunch",
+    "date": "2026-04-11T13:28:00.000-07:00",
+    "photo": "https://iili.io/BVssp3b.jpg",
+    "carbs": 31,
+    "cals": 200,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "33f85ec7-0668-81bf-a99d-ffbf230faac7",
     "title": "Breakfast: 2-egg omelette, slice of sourdough bread, orange wedges, small yogurt on the side [Coach: Nice balanced breakfast — eggs and yogurt together give you solid protein to anchor the meal. The bread and orange are moderate carb contributors but not excessive. Good variety and a strong start to the day.] (BG: 114 mg/dL Flat) (Protein: 20g) (Pred: 178-188 mg/dL @ 11:22 AM)",
     "type": "Breakfast",
@@ -12,7 +23,7 @@
   },
   {
     "id": "33f85ec7-0668-8175-a7d5-fe47e1927226",
-    "title": "Dessert: Papaya chunks and green grapes (~¾ cup papaya, 4 grapes) [Coach: Your BG is still at 155 from dinner, so this fruit adds to an elevated baseline �� the 10:30 PM predicted peak reflects that. Papaya is gentler than grapes on blood sugar, so the pairing is okay. A short evening walk would help bring that dinner peak down before bed.] (BG: 155 mg/dL Flat) (Protein: 1g) (Pred: 161-171 mg/dL @ 10:30 PM)",
+    "title": "Dessert: Papaya chunks and green grapes (~¾ cup papaya, 4 grapes) [Coach: Your BG is still at 155 from dinner, so this fruit adds to an elevated baseline — the 10:30 PM predicted peak reflects that. Papaya is gentler than grapes on blood sugar, so the pairing is okay. A short evening walk would help bring that dinner peak down before bed.] (BG: 155 mg/dL Flat) (Protein: 1g) (Pred: 161-171 mg/dL @ 10:30 PM)",
     "type": "Dessert",
     "date": "2026-04-10T20:48:00.000-07:00",
     "photo": "https://iili.io/BM20SV4.jpg",
