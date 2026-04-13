@@ -1,5 +1,16 @@
 [
   {
+    "id": "34185ec7-0668-8184-9f06-f45b7b22487b",
+    "title": "Lunch: 1 protein ball [Cumulative Lunch: ~52g carbs total] (BG: 109 mg/dL Flat) (Pred: 141-151 mg/dL @ 2:06 PM) (Protein: 4g | Carbs: ~11g | Cals: ~130) [Coach: A nice sweet finish to the barley bowl — just ~11g carbs and a bit more protein. Crossing into the 51+g cumulative bracket lowers the carb multiplier, keeping the predicted peak nearly unchanged from before. Well chosen.]",
+    "type": "Lunch",
+    "date": "2026-04-13T12:26:00.000-07:00",
+    "photo": "https://iili.io/BwivZ9S.jpg",
+    "carbs": 11,
+    "cals": 130,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "34185ec7-0668-8151-80c6-fecfb07e717f",
     "title": "Lunch: Barley bowl with stewed tomato and pepper veggies, 1 poached egg (BG: 116 mg/dL Flat) (Pred: 148-158 mg/dL @ 2:06 PM) (Protein: 13g | Carbs: ~41g | Cals: ~285) [Coach: Another barley bowl — consistently one of your best lunch choices. Barley's high fiber and the egg's protein make a solid base. Protein is a bit light at ~13g; a second egg or some sardines would bring you to the 20-30g target. Great repeat choice for blood sugar management.]",
     "type": "Lunch",
