@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-13T11:07:29.620Z",
+  "lastUpdated": "2026-04-13T11:20:02.257Z",
   "tokenUsage": [
     {
       "platform": "Kimi (Ollama)",
@@ -21,7 +21,7 @@
     }
   ],
   "database": {
-    "glucose": 13753,
+    "glucose": 13756,
     "notion": 1215
   },
   "syncHistory": [
@@ -172,23 +172,11 @@
     },
     {
       "date": "2026-04-13",
-      "glucose": 13753,
+      "glucose": 13756,
       "notion": 1215
     }
   ],
   "glucoseTrend": [
-    {
-      "t": "2026-03-14T04:09:23.000Z",
-      "v": 111
-    },
-    {
-      "t": "2026-03-14T04:14:31.000Z",
-      "v": 114
-    },
-    {
-      "t": "2026-03-14T04:18:23.000Z",
-      "v": 122
-    },
     {
       "t": "2026-03-14T04:29:24.000Z",
       "v": 116
@@ -33976,9 +33964,49 @@
     {
       "t": "2026-04-13T11:04:52.000Z",
       "v": 102
+    },
+    {
+      "t": "2026-04-13T11:08:54.000Z",
+      "v": 103
+    },
+    {
+      "t": "2026-04-13T11:13:53.000Z",
+      "v": 105
+    },
+    {
+      "t": "2026-04-13T11:19:52.000Z",
+      "v": 107
     }
   ],
   "backups": [
+    {
+      "filename": "health_ssot-2026-w16.sql.gz",
+      "type": "Weekly",
+      "size": "106.95 KB",
+      "created": "2026-04-13T11:20:00.955Z",
+      "path": "weekly/health_ssot-2026-w16.sql.gz"
+    },
+    {
+      "filename": "health_ssot-2026-04-13.sql.gz",
+      "type": "Daily",
+      "size": "106.95 KB",
+      "created": "2026-04-13T11:20:00.946Z",
+      "path": "daily/health_ssot-2026-04-13.sql.gz"
+    },
+    {
+      "filename": "2026-w16.sql.gz",
+      "type": "Weekly",
+      "size": "321.20 KB",
+      "created": "2026-04-13T11:20:00.904Z",
+      "path": "weekly/2026-w16.sql.gz"
+    },
+    {
+      "filename": "2026-04-13.sql.gz",
+      "type": "Daily",
+      "size": "321.20 KB",
+      "created": "2026-04-13T11:20:00.893Z",
+      "path": "daily/2026-04-13.sql.gz"
+    },
     {
       "filename": "health_ssot-2026-04-12.sql.gz",
       "type": "Daily",
