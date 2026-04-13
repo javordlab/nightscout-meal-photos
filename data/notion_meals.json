@@ -1,5 +1,16 @@
 [
   {
+    "id": "34185ec7-0668-8151-80c6-fecfb07e717f",
+    "title": "Lunch: Barley bowl with stewed tomato and pepper veggies, 1 poached egg (BG: 116 mg/dL Flat) (Pred: 148-158 mg/dL @ 2:06 PM) (Protein: 13g | Carbs: ~41g | Cals: ~285) [Coach: Another barley bowl — consistently one of your best lunch choices. Barley's high fiber and the egg's protein make a solid base. Protein is a bit light at ~13g; a second egg or some sardines would bring you to the 20-30g target. Great repeat choice for blood sugar management.]",
+    "type": "Lunch",
+    "date": "2026-04-13T12:13:00.000-07:00",
+    "photo": "https://iili.io/Bw6QBnI.jpg",
+    "carbs": 41,
+    "cals": 285,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "34185ec7-0668-81b8-a824-c417e2828603",
     "title": "Breakfast: Peanut butter toast with hemp hearts and low-sugar jam, cup of milk [Coach: Solid breakfast — peanut butter slows the toast carbs and hemp hearts add omega-3s and protein. Milk brings the total to ~20g protein — well done. Low-sugar jam is a smart choice. BG at 105 this morning confirms the orange last night didn't cause an overnight dip — good news.] (BG: 105 mg/dL Flat) (Protein: 20g) (Pred: 177-187 mg/dL @ 10:36 AM)",
     "type": "Breakfast",
@@ -34,7 +45,7 @@
   },
   {
     "id": "34085ec7-0668-8163-ae45-fc3550f9ff61",
-    "title": "Lunch: Stir-fried noodles, sautéed leafy greens, pork shumai, scallop dumpling, papaya on the side [Coach: Better protein picture with the shumai and scallop dumpling — brings you to ~17g which is respectable. The dim sum wrappers add some carbs but not excessively. Papaya is gentler than watermelon on blood sugar. Good variety with the greens rounding it all out.] (BG: 121 mg/dL Flat) (Protein: 17g) (Pred: 157-167 mg/dL @ 2:53 PM)",
+    "title": "Lunch: Stir-fried noodles, sautéed leafy greens, pork shumai, scallop dumpling, papaya on the side (BG: 121 mg/dL Flat) (Pred: 157-167 mg/dL @ 2:53 PM) (Protein: 17g | Carbs: ~44g | Cals: ~323) [Coach: Better protein picture with the shumai and scallop dumpling — brings you to ~17g which is respectable. The dim sum wrappers add some carbs but not excessively. Papaya is gentler than watermelon on blood sugar. Good variety with the greens rounding it all out.]",
     "type": "Lunch",
     "date": "2026-04-12T13:00:00.000-07:00",
     "photo": "https://iili.io/BhqvCzl.jpg",
