@@ -1,7 +1,18 @@
 [
   {
+    "id": "34285ec7-0668-8164-8957-c63208f15a1c",
+    "title": "Dinner: Caprese salad (tomato slices with burrata/fresh mozzarella) and bone-in braised meat (short rib or lamb chop with dark glaze) (BG: 101 mg/dL Flat) (Pred: 110-120 mg/dL @ 7:54 PM) (Protein: 32g | Carbs: ~8g | Cals: ~560) [Coach: An exceptional T2D dinner — the caprese brings tomato fiber and protein from the mozzarella with almost no carbs, and the braised meat delivers ~32g protein with essentially zero starch. Starting at 101 with only 8g total carbs, tonight's spike will be barely noticeable. One of your best-balanced dinners this week.]",
+    "type": "Dinner",
+    "date": "2026-04-13T18:38:00.000-07:00",
+    "photo": "https://iili.io/BNa9Chl.jpg",
+    "carbs": 8,
+    "cals": 560,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "34185ec7-0668-813c-ad28-f685b62bb0fd",
-    "title": "Lunch: 2 slices red dragon fruit [Cumulative Lunch: ~50g carbs total] [Coach: Red dragon fruit is rich in antioxidants and a hydrating finish to the barley bowl. The 2-slice portion keeps it light on calories. Staying in the ×1.2 carb bracket gives a slightly higher predicted peak than crossing into the 51+g range would have — something to keep in mind with fruit additions.] (BG: 109 mg/dL Flat) (Protein: 1g) (Pred: 159-169 mg/dL @ 2:06 PM)",
+    "title": "Lunch: 2 slices red dragon fruit [Cumulative Lunch: ~50g carbs total] (BG: 109 mg/dL Flat) (Pred: 159-169 mg/dL @ 2:06 PM) (Protein: 1g | Carbs: ~9g | Cals: ~40) [Coach: Red dragon fruit is rich in antioxidants and a hydrating finish to the barley bowl. The 2-slice portion keeps it light on calories. Staying in the ×1.2 carb bracket gives a slightly higher predicted peak than crossing into the 51+g range would have — something to keep in mind with fruit additions.]",
     "type": "Lunch",
     "date": "2026-04-13T12:26:00.000-07:00",
     "photo": "https://iili.io/BwivZ9S.jpg",
@@ -12,7 +23,7 @@
   },
   {
     "id": "34185ec7-0668-81bc-849d-f97a484b1f30",
-    "title": "Lunch: Barley bowl with stewed tomato and pepper veggies, 1 poached egg [Coach: Another barley bowl — consistently one of your best lunch choices. Barley's high fiber and the egg's protein make a solid base. Protein is a bit light at ~13g; a second egg or some sardines would bring you to the 20-30g target. Great repeat choice for blood sugar management.] (BG: 116 mg/dL Flat) (Protein: 13g) (Pred: 148-158 mg/dL @ 2:06 PM)",
+    "title": "Lunch: Barley bowl with stewed tomato and pepper veggies, 1 poached egg (BG: 116 mg/dL Flat) (Pred: 148-158 mg/dL @ 2:06 PM) (Protein: 13g | Carbs: ~41g | Cals: ~285) [Coach: Another barley bowl — consistently one of your best lunch choices. Barley's high fiber and the egg's protein make a solid base. Protein is a bit light at ~13g; a second egg or some sardines would bring you to the 20-30g target. Great repeat choice for blood sugar management.]",
     "type": "Lunch",
     "date": "2026-04-13T12:13:00.000-07:00",
     "photo": "https://iili.io/Bw6QBnI.jpg",
@@ -56,7 +67,7 @@
   },
   {
     "id": "34085ec7-0668-8163-ae45-fc3550f9ff61",
-    "title": "Lunch: Stir-fried noodles, sautéed leafy greens, pork shumai, scallop dumpling, papaya on the side [Coach: Better protein picture with the shumai and scallop dumpling — brings you to ~17g which is respectable. The dim sum wrappers add some carbs but not excessively. Papaya is gentler than watermelon on blood sugar. Good variety with the greens rounding it all out.] (BG: 121 mg/dL Flat) (Protein: 17g) (Pred: 157-167 mg/dL @ 2:53 PM)",
+    "title": "Lunch: Stir-fried noodles, sautéed leafy greens, pork shumai, scallop dumpling, papaya on the side (BG: 121 mg/dL Flat) (Pred: 157-167 mg/dL @ 2:53 PM) (Protein: 17g | Carbs: ~44g | Cals: ~323) [Coach: Better protein picture with the shumai and scallop dumpling — brings you to ~17g which is respectable. The dim sum wrappers add some carbs but not excessively. Papaya is gentler than watermelon on blood sugar. Good variety with the greens rounding it all out.]",
     "type": "Lunch",
     "date": "2026-04-12T13:00:00.000-07:00",
     "photo": "https://iili.io/BhqvCzl.jpg",
