@@ -1,7 +1,18 @@
 [
   {
+    "id": "34385ec7-0668-81fd-aabe-c6e562af80f4",
+    "title": "Lunch: Half corned beef/pastrami sandwich on toasted sourdough with pickled red cabbage, side salad of mixed greens, pickled red onion, and pumpkin seeds (BG: 141 mg/dL Flat) (Pred: 158-168 mg/dL @ 2:34 PM) (Protein: 16g | Carbs: ~26g | Cals: ~270) [Coach: Smart call eating only half — the corned beef has no carbs and good protein, sourdough fermentation slows digestion vs white bread, and the salad adds fiber and healthy fats. A well-managed lunch especially starting at 141.]",
+    "type": "Lunch",
+    "date": "2026-04-15T12:41:00.000-07:00",
+    "photo": "https://iili.io/Bv0fMQf.jpg",
+    "carbs": 26,
+    "cals": 270,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "34385ec7-0668-817e-a591-f178842cf634",
-    "title": "Breakfast: Baguette with Brie cheese [Coach: Baguette with Brie is a classic — the Brie's fat slows the refined flour carbs and adds good protein. At 38g carbs the predicted peak is on the higher side starting at 136; a post-breakfast walk would help bring it back down nicely.] (BG: 136 mg/dL Flat) (Protein: 14g) (Pred: 208-218 mg/dL @ 11:39 AM)",
+    "title": "Breakfast: Baguette with Brie cheese (BG: 136 mg/dL Flat) (Pred: 208-218 mg/dL @ 11:39 AM) (Protein: 14g | Carbs: ~38g | Cals: ~325) [Coach: Baguette with Brie is a classic — the Brie's fat slows the refined flour carbs and adds good protein. At 38g carbs the predicted peak is on the higher side starting at 136; a post-breakfast walk would help bring it back down nicely.]",
     "type": "Breakfast",
     "date": "2026-04-15T10:12:00.000-07:00",
     "photo": "https://iili.io/Bvqap8x.jpg",
@@ -12,7 +23,7 @@
   },
   {
     "id": "34385ec7-0668-8182-ab43-f809657128f4",
-    "title": "Dinner: Leftover homemade pappardelle Bolognese with shredded cheddar, braised pork rib, and dill pickle slices [Coach: Leftovers done right — the homemade pasta carries familiar carbs but ~44g of protein from the pork rib and Bolognese plus the fat from the cheese will slow absorption considerably. Pickles add a probiotic touch with virtually no sugar. Hearty and well-balanced.] (BG: 117 mg/dL Flat) (Protein: 44g) (Pred: 164-174 mg/dL @ 7:59 PM)",
+    "title": "Dinner: Leftover homemade pappardelle Bolognese with shredded cheddar, braised pork rib, and dill pickle slices (BG: 117 mg/dL Flat) (Pred: 164-174 mg/dL @ 7:59 PM) (Protein: 44g | Carbs: ~44g | Cals: ~675) [Coach: Leftovers done right — the homemade pasta carries familiar carbs but ~44g of protein from the pork rib and Bolognese plus the fat from the cheese will slow absorption considerably. Pickles add a probiotic touch with virtually no sugar. Hearty and well-balanced.]",
     "type": "Dinner",
     "date": "2026-04-14T18:43:00.000-07:00",
     "photo": "https://iili.io/BeNPcvf.jpg",
@@ -23,7 +34,7 @@
   },
   {
     "id": "34285ec7-0668-81cd-86c3-c833e9060016",
-    "title": "Lunch: Chickpea bowl with wilted dark leafy greens, avocado slices, and shredded cheddar [Coach: A beautifully balanced bowl — chickpeas bring complex carbs with fiber and plant protein, dark greens add iron and antioxidants, avocado slows absorption with healthy fats, and cheese rounds out the protein. Very close to the ideal T2D plate. Starting at 99 with a predicted rise to only ~125 is excellent.] (BG: 99 mg/dL Flat) (Protein: 17g) (Pred: 120-130 mg/dL @ 3:16 PM)",
+    "title": "Lunch: Chickpea bowl with wilted dark leafy greens, avocado slices, and shredded cheddar (BG: 99 mg/dL Flat) (Pred: 120-130 mg/dL @ 3:16 PM) (Protein: 17g | Carbs: ~29g | Cals: ~325) [Coach: A beautifully balanced bowl — chickpeas bring complex carbs with fiber and plant protein, dark greens add iron and antioxidants, avocado slows absorption with healthy fats, and cheese rounds out the protein. Very close to the ideal T2D plate. Starting at 99 with a predicted rise to only ~125 is excellent.]",
     "type": "Lunch",
     "date": "2026-04-14T13:23:00.000-07:00",
     "photo": "https://iili.io/BeoMHan.jpg",
@@ -34,7 +45,7 @@
   },
   {
     "id": "34285ec7-0668-817a-a48d-cf273cda9a5b",
-    "title": "Breakfast: Flour tortilla with 1 egg and melted cheese (rolled), side of orange slices (~half large orange) [Coach: A solid breakfast — egg and cheese provide protein that slows the tortilla carb spike, and the orange adds vitamin C and natural fiber. At ~39g carbs with good protein coverage this is a well-balanced start to the day.] (BG: 116 mg/dL Flat) (Protein: 18g) (Pred: 189-199 mg/dL @ 11:22 AM)",
+    "title": "Breakfast: Flour tortilla with 1 egg and melted cheese (rolled), side of orange slices (~half large orange) (BG: 116 mg/dL Flat) (Pred: 189-199 mg/dL @ 11:22 AM) (Protein: 18g | Carbs: ~39g | Cals: ~365) [Coach: A solid breakfast — egg and cheese provide protein that slows the tortilla carb spike, and the orange adds vitamin C and natural fiber. At ~39g carbs with good protein coverage this is a well-balanced start to the day.]",
     "type": "Breakfast",
     "date": "2026-04-14T09:55:00.000-07:00",
     "photo": "https://iili.io/BOr2rMu.jpg",
@@ -45,7 +56,7 @@
   },
   {
     "id": "34285ec7-0668-8163-9c42-ff0995a288b5",
-    "title": "Dinner: Homemade artisan bread roll (~70g) [Cumulative Dinner: ~43g carbs total] [Coach: Homemade bread is a lovely addition — you control the ingredients and it pairs well with the protein-rich main. The fat and protein from the caprese and meat slow carb absorption considerably. At 43g total for the meal this is very manageable.] (BG: 100 mg/dL Flat) (Protein: 6g) (Pred: 146-156 mg/dL @ 7:54 PM)",
+    "title": "Dinner: Homemade artisan bread roll (~70g) [Cumulative Dinner: ~43g carbs total] (BG: 100 mg/dL Flat) (Pred: 146-156 mg/dL @ 7:54 PM) (Protein: 6g | Carbs: ~35g | Cals: ~190) [Coach: Homemade bread is a lovely addition — you control the ingredients and it pairs well with the protein-rich main. The fat and protein from the caprese and meat slow carb absorption considerably. At 43g total for the meal this is very manageable.]",
     "type": "Dinner",
     "date": "2026-04-13T18:41:00.000-07:00",
     "photo": "https://iili.io/BNaFM3N.jpg",
@@ -56,7 +67,7 @@
   },
   {
     "id": "34285ec7-0668-81c5-9676-e5184f2ba77b",
-    "title": "Dinner: Caprese salad (tomato slices with burrata/fresh mozzarella) and bone-in braised meat (short rib or lamb chop with dark glaze) [Coach: An exceptional T2D dinner — the caprese brings tomato fiber and protein from the mozzarella with almost no carbs, and the braised meat delivers ~32g protein with essentially zero starch. Starting at 101 with only 8g total carbs, the spike from this portion alone will be minimal.] (BG: 101 mg/dL Flat) (Protein: 32g) (Pred: 110-120 mg/dL @ 7:54 PM)",
+    "title": "Dinner: Caprese salad (tomato slices with burrata/fresh mozzarella) and bone-in braised meat (short rib or lamb chop with dark glaze) (BG: 101 mg/dL Flat) (Pred: 110-120 mg/dL @ 7:54 PM) (Protein: 32g | Carbs: ~8g | Cals: ~560) [Coach: An exceptional T2D dinner — the caprese brings tomato fiber and protein from the mozzarella with almost no carbs, and the braised meat delivers ~32g protein with essentially zero starch. Starting at 101 with only 8g total carbs, the spike from this portion alone will be minimal.]",
     "type": "Dinner",
     "date": "2026-04-13T18:38:00.000-07:00",
     "photo": "https://iili.io/BNa9Chl.jpg",
@@ -67,7 +78,7 @@
   },
   {
     "id": "34185ec7-0668-813c-ad28-f685b62bb0fd",
-    "title": "Lunch: 2 slices red dragon fruit [Cumulative Lunch: ~50g carbs total] [Coach: Red dragon fruit is rich in antioxidants and a hydrating finish to the barley bowl. The 2-slice portion keeps it light on calories. Staying in the ×1.2 carb bracket gives a slightly higher predicted peak than crossing into the 51+g range would have — something to keep in mind with fruit additions.] (BG: 109 mg/dL Flat) (Protein: 1g) (Pred: 159-169 mg/dL @ 2:06 PM)",
+    "title": "Lunch: 2 slices red dragon fruit [Cumulative Lunch: ~50g carbs total] (BG: 109 mg/dL Flat) (Pred: 159-169 mg/dL @ 2:06 PM) (Protein: 1g | Carbs: ~9g | Cals: ~40) [Coach: Red dragon fruit is rich in antioxidants and a hydrating finish to the barley bowl. The 2-slice portion keeps it light on calories. Staying in the ×1.2 carb bracket gives a slightly higher predicted peak than crossing into the 51+g range would have — something to keep in mind with fruit additions.]",
     "type": "Lunch",
     "date": "2026-04-13T12:26:00.000-07:00",
     "photo": "https://iili.io/BwivZ9S.jpg",
@@ -78,7 +89,7 @@
   },
   {
     "id": "34185ec7-0668-81bc-849d-f97a484b1f30",
-    "title": "Lunch: Barley bowl with stewed tomato and pepper veggies, 1 poached egg [Coach: Another barley bowl — consistently one of your best lunch choices. Barley's high fiber and the egg's protein make a solid base. Protein is a bit light at ~13g; a second egg or some sardines would bring you to the 20-30g target. Great repeat choice for blood sugar management.] (BG: 116 mg/dL Flat) (Protein: 13g) (Pred: 148-158 mg/dL @ 2:06 PM)",
+    "title": "Lunch: Barley bowl with stewed tomato and pepper veggies, 1 poached egg (BG: 116 mg/dL Flat) (Pred: 148-158 mg/dL @ 2:06 PM) (Protein: 13g | Carbs: ~41g | Cals: ~285) [Coach: Another barley bowl — consistently one of your best lunch choices. Barley's high fiber and the egg's protein make a solid base. Protein is a bit light at ~13g; a second egg or some sardines would bring you to the 20-30g target. Great repeat choice for blood sugar management.]",
     "type": "Lunch",
     "date": "2026-04-13T12:13:00.000-07:00",
     "photo": "https://iili.io/Bw6QBnI.jpg",
