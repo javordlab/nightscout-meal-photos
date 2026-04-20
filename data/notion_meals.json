@@ -1,124 +1,311 @@
 [
   {
-    "id": "34485ec7-0668-8149-ab6e-c592e44e93fb",
-    "title": "Dinner: Leftover half Reuben (corned beef, sauerkraut, Swiss cheese, Thousand Island on rye) with soft-boiled egg [Coach: Smart use of leftovers — the Reuben filling is protein-rich and the soft-boiled egg brings dinner to ~24g protein with minimal extra carbs. A low-carb, high-protein dinner starting at 125 with a very modest predicted rise. The runny yolk adds healthy fats too. Excellent.] (BG: 125 mg/dL Flat) (Protein: 24g) (Pred: 147-157 mg/dL @ 7:59 PM)",
+    "id": "34785ec7-0668-8116-9843-dd68067200cc",
+    "title": "Lunch: Bowl of thick wheat noodles in sesame/chili sauce [Cumulative Lunch: ~68g carbs total] [Coach: The thick noodles bring your lunch's main carbs — satisfying and flavorful, but refined so they rise faster than beans. The chickpeas and beef from earlier help slow things down, and your morning walk is still working in your favor.] (BG: 94 mg/dL Flat) (Protein: 9g) (Pred: 140-150 mg/dL @ 2:30 PM)",
+    "type": "Lunch",
+    "date": "2026-04-19T12:47:00.000-07:00",
+    "photo": "https://iili.io/Bgrs5w7.jpg",
+    "carbs": 45,
+    "cals": 280,
+    "delta": 37,
+    "peak": 133
+  },
+  {
+    "id": "34785ec7-0668-817b-96f0-ccb8711e881f",
+    "title": "Lunch: Chickpea and shredded beef stir-fry with green onions / scallions [Coach: A really well-balanced lunch — chickpeas and beef deliver a strong dose of protein with slow-release fiber from the legumes, and your 40-min walk earlier primes your muscles to soak up glucose efficiently. Scallions add fresh flavor. Expect a gentle rise.] (BG: 103 mg/dL Flat) (Protein: 21g) (Pred: 116-126 mg/dL @ 2:30 PM)",
+    "type": "Lunch",
+    "date": "2026-04-19T12:37:00.000-07:00",
+    "photo": "https://iili.io/Bgrveku.jpg",
+    "carbs": 23,
+    "cals": 290,
+    "delta": 35,
+    "peak": 133
+  },
+  {
+    "id": "34785ec7-0668-819c-97e4-cc18caeefd6f",
+    "title": "Breakfast: Small handful of walnut halves with dried goji berries [Cumulative Breakfast: ~29g carbs total] [Coach: Beautiful breakfast upgrade — walnuts bring omega-3s and protein while goji berries pack antioxidants and vitamin C in a tiny package. The healthy fats from the walnuts will slow the fruit's sugar absorption nicely. Your breakfast is now wonderfully balanced.] (BG: 115 mg/dL Flat) (Protein: 3g) (Pred: 178-188 mg/dL @ 11:14 AM)",
+    "type": "Breakfast",
+    "date": "2026-04-19T09:56:00.000-07:00",
+    "photo": "https://iili.io/BgSdagn.jpg",
+    "carbs": 5,
+    "cals": 100,
+    "delta": 63,
+    "peak": 178
+  },
+  {
+    "id": "34785ec7-0668-8166-9cae-f869f978e811",
+    "title": "Breakfast: 1 fresh loquat [Cumulative Breakfast: ~24g carbs total] [Coach: Loquats are a wonderful breakfast addition — fresh fruit brings fiber and vitamin A without much sugar load. Nicely rounds out the prosciutto sandwich with natural sweetness and hydration. Great pairing.] (BG: 114 mg/dL Flat) (Protein: 0g) (Pred: 171-181 mg/dL @ 11:14 AM)",
+    "type": "Breakfast",
+    "date": "2026-04-19T09:48:00.000-07:00",
+    "photo": "https://iili.io/Bg8bOt1.jpg",
+    "carbs": 6,
+    "cals": 25,
+    "delta": 65,
+    "peak": 178
+  },
+  {
+    "id": "34785ec7-0668-812c-99b9-f2756c63977d",
+    "title": "Breakfast: Small prosciutto sandwich on halved soft white roll / flatbread [Coach: A lovely simple breakfast — prosciutto delivers a solid hit of lean protein and the modest bread portion keeps carbs sensible. Add a bite of fruit like berries or a few apple slices next time for fiber if you'd like extra staying power through the morning.] (BG: 114 mg/dL Flat) (Protein: 12g) (Pred: 163-173 mg/dL @ 11:14 AM)",
+    "type": "Breakfast",
+    "date": "2026-04-19T09:47:00.000-07:00",
+    "photo": "https://iili.io/Bg8tPgR.jpg",
+    "carbs": 18,
+    "cals": 170,
+    "delta": 65,
+    "peak": 178
+  },
+  {
+    "id": "34785ec7-0668-8148-ab4f-cc013a55d899",
+    "title": "Dinner: Apple slices with brie and cheddar cheese, Crunchmaster baked rice crackers, and tea [Coach: Classic balanced plate — apple brings fiber and fresh fruit, brie and cheddar add protein and calcium, and the rice crackers give a satisfying crunch. Light but nutrient-dense dinner. Your yard work earlier should help keep this glucose rise gentle.] (BG: 129 mg/dL Flat) (Protein: 11g) (Pred: 154-164 mg/dL @ 8:59 PM)",
+    "type": "Dinner",
+    "date": "2026-04-18T19:43:00.000-07:00",
+    "photo": "https://iili.io/BgGgQPS.jpg",
+    "carbs": 25,
+    "cals": 275,
+    "delta": 40,
+    "peak": 160
+  },
+  {
+    "id": "34685ec7-0668-8147-a471-f284abfac709",
+    "title": "Snack: 1 piece / bite of JoJo's dark chocolate protein snack (1/3 of 3-bite 34g serving per package label — 190 cal / 7g carb / 5g protein per serving) [Coach: A well-chosen low-carb treat — JoJo's bites use real chocolate with nuts and minimal sugar, so a single piece is barely a blip on your blood sugar. Way better pick than a typical dried fruit bar. Enjoy these guilt-free.] (BG: 119 mg/dL Flat) (Protein: 2g) (Pred: 122-132 mg/dL @ 5:56 PM)",
+    "type": "Snack",
+    "date": "2026-04-18T15:50:00.000-07:00",
+    "photo": "https://iili.io/Bg1hsHP.jpg",
+    "carbs": 2,
+    "cals": 65,
+    "delta": 42,
+    "peak": 161
+  },
+  {
+    "id": "34685ec7-0668-8158-9c0b-c962c4e1e4db",
+    "title": "Lunch: Mapo tofu with ground meat and sesame/chili cold noodles topped with cucumber julienne (ate ~2/3 of plated portion) [Cumulative Lunch: ~61g carbs total] [Coach: Mapo tofu brings more protein (tofu and ground meat) and the spice may even help with insulin sensitivity. With a smaller noodle portion your cumulative lunch stays moderate rather than heavy — well played. A short walk after would still help flatten the peak.] (BG: 130 mg/dL Flat) (Protein: 13g) (Pred: 160-170 mg/dL @ 3:38 PM)",
+    "type": "Lunch",
+    "date": "2026-04-18T13:53:00.000-07:00",
+    "photo": "https://iili.io/Bg0T1bn.jpg",
+    "carbs": 33,
+    "cals": 267,
+    "delta": 39,
+    "peak": 172
+  },
+  {
+    "id": "34785ec7-0668-81d0-8754-ccca823e4841",
+    "title": "Lunch: Half a Chinese-style pork flatbread burger (roujiamo with shredded pork and cilantro) [Cumulative Lunch: ~28g carbs total] [Coach: The flatbread brings your lunch's main carbs — pork adds rich protein and fats that keep you satiated. Paired with the beef course, you've got solid protein coverage. The overall meal is building nicely toward a moderate carb load for your blood sugar.] (BG: 128 mg/dL Flat) (Protein: 15g) (Pred: 147-157 mg/dL @ 3:38 PM)",
+    "type": "Lunch",
+    "date": "2026-04-18T13:49:00.000-07:00",
+    "photo": "https://iili.io/Bg0xqlI.jpg",
+    "carbs": 22,
+    "cals": 240,
+    "delta": 42,
+    "peak": 172
+  },
+  {
+    "id": "34685ec7-0668-8194-ab46-c1c890cc20fb",
+    "title": "Lunch: Stir-fried shredded beef with cilantro and scallions, with tea (first course — more dishes coming) [Coach: Great start to the meal — lean beef brings a strong hit of protein, and cilantro and scallions add fresh aromatics and a touch of fiber. Eating protein first before more carb-heavy dishes is a smart move to blunt the glucose rise. Looking forward to seeing what joins it.] (BG: 128 mg/dL Flat) (Protein: 22g) (Pred: 123-133 mg/dL @ 3:38 PM)",
+    "type": "Lunch",
+    "date": "2026-04-18T13:45:00.000-07:00",
+    "photo": "https://iili.io/Bg0C0OJ.jpg",
+    "carbs": 6,
+    "cals": 280,
+    "delta": 44,
+    "peak": 172
+  },
+  {
+    "id": "34685ec7-0668-8147-983e-d7a5fd44c718",
+    "title": "Breakfast: One fried egg on white toast with a small bowl of plain yogurt topped with fresh apple chunks, and tea [Coach: A lovely balanced breakfast — protein from the egg and yogurt, fiber from the apple, with just one slice of toast keeping the carbs moderate. The apple adds fresh fruit nicely. Tea rounds it out hydration-wise. Nothing to change here.] (BG: 107 mg/dL Flat) (Protein: 14g) (Pred: 170-180 mg/dL @ 11:05 AM)",
+    "type": "Breakfast",
+    "date": "2026-04-18T09:38:00.000-07:00",
+    "photo": "https://iili.io/Bg56Wxe.jpg",
+    "carbs": 31,
+    "cals": 265,
+    "delta": 55,
+    "peak": 163
+  },
+  {
+    "id": "34785ec7-0668-81a4-8311-cb8bf5ad7ae6",
+    "title": "Dinner: Small bowl of chickpeas with cheese and a spoonful of hemp hearts, with a cup of tea [Coach: Beautiful upgrade for your blood sugar — chickpeas with cheese and hemp hearts pack serious protein, fiber, omega-3s, and healthy fats. This combination slows carb absorption nicely. Some leafy greens on the side would round it out perfectly next time.] (BG: 138 mg/dL Flat) (Protein: 21g) (Pred: 172-182 mg/dL @ 8:19 PM)",
+    "type": "Dinner",
+    "date": "2026-04-17T19:03:00.000-07:00",
+    "photo": "https://iili.io/BgJl0xV.jpg",
+    "carbs": 34,
+    "cals": 385,
+    "delta": 11,
+    "peak": 142
+  },
+  {
+    "id": "34785ec7-0668-8110-8659-e30e3482229b",
+    "title": "Snack: Half a medium apple with glass of water [Cumulative Snack: ~33g carbs total] [Coach: A lovely follow-up — fresh apple adds fiber and Vitamin C to balance out the rice crackers and peanut butter from a few minutes ago. Together you've got protein, healthy fats, and fruit fiber working in your favor. Water is the perfect companion too.] (BG: 115 mg/dL Flat) (Protein: 0g) (Pred: 159-169 mg/dL @ 7:58 PM)",
+    "type": "Snack",
+    "date": "2026-04-17T17:56:00.000-07:00",
+    "photo": "https://iili.io/BgHKZUg.jpg",
+    "carbs": 12,
+    "cals": 50,
+    "delta": 27,
+    "peak": 142
+  },
+  {
+    "id": "34785ec7-0668-81d0-9e8c-d775948d9de7",
+    "title": "Snack: Rice crackers (1 bag, 21.3g) with 2 tbsp peanut butter [Coach: A smart snack pairing — the peanut butter brings protein and healthy fats that slow the carbs from the rice crackers, keeping your blood sugar steadier. Great choice for an afternoon pick-me-up. Pair with a handful of berries or apple slices next time for extra fiber.] (BG: 121 mg/dL Flat) (Protein: 10g) (Pred: 147-157 mg/dL @ 7:58 PM)",
+    "type": "Snack",
+    "date": "2026-04-17T17:52:00.000-07:00",
+    "photo": "https://iili.io/BgH21cb.jpg",
+    "carbs": 21,
+    "cals": 280,
+    "delta": 27,
+    "peak": 142
+  },
+  {
+    "id": "34785ec7-0668-81ea-9239-c767ffb365f5",
+    "title": "Breakfast: Fried egg and smashed avocado on thick-cut white toast, black coffee [Coach: A classic avocado egg toast — the healthy fats and protein from egg and avocado help slow the carb absorption from the bread. Nice balanced start to the day. Swapping to whole grain bread would slow the spike even more next time.] (BG: 113 mg/dL Flat) (Protein: 11g) (Pred: 178-188 mg/dL @ 10:42 AM)",
+    "type": "Breakfast",
+    "date": "2026-04-17T09:15:00.000-07:00",
+    "photo": "https://iili.io/BUQGKUN.jpg",
+    "carbs": 30,
+    "cals": 315,
+    "delta": 52,
+    "peak": 165
+  },
+  {
+    "id": "34785ec7-0668-815a-ad2f-d4bfaff187da",
+    "title": "Dinner: 3 steamed dumplings [Cumulative Dinner: ~79g carbs total] [Coach: Adding dumplings to tonight's lentil stew brings the total carbs to the higher end — the good news is lentil fiber is still working in your favor and the dumpling filling adds solid protein. Next time, save the dumplings as a separate snack to space out the carb load.] (BG: 114 mg/dL Flat) (Protein: 15g) (Pred: 170-180 mg/dL @ 8:09 PM)",
+    "type": "Dinner",
+    "date": "2026-04-16T19:02:00.000-07:00",
+    "photo": "https://iili.io/BUFkw91.jpg",
+    "carbs": 24,
+    "cals": 165,
+    "delta": 60,
+    "peak": 171
+  },
+  {
+    "id": "34785ec7-0668-8168-b51a-d4cc136df946",
+    "title": "Dinner: Lentil stew (lentejas) with potato chunks, carrots, zucchini, and tomato broth [Coach: Lentil stew is a T2D-friendly powerhouse — packed with fiber and plant protein that slow carb absorption. The veggie-rich broth adds nutrients without extra sugar. Carbs are moderate from potatoes and lentils together, but the high fiber will buffer the spike nicely.] (BG: 114 mg/dL Flat) (Protein: 18g) (Pred: 151-161 mg/dL @ 8:09 PM)",
+    "type": "Dinner",
+    "date": "2026-04-16T18:53:00.000-07:00",
+    "photo": "https://iili.io/BUFXVkJ.jpg",
+    "carbs": 55,
+    "cals": 350,
+    "delta": 57,
+    "peak": 171
+  },
+  {
+    "id": "34785ec7-0668-8176-84e1-d06d5b06bf9d",
+    "title": "Dinner: Leftover half Reuben (corned beef, sauerkraut, Swiss cheese, Thousand Island on rye) with soft-boiled egg (BG: 125 mg/dL Flat) (Pred: 147-157 mg/dL @ 7:59 PM) (Protein: 24g | Carbs: ~22g | Cals: ~365) [Coach: Smart use of leftovers — the Reuben filling is protein-rich and the soft-boiled egg brings dinner to ~24g protein with minimal extra carbs. A low-carb, high-protein dinner starting at 125 with a very modest predicted rise. The runny yolk adds healthy fats too. Excellent.]",
     "type": "Dinner",
     "date": "2026-04-15T18:43:00.000-07:00",
     "photo": "https://iili.io/BvpV5Ug.jpg",
     "carbs": 22,
     "cals": 365,
-    "delta": 25,
-    "peak": 155
+    "delta": null,
+    "peak": null
   },
   {
-    "id": "34485ec7-0668-8115-bd07-de97ef1997c6",
-    "title": "Snack: ½ cup plain yogurt with 1 tbsp peanut butter and 1 tsp jam [Coach: Well-timed snack — at 92 and trending down, the peanut butter and yogurt protein-fat combo will help arrest the slide. The small jam gives a quick carb lift while the PB and yogurt sustain it steadily. Good instinct to eat now.] (BG: 92 mg/dL FortyFiveDown) (Protein: 10g) (Pred: 115-125 mg/dL @ 7:07 PM)",
+    "id": "34785ec7-0668-81c8-b691-e4fa1da07b0b",
+    "title": "Snack: ½ cup plain yogurt with 1 tbsp peanut butter and 1 tsp jam (BG: 92 mg/dL FortyFiveDown) (Pred: 115-125 mg/dL @ 7:07 PM) (Protein: 10g | Carbs: ~12g | Cals: ~180) [Coach: Well-timed snack — at 92 and trending down, the peanut butter and yogurt protein-fat combo will help arrest the slide. The small jam gives a quick carb lift while the PB and yogurt sustain it steadily. Good instinct to eat now.]",
     "type": "Snack",
     "date": "2026-04-15T17:01:00.000-07:00",
     "photo": "https://iili.io/BvLZ4Eb.jpg",
     "carbs": 12,
     "cals": 180,
-    "delta": 59,
-    "peak": 151
+    "delta": null,
+    "peak": null
   },
   {
-    "id": "34385ec7-0668-81e1-8681-e2c07fb66167",
-    "title": "Lunch: Half Reuben sandwich (corned beef, sauerkraut, Swiss cheese, Thousand Island dressing on toasted rye/sourdough), side salad of mixed greens, pickled red onion, and pumpkin seeds [Coach: Smart call eating only half — the corned beef has no carbs and good protein, sourdough fermentation slows digestion vs white bread, and the salad adds fiber and healthy fats. A well-managed lunch especially starting at 141.] (BG: 141 mg/dL Flat) (Protein: 16g) (Pred: 158-168 mg/dL @ 2:34 PM)",
+    "id": "34785ec7-0668-81c1-a29d-d137b47e088e",
+    "title": "Lunch: Half Reuben sandwich (corned beef, sauerkraut, Swiss cheese, Thousand Island dressing on toasted rye/sourdough), side salad of mixed greens, pickled red onion, and pumpkin seeds (BG: 141 mg/dL Flat) (Pred: 158-168 mg/dL @ 2:34 PM) (Protein: 16g | Carbs: ~26g | Cals: ~270) [Coach: Smart call eating only half — the corned beef has no carbs and good protein, sourdough fermentation slows digestion vs white bread, and the salad adds fiber and healthy fats. A well-managed lunch especially starting at 141.]",
     "type": "Lunch",
     "date": "2026-04-15T12:41:00.000-07:00",
     "photo": "https://iili.io/Bv0fMQf.jpg",
     "carbs": 26,
     "cals": 270,
-    "delta": 32,
-    "peak": 173
+    "delta": null,
+    "peak": null
   },
   {
-    "id": "34385ec7-0668-817e-a591-f178842cf634",
-    "title": "Breakfast: Baguette with Brie cheese [Coach: Baguette with Brie is a classic — the Brie's fat slows the refined flour carbs and adds good protein. At 38g carbs the predicted peak is on the higher side starting at 136; a post-breakfast walk would help bring it back down nicely.] (BG: 136 mg/dL Flat) (Protein: 14g) (Pred: 208-218 mg/dL @ 11:39 AM)",
+    "id": "34785ec7-0668-8138-a1cd-f292308c488b",
+    "title": "Breakfast: Baguette with Brie cheese (BG: 136 mg/dL Flat) (Pred: 208-218 mg/dL @ 11:39 AM) (Protein: 14g | Carbs: ~38g | Cals: ~325) [Coach: Baguette with Brie is a classic — the Brie's fat slows the refined flour carbs and adds good protein. At 38g carbs the predicted peak is on the higher side starting at 136; a post-breakfast walk would help bring it back down nicely.]",
     "type": "Breakfast",
     "date": "2026-04-15T10:12:00.000-07:00",
     "photo": "https://iili.io/Bvqap8x.jpg",
     "carbs": 28,
     "cals": 355,
-    "delta": 50,
-    "peak": 187
+    "delta": null,
+    "peak": null
   },
   {
-    "id": "34385ec7-0668-8182-ab43-f809657128f4",
-    "title": "Dinner: Leftover homemade pappardelle Bolognese with shredded cheddar, braised pork rib, and dill pickle slices [Coach: Leftovers done right — the homemade pasta carries familiar carbs but ~44g of protein from the pork rib and Bolognese plus the fat from the cheese will slow absorption considerably. Pickles add a probiotic touch with virtually no sugar. Hearty and well-balanced.] (BG: 117 mg/dL Flat) (Protein: 44g) (Pred: 164-174 mg/dL @ 7:59 PM)",
+    "id": "34785ec7-0668-81b5-b7a8-f30bf7eafb9b",
+    "title": "Dinner: Leftover homemade pappardelle Bolognese with shredded cheddar, braised pork rib, and dill pickle slices (BG: 117 mg/dL Flat) (Pred: 164-174 mg/dL @ 7:59 PM) (Protein: 44g | Carbs: ~44g | Cals: ~675) [Coach: Leftovers done right — the homemade pasta carries familiar carbs but ~44g of protein from the pork rib and Bolognese plus the fat from the cheese will slow absorption considerably. Pickles add a probiotic touch with virtually no sugar. Hearty and well-balanced.]",
     "type": "Dinner",
     "date": "2026-04-14T18:43:00.000-07:00",
     "photo": "https://iili.io/BeNPcvf.jpg",
     "carbs": 45,
     "cals": 735,
-    "delta": 57,
-    "peak": 176
+    "delta": null,
+    "peak": null
   },
   {
-    "id": "34285ec7-0668-81cd-86c3-c833e9060016",
-    "title": "Lunch: Chickpea bowl with wilted dark leafy greens, avocado slices, and shredded cheddar [Coach: A beautifully balanced bowl — chickpeas bring complex carbs with fiber and plant protein, dark greens add iron and antioxidants, avocado slows absorption with healthy fats, and cheese rounds out the protein. Very close to the ideal T2D plate. Starting at 99 with a predicted rise to only ~125 is excellent.] (BG: 99 mg/dL Flat) (Protein: 17g) (Pred: 120-130 mg/dL @ 3:16 PM)",
+    "id": "34785ec7-0668-8121-98e6-f1612f23f938",
+    "title": "Lunch: Chickpea bowl with wilted dark leafy greens, avocado slices, and shredded cheddar (BG: 99 mg/dL Flat) (Pred: 120-130 mg/dL @ 3:16 PM) (Protein: 17g | Carbs: ~29g | Cals: ~325) [Coach: A beautifully balanced bowl — chickpeas bring complex carbs with fiber and plant protein, dark greens add iron and antioxidants, avocado slows absorption with healthy fats, and cheese rounds out the protein. Very close to the ideal T2D plate. Starting at 99 with a predicted rise to only ~125 is excellent.]",
     "type": "Lunch",
     "date": "2026-04-14T13:23:00.000-07:00",
     "photo": "https://iili.io/BeoMHan.jpg",
     "carbs": 29,
     "cals": 325,
-    "delta": 43,
-    "peak": 142
+    "delta": null,
+    "peak": null
   },
   {
-    "id": "34285ec7-0668-817a-a48d-cf273cda9a5b",
-    "title": "Breakfast: Flour tortilla with 1 egg and melted cheese (rolled), side of orange slices (~half large orange) [Coach: A solid breakfast — egg and cheese provide protein that slows the tortilla carb spike, and the orange adds vitamin C and natural fiber. At ~39g carbs with good protein coverage this is a well-balanced start to the day.] (BG: 116 mg/dL Flat) (Protein: 18g) (Pred: 189-199 mg/dL @ 11:22 AM)",
+    "id": "34785ec7-0668-8110-8e6c-c63e33795d8d",
+    "title": "Breakfast: Flour tortilla with 1 egg and melted cheese (rolled), side of orange slices (~half large orange) (BG: 116 mg/dL Flat) (Pred: 189-199 mg/dL @ 11:22 AM) (Protein: 18g | Carbs: ~39g | Cals: ~365) [Coach: A solid breakfast — egg and cheese provide protein that slows the tortilla carb spike, and the orange adds vitamin C and natural fiber. At ~39g carbs with good protein coverage this is a well-balanced start to the day.]",
     "type": "Breakfast",
     "date": "2026-04-14T09:55:00.000-07:00",
     "photo": "https://iili.io/BOr2rMu.jpg",
     "carbs": 39,
     "cals": 365,
-    "delta": 76,
-    "peak": 192
+    "delta": null,
+    "peak": null
   },
   {
-    "id": "34285ec7-0668-8163-9c42-ff0995a288b5",
-    "title": "Dinner: Homemade artisan bread roll (~70g) [Cumulative Dinner: ~43g carbs total] [Coach: Homemade bread is a lovely addition — you control the ingredients and it pairs well with the protein-rich main. The fat and protein from the caprese and meat slow carb absorption considerably. At 43g total for the meal this is very manageable.] (BG: 100 mg/dL Flat) (Protein: 6g) (Pred: 146-156 mg/dL @ 7:54 PM)",
+    "id": "34785ec7-0668-81c5-9dc3-d92fce20742d",
+    "title": "Dinner: Homemade artisan bread roll (~70g) [Cumulative Dinner: ~43g carbs total] (BG: 100 mg/dL Flat) (Pred: 146-156 mg/dL @ 7:54 PM) (Protein: 6g | Carbs: ~35g | Cals: ~190) [Coach: Homemade bread is a lovely addition — you control the ingredients and it pairs well with the protein-rich main. The fat and protein from the caprese and meat slow carb absorption considerably. At 43g total for the meal this is very manageable.]",
     "type": "Dinner",
     "date": "2026-04-13T18:41:00.000-07:00",
     "photo": "https://iili.io/BNaFM3N.jpg",
     "carbs": 35,
     "cals": 190,
-    "delta": 68,
-    "peak": 168
+    "delta": null,
+    "peak": null
   },
   {
-    "id": "34285ec7-0668-81c5-9676-e5184f2ba77b",
-    "title": "Dinner: Caprese salad (tomato slices with burrata/fresh mozzarella) and bone-in braised meat (short rib or lamb chop with dark glaze) [Coach: An exceptional T2D dinner — the caprese brings tomato fiber and protein from the mozzarella with almost no carbs, and the braised meat delivers ~32g protein with essentially zero starch. Starting at 101 with only 8g total carbs, the spike from this portion alone will be minimal.] (BG: 101 mg/dL Flat) (Protein: 32g) (Pred: 110-120 mg/dL @ 7:54 PM)",
+    "id": "34785ec7-0668-81eb-a5b2-fff23efebccb",
+    "title": "Dinner: Caprese salad (tomato slices with burrata/fresh mozzarella) and bone-in braised meat (short rib or lamb chop with dark glaze) (BG: 101 mg/dL Flat) (Pred: 110-120 mg/dL @ 7:54 PM) (Protein: 32g | Carbs: ~8g | Cals: ~560) [Coach: An exceptional T2D dinner — the caprese brings tomato fiber and protein from the mozzarella with almost no carbs, and the braised meat delivers ~32g protein with essentially zero starch. Starting at 101 with only 8g total carbs, the spike from this portion alone will be minimal.]",
     "type": "Dinner",
     "date": "2026-04-13T18:38:00.000-07:00",
     "photo": "https://iili.io/BNa9Chl.jpg",
     "carbs": 8,
     "cals": 560,
-    "delta": 68,
-    "peak": 168
+    "delta": null,
+    "peak": null
   },
   {
-    "id": "34185ec7-0668-813c-ad28-f685b62bb0fd",
+    "id": "34785ec7-0668-8155-8b3b-fe704eeeeac6",
     "title": "Lunch: 2 slices red dragon fruit [Cumulative Lunch: ~50g carbs total] (BG: 109 mg/dL Flat) (Pred: 159-169 mg/dL @ 2:06 PM) (Protein: 1g | Carbs: ~9g | Cals: ~40) [Coach: Red dragon fruit is rich in antioxidants and a hydrating finish to the barley bowl. The 2-slice portion keeps it light on calories. Staying in the ×1.2 carb bracket gives a slightly higher predicted peak than crossing into the 51+g range would have — something to keep in mind with fruit additions.]",
     "type": "Lunch",
     "date": "2026-04-13T12:26:00.000-07:00",
     "photo": "https://iili.io/BwivZ9S.jpg",
     "carbs": 9,
     "cals": 40,
-    "delta": 52,
-    "peak": 161
+    "delta": null,
+    "peak": null
   },
   {
-    "id": "34185ec7-0668-81bc-849d-f97a484b1f30",
+    "id": "34785ec7-0668-81ac-9000-d7c9cfbad1e5",
     "title": "Lunch: Barley bowl with stewed tomato and pepper veggies, 1 poached egg (BG: 116 mg/dL Flat) (Pred: 148-158 mg/dL @ 2:06 PM) (Protein: 13g | Carbs: ~41g | Cals: ~285) [Coach: Another barley bowl — consistently one of your best lunch choices. Barley's high fiber and the egg's protein make a solid base. Protein is a bit light at ~13g; a second egg or some sardines would bring you to the 20-30g target. Great repeat choice for blood sugar management.]",
     "type": "Lunch",
     "date": "2026-04-13T12:13:00.000-07:00",
     "photo": "https://iili.io/Bw6QBnI.jpg",
     "carbs": 41,
     "cals": 285,
-    "delta": 46,
-    "peak": 161
+    "delta": null,
+    "peak": null
   },
   {
     "id": "34185ec7-0668-81b8-a824-c417e2828603",
@@ -154,15 +341,15 @@
     "peak": 133
   },
   {
-    "id": "34085ec7-0668-8163-ae45-fc3550f9ff61",
+    "id": "34785ec7-0668-81d0-9428-cead01abf676",
     "title": "Lunch: Stir-fried noodles, sautéed leafy greens, pork shumai, scallop dumpling, papaya on the side (BG: 121 mg/dL Flat) (Pred: 157-167 mg/dL @ 2:53 PM) (Protein: 17g | Carbs: ~44g | Cals: ~323) [Coach: Better protein picture with the shumai and scallop dumpling — brings you to ~17g which is respectable. The dim sum wrappers add some carbs but not excessively. Papaya is gentler than watermelon on blood sugar. Good variety with the greens rounding it all out.]",
     "type": "Lunch",
     "date": "2026-04-12T13:00:00.000-07:00",
     "photo": "https://iili.io/BhqvCzl.jpg",
     "carbs": 44,
     "cals": 323,
-    "delta": 26,
-    "peak": 147
+    "delta": null,
+    "peak": null
   },
   {
     "id": "34085ec7-0668-8151-8b82-c04868327803",
@@ -363,7 +550,7 @@
     "peak": 131
   },
   {
-    "id": "34085ec7-0668-8143-aa09-ec9b9f11ff1f",
+    "id": "34785ec7-0668-81f2-b930-d60e0433a591",
     "title": "Breakfast: Small arepa with sausage patty and papaya (BG: 107 mg/dL Flat) (Pred: 176-186 mg/dL @ 11:32 AM) (Protein: 15g | Carbs: ~36g | Cals: ~380)",
     "type": "Breakfast",
     "date": "2026-04-08T10:05:00.000-07:00",
@@ -946,7 +1133,7 @@
     "peak": 153
   },
   {
-    "id": "33d85ec7-0668-8114-96a3-dcc7cea78190",
+    "id": "34785ec7-0668-8123-963e-c44d9e636b50",
     "title": "Dinner: 1 glass nigori sake (~150ml) with dinner (BG: 113 mg/dL Flat) (Pred: 165-185 mg/dL @ 8:33 PM) (Protein: 1g | Carbs: ~8g | Cals: ~170)",
     "type": "Dinner",
     "date": "2026-03-27T19:04:00.000-07:00",
@@ -1320,7 +1507,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-8121-bcd9-e63a5740f925",
+    "id": "34785ec7-0668-818e-a42a-fe49ae973b59",
     "title": "Dinner: Glass of milk (whole milk, ~8oz) (BG: Unknown) (Protein: 8g | Carbs: ~12g | Cals: ~150)  (Pred: 138-158 mg/dL @ 8:20 PM)",
     "type": "Dinner",
     "date": "2026-03-20T18:45:00.000-07:00",
@@ -1452,7 +1639,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-8102-9e82-e216e6b8d727",
+    "id": "34785ec7-0668-81be-9148-ff0e9470a965",
     "title": "Lunch: Cured meat sandwich on baguette with spread and a small guava (BG: 148 mg/dL Flat) (Protein: 28g | Carbs: ~45g | Cals: ~375)  (Pred: 278 mg/dL @ 3:15 PM)",
     "type": "Lunch",
     "date": "2026-03-18T13:30:00.000-07:00",
@@ -1584,7 +1771,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-817c-918f-e917e64e81b2",
+    "id": "34785ec7-0668-81ab-a4af-d1baffa7c381",
     "title": "Lunch: Open-faced pastrami sandwich on seeded bread, carrot sticks, orange slices, and 10 green grapes (BG: Unknown) (Protein: 28g | Carbs: ~43g | Cals: ~325)  (Pred: 271 mg/dL @ 4:00 PM)",
     "type": "Lunch",
     "date": "2026-03-14T14:15:00.000-07:00",
@@ -1705,7 +1892,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-8187-81c1-c077508fe618",
+    "id": "34785ec7-0668-814d-b47a-fc5c6421a9eb",
     "title": "Lunch: Fried rice with pork and veggies, plus a few grapes (Pred: 300 mg/dL @ 3:15 PM) (BG: Unknown) (Protein: 28g | Carbs: ~52g | Cals: ~550)  (~52g carbs, ~550 kcal)",
     "type": "Lunch",
     "date": "2026-03-11T13:30:00.000-07:00",
@@ -1903,7 +2090,7 @@
     "peak": null
   },
   {
-    "id": "33b85ec7-0668-81e9-b30e-fd069bfb38c6",
+    "id": "34785ec7-0668-81ca-856f-f466b0fb8f31",
     "title": "Breakfast: Scallion pancake with cheese, kiwi, and plain yogurt with berries/nuts (Pred: 300 mg/dL @ 11:44 AM) (Protein: 16g | Carbs: ~52g | Cals: ~500)",
     "type": "Breakfast",
     "date": "2026-03-07T09:59:00.000-08:00",
