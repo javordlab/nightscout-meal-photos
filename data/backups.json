@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-20T11:04:52.566Z",
+  "lastUpdated": "2026-04-20T11:20:01.733Z",
   "tokenUsage": [
     {
       "platform": "Kimi (Ollama)",
@@ -21,7 +21,7 @@
     }
   ],
   "database": {
-    "glucose": 15704,
+    "glucose": 15708,
     "notion": 1249
   },
   "syncHistory": [
@@ -172,23 +172,11 @@
     },
     {
       "date": "2026-04-20",
-      "glucose": 15704,
+      "glucose": 15708,
       "notion": 1249
     }
   ],
   "glucoseTrend": [
-    {
-      "t": "2026-03-21T04:09:44.000Z",
-      "v": 128
-    },
-    {
-      "t": "2026-03-21T04:13:44.000Z",
-      "v": 117
-    },
-    {
-      "t": "2026-03-21T04:19:45.000Z",
-      "v": 104
-    },
     {
       "t": "2026-03-21T04:24:45.000Z",
       "v": 96
@@ -34004,9 +33992,53 @@
     {
       "t": "2026-04-20T10:58:23.000Z",
       "v": 115
+    },
+    {
+      "t": "2026-04-20T11:04:22.000Z",
+      "v": 116
+    },
+    {
+      "t": "2026-04-20T11:09:10.000Z",
+      "v": 118
+    },
+    {
+      "t": "2026-04-20T11:14:10.000Z",
+      "v": 118
+    },
+    {
+      "t": "2026-04-20T11:19:10.000Z",
+      "v": 118
     }
   ],
   "backups": [
+    {
+      "filename": "health_ssot-2026-w17.sql.gz",
+      "type": "Weekly",
+      "size": "135.61 KB",
+      "created": "2026-04-20T11:20:00.736Z",
+      "path": "weekly/health_ssot-2026-w17.sql.gz"
+    },
+    {
+      "filename": "health_ssot-2026-04-20.sql.gz",
+      "type": "Daily",
+      "size": "135.61 KB",
+      "created": "2026-04-20T11:20:00.727Z",
+      "path": "daily/health_ssot-2026-04-20.sql.gz"
+    },
+    {
+      "filename": "2026-w17.sql.gz",
+      "type": "Weekly",
+      "size": "364.07 KB",
+      "created": "2026-04-20T11:20:00.685Z",
+      "path": "weekly/2026-w17.sql.gz"
+    },
+    {
+      "filename": "2026-04-20.sql.gz",
+      "type": "Daily",
+      "size": "364.07 KB",
+      "created": "2026-04-20T11:20:00.674Z",
+      "path": "daily/2026-04-20.sql.gz"
+    },
     {
       "filename": "health_ssot-2026-04-19.sql.gz",
       "type": "Daily",
