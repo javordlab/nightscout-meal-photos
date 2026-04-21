@@ -11,37 +11,37 @@
     "peak": null
   },
   {
-    "id": "34885ec7-0668-812c-8a05-e1ff62f5e919",
+    "id": "34985ec7-0668-8182-9fc7-dba14a864542",
     "title": "Lunch: Toast topped with peanut butter, hemp hearts, and low-sugar jam, with a small bowl of plain yogurt (BG: 155 mg/dL Flat) (Pred: 187-197 mg/dL @ 2:11 PM) (Protein: 22g | Carbs: ~41g | Cals: ~395) [Coach: Lots of good protein here — hemp hearts, peanut butter, and yogurt together give you ~22g, which is solid. The low-sugar jam keeps the carb load more reasonable, and the fat/protein will slow the rise. A short walk after eating would still help nudge the peak down.]",
     "type": "Lunch",
     "date": "2026-04-20T12:18:00.000-07:00",
     "photo": "https://iili.io/BroyDc7.jpg",
     "carbs": 41,
     "cals": 395,
-    "delta": 0,
-    "peak": 141
+    "delta": null,
+    "peak": null
   },
   {
-    "id": "34885ec7-0668-8176-81c7-eae02a9393ed",
+    "id": "34985ec7-0668-8180-8434-e7f7ffa4e85e",
     "title": "Breakfast: 4 apple slices (~½ apple) topped with peanut butter dollops [Cumulative Breakfast: ~41g carbs total] (BG: 93 mg/dL Flat) (Pred: 166-176 mg/dL @ 11:33 AM) (Protein: 5g | Carbs: ~13g | Cals: ~100) [Coach: Beautiful — you put the advice to work right away. Apple paired with peanut butter is exactly the combo that slows the rise; the fat and protein in the PB blunt the fruit's sugar nicely. Perfect addition to your breakfast.]",
     "type": "Breakfast",
     "date": "2026-04-20T10:13:00.000-07:00",
     "photo": "https://iili.io/BrChEQt.jpg",
     "carbs": 13,
     "cals": 100,
-    "delta": 72,
-    "peak": 175
+    "delta": null,
+    "peak": null
   },
   {
-    "id": "34885ec7-0668-81e0-968a-db9a78da8cdf",
+    "id": "34985ec7-0668-81ff-97c3-dc9a19e1a86d",
     "title": "Breakfast: Open-faced prosciutto and brie on a slice of crusty bread, with coffee (BG: 91 mg/dL Flat) (Pred: 153-163 mg/dL @ 11:33 AM) (Protein: 17g | Carbs: ~28g | Cals: ~280) [Coach: A protein-forward breakfast — prosciutto and brie give you a solid ~17g of protein, and the modest bread portion keeps the carb load reasonable. A piece of fruit or some berries on the side would round it out nicely with a little fiber.]",
     "type": "Breakfast",
     "date": "2026-04-20T10:06:00.000-07:00",
     "photo": "https://iili.io/BrClEQf.jpg",
     "carbs": 28,
     "cals": 280,
-    "delta": 84,
-    "peak": 175
+    "delta": null,
+    "peak": null
   },
   {
     "id": "34885ec7-0668-818d-a69d-c1da4477ee55",
@@ -1188,7 +1188,7 @@
     "peak": 153
   },
   {
-    "id": "34885ec7-0668-81a3-b7c6-db84a3d0d230",
+    "id": "34985ec7-0668-8193-8ed8-d49b3b3f9cbe",
     "title": "Dinner: 1 glass nigori sake (~150ml) with dinner (BG: 113 mg/dL Flat) (Pred: 165-185 mg/dL @ 8:33 PM) (Protein: 1g | Carbs: ~8g | Cals: ~170)",
     "type": "Dinner",
     "date": "2026-03-27T19:04:00.000-07:00",
@@ -1562,7 +1562,7 @@
     "peak": null
   },
   {
-    "id": "34885ec7-0668-8107-9db6-d7ceb6a0ae4a",
+    "id": "34985ec7-0668-81c8-9784-ec52cc28f40c",
     "title": "Dinner: Glass of milk (whole milk, ~8oz) (BG: Unknown) (Protein: 8g | Carbs: ~12g | Cals: ~150)  (Pred: 138-158 mg/dL @ 8:20 PM)",
     "type": "Dinner",
     "date": "2026-03-20T18:45:00.000-07:00",
@@ -1694,7 +1694,7 @@
     "peak": null
   },
   {
-    "id": "34885ec7-0668-81fd-a27f-cbde23dbc6ef",
+    "id": "34985ec7-0668-813c-84b4-ec36fc4e62a2",
     "title": "Lunch: Cured meat sandwich on baguette with spread and a small guava (BG: 148 mg/dL Flat) (Protein: 28g | Carbs: ~45g | Cals: ~375)  (Pred: 278 mg/dL @ 3:15 PM)",
     "type": "Lunch",
     "date": "2026-03-18T13:30:00.000-07:00",
@@ -1826,7 +1826,7 @@
     "peak": null
   },
   {
-    "id": "34885ec7-0668-81d0-9606-eaa718b77cf1",
+    "id": "34985ec7-0668-8114-8aa0-c5e5eb7228df",
     "title": "Lunch: Open-faced pastrami sandwich on seeded bread, carrot sticks, orange slices, and 10 green grapes (BG: Unknown) (Protein: 28g | Carbs: ~43g | Cals: ~325)  (Pred: 271 mg/dL @ 4:00 PM)",
     "type": "Lunch",
     "date": "2026-03-14T14:15:00.000-07:00",
@@ -1947,7 +1947,7 @@
     "peak": null
   },
   {
-    "id": "34885ec7-0668-8193-a2a4-c8fd91daeb49",
+    "id": "34985ec7-0668-81a3-92e0-ff59f1c50a8f",
     "title": "Lunch: Fried rice with pork and veggies, plus a few grapes (Pred: 300 mg/dL @ 3:15 PM) (BG: Unknown) (Protein: 28g | Carbs: ~52g | Cals: ~550)  (~52g carbs, ~550 kcal)",
     "type": "Lunch",
     "date": "2026-03-11T13:30:00.000-07:00",
@@ -2145,7 +2145,7 @@
     "peak": null
   },
   {
-    "id": "34885ec7-0668-81d1-9421-fc0420f048fe",
+    "id": "34985ec7-0668-8137-b3d3-e6f4d234bb24",
     "title": "Breakfast: Scallion pancake with cheese, kiwi, and plain yogurt with berries/nuts (Pred: 300 mg/dL @ 11:44 AM) (Protein: 16g | Carbs: ~52g | Cals: ~500)",
     "type": "Breakfast",
     "date": "2026-03-07T09:59:00.000-08:00",
