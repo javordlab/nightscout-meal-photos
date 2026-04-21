@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-21T22:58:57.796Z",
+  "lastUpdated": "2026-04-21T23:01:00.479Z",
   "tokenUsage": [
     {
       "platform": "Kimi (Ollama)",
@@ -21,8 +21,8 @@
     }
   ],
   "database": {
-    "glucose": 16129,
-    "notion": 1256
+    "glucose": 16130,
+    "notion": 1258
   },
   "syncHistory": [
     {
@@ -103,84 +103,80 @@
     {
       "date": "2026-04-07",
       "glucose": 12238,
-      "notion": 1185
+      "notion": 1186
     },
     {
       "date": "2026-04-08",
       "glucose": 12524,
-      "notion": 1197
+      "notion": 1198
     },
     {
       "date": "2026-04-09",
       "glucose": 12812,
-      "notion": 1202
+      "notion": 1203
     },
     {
       "date": "2026-04-10",
       "glucose": 13095,
-      "notion": 1207
+      "notion": 1208
     },
     {
       "date": "2026-04-11",
       "glucose": 13358,
-      "notion": 1211
+      "notion": 1212
     },
     {
       "date": "2026-04-12",
       "glucose": 13639,
-      "notion": 1216
+      "notion": 1217
     },
     {
       "date": "2026-04-13",
       "glucose": 13895,
-      "notion": 1221
+      "notion": 1222
     },
     {
       "date": "2026-04-14",
       "glucose": 14164,
-      "notion": 1226
+      "notion": 1227
     },
     {
       "date": "2026-04-15",
       "glucose": 14441,
-      "notion": 1230
+      "notion": 1231
     },
     {
       "date": "2026-04-16",
       "glucose": 14727,
-      "notion": 1235
+      "notion": 1236
     },
     {
       "date": "2026-04-17",
       "glucose": 15009,
-      "notion": 1239
+      "notion": 1240
     },
     {
       "date": "2026-04-18",
       "glucose": 15289,
-      "notion": 1245
+      "notion": 1246
     },
     {
       "date": "2026-04-19",
       "glucose": 15572,
-      "notion": 1249
+      "notion": 1250
     },
     {
       "date": "2026-04-20",
       "glucose": 15856,
-      "notion": 1254
+      "notion": 1255
     },
     {
       "date": "2026-04-21",
-      "glucose": 16129,
-      "notion": 1256
+      "glucose": 16130,
+      "notion": 1258
     }
   ],
   "glucoseTrend": [
-    {
-      "t": "2026-03-22T15:59:42.000Z",
-      "v": 115
-    },
     {
       "t": "2026-03-22T16:01:43.000Z",
       "v": 114
@@ -33988,6 +33984,10 @@
     {
       "t": "2026-04-21T22:53:07.000Z",
       "v": 95
+    },
+    {
+      "t": "2026-04-21T22:59:06.000Z",
+      "v": 103
     }
   ],
   "backups": [
