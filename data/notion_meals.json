@@ -7,8 +7,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-22/8104db287f11733a.jpg",
     "carbs": 7,
     "cals": 30,
-    "delta": null,
-    "peak": null
+    "delta": 77,
+    "peak": 188
   },
   {
     "id": "34b85ec7-0668-8156-8a97-f4e049eea873",
@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-22/3d483af28c452c29.jpg",
     "carbs": 40,
     "cals": 270,
-    "delta": null,
-    "peak": null
+    "delta": 77,
+    "peak": 188
   },
   {
     "id": "34b85ec7-0668-81d8-a91b-d8c87bca10a4",
@@ -29,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-21/7ae06ac373548f34.jpg",
     "carbs": 30,
     "cals": 365,
-    "delta": null,
-    "peak": null
+    "delta": 65,
+    "peak": 157
   },
   {
     "id": "34b85ec7-0668-813a-81d3-cd6b072a22a4",
@@ -40,34 +40,34 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-21/75d2b671363507ba.jpg",
     "carbs": 18,
     "cals": 195,
-    "delta": null,
-    "peak": null
+    "delta": 67,
+    "peak": 157
   },
   {
     "id": "34b85ec7-0668-8133-8a2a-fe93129a7ce6",
-    "title": "Lunch: A few walnut halves and one small chocolate truffle [Cumulative Lunch: ~36g carbs total] [Coach: Walnuts bring healthy fats and a touch of protein, and a small truffle is a perfectly reasonable little treat after a protein-rich lunch. The added carbs are modest and won't push your peak much.] (BG: 92 mg/dL Flat) (Protein: 3g) (Pred: 118-128 mg/dL @ 2:23 PM)",
+    "title": "Lunch: A few walnut halves and one small chocolate truffle [Cumulative Lunch: ~36g carbs total] (BG: 92 mg/dL Flat) (Pred: 118-128 mg/dL @ 2:23 PM) (Protein: 3g | Carbs: ~8g | Cals: ~140) [Coach: Walnuts bring healthy fats and a touch of protein, and a small truffle is a perfectly reasonable little treat after a protein-rich lunch. The added carbs are modest and won't push your peak much.]",
     "type": "Lunch",
     "date": "2026-04-21T12:39:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-21/525f00423f35968c.jpg",
     "carbs": 8,
     "cals": 140,
-    "delta": null,
-    "peak": null
+    "delta": 22,
+    "peak": 115
   },
   {
     "id": "34b85ec7-0668-81ed-a6cf-f41c988cc4fb",
-    "title": "Lunch: Bowl of scrambled eggs mixed with shredded chicken and pasta pieces, with a small side bowl of dressed greens with sesame seeds [Coach: Big-protein lunch — eggs and chicken together push you well past 30g, which is excellent for satiety and steady BG. The side of greens adds fiber and the small pasta portion keeps carbs reasonable. Beautifully balanced plate.] (BG: 92 mg/dL Flat) (Protein: 35g) (Pred: 111-121 mg/dL @ 2:23 PM)",
+    "title": "Lunch: Bowl of scrambled eggs mixed with shredded chicken and pasta pieces, with a small side bowl of dressed greens with sesame seeds (BG: 92 mg/dL Flat) (Pred: 111-121 mg/dL @ 2:23 PM) (Protein: 35g | Carbs: ~28g | Cals: ~450) [Coach: Big-protein lunch — eggs and chicken together push you well past 30g, which is excellent for satiety and steady BG. The side of greens adds fiber and the small pasta portion keeps carbs reasonable. Beautifully balanced plate.]",
     "type": "Lunch",
     "date": "2026-04-21T12:30:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-21/d537eca93bfdfd92.jpg",
     "carbs": 28,
     "cals": 450,
-    "delta": null,
-    "peak": null
+    "delta": 23,
+    "peak": 115
   },
   {
     "id": "34b85ec7-0668-8127-9288-eeb268c1796b",
-    "title": "Dinner: Yellow curry with shredded chicken, broccoli, zucchini, carrots, and onions, over a small portion of white rice — ate half the plate [Coach: Still a well-balanced dinner even at half portion — ~19g protein is a respectable amount, and the lower carb load will land very gently. Curry's coconut fat plus the protein will keep things steady.] (BG: 127 mg/dL Flat) (Protein: 19g) (Pred: 142-152 mg/dL @ 7:54 PM)",
+    "title": "Dinner: Yellow curry with shredded chicken, broccoli, zucchini, carrots, and onions, over a small portion of white rice — ate half the plate (BG: 127 mg/dL Flat) (Pred: 142-152 mg/dL @ 7:54 PM) (Protein: 19g | Carbs: ~17g | Cals: ~258) [Coach: Still a well-balanced dinner even at half portion — ~19g protein is a respectable amount, and the lower carb load will land very gently. Curry's coconut fat plus the protein will keep things steady.]",
     "type": "Dinner",
     "date": "2026-04-20T18:38:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-20/cceaaec878fa0cb4.jpg",
