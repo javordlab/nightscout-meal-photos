@@ -1,59 +1,47 @@
 [
   {
     "id": "34b85ec7-0668-8106-9341-e9ac3c6865d8",
-    "title": "Breakfast: One medium raw carrot [Cumulative Breakfast: ~47g carbs total] [Coach: Lovely fiber addition — a raw carrot adds slow-digesting carbs and crunch that help blunt the baguette's faster rise. Exactly the kind of companion that rounds out a bread-forward breakfast.]",
+    "title": "Breakfast: One medium raw carrot [Cumulative Breakfast: ~47g carbs total] [Coach: Lovely fiber addition — a raw carrot adds slow-digesting carbs and crunch that help blunt the baguette's faster rise. Exactly the kind of companion that rounds out a bread-forward breakfast.] (BG: 108 mg/dL Flat) (Protein: 1g) (Pred: 190-200 mg/dL @ 11:39 AM)",
     "type": "Breakfast",
-    "date": "2026-04-22T10:14:00-07:00",
+    "date": "2026-04-22T10:14:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-22/8104db287f11733a.jpg",
     "carbs": 7,
     "cals": 30,
-    "delta": null,
-    "peak": null,
-    "entry_key": "sha256:8104db287f11733a33742afb26ea8098541c42ab9f5a11621542c18b6b59c34d",
-    "protein": 1,
-    "preMeal": null
+    "delta": 77,
+    "peak": 188
   },
   {
     "id": "34b85ec7-0668-8156-8a97-f4e049eea873",
-    "title": "Breakfast: Half a baguette sandwich filled with prosciutto [Coach: A simple, classic breakfast — the prosciutto gives you ~9g of protein and the baguette is the main carb driver. With the dawn rise nudging your starting BG up, the peak will land a bit high; adding a slice of cheese or some nuts on the side would slow things down nicely, the way yesterday's plate did.]",
+    "title": "Breakfast: Half a baguette sandwich filled with prosciutto [Coach: A simple, classic breakfast — the prosciutto gives you ~9g of protein and the baguette is the main carb driver. With the dawn rise nudging your starting BG up, the peak will land a bit high; adding a slice of cheese or some nuts on the side would slow things down nicely, the way yesterday's plate did.] (BG: 108 mg/dL Flat) (Protein: 16g) (Pred: 182-192 mg/dL @ 11:39 AM)",
     "type": "Breakfast",
-    "date": "2026-04-22T10:12:00-07:00",
+    "date": "2026-04-22T10:12:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-22/3d483af28c452c29.jpg",
     "carbs": 40,
     "cals": 270,
-    "delta": null,
-    "peak": null,
-    "entry_key": "sha256:3d483af28c452c29c2cd4c20a4b88e8600203f3accefc0875ca6dd11ad40a8eb",
-    "protein": 16,
-    "preMeal": null
+    "delta": 77,
+    "peak": 188
   },
   {
     "id": "34b85ec7-0668-81d8-a91b-d8c87bca10a4",
-    "title": "Dinner: Second course — yellow curry with shredded chicken, carrot, and zucchini, served over a moderate portion of white rice [Cumulative Dinner: ~48g carbs total] [Coach: Hearty second course — the curry's chicken adds another ~21g of protein on top of the prawns, and the coconut fat in the sauce will slow the rice's rise. The combined dinner is generously protein-rich; the rice is the main carb driver, so expect a meaningful but well-paced peak.]",
+    "title": "Dinner: Second course — yellow curry with shredded chicken, carrot, and zucchini, served over a moderate portion of white rice [Cumulative Dinner: ~48g carbs total] [Coach: Hearty second course — the curry's chicken adds another ~21g of protein on top of the prawns, and the coconut fat in the sauce will slow the rice's rise. The combined dinner is generously protein-rich; the rice is the main carb driver, so expect a meaningful but well-paced peak.] (BG: 86 mg/dL Flat) (Protein: 24g) (Pred: 142-152 mg/dL @ 8:03 PM)",
     "type": "Dinner",
-    "date": "2026-04-21T18:59:00-07:00",
+    "date": "2026-04-21T18:59:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-21/7ae06ac373548f34.jpg",
     "carbs": 30,
     "cals": 365,
-    "delta": null,
-    "peak": null,
-    "entry_key": "sha256:7ae06ac373548f34115b6662c92db47f629a0a076ab395fbed50f48d79355983",
-    "protein": 24,
-    "preMeal": null
+    "delta": 65,
+    "peak": 157
   },
   {
     "id": "34b85ec7-0668-813a-81d3-cd6b072a22a4",
-    "title": "Dinner: First course — 4 large grilled head-on prawns with a small piece of crusty bread [Coach: Wonderful protein-forward first course — large prawns are lean and pack ~24g of protein on their own, with just a small bread portion to round it out. A great start that should land very gently on your BG.]",
+    "title": "Dinner: First course — 4 large grilled head-on prawns with a small piece of crusty bread [Coach: Wonderful protein-forward first course — large prawns are lean and pack ~24g of protein on their own, with just a small bread portion to round it out. A great start that should land very gently on your BG.] (BG: 91 mg/dL Flat) (Protein: 27g) (Pred: 107-117 mg/dL @ 8:03 PM)",
     "type": "Dinner",
-    "date": "2026-04-21T18:47:00-07:00",
+    "date": "2026-04-21T18:47:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-21/75d2b671363507ba.jpg",
     "carbs": 18,
     "cals": 195,
-    "delta": null,
-    "peak": null,
-    "entry_key": "sha256:75d2b671363507ba60c1854e94c3f2e0a3bc18007689b40687edfc79dddc4a27",
-    "protein": 27,
-    "preMeal": null
+    "delta": 67,
+    "peak": 157
   },
   {
     "id": "34b85ec7-0668-8133-8a2a-fe93129a7ce6",
