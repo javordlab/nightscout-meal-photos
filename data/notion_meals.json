@@ -1,5 +1,16 @@
 [
   {
+    "id": "34d85ec7-0668-8180-97af-e4f298a38f49",
+    "title": "Lunch: A small bowl of about 5 fresh strawberries [Cumulative Lunch: ~65g carbs total] (BG: 109 mg/dL Flat) (Pred: 146-156 mg/dL @ 5:01 PM) (Protein: 1g | Carbs: ~9g | Cals: ~38) [Coach: Lovely fresh ending to lunch — strawberries are one of the lowest-glycemic fruits, packed with fiber and vitamin C, so they add minimal carb impact. A bright way to round things out.]",
+    "type": "Lunch",
+    "date": "2026-04-25T15:24:00.000+02:00",
+    "photo": "https://iili.io/B6vs8zJ.jpg",
+    "carbs": 9,
+    "cals": 38,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "34d85ec7-0668-81c6-994a-e2536545ed88",
     "title": "Lunch: Morcilla (Spanish blood sausage) with a slice of bread, a portion of fries, and a side salad of lettuce and tomato (BG: 111 mg/dL Flat) (Pred: 139-149 mg/dL @ 5:01 PM) (Protein: 23g | Carbs: ~56g | Cals: ~590) [Coach: A classic Spanish lunch — morcilla is rich in protein and iron, and the salad adds nice fiber alongside. The bread plus fries stack two starches, so that's the main carb driver; the salad up front and the protein from the morcilla will help slow things down.]",
     "type": "Lunch",
