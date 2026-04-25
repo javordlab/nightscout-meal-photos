@@ -1,10 +1,21 @@
 [
   {
+    "id": "34d85ec7-0668-8163-ba78-fa24a85c828f",
+    "title": "Dinner: Second course — about one-third of a restaurant plate of braised meat (likely rabo de toro / beef cheeks) in red-wine reduction over roasted potatoes [Cumulative Dinner: ~24g carbs total] (BG: 127 mg/dL Flat) (Pred: 158-168 mg/dL @ 11:12 PM) (Protein: 18g | Carbs: ~12g | Cals: ~270) [Coach: Beautiful restraint — taking just a third of such a rich plate keeps the carb load moderate while still giving you a proper protein hit from the braised meat. The late hour means the peak will land near bedtime, so a short stroll afterward would help your overnight curve.]",
+    "type": "Dinner",
+    "date": "2026-04-25T22:19:00.000+02:00",
+    "photo": "https://iili.io/B64Y0zJ.jpg",
+    "carbs": 12,
+    "cals": 270,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "34d85ec7-0668-8164-97fe-eaf89752822e",
     "title": "Dinner: First course — small restaurant plate of potato salad (ensaladilla style) topped with a grilled prawn (BG: 134 mg/dL Flat) (Pred: 151-161 mg/dL @ 11:12 PM) (Protein: 6g | Carbs: ~12g | Cals: ~135) [Coach: An elegant little first course — a tasting-size portion that keeps the carbs very modest. The prawn brings a touch of protein on top of the potato base. A nice gentle opening to the meal.]",
     "type": "Dinner",
     "date": "2026-04-25T21:56:00.000+02:00",
-    "photo": "https://iili.io/B64Kz2p.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-25/bec91e59a62cafad.jpg",
     "carbs": 12,
     "cals": 135,
     "delta": null,
