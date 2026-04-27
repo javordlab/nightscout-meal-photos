@@ -4,6 +4,17 @@
     "title": "Lunch: Crusty bread piece with butter and 4 fresh strawberries [Cumulative Lunch: ~61g carbs total] (BG: 96 mg/dL Flat) (Pred: 128-138 mg/dL @ 12:09 AM) (Protein: 6g | Carbs: ~33g | Cals: ~197) [Coach: Strawberries are a lovely low-glycemic finish — fiber-rich and naturally sweet. The bread does stack the carbs to ~61g total, but the steak's protein plus butter on the bread slow absorption nicely, and your earlier walk helps too.]",
     "type": "Lunch",
     "date": "2026-04-27T22:17:00.000+02:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-27/ab35e30251e9bf21.jpg",
+    "carbs": 33,
+    "cals": 197,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "34f85ec7-0668-8146-aa1e-f03f06e871f9",
+    "title": "Dinner: Crusty bread piece with butter and 4 fresh strawberries [Cumulative Dinner: ~61g carbs total] (BG: 96 mg/dL Flat) (Pred: 138-148 mg/dL @ 11:32 PM) (Protein: 6g | Carbs: ~33g | Cals: ~197) [Coach: Strawberries are a lovely low-glycemic finish — fiber-rich and naturally sweet. The bread does stack the carbs to ~61g total, but the steak's protein plus butter on the bread slow absorption nicely, and your earlier walk helps too.]",
+    "type": "Dinner",
+    "date": "2026-04-27T22:17:00.000+02:00",
     "photo": "https://iili.io/BPQ6hUx.jpg",
     "carbs": 33,
     "cals": 197,
