@@ -22,19 +22,19 @@
     "peak": null
   },
   {
-    "id": "34f85ec7-0668-81e3-9d0a-d5071d37a98b",
-    "title": "Lunch: Crusty bread piece with butter and 4 fresh strawberries [Cumulative Lunch: ~61g carbs total] (BG: 133 mg/dL Flat) (Pred: 162-172 mg/dL @ 4:24 PM) (Protein: 6g | Carbs: ~33g | Cals: ~197) [Coach: Strawberries are a lovely low-glycemic finish — fiber-rich and naturally sweet. The bread does stack the carbs to ~61g total, but the steak's protein plus butter on the bread slow absorption nicely, and your earlier walk helps too.]",
+    "id": "34f85ec7-0668-81da-b1bf-d4c107a03c08",
+    "title": "Lunch: Crusty bread piece with butter and 4 fresh strawberries [Cumulative Lunch: ~61g carbs total] [Coach: Strawberries are a lovely low-glycemic finish — fiber-rich and naturally sweet. The bread does stack the carbs to ~61g total, but the steak's protein plus butter on the bread slow absorption nicely, and your earlier walk helps too.] (BG: 133 mg/dL Flat) (Protein: 6g) (Pred: 162-172 mg/dL @ 4:24 PM)",
     "type": "Lunch",
     "date": "2026-04-27T14:50:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-27/ab35e30251e9bf21.jpg",
     "carbs": 33,
     "cals": 197,
-    "delta": 10,
-    "peak": 143
+    "delta": null,
+    "peak": null
   },
   {
-    "id": "34f85ec7-0668-8191-ac72-d385e4988814",
-    "title": "Lunch: Beef steak (medallion ~5 oz) with sautéed mushrooms and a small side of french fries (BG: 130 mg/dL Flat) (Pred: 149-159 mg/dL @ 4:24 PM) (Protein: 41g | Carbs: ~28g | Cals: ~490) [Coach: Excellent lunch balance — the steak brings ~35g of solid protein, and the sautéed mushrooms add fiber and depth without spiking sugar. Fries are the main carb but the portion is sensible. Starting at 130 BG you're set up for a smooth post-meal ride.]",
+    "id": "34f85ec7-0668-81d8-a0b7-fc04613b653f",
+    "title": "Lunch: Beef steak (medallion ~5 oz) with sautéed mushrooms and a small side of french fries [Coach: Excellent lunch balance — the steak brings ~35g of solid protein, and the sautéed mushrooms add fiber and depth without spiking sugar. Fries are the main carb but the portion is sensible. Starting at 130 BG you're set up for a smooth post-meal ride.] (BG: 130 mg/dL Flat) (Protein: 41g) (Pred: 149-159 mg/dL @ 4:24 PM)",
     "type": "Lunch",
     "date": "2026-04-27T14:31:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-27/32d74227035cb7ff.jpg",
@@ -67,7 +67,7 @@
   },
   {
     "id": "34f85ec7-0668-81bb-9216-f1a922b0097f",
-    "title": "Dinner: Second course — about one-third of a restaurant plate of braised meat (likely rabo de toro / beef cheeks) in red-wine reduction over roasted potatoes [Cumulative Dinner: ~24g carbs total] [Coach: Beautiful restraint — taking just a third of such a rich plate keeps the carb load moderate while still giving you a proper protein hit from the braised meat. The late hour means the peak will land near bedtime, so a short stroll afterward would help your overnight curve.] (BG: 127 mg/dL Flat) (Protein: 18g) (Pred: 158-168 mg/dL @ 11:12 PM)",
+    "title": "Dinner: Second course — about one-third of a restaurant plate of braised meat (likely rabo de toro / beef cheeks) in red-wine reduction over roasted potatoes [Cumulative Dinner: ~24g carbs total] (BG: 127 mg/dL Flat) (Pred: 158-168 mg/dL @ 11:12 PM) (Protein: 18g | Carbs: ~12g | Cals: ~270) [Coach: Beautiful restraint — taking just a third of such a rich plate keeps the carb load moderate while still giving you a proper protein hit from the braised meat. The late hour means the peak will land near bedtime, so a short stroll afterward would help your overnight curve.]",
     "type": "Dinner",
     "date": "2026-04-25T22:19:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-25/aa561d25e1d3a8cb.jpg",
@@ -78,7 +78,7 @@
   },
   {
     "id": "34f85ec7-0668-8168-80da-ce9ed0506ce1",
-    "title": "Dinner: First course — small restaurant plate of potato salad (ensaladilla style) topped with a grilled prawn [Coach: An elegant little first course — a tasting-size portion that keeps the carbs very modest. The prawn brings a touch of protein on top of the potato base. A nice gentle opening to the meal.] (BG: 134 mg/dL Flat) (Protein: 6g) (Pred: 151-161 mg/dL @ 11:12 PM)",
+    "title": "Dinner: First course — small restaurant plate of potato salad (ensaladilla style) topped with a grilled prawn (BG: 134 mg/dL Flat) (Pred: 151-161 mg/dL @ 11:12 PM) (Protein: 6g | Carbs: ~12g | Cals: ~135) [Coach: An elegant little first course — a tasting-size portion that keeps the carbs very modest. The prawn brings a touch of protein on top of the potato base. A nice gentle opening to the meal.]",
     "type": "Dinner",
     "date": "2026-04-25T21:56:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-25/bec91e59a62cafad.jpg",
@@ -89,7 +89,7 @@
   },
   {
     "id": "34f85ec7-0668-8177-9481-c0a4895584fa",
-    "title": "Snack: One single-serve bag of Smartfood whole-grain cheddar popcorn [Coach: A reasonable little snack — whole-grain popcorn is lighter than chips and has a touch of cheese for flavor without a big carb spike. Protein is on the light side, so if you have time before dinner, a few nuts or a slice of cheese would pair nicely.] (BG: 99 mg/dL Flat) (Protein: 3g) (Pred: 128-138 mg/dL @ 10:00 PM)",
+    "title": "Snack: One single-serve bag of Smartfood whole-grain cheddar popcorn (BG: 99 mg/dL Flat) (Pred: 128-138 mg/dL @ 10:00 PM) (Protein: 3g | Carbs: ~15g | Cals: ~160) [Coach: A reasonable little snack — whole-grain popcorn is lighter than chips and has a touch of cheese for flavor without a big carb spike. Protein is on the light side, so if you have time before dinner, a few nuts or a slice of cheese would pair nicely.]",
     "type": "Snack",
     "date": "2026-04-25T19:54:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-25/0e683ec5d9fc327c.jpg",
@@ -100,7 +100,7 @@
   },
   {
     "id": "34f85ec7-0668-8142-aa36-dbd314575036",
-    "title": "Lunch: A small bowl of about 5 fresh strawberries [Cumulative Lunch: ~65g carbs total] [Coach: Lovely fresh ending to lunch — strawberries are one of the lowest-glycemic fruits, packed with fiber and vitamin C, so they add minimal carb impact. A bright way to round things out.] (BG: 109 mg/dL Flat) (Protein: 1g) (Pred: 146-156 mg/dL @ 5:01 PM)",
+    "title": "Lunch: A small bowl of about 5 fresh strawberries [Cumulative Lunch: ~65g carbs total] (BG: 109 mg/dL Flat) (Pred: 146-156 mg/dL @ 5:01 PM) (Protein: 1g | Carbs: ~9g | Cals: ~38) [Coach: Lovely fresh ending to lunch — strawberries are one of the lowest-glycemic fruits, packed with fiber and vitamin C, so they add minimal carb impact. A bright way to round things out.]",
     "type": "Lunch",
     "date": "2026-04-25T15:24:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-25/a705586f11778dc8.jpg",
@@ -111,7 +111,7 @@
   },
   {
     "id": "34f85ec7-0668-8181-92af-db7ccfef4508",
-    "title": "Lunch: Morcilla (Spanish blood sausage) with a slice of bread, a portion of fries, and a side salad of lettuce and tomato [Coach: A classic Spanish lunch — morcilla is rich in protein and iron, and the salad adds nice fiber alongside. The bread plus fries stack two starches, so that's the main carb driver; the salad up front and the protein from the morcilla will help slow things down.] (BG: 111 mg/dL Flat) (Protein: 23g) (Pred: 139-149 mg/dL @ 5:01 PM)",
+    "title": "Lunch: Morcilla (Spanish blood sausage) with a slice of bread, a portion of fries, and a side salad of lettuce and tomato (BG: 111 mg/dL Flat) (Pred: 139-149 mg/dL @ 5:01 PM) (Protein: 23g | Carbs: ~56g | Cals: ~590) [Coach: A classic Spanish lunch — morcilla is rich in protein and iron, and the salad adds nice fiber alongside. The bread plus fries stack two starches, so that's the main carb driver; the salad up front and the protein from the morcilla will help slow things down.]",
     "type": "Lunch",
     "date": "2026-04-25T15:08:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-25/b25144c981a9a441.jpg",
@@ -122,7 +122,7 @@
   },
   {
     "id": "34f85ec7-0668-8130-9275-c9725befa156",
-    "title": "Breakfast: Small whole-wheat ham sandwich with a mug of black tea or coffee [Coach: A simple, classic Spanish breakfast — ham brings about 8g of protein and the whole-wheat bread offers a touch of fiber. The dawn rise plus jet lag may push the peak a bit higher than usual; if you can, a slice of cheese or a few nuts on the side would help slow things down nicely.] (BG: 114 mg/dL Flat) (Protein: 14g) (Pred: 174-184 mg/dL @ 12:43 PM)",
+    "title": "Breakfast: Small whole-wheat ham sandwich with a mug of black tea or coffee (BG: 114 mg/dL Flat) (Pred: 174-184 mg/dL @ 12:43 PM) (Protein: 14g | Carbs: ~28g | Cals: ~245) [Coach: A simple, classic Spanish breakfast — ham brings about 8g of protein and the whole-wheat bread offers a touch of fiber. The dawn rise plus jet lag may push the peak a bit higher than usual; if you can, a slice of cheese or a few nuts on the side would help slow things down nicely.]",
     "type": "Breakfast",
     "date": "2026-04-25T11:16:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-25/41cb157aceca1763.jpg",
@@ -176,7 +176,7 @@
     "peak": null
   },
   {
-    "id": "34f85ec7-0668-81f1-a1bb-ca65c9239a97",
+    "id": "34f85ec7-0668-816e-a920-eb3465f4b87b",
     "title": "Breakfast: One medium raw carrot [Cumulative Breakfast: ~47g carbs total] (BG: 108 mg/dL Flat) (Pred: 190-200 mg/dL @ 11:39 AM) (Protein: 1g | Carbs: ~7g | Cals: ~30) [Coach: Lovely fiber addition — a raw carrot adds slow-digesting carbs and crunch that help blunt the baguette's faster rise. Exactly the kind of companion that rounds out a bread-forward breakfast.]",
     "type": "Breakfast",
     "date": "2026-04-22T10:14:00.000-07:00",
@@ -187,7 +187,7 @@
     "peak": null
   },
   {
-    "id": "34f85ec7-0668-818b-8519-ef92b63e5c5c",
+    "id": "34f85ec7-0668-81c6-a53b-d6aa3a4aaf1d",
     "title": "Breakfast: Half a baguette sandwich filled with prosciutto (BG: 108 mg/dL Flat) (Pred: 182-192 mg/dL @ 11:39 AM) (Protein: 16g | Carbs: ~40g | Cals: ~270) [Coach: A simple, classic breakfast — the prosciutto gives you ~9g of protein and the baguette is the main carb driver. With the dawn rise nudging your starting BG up, the peak will land a bit high; adding a slice of cheese or some nuts on the side would slow things down nicely, the way yesterday's plate did.]",
     "type": "Breakfast",
     "date": "2026-04-22T10:12:00.000-07:00",
@@ -374,7 +374,7 @@
     "peak": null
   },
   {
-    "id": "34f85ec7-0668-812c-bd95-f85632ababea",
+    "id": "34f85ec7-0668-8136-9273-c5def3de7a96",
     "title": "Lunch: Mapo tofu with ground meat and sesame/chili cold noodles topped with cucumber julienne (ate ~2/3 of plated portion) [Cumulative Lunch: ~61g carbs total] (BG: 130 mg/dL Flat) (Pred: 160-170 mg/dL @ 3:38 PM) (Protein: 13g | Carbs: ~33g | Cals: ~267) [Coach: Mapo tofu brings more protein (tofu and ground meat) and the spice may even help with insulin sensitivity. With a smaller noodle portion your cumulative lunch stays moderate rather than heavy — well played. A short walk after would still help flatten the peak.]",
     "type": "Lunch",
     "date": "2026-04-18T13:53:00.000-07:00",
@@ -385,7 +385,7 @@
     "peak": null
   },
   {
-    "id": "34f85ec7-0668-8149-a77f-d4f63de8966a",
+    "id": "34f85ec7-0668-81c0-b0f6-fe433eca6e9a",
     "title": "Lunch: Half a Chinese-style pork flatbread burger (roujiamo with shredded pork and cilantro) [Cumulative Lunch: ~28g carbs total] (BG: 128 mg/dL Flat) (Pred: 147-157 mg/dL @ 3:38 PM) (Protein: 15g | Carbs: ~22g | Cals: ~240) [Coach: The flatbread brings your lunch's main carbs — pork adds rich protein and fats that keep you satiated. Paired with the beef course, you've got solid protein coverage. The overall meal is building nicely toward a moderate carb load for your blood sugar.]",
     "type": "Lunch",
     "date": "2026-04-18T13:49:00.000-07:00",
@@ -396,7 +396,7 @@
     "peak": null
   },
   {
-    "id": "34f85ec7-0668-81b0-9fed-fc84c0336d72",
+    "id": "34f85ec7-0668-81c3-b2e6-ebc9e793309a",
     "title": "Lunch: Stir-fried shredded beef with cilantro and scallions, with tea (first course — more dishes coming) (BG: 128 mg/dL Flat) (Pred: 123-133 mg/dL @ 3:38 PM) (Protein: 22g | Carbs: ~6g | Cals: ~280) [Coach: Great start to the meal — lean beef brings a strong hit of protein, and cilantro and scallions add fresh aromatics and a touch of fiber. Eating protein first before more carb-heavy dishes is a smart move to blunt the glucose rise. Looking forward to seeing what joins it.]",
     "type": "Lunch",
     "date": "2026-04-18T13:45:00.000-07:00",
@@ -407,7 +407,7 @@
     "peak": null
   },
   {
-    "id": "34f85ec7-0668-8153-a371-e86474bdd04d",
+    "id": "34f85ec7-0668-81be-b86a-c4f5f0d3e2d1",
     "title": "Breakfast: One fried egg on white toast with a small bowl of plain yogurt topped with fresh apple chunks, and tea (BG: 107 mg/dL Flat) (Pred: 170-180 mg/dL @ 11:05 AM) (Protein: 14g | Carbs: ~31g | Cals: ~265) [Coach: A lovely balanced breakfast — protein from the egg and yogurt, fiber from the apple, with just one slice of toast keeping the carbs moderate. The apple adds fresh fruit nicely. Tea rounds it out hydration-wise. Nothing to change here.]",
     "type": "Breakfast",
     "date": "2026-04-18T09:38:00.000-07:00",
