@@ -1,8 +1,8 @@
 [
   {
-    "id": "34f85ec7-0668-8146-aa1e-f03f06e871f9",
-    "title": "Dinner: Crusty bread piece with butter and 4 fresh strawberries [Cumulative Dinner: ~61g carbs total] (BG: 96 mg/dL Flat) (Pred: 138-148 mg/dL @ 11:32 PM) (Protein: 6g | Carbs: ~33g | Cals: ~197) [Coach: Strawberries are a lovely low-glycemic finish — fiber-rich and naturally sweet. The bread does stack the carbs to ~61g total, but the steak's protein plus butter on the bread slow absorption nicely, and your earlier walk helps too.]",
-    "type": "Dinner",
+    "id": "34f85ec7-0668-819f-8022-dca8eb0823ab",
+    "title": "Lunch: Crusty bread piece with butter and 4 fresh strawberries [Cumulative Lunch: ~61g carbs total] (BG: 96 mg/dL Flat) (Pred: 128-138 mg/dL @ 12:09 AM) (Protein: 6g | Carbs: ~33g | Cals: ~197) [Coach: Strawberries are a lovely low-glycemic finish — fiber-rich and naturally sweet. The bread does stack the carbs to ~61g total, but the steak's protein plus butter on the bread slow absorption nicely, and your earlier walk helps too.]",
+    "type": "Lunch",
     "date": "2026-04-27T22:17:00.000+02:00",
     "photo": "https://iili.io/BPQ6hUx.jpg",
     "carbs": 33,
@@ -11,9 +11,9 @@
     "peak": null
   },
   {
-    "id": "34f85ec7-0668-81c6-b786-c4bcaa3f9749",
-    "title": "Dinner: Beef steak (medallion ~5 oz) with sautéed mushrooms in light cream sauce and a small side of french fries (BG: 96 mg/dL Flat) (Pred: 125-135 mg/dL @ 11:32 PM) (Protein: 41g | Carbs: ~28g | Cals: ~490) [Coach: Excellent dinner balance — the steak brings ~35g of solid protein, and the sautéed mushrooms add fiber and depth without spiking sugar. Fries are the main carb but the portion is sensible. Starting at 96 BG you're set up for a smooth post-dinner ride.]",
-    "type": "Dinner",
+    "id": "34f85ec7-0668-8106-ae61-c78018a9cba8",
+    "title": "Lunch: Beef steak (medallion ~5 oz) with sautéed mushrooms and a small side of french fries (BG: 96 mg/dL Flat) (Pred: 115-125 mg/dL @ 12:09 AM) (Protein: 41g | Carbs: ~28g | Cals: ~490) [Coach: Excellent lunch balance — the steak brings ~35g of solid protein, and the sautéed mushrooms add fiber and depth without spiking sugar. Fries are the main carb but the portion is sensible. Starting at 96 BG you're set up for a smooth post-meal ride.]",
+    "type": "Lunch",
     "date": "2026-04-27T22:16:00.000+02:00",
     "photo": "https://iili.io/BPQ6OOB.jpg",
     "carbs": 28,
