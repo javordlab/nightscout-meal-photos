@@ -22,26 +22,26 @@
     "peak": 151
   },
   {
-    "id": "34f85ec7-0668-81db-8f86-fe4cbdddda48",
-    "title": "Lunch: Crusty bread piece with butter and 4 fresh strawberries [Cumulative Lunch: ~61g carbs total] [Coach: Strawberries are a lovely low-glycemic finish — fiber-rich and naturally sweet. The bread does stack the carbs to ~61g total, but the steak's protein plus butter on the bread slow absorption nicely, and your earlier walk helps too.] (BG: 133 mg/dL Flat) (Protein: 6g) (Pred: 162-172 mg/dL @ 4:24 PM)",
+    "id": "35085ec7-0668-81c2-b472-f890d25ec388",
+    "title": "Lunch: Crusty bread piece with butter and 4 fresh strawberries [Cumulative Lunch: ~61g carbs total] (BG: 133 mg/dL Flat) (Pred: 162-172 mg/dL @ 4:24 PM) (Protein: 6g | Carbs: ~33g | Cals: ~197) [Coach: Strawberries are a lovely low-glycemic finish — fiber-rich and naturally sweet. The bread does stack the carbs to ~61g total, but the steak's protein plus butter on the bread slow absorption nicely, and your earlier walk helps too.]",
     "type": "Lunch",
     "date": "2026-04-27T14:50:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-27/ab35e30251e9bf21.jpg",
     "carbs": 33,
     "cals": 197,
-    "delta": 10,
-    "peak": 143
+    "delta": null,
+    "peak": null
   },
   {
-    "id": "34f85ec7-0668-8125-9cf7-e67696ff290e",
-    "title": "Lunch: Beef steak (medallion ~5 oz) with sautéed mushrooms and a small side of french fries [Coach: Excellent lunch balance — the steak brings ~35g of solid protein, and the sautéed mushrooms add fiber and depth without spiking sugar. Fries are the main carb but the portion is sensible. Starting at 130 BG you're set up for a smooth post-meal ride.] (BG: 130 mg/dL Flat) (Protein: 41g) (Pred: 149-159 mg/dL @ 4:24 PM)",
+    "id": "35085ec7-0668-818d-8f84-c44a9f909156",
+    "title": "Lunch: Beef steak (medallion ~5 oz) with sautéed mushrooms and a small side of french fries (BG: 130 mg/dL Flat) (Pred: 149-159 mg/dL @ 4:24 PM) (Protein: 41g | Carbs: ~28g | Cals: ~490) [Coach: Excellent lunch balance — the steak brings ~35g of solid protein, and the sautéed mushrooms add fiber and depth without spiking sugar. Fries are the main carb but the portion is sensible. Starting at 130 BG you're set up for a smooth post-meal ride.]",
     "type": "Lunch",
     "date": "2026-04-27T14:31:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-27/32d74227035cb7ff.jpg",
     "carbs": 28,
     "cals": 490,
-    "delta": 13,
-    "peak": 143
+    "delta": null,
+    "peak": null
   },
   {
     "id": "34f85ec7-0668-81c9-82fa-f86a3c32ca38",
@@ -56,7 +56,7 @@
   },
   {
     "id": "34f85ec7-0668-81eb-b1fa-cc0c91223605",
-    "title": "Lunch: A fried egg over pisto (Spanish ratatouille of zucchini, peppers, tomato, and onion) with shredded braised beef and a few roasted potato chunks [Coach: A gorgeous balanced plate — egg and beef together bring nearly 30g of protein, and the pisto loads in real vegetables with healthy olive oil. Potatoes are the main carb but the protein and fiber will pace the rise nicely. Classic Spanish home cooking at its best.] (BG: 108 mg/dL Flat) (Protein: 33g) (Pred: 128-138 mg/dL @ 4:39 PM)",
+    "title": "Lunch: A fried egg over pisto (Spanish ratatouille of zucchini, peppers, tomato, and onion) with shredded braised beef and a few roasted potato chunks (BG: 108 mg/dL Flat) (Pred: 128-138 mg/dL @ 4:39 PM) (Protein: 33g | Carbs: ~31g | Cals: ~535) [Coach: A gorgeous balanced plate — egg and beef together bring nearly 30g of protein, and the pisto loads in real vegetables with healthy olive oil. Potatoes are the main carb but the protein and fiber will pace the rise nicely. Classic Spanish home cooking at its best.]",
     "type": "Lunch",
     "date": "2026-04-26T14:46:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-26/18ac020b892e11cf.jpg",
@@ -440,7 +440,7 @@
     "peak": null
   },
   {
-    "id": "34f85ec7-0668-81c4-9b86-c7157637dd67",
+    "id": "35085ec7-0668-81d5-a3ff-f53dba771636",
     "title": "Snack: Rice crackers (1 bag, 21.3g) with 2 tbsp peanut butter (BG: 121 mg/dL Flat) (Pred: 147-157 mg/dL @ 7:58 PM) (Protein: 10g | Carbs: ~21g | Cals: ~280) [Coach: A smart snack pairing — the peanut butter brings protein and healthy fats that slow the carbs from the rice crackers, keeping your blood sugar steadier. Great choice for an afternoon pick-me-up. Pair with a handful of berries or apple slices next time for extra fiber.]",
     "type": "Snack",
     "date": "2026-04-17T17:52:00.000-07:00",
@@ -451,7 +451,7 @@
     "peak": null
   },
   {
-    "id": "34f85ec7-0668-8187-92bf-e001cc0cc6a8",
+    "id": "35085ec7-0668-8194-a362-fa578a05d6d9",
     "title": "Breakfast: Fried egg and smashed avocado on thick-cut white toast, black coffee (BG: 113 mg/dL Flat) (Pred: 178-188 mg/dL @ 10:42 AM) (Protein: 11g | Carbs: ~30g | Cals: ~315) [Coach: A classic avocado egg toast — the healthy fats and protein from egg and avocado help slow the carb absorption from the bread. Nice balanced start to the day. Swapping to whole grain bread would slow the spike even more next time.]",
     "type": "Breakfast",
     "date": "2026-04-17T09:15:00.000-07:00",
@@ -462,7 +462,7 @@
     "peak": null
   },
   {
-    "id": "34f85ec7-0668-8124-bcb5-d3243e283c75",
+    "id": "35085ec7-0668-8168-a223-d49c17a01cf3",
     "title": "Dinner: 3 steamed dumplings [Cumulative Dinner: ~79g carbs total] (BG: 114 mg/dL Flat) (Pred: 170-180 mg/dL @ 8:09 PM) (Protein: 15g | Carbs: ~24g | Cals: ~165) [Coach: Adding dumplings to tonight's lentil stew brings the total carbs to the higher end — the good news is lentil fiber is still working in your favor and the dumpling filling adds solid protein. Next time, save the dumplings as a separate snack to space out the carb load.]",
     "type": "Dinner",
     "date": "2026-04-16T19:02:00.000-07:00",
