@@ -4,7 +4,7 @@
     "title": "Lunch: Bowl of cubed fresh papaya (~1 cup) [Cumulative Lunch: ~53g carbs total] [Coach: Papaya is a wonderful T2D-friendly fruit — fiber and natural enzymes, lower glycemic than most tropical fruits. Pairs beautifully with the protein and avocado fats from the sandwich which slow the rise. You're crushing this lunch.] (BG: 107 mg/dL Flat) (Protein: 1g) (Pred: 132-142 mg/dL @ 12:53 PM)",
     "type": "Lunch",
     "date": "2026-04-28T11:02:00.000+02:00",
-    "photo": "https://iili.io/Bi2GPwP.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-28/9372c44fec55d5c3.jpg",
     "carbs": 16,
     "cals": 62,
     "delta": null,
@@ -15,7 +15,7 @@
     "title": "Lunch: Whole-wheat sandwich with ham, avocado, and fresh greens (spinach/lettuce) [Coach: Beautifully balanced — avocado for healthy fats, ham for protein, greens for fiber, and whole-wheat bread keeps the carbs reasonable. This is exactly the kind of plate we want at lunch. A slice of cheese next time would bump protein and satiety further.] (BG: 107 mg/dL Flat) (Protein: 19g) (Pred: 134-144 mg/dL @ 12:53 PM)",
     "type": "Lunch",
     "date": "2026-04-28T11:00:00.000+02:00",
-    "photo": "https://iili.io/Bi21eO7.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-28/94cedf17b7571aac.jpg",
     "carbs": 37,
     "cals": 385,
     "delta": null,
@@ -51,8 +51,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-27/ab35e30251e9bf21.jpg",
     "carbs": 33,
     "cals": 197,
-    "delta": null,
-    "peak": null
+    "delta": 10,
+    "peak": 143
   },
   {
     "id": "35085ec7-0668-818d-8f84-c44a9f909156",
@@ -62,8 +62,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-27/32d74227035cb7ff.jpg",
     "carbs": 28,
     "cals": 490,
-    "delta": null,
-    "peak": null
+    "delta": 13,
+    "peak": 143
   },
   {
     "id": "34f85ec7-0668-81c9-82fa-f86a3c32ca38",
