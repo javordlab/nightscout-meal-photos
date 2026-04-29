@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-29T02:16:34.278Z",
+  "lastUpdated": "2026-04-29T02:20:02.621Z",
   "tokenUsage": [
     {
       "platform": "Kimi (Ollama)",
@@ -21,7 +21,7 @@
     }
   ],
   "database": {
-    "glucose": 17649,
+    "glucose": 17650,
     "notion": 1292
   },
   "syncHistory": [
@@ -172,15 +172,11 @@
     },
     {
       "date": "2026-04-29",
-      "glucose": 17649,
+      "glucose": 17650,
       "notion": 1292
     }
   ],
   "glucoseTrend": [
-    {
-      "t": "2026-03-30T04:19:30.000Z",
-      "v": 101
-    },
     {
       "t": "2026-03-30T04:24:30.000Z",
       "v": 103
@@ -31832,9 +31828,27 @@
     {
       "t": "2026-04-29T02:14:55.000Z",
       "v": 146
+    },
+    {
+      "t": "2026-04-29T02:19:55.000Z",
+      "v": 140
     }
   ],
   "backups": [
+    {
+      "filename": "health_ssot-2026-04-29.sql.gz",
+      "type": "Daily",
+      "size": "162.72 KB",
+      "created": "2026-04-29T02:20:01.060Z",
+      "path": "daily/health_ssot-2026-04-29.sql.gz"
+    },
+    {
+      "filename": "2026-04-29.sql.gz",
+      "type": "Daily",
+      "size": "407.24 KB",
+      "created": "2026-04-29T02:20:01.015Z",
+      "path": "daily/2026-04-29.sql.gz"
+    },
     {
       "filename": "health_ssot-2026-04-28.sql.gz",
       "type": "Daily",
@@ -31955,25 +31969,11 @@
       "path": "weekly/health_ssot-2026-w17.sql.gz"
     },
     {
-      "filename": "health_ssot-2026-04-20.sql.gz",
-      "type": "Daily",
-      "size": "135.61 KB",
-      "created": "2026-04-20T11:20:00.727Z",
-      "path": "daily/health_ssot-2026-04-20.sql.gz"
-    },
-    {
       "filename": "2026-w17.sql.gz",
       "type": "Weekly",
       "size": "364.07 KB",
       "created": "2026-04-20T11:20:00.685Z",
       "path": "weekly/2026-w17.sql.gz"
-    },
-    {
-      "filename": "2026-04-20.sql.gz",
-      "type": "Daily",
-      "size": "364.07 KB",
-      "created": "2026-04-20T11:20:00.674Z",
-      "path": "daily/2026-04-20.sql.gz"
     },
     {
       "filename": "health_ssot-2026-w16.sql.gz",
