@@ -1,7 +1,18 @@
 [
   {
     "id": "35185ec7-0668-8140-ae53-cdd577c6577d",
-    "title": "Dinner: Cucumber spears (~½ cucumber, sliced) [Cumulative Dinner: ~19g carbs total] (BG: 108 mg/dL Flat) (Pred: 116-126 mg/dL @ 8:18 PM) (Protein: 1g | Carbs: ~3g | Cals: ~12) [Coach: There it is 🥒 — cucumber to round out the bread and cheese, exactly the move I was hoping for. Crunchy, hydrating, and basically free from a BG standpoint. Lovely little dinner.]",
+    "title": "Dinner: Cucumber spears (~½ cucumber, sliced) [Cumulative Dinner: ~19g carbs total] [Coach: There it is 🥒 — cucumber to round out the bread and cheese, exactly the move I was hoping for. Crunchy, hydrating, and basically free from a BG standpoint. Lovely little dinner.] (BG: 108 mg/dL Flat) (Protein: 1g) (Pred: 116-126 mg/dL @ 8:18 PM)",
+    "type": "Dinner",
+    "date": "2026-04-29T19:04:00.000+02:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-29/d866dd75d8383a91.jpg",
+    "carbs": 3,
+    "cals": 12,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "35185ec7-0668-812f-936d-f7ae2ee9134d",
+    "title": "Dinner: Cucumber spears (~½ cucumber, sliced) [Cumulative Dinner: ~19g carbs total] [Coach: There it is 🥒 — cucumber to round out the bread and cheese, exactly the move I was hoping for. Crunchy, hydrating, and basically free from a BG standpoint. Lovely little dinner.] (BG: 108 mg/dL Flat) (Protein: 1g) (Pred: 116-126 mg/dL @ 8:18 PM)",
     "type": "Dinner",
     "date": "2026-04-29T19:04:00.000+02:00",
     "photo": "https://iili.io/Bsd66YX.jpg",
@@ -12,40 +23,40 @@
   },
   {
     "id": "35185ec7-0668-81f8-84e6-f2bd30ee5127",
-    "title": "Lunch: Pisto (zucchini, eggplant, red pepper, tomato) topped with a fried egg, side of manchego cheese and jamón, with a slice of crusty rustic bread (BG: 94 mg/dL Flat) (Pred: 123-133 mg/dL @ 4:11 PM) (Protein: 30g | Carbs: ~38g | Cals: ~500) [Coach: Now THIS is a beautifully balanced plate 🥗 — non-starchy veggies leading the way, an egg and cheese and jamón stacking up serious protein, and just enough bread to anchor things. With BG at 94 going in, this should glide up gently and stay in a lovely range.]",
+    "title": "Lunch: Pisto (zucchini, eggplant, red pepper, tomato) topped with a fried egg, side of manchego cheese and jamón, with a slice of crusty rustic bread [Coach: Now THIS is a beautifully balanced plate 🥗 — non-starchy veggies leading the way, an egg and cheese and jamón stacking up serious protein, and just enough bread to anchor things. With BG at 94 going in, this should glide up gently and stay in a lovely range.] (BG: 94 mg/dL Flat) (Protein: 30g) (Pred: 123-133 mg/dL @ 4:11 PM)",
     "type": "Lunch",
     "date": "2026-04-29T14:18:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-29/72ed00e17016f6d2.jpg",
     "carbs": 38,
     "cals": 500,
-    "delta": null,
-    "peak": null
+    "delta": 49,
+    "peak": 146
   },
   {
     "id": "35185ec7-0668-8180-bcd2-d487be58b4ec",
-    "title": "Breakfast: 1 chocolate-topped biscuit (Príncipe-style) [Cumulative Breakfast: ~30g carbs total] (BG: 100 mg/dL Flat) (Pred: 165-175 mg/dL @ 12:03 PM) (Protein: 1g | Carbs: ~12g | Cals: ~90) [Coach: A little chocolate cap 🍫 — bumps the breakfast carbs up a notch but the protein and avocado fat from the sandwich help slow things. Should still land in a comfortable range; just enjoy the rest of the morning.]",
+    "title": "Breakfast: 1 chocolate-topped biscuit (Príncipe-style) [Cumulative Breakfast: ~30g carbs total] [Coach: A little chocolate cap 🍫 — bumps the breakfast carbs up a notch but the protein and avocado fat from the sandwich help slow things. Should still land in a comfortable range; just enjoy the rest of the morning.] (BG: 100 mg/dL Flat) (Protein: 1g) (Pred: 165-175 mg/dL @ 12:03 PM)",
     "type": "Breakfast",
     "date": "2026-04-29T10:41:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-29/fdda6c51841a54d7.jpg",
     "carbs": 12,
     "cals": 90,
-    "delta": null,
-    "peak": null
+    "delta": 37,
+    "peak": 137
   },
   {
     "id": "35185ec7-0668-8135-8c84-c46a32e840e4",
-    "title": "Breakfast: Small piece of toasted ham and cheese sandwich with a side of sliced avocado (BG: 100 mg/dL Flat) (Pred: 149-159 mg/dL @ 12:03 PM) (Protein: 13g | Carbs: ~18g | Cals: ~300) [Coach: Lovely balanced little breakfast 🥑 — the avocado brings healthy fats and fiber, the ham and cheese cover protein, and the toast is a modest carb anchor. BG at 100 should rise gently and land in a comfortable range.]",
+    "title": "Breakfast: Small piece of toasted ham and cheese sandwich with a side of sliced avocado [Coach: Lovely balanced little breakfast 🥑 — the avocado brings healthy fats and fiber, the ham and cheese cover protein, and the toast is a modest carb anchor. BG at 100 should rise gently and land in a comfortable range.] (BG: 100 mg/dL Flat) (Protein: 13g) (Pred: 149-159 mg/dL @ 12:03 PM)",
     "type": "Breakfast",
     "date": "2026-04-29T10:36:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-29/cea4d9d8287414c0.jpg",
     "carbs": 18,
     "cals": 300,
-    "delta": null,
-    "peak": null
+    "delta": 37,
+    "peak": 137
   },
   {
     "id": "35185ec7-0668-81f2-98fd-e07870c77a98",
-    "title": "Lunch: 1 slice of dense whole-grain/rye bread and 3 fresh strawberries [Cumulative Lunch: ~50g carbs total] (BG: 86 mg/dL Flat) (Pred: 109-119 mg/dL @ 4:12 PM) (Protein: 4g | Carbs: ~20g | Cals: ~100) [Coach: A nice finish to round out the meal — strawberries are low-glycemic and fiber-rich, and the dense bread brings slow carbs that'll help bring your BG back up steadily after that earlier low. Cumulative load lands at ~50g, well within range.]",
+    "title": "Lunch: 1 slice of dense whole-grain/rye bread and 3 fresh strawberries [Cumulative Lunch: ~50g carbs total] [Coach: A nice finish to round out the meal — strawberries are low-glycemic and fiber-rich, and the dense bread brings slow carbs that'll help bring your BG back up steadily after that earlier low. Cumulative load lands at ~50g, well within range.] (BG: 86 mg/dL Flat) (Protein: 4g) (Pred: 109-119 mg/dL @ 4:12 PM)",
     "type": "Lunch",
     "date": "2026-04-28T14:37:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-28/793fb8c111685346.jpg",
@@ -56,7 +67,7 @@
   },
   {
     "id": "35185ec7-0668-81e7-af4e-d3f5baefc8b2",
-    "title": "Lunch: Frejoles (green beans) with potatoes and crumbled boiled egg in tomato broth, plus 3-4 slices of cured jamón (BG: 66 mg/dL FortyFiveDown) (Pred: 88-98 mg/dL @ 4:12 PM) (Protein: 25g | Carbs: ~30g | Cals: ~340) [Coach: Eating now is exactly right — BG is 66 trending down so the beans and potato carbs will lift you while the egg and jamón add steady protein. Beans bring fiber and slow-release carbs, ideal for stabilizing your sugar. If still low, a small piece of fruit gives faster recovery.]",
+    "title": "Lunch: Frejoles (green beans) with potatoes and crumbled boiled egg in tomato broth, plus 3-4 slices of cured jamón [Coach: Eating now is exactly right — BG is 66 trending down so the beans and potato carbs will lift you while the egg and jamón add steady protein. Beans bring fiber and slow-release carbs, ideal for stabilizing your sugar. If still low, a small piece of fruit gives faster recovery.] (BG: 66 mg/dL FortyFiveDown) (Protein: 25g) (Pred: 88-98 mg/dL @ 4:12 PM)",
     "type": "Lunch",
     "date": "2026-04-28T14:19:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-28/aa09613d4917c6d9.jpg",
@@ -111,7 +122,7 @@
   },
   {
     "id": "35185ec7-0668-8110-9169-c743fbe24083",
-    "title": "Lunch: Crusty bread piece with butter and 4 fresh strawberries [Cumulative Lunch: ~61g carbs total] (BG: 133 mg/dL Flat) (Pred: 162-172 mg/dL @ 4:24 PM) (Protein: 6g | Carbs: ~33g | Cals: ~197) [Coach: Strawberries are a lovely low-glycemic finish — fiber-rich and naturally sweet. The bread does stack the carbs to ~61g total, but the steak's protein plus butter on the bread slow absorption nicely, and your earlier walk helps too.]",
+    "title": "Lunch: Crusty bread piece with butter and 4 fresh strawberries [Cumulative Lunch: ~61g carbs total] [Coach: Strawberries are a lovely low-glycemic finish — fiber-rich and naturally sweet. The bread does stack the carbs to ~61g total, but the steak's protein plus butter on the bread slow absorption nicely, and your earlier walk helps too.] (BG: 133 mg/dL Flat) (Protein: 6g) (Pred: 162-172 mg/dL @ 4:24 PM)",
     "type": "Lunch",
     "date": "2026-04-27T14:50:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-27/ab35e30251e9bf21.jpg",
@@ -122,7 +133,7 @@
   },
   {
     "id": "35185ec7-0668-812d-b656-cdaae7cf6849",
-    "title": "Lunch: Beef steak (medallion ~5 oz) with sautéed mushrooms and a small side of french fries (BG: 130 mg/dL Flat) (Pred: 149-159 mg/dL @ 4:24 PM) (Protein: 41g | Carbs: ~28g | Cals: ~490) [Coach: Excellent lunch balance — the steak brings ~35g of solid protein, and the sautéed mushrooms add fiber and depth without spiking sugar. Fries are the main carb but the portion is sensible. Starting at 130 BG you're set up for a smooth post-meal ride.]",
+    "title": "Lunch: Beef steak (medallion ~5 oz) with sautéed mushrooms and a small side of french fries [Coach: Excellent lunch balance — the steak brings ~35g of solid protein, and the sautéed mushrooms add fiber and depth without spiking sugar. Fries are the main carb but the portion is sensible. Starting at 130 BG you're set up for a smooth post-meal ride.] (BG: 130 mg/dL Flat) (Protein: 41g) (Pred: 149-159 mg/dL @ 4:24 PM)",
     "type": "Lunch",
     "date": "2026-04-27T14:31:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-27/32d74227035cb7ff.jpg",
