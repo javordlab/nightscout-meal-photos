@@ -180,16 +180,27 @@
   <script>
     let allData = [];
 
+    // Display the entry's local time as it was logged — the ISO string
+    // already carries the entry's UTC offset (e.g. +02:00 Spain, -07:00 PT),
+    // so we read the local clock-time directly from the string instead of
+    // re-projecting to a fixed timezone. Otherwise a Spain 10:41 entry would
+    // render as PT 01:41.
     function formatTime(isoStr) {
-      return new Date(isoStr).toLocaleString('en-US', {
-        timeZone: 'America/Los_Angeles',
-        hour: 'numeric', minute: '2-digit', hour12: true
-      });
+      const m = String(isoStr).match(/T(\d{2}):(\d{2})/);
+      if (!m) return '';
+      let h = parseInt(m[1], 10);
+      const min = m[2];
+      const ampm = h >= 12 ? 'PM' : 'AM';
+      h = h % 12 || 12;
+      return `${h}:${min} ${ampm}`;
     }
 
     function formatDate(isoStr) {
-      return new Date(isoStr).toLocaleDateString('en-US', {
-        timeZone: 'America/Los_Angeles',
+      const m = String(isoStr).match(/^(\d{4})-(\d{2})-(\d{2})/);
+      if (!m) return '';
+      const dt = new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]));
+      return dt.toLocaleDateString('en-US', {
+        timeZone: 'UTC',
         weekday: 'long', month: 'long', day: 'numeric', year: 'numeric'
       });
     }
