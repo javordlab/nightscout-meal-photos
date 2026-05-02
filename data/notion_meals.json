@@ -4,6 +4,17 @@
     "title": "Breakfast: Open-faced toast topped with several slices of mortadella (BG: 120 mg/dL Flat) (Pred: 172-182 mg/dL @ 12:31 PM) (Protein: 12g | Carbs: ~13g | Cals: ~200) [Coach: Simple and protein-forward 🥪 — mortadella covers the protein, modest bread keeps carbs in check. Late breakfasts ride a bit higher because of dawn cortisol; a short walk after would help cap the peak.]",
     "type": "Breakfast",
     "date": "2026-05-02T11:04:00.000+02:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-02/0ff2c3d36741bb3f.jpg",
+    "carbs": 13,
+    "cals": 200,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "35485ec7-0668-8161-a947-c5e07f547fdb",
+    "title": "Lunch: Open-faced toast topped with several slices of mortadella (BG: 120 mg/dL Flat) (Pred: 129-139 mg/dL @ 12:57 PM) (Protein: 12g | Carbs: ~13g | Cals: ~200) [Coach: Simple and protein-forward 🥪 — mortadella covers the protein, modest bread keeps carbs in check. With BG at 120 going in, this should rise gently. A handful of cucumber, tomato, or fruit on the side would round it out.]",
+    "type": "Lunch",
+    "date": "2026-05-02T11:04:00.000+02:00",
     "photo": "https://iili.io/BLY7Mzl.jpg",
     "carbs": 13,
     "cals": 200,
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-01/bce65d7ee29fcbe6.jpg",
     "carbs": 1,
     "cals": 35,
-    "delta": null,
-    "peak": null
+    "delta": 45,
+    "peak": 140
   },
   {
     "id": "35485ec7-0668-8186-919f-f5161352056b",
@@ -29,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-01/57909384d725ec94.jpg",
     "carbs": 12,
     "cals": 135,
-    "delta": null,
-    "peak": null
+    "delta": 35,
+    "peak": 140
   },
   {
     "id": "35485ec7-0668-81ab-a5ec-e7e39cdba756",
@@ -40,8 +51,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-01/798c33192021fb9b.jpg",
     "carbs": 26,
     "cals": 280,
-    "delta": null,
-    "peak": null
+    "delta": 31,
+    "peak": 140
   },
   {
     "id": "35485ec7-0668-81d7-931e-c7e666c8fb03",
@@ -51,8 +62,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-01/6c8953d9eb432b69.jpg",
     "carbs": 15,
     "cals": 228,
-    "delta": null,
-    "peak": null
+    "delta": 117,
+    "peak": 233
   },
   {
     "id": "35485ec7-0668-815a-86de-d86b8326bc15",
@@ -62,8 +73,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-01/4cee012b9e6bb3fe.jpg",
     "carbs": 13,
     "cals": 115,
-    "delta": null,
-    "peak": null
+    "delta": 122,
+    "peak": 233
   },
   {
     "id": "35485ec7-0668-8134-a2c2-c4a5030f07bf",
@@ -73,8 +84,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-01/0e704a0a7ae79b81.jpg",
     "carbs": 9,
     "cals": 100,
-    "delta": null,
-    "peak": null
+    "delta": 121,
+    "peak": 233
   },
   {
     "id": "35385ec7-0668-81c5-bc77-e6a38d6729d3",
