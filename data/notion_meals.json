@@ -1,10 +1,32 @@
 [
   {
+    "id": "35485ec7-0668-81f6-9485-d8e3fdc379c9",
+    "title": "Dinner: Half portion of torreznos (crispy fried pork belly) with bread chunks [Cumulative Dinner: ~69g carbs total] (BG: 145 mg/dL Flat) (Pred: 173-183 mg/dL @ 10:51 PM) (Protein: 14g | Carbs: ~10g | Cals: ~255) [Coach: Torreznos 🥓 — full-on Spanish bar classic. Fatty and protein-rich, the bread adds modest carbs. Half-portioned is a smart call. Cumulative dinner is in heartier territory now; a short walk before bed would help BG settle gently.]",
+    "type": "Dinner",
+    "date": "2026-05-02T22:15:00.000+02:00",
+    "photo": "https://iili.io/BLkHFgS.jpg",
+    "carbs": 10,
+    "cals": 255,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "35485ec7-0668-81ec-bf5a-e21063182929",
+    "title": "Dinner: Bocadillo de jamón serrano (half baguette with cured ham) [Cumulative Dinner: ~59g carbs total] (BG: 145 mg/dL Flat) (Pred: 165-175 mg/dL @ 10:51 PM) (Protein: 15g | Carbs: ~40g | Cals: ~290) [Coach: Classic Spanish bocadillo 🥖 — jamón is solid protein, but the baguette is a serious carb hit, especially on top of the prior tapas. Cumulative dinner is now in heavier territory; a walk before bed would really help BG settle.]",
+    "type": "Dinner",
+    "date": "2026-05-02T22:15:00.000+02:00",
+    "photo": "https://iili.io/BLkHfd7.jpg",
+    "carbs": 40,
+    "cals": 290,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "35485ec7-0668-81f4-9441-f12232114331",
     "title": "Dinner: Half a small cazuela of sopa de ajo (Castilian garlic soup with bread, paprika, egg) and half a plate of green olives [Cumulative Dinner: ~19g carbs total] (BG: 125 mg/dL Flat) (Pred: 143-153 mg/dL @ 10:51 PM) (Protein: 5g | Carbs: ~7g | Cals: ~120) [Coach: Sopa de ajo, that warm Castilian classic 🍲 — bread soaks the broth, egg adds protein, olives bring healthy fats. Half-portioned keeps the carbs reasonable. Cumulative dinner stays in a friendly zone.]",
     "type": "Dinner",
     "date": "2026-05-02T21:50:00.000+02:00",
-    "photo": "https://iili.io/BLecc57.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-02/91195b269474bd68.jpg",
     "carbs": 7,
     "cals": 120,
     "delta": null,
@@ -15,7 +37,7 @@
     "title": "Dinner: Half a tapa of picadillo (crumbled chorizo/minced meat) with fried potato wedges, plus a small caña (BG: 125 mg/dL Flat) (Pred: 142-152 mg/dL @ 10:51 PM) (Protein: 12g | Carbs: ~12g | Cals: ~260) [Coach: Half-tapa is a smart pace 👏 — still gets you the flavor and protein without the full carb load. Should land in a comfortable range tonight.]",
     "type": "Dinner",
     "date": "2026-05-02T21:35:00.000+02:00",
-    "photo": "https://iili.io/BLOp367.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-02/844df0a092b2336d.jpg",
     "carbs": 12,
     "cals": 260,
     "delta": null,
@@ -73,8 +95,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-01/bce65d7ee29fcbe6.jpg",
     "carbs": 1,
     "cals": 35,
-    "delta": null,
-    "peak": null
+    "delta": 45,
+    "peak": 140
   },
   {
     "id": "35485ec7-0668-8111-8df4-f175458024dc",
@@ -84,8 +106,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-01/57909384d725ec94.jpg",
     "carbs": 12,
     "cals": 135,
-    "delta": null,
-    "peak": null
+    "delta": 35,
+    "peak": 140
   },
   {
     "id": "35485ec7-0668-8175-81ed-c148e9ba14f1",
@@ -95,8 +117,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-01/798c33192021fb9b.jpg",
     "carbs": 26,
     "cals": 280,
-    "delta": null,
-    "peak": null
+    "delta": 31,
+    "peak": 140
   },
   {
     "id": "35485ec7-0668-8190-8825-e75b44c15eba",
@@ -106,8 +128,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-01/6c8953d9eb432b69.jpg",
     "carbs": 15,
     "cals": 228,
-    "delta": null,
-    "peak": null
+    "delta": 117,
+    "peak": 233
   },
   {
     "id": "35485ec7-0668-81fc-8638-c9373ed51a6a",
@@ -117,8 +139,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-01/4cee012b9e6bb3fe.jpg",
     "carbs": 13,
     "cals": 115,
-    "delta": null,
-    "peak": null
+    "delta": 122,
+    "peak": 233
   },
   {
     "id": "35485ec7-0668-81ba-b259-ff211278efc5",
@@ -128,8 +150,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-01/0e704a0a7ae79b81.jpg",
     "carbs": 9,
     "cals": 100,
-    "delta": null,
-    "peak": null
+    "delta": 121,
+    "peak": 233
   },
   {
     "id": "35485ec7-0668-815b-9e5d-d9732eb97f7b",
@@ -139,8 +161,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-30/299295bb26318b26.jpg",
     "carbs": 13,
     "cals": 215,
-    "delta": null,
-    "peak": null
+    "delta": 0,
+    "peak": 136
   },
   {
     "id": "35485ec7-0668-8193-8e33-f0edbc4174a2",
@@ -150,8 +172,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-30/69f0b2c7f31eb292.jpg",
     "carbs": 11,
     "cals": 130,
-    "delta": null,
-    "peak": null
+    "delta": 11,
+    "peak": 142
   },
   {
     "id": "35485ec7-0668-810b-a6bc-ef6239a6e87e",
@@ -161,8 +183,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-30/a0ac551c03e12083.jpg",
     "carbs": null,
     "cals": 225,
-    "delta": null,
-    "peak": null
+    "delta": 10,
+    "peak": 142
   },
   {
     "id": "35485ec7-0668-8139-8e16-c9efae6403e4",
@@ -172,8 +194,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-30/eb704546fcc3fae5.jpg",
     "carbs": 27,
     "cals": 440,
-    "delta": null,
-    "peak": null
+    "delta": 6,
+    "peak": 142
   },
   {
     "id": "35485ec7-0668-81a3-ac10-e91d72fb7120",
@@ -264,7 +286,7 @@
     "peak": null
   },
   {
-    "id": "35485ec7-0668-8117-a33f-d3dce60e14d5",
+    "id": "35485ec7-0668-81e8-92c4-c9168d8d6e24",
     "title": "Lunch: 1 slice of dense whole-grain/rye bread and 3 fresh strawberries [Cumulative Lunch: ~50g carbs total] (BG: 86 mg/dL Flat) (Pred: 109-119 mg/dL @ 4:12 PM) (Protein: 4g | Carbs: ~20g | Cals: ~100) [Coach: A nice finish to round out the meal — strawberries are low-glycemic and fiber-rich, and the dense bread brings slow carbs that'll help bring your BG back up steadily after that earlier low. Cumulative load lands at ~50g, well within range.]",
     "type": "Lunch",
     "date": "2026-04-28T14:37:00.000+02:00",
@@ -275,7 +297,7 @@
     "peak": null
   },
   {
-    "id": "35485ec7-0668-8105-9269-c8715f82713d",
+    "id": "35485ec7-0668-81ff-a7c6-f52be6a343ba",
     "title": "Lunch: Frejoles (green beans) with potatoes and crumbled boiled egg in tomato broth, plus 3-4 slices of cured jamón (BG: 66 mg/dL FortyFiveDown) (Pred: 88-98 mg/dL @ 4:12 PM) (Protein: 25g | Carbs: ~30g | Cals: ~340) [Coach: Eating now is exactly right — BG is 66 trending down so the beans and potato carbs will lift you while the egg and jamón add steady protein. Beans bring fiber and slow-release carbs, ideal for stabilizing your sugar. If still low, a small piece of fruit gives faster recovery.]",
     "type": "Lunch",
     "date": "2026-04-28T14:19:00.000+02:00",
@@ -396,7 +418,7 @@
     "peak": null
   },
   {
-    "id": "35485ec7-0668-810d-a212-c6fa0072fb86",
+    "id": "35485ec7-0668-81ee-9d7a-f3fb15d87363",
     "title": "Snack: One single-serve bag of Smartfood whole-grain cheddar popcorn (BG: 99 mg/dL Flat) (Pred: 128-138 mg/dL @ 10:00 PM) (Protein: 3g | Carbs: ~15g | Cals: ~160) [Coach: A reasonable little snack — whole-grain popcorn is lighter than chips and has a touch of cheese for flavor without a big carb spike. Protein is on the light side, so if you have time before dinner, a few nuts or a slice of cheese would pair nicely.]",
     "type": "Snack",
     "date": "2026-04-25T19:54:00.000+02:00",
@@ -407,7 +429,7 @@
     "peak": null
   },
   {
-    "id": "35485ec7-0668-8158-b803-f3873bd8f704",
+    "id": "35485ec7-0668-81a3-a1b7-d63b0e42b187",
     "title": "Lunch: A small bowl of about 5 fresh strawberries [Cumulative Lunch: ~65g carbs total] (BG: 109 mg/dL Flat) (Pred: 146-156 mg/dL @ 5:01 PM) (Protein: 1g | Carbs: ~9g | Cals: ~38) [Coach: Lovely fresh ending to lunch — strawberries are one of the lowest-glycemic fruits, packed with fiber and vitamin C, so they add minimal carb impact. A bright way to round things out.]",
     "type": "Lunch",
     "date": "2026-04-25T15:24:00.000+02:00",
@@ -418,7 +440,7 @@
     "peak": null
   },
   {
-    "id": "35485ec7-0668-8135-a734-fa01ee93f694",
+    "id": "35485ec7-0668-81c2-930b-dcecf7c273ef",
     "title": "Lunch: Morcilla (Spanish blood sausage) with a slice of bread, a portion of fries, and a side salad of lettuce and tomato (BG: 111 mg/dL Flat) (Pred: 139-149 mg/dL @ 5:01 PM) (Protein: 23g | Carbs: ~56g | Cals: ~590) [Coach: A classic Spanish lunch — morcilla is rich in protein and iron, and the salad adds nice fiber alongside. The bread plus fries stack two starches, so that's the main carb driver; the salad up front and the protein from the morcilla will help slow things down.]",
     "type": "Lunch",
     "date": "2026-04-25T15:08:00.000+02:00",
@@ -429,7 +451,7 @@
     "peak": null
   },
   {
-    "id": "35485ec7-0668-8133-906e-fa1647b610b1",
+    "id": "35485ec7-0668-818e-b677-d0919a09f6ca",
     "title": "Breakfast: Small whole-wheat ham sandwich with a mug of black tea or coffee (BG: 114 mg/dL Flat) (Pred: 174-184 mg/dL @ 12:43 PM) (Protein: 14g | Carbs: ~28g | Cals: ~245) [Coach: A simple, classic Spanish breakfast — ham brings about 8g of protein and the whole-wheat bread offers a touch of fiber. The dawn rise plus jet lag may push the peak a bit higher than usual; if you can, a slice of cheese or a few nuts on the side would help slow things down nicely.]",
     "type": "Breakfast",
     "date": "2026-04-25T11:16:00.000+02:00",
@@ -440,7 +462,7 @@
     "peak": null
   },
   {
-    "id": "35485ec7-0668-8165-ba63-e9ac8904bcec",
+    "id": "35485ec7-0668-81bb-ac12-f5d1128695e4",
     "title": "Snack: One whole-wheat digestive biscuit with a glass of milk — correcting a low (BG: 69 mg/dL SingleDown) (Pred: 94-104 mg/dL @ 2:30 AM) (Protein: 8g | Carbs: ~20g | Cals: ~195) [Coach: Good catch on the downward trend — ~20g of quick carbs is exactly the right response for a 69 SingleDown, and the milk's protein and fat will help you settle steadily rather than overshoot. Recheck in 15 minutes to make sure you're climbing back up.]",
     "type": "Snack",
     "date": "2026-04-25T00:24:00.000+02:00",
@@ -451,7 +473,7 @@
     "peak": null
   },
   {
-    "id": "35485ec7-0668-81c9-a71f-eeba1e97eaa6",
+    "id": "35485ec7-0668-813c-a85d-c9f39826192b",
     "title": "Lunch: Half a traditional Spanish flan with caramel sauce and whipped cream — special-occasion indulgence [Cumulative Lunch: ~50g carbs total] (BG: 126 mg/dL Flat) (Pred: 169-179 mg/dL @ 4:07 PM) (Protein: 3g | Carbs: ~26g | Cals: ~180) [Coach: Enjoy the special day — halving the flan was a smart, measured choice. Your solid lunch protein from tuna, egg, and chicken helps the sugar land more gently, and a short walk afterward would nudge the peak down nicely.]",
     "type": "Lunch",
     "date": "2026-04-24T14:39:00.000+02:00",
@@ -506,7 +528,7 @@
     "peak": null
   },
   {
-    "id": "35185ec7-0668-8155-8fbd-e21f4d85e137",
+    "id": "35485ec7-0668-81fd-9a99-e8eb0063d320",
     "title": "Dinner: Second course — yellow curry with shredded chicken, carrot, and zucchini, served over a moderate portion of white rice [Cumulative Dinner: ~48g carbs total] (BG: 86 mg/dL Flat) (Pred: 142-152 mg/dL @ 8:03 PM) (Protein: 24g | Carbs: ~30g | Cals: ~365) [Coach: Hearty second course — the curry's chicken adds another ~21g of protein on top of the prawns, and the coconut fat in the sauce will slow the rice's rise. The combined dinner is generously protein-rich; the rice is the main carb driver, so expect a meaningful but well-paced peak.]",
     "type": "Dinner",
     "date": "2026-04-21T18:59:00.000-07:00",
@@ -517,7 +539,7 @@
     "peak": null
   },
   {
-    "id": "35185ec7-0668-8187-a74a-cd62656b6e1a",
+    "id": "35485ec7-0668-8141-8c80-e8bdd59ac5ed",
     "title": "Dinner: First course — 4 large grilled head-on prawns with a small piece of crusty bread (BG: 91 mg/dL Flat) (Pred: 107-117 mg/dL @ 8:03 PM) (Protein: 27g | Carbs: ~18g | Cals: ~195) [Coach: Wonderful protein-forward first course — large prawns are lean and pack ~24g of protein on their own, with just a small bread portion to round it out. A great start that should land very gently on your BG.]",
     "type": "Dinner",
     "date": "2026-04-21T18:47:00.000-07:00",
@@ -528,7 +550,7 @@
     "peak": null
   },
   {
-    "id": "35185ec7-0668-81eb-9aa1-f98469092f0e",
+    "id": "35485ec7-0668-8131-a34a-e4d76c87ff21",
     "title": "Lunch: A few walnut halves and one small chocolate truffle [Cumulative Lunch: ~36g carbs total] (BG: 92 mg/dL Flat) (Pred: 118-128 mg/dL @ 2:23 PM) (Protein: 3g | Carbs: ~8g | Cals: ~140) [Coach: Walnuts bring healthy fats and a touch of protein, and a small truffle is a perfectly reasonable little treat after a protein-rich lunch. The added carbs are modest and won't push your peak much.]",
     "type": "Lunch",
     "date": "2026-04-21T12:39:00.000-07:00",
@@ -539,7 +561,7 @@
     "peak": null
   },
   {
-    "id": "35185ec7-0668-813d-aaf0-d57fb1712a14",
+    "id": "35485ec7-0668-8156-ae50-ddfccbd52a73",
     "title": "Lunch: Bowl of scrambled eggs mixed with shredded chicken and pasta pieces, with a small side bowl of dressed greens with sesame seeds (BG: 92 mg/dL Flat) (Pred: 111-121 mg/dL @ 2:23 PM) (Protein: 35g | Carbs: ~28g | Cals: ~450) [Coach: Big-protein lunch — eggs and chicken together push you well past 30g, which is excellent for satiety and steady BG. The side of greens adds fiber and the small pasta portion keeps carbs reasonable. Beautifully balanced plate.]",
     "type": "Lunch",
     "date": "2026-04-21T12:30:00.000-07:00",
@@ -550,7 +572,7 @@
     "peak": null
   },
   {
-    "id": "35185ec7-0668-8117-be96-fcc5757e3d29",
+    "id": "35485ec7-0668-8195-b028-dac2a11dac40",
     "title": "Dinner: Yellow curry with shredded chicken, broccoli, zucchini, carrots, and onions, over a small portion of white rice — ate half the plate (BG: 127 mg/dL Flat) (Pred: 142-152 mg/dL @ 7:54 PM) (Protein: 19g | Carbs: ~17g | Cals: ~258) [Coach: Still a well-balanced dinner even at half portion — ~19g protein is a respectable amount, and the lower carb load will land very gently. Curry's coconut fat plus the protein will keep things steady.]",
     "type": "Dinner",
     "date": "2026-04-20T18:38:00.000-07:00",
