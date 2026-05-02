@@ -1,5 +1,16 @@
 [
   {
+    "id": "35485ec7-0668-8173-9bba-cbae29f88afc",
+    "title": "Lunch: White bean stew (judiones / fabes-style) in oil broth, with a side of stewed meat and vegetables (peppers, cabbage, tomato) [Cumulative Lunch: ~48g carbs total] (BG: 132 mg/dL Flat) (Pred: 160-170 mg/dL @ 4:02 PM) (Protein: 23g | Carbs: ~32g | Cals: ~460) [Coach: A real Spanish comida 🫘 — beans bring fiber and plant protein, the stewed meat and veggies round it out beautifully. Cumulative lunch is heartier now; an after-lunch walk would help BG settle gently.]",
+    "type": "Lunch",
+    "date": "2026-05-02T15:01:00.000+02:00",
+    "photo": "https://iili.io/BLlgQmF.jpg",
+    "carbs": 32,
+    "cals": 460,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "35485ec7-0668-8197-8cf5-f037c606bc7c",
     "title": "Breakfast: Open-faced toast topped with several slices of mortadella (BG: 120 mg/dL Flat) (Pred: 172-182 mg/dL @ 12:31 PM) (Protein: 12g | Carbs: ~13g | Cals: ~200) [Coach: Simple and protein-forward 🥪 — mortadella covers the protein, modest bread keeps carbs in check. Late breakfasts ride a bit higher because of dawn cortisol; a short walk after would help cap the peak.]",
     "type": "Breakfast",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-02/0ff2c3d36741bb3f.jpg",
     "carbs": 13,
     "cals": 200,
-    "delta": null,
-    "peak": null
+    "delta": 91,
+    "peak": 206
   },
   {
     "id": "35485ec7-0668-8161-a947-c5e07f547fdb",
@@ -18,8 +29,8 @@
     "photo": "https://iili.io/BLY7Mzl.jpg",
     "carbs": 13,
     "cals": 200,
-    "delta": null,
-    "peak": null
+    "delta": 91,
+    "peak": 206
   },
   {
     "id": "35485ec7-0668-815a-8f55-dedc421b9e9b",
