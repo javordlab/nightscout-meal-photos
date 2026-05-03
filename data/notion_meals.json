@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-03/86ccf0446be54a08.jpg",
     "carbs": 23,
     "cals": 200,
-    "delta": null,
-    "peak": null
+    "delta": 62,
+    "peak": 184
   },
   {
     "id": "35585ec7-0668-817f-a5a9-fac0e36eb719",
@@ -133,7 +133,7 @@
   },
   {
     "id": "35585ec7-0668-813c-a612-e0949273a753",
-    "title": "Dinner: Half a small plate of green olives [Cumulative Dinner: ~58g carbs total] [Coach: Olives are basically free ��� — healthy fats and almost zero carbs. A clean closer to a long tapas night. Sleep well, you've earned it.] (BG: 96 mg/dL Flat) (Protein: 0g) (Pred: 134-144 mg/dL @ 10:37 PM)",
+    "title": "Dinner: Half a small plate of green olives [Cumulative Dinner: ~58g carbs total] [Coach: Olives are basically free 🫒 — healthy fats and almost zero carbs. A clean closer to a long tapas night. Sleep well, you've earned it.] (BG: 96 mg/dL Flat) (Protein: 0g) (Pred: 134-144 mg/dL @ 10:37 PM)",
     "type": "Dinner",
     "date": "2026-05-01T23:08:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-01/bce65d7ee29fcbe6.jpg",
@@ -287,7 +287,7 @@
   },
   {
     "id": "35585ec7-0668-8158-b874-e46a8dd3559a",
-    "title": "Dinner: Cucumber spears (~�� cucumber, sliced) [Cumulative Dinner: ~19g carbs total] (BG: 108 mg/dL Flat) (Pred: 116-126 mg/dL @ 8:18 PM) (Protein: 1g | Carbs: ~3g | Cals: ~12) [Coach: There it is 🥒 — cucumber to round out the bread and cheese, exactly the move I was hoping for. Crunchy, hydrating, and basically free from a BG standpoint. Lovely little dinner.]",
+    "title": "Dinner: Cucumber spears (~½ cucumber, sliced) [Cumulative Dinner: ~19g carbs total] (BG: 108 mg/dL Flat) (Pred: 116-126 mg/dL @ 8:18 PM) (Protein: 1g | Carbs: ~3g | Cals: ~12) [Coach: There it is 🥒 — cucumber to round out the bread and cheese, exactly the move I was hoping for. Crunchy, hydrating, and basically free from a BG standpoint. Lovely little dinner.]",
     "type": "Dinner",
     "date": "2026-04-29T19:04:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-29/d866dd75d8383a91.jpg",
