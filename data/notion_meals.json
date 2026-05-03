@@ -7,8 +7,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-02/9e850ceb05d49f01.jpg",
     "carbs": 10,
     "cals": 40,
-    "delta": null,
-    "peak": null
+    "delta": 31,
+    "peak": 149
   },
   {
     "id": "35485ec7-0668-8124-8b8d-f69eaa1908a0",
@@ -133,7 +133,7 @@
   },
   {
     "id": "35485ec7-0668-81fc-8638-c9373ed51a6a",
-    "title": "Lunch: 1 croqueta with tomato sauce [Cumulative Lunch: ~22g carbs total] [Coach: Croqueta time 🍅 �� fried bechamel and breading bring some quick carbs and fat, but the tomato sauce is a bonus of veg. Single portion is reasonable; cumulative lunch is still in a friendly zone.] (BG: 125 mg/dL Flat) (Protein: 4g) (Pred: 137-147 mg/dL @ 4:09 PM)",
+    "title": "Lunch: 1 croqueta with tomato sauce [Cumulative Lunch: ~22g carbs total] [Coach: Croqueta time 🍅 — fried bechamel and breading bring some quick carbs and fat, but the tomato sauce is a bonus of veg. Single portion is reasonable; cumulative lunch is still in a friendly zone.] (BG: 125 mg/dL Flat) (Protein: 4g) (Pred: 137-147 mg/dL @ 4:09 PM)",
     "type": "Lunch",
     "date": "2026-05-01T14:28:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-01/4cee012b9e6bb3fe.jpg",
