@@ -1,7 +1,7 @@
 [
   {
-    "id": "35585ec7-0668-81f1-a25d-c7ed1040736c",
-    "title": "Lunch: Half a bocadillo de calamares (squid in a bread roll), plus a café con leche (BG: 122 mg/dL FortyFiveDown) (Pred: 135-145 mg/dL @ 2:33 PM) (Protein: 12g | Carbs: ~23g | Cals: ~200) [Coach: Bocadillo de calamares — a Madrid classic 🦑. Squid brings real protein, and half-portioning the bread keeps carbs reasonable. Coffee adds a touch of protein. Should land in a friendly range.]",
+    "id": "35585ec7-0668-818f-9f97-c324c4b0a34d",
+    "title": "Lunch: Half a bocadillo de calamares (squid in a bread roll), plus a café con leche [Coach: Bocadillo de calamares — a Madrid classic 🦑. Squid brings real protein, and half-portioning the bread keeps carbs reasonable. Coffee adds a touch of protein. Should land in a friendly range.] (BG: 122 mg/dL FortyFiveDown) (Protein: 12g) (Pred: 135-145 mg/dL @ 2:33 PM)",
     "type": "Lunch",
     "date": "2026-05-03T12:40:00.000+02:00",
     "photo": "https://iili.io/BLDaWAB.jpg",
@@ -144,7 +144,7 @@
   },
   {
     "id": "35585ec7-0668-8162-a0d0-c98f2066b021",
-    "title": "Dinner: 1 small thin-crust pizza slice with ham and cheese, and a small beer (ca��a) [Cumulative Dinner: ~45g carbs total] [Coach: Pizza nightcap 🍕 — thin crust + cheese + ham is a reasonable combo, and the small beer adds modest extra carbs. Cumulative dinner has climbed; a short walk before bed would help BG settle gently.] (BG: 109 mg/dL Flat) (Protein: 10g) (Pred: 142-152 mg/dL @ 10:37 PM)",
+    "title": "Dinner: 1 small thin-crust pizza slice with ham and cheese, and a small beer (caña) [Cumulative Dinner: ~45g carbs total] [Coach: Pizza nightcap 🍕 — thin crust + cheese + ham is a reasonable combo, and the small beer adds modest extra carbs. Cumulative dinner has climbed; a short walk before bed would help BG settle gently.] (BG: 109 mg/dL Flat) (Protein: 10g) (Pred: 142-152 mg/dL @ 10:37 PM)",
     "type": "Dinner",
     "date": "2026-05-01T22:25:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-01/798c33192021fb9b.jpg",
@@ -232,7 +232,7 @@
   },
   {
     "id": "35585ec7-0668-81a8-a781-cff0378ad4f8",
-    "title": "Dessert: 1 churro and a small espresso (BG: 94 mg/dL Flat) (Pred: 105-115 mg/dL @ 10:10 PM) (Protein: 2g | Carbs: ~15g | Cals: ~135) [Coach: Travel-day churro moment 🥄 — fried dough is mostly fast carbs, but the portion is small and the espresso adds nothing on the BG side. With BG at 94 and tapas still ahead, this should glide up gently. Save room for dinner.]",
+    "title": "Dessert: 1 churro and a small espresso (BG: 94 mg/dL Flat) (Pred: 105-115 mg/dL @ 10:10 PM) (Protein: 2g | Carbs: ~15g | Cals: ~135) [Coach: Travel-day churro moment 🥄 �� fried dough is mostly fast carbs, but the portion is small and the espresso adds nothing on the BG side. With BG at 94 and tapas still ahead, this should glide up gently. Save room for dinner.]",
     "type": "Dessert",
     "date": "2026-04-30T20:28:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-30/9415e6cd089fbfaa.jpg",
