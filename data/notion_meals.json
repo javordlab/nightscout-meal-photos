@@ -1,5 +1,16 @@
 [
   {
+    "id": "35585ec7-0668-817f-a5a9-fac0e36eb719",
+    "title": "Lunch: Open-faced toast topped with several slices of mortadella [Coach: Light meal but BG is already at 181 going in, so peak may sit higher than ideal. Mortadella's protein helps slow things; a walk after would really help bring it down. Worth checking what nudged BG up this morning.] (BG: 181 mg/dL Flat) (Protein: 12g) (Pred: 190-200 mg/dL @ 1:50 PM)",
+    "type": "Lunch",
+    "date": "2026-05-03T11:57:00.000+02:00",
+    "photo": "https://iili.io/BLtGBzN.jpg",
+    "carbs": 13,
+    "cals": 200,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "35485ec7-0668-812d-8d62-c905f4b1cb98",
     "title": "Dinner: 1 mandarin/clementine [Cumulative Dinner: ~39g carbs total] [Coach: Sweet little citrus closer 🍊 — fiber, vitamin C, and modest sugar. The walk you just took already softened the dinner peak. Sleep well.] (BG: 136 mg/dL Flat) (Protein: 1g) (Pred: 165-175 mg/dL @ 10:51 PM)",
     "type": "Dinner",
@@ -947,7 +958,7 @@
   },
   {
     "id": "34185ec7-0668-819e-9767-e0ef6f1fa8de",
-    "title": "Dessert: 1 medium orange, peeled and segmented [Coach: A lovely light evening snack �� oranges are rich in vitamin C and fiber, and the Dessert intercept keeps the predicted rise modest. BG at 112 after your 30-minute walk is excellent. A very sensible way to satisfy a sweet craving at night.] (BG: 112 mg/dL Flat) (Protein: 1g) (Pred: 116-126 mg/dL @ 10:06 PM)",
+    "title": "Dessert: 1 medium orange, peeled and segmented [Coach: A lovely light evening snack — oranges are rich in vitamin C and fiber, and the Dessert intercept keeps the predicted rise modest. BG at 112 after your 30-minute walk is excellent. A very sensible way to satisfy a sweet craving at night.] (BG: 112 mg/dL Flat) (Protein: 1g) (Pred: 116-126 mg/dL @ 10:06 PM)",
     "type": "Dessert",
     "date": "2026-04-12T20:24:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-12/bd33dac5e7f75d71.jpg",
@@ -1002,7 +1013,7 @@
   },
   {
     "id": "34085ec7-0668-8176-9b3d-f1e322673816",
-    "title": "Dinner: Barley bowl with stewed mixed vegetables, avocado, and sardines [Coach: This is an excellent T2D dinner ��� sardines bring omega-3s and solid protein, barley is a high-fiber whole grain, and avocado adds healthy fats that slow digestion. Stewed veggies round out the fiber. BG at 101 going in is perfect. One of the best-balanced dinners in your recent log.] (BG: 101 mg/dL Flat) (Protein: 19g) (Pred: 146-156 mg/dL @ 8:36 PM)",
+    "title": "Dinner: Barley bowl with stewed mixed vegetables, avocado, and sardines [Coach: This is an excellent T2D dinner — sardines bring omega-3s and solid protein, barley is a high-fiber whole grain, and avocado adds healthy fats that slow digestion. Stewed veggies round out the fiber. BG at 101 going in is perfect. One of the best-balanced dinners in your recent log.] (BG: 101 mg/dL Flat) (Protein: 19g) (Pred: 146-156 mg/dL @ 8:36 PM)",
     "type": "Dinner",
     "date": "2026-04-11T19:20:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-11/e2bbe142622aa010.jpg",
