@@ -1,5 +1,16 @@
 [
   {
+    "id": "35585ec7-0668-818f-9f97-c324c4b0a34d",
+    "title": "Lunch: Small bocadillo stuffed with croquetas, plus a café con leche (BG: 122 mg/dL FortyFiveDown) (Pred: 157-167 mg/dL @ 2:33 PM) (Protein: 14g | Carbs: ~43g | Cals: ~350) [Coach: A hearty Spanish bar lunch 🥖 — bocadillo + croquetas is bread-on-bread (the fried coating + roll), so carbs are doing most of the talking. Café con leche adds a touch of protein. With BG trending down, the carbs are well-timed to catch the dip; a walk after would tame the peak.]",
+    "type": "Lunch",
+    "date": "2026-05-03T12:40:00.000+02:00",
+    "photo": "https://iili.io/BLDaWAB.jpg",
+    "carbs": 43,
+    "cals": 350,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "35585ec7-0668-817f-a5a9-fac0e36eb719",
     "title": "Lunch: Open-faced toast topped with several slices of mortadella [Coach: Light meal but BG is already at 181 going in, so peak may sit higher than ideal. Mortadella's protein helps slow things; a walk after would really help bring it down. Worth checking what nudged BG up this morning.] (BG: 181 mg/dL Flat) (Protein: 12g) (Pred: 190-200 mg/dL @ 1:50 PM)",
     "type": "Lunch",
@@ -45,7 +56,7 @@
   },
   {
     "id": "35585ec7-0668-81a5-98cf-d2ecebe5a4ad",
-    "title": "Dinner: Half a small cazuela of sopa de ajo (Castilian garlic soup with bread, paprika, egg) and half a plate of green olives [Cumulative Dinner: ~19g carbs total] (BG: 125 mg/dL Flat) (Pred: 143-153 mg/dL @ 10:51 PM) (Protein: 5g | Carbs: ~7g | Cals: ~120) [Coach: Sopa de ajo, that warm Castilian classic 🍲 — bread soaks the broth, egg adds protein, olives bring healthy fats. Half-portioned keeps the carbs reasonable. Cumulative dinner stays in a friendly zone.]",
+    "title": "Dinner: Half a small cazuela of sopa de ajo (Castilian garlic soup with bread, paprika, egg) and half a plate of green olives [Cumulative Dinner: ~19g carbs total] (BG: 125 mg/dL Flat) (Pred: 143-153 mg/dL @ 10:51 PM) (Protein: 5g | Carbs: ~7g | Cals: ~120) [Coach: Sopa de ajo, that warm Castilian classic 🍲 ��� bread soaks the broth, egg adds protein, olives bring healthy fats. Half-portioned keeps the carbs reasonable. Cumulative dinner stays in a friendly zone.]",
     "type": "Dinner",
     "date": "2026-05-02T21:50:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-02/91195b269474bd68.jpg",
