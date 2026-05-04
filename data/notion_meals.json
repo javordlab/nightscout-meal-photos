@@ -1,7 +1,18 @@
 [
   {
+    "id": "35685ec7-0668-8108-a26d-e8a2981bff95",
+    "title": "Lunch: Chickpeas stewed in tomato/paprika sauce, steamed broccoli, and a slice of rustic bread (BG: 101 mg/dL Flat) (Pred: 125-135 mg/dL @ 4:15 PM) (Protein: 18g | Carbs: ~51g | Cals: ~330) [Coach: Now this is a comeback meal 🫘 — chickpeas bring fiber and plant protein, broccoli is exactly the non-starchy veg I love to see, and one slice of bread keeps the carbs anchored. Things should land softly. Welcome back to the home routine.]",
+    "type": "Lunch",
+    "date": "2026-05-04T14:22:00.000+02:00",
+    "photo": "https://iili.io/BQACu94.jpg",
+    "carbs": 51,
+    "cals": 330,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "35685ec7-0668-8123-b666-c8e5010c85fa",
-    "title": "Breakfast: 2 slices of toast with peanut butter and jam, with sliced kiwi on the side [Coach: PB&J on toast with kiwi 🥝 — peanut butter brings real protein and fat to soften the bread + jam carbs, and kiwi adds fiber and vitamin C. Carbs are on the higher end though, so peak may climb a bit; a walk after would help cap it.] (BG: 114 mg/dL Flat) (Protein: 14g) (Pred: 181-191 mg/dL @ 10:29 AM)",
+    "title": "Breakfast: 2 slices of toast with peanut butter and jam, with sliced kiwi on the side (BG: 114 mg/dL Flat) (Pred: 181-191 mg/dL @ 10:29 AM) (Protein: 14g | Carbs: ~51g | Cals: ~410) [Coach: PB&J on toast with kiwi 🥝 — peanut butter brings real protein and fat to soften the bread + jam carbs, and kiwi adds fiber and vitamin C. Carbs are on the higher end though, so peak may climb a bit; a walk after would help cap it.]",
     "type": "Breakfast",
     "date": "2026-05-04T09:02:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-04/fdecb48a1e068ff7.jpg",
@@ -12,7 +23,7 @@
   },
   {
     "id": "35585ec7-0668-8170-b991-e45438ec4855",
-    "title": "Dinner: Fried egg, slices of jamón serrano and salchichón, pimientos de Padrón, a wedge of manchego, and a slice of rustic bread [Coach: Beautifully balanced Spanish plate 🍳 �� egg + jamón + cheese stack 30g of solid protein, padrón peppers bring a non-starchy veg, and one slice of bread keeps carbs reasonable. Things should land in a friendly range.] (BG: 128 mg/dL Flat) (Protein: 30g) (Pred: 146-156 mg/dL @ 10:49 PM)",
+    "title": "Dinner: Fried egg, slices of jamón serrano and salchichón, pimientos de Padrón, a wedge of manchego, and a slice of rustic bread (BG: 128 mg/dL Flat) (Pred: 146-156 mg/dL @ 10:49 PM) (Protein: 30g | Carbs: ~19g | Cals: ~410) [Coach: Beautifully balanced Spanish plate 🍳 — egg + jamón + cheese stack 30g of solid protein, padrón peppers bring a non-starchy veg, and one slice of bread keeps carbs reasonable. Things should land in a friendly range.]",
     "type": "Dinner",
     "date": "2026-05-03T21:33:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-03/6eece3be4d0f24cc.jpg",
@@ -23,7 +34,7 @@
   },
   {
     "id": "35585ec7-0668-8184-b091-d6a8edbc4b4b",
-    "title": "Snack: Whole-grain sandwich with peanut/pistachio butter and a bit of jam [Coach: PB&J classic 🥜 — nut butter brings protein and fat to slow the bread + jam carbs. With BG at 83, this is exactly the kind of carb+protein combo to steer you back into a comfortable range.] (BG: 83 mg/dL Flat) (Protein: 13g) (Pred: 125-135 mg/dL @ 7:50 PM)",
+    "title": "Snack: Whole-grain sandwich with peanut/pistachio butter and a bit of jam (BG: 83 mg/dL Flat) (Pred: 125-135 mg/dL @ 7:50 PM) (Protein: 13g | Carbs: ~36g | Cals: ~350) [Coach: PB&J classic 🥜 — nut butter brings protein and fat to slow the bread + jam carbs. With BG at 83, this is exactly the kind of carb+protein combo to steer you back into a comfortable range.]",
     "type": "Snack",
     "date": "2026-05-03T17:44:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-03/af0b6623830db357.jpg",
@@ -34,7 +45,7 @@
   },
   {
     "id": "35585ec7-0668-8169-b355-ea4a8f822dc7",
-    "title": "Lunch: Salad bowl with seared tuna, leafy greens, quinoa, crispy fried bits and creamy spicy dressing, with an iced tea/kombucha-style drink [Coach: Yes 🥗 — gorgeous T2D-friendly bowl: leafy base, real protein from tuna, modest quinoa, and a flavorful dressing. Worlds better than yesterday's tapas night, and exactly the kind of \"second lunch\" that resets the day.] (BG: 140 mg/dL Flat) (Protein: 33g) (Pred: 166-176 mg/dL @ 4:19 PM)",
+    "title": "Lunch: Salad bowl with seared tuna, leafy greens, quinoa, crispy fried bits and creamy spicy dressing, with an iced tea/kombucha-style drink (BG: 140 mg/dL Flat) (Pred: 166-176 mg/dL @ 4:19 PM) (Protein: 33g | Carbs: ~36g | Cals: ~415) [Coach: Yes 🥗 — gorgeous T2D-friendly bowl: leafy base, real protein from tuna, modest quinoa, and a flavorful dressing. Worlds better than yesterday's tapas night, and exactly the kind of \"second lunch\" that resets the day.]",
     "type": "Lunch",
     "date": "2026-05-03T14:26:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-03/808ad2939cf5ca10.jpg",
@@ -45,7 +56,7 @@
   },
   {
     "id": "35585ec7-0668-81b2-855c-f5d107842da6",
-    "title": "Lunch: Half a bocadillo de calamares (squid in a bread roll), plus a café con leche [Coach: Bocadillo de calamares — a Madrid classic 🦑. Squid brings real protein, and half-portioning the bread keeps carbs reasonable. Coffee adds a touch of protein. Should land in a friendly range.] (BG: 122 mg/dL FortyFiveDown) (Protein: 12g) (Pred: 135-145 mg/dL @ 2:33 PM)",
+    "title": "Lunch: Half a bocadillo de calamares (squid in a bread roll), plus a café con leche (BG: 122 mg/dL FortyFiveDown) (Pred: 135-145 mg/dL @ 2:33 PM) (Protein: 12g | Carbs: ~23g | Cals: ~200) [Coach: Bocadillo de calamares — a Madrid classic 🦑. Squid brings real protein, and half-portioning the bread keeps carbs reasonable. Coffee adds a touch of protein. Should land in a friendly range.]",
     "type": "Lunch",
     "date": "2026-05-03T12:40:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-03/86ccf0446be54a08.jpg",
@@ -67,7 +78,7 @@
   },
   {
     "id": "35585ec7-0668-8116-8df1-dff228b225e2",
-    "title": "Breakfast: Open-faced toast topped with several slices of mortadella (logged late) [Coach: Simple and protein-forward 🥪 — mortadella covers the protein, modest bread keeps carbs in check. With BG starting at 106, this should rise gently into a comfortable range.] (BG: 106 mg/dL Flat) (Protein: 12g) (Pred: 158-168 mg/dL @ 11:27 AM)",
+    "title": "Breakfast: Open-faced toast topped with several slices of mortadella (logged late) (BG: 106 mg/dL Flat) (Pred: 158-168 mg/dL @ 11:27 AM) (Protein: 12g | Carbs: ~13g | Cals: ~200) [Coach: Simple and protein-forward 🥪 — mortadella covers the protein, modest bread keeps carbs in check. With BG starting at 106, this should rise gently into a comfortable range.]",
     "type": "Breakfast",
     "date": "2026-05-03T10:00:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-03/59b7df716812e77d.jpg",
@@ -78,7 +89,7 @@
   },
   {
     "id": "35585ec7-0668-818b-a9cc-e9f821fac0d9",
-    "title": "Dinner: 1 mandarin/clementine [Cumulative Dinner: ~39g carbs total] [Coach: Sweet little citrus closer 🍊 — fiber, vitamin C, and modest sugar. The walk you just took already softened the dinner peak. Sleep well.] (BG: 136 mg/dL Flat) (Protein: 1g) (Pred: 165-175 mg/dL @ 10:51 PM)",
+    "title": "Dinner: 1 mandarin/clementine [Cumulative Dinner: ~39g carbs total] (BG: 136 mg/dL Flat) (Pred: 165-175 mg/dL @ 10:51 PM) (Protein: 1g | Carbs: ~10g | Cals: ~40) [Coach: Sweet little citrus closer 🍊 — fiber, vitamin C, and modest sugar. The walk you just took already softened the dinner peak. Sleep well.]",
     "type": "Dinner",
     "date": "2026-05-02T23:12:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-02/9e850ceb05d49f01.jpg",
@@ -89,7 +100,7 @@
   },
   {
     "id": "35585ec7-0668-8112-94b1-d9e7967afbaa",
-    "title": "Dinner: Half portion of torreznos (crispy fried pork belly) with bread chunks [Cumulative Dinner: ~29g carbs total] [Coach: Torreznos 🥓 — full-on Spanish bar classic. Fatty and protein-rich, the bread adds modest carbs. Half-portioned is a smart call. Cumulative dinner is in friendly territory; a short walk before bed will close it out gently.] (BG: 145 mg/dL Flat) (Protein: 14g) (Pred: 156-166 mg/dL @ 10:51 PM)",
+    "title": "Dinner: Half portion of torreznos (crispy fried pork belly) with bread chunks [Cumulative Dinner: ~29g carbs total] (BG: 145 mg/dL Flat) (Pred: 156-166 mg/dL @ 10:51 PM) (Protein: 14g | Carbs: ~10g | Cals: ~255) [Coach: Torreznos 🥓 — full-on Spanish bar classic. Fatty and protein-rich, the bread adds modest carbs. Half-portioned is a smart call. Cumulative dinner is in friendly territory; a short walk before bed will close it out gently.]",
     "type": "Dinner",
     "date": "2026-05-02T22:15:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-02/ef75fa4115f7d20c.jpg",
@@ -100,7 +111,7 @@
   },
   {
     "id": "35585ec7-0668-81a5-98cf-d2ecebe5a4ad",
-    "title": "Dinner: Half a small cazuela of sopa de ajo (Castilian garlic soup with bread, paprika, egg) and half a plate of green olives [Cumulative Dinner: ~19g carbs total] [Coach: Sopa de ajo, that warm Castilian classic 🍲 — bread soaks the broth, egg adds protein, olives bring healthy fats. Half-portioned keeps the carbs reasonable. Cumulative dinner stays in a friendly zone.] (BG: 125 mg/dL Flat) (Protein: 5g) (Pred: 143-153 mg/dL @ 10:51 PM)",
+    "title": "Dinner: Half a small cazuela of sopa de ajo (Castilian garlic soup with bread, paprika, egg) and half a plate of green olives [Cumulative Dinner: ~19g carbs total] (BG: 125 mg/dL Flat) (Pred: 143-153 mg/dL @ 10:51 PM) (Protein: 5g | Carbs: ~7g | Cals: ~120) [Coach: Sopa de ajo, that warm Castilian classic 🍲 — bread soaks the broth, egg adds protein, olives bring healthy fats. Half-portioned keeps the carbs reasonable. Cumulative dinner stays in a friendly zone.]",
     "type": "Dinner",
     "date": "2026-05-02T21:50:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-02/91195b269474bd68.jpg",
@@ -111,7 +122,7 @@
   },
   {
     "id": "35585ec7-0668-81d2-8580-d96c2335de31",
-    "title": "Dinner: Half a tapa of picadillo (crumbled chorizo/minced meat) with fried potato wedges, plus a small caña [Coach: Half-tapa is a smart pace 👏 — still gets you the flavor and protein without the full carb load. Should land in a comfortable range tonight.] (BG: 125 mg/dL Flat) (Protein: 12g) (Pred: 142-152 mg/dL @ 10:51 PM)",
+    "title": "Dinner: Half a tapa of picadillo (crumbled chorizo/minced meat) with fried potato wedges, plus a small caña (BG: 125 mg/dL Flat) (Pred: 142-152 mg/dL @ 10:51 PM) (Protein: 12g | Carbs: ~12g | Cals: ~260) [Coach: Half-tapa is a smart pace 👏 — still gets you the flavor and protein without the full carb load. Should land in a comfortable range tonight.]",
     "type": "Dinner",
     "date": "2026-05-02T21:35:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-02/844df0a092b2336d.jpg",
@@ -122,7 +133,7 @@
   },
   {
     "id": "35585ec7-0668-813a-b095-f2f5b0d15c06",
-    "title": "Lunch: 5 fresh strawberries [Cumulative Lunch: ~54g carbs total] [Coach: Sweet little finish 🍓 — fiber and antioxidants, almost free on BG. A perfect way to close a hearty lunch. The bean+stew + walk recipe will keep things in check.] (BG: 142 mg/dL Flat) (Protein: 1g) (Pred: 145-155 mg/dL @ 4:02 PM)",
+    "title": "Lunch: 5 fresh strawberries [Cumulative Lunch: ~54g carbs total] (BG: 142 mg/dL Flat) (Pred: 145-155 mg/dL @ 4:02 PM) (Protein: 1g | Carbs: ~6g | Cals: ~25) [Coach: Sweet little finish 🍓 — fiber and antioxidants, almost free on BG. A perfect way to close a hearty lunch. The bean+stew + walk recipe will keep things in check.]",
     "type": "Lunch",
     "date": "2026-05-02T15:26:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-02/1de547feeecc207f.jpg",
@@ -133,7 +144,7 @@
   },
   {
     "id": "35585ec7-0668-818a-abda-f612c6cbd054",
-    "title": "Lunch: White bean stew (judiones / fabes-style) in oil broth, with a side of stewed meat and vegetables (peppers, cabbage, tomato) [Cumulative Lunch: ~48g carbs total] [Coach: A real Spanish comida 🫘 — beans bring fiber and plant protein, the stewed meat and veggies round it out beautifully. Cumulative lunch is heartier now; an after-lunch walk would help BG settle gently.] (BG: 132 mg/dL Flat) (Protein: 23g) (Pred: 160-170 mg/dL @ 4:02 PM)",
+    "title": "Lunch: White bean stew (judiones / fabes-style) in oil broth, with a side of stewed meat and vegetables (peppers, cabbage, tomato) [Cumulative Lunch: ~48g carbs total] (BG: 132 mg/dL Flat) (Pred: 160-170 mg/dL @ 4:02 PM) (Protein: 23g | Carbs: ~32g | Cals: ~460) [Coach: A real Spanish comida 🫘 — beans bring fiber and plant protein, the stewed meat and veggies round it out beautifully. Cumulative lunch is heartier now; an after-lunch walk would help BG settle gently.]",
     "type": "Lunch",
     "date": "2026-05-02T15:01:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-02/1c2c9a8eb31b63ab.jpg",
@@ -144,7 +155,7 @@
   },
   {
     "id": "35585ec7-0668-8189-aa2e-cf51b1460da0",
-    "title": "Breakfast: Open-faced toast topped with several slices of mortadella [Coach: Simple and protein-forward 🥪 — mortadella covers the protein, modest bread keeps carbs in check. Late breakfasts ride a bit higher because of dawn cortisol; a short walk after would help cap the peak.] (BG: 120 mg/dL Flat) (Protein: 12g) (Pred: 172-182 mg/dL @ 12:31 PM)",
+    "title": "Breakfast: Open-faced toast topped with several slices of mortadella (BG: 120 mg/dL Flat) (Pred: 172-182 mg/dL @ 12:31 PM) (Protein: 12g | Carbs: ~13g | Cals: ~200) [Coach: Simple and protein-forward 🥪 — mortadella covers the protein, modest bread keeps carbs in check. Late breakfasts ride a bit higher because of dawn cortisol; a short walk after would help cap the peak.]",
     "type": "Breakfast",
     "date": "2026-05-02T11:04:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-02/0ff2c3d36741bb3f.jpg",
