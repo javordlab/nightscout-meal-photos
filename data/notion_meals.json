@@ -7,8 +7,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-05/f91370f6dea70628.jpg",
     "carbs": 41,
     "cals": 380,
-    "delta": null,
-    "peak": null
+    "delta": -8,
+    "peak": 141
   },
   {
     "id": "35785ec7-0668-81cd-ab22-f4f3d5c7e90c",
@@ -111,7 +111,7 @@
   },
   {
     "id": "35585ec7-0668-8169-b355-ea4a8f822dc7",
-    "title": "Lunch: Salad bowl with seared tuna, leafy greens, quinoa, crispy fried bits and creamy spicy dressing, with an iced tea/kombucha-style drink (BG: 140 mg/dL Flat) (Pred: 166-176 mg/dL @ 4:19 PM) (Protein: 33g | Carbs: ~36g | Cals: ~415) [Coach: Yes 🥗 — gorgeous T2D-friendly bowl: leafy base, real protein from tuna, modest quinoa, and a flavorful dressing. Worlds better than yesterday's tapas night, and exactly the kind of \"second lunch\" that resets the day.]",
+    "title": "Lunch: Salad bowl with seared tuna, leafy greens, quinoa, crispy fried bits and creamy spicy dressing, with an iced tea/kombucha-style drink (BG: 140 mg/dL Flat) (Pred: 166-176 mg/dL @ 4:19 PM) (Protein: 33g | Carbs: ~36g | Cals: ~415) [Coach: Yes ��� — gorgeous T2D-friendly bowl: leafy base, real protein from tuna, modest quinoa, and a flavorful dressing. Worlds better than yesterday's tapas night, and exactly the kind of \"second lunch\" that resets the day.]",
     "type": "Lunch",
     "date": "2026-05-03T14:26:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-03/808ad2939cf5ca10.jpg",
@@ -320,7 +320,7 @@
   },
   {
     "id": "35585ec7-0668-8172-819d-ea1e275cc218",
-    "title": "Dinner: A few potato chips and a small portion of green olives [Cumulative Dinner: ~38g carbs total] (BG: 131 mg/dL Flat) (Pred: 174-184 mg/dL @ 10:55 PM) (Protein: 1g | Carbs: ~11g | Cals: ~130) [Coach: A small bar nibble 🫒 — olives bring healthy fats and almost no carbs, the chips add a bit of fast carb but the portion is small. BG may sit slightly elevated tonight from the cumulative bar food; a bedtime stroll if you can.]",
+    "title": "Dinner: A few potato chips and a small portion of green olives [Cumulative Dinner: ~38g carbs total] (BG: 131 mg/dL Flat) (Pred: 174-184 mg/dL @ 10:55 PM) (Protein: 1g | Carbs: ~11g | Cals: ~130) [Coach: A small bar nibble ��� — olives bring healthy fats and almost no carbs, the chips add a bit of fast carb but the portion is small. BG may sit slightly elevated tonight from the cumulative bar food; a bedtime stroll if you can.]",
     "type": "Dinner",
     "date": "2026-04-30T22:06:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-30/69f0b2c7f31eb292.jpg",
@@ -1596,7 +1596,7 @@
   },
   {
     "id": "33785ec7-0668-8117-ac00-e39816aa114a",
-    "title": "Dinner: Cocido madrileño - segundo plato, partially eaten (chickpeas, potato, chicken, chorizo, cabbage — left ~half) [Cumulative Dinner: ~44g carbs total] (BG: 136 mg/dL Flat) (Protein: 15g) (Pred: 175-195 mg/dL @ 20:00-20:30 PM)",
+    "title": "Dinner: Cocido madrile��o - segundo plato, partially eaten (chickpeas, potato, chicken, chorizo, cabbage — left ~half) [Cumulative Dinner: ~44g carbs total] (BG: 136 mg/dL Flat) (Protein: 15g) (Pred: 175-195 mg/dL @ 20:00-20:30 PM)",
     "type": "Dinner",
     "date": "2026-04-02T18:37:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-02/220fffa23a8acb14.jpg",
