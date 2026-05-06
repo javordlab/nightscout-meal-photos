@@ -1,12 +1,23 @@
 [
   {
-    "id": "35885ec7-0668-8182-9d02-fc71cdfb2932",
-    "title": "Lunch: Glass of tinto de verano / sangria (red wine with soda and orange) [Cumulative Lunch: ~21g carbs total] (BG: 110 mg/dL Flat) (Pred: 122-132 mg/dL @ 5:07 PM) (Protein: 0g | Carbs: ~14g | Cals: ~120) [Coach: A little tinto de verano 🍷 — adds quick carbs from the soda and a touch of alcohol. The fish-and-cockles base is so protein-heavy that things should still land in a friendly range.]",
+    "id": "35885ec7-0668-814e-a158-c53d41413861",
+    "title": "Lunch: Piece of rustic bread [Cumulative Lunch: ~26g carbs total] (BG: 115 mg/dL Flat) (Pred: 129-139 mg/dL @ 5:07 PM) (Protein: 3g | Carbs: ~18g | Cals: ~95) [Coach: Bread to mop up that lovely salsa verde 🥖 — the cumulative lunch carbs go up, but you're still riding on a mountain of protein from the fish and cockles. Should land in a friendly range.]",
+    "type": "Lunch",
+    "date": "2026-05-06T15:24:00.000+02:00",
+    "photo": "https://iili.io/BZcvgQs.jpg",
+    "carbs": 18,
+    "cals": 95,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "35885ec7-0668-816c-a49d-d25c83808f02",
+    "title": "Lunch: Red wine with sugarless soda and a lemon slice [Cumulative Lunch: ~8g carbs total] (BG: 110 mg/dL Flat) (Pred: 111-121 mg/dL @ 5:07 PM) (Protein: 0g | Carbs: ~1g | Cals: ~80) [Coach: Smart move with the sugarless soda 👏 — keeps the spritz refreshing without the sugar load. Should barely register on BG; the protein-rich lunch is doing all the work.]",
     "type": "Lunch",
     "date": "2026-05-06T15:21:00.000+02:00",
     "photo": "https://iili.io/BZcXEF9.jpg",
-    "carbs": 14,
-    "cals": 120,
+    "carbs": 1,
+    "cals": 80,
     "delta": null,
     "peak": null
   },
@@ -67,7 +78,7 @@
   },
   {
     "id": "35785ec7-0668-81aa-9eef-c5addcaadbc7",
-    "title": "Lunch: Penne pasta in tomato sauce topped with chopped hard-boiled egg, with steamed broccoli on the side (BG: 100 mg/dL Flat) (Pred: 138-148 mg/dL @ 4:35 PM) (Protein: 17g | Carbs: ~46g | Cals: ~320) [Coach: Macarrones a la napolitana with broccoli 🍅 — pasta is the carb anchor, but tomato sauce + egg + broccoli build it into a balanced plate. Should land in a friendly range; a short walk after would polish things off nicely.]",
+    "title": "Lunch: Penne pasta in tomato sauce topped with chopped hard-boiled egg, with steamed broccoli on the side (BG: 100 mg/dL Flat) (Pred: 138-148 mg/dL @ 4:35 PM) (Protein: 17g | Carbs: ~46g | Cals: ~320) [Coach: Macarrones a la napolitana with broccoli 🍅 ��� pasta is the carb anchor, but tomato sauce + egg + broccoli build it into a balanced plate. Should land in a friendly range; a short walk after would polish things off nicely.]",
     "type": "Lunch",
     "date": "2026-05-05T14:42:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-05/176fd4a4340debfd.jpg",
