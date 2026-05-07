@@ -1,7 +1,29 @@
 [
   {
+    "id": "35985ec7-0668-8104-a177-fcb3e73364f8",
+    "title": "Lunch: Slice of rustic bread [Cumulative Lunch: ~37g carbs total] (BG: 111 mg/dL Flat) (Pred: 145-155 mg/dL @ 4:11 PM) (Protein: 3g | Carbs: ~15g | Cals: ~80) [Coach: Bread for the olive oil 🥖 — cumulative carbs go up but the chard/potato base is fiber-rich, so it should still land in a friendly range.]",
+    "type": "Lunch",
+    "date": "2026-05-07T14:24:00.000+02:00",
+    "photo": "https://iili.io/BZp4Gix.jpg",
+    "carbs": 15,
+    "cals": 80,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "35985ec7-0668-8177-aa1b-e35842f622b1",
+    "title": "Lunch: Boiled acelgas (chard) with potato (BG: 117 mg/dL Flat) (Pred: 129-139 mg/dL @ 4:11 PM) (Protein: 6g | Carbs: ~22g | Cals: ~105) [Coach: Lovely simple Spanish veggie plate 🥬 — chard brings fiber and minerals, potato adds satiating starch. A light, balanced lunch that should land softly. Some protein on the side — egg, fish, or jamón — would round it out beautifully.]",
+    "type": "Lunch",
+    "date": "2026-05-07T14:18:00.000+02:00",
+    "photo": "https://iili.io/BZpex5J.jpg",
+    "carbs": 22,
+    "cals": 105,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "35985ec7-0668-81dc-a294-fe41b4f85ccf",
-    "title": "Lunch: Slice of rustic dark bread, a slice of cheese, and 2 slices of jamón [Coach: Beautifully balanced 🥖 — solid protein from the cheese and jamón, modest carbs from the bread. Should land in a friendly range.] (BG: 119 mg/dL Flat) (Protein: 18g) (Pred: 123-133 mg/dL @ 1:21 PM)",
+    "title": "Lunch: Slice of rustic dark bread, a slice of cheese, and 2 slices of jamón (BG: 119 mg/dL Flat) (Pred: 123-133 mg/dL @ 1:21 PM) (Protein: 18g | Carbs: ~16g | Cals: ~230) [Coach: Beautifully balanced 🥖 — solid protein from the cheese and jamón, modest carbs from the bread. Should land in a friendly range.]",
     "type": "Lunch",
     "date": "2026-05-07T11:28:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-07/81b0fed6df123246.jpg",
@@ -12,7 +34,7 @@
   },
   {
     "id": "35885ec7-0668-81b4-bf65-ef7f7d06f076",
-    "title": "Dinner: Jamón sandwich on whole-grain bread, with a side bowl of strawberries topped with a dollop of yogurt/cream [Coach: Lovely cozy dinner 🍓 — jamón brings real protein, strawberries add fiber and antioxidants, and the yogurt softens things. A walk before bed would help cap the peak gently.] (BG: 130 mg/dL Flat) (Protein: 17g) (Pred: 164-174 mg/dL @ 10:43 PM)",
+    "title": "Dinner: Jamón sandwich on whole-grain bread, with a side bowl of strawberries topped with a dollop of yogurt/cream (BG: 130 mg/dL Flat) (Pred: 164-174 mg/dL @ 10:43 PM) (Protein: 17g | Carbs: ~34g | Cals: ~265) [Coach: Lovely cozy dinner 🍓 — jamón brings real protein, strawberries add fiber and antioxidants, and the yogurt softens things. A walk before bed would help cap the peak gently.]",
     "type": "Dinner",
     "date": "2026-05-06T21:27:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-06/2157ff8e0cc98b0d.jpg",
@@ -23,7 +45,7 @@
   },
   {
     "id": "35885ec7-0668-81d2-b6a6-e30955c9d6cb",
-    "title": "Lunch: Piece of rustic bread [Cumulative Lunch: ~26g carbs total] [Coach: Bread to mop up that lovely salsa verde 🥖 — the cumulative lunch carbs go up, but you're still riding on a mountain of protein from the fish and cockles. Should land in a friendly range.] (BG: 115 mg/dL Flat) (Protein: 3g) (Pred: 129-139 mg/dL @ 5:07 PM)",
+    "title": "Lunch: Piece of rustic bread [Cumulative Lunch: ~26g carbs total] (BG: 115 mg/dL Flat) (Pred: 129-139 mg/dL @ 5:07 PM) (Protein: 3g | Carbs: ~18g | Cals: ~95) [Coach: Bread to mop up that lovely salsa verde 🥖 — the cumulative lunch carbs go up, but you're still riding on a mountain of protein from the fish and cockles. Should land in a friendly range.]",
     "type": "Lunch",
     "date": "2026-05-06T15:24:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-06/dca3b99b16fa02d6.jpg",
@@ -34,7 +56,7 @@
   },
   {
     "id": "35885ec7-0668-812c-807c-ef0467da19ea",
-    "title": "Lunch: Red wine with sugarless soda and a lemon slice [Cumulative Lunch: ~8g carbs total] [Coach: Smart move with the sugarless soda 👏 — keeps the spritz refreshing without the sugar load. Should barely register on BG; the protein-rich lunch is doing all the work.] (BG: 110 mg/dL Flat) (Protein: 0g) (Pred: 111-121 mg/dL @ 5:07 PM)",
+    "title": "Lunch: Red wine with sugarless soda and a lemon slice [Cumulative Lunch: ~8g carbs total] (BG: 110 mg/dL Flat) (Pred: 111-121 mg/dL @ 5:07 PM) (Protein: 0g | Carbs: ~1g | Cals: ~80) [Coach: Smart move with the sugarless soda 👏 — keeps the spritz refreshing without the sugar load. Should barely register on BG; the protein-rich lunch is doing all the work.]",
     "type": "Lunch",
     "date": "2026-05-06T15:21:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-06/5082e45ec3bb340a.jpg",
@@ -45,7 +67,7 @@
   },
   {
     "id": "35885ec7-0668-8172-a9f8-c4c01d4394ac",
-    "title": "Lunch: Whole hake (merluza) in salsa verde (parsley and garlic sauce) [Cumulative Lunch: ~7g carbs total] [Coach: Merluza en salsa verde 🐟 — beautifully clean, high-protein Basque classic. Combined with the berberechos, you've stacked an impressive 45g of protein and almost no carbs. Maybe a piece of fruit or some veg to round it out.] (BG: 110 mg/dL Flat) (Protein: 31g) (Pred: 109-119 mg/dL @ 5:07 PM)",
+    "title": "Lunch: Whole hake (merluza) in salsa verde (parsley and garlic sauce) [Cumulative Lunch: ~7g carbs total] (BG: 110 mg/dL Flat) (Pred: 109-119 mg/dL @ 5:07 PM) (Protein: 31g | Carbs: ~3g | Cals: ~230) [Coach: Merluza en salsa verde 🐟 — beautifully clean, high-protein Basque classic. Combined with the berberechos, you've stacked an impressive 45g of protein and almost no carbs. Maybe a piece of fruit or some veg to round it out.]",
     "type": "Lunch",
     "date": "2026-05-06T15:20:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-06/0b8ce65c7c465ffa.jpg",
@@ -56,7 +78,7 @@
   },
   {
     "id": "35885ec7-0668-81b8-8758-ffb52d2bc46a",
-    "title": "Lunch: Plate of berberechos (cockles) [Coach: Berberechos 🐚 — high in protein, very low carb, plus iron and omega-3s. Almost no impact on BG. A perfect Spanish high-protein lunch. A small piece of fruit or veggies on the side would round things out.] (BG: 112 mg/dL Flat) (Protein: 14g) (Pred: 103-113 mg/dL @ 5:07 PM)",
+    "title": "Lunch: Plate of berberechos (cockles) (BG: 112 mg/dL Flat) (Pred: 103-113 mg/dL @ 5:07 PM) (Protein: 14g | Carbs: ~4g | Cals: ~80) [Coach: Berberechos 🐚 — high in protein, very low carb, plus iron and omega-3s. Almost no impact on BG. A perfect Spanish high-protein lunch. A small piece of fruit or veggies on the side would round things out.]",
     "type": "Lunch",
     "date": "2026-05-06T15:14:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-06/318b0dbe5b8202dd.jpg",
@@ -67,7 +89,7 @@
   },
   {
     "id": "35885ec7-0668-81c9-a698-f35daff979da",
-    "title": "Breakfast: Open-faced toast — one slice with sliced tomato, the other with scrambled eggs, plus a café con leche [Coach: Lovely balanced plate 🍳 — eggs bring real protein, tomato adds a non-starchy veg, and the milky coffee adds a touch more protein. Late breakfasts ride a bit higher because of dawn cortisol; the walk you took will help cap the peak.] (BG: 108 mg/dL Flat) (Protein: 21g) (Pred: 181-191 mg/dL @ 1:29 PM)",
+    "title": "Breakfast: Open-faced toast — one slice with sliced tomato, the other with scrambled eggs, plus a café con leche (BG: 108 mg/dL Flat) (Pred: 181-191 mg/dL @ 1:29 PM) (Protein: 21g | Carbs: ~39g | Cals: ~350) [Coach: Lovely balanced plate 🍳 — eggs bring real protein, tomato adds a non-starchy veg, and the milky coffee adds a touch more protein. Late breakfasts ride a bit higher because of dawn cortisol; the walk you took will help cap the peak.]",
     "type": "Breakfast",
     "date": "2026-05-06T12:02:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-06/ca378238d62e01da.jpg",
@@ -78,7 +100,7 @@
   },
   {
     "id": "35785ec7-0668-81b4-93d9-ff0203958647",
-    "title": "Dinner: Toasted whole-grain sandwich with lettuce, tomato, salami, and avocado/pesto, with a mug of café con leche [Coach: Nice mixed sandwich with greens 🥗 — lettuce, tomato, and avocado bring fiber and good fats. BG is starting elevated at 149 though, so peak may sit higher than ideal. A walk after would really help bring it back down.] (BG: 149 mg/dL Flat) (Protein: 17g) (Pred: 191-201 mg/dL @ 10:22 PM)",
+    "title": "Dinner: Toasted whole-grain sandwich with lettuce, tomato, salami, and avocado/pesto, with a mug of café con leche (BG: 149 mg/dL Flat) (Pred: 191-201 mg/dL @ 10:22 PM) (Protein: 17g | Carbs: ~41g | Cals: ~380) [Coach: Nice mixed sandwich with greens 🥗 — lettuce, tomato, and avocado bring fiber and good fats. BG is starting elevated at 149 though, so peak may sit higher than ideal. A walk after would really help bring it back down.]",
     "type": "Dinner",
     "date": "2026-05-05T21:06:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-05/f91370f6dea70628.jpg",
@@ -89,7 +111,7 @@
   },
   {
     "id": "35785ec7-0668-81cd-ab22-f4f3d5c7e90c",
-    "title": "Lunch: 1 níspero (loquat) — peeled, with peel arranged like petals [Cumulative Lunch: ~49g carbs total] [Coach: Níspero 🍑 — small, sweet, almost free on BG. A tidy finish to a balanced lunch. Cumulative lunch lands in a comfortable zone.] (BG: 96 mg/dL Flat) (Protein: 0g) (Pred: 142-152 mg/dL @ 4:35 PM)",
+    "title": "Lunch: 1 níspero (loquat) — peeled, with peel arranged like petals [Cumulative Lunch: ~49g carbs total] (BG: 96 mg/dL Flat) (Pred: 142-152 mg/dL @ 4:35 PM) (Protein: 0g | Carbs: ~3g | Cals: ~12) [Coach: Níspero 🍑 — small, sweet, almost free on BG. A tidy finish to a balanced lunch. Cumulative lunch lands in a comfortable zone.]",
     "type": "Lunch",
     "date": "2026-05-05T14:57:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-05/fe7ed171b1a42e2b.jpg",
@@ -100,7 +122,7 @@
   },
   {
     "id": "35785ec7-0668-81aa-9eef-c5addcaadbc7",
-    "title": "Lunch: Penne pasta in tomato sauce topped with chopped hard-boiled egg, with steamed broccoli on the side [Coach: Macarrones a la napolitana with broccoli 🍅 — pasta is the carb anchor, but tomato sauce + egg + broccoli build it into a balanced plate. Should land in a friendly range; a short walk after would polish things off nicely.] (BG: 100 mg/dL Flat) (Protein: 17g) (Pred: 138-148 mg/dL @ 4:35 PM)",
+    "title": "Lunch: Penne pasta in tomato sauce topped with chopped hard-boiled egg, with steamed broccoli on the side (BG: 100 mg/dL Flat) (Pred: 138-148 mg/dL @ 4:35 PM) (Protein: 17g | Carbs: ~46g | Cals: ~320) [Coach: Macarrones a la napolitana with broccoli 🍅 — pasta is the carb anchor, but tomato sauce + egg + broccoli build it into a balanced plate. Should land in a friendly range; a short walk after would polish things off nicely.]",
     "type": "Lunch",
     "date": "2026-05-05T14:42:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-05/176fd4a4340debfd.jpg",
@@ -111,7 +133,7 @@
   },
   {
     "id": "35785ec7-0668-81a2-a16f-c13304294479",
-    "title": "Lunch: Rye crispbread topped with cheese (manchego-style) and sliced avocado [Coach: Lovely build 🥑 — fiber-rich crispbread, real protein from the cheese, healthy fats from the avocado. With BG at 97, this should rise gently into a comfortable range.] (BG: 97 mg/dL Flat) (Protein: 11g) (Pred: 107-117 mg/dL @ 2:10 PM)",
+    "title": "Lunch: Rye crispbread topped with cheese (manchego-style) and sliced avocado (BG: 97 mg/dL Flat) (Pred: 107-117 mg/dL @ 2:10 PM) (Protein: 11g | Carbs: ~21g | Cals: ~270) [Coach: Lovely build 🥑 — fiber-rich crispbread, real protein from the cheese, healthy fats from the avocado. With BG at 97, this should rise gently into a comfortable range.]",
     "type": "Lunch",
     "date": "2026-05-05T12:17:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-05/2299fc24d538d03d.jpg",
@@ -342,7 +364,7 @@
   },
   {
     "id": "35685ec7-0668-819f-8720-ea3b38993fda",
-    "title": "Dinner: 1 small thin-crust pizza slice with ham and cheese, and a small beer (ca��a) [Cumulative Dinner: ~45g carbs total] (BG: 109 mg/dL Flat) (Pred: 142-152 mg/dL @ 10:37 PM) (Protein: 10g | Carbs: ~26g | Cals: ~280) [Coach: Pizza nightcap 🍕 — thin crust + cheese + ham is a reasonable combo, and the small beer adds modest extra carbs. Cumulative dinner has climbed; a short walk before bed would help BG settle gently.]",
+    "title": "Dinner: 1 small thin-crust pizza slice with ham and cheese, and a small beer (caña) [Cumulative Dinner: ~45g carbs total] (BG: 109 mg/dL Flat) (Pred: 142-152 mg/dL @ 10:37 PM) (Protein: 10g | Carbs: ~26g | Cals: ~280) [Coach: Pizza nightcap 🍕 — thin crust + cheese + ham is a reasonable combo, and the small beer adds modest extra carbs. Cumulative dinner has climbed; a short walk before bed would help BG settle gently.]",
     "type": "Dinner",
     "date": "2026-05-01T22:25:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-01/798c33192021fb9b.jpg",
