@@ -1,5 +1,16 @@
 [
   {
+    "id": "35a85ec7-0668-81b1-9366-c9571e515269",
+    "title": "Dinner: Avocado toast topped with jamón ibérico [Coach: Beautiful late-night plate 🥑 — avocado brings healthy fats, jamón ibérico stacks rich protein, modest toast anchors it. Should land in a comfortable range. Sleep well.] (BG: 109 mg/dL Flat) (Protein: 18g) (Pred: 127-137 mg/dL @ 11:14 PM)",
+    "type": "Dinner",
+    "date": "2026-05-08T21:58:00.000+02:00",
+    "photo": "https://iili.io/BtkKf1f.jpg",
+    "carbs": 19,
+    "cals": 290,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "35a85ec7-0668-81eb-82bc-e9d676840a3c",
     "title": "Lunch: Pureed broccoli, Swiss chard, and potato soup, with half a plain yogurt [Coach: Exactly the right move for a sensitive stomach 🥦 — gentle pureed veggies, modest carbs, plain yogurt for protein and gut-friendly probiotics. Should land softly. Take it easy.] (BG: 114 mg/dL Flat) (Protein: 9g) (Pred: 127-137 mg/dL @ 3:43 PM)",
     "type": "Lunch",
@@ -122,7 +133,7 @@
   },
   {
     "id": "35885ec7-0668-81c9-a698-f35daff979da",
-    "title": "Breakfast: Open-faced toast �� one slice with sliced tomato, the other with scrambled eggs, plus a café con leche [Coach: Lovely balanced plate 🍳 — eggs bring real protein, tomato adds a non-starchy veg, and the milky coffee adds a touch more protein. Late breakfasts ride a bit higher because of dawn cortisol; the walk you took will help cap the peak.] (BG: 108 mg/dL Flat) (Protein: 21g) (Pred: 181-191 mg/dL @ 1:29 PM)",
+    "title": "Breakfast: Open-faced toast — one slice with sliced tomato, the other with scrambled eggs, plus a café con leche [Coach: Lovely balanced plate 🍳 — eggs bring real protein, tomato adds a non-starchy veg, and the milky coffee adds a touch more protein. Late breakfasts ride a bit higher because of dawn cortisol; the walk you took will help cap the peak.] (BG: 108 mg/dL Flat) (Protein: 21g) (Pred: 181-191 mg/dL @ 1:29 PM)",
     "type": "Breakfast",
     "date": "2026-05-06T12:02:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-06/ca378238d62e01da.jpg",
