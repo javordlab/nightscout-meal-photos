@@ -1,5 +1,16 @@
 [
   {
+    "id": "35b85ec7-0668-81da-8a5a-e89a8257d370",
+    "title": "Lunch: Green pureed vegetable soup, 2 chorizo sausages, and a slice of rustic bread [Coach: Hearty Spanish comfort plate 🌶️ — pureed veggies bring fiber, chorizo stacks protein and rich fat, bread anchors it. The fat will slow the carb absorption nicely. Should land in a friendly range.] (BG: 116 mg/dL Flat) (Protein: 29g) (Pred: 144-154 mg/dL @ 4:21 PM)",
+    "type": "Lunch",
+    "date": "2026-05-09T14:28:00.000+02:00",
+    "photo": "https://iili.io/BtQKPrx.jpg",
+    "carbs": 37,
+    "cals": 590,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "35b85ec7-0668-8113-b814-f2c5ed4bde2d",
     "title": "Breakfast: Toasted ham and cheese sandwich, with a small bowl of blueberries on the side [Coach: Lovely balanced breakfast 🫐 — solid protein from ham and cheese, antioxidants from the blueberries, modest bread anchors it. Carbs are at the higher end so peak may climb a bit; a walk after would help cap it. Glad to see you eating again.] (BG: 118 mg/dL Flat) (Protein: 20g) (Pred: 184-194 mg/dL @ 11:49 AM)",
     "type": "Breakfast",
@@ -397,7 +408,7 @@
   },
   {
     "id": "35685ec7-0668-81c8-84c2-febb2a14b499",
-    "title": "Dinner: Half a small plate of green olives [Cumulative Dinner: ~58g carbs total] (BG: 96 mg/dL Flat) (Pred: 134-144 mg/dL @ 10:37 PM) (Protein: 0g | Carbs: ~1g | Cals: ~35) [Coach: Olives are basically free 🫒 — healthy fats and almost zero carbs. A clean closer to a long tapas night. Sleep well, you've earned it.]",
+    "title": "Dinner: Half a small plate of green olives [Cumulative Dinner: ~58g carbs total] (BG: 96 mg/dL Flat) (Pred: 134-144 mg/dL @ 10:37 PM) (Protein: 0g | Carbs: ~1g | Cals: ~35) [Coach: Olives are basically free �� — healthy fats and almost zero carbs. A clean closer to a long tapas night. Sleep well, you've earned it.]",
     "type": "Dinner",
     "date": "2026-05-01T23:08:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-01/bce65d7ee29fcbe6.jpg",
