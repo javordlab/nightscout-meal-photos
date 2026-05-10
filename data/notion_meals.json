@@ -1,5 +1,16 @@
 [
   {
+    "id": "35c85ec7-0668-813a-bc84-c9335d06bcb4",
+    "title": "Dinner: Small bowl of gazpacho (or salmorejo) and a jamón roll/montadito [Coach: Lovely Spanish dinner 🍅 — gazpacho brings non-starchy veg and hydration, jamón adds protein. Bread is the carb anchor. Should land in a friendly range.] (BG: 126 mg/dL Flat) (Protein: 10g) (Pred: 161-171 mg/dL @ 10:39 PM)",
+    "type": "Dinner",
+    "date": "2026-05-10T21:23:00.000+02:00",
+    "photo": "https://iili.io/BDXyrbe.jpg",
+    "carbs": 35,
+    "cals": 270,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "35c85ec7-0668-81cb-b9e2-f7f30dd4dcb6",
     "title": "Lunch: Egg-and-mashed-potato scramble (revuelto con patata), an egg in tomato sauce (huevo a la flamenca style), sliced avocado, and 2 small slices of rustic bread [Coach: A hearty plate 🍳 — eggs and avocado bring the protein and healthy fats, tomato sauce adds non-starchy veg, but the mashed potato in the scramble plus bread pushes carbs higher. A walk after will tame the peak nicely.] (BG: 120 mg/dL Flat) (Protein: 26g) (Pred: 163-173 mg/dL @ 3:35 PM)",
     "type": "Lunch",
@@ -430,7 +441,7 @@
   },
   {
     "id": "35485ec7-0668-8161-a947-c5e07f547fdb",
-    "title": "Lunch: Open-faced toast topped with several slices of mortadella (BG: 120 mg/dL Flat) (Pred: 129-139 mg/dL @ 12:57 PM) (Protein: 12g | Carbs: ~13g | Cals: ~200) [Coach: Simple and protein-forward 🥪 — mortadella covers the protein, modest bread keeps carbs in check. With BG at 120 going in, this should rise gently. A handful of cucumber, tomato, or fruit on the side would round it out.]",
+    "title": "Lunch: Open-faced toast topped with several slices of mortadella (BG: 120 mg/dL Flat) (Pred: 129-139 mg/dL @ 12:57 PM) (Protein: 12g | Carbs: ~13g | Cals: ~200) [Coach: Simple and protein-forward 🥪 ��� mortadella covers the protein, modest bread keeps carbs in check. With BG at 120 going in, this should rise gently. A handful of cucumber, tomato, or fruit on the side would round it out.]",
     "type": "Lunch",
     "date": "2026-05-02T11:04:00.000+02:00",
     "photo": "https://iili.io/BLY7Mzl.jpg",
