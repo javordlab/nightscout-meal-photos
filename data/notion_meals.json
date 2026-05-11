@@ -1,5 +1,16 @@
 [
   {
+    "id": "35d85ec7-0668-8145-9ae5-c699b7acfca8",
+    "title": "Dinner: Wafer/barquillo sandwich with ice cream (or cream), fresh raspberries, and a sliver of dark chocolate [Cumulative Dinner: ~45g carbs total] (BG: 125 mg/dL Flat) (Pred: 152-162 mg/dL @ 10:44 PM) (Protein: 2g | Carbs: ~17g | Cals: ~115) [Coach: A sweet little dessert sandwich 🍦 — fast carbs from the wafer and cream, raspberries add fiber. Cumulative dinner is climbing; sleep well and let the body settle.]",
+    "type": "Dinner",
+    "date": "2026-05-11T22:15:00.000+02:00",
+    "photo": "https://iili.io/BbopSp9.jpg",
+    "carbs": 17,
+    "cals": 115,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "35d85ec7-0668-8123-937f-c5a2c1818edb",
     "title": "Dinner: Plate of cecina (cured beef) and jamón serrano with fried potato wedges (BG: 105 mg/dL Flat) (Pred: 121-131 mg/dL @ 10:44 PM) (Protein: 21g | Carbs: ~18g | Cals: ~250) [Coach: Cecina from León — leaner than jamón, packed with protein 🥩. Paired with jamón serrano and modest potatoes, this should land softly. A walk before bed would polish it off.]",
     "type": "Dinner",
@@ -848,7 +859,7 @@
   },
   {
     "id": "35485ec7-0668-818e-b677-d0919a09f6ca",
-    "title": "Breakfast: Small whole-wheat ham sandwich with a mug of black tea or coffee (BG: 114 mg/dL Flat) (Pred: 174-184 mg/dL @ 12:43 PM) (Protein: 14g | Carbs: ~28g | Cals: ~245) [Coach: A simple, classic Spanish breakfast — ham brings about 8g of protein and the whole-wheat bread offers a touch of fiber. The dawn rise plus jet lag may push the peak a bit higher than usual; if you can, a slice of cheese or a few nuts on the side would help slow things down nicely.]",
+    "title": "Breakfast: Small whole-wheat ham sandwich with a mug of black tea or coffee (BG: 114 mg/dL Flat) (Pred: 174-184 mg/dL @ 12:43 PM) (Protein: 14g | Carbs: ~28g | Cals: ~245) [Coach: A simple, classic Spanish breakfast ��� ham brings about 8g of protein and the whole-wheat bread offers a touch of fiber. The dawn rise plus jet lag may push the peak a bit higher than usual; if you can, a slice of cheese or a few nuts on the side would help slow things down nicely.]",
     "type": "Breakfast",
     "date": "2026-04-25T11:16:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-25/41cb157aceca1763.jpg",
