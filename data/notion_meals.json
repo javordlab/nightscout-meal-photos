@@ -1,5 +1,16 @@
 [
   {
+    "id": "35d85ec7-0668-813b-bb80-f60444497f8f",
+    "title": "Breakfast: Open-faced toast with jamón and manchego cheese, with a plain yogurt (BG: 117 mg/dL Flat) (Pred: 172-182 mg/dL @ 12:48 PM) (Protein: 24g | Carbs: ~22g | Cals: ~310) [Coach: Solid protein-forward plate 🧀 — jamón and cheese stack the protein, plain yogurt adds more plus gut-friendly probiotics, modest bread anchors it. Late breakfasts ride a bit higher with dawn cortisol; a walk after would help cap the peak.]",
+    "type": "Breakfast",
+    "date": "2026-05-11T11:21:00.000+02:00",
+    "photo": "https://iili.io/BDLpNup.jpg",
+    "carbs": 22,
+    "cals": 310,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "35c85ec7-0668-8122-81e5-cf8d27a8e98e",
     "title": "Dinner: Small bowl of gazpacho (or salmorejo) and a jamón roll/montadito [Coach: Lovely Spanish dinner 🍅 — gazpacho brings non-starchy veg and hydration, jamón adds protein. Bread is the carb anchor. Should land in a friendly range.] (BG: 126 mg/dL Flat) (Protein: 10g) (Pred: 161-171 mg/dL @ 10:39 PM)",
     "type": "Dinner",
@@ -56,7 +67,7 @@
   },
   {
     "id": "35b85ec7-0668-8113-b814-f2c5ed4bde2d",
-    "title": "Breakfast: Toasted ham and cheese sandwich, with a small bowl of blueberries on the side [Coach: Lovely balanced breakfast 🫐 — solid protein from ham and cheese, antioxidants from the blueberries, modest bread anchors it. Carbs are at the higher end so peak may climb a bit; a walk after would help cap it. Glad to see you eating again.] (BG: 118 mg/dL Flat) (Protein: 20g) (Pred: 184-194 mg/dL @ 11:49 AM)",
+    "title": "Breakfast: Toasted ham and cheese sandwich, with a small bowl of blueberries on the side (BG: 118 mg/dL Flat) (Pred: 184-194 mg/dL @ 11:49 AM) (Protein: 20g | Carbs: ~33g | Cals: ~310) [Coach: Lovely balanced breakfast 🫐 — solid protein from ham and cheese, antioxidants from the blueberries, modest bread anchors it. Carbs are at the higher end so peak may climb a bit; a walk after would help cap it. Glad to see you eating again.]",
     "type": "Breakfast",
     "date": "2026-05-09T10:22:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-09/256c0816e8686abe.jpg",
