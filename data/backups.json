@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-12T02:15:11.073Z",
+  "lastUpdated": "2026-05-12T02:20:02.734Z",
   "tokenUsage": [
     {
       "platform": "Kimi (Ollama)",
@@ -21,7 +21,7 @@
     }
   ],
   "database": {
-    "glucose": 21336,
+    "glucose": 21337,
     "notion": 1356
   },
   "syncHistory": [
@@ -172,15 +172,11 @@
     },
     {
       "date": "2026-05-12",
-      "glucose": 21336,
+      "glucose": 21337,
       "notion": 1356
     }
   ],
   "glucoseTrend": [
-    {
-      "t": "2026-04-12T04:19:53.000Z",
-      "v": 157
-    },
     {
       "t": "2026-04-12T04:24:54.000Z",
       "v": 161
@@ -31896,9 +31892,27 @@
     {
       "t": "2026-05-12T02:14:04.000Z",
       "v": 93
+    },
+    {
+      "t": "2026-05-12T02:19:04.000Z",
+      "v": 87
     }
   ],
   "backups": [
+    {
+      "filename": "health_ssot-2026-05-12.sql.gz",
+      "type": "Daily",
+      "size": "218.48 KB",
+      "created": "2026-05-12T02:20:01.143Z",
+      "path": "daily/health_ssot-2026-05-12.sql.gz"
+    },
+    {
+      "filename": "2026-05-12.sql.gz",
+      "type": "Daily",
+      "size": "494.04 KB",
+      "created": "2026-05-12T02:20:01.090Z",
+      "path": "daily/2026-05-12.sql.gz"
+    },
     {
       "filename": "health_ssot-2026-w20.sql.gz",
       "type": "Weekly",
@@ -32019,39 +32033,11 @@
       "path": "weekly/health_ssot-2026-w19.sql.gz"
     },
     {
-      "filename": "health_ssot-2026-05-04.sql.gz",
-      "type": "Daily",
-      "size": "187.23 KB",
-      "created": "2026-05-04T02:20:00.637Z",
-      "path": "daily/health_ssot-2026-05-04.sql.gz"
-    },
-    {
       "filename": "2026-w19.sql.gz",
       "type": "Weekly",
       "size": "440.51 KB",
       "created": "2026-05-04T02:20:00.588Z",
       "path": "weekly/2026-w19.sql.gz"
-    },
-    {
-      "filename": "2026-05-04.sql.gz",
-      "type": "Daily",
-      "size": "440.51 KB",
-      "created": "2026-05-04T02:20:00.573Z",
-      "path": "daily/2026-05-04.sql.gz"
-    },
-    {
-      "filename": "health_ssot-2026-05-03.sql.gz",
-      "type": "Daily",
-      "size": "182.92 KB",
-      "created": "2026-05-03T02:20:01.352Z",
-      "path": "daily/health_ssot-2026-05-03.sql.gz"
-    },
-    {
-      "filename": "2026-05-03.sql.gz",
-      "type": "Daily",
-      "size": "433.44 KB",
-      "created": "2026-05-03T02:20:01.301Z",
-      "path": "daily/2026-05-03.sql.gz"
     },
     {
       "filename": "health_ssot-2026-w18.sql.gz",
