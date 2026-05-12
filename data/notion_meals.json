@@ -7,8 +7,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-11/1b58c7cf608fa09d.jpg",
     "carbs": 17,
     "cals": 115,
-    "delta": null,
-    "peak": null
+    "delta": 44,
+    "peak": 169
   },
   {
     "id": "35e85ec7-0668-81e4-a4c5-d2c67cd26947",
@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-11/956223397630e728.jpg",
     "carbs": 18,
     "cals": 250,
-    "delta": null,
-    "peak": null
+    "delta": 61,
+    "peak": 169
   },
   {
     "id": "35e85ec7-0668-81f5-8056-d6a532580855",
@@ -29,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-11/f8583050a0635573.jpg",
     "carbs": 59,
     "cals": 515,
-    "delta": null,
-    "peak": null
+    "delta": 34,
+    "peak": 158
   },
   {
     "id": "35e85ec7-0668-817f-b205-fda5a5431890",
@@ -40,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-11/43fb11a98e52ce3c.jpg",
     "carbs": 19,
     "cals": 275,
-    "delta": null,
-    "peak": null
+    "delta": 50,
+    "peak": 167
   },
   {
     "id": "35e85ec7-0668-81cd-9042-c15cb628fc80",
@@ -51,8 +51,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-10/7b7f54e73747f21d.jpg",
     "carbs": 35,
     "cals": 270,
-    "delta": null,
-    "peak": null
+    "delta": 28,
+    "peak": 157
   },
   {
     "id": "35e85ec7-0668-812a-a243-ea9579fada30",
@@ -62,8 +62,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-10/c1cd0c2ae3739ba3.jpg",
     "carbs": 50,
     "cals": 530,
-    "delta": null,
-    "peak": null
+    "delta": 40,
+    "peak": 158
   },
   {
     "id": "35e85ec7-0668-8159-b939-f0a0732d3c42",
@@ -73,8 +73,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-10/673213582e4da248.jpg",
     "carbs": 26,
     "cals": 280,
-    "delta": null,
-    "peak": null
+    "delta": 56,
+    "peak": 186
   },
   {
     "id": "35e85ec7-0668-81c1-aade-df32f7b1453b",
