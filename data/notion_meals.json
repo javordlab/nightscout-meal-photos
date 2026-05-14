@@ -1,10 +1,10 @@
 [
   {
     "id": "36085ec7-0668-8152-8719-cabc92866712",
-    "title": "Lunch: Grilled beef steak with garlic and parsley, fries, side salad of escarole, and a chunk of rustic bread (BG: 98 mg/dL Flat) (Pred: 139-149 mg/dL @ 4:01 PM) (Protein: 33g | Carbs: ~48g | Cals: ~540) [Coach: A real proper meal 🥩 — beef brings serious protein, salad covers non-starchy veg, fries and bread anchor the carbs. Should land in a friendly range with BG starting at 98.]",
+    "title": "Lunch: Grilled beef steak with garlic and parsley, fries, side salad of escarole, and a chunk of rustic bread [Coach: A real proper meal 🥩 — beef brings serious protein, salad covers non-starchy veg, fries and bread anchor the carbs. Should land in a friendly range with BG starting at 98.] (BG: 98 mg/dL Flat) (Protein: 33g) (Pred: 139-149 mg/dL @ 4:01 PM)",
     "type": "Lunch",
     "date": "2026-05-14T14:08:00.000+02:00",
-    "photo": "https://iili.io/BmVOKvI.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-14/942a9171a467743d.jpg",
     "carbs": 48,
     "cals": 540,
     "delta": null,
@@ -12,59 +12,47 @@
   },
   {
     "id": "35f85ec7-0668-81b8-9c18-e9c27308da8e",
-    "title": "Dinner: Small bowl of garbanzos con callos (chickpea and tripe stew), fried potato wedges, a small bread roll, and a bit of butter [Coach: Hearty Madrileño dinner 🫘 — chickpeas + callos stack serious protein, fried potatoes and bread anchor the carbs. After all the work you did today, your body will use the energy well.]",
+    "title": "Dinner: Small bowl of garbanzos con callos (chickpea and tripe stew), fried potato wedges, a small bread roll, and a bit of butter [Coach: Hearty Madrileño dinner 🫘 — chickpeas + callos stack serious protein, fried potatoes and bread anchor the carbs. After all the work you did today, your body will use the energy well.] (BG: 102 mg/dL Flat) (Protein: 23g) (Pred: 138-148 mg/dL @ 10:22 PM)",
     "type": "Dinner",
-    "date": "2026-05-13T21:06:00+02:00",
+    "date": "2026-05-13T21:06:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-13/994b8d5e1894d6cb.jpg",
     "carbs": 54,
     "cals": 510,
-    "delta": null,
-    "peak": null,
-    "entry_key": "sha256:994b8d5e1894d6cba718abfb2e8026af6c04819bb0263d85de954dfd6d3b6ae6",
-    "protein": 23,
-    "preMeal": null
+    "delta": 66,
+    "peak": 168
   },
   {
     "id": "35f85ec7-0668-81d2-8e79-f2731d28cb86",
-    "title": "Lunch: Bowl of gazpacho, 2 fried eggs, and a small bread roll [Coach: Now THIS is a proper meal 🍅 — gazpacho packs raw veggies (tomato, cucumber, pepper), eggs cover the protein, and a modest bread roll anchors it. Perfect refuel after a morning of heavy gardening.]",
+    "title": "Lunch: Bowl of gazpacho, 2 fried eggs, and a small bread roll [Coach: Now THIS is a proper meal 🍅 — gazpacho packs raw veggies (tomato, cucumber, pepper), eggs cover the protein, and a modest bread roll anchors it. Perfect refuel after a morning of heavy gardening.] (BG: 117 mg/dL Flat) (Protein: 21g) (Pred: 144-154 mg/dL @ 4:26 PM)",
     "type": "Lunch",
-    "date": "2026-05-13T14:33:00+02:00",
+    "date": "2026-05-13T14:33:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-13/3f825fb3e0e4f28e.jpg",
     "carbs": 36,
     "cals": 370,
-    "delta": null,
-    "peak": null,
-    "entry_key": "sha256:3f825fb3e0e4f28eeafb75e4a9296f4f25fececd9902aacc62dca77594bb7e08",
-    "protein": 21,
-    "preMeal": null
+    "delta": 39,
+    "peak": 152
   },
   {
     "id": "35f85ec7-0668-81a9-9778-da80b8a7742d",
-    "title": "Lunch: Small bowl of Risi Gusanitos (puffed corn snacks) [Coach: A crunchy little nibble 🌽 — fast carbs from the corn puffs, very little protein. Should land in a reasonable range, but a more substantial lunch with protein and veggies would steady you better than snacks alone.]",
+    "title": "Lunch: Small bowl of Risi Gusanitos (puffed corn snacks) [Coach: A crunchy little nibble 🌽 — fast carbs from the corn puffs, very little protein. Should land in a reasonable range, but a more substantial lunch with protein and veggies would steady you better than snacks alone.] (BG: 115 mg/dL Flat) (Protein: 2g) (Pred: 124-134 mg/dL @ 2:59 PM)",
     "type": "Lunch",
-    "date": "2026-05-13T13:06:00+02:00",
+    "date": "2026-05-13T13:06:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-13/d6e63cee7c4bf665.jpg",
     "carbs": 20,
     "cals": 150,
-    "delta": null,
-    "peak": null,
-    "entry_key": "sha256:d6e63cee7c4bf665872c0c9684af5bc8840365bfe891dcb49a38314003648297",
-    "protein": 2,
-    "preMeal": null
+    "delta": 11,
+    "peak": 126
   },
   {
     "id": "35e85ec7-0668-810d-8a40-e1617b80e4f2",
-    "title": "Breakfast: Toast with peanut butter and halved blueberries, with a glass of milk [Coach: Lovely combo 🫐 — peanut butter brings protein and fat, blueberries pack antioxidants and fiber. With BG already at 134 and dawn cortisol in play, peak may climb a bit high. A walk after would really help.]",
+    "title": "Breakfast: Toast with peanut butter and halved blueberries, with a glass of milk [Coach: Lovely combo 🫐 — peanut butter brings protein and fat, blueberries pack antioxidants and fiber. With BG already at 134 and dawn cortisol in play, peak may climb a bit high. A walk after would really help.] (BG: 134 mg/dL Flat) (Protein: 19g) (Pred: 212-222 mg/dL @ 10:48 AM)",
     "type": "Breakfast",
-    "date": "2026-05-12T09:21:00+02:00",
+    "date": "2026-05-12T09:21:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-12/1fc36e7e014e39e6.jpg",
     "carbs": 43,
     "cals": 375,
-    "delta": null,
-    "peak": null,
-    "entry_key": "sha256:1fc36e7e014e39e63ecb68c28ef32f3ab8607c46f5439b68482333fbc8b83518",
-    "protein": 19,
-    "preMeal": null
+    "delta": 35,
+    "peak": 169
   },
   {
     "id": "35e85ec7-0668-81f5-86e3-e6d89199fbf3",
@@ -3792,20 +3780,6 @@
     "photo": "https://files.catbox.moe/2059f6.jpg",
     "carbs": 35,
     "cals": 450,
-    "delta": null,
-    "peak": null
-  },
-  {
-    "id": "manual-2026-05-14T14-08-00+02-00",
-    "entry_key": "sha256:942a9171a467743dbf4999ed91d8952946aa671b08c91e9d4a9931a90cb81b98",
-    "title": "Lunch: Grilled beef steak with garlic and parsley, fries, side salad of escarole, and a chunk of rustic bread [Coach: A real proper meal 🥩 — beef brings serious protein, salad covers non-starchy veg, fries and bread anchor the carbs. Should land in a friendly range with BG starting at 98.]",
-    "type": "Lunch",
-    "date": "2026-05-14T14:08:00+02:00",
-    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-14/942a9171a467743d.jpg",
-    "carbs": 48,
-    "cals": 540,
-    "protein": 33,
-    "preMeal": null,
     "delta": null,
     "peak": null
   }
