@@ -7,8 +7,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-15/3c641023ac76be1e.jpg",
     "carbs": 22,
     "cals": 120,
-    "delta": null,
-    "peak": null
+    "delta": 43,
+    "peak": 181
   },
   {
     "id": "36185ec7-0668-8154-a1a9-cba6ce87b969",
@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-15/9fcd41676daf0211.jpg",
     "carbs": 0,
     "cals": 100,
-    "delta": null,
-    "peak": null
+    "delta": 43,
+    "peak": 181
   },
   {
     "id": "36185ec7-0668-81bb-b8f8-e66a4a7002ab",
@@ -29,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-15/d809992785691321.jpg",
     "carbs": 0,
     "cals": 85,
-    "delta": null,
-    "peak": null
+    "delta": 43,
+    "peak": 181
   },
   {
     "id": "36185ec7-0668-819f-880f-d5944820971e",
@@ -40,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-15/56a109b8d614e7a8.jpg",
     "carbs": 2,
     "cals": 220,
-    "delta": null,
-    "peak": null
+    "delta": 60,
+    "peak": 181
   },
   {
     "id": "36185ec7-0668-8142-adcf-f5f33a78774f",
@@ -551,7 +551,7 @@
   },
   {
     "id": "35e85ec7-0668-815f-aadf-cf7d088c468a",
-    "title": "Breakfast: Open-faced toast topped with several slices of mortadella (logged late) (BG: 106 mg/dL Flat) (Pred: 158-168 mg/dL @ 11:27 AM) (Protein: 12g | Carbs: ~13g | Cals: ~200) [Coach: Simple and protein-forward 🥪 — mortadella covers the protein, modest bread keeps carbs in check. With BG starting at 106, this should rise gently into a comfortable range.]",
+    "title": "Breakfast: Open-faced toast topped with several slices of mortadella (logged late) (BG: 106 mg/dL Flat) (Pred: 158-168 mg/dL @ 11:27 AM) (Protein: 12g | Carbs: ~13g | Cals: ~200) [Coach: Simple and protein-forward 🥪 ��� mortadella covers the protein, modest bread keeps carbs in check. With BG starting at 106, this should rise gently into a comfortable range.]",
     "type": "Breakfast",
     "date": "2026-05-03T10:00:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-03/59b7df716812e77d.jpg",
