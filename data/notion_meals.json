@@ -23,11 +23,11 @@
   },
   {
     "id": "36185ec7-0668-8154-a1a9-cba6ce87b969",
-    "title": "Dinner: Wedge of blue cheese [Cumulative Dinner: ~2g carbs total] [Coach: Blue cheese finale 🧀 — more protein and fat to round out the gambas and lomo, still essentially zero carbs. Your BG should sail through this dinner unbothered. Bold flavor pairing tonight.] (BG: 121 mg/dL Flat) (Protein: 6g) (Pred: 118-128 mg/dL @ 10:47 PM)",
+    "title": "Dinner: Wedge of blue cheese [Cumulative Dinner: ~2g carbs total] (BG: 121 mg/dL Flat) (Pred: 118-128 mg/dL @ 10:47 PM) (Protein: 6g | Carbs: ~0g | Cals: ~100) [Coach: Blue cheese finale 🧀 — more protein and fat to round out the gambas and lomo, still essentially zero carbs. Your BG should sail through this dinner unbothered. Bold flavor pairing tonight.]",
     "type": "Dinner",
     "date": "2026-05-15T21:33:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-15/9fcd41676daf0211.jpg",
-    "carbs": 0,
+    "carbs": null,
     "cals": 100,
     "delta": 43,
     "peak": 181
