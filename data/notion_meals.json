@@ -1,7 +1,18 @@
 [
   {
+    "id": "36285ec7-0668-81cc-b5f9-dbb657e63cdc",
+    "title": "Lunch: Bowl of gazpacho + 3-4 slices of lomo (cured Spanish pork loin) [Cumulative Lunch: ~17g carbs total] (BG: 97 mg/dL Flat) (Pred: 112-122 mg/dL @ 3:40 PM) (Protein: 12g | Carbs: ~12g | Cals: ~205) [Coach: Light and balanced 🍅 — gazpacho brings veggies and lycopene, lomo adds clean protein. Lunch total stays under 20g carbs even with the earlier cracker. A few olives or nuts could bump up the satiety if needed.]",
+    "type": "Lunch",
+    "date": "2026-05-16T14:28:00.000+02:00",
+    "photo": "https://iili.io/Bp0HAEF.jpg",
+    "carbs": 12,
+    "cals": 205,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "36285ec7-0668-8188-810e-d85901fbd5f6",
-    "title": "Breakfast: Toasted ham and cheese sandwich + sliced small pear [Coach: Classic ham-and-cheese setup 🥪 — solid 24g protein from the deli meats and cheese is a strong breakfast move. The pear brings fiber and is gentler on BG than juice would be. The bread is the main carb driver though, so expect a fuller climb toward noon.] (BG: 114 mg/dL Flat) (Protein: 24g) (Pred: 193-203 mg/dL @ 11:59 AM)",
+    "title": "Breakfast: Toasted ham and cheese sandwich + sliced small pear (BG: 114 mg/dL Flat) (Pred: 193-203 mg/dL @ 11:59 AM) (Protein: 24g | Carbs: ~44g | Cals: ~345) [Coach: Classic ham-and-cheese setup 🥪 — solid 24g protein from the deli meats and cheese is a strong breakfast move. The pear brings fiber and is gentler on BG than juice would be. The bread is the main carb driver though, so expect a fuller climb toward noon.]",
     "type": "Breakfast",
     "date": "2026-05-16T10:32:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-16/c6266ae15bf38c7b.jpg",
@@ -353,7 +364,7 @@
   },
   {
     "id": "35e85ec7-0668-8145-95c2-e6207c057768",
-    "title": "Dinner: Jamón sandwich on whole-grain bread, with a side bowl of strawberries topped with a dollop of yogurt/cream (BG: 130 mg/dL Flat) (Pred: 164-174 mg/dL @ 10:43 PM) (Protein: 17g | Carbs: ~34g | Cals: ~265) [Coach: Lovely cozy dinner 🍓 — jamón brings real protein, strawberries add fiber and antioxidants, and the yogurt softens things. A walk before bed would help cap the peak gently.]",
+    "title": "Dinner: Jamón sandwich on whole-grain bread, with a side bowl of strawberries topped with a dollop of yogurt/cream (BG: 130 mg/dL Flat) (Pred: 164-174 mg/dL @ 10:43 PM) (Protein: 17g | Carbs: ~34g | Cals: ~265) [Coach: Lovely cozy dinner 🍓 �� jamón brings real protein, strawberries add fiber and antioxidants, and the yogurt softens things. A walk before bed would help cap the peak gently.]",
     "type": "Dinner",
     "date": "2026-05-06T21:27:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-06/2157ff8e0cc98b0d.jpg",
