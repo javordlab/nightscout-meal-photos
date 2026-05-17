@@ -23,7 +23,7 @@
   },
   {
     "id": "36285ec7-0668-8190-a809-dbec1d9624ad",
-    "title": "Lunch: Wafer ice cream sandwich with sliced strawberries (BG: 139 mg/dL Flat) (Pred: 161-171 mg/dL @ 5:36 PM) (Protein: 5g | Carbs: ~30g | Cals: ~290) [Coach: Ice cream sandwich 🍓 — the strawberries add a touch of fresh fiber, but the wafers and ice cream bring ~30g of sugar and refined carbs on top of BG already at 139 and climbing. Expect a notable rise into the 160s by 5:30. The clean lunch protein helps cushion a bit.]",
+    "title": "Lunch: Wafer ice cream sandwich with sliced strawberries [Coach: Ice cream sandwich 🍓 — the strawberries add a touch of fresh fiber, but the wafers and ice cream bring ~30g of sugar and refined carbs on top of BG already at 139 and climbing. Expect a notable rise into the 160s by 5:30. The clean lunch protein helps cushion a bit.] (BG: 139 mg/dL Flat) (Protein: 5g) (Pred: 161-171 mg/dL @ 5:36 PM)",
     "type": "Lunch",
     "date": "2026-05-16T15:43:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-16/b6271fb53e6499f4.jpg",
@@ -34,11 +34,11 @@
   },
   {
     "id": "36285ec7-0668-8194-91b6-d820a08e20ef",
-    "title": "Lunch: Whole pan-fried trout (plain) [Cumulative Lunch: ~17g carbs total] (BG: 90 mg/dL Flat) (Pred: 112-122 mg/dL @ 3:40 PM) (Protein: 28g | Carbs: ~0g | Cals: ~230) [Coach: Now this is a strong lunch 🐟 — trout brings omega-3s, lean protein, and zero carbs to round out the gazpacho and lomo. Total carbs stay at 17g with 40g+ protein on the plate. Coach is very happy with today.]",
+    "title": "Lunch: Whole pan-fried trout (plain) [Cumulative Lunch: ~17g carbs total] [Coach: Now this is a strong lunch 🐟 — trout brings omega-3s, lean protein, and zero carbs to round out the gazpacho and lomo. Total carbs stay at 17g with 40g+ protein on the plate. Coach is very happy with today.] (BG: 90 mg/dL Flat) (Protein: 28g) (Pred: 112-122 mg/dL @ 3:40 PM)",
     "type": "Lunch",
     "date": "2026-05-16T14:34:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-16/f2cf910f66b8f40f.jpg",
-    "carbs": null,
+    "carbs": 0,
     "cals": 230,
     "delta": 61,
     "peak": 151
@@ -56,7 +56,7 @@
   },
   {
     "id": "36285ec7-0668-8188-810e-d85901fbd5f6",
-    "title": "Breakfast: Toasted ham and cheese sandwich + sliced small pear (BG: 114 mg/dL Flat) (Pred: 193-203 mg/dL @ 11:59 AM) (Protein: 24g | Carbs: ~44g | Cals: ~345) [Coach: Classic ham-and-cheese setup 🥪 — solid 24g protein from the deli meats and cheese is a strong breakfast move. The pear brings fiber and is gentler on BG than juice would be. The bread is the main carb driver though, so expect a fuller climb toward noon.]",
+    "title": "Breakfast: Toasted ham and cheese sandwich + sliced small pear [Coach: Classic ham-and-cheese setup 🥪 — solid 24g protein from the deli meats and cheese is a strong breakfast move. The pear brings fiber and is gentler on BG than juice would be. The bread is the main carb driver though, so expect a fuller climb toward noon.] (BG: 114 mg/dL Flat) (Protein: 24g) (Pred: 193-203 mg/dL @ 11:59 AM)",
     "type": "Breakfast",
     "date": "2026-05-16T10:32:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-16/c6266ae15bf38c7b.jpg",
@@ -67,7 +67,7 @@
   },
   {
     "id": "36185ec7-0668-815f-b41b-c0702dd5f257",
-    "title": "Dinner: Chunk of crusty white bread [Cumulative Dinner: ~24g carbs total] (BG: 121 mg/dL Flat) (Pred: 145-155 mg/dL @ 10:47 PM) (Protein: 5g | Carbs: ~22g | Cals: ~120) [Coach: And there's the bread 🍞 — Coach's flat-line prophecy gets a small revision. The shrimp, lomo, and blue cheese stack still does most of the buffering, so the spike should stay modest. Half the chunk next time would keep total carbs under 20g.]",
+    "title": "Dinner: Chunk of crusty white bread [Cumulative Dinner: ~24g carbs total] [Coach: And there's the bread 🍞 — Coach's flat-line prophecy gets a small revision. The shrimp, lomo, and blue cheese stack still does most of the buffering, so the spike should stay modest. Half the chunk next time would keep total carbs under 20g.] (BG: 121 mg/dL Flat) (Protein: 5g) (Pred: 145-155 mg/dL @ 10:47 PM)",
     "type": "Dinner",
     "date": "2026-05-15T21:34:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-15/3c641023ac76be1e.jpg",
@@ -78,29 +78,29 @@
   },
   {
     "id": "36185ec7-0668-8154-a1a9-cba6ce87b969",
-    "title": "Dinner: Wedge of blue cheese [Cumulative Dinner: ~2g carbs total] (BG: 121 mg/dL Flat) (Pred: 118-128 mg/dL @ 10:47 PM) (Protein: 6g | Carbs: ~0g | Cals: ~100) [Coach: Blue cheese finale 🧀 — more protein and fat to round out the gambas and lomo, still essentially zero carbs. Your BG should sail through this dinner unbothered. Bold flavor pairing tonight.]",
+    "title": "Dinner: Wedge of blue cheese [Cumulative Dinner: ~2g carbs total] [Coach: Blue cheese finale 🧀 — more protein and fat to round out the gambas and lomo, still essentially zero carbs. Your BG should sail through this dinner unbothered. Bold flavor pairing tonight.] (BG: 121 mg/dL Flat) (Protein: 6g) (Pred: 118-128 mg/dL @ 10:47 PM)",
     "type": "Dinner",
     "date": "2026-05-15T21:33:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-15/9fcd41676daf0211.jpg",
-    "carbs": null,
+    "carbs": 0,
     "cals": 100,
     "delta": 43,
     "peak": 181
   },
   {
     "id": "36185ec7-0668-81bb-b8f8-e66a4a7002ab",
-    "title": "Dinner: 3-4 slices of lomo (cured Spanish pork loin) [Cumulative Dinner: ~2g carbs total] (BG: 121 mg/dL Flat) (Pred: 118-128 mg/dL @ 10:47 PM) (Protein: 10g | Carbs: ~0g | Cals: ~85) [Coach: More protein, still zero carbs 🥩 — the cured ham keeps the carb-free streak alive and adds another ~10g of protein. Your BG should stay flat as a pancake tonight. Maybe the cleanest dinner combo of the week.]",
+    "title": "Dinner: 3-4 slices of lomo (cured Spanish pork loin) [Cumulative Dinner: ~2g carbs total] [Coach: More protein, still zero carbs 🥩 — the cured ham keeps the carb-free streak alive and adds another ~10g of protein. Your BG should stay flat as a pancake tonight. Maybe the cleanest dinner combo of the week.] (BG: 121 mg/dL Flat) (Protein: 10g) (Pred: 118-128 mg/dL @ 10:47 PM)",
     "type": "Dinner",
     "date": "2026-05-15T21:32:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-15/d809992785691321.jpg",
-    "carbs": null,
+    "carbs": 0,
     "cals": 85,
     "delta": 43,
     "peak": 181
   },
   {
     "id": "36185ec7-0668-819f-880f-d5944820971e",
-    "title": "Dinner: Pan of garlic shrimp (gambas al ajillo) — whole shell-on shrimp sautéed in olive oil with garlic (BG: 121 mg/dL Flat) (Pred: 118-128 mg/dL @ 10:47 PM) (Protein: 24g | Carbs: ~2g | Cals: ~220) [Coach: Now this is a T2D dream dinner 🦐 — pure protein from the shrimp, big flavor from the garlic, olive oil for satiety, and basically zero carbs. Your BG should barely notice this happened. Beautifully balanced for evening.]",
+    "title": "Dinner: Pan of garlic shrimp (gambas al ajillo) — whole shell-on shrimp sautéed in olive oil with garlic [Coach: Now this is a T2D dream dinner 🦐 — pure protein from the shrimp, big flavor from the garlic, olive oil for satiety, and basically zero carbs. Your BG should barely notice this happened. Beautifully balanced for evening.] (BG: 121 mg/dL Flat) (Protein: 24g) (Pred: 118-128 mg/dL @ 10:47 PM)",
     "type": "Dinner",
     "date": "2026-05-15T21:31:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-15/56a109b8d614e7a8.jpg",
@@ -111,7 +111,7 @@
   },
   {
     "id": "36185ec7-0668-8142-adcf-f5f33a78774f",
-    "title": "Lunch: Green bean and potato stew in tomato sauce, 3-4 slices cured ham, piece of crusty bread, lemon water (BG: 132 mg/dL Flat) (Pred: 163-173 mg/dL @ 4:30 PM) (Protein: 20g | Carbs: ~40g | Cals: ~370) [Coach: Solid Spanish classic 🥗 — green beans bring real fiber, the cured ham brings ~12g protein, and the lemon water is a nice touch. The potato + bread combo is the carb engine here; trimming the bread a bit would let the green bean fiber keep the curve slow.]",
+    "title": "Lunch: Green bean and potato stew in tomato sauce, 3-4 slices cured ham, piece of crusty bread, lemon water [Coach: Solid Spanish classic 🥗 — green beans bring real fiber, the cured ham brings ~12g protein, and the lemon water is a nice touch. The potato + bread combo is the carb engine here; trimming the bread a bit would let the green bean fiber keep the curve slow.] (BG: 132 mg/dL Flat) (Protein: 20g) (Pred: 163-173 mg/dL @ 4:30 PM)",
     "type": "Lunch",
     "date": "2026-05-15T14:37:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-15/668a6d51e68fc183.jpg",
