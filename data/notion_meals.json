@@ -1,5 +1,16 @@
 [
   {
+    "id": "36485ec7-0668-81ab-a564-deed53d0d7c3",
+    "title": "Breakfast: ham and cheese sandwich on whole grain bread [Coach: Whole grain bread is a solid T2D breakfast choice — better than white. The ham and cheese bring decent protein, though you're just under the 20g sweet spot. A tomato slice or cucumber on the side would complete the picture 🥗] (BG: 118 mg/dL Flat) (Protein: 18g) (Pred: 180-190 mg/dL @ 11:42 AM)",
+    "type": "Breakfast",
+    "date": "2026-05-18T10:15:00.000+02:00",
+    "photo": "https://iili.io/By2CBIa.jpg",
+    "carbs": 28,
+    "cals": 295,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "36385ec7-0668-8109-a4c6-ff3d3b449a8f",
     "title": "Dinner: 1 whole-grain round cracker with peanut butter [Coach: Late-night PB cracker 🥜 — protein and healthy fats from the peanut butter keep the carb response gentle. With BG settling at 109 after dinner, expect a small ~25 mg/dL nudge. Solid late-evening choice if you're truly hungry.] (BG: 109 mg/dL Flat) (Protein: 7g) (Pred: 130-140 mg/dL @ 11:40 PM)",
     "type": "Dinner",
