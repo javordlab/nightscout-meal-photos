@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-18T21:55:24.264Z",
+  "lastUpdated": "2026-05-18T22:01:37.823Z",
   "tokenUsage": [
     {
       "platform": "Kimi (Ollama)",
@@ -21,166 +21,162 @@
     }
   ],
   "database": {
-    "glucose": 23270,
-    "notion": 1400
+    "glucose": 23271,
+    "notion": 1498
   },
   "syncHistory": [
     {
-      "date": "2026-04-19",
-      "glucose": 15572,
-      "notion": 1251
-    },
-    {
       "date": "2026-04-20",
       "glucose": 15856,
-      "notion": 1256
+      "notion": 1311
     },
     {
       "date": "2026-04-21",
       "glucose": 16142,
-      "notion": 1260
+      "notion": 1317
     },
     {
       "date": "2026-04-22",
       "glucose": 16402,
-      "notion": 1264
+      "notion": 1323
     },
     {
       "date": "2026-04-23",
       "glucose": 16462,
-      "notion": 1268
+      "notion": 1327
     },
     {
       "date": "2026-04-24",
       "glucose": 16488,
-      "notion": 1273
+      "notion": 1332
     },
     {
       "date": "2026-04-25",
       "glucose": 16770,
-      "notion": 1277
+      "notion": 1336
     },
     {
       "date": "2026-04-26",
       "glucose": 17055,
-      "notion": 1284
+      "notion": 1343
     },
     {
       "date": "2026-04-27",
       "glucose": 17341,
-      "notion": 1288
+      "notion": 1347
     },
     {
       "date": "2026-04-28",
       "glucose": 17622,
-      "notion": 1293
+      "notion": 1354
     },
     {
       "date": "2026-04-29",
       "glucose": 17902,
-      "notion": 1297
+      "notion": 1360
     },
     {
       "date": "2026-04-30",
       "glucose": 18187,
-      "notion": 1302
+      "notion": 1367
     },
     {
       "date": "2026-05-01",
       "glucose": 18467,
-      "notion": 1306
+      "notion": 1373
     },
     {
       "date": "2026-05-02",
       "glucose": 18753,
-      "notion": 1311
+      "notion": 1380
     },
     {
       "date": "2026-05-03",
       "glucose": 19040,
-      "notion": 1315
+      "notion": 1386
     },
     {
       "date": "2026-05-04",
       "glucose": 19325,
-      "notion": 1320
+      "notion": 1393
     },
     {
       "date": "2026-05-05",
       "glucose": 19609,
-      "notion": 1324
+      "notion": 1399
     },
     {
       "date": "2026-05-06",
       "glucose": 19890,
-      "notion": 1329
+      "notion": 1405
     },
     {
       "date": "2026-05-07",
       "glucose": 20173,
-      "notion": 1333
+      "notion": 1410
     },
     {
       "date": "2026-05-08",
       "glucose": 20458,
-      "notion": 1340
+      "notion": 1419
     },
     {
       "date": "2026-05-09",
       "glucose": 20735,
-      "notion": 1346
+      "notion": 1427
     },
     {
       "date": "2026-05-10",
       "glucose": 21022,
-      "notion": 1351
+      "notion": 1433
     },
     {
       "date": "2026-05-11",
       "glucose": 21309,
-      "notion": 1356
+      "notion": 1439
     },
     {
       "date": "2026-05-12",
       "glucose": 21595,
-      "notion": 1361
+      "notion": 1445
     },
     {
       "date": "2026-05-13",
       "glucose": 21876,
-      "notion": 1365
+      "notion": 1450
     },
     {
       "date": "2026-05-14",
       "glucose": 22163,
-      "notion": 1371
+      "notion": 1457
     },
     {
       "date": "2026-05-15",
       "glucose": 22436,
-      "notion": 1386
+      "notion": 1473
     },
     {
       "date": "2026-05-16",
       "glucose": 22724,
-      "notion": 1391
+      "notion": 1481
     },
     {
       "date": "2026-05-17",
       "glucose": 23011,
-      "notion": 1395
+      "notion": 1491
     },
     {
       "date": "2026-05-18",
-      "glucose": 23270,
-      "notion": 1400
+      "glucose": 23271,
+      "notion": 1498
+    },
+    {
+      "date": "2026-05-19",
+      "glucose": 23271,
+      "notion": 1498
     }
   ],
   "glucoseTrend": [
-    {
-      "t": "2026-04-18T23:59:16.000Z",
-      "v": 133
-    },
     {
       "t": "2026-04-19T00:04:16.000Z",
       "v": 129
@@ -32104,6 +32100,10 @@
     {
       "t": "2026-05-18T21:54:55.000Z",
       "v": 126
+    },
+    {
+      "t": "2026-05-18T21:59:55.000Z",
+      "v": 122
     }
   ],
   "backups": [
