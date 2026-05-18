@@ -1,7 +1,7 @@
 [
   {
     "id": "36485ec7-0668-81a3-8dcc-c39944587db3",
-    "title": "Dinner: dessert — 2 half-squares (= 1 square total) dark chocolate and small handful almonds (BG: 116 mg/dL Flat) (Protein: 5g) (Pred: 164-174 mg/dL @ 10:11 PM)",
+    "title": "Dinner: dessert — 2 half-squares (= 1 square total) dark chocolate and small handful almonds [Cumulative Dinner: 46g carbs total] (BG: 116 mg/dL Flat) (Pred: 164-174 mg/dL @ 10:11 PM) (Protein: 5g | Carbs: ~8g | Cals: ~155) [Coach: Truly minimal portion 👏 — about 1 square of dark chocolate plus a handful of almonds is barely a blip BG-wise. The fat and protein from almonds slow the modest sugar nicely. As smart as desserts get.]",
     "type": "Dinner",
     "date": "2026-05-18T20:59:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-18/65e8008522c0546a.jpg",
@@ -12,7 +12,7 @@
   },
   {
     "id": "36485ec7-0668-8119-93a3-ec84ef8258b9",
-    "title": "Snack: wafer ice cream sandwich with fresh strawberries (Spanish corte de helado style) (BG: 173 mg/dL Flat) (Protein: 5g) (Pred: 232-242 mg/dL @ 6:17 PM)",
+    "title": "Snack: wafer ice cream sandwich with fresh strawberries (Spanish corte de helado style) (BG: 173 mg/dL Flat) (Pred: 232-242 mg/dL @ 6:17 PM) (Protein: 5g | Carbs: ~50g | Cals: ~400) [Coach: Heads-up: this one will run hot — wafer + cream lean heavily refined-sugar, and you're already at 173 from lunch. The strawberries are the bright spot. A short walk after will help soften the spike, and a smaller portion next time would be gentler.]",
     "type": "Snack",
     "date": "2026-05-18T16:11:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-18/c6d96e874dcfecdd.jpg",
@@ -34,7 +34,7 @@
   },
   {
     "id": "36485ec7-0668-815a-9b42-d2f0cdd71534",
-    "title": "Breakfast: ham and cheese sandwich on whole grain bread (BG: 118 mg/dL Flat) (Protein: 18g) (Pred: 180-190 mg/dL @ 11:42 AM)",
+    "title": "Breakfast: ham and cheese sandwich on whole grain bread (BG: 118 mg/dL Flat) (Pred: 180-190 mg/dL @ 11:42 AM) (Protein: 18g | Carbs: ~28g | Cals: ~295) [Coach: Whole grain bread is a solid T2D breakfast choice — better than white. The ham and cheese bring decent protein, though you're just under the 20g sweet spot. A tomato slice or cucumber on the side would complete the picture 🥗]",
     "type": "Breakfast",
     "date": "2026-05-18T10:15:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-18/cb22c2fd15736ab9.jpg",
@@ -56,7 +56,7 @@
   },
   {
     "id": "36385ec7-0668-812d-bd97-c52d8c153380",
-    "title": "Dinner: Bowl of sliced strawberries with milk (BG: 98 mg/dL Flat) (Protein: 4g) (Pred: 164-174 mg/dL @ 9:52 PM)",
+    "title": "Dinner: Bowl of sliced strawberries with milk [Cumulative Dinner: ~65g carbs total] (BG: 98 mg/dL Flat) (Pred: 164-174 mg/dL @ 9:52 PM) (Protein: 4g | Carbs: ~20g | Cals: ~110) [Coach: Sweet dessert finish 🍓 — strawberries bring fiber and vitamin C, milk adds a bit of protein and calcium. Dinner total reaches ~65g carbs but the strawberry fiber and the Metformin saturation effect keep the predicted peak in the 170s. Classic Spanish ending.]",
     "type": "Dinner",
     "date": "2026-05-17T20:57:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-17/29ef9d8ee1fb6add.jpg",
@@ -67,7 +67,7 @@
   },
   {
     "id": "36385ec7-0668-8119-bd15-c8dc61c900f8",
-    "title": "Dinner: Open-faced bread slice with 2 rounds of salami + plain crusty bread wedge + glass of gazpacho (BG: 119 mg/dL Flat) (Protein: 14g) (Pred: 166-176 mg/dL @ 9:52 PM)",
+    "title": "Dinner: Open-faced bread slice with 2 rounds of salami + plain crusty bread wedge + glass of gazpacho (BG: 119 mg/dL Flat) (Pred: 166-176 mg/dL @ 9:52 PM) (Protein: 14g | Carbs: ~45g | Cals: ~325) [Coach: Bread-heavy dinner 🥖 — the salami brings flavor and a bit of protein, but the two bread pieces drive ~35g of carbs on their own. Gazpacho adds veggies and lycopene. Trimming one bread piece next time would keep the curve gentler.]",
     "type": "Dinner",
     "date": "2026-05-17T20:36:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-17/8cdbb9fc5f8b1b90.jpg",
@@ -78,7 +78,7 @@
   },
   {
     "id": "36385ec7-0668-8128-abdb-f582d12a1a46",
-    "title": "Snack: 1 whole-grain round cracker with peanut butter (BG: 97 mg/dL Flat) (Protein: 8g) (Pred: 117-127 mg/dL @ 7:17 PM)",
+    "title": "Snack: 1 whole-grain round cracker with peanut butter (BG: 97 mg/dL Flat) (Pred: 117-127 mg/dL @ 7:17 PM) (Protein: 8g | Carbs: ~16g | Cals: ~190) [Coach: Smart snack 🥜 — peanut butter brings protein and healthy fats to slow the glucose curve, and the whole-grain cracker keeps the carbs steady. With BG at 97, expect a gentle lift into the low 120s. Coach-approved combo.]",
     "type": "Snack",
     "date": "2026-05-17T17:11:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-17/fb854644fa2bf2b1.jpg",
@@ -89,7 +89,7 @@
   },
   {
     "id": "36385ec7-0668-8107-815c-dd1232f313ba",
-    "title": "Lunch: Albóndigas (meatballs) with potatoes, onions, and carrots in broth + 1 cut plum (BG: 81 mg/dL Flat) (Protein: 25g) (Pred: 119-129 mg/dL @ 3:56 PM)",
+    "title": "Lunch: Albóndigas (meatballs) with potatoes, onions, and carrots in broth + 1 cut plum (BG: 81 mg/dL Flat) (Pred: 119-129 mg/dL @ 3:56 PM) (Protein: 25g | Carbs: ~46g | Cals: ~405) [Coach: Hearty Spanish classic 🍲 — meatballs bring solid protein, carrots and onions add fiber and natural sweetness, potatoes contribute the complex carbs. Starting at 81, this meal will lift you gently into a comfortable mid-afternoon range. The plum is a fresh finishing note.]",
     "type": "Lunch",
     "date": "2026-05-17T14:02:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-17/f0d81b93aa1f0026.jpg",
@@ -100,7 +100,7 @@
   },
   {
     "id": "36385ec7-0668-8117-843d-e7c0b5b07d42",
-    "title": "Breakfast: Ham and cheese sandwich on rustic bread + sliced kiwi (BG: 117 mg/dL Flat) (Protein: 24g) (Pred: 189-199 mg/dL @ 12:11 PM)",
+    "title": "Breakfast: Ham and cheese sandwich on rustic bread + sliced kiwi (BG: 117 mg/dL Flat) (Pred: 189-199 mg/dL @ 12:11 PM) (Protein: 24g | Carbs: ~38g | Cals: ~340) [Coach: Familiar ham-and-cheese setup 🥝 — solid 24g protein, and the kiwi brings vitamin C plus a bit of fiber. The artisan bread is the main carb driver at ~26g. With your usual post-breakfast walk, the climb toward noon should stay manageable.]",
     "type": "Breakfast",
     "date": "2026-05-17T10:44:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-17/7da644c7bd4d96b1.jpg",
@@ -1100,7 +1100,7 @@
     "peak": null
   },
   {
-    "id": "35e85ec7-0668-8101-b14d-f72096e524dd",
+    "id": "36485ec7-0668-81a4-ae9b-e6c711f56e74",
     "title": "Snack: One single-serve bag of Smartfood whole-grain cheddar popcorn (BG: 99 mg/dL Flat) (Pred: 128-138 mg/dL @ 10:00 PM) (Protein: 3g | Carbs: ~15g | Cals: ~160) [Coach: A reasonable little snack — whole-grain popcorn is lighter than chips and has a touch of cheese for flavor without a big carb spike. Protein is on the light side, so if you have time before dinner, a few nuts or a slice of cheese would pair nicely.]",
     "type": "Snack",
     "date": "2026-04-25T19:54:00.000+02:00",
