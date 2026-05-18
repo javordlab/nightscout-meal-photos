@@ -7,8 +7,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-18/65e8008522c0546a.jpg",
     "carbs": 8,
     "cals": 155,
-    "delta": null,
-    "peak": null
+    "delta": 62,
+    "peak": 187
   },
   {
     "id": "36485ec7-0668-8119-93a3-ec84ef8258b9",
@@ -111,7 +111,7 @@
   },
   {
     "id": "36285ec7-0668-8190-a809-dbec1d9624ad",
-    "title": "Lunch: Wafer ice cream sandwich with sliced strawberries (BG: 139 mg/dL Flat) (Protein: 5g) (Pred: 161-171 mg/dL @ 5:36 PM)",
+    "title": "Lunch: Wafer ice cream sandwich with sliced strawberries (BG: 139 mg/dL Flat) (Pred: 161-171 mg/dL @ 5:36 PM) (Protein: 5g | Carbs: ~30g | Cals: ~290) [Coach: Ice cream sandwich 🍓 — the strawberries add a touch of fresh fiber, but the wafers and ice cream bring ~30g of sugar and refined carbs on top of BG already at 139 and climbing. Expect a notable rise into the 160s by 5:30. The clean lunch protein helps cushion a bit.]",
     "type": "Lunch",
     "date": "2026-05-16T15:43:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-16/b6271fb53e6499f4.jpg",
@@ -122,11 +122,11 @@
   },
   {
     "id": "36285ec7-0668-8194-91b6-d820a08e20ef",
-    "title": "Lunch: Whole pan-fried trout (plain) (BG: 90 mg/dL Flat) (Protein: 28g) (Pred: 112-122 mg/dL @ 3:40 PM)",
+    "title": "Lunch: Whole pan-fried trout (plain) [Cumulative Lunch: ~17g carbs total] (BG: 90 mg/dL Flat) (Pred: 112-122 mg/dL @ 3:40 PM) (Protein: 28g | Carbs: ~0g | Cals: ~230) [Coach: Now this is a strong lunch 🐟 — trout brings omega-3s, lean protein, and zero carbs to round out the gazpacho and lomo. Total carbs stay at 17g with 40g+ protein on the plate. Coach is very happy with today.]",
     "type": "Lunch",
     "date": "2026-05-16T14:34:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-16/f2cf910f66b8f40f.jpg",
-    "carbs": 0,
+    "carbs": null,
     "cals": 230,
     "delta": 61,
     "peak": 151
@@ -144,7 +144,7 @@
   },
   {
     "id": "36285ec7-0668-8188-810e-d85901fbd5f6",
-    "title": "Breakfast: Toasted ham and cheese sandwich + sliced small pear (BG: 114 mg/dL Flat) (Protein: 24g) (Pred: 193-203 mg/dL @ 11:59 AM)",
+    "title": "Breakfast: Toasted ham and cheese sandwich + sliced small pear (BG: 114 mg/dL Flat) (Pred: 193-203 mg/dL @ 11:59 AM) (Protein: 24g | Carbs: ~44g | Cals: ~345) [Coach: Classic ham-and-cheese setup 🥪 — solid 24g protein from the deli meats and cheese is a strong breakfast move. The pear brings fiber and is gentler on BG than juice would be. The bread is the main carb driver though, so expect a fuller climb toward noon.]",
     "type": "Breakfast",
     "date": "2026-05-16T10:32:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-16/c6266ae15bf38c7b.jpg",
