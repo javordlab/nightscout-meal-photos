@@ -1,10 +1,10 @@
 [
   {
-    "id": "36485ec7-0668-81ab-a564-deed53d0d7c3",
-    "title": "Breakfast: ham and cheese sandwich on whole grain bread [Coach: Whole grain bread is a solid T2D breakfast choice — better than white. The ham and cheese bring decent protein, though you're just under the 20g sweet spot. A tomato slice or cucumber on the side would complete the picture 🥗] (BG: 118 mg/dL Flat) (Protein: 18g) (Pred: 180-190 mg/dL @ 11:42 AM)",
+    "id": "36485ec7-0668-815a-9b42-d2f0cdd71534",
+    "title": "Breakfast: ham and cheese sandwich on whole grain bread (BG: 118 mg/dL Flat) (Pred: 180-190 mg/dL @ 11:42 AM) (Protein: 18g | Carbs: ~28g | Cals: ~295) [Coach: Whole grain bread is a solid T2D breakfast choice — better than white. The ham and cheese bring decent protein, though you're just under the 20g sweet spot. A tomato slice or cucumber on the side would complete the picture 🥗]",
     "type": "Breakfast",
     "date": "2026-05-18T10:15:00.000+02:00",
-    "photo": "https://iili.io/By2CBIa.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-18/cb22c2fd15736ab9.jpg",
     "carbs": 28,
     "cals": 295,
     "delta": null,
@@ -1585,7 +1585,7 @@
   },
   {
     "id": "35e85ec7-0668-8163-8c86-e61a40479330",
-    "title": "Dinner: Caprese salad (tomato slices with burrata/fresh mozzarella) and bone-in braised meat (short rib or lamb chop with dark glaze) (BG: 101 mg/dL Flat) (Pred: 110-120 mg/dL @ 7:54 PM) (Protein: 32g | Carbs: ~8g | Cals: ~560) [Coach: An exceptional T2D dinner ��� the caprese brings tomato fiber and protein from the mozzarella with almost no carbs, and the braised meat delivers ~32g protein with essentially zero starch. Starting at 101 with only 8g total carbs, the spike from this portion alone will be minimal.]",
+    "title": "Dinner: Caprese salad (tomato slices with burrata/fresh mozzarella) and bone-in braised meat (short rib or lamb chop with dark glaze) (BG: 101 mg/dL Flat) (Pred: 110-120 mg/dL @ 7:54 PM) (Protein: 32g | Carbs: ~8g | Cals: ~560) [Coach: An exceptional T2D dinner — the caprese brings tomato fiber and protein from the mozzarella with almost no carbs, and the braised meat delivers ~32g protein with essentially zero starch. Starting at 101 with only 8g total carbs, the spike from this portion alone will be minimal.]",
     "type": "Dinner",
     "date": "2026-04-13T18:38:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-13/c45a367d4273fd87.jpg",
