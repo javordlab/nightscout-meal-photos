@@ -1,8 +1,19 @@
 [
   {
     "id": "36585ec7-0668-8154-abdf-f97c296e398f",
-    "title": "Breakfast: 4 prunes topped with peanut butter [Cumulative Breakfast: 68g carbs total] (BG: 95 mg/dL Flat) (Pred: 187-197 mg/dL @ 12:37 PM) (Protein: 7g | Carbs: ~28g | Cals: ~170) [Coach: Prunes + PB is a thoughtful combo — fiber + protein + fat help soften the natural sugar 👍. Combined with the bocadillo, breakfast is now ~68g carbs which is hefty for the morning — cortisol amplifies AM spikes. A walk after will help.]",
+    "title": "Breakfast: 4 prunes topped with peanut butter (BG: 95 mg/dL Flat) (Protein: 7g) (Pred: 187-197 mg/dL @ 12:37 PM)",
     "type": "Breakfast",
+    "date": "2026-05-19T11:19:00.000+02:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-19/cea75cb371af42fa.jpg",
+    "carbs": 28,
+    "cals": 170,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "36585ec7-0668-8149-be4a-e87e025e0989",
+    "title": "Lunch: 4 prunes topped with peanut butter [Cumulative Lunch: 68g carbs total] (BG: 95 mg/dL Flat) (Pred: 144-154 mg/dL @ 1:03 PM) (Protein: 7g | Carbs: ~28g | Cals: ~170) [Coach: Prunes + PB is a thoughtful combo — fiber + protein + fat help soften the natural sugar 👍. Combined with the bocadillo, lunch total is now ~68g carbs, which is on the higher side. A walk afterward will help keep the spike manageable.]",
+    "type": "Lunch",
     "date": "2026-05-19T11:19:00.000+02:00",
     "photo": "https://iili.io/Byeifef.jpg",
     "carbs": 28,
@@ -12,8 +23,19 @@
   },
   {
     "id": "36585ec7-0668-81b3-ae5b-f9d0f879db77",
-    "title": "Breakfast: bocadillo de tortilla francesa — baguette section with plain 1-egg omelette (BG: 107 mg/dL Flat) (Pred: 181-191 mg/dL @ 12:37 PM) (Protein: 13g | Carbs: ~40g | Cals: ~295) [Coach: Classic Spanish breakfast 🥪 — but white bread is doing most of the heavy lifting, ~40g fast-acting carbs and only ~13g protein. The egg helps. A tomato slice or jamón inside would round this out, and mornings tend to run hotter BG-wise.]",
+    "title": "Breakfast: bocadillo de tortilla francesa — baguette section with plain 1-egg omelette (BG: 107 mg/dL Flat) (Protein: 13g) (Pred: 181-191 mg/dL @ 12:37 PM)",
     "type": "Breakfast",
+    "date": "2026-05-19T11:10:00.000+02:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-19/ad5d36ad417b428f.jpg",
+    "carbs": 40,
+    "cals": 295,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "36585ec7-0668-81f3-aa8b-fa8f9879956c",
+    "title": "Lunch: bocadillo de tortilla francesa — baguette section with plain 1-egg omelette (BG: 107 mg/dL Flat) (Pred: 138-148 mg/dL @ 1:03 PM) (Protein: 13g | Carbs: ~40g | Cals: ~295) [Coach: Bocadillo classic 🥪 — but white bread is doing most of the heavy lifting, ~40g fast-acting carbs balanced by only ~13g protein. The egg helps a touch. A slice of tomato or jamón inside would round this out.]",
+    "type": "Lunch",
     "date": "2026-05-19T11:10:00.000+02:00",
     "photo": "https://iili.io/ByeVrnp.jpg",
     "carbs": 40,
@@ -78,7 +100,7 @@
   },
   {
     "id": "36385ec7-0668-812d-bd97-c52d8c153380",
-    "title": "Dinner: Bowl of sliced strawberries with milk [Cumulative Dinner: ~65g carbs total] (BG: 98 mg/dL Flat) (Pred: 164-174 mg/dL @ 9:52 PM) (Protein: 4g | Carbs: ~20g | Cals: ~110) [Coach: Sweet dessert finish 🍓 — strawberries bring fiber and vitamin C, milk adds a bit of protein and calcium. Dinner total reaches ~65g carbs but the strawberry fiber and the Metformin saturation effect keep the predicted peak in the 170s. Classic Spanish ending.]",
+    "title": "Dinner: Bowl of sliced strawberries with milk (BG: 98 mg/dL Flat) (Protein: 4g) (Pred: 164-174 mg/dL @ 9:52 PM)",
     "type": "Dinner",
     "date": "2026-05-17T20:57:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-17/29ef9d8ee1fb6add.jpg",
@@ -89,7 +111,7 @@
   },
   {
     "id": "36385ec7-0668-8119-bd15-c8dc61c900f8",
-    "title": "Dinner: Open-faced bread slice with 2 rounds of salami + plain crusty bread wedge + glass of gazpacho (BG: 119 mg/dL Flat) (Pred: 166-176 mg/dL @ 9:52 PM) (Protein: 14g | Carbs: ~45g | Cals: ~325) [Coach: Bread-heavy dinner 🥖 — the salami brings flavor and a bit of protein, but the two bread pieces drive ~35g of carbs on their own. Gazpacho adds veggies and lycopene. Trimming one bread piece next time would keep the curve gentler.]",
+    "title": "Dinner: Open-faced bread slice with 2 rounds of salami + plain crusty bread wedge + glass of gazpacho (BG: 119 mg/dL Flat) (Protein: 14g) (Pred: 166-176 mg/dL @ 9:52 PM)",
     "type": "Dinner",
     "date": "2026-05-17T20:36:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-17/8cdbb9fc5f8b1b90.jpg",
@@ -100,7 +122,7 @@
   },
   {
     "id": "36385ec7-0668-8128-abdb-f582d12a1a46",
-    "title": "Snack: 1 whole-grain round cracker with peanut butter (BG: 97 mg/dL Flat) (Pred: 117-127 mg/dL @ 7:17 PM) (Protein: 8g | Carbs: ~16g | Cals: ~190) [Coach: Smart snack 🥜 — peanut butter brings protein and healthy fats to slow the glucose curve, and the whole-grain cracker keeps the carbs steady. With BG at 97, expect a gentle lift into the low 120s. Coach-approved combo.]",
+    "title": "Snack: 1 whole-grain round cracker with peanut butter (BG: 97 mg/dL Flat) (Protein: 8g) (Pred: 117-127 mg/dL @ 7:17 PM)",
     "type": "Snack",
     "date": "2026-05-17T17:11:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-17/fb854644fa2bf2b1.jpg",
@@ -111,7 +133,7 @@
   },
   {
     "id": "36385ec7-0668-8107-815c-dd1232f313ba",
-    "title": "Lunch: Albóndigas (meatballs) with potatoes, onions, and carrots in broth + 1 cut plum (BG: 81 mg/dL Flat) (Pred: 119-129 mg/dL @ 3:56 PM) (Protein: 25g | Carbs: ~46g | Cals: ~405) [Coach: Hearty Spanish classic 🍲 — meatballs bring solid protein, carrots and onions add fiber and natural sweetness, potatoes contribute the complex carbs. Starting at 81, this meal will lift you gently into a comfortable mid-afternoon range. The plum is a fresh finishing note.]",
+    "title": "Lunch: Albóndigas (meatballs) with potatoes, onions, and carrots in broth + 1 cut plum (BG: 81 mg/dL Flat) (Protein: 25g) (Pred: 119-129 mg/dL @ 3:56 PM)",
     "type": "Lunch",
     "date": "2026-05-17T14:02:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-17/f0d81b93aa1f0026.jpg",
@@ -122,7 +144,7 @@
   },
   {
     "id": "36385ec7-0668-8117-843d-e7c0b5b07d42",
-    "title": "Breakfast: Ham and cheese sandwich on rustic bread + sliced kiwi (BG: 117 mg/dL Flat) (Pred: 189-199 mg/dL @ 12:11 PM) (Protein: 24g | Carbs: ~38g | Cals: ~340) [Coach: Familiar ham-and-cheese setup 🥝 — solid 24g protein, and the kiwi brings vitamin C plus a bit of fiber. The artisan bread is the main carb driver at ~26g. With your usual post-breakfast walk, the climb toward noon should stay manageable.]",
+    "title": "Breakfast: Ham and cheese sandwich on rustic bread + sliced kiwi (BG: 117 mg/dL Flat) (Protein: 24g) (Pred: 189-199 mg/dL @ 12:11 PM)",
     "type": "Breakfast",
     "date": "2026-05-17T10:44:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-17/7da644c7bd4d96b1.jpg",
@@ -166,7 +188,7 @@
   },
   {
     "id": "36285ec7-0668-8188-810e-d85901fbd5f6",
-    "title": "Breakfast: Toasted ham and cheese sandwich + sliced small pear (BG: 114 mg/dL Flat) (Pred: 193-203 mg/dL @ 11:59 AM) (Protein: 24g | Carbs: ~44g | Cals: ~345) [Coach: Classic ham-and-cheese setup 🥪 — solid 24g protein from the deli meats and cheese is a strong breakfast move. The pear brings fiber and is gentler on BG than juice would be. The bread is the main carb driver though, so expect a fuller climb toward noon.]",
+    "title": "Breakfast: Toasted ham and cheese sandwich + sliced small pear (BG: 114 mg/dL Flat) (Pred: 193-203 mg/dL @ 11:59 AM) (Protein: 24g | Carbs: ~44g | Cals: ~345) [Coach: Classic ham-and-cheese setup �� — solid 24g protein from the deli meats and cheese is a strong breakfast move. The pear brings fiber and is gentler on BG than juice would be. The bread is the main carb driver though, so expect a fuller climb toward noon.]",
     "type": "Breakfast",
     "date": "2026-05-16T10:32:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-16/c6266ae15bf38c7b.jpg",
