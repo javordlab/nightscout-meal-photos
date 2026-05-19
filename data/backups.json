@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-19T17:56:25.355Z",
+  "lastUpdated": "2026-05-19T18:00:30.740Z",
   "tokenUsage": [
     {
       "platform": "Kimi (Ollama)",
@@ -21,166 +21,162 @@
     }
   ],
   "database": {
-    "glucose": 23508,
-    "notion": 1502
+    "glucose": 23509,
+    "notion": 1547
   },
   "syncHistory": [
     {
       "date": "2026-04-20",
       "glucose": 15856,
-      "notion": 1312
+      "notion": 1355
     },
     {
       "date": "2026-04-21",
       "glucose": 16142,
-      "notion": 1318
+      "notion": 1361
     },
     {
       "date": "2026-04-22",
       "glucose": 16402,
-      "notion": 1324
+      "notion": 1367
     },
     {
       "date": "2026-04-23",
       "glucose": 16462,
-      "notion": 1328
+      "notion": 1371
     },
     {
       "date": "2026-04-24",
       "glucose": 16488,
-      "notion": 1333
+      "notion": 1376
     },
     {
       "date": "2026-04-25",
       "glucose": 16770,
-      "notion": 1337
+      "notion": 1380
     },
     {
       "date": "2026-04-26",
       "glucose": 17055,
-      "notion": 1344
+      "notion": 1387
     },
     {
       "date": "2026-04-27",
       "glucose": 17341,
-      "notion": 1348
+      "notion": 1391
     },
     {
       "date": "2026-04-28",
       "glucose": 17622,
-      "notion": 1355
+      "notion": 1398
     },
     {
       "date": "2026-04-29",
       "glucose": 17902,
-      "notion": 1361
+      "notion": 1404
     },
     {
       "date": "2026-04-30",
       "glucose": 18187,
-      "notion": 1368
+      "notion": 1411
     },
     {
       "date": "2026-05-01",
       "glucose": 18467,
-      "notion": 1374
+      "notion": 1417
     },
     {
       "date": "2026-05-02",
       "glucose": 18753,
-      "notion": 1381
+      "notion": 1424
     },
     {
       "date": "2026-05-03",
       "glucose": 19040,
-      "notion": 1387
+      "notion": 1430
     },
     {
       "date": "2026-05-04",
       "glucose": 19325,
-      "notion": 1394
+      "notion": 1437
     },
     {
       "date": "2026-05-05",
       "glucose": 19609,
-      "notion": 1400
+      "notion": 1443
     },
     {
       "date": "2026-05-06",
       "glucose": 19890,
-      "notion": 1406
+      "notion": 1449
     },
     {
       "date": "2026-05-07",
       "glucose": 20173,
-      "notion": 1411
+      "notion": 1454
     },
     {
       "date": "2026-05-08",
       "glucose": 20458,
-      "notion": 1420
+      "notion": 1463
     },
     {
       "date": "2026-05-09",
       "glucose": 20735,
-      "notion": 1428
+      "notion": 1471
     },
     {
       "date": "2026-05-10",
       "glucose": 21022,
-      "notion": 1434
+      "notion": 1477
     },
     {
       "date": "2026-05-11",
       "glucose": 21309,
-      "notion": 1440
+      "notion": 1483
     },
     {
       "date": "2026-05-12",
       "glucose": 21595,
-      "notion": 1446
+      "notion": 1489
     },
     {
       "date": "2026-05-13",
       "glucose": 21876,
-      "notion": 1451
+      "notion": 1494
     },
     {
       "date": "2026-05-14",
       "glucose": 22163,
-      "notion": 1458
+      "notion": 1501
     },
     {
       "date": "2026-05-15",
       "glucose": 22436,
-      "notion": 1474
+      "notion": 1517
     },
     {
       "date": "2026-05-16",
       "glucose": 22724,
-      "notion": 1482
+      "notion": 1525
     },
     {
       "date": "2026-05-17",
       "glucose": 23011,
-      "notion": 1492
+      "notion": 1535
     },
     {
       "date": "2026-05-18",
       "glucose": 23295,
-      "notion": 1499
+      "notion": 1542
     },
     {
       "date": "2026-05-19",
-      "glucose": 23508,
-      "notion": 1502
+      "glucose": 23509,
+      "notion": 1547
     }
   ],
   "glucoseTrend": [
-    {
-      "t": "2026-04-19T19:59:12.000Z",
-      "v": 101
-    },
     {
       "t": "2026-04-19T20:04:12.000Z",
       "v": 107
@@ -32108,6 +32104,10 @@
     {
       "t": "2026-05-19T17:54:54.000Z",
       "v": 109
+    },
+    {
+      "t": "2026-05-19T17:59:54.000Z",
+      "v": 125
     }
   ],
   "backups": [
