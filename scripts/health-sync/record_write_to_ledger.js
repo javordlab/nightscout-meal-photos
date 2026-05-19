@@ -44,6 +44,7 @@ function stripMetadata(entryText) {
   let text = cleanWhitespace(entryText.replace(PHOTO_LINK_REGEX, ''));
   text = cleanWhitespace(
     text
+      .replace(/\[id:[a-f0-9]{8}\]/g, '')
       .replace(BG_REGEX, '')
       .replace(PRED_REGEX, '')
       .replace(PROTEIN_REGEX, '')

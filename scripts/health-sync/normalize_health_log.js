@@ -68,6 +68,31 @@ function extractProtein(entryText) {
   return protein ? parseNumber(protein[1]) : null;
 }
 
+// Sleep entry titles look like:
+//   "Sleep: 7h 28m · Deep 0h 19m · REM 1h 03m · Core 6h 07m · Awake 0h 22m"
+// Returns null if not a Sleep entry, or { hours, deep, rem, core, awake } in decimal hours.
+const SLEEP_TOTAL_REGEX = /Sleep:\s*(\d+)h\s*(\d+)m/i;
+const SLEEP_STAGE_REGEX = /\b(Deep|REM|Core|Awake)\s+(\d+)h\s*(\d+)m/gi;
+function extractSleepStages(titleText) {
+  const total = titleText.match(SLEEP_TOTAL_REGEX);
+  if (!total) return null;
+  const out = {
+    hours: Number(total[1]) + Number(total[2]) / 60,
+    deep:  null, rem: null, core: null, awake: null,
+  };
+  let m;
+  SLEEP_STAGE_REGEX.lastIndex = 0;
+  while ((m = SLEEP_STAGE_REGEX.exec(titleText)) !== null) {
+    const stage = m[1].toLowerCase();
+    out[stage] = Number(m[2]) + Number(m[3]) / 60;
+  }
+  // Round to 2 decimals to match MySQL DECIMAL(4,2)
+  for (const k of ['hours','deep','rem','core','awake']) {
+    if (out[k] !== null) out[k] = Math.round(out[k] * 100) / 100;
+  }
+  return out;
+}
+
 function estimateProteinFromTitle(title, carbsEst = null, caloriesEst = null) {
   const text = normalizeTitle(title || '');
   if (!text) return 1;
@@ -138,10 +163,24 @@ function estimateProteinFromTitle(title, carbsEst = null, caloriesEst = null) {
   return Math.round(protein * 10) / 10;
 }
 
+// Stripped annotations MUST stay in sync with radial_dispatcher.js normalizeEntryTitle.
+// Any text appended to an entry AFTER initial write must be removed here — otherwise
+// the entry_key drifts on every revision and Notion gets duplicate pages. The
+// [Coach: …] addition caused the 190-page backlog cleaned up on 2026-05-18.
 function stripMetadata(entryText) {
   let text = stripPhotos(entryText);
-  text = cleanWhitespace(text.replace(BG_REGEX, '').replace(PRED_REGEX, '').replace(PROTEIN_REGEX, '').replace(/\(Carbs:[^)]*\)/g, '').replace(/\(Carbs:[^)]*\|[^)]*\)/g, ''));
-  return text;
+  text = text
+    .replace(/\[id:[a-f0-9]{8}\]/g, '')
+    .replace(/\[Coach:[^\]]*\]/gi, '')
+    .replace(/\[Cumulative[^\]]*\]/gi, '')
+    .replace(/\(logged late\)/gi, '')
+    .replace(BG_REGEX, '')
+    .replace(PRED_REGEX, '')
+    .replace(PROTEIN_REGEX, '')
+    .replace(/\(Carbs:[^)]*\|[^)]*\)/g, '')
+    .replace(/\(Carbs:[^)]*\)/g, '')
+    .replace(/\(Cals:[^)]*\)/gi, '');
+  return cleanWhitespace(text);
 }
 
 function parseNumber(value) {
@@ -188,8 +227,11 @@ function buildContentHash(entry) {
     caloriesEst: entry.caloriesEst,
     proteinEst: entry.proteinEst,
     predicted: entry.predicted,
-    actual: entry.actual
+    actual: entry.actual,
   };
+  // Only include sleep key when present — preserves existing hashes for non-Sleep entries
+  // (otherwise adding sleep:null would invalidate every cached hash and trigger mass re-sync).
+  if (entry.sleep) clone.sleep = entry.sleep;
   return sha256(JSON.stringify(clone));
 }
 
@@ -275,6 +317,7 @@ function parseRow(line, lineNumber, pendingPhotos = []) {
     ? estimateProteinFromTitle(title, carbs, cals)
     : null;
   const protein = explicitProtein ?? inferredProtein;
+  const sleep = category === 'Sleep' ? extractSleepStages(title) : null;
 
   const normalized = {
     source: {
@@ -300,6 +343,7 @@ function parseRow(line, lineNumber, pendingPhotos = []) {
     carbsEst: carbs,
     caloriesEst: cals,
     proteinEst: protein,
+    sleep,
     predicted: {
       peakBgText: predictions.peakBgText,
       peakTimeText: predictions.peakTimeText

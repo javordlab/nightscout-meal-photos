@@ -29,8 +29,13 @@ try { ({ writeReceipt } = require('./cron_receipt')); } catch (_) {}
 
 // ─── MySQL helpers ──────────────────────────────────────────────────────────
 
+// --default-character-set=utf8mb4 is critical — without it the CLI client
+// defaults to a narrower charset and Spanish characters (ó, ñ, ·) get
+// double-encoded on write (e.g. "jamón" becomes "jamÃ³n" in storage).
+const MYSQL_CHARSET_ARG = '--default-character-set=utf8mb4';
+
 function mysqlRun(sql) {
-  const r = spawnSync(MYSQL_BIN, ['-u', 'root', DB_NAME, '-e', sql], { encoding: 'utf8' });
+  const r = spawnSync(MYSQL_BIN, ['-u', 'root', MYSQL_CHARSET_ARG, DB_NAME, '-e', sql], { encoding: 'utf8' });
   if (r.status !== 0) {
     throw new Error(`mysql failed (${r.status}): ${r.stderr || r.stdout}`);
   }
@@ -40,7 +45,7 @@ function mysqlRun(sql) {
 // Stream rows in via STDIN as a single multi-statement batch. Faster + safer
 // than building one giant -e arg (which can blow argv limits with 500+ rows).
 function mysqlExec(sqlBatch) {
-  const r = spawnSync(MYSQL_BIN, ['-u', 'root', DB_NAME], { input: sqlBatch, encoding: 'utf8' });
+  const r = spawnSync(MYSQL_BIN, ['-u', 'root', MYSQL_CHARSET_ARG, DB_NAME], { input: sqlBatch, encoding: 'utf8' });
   if (r.status !== 0) {
     throw new Error(`mysql batch failed (${r.status}): ${r.stderr || r.stdout}`);
   }
@@ -123,7 +128,12 @@ function buildRow(e) {
     outcomes_backfilled: s.outcomesBackfilled,
     source_file: e.source?.file,
     source_line: e.source?.line,
-    raw_row: e.source?.rawRow
+    raw_row: e.source?.rawRow,
+    sleep_hours: e.sleep?.hours ?? null,
+    sleep_deep:  e.sleep?.deep  ?? null,
+    sleep_rem:   e.sleep?.rem   ?? null,
+    sleep_core:  e.sleep?.core  ?? null,
+    sleep_awake: e.sleep?.awake ?? null,
   };
 }
 
@@ -163,7 +173,12 @@ function rowToValues(r) {
     bool(r.outcomes_backfilled),
     esc(r.source_file),
     num(r.source_line),
-    esc(r.raw_row)
+    esc(r.raw_row),
+    num(r.sleep_hours),
+    num(r.sleep_deep),
+    num(r.sleep_rem),
+    num(r.sleep_core),
+    num(r.sleep_awake)
   ].join(', ');
 }
 
@@ -173,7 +188,8 @@ const COLS = [
   'predicted_peak_bg_text','predicted_peak_time_text','predicted_peak_bg_low','predicted_peak_bg_high',
   'pre_meal_bg','peak_bg','two_hour_peak_bg','peak_time','bg_delta','time_to_peak_min',
   'peak_bg_delta','peak_time_delta_min','sync_ns','sync_notion','sync_gallery',
-  'outcomes_backfilled','source_file','source_line','raw_row'
+  'outcomes_backfilled','source_file','source_line','raw_row',
+  'sleep_hours','sleep_deep','sleep_rem','sleep_core','sleep_awake'
 ];
 
 // All non-PK columns get refreshed on conflict, plus deleted_at is cleared
