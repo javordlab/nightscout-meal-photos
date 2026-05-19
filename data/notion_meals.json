@@ -7,8 +7,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-19/944e842914210120.jpg",
     "carbs": 36,
     "cals": 240,
-    "delta": null,
-    "peak": null
+    "delta": 46,
+    "peak": 171
   },
   {
     "id": "36585ec7-0668-81b9-9709-f8f3fb610d05",
@@ -33,33 +33,11 @@
     "peak": 212
   },
   {
-    "id": "36585ec7-0668-8149-be4a-e87e025e0989",
-    "title": "Lunch: 4 prunes topped with peanut butter [Cumulative Lunch: 68g carbs total] (BG: 95 mg/dL Flat) (Pred: 144-154 mg/dL @ 1:03 PM) (Protein: 7g | Carbs: ~28g | Cals: ~170) [Coach: Prunes + PB is a thoughtful combo — fiber + protein + fat help soften the natural sugar 👍. Combined with the bocadillo, lunch total is now ~68g carbs, which is on the higher side. A walk afterward will help keep the spike manageable.]",
-    "type": "Lunch",
-    "date": "2026-05-19T11:19:00.000+02:00",
-    "photo": "https://iili.io/Byeifef.jpg",
-    "carbs": 28,
-    "cals": 170,
-    "delta": 117,
-    "peak": 212
-  },
-  {
     "id": "36585ec7-0668-81b3-ae5b-f9d0f879db77",
     "title": "Breakfast: bocadillo de tortilla francesa — baguette section with plain 1-egg omelette (BG: 107 mg/dL Flat) (Protein: 13g) (Pred: 181-191 mg/dL @ 12:37 PM)",
     "type": "Breakfast",
     "date": "2026-05-19T11:10:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-19/ad5d36ad417b428f.jpg",
-    "carbs": 40,
-    "cals": 295,
-    "delta": 105,
-    "peak": 212
-  },
-  {
-    "id": "36585ec7-0668-81f3-aa8b-fa8f9879956c",
-    "title": "Lunch: bocadillo de tortilla francesa — baguette section with plain 1-egg omelette (BG: 107 mg/dL Flat) (Pred: 138-148 mg/dL @ 1:03 PM) (Protein: 13g | Carbs: ~40g | Cals: ~295) [Coach: Bocadillo classic 🥪 — but white bread is doing most of the heavy lifting, ~40g fast-acting carbs balanced by only ~13g protein. The egg helps a touch. A slice of tomato or jamón inside would round this out.]",
-    "type": "Lunch",
-    "date": "2026-05-19T11:10:00.000+02:00",
-    "photo": "https://iili.io/ByeVrnp.jpg",
     "carbs": 40,
     "cals": 295,
     "delta": 105,
