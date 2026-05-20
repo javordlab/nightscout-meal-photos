@@ -1,5 +1,16 @@
 [
   {
+    "id": "36685ec7-0668-81a6-9785-e6443f28742b",
+    "title": "Dinner: Nestlé packaged flan dessert (1 cup = 100g portion; per label: 16.8g carbs, 14.8g sugars, 2.6g protein, 159 kcal) [Cumulative Dinner: 47g carbs total] (BG: 138 mg/dL Flat) (Pred: 202-212 mg/dL @ 10:59 PM) (Protein: 3g | Carbs: ~17g | Cals: ~160) [Coach: Packaged flan adds ~17g (mostly sugar) on top of the fajita — cumulative dinner is now ~47g carbs. BG started the fajita at 153, so this pushes the predicted peak toward ~207. The portion is contained at least. A walk after will help soften the spike.]",
+    "type": "Dinner",
+    "date": "2026-05-20T21:54:00.000+02:00",
+    "photo": "https://iili.io/C9YTGz7.jpg",
+    "carbs": 17,
+    "cals": 160,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "36685ec7-0668-810e-b1f4-e5d87867479a",
     "title": "Dinner: homemade chicken fajita on flour tortilla with bell peppers, guacamole, and shredded cheese; lime wedges (BG: 153 mg/dL Flat) (Pred: 185-195 mg/dL @ 10:59 PM) (Protein: 32g | Carbs: ~30g | Cals: ~390) [Coach: Beautiful homemade fajita 👏 — ~32g protein, real peppers, avocado for healthy fats, just ~30g carbs from the tortilla. BG starting at 153 uses some headroom, but the macro balance here is solid. Zero cured meat — streak continues.]",
     "type": "Dinner",
@@ -254,7 +265,7 @@
   },
   {
     "id": "36185ec7-0668-81bb-b8f8-e66a4a7002ab",
-    "title": "Dinner: 3-4 slices of lomo (cured Spanish pork loin) [Cumulative Dinner: ~2g carbs total] (BG: 121 mg/dL Flat) (Pred: 118-128 mg/dL @ 10:47 PM) (Protein: 10g | Carbs: ~0g | Cals: ~85) [Coach: More protein, still zero carbs �� — the cured ham keeps the carb-free streak alive and adds another ~10g of protein. Your BG should stay flat as a pancake tonight. Maybe the cleanest dinner combo of the week.]",
+    "title": "Dinner: 3-4 slices of lomo (cured Spanish pork loin) [Cumulative Dinner: ~2g carbs total] (BG: 121 mg/dL Flat) (Pred: 118-128 mg/dL @ 10:47 PM) (Protein: 10g | Carbs: ~0g | Cals: ~85) [Coach: More protein, still zero carbs 🥩 — the cured ham keeps the carb-free streak alive and adds another ~10g of protein. Your BG should stay flat as a pancake tonight. Maybe the cleanest dinner combo of the week.]",
     "type": "Dinner",
     "date": "2026-05-15T21:32:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-15/d809992785691321.jpg",
