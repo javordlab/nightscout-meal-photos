@@ -1,5 +1,16 @@
 [
   {
+    "id": "36785ec7-0668-8182-afcb-f57cb6f3b9d0",
+    "title": "Lunch: small bowl of fresh blueberries [Cumulative Lunch: 54g carbs total] (BG: 136 mg/dL Flat) (Pred: 166-176 mg/dL @ 6:41 PM) (Protein: 1g | Carbs: ~10g | Cals: ~40) [Coach: Blueberries 🫐 — antioxidant powerhouse with fiber to slow the sugar, low glycemic index. Smart post-callos finisher. Cumulative lunch ~54g carbs — the fruit choice keeps it from creeping higher.]",
+    "type": "Lunch",
+    "date": "2026-05-21T15:08:00.000+02:00",
+    "photo": "https://iili.io/C98Hgzg.jpg",
+    "carbs": 10,
+    "cals": 40,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "36785ec7-0668-816c-b367-d36bd6ef0d98",
     "title": "Lunch: callos con garbanzos (Spanish tripe and chickpea stew) with side of raw carrot sticks and a piece of bread (BG: 140 mg/dL Flat) (Protein: 31g) (Pred: 176-186 mg/dL @ 6:41 PM)",
     "type": "Lunch",
@@ -56,7 +67,7 @@
   },
   {
     "id": "36685ec7-0668-81a1-99f7-ce59b2da9188",
-    "title": "Lunch: second course — roasted meat (Spanish-style asado) with french fries (bread roll on table was NOT eaten) (BG: 92 mg/dL Flat) (Protein: 28g) (Pred: 125-135 mg/dL @ 4:30 PM)",
+    "title": "Lunch: second course — roasted meat (Spanish-style asado) with french fries (bread roll on table was NOT eaten) [Cumulative Lunch: 42g carbs total] (BG: 92 mg/dL Flat) (Pred: 125-135 mg/dL @ 4:30 PM) (Protein: 28g | Carbs: ~30g | Cals: ~510) [Coach: Second course — meat + fries only, bread roll skipped 👍. Adds ~25g protein from the meat. Cumulative lunch now ~42g carbs and ~57g protein — leaner than it first looked, and the protein anchors it well. Zero cured meat today, streak intact.]",
     "type": "Lunch",
     "date": "2026-05-20T14:37:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-20/cddff14573c8f054.jpg",
