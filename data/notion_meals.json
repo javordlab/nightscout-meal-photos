@@ -1,8 +1,8 @@
 [
   {
     "id": "36785ec7-0668-81e0-8f2e-f321342a8b1b",
-    "title": "Dinner: Nestlé packaged panna cotta (1 cup = 100g; estimated ~17g carbs, ~3g protein, ~180 kcal — cream-based Italian dessert) (BG: 120 mg/dL Flat) (Pred: 135-145 mg/dL @ 9:35 PM) (Protein: 3g | Carbs: ~17g | Cals: ~180) [Coach: Panna cotta 🍮 — cream-based dessert, ~17g carbs in a controlled portion. The cream fat slows the sugar a touch vs a flan. BG at 120 has room, and after 1h gardening this small indulgence is well-earned. Just note: a daily one adds up over the week.]",
-    "type": "Dinner",
+    "title": "Snack: Nestlé packaged panna cotta (1 cup = 100g; estimated ~17g carbs, ~3g protein, ~180 kcal — cream-based Italian dessert) (BG: 120 mg/dL Flat) (Protein: 3g) (Pred: 141-151 mg/dL @ 10:25 PM)",
+    "type": "Snack",
     "date": "2026-05-21T20:19:00.000+02:00",
     "photo": "https://iili.io/C9PMTsj.jpg",
     "carbs": 17,
@@ -78,7 +78,7 @@
   },
   {
     "id": "36685ec7-0668-81a1-99f7-ce59b2da9188",
-    "title": "Lunch: second course — roasted meat (Spanish-style asado) with french fries (bread roll on table was NOT eaten) [Cumulative Lunch: 42g carbs total] (BG: 92 mg/dL Flat) (Pred: 125-135 mg/dL @ 4:30 PM) (Protein: 28g | Carbs: ~30g | Cals: ~510) [Coach: Second course — meat + fries only, bread roll skipped 👍. Adds ~25g protein from the meat. Cumulative lunch now ~42g carbs and ~57g protein — leaner than it first looked, and the protein anchors it well. Zero cured meat today, streak intact.]",
+    "title": "Lunch: second course — roasted meat (Spanish-style asado) with french fries (bread roll on table was NOT eaten) (BG: 92 mg/dL Flat) (Protein: 28g) (Pred: 125-135 mg/dL @ 4:30 PM)",
     "type": "Lunch",
     "date": "2026-05-20T14:37:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-20/cddff14573c8f054.jpg",
@@ -562,7 +562,7 @@
   },
   {
     "id": "35e85ec7-0668-8107-a462-dd8e8525611c",
-    "title": "Dinner: Avocado toast topped with jamón ibérico (BG: 109 mg/dL Flat) (Pred: 127-137 mg/dL @ 11:14 PM) (Protein: 18g | Carbs: ~19g | Cals: ~290) [Coach: Beautiful late-night plate 🥑 ��� avocado brings healthy fats, jamón ibérico stacks rich protein, modest toast anchors it. Should land in a comfortable range. Sleep well.]  [id:57cc101c]",
+    "title": "Dinner: Avocado toast topped with jamón ibérico (BG: 109 mg/dL Flat) (Pred: 127-137 mg/dL @ 11:14 PM) (Protein: 18g | Carbs: ~19g | Cals: ~290) [Coach: Beautiful late-night plate 🥑 — avocado brings healthy fats, jamón ibérico stacks rich protein, modest toast anchors it. Should land in a comfortable range. Sleep well.]  [id:57cc101c]",
     "type": "Dinner",
     "date": "2026-05-08T21:58:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-08/deba822950c8295f.jpg",
