@@ -1,18 +1,18 @@
 [
   {
     "id": "36785ec7-0668-8183-a5bc-cd97cbb8c949",
-    "title": "Dinner: fruit dessert — blueberries and a small tangerine (half was eaten before photo; total estimate accounts for full serving) [Cumulative Dinner: 57g carbs total] (BG: 116 mg/dL Flat) (Pred: 170-180 mg/dL @ 11:24 PM) (Protein: 1g | Carbs: ~15g | Cals: ~55) [Coach: Fruit dessert 🍊 — blueberries + tangerine bring fiber and vitamin C, ~15g natural-sugar carbs. Smart finisher. Cumulative dinner ~57g carbs — manageable, but it's been a hefty day total. A short walk if any energy left will help the night.]",
+    "title": "Dinner: fruit dessert — blueberries and a small apricot (half was eaten before photo; total estimate accounts for full serving) (BG: 116 mg/dL Flat) (Protein: 1g) (Pred: 170-180 mg/dL @ 11:24 PM)",
     "type": "Dinner",
     "date": "2026-05-21T22:22:00.000+02:00",
     "photo": "https://iili.io/C9LCxwP.jpg",
-    "carbs": 15,
-    "cals": 55,
+    "carbs": 14,
+    "cals": 50,
     "delta": null,
     "peak": null
   },
   {
     "id": "36785ec7-0668-813a-9bc9-c068c8c95f75",
-    "title": "Dinner: roast beef sandwich on baguette with small pickles (cornichons) and black olives on the side (BG: 131 mg/dL Flat) (Pred: 174-184 mg/dL @ 11:24 PM) (Protein: 31g | Carbs: ~42g | Cals: ~385) [Coach: Roast beef sandwich 🥖 — solid ~24g lean protein, and importantly NOT cured meat (reduction plan holding 👍). The baguette brings the carbs though, ~40g of refined wheat. Slightly more substantial than 'very light' but BG starting at 131 has room.]",
+    "title": "Dinner: roast beef sandwich on baguette with small pickles (cornichons) and black olives on the side (BG: 131 mg/dL Flat) (Protein: 31g) (Pred: 174-184 mg/dL @ 11:24 PM)",
     "type": "Dinner",
     "date": "2026-05-21T22:08:00.000+02:00",
     "photo": "https://iili.io/C9syqan.jpg",
@@ -100,7 +100,7 @@
   },
   {
     "id": "36685ec7-0668-81a1-99f7-ce59b2da9188",
-    "title": "Lunch: second course — roasted meat (Spanish-style asado) with french fries (bread roll on table was NOT eaten) [Cumulative Lunch: 42g carbs total] (BG: 92 mg/dL Flat) (Pred: 125-135 mg/dL @ 4:30 PM) (Protein: 28g | Carbs: ~30g | Cals: ~510) [Coach: Second course — meat + fries only, bread roll skipped 👍. Adds ~25g protein from the meat. Cumulative lunch now ~42g carbs and ~57g protein — leaner than it first looked, and the protein anchors it well. Zero cured meat today, streak intact.]",
+    "title": "Lunch: second course — roasted meat (Spanish-style asado) with french fries (bread roll on table was NOT eaten) (BG: 92 mg/dL Flat) (Protein: 28g) (Pred: 125-135 mg/dL @ 4:30 PM)",
     "type": "Lunch",
     "date": "2026-05-20T14:37:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-20/cddff14573c8f054.jpg",
