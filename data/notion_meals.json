@@ -4,7 +4,7 @@
     "title": "Lunch: café terrace aperitivo — small bowl of cheese puffs (ganchitos) and a tall glass of lemonade/casera con limón (BG: 123 mg/dL Flat) (Protein: 1g) (Pred: 128-138 mg/dL @ 3:21 PM)",
     "type": "Lunch",
     "date": "2026-05-21T13:28:00.000+02:00",
-    "photo": "https://iili.io/C9eoAyQ.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-21/95cf3f084ee789d6.jpg",
     "carbs": 17,
     "cals": 110,
     "delta": null,
@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-21/754266a86e3e64bd.jpg",
     "carbs": 32,
     "cals": 405,
-    "delta": null,
-    "peak": null
+    "delta": 56,
+    "peak": 161
   },
   {
     "id": "36685ec7-0668-81a6-9785-e6443f28742b",
@@ -45,7 +45,7 @@
   },
   {
     "id": "36685ec7-0668-81a1-99f7-ce59b2da9188",
-    "title": "Lunch: second course — roasted meat (Spanish-style asado) with french fries (bread roll on table was NOT eaten) [Cumulative Lunch: 42g carbs total] (BG: 92 mg/dL Flat) (Pred: 125-135 mg/dL @ 4:30 PM) (Protein: 28g | Carbs: ~30g | Cals: ~510) [Coach: Second course — meat + fries only, bread roll skipped 👍. Adds ~25g protein from the meat. Cumulative lunch now ~42g carbs and ~57g protein — leaner than it first looked, and the protein anchors it well. Zero cured meat today, streak intact.]",
+    "title": "Lunch: second course — roasted meat (Spanish-style asado) with french fries (bread roll on table was NOT eaten) (BG: 92 mg/dL Flat) (Protein: 28g) (Pred: 125-135 mg/dL @ 4:30 PM)",
     "type": "Lunch",
     "date": "2026-05-20T14:37:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-20/cddff14573c8f054.jpg",
