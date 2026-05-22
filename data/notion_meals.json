@@ -1,5 +1,16 @@
 [
   {
+    "id": "36885ec7-0668-81fc-ac6b-cab9467deb44",
+    "title": "Snack: 7 gummy bears (BG: 156 mg/dL Flat) (Pred: 181-191 mg/dL @ 6:04 PM) (Protein: 1g | Carbs: ~13g | Cals: ~55) [Coach: 7 gummy bears 🍬 — ~13g pure refined sugar. BG was already at 156, so this lands on a higher baseline; predicted peak ~186. The portion is restrained at least. A walk or some water will help soften it.]",
+    "type": "Snack",
+    "date": "2026-05-22T15:58:00.000+02:00",
+    "photo": "https://iili.io/CHnrJqP.jpg",
+    "carbs": 13,
+    "cals": 55,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "36885ec7-0668-814e-8628-fa685ceb1c7a",
     "title": "Lunch: 1 fresh nectarine [Cumulative Lunch: 44g carbs total; protein ~57g] (BG: 115 mg/dL Flat) (Pred: 151-161 mg/dL @ 4:26 PM) (Protein: 1g | Carbs: ~13g | Cals: ~60) [Coach: Nectarine 🍑 — fresh whole fruit with fiber and natural sugars, ~13g carbs. Smart finisher after the seafood feast. Cumulative lunch ~44g carbs, ~57g protein. Today's looking like a textbook T2D-friendly day.]",
     "type": "Lunch",
