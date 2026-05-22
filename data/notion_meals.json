@@ -1,5 +1,16 @@
 [
   {
+    "id": "36885ec7-0668-81e6-b174-dfd75d1079e0",
+    "title": "Dinner: grilled turkey and cheese sandwich on toasted whole-grain bread, with a bowl of berries (blueberries + strawberries) topped with a spoonful of mango sorbet (BG: 117 mg/dL Flat) (Pred: 169-179 mg/dL @ 9:59 PM) (Protein: 26g | Carbs: ~49g | Cals: ~405) [Coach: Lovely dinner 👏 — toasted turkey-cheese on whole grain, fresh berries with a touch of mango sorbet for dessert. ~26g protein, ~49g carbs. No cured meat in this round — solid finish to a balanced day.]",
+    "type": "Dinner",
+    "date": "2026-05-22T20:43:00.000+02:00",
+    "photo": "https://iili.io/CH5pRun.jpg",
+    "carbs": 49,
+    "cals": 405,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "36885ec7-0668-81fc-ac6b-cab9467deb44",
     "title": "Snack: 7 gummy bears (BG: 156 mg/dL Flat) (Pred: 181-191 mg/dL @ 6:04 PM) (Protein: 1g | Carbs: ~13g | Cals: ~55) [Coach: 7 gummy bears 🍬 — ~13g pure refined sugar. BG was already at 156, so this lands on a higher baseline; predicted peak ~186. The portion is restrained at least. A walk or some water will help soften it.]",
     "type": "Snack",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-22/1b3a899c81094482.jpg",
     "carbs": 13,
     "cals": 55,
-    "delta": null,
-    "peak": null
+    "delta": 18,
+    "peak": 167
   },
   {
     "id": "36885ec7-0668-814e-8628-fa685ceb1c7a",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-22/193b0ecee506cd42.jpg",
     "carbs": 13,
     "cals": 60,
-    "delta": null,
-    "peak": null
+    "delta": 43,
+    "peak": 170
   },
   {
     "id": "36885ec7-0668-81cd-b035-f285168a2eae",
@@ -29,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-22/f01a853eebc3d5b9.jpg",
     "carbs": null,
     "cals": 145,
-    "delta": null,
-    "peak": null
+    "delta": 48,
+    "peak": 170
   },
   {
     "id": "36885ec7-0668-81e3-8867-ea01093dd999",
@@ -40,8 +51,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-22/b4653f5a9403b58f.jpg",
     "carbs": 31,
     "cals": 430,
-    "delta": null,
-    "peak": null
+    "delta": 48,
+    "peak": 170
   },
   {
     "id": "36885ec7-0668-8121-822e-d8c3660d9f33",
