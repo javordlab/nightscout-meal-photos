@@ -4,7 +4,7 @@
     "title": "Lunch: 1 fresh nectarine [Cumulative Lunch: 44g carbs total; protein ~57g] (BG: 115 mg/dL Flat) (Pred: 151-161 mg/dL @ 4:26 PM) (Protein: 1g | Carbs: ~13g | Cals: ~60) [Coach: Nectarine 🍑 — fresh whole fruit with fiber and natural sugars, ~13g carbs. Smart finisher after the seafood feast. Cumulative lunch ~44g carbs, ~57g protein. Today's looking like a textbook T2D-friendly day.]",
     "type": "Lunch",
     "date": "2026-05-22T14:54:00.000+02:00",
-    "photo": "https://iili.io/CHBUGwB.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-22/193b0ecee506cd42.jpg",
     "carbs": 13,
     "cals": 60,
     "delta": null,
@@ -15,7 +15,7 @@
     "title": "Lunch: 2 small whole sardines (grilled) [Cumulative Lunch: 31g carbs total (unchanged); protein now ~56g] (BG: 115 mg/dL Flat) (Pred: 135-145 mg/dL @ 4:26 PM) (Protein: 15g | Carbs: ~0g | Cals: ~145) [Coach: Sardines 🐟 — pure lean protein, ~15g more with zero added carbs. Cumulative lunch protein now ~56g — phenomenal. Day's protein game is on point.]",
     "type": "Lunch",
     "date": "2026-05-22T14:37:00.000+02:00",
-    "photo": "https://iili.io/CHBoPGp.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-22/f01a853eebc3d5b9.jpg",
     "carbs": null,
     "cals": 145,
     "delta": null,
@@ -26,7 +26,7 @@
     "title": "Lunch: plate of whole shrimp (gambas cocidas), green salad with tomato and cucumber, piece of bread, and a pink drink (likely tinto de verano or hibiscus water) (BG: 115 mg/dL Flat) (Pred: 135-145 mg/dL @ 4:26 PM) (Protein: 41g | Carbs: ~31g | Cals: ~430) [Coach: Stellar Spanish comida 🦐 — ~35g protein from whole shrimp, real veggie salad, modest bread. No cured meat — reduction plan shining today. After 1h gardening you've earned this. The day's macro balance looks great here.]",
     "type": "Lunch",
     "date": "2026-05-22T14:33:00.000+02:00",
-    "photo": "https://iili.io/CHBFHDN.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-22/b4653f5a9403b58f.jpg",
     "carbs": 31,
     "cals": 430,
     "delta": null,
@@ -40,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-22/a8b1f0ad4f482af9.jpg",
     "carbs": 14,
     "cals": 60,
-    "delta": null,
-    "peak": null
+    "delta": 51,
+    "peak": 178
   },
   {
     "id": "36885ec7-0668-81bc-a25f-d48d29a2ed3e",
@@ -51,8 +51,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-22/21347f54136152f2.jpg",
     "carbs": 16,
     "cals": 245,
-    "delta": null,
-    "peak": null
+    "delta": 32,
+    "peak": 178
   },
   {
     "id": "36785ec7-0668-8183-a5bc-cd97cbb8c949",
