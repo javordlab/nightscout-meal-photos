@@ -1,5 +1,16 @@
 [
   {
+    "id": "36885ec7-0668-81bc-a25f-d48d29a2ed3e",
+    "title": "Breakfast (second, post-heavy gardening): open-faced sandwich — 1 slice bread + cheese slice + jamón cocido (BG: 149 mg/dL Flat) (Pred: 196-206 mg/dL @ 1:06 PM) (Protein: 27g | Carbs: ~16g | Cals: ~245) [Coach: Post-gardening open-face 🥪 — ~27g protein from cheese + ham anchors well, only ~16g carbs from 1 slice. Note: jamón cocido brings cured meat back in. BG starting at 149 narrows the window, but the modest carbs help keep the spike manageable.]",
+    "type": "Breakfast",
+    "date": "2026-05-22T11:39:00.000+02:00",
+    "photo": "https://iili.io/CH2ynRa.jpg",
+    "carbs": 16,
+    "cals": 245,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "36785ec7-0668-8183-a5bc-cd97cbb8c949",
     "title": "Dinner: fruit dessert — blueberries and a small apricot (half was eaten before photo; total estimate accounts for full serving) (BG: 116 mg/dL Flat) (Protein: 1g) (Pred: 170-180 mg/dL @ 11:24 PM)",
     "type": "Dinner",
@@ -100,7 +111,7 @@
   },
   {
     "id": "36685ec7-0668-81a1-99f7-ce59b2da9188",
-    "title": "Lunch: second course — roasted meat (Spanish-style asado) with french fries (bread roll on table was NOT eaten) (BG: 92 mg/dL Flat) (Protein: 28g) (Pred: 125-135 mg/dL @ 4:30 PM)",
+    "title": "Lunch: second course — roasted meat (Spanish-style asado) with french fries (bread roll on table was NOT eaten) [Cumulative Lunch: 42g carbs total] (BG: 92 mg/dL Flat) (Pred: 125-135 mg/dL @ 4:30 PM) (Protein: 28g | Carbs: ~30g | Cals: ~510) [Coach: Second course — meat + fries only, bread roll skipped 👍. Adds ~25g protein from the meat. Cumulative lunch now ~42g carbs and ~57g protein — leaner than it first looked, and the protein anchors it well. Zero cured meat today, streak intact.]",
     "type": "Lunch",
     "date": "2026-05-20T14:37:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-20/cddff14573c8f054.jpg",
@@ -1255,7 +1266,7 @@
   },
   {
     "id": "35e85ec7-0668-81c1-bf2c-c8e912439370",
-    "title": "Dinner: First course — small restaurant plate of potato salad (ensaladilla style) topped with a grilled prawn (BG: 134 mg/dL Flat) (Pred: 151-161 mg/dL @ 11:12 PM) (Protein: 6g | Carbs: ~12g | Cals: ~135) [Coach: An elegant little first course �� a tasting-size portion that keeps the carbs very modest. The prawn brings a touch of protein on top of the potato base. A nice gentle opening to the meal.]  [id:6e13ad1b]",
+    "title": "Dinner: First course — small restaurant plate of potato salad (ensaladilla style) topped with a grilled prawn (BG: 134 mg/dL Flat) (Pred: 151-161 mg/dL @ 11:12 PM) (Protein: 6g | Carbs: ~12g | Cals: ~135) [Coach: An elegant little first course — a tasting-size portion that keeps the carbs very modest. The prawn brings a touch of protein on top of the potato base. A nice gentle opening to the meal.]  [id:6e13ad1b]",
     "type": "Dinner",
     "date": "2026-04-25T21:56:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-25/bec91e59a62cafad.jpg",
