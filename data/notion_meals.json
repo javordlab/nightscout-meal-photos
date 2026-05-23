@@ -1,5 +1,16 @@
 [
   {
+    "id": "36985ec7-0668-815a-94b3-c6e176dba4d0",
+    "title": "Breakfast: peanut butter toast on seeded whole-grain bread topped with a generous pile of fresh blueberries (BG: 131 mg/dL Flat) (Pred: 197-207 mg/dL @ 12:03 PM) (Protein: 17g | Carbs: ~33g | Cals: ~280) [Coach: This is a Pinterest-worthy breakfast 👏 — seeded whole-grain, PB for fat + protein, a mountain of blueberry antioxidants. ~17g protein for ~33g carbs is a beautiful ratio. Fiber from seeds + berries softens the spike. Textbook morning.]",
+    "type": "Breakfast",
+    "date": "2026-05-23T10:36:00.000+02:00",
+    "photo": "https://iili.io/CHXNH9n.jpg",
+    "carbs": 33,
+    "cals": 280,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "36885ec7-0668-81e6-b174-dfd75d1079e0",
     "title": "Dinner: grilled turkey and cheese sandwich on toasted whole-grain bread, with a bowl of berries (blueberries + strawberries) topped with a spoonful of mango sorbet (BG: 117 mg/dL Flat) (Pred: 169-179 mg/dL @ 9:59 PM) (Protein: 26g | Carbs: ~49g | Cals: ~405) [Coach: Lovely dinner 👏 — toasted turkey-cheese on whole grain, fresh berries with a touch of mango sorbet for dessert. ~26g protein, ~49g carbs. No cured meat in this round — solid finish to a balanced day.]",
     "type": "Dinner",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-22/3a751efcaf8f7408.jpg",
     "carbs": 49,
     "cals": 405,
-    "delta": null,
-    "peak": null
+    "delta": 63,
+    "peak": 173
   },
   {
     "id": "36885ec7-0668-81fc-ac6b-cab9467deb44",
