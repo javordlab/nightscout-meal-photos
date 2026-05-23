@@ -1,5 +1,16 @@
 [
   {
+    "id": "36985ec7-0668-8173-bf2c-e5cb66377c5f",
+    "title": "Snack: 2 fresh apricots and a handful of cashews (BG: 130 mg/dL Flat) (Pred: 152-162 mg/dL @ 8:02 PM) (Protein: 5g | Carbs: ~18g | Cals: ~180) [Coach: This is the GMI 6.0 playbook snack 👏 — whole fruit (apricots) for fiber + vitamins, cashews for protein + healthy fats. Together they keep the ~18g carbs gentle. Zero refined sugar, all real food. Keep stacking these days.]",
+    "type": "Snack",
+    "date": "2026-05-23T17:56:00.000+02:00",
+    "photo": "https://iili.io/CHSWR2f.jpg",
+    "carbs": 18,
+    "cals": 180,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "36985ec7-0668-8191-8c36-f9979c16f413",
     "title": "Lunch: 4 fresh whole strawberries [Cumulative Lunch: 35g carbs total] (BG: 108 mg/dL Flat) (Pred: 135-145 mg/dL @ 3:17 PM) (Protein: 1g | Carbs: ~9g | Cals: ~40) [Coach: Strawberries 🍓 — low carb (~9g), high fiber + vitamin C. Cumulative lunch ~35g carbs, ~29g protein. This is the kind of meal pattern that moves you toward GMI 6.0 — protein-anchored, real food, minimal refined carbs.]",
     "type": "Lunch",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-23/00be71096ef0190e.jpg",
     "carbs": 9,
     "cals": 40,
-    "delta": null,
-    "peak": null
+    "delta": 26,
+    "peak": 134
   },
   {
     "id": "36985ec7-0668-818d-8304-c9bf7d1b9b91",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-23/148d7b81b38bb51d.jpg",
     "carbs": 26,
     "cals": 495,
-    "delta": null,
-    "peak": null
+    "delta": 21,
+    "peak": 131
   },
   {
     "id": "36985ec7-0668-815a-94b3-c6e176dba4d0",
