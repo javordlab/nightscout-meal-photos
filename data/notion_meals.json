@@ -4,7 +4,7 @@
     "title": "Dinner: grilled ham and cheese sandwich on whole-grain bread, with a raw whole carrot on the side (BG: 124 mg/dL Flat) (Pred: 161-171 mg/dL @ 10:06 PM) (Protein: 25g | Carbs: ~37g | Cals: ~345) [Coach: Solid grilled sandwich + carrot 🥪 — ~25g protein, real veggie, ~37g carbs. Note: jamón cocido brings cured meat back in after a clean day. Otherwise the macro shape fits the GMI 6.0 goal nicely.]",
     "type": "Dinner",
     "date": "2026-05-23T20:50:00.000+02:00",
-    "photo": "https://iili.io/CH6ffgs.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-23/9b186a2334c170dd.jpg",
     "carbs": 37,
     "cals": 345,
     "delta": null,
@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-23/982f7d17d9ec62a9.jpg",
     "carbs": 18,
     "cals": 180,
-    "delta": null,
-    "peak": null
+    "delta": -1,
+    "peak": 129
   },
   {
     "id": "36985ec7-0668-8191-8c36-f9979c16f413",
