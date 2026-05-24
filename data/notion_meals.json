@@ -4,7 +4,7 @@
     "title": "Snack: Nestlé packaged panna cotta (1 cup = 100g; ~17g carbs, ~3g protein, ~180 kcal — cream-based dessert) (BG: 151 mg/dL Flat) (Pred: 172-182 mg/dL @ 5:56 PM) (Protein: 3g | Carbs: ~17g | Cals: ~180) [Coach: Panna cotta 🍮 — ~17g sugar, controlled portion. BG at 151 limits headroom. This is becoming a daily pattern — ~120g/week of extra sugar runs counter to GMI 6.0. Not ruinous on its own, but worth noting for the bigger picture.]",
     "type": "Snack",
     "date": "2026-05-24T15:50:00.000+02:00",
-    "photo": "https://iili.io/CJfUGXj.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-24/592736ab2c53eb28.jpg",
     "carbs": 17,
     "cals": 180,
     "delta": null,
@@ -29,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-24/d713dff6aa233f03.jpg",
     "carbs": 18,
     "cals": 265,
-    "delta": null,
-    "peak": null
+    "delta": 53,
+    "peak": 162
   },
   {
     "id": "36a85ec7-0668-8174-91a0-ddaa78ce9d65",
