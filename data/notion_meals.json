@@ -1,10 +1,21 @@
 [
   {
+    "id": "36a85ec7-0668-8130-97c3-fcdd7489d433",
+    "title": "Lunch: 1 cup fresh blueberries [Cumulative Lunch: 39g carbs total] (BG: 111 mg/dL Flat) (Pred: 142-152 mg/dL @ 2:51 PM) (Protein: 2g | Carbs: ~21g | Cals: ~85) [Coach: Cup of blueberries 🫐 — ~21g natural-sugar carbs balanced by fiber + antioxidants. Cumulative lunch ~39g carbs, ~11g protein. Fresh whole fruit is the best way to round out a meal. Day's GMI 6.0 trajectory still solid.]",
+    "type": "Lunch",
+    "date": "2026-05-24T13:12:00.000+02:00",
+    "photo": "https://iili.io/CJ3CDfR.jpg",
+    "carbs": 21,
+    "cals": 85,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "36a85ec7-0668-8107-99f8-c4b2bb982669",
     "title": "Lunch: half a sandwich (1 slice equivalent of whole-grain seeded bread with egg salad + tomato + cucumber) and 4 small pickles on the side — half the original 2-slice portion was eaten (BG: 112 mg/dL Flat) (Pred: 118-128 mg/dL @ 2:51 PM) (Protein: 9g | Carbs: ~18g | Cals: ~265) [Coach: Halved 👍 — only 1 slice equivalent eaten, ~18g carbs total. Solid GMI 6.0 move. Note: this changes the bread experiment — you've now altered both brand AND portion vs last night's 2 slices, so a lower peak today won't cleanly attribute to bread brand alone.]",
     "type": "Lunch",
     "date": "2026-05-24T12:58:00.000+02:00",
-    "photo": "https://iili.io/CJ2thl4.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-24/d713dff6aa233f03.jpg",
     "carbs": 18,
     "cals": 265,
     "delta": null,
