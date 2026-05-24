@@ -1,14 +1,25 @@
 [
   {
-    "id": "36985ec7-0668-8173-a7ea-c54dae71faed",
-    "title": "Dessert: handful of cashews and 2 squares of dark chocolate (BG: 153 mg/dL Flat) (Pred: 164-174 mg/dL @ 12:16 AM) (Protein: 5g | Carbs: ~15g | Cals: ~195) [Coach: You followed the playbook exactly �� — cashews + dark chocolate is the smartest dessert pick. Fat + protein slow the ~15g carbs, minimal sugar overall. Bonus: BG just dropped to 153 Flat from 174 rising — peak's resolving, fine moment for this treat.]",
-    "type": "Dessert",
-    "date": "2026-05-23T22:34:00.000+02:00",
-    "photo": "https://iili.io/CHPmeyP.jpg",
-    "carbs": 15,
-    "cals": 195,
+    "id": "36a85ec7-0668-8174-91a0-ddaa78ce9d65",
+    "title": "Breakfast: open-faced sandwich on whole-grain bread with cheese, iberico head cheese (cabeza de jabalí ibérica — pressed cured pork product), generous sliced avocado, and 1 fresh apricot on the side (BG: 131 mg/dL Flat) (Pred: 188-198 mg/dL @ 11:42 AM) (Protein: 24g | Carbs: ~24g | Cals: ~450) [Coach: Mediterranean breakfast at its best 👏 — open-face cheese, iberico head cheese, generous avocado, fresh apricot. ~24g protein matches ~24g carbs — perfect for the GMI 6.0 goal. Head cheese is today's 1× cured-meat allowance, on-target. Avocado's fat slows the bread spike. Textbook morning.]",
+    "type": "Breakfast",
+    "date": "2026-05-24T10:15:00.000+02:00",
+    "photo": "https://iili.io/CJHMiNf.jpg",
+    "carbs": 24,
+    "cals": 450,
     "delta": null,
     "peak": null
+  },
+  {
+    "id": "36985ec7-0668-8173-a7ea-c54dae71faed",
+    "title": "Dessert: handful of cashews and 2 squares of dark chocolate (BG: 153 mg/dL Flat) (Pred: 164-174 mg/dL @ 12:16 AM) (Protein: 5g | Carbs: ~15g | Cals: ~195) [Coach: You followed the playbook exactly 👏 — cashews + dark chocolate is the smartest dessert pick. Fat + protein slow the ~15g carbs, minimal sugar overall. Bonus: BG just dropped to 153 Flat from 174 rising — peak's resolving, fine moment for this treat.]",
+    "type": "Dessert",
+    "date": "2026-05-23T22:34:00.000+02:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-23/0dead2e0fddadb0b.jpg",
+    "carbs": 15,
+    "cals": 195,
+    "delta": 0,
+    "peak": 153
   },
   {
     "id": "36985ec7-0668-816d-8ca1-d00602d49029",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-23/9b186a2334c170dd.jpg",
     "carbs": 37,
     "cals": 345,
-    "delta": null,
-    "peak": null
+    "delta": 50,
+    "peak": 174
   },
   {
     "id": "36985ec7-0668-8173-bf2c-e5cb66377c5f",
