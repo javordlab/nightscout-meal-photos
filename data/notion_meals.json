@@ -1,5 +1,16 @@
 [
   {
+    "id": "36b85ec7-0668-81ce-a79b-c35825895cd1",
+    "title": "Breakfast: open-faced toast on whole-grain seeded bread with avocado and poached egg(s), plus a bowl of fresh blueberries (BG: 127 mg/dL Flat) (Pred: 189-199 mg/dL @ 11:45 AM) (Protein: 15g | Carbs: ~28g | Cals: ~330) [Coach: Beautiful recovery breakfast 👏 — seeded toast, avocado, egg(s), blueberries. ~15g protein, ~28g carbs balanced by fiber + healthy fats. After last night's gummy bear excursion, this is the perfect clean reset. Textbook GMI 6.0 fuel.]",
+    "type": "Breakfast",
+    "date": "2026-05-25T10:18:00.000+02:00",
+    "photo": "https://iili.io/CJW42mg.jpg",
+    "carbs": 28,
+    "cals": 330,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "36a85ec7-0668-819a-822c-dae4c08f01fc",
     "title": "Dinner: fresh fruit dessert — 1 plum (cut into wedges) and 3 strawberries [Cumulative Dinner: 33g carbs total] (BG: 135 mg/dL Flat) (Pred: 166-176 mg/dL @ 8:52 PM) (Protein: 1g | Carbs: ~16g | Cals: ~55) [Coach: Fresh fruit dessert 🍓 — 1 plum + 3 strawberries = ~16g natural-sugar carbs balanced by fiber. Cumulative dinner ~33g. This is the GMI 6.0 dessert template, way better than packaged sweets.]",
     "type": "Dinner",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-24/4b1c0afec47b4a84.jpg",
     "carbs": 16,
     "cals": 55,
-    "delta": null,
-    "peak": null
+    "delta": 31,
+    "peak": 167
   },
   {
     "id": "36a85ec7-0668-81da-a7df-e49717b144e3",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-24/358fca4e9c787fab.jpg",
     "carbs": 17,
     "cals": 260,
-    "delta": null,
-    "peak": null
+    "delta": 34,
+    "peak": 167
   },
   {
     "id": "36a85ec7-0668-819c-8a46-f6f36fa4cb2d",
