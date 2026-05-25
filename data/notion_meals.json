@@ -1,7 +1,18 @@
 [
   {
+    "id": "36b85ec7-0668-8193-9ec0-fa9c7d2405e2",
+    "title": "Lunch: wafer corte de helado with cream and fresh strawberries (small portion, similar to prior corte) (BG: 157 mg/dL Flat) (Pred: 163-173 mg/dL @ 5:24 PM) (Protein: 2g | Carbs: ~18g | Cals: ~140) [Coach: Wafer corte with strawberries 🍓 — ~18g carbs, mostly refined sugar from wafer + cream. The strawberries are the bright spot. BG 157 going in means it lands on a higher baseline. Today's been carb-heavier than recent days — a light dinner would help balance.]",
+    "type": "Lunch",
+    "date": "2026-05-25T15:31:00.000+02:00",
+    "photo": "https://iili.io/CJvRo2R.jpg",
+    "carbs": 18,
+    "cals": 140,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "36b85ec7-0668-8199-8450-fc5f56f4039b",
-    "title": "Lunch: 1 fresh stone fruit (nectarine — or possibly yellow plum given prior visual confusion) [Cumulative Lunch: 53g carbs total] (BG: 101 mg/dL Flat) (Pred: 126-136 mg/dL @ 4:04 PM) (Protein: 1g | Carbs: ~12g | Cals: ~45) [Coach: Fresh fruit dessert 🍑 — ~12g natural-sugar carbs balanced by fiber. Cumulative lunch ~53g. Smart whole-fruit finisher to a high-protein lunch — exactly the GMI 6.0 pattern.]",
+    "title": "Lunch: 1 fresh nectarine (identified by user from skin coloring/pattern) [Cumulative Lunch: 53g carbs total] (BG: 101 mg/dL Flat) (Pred: 126-136 mg/dL @ 4:04 PM) (Protein: 1g | Carbs: ~12g | Cals: ~45) [Coach: Fresh fruit dessert 🍑 — ~12g natural-sugar carbs balanced by fiber. Cumulative lunch ~53g. Smart whole-fruit finisher to a high-protein lunch — exactly the GMI 6.0 pattern.]",
     "type": "Lunch",
     "date": "2026-05-25T14:27:00.000+02:00",
     "photo": "https://iili.io/CJeW1VV.jpg",
