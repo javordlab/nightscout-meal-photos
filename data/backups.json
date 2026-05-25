@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-25T11:50:02.545Z",
+  "lastUpdated": "2026-05-25T11:56:41.179Z",
   "tokenUsage": [
     {
       "platform": "Kimi (Ollama)",
@@ -21,7 +21,7 @@
     }
   ],
   "database": {
-    "glucose": 25140,
+    "glucose": 25141,
     "notion": 1581
   },
   "syncHistory": [
@@ -172,7 +172,7 @@
     },
     {
       "date": "2026-05-25",
-      "glucose": 25140,
+      "glucose": 25141,
       "notion": 1581
     }
   ],
@@ -34124,6 +34124,10 @@
     {
       "t": "2026-05-25T11:48:22.000Z",
       "v": 97
+    },
+    {
+      "t": "2026-05-25T11:54:22.000Z",
+      "v": 90
     }
   ],
   "backups": [
