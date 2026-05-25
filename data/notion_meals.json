@@ -1,5 +1,16 @@
 [
   {
+    "id": "36b85ec7-0668-81b8-8fb3-f3a99042103d",
+    "title": "Dinner: grilled ham and cheese sandwich on whole-grain bread with a pickled eggplant (berenjena en escabeche) on the side (BG: 150 mg/dL Flat) (Pred: 184-194 mg/dL @ 9:47 PM) (Protein: 26g | Carbs: ~34g | Cals: ~360) [Coach: Solid grilled sandwich 🥪 — ~26g protein from ham + cheese, whole-grain bread, pickled eggplant for tang. Ham is today's 1× cured-meat allowance, on-target with your rule. BG at 150 means it lands on a higher baseline; predicted peak ~189. The 2hr gardening you just did will help offset.]",
+    "type": "Dinner",
+    "date": "2026-05-25T20:31:00.000+02:00",
+    "photo": "https://iili.io/CJPBMmB.jpg",
+    "carbs": 34,
+    "cals": 360,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "36b85ec7-0668-8193-9ec0-fa9c7d2405e2",
     "title": "Lunch: wafer corte de helado with cream and fresh strawberries (small portion, similar to prior corte) (BG: 157 mg/dL Flat) (Pred: 163-173 mg/dL @ 5:24 PM) (Protein: 2g | Carbs: ~18g | Cals: ~140) [Coach: Wafer corte with strawberries 🍓 — ~18g carbs, mostly refined sugar from wafer + cream. The strawberries are the bright spot. BG 157 going in means it lands on a higher baseline. Today's been carb-heavier than recent days — a light dinner would help balance.]",
     "type": "Lunch",
