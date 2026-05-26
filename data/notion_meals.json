@@ -1,5 +1,16 @@
 [
   {
+    "id": "36c85ec7-0668-81f8-a020-c876b1b2863e",
+    "title": "Snack (pre-dinner, after 2hr work): bowl of corn puffs (ganchitos) (BG: 106 mg/dL Flat) (Pred: 135-145 mg/dL @ 10:26 PM) (Protein: 2g | Carbs: ~15g | Cals: ~130) [Coach: Corn puffs 🌽 — light and tasty but refined-carb empty calories (~15g carbs, minimal protein/fiber). After 2 hours of work a refuel makes sense, and BG at 106 has room. These spike faster than your protein-anchored snacks though — pairing with cheese or nuts next time would slow them down.]",
+    "type": "Snack",
+    "date": "2026-05-26T20:20:00.000+02:00",
+    "photo": "https://iili.io/CdReqBa.jpg",
+    "carbs": 15,
+    "cals": 130,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "36c85ec7-0668-81d5-8aea-cdb09369efaa",
     "title": "Lunch: Asturian white beans (fabes) in broth, cooked shrimp, and cucumber spears (BG: 71 mg/dL Flat) (Pred: 92-102 mg/dL @ 3:48 PM) (Protein: 37g | Carbs: ~32g | Cals: ~340) [Coach: Beautiful Asturian lunch 👏 — fabes (white beans) for fiber + plant protein, shrimp adding ~23g lean protein, cucumber for crunch. ~37g protein anchors ~32g carbs. Great timing too: BG was at 71, so this gently lifts you back to range without a spike. Textbook GMI 6.0.]",
     "type": "Lunch",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-26/9193bf5129b7c4a0.jpg",
     "carbs": 32,
     "cals": 340,
-    "delta": null,
-    "peak": null
+    "delta": 38,
+    "peak": 136
   },
   {
     "id": "36b85ec7-0668-81b8-8fb3-f3a99042103d",
