@@ -1,5 +1,16 @@
 [
   {
+    "id": "36c85ec7-0668-81d5-8aea-cdb09369efaa",
+    "title": "Lunch: Asturian white beans (fabes) in broth, cooked shrimp, and cucumber spears (BG: 71 mg/dL Flat) (Pred: 92-102 mg/dL @ 3:48 PM) (Protein: 37g | Carbs: ~32g | Cals: ~340) [Coach: Beautiful Asturian lunch 👏 — fabes (white beans) for fiber + plant protein, shrimp adding ~23g lean protein, cucumber for crunch. ~37g protein anchors ~32g carbs. Great timing too: BG was at 71, so this gently lifts you back to range without a spike. Textbook GMI 6.0.]",
+    "type": "Lunch",
+    "date": "2026-05-26T13:55:00.000+02:00",
+    "photo": "https://iili.io/CdBPSAF.jpg",
+    "carbs": 32,
+    "cals": 340,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "36b85ec7-0668-81b8-8fb3-f3a99042103d",
     "title": "Dinner: grilled ham and cheese sandwich on whole-grain bread with a pickled eggplant (berenjena en escabeche) on the side (BG: 150 mg/dL Flat) (Pred: 184-194 mg/dL @ 9:47 PM) (Protein: 26g | Carbs: ~34g | Cals: ~360) [Coach: Solid grilled sandwich 🥪 — ~26g protein from ham + cheese, whole-grain bread, pickled eggplant for tang. Ham is today's 1× cured-meat allowance, on-target with your rule. BG at 150 means it lands on a higher baseline; predicted peak ~189. The 2hr gardening you just did will help offset.]",
     "type": "Dinner",
@@ -45,7 +56,7 @@
   },
   {
     "id": "36b85ec7-0668-81ce-a79b-c35825895cd1",
-    "title": "Breakfast: open-faced toast on whole-grain seeded bread with avocado and poached egg(s), plus a bowl of fresh blueberries (BG: 127 mg/dL Flat) (Pred: 189-199 mg/dL @ 11:45 AM) (Protein: 15g | Carbs: ~28g | Cals: ~330) [Coach: Beautiful recovery breakfast �� — seeded toast, avocado, egg(s), blueberries. ~15g protein, ~28g carbs balanced by fiber + healthy fats. After last night's gummy bear excursion, this is the perfect clean reset. Textbook GMI 6.0 fuel.]",
+    "title": "Breakfast: open-faced toast on whole-grain seeded bread with avocado and poached egg(s), plus a bowl of fresh blueberries (BG: 127 mg/dL Flat) (Pred: 189-199 mg/dL @ 11:45 AM) (Protein: 15g | Carbs: ~28g | Cals: ~330) [Coach: Beautiful recovery breakfast 👏 — seeded toast, avocado, egg(s), blueberries. ~15g protein, ~28g carbs balanced by fiber + healthy fats. After last night's gummy bear excursion, this is the perfect clean reset. Textbook GMI 6.0 fuel.]",
     "type": "Breakfast",
     "date": "2026-05-25T10:18:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-25/72a6155363c82a34.jpg",
