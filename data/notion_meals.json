@@ -1,10 +1,21 @@
 [
   {
+    "id": "36c85ec7-0668-8133-9f48-d9ff28b8d89d",
+    "title": "Dinner: dessert — handful of cashews and 2-3 squares of dark chocolate [Cumulative Dinner: 42g carbs total] (BG: 97 mg/dL Flat) (Pred: 143-153 mg/dL @ 10:27 PM) (Protein: 5g | Carbs: ~15g | Cals: ~195) [Coach: Dark chocolate + cashews 👏 — your go-to smart dessert. Cashews' fat + protein slow the modest sugar, dark chocolate keeps it low-sugar. Cumulative dinner ~42g carbs, and BG at 97 has plenty of room. A fitting close to a 3.5-hour-gardening day.]",
+    "type": "Dinner",
+    "date": "2026-05-26T22:03:00.000+02:00",
+    "photo": "https://iili.io/Cda5g5J.jpg",
+    "carbs": 15,
+    "cals": 195,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "36c85ec7-0668-81b5-8684-ebb4b6e11c4c",
     "title": "Dinner: whole-grain toast with liver pâté, jamón serrano slices, and a whole nectarine (BG: 100 mg/dL Flat) (Pred: 128-138 mg/dL @ 10:27 PM) (Protein: 18g | Carbs: ~27g | Cals: ~320) [Coach: Light Spanish dinner 🍑 — pâté toast + jamón (~13g protein), nectarine for fresh fruit, ~27g carbs. Jamón is today's 1× cured-meat allowance, on-target. Heads-up: pâté twice today plus jamón makes for a processed-meat-heavy evening. Otherwise BG's been beautifully steady all day.]",
     "type": "Dinner",
     "date": "2026-05-26T21:11:00.000+02:00",
-    "photo": "https://iili.io/Cd7hAut.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-26/228a335656b2090b.jpg",
     "carbs": 27,
     "cals": 320,
     "delta": null,
