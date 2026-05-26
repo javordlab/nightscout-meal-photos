@@ -1,5 +1,16 @@
 [
   {
+    "id": "36c85ec7-0668-81b5-8684-ebb4b6e11c4c",
+    "title": "Dinner: whole-grain toast with liver pâté, jamón serrano slices, and a whole nectarine (BG: 100 mg/dL Flat) (Pred: 128-138 mg/dL @ 10:27 PM) (Protein: 18g | Carbs: ~27g | Cals: ~320) [Coach: Light Spanish dinner 🍑 — pâté toast + jamón (~13g protein), nectarine for fresh fruit, ~27g carbs. Jamón is today's 1× cured-meat allowance, on-target. Heads-up: pâté twice today plus jamón makes for a processed-meat-heavy evening. Otherwise BG's been beautifully steady all day.]",
+    "type": "Dinner",
+    "date": "2026-05-26T21:11:00.000+02:00",
+    "photo": "https://iili.io/Cd7hAut.jpg",
+    "carbs": 27,
+    "cals": 320,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "36c85ec7-0668-81f8-a020-c876b1b2863e",
     "title": "Snack (pre-dinner, after 2hr work): bowl of corn puffs (ganchitos) (BG: 106 mg/dL Flat) (Pred: 135-145 mg/dL @ 10:26 PM) (Protein: 2g | Carbs: ~15g | Cals: ~130) [Coach: Corn puffs 🌽 — light and tasty but refined-carb empty calories (~15g carbs, minimal protein/fiber). After 2 hours of work a refuel makes sense, and BG at 106 has room. These spike faster than your protein-anchored snacks though — pairing with cheese or nuts next time would slow them down.]",
     "type": "Snack",
