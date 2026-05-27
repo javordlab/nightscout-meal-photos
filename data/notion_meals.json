@@ -1,5 +1,16 @@
 [
   {
+    "id": "36d85ec7-0668-81ac-ad77-e4cad8e73711",
+    "title": "Breakfast: peanut butter toast on whole-grain seeded bread topped with a generous pile of blueberries (BG: 98 mg/dL Flat) (Pred: 164-174 mg/dL @ 11:35 AM) (Protein: 17g | Carbs: ~33g | Cals: ~280) [Coach: Your signature breakfast 👏 — seeded whole-grain, PB for protein + fat, blueberry antioxidants. ~17g protein anchors ~33g carbs, and the fiber softens the spike. A clean, steady start after a choppy sensor night. Textbook GMI 6.0 morning.]",
+    "type": "Breakfast",
+    "date": "2026-05-27T10:08:00.000+02:00",
+    "photo": "https://iili.io/Cdkit3J.jpg",
+    "carbs": 33,
+    "cals": 280,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "36c85ec7-0668-8133-9f48-d9ff28b8d89d",
     "title": "Dinner: dessert — handful of cashews and 1 square of dark chocolate [Cumulative Dinner: 37g carbs total] (BG: 97 mg/dL Flat) (Pred: 137-147 mg/dL @ 10:27 PM) (Protein: 4g | Carbs: ~10g | Cals: ~140) [Coach: Dark chocolate + cashews 👏 — your go-to smart dessert. Cashews' fat + protein slow the modest sugar, 1 square keeps it low-sugar. Cumulative dinner ~37g carbs, and BG at 97 has plenty of room. A fitting close to a 3.5-hour-gardening day.]",
     "type": "Dinner",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-26/e29db7d7d0f849d0.jpg",
     "carbs": 10,
     "cals": 140,
-    "delta": null,
-    "peak": null
+    "delta": 33,
+    "peak": 130
   },
   {
     "id": "36c85ec7-0668-81b5-8684-ebb4b6e11c4c",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-26/228a335656b2090b.jpg",
     "carbs": 27,
     "cals": 320,
-    "delta": null,
-    "peak": null
+    "delta": 22,
+    "peak": 122
   },
   {
     "id": "36c85ec7-0668-81f8-a020-c876b1b2863e",
@@ -29,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-26/8d5130c7af0e921d.jpg",
     "carbs": 15,
     "cals": 130,
-    "delta": null,
-    "peak": null
+    "delta": 16,
+    "peak": 122
   },
   {
     "id": "36c85ec7-0668-81d5-8aea-cdb09369efaa",
