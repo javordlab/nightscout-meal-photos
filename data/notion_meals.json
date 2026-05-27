@@ -1,5 +1,16 @@
 [
   {
+    "id": "36d85ec7-0668-81f4-9f1a-fe8eaa50cde1",
+    "title": "Lunch: spread — mixed green salad (frisée, red lettuce, cucumber, avocado, tomato), baguette, Paté de Cabracho (Agromar — red scorpionfish pâté in olive oil), liver pâté, and cornichons (BG: 153 mg/dL Flat) (Pred: 175-185 mg/dL @ 5:32 PM) (Protein: 17g | Carbs: ~30g | Cals: ~375) [Coach: Lovely spread 🥗 — salad with avocado leads, and the Paté de Cabracho is lean fish protein + omega-3s (scorpionfish pâté, not cheese — a nicer protein than I first thought). Baguette is the main carb (~20g). BG starting at 153 means it lands higher (~180), but the salad and healthy fats slow it. Veggies + seafood protein = a strong plate.]",
+    "type": "Lunch",
+    "date": "2026-05-27T15:39:00.000+02:00",
+    "photo": "https://iili.io/CdsIKKu.jpg",
+    "carbs": 30,
+    "cals": 375,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "36d85ec7-0668-8163-9a85-c794472a3fc6",
     "title": "Lunch: tinto de verano — mostly Kas limón (regular/sweetened) with just a splash (~1 oz) of red wine (BG: 124 mg/dL Flat) (Pred: 137-147 mg/dL @ 4:07 PM) (Protein: 0g | Carbs: ~15g | Cals: ~85) [Coach: Mostly Kas limón with just a splash of wine 🍷 — Spanish reds are intensely colored, so a little looks like a lot. The ~15g carbs is the sugary soda, not the wine, and with only 1 oz wine the alcohol/delayed-low concern is off the table. Sugar-free Kas Zero would make this near-zero-carb next time.]",
     "type": "Lunch",
@@ -925,7 +936,7 @@
   },
   {
     "id": "35e85ec7-0668-812c-af79-db8efdbab8c8",
-    "title": "Lunch: Pureed broccoli, Swiss chard, and potato soup, with half a plain yogurt (BG: 114 mg/dL Flat) (Pred: 127-137 mg/dL @ 3:43 PM) (Protein: 9g | Carbs: ~23g | Cals: ~185) [Coach: Exactly the right move for a sensitive stomach ���� — gentle pureed veggies, modest carbs, plain yogurt for protein and gut-friendly probiotics. Should land softly. Take it easy.]  [id:ce3ccf44]",
+    "title": "Lunch: Pureed broccoli, Swiss chard, and potato soup, with half a plain yogurt (BG: 114 mg/dL Flat) (Pred: 127-137 mg/dL @ 3:43 PM) (Protein: 9g | Carbs: ~23g | Cals: ~185) [Coach: Exactly the right move for a sensitive stomach 🥦 — gentle pureed veggies, modest carbs, plain yogurt for protein and gut-friendly probiotics. Should land softly. Take it easy.]  [id:ce3ccf44]",
     "type": "Lunch",
     "date": "2026-05-08T13:50:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-08/cd31755aa132c12b.jpg",
