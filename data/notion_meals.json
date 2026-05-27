@@ -1,5 +1,16 @@
 [
   {
+    "id": "36d85ec7-0668-81e9-b8cc-e9661bfa595b",
+    "title": "Dinner: sopa de ajo (Castilian garlic soup with bread and egg) and a bit of cecina (air-dried cured beef) (BG: 126 mg/dL Flat) (Pred: 145-155 mg/dL @ 10:43 PM) (Protein: 20g | Carbs: ~20g | Cals: ~295) [Coach: Cozy León dinner 🍲 — sopa de ajo with egg for protein, cecina adding lean cured beef. ~20g protein balances the ~20g carbs (the soup's bread). Cecina is today's 1× cured-meat allowance — and one of the leaner cured options. BG at 126, a comfortable balanced plate.]",
+    "type": "Dinner",
+    "date": "2026-05-27T21:27:00.000+02:00",
+    "photo": "https://iili.io/CdpwUy7.jpg",
+    "carbs": 20,
+    "cals": 295,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "36d85ec7-0668-81f4-9f1a-fe8eaa50cde1",
     "title": "Lunch: spread — mixed green salad (frisée, red lettuce, cucumber, avocado, tomato), baguette, Paté de Cabracho (Agromar — red scorpionfish pâté in olive oil), liver pâté, and cornichons (BG: 153 mg/dL Flat) (Pred: 175-185 mg/dL @ 5:32 PM) (Protein: 17g | Carbs: ~30g | Cals: ~375) [Coach: Lovely spread 🥗 — salad with avocado leads, and the Paté de Cabracho is lean fish protein + omega-3s (scorpionfish pâté, not cheese — a nicer protein than I first thought). Baguette is the main carb (~20g). BG starting at 153 means it lands higher (~180), but the salad and healthy fats slow it. Veggies + seafood protein = a strong plate.]",
     "type": "Lunch",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-27/928416a55f4c4d8a.jpg",
     "carbs": 30,
     "cals": 375,
-    "delta": null,
-    "peak": null
+    "delta": 16,
+    "peak": 169
   },
   {
     "id": "36d85ec7-0668-8163-9a85-c794472a3fc6",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-27/34c326f942c88b5c.jpg",
     "carbs": 15,
     "cals": 85,
-    "delta": null,
-    "peak": null
+    "delta": 45,
+    "peak": 169
   },
   {
     "id": "36d85ec7-0668-81ac-ad77-e4cad8e73711",
