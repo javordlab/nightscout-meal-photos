@@ -1,12 +1,12 @@
 [
   {
     "id": "36d85ec7-0668-8163-9a85-c794472a3fc6",
-    "title": "Lunch: tinto de verano (red wine + regular Kas limón lemon soda) (BG: 124 mg/dL Flat) (Pred: 129-139 mg/dL @ 4:07 PM) (Protein: 0g | Carbs: ~17g | Cals: ~155) [Coach: Tinto de verano with regular Kas limón 🍷 — the sweetened soda adds ~13g sugar plus the wine (~17g carbs total). Sugar-free casera or Kas Zero would cut most of that next time. Heads-up: alcohol can cause a delayed BG dip hours later — so if you see a low this evening, it may be real (fingerstick to confirm, unlike last night's compression).]",
+    "title": "Lunch: tinto de verano — mostly Kas limón (regular/sweetened) with just a splash (~1 oz) of red wine (BG: 124 mg/dL Flat) (Pred: 137-147 mg/dL @ 4:07 PM) (Protein: 0g | Carbs: ~15g | Cals: ~85) [Coach: Mostly Kas limón with just a splash of wine 🍷 — Spanish reds are intensely colored, so a little looks like a lot. The ~15g carbs is the sugary soda, not the wine, and with only 1 oz wine the alcohol/delayed-low concern is off the table. Sugar-free Kas Zero would make this near-zero-carb next time.]",
     "type": "Lunch",
     "date": "2026-05-27T14:14:00.000+02:00",
-    "photo": "https://iili.io/Cd6pHTN.jpg",
-    "carbs": 17,
-    "cals": 155,
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-27/34c326f942c88b5c.jpg",
+    "carbs": 15,
+    "cals": 85,
     "delta": null,
     "peak": null
   },
@@ -925,7 +925,7 @@
   },
   {
     "id": "35e85ec7-0668-812c-af79-db8efdbab8c8",
-    "title": "Lunch: Pureed broccoli, Swiss chard, and potato soup, with half a plain yogurt (BG: 114 mg/dL Flat) (Pred: 127-137 mg/dL @ 3:43 PM) (Protein: 9g | Carbs: ~23g | Cals: ~185) [Coach: Exactly the right move for a sensitive stomach 🥦 — gentle pureed veggies, modest carbs, plain yogurt for protein and gut-friendly probiotics. Should land softly. Take it easy.]  [id:ce3ccf44]",
+    "title": "Lunch: Pureed broccoli, Swiss chard, and potato soup, with half a plain yogurt (BG: 114 mg/dL Flat) (Pred: 127-137 mg/dL @ 3:43 PM) (Protein: 9g | Carbs: ~23g | Cals: ~185) [Coach: Exactly the right move for a sensitive stomach ���� — gentle pureed veggies, modest carbs, plain yogurt for protein and gut-friendly probiotics. Should land softly. Take it easy.]  [id:ce3ccf44]",
     "type": "Lunch",
     "date": "2026-05-08T13:50:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-08/cd31755aa132c12b.jpg",
