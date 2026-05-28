@@ -1,5 +1,16 @@
 [
   {
+    "id": "36e85ec7-0668-8100-93a8-fc71a8ad8910",
+    "title": "Lunch: a piece of bread with a generous spread of Gorgonzola cheese [Cumulative Lunch: 20g carbs total] (BG: 96 mg/dL Flat) (Pred: 102-112 mg/dL @ 5:52 PM) (Protein: 8g | Carbs: ~15g | Cals: ~170) [Coach: Bread + Gorgonzola 🧀 — ~15g carbs from the bread, Gorgonzola adds protein and fat (zero carbs, fat slows absorption). Cumulative lunch ~20g, Pred ~107. The cheese's fat softens what little spike the bread would cause. Tasty and modest.]",
+    "type": "Lunch",
+    "date": "2026-05-28T16:23:00.000+02:00",
+    "photo": "https://iili.io/C27GWu4.jpg",
+    "carbs": 15,
+    "cals": 170,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "36e85ec7-0668-8179-811f-fd6ed5282eb0",
     "title": "Lunch: parrillada — grilled pork chop and 2 pork skewers (all pork, no chorizo), with mixed green salad and tomato (BG: 93 mg/dL Flat) (Pred: 88-98 mg/dL @ 5:52 PM) (Protein: 57g | Carbs: ~5g | Cals: ~550) [Coach: Parrillada lunch 🍖 — all pork, all fresh-grilled, no cured meat anywhere. ~57g protein, only ~5g carbs (barely registers). BG at 93 stays essentially steady. Today's cured-meat tally: 0. Textbook GMI 6.0 — protein-anchored, low-carb, real veggies.]",
     "type": "Lunch",
@@ -78,7 +89,7 @@
   },
   {
     "id": "36d85ec7-0668-81ac-ad77-e4cad8e73711",
-    "title": "Breakfast: peanut butter toast on whole-grain seeded bread topped with a generous pile of blueberries (BG: 98 mg/dL Flat) (Pred: 164-174 mg/dL @ 11:35 AM) (Protein: 17g | Carbs: ~33g | Cals: ~280) [Coach: Your signature breakfast 👏 ��� seeded whole-grain, PB for protein + fat, blueberry antioxidants. ~17g protein anchors ~33g carbs, and the fiber softens the spike. A clean, steady start after a choppy sensor night. Textbook GMI 6.0 morning.]",
+    "title": "Breakfast: peanut butter toast on whole-grain seeded bread topped with a generous pile of blueberries (BG: 98 mg/dL Flat) (Pred: 164-174 mg/dL @ 11:35 AM) (Protein: 17g | Carbs: ~33g | Cals: ~280) [Coach: Your signature breakfast 👏 — seeded whole-grain, PB for protein + fat, blueberry antioxidants. ~17g protein anchors ~33g carbs, and the fiber softens the spike. A clean, steady start after a choppy sensor night. Textbook GMI 6.0 morning.]",
     "type": "Breakfast",
     "date": "2026-05-27T10:08:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-27/48920ca3a1f544d6.jpg",
