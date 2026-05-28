@@ -1,8 +1,19 @@
 [
   {
+    "id": "36e85ec7-0668-81bf-afec-dbb603c49f50",
+    "title": "Snack: tapa de huevos (small Spanish egg tapa — small bread + a bit of egg, café-portioned) [Cumulative Snack: 16g carbs total] (BG: 97 mg/dL Flat) (Pred: 119-129 mg/dL @ 2:19 PM) (Protein: 7g | Carbs: ~13g | Cals: ~115) [Coach: Tapa de huevos 🍳 — tasting-portion, not a bocadillo. ~13g carbs, ~7g protein from the egg. Cumulative tapa-break ~16g, Pred ~124. Classic Spanish café aperitivo, perfectly modest.]",
+    "type": "Snack",
+    "date": "2026-05-28T12:17:00.000+02:00",
+    "photo": "https://iili.io/C2IbXXS.jpg",
+    "carbs": 13,
+    "cals": 115,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "36e85ec7-0668-81e8-a83d-f66a5470e316",
-    "title": "Lunch: café cortado / café con leche at a café (assumed unsugared; sugar packets visible on saucer but not confirmed used) (BG: 99 mg/dL Flat) (Pred: 88-98 mg/dL @ 2:06 PM) (Protein: 1g | Carbs: ~3g | Cals: ~20) [Coach: Café cortado ☕ — near-zero BG impact if unsugared (just coffee + a splash of milk). If you added the sugar packets, each is ~6-8g — let me know and I'll adjust. BG at 99 stays perfectly steady. A coffee break is a fine bridge to lunch.]",
-    "type": "Lunch",
+    "title": "Snack: café cortado / café con leche at a café (part of a tapa-break, assumed unsugared) (BG: 99 mg/dL Flat) (Pred: 88-98 mg/dL @ 2:19 PM) (Protein: 1g | Carbs: ~3g | Cals: ~20) [Coach: Café cortado ☕ — near-zero BG impact if unsugared. Part of a Spanish café tapa-break with a small egg tapa to follow.]",
+    "type": "Snack",
     "date": "2026-05-28T12:13:00.000+02:00",
     "photo": "https://iili.io/C2IQOR2.jpg",
     "carbs": 3,
