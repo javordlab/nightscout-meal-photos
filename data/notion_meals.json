@@ -1,5 +1,16 @@
 [
   {
+    "id": "36e85ec7-0668-8179-811f-fd6ed5282eb0",
+    "title": "Lunch: parrillada — grilled pork chop and 2 pork skewers (all pork, no chorizo), with mixed green salad and tomato (BG: 93 mg/dL Flat) (Pred: 88-98 mg/dL @ 5:52 PM) (Protein: 57g | Carbs: ~5g | Cals: ~550) [Coach: Parrillada lunch 🍖 — all pork, all fresh-grilled, no cured meat anywhere. ~57g protein, only ~5g carbs (barely registers). BG at 93 stays essentially steady. Today's cured-meat tally: 0. Textbook GMI 6.0 — protein-anchored, low-carb, real veggies.]",
+    "type": "Lunch",
+    "date": "2026-05-28T15:59:00.000+02:00",
+    "photo": "https://iili.io/C25w0jj.jpg",
+    "carbs": 5,
+    "cals": 550,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "36e85ec7-0668-81bf-afec-dbb603c49f50",
     "title": "Snack: just a corner of a bocadillo de huevos (Javier had the rest) — small bite of bread + bit of egg [Cumulative Snack: 10g carbs total] (BG: 97 mg/dL Flat) (Pred: 118-128 mg/dL @ 2:19 PM) (Protein: 4g | Carbs: ~7g | Cals: ~60) [Coach: A shared bite 🍳 — corner of Javi's bocadillo, ~7g carbs and a touch of egg protein. Cumulative café break only ~10g total. Pred ~123, near-zero deviation from your steady 97. Tasting-not-eating is the most BG-friendly way to enjoy a treat.]",
     "type": "Snack",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-28/66f14c9493a4b504.jpg",
     "carbs": 7,
     "cals": 60,
-    "delta": null,
-    "peak": null
+    "delta": 30,
+    "peak": 125
   },
   {
     "id": "36e85ec7-0668-81e8-a83d-f66a5470e316",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-28/b831c9c9324f81f8.jpg",
     "carbs": 3,
     "cals": 20,
-    "delta": null,
-    "peak": null
+    "delta": 28,
+    "peak": 125
   },
   {
     "id": "36d85ec7-0668-8112-8235-cbcb8dbec750",
@@ -67,7 +78,7 @@
   },
   {
     "id": "36d85ec7-0668-81ac-ad77-e4cad8e73711",
-    "title": "Breakfast: peanut butter toast on whole-grain seeded bread topped with a generous pile of blueberries (BG: 98 mg/dL Flat) (Pred: 164-174 mg/dL @ 11:35 AM) (Protein: 17g | Carbs: ~33g | Cals: ~280) [Coach: Your signature breakfast 👏 — seeded whole-grain, PB for protein + fat, blueberry antioxidants. ~17g protein anchors ~33g carbs, and the fiber softens the spike. A clean, steady start after a choppy sensor night. Textbook GMI 6.0 morning.]",
+    "title": "Breakfast: peanut butter toast on whole-grain seeded bread topped with a generous pile of blueberries (BG: 98 mg/dL Flat) (Pred: 164-174 mg/dL @ 11:35 AM) (Protein: 17g | Carbs: ~33g | Cals: ~280) [Coach: Your signature breakfast 👏 ��� seeded whole-grain, PB for protein + fat, blueberry antioxidants. ~17g protein anchors ~33g carbs, and the fiber softens the spike. A clean, steady start after a choppy sensor night. Textbook GMI 6.0 morning.]",
     "type": "Breakfast",
     "date": "2026-05-27T10:08:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-27/48920ca3a1f544d6.jpg",
