@@ -1,5 +1,16 @@
 [
   {
+    "id": "36e85ec7-0668-817f-9d87-ea5b81fdfb74",
+    "title": "Snack (symptomatic low correction): small piece of bread with 1 tablespoon of pistachio/peanut butter mix (treated based on hypo symptoms; CGM showed 65) (BG: 65 mg/dL Flat) (Pred: 81-91 mg/dL @ 9:57 PM) (Protein: 6g | Carbs: ~16g | Cals: ~160) [Coach: Smart correction 👍 — felt symptoms, trusted them, ate a balanced bread + nut butter combo instead of pure sugar. The nut butter's fat and protein slow the rise, so no overshoot. ~16g carbs is the right amount for a mild low. Much better than the gummy bear approach.]",
+    "type": "Snack",
+    "date": "2026-05-28T19:51:00.000+02:00",
+    "photo": "https://iili.io/C2Ge5LN.jpg",
+    "carbs": 16,
+    "cals": 160,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "36e85ec7-0668-8100-93a8-fc71a8ad8910",
     "title": "Lunch: a piece of bread with a generous spread of Gorgonzola cheese [Cumulative Lunch: 20g carbs total] (BG: 96 mg/dL Flat) (Pred: 102-112 mg/dL @ 5:52 PM) (Protein: 8g | Carbs: ~15g | Cals: ~170) [Coach: Bread + Gorgonzola 🧀 — ~15g carbs from the bread, Gorgonzola adds protein and fat (zero carbs, fat slows absorption). Cumulative lunch ~20g, Pred ~107. The cheese's fat softens what little spike the bread would cause. Tasty and modest.]",
     "type": "Lunch",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-28/feea96c590174b5e.jpg",
     "carbs": 5,
     "cals": 550,
-    "delta": null,
-    "peak": null
+    "delta": 43,
+    "peak": 136
   },
   {
     "id": "36e85ec7-0668-81bf-afec-dbb603c49f50",
