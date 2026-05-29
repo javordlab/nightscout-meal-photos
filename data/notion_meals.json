@@ -1,5 +1,16 @@
 [
   {
+    "id": "36f85ec7-0668-81f9-9477-c1942c638634",
+    "title": "Breakfast: grilled sandwich on whole-grain seeded bread with cheese and all-natural baked turkey breast (no additives — NOT cured meat) (BG: 105 mg/dL Flat) (Pred: 166-176 mg/dL @ 12:15 PM) (Protein: 23g | Carbs: ~27g | Cals: ~325) [Coach: Grilled sandwich 🥪 — seeded whole-grain brings fiber, all-natural turkey (NOT cured) + cheese for ~23g protein. ~27g carbs is moderate, well-anchored. AM cortisol still amplifies (Pred ~171), but the protein keeps it tidy. Cured-meat tally today: 0.]",
+    "type": "Breakfast",
+    "date": "2026-05-29T10:48:00.000+02:00",
+    "photo": "https://iili.io/C24Wchl.jpg",
+    "carbs": 27,
+    "cals": 325,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "36e85ec7-0668-81db-9c1a-cbe80a4b0343",
     "title": "Dinner: dessert — 1 fresh nectarine [Cumulative Dinner: 40g carbs total] (BG: 129 mg/dL Flat) (Pred: 170-180 mg/dL @ 10:55 PM) (Protein: 1g | Carbs: ~13g | Cals: ~60) [Coach: Nectarine 🍑 — whole fruit dessert, ~13g natural sugar with fiber. Cumulative dinner ~40g, Pred ~175. Smart clean finish to a comforting soup dinner.]",
     "type": "Dinner",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-28/f2a79dfb431092d9.jpg",
     "carbs": 13,
     "cals": 60,
-    "delta": null,
-    "peak": null
+    "delta": 25,
+    "peak": 157
   },
   {
     "id": "36e85ec7-0668-8193-8bd9-d3e68add4cae",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-28/2e7612a99bf0493a.jpg",
     "carbs": 27,
     "cals": 250,
-    "delta": null,
-    "peak": null
+    "delta": 25,
+    "peak": 157
   },
   {
     "id": "36e85ec7-0668-8100-93a8-fc71a8ad8910",
