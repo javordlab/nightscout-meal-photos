@@ -1,5 +1,16 @@
 [
   {
+    "id": "36f85ec7-0668-81af-bb96-ddf8766caa4c",
+    "title": "Dinner: potato leek soup (same milk + cheese base as last night) with 1 egg added, no croutons (BG: 108 mg/dL Flat) (Pred: 130-140 mg/dL @ 10:13 PM) (Protein: 16g | Carbs: ~22g | Cals: ~325) [Coach: Potato leek soup with egg 🍲 — same creamy milk + cheese base, plus egg boosts protein (~16g total). ~22g carbs from potato. BG at 108, Pred ~135. Comforting, balanced dinner — protein and fat slowing the potato carbs nicely.]",
+    "type": "Dinner",
+    "date": "2026-05-29T20:57:00.000+02:00",
+    "photo": "https://iili.io/C2ymaXj.jpg",
+    "carbs": 22,
+    "cals": 325,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "36f85ec7-0668-817d-ab49-f372300c9d7c",
     "title": "Lunch: salad (avocado, tomato, cucumber, lettuce, mango), grilled chorizos (chistorra-style), a piece of bread, and tinto de verano with sugar-free Kas Zero (BG: 99 mg/dL Flat) (Pred: 123-133 mg/dL @ 5:30 PM) (Protein: 19g | Carbs: ~34g | Cals: ~560) [Coach: Lovely lunch 🥗 — salad with avocado, mango, real veggies. Chorizos = today's 1× cured-meat allowance (on-target). Sugar-free Kas Zero in the tinto de verano — exactly the swap we discussed 👏. ~34g carbs, ~19g protein, Pred ~128. Nicely balanced.]",
     "type": "Lunch",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-29/1993c42186bf1e5b.jpg",
     "carbs": 34,
     "cals": 560,
-    "delta": null,
-    "peak": null
+    "delta": 75,
+    "peak": 170
   },
   {
     "id": "36f85ec7-0668-812a-90b3-e052cbdd3df5",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-29/d7a5dd703bfaeb63.jpg",
     "carbs": 13,
     "cals": 60,
-    "delta": null,
-    "peak": null
+    "delta": 0,
+    "peak": 124
   },
   {
     "id": "36f85ec7-0668-81f9-9477-c1942c638634",
@@ -232,7 +243,7 @@
   },
   {
     "id": "36b85ec7-0668-8199-8450-fc5f56f4039b",
-    "title": "Lunch: 1 fresh nectarine (identified by user from skin coloring/pattern) [Cumulative Lunch: 53g carbs total] (BG: 101 mg/dL Flat) (Pred: 126-136 mg/dL @ 4:04 PM) (Protein: 1g | Carbs: ~12g | Cals: ~45) [Coach: Fresh fruit dessert �� — ~12g natural-sugar carbs balanced by fiber. Cumulative lunch ~53g. Smart whole-fruit finisher to a high-protein lunch — exactly the GMI 6.0 pattern.]",
+    "title": "Lunch: 1 fresh nectarine (identified by user from skin coloring/pattern) [Cumulative Lunch: 53g carbs total] (BG: 101 mg/dL Flat) (Pred: 126-136 mg/dL @ 4:04 PM) (Protein: 1g | Carbs: ~12g | Cals: ~45) [Coach: Fresh fruit dessert 🍑 — ~12g natural-sugar carbs balanced by fiber. Cumulative lunch ~53g. Smart whole-fruit finisher to a high-protein lunch — exactly the GMI 6.0 pattern.]",
     "type": "Lunch",
     "date": "2026-05-25T14:27:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-25/ad9403153f7b3ad8.jpg",
