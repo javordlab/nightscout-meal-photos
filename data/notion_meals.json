@@ -4,7 +4,7 @@
     "title": "Snack: 1 fresh nectarine (eaten at the golf course while walking with Javier — fuel for the activity) (BG: 119 mg/dL Flat) (Pred: 144-154 mg/dL @ 3:09 PM) (Protein: 1g | Carbs: ~13g | Cals: ~60) [Coach: Nectarine 🍑 — perfect golf-course energy. ~13g natural sugar, and you're already walking, so it'll be metabolized as you go. Pred ~149 by the formula, but the active walking will blunt that meaningfully. Smart, light, well-timed.]",
     "type": "Snack",
     "date": "2026-05-29T13:03:00.000+02:00",
-    "photo": "https://iili.io/C2i7UrJ.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-29/d7a5dd703bfaeb63.jpg",
     "carbs": 13,
     "cals": 60,
     "delta": null,
@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-29/c829b0b45e3662bc.jpg",
     "carbs": 27,
     "cals": 325,
-    "delta": null,
-    "peak": null
+    "delta": 46,
+    "peak": 149
   },
   {
     "id": "36e85ec7-0668-81db-9c1a-cbe80a4b0343",
