@@ -1,10 +1,21 @@
 [
   {
+    "id": "36f85ec7-0668-810c-b242-cec2822dbe26",
+    "title": "Dinner: dessert — 1 nectarine and ~1 oz mango sherbet [Cumulative Dinner: 42g carbs total] (BG: 108 mg/dL Flat) (Pred: 151-161 mg/dL @ 10:13 PM) (Protein: 1g | Carbs: ~20g | Cals: ~95) [Coach: Fruit dessert 🍑 — nectarine + a touch of mango sherbet. ~20g carbs (mostly fruit sugar + small refined-sugar from sherbet). Cumulative dinner ~42g, Pred ~156. The whole fruit dominates over the small sherbet portion — a nice balance.]",
+    "type": "Dinner",
+    "date": "2026-05-29T21:23:00.000+02:00",
+    "photo": "https://iili.io/C39I4lS.jpg",
+    "carbs": 20,
+    "cals": 95,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "36f85ec7-0668-81af-bb96-ddf8766caa4c",
     "title": "Dinner: potato leek soup (same milk + cheese base as last night) with 1 egg added, no croutons (BG: 108 mg/dL Flat) (Pred: 130-140 mg/dL @ 10:13 PM) (Protein: 16g | Carbs: ~22g | Cals: ~325) [Coach: Potato leek soup with egg 🍲 — same creamy milk + cheese base, plus egg boosts protein (~16g total). ~22g carbs from potato. BG at 108, Pred ~135. Comforting, balanced dinner — protein and fat slowing the potato carbs nicely.]",
     "type": "Dinner",
     "date": "2026-05-29T20:57:00.000+02:00",
-    "photo": "https://iili.io/C2ymaXj.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-29/a8e0ae8d6608bce9.jpg",
     "carbs": 22,
     "cals": 325,
     "delta": null,
