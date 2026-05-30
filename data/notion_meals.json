@@ -1,5 +1,16 @@
 [
   {
+    "id": "37085ec7-0668-81be-aa08-dfacda2432dd",
+    "title": "Breakfast: plain yogurt with fresh mango cubes and cashews (BG: 104 mg/dL Flat) (Pred: 160-170 mg/dL @ 12:00 PM) (Protein: 14g | Carbs: ~23g | Cals: ~215) [Coach: Beautiful breakfast 👏 — yogurt protein, fresh mango, cashews to slow the fruit sugar. ~14g protein anchors ~23g carbs nicely. AM cortisol pushes Pred to ~165. Textbook GMI 6.0 fuel, and a great clean rebound from last night's mid-night snack.]",
+    "type": "Breakfast",
+    "date": "2026-05-30T10:33:00.000+02:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-30/3712164fe347f267.jpg",
+    "carbs": 23,
+    "cals": 215,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "36f85ec7-0668-810c-b242-cec2822dbe26",
     "title": "Dinner: dessert — 1 nectarine and ~1 oz mango sherbet [Cumulative Dinner: 42g carbs total] (BG: 108 mg/dL Flat) (Pred: 151-161 mg/dL @ 10:13 PM) (Protein: 1g | Carbs: ~20g | Cals: ~95) [Coach: Fruit dessert 🍑 — nectarine + a touch of mango sherbet. ~20g carbs (mostly fruit sugar + small refined-sugar from sherbet). Cumulative dinner ~42g, Pred ~156. The whole fruit dominates over the small sherbet portion — a nice balance.]",
     "type": "Dinner",
