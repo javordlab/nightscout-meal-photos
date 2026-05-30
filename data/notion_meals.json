@@ -1,5 +1,16 @@
 [
   {
+    "id": "37085ec7-0668-817e-9ade-d93503269033",
+    "title": "Merienda (afternoon snack): whole-grain toast topped with pistachio butter and a generous handful of fresh blueberries, with a cappuccino on the side (BG: 138 mg/dL Flat) (Pred: 181-191 mg/dL @ 8:24 PM) (Protein: 13g , Carbs: ~37g , Cals: ~300) [Coach: Classic merienda 🫐 — whole-grain toast, pistachio butter (healthy fats + ~3g protein), fresh blueberries with their fiber, and a cappuccino. ~37g carbs is on the heavier side for a snack, but the fat + fiber + protein anchor will slow it. Pred ~186 around 8:24 PM. A walk after this would shave the peak nicely if you're up for it.]",
+    "type": "Snack",
+    "date": "2026-05-30T18:18:00.000+02:00",
+    "photo": "https://iili.io/C3ux9pt.jpg",
+    "carbs": 37,
+    "cals": 300,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37085ec7-0668-814e-92e0-df617ef4281d",
     "title": "Lunch (cont.): small wafer cookie with mango sherbet filling (post-lunch sweet) (BG: 119 mg/dL Flat) (Pred: 141-151 mg/dL @ 4:31 PM) (Protein: 1g , Carbs: ~10g , Cals: ~65) [Cumulative Lunch: ~39g carbs total] [Coach: Mango-sherbet wafer 🥭 — small frozen sweet, ~10g mostly-sugar carbs but lower-cal than a custardy filling would have been. Cushioned by ~24g protein already in your lunch, so Pred only nudges to ~146. Nice light way to close out the meal.]",
     "type": "Lunch",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-30/09a60785ca1c03dd.jpg",
     "carbs": 10,
     "cals": 65,
-    "delta": null,
-    "peak": null
+    "delta": 21,
+    "peak": 140
   },
   {
     "id": "37085ec7-0668-8157-ab1c-cc3841ae22e9",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-30/4807f59c5ebfb920.jpg",
     "carbs": 28,
     "cals": 310,
-    "delta": null,
-    "peak": null
+    "delta": 41,
+    "peak": 140
   },
   {
     "id": "37085ec7-0668-8134-819a-f92acf4ce0ce",
@@ -29,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-30/4f4312da5f5ff8db.jpg",
     "carbs": 14,
     "cals": 210,
-    "delta": null,
-    "peak": null
+    "delta": 27,
+    "peak": 140
   },
   {
     "id": "37085ec7-0668-81be-aa08-dfacda2432dd",
