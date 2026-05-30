@@ -1,5 +1,16 @@
 [
   {
+    "id": "37085ec7-0668-8135-bb80-dc77b5d96f96",
+    "title": "Dinner (cont.) — Dessert: panna cotta with fresh mango cubes and a small scoop of mango sherbet (BG: 112 mg/dL Flat) (Pred: 160-170 mg/dL @ 10:33 PM) (Protein: 4g , Carbs: ~40g , Cals: ~285) [Cumulative Dinner: ~61g carbs total] [Coach: Panna cotta + mango + sherbet 🥭 — pretty plating with the card-size calibration in frame. The fresh mango brings fiber, but together with the panna cotta sugar and sherbet this is ~40g of mostly-sugar carbs landing late. Cumulative dinner jumps to ~61g, Pred ~165 by 10:33 PM (the 0.8 multiplier on big-carb meals helps). Late sugar is the main GMI 6.0 headwind — a short walk before bed would soften the curve.]",
+    "type": "Dinner",
+    "date": "2026-05-30T21:30:00.000+02:00",
+    "photo": "https://iili.io/C359UQV.jpg",
+    "carbs": 40,
+    "cals": 285,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37085ec7-0668-811b-a2eb-db95fb0d5fce",
     "title": "Dinner: open-faced melt on whole-grain toast — sliced turkey breast (NOT cured), avocado, melted cheese on top, with a side of ~6-7 green olives (BG: 118 mg/dL Flat) (Pred: 138-148 mg/dL @ 10:33 PM) (Protein: 24g , Carbs: ~21g , Cals: ~360) [Coach: Turkey, avocado + cheese melt 🥑 — even better than I first read it. Avocado swaps the lettuce I assumed and brings healthy monounsaturated fats + fiber that further slow the bread's carbs. ~24g protein hits the muscle-preservation goal, cured-meat tally stays at 0, olives add more healthy fat. Pred only nudges to ~143. Clean GMI 6.0-friendly close.]",
     "type": "Dinner",
