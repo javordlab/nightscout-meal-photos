@@ -1,5 +1,16 @@
 [
   {
+    "id": "37185ec7-0668-81ad-a74a-f27b919bcf0e",
+    "title": "Breakfast: grilled/toasted whole-grain sandwich with peanut butter and apple slices, plus a café con leche (BG: 114 mg/dL Flat) (Pred: 198-208 mg/dL @ 11:16 AM) (Protein: 17g , Carbs: ~48g , Cals: ~395) [Coach: PB+apple sandwich 🥪 — fun sweet+savory breakfast. Apple brings fiber, peanut butter delivers ~6g protein and healthy fat to slow the bread, café con leche adds a bit more protein. That said, ~48g carbs at breakfast with the morning cortisol intercept pushes Pred near 200 — toward the high end of where we want to land. A walk in the next 30-60 min would knock the peak down meaningfully.]",
+    "type": "Breakfast",
+    "date": "2026-05-31T09:49:00.000+02:00",
+    "photo": "https://iili.io/C3E3AI2.jpg",
+    "carbs": 48,
+    "cals": 395,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37085ec7-0668-8135-bb80-dc77b5d96f96",
     "title": "Dinner (cont.) — Dessert: panna cotta with fresh mango cubes and a small scoop of mango sherbet (BG: 112 mg/dL Flat) (Pred: 160-170 mg/dL @ 10:33 PM) (Protein: 4g , Carbs: ~40g , Cals: ~285) [Cumulative Dinner: ~61g carbs total] [Coach: Panna cotta + mango + sherbet 🥭 — pretty plating with the card-size calibration in frame. The fresh mango brings fiber, but together with the panna cotta sugar and sherbet this is ~40g of mostly-sugar carbs landing late. Cumulative dinner jumps to ~61g, Pred ~165 by 10:33 PM (the 0.8 multiplier on big-carb meals helps). Late sugar is the main GMI 6.0 headwind — a short walk before bed would soften the curve.]",
     "type": "Dinner",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-30/1ff067554c480eb1.jpg",
     "carbs": 40,
     "cals": 285,
-    "delta": null,
-    "peak": null
+    "delta": 37,
+    "peak": 149
   },
   {
     "id": "37085ec7-0668-811b-a2eb-db95fb0d5fce",
@@ -18,12 +29,12 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-30/acd85d276f5a6c9e.jpg",
     "carbs": 21,
     "cals": 360,
-    "delta": null,
-    "peak": null
+    "delta": 25,
+    "peak": 149
   },
   {
     "id": "37085ec7-0668-817e-9ade-d93503269033",
-    "title": "Merienda (afternoon snack): whole-grain toast topped with pistachio butter and a generous handful of fresh blueberries, with a cappuccino on the side (BG: 138 mg/dL Flat) (Pred: 181-191 mg/dL @ 8:24 PM) (Protein: 13g , Carbs: ~37g , Cals: ~300) [Coach: Classic merienda 🫐 — whole-grain toast, pistachio butter (healthy fats + ~3g protein), fresh blueberries with their fiber, and a cappuccino. ~37g carbs is on the heavier side for a snack, but the fat + fiber + protein anchor will slow it. Pred ~186 around 8:24 PM. A walk after this would shave the peak nicely if you're up for it.]",
+    "title": "Merienda (afternoon snack): whole-grain toast topped with pistachio butter and a generous handful of fresh blueberries, with a cappuccino on the side (BG: 138 mg/dL Flat) (Pred: 181-191 mg/dL @ 8:24 PM) (Protein: 13g , Carbs: ~37g , Cals: ~300) [Coach: Classic merienda ��� — whole-grain toast, pistachio butter (healthy fats + ~3g protein), fresh blueberries with their fiber, and a cappuccino. ~37g carbs is on the heavier side for a snack, but the fat + fiber + protein anchor will slow it. Pred ~186 around 8:24 PM. A walk after this would shave the peak nicely if you're up for it.]",
     "type": "Snack",
     "date": "2026-05-30T18:18:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-30/6cd814b06bca8f5d.jpg",
