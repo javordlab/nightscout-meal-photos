@@ -1,5 +1,16 @@
 [
   {
+    "id": "37185ec7-0668-81f5-99f7-ff3367ce6c6d",
+    "title": "Dinner: closed sandwich on multigrain seeded toast with sliced turkey breast, cecina (Spanish cured beef), cheese, and avocado (BG: 83 mg/dL Flat) (Pred: 117-127 mg/dL @ 10:31 PM) (Protein: 37g , Carbs: ~34g , Cals: ~445) [Coach: Turkey + cecina + cheese + avocado sandwich 🥪 — ~37g protein is an outstanding muscle-preservation number, and the avocado fat + multigrain seeded bread slow the carb curve nicely. Cecina is your 1st (and on-target) cured-meat hit of the day. Coming into dinner at 83 means Pred lands beautifully at ~122. Clean GMI 6.0 close.]",
+    "type": "Dinner",
+    "date": "2026-05-31T21:15:00.000+02:00",
+    "photo": "https://iili.io/C3vKsHb.jpg",
+    "carbs": 34,
+    "cals": 445,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37185ec7-0668-8153-8b74-de14436ba636",
     "title": "Snack: ~2 squares of dark chocolate (BG: 112 mg/dL Flat) (Pred: 131-141 mg/dL @ 6:36 PM) (Protein: 2g , Carbs: ~10g , Cals: ~110) [Coach: 2 squares of dark chocolate 🍫 — this is your textbook smart sweet move: cacao polyphenols, cacao-butter fat to slow the sugar, and only ~10g carbs total. Pred ~136 by 6:36 PM. Exactly the kind of dessert pick that fits the GMI 6.0 target.]",
     "type": "Snack",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-31/e747222339121ca2.jpg",
     "carbs": 10,
     "cals": 110,
-    "delta": null,
-    "peak": null
+    "delta": 49,
+    "peak": 161
   },
   {
     "id": "37185ec7-0668-818c-9ded-e77b1dcf2ea4",
