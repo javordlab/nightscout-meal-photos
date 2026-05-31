@@ -4,7 +4,7 @@
     "title": "Snack: ~2 squares of dark chocolate (BG: 112 mg/dL Flat) (Pred: 131-141 mg/dL @ 6:36 PM) (Protein: 2g , Carbs: ~10g , Cals: ~110) [Coach: 2 squares of dark chocolate 🍫 — this is your textbook smart sweet move: cacao polyphenols, cacao-butter fat to slow the sugar, and only ~10g carbs total. Pred ~136 by 6:36 PM. Exactly the kind of dessert pick that fits the GMI 6.0 target.]",
     "type": "Snack",
     "date": "2026-05-31T16:30:00.000+02:00",
-    "photo": "https://iili.io/C3hPQm7.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-31/e747222339121ca2.jpg",
     "carbs": 10,
     "cals": 110,
     "delta": null,
@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-31/286bdc3b9a3869ec.jpg",
     "carbs": 43,
     "cals": 390,
-    "delta": null,
-    "peak": null
+    "delta": 35,
+    "peak": 163
   },
   {
     "id": "37185ec7-0668-81ad-a74a-f27b919bcf0e",
