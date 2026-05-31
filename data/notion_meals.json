@@ -1,5 +1,16 @@
 [
   {
+    "id": "37185ec7-0668-818c-9ded-e77b1dcf2ea4",
+    "title": "Lunch: oreja con garbanzos (Spanish pig-ear stew with chickpeas in tomato-paprika sauce), 1 slice of bread on the side, and a side of cooked leeks (BG: 125 mg/dL Flat) (Pred: 160-170 mg/dL @ 3:51 PM) (Protein: 26g , Carbs: ~43g , Cals: ~390) [Coach: Oreja con garbanzos 🍲 — classic Spanish dish, collagen-rich pork (offal, not cured meat — tally stays at 0) plus chickpeas which bring fiber + plant protein. ~26g protein is excellent for the muscle-preservation goal. Chickpeas + bread put carbs at ~43g; the protein anchor keeps Pred ~165. Cooked leeks add a nice veggie note too.]",
+    "type": "Lunch",
+    "date": "2026-05-31T13:58:00.000+02:00",
+    "photo": "https://iili.io/C3WdFj4.jpg",
+    "carbs": 43,
+    "cals": 390,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37185ec7-0668-81ad-a74a-f27b919bcf0e",
     "title": "Breakfast: grilled/toasted whole-grain sandwich with peanut butter and apple slices, plus a café con leche (BG: 114 mg/dL Flat) (Pred: 198-208 mg/dL @ 11:16 AM) (Protein: 17g , Carbs: ~48g , Cals: ~395) [Coach: PB+apple sandwich 🥪 — fun sweet+savory breakfast. Apple brings fiber, peanut butter delivers ~6g protein and healthy fat to slow the bread, café con leche adds a bit more protein. That said, ~48g carbs at breakfast with the morning cortisol intercept pushes Pred near 200 — toward the high end of where we want to land. A walk in the next 30-60 min would knock the peak down meaningfully.]",
     "type": "Breakfast",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-31/0cb24f2c252dc74e.jpg",
     "carbs": 48,
     "cals": 395,
-    "delta": null,
-    "peak": null
+    "delta": 42,
+    "peak": 155
   },
   {
     "id": "37085ec7-0668-8135-bb80-dc77b5d96f96",
