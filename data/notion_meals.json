@@ -1,10 +1,10 @@
 [
   {
     "id": "37285ec7-0668-811d-ac46-d237dcf9bd7f",
-    "title": "Dinner (cont. — Dessert): 1 chocolate-topped biscuit (Príncipe-style — square tea biscuit with a thick chocolate layer on top) (BG: 73 mg/dL Flat) (Pred: 108-118 mg/dL @ 10:55 PM) (Protein: 1g , Carbs: ~7g , Cals: ~55) [Cumulative Dinner: ~35g carbs total] [Coach: 1 chocolate biscuit �� — small dessert, ~7g carbs. Cumulative dinner stays modest at ~35g carbs, Pred ~113. Coming in at 73 means the dessert is well-buffered. Solid landing for the day.]",
+    "title": "Dinner (cont. — Dessert): 1 chocolate-topped biscuit (Príncipe-style — square tea biscuit with a thick chocolate layer on top) (BG: 73 mg/dL Flat) (Pred: 108-118 mg/dL @ 10:55 PM) (Protein: 1g , Carbs: ~7g , Cals: ~55) [Cumulative Dinner: ~35g carbs total] [Coach: 1 chocolate biscuit 🍪 — small dessert, ~7g carbs. Cumulative dinner stays modest at ~35g carbs, Pred ~113. Coming in at 73 means the dessert is well-buffered. Solid landing for the day.]",
     "type": "Dinner",
     "date": "2026-06-01T21:57:00.000+02:00",
-    "photo": "https://iili.io/CFnZHmB.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-01/f3b6bc7e3d34ffda.jpg",
     "carbs": 7,
     "cals": 55,
     "delta": null,
@@ -15,7 +15,7 @@
     "title": "Dinner (light): pan con tomate (half slice of toasted bread topped with fresh tomato slices), shaved cecina (Spanish cured beef), and a nectarine on the side (BG: 73 mg/dL Flat) (Pred: 102-112 mg/dL @ 10:55 PM) (Protein: 15g , Carbs: ~28g , Cals: ~200) [Coach: Pan con tomate + cecina + nectarine 🍑 — clean light dinner, ~15g protein, fresh tomato and fruit fiber to slow the bread. Pred ~107. One small note: this is your 2nd cured-meat hit of the day (lomo chips at the golf course were #1), so you're one over the ≤1×/day goal today — not a setback, just naming it. Tomorrow we reset.]",
     "type": "Dinner",
     "date": "2026-06-01T21:39:00.000+02:00",
-    "photo": "https://iili.io/CFnl5Lx.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-01/c33fa2cdf883cff6.jpg",
     "carbs": 28,
     "cals": 200,
     "delta": null,
@@ -397,7 +397,7 @@
   },
   {
     "id": "36c85ec7-0668-81f8-a020-c876b1b2863e",
-    "title": "Snack (pre-dinner, after 2hr work): bowl of corn puffs (ganchitos) (BG: 106 mg/dL Flat) (Pred: 135-145 mg/dL @ 10:26 PM) (Protein: 2g | Carbs: ~15g | Cals: ~130) [Coach: Corn puffs 🌽 — light and tasty but refined-carb empty calories (~15g carbs, minimal protein/fiber). After 2 hours of work a refuel makes sense, and BG at 106 has room. These spike faster than your protein-anchored snacks though — pairing with cheese or nuts next time would slow them down.]",
+    "title": "Snack (pre-dinner, after 2hr work): bowl of corn puffs (ganchitos) (BG: 106 mg/dL Flat) (Pred: 135-145 mg/dL @ 10:26 PM) (Protein: 2g | Carbs: ~15g | Cals: ~130) [Coach: Corn puffs 🌽 �� light and tasty but refined-carb empty calories (~15g carbs, minimal protein/fiber). After 2 hours of work a refuel makes sense, and BG at 106 has room. These spike faster than your protein-anchored snacks though — pairing with cheese or nuts next time would slow them down.]",
     "type": "Snack",
     "date": "2026-05-26T20:20:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-26/8d5130c7af0e921d.jpg",
