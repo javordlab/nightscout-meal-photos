@@ -1,10 +1,10 @@
 [
   {
     "id": "37285ec7-0668-8115-a388-e03e7df8f747",
-    "title": "Lunch (aperitivo-style): 1 pack of Snack'in For You Spanish Lomo meat chips (14g protein per pack per label — cured pork loin) (BG: 84 mg/dL FortyFiveDown) (Pred: 71-81 mg/dL @ 2:05 PM) (Protein: 14g , Carbs: ~2g , Cals: ~190) [Coach: Lomo meat chips 🐷 — solid 14g of protein and your 1st (on-target) cured-meat hit of the day. Heads up though: BG is at 84 trending down, and these chips are almost pure protein/fat with only ~2g carbs, so they won't actually stop the drop. Consider adding a piece of fruit, a few crackers, or some bread alongside to land BG back above 90 — otherwise we may dip into low-alert territory in the next 30-60 min.]",
-    "type": "Lunch",
+    "title": "Snack (golf-course aperitivo): 1 pack of Snack'in For You Spanish Lomo meat chips (14g protein per pack per label — cured pork loin) (BG: 84 mg/dL FortyFiveDown) (Pred: 87-97 mg/dL @ 2:18 PM) (Protein: 14g , Carbs: ~2g , Cals: ~190) [Coach: Lomo meat chips 🐷 — solid 14g of protein and your 1st (on-target) cured-meat hit of the day. Heads up though: BG is at 84 trending down, and these chips are almost pure protein/fat with only ~2g carbs, so they won't actually stop the drop. Consider adding a piece of fruit, a few crackers, or some bread alongside to land BG back above 90 — otherwise we may dip into low-alert territory in the next 30-60 min.]",
+    "type": "Snack",
     "date": "2026-06-01T12:12:00.000+02:00",
-    "photo": "https://iili.io/C3DYDvf.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-01/9d3d9f853bfc311a.jpg",
     "carbs": 2,
     "cals": 190,
     "delta": null,
@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-01/c49478a4b592db79.jpg",
     "carbs": 40,
     "cals": 304,
-    "delta": null,
-    "peak": null
+    "delta": 66,
+    "peak": 180
   },
   {
     "id": "37185ec7-0668-81f5-99f7-ff3367ce6c6d",
