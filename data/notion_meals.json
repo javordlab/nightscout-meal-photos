@@ -1,5 +1,16 @@
 [
   {
+    "id": "37285ec7-0668-8137-83ef-ec75a42f2762",
+    "title": "Lunch (restaurant — first course): mixed salad (iceberg lettuce, tomato slices, onion rings) with olive oil + bread on the side (BG: 87 mg/dL Flat) (Pred: 108-118 mg/dL @ 5:23 PM) (Protein: 7g , Carbs: ~32g , Cals: ~285) [Coach: Restaurant lunch starting strong 🥗 — non-starchy veggies up front, good olive oil, and bread on the side. BG recovered cleanly to 87 Flat after the golf-course dip. ~32g carbs from the bread is the main load; salad fiber will slow it. Pred ~113. If a main course comes (it usually does at a Spanish restaurant), we'll cumulate it.]",
+    "type": "Lunch",
+    "date": "2026-06-01T15:30:00.000+02:00",
+    "photo": "https://iili.io/CFHXqeR.jpg",
+    "carbs": 32,
+    "cals": 285,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37285ec7-0668-8115-a388-e03e7df8f747",
     "title": "Snack (golf-course aperitivo): 1 pack of Snack'in For You Spanish Lomo meat chips (14g protein per pack per label — cured pork loin) (BG: 84 mg/dL FortyFiveDown) (Pred: 87-97 mg/dL @ 2:18 PM) (Protein: 14g , Carbs: ~2g , Cals: ~190) [Coach: Lomo meat chips 🐷 — solid 14g of protein and your 1st (on-target) cured-meat hit of the day. Heads up though: BG is at 84 trending down, and these chips are almost pure protein/fat with only ~2g carbs, so they won't actually stop the drop. Consider adding a piece of fruit, a few crackers, or some bread alongside to land BG back above 90 — otherwise we may dip into low-alert territory in the next 30-60 min.]",
     "type": "Snack",
