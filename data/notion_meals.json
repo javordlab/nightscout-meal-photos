@@ -4,7 +4,7 @@
     "title": "Lunch (cont. — main course, half-portion): merluza en salsa verde (hake in green sauce) with white asparagus and clams, garnished with parsley — Maria ate half the serving (BG: 91 mg/dL Flat) (Pred: 114-124 mg/dL @ 5:23 PM) (Protein: 19g , Carbs: ~5g , Cals: ~131) [Cumulative Lunch: ~37g carbs total] [Coach: Half-portion 🐟 — still ~19g of lean protein, white asparagus, and clams. Cumulative lunch lands at ~26g protein on ~37g carbs, Pred ~119. Mindful portioning on top of an already-clean plate keeps the GMI 6.0 trajectory on track.]",
     "type": "Lunch",
     "date": "2026-06-01T15:40:00.000+02:00",
-    "photo": "https://iili.io/CFH6pa4.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-01/4eda75292caee06e.jpg",
     "carbs": 5,
     "cals": 131,
     "delta": null,
@@ -15,7 +15,7 @@
     "title": "Lunch (restaurant — first course): mixed salad (iceberg lettuce, tomato slices, onion rings) with olive oil + bread on the side (BG: 87 mg/dL Flat) (Pred: 108-118 mg/dL @ 5:23 PM) (Protein: 7g , Carbs: ~32g , Cals: ~285) [Coach: Restaurant lunch starting strong 🥗 — non-starchy veggies up front, good olive oil, and bread on the side. BG recovered cleanly to 87 Flat after the golf-course dip. ~32g carbs from the bread is the main load; salad fiber will slow it. Pred ~113. If a main course comes (it usually does at a Spanish restaurant), we'll cumulate it.]",
     "type": "Lunch",
     "date": "2026-06-01T15:30:00.000+02:00",
-    "photo": "https://iili.io/CFHXqeR.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-01/22b46dbaa6689f38.jpg",
     "carbs": 32,
     "cals": 285,
     "delta": null,
@@ -29,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-01/9d3d9f853bfc311a.jpg",
     "carbs": 2,
     "cals": 190,
-    "delta": null,
-    "peak": null
+    "delta": 23,
+    "peak": 97
   },
   {
     "id": "37285ec7-0668-81c6-b632-e3e41a287b4c",
@@ -1618,7 +1618,7 @@
   },
   {
     "id": "35e85ec7-0668-81d3-ac6c-e5690539c846",
-    "title": "Dinner: Small pintxo — slice of bread topped with lomo and a slice of chorizo [Cumulative Dinner: ~57g carbs total] (BG: 105 mg/dL Flat) (Pred: 134-144 mg/dL @ 10:37 PM) (Protein: 10g | Carbs: ~12g | Cals: ~135) [Coach: Classic Spanish pintxo 🥖 — bite-sized, mostly protein-driven with a small bread base. Cumulative dinner is in heartier territory now; the walk you mentioned earlier would be a great closer.]  [id:5f3c88e7]",
+    "title": "Dinner: Small pintxo — slice of bread topped with lomo and a slice of chorizo [Cumulative Dinner: ~57g carbs total] (BG: 105 mg/dL Flat) (Pred: 134-144 mg/dL @ 10:37 PM) (Protein: 10g | Carbs: ~12g | Cals: ~135) [Coach: Classic Spanish pintxo ���� — bite-sized, mostly protein-driven with a small bread base. Cumulative dinner is in heartier territory now; the walk you mentioned earlier would be a great closer.]  [id:5f3c88e7]",
     "type": "Dinner",
     "date": "2026-05-01T22:41:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-01/57909384d725ec94.jpg",
