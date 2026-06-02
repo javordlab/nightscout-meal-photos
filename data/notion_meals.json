@@ -4,7 +4,7 @@
     "title": "Pre-lunch snack: 1 piece of bread spread with Natas La Fontona (Asturian fresh cream from San Martín de Luiña, Cudillero) + 1 small piece of Asturian cheese (BG: 92 mg/dL Flat) (Pred: 116-126 mg/dL @ 2:58 PM) (Protein: 9g , Carbs: ~19g , Cals: ~265) [Coach: Asturian pre-lunch aperitivo 🐄 — bread + fresh nata + a bite of cheese. The cream and cheese stack ~6g of protein and a lot of fat, which slows the bread carbs nicely. ~19g carbs total, Pred ~121. Lovely regional spread before lunch proper.]",
     "type": "Snack",
     "date": "2026-06-02T12:52:00.000+02:00",
-    "photo": "https://iili.io/CFjVoVj.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-02/3574310b42644317.jpg",
     "carbs": 19,
     "cals": 265,
     "delta": null,
@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-02/3e7bd4aea6f380e7.jpg",
     "carbs": 45,
     "cals": 410,
-    "delta": null,
-    "peak": null
+    "delta": 48,
+    "peak": 153
   },
   {
     "id": "37285ec7-0668-811d-ac46-d237dcf9bd7f",
@@ -441,7 +441,7 @@
   },
   {
     "id": "36b85ec7-0668-81b8-8fb3-f3a99042103d",
-    "title": "Dinner: grilled ham and cheese sandwich on whole-grain bread with a pickled eggplant (berenjena en escabeche) on the side (BG: 150 mg/dL Flat) (Pred: 184-194 mg/dL @ 9:47 PM) (Protein: 26g | Carbs: ~34g | Cals: ~360) [Coach: Solid grilled sandwich 🥪 — ~26g protein from ham + cheese, whole-grain bread, pickled eggplant for tang. Ham is today's 1× cured-meat allowance, on-target with your rule. BG at 150 means it lands on a higher baseline; predicted peak ~189. The 2hr gardening you just did will help offset.]",
+    "title": "Dinner: grilled ham and cheese sandwich on whole-grain bread with a pickled eggplant (berenjena en escabeche) on the side (BG: 150 mg/dL Flat) (Pred: 184-194 mg/dL @ 9:47 PM) (Protein: 26g | Carbs: ~34g | Cals: ~360) [Coach: Solid grilled sandwich 🥪 — ~26g protein from ham + cheese, whole-grain bread, pickled eggplant for tang. Ham is today's 1�� cured-meat allowance, on-target with your rule. BG at 150 means it lands on a higher baseline; predicted peak ~189. The 2hr gardening you just did will help offset.]",
     "type": "Dinner",
     "date": "2026-05-25T20:31:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-25/41de2bbf09bca4a4.jpg",
