@@ -1,5 +1,16 @@
 [
   {
+    "id": "37385ec7-0668-8183-8c1d-effccc6f5326",
+    "title": "Breakfast: 1/2 serving plain yogurt topped with fresh mango cubes + 1 slice multigrain seeded toast with peanut butter and fresh mango cubes on top (BG: 100 mg/dL Flat) (Pred: 180-190 mg/dL @ 10:59 AM) (Protein: 17g , Carbs: ~45g , Cals: ~410) [Coach: Gorgeous breakfast 🥭 — yogurt + PB stack ~13g of protein, multigrain seeded bread brings fiber, fresh mango carries whole-fruit fiber alongside its sugar. Cured-meat tally resets to 0 today, clean slate. ~45g carbs with AM cortisol pushes Pred ~185 by 11 AM — a short walk before then would clip the peak nicely. Beautiful GMI 6.0 starting move.]",
+    "type": "Breakfast",
+    "date": "2026-06-02T09:32:00.000+02:00",
+    "photo": "https://iili.io/CFGUVpI.jpg",
+    "carbs": 45,
+    "cals": 410,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37285ec7-0668-811d-ac46-d237dcf9bd7f",
     "title": "Dinner (cont. — Dessert): 1 chocolate-topped biscuit (Príncipe-style — square tea biscuit with a thick chocolate layer on top) (BG: 73 mg/dL Flat) (Pred: 108-118 mg/dL @ 10:55 PM) (Protein: 1g , Carbs: ~7g , Cals: ~55) [Cumulative Dinner: ~35g carbs total] [Coach: 1 chocolate biscuit 🍪 — small dessert, ~7g carbs. Cumulative dinner stays modest at ~35g carbs, Pred ~113. Coming in at 73 means the dessert is well-buffered. Solid landing for the day.]",
     "type": "Dinner",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-01/f3b6bc7e3d34ffda.jpg",
     "carbs": 7,
     "cals": 55,
-    "delta": null,
-    "peak": null
+    "delta": 91,
+    "peak": 174
   },
   {
     "id": "37285ec7-0668-819f-9667-d7cf4b59709e",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-01/c33fa2cdf883cff6.jpg",
     "carbs": 28,
     "cals": 200,
-    "delta": null,
-    "peak": null
+    "delta": 102,
+    "peak": 174
   },
   {
     "id": "37285ec7-0668-81ff-9783-d18fbaa072bc",
@@ -45,7 +56,7 @@
   },
   {
     "id": "37285ec7-0668-8115-a388-e03e7df8f747",
-    "title": "Snack (golf-course aperitivo): 1 pack of Snack'in For You Spanish Lomo meat chips (14g protein per pack per label — cured pork loin) (BG: 84 mg/dL FortyFiveDown) (Pred: 87-97 mg/dL @ 2:18 PM) (Protein: 14g , Carbs: ~2g , Cals: ~190) [Coach: Lomo meat chips 🐷 — solid 14g of protein and your 1st (on-target) cured-meat hit of the day. Heads up though: BG is at 84 trending down, and these chips are almost pure protein/fat with only ~2g carbs, so they won't actually stop the drop. Consider adding a piece of fruit, a few crackers, or some bread alongside to land BG back above 90 — otherwise we may dip into low-alert territory in the next 30-60 min.]",
+    "title": "Snack (golf-course aperitivo): 1 pack of Snack'in For You Spanish Lomo meat chips (14g protein per pack per label — cured pork loin) (BG: 84 mg/dL FortyFiveDown) (Pred: 87-97 mg/dL @ 2:18 PM) (Protein: 14g , Carbs: ~2g , Cals: ~190) [Coach: Lomo meat chips 🐷 — solid 14g of protein and your 1st (on-target) cured-meat hit of the day. Heads up though: BG is at 84 trending down, and these chips are almost pure protein/fat with only ~2g carbs, so they won't actually stop the drop. Consider adding a piece of fruit, a few crackers, or some bread alongside to land BG back above 90 ��� otherwise we may dip into low-alert territory in the next 30-60 min.]",
     "type": "Snack",
     "date": "2026-06-01T12:12:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-01/9d3d9f853bfc311a.jpg",
@@ -397,7 +408,7 @@
   },
   {
     "id": "36c85ec7-0668-81f8-a020-c876b1b2863e",
-    "title": "Snack (pre-dinner, after 2hr work): bowl of corn puffs (ganchitos) (BG: 106 mg/dL Flat) (Pred: 135-145 mg/dL @ 10:26 PM) (Protein: 2g | Carbs: ~15g | Cals: ~130) [Coach: Corn puffs 🌽 �� light and tasty but refined-carb empty calories (~15g carbs, minimal protein/fiber). After 2 hours of work a refuel makes sense, and BG at 106 has room. These spike faster than your protein-anchored snacks though — pairing with cheese or nuts next time would slow them down.]",
+    "title": "Snack (pre-dinner, after 2hr work): bowl of corn puffs (ganchitos) (BG: 106 mg/dL Flat) (Pred: 135-145 mg/dL @ 10:26 PM) (Protein: 2g | Carbs: ~15g | Cals: ~130) [Coach: Corn puffs 🌽 — light and tasty but refined-carb empty calories (~15g carbs, minimal protein/fiber). After 2 hours of work a refuel makes sense, and BG at 106 has room. These spike faster than your protein-anchored snacks though — pairing with cheese or nuts next time would slow them down.]",
     "type": "Snack",
     "date": "2026-05-26T20:20:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-26/8d5130c7af0e921d.jpg",
