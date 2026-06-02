@@ -1,14 +1,25 @@
 [
   {
+    "id": "37385ec7-0668-8172-a4c4-c1a3e49b37fb",
+    "title": "Dinner: oreja con garbanzos (Spanish pig-ear stew with chickpeas in tomato-paprika sauce) with a piece of bread on the side (BG: 114 mg/dL Flat) (Pred: 153-163 mg/dL @ 10:29 PM) (Protein: 19g , Carbs: ~38g , Cals: ~310) [Coach: Oreja con garbanzos again 🍲 — same classic Spanish dish as May 31. Oreja is offal/casquería (NOT cured meat), tally stays at 0 today. Chickpeas bring fiber + ~6g plant protein on top of the ~10g from the oreja. ~38g carbs is moderate, Pred ~158. Solid GMI 6.0-supporting dinner.]",
+    "type": "Dinner",
+    "date": "2026-06-02T21:13:00.000+02:00",
+    "photo": "https://iili.io/CFrn8DG.jpg",
+    "carbs": 38,
+    "cals": 310,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37385ec7-0668-81c4-9056-cf7fb06086a4",
     "title": "Lunch: white fish (hake/bacalao) in salsa verde with boiled potatoes (~5-6 small ones) and a side of pisto-style chopped veggies (zucchini, eggplant, red pepper, carrot), plus 1 small slice of bread (BG: 96 mg/dL Flat) (Pred: 139-149 mg/dL @ 4:00 PM) (Protein: 39g , Carbs: ~50g , Cals: ~450) [Coach: Beautiful Spanish lunch 🐟 — ~39g protein from the fish is excellent for the muscle-preservation goal, pisto veggies bring fiber, salsa verde is mostly parsley + garlic + olive oil. Boiled potatoes + bread are the carb load (~40g of that). Pred ~144 by 4 PM. Skip the cured meat today (already at 0) and you've got a clean GMI 6.0-supporting plate.]",
     "type": "Lunch",
     "date": "2026-06-02T14:07:00.000+02:00",
-    "photo": "https://iili.io/CFNaBea.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-02/7ba18977beb1e512.jpg",
     "carbs": 50,
     "cals": 450,
-    "delta": null,
-    "peak": null
+    "delta": 49,
+    "peak": 142
   },
   {
     "id": "37385ec7-0668-811c-b563-cf803a4c646e",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-02/3574310b42644317.jpg",
     "carbs": 19,
     "cals": 265,
-    "delta": null,
-    "peak": null
+    "delta": 40,
+    "peak": 142
   },
   {
     "id": "37385ec7-0668-8183-8c1d-effccc6f5326",
