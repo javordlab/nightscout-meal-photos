@@ -1,5 +1,16 @@
 [
   {
+    "id": "37485ec7-0668-813d-adde-e5e2eb19a72b",
+    "title": "Lunch (cont.): a small piece of white bread with butter (BG: 102 mg/dL Flat) (Pred: 113-123 mg/dL @ 6:31 PM) (Protein: 2g , Carbs: ~12g , Cals: ~135) [Cumulative Lunch: ~20g carbs total] [Coach: Bread + butter 🍞 — small carb add on top of the protein-anchored boquerones plate. The butter fat helps slow the bread carbs. Cumulative lunch now ~31g protein on ~20g carbs, Pred only ~118. Still very tight, very GMI-friendly.]",
+    "type": "Lunch",
+    "date": "2026-06-03T16:47:00.000+02:00",
+    "photo": "https://iili.io/CKx4l3P.jpg",
+    "carbs": 12,
+    "cals": 135,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37485ec7-0668-81fe-9196-ee09c895f571",
     "title": "Snack (aperitivo-style late merienda): boquerones fritos (small fried Spanish anchovies/sardines), a mixed leafy salad, and a few slices of jamón (cured ham) (BG: 104 mg/dL Flat) (Pred: 119-129 mg/dL @ 6:44 PM) (Protein: 29g , Carbs: ~8g , Cals: ~305) [Coach: Boquerones + salad + jamón 🐟 — outstanding ~29g protein hit, almost no carbs, and leafy greens that are usually under-represented in your day. Jamón is your 1st (and on-target) cured-meat hit. Pred only ~124 by 6:44 PM. Smart save after a no-lunch stretch.]",
     "type": "Snack",
@@ -89,7 +100,7 @@
   },
   {
     "id": "37285ec7-0668-819f-9667-d7cf4b59709e",
-    "title": "Dinner (light): pan con tomate (half slice of toasted bread topped with fresh tomato slices), shaved cecina (Spanish cured beef), and a nectarine on the side (BG: 73 mg/dL Flat) (Pred: 102-112 mg/dL @ 10:55 PM) (Protein: 15g , Carbs: ~28g , Cals: ~200) [Coach: Pan con tomate + cecina + nectarine 🍑 — clean light dinner, ~15g protein, fresh tomato and fruit fiber to slow the bread. Pred ~107. One small note: this is your 2nd cured-meat hit of the day (lomo chips at the golf course were #1), so you're one over the ��1×/day goal today — not a setback, just naming it. Tomorrow we reset.]",
+    "title": "Dinner (light): pan con tomate (half slice of toasted bread topped with fresh tomato slices), shaved cecina (Spanish cured beef), and a nectarine on the side (BG: 73 mg/dL Flat) (Pred: 102-112 mg/dL @ 10:55 PM) (Protein: 15g , Carbs: ~28g , Cals: ~200) [Coach: Pan con tomate + cecina + nectarine 🍑 — clean light dinner, ~15g protein, fresh tomato and fruit fiber to slow the bread. Pred ~107. One small note: this is your 2nd cured-meat hit of the day (lomo chips at the golf course were #1), so you're one over the ≤1×/day goal today — not a setback, just naming it. Tomorrow we reset.]",
     "type": "Dinner",
     "date": "2026-06-01T21:39:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-01/c33fa2cdf883cff6.jpg",
