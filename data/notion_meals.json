@@ -4,7 +4,7 @@
     "title": "Dinner (cont.): 1 medium nectarine (BG: 135 mg/dL Flat) (Pred: 188-198 mg/dL @ 10:49 PM) (Protein: 1g , Carbs: ~13g , Cals: ~60) [Cumulative Dinner: ~44g carbs total] [Coach: Nectarine 🍑 — whole-fruit fiber and natural sweetness, a clean fruit dessert. Cumulative dinner now ~31g protein on ~44g carbs. Coming in at 142 from earlier ice-cream means Pred drifts to ~193 by 10:49 PM though — a walk before bed would meaningfully bring the night curve down.]",
     "type": "Dinner",
     "date": "2026-06-03T21:45:00.000+02:00",
-    "photo": "https://iili.io/CK5wdIj.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-03/e7c32855d02a3c5f.jpg",
     "carbs": 13,
     "cals": 60,
     "delta": null,
@@ -15,7 +15,7 @@
     "title": "Dinner: grilled multigrain seeded sandwich with turkey breast (NOT cured) and cheese (BG: 142 mg/dL Flat) (Pred: 172-182 mg/dL @ 10:49 PM) (Protein: 30g , Carbs: ~31g , Cals: ~340) [Coach: Turkey + cheese melt 🥪 — ~30g of solid protein, hits the muscle-preservation target, and turkey is all-natural so the day's cured-meat tally stays at 1 (the jamón at lunch). Starting BG is 142 (lingering from the ice-cream dessert), so Pred lands ~177 by 10:49 PM. A short post-dinner walk would help bring the evening curve back down before bed.]",
     "type": "Dinner",
     "date": "2026-06-03T21:33:00.000+02:00",
-    "photo": "https://iili.io/CK51TXt.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-03/bdbc290928ab509a.jpg",
     "carbs": 31,
     "cals": 340,
     "delta": null,
@@ -29,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-03/deccbfa174cb0ff8.jpg",
     "carbs": 45,
     "cals": 291,
-    "delta": null,
-    "peak": null
+    "delta": 45,
+    "peak": 164
   },
   {
     "id": "37485ec7-0668-813d-adde-e5e2eb19a72b",
