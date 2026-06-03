@@ -7,8 +7,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-02/aee63f0898a46527.jpg",
     "carbs": 38,
     "cals": 310,
-    "delta": null,
-    "peak": null
+    "delta": 26,
+    "peak": 142
   },
   {
     "id": "37385ec7-0668-81c4-9056-cf7fb06086a4",
@@ -34,7 +34,7 @@
   },
   {
     "id": "37385ec7-0668-8183-8c1d-effccc6f5326",
-    "title": "Breakfast: 1/2 serving plain yogurt topped with fresh mango cubes + 1 slice multigrain seeded toast with peanut butter and fresh mango cubes on top (BG: 100 mg/dL Flat) (Pred: 180-190 mg/dL @ 10:59 AM) (Protein: 17g , Carbs: ~45g , Cals: ~410) [Coach: Gorgeous breakfast �� — yogurt + PB stack ~13g of protein, multigrain seeded bread brings fiber, fresh mango carries whole-fruit fiber alongside its sugar. Cured-meat tally resets to 0 today, clean slate. ~45g carbs with AM cortisol pushes Pred ~185 by 11 AM — a short walk before then would clip the peak nicely. Beautiful GMI 6.0 starting move.]",
+    "title": "Breakfast: 1/2 serving plain yogurt topped with fresh mango cubes + 1 slice multigrain seeded toast with peanut butter and fresh mango cubes on top (BG: 100 mg/dL Flat) (Pred: 180-190 mg/dL @ 10:59 AM) (Protein: 17g , Carbs: ~45g , Cals: ~410) [Coach: Gorgeous breakfast 🥭 — yogurt + PB stack ~13g of protein, multigrain seeded bread brings fiber, fresh mango carries whole-fruit fiber alongside its sugar. Cured-meat tally resets to 0 today, clean slate. ~45g carbs with AM cortisol pushes Pred ~185 by 11 AM — a short walk before then would clip the peak nicely. Beautiful GMI 6.0 starting move.]",
     "type": "Breakfast",
     "date": "2026-06-02T09:32:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-02/3e7bd4aea6f380e7.jpg",
@@ -1376,7 +1376,7 @@
   },
   {
     "id": "35e85ec7-0668-8114-a3a2-d76cae048163",
-    "title": "Lunch: Slice of rustic dark bread, a slice of cheese, and 2 slices of jamón (BG: 119 mg/dL Flat) (Pred: 123-133 mg/dL @ 1:21 PM) (Protein: 18g | Carbs: ~16g | Cals: ~230) [Coach: Beautifully balanced 🥖 — solid protein from the cheese and jamón, modest carbs from the bread. Should land in a friendly range.]  [id:0e9e55e5]",
+    "title": "Lunch: Slice of rustic dark bread, a slice of cheese, and 2 slices of jamón (BG: 119 mg/dL Flat) (Pred: 123-133 mg/dL @ 1:21 PM) (Protein: 18g | Carbs: ~16g | Cals: ~230) [Coach: Beautifully balanced 🥖 �� solid protein from the cheese and jamón, modest carbs from the bread. Should land in a friendly range.]  [id:0e9e55e5]",
     "type": "Lunch",
     "date": "2026-05-07T11:28:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-07/81b0fed6df123246.jpg",
