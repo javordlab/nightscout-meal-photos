@@ -1,5 +1,16 @@
 [
   {
+    "id": "37485ec7-0668-81ae-b413-daba6975634c",
+    "title": "Breakfast: 2 slices of multigrain seeded toast topped with Asturian nata (fresh cream — Natas La Fontona) (BG: 109 mg/dL Flat) (Pred: 173-183 mg/dL @ 11:05 AM) (Protein: 8g , Carbs: ~32g , Cals: ~300) [Coach: Nata-on-toast 🐄 — beautiful Asturian treat. The cream is mostly fat, which slows the bread carbs but adds little protein. ~8g protein is light for breakfast (the ~20g muscle-preservation target), and ~32g carbs + AM cortisol pushes Pred toward 178. An egg or a bit of yogurt on the side would round it out. A walk in the next 45-60 min would clip the peak.]",
+    "type": "Breakfast",
+    "date": "2026-06-03T09:38:00.000+02:00",
+    "photo": "https://iili.io/CKJmPe4.jpg",
+    "carbs": 32,
+    "cals": 300,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37385ec7-0668-8172-a4c4-c1a3e49b37fb",
     "title": "Dinner: oreja con garbanzos (Spanish pig-ear stew with chickpeas in tomato-paprika sauce) with a piece of bread on the side (BG: 114 mg/dL Flat) (Pred: 153-163 mg/dL @ 10:29 PM) (Protein: 19g , Carbs: ~38g , Cals: ~310) [Coach: Oreja con garbanzos again 🍲 — same classic Spanish dish as May 31. Oreja is offal/casquería (NOT cured meat), tally stays at 0 today. Chickpeas bring fiber + ~6g plant protein on top of the ~10g from the oreja. ~38g carbs is moderate, Pred ~158. Solid GMI 6.0-supporting dinner.]",
     "type": "Dinner",
@@ -1376,7 +1387,7 @@
   },
   {
     "id": "35e85ec7-0668-8114-a3a2-d76cae048163",
-    "title": "Lunch: Slice of rustic dark bread, a slice of cheese, and 2 slices of jamón (BG: 119 mg/dL Flat) (Pred: 123-133 mg/dL @ 1:21 PM) (Protein: 18g | Carbs: ~16g | Cals: ~230) [Coach: Beautifully balanced 🥖 �� solid protein from the cheese and jamón, modest carbs from the bread. Should land in a friendly range.]  [id:0e9e55e5]",
+    "title": "Lunch: Slice of rustic dark bread, a slice of cheese, and 2 slices of jamón (BG: 119 mg/dL Flat) (Pred: 123-133 mg/dL @ 1:21 PM) (Protein: 18g | Carbs: ~16g | Cals: ~230) [Coach: Beautifully balanced 🥖 — solid protein from the cheese and jamón, modest carbs from the bread. Should land in a friendly range.]  [id:0e9e55e5]",
     "type": "Lunch",
     "date": "2026-05-07T11:28:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-07/81b0fed6df123246.jpg",
