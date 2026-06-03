@@ -1,5 +1,16 @@
 [
   {
+    "id": "37485ec7-0668-815f-93f3-ea0805e58263",
+    "title": "Dinner: grilled multigrain seeded sandwich with turkey breast (NOT cured) and cheese (BG: 142 mg/dL Flat) (Pred: 172-182 mg/dL @ 10:49 PM) (Protein: 30g , Carbs: ~31g , Cals: ~340) [Coach: Turkey + cheese melt 🥪 — ~30g of solid protein, hits the muscle-preservation target, and turkey is all-natural so the day's cured-meat tally stays at 1 (the jamón at lunch). Starting BG is 142 (lingering from the ice-cream dessert), so Pred lands ~177 by 10:49 PM. A short post-dinner walk would help bring the evening curve back down before bed.]",
+    "type": "Dinner",
+    "date": "2026-06-03T21:33:00.000+02:00",
+    "photo": "https://iili.io/CK51TXt.jpg",
+    "carbs": 31,
+    "cals": 340,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37485ec7-0668-8185-9e00-d7662db8eff9",
     "title": "Dessert/early dinner: wafer \"sandwich\" — 2 square wafers with ice cream (nata and chocolate flavors) and fresh raspberries in the middle (BG: 119 mg/dL Flat) (Pred: 166-176 mg/dL @ 7:21 PM) (Protein: 6g , Carbs: ~45g , Cals: ~291) [Coach: Wafer + ice cream + raspberries 🍦 — heads up, the ice cream pulls the carb load up to ~45g (vs my initial cream estimate of ~28g). The raspberries still bring fiber, but Pred shifts to ~171 by 7:21 PM. A short post-dessert walk would noticeably clip this peak.]",
     "type": "Dinner",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-03/29549d0fd0ca6291.jpg",
     "carbs": 12,
     "cals": 135,
-    "delta": null,
-    "peak": null
+    "delta": 45,
+    "peak": 145
   },
   {
     "id": "37485ec7-0668-81fe-9196-ee09c895f571",
@@ -29,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-03/8f45af4bb97dd05d.jpg",
     "carbs": 8,
     "cals": 305,
-    "delta": null,
-    "peak": null
+    "delta": 39,
+    "peak": 145
   },
   {
     "id": "37485ec7-0668-81ad-8654-dbe240865b79",
