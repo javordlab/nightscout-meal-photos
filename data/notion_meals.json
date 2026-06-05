@@ -1,16 +1,5 @@
 [
   {
-    "id": "37685ec7-0668-81fc-ae1a-fe311898a7c7",
-    "title": "Dinner (cont. — Dessert): small slice of Spanish-style cheesecake (burnt-top \"quemada\"), ~5 fresh strawberries, and cream drizzle — same plate as yesterday's dessert (BG: 122 mg/dL Flat) (Pred: 164-174 mg/dL @ 10:31 PM nominal — likely ~190-205 with the fat-heavy-cheesecake adjustment we just learned) (Protein: 6g , Carbs: ~24g , Cals: ~244) [Cumulative Dinner: ~68g carbs total] [Coach: Same cheesecake as yesterday 🍰 — let's apply the lesson. Nominal Pred is ~169, but with the cheesecake fat extending the curve we should plan for ~190-205. Two ways to soften it: (1) a 10-15 min walk in the next hour (indoor pacing/stairs if rain again), (2) the protein-rich turkey+cheese dinner you already ate is doing real work to slow it. Lesson from yesterday firmly in play.]",
-    "type": "Dinner",
-    "date": "2026-06-05T21:23:00.000+02:00",
-    "photo": "https://iili.io/Cfz9AUQ.jpg",
-    "carbs": 24,
-    "cals": 244,
-    "delta": null,
-    "peak": null
-  },
-  {
     "id": "37685ec7-0668-8144-918f-f443736ddbef",
     "title": "Lunch: grilled steak skewer (~150g, looks like a thin cut of entrecot or similar), sautéed mushrooms, and a piece of crusty bread (BG: 118 mg/dL Flat) (Pred: 124-134 mg/dL @ 4:52 PM) (Protein: 44g , Carbs: ~18g , Cals: ~410) [Coach: Steak + mushrooms + bread 🥩 — outstanding ~44g protein, well above the muscle-preservation target. Mushrooms bring fiber and umami, bread is the only meaningful carb. Pred only ~129 by 4:52. Beef isn't cured so the day's tally stays at 0. Textbook GMI 6.0 plate.]",
     "type": "Lunch",
@@ -26,11 +15,11 @@
     "title": "Breakfast (retroactively logged 06-05 21:25, time estimated from BG curve): scrambled eggs (~2 eggs), a small cluster of cherry tomatoes (red + yellow), and a slice of bread topped with melted cheese (BG: 103 mg/dL Flat — NS reading at 10:14) (Pred: 155-165 mg/dL @ 11:27 AM — historical, observed peak hit ~139 at 11:24) (Protein: 25g , Carbs: ~20g , Cals: ~345) [Coach: Beautiful protein-anchored breakfast 🍳 — ~25g protein from eggs + cheese hits the muscle-preservation target, cherry tomatoes bring fiber + lycopene, only 1 slice of bread keeps carbs modest. Model predicted ~160 peak, you actually landed at ~139 — Pred was slightly optimistic this morning, in your favor. Textbook GMI 6.0 morning plate.]",
     "type": "Breakfast",
     "date": "2026-06-05T10:00:00.000+02:00",
-    "photo": "https://iili.io/Cfz95JV.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-05/af076c7993873780.jpg",
     "carbs": 20,
     "cals": 345,
-    "delta": null,
-    "peak": null
+    "delta": 30,
+    "peak": 139
   },
   {
     "id": "37685ec7-0668-8178-814b-d89038122e77",
@@ -45,14 +34,14 @@
   },
   {
     "id": "37685ec7-0668-81a8-8ae9-cb4cf1a57246",
-    "title": "Lunch (retroactively logged 06-05 15:24, photo added 06-05 21:23): Swiss chard with olive oil, boiled potatoes, morcilla de León (Spanish FRESH blood sausage �� cooked, NOT cured), and a piece of bread on the side (BG: 115 mg/dL Flat — NS reading at 13:00) (Pred: 154-164 mg/dL @ 2:53 PM — historical) (Protein: 12g , Carbs: ~47g , Cals: ~370) [Coach: Lunch ~47g carbs (potatoes + rice in the morcilla + bread), Pred ~159 by 2:53 PM under the lunch intercept. Then the dessert at 14:15 stacked on top before lunch peaked — drove the 220 reading by 6 PM. Morcilla = fresh blood sausage (cooked, not cured), so it does NOT count toward the cured-meat tally. June 4 cured-meat = just the cecina at 6 PM = 1× total = on-target ✅]",
+    "title": "Lunch (retroactively logged 06-05 15:24, photo added 06-05 21:23): Swiss chard with olive oil, boiled potatoes, morcilla de León (Spanish FRESH blood sausage — cooked, NOT cured), and a piece of bread on the side (BG: 115 mg/dL Flat — NS reading at 13:00) (Pred: 154-164 mg/dL @ 2:53 PM — historical) (Protein: 12g , Carbs: ~47g , Cals: ~370) [Coach: Lunch ~47g carbs (potatoes + rice in the morcilla + bread), Pred ~159 by 2:53 PM under the lunch intercept. Then the dessert at 14:15 stacked on top before lunch peaked — drove the 220 reading by 6 PM. Morcilla = fresh blood sausage (cooked, not cured), so it does NOT count toward the cured-meat tally. June 4 cured-meat = just the cecina at 6 PM = 1× total = on-target ✅]",
     "type": "Lunch",
     "date": "2026-06-04T13:00:00.000+02:00",
-    "photo": "https://iili.io/Cfz9Tfj.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-04/306583e04004a12d.jpg",
     "carbs": 47,
     "cals": 370,
-    "delta": null,
-    "peak": null
+    "delta": 25,
+    "peak": 140
   },
   {
     "id": "37485ec7-0668-81b0-a97e-c7681e36e206",
