@@ -11,6 +11,17 @@
     "peak": null
   },
   {
+    "id": "37685ec7-0668-8178-814b-d89038122e77",
+    "title": "Lunch (cont. — Dessert, photo confirmed 06-05): slice of Spanish-style cheesecake (tarta de queso, burnt-top \"quemada\" style), fresh sliced strawberries, and cream/yogurt drizzle (BG: 105 mg/dL Flat — NS reading at 14:15) (Pred: 164-174 mg/dL @ 2:53 PM — historical, but observed peak hit 220 by 18:00) (Protein: 8g , Carbs: ~36g , Cals: ~335) [Cumulative Lunch: ~83g carbs total] [Coach: Dessert was modest 🍰 — cheesecake + strawberries + cream is ~36g carbs, not the 80g I back-calculated. Cumulative lunch + dessert was ~83g carbs. Model v3 predicted ~169 peak, but you observed 220 — a real +50 mg/dL underestimate. Likely culprits: (1) the **high-fat cheesecake prolongs and elevates the curve** beyond what a pure-carb model captures; (2) **no walk** removed your usual ~20-40 mg/dL peak-clip; (3) **stacking** lunch + dessert with no break means insulin response was already engaged when the second carb load arrived. Takeaway: fat-heavy desserts likely need an upward Pred adjustment going forward, and the walk matters even more for them.]",
+    "type": "Lunch",
+    "date": "2026-06-04T14:15:00.000+02:00",
+    "photo": "https://iili.io/CfFS5n2.jpg",
+    "carbs": 36,
+    "cals": 335,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37485ec7-0668-81b0-a97e-c7681e36e206",
     "title": "Dinner (cont.): 1 medium nectarine (BG: 135 mg/dL Flat) (Pred: 188-198 mg/dL @ 10:49 PM) (Protein: 1g , Carbs: ~13g , Cals: ~60) [Cumulative Dinner: ~44g carbs total] [Coach: Nectarine 🍑 — whole-fruit fiber and natural sweetness, a clean fruit dessert. Cumulative dinner now ~31g protein on ~44g carbs. Coming in at 142 from earlier ice-cream means Pred drifts to ~193 by 10:49 PM though — a walk before bed would meaningfully bring the night curve down.]",
     "type": "Dinner",
@@ -1552,7 +1563,7 @@
   },
   {
     "id": "35e85ec7-0668-81c0-a20f-c27f3c3aea32",
-    "title": "Lunch: 1 níspero (loquat) — peeled, with peel arranged like petals [Cumulative Lunch: ~49g carbs total] (BG: 96 mg/dL Flat) (Pred: 142-152 mg/dL @ 4:35 PM) (Protein: 0g | Carbs: ~3g | Cals: ~12) [Coach: Níspero ���� — small, sweet, almost free on BG. A tidy finish to a balanced lunch. Cumulative lunch lands in a comfortable zone.]  [id:d3766217]",
+    "title": "Lunch: 1 níspero (loquat) — peeled, with peel arranged like petals [Cumulative Lunch: ~49g carbs total] (BG: 96 mg/dL Flat) (Pred: 142-152 mg/dL @ 4:35 PM) (Protein: 0g | Carbs: ~3g | Cals: ~12) [Coach: Níspero 🍑 — small, sweet, almost free on BG. A tidy finish to a balanced lunch. Cumulative lunch lands in a comfortable zone.]  [id:d3766217]",
     "type": "Lunch",
     "date": "2026-05-05T14:57:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-05/fe7ed171b1a42e2b.jpg",
