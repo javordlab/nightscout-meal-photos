@@ -1,5 +1,16 @@
 [
   {
+    "id": "37685ec7-0668-8144-918f-f443736ddbef",
+    "title": "Lunch: grilled steak skewer (~150g, looks like a thin cut of entrecot or similar), sautéed mushrooms, and a piece of crusty bread (BG: 118 mg/dL Flat) (Pred: 124-134 mg/dL @ 4:52 PM) (Protein: 44g , Carbs: ~18g , Cals: ~410) [Coach: Steak + mushrooms + bread 🥩 — outstanding ~44g protein, well above the muscle-preservation target. Mushrooms bring fiber and umami, bread is the only meaningful carb. Pred only ~129 by 4:52. Beef isn't cured so the day's tally stays at 0. Textbook GMI 6.0 plate.]",
+    "type": "Lunch",
+    "date": "2026-06-05T14:59:00.000+02:00",
+    "photo": "https://iili.io/CfFli37.jpg",
+    "carbs": 18,
+    "cals": 410,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37485ec7-0668-81b0-a97e-c7681e36e206",
     "title": "Dinner (cont.): 1 medium nectarine (BG: 135 mg/dL Flat) (Pred: 188-198 mg/dL @ 10:49 PM) (Protein: 1g , Carbs: ~13g , Cals: ~60) [Cumulative Dinner: ~44g carbs total] [Coach: Nectarine 🍑 — whole-fruit fiber and natural sweetness, a clean fruit dessert. Cumulative dinner now ~31g protein on ~44g carbs. Coming in at 142 from earlier ice-cream means Pred drifts to ~193 by 10:49 PM though — a walk before bed would meaningfully bring the night curve down.]",
     "type": "Dinner",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-03/e7c32855d02a3c5f.jpg",
     "carbs": 13,
     "cals": 60,
-    "delta": null,
-    "peak": null
+    "delta": 19,
+    "peak": 154
   },
   {
     "id": "37485ec7-0668-815f-93f3-ea0805e58263",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-03/bdbc290928ab509a.jpg",
     "carbs": 31,
     "cals": 340,
-    "delta": null,
-    "peak": null
+    "delta": 13,
+    "peak": 154
   },
   {
     "id": "37485ec7-0668-8185-9e00-d7662db8eff9",
@@ -1541,7 +1552,7 @@
   },
   {
     "id": "35e85ec7-0668-81c0-a20f-c27f3c3aea32",
-    "title": "Lunch: 1 níspero (loquat) — peeled, with peel arranged like petals [Cumulative Lunch: ~49g carbs total] (BG: 96 mg/dL Flat) (Pred: 142-152 mg/dL @ 4:35 PM) (Protein: 0g | Carbs: ~3g | Cals: ~12) [Coach: Níspero 🍑 — small, sweet, almost free on BG. A tidy finish to a balanced lunch. Cumulative lunch lands in a comfortable zone.]  [id:d3766217]",
+    "title": "Lunch: 1 níspero (loquat) — peeled, with peel arranged like petals [Cumulative Lunch: ~49g carbs total] (BG: 96 mg/dL Flat) (Pred: 142-152 mg/dL @ 4:35 PM) (Protein: 0g | Carbs: ~3g | Cals: ~12) [Coach: Níspero ���� — small, sweet, almost free on BG. A tidy finish to a balanced lunch. Cumulative lunch lands in a comfortable zone.]  [id:d3766217]",
     "type": "Lunch",
     "date": "2026-05-05T14:57:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-05/fe7ed171b1a42e2b.jpg",
