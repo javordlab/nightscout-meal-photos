@@ -1,5 +1,16 @@
 [
   {
+    "id": "37785ec7-0668-81b4-967c-c0f42a770497",
+    "title": "Lunch: stir-fried ramen with chicken, sliced mushrooms, carrots, and scallions (BG: 126 mg/dL Flat) (Pred: 153-163 mg/dL @ 3:47 PM) (Protein: 32g , Carbs: ~37g , Cals: ~305) [Coach: Ramen stir-fry 🍜 — well-balanced bowl: ~32g protein from the chicken hits the muscle-preservation target, real veggies bring fiber, ramen brings the carbs. Pred ~158 by 3:47. Chicken isn't cured so today's cured-meat tally stays at 1× (the lomo earlier). Solid GMI 6.0 plate.]",
+    "type": "Lunch",
+    "date": "2026-06-06T13:54:00.000+02:00",
+    "photo": "https://iili.io/CfGIZut.jpg",
+    "carbs": 37,
+    "cals": 305,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37785ec7-0668-81cf-be1c-c14017f0d633",
     "title": "Snack (post-inspection reward): mini baguette sandwich with cured lomo embuchado (BG: 129 mg/dL Flat) (Pred: 161-171 mg/dL @ 1:57 PM) (Protein: 15g , Carbs: ~25g , Cals: ~245) [Coach: Earned snack 🥖 — lomo brings ~10g protein and ~25g carbs from the baguette. Pred ~166 by 1:57. Lomo embuchado is your 1st (and on-target) cured-meat hit for today. After hunting spiders, vacuuming, and bagging linens for 2 hours, this is honestly the most justified mid-morning snack on record. The card-on-the-cutting-board calibration is a nice touch 😄]",
     "type": "Snack",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-06/8539b5b736c8de9e.jpg",
     "carbs": 28,
     "cals": 300,
-    "delta": null,
-    "peak": null
+    "delta": 34,
+    "peak": 147
   },
   {
     "id": "37685ec7-0668-8144-918f-f443736ddbef",
@@ -2740,7 +2751,7 @@
   },
   {
     "id": "33f85ec7-0668-8133-91e9-c9a65630ce07",
-    "title": "Lunch: Dim sum plate — chicken feet, stuffed tofu roll, braised black mushroom [Cumulative Lunch: ~88g carbs total] [Coach: Good protein boost from this plate — chicken feet and stuffed tofu roll add substance. Cumulative carbs are at ~88g for the meal but Trulicity and Metformin together give you good glucose resilience. A walk after lunch would be a great idea.] (BG: 103 mg/dL Flat) (Protein: 16g) (Pred: 149-159 mg/dL @ 3:21 PM)",
+    "title": "Lunch: Dim sum plate — chicken feet, stuffed tofu roll, braised black mushroom [Cumulative Lunch: ~88g carbs total] [Coach: Good protein boost from this plate �� chicken feet and stuffed tofu roll add substance. Cumulative carbs are at ~88g for the meal but Trulicity and Metformin together give you good glucose resilience. A walk after lunch would be a great idea.] (BG: 103 mg/dL Flat) (Protein: 16g) (Pred: 149-159 mg/dL @ 3:21 PM)",
     "type": "Lunch",
     "date": "2026-04-11T13:40:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-11/420265c12c8f58f1.jpg",
