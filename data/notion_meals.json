@@ -1,5 +1,16 @@
 [
   {
+    "id": "37785ec7-0668-81cf-be1c-c14017f0d633",
+    "title": "Snack (post-inspection reward): mini baguette sandwich with cured lomo embuchado (BG: 129 mg/dL Flat) (Pred: 161-171 mg/dL @ 1:57 PM) (Protein: 15g , Carbs: ~25g , Cals: ~245) [Coach: Earned snack 🥖 — lomo brings ~10g protein and ~25g carbs from the baguette. Pred ~166 by 1:57. Lomo embuchado is your 1st (and on-target) cured-meat hit for today. After hunting spiders, vacuuming, and bagging linens for 2 hours, this is honestly the most justified mid-morning snack on record. The card-on-the-cutting-board calibration is a nice touch 😄]",
+    "type": "Snack",
+    "date": "2026-06-06T11:51:00.000+02:00",
+    "photo": "https://iili.io/Cf026iu.jpg",
+    "carbs": 25,
+    "cals": 245,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37785ec7-0668-8105-a2e7-e4fc65e728de",
     "title": "Breakfast: 1 slice of multigrain seeded toast with peanut butter and a generous handful of fresh blueberries (BG: 119 mg/dL Flat) (Pred: 181-191 mg/dL @ 11:06 AM) (Protein: 12g , Carbs: ~28g , Cals: ~300) [Coach: PB + blueberries on toast 🫐 — classic clean breakfast. PB brings ~8g protein + healthy fat to slow the bread, blueberries layer in fiber + polyphenols. ~12g protein is on the lighter side of the 20g target. Note your starting BG (119) is slightly above your usual ~100-110 morning fasting — the delayed cortisol from the no-sleep night I flagged yesterday may be showing up. Pred ~186 by 11:06; a short walk after would clip it nicely.]",
     "type": "Breakfast",
