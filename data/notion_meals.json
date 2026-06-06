@@ -1,5 +1,16 @@
 [
   {
+    "id": "37785ec7-0668-813f-a1db-fc8300e5f504",
+    "title": "Dinner: Swiss chard with potatoes topped with melted cheese (béchamel-style), plus a slice of whole wheat seeded bread with liver pâté (BG: 121 mg/dL Flat) (Pred: 152-162 mg/dL @ 9:31 PM) (Protein: 18g , Carbs: ~32g , Cals: ~370) [Coach: Hearty cooked-veggie dinner 🥬 — Swiss chard + potatoes + cheese, bread with pâté brings ~5g more protein. ~18g total protein on ~32g carbs, Pred ~157. Pâté is cooked organ meat (iron + B12, not cured), so cured-meat tally stays at 1× from this morning. Heads up on the Swiss chard at dinner — leafy greens have a mild diuretic effect that can pull you out of bed overnight. Given your sleep is already recovering from the bites, just a heads up; not a problem if you hydrate moderately before bed rather than just before lying down.]",
+    "type": "Dinner",
+    "date": "2026-06-06T20:15:00.000+02:00",
+    "photo": "https://iili.io/CfOcJrx.jpg",
+    "carbs": 32,
+    "cals": 370,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37785ec7-0668-811a-bc49-e558d08808e9",
     "title": "Dessert (post-walk): fresh mango cubes with natas (Asturian fresh cream — confirmed) (BG: 116 mg/dL Flat) (Pred: 118-128 mg/dL @ 4:45 PM) (Protein: 2g , Carbs: ~16g , Cals: ~155) [Coach: Mango + natas after a walk 🥭 — whole-fruit fiber, modest ~16g carbs, the cream fat slows it nicely. Walk-then-dessert sequence again, exactly the pattern that's keeping you at 6.0. Pred ~123 by 4:45 PM. Beautifully restrained portion.]",
     "type": "Dessert",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-06/2fa69348f02bffbe.jpg",
     "carbs": 16,
     "cals": 155,
-    "delta": null,
-    "peak": null
+    "delta": 31,
+    "peak": 147
   },
   {
     "id": "37785ec7-0668-81b4-967c-c0f42a770497",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-06/6136f38ead812b9c.jpg",
     "carbs": 25,
     "cals": 203,
-    "delta": null,
-    "peak": null
+    "delta": 9,
+    "peak": 135
   },
   {
     "id": "37785ec7-0668-81cf-be1c-c14017f0d633",
@@ -67,7 +78,7 @@
   },
   {
     "id": "37685ec7-0668-8178-814b-d89038122e77",
-    "title": "Lunch (cont. — Dessert, photo + portion confirmed 06-05): a small piece of Spanish-style cheesecake (tarta de queso, burnt-top \"quemada\" style), about 5 fresh strawberries, and some cream (BG: 105 mg/dL Flat — NS reading at 14:15) (Pred: 155-165 mg/dL @ 2:53 PM — historical, but observed peak hit 220 by 18:00) (Protein: 6g , Carbs: ~24g , Cals: ~244) [Cumulative Lunch: ~71g carbs total] [Coach: Confirmed small portion ��� — small cheesecake slice + 5 berries + cream = ~24g carbs. Cumulative lunch + dessert: ~71g carbs. Model v3 predicted ~160 peak, but you observed **220 — a +60 mg/dL underestimate**, which is large. Possible causes: (1) the **cheesecake fat extends + elevates the curve** beyond what a pure-carb model captures; (2) **no walk** = no ~20-40 mg/dL peak-clip; (3) **stacking** lunch + dessert before lunch had peaked; (4) and possibly an underlying factor that day (stress, sleep, dehydration, illness, hormones). With portions this modest, the food alone shouldn't have driven 220 — so the missing walk + a potential other factor are doing real work here. Worth watching whether this pattern repeats with similar meals on better-weather (walked) days.]",
+    "title": "Lunch (cont. — Dessert, photo + portion confirmed 06-05): a small piece of Spanish-style cheesecake (tarta de queso, burnt-top \"quemada\" style), about 5 fresh strawberries, and some cream (BG: 105 mg/dL Flat — NS reading at 14:15) (Pred: 155-165 mg/dL @ 2:53 PM — historical, but observed peak hit 220 by 18:00) (Protein: 6g , Carbs: ~24g , Cals: ~244) [Cumulative Lunch: ~71g carbs total] [Coach: Confirmed small portion 🍰 — small cheesecake slice + 5 berries + cream = ~24g carbs. Cumulative lunch + dessert: ~71g carbs. Model v3 predicted ~160 peak, but you observed **220 — a +60 mg/dL underestimate**, which is large. Possible causes: (1) the **cheesecake fat extends + elevates the curve** beyond what a pure-carb model captures; (2) **no walk** = no ~20-40 mg/dL peak-clip; (3) **stacking** lunch + dessert before lunch had peaked; (4) and possibly an underlying factor that day (stress, sleep, dehydration, illness, hormones). With portions this modest, the food alone shouldn't have driven 220 — so the missing walk + a potential other factor are doing real work here. Worth watching whether this pattern repeats with similar meals on better-weather (walked) days.]",
     "type": "Lunch",
     "date": "2026-06-04T14:15:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-04/eca4f97bbfff6579.jpg",
@@ -177,7 +188,7 @@
   },
   {
     "id": "37385ec7-0668-81c4-9056-cf7fb06086a4",
-    "title": "Lunch: white fish (hake/bacalao) in salsa verde with boiled potatoes (~5-6 small ones) and a side of pisto-style chopped veggies (zucchini, eggplant, red pepper, carrot), plus 1 small slice of bread (BG: 96 mg/dL Flat) (Pred: 139-149 mg/dL @ 4:00 PM) (Protein: 39g , Carbs: ~50g , Cals: ~450) [Coach: Beautiful Spanish lunch 🐟 — ~39g protein from the fish is excellent for the muscle-preservation goal, pisto veggies bring fiber, salsa verde is mostly parsley + garlic + olive oil. Boiled potatoes + bread are the carb load (~40g of that). Pred ~144 by 4 PM. Skip the cured meat today (already at 0) and you've got a clean GMI 6.0-supporting plate.]",
+    "title": "Lunch: white fish (hake/bacalao) in salsa verde with boiled potatoes (~5-6 small ones) and a side of pisto-style chopped veggies (zucchini, eggplant, red pepper, carrot), plus 1 small slice of bread (BG: 96 mg/dL Flat) (Pred: 139-149 mg/dL @ 4:00 PM) (Protein: 39g , Carbs: ~50g , Cals: ~450) [Coach: Beautiful Spanish lunch ���� — ~39g protein from the fish is excellent for the muscle-preservation goal, pisto veggies bring fiber, salsa verde is mostly parsley + garlic + olive oil. Boiled potatoes + bread are the carb load (~40g of that). Pred ~144 by 4 PM. Skip the cured meat today (already at 0) and you've got a clean GMI 6.0-supporting plate.]",
     "type": "Lunch",
     "date": "2026-06-02T14:07:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-02/7ba18977beb1e512.jpg",
