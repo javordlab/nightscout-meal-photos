@@ -1,5 +1,16 @@
 [
   {
+    "id": "37785ec7-0668-811a-bc49-e558d08808e9",
+    "title": "Dessert (post-walk): fresh mango cubes with natas (Asturian fresh cream — confirmed) (BG: 116 mg/dL Flat) (Pred: 118-128 mg/dL @ 4:45 PM) (Protein: 2g , Carbs: ~16g , Cals: ~155) [Coach: Mango + natas after a walk 🥭 — whole-fruit fiber, modest ~16g carbs, the cream fat slows it nicely. Walk-then-dessert sequence again, exactly the pattern that's keeping you at 6.0. Pred ~123 by 4:45 PM. Beautifully restrained portion.]",
+    "type": "Dessert",
+    "date": "2026-06-06T15:03:00.000+02:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-06/2fa69348f02bffbe.jpg",
+    "carbs": 16,
+    "cals": 155,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37785ec7-0668-81b4-967c-c0f42a770497",
     "title": "Lunch (~2/3 portion eaten — saved 1/3, satisfied early): stir-fried ramen with chicken, sliced mushrooms, carrots, and scallions (BG: 126 mg/dL Flat) (Pred: 142-152 mg/dL @ 3:47 PM) (Protein: 21g , Carbs: ~25g , Cals: ~203) [Coach: Listening to the satiety signal 👏 — taking out the last third because you're full is exactly the move for the GMI 6.0 push. Still ~21g protein and only ~25g carbs, Pred drops to ~147. Mindful eating just shaved ~10 mg/dL off the projected peak. Clean lunch.]",
     "type": "Lunch",
@@ -56,7 +67,7 @@
   },
   {
     "id": "37685ec7-0668-8178-814b-d89038122e77",
-    "title": "Lunch (cont. — Dessert, photo + portion confirmed 06-05): a small piece of Spanish-style cheesecake (tarta de queso, burnt-top \"quemada\" style), about 5 fresh strawberries, and some cream (BG: 105 mg/dL Flat — NS reading at 14:15) (Pred: 155-165 mg/dL @ 2:53 PM — historical, but observed peak hit 220 by 18:00) (Protein: 6g , Carbs: ~24g , Cals: ~244) [Cumulative Lunch: ~71g carbs total] [Coach: Confirmed small portion 🍰 — small cheesecake slice + 5 berries + cream = ~24g carbs. Cumulative lunch + dessert: ~71g carbs. Model v3 predicted ~160 peak, but you observed **220 — a +60 mg/dL underestimate**, which is large. Possible causes: (1) the **cheesecake fat extends + elevates the curve** beyond what a pure-carb model captures; (2) **no walk** = no ~20-40 mg/dL peak-clip; (3) **stacking** lunch + dessert before lunch had peaked; (4) and possibly an underlying factor that day (stress, sleep, dehydration, illness, hormones). With portions this modest, the food alone shouldn't have driven 220 — so the missing walk + a potential other factor are doing real work here. Worth watching whether this pattern repeats with similar meals on better-weather (walked) days.]",
+    "title": "Lunch (cont. — Dessert, photo + portion confirmed 06-05): a small piece of Spanish-style cheesecake (tarta de queso, burnt-top \"quemada\" style), about 5 fresh strawberries, and some cream (BG: 105 mg/dL Flat — NS reading at 14:15) (Pred: 155-165 mg/dL @ 2:53 PM — historical, but observed peak hit 220 by 18:00) (Protein: 6g , Carbs: ~24g , Cals: ~244) [Cumulative Lunch: ~71g carbs total] [Coach: Confirmed small portion ��� — small cheesecake slice + 5 berries + cream = ~24g carbs. Cumulative lunch + dessert: ~71g carbs. Model v3 predicted ~160 peak, but you observed **220 — a +60 mg/dL underestimate**, which is large. Possible causes: (1) the **cheesecake fat extends + elevates the curve** beyond what a pure-carb model captures; (2) **no walk** = no ~20-40 mg/dL peak-clip; (3) **stacking** lunch + dessert before lunch had peaked; (4) and possibly an underlying factor that day (stress, sleep, dehydration, illness, hormones). With portions this modest, the food alone shouldn't have driven 220 — so the missing walk + a potential other factor are doing real work here. Worth watching whether this pattern repeats with similar meals on better-weather (walked) days.]",
     "type": "Lunch",
     "date": "2026-06-04T14:15:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-04/eca4f97bbfff6579.jpg",
