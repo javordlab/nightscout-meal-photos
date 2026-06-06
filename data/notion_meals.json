@@ -1,5 +1,16 @@
 [
   {
+    "id": "37785ec7-0668-8181-b96c-eadad4c8ef22",
+    "title": "Dinner (cont. — Dessert): wafer ice cream sandwich (2 wafer biscuits with chocolate + vanilla cream ice cream filling) (BG: 130 mg/dL Flat) (Pred: 160-170 mg/dL @ 9:31 PM) (Protein: 3g , Carbs: ~26g , Cals: ~190) [Cumulative Dinner: ~58g carbs total] [Coach: Wafer ice-cream sandwich 🍦 — chocolate + vanilla, ~26g of mostly-sugar carbs. Cumulative dinner now ~58g carbs (crosses into the 0.8 multiplier band), Pred ~165 by 9:31. The 0.8 factor softens what would otherwise be a steeper curve — but a walk after would still help bring the night number down.]",
+    "type": "Dinner",
+    "date": "2026-06-06T21:13:00.000+02:00",
+    "photo": "https://iili.io/CfeiRx2.jpg",
+    "carbs": 26,
+    "cals": 190,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37785ec7-0668-813f-a1db-fc8300e5f504",
     "title": "Dinner: Swiss chard with potatoes topped with melted cheese (béchamel-style), plus a slice of whole wheat seeded bread with liver pâté (BG: 121 mg/dL Flat) (Pred: 152-162 mg/dL @ 9:31 PM) (Protein: 18g , Carbs: ~32g , Cals: ~370) [Coach: Hearty cooked-veggie dinner 🥬 — Swiss chard + potatoes + cheese, bread with pâté brings ~5g more protein. ~18g total protein on ~32g carbs, Pred ~157. Pâté is cooked organ meat (iron + B12, not cured), so cured-meat tally stays at 1× from this morning. Heads up on the Swiss chard at dinner — leafy greens have a mild diuretic effect that can pull you out of bed overnight. Given your sleep is already recovering from the bites, just a heads up; not a problem if you hydrate moderately before bed rather than just before lying down.]",
     "type": "Dinner",
