@@ -1,5 +1,16 @@
 [
   {
+    "id": "37885ec7-0668-8103-9dd9-e4a216870261",
+    "title": "Breakfast: open-faced multigrain seeded toast with turkey breast and generously melted cheese on top, plus a café con leche (BG: 111 mg/dL Flat) (Pred: 166-176 mg/dL @ 11:30 AM) (Protein: 30g , Carbs: ~22g , Cals: ~350) [Coach: Protein-rich morning 🥪 — ~30g protein hits the muscle-preservation target easily (turkey + cheese + a little milk in the café), modest ~22g carbs from the bread + lactose. Pred ~171 by 11:30. Turkey is all-natural so cured-meat tally starts at 0. Morning BG back to ~111 — a real recovery sign after the bite-disrupted nights.]",
+    "type": "Breakfast",
+    "date": "2026-06-07T10:03:00.000+02:00",
+    "photo": "https://iili.io/Cfi3out.jpg",
+    "carbs": 22,
+    "cals": 350,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37785ec7-0668-8181-b96c-eadad4c8ef22",
     "title": "Dinner (cont. — Dessert): wafer ice cream sandwich (2 wafer biscuits with chocolate + vanilla cream ice cream filling) (BG: 130 mg/dL Flat) (Pred: 160-170 mg/dL @ 9:31 PM) (Protein: 3g , Carbs: ~26g , Cals: ~190) [Cumulative Dinner: ~58g carbs total] [Coach: Wafer ice-cream sandwich 🍦 — chocolate + vanilla, ~26g of mostly-sugar carbs. Cumulative dinner now ~58g carbs (crosses into the 0.8 multiplier band), Pred ~165 by 9:31. The 0.8 factor softens what would otherwise be a steeper curve — but a walk after would still help bring the night number down.]",
     "type": "Dinner",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-06/976f71f1626bbf32.jpg",
     "carbs": 26,
     "cals": 190,
-    "delta": null,
-    "peak": null
+    "delta": 36,
+    "peak": 157
   },
   {
     "id": "37785ec7-0668-813f-a1db-fc8300e5f504",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-06/3fd594e741b4e6e4.jpg",
     "carbs": 32,
     "cals": 370,
-    "delta": null,
-    "peak": null
+    "delta": 21,
+    "peak": 142
   },
   {
     "id": "37785ec7-0668-811a-bc49-e558d08808e9",
@@ -2377,7 +2388,7 @@
   },
   {
     "id": "35e85ec7-0668-814c-8516-fdba4da043c0",
-    "title": "Dinner: Leftover Chinese — mapo tofu, white rice, half duck flatbread burger, cilantro and scallion beef, and 1 soup dumpling (xiao long bao) (BG: 103 mg/dL Flat) (Pred: 154-164 mg/dL @ 8:21 PM) (Protein: 49g | Carbs: ~72g | Cals: ~795) [Coach: A hearty protein-rich leftover plate ��� mapo tofu, beef, and the dumpling cover the protein nicely. Rice plus flatbread is a double-starch combo that pushes carbs higher, so expect a meaningful rise. Your Metformin and earlier walks are still working in your favor.]  [id:50a4e61a]",
+    "title": "Dinner: Leftover Chinese — mapo tofu, white rice, half duck flatbread burger, cilantro and scallion beef, and 1 soup dumpling (xiao long bao) (BG: 103 mg/dL Flat) (Pred: 154-164 mg/dL @ 8:21 PM) (Protein: 49g | Carbs: ~72g | Cals: ~795) [Coach: A hearty protein-rich leftover plate — mapo tofu, beef, and the dumpling cover the protein nicely. Rice plus flatbread is a double-starch combo that pushes carbs higher, so expect a meaningful rise. Your Metformin and earlier walks are still working in your favor.]  [id:50a4e61a]",
     "type": "Dinner",
     "date": "2026-04-19T19:05:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-19/b75de3993626a250.jpg",
