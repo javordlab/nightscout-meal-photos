@@ -81,7 +81,7 @@
                 const m = pst.getUTCMinutes().toString().padStart(2, '0');
                 const ampm = h >= 12 ? 'PM' : 'AM';
                 h = h % 12;
-                h = h ? h : 12;
+                h = h ? h : 12; 
                 return h + ':' + m + ' ' + ampm;
             } catch(e) { return "??:??"; }
         }
