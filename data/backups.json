@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-08T18:30:53.935Z",
+  "lastUpdated": "2026-06-08T18:37:01.374Z",
   "tokenUsage": [
     {
       "platform": "Kimi (Ollama)",
@@ -21,159 +21,159 @@
     }
   ],
   "database": {
-    "glucose": 29118,
-    "notion": 1581
+    "glucose": 29119,
+    "notion": 1749
   },
   "syncHistory": [
     {
       "date": "2026-05-10",
       "glucose": 21022,
-      "notion": 1330
+      "notion": 1140
     },
     {
       "date": "2026-05-11",
       "glucose": 21309,
-      "notion": 1351
+      "notion": 1156
     },
     {
       "date": "2026-05-12",
       "glucose": 21595,
-      "notion": 1367
+      "notion": 1172
     },
     {
       "date": "2026-05-13",
       "glucose": 21876,
-      "notion": 1393
+      "notion": 1198
     },
     {
       "date": "2026-05-14",
       "glucose": 22163,
-      "notion": 1415
+      "notion": 1220
     },
     {
       "date": "2026-05-15",
       "glucose": 22436,
-      "notion": 1451
+      "notion": 1245
     },
     {
       "date": "2026-05-16",
       "glucose": 22724,
-      "notion": 1478
+      "notion": 1271
     },
     {
       "date": "2026-05-17",
       "glucose": 23011,
-      "notion": 1502
+      "notion": 1294
     },
     {
       "date": "2026-05-18",
       "glucose": 23295,
-      "notion": 1529
+      "notion": 1320
     },
     {
       "date": "2026-05-19",
       "glucose": 23579,
-      "notion": 1546
+      "notion": 1337
     },
     {
       "date": "2026-05-20",
       "glucose": 23865,
-      "notion": 1565
+      "notion": 1358
     },
     {
       "date": "2026-05-21",
       "glucose": 24151,
-      "notion": 1581
+      "notion": 1379
     },
     {
       "date": "2026-05-22",
       "glucose": 24437,
-      "notion": 1581
+      "notion": 1406
     },
     {
       "date": "2026-05-23",
       "glucose": 24724,
-      "notion": 1581
+      "notion": 1416
     },
     {
       "date": "2026-05-24",
       "glucose": 25000,
-      "notion": 1581
+      "notion": 1438
     },
     {
       "date": "2026-05-25",
       "glucose": 25286,
-      "notion": 1581
+      "notion": 1464
     },
     {
       "date": "2026-05-26",
       "glucose": 25571,
-      "notion": 1581
+      "notion": 1491
     },
     {
       "date": "2026-05-27",
       "glucose": 25857,
-      "notion": 1581
+      "notion": 1514
     },
     {
       "date": "2026-05-28",
       "glucose": 26141,
-      "notion": 1581
+      "notion": 1539
     },
     {
       "date": "2026-05-29",
       "glucose": 26412,
-      "notion": 1581
+      "notion": 1554
     },
     {
       "date": "2026-05-30",
       "glucose": 26698,
-      "notion": 1581
+      "notion": 1579
     },
     {
       "date": "2026-05-31",
       "glucose": 26982,
-      "notion": 1581
+      "notion": 1597
     },
     {
       "date": "2026-06-01",
       "glucose": 27248,
-      "notion": 1581
+      "notion": 1619
     },
     {
       "date": "2026-06-02",
       "glucose": 27482,
-      "notion": 1581
+      "notion": 1637
     },
     {
       "date": "2026-06-03",
       "glucose": 27767,
-      "notion": 1581
+      "notion": 1659
     },
     {
       "date": "2026-06-04",
       "glucose": 28043,
-      "notion": 1581
+      "notion": 1675
     },
     {
       "date": "2026-06-05",
       "glucose": 28327,
-      "notion": 1581
+      "notion": 1695
     },
     {
       "date": "2026-06-06",
       "glucose": 28613,
-      "notion": 1581
+      "notion": 1717
     },
     {
       "date": "2026-06-07",
       "glucose": 28900,
-      "notion": 1581
+      "notion": 1735
     },
     {
       "date": "2026-06-08",
-      "glucose": 29118,
-      "notion": 1581
+      "glucose": 29119,
+      "notion": 1749
     }
   ],
   "glucoseTrend": [
@@ -33844,6 +33844,10 @@
     {
       "t": "2026-06-08T18:29:58.000Z",
       "v": 143
+    },
+    {
+      "t": "2026-06-08T18:34:57.000Z",
+      "v": 144
     }
   ],
   "backups": [
