@@ -1,5 +1,16 @@
 [
   {
+    "id": "37985ec7-0668-8195-a546-c5d74553e3ec",
+    "title": "Snack (pre-lunch): ~12 black olives (BG: 123 mg/dL Flat) (Pred: 126-136 mg/dL @ 3:22 PM) (Protein: 0g , Carbs: ~2g , Cals: ~50) [Coach: Olives 🫒 — basically a free food for blood sugar: healthy monounsaturated fat, ~2g carbs total. Pred barely nudges (~131). Cured-meat tally stays at 0. Smart pre-lunch nibble.]",
+    "type": "Snack",
+    "date": "2026-06-08T13:16:00.000+02:00",
+    "photo": "https://iili.io/Cq7WgWJ.jpg",
+    "carbs": 2,
+    "cals": 50,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37885ec7-0668-8131-9bef-f0dcb260b073",
     "title": "Dinner: Spanish-style omelette (~2 eggs with a slice of cheese inside) with a piece of crusty white bread on the side (BG: 123 mg/dL Flat) (Pred: 143-153 mg/dL @ 10:06 PM) (Protein: 25g , Carbs: ~22g , Cals: ~360) [Coach: Solid simple dinner 🍳 — ~25g protein now with the cheese (eggs + cheese is a great pair), ~22g carbs from the bread. Pred ~148 by 10:06. Cured-meat tally stays at 0. Clean GMI 6.0 close.]",
     "type": "Dinner",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-07/c76c85358f4e1e88.jpg",
     "carbs": 22,
     "cals": 360,
-    "delta": null,
-    "peak": null
+    "delta": 44,
+    "peak": 167
   },
   {
     "id": "37885ec7-0668-8103-9dd9-e4a216870261",
