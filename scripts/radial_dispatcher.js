@@ -499,6 +499,39 @@ async function main() {
       } else {
         console.log(`  -> NS ${nsRes.status}: ${nsRes.treatmentId || 'n/a'}`);
         metrics.ns_ok++;
+
+        // Persist the NS treatment_id back to sync_state. The skip-gate
+        // (line ~432) skips an entry only when ONE sync_state record holds
+        // BOTH nightscout.treatment_id AND notion.page_id. radial never wrote
+        // the treatment_id back, so any entry whose page_id came from
+        // unified_sync (or whose ns id was never recorded) failed the gate and
+        // re-PUT to Nightscout every cron tick — the cause of the ~5-min runs.
+        //
+        // Co-locate the treatment_id on the SAME record that already holds the
+        // page_id (matched by timestamp+user, like the skip-gate). Keying by
+        // nsEntryKey alone risks landing on a different record under entry_key
+        // drift, leaving the two ids split across records — still unskippable.
+        if (nsRes.treatmentId) {
+          const entriesObj = syncState.entries || {};
+          const targetKey = Object.keys(entriesObj).find(
+            k => entriesObj[k].timestamp === entryData.iso &&
+                 entriesObj[k].user === entryData.user &&
+                 entriesObj[k].notion?.page_id
+          ) || nsEntryKey;
+          const prevNsId = entriesObj[targetKey]?.nightscout?.treatment_id || null;
+          if (prevNsId !== nsRes.treatmentId) {
+            upsertEntry(syncState, targetKey, {
+              timestamp: entryData.iso,
+              user: entryData.user,
+              category: entryData.category,
+              nightscout: {
+                treatment_id: nsRes.treatmentId,
+                last_synced_at: new Date().toISOString()
+              }
+            });
+            saveSyncState(SYNC_STATE_PATH, syncState);
+          }
+        }
       }
     }
 
