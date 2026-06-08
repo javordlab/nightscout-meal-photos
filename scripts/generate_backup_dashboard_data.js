@@ -132,6 +132,11 @@ function main() {
     const dbStats = getDatabaseStats();
     const data = {
         lastUpdated: new Date().toISOString(),
+        // Server-authoritative timezone (IANA, auto-detected at runtime, never
+        // hardcoded). The gh-pages page can't reach /tz.php cross-origin, so the
+        // server bakes its zone in here and the dashboard formats all timestamps
+        // against it — so times reflect the server, not the viewer's browser.
+        serverTz: DASHBOARD_TZ,
         tokenUsage: getUsage(),
         database: { glucose: dbStats.glucose, notion: dbStats.notion },
         syncHistory: dbStats.syncHistory,
