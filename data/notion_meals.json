@@ -1,5 +1,16 @@
 [
   {
+    "id": "37985ec7-0668-816e-b130-f86c0efa5c50",
+    "title": "Snack (merienda): half a shortbread tart with cream and raspberries, a generous handful of fresh blueberries, and herbal tea (BG: 105 mg/dL Flat) (Pred: 139-149 mg/dL @ 6:07 PM) (Protein: 3g , Carbs: ~27g , Cals: ~185) [Coach: Half tart + fresh berries 🫐 — half-portion is the smart move on the shortbread (the crust is the main carb hit), fresh blueberries add real fiber + polyphenols. ~27g carbs, Pred ~144 by 6:07. Lunch peaked clean (BG 105 now) so this lands on a clean baseline.]",
+    "type": "Snack",
+    "date": "2026-06-08T16:01:00.000+02:00",
+    "photo": "https://iili.io/Cq0niIS.jpg",
+    "carbs": 27,
+    "cals": 185,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37985ec7-0668-81b7-90c4-c6f7536cae9e",
     "title": "Lunch (cont.): a piece of crusty white bread (chusco) and some cheese (BG: 107 mg/dL Flat) (Pred: 134-144 mg/dL @ 4:30 PM) (Protein: 13g , Carbs: ~31g , Cals: ~260) [Cumulative Lunch: ~33g carbs total — updated after potato chunks removed] [Coach: Bread + cheese 🥖 — cheese brings ~7g protein and fat to slow the bread (~30g carbs). With the potatoes removed from the main course, cumulative lunch is now ~43g protein on ~33g carbs, Pred ~139. Very clean.]",
     "type": "Lunch",
@@ -364,7 +375,7 @@
   },
   {
     "id": "37185ec7-0668-8153-8b74-de14436ba636",
-    "title": "Snack: ~2 squares of dark chocolate (BG: 112 mg/dL Flat) (Pred: 131-141 mg/dL @ 6:36 PM) (Protein: 2g , Carbs: ~10g , Cals: ~110) [Coach: 2 squares of dark chocolate 🍫 — this is your textbook smart sweet move: cacao polyphenols, cacao-butter fat to slow the sugar, and only ~10g carbs total. Pred ~136 by 6:36 PM. Exactly the kind of dessert pick that fits the GMI 6.0 target.]",
+    "title": "Snack: ~2 squares of dark chocolate (BG: 112 mg/dL Flat) (Pred: 131-141 mg/dL @ 6:36 PM) (Protein: 2g , Carbs: ~10g , Cals: ~110) [Coach: 2 squares of dark chocolate ��� — this is your textbook smart sweet move: cacao polyphenols, cacao-butter fat to slow the sugar, and only ~10g carbs total. Pred ~136 by 6:36 PM. Exactly the kind of dessert pick that fits the GMI 6.0 target.]",
     "type": "Snack",
     "date": "2026-05-31T16:30:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-31/e747222339121ca2.jpg",
