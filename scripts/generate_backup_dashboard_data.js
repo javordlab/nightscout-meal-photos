@@ -48,11 +48,16 @@ function getDatabaseStats() {
     const stats = { glucose: 0, notion: 0, syncHistory: [] };
     try {
         stats.glucose = parseInt(execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT COUNT(*) FROM glucose_measurements;"`).toString().trim());
-        stats.notion = parseInt(execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT COUNT(*) FROM maria_health_log;"`).toString().trim());
+        // The `notion` stat now tracks the live SSoT mirror health_ssot.health_log_entries
+        // (fed by sync_ssot_to_mysql.js). The old source health_monitor.maria_health_log
+        // froze on 2026-05-21 when sync_notion_to_mysql.js was retired. Count only
+        // non-deleted rows so the figure matches the canonical entry count. The JSON
+        // field name is kept as `notion` to avoid breaking the published dashboard bindings.
+        stats.notion = parseInt(execSync(`${MYSQL_BIN} -u root health_ssot -N -e "SELECT COUNT(*) FROM health_log_entries WHERE deleted_at IS NULL;"`).toString().trim());
 
         // RECONSTRUCT CUMULATIVE HISTORY
         const glucoseHistory = execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT DATE(event_time) as d, COUNT(*) FROM glucose_measurements GROUP BY d ORDER BY d ASC;"`).toString().trim().split('\n');
-        const notionHistory = execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT DATE(event_date) as d, COUNT(*) FROM maria_health_log GROUP BY d ORDER BY d ASC;"`).toString().trim().split('\n');
+        const notionHistory = execSync(`${MYSQL_BIN} -u root health_ssot -N -e "SELECT DATE(event_date) as d, COUNT(*) FROM health_log_entries WHERE deleted_at IS NULL GROUP BY d ORDER BY d ASC;"`).toString().trim().split('\n');
 
         const gMap = {}; let gCum = 0;
         glucoseHistory.forEach(l => { const [d, c] = l.split('\t'); gCum += parseInt(c); gMap[d] = gCum; });
