@@ -38,7 +38,7 @@
             </div>
             <div class="lg:col-span-2 bg-white p-6 rounded-2xl border shadow-sm">
                 <div class="flex items-center justify-between mb-4">
-                    <h2 class="font-bold">Glucose Trend (Pacific Time)</h2>
+                    <h2 class="font-bold">Glucose Trend (<span id="trend-tz">Server Time</span>)</h2>
                     <div class="flex gap-2" id="range-selector">
                         <button onclick="setRange(24)" class="px-3 py-1 text-[10px] font-bold uppercase rounded-lg border bg-blue-600 text-white" data-range="24">24h</button>
                         <button onclick="setRange(72)" class="px-3 py-1 text-[10px] font-bold uppercase rounded-lg border bg-white text-gray-500" data-range="72">72h</button>
@@ -73,17 +73,25 @@
         let dashboardData = null;
         let mainChart = null;
 
-        function toPST(isoStr) {
+        // Format a timestamp in the SERVER's timezone (baked into backups.json as
+        // serverTz by generate_backup_dashboard_data.js). Falls back to the
+        // browser's local zone only if serverTz is missing from the data.
+        function fmtServerTime(isoStr) {
             try {
-                const d = new Date(isoStr);
-                const pst = new Date(d.getTime() - (7 * 60 * 60 * 1000));
-                let h = pst.getUTCHours();
-                const m = pst.getUTCMinutes().toString().padStart(2, '0');
-                const ampm = h >= 12 ? 'PM' : 'AM';
-                h = h % 12;
-                h = h ? h : 12; 
-                return h + ':' + m + ' ' + ampm;
+                return new Intl.DateTimeFormat('en-US', {
+                    timeZone: (dashboardData && dashboardData.serverTz) || undefined,
+                    hour: 'numeric', minute: '2-digit', hour12: true
+                }).format(new Date(isoStr));
             } catch(e) { return "??:??"; }
+        }
+
+        // Short label for the server zone (e.g. "GMT+2", "CEST", "PST").
+        function serverTzLabel() {
+            const tz = (dashboardData && dashboardData.serverTz) || undefined;
+            try {
+                return new Intl.DateTimeFormat('en-US', { timeZone: tz, timeZoneName: 'short' })
+                    .formatToParts(new Date()).find(p => p.type === 'timeZoneName')?.value || tz || 'Local';
+            } catch(e) { return tz || 'Local'; }
         }
 
         function formatGrowthDateLabel(dateStr) {
@@ -113,7 +121,7 @@
             const filtered = dashboardData.glucoseTrend.filter(p => new Date(p.t) >= cutoff);
             
             const values = filtered.map(p => p.v);
-            const labels = filtered.map(p => toPST(p.t));
+            const labels = filtered.map(p => fmtServerTime(p.t));
             const sorted = [...values].sort((a,b)=>a-b);
             const median = sorted[Math.floor(sorted.length/2)] || 0;
 
@@ -139,7 +147,8 @@
                 dashboardData = await res.json();
                 const d = dashboardData;
                 
-                document.getElementById('last-updated').textContent = 'Last sync: ' + toPST(d.lastUpdated);
+                document.getElementById('last-updated').textContent = 'Last sync: ' + fmtServerTime(d.lastUpdated);
+                document.getElementById('trend-tz').textContent = serverTzLabel();
                 document.getElementById('glucose-count').textContent = d.database.glucose.toLocaleString();
                 document.getElementById('notion-count').textContent = d.database.notion.toLocaleString();
                 document.getElementById('count-label').textContent = d.backups.length + ' snapshots';
@@ -209,7 +218,7 @@
 
                 // List
                 document.getElementById('backup-list').innerHTML = d.backups.map(b => `
-                    <tr><td class="px-6 py-4 text-sm font-medium">${toPST(b.created)}</td><td class="px-6 py-4 text-sm font-mono">${b.filename}</td><td class="px-6 py-4 text-right text-sm font-mono text-gray-500">${b.size}</td></tr>
+                    <tr><td class="px-6 py-4 text-sm font-medium">${fmtServerTime(b.created)}</td><td class="px-6 py-4 text-sm font-mono">${b.filename}</td><td class="px-6 py-4 text-right text-sm font-mono text-gray-500">${b.size}</td></tr>
                 `).join('');
             } catch (e) { console.error('Dashboard Error:', e); }
         }
