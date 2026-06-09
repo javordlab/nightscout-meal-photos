@@ -1,5 +1,16 @@
 [
   {
+    "id": "37a85ec7-0668-812d-820a-c4a9d046eccf",
+    "title": "Snack (large — looks more like a late lunch): Spanish paella with shrimp/seafood and small bits of squid, a bowl of green lettuce salad, and a drink (looks like horchata or iced café con leche — awaiting confirmation) (BG: 144 mg/dL Flat) (Pred: 201-211 mg/dL @ 6:56 PM) (Protein: 17g , Carbs: ~72g , Cals: ~420) [Coach: Big paella plate 🥘 — substantial portion with rice as the main carb load (~72g total assuming the drink is horchata). Going in at 144 means Pred drifts toward 206 by 6:56 PM. A walk in the next 30-60 min would meaningfully clip the peak. If the drink is unsweetened coffee instead of horchata, subtract ~25g carbs from the estimate.]",
+    "type": "Snack",
+    "date": "2026-06-09T16:50:00.000+02:00",
+    "photo": "https://iili.io/CqbOy57.jpg",
+    "carbs": 72,
+    "cals": 420,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37a85ec7-0668-814e-a30b-ccd9371a5269",
     "title": "Lunch (out): half a bocadillo de calamares (classic Madrid-style fried squid in a baguette) + Royal Bliss Bitter Rosso Zero Azúcar (no-sugar bitter aperitif soda) (BG: 99 mg/dL Flat) (Pred: 121-131 mg/dL @ 4:14 PM) (Protein: 15g , Carbs: ~30g , Cals: ~255) [Coach: Bocadillo de calamares 🦑 — classic Spanish bar food, calamari brings protein and the light batter adds modest carbs on top of the baguette. ~30g carbs total at half-portion, Pred ~126 by 4:14. Royal Bliss Zero was the perfect non-sugary drink pick. Cured-meat tally stays at 0.]",
     "type": "Lunch",
