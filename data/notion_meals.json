@@ -1,5 +1,16 @@
 [
   {
+    "id": "37a85ec7-0668-814e-a30b-ccd9371a5269",
+    "title": "Lunch (out): half a bocadillo with a fried/breaded filling (looks like fried fish or breaded chicken) + Royal Bliss Bitter Rosso Zero Azúcar (no-sugar bitter aperitif soda) (BG: 99 mg/dL Flat) (Pred: 118-128 mg/dL @ 4:14 PM) (Protein: 15g , Carbs: ~28g , Cals: ~325) [Coach: Sensible bar lunch 🥖 — half-portion keeps carbs ~28g, the fried filling adds protein and fat to slow the bread, and the Royal Bliss Zero is the perfect non-alcoholic zero-sugar pick (vs. a sugary cola or actual vermouth). Pred ~123 by 4:14. Cured-meat tally stays at 0.]",
+    "type": "Lunch",
+    "date": "2026-06-09T14:21:00.000+02:00",
+    "photo": "https://iili.io/CqQQ40g.jpg",
+    "carbs": 28,
+    "cals": 325,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37a85ec7-0668-8167-ba36-ec25c27b494e",
     "title": "Late breakfast/early lunch: closed peanut butter and fresh blueberries sandwich on multigrain seeded bread (2 slices) (BG: 106 mg/dL Flat — sensor stabilized from overnight artifact) (Pred: 141-151 mg/dL @ 1:00 PM) (Protein: 15g , Carbs: ~43g , Cals: ~380) [Coach: PB + blueberries sandwich 🫐 — classic, balanced. PB brings ~8g protein + healthy fat, blueberries layer fiber + polyphenols, ~43g carbs from 2 slices. Pred ~146 by 1 PM under the lunch intercept. Sensor seems to have recovered (106 plausible), but fingerstick once today to confirm.]",
     "type": "Lunch",
