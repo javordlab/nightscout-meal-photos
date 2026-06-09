@@ -1,12 +1,12 @@
 [
   {
     "id": "37a85ec7-0668-814e-a30b-ccd9371a5269",
-    "title": "Lunch (out): half a bocadillo with a fried/breaded filling (looks like fried fish or breaded chicken) + Royal Bliss Bitter Rosso Zero Azúcar (no-sugar bitter aperitif soda) (BG: 99 mg/dL Flat) (Pred: 118-128 mg/dL @ 4:14 PM) (Protein: 15g , Carbs: ~28g , Cals: ~325) [Coach: Sensible bar lunch 🥖 — half-portion keeps carbs ~28g, the fried filling adds protein and fat to slow the bread, and the Royal Bliss Zero is the perfect non-alcoholic zero-sugar pick (vs. a sugary cola or actual vermouth). Pred ~123 by 4:14. Cured-meat tally stays at 0.]",
+    "title": "Lunch (out): half a bocadillo de calamares (classic Madrid-style fried squid in a baguette) + Royal Bliss Bitter Rosso Zero Azúcar (no-sugar bitter aperitif soda) (BG: 99 mg/dL Flat) (Pred: 121-131 mg/dL @ 4:14 PM) (Protein: 15g , Carbs: ~30g , Cals: ~255) [Coach: Bocadillo de calamares 🦑 — classic Spanish bar food, calamari brings protein and the light batter adds modest carbs on top of the baguette. ~30g carbs total at half-portion, Pred ~126 by 4:14. Royal Bliss Zero was the perfect non-sugary drink pick. Cured-meat tally stays at 0.]",
     "type": "Lunch",
     "date": "2026-06-09T14:21:00.000+02:00",
-    "photo": "https://iili.io/CqQQ40g.jpg",
-    "carbs": 28,
-    "cals": 325,
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-09/3b77bfeb6915820f.jpg",
+    "carbs": 30,
+    "cals": 255,
     "delta": null,
     "peak": null
   },
@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-09/ff53885d6ceb88be.jpg",
     "carbs": 43,
     "cals": 380,
-    "delta": null,
-    "peak": null
+    "delta": 54,
+    "peak": 160
   },
   {
     "id": "37985ec7-0668-8171-b6ab-c9cab9a0c018",
