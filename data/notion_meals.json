@@ -1,12 +1,12 @@
 [
   {
     "id": "37a85ec7-0668-812d-820a-c4a9d046eccf",
-    "title": "Snack (large — looks more like a late lunch): Spanish paella with shrimp/seafood and small bits of squid, a bowl of green lettuce salad, and a drink (looks like horchata or iced café con leche — awaiting confirmation) (BG: 144 mg/dL Flat) (Pred: 201-211 mg/dL @ 6:56 PM) (Protein: 17g , Carbs: ~72g , Cals: ~420) [Coach: Big paella plate 🥘 — substantial portion with rice as the main carb load (~72g total assuming the drink is horchata). Going in at 144 means Pred drifts toward 206 by 6:56 PM. A walk in the next 30-60 min would meaningfully clip the peak. If the drink is unsweetened coffee instead of horchata, subtract ~25g carbs from the estimate.]",
-    "type": "Snack",
+    "title": "Lunch (late, the real sit-down after the bocadillo aperitivo): Spanish paella with shrimp/seafood and small bits of squid, a bowl of green lettuce salad, and an iced coffee (no sugar) (BG: 144 mg/dL Flat) (Pred: 183-193 mg/dL @ 6:43 PM) (Protein: 17g , Carbs: ~47g , Cals: ~310) [Coach: Paella lunch 🥘 — ~47g carbs from the rice, ~17g protein from shrimp + squid, lettuce salad for fiber. Going in at 144 still drifts Pred to ~188 by 6:43 PM under the Lunch intercept. A walk in the next 30-60 min would clip the peak. Cured-meat tally stays at 0.]",
+    "type": "Lunch",
     "date": "2026-06-09T16:50:00.000+02:00",
-    "photo": "https://iili.io/CqbOy57.jpg",
-    "carbs": 72,
-    "cals": 420,
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-09/f928adcb1d47e9f7.jpg",
+    "carbs": 47,
+    "cals": 310,
     "delta": null,
     "peak": null
   },
