@@ -1,5 +1,16 @@
 [
   {
+    "id": "37a85ec7-0668-81c8-a7a5-c2d5c00e6510",
+    "title": "Dinner: grilled cheese sandwich with a slice of roast beef on multigrain seeded bread, with a side of ~5 green olives (BG: 81 mg/dL FortyFiveDown — sensor on first 24h, may want fingerstick verify) (Pred: 112-122 mg/dL @ 10:59 PM) (Protein: 27g , Carbs: ~32g , Cals: ~405) [Coach: Grilled cheese + roast beef + olives 🥪 — ~27g protein hits the muscle-preservation target nicely, olives bring healthy monounsaturated fat. Roast beef is cooked (not cured), so today's tally stays at 1× (the jamón serrano at lunch). Well-timed: BG was dropping into the 80s — this dinner catches it cleanly. Pred ~117 by 10:59 PM. Solid GMI 6.0-supporting close.]",
+    "type": "Dinner",
+    "date": "2026-06-09T21:43:00.000+02:00",
+    "photo": "https://iili.io/CBJSxwv.jpg",
+    "carbs": 32,
+    "cals": 405,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37a85ec7-0668-812d-820a-c4a9d046eccf",
     "title": "Lunch (late, the real sit-down after the bocadillo aperitivo): Spanish paella with shrimp/seafood and small bits of squid, a bowl of green lettuce salad, and an iced coffee (no sugar) (BG: 144 mg/dL Flat) (Pred: 183-193 mg/dL @ 6:43 PM) (Protein: 17g , Carbs: ~47g , Cals: ~310) [Coach: Paella lunch 🥘 — ~47g carbs from the rice, ~17g protein from shrimp + squid, lettuce salad for fiber. Going in at 144 still drifts Pred to ~188 by 6:43 PM under the Lunch intercept. A walk in the next 30-60 min would clip the peak. Cured-meat tally stays at 0.]",
     "type": "Lunch",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-09/f928adcb1d47e9f7.jpg",
     "carbs": 47,
     "cals": 310,
-    "delta": null,
-    "peak": null
+    "delta": 54,
+    "peak": 198
   },
   {
     "id": "37a85ec7-0668-814e-a30b-ccd9371a5269",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-09/3b77bfeb6915820f.jpg",
     "carbs": 30,
     "cals": 255,
-    "delta": null,
-    "peak": null
+    "delta": 73,
+    "peak": 172
   },
   {
     "id": "37a85ec7-0668-8167-ba36-ec25c27b494e",
