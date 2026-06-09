@@ -1,5 +1,16 @@
 [
   {
+    "id": "37a85ec7-0668-8167-ba36-ec25c27b494e",
+    "title": "Late breakfast/early lunch: closed peanut butter and fresh blueberries sandwich on multigrain seeded bread (2 slices) (BG: 106 mg/dL Flat — sensor stabilized from overnight artifact) (Pred: 141-151 mg/dL @ 1:00 PM) (Protein: 15g , Carbs: ~43g , Cals: ~380) [Coach: PB + blueberries sandwich 🫐 — classic, balanced. PB brings ~8g protein + healthy fat, blueberries layer fiber + polyphenols, ~43g carbs from 2 slices. Pred ~146 by 1 PM under the lunch intercept. Sensor seems to have recovered (106 plausible), but fingerstick once today to confirm.]",
+    "type": "Lunch",
+    "date": "2026-06-09T11:07:00.000+02:00",
+    "photo": "https://iili.io/Cq6UiE7.jpg",
+    "carbs": 43,
+    "cals": 380,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37985ec7-0668-8171-b6ab-c9cab9a0c018",
     "title": "Dinner: roasted chicken quarter (leg + thigh, skin-on) with sautéed mushrooms and a piece of crusty white bread with butter (BG: 121 mg/dL Flat) (Pred: 149-159 mg/dL @ 10:27 PM) (Protein: 37g , Carbs: ~27g , Cals: ~515) [Coach: Roast chicken + mushrooms + bread 🍗 — ~37g protein crushes the muscle-preservation target, mushrooms bring fiber + umami, butter fat slows the bread. Pred ~154 by 10:27. Chicken is fresh, cured-meat tally stays at 0 for the day. Beautiful dinner.]",
     "type": "Dinner",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-08/b02ff2b90fc81dec.jpg",
     "carbs": 27,
     "cals": 515,
-    "delta": null,
-    "peak": null
+    "delta": 43,
+    "peak": 164
   },
   {
     "id": "37985ec7-0668-816e-b130-f86c0efa5c50",
@@ -3950,7 +3961,7 @@
   },
   {
     "id": "33b85ec7-0668-81d2-86b5-e21bf87e9fbc",
-    "title": "Lunch: Smoked salmon on bread with avocado and apple wedges (BG: 140 mg/dL ➡���) (Peak: 165 mg/dL @ 3:19 PM) (Protein: 17g | Carbs: ~33g | Cals: ~300)  (Pred: 206-226 mg/dL @ 2:56 PM)",
+    "title": "Lunch: Smoked salmon on bread with avocado and apple wedges (BG: 140 mg/dL ➡️) (Peak: 165 mg/dL @ 3:19 PM) (Protein: 17g | Carbs: ~33g | Cals: ~300)  (Pred: 206-226 mg/dL @ 2:56 PM)",
     "type": "Lunch",
     "date": "2026-03-21T13:21:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-03-21/ba36d8eb9a77ac61.jpg",
