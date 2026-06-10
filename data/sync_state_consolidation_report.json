@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-10T09:20:00.752Z",
+  "generatedAt": "2026-06-10T18:55:49.274Z",
   "mode": "apply",
   "totals": {
-    "recordsBefore": 1783,
-    "recordsAfter": 1778,
-    "merged": 5,
-    "deleted": 5,
+    "recordsBefore": 1793,
+    "recordsAfter": 1792,
+    "merged": 1,
+    "deleted": 1,
     "orphansKept": 0,
     "conflicts": 0,
     "notionDupePairs": 0,
@@ -13,61 +13,17 @@
   },
   "merged": [
     {
-      "group": "2026-05-02T15:00:00+02:00|Maria Dennis|Food",
-      "canonical": "sha256:4da00c915d46bba2de1265f390abcdafc168756bd1b3eb4f44c5e22b30e4e183",
-      "siblingsDeleted": 1
-    },
-    {
-      "group": "2026-06-04T09:57:00+02:00|Maria Dennis|Food",
-      "canonical": "sha256:7fa379eab69c0f642bf5e175c5c23672ccd24d3a21194da54ce29b305d95ba6c",
-      "siblingsDeleted": 1
-    },
-    {
-      "group": "2026-06-04T10:02:00+02:00|Maria Dennis|Food",
-      "canonical": "sha256:62636365f83b1a7e78415da7b6708931ca76408c2ad9bc9fbc89e81b0dac9423",
-      "siblingsDeleted": 1
-    },
-    {
-      "group": "2026-06-08T09:35:00+02:00|Maria Dennis|Food",
-      "canonical": "sha256:5e5c90569bfeaaffa8bff17923b68b3cb4849d2eeaafae26f9ec69dd537e9b64",
-      "siblingsDeleted": 1
-    },
-    {
-      "group": "2026-06-10T11:02:00+02:00|Maria Dennis|Food",
-      "canonical": "sha256:28a41b851688f57f1b169521760f7881637e0c2ada07f81160657d3f29c23d74",
+      "group": "2026-06-10T19:48:00+02:00|Maria Dennis|Exercise",
+      "canonical": "sha256:ae2b599bc7184440b40f55e52ce93e367b209b3ca7831030959056e2d07e9f1c",
       "siblingsDeleted": 1
     }
   ],
   "deletions": [
     {
-      "key": "sha256:5e075a43699c21d528b702278a5be419346c6b0cb2c3fd2dd3bfe7360d448149",
-      "group": "2026-05-02T15:00:00+02:00|Maria Dennis|Food",
-      "page_id": "35e85ec7-0668-81b2-bb45-fd8d87fd0589",
-      "treatment_id": "69f5f5b9763bd01671f75448"
-    },
-    {
-      "key": "sha256:c2755f074aa591e832ba5341ce3693da5c40f88627f094cdcb2d46d2f4358653",
-      "group": "2026-06-04T09:57:00+02:00|Maria Dennis|Food",
-      "page_id": "37585ec7-0668-810c-a6be-e37def54a91a",
-      "treatment_id": "6a213032d7b66fcf51f7b043"
-    },
-    {
-      "key": "sha256:8f249261ecb8f3b04a920f7310f046a0bb85a2c3cb2cf337372e2dc4ecc657e5",
-      "group": "2026-06-04T10:02:00+02:00|Maria Dennis|Food",
-      "page_id": "37585ec7-0668-8100-b061-d18871f6f2cf",
-      "treatment_id": "6a213140d7b66fcf51f7b045"
-    },
-    {
-      "key": "sha256:d431593f3e83952892fa78dde51ffc0251677dabc347506a2bb6a6f7ec502329",
-      "group": "2026-06-08T09:35:00+02:00|Maria Dennis|Food",
-      "page_id": "37985ec7-0668-81bf-bb2b-e7cc692497df",
-      "treatment_id": "6a267114d7b66fcf51f7b4f6"
-    },
-    {
-      "key": "sha256:547ac9f35e98b2b80d16f74e0ddfab299b4ece428c7ea6fc91b3a208c53fa5d0",
-      "group": "2026-06-10T11:02:00+02:00|Maria Dennis|Food",
-      "page_id": "37b85ec7-0668-8129-92b4-d1ff47243dbe",
-      "treatment_id": "6a29288ed7b66fcf51f7b757"
+      "key": "sha256:028be89915b65fabbe93558d1a2aa5be6598a2beebcd834844b69ad26583bdd0",
+      "group": "2026-06-10T19:48:00+02:00|Maria Dennis|Exercise",
+      "page_id": "37b85ec7-0668-815e-8797-e653f1e0b554",
+      "treatment_id": "6a29aeaad7b66fcf51f7b7d8"
     }
   ],
   "orphanRemnantsDeleted": [],

@@ -1,13 +1,198 @@
 #!/usr/bin/env node
 const fs = require('fs');
+const os = require('os');
 const path = require('path');
-const https = require('https');
+const { spawn, spawnSync } = require('child_process');
+const { fetchRecentSgvRows } = require('./lib/glucose_source');
+
+const CLAUDE_BIN = '/Users/javier/.local/bin/claude';
+const COACH_DIAG_LOG = '/Users/javier/.openclaw/workspace/data/coach_failure_diagnostics.jsonl';
+
+function redactSecrets(s) {
+  if (!s) return s;
+  return String(s)
+    .replace(/sk-ant-[a-z0-9]+-[A-Za-z0-9_-]+/g, 'sk-ant-***REDACTED***')
+    .replace(/Bearer\s+[A-Za-z0-9_.\-]+/g, 'Bearer ***REDACTED***');
+}
+
+function safeRun(cmd, args, opts = {}) {
+  try {
+    const r = spawnSync(cmd, args, {
+      encoding: 'utf8',
+      timeout: opts.timeout || 5000,
+      // If caller passes `input`, stdin must be pipe; otherwise ignore to avoid
+      // accidentally hanging on an interactive read.
+      stdio: [opts.input !== undefined ? 'pipe' : 'ignore', 'pipe', 'pipe'],
+      input: opts.input,
+      cwd: opts.cwd,
+      env: opts.env,
+    });
+    return {
+      code: r.status,
+      signal: r.signal,
+      stdout: redactSecrets((r.stdout || '').slice(0, opts.maxOut || 3000)),
+      stderr: redactSecrets((r.stderr || '').slice(0, 1000)),
+      error: r.error ? r.error.message : null,
+    };
+  } catch (e) {
+    return { error: e.message };
+  }
+}
+
+// Capture a rich diagnostic snapshot when `claude --print` fails. Written as a
+// single JSON line to COACH_DIAG_LOG. Designed to run in <10s total: all child
+// invocations have short timeouts and we never throw from here.
+function captureCoachFailureDiagnostics(ctx) {
+  const startedAt = Date.now();
+  const HOME = process.env.HOME || '/Users/javier';
+  const claudeEnv = {
+    ...process.env,
+    HOME,
+    USER: 'javier',
+    PATH: '/Users/javier/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin',
+  };
+
+  const stat = (p) => {
+    try {
+      const s = fs.statSync(p);
+      return { mtime: s.mtime.toISOString(), size: s.size };
+    } catch (e) { return { error: e.code || e.message }; }
+  };
+
+  const diag = {
+    timestamp: new Date().toISOString(),
+    schemaVersion: 1,
+    reportDateLA: ctx.reportDateLA || null,
+    attempt: ctx.attempt,
+    maxAttempts: ctx.maxAttempts,
+    result: {
+      ok: false,
+      exitCode: ctx.result.code,
+      signal: ctx.result.signal || null,
+      spawnError: ctx.result.spawnError || null,
+      // The coach spawn combines stderr and stdout into `stderr` on failure
+      // (see resolve({ok:false, stderr: stderr||stdout}) below). Preserve both:
+      combined: redactSecrets((ctx.result.stderr || '').slice(0, 2000)),
+      stderrRaw: redactSecrets((ctx.result.rawStderr || '').slice(0, 2000)),
+      stdoutRaw: redactSecrets((ctx.result.rawStdout || '').slice(0, 2000)),
+      elapsedMs: ctx.result.elapsedMs || null,
+    },
+    process: {
+      pid: process.pid,
+      ppid: process.ppid,
+      nodeVersion: process.version,
+      platform: process.platform,
+      cwd: process.cwd(),
+    },
+    env: {
+      USER: process.env.USER || null,
+      HOME: process.env.HOME || null,
+      PATH: process.env.PATH || null,
+      SHELL: process.env.SHELL || null,
+      LOGNAME: process.env.LOGNAME || null,
+      TERM: process.env.TERM || null,
+      LANG: process.env.LANG || null,
+      TMPDIR: process.env.TMPDIR || null,
+      CRON_RECEIPT_FILE: process.env.CRON_RECEIPT_FILE || null,
+      CLAUDE_CODE_ENTRYPOINT: process.env.CLAUDE_CODE_ENTRYPOINT || null,
+      ANTHROPIC_API_KEY_set: !!process.env.ANTHROPIC_API_KEY,
+      BRIDGE_CONFIG: process.env.BRIDGE_CONFIG || null,
+    },
+    system: {
+      hostname: os.hostname(),
+      uptimeSec: Math.round(os.uptime()),
+      loadavg: os.loadavg(),
+      freememMB: Math.round(os.freemem() / 1024 / 1024),
+      totalmemMB: Math.round(os.totalmem() / 1024 / 1024),
+      whoami: safeRun('whoami', []).stdout,
+      launchctlContext: safeRun('launchctl', ['managername']).stdout,
+      consoleUser: safeRun('stat', ['-f', '%Su', '/dev/console']).stdout,
+      loginwindowTty: safeRun('who', []).stdout,
+    },
+    claudeCli: {
+      binPath: CLAUDE_BIN,
+      version: safeRun(CLAUDE_BIN, ['--version'], { env: claudeEnv, timeout: 8000 }).stdout,
+      claudeJson: stat(path.join(HOME, '.claude.json')),
+      claudeDir: safeRun('ls', ['-laT', path.join(HOME, '.claude')]).stdout,
+      claudeBackups: safeRun('ls', ['-laT', path.join(HOME, '.claude', 'backups')]).stdout,
+      mcpCache: stat(path.join(HOME, '.claude', 'mcp-needs-auth-cache.json')),
+    },
+    concurrency: {
+      pgrepClaude: safeRun('pgrep', ['-afl', 'claude']).stdout,
+      pgrepBridge: safeRun('pgrep', ['-afl', 'bridge.js']).stdout,
+      pgrepNode: safeRun('pgrep', ['-afl', 'node']).stdout,
+    },
+    keychain: {
+      keychainList: safeRun('security', ['list-keychains']).stdout,
+      // NO `-g` flag → returns attributes but never the password
+      claudeItemAttrs: safeRun('security', ['find-generic-password', '-s', 'Claude Code-credentials']).stdout,
+      // Separately test whether THIS process can read the password; on success
+      // we only record "OK" (password itself discarded); on failure we record
+      // the error code/message. This is the critical signal.
+      claudeItemReadTest: (() => {
+        const r = safeRun('security', ['find-generic-password', '-s', 'Claude Code-credentials', '-w'], { timeout: 8000 });
+        return {
+          code: r.code,
+          signal: r.signal,
+          stderr: r.stderr,
+          // Never persist the password; just record whether a blob came back
+          passwordReadable: !!(r.stdout && r.stdout.length > 20),
+          passwordLength: r.stdout ? r.stdout.length : 0,
+        };
+      })(),
+    },
+    network: {
+      dnsAnthropic: safeRun('dscacheutil', ['-q', 'host', '-a', 'name', 'api.anthropic.com']).stdout,
+      anthropicApiProbe: safeRun('curl', [
+        '-sS', '-o', '/dev/null',
+        '-w', 'http=%{http_code} dns=%{time_namelookup}s connect=%{time_connect}s total=%{time_total}s\n',
+        '-m', '8',
+        'https://api.anthropic.com/',
+      ]).stdout,
+      console_ai_probe: safeRun('curl', [
+        '-sS', '-o', '/dev/null',
+        '-w', 'http=%{http_code} total=%{time_total}s\n',
+        '-m', '8',
+        'https://console.anthropic.com/',
+      ]).stdout,
+    },
+    // Follow-up: try a minimal claude --print right now (2s after the failure).
+    // If this SUCCEEDS while the real call failed, the failure is transient.
+    // If this ALSO fails, the failure is persistent — and we get another fresh
+    // stderr capture for comparison.
+    followupProbe: (() => {
+      const r = safeRun(CLAUDE_BIN, [
+        '--print',
+        '--model', 'claude-fable-5',
+        '--output-format', 'text',
+        '--dangerously-skip-permissions',
+        '--no-session-persistence',
+      ], {
+        env: claudeEnv,
+        cwd: '/tmp',
+        input: 'Reply with exactly: PING',
+        timeout: 30000,
+        maxOut: 500,
+      });
+      return r;
+    })(),
+    diagnosticsElapsedMs: 0, // filled in below
+  };
+  diag.diagnosticsElapsedMs = Date.now() - startedAt;
+
+  try {
+    fs.appendFileSync(COACH_DIAG_LOG, JSON.stringify(diag) + '\n');
+  } catch (e) {
+    console.warn(`  [coach-diag] failed to write: ${e.message}`);
+  }
+  return diag;
+}
 
 const WORKSPACE = '/Users/javier/.openclaw/workspace';
 const NORMALIZED_PATH = path.join(WORKSPACE, 'data', 'health_log.normalized.json');
 const OUTPUT_DIR = path.join(WORKSPACE, 'data');
-const NIGHTSCOUT_URL = process.env.NIGHTSCOUT_URL || 'https://p01--sefi--s66fclg7g2lm.code.run';
 const TZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
+const MIN_14D_COVERAGE_DAYS = 13;
 
 function getLocalOffset(date) {
   const d = date ? new Date(date) : new Date();
@@ -35,30 +220,13 @@ function addDays(dateString, delta) {
   return dt.toISOString().slice(0, 10);
 }
 
-const NIGHTSCOUT_SECRET = process.env.NIGHTSCOUT_SECRET || process.env.NS_SECRET || 'b3170e23f45df7738434cd8be9cd79d86a6d0f01';
-const MODEL = process.env.REPORT_MODEL || process.env.OPENCLAW_ACTIVE_MODEL || 'anthropic/claude-sonnet-4-6';
-
-function fetchJson(url) {
-  return new Promise((resolve, reject) => {
-    const options = {
-      headers: {
-        'api-secret': NIGHTSCOUT_SECRET
-      }
-    };
-
-    https.get(url, options, (res) => {
-      let data = '';
-      res.on('data', chunk => data += chunk);
-      res.on('end', () => {
-        try {
-          resolve(JSON.parse(data || '[]'));
-        } catch (e) {
-          reject(e);
-        }
-      });
-    }).on('error', reject);
-  });
-}
+// The MODEL constant is printed in the report header as a label.
+// The daily report is mostly pure-Node BUT calls Opus 4.7 via claude --print
+// for the Daily Nutrition Coach section (section 5). All other sections
+// (glucose stats, nutrition totals, meal details, baselines, outliers,
+// supervisor analysis, self-audit) are computed from script outputs with no LLM.
+// The label reflects the hybrid: stats are deterministic, the coach paragraph is Opus 4.7.
+const MODEL = process.env.REPORT_MODEL || process.env.OPENCLAW_ACTIVE_MODEL || 'pure-script + claude-fable-5 (coach section only)';
 
 function mean(values) {
   if (values.length === 0) return null;
@@ -146,6 +314,176 @@ function nearestBg(entries, mealIso, windowMinutes = 20) {
   return best;
 }
 
+// ── Daily Coach generator ──────────────────────────────────────────────────
+// Spawns `claude --print --model claude-fable-5` from /tmp (no CLAUDE.md inheritance)
+// with the full day's food + glucose context inline. The agent returns a
+// supportive nutrition coach paragraph for the daily report.
+//
+// Failure is non-fatal: if Opus times out, errors, or returns nothing,
+// we fall back to a static "unavailable" string so the daily report still ships.
+//
+// Why /tmp as cwd: Claude Code auto-discovers CLAUDE.md from cwd up the tree.
+// /tmp has no CLAUDE.md, so the agent gets a clean default system prompt
+// instead of inheriting the food-log workflow instructions.
+//
+// Cost: ~1 Opus call per daily report = ~1 call/day under Max OAuth.
+// Latency: ~30-90 sec, well within the 9:30 AM cron's tolerance.
+async function generateDailyCoach(targetDate, foodPrevDay, statsDay, stats14, avg14) {
+  const totalCarbs = sum(foodPrevDay, 'carbsEst');
+  const totalCals = sum(foodPrevDay, 'caloriesEst');
+  const totalProtein = sum(foodPrevDay, 'proteinEst');
+  const mealCount = foodPrevDay.length;
+
+  // Build the meal breakdown including each entry's Coach annotation if present
+  const mealLines = foodPrevDay
+    .slice()
+    .sort((a, b) => new Date(a.timestamp || 0).getTime() - new Date(b.timestamp || 0).getTime())
+    .map((m) => {
+      const time = formatLaTime(m.timestamp);
+      const cleanTitle = String(m.title || '')
+        .replace(/\(BG:[^)]+\)/gi, '')
+        .replace(/\(Pred:[^)]+\)/gi, '')
+        .replace(/\(Protein:[^)]+\)/gi, '')
+        .replace(/\[Coach:[^\]]+\]/gi, '')
+        .replace(/\[Cumulative[^\]]+\]/gi, '')
+        .replace(/\[photo\][^\s]*/gi, '')
+        .replace(/\[📷\][^\s]*/gi, '')
+        .replace(/\s+/g, ' ')
+        .trim();
+      const coachMatch = String(m.title || '').match(/\[Coach:\s*([^\]]+)\]/);
+      const coachNote = coachMatch ? `\n    (per-meal coach noted: ${coachMatch[1].trim()})` : '';
+      return `- ${time}: ${cleanTitle} — ${fmt(m.carbsEst, 0)}g carbs, ${fmt(m.proteinEst, 0)}g protein, ${fmt(m.caloriesEst, 0)} kcal${coachNote}`;
+    });
+
+  const prompt = `You are a supportive nutrition coach for Maria Dennis (73 years old, Type 2 Diabetes managed with Metformin 500mg breakfast + 500mg lunch + 1000mg dinner, plus Lisinopril 10mg morning and Rosuvastatin 10mg every other day). You give her per-meal feedback throughout the day. Now you're writing the DAILY summary section for her morning report — a single supportive paragraph that reviews YESTERDAY (${targetDate}) as a whole.
+
+YESTERDAY'S TOTALS:
+- Meals logged: ${mealCount}
+- Total carbs: ${fmt(totalCarbs, 0)} g
+- Total protein: ${fmt(totalProtein, 0)} g
+- Total calories: ${fmt(totalCals, 0)} kcal
+- Average glucose: ${fmt(statsDay.average, 0)} mg/dL
+- Time in Range (70-180): ${fmt(statsDay.tir, 0)}%
+
+14-DAY BASELINE (for comparison):
+- Avg carbs/day: ${fmt(avg14.carbs, 0)} g
+- Avg protein/day: ${fmt(avg14.protein, 0)} g
+- Avg calories/day: ${fmt(avg14.cals, 0)} kcal
+- Avg meals/day: ${fmt(avg14.meals, 1)}
+
+YESTERDAY'S MEAL DETAIL:
+${mealLines.length ? mealLines.join('\n') : '(no meals logged)'}
+
+Write a single supportive, friendly daily coaching paragraph (2-4 sentences, ~300-500 chars total) that:
+1. Reviews how the WHOLE DAY's eating compares to a well-balanced T2D-friendly day (~half non-starchy veggies, ~quarter lean protein, ~quarter complex carbs, healthy fats; carb load distributed across meals; ~60-90g protein/day target).
+2. ALWAYS celebrates at least one positive observation — even an imperfect day usually has something good.
+3. Notes the biggest pattern or opportunity for improvement (if any), referencing specific meals from yesterday by name when relevant.
+4. Compares against her 14-day baseline if there is a meaningful trend (e.g., "more vegetables than usual", "carbs were higher than your typical day").
+5. Uses a warm, encouraging tone — like a friendly coach, not a clinician.
+6. Is a single flowing paragraph, no bullet points, no headers, no markdown formatting.
+7. Does NOT use square brackets [ ] or pipes | (they would break the daily report parser).
+8. Does NOT include preamble like "Here's your daily summary" or "Yesterday you" — just the coaching content.
+9. Addresses Maria directly in 2nd person ("you").
+10. Does NOT mention this is AI-generated, does NOT add a sign-off, does NOT use emojis.
+
+Reply with ONLY the paragraph. No other text. No JSON wrapping. Just the paragraph itself.`;
+
+  const MAX_ATTEMPTS = 4;
+  const RETRY_DELAY_MS = 45_000;
+
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+    const attemptStart = Date.now();
+    const result = await new Promise((resolve) => {
+      const child = spawn(CLAUDE_BIN, [
+        '--print',
+        '--model', 'claude-fable-5',
+        '--effort', 'xhigh',
+        '--output-format', 'text',
+        '--dangerously-skip-permissions',
+        '--no-session-persistence',
+      ], {
+        cwd: '/tmp',
+        env: {
+          ...process.env,
+          HOME: '/Users/javier',
+          USER: 'javier', // Required for Claude CLI auth in cron (no USER in cron env)
+          PATH: '/Users/javier/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin',
+        },
+        stdio: ['pipe', 'pipe', 'pipe'],
+      });
+
+      let stdout = '';
+      let stderr = '';
+      child.stdout.on('data', d => stdout += d);
+      child.stderr.on('data', d => stderr += d);
+
+      const killTimer = setTimeout(() => {
+        try { child.kill(); } catch {}
+      }, 300_000); // 5-min hard cap — Opus xhigh typical latency is 2-5 min
+
+      child.on('close', (code, signal) => {
+        clearTimeout(killTimer);
+        const text = stdout.trim();
+        const elapsedMs = Date.now() - attemptStart;
+        if (text && code === 0) {
+          // Strip any brackets/pipes that would corrupt the report formatting,
+          // collapse whitespace
+          const cleaned = text.replace(/[\[\]|]/g, '').replace(/\s+/g, ' ').trim();
+          resolve({ ok: true, text: cleaned, elapsedMs });
+        } else {
+          // Capture stdout too — Claude CLI prints auth errors to stdout, not stderr
+          const combinedErr = (stderr || stdout || '').slice(0, 300);
+          resolve({
+            ok: false,
+            code,
+            signal,
+            stderr: combinedErr,
+            rawStdout: stdout,
+            rawStderr: stderr,
+            elapsedMs,
+          });
+        }
+      });
+
+      child.on('error', (err) => {
+        clearTimeout(killTimer);
+        resolve({ ok: false, spawnError: err.message, elapsedMs: Date.now() - attemptStart });
+      });
+
+      child.stdin.write(prompt);
+      child.stdin.end();
+    });
+
+    if (result.ok) return result.text;
+
+    console.warn(`  Coach attempt ${attempt}/${MAX_ATTEMPTS} failed: code=${result.code} elapsedMs=${result.elapsedMs} err=${(result.stderr || result.spawnError || '').slice(0, 100)}`);
+
+    // Rich per-attempt diagnostics: env, process, keychain ACL probe, network,
+    // concurrent claude PIDs, follow-up probe. Never throws.
+    try {
+      captureCoachFailureDiagnostics({
+        reportDateLA: targetDate,
+        attempt,
+        maxAttempts: MAX_ATTEMPTS,
+        result,
+      });
+    } catch (diagErr) {
+      console.warn(`  [coach-diag] capture threw: ${diagErr.message}`);
+    }
+
+    // Last attempt — return the fallback string
+    if (attempt === MAX_ATTEMPTS) {
+      const reason = result.spawnError
+        ? `spawn error: ${result.spawnError}`
+        : `model exit code ${result.code}, stderr: ${result.stderr}`;
+      return `Daily coach summary unavailable today — please check yesterday's individual meal coach notes for per-meal guidance. (${reason} after ${MAX_ATTEMPTS} attempts)`;
+    }
+
+    // Wait before retrying
+    await new Promise(r => setTimeout(r, RETRY_DELAY_MS));
+  }
+}
+
 async function main(options = {}) {
   const now = new Date();
   const reportDate = options.reportDate || laDateString(now); // date report runs
@@ -154,8 +492,7 @@ async function main(options = {}) {
   const start14 = addDays(targetDate, -13);
   const normalized = JSON.parse(fs.readFileSync(NORMALIZED_PATH, 'utf8'));
 
-  const nsEntries = await fetchJson(`${NIGHTSCOUT_URL}/api/v1/entries.json?count=5000`);
-  const sgvRows = (nsEntries || []).filter(e => Number.isFinite(e?.sgv) && Number.isFinite(e?.date));
+  const sgvRows = fetchRecentSgvRows(5000);
 
   const glucosePrevDay = sgvRows.filter(e => laDateString(new Date(e.date)) === targetDate);
   const glucose14Days = sgvRows.filter(e => {
@@ -164,7 +501,11 @@ async function main(options = {}) {
   });
 
   const statsDay = calculateGlucoseStats(glucosePrevDay);
-  const stats14 = calculateGlucoseStats(glucose14Days);
+  const coverage14Days = new Set(glucose14Days.map(e => laDateString(new Date(e.date)))).size;
+  const has14dCoverage = coverage14Days >= MIN_14D_COVERAGE_DAYS;
+  const stats14 = has14dCoverage
+    ? calculateGlucoseStats(glucose14Days)
+    : { count: 0, average: null, tir: null, gmi: null, stdDev: null, cv: null };
 
   const highs = glucosePrevDay.filter(e => e.sgv > 180).sort((a, b) => b.sgv - a.sgv);
   const lows = glucosePrevDay.filter(e => e.sgv < 70).sort((a, b) => a.sgv - b.sgv);
@@ -224,7 +565,17 @@ async function main(options = {}) {
 
   const expectedGmiFromAvg = Number.isFinite(statsDay.average) ? (3.31 + (0.02392 * statsDay.average)) : null;
 
-  const report = `🩺 DAILY HEALTH REPORT\n📅 Date: ${reportDate}\n🕒 Coverage window: ${targetDate} 00:00 – ${addDays(targetDate, 1)} 00:00 (${TZ})\n⚙️ Generated time: ${new Date().toISOString()}\n🤖 Model: ${MODEL}\n\n1) 📊 Today's Glucose Summary\n- Average glucose: ${fmt(statsDay.average, 1)} mg/dL\n- Time in Range (70-180): ${fmt(statsDay.tir, 1)}%\n- GMI: ${fmt(statsDay.gmi, 2)}%\n- Standard deviation: ${fmt(statsDay.stdDev, 1)} mg/dL\n- CV: ${fmt(statsDay.cv, 1)}%\n- Data points used: ${statsDay.count}\n\n2) 📉 14-day Trends (ending ${targetDate})\n- Average glucose: ${fmt(stats14.average, 1)} mg/dL\n- Time in Range (70-180): ${fmt(stats14.tir, 1)}%\n- GMI: ${fmt(stats14.gmi, 2)}%\n- Standard deviation: ${fmt(stats14.stdDev, 1)} mg/dL\n- CV: ${fmt(stats14.cv, 1)}%\n- Data points used: ${stats14.count}\n\n3) 🍽️ Nutrition (${targetDate})\n- Meals logged: ${foodPrevDay.length}\n- Total carbs: ${fmt(sum(foodPrevDay, 'carbsEst'), 1)} g\n- Total calories: ${fmt(sum(foodPrevDay, 'caloriesEst'), 0)} kcal\n- Total protein: ${fmt(sum(foodPrevDay, 'proteinEst'), 1)} g\n\n4) 🧾 Meal Details (${targetDate})\n${mealsDetailed.length ? mealsDetailed.join('\n') : '- No food entries logged'}\n\n5) 📚 Nutrition Baseline (14-day daily average ending ${targetDate})\n- Average carbs/day: ${fmt(avg14.carbs, 1)} g\n- Average calories/day: ${fmt(avg14.cals, 1)} kcal\n- Average protein/day: ${fmt(avg14.protein, 1)} g\n- Average meals/day: ${fmt(avg14.meals, 1)}\n- Days in window with food entries: ${avg14.days}\n\n6) 💊 Medication Status (${targetDate})\n${medsPrevDay.length ? medsPrevDay.map(m => `- ${m.timestamp}: ${m.title}`).join('\n') : '- No medication entries logged'}\n\n7) 🚨 Outliers (${targetDate})\n- High readings >180: ${highs.length}\n- Low readings <70: ${lows.length}\n- Max glucose: ${peak ? `${peak.sgv} mg/dL at ${peak.dateString || new Date(peak.date).toISOString()}` : 'N/A'}\n\n8) 🧠 Extended Supervisor Analysis\n- Nice work overall today: ${wentWell.length ? wentWell.map(x => x.replace(/\s*✅$/, '')).join(' | ') : 'overall stable day with no major safety events'}.\n- Key trend signals: avg glucose vs 14-day baseline ${Number.isFinite(dayAvgDelta) ? `${fmt(dayAvgDelta, 1)} mg/dL` : 'N/A'}, TIR delta ${Number.isFinite(dayTirDelta) ? `${fmt(dayTirDelta, 1)}%` : 'N/A'}, carbs delta ${Number.isFinite(carbsDelta) ? `${fmt(carbsDelta, 1)} g` : 'N/A'}, calories delta ${Number.isFinite(calsDelta) ? `${fmt(calsDelta, 0)} kcal` : 'N/A'}.\n- Friendly focus for tomorrow: ${improve.length ? improve.join(' ') : 'No urgent corrections needed—just keep the same consistency and momentum.'}\n- You’re doing great—small consistent habits keep adding up. Keep it going 🌟\n\n9) 🛡️ Self-Audit (Data Integrity)\n- Target day enforced: ${targetDate} PT\n- Glucose points in target window: ${statsDay.count}\n- GMI formula check (3.31 + 0.02392 × Avg): ${fmt(expectedGmiFromAvg, 2)}%\n- Reported GMI: ${fmt(statsDay.gmi, 2)}%\n`;
+  // Generate the daily nutrition coach paragraph (2026-04-09 — added per Javi's request).
+  // This calls Sonnet via claude --print with the day's full food + glucose context.
+  // Failure is non-fatal: if Sonnet is unreachable, generateDailyCoach returns a
+  // graceful "unavailable today" string and the report still ships.
+  const dailyCoachText = await generateDailyCoach(targetDate, foodPrevDay, statsDay, stats14, avg14);
+
+  const trendsSection = has14dCoverage
+    ? `- Average glucose: ${fmt(stats14.average, 1)} mg/dL\n- Time in Range (70-180): ${fmt(stats14.tir, 1)}%\n- GMI: ${fmt(stats14.gmi, 2)}%\n- Standard deviation: ${fmt(stats14.stdDev, 1)} mg/dL\n- CV: ${fmt(stats14.cv, 1)}%\n- Data points used: ${stats14.count}`
+    : `- Unavailable — Nightscout has only ${coverage14Days} day(s) of CGM history in the 14-day window (need ≥${MIN_14D_COVERAGE_DAYS}). 14-day trends resume automatically once history is complete.`;
+
+  const report = `🩺 DAILY HEALTH REPORT\n📅 Date: ${reportDate}\n🕒 Coverage window: ${targetDate} 00:00 – ${addDays(targetDate, 1)} 00:00 (${TZ})\n⚙️ Generated time: ${new Date().toISOString()}\n🤖 Model: ${MODEL}\n\n1) 📊 Today's Glucose Summary\n- Average glucose: ${fmt(statsDay.average, 1)} mg/dL\n- Time in Range (70-180): ${fmt(statsDay.tir, 1)}%\n- GMI: ${fmt(statsDay.gmi, 2)}%\n- Standard deviation: ${fmt(statsDay.stdDev, 1)} mg/dL\n- CV: ${fmt(statsDay.cv, 1)}%\n- Data points used: ${statsDay.count}\n\n2) 📉 14-day Trends (ending ${targetDate})\n${trendsSection}\n\n3) 🍽️ Nutrition (${targetDate})\n- Meals logged: ${foodPrevDay.length}\n- Total carbs: ${fmt(sum(foodPrevDay, 'carbsEst'), 1)} g\n- Total calories: ${fmt(sum(foodPrevDay, 'caloriesEst'), 0)} kcal\n- Total protein: ${fmt(sum(foodPrevDay, 'proteinEst'), 1)} g\n\n4) 🧾 Meal Details (${targetDate})\n${mealsDetailed.length ? mealsDetailed.join('\n') : '- No food entries logged'}\n\n5) 🥗 Daily Nutrition Coach\n${dailyCoachText}\n\n6) 📚 Nutrition Baseline (14-day daily average ending ${targetDate})\n- Average carbs/day: ${fmt(avg14.carbs, 1)} g\n- Average calories/day: ${fmt(avg14.cals, 1)} kcal\n- Average protein/day: ${fmt(avg14.protein, 1)} g\n- Average meals/day: ${fmt(avg14.meals, 1)}\n- Days in window with food entries: ${avg14.days}\n\n7) 💊 Medication Status (${targetDate})\n${medsPrevDay.length ? medsPrevDay.map(m => `- ${m.timestamp}: ${m.title}`).join('\n') : '- No medication entries logged'}\n\n8) 🚨 Outliers (${targetDate})\n- High readings >180: ${highs.length}\n- Low readings <70: ${lows.length}\n- Max glucose: ${peak ? `${peak.sgv} mg/dL at ${peak.dateString || new Date(peak.date).toISOString()}` : 'N/A'}\n\n9) 🧠 Extended Supervisor Analysis\n- Nice work overall today: ${wentWell.length ? wentWell.map(x => x.replace(/\s*✅$/, '')).join(' | ') : 'overall stable day with no major safety events'}.\n- Key trend signals: avg glucose vs 14-day baseline ${Number.isFinite(dayAvgDelta) ? `${fmt(dayAvgDelta, 1)} mg/dL` : 'N/A'}, TIR delta ${Number.isFinite(dayTirDelta) ? `${fmt(dayTirDelta, 1)}%` : 'N/A'}, carbs delta ${Number.isFinite(carbsDelta) ? `${fmt(carbsDelta, 1)} g` : 'N/A'}, calories delta ${Number.isFinite(calsDelta) ? `${fmt(calsDelta, 0)} kcal` : 'N/A'}.\n- Friendly focus for tomorrow: ${improve.length ? improve.join(' ') : 'No urgent corrections needed—just keep the same consistency and momentum.'}\n- You’re doing great—small consistent habits keep adding up. Keep it going 🌟\n\n10) 🛡️ Self-Audit (Data Integrity)\n- Target day enforced: ${targetDate} PT\n- Glucose points in target window: ${statsDay.count}\n- GMI formula check (3.31 + 0.02392 × Avg): ${fmt(expectedGmiFromAvg, 2)}%\n- Reported GMI: ${fmt(statsDay.gmi, 2)}%\n`;
 
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });
   const reportPath = path.join(OUTPUT_DIR, `daily_report_${reportDate}.txt`);
@@ -259,4 +610,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { main, laDateString, addDays, calculateGlucoseStats };
+module.exports = { main, laDateString, addDays, calculateGlucoseStats, captureCoachFailureDiagnostics };

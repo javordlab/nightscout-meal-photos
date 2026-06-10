@@ -1,0 +1,29 @@
+{
+  "instanceLabel": "foodlog",
+  "botToken": "8262629923:AAEdW0HWJN1Y-R32ekvghqrg5bnQydMeop0",
+  "backend": "claude-cli",
+  "model": "claude-fable-5",
+  "effort": "xhigh",
+  "adaptiveTimeout": {
+    "idleMs": 180000
+  },
+  "fallbackChain": [
+    { "backend": "claude-cli", "model": "claude-opus-4-7" },
+    { "backend": "claude-cli", "model": "claude-sonnet-4-6" },
+    { "backend": "claude-cli", "model": "haiku" },
+    { "backend": "ollama", "model": "gemini-3-flash-preview:cloud" },
+    { "backend": "ollama", "model": "deepseek-v3.2:cloud" }
+  ],
+  "allowedUsers": [8335333215, 8738167445],
+  "claudeCwd": "foodlog-cwd",
+  "settingSources": "project",
+  "defaultPhotoPrompt": "Process this food photo per the food log workflow in CLAUDE.md. Run all 6 steps: fetch BG, identify food + macros via vision, cumulative meal check, Model v3 prediction, write health_log.md entry, terse reply. Do NOT just describe the photo.",
+  "uploadPhotoBeforeAgent": true,
+  "postReplyDetached": {
+    "cmd": "/opt/homebrew/bin/node",
+    "args": ["/Users/javier/.openclaw/workspace/scripts/radial_dispatcher.js"],
+    "cwd": "/Users/javier/.openclaw/workspace"
+  },
+  "stateFile": "data/claude_bridge_state_foodlog.json",
+  "logFile": "data/claude_bridge_foodlog.log"
+}
