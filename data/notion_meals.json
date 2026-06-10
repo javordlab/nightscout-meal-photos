@@ -1,7 +1,7 @@
 [
   {
     "id": "37b85ec7-0668-8166-ad66-dbd73c126e9b",
-    "title": "Pre-lunch snack: small bowl of fresh blueberries (BG: 103 mg/dL Flat) (Pred: 126-136 mg/dL @ 4:38 PM) (Protein: 0g , Carbs: ~12g , Cals: ~45) [Coach: Fresh blueberries 🫐 — clean whole-fruit snack, ~12g carbs, fiber + polyphenols. Pred only nudges to ~131 by 4:38 PM. Beautiful pre-lunch nibble.]",
+    "title": "Pre-lunch snack: small bowl of fresh blueberries (BG: 103 mg/dL Flat) (Protein: 0g) (Pred: 126-136 mg/dL @ 4:38 PM)",
     "type": "Snack",
     "date": "2026-06-10T14:32:00.000+02:00",
     "photo": "https://iili.io/CBc4X7s.jpg",
@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-10/28a41b851688f57f.jpg",
     "carbs": 31,
     "cals": 310,
-    "delta": null,
-    "peak": null
+    "delta": 38,
+    "peak": 149
   },
   {
     "id": "37a85ec7-0668-81c8-a7a5-c2d5c00e6510",
