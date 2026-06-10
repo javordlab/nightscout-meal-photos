@@ -7,7 +7,7 @@ const {
   NS_ENTERED_BY,
   createNsTelemetry
 } = require('./health-sync/ns_identity');
-const { loadSyncState, saveSyncState, upsertEntry } = require('./health-sync/sync_state');
+const { loadSyncState, saveSyncState, upsertEntry, consolidateDriftSiblings } = require('./health-sync/sync_state');
 const { stampFile: stampRowIds } = require('./health-sync/row_id');
 const SYNC_STATE_PATH = path.join(__dirname, '../data/sync_state.json') ||
   '/Users/javier/.openclaw/workspace/data/sync_state.json';
@@ -479,15 +479,15 @@ async function main() {
         // nsEntryKey alone risks landing on a different record under entry_key
         // drift, leaving the two ids split across records — still unskippable.
         if (nsRes.treatmentId) {
-          const entriesObj = syncState.entries || {};
-          const targetKey = Object.keys(entriesObj).find(
-            k => entriesObj[k].timestamp === entryData.iso &&
-                 entriesObj[k].user === entryData.user &&
-                 entriesObj[k].notion?.page_id
-          ) || nsEntryKey;
-          const prevNsId = entriesObj[targetKey]?.nightscout?.treatment_id || null;
+          // Write under the CURRENT entry key and consolidate: any drift sibling
+          // at the same (ts, user, category) — e.g. the old record still holding
+          // the notion.page_id after a title rewrite — is merged in and pruned,
+          // so sync_state stays 1 record per entry with both IDs co-located.
+          // (Replaces the 2026-06-03 targetKey indirection, which co-located the
+          // ids on the OLD record and left the stale sibling behind.)
+          const prevNsId = (syncState.entries || {})[nsEntryKey]?.nightscout?.treatment_id || null;
           if (prevNsId !== nsRes.treatmentId) {
-            upsertEntry(syncState, targetKey, {
+            upsertEntry(syncState, nsEntryKey, {
               timestamp: entryData.iso,
               user: entryData.user,
               category: entryData.category,
@@ -496,6 +496,11 @@ async function main() {
                 last_synced_at: new Date().toISOString()
               }
             });
+          }
+          const pruned = consolidateDriftSiblings(syncState, nsEntryKey, {
+            timestamp: entryData.iso, user: entryData.user, category: entryData.category
+          });
+          if (prevNsId !== nsRes.treatmentId || pruned > 0) {
             saveSyncState(SYNC_STATE_PATH, syncState);
           }
         }
@@ -663,6 +668,9 @@ async function main() {
             last_synced_at: new Date().toISOString()
           }
         });
+        consolidateDriftSiblings(syncState, nsEntryKey, {
+          timestamp: entryData.iso, user: entryData.user, category: entryData.category
+        });
         saveSyncState(SYNC_STATE_PATH, syncState);
       }
     } else {
@@ -692,6 +700,9 @@ async function main() {
             page_id: existing.id,
             last_synced_at: new Date().toISOString()
           }
+        });
+        consolidateDriftSiblings(syncState, nsEntryKey, {
+          timestamp: entryData.iso, user: entryData.user, category: entryData.category
         });
         saveSyncState(SYNC_STATE_PATH, syncState);
       }

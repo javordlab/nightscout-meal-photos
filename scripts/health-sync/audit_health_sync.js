@@ -336,12 +336,46 @@ async function main(options = {}) {
   const recentEntries = (normalized.entries || []).filter(e => new Date(e.timestamp) >= new Date(since));
   report.summary.totalEntries = recentEntries.length;
 
+  // Drift-robust sync_state lookup (see feedback_drift_robust_sync_state_lookup):
+  // entry_key is a content hash, so title rewrites leave the NS/Notion IDs on a
+  // SIBLING record at the same (timestamp, user, category). A direct
+  // state.entries[entryKey] lookup produced ~220 false missing-link warnings per
+  // day (2026-06-10). Resolve the effective record by merging the direct record
+  // with any sibling that holds the IDs it lacks.
+  const stateByGroup = new Map();
+  for (const rec of Object.values(state.entries || {})) {
+    const k = `${rec.timestamp}|${rec.user}|${rec.category}`;
+    if (!stateByGroup.has(k)) stateByGroup.set(k, []);
+    stateByGroup.get(k).push(rec);
+  }
+  function effectiveSyncEntry(entry) {
+    const direct = state.entries[entry.entryKey];
+    const sibs = stateByGroup.get(`${entry.timestamp}|${entry.user}|${entry.category}`) || [];
+    if (direct && direct.nightscout?.treatment_id && direct.notion?.page_id) return direct;
+    const merged = { ...(direct || sibs[sibs.length - 1] || {}) };
+    if (!merged.nightscout?.treatment_id) {
+      const s = sibs.filter(r => r.nightscout?.treatment_id).pop();
+      if (s) merged.nightscout = s.nightscout;
+    }
+    if (!merged.notion?.page_id) {
+      const s = sibs.filter(r => r.notion?.page_id).pop();
+      if (s) merged.notion = s.notion;
+    }
+    if (!merged.gallery?.gallery_id) {
+      const s = sibs.filter(r => r.gallery?.gallery_id).pop();
+      if (s) merged.gallery = s.gallery;
+    }
+    if (!merged.outcomes_backfilled && sibs.some(r => r.outcomes_backfilled)) merged.outcomes_backfilled = true;
+    return merged;
+  }
+
   for (const entry of recentEntries) {
-    const syncEntry = state.entries[entry.entryKey] || {};
+    const syncEntry = effectiveSyncEntry(entry);
     const issues = [];
 
-    // Check sync state presence
-    if (!state.entries[entry.entryKey]) {
+    // Check sync state presence (direct key OR drift sibling counts)
+    if (!state.entries[entry.entryKey] &&
+        !(stateByGroup.get(`${entry.timestamp}|${entry.user}|${entry.category}`) || []).length) {
       issues.push({ type: 'missing_from_sync_state', severity: 'warning' });
     } else {
       report.summary.inSyncState++;
@@ -434,8 +468,9 @@ async function main(options = {}) {
       }
     }
 
-    // Missing link checks
-    if (!nsLinked && entry.category !== 'Note') {
+    // Missing link checks. Sleep is exempt from NS — the dispatcher deliberately
+    // never sends Sleep entries to Nightscout (not a treatment).
+    if (!nsLinked && entry.category !== 'Note' && entry.category !== 'Sleep') {
       report.summary.missingNs++;
       issues.push({ type: 'missing_ns_link', severity: 'warning' });
     }
@@ -471,6 +506,11 @@ async function main(options = {}) {
   // dispatcher run will then create a fresh Notion page for each cleared entry.
   // Rationale: any deterministic tiebreaker is correct here because the dispatcher
   // (post-2026-04-06 entry_key fix) will discover the right page via Entry Key.
+  // Drift-awareness (2026-06-10): multiple records sharing a page_id at the SAME
+  // (timestamp, user) are entry_key-drift siblings of one entry — benign, and
+  // they were re-alerting every morning (264 false errors/day). Only flag when
+  // the colliding records claim DIFFERENT (timestamp, user) — i.e. the page is
+  // genuinely cross-linked between two distinct SSoT entries.
   const pageIdToKeys = new Map();
   for (const [entryKey, syncEntry] of Object.entries(state.entries || {})) {
     const pid = syncEntry.notion?.page_id;
@@ -478,9 +518,12 @@ async function main(options = {}) {
     if (!pageIdToKeys.has(pid)) pageIdToKeys.set(pid, []);
     pageIdToKeys.get(pid).push(entryKey);
   }
+  const normalizedKeySet = new Set((normalized.entries || []).map(e => e.entryKey));
   let collisionsCleared = 0;
   for (const [pid, keys] of pageIdToKeys) {
     if (keys.length < 2) continue;
+    const tsUsers = new Set(keys.map(k => `${state.entries[k].timestamp}|${state.entries[k].user}`));
+    if (tsUsers.size < 2) continue; // same entry under drifted keys — not a cross-link
     report.summary.sync_state_pageid_collision = (report.summary.sync_state_pageid_collision || 0) + 1;
     report.discrepancies.push({
       entryKey: null,
@@ -490,15 +533,18 @@ async function main(options = {}) {
                  note: 'Multiple SSoT entries point to the same Notion page_id — clear all but the canonical one and re-sync' }]
     });
     if (options.fix) {
-      // Keep the lexicographically-smallest entry_key as the canonical owner;
-      // clear notion link from the rest.
-      const sortedKeys = [...keys].sort();
-      const losers = sortedKeys.slice(1);
+      // Keep the record that corresponds to a live SSoT entry (current
+      // normalized entry_key); clear notion link from the rest. If zero or
+      // several keys are live, fall back to the lexicographically-smallest —
+      // deterministic, and the dispatcher rediscovers the right page via Row Id.
+      const liveKeys = keys.filter(k => normalizedKeySet.has(k));
+      const keeper = liveKeys.length === 1 ? liveKeys[0] : [...keys].sort()[0];
+      const losers = keys.filter(k => k !== keeper);
       for (const loser of losers) {
         if (state.entries[loser]?.notion) {
           delete state.entries[loser].notion;
           collisionsCleared++;
-          console.log(`  --fix: cleared notion link from ${loser.slice(0,17)} (collision with ${sortedKeys[0].slice(0,17)})`);
+          console.log(`  --fix: cleared notion link from ${loser.slice(0,17)} (collision with ${keeper.slice(0,17)})`);
         }
       }
     }
@@ -571,10 +617,14 @@ async function sendSyncGapAlert(report, errorCount, warnCount) {
     lines.push(`  ... and ${report.discrepancies.length - 5} more`);
   }
 
-  lines.push(`\nRun: node scripts/health-sync/health_sync_pipeline.js --mode=full --since=$(date -v-2d +%F)`);
+  lines.push(`\nMissing links: node scripts/health-sync/health_sync_pipeline.js --mode=full --since=$(date -v-2d +%F)`);
+  lines.push(`Drift/collisions: node scripts/health-sync/consolidate_sync_state_drift.js (review, then --apply)`);
 
   const text = lines.join('\n');
-  const r = await sendAlert(text);
+  // Plain text, no parse_mode: entry titles and script paths contain `_`/`(`,
+  // which Telegram's Markdown parser either mangles (paired underscores became
+  // italics — "healthsyncpipeline.js") or rejects outright (odd count).
+  const r = await sendAlert(text, undefined, { parseMode: null });
   if (r.ok) console.log('📱 Sync gap alert sent to Javi');
   else console.warn('⚠️ Alert send failed:', r.description);
 }
@@ -582,7 +632,16 @@ async function sendSyncGapAlert(report, errorCount, warnCount) {
 if (require.main === module) {
   const args = process.argv.slice(2);
   const sinceArg = args.find(a => a.startsWith('--since='));
-  const since = sinceArg ? sinceArg.split('=')[1] : null;
+  // --lookback=N (days) — the crontab has passed this since day one, but it was
+  // never parsed, silently widening every audit to the 7-day default window.
+  const lookbackArg = args.find(a => a.startsWith('--lookback='));
+  let since = sinceArg ? sinceArg.split('=')[1] : null;
+  if (!since && lookbackArg) {
+    const days = parseFloat(lookbackArg.split('=')[1]);
+    if (Number.isFinite(days) && days > 0) {
+      since = new Date(Date.now() - days * 24 * 60 * 60 * 1000).toISOString();
+    }
+  }
   const fix = args.includes('--fix');
 
   main({ since, fix }).catch(e => {
