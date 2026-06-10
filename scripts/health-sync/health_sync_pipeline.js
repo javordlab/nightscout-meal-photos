@@ -49,6 +49,7 @@ async function main(options = {}) {
     results.resolvePendingPhotos = await runStep('Resolve Pending Photos', './resolve_pending_photo_links');
     if (!results.resolvePendingPhotos.success) {
       log({ op: 'pipeline_abort', reason: 'resolve_pending_photos_failed' });
+      results.aborted = 'resolve_pending_photos_failed';
       return results;
     }
   }
@@ -58,6 +59,7 @@ async function main(options = {}) {
     results.normalize = await runStep('Normalize', './normalize_health_log');
     if (!results.normalize.success) {
       log({ op: 'pipeline_abort', reason: 'normalize_failed' });
+      results.aborted = 'normalize_failed';
       return results;
     }
   }
@@ -72,6 +74,7 @@ async function main(options = {}) {
     results.validate = await runStep('Validate', './validate_health_sync', { failOnError: true, since });
     if (!results.validate.success) {
       log({ op: 'pipeline_abort', reason: 'validation_failed' });
+      results.aborted = 'validation_failed';
       return results;
     }
   }
@@ -134,7 +137,26 @@ if (require.main === module) {
   const since = sinceArg ? sinceArg.split('=')[1] : null;
   const dryRun = args.includes('--dry-run');
 
-  main({ mode, since, dryRun }).catch(e => {
+  main({ mode, since, dryRun }).then(results => {
+    // An aborted pipeline used to exit 0 — the heartbeat showed "ok" while the
+    // Unified Sync step was silently skipped (1,111 occurrences before
+    // 2026-06-10). Surface the abort through the cron receipt AND the exit
+    // code so the watchdog can actually see it.
+    const failedSteps = Object.entries(results)
+      .filter(([, v]) => v && typeof v === 'object' && v.success === false)
+      .map(([k]) => k);
+    if (results.aborted || failedSteps.length > 0) {
+      const { writeReceipt } = require('./cron_receipt');
+      writeReceipt({
+        status: 'error',
+        summary: results.aborted
+          ? `pipeline aborted: ${results.aborted}`
+          : `steps failed: ${failedSteps.join(', ')}`,
+        metrics: { failedSteps: failedSteps.length }
+      });
+      process.exitCode = 1;
+    }
+  }).catch(e => {
     console.error(e.message);
     process.exit(1);
   });

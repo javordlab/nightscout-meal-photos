@@ -9,7 +9,7 @@
 **Javier Ordonez (Javi)** — engineer, timezone: America/Los_Angeles, Telegram: 8335333215. Technical, precise, prefers directness. Contact: ordonez@gmail.com.
 
 **Maria Dennis** — 73yo, 139 lbs, 5'0". Type 2 Diabetes (FreeStyle Libre 3 CGM). The health system exists for her.
-- **Meds:** Metformin 500mg (breakfast), 500mg (lunch), 1000mg (dinner) | Lisinopril 10mg (morning) | Rosuvastatin 10mg (every other morning, anchor date 2026-03-01)
+- **Meds:** Trulicity (dulaglutide) weekly injection (every Monday morning) | Metformin 500mg (breakfast), 500mg (lunch), 1000mg (dinner) | Lisinopril 10mg (morning) | Rosuvastatin 10mg (every other morning, anchor date 2026-03-01)
 
 ---
 
@@ -48,7 +48,7 @@ Fully automated health logging pipeline for Maria:
 
 ```
 Maria's Telegram message
-    └── OpenClaw webhook → HealthGuard agent (health-guard)
+    └── HealthGuard agent processes via Telegram webhook
             ├── Photos: uploaded to freeimage.host in same turn, URL written to health_log.md
             └── Text: food/med/exercise entry written to health_log.md
 
@@ -60,9 +60,9 @@ health_log.md  (SSoT — never edit downstream systems directly)
 
 Monitoring:
     ├── mysql_glucose_sync.js     → syncs CGM readings to MySQL (20,50 * * * *)
-    ├── glucose_low_alert.js      → alerts if BG < 70 mg/dL (*/5 * * * *)
+    ├── glucose_low_alert.js      → daytime (08:30–24:00): BG ≤ 80 / ≤ 90+down. Overnight (00:00–08:30): BG < 70 only. (*/5 * * * *)
     ├── send_daily_health_report_telegram.js → 9:30 AM daily report (pure script, no LLM)
-    └── cron_health_watchdog.js   → checks all cron jobs for staleness (every 30 min, Haiku)
+    └── cron_health_watchdog.js   → checks all cron jobs for staleness (every 15 min, pure script)
 ```
 
 ---
@@ -77,11 +77,9 @@ Monitoring:
 | **Photo hosting** | `https://freeimage.host` — API key: `6d207e02198a847aa98d0a2a901485a5` |
 | **Photo gallery** | `https://javordlab.github.io/nightscout-meal-photos/` |
 | **Telegram group** | `-5262020908` ("Food log") — Bot: `@Javordclaws_bot` |
-| **Email (AgentMail)** | `javordclaw@agentmail.to` — API key in `~/.openclaw/secrets/agentmail_api_key` |
 | **GitHub** | `javordlab` (all private, 27 repos) |
 | **Node binary** | `/opt/homebrew/bin/node` — ALWAYS use full path in scripts (system cron has no PATH) |
 | **Workspace** | `/Users/javier/.openclaw/workspace` |
-| **Inbound media** | `/Users/javier/.openclaw/media/inbound/` — all Telegram photos auto-saved here |
 
 ---
 
@@ -101,18 +99,16 @@ Monitoring:
 | Script | Purpose |
 |--------|---------|
 | `scripts/calculate_notion_projections.js` | Peak BG prediction (Model v3, 4-layer formula). Runs in radial sync. |
-| `scripts/calculate_glucose_summary.js` | 24h glucose stats — used by daily report. Always use exact output, never eyeball. |
-| `scripts/calculate_14d_stats.js` | 14-day trend stats — used by daily report. Same rule. |
-| `scripts/backfill_notion_impact.js` | Writes actual outcomes ~3h post-meal (hourly cron) |
-| `scripts/refresh_glucose_data.js` | Fetches latest CGM data from Nightscout |
+| `scripts/calculate_glucose_summary.js` | 24h + 14d glucose stats (fetches live from NS). Suppresses 14d when coverage <13 days. |
+| `scripts/calculate_14d_stats.js` | 14d trend stats (fetches live from NS). Exits with code 2 when coverage <13 days. |
+| `scripts/backfill_meal_outcomes.js` | Writes actual BG outcomes ~3h post-meal to MySQL + best-effort Notion mirror (hourly cron). Replaced `backfill_notion_impact.js` 2026-05-21. |
 
 ### Monitoring & Alerts
 | Script | Purpose |
 |--------|---------|
-| `scripts/health-sync/glucose_low_alert.js` | Alerts Javi if BG < 70 mg/dL. Runs every 5 min. |
-| `scripts/health-sync/cron_health_watchdog.js` | Checks cron job freshness, alerts if stale. Every 30 min. |
-| `scripts/health-sync/audit_health_sync.js` | Detects entries missing from Notion or Nightscout. System cron 9:45 AM. |
-| `scripts/health-sync/daily_log_review.sh` | Reviews gateway logs via `claude -p` OAuth (Haiku). System cron 9:15 AM. |
+| `scripts/health-sync/glucose_low_alert.js` | Daytime (08:30–24:00): alerts at BG ≤ 80 (any trend) or BG ≤ 90 + downtrend. Overnight (00:00–08:30): alerts only when BG < 70. Re-alerts on critical re-cross, after 30 min of stale state, or once BG recovers above 100. Runs every 5 min. |
+| `scripts/health-sync/cron_health_watchdog.js` | Checks cron job freshness, alerts if stale. Every 15 min. |
+| `scripts/health-sync/audit_health_sync.js` | Detects entries missing from Notion or Nightscout. System cron 9:10 AM. |
 | `scripts/health-sync/report_watchdog.js` | Verifies daily report was sent; triggers fallback if not |
 
 ### Daily Report
@@ -136,7 +132,7 @@ Monitoring:
 | Script | Purpose |
 |--------|---------|
 | `scripts/mysql_glucose_sync.js` | Syncs CGM readings to MySQL. Has 48h age cutoff to prevent runaway pagination. |
-| `scripts/sync_notion_to_mysql.js` | Async Notion → MySQL sync (every 4h) |
+| `scripts/sync_notion_to_mysql.js` | RETIRED 2026-05-21 (`retired: true` in cron config) — MySQL is written from SSoT via `sync_ssot_to_mysql.js`, not from Notion |
 | `scripts/mysql_backup.sh` | Daily MySQL backup (4:20 AM) |
 | `scripts/generate_backup_dashboard_data.js` | Updates backups.json for gh-pages status dashboard |
 | `scripts/health-sync/deploy_gh_pages.js` | Deploys to gh-pages branch |
@@ -159,60 +155,47 @@ Monitoring:
 
 ## Cron Jobs
 
-### System Crontab (run even if OpenClaw is down)
+### System Crontab
 | Schedule | Script | Notes |
 |----------|--------|-------|
-| `0,30 * * * *` | `health_sync_pipeline.js` | Normalize + validate + unified sync |
+| `0,30 * * * *` | `health_sync_pipeline.js` | `--mode=sync-only`: normalize + enrich + validate (hard gate) + unified sync |
 | `5,35 * * * *` | `auto_track_meds.js` + `calculate_notion_projections.js` + `radial_dispatcher.js` | Meds auto-log + projections + master sync |
 | `20,50 * * * *` | `mysql_glucose_sync.js` | CGM → MySQL, 48h age cutoff |
-| `0 * * * *` | `backfill_notion_impact.js` | Actual outcomes backfill |
-| `*/5 * * * *` | `glucose_low_alert.js` | Low BG (<70) alert |
+| `0 * * * *` | `backfill_meal_outcomes.js` | Actual outcomes backfill (MySQL canonical + Notion mirror) |
+| `*/5 * * * *` | `glucose_low_alert.js` | Low BG alert — daytime ≤80 / ≤90+down, overnight <70 only |
 | `20 4 * * *` | `mysql_backup.sh` | Daily MySQL backup |
-| `0 */4 * * *` | `sync_notion_to_mysql.js` | Notion → MySQL async |
-| `0 8 * * *` | `check_provider_auth.js` | OAuth token health check (Nightscout/Notion/Codex/Gemini/Anthropic/Claude OAuth). Log-scan based, not CLI probes. |
-| `15 9 * * *` | `daily_log_review.sh` | Gateway log review via `claude -p` OAuth (Haiku). Migrated from OpenClaw 2026-04-03. **Crontab entry was missing Apr 3–6 despite migration claim** — restored 2026-04-06. |
-| `30 9 * * *` | `send_daily_health_report_telegram.js` | Daily report |
-| `32 9 * * *` | `report_watchdog.js` | Report fallback if 9:30 fails |
-| `37 9 * * *` | `send_daily_charts_telegram.js --no-regenerate` | Chart fallback |
-| `45 9 * * *` | `audit_health_sync.js --lookback=2` | Daily sync audit. Migrated from OpenClaw 2026-04-03. **Crontab entry was missing Apr 3–6 despite migration claim** — restored 2026-04-06. |
+| `15 4 * * *` | `rotate_cron_logs.sh` | Rotate cron_health/cron_watchdog logs when >50MB (added 2026-06-10) |
+| `57 8 * * *` | `report_watchdog.js` | Report fallback if 08:55 launchd job failed |
+| `2 9 * * *` | `send_daily_charts_telegram.js` | Chart fallback — early-exits if 08:55 launchd job already sent all charts (otherwise regenerates + sends only the missing ones) |
+| `10 9 * * *` | `audit_health_sync.js --lookback=2` | Daily sync audit. |
+| `10,40 * * * *` | `sync_ssot_to_mysql.js` | SSoT → MySQL mirror |
+| `15,45 * * * *` | `publish_photos_to_gh_pages.js` | Push new meal photos to gh-pages |
+| `*/20 * * * *` | `rescue_pending_photos.js` | Re-attempt any photos that failed initial upload |
+| `*/5 * * * *` | `probe_launchd_jobs.js` | Heartbeat-mirror for launchd jobs so the watchdog can see them |
 | `*/15 * * * *` | `cron_health_watchdog.js` | Infrastructure health check + crontab/config drift detection |
-| `0 23 * * 0` | `weekly_memory_summary.sh` | Weekly memory rollup via `claude -p` OAuth (Sonnet). Migrated from OpenClaw 2026-04-03. **Crontab entry was missing Apr 3–6 despite migration claim** — restored 2026-04-06. |
+| `0 23 * * 0` | `weekly_memory_summary.sh` | Weekly memory rollup via `claude -p` OAuth (Opus 4.7). |
 
 > **Critical:** All scripts must use `/opt/homebrew/bin/node` explicitly (or `/Users/javier/.local/bin/claude` for OAuth calls). System cron PATH is `/usr/bin:/bin` — bare `node`/`claude` fails silently.
 
 > **Also critical — all crontab entries must `cd /Users/javier/.openclaw/workspace &&` before invoking scripts.** Heartbeat_wrap and all relative paths (`scripts/...`, `data/...`) break silently without it. Drift detector in `cron_health_watchdog.js` catches missing entries but not a missing `cd` prefix — review crontab by hand when adding new jobs.
 
-### OpenClaw Cron Jobs
-All 4 LLM-assisted jobs **intended** to migrate to system crontab 2026-04-03; 3 of 4 were actually installed in crontab only on 2026-04-06 after the drift was discovered. See "Trust drift incident" note below. Zero OpenClaw cron dependency now.
+### launchd Plists (`~/Library/LaunchAgents/`)
+| Plist | Schedule | What it runs |
+|-------|----------|--------------|
+| `com.healthguard.daily-report.plist` | 08:55 daily | `send_daily_health_report_telegram.js` — sends the daily report AND chains into `send_daily_charts_telegram.js` for all charts. This is the authoritative daily send. |
+| `com.healthguard.dashboard-server.plist` | RunAtLoad | Serves the local cron dashboard at `http://localhost/healthguard` |
+| `com.healthguard.glucose-sync.plist` | every 120s | `mysql_glucose_sync.js` — fast path for dashboard freshness. The crontab `20,50` entry runs the SAME script as the heartbeat-monitored backup path; idempotent, intentional dual-path. |
 
-> **Migrated (verified in live crontab 2026-04-06):** `cron-health-watchdog`, `daily-log-review` (`claude -p` Haiku OAuth), `health-sync-daily-audit`, `weekly-memory-summary` (`claude -p` Sonnet OAuth).
+> **Why launchd, not crontab, for the daily report:** launchd survives sleep — if the laptop is asleep at 08:55, the job fires on next wake. crontab silently skips missed runs. Documented here because the system crontab `2 9 * * *` chart entry is a *fallback*, not the primary path; the watchdog reads `cron_jobs_config.json` which already declares `daily-report` with `source: launchd`.
 
-### ⚠️ Trust Drift Incident (2026-04-03 → 2026-04-06)
+### Cron Monitoring — Drift Detection (2026-04-06)
 
-On 2026-04-03, CLAUDE.md was updated to claim 4 OpenClaw cron jobs had been migrated to system crontab. In reality only 1 (`cron-health-watchdog`) was actually installed — the other 3 were removed from OpenClaw but the crontab entries were never added. They lived in the docs and the scripts directory but nowhere the OS would ever run them.
-
-**Consequences, discovered 2026-04-06:**
-- `daily_log_review.sh` — the script whose entire purpose is to scan gateway logs for actionable issues and alert — never ran. It would have caught the `openai-codex` OAuth `refresh_token_reused` failures that were printing hourly into `gateway.err.log` (902 occurrences by 2026-04-06).
-- `audit_health_sync.js` — daily Notion/Nightscout sync audit never ran.
-- `weekly_memory_summary.sh` — weekly memory rollup never ran.
-
-**Why the cron watchdog didn't catch it:** the watchdog only alerts on jobs it knows about. These 3 jobs weren't in `data/cron_jobs_config.json` either, so the watchdog had no baseline to notice they were missing.
-
-**Fix (2026-04-06):**
-1. All 3 crontab entries installed + verified in live `crontab -l`.
-2. All 3 registered in `data/cron_jobs_config.json` so the watchdog tracks them.
-3. **New: crontab ↔ config drift detector** added to `cron_health_watchdog.js`. Every 15 min it parses `crontab -l`, extracts `heartbeat_wrap.js <id>` tokens, diffs against the config, and alerts on three drift classes:
-   - `unscheduled` — in config, not in crontab
-   - `unmonitored` — in crontab, not in config
-   - `schedule-drift` — both sides have it but cronExpr differs
-4. Drift issues appear in `data/cron_watchdog_status.json` under `driftIssues` and in the Telegram alert as a dedicated "Cron ↔ Config Drift" section.
-
-**Rule going forward — the three-way source of truth:**
+The cron watchdog (`cron_health_watchdog.js`) ensures consistency across three sources:
 - `data/cron_jobs_config.json` = declared truth (what should run)
 - `crontab -l` = scheduler truth (what IS scheduled)
 - `data/heartbeats/<id>.json` = observed truth (what DID run)
 
-A job is only "really running" if all three agree. The drift detector now enforces (1) ↔ (2); the stale-heartbeat detector enforces (1) ↔ (3). Docs (CLAUDE.md) are not a fourth source of truth — they describe state but cannot guarantee it. Never treat a CLAUDE.md entry as proof that something runs.
+A job is only "really running" if all three agree. The drift detector alerts on misalignment. Docs (CLAUDE.md) are not authoritative — always verify against the three-way truth.
 
 ### Cron Monitoring — Heartbeat + Receipt Architecture (2026-04-06)
 
@@ -243,18 +226,18 @@ The HealthGuard cron dashboard at http://localhost/healthguard monitors three di
 
 ## Model Routing (MANDATORY — see AGENTS.md for full rules)
 
-| Task | Model | Reason |
-|------|-------|--------|
-| Food/med/exercise writes to health_log.md | **Sonnet 4.6** | Clinical data — no shortcuts |
-| Entry key computation, deduplication | **Sonnet 4.6** | Hash errors silently corrupt SSoT |
-| Quality gate evaluation | **Sonnet 4.6** | Wrong pass = garbage in production |
-| Glucose alerts, outlier detection | **Sonnet 4.6** | False negatives are clinically dangerous |
-| Image/photo analysis | **Sonnet 4.6** | Vision quality matters for nutrition accuracy |
-| Daily health report narration | **Sonnet 4.6** | Clinical interpretation required |
-| Conflict resolution (Notion/NS mismatch) | **Sonnet 4.6** | Data integrity |
-| Cron monitoring, log review, acks | **Haiku 4.5** | Cheap, fast, no health data writes |
-| Weekly memory summary | **Sonnet 4.6** via `claude -p` OAuth | Replaced Codex (was timing out). Runs locally in system cron. |
-| Interactive dev sessions (like this one) | **Claude Code subscription** | Free — doesn't hit API tokens |
+All health-critical and data-touching tasks use **Claude Opus 4.7** (`claude-opus-4-7`):
+- Any write to `health_log.md`, Nightscout, or Notion
+- Entry key computation and deduplication (hash errors corrupt SSoT)
+- Quality gate evaluation (blocks malformed entries)
+- Glucose alerts, outlier detection, peak BG projection
+- Image/photo analysis and food description accuracy
+- Daily health report (all sections including Coach narration)
+- Conflict resolution when systems diverge
+- Daily log review and cron monitoring via `claude -p` OAuth
+- Weekly memory summaries
+
+**Why Opus 4.7 across the board:** No cost-based tradeoffs for health data. Medication errors, food carb misestimation, or data deduplication failures have direct clinical consequence. Consistency of model across all health operations reduces risk of subtle model-specific bugs.
 
 ---
 
@@ -321,15 +304,14 @@ Expected accuracy: ~87–89% within ±20 mg/dL.
 
 ## ⚠️ Sandbox Limitation — Live System State
 
-Claude Code runs in a sandbox. `crontab -l`, OpenClaw API calls, and live process queries will return empty/fail.
-**Do not tell the user there are no cron jobs.** There are 11 system cron entries and 4 OpenClaw jobs.
+Claude Code runs in a sandbox. `crontab -l` and live process queries will return empty/fail when run directly from Claude Code.
 
 To get a current snapshot of live state, run:
 ```bash
 bash scripts/dump_system_state.sh
 cat data/system_state.md
 ```
-This queries the real `crontab -l` and `openclaw cron list` outside the sandbox and writes results to a file you can read.
+This queries the real `crontab -l` outside the sandbox and writes results to a file you can read.
 
 ---
 

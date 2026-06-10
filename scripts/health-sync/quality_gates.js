@@ -17,7 +17,13 @@ const PLACEHOLDER_PATTERNS = [
 
 const BG_TAG_REGEX = /\bBG:\s*[^;()]+/i;
 const PRED_TAG_REGEX = /\bPred:\s*[^;()]+/i;
-const MEAL_TYPE_PREFIX_REGEX = /^(Breakfast|Lunch|Snack|Dinner|Dessert):\s+/i;
+// A meal-type word must appear near the start of the title, followed by a
+// colon somewhere before the food description. The agent's natural titles
+// carry qualifiers around the word — "Pre-sleep snack (retroactively logged
+// 23:57):", "Lunch (cont. — added past 1h window):", "Late breakfast/early
+// lunch:" — all of which the old strict /^(Breakfast|...):/ form rejected,
+// permanently failing the pipeline's validation gate (2026-06-10).
+const MEAL_TYPE_PREFIX_REGEX = /^.{0,40}?\b(breakfast|lunch|snack|dinner|dessert)\b.*?:\s+/is;
 
 function isPlaceholderText(text) {
   const value = String(text || '');

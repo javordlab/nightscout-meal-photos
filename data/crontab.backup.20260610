@@ -1,0 +1,45 @@
+# Health sync pipeline every 30 min (normalize → validate → unified_sync → audit)
+0,30 * * * * cd /Users/javier/.openclaw/workspace && /opt/homebrew/bin/node scripts/health-sync/heartbeat_wrap.js health-sync-pipeline -- /opt/homebrew/bin/node scripts/health-sync/health_sync_pipeline.js --mode=sync-only --since=$(date -v-2d +\%Y-\%m-\%d) >> data/cron_health.log 2>&1
+
+# Radial Sync every 30 min, offset 5min (auto_track_meds + projections + dispatcher → Notion/NS/MySQL)
+5,35 * * * * cd /Users/javier/.openclaw/workspace && /opt/homebrew/bin/node scripts/health-sync/heartbeat_wrap.js auto-track-meds -- /opt/homebrew/bin/node scripts/auto_track_meds.js >> data/cron_health.log 2>&1 && /opt/homebrew/bin/node scripts/health-sync/heartbeat_wrap.js calc-notion-projections -- /opt/homebrew/bin/node scripts/calculate_notion_projections.js >> data/cron_health.log 2>&1 && /opt/homebrew/bin/node scripts/health-sync/heartbeat_wrap.js radial-dispatcher -- /opt/homebrew/bin/node scripts/radial_dispatcher.js >> data/cron_health.log 2>&1
+
+# Hourly Notion impact backfill
+0 * * * * cd /Users/javier/.openclaw/workspace && /opt/homebrew/bin/node scripts/health-sync/heartbeat_wrap.js meal-outcomes-backfill -- /opt/homebrew/bin/node scripts/backfill_meal_outcomes.js >> data/cron_health.log 2>&1
+
+# MySQL Glucose Sync every 30 min (offset 15min from radial)
+20,50 * * * * cd /Users/javier/.openclaw/workspace && /opt/homebrew/bin/node scripts/health-sync/heartbeat_wrap.js mysql-glucose-sync -- /opt/homebrew/bin/node scripts/mysql_glucose_sync.js >> data/cron_health.log 2>&1
+
+# Glucose Low Alert every 5 min
+*/5 * * * * cd /Users/javier/.openclaw/workspace && /opt/homebrew/bin/node scripts/health-sync/heartbeat_wrap.js glucose-low-alert -- /opt/homebrew/bin/node scripts/health-sync/glucose_low_alert.js >> data/cron_watchdog.log 2>&1
+
+# MySQL Daily Backup at 4:20 AM
+20 4 * * * cd /Users/javier/.openclaw/workspace && /opt/homebrew/bin/node scripts/health-sync/heartbeat_wrap.js mysql-backup -- /bin/bash scripts/mysql_backup.sh >> data/cron_health.log 2>&1
+
+# Notion to MySQL async sync every 4h
+# RETIRED 2026-05-21 (backfill_meal_outcomes.js writes outcomes to MySQL directly now):
+# */15 * * * * cd /Users/javier/.openclaw/workspace && /opt/homebrew/bin/node scripts/health-sync/heartbeat_wrap.js notion-to-mysql -- /opt/homebrew/bin/node scripts/sync_notion_to_mysql.js >> data/cron_health.log 2>&1
+
+# 8:55 PT deterministic daily health report
+# 8:57 PT report watchdog check with fallback emitter
+57 8 * * * cd /Users/javier/.openclaw/workspace && REPORT_FALLBACK_CMD="/opt/homebrew/bin/node scripts/health-sync/send_fallback_report.js" /opt/homebrew/bin/node scripts/health-sync/heartbeat_wrap.js report-watchdog -- /opt/homebrew/bin/node scripts/health-sync/report_watchdog.js >> data/cron_health.log 2>&1
+# 9:02 PT chart fallback
+2 9 * * * cd /Users/javier/.openclaw/workspace && /opt/homebrew/bin/node scripts/health-sync/heartbeat_wrap.js daily-charts -- /opt/homebrew/bin/node scripts/health-sync/send_daily_charts_telegram.js >> data/cron_health.log 2>&1
+
+# Cron health watchdog every 15 min
+*/15 * * * * cd /Users/javier/.openclaw/workspace && /opt/homebrew/bin/node scripts/health-sync/heartbeat_wrap.js cron-health-watchdog -- /opt/homebrew/bin/node scripts/health-sync/cron_health_watchdog.js >> data/cron_watchdog.log 2>&1
+
+
+# Daily health-sync audit at 9:10 PT — migrated from OpenClaw 2026-04-03 (crontab entry restored 2026-04-06)
+10 9 * * * cd /Users/javier/.openclaw/workspace && /opt/homebrew/bin/node scripts/health-sync/heartbeat_wrap.js health-sync-daily-audit -- /opt/homebrew/bin/node scripts/health-sync/audit_health_sync.js --lookback=2 >> data/cron_health.log 2>&1
+
+# Weekly memory summary Sundays 23:00 PT — migrated from OpenClaw 2026-04-03 (crontab entry restored 2026-04-06)
+0 23 * * 0 cd /Users/javier/.openclaw/workspace && /opt/homebrew/bin/node scripts/health-sync/heartbeat_wrap.js weekly-memory-summary -- /bin/bash scripts/health-sync/weekly_memory_summary.sh >> data/cron_health.log 2>&1
+
+# SSoT -> health_ssot MySQL sync (10,40 * * * *) - added 2026-04-06
+10,40 * * * * cd /Users/javier/.openclaw/workspace && /opt/homebrew/bin/node scripts/health-sync/heartbeat_wrap.js ssot-mysql-sync -- /opt/homebrew/bin/node scripts/health-sync/sync_ssot_to_mysql.js >> data/cron_health.log 2>&1
+
+# Publish photos to GH Pages (runs after ssot-mysql-sync at :10/:40)
+15,45 * * * * cd /Users/javier/.openclaw/workspace && /opt/homebrew/bin/node scripts/health-sync/heartbeat_wrap.js publish-photos-gh-pages -- /opt/homebrew/bin/node scripts/health-sync/publish_photos_to_gh_pages.js >> data/cron_health.log 2>&1
+*/20 * * * * /opt/homebrew/bin/node scripts/health-sync/heartbeat_wrap.js rescue-pending-photos -- /opt/homebrew/bin/node scripts/health-sync/rescue_pending_photos.js >> data/cron_health.log 2>&1
+*/5 * * * * /opt/homebrew/bin/node scripts/health-sync/heartbeat_wrap.js probe-launchd-jobs -- /opt/homebrew/bin/node scripts/health-sync/probe_launchd_jobs.js >> data/cron_health.log 2>&1

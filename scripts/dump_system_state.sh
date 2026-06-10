@@ -32,7 +32,7 @@ echo "" >> "$OUT"
 
 # --- backups.json freshness ---
 echo "## Backup Dashboard Freshness" >> "$OUT"
-node -e "
+/opt/homebrew/bin/node -e "
 const d = require('$WORKSPACE/nightscout-meal-photos/data/backups.json');
 const age = Math.round((Date.now() - new Date(d.lastUpdated)) / 60000);
 console.log('backups.json last updated: ' + d.lastUpdated + ' (' + age + ' min ago)');
@@ -41,13 +41,17 @@ console.log('Status: ' + (age < 70 ? '✅ FRESH' : '⚠️ STALE'));
 echo "" >> "$OUT"
 
 # --- Sync state summary ---
+# Schema: { version, entries: { "<entry_key>": { notion: {page_id}, nightscout:
+# {treatment_id}, ... } } }. The pre-2026 flat shape (top-level keys with
+# notion_page_id fields) is long gone — reading it produced "Total entries: 2"
+# (version + entries) and 0 IDs, which looked like a wiped sync_state.
 echo "## Sync State Summary" >> "$OUT"
-node -e "
+/opt/homebrew/bin/node -e "
 const fs = require('fs');
 const s = JSON.parse(fs.readFileSync('$WORKSPACE/data/sync_state.json'));
-const entries = Object.keys(s);
-const withNotion = entries.filter(k => s[k].notion_page_id).length;
-const withNS = entries.filter(k => s[k].nightscout_treatment_id).length;
+const entries = Object.values(s.entries || {});
+const withNotion = entries.filter(e => e.notion && e.notion.page_id).length;
+const withNS = entries.filter(e => e.nightscout && e.nightscout.treatment_id).length;
 console.log('Total entries: ' + entries.length);
 console.log('With Notion page_id: ' + withNotion);
 console.log('With Nightscout treatment_id: ' + withNS);

@@ -31,11 +31,12 @@
       "maxDurationMs": 240000
     },
     {
-      "id": "backfill-notion-impact",
-      "name": "Hourly Notion Impact",
+      "id": "meal-outcomes-backfill",
+      "name": "Hourly Meal Outcomes",
       "cronExpr": "0 * * * *",
       "staleMaxMs": 7200000,
-      "maxDurationMs": 300000
+      "maxDurationMs": 120000,
+      "_comment": "Replaced backfill-notion-impact on 2026-05-21. Reads recent Food entries from health_log_entries, queries Nightscout, writes BG outcomes to MySQL (canonical) + best-effort mirror to Notion. Typical runtime ~1-2s."
     },
     {
       "id": "mysql-glucose-sync",
@@ -63,26 +64,30 @@
       "name": "Notion→MySQL Sync",
       "cronExpr": "0 */4 * * *",
       "staleMaxMs": 36000000,
-      "maxDurationMs": 600000
+      "maxDurationMs": 600000,
+      "retired": true,
+      "_comment": "RETIRED 2026-05-21. Outcomes now flow directly to MySQL via meal-outcomes-backfill (no Notion round-trip). Crontab entry commented out. Leaving config entry as 'retired' so the watchdog skips it instead of alerting overdue."
     },
     {
       "id": "daily-report",
       "name": "Daily Health Report",
-      "cronExpr": "30 9 * * *",
+      "cronExpr": "55 8 * * *",
       "staleMaxMs": 93600000,
-      "maxDurationMs": 60000
+      "maxDurationMs": 600000,
+      "source": "launchd",
+      "launchdLabel": "com.healthguard.daily-report"
     },
     {
       "id": "report-watchdog",
       "name": "Daily Report Watchdog",
-      "cronExpr": "32 9 * * *",
+      "cronExpr": "57 8 * * *",
       "staleMaxMs": 93600000,
       "maxDurationMs": 60000
     },
     {
       "id": "daily-charts",
       "name": "Daily Charts",
-      "cronExpr": "37 9 * * *",
+      "cronExpr": "2 9 * * *",
       "staleMaxMs": 93600000,
       "maxDurationMs": 120000
     },
@@ -94,23 +99,9 @@
       "maxDurationMs": 30000
     },
     {
-      "id": "check-provider-auth",
-      "name": "Provider Auth Check",
-      "cronExpr": "0 8 * * *",
-      "staleMaxMs": 93600000,
-      "maxDurationMs": 30000
-    },
-    {
-      "id": "daily-log-review",
-      "name": "Daily Gateway Log Review",
-      "cronExpr": "15 9 * * *",
-      "staleMaxMs": 93600000,
-      "maxDurationMs": 180000
-    },
-    {
       "id": "health-sync-daily-audit",
       "name": "Daily Health-Sync Audit",
-      "cronExpr": "45 9 * * *",
+      "cronExpr": "10 9 * * *",
       "staleMaxMs": 93600000,
       "maxDurationMs": 120000
     },
@@ -123,10 +114,93 @@
     },
     {
       "id": "ssot-mysql-sync",
-      "name": "SSoT \u2192 health_ssot Sync",
+      "name": "SSoT → health_ssot Sync",
       "cronExpr": "10,40 * * * *",
       "staleMaxMs": 3600000,
       "maxDurationMs": 60000
+    },
+    {
+      "id": "publish-photos-gh-pages",
+      "name": "Publish Photos → gh-pages",
+      "cronExpr": "15,45 * * * *",
+      "staleMaxMs": 3600000,
+      "maxDurationMs": 60000
+    },
+    {
+      "id": "rescue-pending-photos",
+      "name": "Rescue Pending Photo Uploads",
+      "cronExpr": "*/20 * * * *",
+      "staleMaxMs": 2700000,
+      "maxDurationMs": 90000
+    },
+    {
+      "id": "probe-launchd-jobs",
+      "name": "Probe LaunchAgent Jobs",
+      "cronExpr": "*/5 * * * *",
+      "staleMaxMs": 900000,
+      "maxDurationMs": 30000
+    },
+    {
+      "id": "launchd-glucose-sync",
+      "name": "Glucose Sync (launchd)",
+      "cronExpr": "*/5 * * * *",
+      "staleMaxMs": 900000,
+      "maxDurationMs": 30000,
+      "source": "launchd",
+      "launchdLabel": "com.healthguard.glucose-sync"
+    },
+    {
+      "id": "launchd-dashboard-server",
+      "name": "Dashboard Server (launchd)",
+      "cronExpr": "*/5 * * * *",
+      "staleMaxMs": 900000,
+      "maxDurationMs": 30000,
+      "source": "launchd",
+      "launchdLabel": "com.healthguard.dashboard-server"
+    },
+    {
+      "id": "launchd-bridge-foodlog",
+      "name": "claude-bridge: foodlog",
+      "cronExpr": "*/5 * * * *",
+      "staleMaxMs": 900000,
+      "maxDurationMs": 30000,
+      "source": "launchd",
+      "launchdLabel": "ai.openclaw.claude-bridge.foodlog"
+    },
+    {
+      "id": "launchd-bridge-opus",
+      "name": "claude-bridge: opus",
+      "cronExpr": "*/5 * * * *",
+      "staleMaxMs": 900000,
+      "maxDurationMs": 30000,
+      "source": "launchd",
+      "launchdLabel": "ai.openclaw.claude-bridge.opus"
+    },
+    {
+      "id": "launchd-bridge-haiku",
+      "name": "claude-bridge: haiku",
+      "cronExpr": "*/5 * * * *",
+      "staleMaxMs": 900000,
+      "maxDurationMs": 30000,
+      "source": "launchd",
+      "launchdLabel": "ai.openclaw.claude-bridge.haiku"
+    },
+    {
+      "id": "launchd-bridge-base",
+      "name": "claude-bridge: base",
+      "cronExpr": "*/5 * * * *",
+      "staleMaxMs": 900000,
+      "maxDurationMs": 30000,
+      "source": "launchd",
+      "launchdLabel": "ai.openclaw.claude-bridge"
+    },
+    {
+      "id": "rotate-cron-logs",
+      "name": "Cron log rotation",
+      "cronExpr": "15 4 * * *",
+      "source": "crontab",
+      "staleMaxMs": 93600000,
+      "maxDurationMs": 300000
     }
   ]
 }

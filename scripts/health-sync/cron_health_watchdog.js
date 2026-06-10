@@ -131,7 +131,9 @@ function loadJobs() {
   const now = Date.now();
   const nowDate = new Date(now);
 
-  return config.jobs.map(cfg => {
+  // Jobs flagged `retired: true` are not actively scheduled — keep the config
+  // entry as a paper trail but don't include them in liveness checks or alerts.
+  return config.jobs.filter(cfg => !cfg.retired).map(cfg => {
     const state = {
       lastRunAtMs: null,
       lastFinishAtMs: null,
@@ -152,6 +154,7 @@ function loadJobs() {
       state.lastDurationMs = Number.isFinite(hb.lastDurationMs) ? hb.lastDurationMs : null;
       state.consecutiveErrors = Number.isFinite(hb.consecutiveErrors) ? hb.consecutiveErrors : 0;
       state.outcome = hb.outcome || null;
+      state.exitCode = Number.isFinite(hb.exitCode) ? hb.exitCode : null;
     } catch {
       // no heartbeat yet — job will show as "never-run" until it fires once
     }
@@ -176,12 +179,15 @@ function getIntervalMs(job) {
   if (!sched) return null;
   if (sched.kind === 'every') return sched.everyMs;
   if (sched.kind === 'cron') {
-    // Derive from nextRunAtMs - lastRunAtMs if available
-    const last = job.state.lastRunAtMs;
-    const next = job.state.nextRunAtMs;
-    if (last && next && next > last) return next - last;
-    // Fallback: parse cron expression for common patterns
+    // Derive from two successive FUTURE ticks of the expression. (The previous
+    // `next - last` derivation returned garbage for long-dead jobs: a job last
+    // run 49 days ago got a 49-day "interval", so 2× grace = 98 days.)
     const expr = sched.expr || '';
+    const n1 = nextCronTime(expr, new Date());
+    if (n1) {
+      const n2 = nextCronTime(expr, new Date(n1));
+      if (n2 && n2 > n1) return n2 - n1;
+    }
     if (expr === '*/30 * * * *') return 30 * 60 * 1000;
     if (expr === '0 * * * *') return 60 * 60 * 1000;
     if (expr === '0 */4 * * *') return 4 * 60 * 60 * 1000;
@@ -215,54 +221,35 @@ function checkStaleness(job, now) {
   const override = getOverride(job);
   const intervalMs = getIntervalMs(job);
 
-  // Primary signal: nextRunAtMs — if in the future, job is on schedule
-  const nextRun = state.nextRunAtMs;
-  if (nextRun && nextRun > now) return null; // scheduled in future, healthy
-
-  // Determine grace period after nextRunAtMs (or after expected next tick)
-  let graceMs;
+  // Stale = the last heartbeat is older than the tolerated maximum age.
+  //
+  // BUG FIX (2026-06-10): the previous implementation keyed off
+  // state.nextRunAtMs — but loadJobs() computes that from *now*, so it is
+  // always in the future and the early-return "scheduled in future, healthy"
+  // made this entire function unreachable for every validly-scheduled job.
+  // Net effect: staleness detection NEVER fired (rescue-pending-photos was
+  // dead 49 days, reported healthy throughout). Only age-since-last-run is a
+  // valid liveness signal here.
+  let maxAgeMs;
   if (override) {
-    // For override jobs, grace = the override maxMs (capped at interval to avoid false positives on daily jobs)
-    graceMs = override.maxMs;
+    // staleMaxMs from config is the tolerated age of the last heartbeat;
+    // add one interval so a job isn't flagged mid-cycle.
+    maxAgeMs = override.maxMs + (intervalMs || 0);
   } else if (intervalMs) {
-    graceMs = Math.min(intervalMs, 2 * 60 * 60 * 1000); // max 2h grace by default
+    maxAgeMs = Math.max(intervalMs * 2, 10 * 60 * 1000); // 2× interval, ≥10m
   } else {
-    return null;
+    return null; // no signal to judge by
   }
 
-  // If nextRunAtMs is known and in the past, check how overdue it is
-  if (nextRun) {
-    const overdueMs = now - nextRun;
-    if (overdueMs > graceMs) {
-      const overdueMin = Math.round(overdueMs / 60000);
-      const graceMin = Math.round(graceMs / 60000);
-      return {
-        jobId: job.id,
-        name: override?.label || job.name,
-        overdueMin,
-        graceMin,
-        lastRunAtMs: lastRun,
-        nextRunAtMs: nextRun,
-        consecutiveErrors: state.consecutiveErrors || 0,
-        lastStatus: state.lastStatus || state.lastRunStatus || 'unknown'
-      };
-    }
-    return null;
-  }
-
-  // Fallback: no nextRunAtMs — check age since last run against 2× interval
-  if (!intervalMs) return null;
-  const maxMs = intervalMs * 2;
-  const ageSinceLastRun = now - lastRun;
-  if (ageSinceLastRun > maxMs) {
-    const ageMin = Math.round(ageSinceLastRun / 60000);
-    const maxMin = Math.round(maxMs / 60000);
+  const ageMs = now - lastRun;
+  if (ageMs > maxAgeMs) {
     return {
       jobId: job.id,
       name: override?.label || job.name,
-      overdueMin: ageMin,
-      graceMin: maxMin,
+      overdueMin: Math.round((ageMs - maxAgeMs) / 60000),
+      graceMin: Math.round(maxAgeMs / 60000),
       lastRunAtMs: lastRun,
+      nextRunAtMs: state.nextRunAtMs || null,
       consecutiveErrors: state.consecutiveErrors || 0,
       lastStatus: state.lastStatus || state.lastRunStatus || 'unknown'
     };
@@ -336,6 +323,7 @@ function buildJobInfo(job, now) {
     maxDurationMs: job.maxDurationMs || null,
     durationWarn: durationWarn || false,
     outcome: outcome,
+    exitCode: state.exitCode ?? null,
     overdueMin: staleResult?.overdueMin || null,
     graceMin: staleResult?.graceMin || null
   };
@@ -385,12 +373,15 @@ function reconcileCrontabAgainstConfig() {
   }
 
   const config = JSON.parse(fs.readFileSync(JOBS_CONFIG_PATH, 'utf8'));
-  const configJobs = new Map(config.jobs.map(j => [j.id, j]));
+  // Same exclusion as buildJobInfo — retired jobs are paper trail only.
+  const configJobs = new Map(config.jobs.filter(j => !j.retired).map(j => [j.id, j]));
 
   const issues = [];
 
   // (1) In config but missing from crontab → unscheduled
+  //     Skip entries with source === 'launchd' — they're launchd plists, not crontab.
   for (const [id, cfg] of configJobs) {
+    if (cfg.source === 'launchd') continue;
     if (!crontabJobs.has(id)) {
       issues.push({
         kind: 'unscheduled',
@@ -514,6 +505,17 @@ async function main() {
   const driftCount = Array.isArray(driftIssues) ? driftIssues.length : 0;
   const issues = stale.length + (reportIssue ? 1 : 0) + (ghPagesIssue ? 1 : 0) + driftCount;
 
+  // Build a stable fingerprint of the current issue set.
+  // Alert only if fingerprint changed OR last alert was >4h ago (prevents silent re-fires).
+  const ALERT_STATE_PATH = path.join(DATA_DIR, 'watchdog_alert_state.json');
+  const RESEND_AFTER_MS = 4 * 60 * 60 * 1000; // 4 hours
+  let alertState = { fingerprint: null, lastAlertAt: 0 };
+  try {
+    if (fs.existsSync(ALERT_STATE_PATH)) {
+      alertState = JSON.parse(fs.readFileSync(ALERT_STATE_PATH, 'utf8'));
+    }
+  } catch { /* start fresh if corrupt */ }
+
   if (issues > 0) {
     const lines = ['⚠️ *Cron Health Alert*', ''];
 
@@ -524,7 +526,11 @@ async function main() {
         const summary = s.outcome.summary ? ` — ${s.outcome.summary}` : '';
         bits.push(`outcome: ${s.outcome.status}${summary}`);
       }
-      if (s.consecutiveErrors > 0) bits.push(`❌ ${s.consecutiveErrors} consecutive errors`);
+      if (s.consecutiveErrors > 0) {
+        const exitHint = (s.exitCode != null && s.exitCode !== 0 && !(s.outcome && s.outcome.summary))
+          ? ` (exit ${s.exitCode})` : '';
+        bits.push(`❌ ${s.consecutiveErrors} consecutive errors${exitHint}`);
+      }
       if (s.durationWarn) bits.push(`slow: ${Math.round(s.lastDurationMs/1000)}s > ${Math.round(s.maxDurationMs/1000)}s`);
       if (bits.length === 0) bits.push('error');
       lines.push(`• *${s.name}*: ${bits.join(' · ')}`);
@@ -550,20 +556,50 @@ async function main() {
     }
 
     const message = lines.join('\n');
-    console.log(`[watchdog] ${issues} stale job(s) found. Alerting Javi.`);
-    console.log(message);
 
-    try {
-      await sendAlert(message);
-      statusOut.alertSent = true;
-      console.log('[watchdog] Alert sent via Telegram.');
-    } catch (err) {
-      console.error(`[watchdog] Telegram send failed: ${err.message}`);
-    }
-    if (false) {  // keep old block unreachable for reference
-      console.warn('[watchdog] No Telegram token available — skipping alert.');
+    // Fingerprint = sorted list of issue identifiers (job ids + detail text)
+    const fingerprintParts = [
+      ...stale.map(s => `job:${s.id}:${s.consecutiveErrors}`),
+      reportIssue ? `report:${reportIssue.detail}` : null,
+      ghPagesIssue ? `ghpages:${ghPagesIssue}` : null,
+      ...(driftIssues || []).map(d => `drift:${d.id}:${d.kind}`),
+    ].filter(Boolean).sort();
+    const fingerprint = fingerprintParts.join('|');
+
+    const sinceLastAlert = now - (alertState.lastAlertAt || 0);
+    const changed = fingerprint !== alertState.fingerprint;
+    const forceResend = sinceLastAlert > RESEND_AFTER_MS;
+
+    if (changed || forceResend) {
+      console.log(`[watchdog] ${issues} issue(s) found. Sending alert (changed=${changed}, forceResend=${forceResend}).`);
+      console.log(message);
+      try {
+        // sendAlert resolves {ok:false} on failure — it never rejects. Check ok
+        // explicitly, and retry without parse_mode: job summaries can contain
+        // underscores (script names) that break Telegram's Markdown parser.
+        let r = await sendAlert(message);
+        if (!r.ok) {
+          console.warn(`[watchdog] Markdown send failed (${r.description || r.error || '?'}); retrying as plain text.`);
+          r = await sendAlert(message.replace(/[*`]/g, ''), undefined, { parseMode: null });
+        }
+        if (!r.ok) throw new Error(r.description || r.error || 'sendMessage failed');
+        statusOut.alertSent = true;
+        alertState = { fingerprint, lastAlertAt: now };
+        fs.writeFileSync(ALERT_STATE_PATH, JSON.stringify(alertState, null, 2));
+        console.log('[watchdog] Alert sent via Telegram.');
+      } catch (err) {
+        // Don't persist the fingerprint — a failed send must retry next tick.
+        console.error(`[watchdog] Telegram send failed: ${err.message}`);
+      }
+    } else {
+      console.log(`[watchdog] ${issues} issue(s) found but fingerprint unchanged — suppressing duplicate alert (last sent ${Math.round(sinceLastAlert / 60000)}m ago).`);
     }
   } else {
+    // Issues cleared — reset fingerprint so next issue fires fresh
+    if (alertState.fingerprint) {
+      alertState = { fingerprint: null, lastAlertAt: 0 };
+      fs.writeFileSync(ALERT_STATE_PATH, JSON.stringify(alertState, null, 2));
+    }
     console.log(`[watchdog] All ${jobs.length} jobs healthy.`);
   }
 
