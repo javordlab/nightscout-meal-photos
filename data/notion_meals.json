@@ -1,5 +1,16 @@
 [
   {
+    "id": "37b85ec7-0668-8166-ad66-dbd73c126e9b",
+    "title": "Pre-lunch snack: small bowl of fresh blueberries (BG: 103 mg/dL Flat) (Pred: 126-136 mg/dL @ 4:38 PM) (Protein: 0g , Carbs: ~12g , Cals: ~45) [Coach: Fresh blueberries 🫐 — clean whole-fruit snack, ~12g carbs, fiber + polyphenols. Pred only nudges to ~131 by 4:38 PM. Beautiful pre-lunch nibble.]",
+    "type": "Snack",
+    "date": "2026-06-10T14:32:00.000+02:00",
+    "photo": "https://iili.io/CBc4X7s.jpg",
+    "carbs": 12,
+    "cals": 45,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37b85ec7-0668-8129-92b4-d1ff47243dbe",
     "title": "Late breakfast / early lunch: closed sandwich on multigrain seeded bread with turkey breast and queso fresco (fresh cheese), plus a tea/coffee (BG: 111 mg/dL Flat) (Protein: 27g) (Pred: 131-141 mg/dL @ 12:55 PM)",
     "type": "Lunch",
