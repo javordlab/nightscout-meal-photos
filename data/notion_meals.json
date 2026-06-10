@@ -1,5 +1,16 @@
 [
   {
+    "id": "37b85ec7-0668-8156-85d0-c4da3d9ff8a7",
+    "title": "Dessert (post-walk): wafer ice cream corte with multi-flavor filling (vanilla + a yellow swirl, possibly mango or chocolate) (BG: 100 mg/dL Flat) (Pred: 110-120 mg/dL @ 6:49 PM) (Protein: 3g , Carbs: ~22g , Cals: ~150) [Coach: Wafer corte post-walk 🍦 — walked first, dessert second, exactly the pattern. ~22g of mostly-sugar carbs, but BG starting at a clean 100 means Pred only goes to ~115. Beautifully restrained dessert sequence.]",
+    "type": "Dessert",
+    "date": "2026-06-10T17:07:00.000+02:00",
+    "photo": "https://iili.io/CBMkN5u.jpg",
+    "carbs": 22,
+    "cals": 150,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37b85ec7-0668-8138-bfc1-c0426431c325",
     "title": "Lunch (at home): grilled chicken drumstick + a slice of grilled beef, with a mixed salad (lettuce, tomato, cucumber), a small piece of cheese, and a glass of red vermouth (BG: 96 mg/dL Flat) (Protein: 44g) (Pred: 105-115 mg/dL @ 5:38 PM)",
     "type": "Lunch",
@@ -1398,7 +1409,7 @@
   },
   {
     "id": "36185ec7-0668-815f-b41b-c0702dd5f257",
-    "title": "Dinner: Chunk of crusty white bread [Cumulative Dinner: ~24g carbs total] (BG: 121 mg/dL Flat) (Pred: 145-155 mg/dL @ 10:47 PM) (Protein: 5g | Carbs: ~22g | Cals: ~120) [Coach: And there's the bread ��� — Coach's flat-line prophecy gets a small revision. The shrimp, lomo, and blue cheese stack still does most of the buffering, so the spike should stay modest. Half the chunk next time would keep total carbs under 20g.]",
+    "title": "Dinner: Chunk of crusty white bread [Cumulative Dinner: ~24g carbs total] (BG: 121 mg/dL Flat) (Pred: 145-155 mg/dL @ 10:47 PM) (Protein: 5g | Carbs: ~22g | Cals: ~120) [Coach: And there's the bread 🍞 — Coach's flat-line prophecy gets a small revision. The shrimp, lomo, and blue cheese stack still does most of the buffering, so the spike should stay modest. Half the chunk next time would keep total carbs under 20g.]",
     "type": "Dinner",
     "date": "2026-05-15T21:34:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-15/3c641023ac76be1e.jpg",
