@@ -1,5 +1,16 @@
 [
   {
+    "id": "37b85ec7-0668-8148-b062-c422ba57839b",
+    "title": "Dinner: cheese bocadillo — baguette with slices of cheese (BG: 151 mg/dL Flat) (Pred: 183-193 mg/dL @ 10:39 PM) (Protein: 14g , Carbs: ~30g , Cals: ~330) [Coach: Cheese bocadillo 🥖 — ~14g protein from the cheese, baguette is the main carb load (~30g). Starting at 151 (the corte's tail) pushes Pred toward 188 by 10:39 PM. Light protein day-cap; a short stroll before bed would soften the close. Cured-meat tally held at 0 today 🎯]",
+    "type": "Dinner",
+    "date": "2026-06-10T21:23:00.000+02:00",
+    "photo": "https://iili.io/CBk0wQ4.jpg",
+    "carbs": 30,
+    "cals": 330,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37b85ec7-0668-8156-85d0-c4da3d9ff8a7",
     "title": "Dessert (post-walk): wafer ice cream corte with multi-flavor filling (vanilla + a yellow swirl, possibly mango or chocolate) (BG: 100 mg/dL Flat) (Protein: 3g) (Pred: 110-120 mg/dL @ 6:49 PM)",
     "type": "Dessert",
@@ -1695,7 +1706,7 @@
   },
   {
     "id": "35e85ec7-0668-8122-8299-f3ead4a7cec3",
-    "title": "Lunch: 1 unit of Doce Reina light egg-milk dessert (160g, sugar-reduced with sweeteners) [Cumulative Lunch: ~56g carbs total] (BG: 121 mg/dL Flat) (Pred: 145-155 mg/dL @ 4:11 PM) (Protein: 13g | Carbs: ~13g | Cals: ~100) [Coach: Smart pick 👌 — light dessert with real protein from egg whites and sweeteners instead of sugar (so the actual BG hit is smaller than the carb count suggests). Sweet finish without the spike.]  [id:ea1e44a9]",
+    "title": "Lunch: 1 unit of Doce Reina light egg-milk dessert (160g, sugar-reduced with sweeteners) [Cumulative Lunch: ~56g carbs total] (BG: 121 mg/dL Flat) (Pred: 145-155 mg/dL @ 4:11 PM) (Protein: 13g | Carbs: ~13g | Cals: ~100) [Coach: Smart pick ���� — light dessert with real protein from egg whites and sweeteners instead of sugar (so the actual BG hit is smaller than the carb count suggests). Sweet finish without the spike.]  [id:ea1e44a9]",
     "type": "Lunch",
     "date": "2026-05-07T15:24:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-07/3f945b2caa202af8.jpg",
