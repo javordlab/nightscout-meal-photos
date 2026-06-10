@@ -1,7 +1,7 @@
 [
   {
     "id": "37b85ec7-0668-8129-92b4-d1ff47243dbe",
-    "title": "Late breakfast / early lunch: closed sandwich on multigrain seeded bread with turkey breast and queso fresco (fresh cheese), plus a tea/coffee (BG: 111 mg/dL Flat) (Pred: 131-141 mg/dL @ 12:55 PM) (Protein: 27g , Carbs: ~31g , Cals: ~310) [Coach: Turkey + queso fresco sandwich 🥪 — clean ~27g protein hits the muscle-preservation target, fresh cheese is light, multigrain seeded bread brings fiber. Pred ~136 by 12:55. Neither turkey nor fresh cheese is cured, so today's cured-meat tally starts at 0. Sensor finally past 24h — should be reliable now.]",
+    "title": "Late breakfast / early lunch: closed sandwich on multigrain seeded bread with turkey breast and queso fresco (fresh cheese), plus a tea/coffee (BG: 111 mg/dL Flat) (Protein: 27g) (Pred: 131-141 mg/dL @ 12:55 PM)",
     "type": "Lunch",
     "date": "2026-06-10T11:02:00.000+02:00",
     "photo": "https://iili.io/CBA2ocN.jpg",
@@ -12,7 +12,7 @@
   },
   {
     "id": "37a85ec7-0668-81c8-a7a5-c2d5c00e6510",
-    "title": "Dinner: grilled cheese sandwich with a slice of roast beef on multigrain seeded bread, with a side of ~5 green olives (BG: 81 mg/dL FortyFiveDown — sensor on first 24h, may want fingerstick verify) (Pred: 112-122 mg/dL @ 10:59 PM) (Protein: 27g , Carbs: ~32g , Cals: ~405) [Coach: Grilled cheese + roast beef + olives 🥪 — ~27g protein hits the muscle-preservation target nicely, olives bring healthy monounsaturated fat. Roast beef is cooked (not cured), so today's tally stays at 1× (the jamón serrano at lunch). Well-timed: BG was dropping into the 80s — this dinner catches it cleanly. Pred ~117 by 10:59 PM. Solid GMI 6.0-supporting close.]",
+    "title": "Dinner: grilled cheese sandwich with a slice of roast beef on multigrain seeded bread, with a side of ~5 green olives (BG: 81 mg/dL FortyFiveDown — sensor on first 24h, may want fingerstick verify) (Protein: 27g) (Pred: 112-122 mg/dL @ 10:59 PM)",
     "type": "Dinner",
     "date": "2026-06-09T21:43:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-09/9cb0e4ca7f71e85a.jpg",
@@ -23,7 +23,7 @@
   },
   {
     "id": "37a85ec7-0668-812d-820a-c4a9d046eccf",
-    "title": "Lunch (late, the real sit-down after the bocadillo aperitivo): Spanish paella with shrimp/seafood and small bits of squid, a bowl of green lettuce salad, and an iced coffee (no sugar) (BG: 144 mg/dL Flat) (Pred: 183-193 mg/dL @ 6:43 PM) (Protein: 17g , Carbs: ~47g , Cals: ~310) [Coach: Paella lunch 🥘 — ~47g carbs from the rice, ~17g protein from shrimp + squid, lettuce salad for fiber. Going in at 144 still drifts Pred to ~188 by 6:43 PM under the Lunch intercept. A walk in the next 30-60 min would clip the peak. Cured-meat tally stays at 0.]",
+    "title": "Lunch (late, the real sit-down after the bocadillo aperitivo): Spanish paella with shrimp/seafood and small bits of squid, a bowl of green lettuce salad, and an iced coffee (no sugar) (BG: 144 mg/dL Flat) (Protein: 17g) (Pred: 183-193 mg/dL @ 6:43 PM)",
     "type": "Lunch",
     "date": "2026-06-09T16:50:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-09/f928adcb1d47e9f7.jpg",
@@ -34,7 +34,7 @@
   },
   {
     "id": "37a85ec7-0668-814e-a30b-ccd9371a5269",
-    "title": "Lunch (out): half a bocadillo de calamares (classic Madrid-style fried squid in a baguette) + Royal Bliss Bitter Rosso Zero Azúcar (no-sugar bitter aperitif soda) (BG: 99 mg/dL Flat) (Pred: 121-131 mg/dL @ 4:14 PM) (Protein: 15g , Carbs: ~30g , Cals: ~255) [Coach: Bocadillo de calamares 🦑 — classic Spanish bar food, calamari brings protein and the light batter adds modest carbs on top of the baguette. ~30g carbs total at half-portion, Pred ~126 by 4:14. Royal Bliss Zero was the perfect non-sugary drink pick. Cured-meat tally stays at 0.]",
+    "title": "Lunch (out): half a bocadillo de calamares (classic Madrid-style fried squid in a baguette) + Royal Bliss Bitter Rosso Zero Azúcar (no-sugar bitter aperitif soda) (BG: 99 mg/dL Flat) (Protein: 15g) (Pred: 121-131 mg/dL @ 4:14 PM)",
     "type": "Lunch",
     "date": "2026-06-09T14:21:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-09/3b77bfeb6915820f.jpg",
@@ -45,7 +45,7 @@
   },
   {
     "id": "37a85ec7-0668-8167-ba36-ec25c27b494e",
-    "title": "Late breakfast/early lunch: closed peanut butter and fresh blueberries sandwich on multigrain seeded bread (2 slices) (BG: 106 mg/dL Flat — sensor stabilized from overnight artifact) (Pred: 141-151 mg/dL @ 1:00 PM) (Protein: 15g , Carbs: ~43g , Cals: ~380) [Coach: PB + blueberries sandwich 🫐 — classic, balanced. PB brings ~8g protein + healthy fat, blueberries layer fiber + polyphenols, ~43g carbs from 2 slices. Pred ~146 by 1 PM under the lunch intercept. Sensor seems to have recovered (106 plausible), but fingerstick once today to confirm.]",
+    "title": "Late breakfast/early lunch: closed peanut butter and fresh blueberries sandwich on multigrain seeded bread (2 slices) (BG: 106 mg/dL Flat — sensor stabilized from overnight artifact) (Protein: 15g) (Pred: 141-151 mg/dL @ 1:00 PM)",
     "type": "Lunch",
     "date": "2026-06-09T11:07:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-09/ff53885d6ceb88be.jpg",
@@ -56,7 +56,7 @@
   },
   {
     "id": "37985ec7-0668-8171-b6ab-c9cab9a0c018",
-    "title": "Dinner: roasted chicken quarter (leg + thigh, skin-on) with sautéed mushrooms and a piece of crusty white bread with butter (BG: 121 mg/dL Flat) (Pred: 149-159 mg/dL @ 10:27 PM) (Protein: 37g , Carbs: ~27g , Cals: ~515) [Coach: Roast chicken + mushrooms + bread 🍗 — ~37g protein crushes the muscle-preservation target, mushrooms bring fiber + umami, butter fat slows the bread. Pred ~154 by 10:27. Chicken is fresh, cured-meat tally stays at 0 for the day. Beautiful dinner.]",
+    "title": "Dinner: roasted chicken quarter (leg + thigh, skin-on) with sautéed mushrooms and a piece of crusty white bread with butter (BG: 121 mg/dL Flat) (Protein: 37g) (Pred: 149-159 mg/dL @ 10:27 PM)",
     "type": "Dinner",
     "date": "2026-06-08T21:11:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-08/b02ff2b90fc81dec.jpg",
@@ -67,7 +67,7 @@
   },
   {
     "id": "37985ec7-0668-816e-b130-f86c0efa5c50",
-    "title": "Snack (merienda): half a shortbread tart with cream and raspberries, a generous handful of fresh blueberries, and herbal tea (BG: 105 mg/dL Flat) (Pred: 139-149 mg/dL @ 6:07 PM) (Protein: 3g , Carbs: ~27g , Cals: ~185) [Coach: Half tart + fresh berries 🫐 — half-portion is the smart move on the shortbread (the crust is the main carb hit), fresh blueberries add real fiber + polyphenols. ~27g carbs, Pred ~144 by 6:07. Lunch peaked clean (BG 105 now) so this lands on a clean baseline.]",
+    "title": "Snack (merienda): half a shortbread tart with cream and raspberries, a generous handful of fresh blueberries, and herbal tea (BG: 105 mg/dL Flat) (Protein: 3g) (Pred: 139-149 mg/dL @ 6:07 PM)",
     "type": "Snack",
     "date": "2026-06-08T16:01:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-08/c80e021698938c0e.jpg",
@@ -78,7 +78,7 @@
   },
   {
     "id": "37985ec7-0668-81b7-90c4-c6f7536cae9e",
-    "title": "Lunch (cont.): a piece of crusty white bread (chusco) and some cheese (BG: 107 mg/dL Flat) (Pred: 134-144 mg/dL @ 4:30 PM) (Protein: 13g , Carbs: ~31g , Cals: ~260) [Cumulative Lunch: ~33g carbs total — updated after potato chunks removed] [Coach: Bread + cheese 🥖 — cheese brings ~7g protein and fat to slow the bread (~30g carbs). With the potatoes removed from the main course, cumulative lunch is now ~43g protein on ~33g carbs, Pred ~139. Very clean.]",
+    "title": "Lunch (cont.): a piece of crusty white bread (chusco) and some cheese (BG: 107 mg/dL Flat) (Protein: 13g) (Pred: 134-144 mg/dL @ 4:30 PM)",
     "type": "Lunch",
     "date": "2026-06-08T14:50:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-08/eb27a0c2c2de6cba.jpg",
@@ -89,7 +89,7 @@
   },
   {
     "id": "37985ec7-0668-810b-989f-e7742da4abe0",
-    "title": "Lunch: grilled bone-in pork chop with a side of cooked Swiss chard (potato chunks set aside — not eaten) (BG: 111 mg/dL Flat) (Pred: 98-108 mg/dL @ 4:30 PM) (Protein: 30g , Carbs: ~2g , Cals: ~295) [Coach: Grilled pork chop + Swiss chard 🍖 — outstanding ~30g protein, virtually no carbs without the potatoes. Pork is fresh, tally stays at 0. Pred ~103 by 4:30. Even better than the original plate — taking out the potatoes is the cleanest version of this lunch.]",
+    "title": "Lunch: grilled bone-in pork chop with a side of cooked Swiss chard (potato chunks set aside — not eaten) (BG: 111 mg/dL Flat) (Protein: 30g) (Pred: 98-108 mg/dL @ 4:30 PM)",
     "type": "Lunch",
     "date": "2026-06-08T14:37:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-08/ca1692930a28fccf.jpg",
@@ -100,7 +100,7 @@
   },
   {
     "id": "37985ec7-0668-8195-a546-c5d74553e3ec",
-    "title": "Snack (pre-lunch): ~12 black olives (BG: 123 mg/dL Flat) (Pred: 126-136 mg/dL @ 3:22 PM) (Protein: 0g , Carbs: ~2g , Cals: ~50) [Coach: Olives 🫒 — basically a free food for blood sugar: healthy monounsaturated fat, ~2g carbs total. Pred barely nudges (~131). Cured-meat tally stays at 0. Smart pre-lunch nibble.]",
+    "title": "Snack (pre-lunch): ~12 black olives (BG: 123 mg/dL Flat) (Protein: 0g) (Pred: 126-136 mg/dL @ 3:22 PM)",
     "type": "Snack",
     "date": "2026-06-08T13:16:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-08/2924c83d855043be.jpg",
@@ -108,6 +108,17 @@
     "cals": 50,
     "delta": -1,
     "peak": 122
+  },
+  {
+    "id": "37985ec7-0668-81bf-bb2b-e7cc692497df",
+    "title": "Breakfast: multigrain seeded toast with peanut butter and a generous handful of fresh raspberries (BG: 115 mg/dL Flat) (Protein: 12g) (Pred: 181-191 mg/dL @ 11:02 AM)",
+    "type": "Breakfast",
+    "date": "2026-06-08T09:35:00.000+02:00",
+    "photo": "https://iili.io/CBAAnfI.jpg",
+    "carbs": 33,
+    "cals": 310,
+    "delta": null,
+    "peak": null
   },
   {
     "id": "37885ec7-0668-8131-9bef-f0dcb260b073",
