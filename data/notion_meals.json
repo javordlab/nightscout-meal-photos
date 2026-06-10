@@ -4,7 +4,7 @@
     "title": "Dessert (post-walk): wafer ice cream corte with multi-flavor filling (vanilla + a yellow swirl, possibly mango or chocolate) (BG: 100 mg/dL Flat) (Protein: 3g) (Pred: 110-120 mg/dL @ 6:49 PM)",
     "type": "Dessert",
     "date": "2026-06-10T17:07:00.000+02:00",
-    "photo": "https://iili.io/CBMkN5u.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-10/cea178599f35d9bc.jpg",
     "carbs": 22,
     "cals": 150,
     "delta": null,
@@ -29,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-10/a922a414bc538158.jpg",
     "carbs": 12,
     "cals": 45,
-    "delta": null,
-    "peak": null
+    "delta": 46,
+    "peak": 149
   },
   {
     "id": "37b85ec7-0668-8129-92b4-d1ff47243dbe",
