@@ -1,18 +1,18 @@
 [
   {
     "id": "37b85ec7-0668-8138-bfc1-c0426431c325",
-    "title": "Lunch (out, restaurant): grilled chicken drumstick + a slice of grilled beef, with a mixed salad (lettuce, tomato, cucumber), and a red drink (awaiting confirmation: Royal Bliss Bitter Rosso Zero or vermouth?) (BG: 96 mg/dL Flat) (Pred: 89-99 mg/dL @ 5:39 PM — assumes Zero drink + no bread) (Protein: 39g , Carbs: ~5g , Cals: ~325) [Coach: Grilled chicken + grilled beef + salad 🍗🥩 — outstanding ~39g protein, very low carbs (only 5g from the salad), Pred lands beautifully at ~94 by 5:39 PM. Neither meat is cured. If the drink turns out to be sweet vermouth (~10g carbs) and/or you had bread (~15g carbs), I'll update; otherwise this is a textbook GMI 5.x-targeting plate.]",
+    "title": "Lunch (at home): grilled chicken drumstick + a slice of grilled beef, with a mixed salad (lettuce, tomato, cucumber), a small piece of cheese, and a glass of red vermouth (BG: 96 mg/dL Flat) (Protein: 44g) (Pred: 105-115 mg/dL @ 5:38 PM)",
     "type": "Lunch",
     "date": "2026-06-10T15:45:00.000+02:00",
     "photo": "https://iili.io/CBEqOlV.jpg",
-    "carbs": 5,
-    "cals": 325,
+    "carbs": 20,
+    "cals": 540,
     "delta": null,
     "peak": null
   },
   {
     "id": "37b85ec7-0668-8166-ad66-dbd73c126e9b",
-    "title": "Pre-lunch snack: small bowl of fresh blueberries (BG: 103 mg/dL Flat) (Pred: 126-136 mg/dL @ 4:38 PM) (Protein: 0g , Carbs: ~12g , Cals: ~45) [Coach: Fresh blueberries 🫐 — clean whole-fruit snack, ~12g carbs, fiber + polyphenols. Pred only nudges to ~131 by 4:38 PM. Beautiful pre-lunch nibble.]",
+    "title": "Pre-lunch snack: small bowl of fresh blueberries (BG: 103 mg/dL Flat) (Protein: 0g) (Pred: 126-136 mg/dL @ 4:38 PM)",
     "type": "Snack",
     "date": "2026-06-10T14:32:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-10/a922a414bc538158.jpg",
@@ -265,7 +265,7 @@
   },
   {
     "id": "37685ec7-0668-81a8-8ae9-cb4cf1a57246",
-    "title": "Lunch (retroactively logged 06-05 15:24, photo added 06-05 21:23): Swiss chard with olive oil, boiled potatoes, morcilla de León (Spanish FRESH blood sausage �� cooked, NOT cured), and a piece of bread on the side (BG: 115 mg/dL Flat — NS reading at 13:00) (Pred: 154-164 mg/dL @ 2:53 PM — historical) (Protein: 12g , Carbs: ~47g , Cals: ~370) [Coach: Lunch ~47g carbs (potatoes + rice in the morcilla + bread), Pred ~159 by 2:53 PM under the lunch intercept. Then the dessert at 14:15 stacked on top before lunch peaked — drove the 220 reading by 6 PM. Morcilla = fresh blood sausage (cooked, not cured), so it does NOT count toward the cured-meat tally. June 4 cured-meat = just the cecina at 6 PM = 1× total = on-target ✅]",
+    "title": "Lunch (retroactively logged 06-05 15:24, photo added 06-05 21:23): Swiss chard with olive oil, boiled potatoes, morcilla de León (Spanish FRESH blood sausage — cooked, NOT cured), and a piece of bread on the side (BG: 115 mg/dL Flat — NS reading at 13:00) (Pred: 154-164 mg/dL @ 2:53 PM — historical) (Protein: 12g , Carbs: ~47g , Cals: ~370) [Coach: Lunch ~47g carbs (potatoes + rice in the morcilla + bread), Pred ~159 by 2:53 PM under the lunch intercept. Then the dessert at 14:15 stacked on top before lunch peaked — drove the 220 reading by 6 PM. Morcilla = fresh blood sausage (cooked, not cured), so it does NOT count toward the cured-meat tally. June 4 cured-meat = just the cecina at 6 PM = 1× total = on-target ✅]",
     "type": "Lunch",
     "date": "2026-06-04T13:00:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-04/306583e04004a12d.jpg",
