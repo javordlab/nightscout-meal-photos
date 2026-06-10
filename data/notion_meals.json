@@ -1,5 +1,16 @@
 [
   {
+    "id": "37b85ec7-0668-8129-92b4-d1ff47243dbe",
+    "title": "Late breakfast / early lunch: closed sandwich on multigrain seeded bread with turkey breast and queso fresco (fresh cheese), plus a tea/coffee (BG: 111 mg/dL Flat) (Pred: 131-141 mg/dL @ 12:55 PM) (Protein: 27g , Carbs: ~31g , Cals: ~310) [Coach: Turkey + queso fresco sandwich 🥪 — clean ~27g protein hits the muscle-preservation target, fresh cheese is light, multigrain seeded bread brings fiber. Pred ~136 by 12:55. Neither turkey nor fresh cheese is cured, so today's cured-meat tally starts at 0. Sensor finally past 24h — should be reliable now.]",
+    "type": "Lunch",
+    "date": "2026-06-10T11:02:00.000+02:00",
+    "photo": "https://iili.io/CBA2ocN.jpg",
+    "carbs": 31,
+    "cals": 310,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37a85ec7-0668-81c8-a7a5-c2d5c00e6510",
     "title": "Dinner: grilled cheese sandwich with a slice of roast beef on multigrain seeded bread, with a side of ~5 green olives (BG: 81 mg/dL FortyFiveDown — sensor on first 24h, may want fingerstick verify) (Pred: 112-122 mg/dL @ 10:59 PM) (Protein: 27g , Carbs: ~32g , Cals: ~405) [Coach: Grilled cheese + roast beef + olives 🥪 — ~27g protein hits the muscle-preservation target nicely, olives bring healthy monounsaturated fat. Roast beef is cooked (not cured), so today's tally stays at 1× (the jamón serrano at lunch). Well-timed: BG was dropping into the 80s — this dinner catches it cleanly. Pred ~117 by 10:59 PM. Solid GMI 6.0-supporting close.]",
     "type": "Dinner",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-09/9cb0e4ca7f71e85a.jpg",
     "carbs": 32,
     "cals": 405,
-    "delta": null,
-    "peak": null
+    "delta": 77,
+    "peak": 174
   },
   {
     "id": "37a85ec7-0668-812d-820a-c4a9d046eccf",
