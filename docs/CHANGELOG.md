@@ -127,3 +127,53 @@ All of `~/.openclaw/` and related projects are now versioned on GitHub under `ja
 2. Metformin entirely unimplemented (TODO comment only).
 3. Timezone functions used UTC / hardcoded offsets.
 **Fix:** Anchor-based Rosuvastatin cycle (2026-03-01 = day 0, even days), implemented all 3 Metformin doses with idempotent check, host-system timezone throughout.
+
+## Sync-State + Cron Infrastructure Audit (2026-06-10)
+
+### Issue 25: Daily false-positive "Sync Audit Gap" alert (~98% noise) — FIXED (commit `621f2a6ee`)
+**Root Cause:** `sync_state.json` is keyed by content-hash `entry_key`. Normal edits (title rewrites, "(cont.)" merges, retro-timestamps) move an entry to a new key while its NS/Notion IDs stay on the old record. `audit_health_sync.js` used direct key lookups + a global (un-windowed) `page_id` collision scan, so ~264 benign drift pairs re-alerted every 9:10 AM.
+**Fix:** New `consolidate_sync_state_drift.js` sweep merged 478 stale siblings (2262→1777 records, 1:1 with SSoT). Audit made drift-robust (resolve IDs via (ts,user,category) siblings; collision only flagged across different (ts,user)); `--lookback=N` finally parsed (was silently ignored → 7-day default); Sleep exempted from NS check; alert sent as plain text (Markdown mangled underscores). Restored 7 wrongly-archived Notion pages + recreated 1 snack page; deleted 1 phantom NS treatment.
+
+### Issue 26: cron watchdog staleness check was unreachable dead code — FIXED (commit `0e1f2c39b`)
+**Root Cause:** `cron_health_watchdog.js` computed `nextRunAtMs` from `now()` (always future) and early-returned "healthy" on it, so the staleness branch never executed. No silently-stopped job was ever flagged.
+**Fix:** Rekeyed on age-since-last-heartbeat vs `staleMaxMs` + one interval; interval derived from two future cron ticks. `sendAlert` `.ok` now checked (it resolves `{ok:false}`, never rejects) with plain-text retry.
+
+### Issue 27: two cron jobs dead 49 days (missing `cd` prefix) — FIXED (commit `0e1f2c39b`)
+**Root Cause:** `rescue_pending_photos` + `probe_launchd_jobs` crontab lines lacked the `cd workspace &&` prefix → `MODULE_NOT_FOUND` from `$HOME` every 5/20 min since ~Apr 22; masked by Issue 26. Failed photo uploads weren't retried; the dashboard was blind to all launchd jobs.
+**Fix:** Added `cd` prefixes (crontab backed up); rescued the 4 aged-out photos via `RESCUE_MAX_AGE_HOURS`; `probe_launchd_jobs` now judges live KeepAlive daemons by `state=running`+pid, not the prior incarnation's exit code.
+
+### Issue 28: pipeline validation gate permanently red, sync silently skipped — FIXED (commit `0e1f2c39b`)
+**Root Cause:** `MEAL_TYPE_PREFIX_REGEX` rejected the agent's real titles ("Lunch (cont.):", "Pre-sleep snack (…):") → validation hard-aborted before Unified Sync, then exited 0 ("ok" heartbeat). 1,111 silent aborts.
+**Fix:** Relaxed regex to allow qualifiers; aborted pipeline now writes an `error` receipt + exits 1. Added `rotate_cron_logs.sh` (cron_health.log had reached 668 MB).
+
+## Program Audit — 47 Findings (2026-06-11)
+
+Companion sweep across ~40 scripts (4 parallel reviewers, all findings verified). Commit `0a7c3dfe2`.
+
+### Issue 29: dead CGM sensor / NS outage silently disabled low-glucose alerting — FIXED (P0)
+**Root Cause:** `glucose_low_alert.js` evaluated `entries[0].sgv` without checking the reading's age — a dead sensor reported "BG fine" off a 6-hour-old value. A persistent NS outage returned a `warn` receipt (dashboard-only; watchdog pages on `error` only).
+**Fix:** Staleness gate (>20 min old → "CGM DATA STALE" group alert, BG not evaluated); NS-outage escalation (3 consecutive failures → Telegram + `error` receipt); skip-path `lastBg` persistence; corrupt-state age-out.
+
+### Issue 30: consistency_check.js was vacuous since inception — FIXED (P0)
+**Root Cause:** `` `${date}T${time}:00` `` on offset-bearing time cells ("19:00 +02:00") produced `Invalid Date` → every row skipped → "PASS" on an empty set. No pre-2026-06-11 "consistency check passed" meant anything.
+**Fix:** Parse offsets, render all three sources through one host-TZ key, encode category semantics (Sleep≠NS, Exercise≈Activity, Medication/BG Check/Sensor→NS Note). First honest run caught a real missing Notion page.
+
+### Issue 31: Row Id reconciler archived LIVE Notion pages — FIXED (P0)
+**Root Cause:** `radial_dispatcher.js` reconciler judged orphans against a single run-start read of `health_log.md`; concurrent whole-file writers (bridge, meds tracker, photo publisher) made live rows momentarily invisible → ~20 live pages archived May 23–Jun 7. The post-Jun-3 skip-gate then never recreated them.
+**Fix:** Sanity brake (rowIds vs window pages), fresh SSoT re-read sparing, two-strike pending file (`data/row_id_archive_pending.json`) before any archive, archive-PATCH error checks.
+
+### Issue 32: radial skip-gate ignored category — FIXED
+**Root Cause:** The "already fully synced" filter matched `(timestamp, user)` only, so same-minute siblings of different categories (19:00 Metformin + 19:00 snack) permanently masked each other.
+**Fix:** Filter now includes category. Also: Notion query/create/patch responses checked (a failed query no longer routes into create → dupes), `notion_errors` folded into receipt totals, drift-aware `knownTreatmentId`, single local-calendar 7-day cutoff, entry-key fallback uses normalize's own `parseRow`/`buildEntryKey` (old local recompute lowercased → never matched).
+
+### Issue 33: report_watchdog fallback was dead code; bridge swallowed errors — FIXED
+**Root Cause:** `report_watchdog.js` ran at 8:57 but its deadline required ≥9:32 → never fired (dead since Apr 13); fallback also couldn't chunk >4096-char reports. `bridge.js` resolved claude-CLI `is_error` JSON as a successful reply (error text sent to Maria, fallback chain skipped); committed the poll offset before processing so `process.exit(2)` dropped queued messages; never checked Telegram `ok:false`.
+**Fix:** Watchdog cron 8:57→9:35; fallback chunks + only marks sent on delivery. Bridge: error-JSON triggers fallback chain, durable inbox journal, `ok:false` checks + 429 retry, photo-download status/timeout, SIGKILL escalation, atomic state writes.
+
+### Issue 34: MySQL paths — silent truncation, mass-delete, failed backups — FIXED
+**Root Cause:** `mysql_glucose_sync.js` reported NS outages as "Caught up — 0 new rows"; `sync_ssot_to_mysql.js` had no brake on mass soft-delete; `backfill_meal_outcomes.js` sent UPDATEs as one abort-on-first-error batch (May-26 freeze pattern) with dead `partial` logic; `mysql_backup.sh` (no `pipefail`) produced "Completed" empty `.gz` files that rotated away good backups within 7 days.
+**Fix:** Outage→error; empty-SSoT abort + mass-delete cap; chunk-then-row-by-row UPDATEs; `pipefail` + size check; utf8mb4 charset on raw mysql calls.
+
+### Issue 35: dead scripts + parity contract — FIXED
+**Root Cause:** `photo_link_watchdog.js` watched a feed dead since March; `retry_pending_photo_uploads.js` + `process_missed_text_messages.js` were orphaned; `record_write_to_ledger.js` stripMetadata diverged from normalize's (every Coach entry a false "phantom"); unit tests appended fixtures to the production ledger; `validate_log_integrity.js` false-alarmed off a March baseline.
+**Fix:** Removed the 3 dead scripts; aligned the entry-key strip (now a THREE-copy contract — change one, change all); env-overridable test ledger (production fixtures purged); integrity validator rebased + absolute paths. Notion gallery no longer overwrites+deploys empty data on API failure.
