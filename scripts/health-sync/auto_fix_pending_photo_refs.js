@@ -18,6 +18,17 @@ const GALLERY_PATH = '/Users/javier/.openclaw/workspace/nightscout-meal-photos/d
 const LOG_FILE = '/Users/javier/.openclaw/workspace/data/auto_fix_photos.log.jsonl';
 const API_KEY = '6d207e02198a847aa98d0a2a901485a5';
 
+const PHOTO_UPLOAD_LOG = '/Users/javier/.openclaw/workspace/data/photo_upload_log.jsonl';
+function logPhotoUpload(photoPath, iiliUrl) {
+  try {
+    fs.appendFileSync(PHOTO_UPLOAD_LOG, JSON.stringify({
+      photoPath, iiliUrl, uploadedAt: new Date().toISOString(),
+    }) + '\n');
+  } catch (e) {
+    console.error(`photo_upload_log append failed: ${e.message}`);
+  }
+}
+
 async function uploadFile(filePath) {
   return new Promise((resolve, reject) => {
     const cmd = `curl -s -X POST "https://freeimage.host/api/1/upload" -F "key=${API_KEY}" -F "source=@${filePath}"`;
@@ -25,6 +36,7 @@ async function uploadFile(filePath) {
       const output = execSync(cmd, { timeout: 30000 }).toString();
       const res = JSON.parse(output);
       if (res.image && res.image.url) {
+        logPhotoUpload(filePath, res.image.url);
         resolve(res.image.url);
       } else {
         reject(new Error('No image URL in response: ' + JSON.stringify(res)));

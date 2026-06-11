@@ -1,4 +1,5 @@
 const https = require('https');
+const { writeReceipt } = require('./health-sync/cron_receipt');
 
 const NOTION_KEY = "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";
 const DATABASE_ID = "31685ec7-0668-813e-8b9e-c5b4d5d70fa5";
@@ -212,10 +213,17 @@ function parsePredFromText(text, fullDateIso) {
 async function run() {
   console.log('Starting Projections Audit (model v3: intercepts + cumulative anchor)...');
 
-  // Retroactive window: last 7 days in local (host) timezone context
+  // Retroactive window: last 7 days in local (host) timezone context.
+  // en-CA Intl gives YYYY-MM-DD in the HOST's local calendar — toISOString()
+  // would yield the UTC date, which disagrees with Notion's local-offset dates
+  // near midnight.
   const now = new Date();
   const sevenDaysAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
-  const onOrAfter = sevenDaysAgo.toISOString().slice(0, 10);
+  const onOrAfter = new Intl.DateTimeFormat('en-CA', {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  }).format(sevenDaysAgo);
 
   // Pre-fetch ALL Food entries in the window (needed for cumulative anchor lookup)
   let allPages = [];
@@ -232,12 +240,24 @@ async function run() {
       page_size: 100,
       ...(cursor ? { start_cursor: cursor } : {})
     });
-    if (!res.results) { console.error('Failed to fetch data:', res); return; }
+    if (!res.results) {
+      console.error('Failed to fetch data:', res);
+      writeReceipt({
+        status: 'error',
+        summary: `Projections query failed: ${res.error || res.message || 'no results in Notion response'}`,
+        metrics: { window: onOrAfter, queryFailed: true }
+      });
+      process.exitCode = 1;
+      return;
+    }
     allPages = allPages.concat(res.results);
     cursor = res.has_more ? res.next_cursor : null;
   } while (cursor);
 
   console.log(`Fetched ${allPages.length} Food entries for window starting ${onOrAfter}`);
+
+  let patched = 0;
+  let failures = 0;
 
   for (const page of allPages) {
     const props = page.properties;
@@ -288,12 +308,41 @@ async function run() {
 
       console.log(`Projection for '${title?.substring(0, 60)}': ${predictedBg} mg/dL [${source}]`);
 
-      await patchJson(page.id, {
+      const patchRes = await patchJson(page.id, {
         'Predicted Peak BG': { number: predictedBg },
         'Predicted Peak Time': { date: { start: peakTimeIso } }
       });
+      if (patchRes.error || patchRes.object === 'error') {
+        failures += 1;
+        console.error(`  PATCH failed for '${title?.substring(0, 60)}': ${patchRes.error || patchRes.message || 'unknown Notion error'}`);
+      } else {
+        patched += 1;
+      }
     }
   }
-  console.log('Projections Audit Complete.');
+
+  console.log(`Projections Audit Complete. ${patched} patched, ${failures} failed.`);
+
+  // Best-effort Notion mirror: partial failures shouldn't fail the cron run,
+  // but a fully-failed run (every PATCH errored) means something is broken.
+  let status = 'ok';
+  if (failures > 0) {
+    status = patched > 0 ? 'partial' : 'error';
+  }
+  writeReceipt({
+    status,
+    summary: `Projections: ${patched} patched, ${failures} failed (window ${onOrAfter}, ${allPages.length} entries)`,
+    metrics: { window: onOrAfter, entries: allPages.length, patched, failures }
+  });
+  if (status === 'error') process.exitCode = 1;
 }
-run();
+
+run().catch((e) => {
+  console.error('Projections audit crashed:', e.message);
+  writeReceipt({
+    status: 'error',
+    summary: `Projections audit crashed: ${e.message}`,
+    metrics: null
+  });
+  process.exitCode = 1;
+});

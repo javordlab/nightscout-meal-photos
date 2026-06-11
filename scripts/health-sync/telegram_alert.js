@@ -30,12 +30,14 @@ function getBridgeBotToken() {
   } catch { return null; }
 }
 
-function sendAlert(text, chatId = JAVI_CHAT_ID) {
+function sendAlert(text, chatId = JAVI_CHAT_ID, { parseMode = 'Markdown' } = {}) {
   const token = getBridgeBotToken();
   if (!token) return Promise.resolve({ ok: false, error: 'No bot token' });
 
   return new Promise((resolve) => {
-    const body = JSON.stringify({ chat_id: chatId, text, parse_mode: 'Markdown' });
+    const payload = { chat_id: chatId, text };
+    if (parseMode) payload.parse_mode = parseMode;
+    const body = JSON.stringify(payload);
     const req = https.request({
       hostname: 'api.telegram.org',
       path: `/bot${token}/sendMessage`,

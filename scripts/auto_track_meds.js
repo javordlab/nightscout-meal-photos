@@ -114,15 +114,28 @@ function autoLog() {
     // Strict dedup: if ANY Medication entry exists for this date containing the drug name
     // AND the meal context (breakfast/lunch/dinner), skip — even if from a photo confirmation.
     // A medication photo = confirmation of the scheduled dose, NOT a new entry.
+    // Fallback: a manual log may lack the context word ("Metformin 1000mg taken with
+    // evening meal") — also accept same drug + same dose logged within ±3h of the slot.
+    // The time window is load-bearing: Metformin 500mg exists at TWO slots
+    // (breakfast 09:10, lunch 13:00), so dose alone can't disambiguate.
     const descLower = description.toLowerCase();
     const drugName = descLower.split(' ')[0]; // e.g. "metformin", "lisinopril"
     const mealCtx = (descLower.match(/\(([^)]+)\)/) || [])[1]?.trim().toLowerCase() || ''; // e.g. "breakfast"
+    const doseNum = (descLower.match(/(\d+(?:\.\d+)?)\s*mg/) || [])[1] || null; // e.g. "500"
+    const doseRegex = doseNum ? new RegExp(`\\b${doseNum}\\s*mg\\b`, 'i') : null;
+    const [slotH, slotM] = time.split(':').map(Number);
+    const slotMins = slotH * 60 + slotM;
     const alreadyLogged = lines.some(l => {
       if (!l.includes(today) || !l.includes('Medication')) return false;
       const ll = l.toLowerCase();
-      const drugMatch = ll.includes(drugName);
+      if (!ll.includes(drugName)) return false;
       const ctxMatch = mealCtx ? ll.includes(mealCtx) : true;
-      return drugMatch && ctxMatch;
+      if (ctxMatch) return true;
+      if (!doseRegex || !doseRegex.test(l)) return false;
+      const t = (l.split('|')[2] || '').trim().match(/^(\d{1,2}):(\d{2})/); // time column
+      if (!t) return false;
+      const lineMins = Number(t[1]) * 60 + Number(t[2]);
+      return Math.abs(lineMins - slotMins) <= 180;
     });
     if (!alreadyLogged) {
       if (!currentBg) currentBg = getBG();

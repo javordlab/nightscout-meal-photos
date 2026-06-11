@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 
-const WORKSPACE = process.cwd();
+const WORKSPACE = '/Users/javier/.openclaw/workspace';
 const LOG_PATH = path.join(WORKSPACE, 'health_log.md');
 const OUTPUT_PATH = path.join(WORKSPACE, 'data', 'health_log.normalized.json');
 const SYNC_STATE_PATH = path.join(WORKSPACE, 'data', 'sync_state.json');
@@ -404,8 +404,10 @@ function main() {
       category: entry.category,
       meal_type: entry.mealType,
       title: entry.title,
-      photo_urls: entry.photoUrls,
-      outcomes_backfilled: entry.actual?.peakBg != null
+      photo_urls: entry.photoUrls
+      // outcomes_backfilled intentionally omitted: parseRow never sets
+      // actual.peakBg, so patching it here would clobber true values written
+      // by the backfill scripts every run.
     });
   }
   saveSyncState(SYNC_STATE_PATH, state);

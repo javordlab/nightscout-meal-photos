@@ -64,7 +64,11 @@ function parseLocalRows() {
     const p = line.split('|').map((x) => x.trim());
     if (p.length < 9) continue;
     const [date, time, user, category, mealType, entry, carbsRaw, calsRaw] = p.slice(1, 9);
-    const localIso = `${date}T${time}:00`;
+    // Time cells carry their offset: "19:00 +02:00". The old `${date}T${time}:00`
+    // concatenation produced "…T19:00 +02:00:00" → Invalid Date → EVERY row was
+    // skipped and the check vacuously PASSed on an empty set.
+    const [timeOnly, offset] = time.split(/\s+/);
+    const localIso = offset ? `${date}T${timeOnly}:00${offset}` : `${date}T${timeOnly}:00`;
     const d = new Date(localIso);
     if (isNaN(d.getTime())) continue;
     if (d < cutoff) continue;
@@ -72,7 +76,9 @@ function parseLocalRows() {
     rows.push({
       date,
       time,
-      dateTimeKey: `${date} ${time}`,
+      // Render through the same host-TZ formatter as the Notion/NS sides so
+      // keys compare correctly regardless of the row's own offset.
+      dateTimeKey: toLocalMinute(d.toISOString()),
       user,
       category,
       mealType,
@@ -151,10 +157,22 @@ async function fetchNightscout() {
   });
 }
 
+// Activity/Exercise are interchangeable labels for the same thing; on the NS
+// side, everything that isn't Food or Exercise lands as a "Note" treatment
+// (Medication, BG Check, Sensor, Note) — mapped there to category 'Medication'.
+function categoriesCompatible(localCat, otherCat) {
+  if (localCat === otherCat) return true;
+  const exercise = new Set(['Activity', 'Exercise']);
+  if (exercise.has(localCat) && exercise.has(otherCat)) return true;
+  const nsNote = new Set(['Medication', 'Note', 'BG Check', 'Sensor']);
+  if (nsNote.has(localCat) && otherCat === 'Medication') return true;
+  return false;
+}
+
 function findMatch(local, arr) {
-  const exact = arr.find((x) => x.dateTimeKey === local.dateTimeKey && x.category === local.category && (x.normEntry.includes(local.normEntry.slice(0, 24)) || local.normEntry.includes(x.normEntry.slice(0, 24))));
+  const exact = arr.find((x) => x.dateTimeKey === local.dateTimeKey && categoriesCompatible(local.category, x.category) && (x.normEntry.includes(local.normEntry.slice(0, 24)) || local.normEntry.includes(x.normEntry.slice(0, 24))));
   if (exact) return exact;
-  return arr.find((x) => x.dateTimeKey === local.dateTimeKey && x.category === local.category);
+  return arr.find((x) => x.dateTimeKey === local.dateTimeKey && categoriesCompatible(local.category, x.category));
 }
 
 (async () => {
@@ -166,10 +184,11 @@ function findMatch(local, arr) {
 
   for (const l of local) {
     const n = findMatch(l, notion);
-    const t = findMatch(l, ns);
+    // Sleep entries deliberately never sync to Nightscout (not a treatment).
+    const t = l.category === 'Sleep' ? null : findMatch(l, ns);
 
     if (!n) issues.push(`[MISSING NOTION] ${l.dateTimeKey} ${l.category} :: ${l.entry}`);
-    if (!t) issues.push(`[MISSING NIGHTSCOUT] ${l.dateTimeKey} ${l.category} :: ${l.entry}`);
+    if (!t && l.category !== 'Sleep') issues.push(`[MISSING NIGHTSCOUT] ${l.dateTimeKey} ${l.category} :: ${l.entry}`);
 
     if (l.category === 'Food') {
       if (n && l.carbs !== null && n.carbs !== null && Number(l.carbs) !== Number(n.carbs)) {
@@ -189,7 +208,7 @@ function findMatch(local, arr) {
       }
     }
 
-    if (l.category === 'Activity' && t && t.eventType !== 'Exercise') {
+    if ((l.category === 'Activity' || l.category === 'Exercise') && t && t.eventType !== 'Exercise') {
       issues.push(`[EVENTTYPE ERROR][NS] ${l.dateTimeKey} expected=Exercise actual=${t.eventType}`);
     }
 

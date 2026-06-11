@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 
-const WORKSPACE = process.cwd();
+const WORKSPACE = '/Users/javier/.openclaw/workspace';
 const NORMALIZED_PATH = path.join(WORKSPACE, 'data', 'health_log.normalized.json');
 const SYNC_STATE_PATH = path.join(WORKSPACE, 'data', 'sync_state.json');
 const GALLERY_PATH = path.join(WORKSPACE, 'nightscout-meal-photos', 'data', 'notion_meals.json');
@@ -146,7 +146,7 @@ function getProteinEst(entry) {
 }
 
 function entryToNightscout(entry) {
-  const eventType = entry.category === 'Food' ? 'Meal Bolus' : (entry.category === 'Activity' ? 'Exercise' : 'Note');
+  const eventType = entry.category === 'Food' ? 'Meal Bolus' : ((entry.category === 'Activity' || entry.category === 'Exercise') ? 'Exercise' : 'Note');
   const photo = entry.category === 'Food' ? entry.photoUrls?.[0] : null;
   const proteinEst = getProteinEst(entry);
   const notes = [
@@ -257,7 +257,16 @@ function parsePredictedPeakTimeIso(entry) {
 
   const h = String(hh).padStart(2, '0');
   const m = String(mm).padStart(2, '0');
-  return `${datePart}T${h}:${m}:00${offset}`;
+  let resultDate = datePart;
+  const candidateMs = new Date(`${datePart}T${h}:${m}:00${offset}`).getTime();
+  const mealMs = new Date(ts).getTime();
+  if (Number.isFinite(candidateMs) && Number.isFinite(mealMs) && candidateMs < mealMs) {
+    const [y, mo, d] = datePart.split('-').map(Number);
+    const next = new Date(Date.UTC(y, mo - 1, d));
+    next.setUTCDate(next.getUTCDate() + 1);
+    resultDate = `${next.getUTCFullYear()}-${String(next.getUTCMonth() + 1).padStart(2, '0')}-${String(next.getUTCDate()).padStart(2, '0')}`;
+  }
+  return `${resultDate}T${h}:${m}:00${offset}`;
 }
 
 function normalizeDedupTitle(text) {
@@ -310,12 +319,43 @@ async function findNotionExistingPage(entry) {
     const fuzzy = candidates.find(p => p.normalized.startsWith(wanted) || wanted.startsWith(p.normalized));
     if (fuzzy) return fuzzy.id;
 
-    candidates.sort((a, b) => String(a.created).localeCompare(String(b.created)));
-    return candidates[0].id;
+    // No title match: same-minute sibling entries share Date+Category, so
+    // picking any remaining candidate would PATCH the wrong page. Creating a
+    // new page is safer than overwriting a sibling.
+    return null;
   } catch (error) {
     log({ op: 'notion_dedup_lookup_error', entryKey: entry.entryKey, error: error.message });
     return null;
   }
+}
+
+// Map a UTC offset to a known IANA TZ. The user's data only ever lives in
+// Madrid or Pacific time, so we only handle those; fall back to the host TZ.
+function tzNameFromOffset(offset) {
+  if (offset === '+02:00' || offset === '+01:00') return 'Europe/Madrid';
+  if (offset === '-07:00' || offset === '-08:00') return 'America/Los_Angeles';
+  return Intl.DateTimeFormat().resolvedOptions().timeZone;
+}
+
+function stripOffset(iso) {
+  return String(iso).replace(/(?:Z|[+-]\d{2}:\d{2})$/, '');
+}
+
+function extractOffset(iso) {
+  const m = String(iso).match(/(Z|[+-]\d{2}:\d{2})$/);
+  if (!m) return null;
+  return m[1] === 'Z' ? '+00:00' : m[1];
+}
+
+// Format an absolute instant as YYYY-MM-DDTHH:mm:ss in the given IANA tz (no offset).
+function formatLocalIso(epochMs, tz) {
+  const parts = new Intl.DateTimeFormat('sv-SE', {
+    timeZone: tz,
+    year: 'numeric', month: '2-digit', day: '2-digit',
+    hour: '2-digit', minute: '2-digit', second: '2-digit',
+    hour12: false,
+  }).format(new Date(epochMs));
+  return parts.replace(' ', 'T');
 }
 
 function entryToNotion(entry) {
@@ -333,9 +373,19 @@ function entryToNotion(entry) {
   const details = entry.notes ? ` (${entry.notes.replace(/;\s*/g, ') (')})` : '';
   const notionTitle = `${entry.title}${details}`.slice(0, 1900);
 
+  const tzName = tzNameFromOffset(extractOffset(entry.timestamp));
+  const dateStart = stripOffset(entry.timestamp);
+  // Row Id from the inline [id:xxxxxxxx] tag in the raw SSoT row — same source
+  // radial_dispatcher reads. Pages created without Entry Key/Row Id get
+  // archived later by radial's orphan reconciler.
+  const rowId = String(entry.source?.rawRow || '').match(/\[id:([a-f0-9]{8})\]/)?.[1] || null;
+  const predPeakStart = predPeakTimeIso
+    ? formatLocalIso(new Date(predPeakTimeIso).getTime(), tzName)
+    : null;
+
   const properties = {
     Entry: { title: [{ text: { content: notionTitle } }] },
-    Date: { date: { start: entry.timestamp } },
+    Date: { date: { start: dateStart, time_zone: tzName } },
     User: { select: { name: entry.user } },
     Category: { select: { name: entry.category } },
     'Meal Type': { select: { name: entry.mealType || '-' } },
@@ -343,7 +393,9 @@ function entryToNotion(entry) {
     'Calories (est)': entry.caloriesEst != null ? { number: entry.caloriesEst } : null,
     'Proteins': proteinEst != null ? { number: proteinEst } : null,
     'Predicted Peak BG': predPeakBg != null ? { number: predPeakBg } : null,
-    'Predicted Peak Time': predPeakTimeIso ? { date: { start: predPeakTimeIso } } : null,
+    'Predicted Peak Time': predPeakStart ? { date: { start: predPeakStart, time_zone: tzName } } : null,
+    'Entry Key': entry.entryKey ? { rich_text: [{ text: { content: entry.entryKey } }] } : null,
+    'Row Id': rowId ? { rich_text: [{ text: { content: rowId } }] } : null,
     // Keep Photo always present so PATCH can clear stale URLs by sending { url: null }.
     Photo: { url: photo || null }
   };
@@ -478,9 +530,8 @@ function getEntryKey(entry) {
 }
 
 // --- Main ---
-async function main(options = {}) {
+async function runSync(options = {}) {
   const dryRun = options.dryRun || false;
-  if (!dryRun) acquireLock();
   const normalized = JSON.parse(fs.readFileSync(NORMALIZED_PATH, 'utf8'));
   const state = loadSyncState(SYNC_STATE_PATH);
   const galleryItems = fs.existsSync(GALLERY_PATH) ? JSON.parse(fs.readFileSync(GALLERY_PATH, 'utf8')) : [];
@@ -500,9 +551,10 @@ async function main(options = {}) {
     existingByTsTitle[lookupKey] = key;
   }
 
+  try {
   for (const entry of normalized.entries) {
     if (since && new Date(entry.timestamp) < since) continue;
-    
+
     // Strict Mode Check: Catch identical titles at the same timestamp (duplicate protection)
     const tsTitleKey = `${entry.timestamp}|${entry.user}|${entry.title}`;
     if (duplicateTimeCheck.has(tsTitleKey)) {
@@ -511,7 +563,9 @@ async function main(options = {}) {
       console.error(`   Entry: ${entry.title}`);
       if (!options.force) {
          console.error(`   Use --force to override.`);
-         process.exit(1);
+         // Throw (not process.exit) so sync_state is saved for writes already
+         // performed this run and the lock is released before exiting.
+         throw new Error(`duplicate_entry: ${entry.timestamp} | ${entry.title}`);
       }
     }
     duplicateTimeCheck.set(tsTitleKey, true);
@@ -571,11 +625,13 @@ async function main(options = {}) {
       results.errors.push({ subsystem: 'gallery', entryKey: entry.entryKey, error: e.message });
     }
   }
-
-  // Save state
-  if (!dryRun) {
-    saveSyncState(SYNC_STATE_PATH, state);
-    fs.writeFileSync(GALLERY_PATH, JSON.stringify(galleryItems, null, 2) + '\n');
+  } finally {
+    // Save state even when aborting mid-run (e.g. duplicate guard) so
+    // sync_state reflects NS/Notion/gallery writes already performed.
+    if (!dryRun) {
+      saveSyncState(SYNC_STATE_PATH, state);
+      fs.writeFileSync(GALLERY_PATH, JSON.stringify(galleryItems, null, 2) + '\n');
+    }
   }
 
   const summary = {
@@ -601,6 +657,19 @@ async function main(options = {}) {
   return { summary, results };
 }
 
+async function main(options = {}) {
+  const dryRun = options.dryRun || false;
+  if (!dryRun) acquireLock();
+  try {
+    return await runSync(options);
+  } catch (e) {
+    // Module callers (health_sync_pipeline) catch errors without releasing
+    // the lock — release here so an aborted run doesn't leave a stale lock.
+    if (!dryRun) releaseLock();
+    throw e;
+  }
+}
+
 if (require.main === module) {
   const args = process.argv.slice(2);
   const dryRun = args.includes('--dry-run');
@@ -608,8 +677,9 @@ if (require.main === module) {
   const sinceArg = args.find(a => a.startsWith('--since='));
   const since = sinceArg ? sinceArg.split('=')[1] : null;
   const allowBlocked = args.includes('--allow-blocked');
+  const force = args.includes('--force');
 
-  main({ dryRun, onlyNew, since, allowBlocked })
+  main({ dryRun, onlyNew, since, allowBlocked, force })
     .then(() => {
       if (!dryRun) releaseLock();
     })

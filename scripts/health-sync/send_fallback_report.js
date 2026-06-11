@@ -4,6 +4,7 @@ const path = require('path');
 const https = require('https');
 const { execSync } = require('child_process');
 const { markReportSent } = require('./report_watchdog');
+const { splitMessage } = require('./send_daily_health_report_telegram');
 const { main: generateDailyReport } = require('../generate_daily_report');
 
 const WORKSPACE = '/Users/javier/.openclaw/workspace';
@@ -12,6 +13,12 @@ const OPENCLAW_CONFIG = '/Users/javier/.openclaw/openclaw.json';
 
 function getBotToken() {
   if (process.env.TELEGRAM_BOT_TOKEN) return process.env.TELEGRAM_BOT_TOKEN;
+  // Use the foodlog bridge bot (@Javordclaws_bot) — it's the bot in the Food log group.
+  // The OpenClaw config bot (OC_noclaudebot) is for OpenClaw's own channel, not the Food log group.
+  try {
+    const bridgeCfg = JSON.parse(fs.readFileSync(path.join(WORKSPACE, 'scripts/claude-bridge/config.foodlog.json'), 'utf8'));
+    if (bridgeCfg.botToken) return bridgeCfg.botToken;
+  } catch {}
   try {
     const cfg = JSON.parse(fs.readFileSync(OPENCLAW_CONFIG, 'utf8'));
     return cfg?.channels?.telegram?.botToken || null;
@@ -66,7 +73,11 @@ async function main() {
 
   let telegramStatus = 'skipped_missing_token';
   if (botToken) {
-    await sendMessage(botToken, chatId, reportText);
+    // Telegram caps messages at 4096 chars — chunk long reports and send sequentially.
+    const chunks = splitMessage(reportText);
+    for (const chunk of chunks) {
+      await sendMessage(botToken, chatId, chunk);
+    }
     telegramStatus = 'sent';
   }
 
@@ -80,6 +91,14 @@ async function main() {
   ];
 
   fs.writeFileSync(OUTPUT_PATH, lines.join('\n') + '\n');
+
+  // No token = nothing actually delivered. Do NOT mark the day as covered —
+  // that would silence the watchdog while Maria received zero messages.
+  if (telegramStatus !== 'sent') {
+    console.error(`Telegram delivery ${telegramStatus} — report NOT delivered, refusing to mark report as sent`);
+    console.error(`Wrote ${OUTPUT_PATH}`);
+    process.exit(1);
+  }
 
   // Try to send charts immediately; idempotent sender will only fill gaps.
   execSync(`cd ${WORKSPACE} && /opt/homebrew/bin/node scripts/health-sync/send_daily_charts_telegram.js --no-regenerate`, {

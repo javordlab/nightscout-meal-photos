@@ -15,8 +15,10 @@
 const fs = require('fs');
 const path = require('path');
 
-const WORKSPACE = process.cwd();
-const LEDGER_PATH = path.join(WORKSPACE, 'data', 'write_ledger.jsonl');
+const WORKSPACE = '/Users/javier/.openclaw/workspace';
+// Overridable via env so tests can point at a temp ledger instead of polluting
+// the production file (must be set before this module is first required).
+const LEDGER_PATH = process.env.LEDGER_PATH || path.join(WORKSPACE, 'data', 'write_ledger.jsonl');
 
 /**
  * Record a successful write to health_log.md.

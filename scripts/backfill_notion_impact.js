@@ -132,8 +132,11 @@ async function run() {
   let cursor = undefined;
 
   while (hasMore) {
+    // Only look back 48h — older entries already have stable peak/variance data,
+    // and the Nightscout fetch only covers 48h of CGM readings anyway.
+    const lookbackDate = new Date(Date.now() - 48 * 60 * 60 * 1000).toISOString().slice(0, 10);
     const res = await postJson(`https://api.notion.com/v1/databases/${DATA_SOURCE_ID}/query`, {
-      filter: { property: 'Date', date: { on_or_after: '2026-03-06' } },
+      filter: { property: 'Date', date: { on_or_after: lookbackDate } },
       start_cursor: cursor
     });
 
@@ -193,21 +196,34 @@ async function run() {
         }
     }
 
-    // 2. Calculate Variances if predictions exist
+    // 2. Calculate Variances if predictions exist (skip if already correct)
     const predPeakBg = props['Predicted Peak BG']?.number;
     const predPeakTimeStr = props['Predicted Peak Time']?.date?.start;
 
     if (predPeakBg != null && currentPeakBg != null) {
       const bgVar = currentPeakBg - predPeakBg;
-      updatePayload.properties['Peak BG Delta'] = { number: bgVar };
+      const existingBgVar = props['Peak BG Delta']?.number;
 
+      let timeVar = null;
+      let existingTimeVar = props['Peak Time Delta (min)']?.number;
       if (currentPeakTimeStr && predPeakTimeStr) {
         const predDate = new Date(predPeakTimeStr);
         const peakDate = new Date(currentPeakTimeStr);
-        const timeVar = Math.round((peakDate - predDate) / (1000 * 60));
-        updatePayload.properties['Peak Time Delta (min)'] = { number: timeVar };
+        timeVar = Math.round((peakDate - predDate) / (1000 * 60));
       }
-      metrics.variance_calculated++;
+
+      const bgVarChanged = existingBgVar !== bgVar;
+      const timeVarChanged = timeVar != null && existingTimeVar !== timeVar;
+
+      if (bgVarChanged || timeVarChanged) {
+        updatePayload.properties['Peak BG Delta'] = { number: bgVar };
+        if (timeVar != null) {
+          updatePayload.properties['Peak Time Delta (min)'] = { number: timeVar };
+        }
+        metrics.variance_calculated++;
+      } else {
+        metrics.already_current++;
+      }
     }
 
     if (Object.keys(updatePayload.properties).length > 0) {

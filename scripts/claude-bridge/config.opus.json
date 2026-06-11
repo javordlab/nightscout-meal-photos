@@ -2,5 +2,8 @@
   "instanceLabel": "opus",
   "botToken": "8282967944:AAGSs1NKM7yqEMB-q-gohuM46wh0ntbFD4o",
   "backend": "claude-cli",
-  "model": "opus"
+  "model": "opus",
+  "adaptiveTimeout": {
+    "idleMs": 180000
+  }
 }

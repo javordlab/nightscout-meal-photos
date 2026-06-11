@@ -22,3 +22,17 @@ for LOG in "$WORKSPACE/data/cron_health.log" "$WORKSPACE/data/cron_watchdog.log"
     echo "$(date '+%Y-%m-%d %H:%M:%S') rotated $(basename "$LOG") ($SIZE bytes) -> $(basename "$LOG").1.gz"
   fi
 done
+
+# Bridge logs (data/claude_bridge*.log): the bridge daemons are LONG-LIVED and
+# launchd holds an O_APPEND fd on these files — mv+recreate would strand all
+# future writes on the rotated inode until the next daemon restart. Use
+# copy-then-truncate instead: a small window of lines written between cp and
+# truncate may be lost, which is acceptable for a debug log.
+for LOG in "$WORKSPACE"/data/claude_bridge*.log; do
+  [ -f "$LOG" ] || continue
+  SIZE=$(stat -f%z "$LOG" 2>/dev/null || echo 0)
+  if [ "$SIZE" -gt "$MAX_BYTES" ]; then
+    cp "$LOG" "$LOG.1" && gzip -f "$LOG.1" && : > "$LOG"
+    echo "$(date '+%Y-%m-%d %H:%M:%S') rotated $(basename "$LOG") ($SIZE bytes) -> $(basename "$LOG").1.gz (copy-truncate)"
+  fi
+done

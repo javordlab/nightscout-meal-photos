@@ -29,8 +29,10 @@ CREATE TABLE IF NOT EXISTS health_log_entries (
   tz_offset            VARCHAR(10)  NOT NULL,
   user_name            VARCHAR(60)  NOT NULL,
 
-  -- Classification
-  category             ENUM('Food','Medication','Activity','Exercise','Sleep','Note') NOT NULL,
+  -- Classification ('Sensor' and 'BG Check' were added to the live table on
+  -- 2026-05-26 — see project_glucose_dashboard_data_chain; keep this in sync
+  -- with SHOW COLUMNS or a rebuild silently rejects those rows).
+  category             ENUM('Food','Medication','Activity','Exercise','Sleep','Note','Sensor','BG Check') NOT NULL,
   meal_type            VARCHAR(20)  DEFAULT NULL,
 
   -- Content
@@ -46,6 +48,14 @@ CREATE TABLE IF NOT EXISTS health_log_entries (
   carbs_est            INT          DEFAULT NULL,
   calories_est         INT          DEFAULT NULL,
   protein_est          DECIMAL(5,1) DEFAULT NULL,
+
+  -- Sleep (HAE sleep pipeline, 2026-05-18 — present on the live table;
+  -- sync_ssot_to_mysql.js writes these columns on every upsert)
+  sleep_hours          DECIMAL(4,2) DEFAULT NULL,
+  sleep_deep           DECIMAL(4,2) DEFAULT NULL,
+  sleep_rem            DECIMAL(4,2) DEFAULT NULL,
+  sleep_core           DECIMAL(4,2) DEFAULT NULL,
+  sleep_awake          DECIMAL(4,2) DEFAULT NULL,
 
   -- Predictions (raw + parsed)
   predicted_peak_bg_text   VARCHAR(120) DEFAULT NULL,

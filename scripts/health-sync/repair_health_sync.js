@@ -8,7 +8,7 @@ const AUDIT_REPORT_PATH = path.join(WORKSPACE, 'data', 'health_sync_audit_report
 const SYNC_STATE_PATH = path.join(WORKSPACE, 'data', 'sync_state.json');
 const LOG_PATH = path.join(WORKSPACE, 'data', 'repair.log.jsonl');
 
-const { loadSyncState, saveSyncState, getEntry, upsertEntry } = require('./sync_state');
+const { loadSyncState, saveSyncState, getEntry } = require('./sync_state');
 
 function log(entry) {
   const line = JSON.stringify({ ts: new Date().toISOString(), ...entry }) + '\n';
@@ -81,13 +81,13 @@ async function main(options = {}) {
           break;
 
         case 'outcomes_not_backfilled':
-          // Mark for backfill - actual backfill runs separately
+          // Count + log only. No state write: nothing reads a
+          // needs_outcome_backfill flag (backfill_meal_outcomes finds meals on
+          // its own), and upsertEntry under a drifted audit key would create a
+          // timestamp-less ghost record.
+          repairs.markedForOutcomes++;
           if (!dryRun) {
-            upsertEntry(state, disc.entryKey, { needs_outcome_backfill: true });
-            repairs.markedForOutcomes++;
-            log({ op: 'mark_for_outcomes', entryKey: disc.entryKey });
-          } else {
-            repairs.markedForOutcomes++;
+            log({ op: 'outcomes_pending', entryKey: disc.entryKey });
           }
           break;
 

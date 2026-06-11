@@ -9,8 +9,8 @@ const {
 } = require('./health-sync/ns_identity');
 const { loadSyncState, saveSyncState, upsertEntry, consolidateDriftSiblings } = require('./health-sync/sync_state');
 const { stampFile: stampRowIds } = require('./health-sync/row_id');
-const SYNC_STATE_PATH = path.join(__dirname, '../data/sync_state.json') ||
-  '/Users/javier/.openclaw/workspace/data/sync_state.json';
+const { parseRow: normParseRow, buildEntryKey: normBuildEntryKey } = require('./health-sync/normalize_health_log');
+const SYNC_STATE_PATH = path.join(__dirname, '../data/sync_state.json');
 const { upsertNightscoutTreatment } = require('./health-sync/ns_upsert_safe');
 const { writeReceipt } = require('./health-sync/cron_receipt');
 
@@ -225,6 +225,7 @@ async function main() {
     notion_updated: 0,
     notion_unchanged: 0,
     notion_duplicates_archived: 0,
+    notion_errors: 0,
     entry_errors: 0,
     gallery_updated: 0
   };
@@ -256,9 +257,6 @@ async function main() {
 
   // Load sync state once — used to skip already-synced entries
   const syncState = loadSyncState(SYNC_STATE_PATH);
-  const syncedTimestamps = new Set(
-    Object.values(syncState.entries || {}).map(e => e.timestamp)
-  );
 
   // Load normalized SSoT so we can use the SAME entry_key that
   // normalize_health_log.js / unified_sync.js / sync_state.json use. Recomputing
@@ -300,6 +298,16 @@ async function main() {
   // 7-day reconciliation window. After the per-entry loop, any Notion page in
   // that window whose Row Id is not in this set gets archived as an orphan.
   const SEVEN_DAYS_MS = 7 * 24 * 60 * 60 * 1000;
+  // Single cutoff for the whole run, in the HOST's LOCAL calendar. The old
+  // per-entry `toISOString().slice(0,10)` was a UTC date: from late afternoon
+  // local time onward it disagreed with the local entry dates it was compared
+  // against, AND it was recomputed mid-run (entry loop vs reconciler query),
+  // so the row gate, the Notion-sync gate, and the reconciler could each use a
+  // different boundary in one run — boundary rows became false orphan
+  // candidates for the destructive reconciler.
+  const sevenDaysAgoDateStr = new Intl.DateTimeFormat('en-CA', {
+    timeZone: _sysTz, year: 'numeric', month: '2-digit', day: '2-digit'
+  }).format(new Date(Date.now() - SEVEN_DAYS_MS));
   const recentRowIds = new Set();
   const ROW_ID_GRACE_SENTINEL = path.join(__dirname, '../data/row_id_reconciler_initialized.json');
   try {
@@ -357,9 +365,7 @@ async function main() {
     // Use date-string comparison (entryData.date >= sevenDaysAgoDateStr) to
     // match the Notion query window — using timestamp-ms cutoff misaligns when
     // an entry's Date is the same as cutoff-day but its time is earlier.
-    const _entryMs = new Date(entryData.iso).getTime();
-    const _sevenDaysAgoDateStr = new Date(Date.now() - SEVEN_DAYS_MS).toISOString().slice(0, 10);
-    if (rowId && entryData.date >= _sevenDaysAgoDateStr) {
+    if (rowId && entryData.date >= sevenDaysAgoDateStr) {
       recentRowIds.add(rowId);
     }
 
@@ -393,14 +399,19 @@ async function main() {
     //     may carry slightly stale photo URLs, but photos remain accessible
     //     via Notion + gh-pages gallery. Re-syncing every old entry just to
     //     refresh a photo URL costs ~700 NS calls per cron tick.
+    // Category is load-bearing: same-minute siblings of DIFFERENT categories
+    // are distinct entries (e.g. 19:00 dinner Metformin + 19:00 snack) — a
+    // (ts, user)-only match let one sibling's complete record mark the other
+    // as fully synced forever.
     const matchingRecords = Object.values(syncState.entries || {}).filter(
-      e => e.timestamp === entryData.iso && e.user === entryData.user
+      e => e.timestamp === entryData.iso && e.user === entryData.user &&
+           e.category === entryData.category
     );
     const fullySynced = matchingRecords.find(
       e => e.nightscout?.treatment_id && e.notion?.page_id
     );
     if (fullySynced) {
-      const isOldEntry = entryData.date < _sevenDaysAgoDateStr;
+      const isOldEntry = entryData.date < sevenDaysAgoDateStr;
       let canSkip = false;
       if (isOldEntry) {
         canSkip = true;
@@ -424,7 +435,20 @@ async function main() {
     const normalizedEntry = normalizedByKey.get(
       `${entryData.iso}|${entryData.user}|${entryData.category}|${lookupTitle}`
     );
-    const entryKey = normalizedEntry?.entryKey?.replace(/^sha256:/, '') || buildEntryKey(entryData, cleanText);
+    // Fallback for entries not yet in the normalized index (logged since the
+    // last normalize run): parse the RAW line with normalize's own parseRow +
+    // buildEntryKey so the key matches what normalize will compute later. The
+    // old local buildEntryKey lowercased the title (normalize doesn't), so the
+    // two "identical" keys never matched and every gap-window entry minted a
+    // drift sibling. Local recompute remains as last resort only.
+    let entryKey = normalizedEntry?.entryKey?.replace(/^sha256:/, '');
+    if (!entryKey) {
+      try {
+        const reparsed = normParseRow(line, 0);
+        if (reparsed) entryKey = normBuildEntryKey(reparsed).replace(/^sha256:/, '');
+      } catch {}
+    }
+    if (!entryKey) entryKey = buildEntryKey(entryData, cleanText);
     console.log(`Checking: ${entryData.date} ${entryData.time} - ${cleanText.slice(0, 60)}`);
 
     // 1. Sync to Nightscout (skipped for Sleep — not a treatment)
@@ -444,8 +468,12 @@ async function main() {
         created_at: entryData.iso
       };
 
-      const syncStateEntry = (syncState.entries || {})[nsEntryKey];
-      const knownNsTreatmentId = syncStateEntry?.nightscout?.treatment_id || null;
+      // Drift-robust: the treatment_id may live on a sibling record under a
+      // drifted entry_key — matchingRecords already filtered by (ts, user).
+      const knownNsTreatmentId =
+        (syncState.entries || {})[nsEntryKey]?.nightscout?.treatment_id ||
+        matchingRecords.find(e => e.nightscout?.treatment_id)?.nightscout?.treatment_id ||
+        null;
       const nsRes = await upsertNightscoutTreatment({
         nsRequest,
         payload: nsBody,
@@ -527,7 +555,7 @@ async function main() {
     // re-created on every cron tick. NS sync still runs for old entries
     // (NS has its own 30-day cutoff + idempotent upsert).
     // Use date-string comparison to align with recentRowIds + Notion query.
-    if (entryData.date < _sevenDaysAgoDateStr) {
+    if (entryData.date < sevenDaysAgoDateStr) {
       metrics.notion_skipped_old = (metrics.notion_skipped_old || 0) + 1;
       continue;
     }
@@ -540,6 +568,13 @@ async function main() {
     const notionQuery = await notionRequest("POST", `/databases/${NOTION_DB_ID}/query`, {
       filter: { property: "Row Id", rich_text: { equals: rowId } }
     });
+    // A FAILED query must not be treated as "no results" — that routes into
+    // the create path and mints duplicates (only the safety brake limits it).
+    if (!notionQuery || notionQuery.object === 'error') {
+      console.warn(`  !! Notion Row Id query failed for ${rowId}: ${notionQuery?.code || 'no response'} ${notionQuery?.message || ''} — skipping entry this run`);
+      metrics.notion_errors++;
+      continue;
+    }
     activeResults = (notionQuery.results || []).filter(r => !r.archived);
 
     // Fallback to Entry Key for legacy pages without Row Id stamped.
@@ -547,6 +582,11 @@ async function main() {
       const ekQuery = await notionRequest("POST", `/databases/${NOTION_DB_ID}/query`, {
         filter: { property: "Entry Key", rich_text: { equals: nsEntryKey } }
       });
+      if (!ekQuery || ekQuery.object === 'error') {
+        console.warn(`  !! Notion Entry Key query failed for ${nsEntryKey.slice(0,17)}: ${ekQuery?.code || 'no response'} — skipping entry this run`);
+        metrics.notion_errors++;
+        continue;
+      }
       const ekMatches = (ekQuery.results || []).filter(r => !r.archived);
       if (ekMatches.length > 0) {
         // Stamp Row Id on the matched legacy page so future runs use Row Id.
@@ -650,6 +690,11 @@ async function main() {
       }
       console.log("  -> Pushing to Notion...");
       const createdPage = await notionRequest("POST", "/pages", notionBody);
+      if (!createdPage?.id || createdPage.object === 'error') {
+        console.warn(`  !! Notion create failed: ${createdPage?.code || 'no id'} ${createdPage?.message || ''}`);
+        metrics.notion_errors++;
+        continue;
+      }
       metrics.notion_new++;
       if (photos[0]) photoSyncedToNotion = true;
 
@@ -714,9 +759,14 @@ async function main() {
       if (existingTitle !== cleanText || existingCarbs !== entryData.carbs || existingPhoto !== (photos[0] || null)) {
         console.log("  -> Updating Notion...");
         delete notionBody.parent;
-        await notionRequest("PATCH", `/pages/${existing.id}`, notionBody);
-        metrics.notion_updated++;
-        if (photos[0] && existingPhoto !== photos[0]) photoSyncedToNotion = true;
+        const patchRes = await notionRequest("PATCH", `/pages/${existing.id}`, notionBody);
+        if (!patchRes || patchRes.object === 'error') {
+          console.warn(`  !! Notion update failed for ${existing.id.slice(0,8)}: ${patchRes?.code || 'no response'} ${patchRes?.message || ''}`);
+          metrics.notion_errors++;
+        } else {
+          metrics.notion_updated++;
+          if (photos[0] && existingPhoto !== photos[0]) photoSyncedToNotion = true;
+        }
       } else {
         console.log("  -> Notion up to date.");
         metrics.notion_unchanged++;
@@ -734,15 +784,17 @@ async function main() {
   //    initial candidate set before destructive action. Delete the sentinel
   //    file to re-enter grace mode.
   try {
-    const sevenDaysAgo = new Date(Date.now() - SEVEN_DAYS_MS).toISOString().slice(0, 10);
     const allPages = [];
     let cursor = null;
     do {
       const r = await notionRequest("POST", `/databases/${NOTION_DB_ID}/query`, {
-        filter: { property: "Date", date: { on_or_after: sevenDaysAgo } },
+        filter: { property: "Date", date: { on_or_after: sevenDaysAgoDateStr } },
         page_size: 100,
         ...(cursor ? { start_cursor: cursor } : {})
       });
+      if (!r || r.object === 'error') {
+        throw new Error(`reconciler window query failed: ${r?.code || 'no response'} ${r?.message || ''}`);
+      }
       for (const p of (r.results || [])) {
         if (p.archived) continue;
         allPages.push(p);
@@ -750,17 +802,33 @@ async function main() {
       cursor = r.has_more ? r.next_cursor : null;
     } while (cursor);
 
+    // Sanity brake: recentRowIds comes from THIS run's single read of
+    // health_log.md. If that read saw (almost) no rows while Notion has pages
+    // in the window, the read was truncated/raced — archiving on it would
+    // archive live entries. Confirmed happening ~20x May 23–Jun 7.
+    if (allPages.length > 0 && recentRowIds.size < allPages.length * 0.5) {
+      throw new Error(`reconciler sanity brake: only ${recentRowIds.size} SSoT row ids vs ${allPages.length} Notion pages in window — skipping (stale/raced SSoT read?)`);
+    }
+
+    // Fresh re-read of the SSoT immediately before judging candidates: the
+    // run-start read can be minutes old, and concurrent writers (bridge,
+    // meds tracker, photo publisher) rewrite the whole file.
+    const freshContent = fs.readFileSync(LOG_PATH, 'utf8');
+
     const candidates = [];
     for (const p of allPages) {
       const pageRowId = p.properties?.["Row Id"]?.rich_text?.[0]?.plain_text || "";
-      if (!pageRowId || !recentRowIds.has(pageRowId)) {
-        candidates.push({
-          id: p.id,
-          rowId: pageRowId,
-          title: (p.properties?.Entry?.title?.[0]?.plain_text || "").slice(0, 60),
-          date: p.properties?.Date?.date?.start || ""
-        });
+      if (pageRowId && recentRowIds.has(pageRowId)) continue;
+      if (pageRowId && freshContent.includes(`[id:${pageRowId}]`)) {
+        console.log(`  -> reconciler: sparing ${p.id.slice(0,8)} (Row Id ${pageRowId} present in fresh SSoT read)`);
+        continue;
       }
+      candidates.push({
+        id: p.id,
+        rowId: pageRowId,
+        title: (p.properties?.Entry?.title?.[0]?.plain_text || "").slice(0, 60),
+        date: p.properties?.Date?.date?.start || ""
+      });
     }
 
     const inGrace = !fs.existsSync(ROW_ID_GRACE_SENTINEL);
@@ -776,17 +844,39 @@ async function main() {
       }, null, 2));
       metrics.row_id_grace_candidates = candidates.length;
     } else {
+      // Two-strike rule: a page is only archived if it was ALSO an orphan
+      // candidate on the previous run (persisted in the pending file). A page
+      // that looks orphaned because of a single bad/raced SSoT read gets a
+      // second chance ~30 min later instead of being destroyed.
+      const PENDING_PATH = path.join(__dirname, '../data/row_id_archive_pending.json');
+      let pending = {};
+      try { pending = JSON.parse(fs.readFileSync(PENDING_PATH, 'utf8')); } catch {}
+
       const ARCHIVE_CAP = 20;
       let archived = 0;
+      const nextPending = {};
       for (const c of candidates) {
+        if (!pending[c.id]) {
+          nextPending[c.id] = { firstSeenAt: new Date().toISOString(), rowId: c.rowId, title: c.title };
+          console.log(`  -> reconciler: first strike for ${c.id.slice(0,8)} (Row Id="${c.rowId || '(empty)'}") — will archive if still orphaned next run`);
+          continue;
+        }
         if (archived >= ARCHIVE_CAP) {
           console.warn(`  !! Row Id reconciler capped at ${ARCHIVE_CAP} archives per run — investigate manually.`);
-          break;
+          nextPending[c.id] = pending[c.id]; // keep strike for next run
+          continue;
         }
-        console.log(`  -> Row Id orphan archive: ${c.id.slice(0,8)} (Row Id="${c.rowId || '(empty)'}") "${c.title}"`);
-        await notionRequest("PATCH", `/pages/${c.id}`, { archived: true });
+        console.log(`  -> Row Id orphan archive (2nd strike): ${c.id.slice(0,8)} (Row Id="${c.rowId || '(empty)'}") "${c.title}"`);
+        const res = await notionRequest("PATCH", `/pages/${c.id}`, { archived: true });
+        if (res && res.object === 'error') {
+          console.warn(`  !! archive failed for ${c.id.slice(0,8)}: ${res.code} ${res.message}`);
+          metrics.notion_errors++;
+          nextPending[c.id] = pending[c.id];
+          continue;
+        }
         archived++;
       }
+      fs.writeFileSync(PENDING_PATH, JSON.stringify(nextPending, null, 2) + '\n');
       if (archived > 0) {
         console.log(`  Row Id reconciler: archived ${archived} orphan page(s).`);
         metrics.notion_orphans_archived = archived;
@@ -821,7 +911,7 @@ async function main() {
     ns_verify_fails: nsTelemetry.verify_fail_count || 0
   });
 
-  const totalErrors = metrics.ns_errors + metrics.entry_errors + metrics.ns_verify_fails;
+  const totalErrors = metrics.ns_errors + metrics.entry_errors + metrics.ns_verify_fails + metrics.notion_errors;
   let status;
   if (totalErrors === 0) {
     status = metrics.processed === 0 ? 'noop' : 'ok';

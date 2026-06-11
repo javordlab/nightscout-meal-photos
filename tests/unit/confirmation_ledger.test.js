@@ -4,17 +4,17 @@ const fs = require('fs');
 const path = require('path');
 
 const TEST_DIR = path.join(__dirname, '..', 'fixtures');
-
-// We need to override the LEDGER_PATH for testing. The module uses a hardcoded
-// path, so we test via its exported functions after temporarily swapping the file.
-const ledgerModule = require('../../scripts/health-sync/confirmation_ledger');
-const REAL_LEDGER_PATH = ledgerModule.LEDGER_PATH;
 const TEST_LEDGER_PATH = path.join(TEST_DIR, 'test_write_ledger.jsonl');
+
+// Point the module at a temp ledger BEFORE requiring it — the module resolves
+// LEDGER_PATH from process.env.LEDGER_PATH at load time. Without this, every
+// test run (pre-commit!) appended fixtures to the production write ledger.
+process.env.LEDGER_PATH = TEST_LEDGER_PATH;
+const ledgerModule = require('../../scripts/health-sync/confirmation_ledger');
 
 describe('Confirmation Ledger', () => {
   before(() => {
     fs.mkdirSync(TEST_DIR, { recursive: true });
-    // Point the ledger to test path by temporarily overwriting the file
     cleanup();
   });
 
@@ -24,11 +24,6 @@ describe('Confirmation Ledger', () => {
 
   function cleanup() {
     if (fs.existsSync(TEST_LEDGER_PATH)) fs.unlinkSync(TEST_LEDGER_PATH);
-    // Also clean up the real ledger test entries (we'll use the real module
-    // but verify via direct file reads against the real path)
-    if (fs.existsSync(REAL_LEDGER_PATH)) {
-      // Save and restore later
-    }
   }
 
   it('should record a write entry as valid JSONL', () => {
@@ -46,8 +41,10 @@ describe('Confirmation Ledger', () => {
     assert.strictEqual(record.category, 'Activity');
     assert.strictEqual(record.description, '25 minutes walk');
 
-    // Verify the file has valid JSONL
-    const raw = fs.readFileSync(REAL_LEDGER_PATH, 'utf8').trim();
+    // Verify the file has valid JSONL — must land in the temp ledger,
+    // never the production one.
+    assert.strictEqual(ledgerModule.LEDGER_PATH, TEST_LEDGER_PATH, 'module must use the temp ledger path');
+    const raw = fs.readFileSync(TEST_LEDGER_PATH, 'utf8').trim();
     const lines = raw.split('\n');
     assert.ok(lines.length >= 1, 'should have at least one line');
 

@@ -1,0 +1,128 @@
+#!/usr/bin/env node
+/**
+ * publish_photos_to_gh_pages.js
+ *
+ * For every health_ssot.health_log_entries row whose primary_photo_url still
+ * points at iili.io (free host, expires), find the original local file via
+ * data/photo_upload_log.jsonl, copy it into
+ * nightscout-meal-photos/uploads/YYYY-MM-DD/<entry_key_prefix>.jpg,
+ * rewrite primary_photo_url to the durable GitHub Pages URL, and keep the
+ * iili.io URL as a secondary entry in photo_urls.
+ *
+ * Then trigger deploy_gh_pages.js so the file is actually served.
+ *
+ * Designed to be run after every sync (cron).
+ */
+
+const fs = require('fs');
+const path = require('path');
+const { execSync } = require('child_process');
+
+const WORKSPACE   = '/Users/javier/.openclaw/workspace';
+const SITE_DIR    = path.join(WORKSPACE, 'nightscout-meal-photos');
+const UPLOADS_DIR = path.join(SITE_DIR, 'uploads');
+const UPLOAD_LOG  = path.join(WORKSPACE, 'data', 'photo_upload_log.jsonl');
+const DEPLOY      = path.join(WORKSPACE, 'scripts', 'health-sync', 'deploy_gh_pages.js');
+
+const GH_BASE = 'https://javordlab.github.io/nightscout-meal-photos/uploads';
+
+function loadUploadMap() {
+  const map = new Map();
+  if (!fs.existsSync(UPLOAD_LOG)) return map;
+  const data = fs.readFileSync(UPLOAD_LOG, 'utf8');
+  for (const line of data.split('\n')) {
+    const s = line.trim();
+    if (!s) continue;
+    try {
+      const j = JSON.parse(s);
+      if (j.iiliUrl && j.photoPath) map.set(j.iiliUrl, j.photoPath);
+    } catch { /* skip malformed */ }
+  }
+  return map;
+}
+
+function runMySQL(sql) {
+  return execSync(
+    `/usr/bin/sudo /opt/homebrew/opt/mysql@8.4/bin/mysql -N -B health_ssot`,
+    { input: sql, encoding: 'utf8', timeout: 60000 }
+  );
+}
+
+function queryPending() {
+  const sql = `
+    SELECT entry_key, event_date, primary_photo_url
+    FROM health_log_entries
+    WHERE category = 'Food'
+      AND deleted_at IS NULL
+      AND primary_photo_url LIKE '%iili.io%'
+    ORDER BY event_date DESC
+    LIMIT 500;
+  `;
+  const out = runMySQL(sql).trim();
+  if (!out) return [];
+  return out.split('\n').map(line => {
+    const [entry_key, event_date, primary_photo_url] = line.split('\t');
+    return { entry_key, event_date, primary_photo_url };
+  });
+}
+
+function sqlLiteral(s) {
+  return "'" + String(s).replace(/\\/g, '\\\\').replace(/'/g, "''") + "'";
+}
+
+function main() {
+  const map = loadUploadMap();
+  if (map.size === 0) {
+    console.log('publish_photos: no upload log entries yet');
+    return;
+  }
+  const pending = queryPending();
+  if (pending.length === 0) {
+    console.log('publish_photos: no iili-URL rows to promote');
+    return;
+  }
+
+  let published = 0;
+  let missing = 0;
+  const updates = [];
+
+  for (const row of pending) {
+    const localPath = map.get(row.primary_photo_url);
+    if (!localPath || !fs.existsSync(localPath)) { missing++; continue; }
+
+    const day = row.event_date;
+    const prefix = row.entry_key.replace(/^sha256:/, '').slice(0, 16);
+    const destDir = path.join(UPLOADS_DIR, day);
+    fs.mkdirSync(destDir, { recursive: true });
+    const destPath = path.join(destDir, `${prefix}.jpg`);
+    fs.copyFileSync(localPath, destPath);
+    published++;
+
+    const ghUrl = `${GH_BASE}/${day}/${prefix}.jpg`;
+    updates.push(
+      `UPDATE health_log_entries ` +
+      `SET photo_urls = JSON_ARRAY(${sqlLiteral(ghUrl)}, primary_photo_url), ` +
+      `    primary_photo_url = ${sqlLiteral(ghUrl)} ` +
+      `WHERE entry_key = ${sqlLiteral(row.entry_key)};`
+    );
+  }
+
+  if (updates.length === 0) {
+    console.log(`publish_photos: ${missing} rows had no local file; nothing to publish`);
+    return;
+  }
+
+  const sql = 'START TRANSACTION;\n' + updates.join('\n') + '\nCOMMIT;\n';
+  runMySQL(sql);
+  console.log(`publish_photos: promoted ${published} photos (${missing} unmapped)`);
+
+  // Deploy to GitHub Pages
+  try {
+    execSync(`/opt/homebrew/bin/node ${DEPLOY}`, { stdio: 'inherit', timeout: 180000 });
+  } catch (e) {
+    console.error(`publish_photos: deploy_gh_pages.js failed: ${e.message}`);
+    process.exitCode = 1;
+  }
+}
+
+main();

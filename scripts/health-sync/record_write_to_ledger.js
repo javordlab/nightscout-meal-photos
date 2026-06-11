@@ -39,16 +39,23 @@ function cleanWhitespace(value) {
 
 /**
  * Strip metadata from entry text — must match normalize_health_log.js stripMetadata exactly.
+ * The [Coach:…], [Cumulative…], (logged late) and (Cals:…) strips are copied
+ * verbatim from normalize_health_log.js — omitting them made ledger entry keys
+ * diverge from normalized keys whenever those annotations were present.
  */
 function stripMetadata(entryText) {
   let text = cleanWhitespace(entryText.replace(PHOTO_LINK_REGEX, ''));
   text = cleanWhitespace(
     text
       .replace(/\[id:[a-f0-9]{8}\]/g, '')
+      .replace(/\[Coach:[^\]]*\]/gi, '')
+      .replace(/\[Cumulative[^\]]*\]/gi, '')
+      .replace(/\(logged late\)/gi, '')
       .replace(BG_REGEX, '')
       .replace(PRED_REGEX, '')
       .replace(PROTEIN_REGEX, '')
       .replace(CARBS_MACRO_REGEX, '')
+      .replace(/\(Cals:[^)]*\)/gi, '')
   );
   return text;
 }

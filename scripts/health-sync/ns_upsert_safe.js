@@ -47,9 +47,19 @@ async function upsertNightscoutTreatment({
 
   const keyRegex = buildEntryKeyRegex(entryKey);
 
+  // NS's /treatments.json endpoint silently truncates regex-by-notes searches to
+  // a recent default window (observed ~30-60 days). Without an explicit
+  // created_at[$gte], old treatments are invisible and the dispatcher falsely
+  // concludes "no existing match" → POSTs again → verify fails → 38+ logged
+  // `nightscout_verify_failed` errors traced to entries from 2026-03-28. The
+  // by-id lookup below isn't affected. A 2-year lookback comfortably covers
+  // anything the SSoT could reference.
+  const NS_REGEX_LOOKBACK_MS = 2 * 365 * 24 * 60 * 60 * 1000;
+  const findByKeySince = new Date(Date.now() - NS_REGEX_LOOKBACK_MS).toISOString();
+
   const findByKey = async () => {
     const res = await run('ns_find_by_key', () =>
-      nsRequest('GET', `/api/v1/treatments.json?find[notes][$regex]=${encodeURIComponent(keyRegex)}&count=10`)
+      nsRequest('GET', `/api/v1/treatments.json?find[notes][$regex]=${encodeURIComponent(keyRegex)}&find[created_at][$gte]=${encodeURIComponent(findByKeySince)}&count=10`)
     );
     if (!Array.isArray(res)) return [];
     return res.filter(r => notesContainEntryKey(r.notes, entryKey));

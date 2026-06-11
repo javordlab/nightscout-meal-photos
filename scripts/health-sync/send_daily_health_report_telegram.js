@@ -52,6 +52,12 @@ function parseArgs(argv) {
 
 function getBotToken() {
   if (process.env.TELEGRAM_BOT_TOKEN) return process.env.TELEGRAM_BOT_TOKEN;
+  // Use the foodlog bridge bot (@Javordclaws_bot) — it's the bot in the Food log group.
+  // The OpenClaw config bot (OC_noclaudebot) is for OpenClaw's own channel, not the Food log group.
+  try {
+    const bridgeCfg = JSON.parse(fs.readFileSync(path.join(WORKSPACE, 'scripts/claude-bridge/config.foodlog.json'), 'utf8'));
+    if (bridgeCfg.botToken) return bridgeCfg.botToken;
+  } catch {}
   try {
     const cfg = JSON.parse(fs.readFileSync(OPENCLAW_CONFIG, 'utf8'));
     return cfg?.channels?.telegram?.botToken || null;
@@ -72,6 +78,43 @@ function readJson(filePath, fallback) {
 function saveJson(filePath, value) {
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
   fs.writeFileSync(filePath, JSON.stringify(value, null, 2) + '\n');
+}
+
+const TG_MAX_LEN = 4096;
+
+/**
+ * Split a long message into chunks that fit Telegram's 4096-char limit.
+ * Splits on section boundaries (lines starting with a digit + ')') when possible,
+ * falls back to newline boundaries, then hard-cuts as last resort.
+ */
+function splitMessage(text, maxLen = TG_MAX_LEN) {
+  if (text.length <= maxLen) return [text];
+
+  const chunks = [];
+  let remaining = text;
+  while (remaining.length > 0) {
+    if (remaining.length <= maxLen) {
+      chunks.push(remaining);
+      break;
+    }
+    let cutAt = -1;
+    // Try to split at a section boundary (e.g. "\n5) ")
+    const sectionRe = /\n\d+\)\s/g;
+    let match;
+    while ((match = sectionRe.exec(remaining)) !== null) {
+      if (match.index > 0 && match.index <= maxLen) cutAt = match.index;
+    }
+    // Fallback: split at last newline within limit
+    if (cutAt < 0) {
+      cutAt = remaining.lastIndexOf('\n', maxLen);
+    }
+    // Last resort: hard cut
+    if (cutAt <= 0) cutAt = maxLen;
+
+    chunks.push(remaining.slice(0, cutAt).trimEnd());
+    remaining = remaining.slice(cutAt).trimStart();
+  }
+  return chunks;
 }
 
 function sendMessage(botToken, chatId, text) {
@@ -160,8 +203,12 @@ async function main() {
     summary.reportSent = true;
     log({ op: 'daily_report_send_dry_run', reportDateLA: opts.reportDateLA, chatId: opts.chatId, targetDate: generated.targetDate });
   } else {
-    const sent = await sendMessage(botToken, opts.chatId, reportText);
-    const messageId = sent?.result?.message_id || null;
+    const chunks = splitMessage(reportText);
+    let messageId = null;
+    for (const chunk of chunks) {
+      const sent = await sendMessage(botToken, opts.chatId, chunk);
+      if (!messageId) messageId = sent?.result?.message_id || null;
+    }
 
     state.chats[opts.chatId][opts.reportDateLA] = {
       sentAt: new Date().toISOString(),
@@ -180,6 +227,7 @@ async function main() {
     markReportSent('primary_deterministic');
     summary.reportSent = true;
     summary.messageId = messageId;
+    summary.statsDay = state.chats[opts.chatId][opts.reportDateLA].statsDay;
 
     log({
       op: 'daily_report_sent',
@@ -267,4 +315,4 @@ if (require.main === module) {
     });
 }
 
-module.exports = { main };
+module.exports = { main, splitMessage };

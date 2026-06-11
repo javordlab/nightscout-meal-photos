@@ -57,6 +57,16 @@ function esc(v) {
   return `'${String(v).replace(/\\/g, '\\\\').replace(/'/g, "''")}'`;
 }
 
+// For NOT NULL columns (entry_key, content_hash, ts_iso, event_date, event_time,
+// tz_offset, user_name, category, title — per SHOW COLUMNS on the live table).
+// esc() maps ''/'-' to SQL NULL which is fine for nullable columns but makes
+// the whole row fail on NOT NULL ones (e.g. tz_offset is legitimately '' when
+// the SSoT time cell has no offset). Pass strings through verbatim instead.
+function escNotNull(v) {
+  if (v === null || v === undefined) v = '';
+  return `'${String(v).replace(/\\/g, '\\\\').replace(/'/g, "''")}'`;
+}
+
 function num(v) {
   if (v === null || v === undefined || v === '') return 'NULL';
   if (typeof v === 'number' && Number.isFinite(v)) return String(v);
@@ -139,16 +149,16 @@ function buildRow(e) {
 
 function rowToValues(r) {
   return [
-    esc(r.entry_key),
-    esc(r.content_hash),
-    esc(r.ts_iso),
-    esc(r.event_date),
-    esc(r.event_time),
-    esc(r.tz_offset),
-    esc(r.user_name),
-    esc(r.category),
+    escNotNull(r.entry_key),
+    escNotNull(r.content_hash),
+    escNotNull(r.ts_iso),
+    escNotNull(r.event_date),
+    escNotNull(r.event_time),
+    escNotNull(r.tz_offset),
+    escNotNull(r.user_name),
+    escNotNull(r.category),
     esc(r.meal_type),
-    esc(r.title),
+    escNotNull(r.title),
     esc(r.notes),
     esc(r.photo_urls),
     esc(r.primary_photo_url),
@@ -192,9 +202,18 @@ const COLS = [
   'sleep_hours','sleep_deep','sleep_rem','sleep_core','sleep_awake'
 ];
 
-// All non-PK columns get refreshed on conflict, plus deleted_at is cleared
-// (so a re-appearing entry is resurrected automatically).
-const UPDATE_CLAUSE = COLS.filter(c => c !== 'entry_key')
+// Columns owned by backfill_notion_impact.js (analytical outcomes computed
+// post-meal from Nightscout). Don't touch them on SSoT sync — those values
+// don't exist in the SSoT, so VALUES() would be NULL and clobber them.
+const OUTCOME_COLS = new Set([
+  'pre_meal_bg','peak_bg','two_hour_peak_bg','peak_time','bg_delta',
+  'time_to_peak_min','peak_bg_delta','peak_time_delta_min','outcomes_backfilled'
+]);
+
+// All non-PK, non-outcome columns get refreshed on conflict, plus deleted_at
+// is cleared (so a re-appearing entry is resurrected automatically). Outcomes
+// are preserved across SSoT syncs because backfill_notion_impact.js owns them.
+const UPDATE_CLAUSE = COLS.filter(c => c !== 'entry_key' && !OUTCOME_COLS.has(c))
   .map(c => `${c}=VALUES(${c})`)
   .concat(['deleted_at=NULL'])
   .join(', ');
@@ -204,7 +223,8 @@ const UPDATE_CLAUSE = COLS.filter(c => c !== 'entry_key')
 async function main() {
   const startedAt = new Date();
   let runId = null;
-  const metrics = { ssot_entries: 0, inserted: 0, updated: 0, unchanged: 0, soft_deleted: 0 };
+  const metrics = { ssot_entries: 0, inserted: 0, updated: 0, unchanged: 0, soft_deleted: 0, failed: 0 };
+  const failures = [];
 
   try {
     if (!fs.existsSync(NORMALIZED_PATH)) {
@@ -226,6 +246,12 @@ async function main() {
     const entries = normalized.entries || [];
     metrics.ssot_entries = entries.length;
     console.log(`Loaded ${entries.length} SSoT entries from ${NORMALIZED_PATH}`);
+
+    // Safety brake: an empty/truncated normalized.json would otherwise
+    // soft-delete every row in MySQL with an 'ok' receipt. Hard abort instead.
+    if (entries.length === 0) {
+      throw new Error(`Normalized SSoT has 0 entries (${NORMALIZED_PATH} empty or truncated?) — refusing to sync to avoid mass soft-delete`);
+    }
 
     // Build current state map (key -> content_hash) BEFORE writing, so we can
     // distinguish inserted/updated/unchanged for the metrics + tell what's
@@ -262,39 +288,91 @@ async function main() {
       }
     }
 
-    // Write in chunks to keep batch SQL under ~5MB.
+    // Write in chunks to keep batch SQL under ~5MB. If a chunk's batch INSERT
+    // fails (e.g. one row carries a value MySQL rejects — an unknown ENUM
+    // category, an over-length field), DON'T let it abort the whole run.
+    // Retry that chunk one row at a time so a single bad row only loses itself.
+    // Failures are recorded and surfaced via the run status + receipt instead
+    // of silently freezing the entire SSoT→MySQL mirror.
     const CHUNK = 100;
+    const buildInsert = (rows) =>
+      `INSERT INTO health_log_entries (${COLS.join(', ')}) VALUES\n` +
+      rows.map(e => `(${rowToValues(buildRow(e))})`).join(',\n') +
+      `\nON DUPLICATE KEY UPDATE ${UPDATE_CLAUSE};`;
+
     for (let i = 0; i < toWrite.length; i += CHUNK) {
       const chunk = toWrite.slice(i, i + CHUNK);
-      const values = chunk.map(e => `(${rowToValues(buildRow(e))})`).join(',\n');
-      const sql = `INSERT INTO health_log_entries (${COLS.join(', ')}) VALUES\n${values}\nON DUPLICATE KEY UPDATE ${UPDATE_CLAUSE};`;
-      mysqlExec(sql);
+      try {
+        mysqlExec(buildInsert(chunk));
+      } catch (batchErr) {
+        // Isolate the offender: re-run the chunk row by row.
+        for (const e of chunk) {
+          try {
+            mysqlExec(buildInsert([e]));
+          } catch (rowErr) {
+            const msg = (rowErr.message || '').replace(/\s+/g, ' ').slice(0, 200);
+            failures.push({ entryKey: e.entryKey, date: e.date, category: e.category, error: msg });
+            console.error(`  ✗ skipped ${e.entryKey} (${e.category} ${e.date}): ${msg}`);
+          }
+        }
+      }
     }
-    if (toWrite.length) console.log(`Wrote ${toWrite.length} rows (${metrics.inserted} new + ${metrics.updated} updated)`);
+    metrics.failed = failures.length;
+    const written = toWrite.length - failures.length;
+    if (toWrite.length) {
+      console.log(`Wrote ${written} rows (${metrics.inserted} new + ${metrics.updated} updated, ${failures.length} failed)`);
+    }
 
     // Soft-delete: anything in MySQL but no longer in SSoT, and not already deleted.
+    // Brake: a truncated SSoT can make thousands of rows look "deleted". If the
+    // delete set exceeds max(20, 5% of existing rows), withhold the whole delete
+    // phase and surface a 'partial' receipt instead of erasing the mirror.
     const toDelete = [];
     for (const key of existingHashes.keys()) {
       if (!seenKeys.has(key) && !existingDeletedKeys.has(key)) toDelete.push(key);
     }
-    if (toDelete.length) {
+    let deletesWithheld = 0;
+    const deleteCap = Math.max(20, Math.ceil(existingHashes.size * 0.05));
+    if (toDelete.length > deleteCap) {
+      deletesWithheld = toDelete.length;
+      metrics.deletes_withheld = deletesWithheld;
+      console.error(`  !! Withheld ${toDelete.length} soft-deletes (cap ${deleteCap}) — SSoT may be truncated; no deletes performed`);
+    } else if (toDelete.length) {
       const list = toDelete.map(k => `'${k.replace(/'/g, "''")}'`).join(',');
       mysqlRun(`UPDATE health_log_entries SET deleted_at=NOW() WHERE entry_key IN (${list})`);
       metrics.soft_deleted = toDelete.length;
       console.log(`Soft-deleted ${toDelete.length} entries no longer in SSoT`);
     }
 
-    // Close out the run row.
+    // Close out the run row. A run that wrote nothing but had failures is a
+    // hard error; one that wrote some but skipped others is 'partial'.
+    let runStatus = failures.length === 0 ? 'ok' : (written > 0 ? 'partial' : 'error');
+    if (deletesWithheld && runStatus === 'ok') runStatus = 'partial';
+    const failNotes = [];
+    if (failures.length) {
+      failNotes.push(
+        `${failures.length} row(s) failed: ` +
+        failures.slice(0, 5).map(f => `${f.category} ${f.date} [${(f.entryKey || '').slice(7, 19)}]: ${f.error}`).join(' | ')
+      );
+    }
+    if (deletesWithheld) {
+      failNotes.push(`withheld ${deletesWithheld} soft-deletes (safety cap ${deleteCap})`);
+    }
+    const failNote = failNotes.length ? failNotes.join(' | ') : null;
     mysqlRun(
       `UPDATE sync_runs SET finished_at=NOW(), ssot_entries=${metrics.ssot_entries}, ` +
       `inserted=${metrics.inserted}, updated=${metrics.updated}, unchanged=${metrics.unchanged}, ` +
-      `soft_deleted=${metrics.soft_deleted}, status='ok' WHERE id=${runId}`
+      `soft_deleted=${metrics.soft_deleted}, status='${runStatus}'` +
+      (failNote ? `, error=${esc(failNote)}` : '') +
+      ` WHERE id=${runId}`
     );
 
-    const summary = `SSoT→MySQL: ${metrics.ssot_entries} entries — ${metrics.inserted} new / ${metrics.updated} updated / ${metrics.unchanged} unchanged / ${metrics.soft_deleted} soft-deleted`;
+    const summary = `SSoT→MySQL: ${metrics.ssot_entries} entries — ${metrics.inserted} new / ${metrics.updated} updated / ${metrics.unchanged} unchanged / ${metrics.soft_deleted} soft-deleted` +
+      (failures.length ? ` / ${failures.length} FAILED` : '') +
+      (deletesWithheld ? ` / WITHHELD ${deletesWithheld} soft-deletes (exceeds safety cap ${deleteCap} — verify SSoT is complete before deleting)` : '');
     console.log(summary);
-    writeReceipt({ status: 'ok', summary, metrics });
-    return 0;
+    writeReceipt({ status: runStatus, summary, metrics });
+    return runStatus === 'error' ? 1 : 0;
   } catch (e) {
     console.error('SSoT→MySQL sync failed:', e.message);
     if (runId) {

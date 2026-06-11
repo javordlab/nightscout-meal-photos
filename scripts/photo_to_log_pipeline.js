@@ -193,6 +193,20 @@ async function getBGNearTimestamp(ts) {
 }
 
 // Upload photo to get URL
+const PHOTO_UPLOAD_LOG = '/Users/javier/.openclaw/workspace/data/photo_upload_log.jsonl';
+function logPhotoUpload(photoPath, iiliUrl) {
+  try {
+    const line = JSON.stringify({
+      photoPath,
+      iiliUrl,
+      uploadedAt: new Date().toISOString(),
+    }) + '\n';
+    fs.appendFileSync(PHOTO_UPLOAD_LOG, line);
+  } catch (e) {
+    console.error(`photo_upload_log append failed: ${e.message}`);
+  }
+}
+
 async function uploadPhoto(photoPath) {
   const API_KEY = '6d207e02198a847aa98d0a2a901485a5';
   try {
@@ -202,12 +216,14 @@ async function uploadPhoto(photoPath) {
     );
     const data = JSON.parse(result);
     const url = data.image?.url || null;
-    
+
     if (!url) {
       console.error(`Upload did not return URL. Response keys: ${Object.keys(data).join(', ')}`);
       console.error(`Full response (first 500 chars): ${JSON.stringify(data).substring(0, 500)}`);
+    } else {
+      logPhotoUpload(photoPath, url);
     }
-    
+
     return url;
   } catch (e) {
     console.error(`Upload failed for ${photoPath}: ${e.message}`);

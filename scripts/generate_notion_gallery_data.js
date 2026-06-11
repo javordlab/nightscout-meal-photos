@@ -35,6 +35,7 @@ async function main() {
   let meals = [];
   let hasMore = true;
   let cursor = undefined;
+  let skippedPages = 0;
 
   while (hasMore) {
     const res = await notionRequest("POST", `/databases/${NOTION_DB_ID}/query`, {
@@ -49,30 +50,43 @@ async function main() {
     });
 
     if (!res.results) {
+      // Failed / rate-limited query: previously this `break` fell through and
+      // a PARTIAL (or empty) gallery was written and deployed, clobbering the
+      // good one. Abort instead — keep the last good gallery on disk.
       console.error("Failed to query Notion:", res);
-      break;
+      throw new Error("Notion query failed — refusing to write/deploy a partial gallery");
     }
 
-    const pageMeals = res.results.map(page => {
-      const p = page.properties;
-      return {
-        id: page.id,
-        title: p.Entry.title[0]?.plain_text || "Untitled",
-        type: p["Meal Type"]?.select?.name || "Food",
-        date: p.Date.date.start,
-        photo: p.Photo.url,
-        carbs: p["Carbs (est)"]?.number,
-        cals: p["Calories (est)"]?.number,
-        delta: p["BG Delta"]?.number,
-        peak: p["2hr Peak BG"]?.number
-      };
-    });
+    const pageMeals = [];
+    for (const page of res.results) {
+      try {
+        const p = page.properties;
+        pageMeals.push({
+          id: page.id,
+          title: p.Entry.title[0]?.plain_text || "Untitled",
+          type: p["Meal Type"]?.select?.name || "Food",
+          date: p.Date.date.start,
+          photo: p.Photo.url,
+          carbs: p["Carbs (est)"]?.number,
+          cals: p["Calories (est)"]?.number,
+          delta: p["BG Delta"]?.number,
+          peak: p["2hr Peak BG"]?.number
+        });
+      } catch (e) {
+        // Malformed page (missing Entry title / Date / Photo): skip it rather
+        // than crashing the whole gallery build.
+        skippedPages++;
+        console.error(`Skipping malformed page ${page.id}: ${e.message}`);
+      }
+    }
 
     meals = meals.concat(pageMeals);
     hasMore = res.has_more;
     cursor = res.next_cursor;
     console.log(`Fetched ${meals.length} meals so far...`);
   }
+
+  if (skippedPages > 0) console.log(`Skipped ${skippedPages} malformed page(s).`);
 
   // Deduplicate by photo URL (not photo + date, as timezone offsets may differ)
   const seen = new Set();
@@ -102,10 +116,16 @@ async function main() {
 }
 
 main().then(() => {
+  // Deploy only runs after a fully successful fetch+write (main throws on
+  // any Notion query failure, so we never deploy a partial gallery).
   const { execSync } = require('child_process');
   try {
     execSync('/opt/homebrew/bin/node /Users/javier/.openclaw/workspace/scripts/health-sync/deploy_gh_pages.js', { stdio: 'inherit' });
   } catch (e) {
     console.error('gh-pages deploy failed:', e.message);
+    process.exit(1);
   }
-}).catch(console.error);
+}).catch(e => {
+  console.error('generate_notion_gallery_data failed:', e.message || e);
+  process.exit(1);
+});

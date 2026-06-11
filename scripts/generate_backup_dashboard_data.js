@@ -6,6 +6,9 @@ const BACKUP_ROOT = "/Users/javier/.openclaw/workspace/backups/mysql";
 const OUTPUT_PATH = "/Users/javier/.openclaw/workspace/nightscout-meal-photos/data/backups.json";
 const SESSIONS_PATH = "/Users/javier/.openclaw/agents/health-guard/sessions/sessions.json";
 const MYSQL_BIN = "/opt/homebrew/opt/mysql@8.4/bin/mysql";
+// Without utf8mb4 the CLI client defaults to a narrower charset and UTF-8
+// characters get double-encoded (jamón → jamÃ³n).
+const MYSQL_CHARSET = "--default-character-set=utf8mb4";
 const DASHBOARD_TZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
 function getDateStringInTZ(date, timeZone) {
@@ -45,19 +48,19 @@ function getFiles(dir, retentionType) {
 }
 
 function getDatabaseStats() {
-    const stats = { glucose: 0, notion: 0, syncHistory: [] };
+    const stats = { glucose: 0, notion: 0, syncHistory: [], dbError: null };
     try {
-        stats.glucose = parseInt(execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT COUNT(*) FROM glucose_measurements;"`).toString().trim());
+        stats.glucose = parseInt(execSync(`${MYSQL_BIN} -u root ${MYSQL_CHARSET} health_monitor -N -e "SELECT COUNT(*) FROM glucose_measurements;"`).toString().trim());
         // The `notion` stat now tracks the live SSoT mirror health_ssot.health_log_entries
         // (fed by sync_ssot_to_mysql.js). The old source health_monitor.maria_health_log
         // froze on 2026-05-21 when sync_notion_to_mysql.js was retired. Count only
         // non-deleted rows so the figure matches the canonical entry count. The JSON
         // field name is kept as `notion` to avoid breaking the published dashboard bindings.
-        stats.notion = parseInt(execSync(`${MYSQL_BIN} -u root health_ssot -N -e "SELECT COUNT(*) FROM health_log_entries WHERE deleted_at IS NULL;"`).toString().trim());
+        stats.notion = parseInt(execSync(`${MYSQL_BIN} -u root ${MYSQL_CHARSET} health_ssot -N -e "SELECT COUNT(*) FROM health_log_entries WHERE deleted_at IS NULL;"`).toString().trim());
 
         // RECONSTRUCT CUMULATIVE HISTORY
-        const glucoseHistory = execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT DATE(event_time) as d, COUNT(*) FROM glucose_measurements GROUP BY d ORDER BY d ASC;"`).toString().trim().split('\n');
-        const notionHistory = execSync(`${MYSQL_BIN} -u root health_ssot -N -e "SELECT DATE(event_date) as d, COUNT(*) FROM health_log_entries WHERE deleted_at IS NULL GROUP BY d ORDER BY d ASC;"`).toString().trim().split('\n');
+        const glucoseHistory = execSync(`${MYSQL_BIN} -u root ${MYSQL_CHARSET} health_monitor -N -e "SELECT DATE(event_time) as d, COUNT(*) FROM glucose_measurements GROUP BY d ORDER BY d ASC;"`).toString().trim().split('\n');
+        const notionHistory = execSync(`${MYSQL_BIN} -u root ${MYSQL_CHARSET} health_ssot -N -e "SELECT DATE(event_date) as d, COUNT(*) FROM health_log_entries WHERE deleted_at IS NULL GROUP BY d ORDER BY d ASC;"`).toString().trim().split('\n');
 
         const gMap = {}; let gCum = 0;
         glucoseHistory.forEach(l => { const [d, c] = l.split('\t'); gCum += parseInt(c); gMap[d] = gCum; });
@@ -81,13 +84,18 @@ function getDatabaseStats() {
                 return { date: d, glucose: lastG, notion: lastN };
             }).slice(-30);
         }
-    } catch (e) { console.error(e); }
+    } catch (e) {
+        // Don't let a DB outage masquerade as "0 records" — flag it so main()
+        // can preserve the previous run's counts and publish an explicit error.
+        console.error(e);
+        stats.dbError = String(e.message || e).slice(0, 300);
+    }
     return stats;
 }
 
 function getGlucoseTrend() {
     try {
-        const raw = execSync(`${MYSQL_BIN} -u root health_monitor -N -e "SELECT event_time, sgv FROM glucose_measurements WHERE event_time >= DATE_SUB(NOW(), INTERVAL 30 DAY) ORDER BY event_time ASC;"`).toString().trim();
+        const raw = execSync(`${MYSQL_BIN} -u root ${MYSQL_CHARSET} health_monitor -N -e "SELECT event_time, sgv FROM glucose_measurements WHERE event_time >= DATE_SUB(NOW(), INTERVAL 30 DAY) ORDER BY event_time ASC;"`).toString().trim();
         return raw.split('\n').map(line => {
             const [time, sgv] = line.split('\t');
             return { t: new Date(time + "Z").toISOString(), v: parseInt(sgv) };
@@ -130,6 +138,21 @@ function getUsage() {
 
 function main() {
     const dbStats = getDatabaseStats();
+
+    // On stats failure, preserve the previous run's counts/history instead of
+    // publishing zeros with a fresh lastUpdated (which made an outage look
+    // like "0 records"). dbError tells the dashboard the figures are stale.
+    let prev = null;
+    if (dbStats.dbError) {
+        try { prev = JSON.parse(fs.readFileSync(OUTPUT_PATH, 'utf8')); } catch (e) { /* no previous file */ }
+    }
+    const database = (dbStats.dbError && prev && prev.database)
+        ? prev.database
+        : { glucose: dbStats.glucose, notion: dbStats.notion };
+    const syncHistory = (dbStats.dbError && prev && Array.isArray(prev.syncHistory) && prev.syncHistory.length)
+        ? prev.syncHistory
+        : dbStats.syncHistory;
+
     const data = {
         lastUpdated: new Date().toISOString(),
         // Server-authoritative timezone (IANA, auto-detected at runtime, never
@@ -137,9 +160,10 @@ function main() {
         // server bakes its zone in here and the dashboard formats all timestamps
         // against it — so times reflect the server, not the viewer's browser.
         serverTz: DASHBOARD_TZ,
+        dbError: dbStats.dbError,
         tokenUsage: getUsage(),
-        database: { glucose: dbStats.glucose, notion: dbStats.notion },
-        syncHistory: dbStats.syncHistory,
+        database,
+        syncHistory,
         glucoseTrend: getGlucoseTrend(),
         backups: [...getFiles('daily', 'Daily'), ...getFiles('weekly', 'Weekly')].sort((a,b) => new Date(b.created) - new Date(a.created))
     };

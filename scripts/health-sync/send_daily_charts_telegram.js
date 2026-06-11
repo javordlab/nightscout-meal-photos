@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 const { execSync } = require('child_process');
+const { writeReceipt } = require('./cron_receipt');
 
 const WORKSPACE = '/Users/javier/.openclaw/workspace';
 const DATA_DIR = path.join(WORKSPACE, 'data');
@@ -16,7 +17,9 @@ const CHARTS = [
   { key: 'daily_glucose_chart.png', path: '/Users/javier/.openclaw/workspace/tmp/daily_glucose_chart.png', caption: 'Daily glucose chart' },
   { key: 'glucose_chart.png', path: '/Users/javier/.openclaw/workspace/tmp/glucose_chart.png', caption: '7-day glucose chart' },
   { key: 'weekly_calories_chart.png', path: '/Users/javier/.openclaw/workspace/tmp/weekly_calories_chart.png', caption: 'Weekly calories chart' },
-  { key: 'weekly_carbs_chart.png', path: '/Users/javier/.openclaw/workspace/tmp/weekly_carbs_chart.png', caption: 'Weekly carbs chart' }
+  { key: 'weekly_carbs_chart.png', path: '/Users/javier/.openclaw/workspace/tmp/weekly_carbs_chart.png', caption: 'Weekly carbs chart' },
+  { key: 'weekly_gmi_chart.png', path: '/Users/javier/.openclaw/workspace/tmp/weekly_gmi_chart.png', caption: 'Weekly GMI chart' },
+  { key: 'weekly_sleep_chart.png', path: '/Users/javier/.openclaw/workspace/tmp/weekly_sleep_chart.png', caption: 'Weekly sleep chart' }
 ];
 
 function log(entry) {
@@ -56,6 +59,11 @@ function parseArgs(argv) {
 
 function getBotToken() {
   if (process.env.TELEGRAM_BOT_TOKEN) return process.env.TELEGRAM_BOT_TOKEN;
+  // Use the foodlog bridge bot (@Javordclaws_bot) — it's the bot in the Food log group.
+  try {
+    const bridgeCfg = JSON.parse(fs.readFileSync(path.join(WORKSPACE, 'scripts/claude-bridge/config.foodlog.json'), 'utf8'));
+    if (bridgeCfg.botToken) return bridgeCfg.botToken;
+  } catch {}
   try {
     const cfg = JSON.parse(fs.readFileSync(OPENCLAW_CONFIG, 'utf8'));
     const token = cfg?.channels?.telegram?.botToken;
@@ -111,7 +119,9 @@ function ensureCharts() {
     'cd /Users/javier/.openclaw/workspace && /opt/homebrew/bin/node scripts/generate_daily_glucose_chart.js',
     'cd /Users/javier/.openclaw/workspace && /opt/homebrew/bin/node scripts/generate_glucose_chart.js',
     'cd /Users/javier/.openclaw/workspace && /opt/homebrew/bin/node scripts/generate_weekly_calories_chart.js',
-    'cd /Users/javier/.openclaw/workspace && /opt/homebrew/bin/node scripts/generate_weekly_carbs_chart.js'
+    'cd /Users/javier/.openclaw/workspace && /opt/homebrew/bin/node scripts/generate_weekly_carbs_chart.js',
+    'cd /Users/javier/.openclaw/workspace && /opt/homebrew/bin/node scripts/generate_weekly_gmi_chart.js',
+    'cd /Users/javier/.openclaw/workspace && /opt/homebrew/bin/node scripts/generate_weekly_sleep_chart.js'
   ];
 
   const failures = [];
@@ -138,7 +148,9 @@ function ensureCharts() {
     ['daily_glucose_chart.png', 'daily_glucose_chart.png'],
     ['glucose_chart.png', 'glucose_chart.png'],
     ['weekly_calories_chart.png', 'weekly_calories_chart.png'],
-    ['weekly_carbs_chart.png', 'weekly_carbs_chart.png']
+    ['weekly_carbs_chart.png', 'weekly_carbs_chart.png'],
+    ['weekly_gmi_chart.png', 'weekly_gmi_chart.png'],
+    ['weekly_sleep_chart.png', 'weekly_sleep_chart.png']
   ];
   for (const [src, dst] of chartFiles) {
     const srcPath = `/Users/javier/.openclaw/workspace/tmp/${src}`;
@@ -217,30 +229,49 @@ async function main() {
   }
 
   try {
+    // Load state BEFORE the expensive chart regeneration so we can short-circuit
+    // when there's nothing to do. The 08:55 launchd job (com.healthguard.daily-report)
+    // already runs the report + this chart sender end-to-end; the 09:02 crontab entry
+    // is a fallback. If every chart is already in sentMap for today, skip both the
+    // PNG regeneration AND the gh-pages redeploy — nothing has changed.
+    const state = readJson(STATE_PATH, { version: 1, chats: {} });
+    state.chats[opts.chatId] = state.chats[opts.chatId] || {};
+    state.chats[opts.chatId][opts.reportDateLA] = state.chats[opts.chatId][opts.reportDateLA] || { sent: {} };
+    const sentMap = state.chats[opts.chatId][opts.reportDateLA].sent || {};
+
+    const allAlreadySent = !opts.force && CHARTS.every(c => sentMap[c.key]);
+    if (allAlreadySent) {
+      const summary = {
+        status: 'skipped_all_sent',
+        reportDateLA: opts.reportDateLA,
+        chatId: opts.chatId,
+        sent: [],
+        skippedAlreadySent: CHARTS.map(c => c.key),
+        dryRun: opts.dryRun,
+        force: opts.force
+      };
+      log({ op: 'chart_send_skipped_all_sent', reportDateLA: opts.reportDateLA, chatId: opts.chatId });
+      console.log(JSON.stringify(summary, null, 2));
+      return summary;
+    }
+
     if (opts.regenerate) {
       ensureCharts();
       log({ op: 'chart_regenerated', reportDateLA: opts.reportDateLA });
     }
-
-    const state = readJson(STATE_PATH, { version: 1, chats: {} });
-    state.chats[opts.chatId] = state.chats[opts.chatId] || {};
-    state.chats[opts.chatId][opts.reportDateLA] = state.chats[opts.chatId][opts.reportDateLA] || { sent: {} };
-
-    const sentMap = state.chats[opts.chatId][opts.reportDateLA].sent || {};
 
     const summary = {
       status: 'ok',
       reportDateLA: opts.reportDateLA,
       chatId: opts.chatId,
       sent: [],
+      failed: [],
       skippedAlreadySent: [],
       dryRun: opts.dryRun,
       force: opts.force
     };
 
     for (const chart of CHARTS) {
-      if (!fs.existsSync(chart.path)) throw new Error(`missing_chart:${chart.path}`);
-
       if (!opts.force && sentMap[chart.key]) {
         summary.skippedAlreadySent.push(chart.key);
         log({ op: 'chart_skipped_already_sent', reportDateLA: opts.reportDateLA, chatId: opts.chatId, chart: chart.key });
@@ -253,24 +284,54 @@ async function main() {
         continue;
       }
 
-      const caption = `${chart.caption} (${opts.reportDateLA})`;
-      const response = await sendPhoto(botToken, opts.chatId, chart.path, caption);
-      const messageId = response?.result?.message_id || null;
-      const st = fs.statSync(chart.path);
+      // Per-chart isolation: a missing/failed chart is recorded and skipped so the
+      // rest still send, and state is saved after every success so a mid-loop crash
+      // never loses sentMap updates (which caused duplicate sends on the next run).
+      try {
+        if (!fs.existsSync(chart.path)) throw new Error(`missing_chart:${chart.path}`);
 
-      sentMap[chart.key] = {
-        sentAt: new Date().toISOString(),
-        messageId,
-        size: st.size,
-        mtimeMs: st.mtimeMs
-      };
+        const caption = `${chart.caption} (${opts.reportDateLA})`;
+        const response = await sendPhoto(botToken, opts.chatId, chart.path, caption);
+        const messageId = response?.result?.message_id || null;
+        const st = fs.statSync(chart.path);
 
-      summary.sent.push({ chart: chart.key, messageId });
-      log({ op: 'chart_sent', reportDateLA: opts.reportDateLA, chatId: opts.chatId, chart: chart.key, messageId });
+        sentMap[chart.key] = {
+          sentAt: new Date().toISOString(),
+          messageId,
+          size: st.size,
+          mtimeMs: st.mtimeMs
+        };
+        state.chats[opts.chatId][opts.reportDateLA].sent = sentMap;
+        saveJson(STATE_PATH, state);
+
+        summary.sent.push({ chart: chart.key, messageId });
+        log({ op: 'chart_sent', reportDateLA: opts.reportDateLA, chatId: opts.chatId, chart: chart.key, messageId });
+      } catch (e) {
+        summary.failed.push({ chart: chart.key, error: e.message });
+        console.error(`chart_send_failed:${chart.key}: ${e.message}`);
+        log({ op: 'chart_send_failed', reportDateLA: opts.reportDateLA, chatId: opts.chatId, chart: chart.key, error: e.message });
+      }
     }
 
-    state.chats[opts.chatId][opts.reportDateLA].sent = sentMap;
-    saveJson(STATE_PATH, state);
+    if (summary.failed.length > 0) {
+      summary.status = summary.sent.length > 0 ? 'partial' : 'error';
+    }
+
+    writeReceipt({
+      status: summary.status,
+      summary: `Charts: ${summary.sent.length} sent, ${summary.failed.length} failed, ${summary.skippedAlreadySent.length} already sent (${opts.reportDateLA})`,
+      metrics: {
+        reportDateLA: opts.reportDateLA,
+        chatId: opts.chatId,
+        sent: summary.sent.length,
+        failed: summary.failed.length,
+        failedCharts: summary.failed.map(f => f.chart),
+        skippedAlreadySent: summary.skippedAlreadySent.length,
+        dryRun: opts.dryRun
+      }
+    });
+
+    if (summary.status === 'error') process.exitCode = 1;
 
     console.log(JSON.stringify(summary, null, 2));
     return summary;

@@ -7,6 +7,8 @@
 
 set -euo pipefail
 
+export USER="${USER:-javier}"  # Required for Claude CLI auth in cron env
+
 WORKSPACE="/Users/javier/.openclaw/workspace"
 CLAUDE="/Users/javier/.local/bin/claude"
 NODE="/opt/homebrew/bin/node"

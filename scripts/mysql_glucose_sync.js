@@ -1,10 +1,13 @@
 const https = require('https');
-const { execSync } = require('child_process');
+const { execSync, spawnSync } = require('child_process');
 const { writeReceipt } = require('./health-sync/cron_receipt');
 
 const NS_URL = "https://p01--sefi--s66fclg7g2lm.code.run";
 const NS_SECRET = "b3170e23f45df7738434cd8be9cd79d86a6d0f01";
 const MYSQL_BIN = "/opt/homebrew/opt/mysql@8.4/bin/mysql";
+// Without utf8mb4 the CLI client defaults to a narrower charset and UTF-8
+// characters get double-encoded on write (jamón → jamÃ³n).
+const MYSQL_CHARSET_ARG = "--default-character-set=utf8mb4";
 
 async function nsRequest(url) {
     return new Promise((resolve, reject) => {
@@ -12,10 +15,17 @@ async function nsRequest(url) {
             let d = "";
             res.on("data", c => d += c);
             res.on("end", () => {
+                // An NS outage must surface as an error receipt, not as
+                // "Caught up — 0 new rows". Reject on HTTP errors and on
+                // unparseable bodies so main()'s catch writes the error receipt.
+                if (res.statusCode >= 400) {
+                    reject(new Error(`NS request failed (HTTP ${res.statusCode}): ${d.slice(0, 200)}`));
+                    return;
+                }
                 try {
                     resolve(JSON.parse(d || "[]"));
                 } catch (e) {
-                    resolve([]);
+                    reject(new Error(`NS response parse failed: ${e.message}`));
                 }
             });
         }).on("error", reject);
@@ -23,35 +33,35 @@ async function nsRequest(url) {
 }
 
 function runQuery(sql) {
-    const command = `${MYSQL_BIN} -u root health_monitor -e "${sql.replace(/"/g, '\\"')}"`;
-    try {
-        const output = execSync(command).toString();
-        // MySQL admin reports affected rows in stderr, but INSERT IGNORE behavior
-        // is best tracked by checking our own counts if needed.
-        return true;
-    } catch (e) {
-        console.error("Query failed:", e.message);
+    // Array-form spawnSync: no shell interpolation of the SQL string.
+    const r = spawnSync(MYSQL_BIN, ['-u', 'root', MYSQL_CHARSET_ARG, 'health_monitor', '-e', sql], { encoding: 'utf8' });
+    if (r.status !== 0) {
+        console.error("Query failed:", (r.stderr || r.stdout || r.error?.message || `exit ${r.status}`).trim());
         return false;
     }
+    // MySQL admin reports affected rows in stderr, but INSERT IGNORE behavior
+    // is best tracked by checking our own counts if needed.
+    return true;
 }
 
 /** Return the current row count of glucose_measurements, or null on failure. */
 function countGlucoseRows() {
-    try {
-        const out = execSync(
-            `${MYSQL_BIN} -u root -N -B health_monitor -e "SELECT COUNT(*) FROM glucose_measurements;"`
-        ).toString().trim();
-        const n = parseInt(out, 10);
-        return Number.isFinite(n) ? n : null;
-    } catch (e) {
-        console.error("Count query failed:", e.message);
+    const r = spawnSync(
+        MYSQL_BIN,
+        ['-u', 'root', MYSQL_CHARSET_ARG, '-N', '-B', 'health_monitor', '-e', "SELECT COUNT(*) FROM glucose_measurements;"],
+        { encoding: 'utf8' }
+    );
+    if (r.status !== 0) {
+        console.error("Count query failed:", (r.stderr || r.stdout || r.error?.message || `exit ${r.status}`).trim());
         return null;
     }
+    const n = parseInt(r.stdout.trim(), 10);
+    return Number.isFinite(n) ? n : null;
 }
 
 function escapeSql(str) {
     if (str === null || str === undefined) return 'NULL';
-    return `'${String(str).replace(/'/g, "''")}'`;
+    return `'${String(str).replace(/\\/g, '\\\\').replace(/'/g, "''")}'`;
 }
 
 async function main() {
@@ -153,17 +163,22 @@ async function main() {
         ? Math.max(0, afterRows - beforeRows)
         : null;
 
-    // 4. Update Dashboard
-    try {
-        console.log("  -> Updating Backup Dashboard...");
-        const NODE = '/opt/homebrew/bin/node';
-        execSync(`${NODE} /Users/javier/.openclaw/workspace/scripts/generate_backup_dashboard_data.js`);
-        execSync(`${NODE} /Users/javier/.openclaw/workspace/scripts/health-sync/deploy_gh_pages.js`, { stdio: 'inherit' });
-        metrics.dashboardUpdated = true;
-    } catch (e) {
-        console.error("Dashboard update failed:", e.message);
-        // Don't count dashboard deploy failures as query errors — they don't affect data integrity
-        metrics.dashboardDeployFailed = true;
+    // 4. Update Dashboard — only when new rows actually landed, to avoid
+    //    re-deploying gh-pages every 2 min on no-op syncs.
+    if (metrics.rowsInserted > 0) {
+        try {
+            console.log("  -> Updating Backup Dashboard...");
+            const NODE = '/opt/homebrew/bin/node';
+            execSync(`${NODE} /Users/javier/.openclaw/workspace/scripts/generate_backup_dashboard_data.js`);
+            execSync(`${NODE} /Users/javier/.openclaw/workspace/scripts/health-sync/deploy_gh_pages.js`, { stdio: 'inherit' });
+            metrics.dashboardUpdated = true;
+        } catch (e) {
+            console.error("Dashboard update failed:", e.message);
+            // Don't count dashboard deploy failures as query errors — they don't affect data integrity
+            metrics.dashboardDeployFailed = true;
+        }
+    } else {
+        metrics.dashboardSkipped = true;
     }
 
     // --- Outcome receipt for cron dashboard ---

@@ -19,8 +19,17 @@ const req = https.request(options, (res) => {
   res.on('data', chunk => data += chunk);
   res.on('end', () => {
     try {
+      if (res.statusCode >= 400) {
+        console.error(`Error fetching BG: HTTP ${res.statusCode} from Nightscout: ${data.slice(0, 200)}`);
+        process.exit(1);
+      }
       const entries = JSON.parse(data);
-      if (entries && entries.length > 0) {
+      if (!Array.isArray(entries)) {
+        // Auth errors etc. come back as a JSON object, not an entries array.
+        console.error(`Error fetching BG: unexpected non-array response from Nightscout: ${data.slice(0, 200)}`);
+        process.exit(1);
+      }
+      if (entries.length > 0) {
         const entry = entries[0];
         console.log(`${entry.sgv} mg/dL at ${entry.dateString}`);
       } else {
@@ -31,6 +40,10 @@ const req = https.request(options, (res) => {
       process.exit(1);
     }
   });
+});
+
+req.setTimeout(15000, () => {
+  req.destroy(new Error('request timed out after 15s'));
 });
 
 req.on('error', (e) => {

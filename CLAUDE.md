@@ -109,7 +109,7 @@ Monitoring:
 | `scripts/health-sync/glucose_low_alert.js` | Daytime (08:30–24:00): alerts at BG ≤ 80 (any trend) or BG ≤ 90 + downtrend. Overnight (00:00–08:30): alerts only when BG < 70. Re-alerts on critical re-cross, after 30 min of stale state, or once BG recovers above 100. Runs every 5 min. |
 | `scripts/health-sync/cron_health_watchdog.js` | Checks cron job freshness, alerts if stale. Every 15 min. |
 | `scripts/health-sync/audit_health_sync.js` | Detects entries missing from Notion or Nightscout. System cron 9:10 AM. |
-| `scripts/health-sync/report_watchdog.js` | Verifies daily report was sent; triggers fallback if not |
+| `scripts/health-sync/report_watchdog.js` | Verifies daily report was sent; triggers fallback if not. Cron 9:35 (must run AFTER its 9:32 deadline — at the old 8:57 slot it was dead code for 2 months). |
 
 ### Daily Report
 | Script | Purpose |
@@ -141,7 +141,6 @@ Monitoring:
 | Script | Purpose |
 |--------|---------|
 | `scripts/auto_track_meds.js` | Auto-logs scheduled meds (Metformin/Lisinopril/Rosuvastatin) |
-| `scripts/health-sync/process_missed_text_messages.js` | Processes Telegram messages that arrived while bot was down |
 
 ### Dead Scripts — DO NOT RESURRECT
 | Script | Why Dead |
@@ -165,7 +164,7 @@ Monitoring:
 | `*/5 * * * *` | `glucose_low_alert.js` | Low BG alert — daytime ≤80 / ≤90+down, overnight <70 only |
 | `20 4 * * *` | `mysql_backup.sh` | Daily MySQL backup |
 | `15 4 * * *` | `rotate_cron_logs.sh` | Rotate cron_health/cron_watchdog logs when >50MB (added 2026-06-10) |
-| `57 8 * * *` | `report_watchdog.js` | Report fallback if 08:55 launchd job failed |
+| `35 9 * * *` | `report_watchdog.js` | Report fallback if 08:55 launchd job failed (9:35 > its 9:32 deadline) |
 | `2 9 * * *` | `send_daily_charts_telegram.js` | Chart fallback — early-exits if 08:55 launchd job already sent all charts (otherwise regenerates + sends only the missing ones) |
 | `10 9 * * *` | `audit_health_sync.js --lookback=2` | Daily sync audit. |
 | `10,40 * * * *` | `sync_ssot_to_mysql.js` | SSoT → MySQL mirror |

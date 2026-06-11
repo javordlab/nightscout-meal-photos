@@ -1,5 +1,9 @@
 #!/bin/bash
 set -u
+# pipefail: without it, `mysqldump | gzip` reports gzip's exit status, so a
+# failed dump still produced a "Completed" empty .gz — and the 7-day rotation
+# would erase all good backups within a week.
+set -o pipefail
 
 # Configuration
 DATABASES=("health_monitor" "health_ssot")
@@ -28,6 +32,15 @@ for i in "${!DATABASES[@]}"; do
     FILE="$BACKUP_DIR/daily/${BASENAME}.sql.gz"
     if ! $MYSQLDUMP -u root "$DB_NAME" | gzip > "$FILE"; then
         echo "ERROR: mysqldump failed for $DB_NAME" >&2
+        exit 1
+    fi
+
+    # Sanity check: a real dump of either DB is far larger than 1KB. A tiny
+    # .gz means the dump silently produced (almost) nothing — fail loudly
+    # before the rotation step can erase good backups.
+    FILE_SIZE=$(stat -f%z "$FILE" 2>/dev/null || echo 0)
+    if [ "$FILE_SIZE" -le 1024 ]; then
+        echo "ERROR: backup $FILE is suspiciously small (${FILE_SIZE} bytes) — aborting" >&2
         exit 1
     fi
 

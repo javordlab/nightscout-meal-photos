@@ -80,7 +80,7 @@
     {
       "id": "report-watchdog",
       "name": "Daily Report Watchdog",
-      "cronExpr": "57 8 * * *",
+      "cronExpr": "35 9 * * *",
       "staleMaxMs": 93600000,
       "maxDurationMs": 60000
     },

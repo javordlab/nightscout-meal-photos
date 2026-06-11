@@ -36,7 +36,11 @@ function main() {
 
     const galleryMatch = galleryItems.find(item => {
       if (photo && item.photo === photo) return true;
-      return sameDay(item.date, entry.timestamp) && normalizeTitle(item.title).includes(title);
+      if (item.entry_key && item.entry_key === entry.entryKey) return true;
+      // Exact title only — substring matching turned an empty entry title into
+      // a wildcard and wrote wrong page_ids into sync_state.
+      return Boolean(title) && normalizeTitle(item.title) === title &&
+        sameDay(item.date, entry.timestamp);
     });
 
     if (!galleryMatch) continue;
