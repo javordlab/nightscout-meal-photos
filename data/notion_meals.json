@@ -1,5 +1,16 @@
 [
   {
+    "id": "37c85ec7-0668-81ab-90a3-ff2a907baceb",
+    "title": "Dinner (cont. — fruit dessert): a small bowl of fresh cherries (~14) (BG: 101 mg/dL Flat) (Pred: 156-166 mg/dL @ 11:18 PM) (Protein: 1g , Carbs: ~12g , Cals: ~50) [Cumulative Dinner: ~52g carbs total] [Coach: Cherries to close 🍒 — whole-fruit fiber + polyphenols, ~12g carbs. Cumulative dinner ~52g carbs (slides into the 0.8 band, softening the curve), Pred ~161 by 11:18 PM. A clean fruit finish on a 0-cured-meat, seafood-lunch day — this is what the 5s trajectory looks like.]",
+    "type": "Dinner",
+    "date": "2026-06-11T22:13:00.000+02:00",
+    "photo": "https://iili.io/CCooYQV.jpg",
+    "carbs": 12,
+    "cals": 50,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37c85ec7-0668-81b1-9042-e0a7c27df6ae",
     "title": "Dinner: queso fresco and tomato sandwich on multigrain seeded bread + a glass of gazpacho (BG: 118 mg/dL Flat) (Pred: 159-169 mg/dL @ 11:18 PM) (Protein: 16g , Carbs: ~40g , Cals: ~340) [Coach: Queso fresco + tomato + gazpacho 🍅 — fresh, light dinner. ~16g protein from the cheese, double tomato hit (sandwich + gazpacho) brings vitamins + lycopene, gazpacho adds its olive-oil goodness. ~40g carbs total, Pred ~164 by 11:18 PM. Cured-meat tally held at 0 today — second clean day in a row 🎯]",
     "type": "Dinner",
