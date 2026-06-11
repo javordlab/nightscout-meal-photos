@@ -1,5 +1,16 @@
 [
   {
+    "id": "37c85ec7-0668-81b1-9042-e0a7c27df6ae",
+    "title": "Dinner: queso fresco and tomato sandwich on multigrain seeded bread + a glass of gazpacho (BG: 118 mg/dL Flat) (Pred: 159-169 mg/dL @ 11:18 PM) (Protein: 16g , Carbs: ~40g , Cals: ~340) [Coach: Queso fresco + tomato + gazpacho 🍅 — fresh, light dinner. ~16g protein from the cheese, double tomato hit (sandwich + gazpacho) brings vitamins + lycopene, gazpacho adds its olive-oil goodness. ~40g carbs total, Pred ~164 by 11:18 PM. Cured-meat tally held at 0 today — second clean day in a row 🎯]",
+    "type": "Dinner",
+    "date": "2026-06-11T22:02:00.000+02:00",
+    "photo": "https://iili.io/CCo2v24.jpg",
+    "carbs": 40,
+    "cals": 340,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37c85ec7-0668-8132-aa7a-fe7c647a7e36",
     "title": "Dessert (post-walk): ice cream corte — strawberry + vanilla wafer sandwich (BG: 105 mg/dL Flat) (Protein: 3g) (Pred: 115-125 mg/dL @ 7:42 PM)",
     "type": "Dessert",
