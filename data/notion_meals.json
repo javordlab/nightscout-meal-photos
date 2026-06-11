@@ -1,5 +1,16 @@
 [
   {
+    "id": "37c85ec7-0668-8113-8615-f2373847bb13",
+    "title": "Lunch: steamed mussels (mejillones al vapor) — a plate of ~18-20 (BG: 142 mg/dL Flat) (Pred: 141-151 mg/dL @ 5:26 PM) (Protein: 24g , Carbs: ~8g , Cals: ~180) [Coach: Mejillones 🦪 — fantastic lean-protein pick: ~24g protein, almost no carbs, plus iron, B12, selenium, and omega-3s. Pred stays flat ~146 by 5:26 PM. Mussels are exactly the kind of seafood plate that pushes toward the 5s. Cured-meat tally stays at 0.]",
+    "type": "Lunch",
+    "date": "2026-06-11T15:33:00.000+02:00",
+    "photo": "https://iili.io/CCJlGgs.jpg",
+    "carbs": 8,
+    "cals": 180,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37c85ec7-0668-8106-823b-f179c8376d87",
     "title": "Breakfast (cont.): a glass of fresh blueberries (BG: 107 mg/dL Flat) (Protein: 1g) (Pred: 185-195 mg/dL @ 11:43 AM)",
     "type": "Breakfast",
@@ -254,7 +265,7 @@
   },
   {
     "id": "37785ec7-0668-81cf-be1c-c14017f0d633",
-    "title": "Snack (post-inspection reward): mini baguette sandwich with cured lomo embuchado (BG: 129 mg/dL Flat) (Pred: 161-171 mg/dL @ 1:57 PM) (Protein: 15g , Carbs: ~25g , Cals: ~245) [Coach: Earned snack 🥖 — lomo brings ~10g protein and ~25g carbs from the baguette. Pred ~166 by 1:57. Lomo embuchado is your 1st (and on-target) cured-meat hit for today. After hunting spiders, vacuuming, and bagging linens for 2 hours, this is honestly the most justified mid-morning snack on record. The card-on-the-cutting-board calibration is a nice touch 😄]",
+    "title": "Snack (post-inspection reward): mini baguette sandwich with cured lomo embuchado (BG: 129 mg/dL Flat) (Pred: 161-171 mg/dL @ 1:57 PM) (Protein: 15g , Carbs: ~25g , Cals: ~245) [Coach: Earned snack 🥖 — lomo brings ~10g protein and ~25g carbs from the baguette. Pred ~166 by 1:57. Lomo embuchado is your 1st (and on-target) cured-meat hit for today. After hunting spiders, vacuuming, and bagging linens for 2 hours, this is honestly the most justified mid-morning snack on record. The card-on-the-cutting-board calibration is a nice touch ����]",
     "type": "Snack",
     "date": "2026-06-06T11:51:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-06/eec50838c3a4d5be.jpg",
