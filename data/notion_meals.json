@@ -1,5 +1,16 @@
 [
   {
+    "id": "37c85ec7-0668-8157-8f47-e107725b201b",
+    "title": "Lunch (cont. — second course): grilled sole (lenguado) with lemon + a glass of tomato juice with ice (BG: 135 mg/dL Flat) (Pred: 147-157 mg/dL @ 5:26 PM) (Protein: 28g , Carbs: ~9g , Cals: ~190) [Cumulative Lunch: ~17g carbs total] [Coach: Lenguado a la plancha 🐟 — beautiful second course. ~28g lean protein on top of the mussels brings cumulative lunch to ~52g protein on just ~17g carbs. Pred ~152 by 5:26 PM. This two-course seafood lunch is a textbook GMI-5s plate — high protein, omega-3s, almost no carb load. One of your cleanest lunches on record.]",
+    "type": "Lunch",
+    "date": "2026-06-11T16:07:00.000+02:00",
+    "photo": "https://iili.io/CCdPG07.jpg",
+    "carbs": 9,
+    "cals": 190,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37c85ec7-0668-8113-8615-f2373847bb13",
     "title": "Lunch: steamed mussels (mejillones al vapor) — a plate of ~18-20 (BG: 142 mg/dL Flat) (Protein: 24g) (Pred: 141-151 mg/dL @ 5:26 PM)",
     "type": "Lunch",
