@@ -4,7 +4,7 @@
     "title": "Dessert (post-walk): ice cream corte — strawberry + vanilla wafer sandwich (BG: 105 mg/dL Flat) (Protein: 3g) (Pred: 115-125 mg/dL @ 7:42 PM)",
     "type": "Dessert",
     "date": "2026-06-11T18:00:00.000+02:00",
-    "photo": "https://iili.io/CCf2PAg.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-11/3bf097ec2656988a.jpg",
     "carbs": 22,
     "cals": 150,
     "delta": null,
@@ -29,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-11/6543841f8da58f49.jpg",
     "carbs": 8,
     "cals": 180,
-    "delta": null,
-    "peak": null
+    "delta": 0,
+    "peak": 139
   },
   {
     "id": "37c85ec7-0668-8183-a7ab-c578e4f23a26",
