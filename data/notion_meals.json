@@ -1,5 +1,16 @@
 [
   {
+    "id": "37d85ec7-0668-818e-a399-d6f7c129ab9d",
+    "title": "Lunch: battered fried fish fillets (looks like cazón or bacalao rebozado), lettuce and tomato salad, and a small piece of white bread (BG: 103 mg/dL Flat) (Pred: 121-131 mg/dL @ 4:31 PM) (Protein: 28g , Carbs: ~27g , Cals: ~390) [Coach: Pescado rebozado + salad 🐟 — ~28g protein from the fish, fresh salad brings fiber + lycopene, and the batter + bread keep carbs moderate at ~27g. Pred only ~126 by 4:31 PM. Another seafood-anchored lunch — exactly the 5s pattern. Cured-meat tally stays at 0.]",
+    "type": "Lunch",
+    "date": "2026-06-12T14:38:00.000+02:00",
+    "photo": "https://iili.io/CCG8VAQ.jpg",
+    "carbs": 27,
+    "cals": 390,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37d85ec7-0668-8157-a735-ec5f8c5a4a32",
     "title": "Breakfast: grilled sandwich on multigrain seeded bread with turkey breast, cheese, and fresh tomato slices (BG: 103 mg/dL Flat) (Protein: 26g) (Pred: 166-176 mg/dL @ 11:56 AM)",
     "type": "Breakfast",
