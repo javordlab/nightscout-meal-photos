@@ -1,5 +1,16 @@
 [
   {
+    "id": "37d85ec7-0668-8106-8067-cac8084f3325",
+    "title": "Lunch (cont. — Dessert, half serving): half a flan with caramel sauce and a swirl of whipped cream (BG: 130 mg/dL Flat) (Pred: 123-133 mg/dL @ 4:31 PM) (Protein: 3g , Carbs: ~15g , Cals: ~110) [Cumulative Lunch: ~31g carbs total] [Coach: Half flan 🍮 — the half-portion strategy strikes again: ~15g carbs instead of 30. Cumulative lunch is ~29g protein on ~31g carbs, Pred ~128 by 4:31 PM. Mindful dessert on a clean seafood day — the 5s math still works.]",
+    "type": "Lunch",
+    "date": "2026-06-12T14:52:00.000+02:00",
+    "photo": "https://iili.io/CCGmkQe.jpg",
+    "carbs": 15,
+    "cals": 110,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37d85ec7-0668-818e-a399-d6f7c129ab9d",
     "title": "Lunch: battered fried fish fillets (looks like cazón or bacalao rebozado), lettuce and tomato salad, and a small piece of white bread (BG: 103 mg/dL Flat) (Pred: 121-131 mg/dL @ 4:31 PM) (Protein: 28g , Carbs: ~27g , Cals: ~390) [Coach: Pescado rebozado + salad 🐟 — ~28g protein from the fish, fresh salad brings fiber + lycopene, and the batter + bread keep carbs moderate at ~27g. Pred only ~126 by 4:31 PM. Another seafood-anchored lunch — exactly the 5s pattern. Cured-meat tally stays at 0.]",
     "type": "Lunch",
@@ -463,7 +474,7 @@
   },
   {
     "id": "37485ec7-0668-81ad-8654-dbe240865b79",
-    "title": "Breakfast (cont.): half a cup of Carrefour Classic Natural yogurt (plain) (BG: 101 mg/dL Flat) (Pred: 182-192 mg/dL @ 11:05 AM) (Protein: 3g , Carbs: ~4g , Cals: ~38) [Cumulative Breakfast: ~39g carbs total] [Coach: Half yogurt 👌 — listening to the protein-anchor note. Cumulative breakfast now ~14g protein on ~39g carbs. Better protein distribution, still a couch shy of the 20g target but a notable improvement. Pred ~187 by 11:05.]",
+    "title": "Breakfast (cont.): half a cup of Carrefour Classic Natural yogurt (plain) (BG: 101 mg/dL Flat) (Pred: 182-192 mg/dL @ 11:05 AM) (Protein: 3g , Carbs: ~4g , Cals: ~38) [Cumulative Breakfast: ~39g carbs total] [Coach: Half yogurt ���� — listening to the protein-anchor note. Cumulative breakfast now ~14g protein on ~39g carbs. Better protein distribution, still a couch shy of the 20g target but a notable improvement. Pred ~187 by 11:05.]",
     "type": "Breakfast",
     "date": "2026-06-03T09:46:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-03/a1e9332aab73c9c0.jpg",
