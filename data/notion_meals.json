@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-12/365b07221b147dbe.jpg",
     "carbs": 14,
     "cals": 55,
-    "delta": null,
-    "peak": null
+    "delta": 22,
+    "peak": 126
   },
   {
     "id": "37d85ec7-0668-8106-8067-cac8084f3325",
@@ -4214,7 +4214,7 @@
   },
   {
     "id": "33b85ec7-0668-8103-b326-e89c58e8d7a9",
-    "title": "Breakfast: 2 boiled eggs, 1 slice white bread, 1 small guava (BG: 117 mg/dL ➡��) (Peak: 161 mg/dL @ 10:59 AM) (Protein: 16g | Carbs: ~21g | Cals: ~245)  (Pred: 167-187 mg/dL @ 11:38 AM)",
+    "title": "Breakfast: 2 boiled eggs, 1 slice white bread, 1 small guava (BG: 117 mg/dL ➡️) (Peak: 161 mg/dL @ 10:59 AM) (Protein: 16g | Carbs: ~21g | Cals: ~245)  (Pred: 167-187 mg/dL @ 11:38 AM)",
     "type": "Breakfast",
     "date": "2026-03-21T10:03:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-03-21/ead7c4f9da6e4f03.jpg",
