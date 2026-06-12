@@ -17,7 +17,7 @@
   "allowedUsers": [8335333215, 8738167445],
   "claudeCwd": "foodlog-cwd",
   "settingSources": "project",
-  "defaultPhotoPrompt": "Process this food photo per the food log workflow in CLAUDE.md. Run all 6 steps: fetch BG, identify food + macros via vision, cumulative meal check, Model v3 prediction, write health_log.md entry, terse reply. Do NOT just describe the photo.",
+  "defaultPhotoPrompt": "Process this food photo per the food log workflow in CLAUDE.md. Run all 6 steps: fetch BG, identify food + macros via vision, cumulative meal check, Model v4 prediction, write health_log.md entry, terse reply. Do NOT just describe the photo.",
   "uploadPhotoBeforeAgent": true,
   "postReplyDetached": {
     "cmd": "/opt/homebrew/bin/node",

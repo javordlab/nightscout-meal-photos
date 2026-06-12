@@ -1,5 +1,10 @@
 # Model v3 Calibration Analysis & Model v4 Proposal — 2026-06-12
 
+> **STATUS: SHIPPED 2026-06-12** (same day, on Javier's go). Model v4 is live in all five
+> formula copies: `foodlog-cwd/CLAUDE.md` Step 4, `scripts/calculate_notion_projections.js`,
+> `AGENTS.md`, workspace `CLAUDE.md`, `WORKFLOW_AUTO.md` — plus the prompt string in
+> `config.foodlog.json` (bridge restarted). Keep all five in parity on any future change.
+
 Full-history comparison of predicted vs actual BG peaks for Maria's meals.
 Data: MySQL `health_ssot.health_log_entries` (predictions parsed from SSoT `(Pred: ...)`,
 actuals backfilled from Nightscout 3h-window peaks by `backfill_meal_outcomes.js`).

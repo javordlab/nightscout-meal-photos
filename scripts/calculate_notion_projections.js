@@ -51,64 +51,71 @@ async function patchJson(id, props) {
 }
 
 /**
- * PREDICTION MODEL v3 (calibrated 2026-04-02, n=57 meals)
+ * PREDICTION MODEL v4 (calibrated 2026-06-12, n=145 clean meals — holdout-validated;
+ * see docs/model_v4_calibration_2026-06-12.md; supersedes v3 of 2026-04-02 n=57)
  *
- * Layer 1 — Carb factors (Metformin-adjusted, preBG-anchored):
- *   BG rise per gram drops sharply at higher carb loads due to Metformin + saturation.
- *   Old flat factor 3.5 caused 75% overshoot rate, MAE=31.6 mg/dL.
- *
- *       0-15g: ×2.0   (avg actual rise 25 mg/dL)
- *      16-30g: ×1.3   (avg actual rise 38 mg/dL)
- *      31-50g: ×1.2   (avg actual rise 44 mg/dL)
- *        51+g: ×0.8   (Metformin strongly blunts large loads)
+ * Layer 1 — Carb factors (Metformin-adjusted, monotonically declining):
+ *       0-15g: ×2.0   (v3 value confirmed exactly)
+ *      16-30g: ×1.2   (was 1.3, implied 1.14)
+ *      31-50g: ×0.9   (was 1.2 — v3's single biggest error, implied ~0.8)
+ *        51+g: ×0.7   (was 0.8)
  *
  * Layer 2 — Meal-type intercepts (additive, empirical):
- *   Breakfast: +31 mg/dL  (dawn phenomenon / morning cortisol — drops breakfast MAE from 30.7→8.5)
- *   Lunch:     -12 mg/dL  (midday Metformin fully active)
- *   Dinner:     -2 mg/dL  (negligible)
- *   Snack:      +4 mg/dL
- *   Dessert:   -14 mg/dL  (usually follows a meal, BG partially blunted)
+ *   Breakfast: +25 mg/dL  (dawn phenomenon, was +31 — over-predicted)
+ *   Lunch:      -5 mg/dL  (was −12; Spanish ~14:30 lunches run hotter)
+ *   Dinner:      0 mg/dL
+ *   Snack:       0 mg/dL
+ *   Dessert:   -10 mg/dL
  *
- * Layer 3 — Cumulative meal preBG anchor (data quality fix):
+ * Layer 3 — preBG damping: − 0.35 × (preBG − 115).
+ *   High baselines regress down, low baselines regress up (err-vs-preBG fit
+ *   slope −0.35, r=−0.29). v3 carried preBG 1:1 → over-predicted by ~15 at
+ *   preBG 130+, under-predicted by ~19 below 90.
+ *
+ * Layer 4 — Cumulative meal preBG anchor (data quality fix):
  *   For cumulative meals, use the FIRST item's preBG in the meal session,
  *   not the live BG at time of logging subsequent items (which is mid-digestion).
- *   Session window: same meal type within 2 hours.
  *
- * All predictions anchor to preBG. If unknown: fallback 115 mg/dL (Maria's typical).
- * Cap at 300 mg/dL.
+ * All predictions anchor to preBG. If unknown: fallback 115 mg/dL (Maria's typical
+ * — note the damping term vanishes at exactly 115). Cap at 300 mg/dL.
  */
 const CARB_FACTORS = [
   { maxCarbs: 15,       factor: 2.0 },
-  { maxCarbs: 30,       factor: 1.3 },
-  { maxCarbs: 50,       factor: 1.2 },
-  { maxCarbs: Infinity, factor: 0.8 },
+  { maxCarbs: 30,       factor: 1.2 },
+  { maxCarbs: 50,       factor: 0.9 },
+  { maxCarbs: Infinity, factor: 0.7 },
 ];
 
 // Additive intercepts per meal type (dawn phenomenon, Metformin timing, etc.)
 const MEAL_INTERCEPTS = {
-  breakfast: 31,
-  lunch:    -12,
-  dinner:    -2,
-  snack:      4,
-  dessert:  -14,
+  breakfast: 25,
+  lunch:     -5,
+  dinner:     0,
+  snack:      0,
+  dessert:  -10,
 };
 
+// preBG damping (model v4 Layer 3)
+const PREBG_DAMP_SLOPE = 0.35;
+const PREBG_DAMP_CENTER = 115;
+
 /**
- * Empirical time-to-peak defaults by meal type (57-meal analysis medians):
- *   Breakfast: 87 min  (morning, fastest)
- *   Dinner:    76 min  (often post-activity)
- *   Lunch:    113 min
- *   Snack:    126 min  (small bolus, slowest)
- *   Dessert:  102 min
- *   Default:   96 min  (overall median)
+ * Empirical time-to-peak defaults by meal type (2026-06-12 medians, n=107 with
+ * measured peaks; v3's Lunch/Dinner/Snack values ran 20-70 min late):
+ *   Breakfast: 87 min  (unchanged — was spot-on)
+ *   Lunch:     75 min  (was 113)
+ *   Dinner:    55 min  (was 76)
+ *   Snack:     60 min  (was 126)
+ *   Dessert:   95 min  (was 102)
+ *   Default:   70 min  (overall median)
  */
 const TTP_DEFAULTS_MIN = {
   breakfast: 87,
-  lunch: 113,
-  dinner: 76,
-  snack: 126,
-  dessert: 102,
-  default: 96,
+  lunch: 75,
+  dinner: 55,
+  snack: 60,
+  dessert: 95,
+  default: 70,
 };
 
 function getMealType(title) {
@@ -211,7 +218,7 @@ function parsePredFromText(text, fullDateIso) {
 }
 
 async function run() {
-  console.log('Starting Projections Audit (model v3: intercepts + cumulative anchor)...');
+  console.log('Starting Projections Audit (model v4: intercepts + preBG damping + cumulative anchor)...');
 
   // Retroactive window: last 7 days in local (host) timezone context.
   // en-CA Intl gives YYYY-MM-DD in the HOST's local calendar — toISOString()
@@ -281,11 +288,11 @@ async function run() {
         peakTimeIso = pred.peakIso || new Date(mealTime.getTime() + getTTPMinutes(title) * 60 * 1000).toISOString();
         source = 'from title (agent)';
       } else {
-        // ── Fallback formula (model v3) ──
+        // ── Fallback formula (model v4) ──
         //
         // Layer 1: carb factor (Metformin-adjusted, preBG-anchored)
         // Layer 2: meal-type intercept (dawn phenomenon, Metformin timing)
-        // Layer 3: preBG dampener (ceiling resistance when already elevated)
+        // Layer 3: preBG damping (−0.35 × (preBG − 115))
         // Layer 4: cumulative meal preBG anchor (use first-meal preBG, not mid-digestion BG)
         const type = getMealType(title);
         const intercept = MEAL_INTERCEPTS[type] ?? 0;
@@ -295,15 +302,16 @@ async function run() {
         const preBg = rawPreBg ?? 115; // 115 = Maria's typical pre-meal fallback
 
         const factor = getCarbFactor(carbsForCalc);
+        const damping = -PREBG_DAMP_SLOPE * (preBg - PREBG_DAMP_CENTER);
 
         predictedBg = Math.min(
-          Math.round(preBg + carbsForCalc * factor + intercept),
+          Math.round(preBg + carbsForCalc * factor + intercept + damping),
           300
         );
 
         const ttpMin = getTTPMinutes(title);
         peakTimeIso = new Date(mealTime.getTime() + ttpMin * 60 * 1000).toISOString();
-        source = `formula v3 (preBG=${preBg} + ${carbsForCalc}g×${factor} + intercept=${intercept}, ttp=${ttpMin}min)`;
+        source = `formula v4 (preBG=${preBg} + ${carbsForCalc}g×${factor} + intercept=${intercept} + damp=${damping.toFixed(1)}, ttp=${ttpMin}min)`;
       }
 
       console.log(`Projection for '${title?.substring(0, 60)}': ${predictedBg} mg/dL [${source}]`);

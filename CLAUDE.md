@@ -37,7 +37,7 @@ cat docs/CHANGELOG.md
 
 Fully automated health logging pipeline for Maria:
 - **Intake:** Maria sends food/medication/exercise via Telegram → logged to `health_log.md` (SSoT)
-- **Prediction:** Peak BG predicted immediately using Model v3 (4-layer formula, see AGENTS.md)
+- **Prediction:** Peak BG predicted immediately using Model v4 (4-layer formula, see AGENTS.md)
 - **Sync:** Every 30 min, `radial_dispatcher.js` pushes to Nightscout + Notion + MySQL
 - **Monitoring:** Glucose low alerts every 5 min, daily report at 9:30 AM PT, cron watchdog every 30 min
 - **Backfill:** Actual glucose outcomes written ~3h after each meal entry
@@ -98,7 +98,7 @@ Monitoring:
 ### Prediction & Analytics
 | Script | Purpose |
 |--------|---------|
-| `scripts/calculate_notion_projections.js` | Peak BG prediction (Model v3, 4-layer formula). Runs in radial sync. |
+| `scripts/calculate_notion_projections.js` | Peak BG prediction (Model v4, 4-layer formula). Runs in radial sync. |
 | `scripts/calculate_glucose_summary.js` | 24h + 14d glucose stats (fetches live from NS). Suppresses 14d when coverage <13 days. |
 | `scripts/calculate_14d_stats.js` | 14d trend stats (fetches live from NS). Exits with code 2 when coverage <13 days. |
 | `scripts/backfill_meal_outcomes.js` | Writes actual BG outcomes ~3h post-meal to MySQL + best-effort Notion mirror (hourly cron). Replaced `backfill_notion_impact.js` 2026-05-21. |
@@ -253,33 +253,41 @@ All health-critical and data-touching tasks use **Claude Fable 5** (`claude-fabl
 
 ---
 
-## Prediction Model v3 (Calibrated 2026-04-02, n=57)
+## Prediction Model v4 (Calibrated 2026-06-12, n=145 clean meals, holdout-validated)
+
+> Supersedes v3 (2026-04-02, n=57). Full analysis: `docs/model_v4_calibration_2026-06-12.md`.
+> Parity contract — the formula lives in FOUR places, change all together:
+> `foodlog-cwd/CLAUDE.md` Step 4, `scripts/calculate_notion_projections.js`, `AGENTS.md`, this section.
 
 ```
-Peak BG = preBG + (carbs × factor) + meal_intercept   [capped at 300]
+Peak BG = preBG + (carbs × factor) + meal_intercept − 0.35 × (preBG − 115)   [capped at 300]
 
-Carb factors (Metformin-adjusted):
+Carb factors (Metformin-adjusted, monotonically declining):
   0–15g:  × 2.0
-  16–30g: × 1.3
-  31–50g: × 1.2
-  51+g:   × 0.8
+  16–30g: × 1.2
+  31–50g: × 0.9
+  51+g:   × 0.7
 
 Meal intercepts:
-  Breakfast: +31   (dawn phenomenon / cortisol)
-  Lunch:     −12   (Metformin fully active)
-  Dinner:     −2
-  Snack:      +4
-  Dessert:   −14
+  Breakfast: +25   (dawn phenomenon / cortisol)
+  Lunch:      −5
+  Dinner:      0
+  Snack:       0
+  Dessert:   −10
+
+preBG damping term:
+  −0.35 × (preBG − 115) — high baselines regress down, low baselines up.
 
 Layer 3 — Cumulative anchor:
-  If food within 2h of prior same-type meal, use FIRST item's preBG (not current live BG mid-digestion).
+  If food within 1h of prior same-type meal, use FIRST item's preBG (not current live BG mid-digestion).
   Failure to do this causes ~47–56 mg/dL underestimate errors.
 
 Layer 4 — Time-to-peak defaults (minutes):
-  Breakfast: 87 | Lunch: 113 | Dinner: 76 | Snack: 126 | Dessert: 102
+  Breakfast: 87 | Lunch: 75 | Dinner: 55 | Snack: 60 | Dessert: 95
 ```
 
-Expected accuracy: ~87–89% within ±20 mg/dL.
+Measured accuracy (clean meals, no stacking): MAE ~15 mg/dL, ~68% within ±20, ~90% within ±30.
+(v3 measured: MAE 20.6, 57% within ±20 — its "87–89% within ±20" claim never held on real data.)
 
 ---
 
@@ -377,7 +385,7 @@ Commit message convention: `fix:`, `feat:`, `chore:`, `refactor:`. Be specific �
 - Radial sync to Nightscout + Notion + MySQL
 - Daily report (9:30 AM, pure script)
 - Glucose low alerts
-- Prediction Model v3 (all 4 layers)
+- Prediction Model v4 (all 4 layers, recalibrated 2026-06-12)
 - System cron PATH (all scripts use full node path)
 - MySQL pagination (48h cutoff)
 - Photo upload via HealthGuard in real-time
