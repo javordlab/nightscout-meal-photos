@@ -530,6 +530,17 @@ function getEntryKey(entry) {
 }
 
 // --- Main ---
+// Record the entry's content hash on the NS/Notion sub-record at sync time so
+// the next run can skip the round-trip when nothing changed. This is a
+// SEPARATE field from the top-level content_hash, which normalize_health_log
+// rewrites on every run (so it always matches by the time we get here and
+// can't signal "changed since last sync").
+function stampSyncedHash(state, entryKey, system, hash) {
+  if (!hash) return;
+  const cur = getEntry(state, entryKey)?.[system] || {};
+  upsertEntry(state, entryKey, { [system]: { ...cur, synced_hash: hash } });
+}
+
 async function runSync(options = {}) {
   const dryRun = options.dryRun || false;
   const normalized = JSON.parse(fs.readFileSync(NORMALIZED_PATH, 'utf8'));
@@ -600,21 +611,44 @@ async function runSync(options = {}) {
       if (s?.nightscout?.treatment_id && s?.notion?.page_id) continue;
     }
 
+    // Content-hash skip (per system): re-PATCHing every entry in the 2-day
+    // window to NS + Notion on every run — even when unchanged — was the
+    // pipeline's bottleneck (~50s/run, ~100 redundant API calls every 30 min;
+    // radial_dispatcher already keeps these synced with its own skip-gate).
+    // Skip the round-trip when the id is present AND the content hash still
+    // matches what was last synced there. First run after deploy stamps the
+    // hashes (no skips yet); steady state skips all unchanged rows.
+    const sstate = getEntry(state, entryKey);
+    const nsAlreadySynced = !dryRun && !!(sstate?.nightscout?.treatment_id &&
+      entry.contentHash && sstate.nightscout.synced_hash === entry.contentHash);
+    const notionAlreadySynced = !dryRun && !!(sstate?.notion?.page_id &&
+      entry.contentHash && sstate.notion.synced_hash === entry.contentHash);
+
     // Nightscout
-    try {
-      const ns = dryRun ? { status: 'dry', treatmentId: null, telemetry: createNsTelemetry() } : await syncNightscout(entry, state);
-      mergeNsTelemetry(nsTelemetry, ns.telemetry);
-      results.nightscout.push({ entryKey: entry.entryKey, ...ns });
-    } catch (e) {
-      results.errors.push({ subsystem: 'nightscout', entryKey: entry.entryKey, error: e.message });
+    if (nsAlreadySynced) {
+      results.nightscout.push({ entryKey: entry.entryKey, status: 'skipped' });
+    } else {
+      try {
+        const ns = dryRun ? { status: 'dry', treatmentId: null, telemetry: createNsTelemetry() } : await syncNightscout(entry, state);
+        mergeNsTelemetry(nsTelemetry, ns.telemetry);
+        results.nightscout.push({ entryKey: entry.entryKey, ...ns });
+        if (ns.status === 'created' || ns.status === 'updated') stampSyncedHash(state, entryKey, 'nightscout', entry.contentHash);
+      } catch (e) {
+        results.errors.push({ subsystem: 'nightscout', entryKey: entry.entryKey, error: e.message });
+      }
     }
 
     // Notion
-    try {
-      const nt = dryRun ? { status: 'dry', pageId: null } : await syncNotion(entry, state);
-      results.notion.push({ entryKey: entry.entryKey, ...nt });
-    } catch (e) {
-      results.errors.push({ subsystem: 'notion', entryKey: entry.entryKey, error: e.message });
+    if (notionAlreadySynced) {
+      results.notion.push({ entryKey: entry.entryKey, status: 'skipped' });
+    } else {
+      try {
+        const nt = dryRun ? { status: 'dry', pageId: null } : await syncNotion(entry, state);
+        results.notion.push({ entryKey: entry.entryKey, ...nt });
+        if (nt.status === 'created' || nt.status === 'patched') stampSyncedHash(state, entryKey, 'notion', entry.contentHash);
+      } catch (e) {
+        results.errors.push({ subsystem: 'notion', entryKey: entry.entryKey, error: e.message });
+      }
     }
 
     // Gallery

@@ -35401,15 +35401,17 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "37b85ec7-0668-8166-ad66-dbd73c126e9b",
-        "last_synced_at": "2026-06-12T11:00:32.236Z"
+        "last_synced_at": "2026-06-12T11:16:53.709Z"
       },
       "notion": {
         "page_id": "37b85ec7-0668-8166-ad66-dbd73c126e9b",
-        "last_synced_at": "2026-06-12T11:00:00.728Z"
+        "last_synced_at": "2026-06-12T11:00:00.728Z",
+        "synced_hash": "sha256:784325b28b1532e8aaf3e3ca6452387a51d588278f2212ba178fac0ec5a7bb63"
       },
       "nightscout": {
         "treatment_id": "6a2959aed7b66fcf51f7b789",
-        "last_synced_at": "2026-06-12T11:00:31.837Z"
+        "last_synced_at": "2026-06-12T11:16:24.281Z",
+        "synced_hash": "sha256:784325b28b1532e8aaf3e3ca6452387a51d588278f2212ba178fac0ec5a7bb63"
       }
     },
     "sha256:aa4a8582aefcbcbfeec68439fe9ba7d4f99d09c8cdade20c616a49ca929af848": {
@@ -35477,11 +35479,13 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "6a295968d7b66fcf51f7b788",
-        "last_synced_at": "2026-06-12T11:00:41.041Z"
+        "last_synced_at": "2026-06-12T11:16:25.197Z",
+        "synced_hash": "sha256:f608bec6b2404eb2de9e16f3063f157689d4d01927c25cdeec652f3409442fc1"
       },
       "notion": {
         "page_id": "37b85ec7-0668-8122-814e-ca044cc21d6e",
-        "last_synced_at": "2026-06-10T13:01:06.783Z"
+        "last_synced_at": "2026-06-10T13:01:06.783Z",
+        "synced_hash": "sha256:f608bec6b2404eb2de9e16f3063f157689d4d01927c25cdeec652f3409442fc1"
       }
     },
     "sha256:ed474559182bb9c94f3fbafa87adf121c951fd7850b75d1243c6ea20d55d82c4": {
@@ -35497,15 +35501,17 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "37b85ec7-0668-8138-bfc1-c0426431c325",
-        "last_synced_at": "2026-06-12T11:00:31.565Z"
+        "last_synced_at": "2026-06-12T11:16:53.709Z"
       },
       "notion": {
         "page_id": "37b85ec7-0668-8138-bfc1-c0426431c325",
-        "last_synced_at": "2026-06-12T11:00:00.728Z"
+        "last_synced_at": "2026-06-12T11:00:00.728Z",
+        "synced_hash": "sha256:748b053b6de1d6fe00bb4e058293a3660c8d54c90c3ddb4fa878ea073edfd3f4"
       },
       "nightscout": {
         "treatment_id": "6a296af8d7b66fcf51f7b799",
-        "last_synced_at": "2026-06-12T11:00:30.996Z"
+        "last_synced_at": "2026-06-12T11:16:23.404Z",
+        "synced_hash": "sha256:748b053b6de1d6fe00bb4e058293a3660c8d54c90c3ddb4fa878ea073edfd3f4"
       }
     },
     "sha256:cea178599f35d9bc6584286af933556bb7973d1ef04e1ab93f859fa2d87463f8": {
@@ -35521,15 +35527,17 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "37b85ec7-0668-8156-85d0-c4da3d9ff8a7",
-        "last_synced_at": "2026-06-12T11:00:30.690Z"
+        "last_synced_at": "2026-06-12T11:16:53.709Z"
       },
       "notion": {
         "page_id": "37b85ec7-0668-8156-85d0-c4da3d9ff8a7",
-        "last_synced_at": "2026-06-12T11:00:00.728Z"
+        "last_synced_at": "2026-06-12T11:00:00.728Z",
+        "synced_hash": "sha256:5383f072fbbbd5e15fc2883a28e409cd826ea9371286d06e4ab66d343bb07956"
       },
       "nightscout": {
         "treatment_id": "6a297e3fd7b66fcf51f7b7a9",
-        "last_synced_at": "2026-06-12T11:00:30.195Z"
+        "last_synced_at": "2026-06-12T11:16:22.323Z",
+        "synced_hash": "sha256:5383f072fbbbd5e15fc2883a28e409cd826ea9371286d06e4ab66d343bb07956"
       }
     },
     "sha256:285ac615216d233dd1d8efd1063bf6fc4990bbd4aed714876729a956bcf58dc0": {
@@ -35543,11 +35551,13 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "6a29846cd7b66fcf51f7b7b0",
-        "last_synced_at": "2026-06-12T11:00:41.852Z"
+        "last_synced_at": "2026-06-12T11:16:25.941Z",
+        "synced_hash": "sha256:3cd3389e2f5887503a1c17c15795dfe96f6fb714dc5efcc9f47ddc5624005414"
       },
       "notion": {
         "page_id": "37b85ec7-0668-81df-9b3a-ca3c822b65c3",
-        "last_synced_at": "2026-06-10T16:01:22.444Z"
+        "last_synced_at": "2026-06-10T16:01:22.444Z",
+        "synced_hash": "sha256:3cd3389e2f5887503a1c17c15795dfe96f6fb714dc5efcc9f47ddc5624005414"
       }
     },
     "sha256:e71b4fac0c04e846ba0153ae54b3ae887c0a4d497b26ba7375aa4dff32e2a815": {
@@ -35561,11 +35571,13 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "6a29846ed7b66fcf51f7b7b1",
-        "last_synced_at": "2026-06-12T11:00:42.652Z"
+        "last_synced_at": "2026-06-12T11:16:27.427Z",
+        "synced_hash": "sha256:9ffe6a80f054426ff19f477c46354ba31e2e540fbfe849ecd352bd66d71c766f"
       },
       "notion": {
         "page_id": "37b85ec7-0668-81e4-850c-e4cd76867c1b",
-        "last_synced_at": "2026-06-10T16:01:24.999Z"
+        "last_synced_at": "2026-06-10T16:01:24.999Z",
+        "synced_hash": "sha256:9ffe6a80f054426ff19f477c46354ba31e2e540fbfe849ecd352bd66d71c766f"
       }
     },
     "sha256:bd71bfa22a0c9c5d4effc2fce9f172aa94d18c2695c3c35ef2fbb379230de072": {
@@ -35579,11 +35591,13 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "6a298470d7b66fcf51f7b7b2",
-        "last_synced_at": "2026-06-12T11:00:43.453Z"
+        "last_synced_at": "2026-06-12T11:16:28.072Z",
+        "synced_hash": "sha256:74aacf4290a917625d6f1ace735fa0ad7a23a8a8ca8a88cf0c75904bc604e64c"
       },
       "notion": {
         "page_id": "37b85ec7-0668-8120-972e-c0d9ba2a9e44",
-        "last_synced_at": "2026-06-10T16:01:28.078Z"
+        "last_synced_at": "2026-06-10T16:01:28.078Z",
+        "synced_hash": "sha256:74aacf4290a917625d6f1ace735fa0ad7a23a8a8ca8a88cf0c75904bc604e64c"
       }
     },
     "sha256:36768892757cf579519796b028c6f5fc0d17a03b81d8f6e240c6439b786fcd6c": {
@@ -35597,11 +35611,13 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "6a299941d7b66fcf51f7b7c5",
-        "last_synced_at": "2026-06-12T11:00:29.391Z"
+        "last_synced_at": "2026-06-12T11:16:21.667Z",
+        "synced_hash": "sha256:3fb2daff25fc14f33df74c05273a69169609a006a4d9aa336453f39fab29b242"
       },
       "notion": {
         "page_id": "37b85ec7-0668-818f-a424-e50c2844e19c",
-        "last_synced_at": "2026-06-10T17:30:04.778Z"
+        "last_synced_at": "2026-06-10T17:30:04.778Z",
+        "synced_hash": "sha256:3fb2daff25fc14f33df74c05273a69169609a006a4d9aa336453f39fab29b242"
       }
     },
     "sha256:ae2b599bc7184440b40f55e52ce93e367b209b3ca7831030959056e2d07e9f1c": {
@@ -35615,11 +35631,13 @@
       "outcomes_backfilled": false,
       "notion": {
         "page_id": "37b85ec7-0668-815e-8797-e653f1e0b554",
-        "last_synced_at": "2026-06-10T18:36:28.229Z"
+        "last_synced_at": "2026-06-10T18:36:28.229Z",
+        "synced_hash": "sha256:aeca43527a65f9037b81387e208c8de89f881d3142d76f40f42913b52374e185"
       },
       "nightscout": {
         "treatment_id": "6a29aeaad7b66fcf51f7b7d8",
-        "last_synced_at": "2026-06-12T11:00:44.168Z"
+        "last_synced_at": "2026-06-12T11:16:28.704Z",
+        "synced_hash": "sha256:aeca43527a65f9037b81387e208c8de89f881d3142d76f40f42913b52374e185"
       }
     },
     "sha256:f6f010f06d3c9ce8ccbf279ec6a0036a599caa8e7514c01e87e2d5ec247f5f7e": {
@@ -35635,15 +35653,17 @@
       "outcomes_backfilled": false,
       "gallery": {
         "gallery_id": "37b85ec7-0668-8148-b062-c422ba57839b",
-        "last_synced_at": "2026-06-12T11:00:28.444Z"
+        "last_synced_at": "2026-06-12T11:16:53.707Z"
       },
       "notion": {
         "page_id": "37b85ec7-0668-8148-b062-c422ba57839b",
-        "last_synced_at": "2026-06-12T11:00:00.724Z"
+        "last_synced_at": "2026-06-12T11:00:00.724Z",
+        "synced_hash": "sha256:962a1d202129501a407bd291105be60e5c4dcffdd17392cf9abd7b01f6529098"
       },
       "nightscout": {
         "treatment_id": "6a29ba1dd7b66fcf51f7b7e3",
-        "last_synced_at": "2026-06-12T11:00:25.878Z"
+        "last_synced_at": "2026-06-12T11:16:19.512Z",
+        "synced_hash": "sha256:962a1d202129501a407bd291105be60e5c4dcffdd17392cf9abd7b01f6529098"
       }
     },
     "sha256:c6418c9b61edb0ee1b882791263d8d4efbeaa1abfe4936f618aec11c2a5888e9": {
@@ -35657,11 +35677,13 @@
       "outcomes_backfilled": false,
       "nightscout": {
         "treatment_id": "6a29bb3ad7b66fcf51f7b7e5",
-        "last_synced_at": "2026-06-12T11:00:28.706Z"
+        "last_synced_at": "2026-06-12T11:16:20.233Z",
+        "synced_hash": "sha256:c5138e0063e3f9f160c8b4972bea3854f342a4283ae5f1e5a5443762f70709a5"
       },
       "notion": {
         "page_id": "37c85ec7-0668-8105-91ec-e4b1e0707f53",
-        "last_synced_at": "2026-06-11T09:33:27.365Z"
+        "last_synced_at": "2026-06-11T09:33:27.365Z",
+        "synced_hash": "sha256:c5138e0063e3f9f160c8b4972bea3854f342a4283ae5f1e5a5443762f70709a5"
       }
     },
     "sha256:a4a28dde1af3d72ebe4b67e4cbd3bbcbea978633218a7bfe5eb8ded71fd4331e": {
@@ -35674,11 +35696,13 @@
       "photo_urls": [],
       "nightscout": {
         "treatment_id": "6a29d920d7b66fcf51f7b7ff",
-        "last_synced_at": "2026-06-12T11:00:45.050Z"
+        "last_synced_at": "2026-06-12T11:16:29.664Z",
+        "synced_hash": "sha256:c702d31e7ba0398705bdf0e327b71703e508403118b70a7e0cd0c0646a9b3de7"
       },
       "notion": {
         "page_id": "37b85ec7-0668-81e5-8d9e-fe7eddde58f5",
-        "last_synced_at": "2026-06-10T22:00:43.195Z"
+        "last_synced_at": "2026-06-10T22:00:43.195Z",
+        "synced_hash": "sha256:c702d31e7ba0398705bdf0e327b71703e508403118b70a7e0cd0c0646a9b3de7"
       }
     },
     "sha256:d5ada33c0aaa96baf9da6c5ea2f3348c914bc3138278f6953c456524484adfe6": {
@@ -35691,11 +35715,13 @@
       "photo_urls": [],
       "nightscout": {
         "treatment_id": "6a29d922d7b66fcf51f7b800",
-        "last_synced_at": "2026-06-12T11:00:45.820Z"
+        "last_synced_at": "2026-06-12T11:16:30.290Z",
+        "synced_hash": "sha256:e30265a23ad92e3e3e61deaa631aa835859ef168039f40110a4d69e9ef53683c"
       },
       "notion": {
         "page_id": "37b85ec7-0668-8160-ad96-c758d6b05862",
-        "last_synced_at": "2026-06-10T22:00:44.684Z"
+        "last_synced_at": "2026-06-10T22:00:44.684Z",
+        "synced_hash": "sha256:e30265a23ad92e3e3e61deaa631aa835859ef168039f40110a4d69e9ef53683c"
       }
     },
     "sha256:ebeff18a16473fc3f60c13c969508d683db40e973c1e9a267e111ea7f1a9d0ea": {
@@ -35708,11 +35734,13 @@
       "photo_urls": [],
       "nightscout": {
         "treatment_id": "6a2a5e20d7b66fcf51f7b873",
-        "last_synced_at": "2026-06-12T11:00:22.924Z"
+        "last_synced_at": "2026-06-12T11:16:17.421Z",
+        "synced_hash": "sha256:0a62614d005c5d10bb7f7f7412ec20114af647ed23bbfde2f21e39e85b6068b2"
       },
       "notion": {
         "page_id": "37c85ec7-0668-8109-8b7f-dbb739d8b008",
-        "last_synced_at": "2026-06-11T07:30:10.567Z"
+        "last_synced_at": "2026-06-11T07:30:10.567Z",
+        "synced_hash": "sha256:0a62614d005c5d10bb7f7f7412ec20114af647ed23bbfde2f21e39e85b6068b2"
       }
     },
     "sha256:a65fb929e42f5ff99604365476417244078e3f54a49248008c96b4fb27834505": {
@@ -35725,11 +35753,13 @@
       "photo_urls": [],
       "nightscout": {
         "treatment_id": "6a2a5e22d7b66fcf51f7b874",
-        "last_synced_at": "2026-06-12T11:00:23.777Z"
+        "last_synced_at": "2026-06-12T11:16:18.113Z",
+        "synced_hash": "sha256:e7f882f565d8d4c5aa159c30cc828a0acbc40892278be4e063873a4d1016abc2"
       },
       "notion": {
         "page_id": "37c85ec7-0668-817d-9ea3-fba912001b0d",
-        "last_synced_at": "2026-06-11T07:30:12.496Z"
+        "last_synced_at": "2026-06-11T07:30:12.496Z",
+        "synced_hash": "sha256:e7f882f565d8d4c5aa159c30cc828a0acbc40892278be4e063873a4d1016abc2"
       }
     },
     "sha256:f040c0187d8a9ae9fc1be20cfd5516cde255393c1ffeaf6474f531a54c828489": {
@@ -35742,11 +35772,13 @@
       "photo_urls": [],
       "nightscout": {
         "treatment_id": "6a2a5e24d7b66fcf51f7b875",
-        "last_synced_at": "2026-06-12T11:00:25.182Z"
+        "last_synced_at": "2026-06-12T11:16:18.745Z",
+        "synced_hash": "sha256:38016bf1a9441600078f8d1fe60b81eb58a286a5f3ca370fb8e5c54b848c4f62"
       },
       "notion": {
         "page_id": "37c85ec7-0668-81e0-9b51-e9d63198c77a",
-        "last_synced_at": "2026-06-11T07:30:14.341Z"
+        "last_synced_at": "2026-06-11T07:30:14.341Z",
+        "synced_hash": "sha256:38016bf1a9441600078f8d1fe60b81eb58a286a5f3ca370fb8e5c54b848c4f62"
       }
     },
     "sha256:10c51c8e8d02b7050fee1d92f7e12996e653d42ee0c1dca6c9501e1ae16ae24a": {
@@ -35759,11 +35791,13 @@
       "photo_urls": [],
       "nightscout": {
         "treatment_id": "6a2a642bd7b66fcf51f7b87b",
-        "last_synced_at": "2026-06-12T11:00:46.570Z"
+        "last_synced_at": "2026-06-12T11:16:31.162Z",
+        "synced_hash": "sha256:2ea3009ee9a1e6048a57e3819aaceb11175fc7b6ceb5c6080324fc1e313d4f2f"
       },
       "notion": {
         "page_id": "37c85ec7-0668-8108-b49a-c6a03890a652",
-        "last_synced_at": "2026-06-11T07:30:52.927Z"
+        "last_synced_at": "2026-06-11T07:30:52.927Z",
+        "synced_hash": "sha256:2ea3009ee9a1e6048a57e3819aaceb11175fc7b6ceb5c6080324fc1e313d4f2f"
       }
     },
     "sha256:26ef5bf1692c143d104714db90d271dde6b014fb10f2fef134ed2e50ccb54fae": {
@@ -35778,15 +35812,17 @@
       ],
       "gallery": {
         "gallery_id": "37c85ec7-0668-8106-823b-f179c8376d87",
-        "last_synced_at": "2026-06-12T11:00:20.294Z"
+        "last_synced_at": "2026-06-12T11:16:53.706Z"
       },
       "notion": {
         "page_id": "37c85ec7-0668-8106-823b-f179c8376d87",
-        "last_synced_at": "2026-06-12T11:00:00.715Z"
+        "last_synced_at": "2026-06-12T11:00:00.715Z",
+        "synced_hash": "sha256:ddde904bb1ba87112ac2bbd1384866b8cf466d9122aceaf906f42c68f53e2195"
       },
       "nightscout": {
         "treatment_id": "6a2a70cad7b66fcf51f7b888",
-        "last_synced_at": "2026-06-12T11:00:19.734Z"
+        "last_synced_at": "2026-06-12T11:16:15.014Z",
+        "synced_hash": "sha256:ddde904bb1ba87112ac2bbd1384866b8cf466d9122aceaf906f42c68f53e2195"
       }
     },
     "sha256:2d26342d3c32a2683f8fcdf7a128a76b7fd3cbed71ba2c1830a6081eac22a72c": {
@@ -35801,15 +35837,17 @@
       ],
       "gallery": {
         "gallery_id": "37c85ec7-0668-8105-bcfc-f61c281e7211",
-        "last_synced_at": "2026-06-12T11:00:21.809Z"
+        "last_synced_at": "2026-06-12T11:16:53.706Z"
       },
       "notion": {
         "page_id": "37c85ec7-0668-8105-bcfc-f61c281e7211",
-        "last_synced_at": "2026-06-12T11:00:00.715Z"
+        "last_synced_at": "2026-06-12T11:00:00.715Z",
+        "synced_hash": "sha256:7943edc0a2d49284a8a8eca44a3324879f3415fc508a89248e05f90e4bd4217a"
       },
       "nightscout": {
         "treatment_id": "6a2a6f33d7b66fcf51f7b885",
-        "last_synced_at": "2026-06-12T11:00:20.658Z"
+        "last_synced_at": "2026-06-12T11:16:15.757Z",
+        "synced_hash": "sha256:7943edc0a2d49284a8a8eca44a3324879f3415fc508a89248e05f90e4bd4217a"
       }
     },
     "sha256:39ead3e291a5124d03ccb9e9b5611b2aa91b6c9e92ad049c6cdc142570819197": {
@@ -35822,11 +35860,13 @@
       "photo_urls": [],
       "nightscout": {
         "treatment_id": "6a2a6f3ed7b66fcf51f7b886",
-        "last_synced_at": "2026-06-12T11:00:22.085Z"
+        "last_synced_at": "2026-06-12T11:16:16.807Z",
+        "synced_hash": "sha256:a4707acf6d67f2fe0bdd5e5d578f972a022980f429d77a7dcc7d32ed96bd5e59"
       },
       "notion": {
         "page_id": "37c85ec7-0668-81e5-bcf5-f07c869c2603",
-        "last_synced_at": "2026-06-11T08:30:09.676Z"
+        "last_synced_at": "2026-06-11T08:30:09.676Z",
+        "synced_hash": "sha256:a4707acf6d67f2fe0bdd5e5d578f972a022980f429d77a7dcc7d32ed96bd5e59"
       }
     },
     "sha256:a71c77a3324710f0ec4c4c70b2e28bee07e10b37192406ba67ff0214fb0fb2dd": {
@@ -35835,14 +35875,16 @@
       "category": "Medication",
       "nightscout": {
         "treatment_id": "6a2a8852d7b66fcf51f7b89e",
-        "last_synced_at": "2026-06-12T11:00:19.082Z"
+        "last_synced_at": "2026-06-12T11:16:14.411Z",
+        "synced_hash": "sha256:747a1c8c5befe9f802f2c75d38054a28f48eac6703d61deb0a7f49bab7b62983"
       },
       "meal_type": "-",
       "title": "Medication: Metformin 500mg (lunch)",
       "photo_urls": [],
       "notion": {
         "page_id": "37c85ec7-0668-81d5-b246-d9d89a276844",
-        "last_synced_at": "2026-06-11T10:05:08.169Z"
+        "last_synced_at": "2026-06-11T10:05:08.169Z",
+        "synced_hash": "sha256:747a1c8c5befe9f802f2c75d38054a28f48eac6703d61deb0a7f49bab7b62983"
       },
       "content_hash": "sha256:747a1c8c5befe9f802f2c75d38054a28f48eac6703d61deb0a7f49bab7b62983"
     },
@@ -35852,7 +35894,8 @@
       "category": "Food",
       "nightscout": {
         "treatment_id": "6a2ab988d7b66fcf51f7b8c9",
-        "last_synced_at": "2026-06-12T11:00:18.176Z"
+        "last_synced_at": "2026-06-12T11:16:13.667Z",
+        "synced_hash": "sha256:292b5c23394ba5d86a21832e0069fd22fde0e0d60735a7118d2d3493d1a8ce94"
       },
       "meal_type": "Lunch",
       "title": "Lunch: steamed mussels (mejillones al vapor) — a plate of ~18-20",
@@ -35861,12 +35904,13 @@
       ],
       "notion": {
         "page_id": "37c85ec7-0668-8113-8615-f2373847bb13",
-        "last_synced_at": "2026-06-12T11:00:00.712Z"
+        "last_synced_at": "2026-06-12T11:00:00.712Z",
+        "synced_hash": "sha256:292b5c23394ba5d86a21832e0069fd22fde0e0d60735a7118d2d3493d1a8ce94"
       },
       "content_hash": "sha256:292b5c23394ba5d86a21832e0069fd22fde0e0d60735a7118d2d3493d1a8ce94",
       "gallery": {
         "gallery_id": "37c85ec7-0668-8113-8615-f2373847bb13",
-        "last_synced_at": "2026-06-12T11:00:18.807Z"
+        "last_synced_at": "2026-06-12T11:16:53.706Z"
       }
     },
     "sha256:0b32ed57ebc91d32480d595dfd610783c9f3774e8af820a21ff6b172b2510ca5": {
@@ -35875,14 +35919,16 @@
       "category": "Exercise",
       "nightscout": {
         "treatment_id": "6a2ac1c0d7b66fcf51f7b8d2",
-        "last_synced_at": "2026-06-12T11:00:47.202Z"
+        "last_synced_at": "2026-06-12T11:16:32.199Z",
+        "synced_hash": "sha256:3fd34f32a923f09681b558407e492b39a8c58b09dd10730c42be1af05b97de81"
       },
       "meal_type": "-",
       "title": "Exercise: 28-min walk · 2,005 steps · 0.84 mi · 44 kcal",
       "photo_urls": [],
       "notion": {
         "page_id": "37c85ec7-0668-81c9-a5a6-cb05bb2088ec",
-        "last_synced_at": "2026-06-11T14:10:10.387Z"
+        "last_synced_at": "2026-06-11T14:10:10.387Z",
+        "synced_hash": "sha256:3fd34f32a923f09681b558407e492b39a8c58b09dd10730c42be1af05b97de81"
       },
       "content_hash": "sha256:3fd34f32a923f09681b558407e492b39a8c58b09dd10730c42be1af05b97de81"
     },
@@ -35892,14 +35938,16 @@
       "category": "Exercise",
       "nightscout": {
         "treatment_id": "6a2ac1c2d7b66fcf51f7b8d3",
-        "last_synced_at": "2026-06-12T11:00:47.891Z"
+        "last_synced_at": "2026-06-12T11:16:32.822Z",
+        "synced_hash": "sha256:cc2fb83a57d0e42a522530cde5a644a36d55222a699bf1f4ccf2a1a9ef9df770"
       },
       "meal_type": "-",
       "title": "Exercise: 9-min walk · 353 steps · 0.10 mi · 0 kcal",
       "photo_urls": [],
       "notion": {
         "page_id": "37c85ec7-0668-81a1-8ad9-efe46a7a924e",
-        "last_synced_at": "2026-06-11T14:10:12.063Z"
+        "last_synced_at": "2026-06-11T14:10:12.063Z",
+        "synced_hash": "sha256:cc2fb83a57d0e42a522530cde5a644a36d55222a699bf1f4ccf2a1a9ef9df770"
       },
       "content_hash": "sha256:cc2fb83a57d0e42a522530cde5a644a36d55222a699bf1f4ccf2a1a9ef9df770"
     },
@@ -35909,14 +35957,16 @@
       "category": "Exercise",
       "nightscout": {
         "treatment_id": "6a2ac1c4d7b66fcf51f7b8d4",
-        "last_synced_at": "2026-06-12T11:00:48.815Z"
+        "last_synced_at": "2026-06-12T11:16:33.596Z",
+        "synced_hash": "sha256:b0ca58257f83550af069b35912caeac098bb08bef440c4b4bf9210ac0a4543b1"
       },
       "meal_type": "-",
       "title": "Exercise: 19-min walk · 885 steps · 0.41 mi · 0 kcal",
       "photo_urls": [],
       "notion": {
         "page_id": "37c85ec7-0668-81a1-996a-d7abd7c2201b",
-        "last_synced_at": "2026-06-11T14:10:14.211Z"
+        "last_synced_at": "2026-06-11T14:10:14.211Z",
+        "synced_hash": "sha256:b0ca58257f83550af069b35912caeac098bb08bef440c4b4bf9210ac0a4543b1"
       },
       "content_hash": "sha256:b0ca58257f83550af069b35912caeac098bb08bef440c4b4bf9210ac0a4543b1"
     },
@@ -35926,14 +35976,16 @@
       "category": "Exercise",
       "nightscout": {
         "treatment_id": "6a2ac1c6d7b66fcf51f7b8d5",
-        "last_synced_at": "2026-06-12T11:00:49.476Z"
+        "last_synced_at": "2026-06-12T11:16:34.368Z",
+        "synced_hash": "sha256:152e4df642bff6673cb6f133c5462e76e59f651568a789237b293358c733ad8f"
       },
       "meal_type": "-",
       "title": "Exercise: 9-min walk · 361 steps · 0.17 mi · 0 kcal",
       "photo_urls": [],
       "notion": {
         "page_id": "37c85ec7-0668-81c8-aeef-c073807fa20b",
-        "last_synced_at": "2026-06-11T14:10:15.785Z"
+        "last_synced_at": "2026-06-11T14:10:15.785Z",
+        "synced_hash": "sha256:152e4df642bff6673cb6f133c5462e76e59f651568a789237b293358c733ad8f"
       },
       "content_hash": "sha256:152e4df642bff6673cb6f133c5462e76e59f651568a789237b293358c733ad8f"
     },
@@ -35943,14 +35995,16 @@
       "category": "Exercise",
       "nightscout": {
         "treatment_id": "6a2ac1c8d7b66fcf51f7b8d6",
-        "last_synced_at": "2026-06-12T11:00:50.329Z"
+        "last_synced_at": "2026-06-12T11:16:35.381Z",
+        "synced_hash": "sha256:ce3447f8325e7f82a427f74611113e23bffc77ac5914580bc1548cce1a00eb92"
       },
       "meal_type": "-",
       "title": "Exercise: 11-min walk · 386 steps · 0.18 mi · 0 kcal",
       "photo_urls": [],
       "notion": {
         "page_id": "37c85ec7-0668-81bf-a8a1-d3b5fdc5aad5",
-        "last_synced_at": "2026-06-11T14:10:17.548Z"
+        "last_synced_at": "2026-06-11T14:10:17.548Z",
+        "synced_hash": "sha256:ce3447f8325e7f82a427f74611113e23bffc77ac5914580bc1548cce1a00eb92"
       },
       "content_hash": "sha256:ce3447f8325e7f82a427f74611113e23bffc77ac5914580bc1548cce1a00eb92"
     },
@@ -35960,14 +36014,16 @@
       "category": "Exercise",
       "nightscout": {
         "treatment_id": "6a2ac1cad7b66fcf51f7b8d7",
-        "last_synced_at": "2026-06-12T11:00:51.172Z"
+        "last_synced_at": "2026-06-12T11:16:37.123Z",
+        "synced_hash": "sha256:22c816795be2936459e8e80e08e6317fd81245dd0b4875e014885eb9fd9df342"
       },
       "meal_type": "-",
       "title": "Exercise: 28-min walk · 1,247 steps · 0.58 mi · 0 kcal",
       "photo_urls": [],
       "notion": {
         "page_id": "37c85ec7-0668-81aa-86f1-e9d22abe41d3",
-        "last_synced_at": "2026-06-11T14:11:11.143Z"
+        "last_synced_at": "2026-06-11T14:11:11.143Z",
+        "synced_hash": "sha256:22c816795be2936459e8e80e08e6317fd81245dd0b4875e014885eb9fd9df342"
       },
       "content_hash": "sha256:22c816795be2936459e8e80e08e6317fd81245dd0b4875e014885eb9fd9df342"
     },
@@ -35977,14 +36033,16 @@
       "category": "Exercise",
       "nightscout": {
         "treatment_id": "6a2ac1ffd7b66fcf51f7b8d8",
-        "last_synced_at": "2026-06-12T11:00:52.279Z"
+        "last_synced_at": "2026-06-12T11:16:37.933Z",
+        "synced_hash": "sha256:2e62ddaef00f438108f3df7c22e51a7d28d54bc53b08f3abd162be808c48c20b"
       },
       "meal_type": "-",
       "title": "Exercise: 11-min walk · 339 steps · 0.15 mi · 0 kcal",
       "photo_urls": [],
       "notion": {
         "page_id": "37c85ec7-0668-8101-a864-ddd1382d3603",
-        "last_synced_at": "2026-06-11T14:11:13.447Z"
+        "last_synced_at": "2026-06-11T14:11:13.447Z",
+        "synced_hash": "sha256:2e62ddaef00f438108f3df7c22e51a7d28d54bc53b08f3abd162be808c48c20b"
       },
       "content_hash": "sha256:2e62ddaef00f438108f3df7c22e51a7d28d54bc53b08f3abd162be808c48c20b"
     },
@@ -35994,14 +36052,16 @@
       "category": "Food",
       "nightscout": {
         "treatment_id": "6a2ac24ed7b66fcf51f7b8d9",
-        "last_synced_at": "2026-06-12T11:00:16.062Z"
+        "last_synced_at": "2026-06-12T11:16:12.183Z",
+        "synced_hash": "sha256:65bd44b443b5d0801846d69f8f0953abbe42d8f6ba42fcdfb9c794ad1c4d6b3e"
       },
       "meal_type": "Lunch",
       "title": "Lunch (cont.): a piece of bread",
       "photo_urls": [],
       "notion": {
         "page_id": "37c85ec7-0668-81f8-b5da-e1cdfe7bacae",
-        "last_synced_at": "2026-06-11T14:12:31.706Z"
+        "last_synced_at": "2026-06-11T14:12:31.706Z",
+        "synced_hash": "sha256:65bd44b443b5d0801846d69f8f0953abbe42d8f6ba42fcdfb9c794ad1c4d6b3e"
       },
       "content_hash": "sha256:65bd44b443b5d0801846d69f8f0953abbe42d8f6ba42fcdfb9c794ad1c4d6b3e"
     },
@@ -36017,15 +36077,17 @@
       ],
       "gallery": {
         "gallery_id": "37c85ec7-0668-8157-8f47-e107725b201b",
-        "last_synced_at": "2026-06-12T11:00:17.902Z"
+        "last_synced_at": "2026-06-12T11:16:53.706Z"
       },
       "notion": {
         "page_id": "37c85ec7-0668-8157-8f47-e107725b201b",
-        "last_synced_at": "2026-06-12T11:00:00.712Z"
+        "last_synced_at": "2026-06-12T11:00:00.712Z",
+        "synced_hash": "sha256:81ee292fb3619d71e0dffb8f326f2f4184760d43a4349d45f66bb0bd27a31af7"
       },
       "nightscout": {
         "treatment_id": "6a2ac188d7b66fcf51f7b8d0",
-        "last_synced_at": "2026-06-12T11:00:16.814Z"
+        "last_synced_at": "2026-06-12T11:16:12.986Z",
+        "synced_hash": "sha256:81ee292fb3619d71e0dffb8f326f2f4184760d43a4349d45f66bb0bd27a31af7"
       }
     },
     "sha256:3bf097ec2656988ac8954c4917cf82c4060720b03f9552abc1973a40b0798dea": {
@@ -36034,7 +36096,8 @@
       "category": "Food",
       "nightscout": {
         "treatment_id": "6a2adc12d7b66fcf51f7b8ee",
-        "last_synced_at": "2026-06-12T11:00:15.264Z"
+        "last_synced_at": "2026-06-12T11:16:11.207Z",
+        "synced_hash": "sha256:55747eae6982bc781029fe2d5aac63b84231e8eec13fa1f10a59c98eb83e2053"
       },
       "meal_type": "Dessert",
       "title": "Dessert (post-walk): ice cream corte — strawberry + vanilla wafer sandwich",
@@ -36043,12 +36106,13 @@
       ],
       "notion": {
         "page_id": "37c85ec7-0668-8132-aa7a-fe7c647a7e36",
-        "last_synced_at": "2026-06-12T11:00:00.710Z"
+        "last_synced_at": "2026-06-12T11:00:00.710Z",
+        "synced_hash": "sha256:55747eae6982bc781029fe2d5aac63b84231e8eec13fa1f10a59c98eb83e2053"
       },
       "content_hash": "sha256:55747eae6982bc781029fe2d5aac63b84231e8eec13fa1f10a59c98eb83e2053",
       "gallery": {
         "gallery_id": "37c85ec7-0668-8132-aa7a-fe7c647a7e36",
-        "last_synced_at": "2026-06-12T11:00:15.804Z"
+        "last_synced_at": "2026-06-12T11:16:53.704Z"
       }
     },
     "sha256:97b0d8ea8ae58a665d1d34cd7983a8e64311532668cdf0a13ca9c515c20c2dc1": {
@@ -36057,14 +36121,16 @@
       "category": "Medication",
       "nightscout": {
         "treatment_id": "6a2aeabfd7b66fcf51f7b8fc",
-        "last_synced_at": "2026-06-12T11:00:14.215Z"
+        "last_synced_at": "2026-06-12T11:16:10.557Z",
+        "synced_hash": "sha256:74d457607b7f53635ba0a92f92f1758cb0f0318b6f97c261333aaad837dc2c5a"
       },
       "meal_type": "-",
       "title": "Medication: Metformin 1000mg (dinner)",
       "photo_urls": [],
       "notion": {
         "page_id": "37c85ec7-0668-81f6-b9da-e79d59d41f4f",
-        "last_synced_at": "2026-06-11T17:05:06.127Z"
+        "last_synced_at": "2026-06-11T17:05:06.127Z",
+        "synced_hash": "sha256:74d457607b7f53635ba0a92f92f1758cb0f0318b6f97c261333aaad837dc2c5a"
       },
       "content_hash": "sha256:74d457607b7f53635ba0a92f92f1758cb0f0318b6f97c261333aaad837dc2c5a"
     },
@@ -36074,14 +36140,16 @@
       "category": "Exercise",
       "nightscout": {
         "treatment_id": "6a2aedbed7b66fcf51f7b8ff",
-        "last_synced_at": "2026-06-12T11:00:53.008Z"
+        "last_synced_at": "2026-06-12T11:16:38.638Z",
+        "synced_hash": "sha256:bc1499351f3970464304c0072e975124237b9ff7aa06469c12d92daa2f67fb07"
       },
       "meal_type": "-",
       "title": "Exercise: 21-min walk · 775 steps · 0.37 mi · 0 kcal",
       "photo_urls": [],
       "notion": {
         "page_id": "37c85ec7-0668-8158-b410-fc29fa80c02f",
-        "last_synced_at": "2026-06-11T17:17:52.181Z"
+        "last_synced_at": "2026-06-11T17:17:52.181Z",
+        "synced_hash": "sha256:bc1499351f3970464304c0072e975124237b9ff7aa06469c12d92daa2f67fb07"
       },
       "content_hash": "sha256:bc1499351f3970464304c0072e975124237b9ff7aa06469c12d92daa2f67fb07"
     },
@@ -36091,14 +36159,16 @@
       "category": "Exercise",
       "nightscout": {
         "treatment_id": "6a2aedc0d7b66fcf51f7b900",
-        "last_synced_at": "2026-06-12T11:00:53.728Z"
+        "last_synced_at": "2026-06-12T11:16:39.251Z",
+        "synced_hash": "sha256:c8e7cccc4d3d2b8663bfb0b41827ca96bc1a8477d0507415282f1c9746edcfb2"
       },
       "meal_type": "-",
       "title": "Exercise: 20-min walk · 1,603 steps · 0.68 mi · 39 kcal",
       "photo_urls": [],
       "notion": {
         "page_id": "37c85ec7-0668-8175-9b65-c328e050ebc8",
-        "last_synced_at": "2026-06-11T17:17:53.772Z"
+        "last_synced_at": "2026-06-11T17:17:53.772Z",
+        "synced_hash": "sha256:c8e7cccc4d3d2b8663bfb0b41827ca96bc1a8477d0507415282f1c9746edcfb2"
       },
       "content_hash": "sha256:c8e7cccc4d3d2b8663bfb0b41827ca96bc1a8477d0507415282f1c9746edcfb2"
     },
@@ -36108,14 +36178,16 @@
       "category": "Exercise",
       "nightscout": {
         "treatment_id": "6a2b0bf3d7b66fcf51f7b91b",
-        "last_synced_at": "2026-06-12T11:00:54.561Z"
+        "last_synced_at": "2026-06-12T11:16:40.739Z",
+        "synced_hash": "sha256:40bf4b3241c0558d61ccd0c113cfda879844015fb5a77d92d08b5c9da2e7923e"
       },
       "meal_type": "-",
       "title": "Exercise: 9-min walk · 389 steps · 0.21 mi · 0 kcal",
       "photo_urls": [],
       "notion": {
         "page_id": "37c85ec7-0668-81a2-a13c-ecb9dff95dd1",
-        "last_synced_at": "2026-06-11T19:26:45.569Z"
+        "last_synced_at": "2026-06-11T19:26:45.569Z",
+        "synced_hash": "sha256:40bf4b3241c0558d61ccd0c113cfda879844015fb5a77d92d08b5c9da2e7923e"
       },
       "content_hash": "sha256:40bf4b3241c0558d61ccd0c113cfda879844015fb5a77d92d08b5c9da2e7923e"
     },
@@ -36125,14 +36197,16 @@
       "category": "Exercise",
       "nightscout": {
         "treatment_id": "6a2b0bf5d7b66fcf51f7b91c",
-        "last_synced_at": "2026-06-12T11:00:55.360Z"
+        "last_synced_at": "2026-06-12T11:16:41.713Z",
+        "synced_hash": "sha256:b291638b4908190c5e709ea735c12c3dfd4323dbdf2c06ae38ae5c378cc0dbd0"
       },
       "meal_type": "-",
       "title": "Exercise: 6-min walk · 298 steps · 0.16 mi · 0 kcal",
       "photo_urls": [],
       "notion": {
         "page_id": "37c85ec7-0668-8163-8b97-ca5c270ae4ea",
-        "last_synced_at": "2026-06-11T19:26:47.238Z"
+        "last_synced_at": "2026-06-11T19:26:47.238Z",
+        "synced_hash": "sha256:b291638b4908190c5e709ea735c12c3dfd4323dbdf2c06ae38ae5c378cc0dbd0"
       },
       "content_hash": "sha256:b291638b4908190c5e709ea735c12c3dfd4323dbdf2c06ae38ae5c378cc0dbd0"
     },
@@ -36142,14 +36216,16 @@
       "category": "Exercise",
       "nightscout": {
         "treatment_id": "6a2b0bf7d7b66fcf51f7b91d",
-        "last_synced_at": "2026-06-12T11:00:55.980Z"
+        "last_synced_at": "2026-06-12T11:16:42.527Z",
+        "synced_hash": "sha256:5680de26db875e8e7f00accbf949cf1a7cac8fd5ef8a080630e97027532fb904"
       },
       "meal_type": "-",
       "title": "Exercise: 14-min walk · 531 steps · 0.24 mi · 0 kcal",
       "photo_urls": [],
       "notion": {
         "page_id": "37c85ec7-0668-81f6-b3ea-e2511766a41a",
-        "last_synced_at": "2026-06-11T19:26:49.118Z"
+        "last_synced_at": "2026-06-11T19:26:49.118Z",
+        "synced_hash": "sha256:5680de26db875e8e7f00accbf949cf1a7cac8fd5ef8a080630e97027532fb904"
       },
       "content_hash": "sha256:5680de26db875e8e7f00accbf949cf1a7cac8fd5ef8a080630e97027532fb904"
     },
@@ -36159,14 +36235,16 @@
       "category": "Exercise",
       "nightscout": {
         "treatment_id": "6a2b0bf9d7b66fcf51f7b91e",
-        "last_synced_at": "2026-06-12T11:00:56.776Z"
+        "last_synced_at": "2026-06-12T11:16:43.430Z",
+        "synced_hash": "sha256:008197c8f573892ede021e6158125771f74f1a4de4382bad011c263e5603013c"
       },
       "meal_type": "-",
       "title": "Exercise: 6-min walk · 181 steps · 0.09 mi · 0 kcal",
       "photo_urls": [],
       "notion": {
         "page_id": "37c85ec7-0668-815c-864d-d8668e080eb2",
-        "last_synced_at": "2026-06-11T19:26:50.603Z"
+        "last_synced_at": "2026-06-11T19:26:50.603Z",
+        "synced_hash": "sha256:008197c8f573892ede021e6158125771f74f1a4de4382bad011c263e5603013c"
       },
       "content_hash": "sha256:008197c8f573892ede021e6158125771f74f1a4de4382bad011c263e5603013c"
     },
@@ -36176,7 +36254,8 @@
       "category": "Food",
       "nightscout": {
         "treatment_id": "6a2b149fd7b66fcf51f7b926",
-        "last_synced_at": "2026-06-12T11:00:13.350Z"
+        "last_synced_at": "2026-06-12T11:16:09.313Z",
+        "synced_hash": "sha256:80326ae96d3cadad64c8844fc2ed665535ce3a0378cd5dff07708975196d3926"
       },
       "meal_type": "Dinner",
       "title": "Dinner: queso fresco and tomato sandwich on multigrain seeded bread + a glass of gazpacho",
@@ -36185,12 +36264,13 @@
       ],
       "notion": {
         "page_id": "37c85ec7-0668-81b1-9042-e0a7c27df6ae",
-        "last_synced_at": "2026-06-12T11:00:00.703Z"
+        "last_synced_at": "2026-06-12T11:00:00.703Z",
+        "synced_hash": "sha256:80326ae96d3cadad64c8844fc2ed665535ce3a0378cd5dff07708975196d3926"
       },
       "content_hash": "sha256:80326ae96d3cadad64c8844fc2ed665535ce3a0378cd5dff07708975196d3926",
       "gallery": {
         "gallery_id": "37c85ec7-0668-81b1-9042-e0a7c27df6ae",
-        "last_synced_at": "2026-06-12T11:00:13.903Z"
+        "last_synced_at": "2026-06-12T11:16:53.704Z"
       }
     },
     "sha256:9f5094a7a1648aa4ef42cabdc6a0ff0f6e598e6a9a109cdb5f075821449c01fb": {
@@ -36199,7 +36279,8 @@
       "category": "Food",
       "nightscout": {
         "treatment_id": "6a2b1752d7b66fcf51f7b92a",
-        "last_synced_at": "2026-06-12T11:00:12.590Z"
+        "last_synced_at": "2026-06-12T11:16:08.422Z",
+        "synced_hash": "sha256:9e642bee813b60fa84aaca43e96b6a16501dd5c8b4f0d91bc44f914fed1efa4f"
       },
       "meal_type": "Dinner",
       "title": "Dinner (cont. — fruit dessert): a small bowl of fresh cherries (~14)",
@@ -36208,12 +36289,13 @@
       ],
       "notion": {
         "page_id": "37c85ec7-0668-81ab-90a3-ff2a907baceb",
-        "last_synced_at": "2026-06-12T11:00:00.703Z"
+        "last_synced_at": "2026-06-12T11:00:00.703Z",
+        "synced_hash": "sha256:9e642bee813b60fa84aaca43e96b6a16501dd5c8b4f0d91bc44f914fed1efa4f"
       },
       "content_hash": "sha256:9e642bee813b60fa84aaca43e96b6a16501dd5c8b4f0d91bc44f914fed1efa4f",
       "gallery": {
         "gallery_id": "37c85ec7-0668-81ab-90a3-ff2a907baceb",
-        "last_synced_at": "2026-06-12T11:00:13.062Z"
+        "last_synced_at": "2026-06-12T11:16:53.704Z"
       }
     },
     "sha256:04e22256ce37cfd9f65f8397330b5d77422319bb471544760387750c6211febf": {
@@ -36222,14 +36304,16 @@
       "category": "Food",
       "nightscout": {
         "treatment_id": "6a2b1efcd7b66fcf51f7b931",
-        "last_synced_at": "2026-06-12T11:00:09.405Z"
+        "last_synced_at": "2026-06-12T11:16:06.995Z",
+        "synced_hash": "sha256:48719ca952f9ec350fb3669d2e62a37681781c22eb9f120abc6815a590816f52"
       },
       "meal_type": "Dinner",
       "title": "Dinner (cont.): a small piece of dark chocolate with nuts",
       "photo_urls": [],
       "notion": {
         "page_id": "37c85ec7-0668-81b3-bcca-eedcb13c74df",
-        "last_synced_at": "2026-06-11T20:47:58.131Z"
+        "last_synced_at": "2026-06-11T20:47:58.131Z",
+        "synced_hash": "sha256:48719ca952f9ec350fb3669d2e62a37681781c22eb9f120abc6815a590816f52"
       },
       "content_hash": "sha256:48719ca952f9ec350fb3669d2e62a37681781c22eb9f120abc6815a590816f52"
     },
@@ -36239,14 +36323,16 @@
       "category": "Exercise",
       "nightscout": {
         "treatment_id": "6a2b3425d7b66fcf51f7b944",
-        "last_synced_at": "2026-06-12T11:00:58.256Z"
+        "last_synced_at": "2026-06-12T11:16:45.642Z",
+        "synced_hash": "sha256:3bbf88126df3d28abddaea522f32610c18710ecd946d150ec70f3f62ea203c2b"
       },
       "meal_type": "-",
       "title": "Exercise: 19-min walk · 887 steps · 0.42 mi · 0 kcal",
       "photo_urls": [],
       "notion": {
         "page_id": "37c85ec7-0668-8151-9b77-cb4297d3e12e",
-        "last_synced_at": "2026-06-11T22:18:15.402Z"
+        "last_synced_at": "2026-06-11T22:18:15.402Z",
+        "synced_hash": "sha256:3bbf88126df3d28abddaea522f32610c18710ecd946d150ec70f3f62ea203c2b"
       },
       "content_hash": "sha256:3bbf88126df3d28abddaea522f32610c18710ecd946d150ec70f3f62ea203c2b"
     },
@@ -36256,14 +36342,16 @@
       "category": "Exercise",
       "nightscout": {
         "treatment_id": "6a2b3427d7b66fcf51f7b945",
-        "last_synced_at": "2026-06-12T11:00:57.480Z"
+        "last_synced_at": "2026-06-12T11:16:44.669Z",
+        "synced_hash": "sha256:98ca877670074b2f28cf6b0c584f86dafec4dfbf7344b76d40ccf5f8e3d86be1"
       },
       "meal_type": "-",
       "title": "Exercise: 12-min walk · 512 steps · 0.26 mi · 0 kcal",
       "photo_urls": [],
       "notion": {
         "page_id": "37c85ec7-0668-8176-a28b-d768a94fdfd3",
-        "last_synced_at": "2026-06-11T22:18:16.944Z"
+        "last_synced_at": "2026-06-11T22:18:16.944Z",
+        "synced_hash": "sha256:98ca877670074b2f28cf6b0c584f86dafec4dfbf7344b76d40ccf5f8e3d86be1"
       },
       "content_hash": "sha256:98ca877670074b2f28cf6b0c584f86dafec4dfbf7344b76d40ccf5f8e3d86be1"
     },
@@ -36273,14 +36361,16 @@
       "category": "Medication",
       "nightscout": {
         "treatment_id": "6a2bafa0d7b66fcf51f7b9b0",
-        "last_synced_at": "2026-06-12T11:00:06.399Z"
+        "last_synced_at": "2026-06-12T11:16:05.107Z",
+        "synced_hash": "sha256:4ce1ff8eb77b20fb12238df8f56596067308f994177216c51de1b8e11511b5fb"
       },
       "meal_type": "-",
       "title": "Medication: Lisinopril 10mg (Scheduled)",
       "photo_urls": [],
       "notion": {
         "page_id": "37d85ec7-0668-81c4-8e78-e487ba90e5b9",
-        "last_synced_at": "2026-06-12T07:05:07.719Z"
+        "last_synced_at": "2026-06-12T07:05:07.719Z",
+        "synced_hash": "sha256:4ce1ff8eb77b20fb12238df8f56596067308f994177216c51de1b8e11511b5fb"
       },
       "content_hash": "sha256:4ce1ff8eb77b20fb12238df8f56596067308f994177216c51de1b8e11511b5fb"
     },
@@ -36290,14 +36380,16 @@
       "category": "Medication",
       "nightscout": {
         "treatment_id": "6a2bafa4d7b66fcf51f7b9b1",
-        "last_synced_at": "2026-06-12T11:00:07.925Z"
+        "last_synced_at": "2026-06-12T11:16:05.873Z",
+        "synced_hash": "sha256:c04cfed376cf2ccb22d68abce37a6bca8c581b68a56117274f328626554f7e5f"
       },
       "meal_type": "-",
       "title": "Medication: Metformin 500mg (breakfast)",
       "photo_urls": [],
       "notion": {
         "page_id": "37d85ec7-0668-8199-a3c2-eb0b42be182d",
-        "last_synced_at": "2026-06-12T07:05:09.460Z"
+        "last_synced_at": "2026-06-12T07:05:09.460Z",
+        "synced_hash": "sha256:c04cfed376cf2ccb22d68abce37a6bca8c581b68a56117274f328626554f7e5f"
       },
       "content_hash": "sha256:c04cfed376cf2ccb22d68abce37a6bca8c581b68a56117274f328626554f7e5f"
     },
@@ -36307,7 +36399,8 @@
       "category": "Food",
       "nightscout": {
         "treatment_id": "6a2bc3c1d7b66fcf51f7b9c0",
-        "last_synced_at": "2026-06-12T11:00:05.020Z"
+        "last_synced_at": "2026-06-12T11:16:04.240Z",
+        "synced_hash": "sha256:269f94db30b87b4febc7aeb4ac5695b32830eb6bdb77460c624dc5e44fc5525b"
       },
       "meal_type": "Breakfast",
       "title": "Breakfast: grilled sandwich on multigrain seeded bread with turkey breast, cheese, and fresh tomato slices",
@@ -36316,12 +36409,13 @@
       ],
       "notion": {
         "page_id": "37d85ec7-0668-8157-a735-ec5f8c5a4a32",
-        "last_synced_at": "2026-06-12T11:00:00.697Z"
+        "last_synced_at": "2026-06-12T11:00:00.697Z",
+        "synced_hash": "sha256:269f94db30b87b4febc7aeb4ac5695b32830eb6bdb77460c624dc5e44fc5525b"
       },
       "content_hash": "sha256:269f94db30b87b4febc7aeb4ac5695b32830eb6bdb77460c624dc5e44fc5525b",
       "gallery": {
         "gallery_id": "37d85ec7-0668-8157-a735-ec5f8c5a4a32",
-        "last_synced_at": "2026-06-12T11:00:06.149Z"
+        "last_synced_at": "2026-06-12T11:16:53.701Z"
       }
     },
     "sha256:8391f5ba2a355060e92b62b61be502482d83ea05deda6c8f6327f8f8494082e9": {
@@ -36330,14 +36424,16 @@
       "category": "Medication",
       "nightscout": {
         "treatment_id": "6a2bd9d0d7b66fcf51f7b9d3",
-        "last_synced_at": "2026-06-12T11:00:03.991Z"
+        "last_synced_at": "2026-06-12T11:16:03.325Z",
+        "synced_hash": "sha256:834838e31340176030073f03c931465c211a5fb11ab6f9ec59635b5f98ca14af"
       },
       "meal_type": "-",
       "title": "Medication: Metformin 500mg (lunch)",
       "photo_urls": [],
       "notion": {
         "page_id": "37d85ec7-0668-81f9-a442-c662cc6d99ad",
-        "last_synced_at": "2026-06-12T10:05:05.801Z"
+        "last_synced_at": "2026-06-12T10:05:05.801Z",
+        "synced_hash": "sha256:834838e31340176030073f03c931465c211a5fb11ab6f9ec59635b5f98ca14af"
       },
       "content_hash": "sha256:834838e31340176030073f03c931465c211a5fb11ab6f9ec59635b5f98ca14af"
     }
