@@ -237,8 +237,17 @@ async function roundTripNotionAudit(report, normalized, state, since) {
   }
 
   // Notion-leading: any Notion page with no matching SSoT row is suspect.
+  // Match against ALL SSoT entries, not just the windowed subset: a page is
+  // only truly "extra" if NO entry exists at its (ts, user) anywhere. Using the
+  // windowed `seenSsotKeys` falsely flagged the single entry sitting right at
+  // the lookback boundary — the SSoT-side `>=` cutoff (ms precision) excluded
+  // it while the Notion query's `on_or_after` still returned its page. (The
+  // entry exists in SSoT; only the window edge disagreed.)
+  const allSsotKeys = new Set(
+    (normalized.entries || []).map(e => `${e.timestamp}|${SSOT_TO_NOTION_USER[e.user] || e.user}`)
+  );
   for (const [key, pages] of notionByKey) {
-    if (seenSsotKeys.has(key)) continue;
+    if (allSsotKeys.has(key)) continue;
     for (const p of pages) {
       report.summary.notion_extra = (report.summary.notion_extra || 0) + 1;
       report.discrepancies.push({
@@ -285,6 +294,21 @@ async function roundTripNotionAudit(report, normalized, state, since) {
 
 async function main(options = {}) {
   const since = options.since || new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString();
+
+  // Regenerate the normalized SSoT from health_log.md before auditing. The
+  // cron sequence is: pipeline normalizes at :00/:30, auto_track_meds logs the
+  // morning meds at :05 (radial syncs them to Notion the same minute), audit
+  // runs at 9:10. Reading the :00 normalized.json meant the just-logged meds
+  // were absent from the SSoT side while their live Notion pages were present
+  // → daily `notion_extra` false positives. (Surfaced once the radial reconciler
+  // fix stopped wrongly archiving those med pages.) Normalize is idempotent and
+  // cheap (~150ms); fall back to the existing file if it fails.
+  try {
+    require('./normalize_health_log').main();
+  } catch (e) {
+    console.warn(`  !! pre-audit normalize failed, using existing normalized.json: ${e.message}`);
+  }
+
   const state = loadSyncState(SYNC_STATE_PATH);
   const normalized = JSON.parse(fs.readFileSync(NORMALIZED_PATH, 'utf8'));
   const galleryItems = fs.existsSync(GALLERY_PATH) ? JSON.parse(fs.readFileSync(GALLERY_PATH, 'utf8')) : [];
