@@ -1,5 +1,16 @@
 [
   {
+    "id": "37d85ec7-0668-8157-a735-ec5f8c5a4a32",
+    "title": "Breakfast: grilled sandwich on multigrain seeded bread with turkey breast, cheese, and fresh tomato slices (BG: 103 mg/dL Flat) (Pred: 166-176 mg/dL @ 11:56 AM) (Protein: 26g , Carbs: ~31g , Cals: ~340) [Coach: Grilled turkey + cheese + tomato 🥪 — your proven breakfast template with a fresh tomato upgrade. ~26g protein anchors it, seeds bring fiber. AM cortisol pushes Pred ~171 by 11:56. Turkey isn't cured, tally starts at 0. (The toast came out a little enthusiastic on one side 🔥 — skip the blackest bits.) Clean start.]",
+    "type": "Breakfast",
+    "date": "2026-06-12T10:29:00.000+02:00",
+    "photo": "https://iili.io/CCccbgR.jpg",
+    "carbs": 31,
+    "cals": 340,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37c85ec7-0668-81ab-90a3-ff2a907baceb",
     "title": "Dinner (cont. — fruit dessert): a small bowl of fresh cherries (~14) (BG: 101 mg/dL Flat) (Protein: 1g) (Pred: 156-166 mg/dL @ 11:18 PM)",
     "type": "Dinner",
@@ -628,7 +639,7 @@
   },
   {
     "id": "37085ec7-0668-811b-a2eb-db95fb0d5fce",
-    "title": "Dinner: open-faced melt on whole-grain toast ��� sliced turkey breast (NOT cured), avocado, melted cheese on top, with a side of ~6-7 green olives (BG: 118 mg/dL Flat) (Pred: 138-148 mg/dL @ 10:33 PM) (Protein: 24g , Carbs: ~21g , Cals: ~360) [Coach: Turkey, avocado + cheese melt 🥑 — even better than I first read it. Avocado swaps the lettuce I assumed and brings healthy monounsaturated fats + fiber that further slow the bread's carbs. ~24g protein hits the muscle-preservation goal, cured-meat tally stays at 0, olives add more healthy fat. Pred only nudges to ~143. Clean GMI 6.0-friendly close.]",
+    "title": "Dinner: open-faced melt on whole-grain toast — sliced turkey breast (NOT cured), avocado, melted cheese on top, with a side of ~6-7 green olives (BG: 118 mg/dL Flat) (Pred: 138-148 mg/dL @ 10:33 PM) (Protein: 24g , Carbs: ~21g , Cals: ~360) [Coach: Turkey, avocado + cheese melt 🥑 — even better than I first read it. Avocado swaps the lettuce I assumed and brings healthy monounsaturated fats + fiber that further slow the bread's carbs. ~24g protein hits the muscle-preservation goal, cured-meat tally stays at 0, olives add more healthy fat. Pred only nudges to ~143. Clean GMI 6.0-friendly close.]",
     "type": "Dinner",
     "date": "2026-05-30T21:17:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-30/acd85d276f5a6c9e.jpg",
