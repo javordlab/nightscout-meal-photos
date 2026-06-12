@@ -53,7 +53,7 @@ Maria's Telegram message
             └── Text: food/med/exercise entry written to health_log.md
 
 health_log.md  (SSoT — never edit downstream systems directly)
-    └── radial_dispatcher.js (system cron, every 5/35 min)
+    └── radial_dispatcher.js (SOLE syncer — system cron 5/35 min + bridge + post-edit chain)
             ├── Nightscout API  → treatments (food, exercise, notes)
             ├── Notion DB       → 31685ec7-0668-813e-8b9e-c5b4d5d70fa5
             └── MySQL           → local backup
@@ -157,7 +157,7 @@ Monitoring:
 ### System Crontab
 | Schedule | Script | Notes |
 |----------|--------|-------|
-| `0,30 * * * *` | `health_sync_pipeline.js` | `--mode=sync-only`: normalize + enrich + validate (hard gate) + unified sync |
+| `0,30 * * * *` | `health_sync_pipeline.js` | `--mode=sync-only`: resolve photos + normalize + enrich + validate (hard gate). NS/Notion sync REMOVED 2026-06-12 — radial_dispatcher is the sole syncer. |
 | `5,35 * * * *` | `auto_track_meds.js` + `calculate_notion_projections.js` + `radial_dispatcher.js` | Meds auto-log + projections + master sync |
 | `20,50 * * * *` | `mysql_glucose_sync.js` | CGM → MySQL, 48h age cutoff |
 | `0 * * * *` | `backfill_meal_outcomes.js` | Actual outcomes backfill (MySQL canonical + Notion mirror) |

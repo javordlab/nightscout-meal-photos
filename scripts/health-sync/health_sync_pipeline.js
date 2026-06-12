@@ -79,10 +79,15 @@ async function main(options = {}) {
     }
   }
 
-  // Step 5: Sync to Nightscout/Notion/Gallery
-  if (mode === 'full' || mode === 'sync-only') {
-    results.sync = await runStep('Unified Sync', './unified_sync', { since });
-  }
+  // Step 5: Sync to Nightscout/Notion/Gallery — REMOVED 2026-06-12.
+  // radial_dispatcher.js is now the sole syncer (cron :05/:35, the foodlog
+  // bridge after every entry, and dispatch_async.sh's post-edit chain). It is
+  // a strict superset of unified_sync's sync: it additionally writes Notion
+  // Meal Assessment + Sleep stage columns, stamps Row Ids, runs the orphan
+  // reconciler, injects BG/projections, regenerates the gallery, and covers
+  // wider windows (7d Notion / 30d NS vs 2d). unified_sync.js is retained on
+  // disk for manual/ad-hoc use; this pipeline no longer invokes it. The
+  // gallery regen + gh-pages deploy below still runs as a 30-min safety net.
 
   // Step 6: Backfill outcomes
   if (mode === 'full' || mode === 'outcomes-only') {
