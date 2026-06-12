@@ -1,5 +1,16 @@
 [
   {
+    "id": "37d85ec7-0668-81ce-82bc-fd8ab547bdd7",
+    "title": "Snack (post-gardening): a bowl of fresh blueberries (BG: 104 mg/dL Flat) (Pred: 131-141 mg/dL @ 8:21 PM) (Protein: 1g , Carbs: ~14g , Cals: ~55) [Coach: Blueberries after garden work 🫐 — whole-fruit fiber + polyphenols on a clean 104 baseline (the gardening kept the flan curve flat all afternoon). Pred ~136 by 8:21 PM. Perfect garden-to-snack rhythm.]",
+    "type": "Snack",
+    "date": "2026-06-12T18:15:00.000+02:00",
+    "photo": "https://iili.io/CChLuHl.jpg",
+    "carbs": 14,
+    "cals": 55,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37d85ec7-0668-8106-8067-cac8084f3325",
     "title": "Lunch (cont. — Dessert, half serving): half a flan with caramel sauce and a swirl of whipped cream (BG: 130 mg/dL Flat) (Pred: 123-133 mg/dL @ 4:31 PM) (Protein: 3g , Carbs: ~15g , Cals: ~110) [Cumulative Lunch: ~31g carbs total] [Coach: Half flan 🍮 — the half-portion strategy strikes again: ~15g carbs instead of 30. Cumulative lunch is ~29g protein on ~31g carbs, Pred ~128 by 4:31 PM. Mindful dessert on a clean seafood day — the 5s math still works.]",
     "type": "Lunch",
