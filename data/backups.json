@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-12T02:16:34.781Z",
+  "lastUpdated": "2026-06-12T02:20:02.408Z",
   "serverTz": "Europe/Madrid",
   "dbError": null,
   "tokenUsage": [
@@ -23,7 +23,7 @@
     }
   ],
   "database": {
-    "glucose": 30052,
+    "glucose": 30053,
     "notion": 1827
   },
   "syncHistory": [
@@ -174,15 +174,11 @@
     },
     {
       "date": "2026-06-12",
-      "glucose": 30052,
+      "glucose": 30053,
       "notion": 1827
     }
   ],
   "glucoseTrend": [
-    {
-      "t": "2026-05-13T04:19:03.000Z",
-      "v": 112
-    },
     {
       "t": "2026-05-13T04:24:02.000Z",
       "v": 115
@@ -33814,9 +33810,27 @@
     {
       "t": "2026-06-12T02:14:28.000Z",
       "v": 147
+    },
+    {
+      "t": "2026-06-12T02:19:27.000Z",
+      "v": 160
     }
   ],
   "backups": [
+    {
+      "filename": "health_ssot-2026-06-12.sql.gz",
+      "type": "Daily",
+      "size": "530.24 KB",
+      "created": "2026-06-12T02:20:01.023Z",
+      "path": "daily/health_ssot-2026-06-12.sql.gz"
+    },
+    {
+      "filename": "2026-06-12.sql.gz",
+      "type": "Daily",
+      "size": "730.79 KB",
+      "created": "2026-06-12T02:20:00.935Z",
+      "path": "daily/2026-06-12.sql.gz"
+    },
     {
       "filename": "health_ssot-2026-06-11.sql.gz",
       "type": "Daily",
@@ -33930,20 +33944,6 @@
       "path": "daily/2026-06-05.sql.gz"
     },
     {
-      "filename": "health_ssot-2026-06-04.sql.gz",
-      "type": "Daily",
-      "size": "480.91 KB",
-      "created": "2026-06-04T02:20:01.741Z",
-      "path": "daily/health_ssot-2026-06-04.sql.gz"
-    },
-    {
-      "filename": "2026-06-04.sql.gz",
-      "type": "Daily",
-      "size": "680.36 KB",
-      "created": "2026-06-04T02:20:01.658Z",
-      "path": "daily/2026-06-04.sql.gz"
-    },
-    {
       "filename": "health_ssot-2026-w23.sql.gz",
       "type": "Weekly",
       "size": "462.86 KB",
@@ -33984,20 +33984,6 @@
       "size": "534.77 KB",
       "created": "2026-05-18T02:20:01.044Z",
       "path": "weekly/2026-w21.sql.gz"
-    },
-    {
-      "filename": "health_ssot-2026-w20.sql.gz",
-      "type": "Weekly",
-      "size": "213.46 KB",
-      "created": "2026-05-11T02:20:00.631Z",
-      "path": "weekly/health_ssot-2026-w20.sql.gz"
-    },
-    {
-      "filename": "2026-w20.sql.gz",
-      "type": "Weekly",
-      "size": "487.22 KB",
-      "created": "2026-05-11T02:20:00.570Z",
-      "path": "weekly/2026-w20.sql.gz"
     }
   ]
 }
