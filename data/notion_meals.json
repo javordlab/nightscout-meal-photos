@@ -4,7 +4,7 @@
     "title": "Dinner: a small bowl of fresh blueberries (~50g) (BG: 122 mg/dL Flat) (Pred: 124-144 mg/dL @ 7:20 PM) (Protein: 0g | Carbs: ~7g | Cals: ~28) [Coach: Blueberries 👌 — basically a freebie for your blood sugar, with fiber and antioxidants on top. A no-drama pick for the early evening. Pair with a few almonds if you want a little staying power until proper dinner.]",
     "type": "Dinner",
     "date": "2026-06-13T18:25:00.000+02:00",
-    "photo": "https://iili.io/CCpulNp.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-13/85dcc21656b28fc3.jpg",
     "carbs": 7,
     "cals": 28,
     "delta": null,
@@ -29,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-13/5c0140aa4a9c8fb0.jpg",
     "carbs": 1,
     "cals": 140,
-    "delta": null,
-    "peak": null
+    "delta": 39,
+    "peak": 152
   },
   {
     "id": "37e85ec7-0668-815e-95bd-e2f25f311101",
@@ -40,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-13/f4e38fdd62786fc6.jpg",
     "carbs": 13,
     "cals": 310,
-    "delta": null,
-    "peak": null
+    "delta": 38,
+    "peak": 152
   },
   {
     "id": "37e85ec7-0668-81e1-b9c8-f50c51832312",
