@@ -1,5 +1,16 @@
 [
   {
+    "id": "37e85ec7-0668-81cf-9a33-d05836c2c02c",
+    "title": "Dinner: a small bowl of fresh blueberries (~50g) (BG: 122 mg/dL Flat) (Pred: 124-144 mg/dL @ 7:20 PM) (Protein: 0g | Carbs: ~7g | Cals: ~28) [Coach: Blueberries 👌 — basically a freebie for your blood sugar, with fiber and antioxidants on top. A no-drama pick for the early evening. Pair with a few almonds if you want a little staying power until proper dinner.]",
+    "type": "Dinner",
+    "date": "2026-06-13T18:25:00.000+02:00",
+    "photo": "https://iili.io/CCpulNp.jpg",
+    "carbs": 7,
+    "cals": 28,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37e85ec7-0668-8162-a8e1-c228f20af03c",
     "title": "Dessert: ice cream sandwich (vanilla + strawberry between two wafers) (BG: 145 mg/dL Flat) (Pred: 148-168 mg/dL @ 6:07 PM) (Protein: ~3g | Carbs: ~28g | Cals: ~200) [Coach: Ice cream sandwich after that 41-min walk 🍦 — small portion, post-walk timing, and your BG is sitting in a sensible spot. The wafers and sugar will nudge things up, but nothing dramatic. A few almonds alongside next time would slow the rise even more.]",
     "type": "Dessert",
