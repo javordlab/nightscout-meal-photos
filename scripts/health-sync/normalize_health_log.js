@@ -275,6 +275,45 @@ function resolvePendingPhotoUrl(entryText, timestamp, mealType, pendingPhotos) {
   return candidates[0].photoUrl || null;
 }
 
+// The quality gate (quality_gates.js MEAL_TYPE_PREFIX_REGEX) requires every Food
+// entry's title to contain a recognized meal-type word followed by a colon within
+// the first ~40 chars. Keep this list/regex in sync with that gate.
+const VALID_MEAL_TYPES = ['Breakfast', 'Lunch', 'Snack', 'Dinner', 'Dessert'];
+const MEAL_TYPE_PREFIX_REGEX = /^.{0,40}?\b(breakfast|lunch|snack|dinner|dessert)\b.*?:\s+/is;
+
+// Self-heal: a Food entry whose MealType COLUMN is a valid meal type but whose
+// title text lacks a valid meal-type prefix (e.g. the agent freelanced
+// "Pre-sleep: ...") would hard-block the entire pipeline at the validation gate.
+// When the column gives us a trustworthy signal, prepend "<MealType>: " to the
+// title so the row passes — rather than letting one stray entry freeze sync +
+// the gallery for hours. Operates on the raw line array; returns {healed, details}.
+// Entries whose COLUMN is also not a valid meal type are left alone for the gate
+// to flag (we have no trustworthy signal to heal from). Idempotent.
+// Reference incident: 2026-06-13 "Pre-sleep:" entry → 11 consecutive pipeline aborts.
+function healFoodTitlePrefixes(lines) {
+  let healed = 0;
+  const details = [];
+  for (let i = 0; i < lines.length; i++) {
+    const parts = lines[i].split('|').map(x => x.trim());
+    if (parts.length < 9) continue;
+    if (!/^202\d-\d\d-\d\d$/.test(parts[1])) continue;
+    if (parts[4] !== 'Food') continue;
+    const mealType = parts[5];
+    if (!VALID_MEAL_TYPES.includes(mealType)) continue; // column must be trustworthy
+
+    const carbsIdx = parts.length - 3;
+    const calsIdx = parts.length - 2;
+    const entryText = parts.slice(6, carbsIdx).join(' | ');
+    if (MEAL_TYPE_PREFIX_REGEX.test(entryText)) continue; // already valid
+
+    const newEntryText = `${mealType}: ${entryText}`;
+    lines[i] = `| ${parts[1]} | ${parts[2]} | ${parts[3]} | ${parts[4]} | ${mealType} | ${newEntryText} | ${parts[carbsIdx]} | ${parts[calsIdx]} |`;
+    healed++;
+    details.push(`${parts[1]} ${parts[2]} "${entryText.slice(0, 40)}…" → "${mealType}: …"`);
+  }
+  return { healed, details };
+}
+
 function parseRow(line, lineNumber, pendingPhotos = []) {
   const parts = line.split('|').map(x => x.trim());
   if (parts.length < 9) return null;
@@ -374,6 +413,16 @@ function parseRow(line, lineNumber, pendingPhotos = []) {
 function main() {
   const content = fs.readFileSync(LOG_PATH, 'utf8');
   const lines = content.split('\n');
+
+  // Self-heal Food titles missing a meal-type prefix BEFORE parsing, and persist
+  // the fix to the SSoT so it propagates to every downstream system (not just
+  // this normalized.json). Mirrors resolve_pending_photo_links' inline rewrite.
+  const heal = healFoodTitlePrefixes(lines);
+  if (heal.healed > 0) {
+    fs.writeFileSync(LOG_PATH, lines.join('\n'));
+    console.log(`Self-healed ${heal.healed} Food title prefix(es) from MealType column: ${heal.details.join('; ')}`);
+  }
+
   const entries = [];
   const pendingPhotos = loadPendingPhotoEntries();
 
@@ -424,5 +473,6 @@ module.exports = {
   buildContentHash,
   extractPhotos,
   stripPhotos,
+  healFoodTitlePrefixes,
   main
 };

@@ -194,6 +194,8 @@ The `===NOW===` bash output is still authoritative for BG and history regardless
 | <YYYY-MM-DD from bash> | <HH:MM> <±OFFSET from bash> | <user_full_name> | Food | <MealType> | <MealType>: <description> (BG: <bg> mg/dL <trend>) (Pred: <low>-<high> mg/dL @ <h:mm AM/PM>) (Protein: <P>g | Carbs: ~<C>g | Cals: ~<CAL>) [Coach: <assessment from Step 4.5>] [photo](<url>) | <C> | <CAL> |
 ```
 
+**NON-NEGOTIABLE — the description MUST begin with the exact MealType word + colon.** The entry text immediately after the MealType column must start with `Breakfast:`, `Lunch:`, `Snack:`, `Dinner:`, or `Dessert:` — the SAME word you put in the MealType column. A downstream quality gate HARD-BLOCKS the entire sync pipeline on any Food title that doesn't start with one of these five words, and a single bad entry freezes sync + the gallery for everyone until a human fixes it. Do NOT invent descriptive prefixes like `Pre-sleep:`, `Late-night:`, `Bedtime snack:`, `Morning:`, etc. — if you want that context, put it in parentheses AFTER the meal word: `Dinner (pre-sleep snack): a small glass of milk…`, never `Pre-sleep: a small glass of milk…`. The MealType column and the title prefix must always be the same meal word. Reference incident: 2026-06-13 a `Pre-sleep:` title caused 11 consecutive pipeline aborts.
+
 The `[Coach: ...]` annotation goes BETWEEN the nutrition macros and the photo URL. The dispatcher's parser extracts it from this position and writes it to the Notion `Meal Assessment` property. If there's no photo, just omit `[photo](url)`. The Coach annotation comes after the cumulative marker (if any) and after the macros, but before the photo:
 
 **Medication entry format:**
