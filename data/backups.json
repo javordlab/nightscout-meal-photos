@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-13T02:16:53.957Z",
+  "lastUpdated": "2026-06-13T02:20:02.501Z",
   "serverTz": "Europe/Madrid",
   "dbError": null,
   "tokenUsage": [
@@ -23,7 +23,7 @@
     }
   ],
   "database": {
-    "glucose": 30325,
+    "glucose": 30326,
     "notion": 1845
   },
   "syncHistory": [
@@ -174,15 +174,11 @@
     },
     {
       "date": "2026-06-13",
-      "glucose": 30325,
+      "glucose": 30326,
       "notion": 1845
     }
   ],
   "glucoseTrend": [
-    {
-      "t": "2026-05-14T04:19:01.000Z",
-      "v": 106
-    },
     {
       "t": "2026-05-14T04:24:01.000Z",
       "v": 103
@@ -33770,9 +33766,27 @@
     {
       "t": "2026-06-13T02:14:24.000Z",
       "v": 93
+    },
+    {
+      "t": "2026-06-13T02:19:25.000Z",
+      "v": 92
     }
   ],
   "backups": [
+    {
+      "filename": "health_ssot-2026-06-13.sql.gz",
+      "type": "Daily",
+      "size": "535.56 KB",
+      "created": "2026-06-13T02:20:00.929Z",
+      "path": "daily/health_ssot-2026-06-13.sql.gz"
+    },
+    {
+      "filename": "2026-06-13.sql.gz",
+      "type": "Daily",
+      "size": "736.99 KB",
+      "created": "2026-06-13T02:20:00.839Z",
+      "path": "daily/2026-06-13.sql.gz"
+    },
     {
       "filename": "health_ssot-2026-06-12.sql.gz",
       "type": "Daily",
