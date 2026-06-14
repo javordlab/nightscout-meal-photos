@@ -1,5 +1,16 @@
 [
   {
+    "id": "37f85ec7-0668-8167-9a15-d5826b738060",
+    "title": "Snack: ice cream wafer sandwich (vanilla and strawberry between two wafers) (BG: 186 mg/dL Flat) (Pred: 185-205 mg/dL @ 5:14 PM) (Protein: 3g | Carbs: ~28g | Cals: ~200) [Coach: Heads up — your BG is already a bit high at 186, and this is a sugary, refined-carb treat, so expect it to climb a little over the next hour. An occasional treat is fine; a short walk now would help bring it back down, and pairing sweets with some protein next time softens the spike.]",
+    "type": "Snack",
+    "date": "2026-06-14T16:14:00.000+02:00",
+    "photo": "https://iili.io/CnuDCDG.jpg",
+    "carbs": 28,
+    "cals": 200,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "37f85ec7-0668-812a-93f2-e9d3362d13e3",
     "title": "Lunch: wedge of Spanish potato tortilla, slices of cured beef (cecina), semi-cured cheese, and a leafy green salad with cucumber and tomato (BG: 94 mg/dL Flat) (Pred: 120-140 mg/dL @ 3:51 PM) (Protein: 32g | Carbs: ~28g | Cals: ~560) [Coach: Now THIS is a plate 🎯 — tortilla, cecina and cheese stack up ~32g of protein, and that big leafy salad brings the veggies you love at lunch. The potato in the tortilla is your main carb but it's moderate, so paired with all that protein your BG should stay nice and mellow. Textbook midday meal.]",
     "type": "Lunch",
