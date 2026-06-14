@@ -6,11 +6,12 @@
 #
 # Re-runs the prediction calibration 9 days after Model v4 shipped (2026-06-12,
 # commit a54b48674): compares v4-period predictions vs actuals against (a) the
-# holdout expectations and (b) v3 history, then lets a Fable 5 agent apply
+# holdout expectations and (b) v3 history, then lets an Opus 4.8 agent apply
 # BOUNDED tweaks if — and only if — the new data clearly warrants them.
 #
-# Runs at 03:00, BEFORE the 22:00 same-day Fable→Opus-4.8 switch, and pins
-# --model claude-fable-5 explicitly anyway.
+# Model note: originally pinned Fable 5, but Fable 5 was disabled worldwide by a
+# US export-control order on 2026-06-12 (the health app switched to Opus 4.8 on
+# 2026-06-14). This job now pins claude-opus-4-8, the live health-app model.
 set -uo pipefail
 
 export USER="${USER:-javier}"
@@ -51,7 +52,7 @@ fi
 "$NODE" scripts/health-sync/analyze_prediction_calibration.js > "$OUT_FULL" 2>&1 || true
 log "analysis done: $(sed -n 2p "$OUT_V4")"
 
-# 2. Hand to a Fable 5 agent with bounded-tweak authority.
+# 2. Hand to an Opus 4.8 agent with bounded-tweak authority.
 PROMPT=$(cat <<'EOF'
 You are running an unattended scheduled task in /Users/javier/.openclaw/workspace (a health pipeline for Maria, a 73-year-old T2D patient — prediction errors have clinical consequence; be conservative).
 
@@ -88,9 +89,9 @@ Work autonomously; do not ask questions. If anything fails, still send the Teleg
 EOF
 )
 
-log "invoking claude (fable-5) for evaluation"
+log "invoking claude (opus-4-8) for evaluation"
 # 45-min absolute ceiling — kill a hung agent rather than block cron forever.
-"$CLAUDE" -p --model claude-fable-5 --dangerously-skip-permissions "$PROMPT" > "$WORKSPACE/data/v4_recal_agent_output_20260621.txt" 2>&1 &
+"$CLAUDE" -p --model claude-opus-4-8 --dangerously-skip-permissions "$PROMPT" > "$WORKSPACE/data/v4_recal_agent_output_20260621.txt" 2>&1 &
 CLAUDE_PID=$!
 ( sleep 2700; kill "$CLAUDE_PID" 2>/dev/null ) &
 KILLER_PID=$!

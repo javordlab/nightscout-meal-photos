@@ -221,11 +221,11 @@ function addDays(dateString, delta) {
 }
 
 // The MODEL constant is printed in the report header as a label.
-// The daily report is mostly pure-Node BUT calls Opus 4.7 via claude --print
+// The daily report is mostly pure-Node BUT calls Opus 4.8 via claude --print
 // for the Daily Nutrition Coach section (section 5). All other sections
 // (glucose stats, nutrition totals, meal details, baselines, outliers,
 // supervisor analysis, self-audit) are computed from script outputs with no LLM.
-// The label reflects the hybrid: stats are deterministic, the coach paragraph is Opus 4.7.
+// The label reflects the hybrid: stats are deterministic, the coach paragraph is Opus 4.8.
 const MODEL = process.env.REPORT_MODEL || process.env.OPENCLAW_ACTIVE_MODEL || 'pure-script + claude-opus-4-8 (coach section only)';
 
 function mean(values) {
@@ -566,7 +566,7 @@ async function main(options = {}) {
   const expectedGmiFromAvg = Number.isFinite(statsDay.average) ? (3.31 + (0.02392 * statsDay.average)) : null;
 
   // Generate the daily nutrition coach paragraph (2026-04-09 — added per Javi's request).
-  // This calls Sonnet via claude --print with the day's full food + glucose context.
+  // This calls Opus 4.8 via claude --print with the day's full food + glucose context.
   // Failure is non-fatal: if Sonnet is unreachable, generateDailyCoach returns a
   // graceful "unavailable today" string and the report still ships.
   const dailyCoachText = await generateDailyCoach(targetDate, foodPrevDay, statsDay, stats14, avg14);
