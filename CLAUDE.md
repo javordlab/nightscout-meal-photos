@@ -225,7 +225,7 @@ The HealthGuard cron dashboard at http://localhost/healthguard monitors three di
 
 ## Model Routing (MANDATORY — see AGENTS.md for full rules)
 
-All health-critical and data-touching tasks use **Claude Fable 5** (`claude-fable-5`) — switched from Opus 4.7 on 2026-06-10:
+All health-critical and data-touching tasks use **Claude Opus 4.8** (`claude-opus-4-8`) — switched from Fable 5 on 2026-06-21 (scheduled), prev. Fable 5 since 2026-06-10:
 - Any write to `health_log.md`, Nightscout, or Notion
 - Entry key computation and deduplication (hash errors corrupt SSoT)
 - Quality gate evaluation (blocks malformed entries)
@@ -236,7 +236,7 @@ All health-critical and data-touching tasks use **Claude Fable 5** (`claude-fabl
 - Daily log review and cron monitoring via `claude -p` OAuth
 - Weekly memory summaries
 
-**Why Fable 5 across the board:** No cost-based tradeoffs for health data. Medication errors, food carb misestimation, or data deduplication failures have direct clinical consequence. Consistency of model across all health operations reduces risk of subtle model-specific bugs.
+**Why Opus 4.8 across the board:** No cost-based tradeoffs for health data. Medication errors, food carb misestimation, or data deduplication failures have direct clinical consequence. Consistency of model across all health operations reduces risk of subtle model-specific bugs.
 
 ---
 

@@ -1,97 +1,18 @@
 {
-  "generatedAt": "2026-06-11T09:34:50.245Z",
+  "generatedAt": "2026-06-14T11:02:23.057Z",
   "mode": "apply",
   "totals": {
-    "recordsBefore": 1810,
-    "recordsAfter": 1803,
-    "merged": 7,
-    "deleted": 7,
+    "recordsBefore": 1868,
+    "recordsAfter": 1868,
+    "merged": 0,
+    "deleted": 0,
     "orphansKept": 0,
     "conflicts": 0,
     "notionDupePairs": 0,
     "ambiguousSkipped": 0
   },
-  "merged": [
-    {
-      "group": "2026-06-10T20:53:00+02:00|Maria Dennis|Exercise",
-      "canonical": "sha256:a4a28dde1af3d72ebe4b67e4cbd3bbcbea978633218a7bfe5eb8ded71fd4331e",
-      "siblingsDeleted": 1
-    },
-    {
-      "group": "2026-06-10T21:38:00+02:00|Maria Dennis|Exercise",
-      "canonical": "sha256:d5ada33c0aaa96baf9da6c5ea2f3348c914bc3138278f6953c456524484adfe6",
-      "siblingsDeleted": 1
-    },
-    {
-      "group": "2026-06-11T09:00:00+02:00|Maria Dennis|Medication",
-      "canonical": "sha256:ebeff18a16473fc3f60c13c969508d683db40e973c1e9a267e111ea7f1a9d0ea",
-      "siblingsDeleted": 1
-    },
-    {
-      "group": "2026-06-11T09:10:00+02:00|Maria Dennis|Medication",
-      "canonical": "sha256:a65fb929e42f5ff99604365476417244078e3f54a49248008c96b4fb27834505",
-      "siblingsDeleted": 1
-    },
-    {
-      "group": "2026-06-11T09:05:00+02:00|Maria Dennis|Medication",
-      "canonical": "sha256:f040c0187d8a9ae9fc1be20cfd5516cde255393c1ffeaf6474f531a54c828489",
-      "siblingsDeleted": 1
-    },
-    {
-      "group": "2026-06-11T08:40:00+02:00|Maria Dennis|Sleep",
-      "canonical": "sha256:10c51c8e8d02b7050fee1d92f7e12996e653d42ee0c1dca6c9501e1ae16ae24a",
-      "siblingsDeleted": 1
-    },
-    {
-      "group": "2026-06-10T22:35:00+02:00|Maria Dennis|Food",
-      "canonical": "sha256:39ead3e291a5124d03ccb9e9b5611b2aa91b6c9e92ad049c6cdc142570819197",
-      "siblingsDeleted": 1
-    }
-  ],
-  "deletions": [
-    {
-      "key": "sha256:d416a058baa5885aa6a61113a958a3ed3fa5659c8f3ca3582ffbaa0592a0f566",
-      "group": "2026-06-10T20:53:00+02:00|Maria Dennis|Exercise",
-      "page_id": "37b85ec7-0668-81e5-8d9e-fe7eddde58f5",
-      "treatment_id": "6a29d920d7b66fcf51f7b7ff"
-    },
-    {
-      "key": "sha256:e2981bca64f761be4b94111c2f8b277165b805b63e91d04eb88e368246992e01",
-      "group": "2026-06-10T21:38:00+02:00|Maria Dennis|Exercise",
-      "page_id": "37b85ec7-0668-8160-ad96-c758d6b05862",
-      "treatment_id": "6a29d922d7b66fcf51f7b800"
-    },
-    {
-      "key": "sha256:2db8b103c3b4d2031ddacda17944e460d9ab1231fc8970a5f57405bc3a7ed0d9",
-      "group": "2026-06-11T09:00:00+02:00|Maria Dennis|Medication",
-      "page_id": "37c85ec7-0668-8109-8b7f-dbb739d8b008",
-      "treatment_id": "6a2a5e20d7b66fcf51f7b873"
-    },
-    {
-      "key": "sha256:8f65bbdfa90c946243e4c073e64fc2860dbe23b3ff292cdbc9eab55a30da77eb",
-      "group": "2026-06-11T09:10:00+02:00|Maria Dennis|Medication",
-      "page_id": "37c85ec7-0668-817d-9ea3-fba912001b0d",
-      "treatment_id": "6a2a5e22d7b66fcf51f7b874"
-    },
-    {
-      "key": "sha256:b1e3a505bf0558f1485b78e2ba8ea49a54a11e550cac3ac0a93ae31cbe0fe307",
-      "group": "2026-06-11T09:05:00+02:00|Maria Dennis|Medication",
-      "page_id": "37c85ec7-0668-81e0-9b51-e9d63198c77a",
-      "treatment_id": "6a2a5e24d7b66fcf51f7b875"
-    },
-    {
-      "key": "sha256:363fc85bdf5f34a1e28b99f68da87725cdc32ad7c298da743f88f7e25e12b38d",
-      "group": "2026-06-11T08:40:00+02:00|Maria Dennis|Sleep",
-      "page_id": "37c85ec7-0668-8108-b49a-c6a03890a652",
-      "treatment_id": null
-    },
-    {
-      "key": "sha256:9009d39d3d079cc7eac54887e2073c5411a8ee18a61f14716004bda4e9973da1",
-      "group": "2026-06-10T22:35:00+02:00|Maria Dennis|Food",
-      "page_id": "37c85ec7-0668-81e5-bcf5-f07c869c2603",
-      "treatment_id": "6a2a6f3ed7b66fcf51f7b886"
-    }
-  ],
+  "merged": [],
+  "deletions": [],
   "orphanRemnantsDeleted": [],
   "orphansKept": [],
   "ambiguousSkipped": [],

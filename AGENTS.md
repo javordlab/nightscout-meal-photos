@@ -41,7 +41,7 @@
 ## Operational Standards
 - **SAFETY:** Use `trash` over `rm`. Ask before exfiltrating data (emails, public posts).
 - **GROUPS:** In group chats, contribute only when directly mentioned or adding clear value. Use emojis for acknowledgement.
-- **QUOTAS — Fable 5 Standardization (2026-06-10, prev. Opus 4.7 since 2026-04-19):** All health-critical tasks use `claude-fable-5`. No cost-based tradeoffs:
+- **QUOTAS — Opus 4.8 Standardization (2026-06-21, prev. Fable 5 since 2026-06-10):** All health-critical tasks use `claude-opus-4-8`. No cost-based tradeoffs:
   - Any write to `health_log.md`, Nightscout, or Notion
   - Entry key computation and deduplication (hash corruption silently breaks SSoT)
   - Quality gate evaluation (garbage in → garbage downstream)
@@ -101,4 +101,4 @@ When reporting any numerical values (glucose, carbs, calories, TIR, GMI, etc.):
 4. Never invent numbers — if data is missing, state "Data unavailable" instead of guessing
 
 ## Model Standardization (2026-06-10)
-All health system tasks use **Claude Fable 5** (`claude-fable-5`), switched from Opus 4.7 on 2026-06-10. Fallback chain in the foodlog bridge: Opus 4.7 → Sonnet 4.6 → Haiku → Gemini/DeepSeek (availability fallbacks only, never cost-based downgrades). Rationale: health data integrity and medication safety require consistent, high-quality analysis across all operations. Model-specific bugs or differences in edge-case behavior are too risky to allow.
+All health system tasks use **Claude Opus 4.8** (`claude-opus-4-8`), switched from Fable 5 on 2026-06-21. Fallback chain in the foodlog bridge: Opus 4.7 → Sonnet 4.6 → Haiku → Gemini/DeepSeek (availability fallbacks only, never cost-based downgrades). Rationale: health data integrity and medication safety require consistent, high-quality analysis across all operations. Model-specific bugs or differences in edge-case behavior are too risky to allow.

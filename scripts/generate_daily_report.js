@@ -163,7 +163,7 @@ function captureCoachFailureDiagnostics(ctx) {
     followupProbe: (() => {
       const r = safeRun(CLAUDE_BIN, [
         '--print',
-        '--model', 'claude-fable-5',
+        '--model', 'claude-opus-4-8',
         '--output-format', 'text',
         '--dangerously-skip-permissions',
         '--no-session-persistence',
@@ -226,7 +226,7 @@ function addDays(dateString, delta) {
 // (glucose stats, nutrition totals, meal details, baselines, outliers,
 // supervisor analysis, self-audit) are computed from script outputs with no LLM.
 // The label reflects the hybrid: stats are deterministic, the coach paragraph is Opus 4.7.
-const MODEL = process.env.REPORT_MODEL || process.env.OPENCLAW_ACTIVE_MODEL || 'pure-script + claude-fable-5 (coach section only)';
+const MODEL = process.env.REPORT_MODEL || process.env.OPENCLAW_ACTIVE_MODEL || 'pure-script + claude-opus-4-8 (coach section only)';
 
 function mean(values) {
   if (values.length === 0) return null;
@@ -315,7 +315,7 @@ function nearestBg(entries, mealIso, windowMinutes = 20) {
 }
 
 // ── Daily Coach generator ──────────────────────────────────────────────────
-// Spawns `claude --print --model claude-fable-5` from /tmp (no CLAUDE.md inheritance)
+// Spawns `claude --print --model claude-opus-4-8` from /tmp (no CLAUDE.md inheritance)
 // with the full day's food + glucose context inline. The agent returns a
 // supportive nutrition coach paragraph for the daily report.
 //
@@ -396,7 +396,7 @@ Reply with ONLY the paragraph. No other text. No JSON wrapping. Just the paragra
     const result = await new Promise((resolve) => {
       const child = spawn(CLAUDE_BIN, [
         '--print',
-        '--model', 'claude-fable-5',
+        '--model', 'claude-opus-4-8',
         '--effort', 'xhigh',
         '--output-format', 'text',
         '--dangerously-skip-permissions',
