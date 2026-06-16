@@ -1,5 +1,16 @@
 [
   {
+    "id": "38185ec7-0668-81ab-99fa-dc8276c318fd",
+    "title": "Lunch: a boiled potato and cooked sausage (chorizo-style) (BG: 107 mg/dL Flat) (Pred: 122-142 mg/dL @ 3:25 PM) (Protein: 16g | Carbs: ~19g | Cals: ~360) [Cumulative Lunch: ~33g carbs total] [Coach: Round two of lunch 🍽️ — boiled potato for the carb and a hearty sausage with good protein and a fair bit of fat. Tasty and filling, though no veggies this round; a tomato salad or something green would round it out nicely. BG's steady at 107, so you're in good shape.]",
+    "type": "Lunch",
+    "date": "2026-06-16T14:10:00.000+02:00",
+    "photo": "https://iili.io/Co5Pa94.jpg",
+    "carbs": 19,
+    "cals": 360,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "38185ec7-0668-81ab-9670-e73ca0bc73eb",
     "title": "Lunch: café con leche and a small no-added-sugar hazelnut biscuit (BG: 103 mg/dL Flat) (Pred: 120-140 mg/dL @ 2:28 PM) (Protein: 6g | Carbs: ~14g | Cals: ~130) [Coach: A no-added-sugar biscuit with your café con leche ☕ — a light, low-impact little break that'll barely nudge your BG. Nice restrained choice. If this is standing in for lunch, just aim for some protein and veggies at your next meal to stay fueled.]",
     "type": "Lunch",
@@ -2168,7 +2179,7 @@
   },
   {
     "id": "35e85ec7-0668-81c0-a20f-c27f3c3aea32",
-    "title": "Lunch: 1 níspero (loquat) — peeled, with peel arranged like petals [Cumulative Lunch: ~49g carbs total] (BG: 96 mg/dL Flat) (Pred: 142-152 mg/dL @ 4:35 PM) (Protein: 0g | Carbs: ~3g | Cals: ~12) [Coach: Níspero 🍑 — small, sweet, almost free on BG. A tidy finish to a balanced lunch. Cumulative lunch lands in a comfortable zone.]  [id:d3766217]",
+    "title": "Lunch: 1 níspero (loquat) — peeled, with peel arranged like petals [Cumulative Lunch: ~49g carbs total] (BG: 96 mg/dL Flat) (Pred: 142-152 mg/dL @ 4:35 PM) (Protein: 0g | Carbs: ~3g | Cals: ~12) [Coach: Níspero �� — small, sweet, almost free on BG. A tidy finish to a balanced lunch. Cumulative lunch lands in a comfortable zone.]  [id:d3766217]",
     "type": "Lunch",
     "date": "2026-05-05T14:57:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-05/fe7ed171b1a42e2b.jpg",
