@@ -7,8 +7,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-17/a4bef7024205b3f3.jpg",
     "carbs": 28,
     "cals": 200,
-    "delta": null,
-    "peak": null
+    "delta": 0,
+    "peak": 154
   },
   {
     "id": "38285ec7-0668-815b-af3a-da8ab39f84de",
@@ -408,7 +408,7 @@
   },
   {
     "id": "37b85ec7-0668-8148-b062-c422ba57839b",
-    "title": "Dinner: cheese bocadillo �� baguette with slices of cheese (BG: 151 mg/dL Flat) (Protein: 14g) (Pred: 183-193 mg/dL @ 10:39 PM)",
+    "title": "Dinner: cheese bocadillo — baguette with slices of cheese (BG: 151 mg/dL Flat) (Protein: 14g) (Pred: 183-193 mg/dL @ 10:39 PM)",
     "type": "Dinner",
     "date": "2026-06-10T21:23:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-10/f6f010f06d3c9ce8.jpg",
