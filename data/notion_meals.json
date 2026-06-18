@@ -1,5 +1,16 @@
 [
   {
+    "id": "38385ec7-0668-81c5-9f12-c8e0a29c3078",
+    "title": "Dinner: baked white fish (picked from the head) with a piece of buttered toast (BG: 115 mg/dL Flat) (Pred: 135-155 mg/dL @ 10:11 PM) (Protein: 32g | Carbs: ~15g | Cals: ~330) [Coach: Fish for dinner — gold star 🐟. Protein-packed (~32g) and barely any carbs, so your blood sugar will sleep right through this one. The buttered toast is the only real carb and it's a small one. Lovely, gentle way to close out the day.]",
+    "type": "Dinner",
+    "date": "2026-06-18T21:16:00.000+02:00",
+    "photo": "https://iili.io/Cx1tMzb.jpg",
+    "carbs": 15,
+    "cals": 330,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "38385ec7-0668-810a-be2e-c663a63e1cdb",
     "title": "Lunch: a strawberry-and-vanilla ice cream wafer sandwich (BG: 147 mg/dL Flat) (Pred: 150-170 mg/dL @ 4:52 PM) (Protein: 3g | Carbs: ~24g | Cals: ~180) [Coach: A little ice cream treat to cap off lunch 🍦 — the portion is reasonable, so no guilt here. Since your BG is already up a bit from the callos, this is a perfect moment for one of your walks to help it settle. It's mostly refined sugar, so a sometimes-thing, but one corte won't undo a solid day.]",
     "type": "Lunch",
@@ -12,7 +23,7 @@
   },
   {
     "id": "38385ec7-0668-8146-b825-f18ace44512b",
-    "title": "Lunch: callos con garbanzos (Spanish tripe stew with chickpeas, no chorizo), a side of tomato salad with cheese, and a piece of bread (BG: 120 mg/dL Flat) (Pred: 148-168 mg/dL @ 3:45 PM) (Protein: 30g | Carbs: ~50g | Cals: ~520) [Coach: Callos con garbanzos, hold the chorizo — even better ����. The tripe still brings solid protein (~30g) and the chickpeas add slow fiber, all without the extra cured-meat fat. The bread is the main carb lever here, so trimming it slightly is the one tweak for a gentler afternoon.]",
+    "title": "Lunch: callos con garbanzos (Spanish tripe stew with chickpeas, no chorizo), a side of tomato salad with cheese, and a piece of bread (BG: 120 mg/dL Flat) (Pred: 148-168 mg/dL @ 3:45 PM) (Protein: 30g | Carbs: ~50g | Cals: ~520) [Coach: Callos con garbanzos, hold the chorizo — even better 🍲. The tripe still brings solid protein (~30g) and the chickpeas add slow fiber, all without the extra cured-meat fat. The bread is the main carb lever here, so trimming it slightly is the one tweak for a gentler afternoon.]",
     "type": "Lunch",
     "date": "2026-06-18T14:30:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-18/ddf04fffb0af5e4c.jpg",
