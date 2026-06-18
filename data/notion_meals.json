@@ -1,5 +1,16 @@
 [
   {
+    "id": "38385ec7-0668-8137-9b9e-f3cbc53f791d",
+    "title": "Breakfast: whole-grain toast with pistachio butter and fresh blueberries (BG: 121 mg/dL Flat) (Pred: 170-190 mg/dL @ 11:39 AM) (Protein: 8g | Carbs: ~30g | Cals: ~220) [Coach: Pistachio butter on whole-grain toast with a pile of blueberries 🫐 — that's a smart breakfast: good fats, fiber, and antioxidants doing real work. Protein's on the lighter side (~8g), so a small egg or a spoon of Greek yogurt on the side would round it out nicely.]",
+    "type": "Breakfast",
+    "date": "2026-06-18T10:12:00.000+02:00",
+    "photo": "https://iili.io/CxBNi67.jpg",
+    "carbs": 30,
+    "cals": 220,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "38285ec7-0668-81af-a18a-fb3111c9b01d",
     "title": "Snack: ice cream wafer sandwich (vanilla and strawberry between two wafers) (BG: 154 mg/dL Flat) (Pred: 164-184 mg/dL @ 6:33 PM) (Protein: 3g | Carbs: ~28g | Cals: ~200) [Coach: Right on plan — your one daily treat 🍦. Just a heads-up the timing's a touch high: BG is already at 154 from lunch, so this sugary corte will likely push it toward the 170s for a bit. Totally fine as your single treat; a short walk after would help bring it back down nicely.]",
     "type": "Snack",
