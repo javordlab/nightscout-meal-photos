@@ -1,5 +1,16 @@
 [
   {
+    "id": "38585ec7-0668-81c2-8442-f6ea21d7c4ad",
+    "title": "Lunch: jamón ibérico (cured ham) with a piece of bread (BG: 106 mg/dL Flat) (Pred: 118-138 mg/dL @ 4:28 PM) (Protein: 16g | Carbs: ~20g | Cals: ~230) [Coach: Jamón — a very Spanish choice 🍖 and a smart one for blood sugar: almost all protein, barely any carbs, so it lands gently. It is your one cured meat for today, right on target. Just go easy on extra bread and drink water, since cured ham is salty. BG looking great at 106.]",
+    "type": "Lunch",
+    "date": "2026-06-20T15:13:00.000+02:00",
+    "photo": "https://iili.io/CzjScKX.jpg",
+    "carbs": 20,
+    "cals": 230,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "38485ec7-0668-81d4-908f-fb698b474497",
     "title": "Dinner: a ham and cheese sandwich on multi-seed whole-grain bread (pumpkin, sunflower, sesame, flax) and a nectarine (BG: 140 mg/dL Flat) (Pred: 163-183 mg/dL @ 10:17 PM) (Protein: 24g | Carbs: ~46g | Cals: ~460) [Coach: Even better with that seeded bread 🌻 — pumpkin, sunflower, sesame and flax add fiber and healthy fats that slow the carbs right down, so this dinner will land gentler than the number suggests. Ham and cheese for protein, a nectarine to finish — a genuinely well-built plate.]",
     "type": "Dinner",
@@ -353,7 +364,7 @@
   },
   {
     "id": "37e85ec7-0668-81e1-b9c8-f50c51832312",
-    "title": "Breakfast: 1 slice toast with peanut butter, homemade no-sugar blueberry jam and a teaspoon of flax seed meal (BG: 110 mg/dL Flat) (Pred: 154-174 mg/dL @ 11:42 AM) (Protein: 7g | Carbs: ~23g | Cals: ~210) [Coach: Homemade no-sugar jam 👌 — you outsmarted the usual breakfast-jam sugar bomb. Peanut butter + flax bring healthy fats and fiber to slow things down, though protein is on the light side, so a boiled egg or Greek yogurt on the side would round it out nicely.]",
+    "title": "Breakfast: 1 slice toast with peanut butter, homemade no-sugar blueberry jam and a teaspoon of flax seed meal (BG: 110 mg/dL Flat) (Pred: 154-174 mg/dL @ 11:42 AM) (Protein: 7g | Carbs: ~23g | Cals: ~210) [Coach: Homemade no-sugar jam �� — you outsmarted the usual breakfast-jam sugar bomb. Peanut butter + flax bring healthy fats and fiber to slow things down, though protein is on the light side, so a boiled egg or Greek yogurt on the side would round it out nicely.]",
     "type": "Breakfast",
     "date": "2026-06-13T10:15:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-13/e4b930ba63468eac.jpg",
@@ -1090,7 +1101,7 @@
   },
   {
     "id": "37085ec7-0668-8134-819a-f92acf4ce0ce",
-    "title": "Snack: multigrain seeded toast topped with Aoste Mousse de Pato (duck mousse — 40% duck fat, 26% duck liver, 16% turkey liver per label) (BG: 113 mg/dL Flat) (Pred: 140-150 mg/dL @ 2:32 PM) (Protein: 7g , Carbs: ~14g , Cals: ~210) [Coach: Aoste duck mousse on toast ��� — per the label it's mostly fat (40%) with liver, so almost zero carbs from the mousse itself. The ~14g carbs are essentially all the bread. Pred ~145. Organ meat brings iron + B12, the fat slows the bread absorption — modest and balanced, not a \"cured meat\" hit.]",
+    "title": "Snack: multigrain seeded toast topped with Aoste Mousse de Pato (duck mousse — 40% duck fat, 26% duck liver, 16% turkey liver per label) (BG: 113 mg/dL Flat) (Pred: 140-150 mg/dL @ 2:32 PM) (Protein: 7g , Carbs: ~14g , Cals: ~210) [Coach: Aoste duck mousse on toast 🦆 — per the label it's mostly fat (40%) with liver, so almost zero carbs from the mousse itself. The ~14g carbs are essentially all the bread. Pred ~145. Organ meat brings iron + B12, the fat slows the bread absorption — modest and balanced, not a \"cured meat\" hit.]",
     "type": "Snack",
     "date": "2026-05-30T12:26:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-30/4f4312da5f5ff8db.jpg",
