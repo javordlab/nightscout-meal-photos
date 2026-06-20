@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-20T04:35:03.239Z",
+  "lastUpdated": "2026-06-20T04:41:14.955Z",
   "serverTz": "Europe/Madrid",
   "dbError": null,
   "tokenUsage": [
@@ -23,8 +23,8 @@
     }
   ],
   "database": {
-    "glucose": 32345,
-    "notion": 1980
+    "glucose": 32346,
+    "notion": 1985
   },
   "syncHistory": [
     {
@@ -170,19 +170,15 @@
     {
       "date": "2026-06-19",
       "glucose": 32290,
-      "notion": 1980
+      "notion": 1985
     },
     {
       "date": "2026-06-20",
-      "glucose": 32345,
-      "notion": 1980
+      "glucose": 32346,
+      "notion": 1985
     }
   ],
   "glucoseTrend": [
-    {
-      "t": "2026-05-21T06:39:52.000Z",
-      "v": 113
-    },
     {
       "t": "2026-05-21T06:44:52.000Z",
       "v": 116
@@ -33782,6 +33778,10 @@
     {
       "t": "2026-06-20T04:34:11.000Z",
       "v": 112
+    },
+    {
+      "t": "2026-06-20T04:39:11.000Z",
+      "v": 114
     }
   ],
   "backups": [
