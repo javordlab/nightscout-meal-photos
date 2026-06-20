@@ -1,5 +1,16 @@
 [
   {
+    "id": "38585ec7-0668-81c6-beac-c22c36395af1",
+    "title": "Lunch: cured lomo (pork loin) with braised leeks in olive oil, at a wedding (BG: 116 mg/dL Flat) (Pred: 125-145 mg/dL @ 4:31 PM) (Protein: 11g | Carbs: ~6g | Cals: ~160) [Cumulative Lunch: ~26g carbs total] [Coach: Wedding mode — enjoy it 🥂! The braised leeks bring real veggies and the cured meats are protein-rich, so this course lands gently. For the long meal ahead, lean on the protein and veg courses, go easy on bread and dessert, and sip water between. You've got this.]",
+    "type": "Lunch",
+    "date": "2026-06-20T15:16:00.000+02:00",
+    "photo": "https://iili.io/Czj6s9e.jpg",
+    "carbs": 6,
+    "cals": 160,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "38585ec7-0668-81c2-8442-f6ea21d7c4ad",
     "title": "Lunch: jamón ibérico (cured ham) with a piece of bread (BG: 106 mg/dL Flat) (Pred: 118-138 mg/dL @ 4:28 PM) (Protein: 16g | Carbs: ~20g | Cals: ~230) [Coach: Jamón — a very Spanish choice 🍖 and a smart one for blood sugar: almost all protein, barely any carbs, so it lands gently. It is your one cured meat for today, right on target. Just go easy on extra bread and drink water, since cured ham is salty. BG looking great at 106.]",
     "type": "Lunch",
@@ -364,7 +375,7 @@
   },
   {
     "id": "37e85ec7-0668-81e1-b9c8-f50c51832312",
-    "title": "Breakfast: 1 slice toast with peanut butter, homemade no-sugar blueberry jam and a teaspoon of flax seed meal (BG: 110 mg/dL Flat) (Pred: 154-174 mg/dL @ 11:42 AM) (Protein: 7g | Carbs: ~23g | Cals: ~210) [Coach: Homemade no-sugar jam �� — you outsmarted the usual breakfast-jam sugar bomb. Peanut butter + flax bring healthy fats and fiber to slow things down, though protein is on the light side, so a boiled egg or Greek yogurt on the side would round it out nicely.]",
+    "title": "Breakfast: 1 slice toast with peanut butter, homemade no-sugar blueberry jam and a teaspoon of flax seed meal (BG: 110 mg/dL Flat) (Pred: 154-174 mg/dL @ 11:42 AM) (Protein: 7g | Carbs: ~23g | Cals: ~210) [Coach: Homemade no-sugar jam 👌 — you outsmarted the usual breakfast-jam sugar bomb. Peanut butter + flax bring healthy fats and fiber to slow things down, though protein is on the light side, so a boiled egg or Greek yogurt on the side would round it out nicely.]",
     "type": "Breakfast",
     "date": "2026-06-13T10:15:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-13/e4b930ba63468eac.jpg",
