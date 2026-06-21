@@ -1,5 +1,16 @@
 [
   {
+    "id": "38685ec7-0668-8174-b607-c8b065dea40a",
+    "title": "Lunch: one whole black plum. (BG: 169 mg/dL Flat) (Pred: 177-197 mg/dL @ 3:35 PM) (Protein: 1g | Carbs: ~9g | Cals: ~30) [Cumulative Lunch: ~67g carbs total] [Coach: A plum is a lovely light choice 🍑 — mostly water and fiber, gentle on its own. Still, this is the third sweet finish in a row and BG is creeping toward 170, so let this be the last bite of lunch. A walk now would really help bring it back down.]",
+    "type": "Lunch",
+    "date": "2026-06-21T14:30:00.000+02:00",
+    "photo": "https://iili.io/CIFn18x.jpg",
+    "carbs": 9,
+    "cals": 30,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "38685ec7-0668-8189-bd14-fee238b22299",
     "title": "Lunch: a handful of fresh cherries (~12) with a piece of rustic bread — dessert course. (BG: 161 mg/dL Flat) (Pred: 171-191 mg/dL @ 3:35 PM) (Protein: 4g | Carbs: ~28g | Cals: ~160) [Cumulative Lunch: ~58g carbs total] [Coach: Fresh cherries 🍒 are a smart way to finish — whole fruit with fiber and antioxidants, far better than anything processed. That said, with BG already warm and bread stacking on top, your lunch carbs are adding up, so maybe ease off the extra bread. A short walk after would help settle things.]",
     "type": "Lunch",
@@ -2685,7 +2696,7 @@
   },
   {
     "id": "35e85ec7-0668-81f1-802c-ff7ef486da93",
-    "title": "Dinner: 1 small thin-crust pizza slice with ham and cheese, and a small beer (ca��a) [Cumulative Dinner: ~45g carbs total] (BG: 109 mg/dL Flat) (Pred: 142-152 mg/dL @ 10:37 PM) (Protein: 10g | Carbs: ~26g | Cals: ~280) [Coach: Pizza nightcap 🍕 — thin crust + cheese + ham is a reasonable combo, and the small beer adds modest extra carbs. Cumulative dinner has climbed; a short walk before bed would help BG settle gently.]  [id:3226c3b8]",
+    "title": "Dinner: 1 small thin-crust pizza slice with ham and cheese, and a small beer (caña) [Cumulative Dinner: ~45g carbs total] (BG: 109 mg/dL Flat) (Pred: 142-152 mg/dL @ 10:37 PM) (Protein: 10g | Carbs: ~26g | Cals: ~280) [Coach: Pizza nightcap 🍕 — thin crust + cheese + ham is a reasonable combo, and the small beer adds modest extra carbs. Cumulative dinner has climbed; a short walk before bed would help BG settle gently.]  [id:3226c3b8]",
     "type": "Dinner",
     "date": "2026-05-01T22:25:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-01/798c33192021fb9b.jpg",
