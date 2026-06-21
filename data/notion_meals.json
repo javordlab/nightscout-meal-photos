@@ -1,5 +1,16 @@
 [
   {
+    "id": "38685ec7-0668-819c-86b7-c5141be8f071",
+    "title": "Dinner (ice cream treat): a corte de helado — strawberry and vanilla ice cream between two wafers. (BG: 135 mg/dL Flat) (Pred: 144-164 mg/dL @ 7:42 PM) (Protein: 2g | Carbs: ~22g | Cals: ~170) [Coach: A little ice cream treat 🍦 — and at 135 your BG has settled nicely from earlier, so the timing isn't bad at all. It's mostly sugar and refined wafer though, so enjoy this one as the treat it is and keep it to the single serving. A short walk afterward keeps it in check.]",
+    "type": "Dinner",
+    "date": "2026-06-21T18:47:00.000+02:00",
+    "photo": "https://iili.io/CIuetol.jpg",
+    "carbs": 22,
+    "cals": 170,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "38685ec7-0668-8174-b607-c8b065dea40a",
     "title": "Lunch: one whole black plum. (BG: 169 mg/dL Flat) (Pred: 177-197 mg/dL @ 3:35 PM) (Protein: 1g | Carbs: ~9g | Cals: ~30) [Cumulative Lunch: ~67g carbs total] [Coach: A plum is a lovely light choice 🍑 — mostly water and fiber, gentle on its own. Still, this is the third sweet finish in a row and BG is creeping toward 170, so let this be the last bite of lunch. A walk now would really help bring it back down.]",
     "type": "Lunch",
@@ -2718,7 +2729,7 @@
   },
   {
     "id": "35e85ec7-0668-8157-9966-f74e5964a1dc",
-    "title": "Lunch: 1 croqueta with tomato sauce [Cumulative Lunch: ~22g carbs total] (BG: 125 mg/dL Flat) (Pred: 137-147 mg/dL @ 4:09 PM) (Protein: 4g | Carbs: ~13g | Cals: ~115) [Coach: Croqueta time 🍅 ��� fried bechamel and breading bring some quick carbs and fat, but the tomato sauce is a bonus of veg. Single portion is reasonable; cumulative lunch is still in a friendly zone.]  [id:9799c086]",
+    "title": "Lunch: 1 croqueta with tomato sauce [Cumulative Lunch: ~22g carbs total] (BG: 125 mg/dL Flat) (Pred: 137-147 mg/dL @ 4:09 PM) (Protein: 4g | Carbs: ~13g | Cals: ~115) [Coach: Croqueta time 🍅 — fried bechamel and breading bring some quick carbs and fat, but the tomato sauce is a bonus of veg. Single portion is reasonable; cumulative lunch is still in a friendly zone.]  [id:9799c086]",
     "type": "Lunch",
     "date": "2026-05-01T14:28:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-01/4cee012b9e6bb3fe.jpg",
