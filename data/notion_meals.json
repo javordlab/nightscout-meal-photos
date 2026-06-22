@@ -1,5 +1,16 @@
 [
   {
+    "id": "38785ec7-0668-8112-8d34-db4203655c6a",
+    "title": "Dinner: peanut butter and blueberry sandwich on multigrain seeded bread. (BG: 103 mg/dL Flat) (Pred: 137-157 mg/dL @ 11:08 PM) (Protein: 13g | Carbs: ~44g | Cals: ~400) [Coach: A cozy PB-and-blueberry sandwich 🥪 — the peanut butter brings protein and healthy fats that slow things down, and the blueberries add fiber. With BG at a tidy 103, this is a gentle way to close the day. The seeded bread is the main carb, so this size is just right.]",
+    "type": "Dinner",
+    "date": "2026-06-22T22:13:00.000+02:00",
+    "photo": "https://iili.io/CTz1DP9.jpg",
+    "carbs": 44,
+    "cals": 400,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "38785ec7-0668-81f5-8aea-d4e98b3e47e0",
     "title": "Lunch: baked white fish with roasted potatoes, a mixed green salad, and a piece of rustic bread. (BG: 152 mg/dL Flat) (Pred: 163-183 mg/dL @ 5:37 PM) (Protein: 33g | Carbs: ~43g | Cals: ~520) [Coach: Lovely balanced plate 🐟 — lean white fish brings about 30g of quality protein and the leafy salad adds real non-starchy veggies, exactly the T2D template. Potatoes plus bread are the two starches here, so easing off one would keep the afternoon rise gentler. Really nice meal.]",
     "type": "Lunch",
@@ -1585,7 +1596,7 @@
   },
   {
     "id": "36a85ec7-0668-81da-a7df-e49717b144e3",
-    "title": "Dinner: leftover half-sandwich from lunch — 1 slice whole-grain seeded bread with egg salad, tomato, and cucumber (BG: 133 mg/dL Flat) (Pred: 148-158 mg/dL @ 8:52 PM) (Protein: 9g | Carbs: ~17g | Cals: ~260) [Coach: Leftover half-sandwich = smart planning 👏 — modest ~17g carbs from 1 slice, ~9g protein from egg salad, fresh veggies inside. Zero cured meat. Today's food planning has been textbook GMI 6.0: portion-aware, fresh, and reusing food smartly.]",
+    "title": "Dinner: leftover half-sandwich from lunch — 1 slice whole-grain seeded bread with egg salad, tomato, and cucumber (BG: 133 mg/dL Flat) (Pred: 148-158 mg/dL @ 8:52 PM) (Protein: 9g | Carbs: ~17g | Cals: ~260) [Coach: Leftover half-sandwich = smart planning ���� — modest ~17g carbs from 1 slice, ~9g protein from egg salad, fresh veggies inside. Zero cured meat. Today's food planning has been textbook GMI 6.0: portion-aware, fresh, and reusing food smartly.]",
     "type": "Dinner",
     "date": "2026-05-24T19:36:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-24/358fca4e9c787fab.jpg",
