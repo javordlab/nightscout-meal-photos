@@ -1,5 +1,16 @@
 [
   {
+    "id": "38785ec7-0668-81f5-8aea-d4e98b3e47e0",
+    "title": "Lunch: baked white fish with roasted potatoes, a mixed green salad, and a piece of rustic bread. (BG: 152 mg/dL Flat) (Pred: 163-183 mg/dL @ 5:37 PM) (Protein: 33g | Carbs: ~43g | Cals: ~520) [Coach: Lovely balanced plate 🐟 — lean white fish brings about 30g of quality protein and the leafy salad adds real non-starchy veggies, exactly the T2D template. Potatoes plus bread are the two starches here, so easing off one would keep the afternoon rise gentler. Really nice meal.]",
+    "type": "Lunch",
+    "date": "2026-06-22T16:22:00.000+02:00",
+    "photo": "https://iili.io/CIpG1Bn.jpg",
+    "carbs": 43,
+    "cals": 520,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "38785ec7-0668-81ee-9910-e712cb28bb68",
     "title": "Breakfast: one multigrain cracker. (BG: 140 mg/dL Flat) (Pred: 176-196 mg/dL @ 10:14 AM) (Protein: 2g | Carbs: ~12g | Cals: ~75) [Cumulative Breakfast: ~34g carbs total] [Coach: A multigrain cracker is a fine little add-on 🌾 — whole grain with some fiber, and your yogurt-and-walnut base means there's plenty of protein to keep the rise gentle. Light and sensible. You're set up for a steady morning.]",
     "type": "Breakfast",
@@ -166,7 +177,7 @@
   },
   {
     "id": "38485ec7-0668-81d4-908f-fb698b474497",
-    "title": "Dinner: a ham and cheese sandwich on multi-seed whole-grain bread (pumpkin, sunflower, sesame, flax) and a nectarine (BG: 140 mg/dL Flat) (Pred: 163-183 mg/dL @ 10:17 PM) (Protein: 24g | Carbs: ~46g | Cals: ~460) [Coach: Even better with that seeded bread 🌻 — pumpkin, sunflower, sesame and flax add fiber and healthy fats that slow the carbs right down, so this dinner will land gentler than the number suggests. Ham and cheese for protein, a nectarine to finish — a genuinely well-built plate.]",
+    "title": "Dinner: a ham and cheese sandwich on multi-seed whole-grain bread (pumpkin, sunflower, sesame, flax) and a nectarine (BG: 140 mg/dL Flat) (Pred: 163-183 mg/dL @ 10:17 PM) (Protein: 24g | Carbs: ~46g | Cals: ~460) [Coach: Even better with that seeded bread �� — pumpkin, sunflower, sesame and flax add fiber and healthy fats that slow the carbs right down, so this dinner will land gentler than the number suggests. Ham and cheese for protein, a nectarine to finish — a genuinely well-built plate.]",
     "type": "Dinner",
     "date": "2026-06-19T21:22:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-19/f693bdb6edf0dc94.jpg",
