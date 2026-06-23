@@ -7,8 +7,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-23/f084824d2cbee9d8.jpg",
     "carbs": 46,
     "cals": 410,
-    "delta": null,
-    "peak": null
+    "delta": 53,
+    "peak": 187
   },
   {
     "id": "38785ec7-0668-8112-8d34-db4203655c6a",
@@ -1189,7 +1189,7 @@
   },
   {
     "id": "37185ec7-0668-81f5-99f7-ff3367ce6c6d",
-    "title": "Dinner: closed sandwich on multigrain seeded toast with sliced turkey breast, cecina (Spanish cured beef), cheese, and avocado (BG: 83 mg/dL Flat) (Pred: 117-127 mg/dL @ 10:31 PM) (Protein: 37g , Carbs: ~34g , Cals: ~445) [Coach: Turkey + cecina + cheese + avocado sandwich 🥪 — ~37g protein is an outstanding muscle-preservation number, and the avocado fat + multigrain seeded bread slow the carb curve nicely. Cecina is your 1st (and on-target) cured-meat hit of the day. Coming into dinner at 83 means Pred lands beautifully at ~122. Clean GMI 6.0 close.]",
+    "title": "Dinner: closed sandwich on multigrain seeded toast with sliced turkey breast, cecina (Spanish cured beef), cheese, and avocado (BG: 83 mg/dL Flat) (Pred: 117-127 mg/dL @ 10:31 PM) (Protein: 37g , Carbs: ~34g , Cals: ~445) [Coach: Turkey + cecina + cheese + avocado sandwich 🥪 �� ~37g protein is an outstanding muscle-preservation number, and the avocado fat + multigrain seeded bread slow the carb curve nicely. Cecina is your 1st (and on-target) cured-meat hit of the day. Coming into dinner at 83 means Pred lands beautifully at ~122. Clean GMI 6.0 close.]",
     "type": "Dinner",
     "date": "2026-05-31T21:15:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-31/8bdf9b2d16ebb90b.jpg",
