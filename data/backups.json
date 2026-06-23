@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-23T02:16:40.309Z",
+  "lastUpdated": "2026-06-23T02:20:03.833Z",
   "serverTz": "Europe/Madrid",
   "dbError": null,
   "tokenUsage": [
@@ -23,7 +23,7 @@
     }
   ],
   "database": {
-    "glucose": 33165,
+    "glucose": 33166,
     "notion": 2059
   },
   "syncHistory": [
@@ -174,15 +174,11 @@
     },
     {
       "date": "2026-06-23",
-      "glucose": 33165,
+      "glucose": 33166,
       "notion": 2059
     }
   ],
   "glucoseTrend": [
-    {
-      "t": "2026-05-24T04:19:50.000Z",
-      "v": 99
-    },
     {
       "t": "2026-05-24T04:24:50.000Z",
       "v": 100
@@ -33738,9 +33734,27 @@
     {
       "t": "2026-06-23T02:14:07.000Z",
       "v": 110
+    },
+    {
+      "t": "2026-06-23T02:19:06.000Z",
+      "v": 111
     }
   ],
   "backups": [
+    {
+      "filename": "health_ssot-2026-06-23.sql.gz",
+      "type": "Daily",
+      "size": "595.02 KB",
+      "created": "2026-06-23T02:20:01.269Z",
+      "path": "daily/health_ssot-2026-06-23.sql.gz"
+    },
+    {
+      "filename": "2026-06-23.sql.gz",
+      "type": "Daily",
+      "size": "801.70 KB",
+      "created": "2026-06-23T02:20:01.172Z",
+      "path": "daily/2026-06-23.sql.gz"
+    },
     {
       "filename": "health_ssot-2026-w26.sql.gz",
       "type": "Weekly",
@@ -33861,25 +33875,11 @@
       "path": "weekly/health_ssot-2026-w25.sql.gz"
     },
     {
-      "filename": "health_ssot-2026-06-15.sql.gz",
-      "type": "Daily",
-      "size": "548.12 KB",
-      "created": "2026-06-15T02:20:00.824Z",
-      "path": "daily/health_ssot-2026-06-15.sql.gz"
-    },
-    {
       "filename": "2026-w25.sql.gz",
       "type": "Weekly",
       "size": "750.03 KB",
       "created": "2026-06-15T02:20:00.741Z",
       "path": "weekly/2026-w25.sql.gz"
-    },
-    {
-      "filename": "2026-06-15.sql.gz",
-      "type": "Daily",
-      "size": "750.03 KB",
-      "created": "2026-06-15T02:20:00.724Z",
-      "path": "daily/2026-06-15.sql.gz"
     },
     {
       "filename": "health_ssot-2026-w24.sql.gz",
