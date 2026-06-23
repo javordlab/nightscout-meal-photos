@@ -1,5 +1,16 @@
 [
   {
+    "id": "38885ec7-0668-813c-a53c-c7089a7bc30e",
+    "title": "Lunch: seafood paella rice with lobster (portion shown) (BG: 152 mg/dL Flat) (Pred: 178-198 mg/dL @ 4:56 PM) (Protein: 15g | Carbs: ~22g | Cals: ~170) [Cumulative Lunch: 75g carbs total] [Coach: What a seafood spread — mussels, squid, now paella with lobster, easily ~48g of protein, which is fantastic. 🦞 The paella rice pushes lunch to ~75g carbs though, so this is the meal where a 15-20 min walk really earns its keep and keeps the afternoon peak in check.]",
+    "type": "Lunch",
+    "date": "2026-06-23T15:41:00.000+02:00",
+    "photo": "https://iili.io/CTgyp3u.jpg",
+    "carbs": 22,
+    "cals": 170,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "38885ec7-0668-81d6-bb61-f3bccc5b3656",
     "title": "Lunch: squid in black ink sauce (chipirones en su tinta) with potatoes and bread (BG: 160 mg/dL Flat) (Pred: 162-182 mg/dL @ 4:32 PM) (Protein: 20g | Carbs: ~25g | Cals: ~270) [Cumulative Lunch: 53g carbs total] [Coach: Squid in ink 🦑 — another lean-protein win, and with the mussels your lunch is seriously seafood-strong, ~33g protein total. The potatoes and bread are stacking carbs toward ~53g now, so maybe leave a few potatoes behind, and a short post-lunch walk will keep the peak gentle.]",
     "type": "Lunch",
@@ -3576,7 +3587,7 @@
   },
   {
     "id": "35e85ec7-0668-8163-8c86-e61a40479330",
-    "title": "Dinner: Caprese salad (tomato slices with burrata/fresh mozzarella) and bone-in braised meat (short rib or lamb chop with dark glaze) (BG: 101 mg/dL Flat) (Pred: 110-120 mg/dL @ 7:54 PM) (Protein: 32g | Carbs: ~8g | Cals: ~560) [Coach: An exceptional T2D dinner ��� the caprese brings tomato fiber and protein from the mozzarella with almost no carbs, and the braised meat delivers ~32g protein with essentially zero starch. Starting at 101 with only 8g total carbs, the spike from this portion alone will be minimal.]  [id:f788dd68]",
+    "title": "Dinner: Caprese salad (tomato slices with burrata/fresh mozzarella) and bone-in braised meat (short rib or lamb chop with dark glaze) (BG: 101 mg/dL Flat) (Pred: 110-120 mg/dL @ 7:54 PM) (Protein: 32g | Carbs: ~8g | Cals: ~560) [Coach: An exceptional T2D dinner — the caprese brings tomato fiber and protein from the mozzarella with almost no carbs, and the braised meat delivers ~32g protein with essentially zero starch. Starting at 101 with only 8g total carbs, the spike from this portion alone will be minimal.]  [id:f788dd68]",
     "type": "Dinner",
     "date": "2026-04-13T18:38:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-13/c45a367d4273fd87.jpg",
