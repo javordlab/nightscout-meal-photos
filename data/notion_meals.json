@@ -1,10 +1,21 @@
 [
   {
+    "id": "38885ec7-0668-81e0-85d0-f26a105bed7c",
+    "title": "Lunch: half-portion flan with caramel sauce (shared) (BG: 147 mg/dL Flat) (Pred: 187-207 mg/dL @ 5:29 PM) (Protein: 3g | Carbs: ~13g | Cals: ~75) [Cumulative Lunch: 88g carbs total] [Coach: Half a flan shared is good restraint, but 88g cumulative carbs is a big lunch. Prediction runs toward 207, so a 20-min walk before 5:30 PM will do real work here — the seafood protein is a strong foundation; it's mostly starch and sugar that need burning off.]",
+    "type": "Lunch",
+    "date": "2026-06-23T16:14:00.000+02:00",
+    "photo": "https://iili.io/CTrPpqv.jpg",
+    "carbs": 13,
+    "cals": 75,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "38885ec7-0668-813c-a53c-c7089a7bc30e",
     "title": "Lunch: seafood paella rice with lobster (portion shown) (BG: 152 mg/dL Flat) (Pred: 178-198 mg/dL @ 4:56 PM) (Protein: 15g | Carbs: ~22g | Cals: ~170) [Cumulative Lunch: 75g carbs total] [Coach: What a seafood spread — mussels, squid, now paella with lobster, easily ~48g of protein, which is fantastic. 🦞 The paella rice pushes lunch to ~75g carbs though, so this is the meal where a 15-20 min walk really earns its keep and keeps the afternoon peak in check.]",
     "type": "Lunch",
     "date": "2026-06-23T15:41:00.000+02:00",
-    "photo": "https://iili.io/CTgyp3u.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-23/2cc7e98ee5dbd2fa.jpg",
     "carbs": 22,
     "cals": 170,
     "delta": null,
