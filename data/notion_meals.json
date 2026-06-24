@@ -1,5 +1,16 @@
 [
   {
+    "id": "38985ec7-0668-8163-903c-c85f22c2d2f0",
+    "title": "Dinner: butternut squash soup with an open-faced multigrain sandwich (cheese and lacón) (BG: ~130 mg/dL est) (Pred: 145-165 mg/dL @ 10:21 PM) (Est: no sensor, ~130 baseline; 5:31 PM fingerstick now ~4h old) (Protein: 19g | Carbs: ~34g | Cals: ~355) [Coach: A cozy, well-balanced light dinner 🥣 — butternut squash soup brings warmth and vegetables, while the cheese and lacón on multigrain give you ~19g of protein. Nicely portioned carbs at ~34g to close out an active day, and a gentle one for your blood sugar.]",
+    "type": "Dinner",
+    "date": "2026-06-24T21:26:00.000+02:00",
+    "photo": "https://iili.io/CuVvYl4.jpg",
+    "carbs": 34,
+    "cals": 355,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "38985ec7-0668-81be-9b3e-f568f9008ab1",
     "title": "Lunch (panna cotta dessert): a single-serve panna cotta (BG: Unknown — no sensor) (Pred: 147-167 mg/dL @ 5:24 PM) (Est: no-sensor, baseline ~120) (Protein: 3g | Carbs: ~16g | Cals: ~160) [Cumulative Lunch: 63g carbs total] [Coach: A creamy panna cotta to finish 🍮 — still a sugary treat, but the cream's fat slows the sugar a touch more gently than a plain pudding would. The fish and salad protein from earlier cushion it nicely. Still, with no sensor watching, that post-lunch walk is the move.]",
     "type": "Lunch",
@@ -606,7 +617,7 @@
   },
   {
     "id": "37e85ec7-0668-81b2-8546-e889309c505a",
-    "title": "Lunch: 2-3 grilled whole prawns (gambas a la plancha) (BG: 113 mg/dL Flat) (Pred: 127-147 mg/dL @ 4:31 PM) (Protein: 20g | Carbs: ~1g | Cals: ~140) [Cumulative Lunch: 14g carbs total] [Coach: Prawns 🦐 right after the cauliflower soup �� perfect protein boost to fill the gap the soup left. Now the meal's actually balanced: low-carb, decent protein, plenty of warmth and volume. Nicely played for tight control.]",
+    "title": "Lunch: 2-3 grilled whole prawns (gambas a la plancha) (BG: 113 mg/dL Flat) (Pred: 127-147 mg/dL @ 4:31 PM) (Protein: 20g | Carbs: ~1g | Cals: ~140) [Cumulative Lunch: 14g carbs total] [Coach: Prawns 🦐 right after the cauliflower soup — perfect protein boost to fill the gap the soup left. Now the meal's actually balanced: low-carb, decent protein, plenty of warmth and volume. Nicely played for tight control.]",
     "type": "Lunch",
     "date": "2026-06-13T15:25:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-13/5c0140aa4a9c8fb0.jpg",
@@ -1596,7 +1607,7 @@
   },
   {
     "id": "36c85ec7-0668-81f8-a020-c876b1b2863e",
-    "title": "Snack (pre-dinner, after 2hr work): bowl of corn puffs (ganchitos) (BG: 106 mg/dL Flat) (Pred: 135-145 mg/dL @ 10:26 PM) (Protein: 2g | Carbs: ~15g | Cals: ~130) [Coach: Corn puffs 🌽 — light and tasty but refined-carb empty calories (~15g carbs, minimal protein/fiber). After 2 hours of work a refuel makes sense, and BG at 106 has room. These spike faster than your protein-anchored snacks though — pairing with cheese or nuts next time would slow them down.]",
+    "title": "Snack (pre-dinner, after 2hr work): bowl of corn puffs (ganchitos) (BG: 106 mg/dL Flat) (Pred: 135-145 mg/dL @ 10:26 PM) (Protein: 2g | Carbs: ~15g | Cals: ~130) [Coach: Corn puffs ���� — light and tasty but refined-carb empty calories (~15g carbs, minimal protein/fiber). After 2 hours of work a refuel makes sense, and BG at 106 has room. These spike faster than your protein-anchored snacks though — pairing with cheese or nuts next time would slow them down.]",
     "type": "Snack",
     "date": "2026-05-26T20:20:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-26/8d5130c7af0e921d.jpg",
