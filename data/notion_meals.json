@@ -1,12 +1,12 @@
 [
   {
     "id": "38985ec7-0668-8133-aaf9-d7ce4329ed4d",
-    "title": "Breakfast: yogurt with blueberries, walnuts, and a little granola (BG: Unknown — no sensor) (Pred: 170-190 mg/dL @ 10:51 AM) (Est: no-sensor, baseline ~125) (Protein: 16g | Carbs: ~28g | Cals: ~330) [Coach: Now THIS is a breakfast 🥣 — yogurt for protein, blueberries and walnuts bringing fiber, antioxidants, and good fats. About as blood-sugar-friendly as mornings get. Just watch the granola since it can sneak in sugar, so keep it a light sprinkle. A short walk after will tame the usual morning rise nicely.]",
+    "title": "Breakfast: yogurt with blueberries, walnuts, and hemp seeds (BG: Unknown — no sensor) (Pred: 163-183 mg/dL @ 10:51 AM) (Est: no-sensor, baseline ~125) (Protein: 22g | Carbs: ~22g | Cals: ~360) [Coach: Now THIS is a breakfast 🥣 — yogurt, walnuts, and hemp seeds stack up serious protein and good fats, and the blueberries bring fiber and antioxidants. Hemp seeds are a lovely low-carb, high-protein swap for granola. About as blood-sugar-friendly as mornings get; a short walk after will keep the rise gentle.]",
     "type": "Breakfast",
     "date": "2026-06-24T09:24:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-24/7e5f33496b0b1612.jpg",
-    "carbs": 28,
-    "cals": 330,
+    "carbs": 22,
+    "cals": 360,
     "delta": null,
     "peak": null
   },
