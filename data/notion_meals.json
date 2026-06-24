@@ -1,12 +1,12 @@
 [
   {
     "id": "38985ec7-0668-81be-9b3e-f568f9008ab1",
-    "title": "Lunch (chocolate dessert): a single-serve chocolate pudding cup (BG: Unknown — no sensor) (Pred: 149-169 mg/dL @ 5:24 PM) (Est: no-sensor, baseline ~120) (Protein: 3g | Carbs: ~18g | Cals: ~130) [Cumulative Lunch: 65g carbs total] [Coach: A little chocolate pud to round off lunch 🍫 — pure quick sugar, so it is the part of this meal that will nudge you up fastest. Good news is all that fish and salad protein went first and cushions the landing. This is exactly the meal where a 15-min walk earns its keep, especially with no sensor watching.]",
+    "title": "Lunch (panna cotta dessert): a single-serve panna cotta (BG: Unknown — no sensor) (Pred: 147-167 mg/dL @ 5:24 PM) (Est: no-sensor, baseline ~120) (Protein: 3g | Carbs: ~16g | Cals: ~160) [Cumulative Lunch: 63g carbs total] [Coach: A creamy panna cotta to finish 🍮 — still a sugary treat, but the cream's fat slows the sugar a touch more gently than a plain pudding would. The fish and salad protein from earlier cushion it nicely. Still, with no sensor watching, that post-lunch walk is the move.]",
     "type": "Lunch",
     "date": "2026-06-24T16:09:00.000+02:00",
-    "photo": "https://iili.io/CuYte1f.jpg",
-    "carbs": 18,
-    "cals": 130,
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-24/992e746c7ab1c731.jpg",
+    "carbs": 16,
+    "cals": 160,
     "delta": null,
     "peak": null
   },
@@ -23,7 +23,7 @@
   },
   {
     "id": "38985ec7-0668-8133-aaf9-d7ce4329ed4d",
-    "title": "Breakfast: yogurt with blueberries, walnuts, and hemp seeds (BG: Unknown — no sensor) (Pred: 163-183 mg/dL @ 10:51 AM) (Est: no-sensor, baseline ~125) (Protein: 22g | Carbs: ~22g | Cals: ~360) [Coach: Now THIS is a breakfast 🥣 — yogurt, walnuts, and hemp seeds stack up serious protein and good fats, and the blueberries bring fiber and antioxidants. Hemp seeds are a lovely low-carb, high-protein swap for granola. About as blood-sugar-friendly as mornings get; a short walk after will keep the rise gentle.]",
+    "title": "Breakfast: yogurt with blueberries, walnuts, and hemp seeds (BG: Unknown — no sensor) (Pred: 163-183 mg/dL @ 10:51 AM) (Est: no-sensor, baseline ~125) (Protein: 22g | Carbs: ~22g | Cals: ~360) [Coach: Now THIS is a breakfast ��� — yogurt, walnuts, and hemp seeds stack up serious protein and good fats, and the blueberries bring fiber and antioxidants. Hemp seeds are a lovely low-carb, high-protein swap for granola. About as blood-sugar-friendly as mornings get; a short walk after will keep the rise gentle.]",
     "type": "Breakfast",
     "date": "2026-06-24T09:24:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-24/7e5f33496b0b1612.jpg",
