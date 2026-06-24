@@ -1,5 +1,16 @@
 [
   {
+    "id": "38985ec7-0668-816e-b3ed-eb41cb7fc40d",
+    "title": "Dinner (dessert): a small plate of fresh blueberries (BG: ~130 mg/dL est) (Pred: 154-174 mg/dL @ 10:29 PM) (Est: no sensor, ~130 baseline) (Protein: 1g | Carbs: ~10g | Cals: ~40) [Cumulative Dinner: 44g carbs total] [Coach: Blueberries to finish 🫐 — now THAT is a dessert your blood sugar will happily sign off on. Fiber and antioxidants instead of added sugar, a much gentler note to end on than a sweet. Second time today you have reached for them, a lovely habit. Sleep well.]",
+    "type": "Dinner",
+    "date": "2026-06-24T21:34:00.000+02:00",
+    "photo": "https://iili.io/CuVQgLl.jpg",
+    "carbs": 10,
+    "cals": 40,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "38985ec7-0668-8163-903c-c85f22c2d2f0",
     "title": "Dinner: butternut squash soup with an open-faced multigrain sandwich (cheese and lacón) (BG: ~130 mg/dL est) (Pred: 145-165 mg/dL @ 10:21 PM) (Est: no sensor, ~130 baseline; 5:31 PM fingerstick now ~4h old) (Protein: 19g | Carbs: ~34g | Cals: ~355) [Coach: A cozy, well-balanced light dinner 🥣 — butternut squash soup brings warmth and vegetables, while the cheese and lacón on multigrain give you ~19g of protein. Nicely portioned carbs at ~34g to close out an active day, and a gentle one for your blood sugar.]",
     "type": "Dinner",
@@ -2531,7 +2542,7 @@
   },
   {
     "id": "35e85ec7-0668-819f-9b13-f0167fb1eadf",
-    "title": "Lunch: Boiled acelgas (chard) with potato (BG: 117 mg/dL Flat) (Pred: 129-139 mg/dL @ 4:11 PM) (Protein: 6g | Carbs: ~22g | Cals: ~105) [Coach: Lovely simple Spanish veggie plate 🥬 — chard brings fiber and minerals, potato adds satiating starch. A light, balanced lunch that should land softly. Some protein on the side — egg, fish, or jamón — would round it out beautifully.]  [id:7fa8fc4f]",
+    "title": "Lunch: Boiled acelgas (chard) with potato (BG: 117 mg/dL Flat) (Pred: 129-139 mg/dL @ 4:11 PM) (Protein: 6g | Carbs: ~22g | Cals: ~105) [Coach: Lovely simple Spanish veggie plate �� — chard brings fiber and minerals, potato adds satiating starch. A light, balanced lunch that should land softly. Some protein on the side — egg, fish, or jamón — would round it out beautifully.]  [id:7fa8fc4f]",
     "type": "Lunch",
     "date": "2026-05-07T14:18:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-07/dc6bd18282c3f4fb.jpg",
