@@ -1,5 +1,16 @@
 [
   {
+    "id": "38985ec7-0668-8133-aaf9-d7ce4329ed4d",
+    "title": "Breakfast: yogurt with blueberries, walnuts, and a little granola (BG: Unknown — no sensor) (Pred: 170-190 mg/dL @ 10:51 AM) (Est: no-sensor, baseline ~125) (Protein: 16g | Carbs: ~28g | Cals: ~330) [Coach: Now THIS is a breakfast 🥣 — yogurt for protein, blueberries and walnuts bringing fiber, antioxidants, and good fats. About as blood-sugar-friendly as mornings get. Just watch the granola since it can sneak in sugar, so keep it a light sprinkle. A short walk after will tame the usual morning rise nicely.]",
+    "type": "Breakfast",
+    "date": "2026-06-24T09:24:00.000+02:00",
+    "photo": "https://iili.io/CuC6xIa.jpg",
+    "carbs": 28,
+    "cals": 330,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "38885ec7-0668-81e0-85d0-f26a105bed7c",
     "title": "Lunch: half-portion flan with caramel sauce (shared) (BG: 147 mg/dL Flat) (Pred: 187-207 mg/dL @ 5:29 PM) (Protein: 3g | Carbs: ~13g | Cals: ~75) [Cumulative Lunch: 88g carbs total] [Coach: Half a flan shared is good restraint, but 88g cumulative carbs is a big lunch. Prediction runs toward 207, so a 20-min walk before 5:30 PM will do real work here — the seafood protein is a strong foundation; it's mostly starch and sugar that need burning off.]",
     "type": "Lunch",
