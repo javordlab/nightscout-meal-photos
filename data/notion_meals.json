@@ -1,5 +1,16 @@
 [
   {
+    "id": "38a85ec7-0668-81b3-8b3b-c4b55a9a6cc0",
+    "title": "Lunch: chicken in sauce, chickpeas in tomato sauce, a green salad with tomato, and a flour tortilla (BG: ~135 mg/dL est, no sensor) (Pred: 150-170 mg/dL @ 3:28 PM) (Est: no sensor, ~135 pre-lunch from declining 11:56 fingerstick 172) (Protein: 36g | Carbs: ~53g | Cals: ~580) [Coach: Beautiful balanced plate 🥗 — chicken and chickpeas bring ~36g protein, the salad adds real veggies, and the chickpeas' fiber means most of these carbs digest slowly. For your toolkit: the chickpeas barely spike you while the flour wrap is the one quick carb — that tortilla is where a post-lunch walk earns its keep.]",
+    "type": "Lunch",
+    "date": "2026-06-25T14:13:00.000+02:00",
+    "photo": "https://iili.io/CuLMspI.jpg",
+    "carbs": 53,
+    "cals": 580,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "38a85ec7-0668-8113-b11f-c57323250ef1",
     "title": "Breakfast: a single Tostada biscuit (BG: Unknown — no sensor) (Pred: 174-194 mg/dL @ 11:51 AM) (Est: no sensor, baseline ~125) (Protein: 1g | Carbs: ~5g | Cals: ~25) [Cumulative Breakfast: 42g carbs total] [Coach: A little Tostada biscuit to round off breakfast 🍪 — refined and quick-digesting, but it is just the one, so only a small nudge on top of the avocado-and-protein base you already had. It barely moves my estimate, and a post-breakfast walk erases it easily.]",
     "type": "Breakfast",
@@ -12,7 +23,7 @@
   },
   {
     "id": "38a85ec7-0668-813d-80b8-e0e376df2f70",
-    "title": "Breakfast: open-faced multigrain toast with mashed avocado and lacón, plus a bowl of blueberries (BG: Unknown — no sensor) (Pred: 170-190 mg/dL @ 11:42 AM) (Est: no sensor, baseline ~125) (Protein: 12g | Carbs: ~37g | Cals: ~290) [Coach: Lovely breakfast 🥑 ��� avocado's healthy fats and the blueberry fiber will slow those toast carbs, and the lacón adds savory protein. One for your toolkit: mornings carry a natural BG bump (dawn effect), so this is the meal where a post-breakfast walk pays off most. Want it even steadier? An egg would add protein to flatten the curve.]",
+    "title": "Breakfast: open-faced multigrain toast with mashed avocado and lacón, plus a bowl of blueberries (BG: Unknown — no sensor) (Pred: 170-190 mg/dL @ 11:42 AM) (Est: no sensor, baseline ~125) (Protein: 12g | Carbs: ~37g | Cals: ~290) [Coach: Lovely breakfast 🥑 — avocado's healthy fats and the blueberry fiber will slow those toast carbs, and the lacón adds savory protein. One for your toolkit: mornings carry a natural BG bump (dawn effect), so this is the meal where a post-breakfast walk pays off most. Want it even steadier? An egg would add protein to flatten the curve.]",
     "type": "Breakfast",
     "date": "2026-06-25T10:15:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-25/9972a97c69fac9c4.jpg",
