@@ -1,5 +1,16 @@
 [
   {
+    "id": "38a85ec7-0668-8167-95da-d1f8f2f5d4f9",
+    "title": "Dinner: a potato salad with flaked fish (cod or tuna), hard-boiled egg, red pepper, and capers in olive oil, plus a slice of ham (BG: ~130 mg/dL est, no sensor) (Pred: 136-156 mg/dL @ 10:46 PM) (Est: no sensor, ~130 evening baseline) (Protein: 27g | Carbs: ~18g | Cals: ~375) [Coach: A genuinely light, protein-packed dinner 🍳 — cod, egg, and ham bring ~27g protein with just the potato for carbs, so this will barely stir your blood sugar overnight. A lovely no-sensor-night choice. Gentle note: with breakfast's lacón, that is twice on cured meat today — an easy one to keep to once daily.]",
+    "type": "Dinner",
+    "date": "2026-06-25T21:51:00.000+02:00",
+    "photo": "https://iili.io/CAF1Tib.jpg",
+    "carbs": 18,
+    "cals": 375,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "38a85ec7-0668-815c-ad67-dd697a6c5571",
     "title": "Lunch (dessert): a homemade egg-and-milk flan with caramel, ringed with fresh blueberries (BG: ~135 mg/dL est, no sensor) (Pred: 170-190 mg/dL @ 3:39 PM) (Est: no sensor, anchor ~135 pre-lunch; gardened all morning, likely improves tolerance) (Protein: 6g | Carbs: ~28g | Cals: ~180) [Cumulative Lunch: 81g carbs total] [Coach: A flan to finish 🍮 — and a fair point from you: being eggs and milk plus caramelized sugar, it brings protein and fat that slow the sugar more than a candy would. The blueberries add fiber too. It still nudges lunch to ~81g carbs, but after a full morning gardening you have earned it and set yourself up to handle it well.]",
     "type": "Lunch",
@@ -23,7 +34,7 @@
   },
   {
     "id": "38a85ec7-0668-8113-b11f-c57323250ef1",
-    "title": "Breakfast: a single Tostada biscuit (BG: Unknown — no sensor) (Pred: 174-194 mg/dL @ 11:51 AM) (Est: no sensor, baseline ~125) (Protein: 1g | Carbs: ~5g | Cals: ~25) [Cumulative Breakfast: 42g carbs total] [Coach: A little Tostada biscuit to round off breakfast 🍪 — refined and quick-digesting, but it is just the one, so only a small nudge on top of the avocado-and-protein base you already had. It barely moves my estimate, and a post-breakfast walk erases it easily.]",
+    "title": "Breakfast: a single Tostada biscuit (BG: Unknown — no sensor) (Pred: 174-194 mg/dL @ 11:51 AM) (Est: no sensor, baseline ~125) (Protein: 1g | Carbs: ~5g | Cals: ~25) [Cumulative Breakfast: 42g carbs total] [Coach: A little Tostada biscuit to round off breakfast ���� — refined and quick-digesting, but it is just the one, so only a small nudge on top of the avocado-and-protein base you already had. It barely moves my estimate, and a post-breakfast walk erases it easily.]",
     "type": "Breakfast",
     "date": "2026-06-25T10:24:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-25/47d88668c6b6e257.jpg",
