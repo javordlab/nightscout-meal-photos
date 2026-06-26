@@ -1,5 +1,16 @@
 [
   {
+    "id": "38b85ec7-0668-81ef-9e4c-e281ec9f7938",
+    "title": "Dinner: a bowl of vegetable purée soup (squash/pumpkin style) and a few slices of cooked ham (BG: ~130 mg/dL est, no sensor) (Pred: 140-160 mg/dL @ 9:58 PM) (Est: no sensor, ~130 evening baseline) (Protein: 22g | Carbs: ~21g | Cals: ~280) [Coach: A cozy bowl of veggie purée with a few slices of ham 🥣 — the soup brings vegetables and fiber while the ham adds easy protein to keep you satisfied. Light on fast carbs, so an easy one on your blood sugar tonight. Gentle and well balanced, and it is your only cured meat today, right on target.]",
+    "type": "Dinner",
+    "date": "2026-06-26T21:03:00.000+02:00",
+    "photo": "https://iili.io/CAk727j.jpg",
+    "carbs": 21,
+    "cals": 280,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "38b85ec7-0668-813b-b952-f146cb527c75",
     "title": "Lunch: grilled chicken quarter (leg and thigh) with a large mixed green salad (lettuce, fresh apricot, cucumber, peppers), a small side of stewed potatoes with peppers, and a piece of crusty bread (BG: ~115 mg/dL est, no sensor) (Pred: 136-156 mg/dL @ 4:40 PM) (Est: no sensor, ~115 pre-lunch baseline from 112 fingerstick at 1:30 PM) (Protein: 35g | Carbs: ~40g | Cals: ~580) [Coach: Now THIS is a plate 🥗 — leafy greens, grilled chicken for a hearty ~35g protein, a modest scoop of potatoes and a bit of bread, with fresh apricot brightening the salad. Textbook balance, half the plate veggies. The bread is the only fast carb here, and that mountain of salad keeps it well in check.]",
     "type": "Lunch",
@@ -276,7 +287,7 @@
   },
   {
     "id": "38685ec7-0668-8189-bd14-fee238b22299",
-    "title": "Lunch: a handful of fresh cherries (~12) with a piece of rustic bread — dessert course. (BG: 161 mg/dL Flat) (Pred: 171-191 mg/dL @ 3:35 PM) (Protein: 4g | Carbs: ~28g | Cals: ~160) [Cumulative Lunch: ~58g carbs total] [Coach: Fresh cherries 🍒 are a smart way to finish — whole fruit with fiber and antioxidants, far better than anything processed. That said, with BG already warm and bread stacking on top, your lunch carbs are adding up, so maybe ease off the extra bread. A short walk after would help settle things.]",
+    "title": "Lunch: a handful of fresh cherries (~12) with a piece of rustic bread �� dessert course. (BG: 161 mg/dL Flat) (Pred: 171-191 mg/dL @ 3:35 PM) (Protein: 4g | Carbs: ~28g | Cals: ~160) [Cumulative Lunch: ~58g carbs total] [Coach: Fresh cherries 🍒 are a smart way to finish — whole fruit with fiber and antioxidants, far better than anything processed. That said, with BG already warm and bread stacking on top, your lunch carbs are adding up, so maybe ease off the extra bread. A short walk after would help settle things.]",
     "type": "Lunch",
     "date": "2026-06-21T14:26:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-21/9d4b99bcc2cca75d.jpg",
@@ -287,7 +298,7 @@
   },
   {
     "id": "38685ec7-0668-81fa-a8fa-dc23e1764699",
-    "title": "Lunch: eggplant and pepper stew in tomato sauce with ground meat, plus a piece of rustic bread. (BG: 162 mg/dL Flat) (Pred: 167-187 mg/dL @ 3:35 PM) (Protein: 18g | Carbs: ~30g | Cals: ~320) [Coach: Lots to like here �� — eggplant, peppers and tomato give you real non-starchy veggies and fiber, and the meat brings about 18g of protein. With BG already a bit warm, the bread is the one to watch, so keep that piece modest. Nice balanced plate overall.]",
+    "title": "Lunch: eggplant and pepper stew in tomato sauce with ground meat, plus a piece of rustic bread. (BG: 162 mg/dL Flat) (Pred: 167-187 mg/dL @ 3:35 PM) (Protein: 18g | Carbs: ~30g | Cals: ~320) [Coach: Lots to like here 🍅 — eggplant, peppers and tomato give you real non-starchy veggies and fiber, and the meat brings about 18g of protein. With BG already a bit warm, the bread is the one to watch, so keep that piece modest. Nice balanced plate overall.]",
     "type": "Lunch",
     "date": "2026-06-21T14:20:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-21/b0987746041ac774.jpg",
@@ -386,7 +397,7 @@
   },
   {
     "id": "38485ec7-0668-81d4-908f-fb698b474497",
-    "title": "Dinner: a ham and cheese sandwich on multi-seed whole-grain bread (pumpkin, sunflower, sesame, flax) and a nectarine (BG: 140 mg/dL Flat) (Pred: 163-183 mg/dL @ 10:17 PM) (Protein: 24g | Carbs: ~46g | Cals: ~460) [Coach: Even better with that seeded bread 🌻 — pumpkin, sunflower, sesame and flax add fiber and healthy fats that slow the carbs right down, so this dinner will land gentler than the number suggests. Ham and cheese for protein, a nectarine to finish — a genuinely well-built plate.]",
+    "title": "Dinner: a ham and cheese sandwich on multi-seed whole-grain bread (pumpkin, sunflower, sesame, flax) and a nectarine (BG: 140 mg/dL Flat) (Pred: 163-183 mg/dL @ 10:17 PM) (Protein: 24g | Carbs: ~46g | Cals: ~460) [Coach: Even better with that seeded bread 🌻 — pumpkin, sunflower, sesame and flax add fiber and healthy fats that slow the carbs right down, so this dinner will land gentler than the number suggests. Ham and cheese for protein, a nectarine to finish ��� a genuinely well-built plate.]",
     "type": "Dinner",
     "date": "2026-06-19T21:22:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-19/f693bdb6edf0dc94.jpg",
