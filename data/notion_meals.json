@@ -1,5 +1,16 @@
 [
   {
+    "id": "38b85ec7-0668-81f7-abe4-efcb1ae28611",
+    "title": "Lunch: Greek yogurt bowl with fresh blueberries, walnuts, ground flax/seeds and a small piece of dark chocolate with nuts on the side (BG: 184 mg/dL Flat) (Pred: 181-201 mg/dL @ 1:08 PM) (Protein: 17g | Carbs: ~30g | Cals: ~400) [Coach: Solid combo 🥣 — Greek yogurt brings the protein, blueberries add fiber and antioxidants, walnuts and ground seeds slow everything down with healthy fats. The little dark-chocolate piece is a tasteful splurge, not a spike-maker. With BG already at 184, this is exactly the kind of slow-release plate you want.]",
+    "type": "Lunch",
+    "date": "2026-06-26T11:53:00.000+02:00",
+    "photo": "https://iili.io/CAcNUMJ.jpg",
+    "carbs": 30,
+    "cals": 400,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "38a85ec7-0668-81cd-b88e-e27a3d95aed0",
     "title": "Dinner (dessert): a whole fresh apricot (BG: ~130 mg/dL est, no sensor) (Pred: 151-171 mg/dL @ 10:57 PM) (Est: no sensor, ~130 evening baseline) (Protein: 1g | Carbs: ~12g | Cals: ~55) [Cumulative Dinner: 30g carbs total] [Coach: A whole fresh apricot to finish 🍑 — exactly the dessert your blood sugar likes: natural sugar wrapped in fiber, so it releases slowly rather than spiking. Riding on top of that protein-rich dinner, it will barely register. You keep choosing whole fruit over sweets at night, a genuinely great habit that is serving you well.]",
     "type": "Dinner",
