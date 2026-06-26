@@ -1,5 +1,16 @@
 [
   {
+    "id": "38b85ec7-0668-813b-b952-f146cb527c75",
+    "title": "Lunch: grilled chicken quarter (leg and thigh) with a large mixed green salad (lettuce, carrot, cucumber, peppers), a small side of stewed potatoes with peppers, and a piece of crusty bread (BG: ~115 mg/dL est, no sensor) (Pred: 136-156 mg/dL @ 4:40 PM) (Est: no sensor, ~115 pre-lunch baseline from 112 fingerstick at 1:30 PM) (Protein: 35g | Carbs: ~40g | Cals: ~580) [Coach: Now THIS is a plate 🥗 — leafy greens, grilled chicken for a hearty ~35g protein, a modest scoop of potatoes and a bit of bread. Textbook balance, half the plate veggies. The bread is the only fast carb here, and that mountain of salad keeps it well in check.]",
+    "type": "Lunch",
+    "date": "2026-06-26T15:25:00.000+02:00",
+    "photo": "https://iili.io/CAVsfig.jpg",
+    "carbs": 40,
+    "cals": 580,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "38b85ec7-0668-81f7-abe4-efcb1ae28611",
     "title": "Breakfast: Greek yogurt bowl with fresh blueberries, walnuts, ground flax/seeds and a small piece of dark chocolate with nuts on the side (BG: ~130 mg/dL est, no sensor) (Pred: 176-196 mg/dL @ 1:20 PM) (Est: no sensor, ~130 morning baseline) (Protein: 17g | Carbs: ~30g | Cals: ~400) [Coach: A breakfast with backbone 🥣 — Greek yogurt for protein, blueberries for fiber and antioxidants, walnuts and ground flax tapping the brakes with healthy fats. The little dark-chocolate-and-nut piece is a perfectly fine treat riding on top of all that, it will not spike you on its own. Lovely slow-release way to start the day.]",
     "type": "Breakfast",
@@ -1860,7 +1871,7 @@
   },
   {
     "id": "36985ec7-0668-8173-bf2c-e5cb66377c5f",
-    "title": "Snack: 2 fresh apricots and a handful of cashews (BG: 130 mg/dL Flat) (Pred: 152-162 mg/dL @ 8:02 PM) (Protein: 5g | Carbs: ~18g | Cals: ~180) [Coach: This is the GMI 6.0 playbook snack 👏 — whole fruit (apricots) for fiber + vitamins, cashews for protein + healthy fats. Together they keep the ~18g carbs gentle. Zero refined sugar, all real food. Keep stacking these days.]",
+    "title": "Snack: 2 fresh apricots and a handful of cashews (BG: 130 mg/dL Flat) (Pred: 152-162 mg/dL @ 8:02 PM) (Protein: 5g | Carbs: ~18g | Cals: ~180) [Coach: This is the GMI 6.0 playbook snack �� — whole fruit (apricots) for fiber + vitamins, cashews for protein + healthy fats. Together they keep the ~18g carbs gentle. Zero refined sugar, all real food. Keep stacking these days.]",
     "type": "Snack",
     "date": "2026-05-23T17:56:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-23/982f7d17d9ec62a9.jpg",
