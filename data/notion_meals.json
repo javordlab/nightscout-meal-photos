@@ -1,5 +1,27 @@
 [
   {
+    "id": "38c85ec7-0668-810e-8a43-e91f5e34a870",
+    "title": "Lunch: grilled pork chops with a potato salad (red pepper, onion, capers) and a side of raw carrot sticks (BG: 114 mg/dL Flat) (Pred: 142-162 mg/dL @ 2:39 PM) (Protein: 36g | Carbs: ~27g | Cals: ~560) [Cumulative Lunch: ~45g carbs total — includes the 13:04 blueberry snack in the same window] [Coach: Protein on protein today 🍖 — those grilled chops bring a hefty ~30g, the carrots add crunch and fiber, and the potato salad is your main carb. Well balanced and right in step with your more-protein theme. With BG calm at 114, this should stay a steady, satisfying lunch.]",
+    "type": "Lunch",
+    "date": "2026-06-27T13:24:00.000+02:00",
+    "photo": "https://iili.io/CRHodnp.jpg",
+    "carbs": 27,
+    "cals": 560,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "38c85ec7-0668-813d-bc0d-d5a6866e3795",
+    "title": "Lunch: a bowl of fresh blueberries (BG: 118 mg/dL Flat) (Pred: 124-144 mg/dL @ 2:19 PM) (Protein: 1g | Carbs: ~18g | Cals: ~75) [Coach: Blueberries 🫐 — fiber, antioxidants, and an easy ride for your blood sugar, especially sitting pretty at 118. If this is your lunch, a little protein alongside (yogurt, a few nuts, or an egg) would keep you full longer and round it out. Lovely light choice either way.]",
+    "type": "Lunch",
+    "date": "2026-06-27T13:04:00.000+02:00",
+    "photo": "https://iili.io/CR96cSj.jpg",
+    "carbs": 18,
+    "cals": 75,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "38c85ec7-0668-81f6-b538-e2e6451fb081",
     "title": "Breakfast: a whole grain sandwich with sliced hard-boiled egg and avocado (BG: 119 mg/dL Flat) (Pred: 169-189 mg/dL @ 12:13 PM) (Protein: 18g | Carbs: ~30g | Cals: ~360) [Coach: Now you are speaking my language 🥑 — egg for protein, avocado for healthy fats and fiber, whole grain bread for slow carbs. After last night's high this is a smart, steadying reset, and all that protein and fat will likely keep the real peak gentler than the number suggests. Lovely balanced start.]",
     "type": "Breakfast",
