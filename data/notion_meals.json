@@ -4,7 +4,7 @@
     "title": "Lunch: grilled pork chops with a potato salad (red pepper, onion, capers) and a side of raw carrot sticks (BG: 114 mg/dL Flat) (Pred: 142-162 mg/dL @ 2:39 PM) (Protein: 36g | Carbs: ~27g | Cals: ~560) [Cumulative Lunch: ~45g carbs total — includes the 13:04 blueberry snack in the same window] [Coach: Protein on protein today 🍖 — those grilled chops bring a hefty ~30g, the carrots add crunch and fiber, and the potato salad is your main carb. Well balanced and right in step with your more-protein theme. With BG calm at 114, this should stay a steady, satisfying lunch.]",
     "type": "Lunch",
     "date": "2026-06-27T13:24:00.000+02:00",
-    "photo": "https://iili.io/CRHodnp.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-27/569467f85a7c7ff0.jpg",
     "carbs": 27,
     "cals": 560,
     "delta": null,
@@ -29,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-27/e486c9108565adef.jpg",
     "carbs": 30,
     "cals": 360,
-    "delta": null,
-    "peak": null
+    "delta": 11,
+    "peak": 130
   },
   {
     "id": "38b85ec7-0668-81ef-9e4c-e281ec9f7938",
