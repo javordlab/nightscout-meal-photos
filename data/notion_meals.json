@@ -1,5 +1,16 @@
 [
   {
+    "id": "38e85ec7-0668-81f1-8429-de5793698772",
+    "title": "Lunch: a wedge of Spanish potato tortilla, a mixed green salad with tomato, a bowl of carrot-squash soup, and a piece of bread (BG: 152 mg/dL Flat) (Pred: 160-180 mg/dL @ 3:41 PM) (Protein: 17g, Carbs: ~52g, Cals: ~480) [Coach: Now this is a proper plate 🥗 — the Spanish tortilla brings protein and that leafy salad is exactly the non-starchy veggie win we love. Potato, bread, and squash soup do stack the carbs a bit, so the salad fiber plus a short walk after will keep things smooth.]",
+    "type": "Lunch",
+    "date": "2026-06-29T14:26:00.000+02:00",
+    "photo": "https://iili.io/C5ChZaR.jpg",
+    "carbs": 52,
+    "cals": 480,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "38e85ec7-0668-811e-849f-f5546ed7e35e",
     "title": "Lunch: a seeded multigrain bread sandwich with cream cheese and asparagus, plus a mug of milk (BG: 152 mg/dL Flat) (Pred: 167-187 mg/dL @ 1:51 PM) (Protein: 21g, Carbs: ~48g, Cals: ~430) [Coach: Seeded bread with a few asparagus spears 🥪 — nice mix of fiber, healthy seed fats, and a green veggie sneaking in. The cream cheese and milk push protein toward 20g for good staying power. Carbs lean a touch high, so your usual post-lunch stroll will keep the peak in check.]",
     "type": "Lunch",
@@ -375,7 +386,7 @@
   },
   {
     "id": "38685ec7-0668-8174-b607-c8b065dea40a",
-    "title": "Lunch: one whole black plum. (BG: 169 mg/dL Flat) (Pred: 177-197 mg/dL @ 3:35 PM) (Protein: 1g | Carbs: ~9g | Cals: ~30) [Cumulative Lunch: ~67g carbs total] [Coach: A plum is a lovely light choice ���� — mostly water and fiber, gentle on its own. Still, this is the third sweet finish in a row and BG is creeping toward 170, so let this be the last bite of lunch. A walk now would really help bring it back down.]",
+    "title": "Lunch: one whole black plum. (BG: 169 mg/dL Flat) (Pred: 177-197 mg/dL @ 3:35 PM) (Protein: 1g | Carbs: ~9g | Cals: ~30) [Cumulative Lunch: ~67g carbs total] [Coach: A plum is a lovely light choice 🍑 — mostly water and fiber, gentle on its own. Still, this is the third sweet finish in a row and BG is creeping toward 170, so let this be the last bite of lunch. A walk now would really help bring it back down.]",
     "type": "Lunch",
     "date": "2026-06-21T14:30:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-21/cdc8e932dab70c55.jpg",
@@ -969,7 +980,7 @@
   },
   {
     "id": "37c85ec7-0668-8183-a7ab-c578e4f23a26",
-    "title": "Lunch: steamed mussels (mejillones al vapor) — a plate of ~18-20 (BG: 142 mg/dL Flat) (Pred: 141-151 mg/dL @ 5:26 PM) (Protein: 24g , Carbs: ~8g , Cals: ~180) [Coach: Mejillones 🦪 — fantastic lean-protein pick: ~24g protein, almost no carbs, plus iron, B12, selenium, and omega-3s. Pred stays flat ~146 by 5:26 PM. Mussels are exactly the kind of seafood plate that pushes toward the 5s. Cured-meat tally stays at 0.]",
+    "title": "Lunch: steamed mussels (mejillones al vapor) — a plate of ~18-20 (BG: 142 mg/dL Flat) (Pred: 141-151 mg/dL @ 5:26 PM) (Protein: 24g , Carbs: ~8g , Cals: ~180) [Coach: Mejillones ���� — fantastic lean-protein pick: ~24g protein, almost no carbs, plus iron, B12, selenium, and omega-3s. Pred stays flat ~146 by 5:26 PM. Mussels are exactly the kind of seafood plate that pushes toward the 5s. Cured-meat tally stays at 0.]",
     "type": "Lunch",
     "date": "2026-06-11T15:33:00.000+02:00",
     "photo": "https://iili.io/CCJlGgs.jpg",
@@ -1431,7 +1442,7 @@
   },
   {
     "id": "37285ec7-0668-819f-9667-d7cf4b59709e",
-    "title": "Dinner (light): pan con tomate (half slice of toasted bread topped with fresh tomato slices), shaved cecina (Spanish cured beef), and a nectarine on the side (BG: 73 mg/dL Flat) (Pred: 102-112 mg/dL @ 10:55 PM) (Protein: 15g , Carbs: ~28g , Cals: ~200) [Coach: Pan con tomate + cecina + nectarine 🍑 — clean light dinner, ~15g protein, fresh tomato and fruit fiber to slow the bread. Pred ~107. One small note: this is your 2nd cured-meat hit of the day (lomo chips at the golf course were #1), so you're one over the ��1×/day goal today — not a setback, just naming it. Tomorrow we reset.]",
+    "title": "Dinner (light): pan con tomate (half slice of toasted bread topped with fresh tomato slices), shaved cecina (Spanish cured beef), and a nectarine on the side (BG: 73 mg/dL Flat) (Pred: 102-112 mg/dL @ 10:55 PM) (Protein: 15g , Carbs: ~28g , Cals: ~200) [Coach: Pan con tomate + cecina + nectarine 🍑 — clean light dinner, ~15g protein, fresh tomato and fruit fiber to slow the bread. Pred ~107. One small note: this is your 2nd cured-meat hit of the day (lomo chips at the golf course were #1), so you're one over the ≤1×/day goal today — not a setback, just naming it. Tomorrow we reset.]",
     "type": "Dinner",
     "date": "2026-06-01T21:39:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-01/c33fa2cdf883cff6.jpg",
