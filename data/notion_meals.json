@@ -7,8 +7,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-29/e872ddb31d599eeb.jpg",
     "carbs": 52,
     "cals": 480,
-    "delta": null,
-    "peak": null
+    "delta": 62,
+    "peak": 185
   },
   {
     "id": "38e85ec7-0668-811e-849f-f5546ed7e35e",
@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-29/febd49606d0b554a.jpg",
     "carbs": 48,
     "cals": 430,
-    "delta": null,
-    "peak": null
+    "delta": 25,
+    "peak": 162
   },
   {
     "id": "38e85ec7-0668-8114-8f3b-d25bceca03e5",
@@ -29,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-28/cb9f98a9b3e9fcdd.jpg",
     "carbs": 22,
     "cals": 390,
-    "delta": null,
-    "peak": null
+    "delta": 43,
+    "peak": 156
   },
   {
     "id": "38d85ec7-0668-8126-8c47-d4a182875fe2",
@@ -2751,7 +2751,7 @@
   },
   {
     "id": "35e85ec7-0668-819f-9b13-f0167fb1eadf",
-    "title": "Lunch: Boiled acelgas (chard) with potato (BG: 117 mg/dL Flat) (Pred: 129-139 mg/dL @ 4:11 PM) (Protein: 6g | Carbs: ~22g | Cals: ~105) [Coach: Lovely simple Spanish veggie plate 🥬 — chard brings fiber and minerals, potato adds satiating starch. A light, balanced lunch that should land softly. Some protein on the side — egg, fish, or jam��n — would round it out beautifully.]  [id:7fa8fc4f]",
+    "title": "Lunch: Boiled acelgas (chard) with potato (BG: 117 mg/dL Flat) (Pred: 129-139 mg/dL @ 4:11 PM) (Protein: 6g | Carbs: ~22g | Cals: ~105) [Coach: Lovely simple Spanish veggie plate 🥬 — chard brings fiber and minerals, potato adds satiating starch. A light, balanced lunch that should land softly. Some protein on the side — egg, fish, or jamón — would round it out beautifully.]  [id:7fa8fc4f]",
     "type": "Lunch",
     "date": "2026-05-07T14:18:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-07/dc6bd18282c3f4fb.jpg",
