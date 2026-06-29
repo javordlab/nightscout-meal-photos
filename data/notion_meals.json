@@ -1,5 +1,16 @@
 [
   {
+    "id": "38e85ec7-0668-811e-849f-f5546ed7e35e",
+    "title": "Lunch: a seeded multigrain bread sandwich with cream cheese and asparagus, plus a mug of milk (BG: 152 mg/dL Flat) (Pred: 167-187 mg/dL @ 1:51 PM) (Protein: 21g, Carbs: ~48g, Cals: ~430) [Coach: Seeded bread with a few asparagus spears 🥪 — nice mix of fiber, healthy seed fats, and a green veggie sneaking in. The cream cheese and milk push protein toward 20g for good staying power. Carbs lean a touch high, so your usual post-lunch stroll will keep the peak in check.]",
+    "type": "Lunch",
+    "date": "2026-06-29T12:36:00.000+02:00",
+    "photo": "https://iili.io/C5CzzEG.jpg",
+    "carbs": 48,
+    "cals": 430,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "38e85ec7-0668-8114-8f3b-d25bceca03e5",
     "title": "Dinner: open-faced multigrain toast topped with ham, melted cheese and avocado (BG: 114 mg/dL Flat) (Pred: 131-151 mg/dL @ 10:01 PM) (Protein: 22g | Carbs: ~22g | Cals: ~390) [Coach: A tidy open-faced dinner 🥑 — ham and melted cheese for protein, avocado bringing healthy fats and fiber, all on a single slice of multigrain for a modest carb load. Nicely balanced and gentle on your blood sugar. A steady way to close out the day after that afternoon sugar rollercoaster.]",
     "type": "Dinner",
@@ -364,7 +375,7 @@
   },
   {
     "id": "38685ec7-0668-8174-b607-c8b065dea40a",
-    "title": "Lunch: one whole black plum. (BG: 169 mg/dL Flat) (Pred: 177-197 mg/dL @ 3:35 PM) (Protein: 1g | Carbs: ~9g | Cals: ~30) [Cumulative Lunch: ~67g carbs total] [Coach: A plum is a lovely light choice 🍑 — mostly water and fiber, gentle on its own. Still, this is the third sweet finish in a row and BG is creeping toward 170, so let this be the last bite of lunch. A walk now would really help bring it back down.]",
+    "title": "Lunch: one whole black plum. (BG: 169 mg/dL Flat) (Pred: 177-197 mg/dL @ 3:35 PM) (Protein: 1g | Carbs: ~9g | Cals: ~30) [Cumulative Lunch: ~67g carbs total] [Coach: A plum is a lovely light choice ���� — mostly water and fiber, gentle on its own. Still, this is the third sweet finish in a row and BG is creeping toward 170, so let this be the last bite of lunch. A walk now would really help bring it back down.]",
     "type": "Lunch",
     "date": "2026-06-21T14:30:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-21/cdc8e932dab70c55.jpg",
@@ -1420,7 +1431,7 @@
   },
   {
     "id": "37285ec7-0668-819f-9667-d7cf4b59709e",
-    "title": "Dinner (light): pan con tomate (half slice of toasted bread topped with fresh tomato slices), shaved cecina (Spanish cured beef), and a nectarine on the side (BG: 73 mg/dL Flat) (Pred: 102-112 mg/dL @ 10:55 PM) (Protein: 15g , Carbs: ~28g , Cals: ~200) [Coach: Pan con tomate + cecina + nectarine 🍑 — clean light dinner, ~15g protein, fresh tomato and fruit fiber to slow the bread. Pred ~107. One small note: this is your 2nd cured-meat hit of the day (lomo chips at the golf course were #1), so you're one over the ≤1×/day goal today — not a setback, just naming it. Tomorrow we reset.]",
+    "title": "Dinner (light): pan con tomate (half slice of toasted bread topped with fresh tomato slices), shaved cecina (Spanish cured beef), and a nectarine on the side (BG: 73 mg/dL Flat) (Pred: 102-112 mg/dL @ 10:55 PM) (Protein: 15g , Carbs: ~28g , Cals: ~200) [Coach: Pan con tomate + cecina + nectarine 🍑 — clean light dinner, ~15g protein, fresh tomato and fruit fiber to slow the bread. Pred ~107. One small note: this is your 2nd cured-meat hit of the day (lomo chips at the golf course were #1), so you're one over the ��1×/day goal today — not a setback, just naming it. Tomorrow we reset.]",
     "type": "Dinner",
     "date": "2026-06-01T21:39:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-01/c33fa2cdf883cff6.jpg",
