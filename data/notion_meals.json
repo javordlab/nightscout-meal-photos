@@ -1,5 +1,16 @@
 [
   {
+    "id": "38e85ec7-0668-81ed-852b-fdfafbb43310",
+    "title": "Dinner: a grilled cheese sandwich with a side of raw carrot sticks (BG: 135 mg/dL Flat) (Pred: 154-174 mg/dL @ 10:08 PM) (Protein: 15g, Carbs: ~40g, Cals: ~440) [Coach: Grilled cheese with carrot sticks 🥪 — comfort food done smarter, the carrots add crunch and fiber while the cheese brings a solid hit of protein. The white bread is the main carb here, so your usual evening walk will keep the after-dinner rise gentle.]",
+    "type": "Dinner",
+    "date": "2026-06-29T21:13:00.000+02:00",
+    "photo": "https://iili.io/C512X87.jpg",
+    "carbs": 40,
+    "cals": 440,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "38e85ec7-0668-81f1-8429-de5793698772",
     "title": "Lunch: a wedge of Spanish potato tortilla, a mixed green salad with tomato, a bowl of carrot-squash soup, and a piece of bread (BG: 152 mg/dL Flat) (Pred: 160-180 mg/dL @ 3:41 PM) (Protein: 17g, Carbs: ~52g, Cals: ~480) [Coach: Now this is a proper plate 🥗 — the Spanish tortilla brings protein and that leafy salad is exactly the non-starchy veggie win we love. Potato, bread, and squash soup do stack the carbs a bit, so the salad fiber plus a short walk after will keep things smooth.]",
     "type": "Lunch",
