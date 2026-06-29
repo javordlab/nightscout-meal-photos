@@ -4,7 +4,7 @@
     "title": "Lunch: a wedge of Spanish potato tortilla, a mixed green salad with tomato, a bowl of carrot-squash soup, and a piece of bread (BG: 152 mg/dL Flat) (Pred: 160-180 mg/dL @ 3:41 PM) (Protein: 17g, Carbs: ~52g, Cals: ~480) [Coach: Now this is a proper plate 🥗 — the Spanish tortilla brings protein and that leafy salad is exactly the non-starchy veggie win we love. Potato, bread, and squash soup do stack the carbs a bit, so the salad fiber plus a short walk after will keep things smooth.]",
     "type": "Lunch",
     "date": "2026-06-29T14:26:00.000+02:00",
-    "photo": "https://iili.io/C5ChZaR.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-29/e872ddb31d599eeb.jpg",
     "carbs": 52,
     "cals": 480,
     "delta": null,
@@ -15,7 +15,7 @@
     "title": "Lunch: a seeded multigrain bread sandwich with cream cheese and asparagus, plus a mug of milk (BG: 152 mg/dL Flat) (Pred: 167-187 mg/dL @ 1:51 PM) (Protein: 21g, Carbs: ~48g, Cals: ~430) [Coach: Seeded bread with a few asparagus spears 🥪 — nice mix of fiber, healthy seed fats, and a green veggie sneaking in. The cream cheese and milk push protein toward 20g for good staying power. Carbs lean a touch high, so your usual post-lunch stroll will keep the peak in check.]",
     "type": "Lunch",
     "date": "2026-06-29T12:36:00.000+02:00",
-    "photo": "https://iili.io/C5CzzEG.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-29/febd49606d0b554a.jpg",
     "carbs": 48,
     "cals": 430,
     "delta": null,
@@ -26,7 +26,7 @@
     "title": "Dinner: open-faced multigrain toast topped with ham, melted cheese and avocado (BG: 114 mg/dL Flat) (Pred: 131-151 mg/dL @ 10:01 PM) (Protein: 22g | Carbs: ~22g | Cals: ~390) [Coach: A tidy open-faced dinner 🥑 — ham and melted cheese for protein, avocado bringing healthy fats and fiber, all on a single slice of multigrain for a modest carb load. Nicely balanced and gentle on your blood sugar. A steady way to close out the day after that afternoon sugar rollercoaster.]",
     "type": "Dinner",
     "date": "2026-06-28T21:06:00.000+02:00",
-    "photo": "https://iili.io/C5qwzRS.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-28/cb9f98a9b3e9fcdd.jpg",
     "carbs": 22,
     "cals": 390,
     "delta": null,
@@ -40,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-28/91f060743a1b7c0b.jpg",
     "carbs": 15,
     "cals": 60,
-    "delta": null,
-    "peak": null
+    "delta": 72,
+    "peak": 196
   },
   {
     "id": "38d85ec7-0668-81dd-9115-cea3b3198b0a",
@@ -2751,7 +2751,7 @@
   },
   {
     "id": "35e85ec7-0668-819f-9b13-f0167fb1eadf",
-    "title": "Lunch: Boiled acelgas (chard) with potato (BG: 117 mg/dL Flat) (Pred: 129-139 mg/dL @ 4:11 PM) (Protein: 6g | Carbs: ~22g | Cals: ~105) [Coach: Lovely simple Spanish veggie plate 🥬 — chard brings fiber and minerals, potato adds satiating starch. A light, balanced lunch that should land softly. Some protein on the side — egg, fish, or jamón — would round it out beautifully.]  [id:7fa8fc4f]",
+    "title": "Lunch: Boiled acelgas (chard) with potato (BG: 117 mg/dL Flat) (Pred: 129-139 mg/dL @ 4:11 PM) (Protein: 6g | Carbs: ~22g | Cals: ~105) [Coach: Lovely simple Spanish veggie plate 🥬 — chard brings fiber and minerals, potato adds satiating starch. A light, balanced lunch that should land softly. Some protein on the side — egg, fish, or jam��n — would round it out beautifully.]  [id:7fa8fc4f]",
     "type": "Lunch",
     "date": "2026-05-07T14:18:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-07/dc6bd18282c3f4fb.jpg",
