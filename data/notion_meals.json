@@ -1,5 +1,16 @@
 [
   {
+    "id": "38f85ec7-0668-8124-aeec-d3db7e15ad96",
+    "title": "Breakfast: a slice of buttered whole-grain toast, a bowl of fresh blueberries, and a small tub of plain yogurt (BG: 116 mg/dL Flat) (Pred: 166-186 mg/dL @ 12:44 PM) (Protein: 9g, Carbs: ~39g, Cals: ~275) [Coach: A bright, clean breakfast 🫐 — whole-grain toast, real blueberries, and plain unsweetened yogurt is a genuinely great combo: fiber, antioxidants, no hidden sugar. Protein's a touch light at ~9g, so an egg or a few nuts next time would keep you fuller and steady your morning BG.]",
+    "type": "Breakfast",
+    "date": "2026-06-30T11:17:00.000+02:00",
+    "photo": "https://iili.io/C5sK2zG.jpg",
+    "carbs": 39,
+    "cals": 275,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "38e85ec7-0668-817e-aebb-d256abd5061d",
     "title": "Dinner: a little mango sherbet on a biscuit (BG: 135 mg/dL Flat) (Pred: 161-181 mg/dL @ 10:18 PM) (Protein: 2g, Carbs: ~21g, Cals: ~120) [Cumulative Dinner: 61g carbs total] [Coach: A little mango sherbet on a biscuit 🥭 — sweet finish to dinner, mostly quick sugar but the portion is nicely small. It stacks onto the grilled cheese from a few minutes ago, so an after-dinner stroll tonight will help your BG glide through the combo.]",
     "type": "Dinner",
