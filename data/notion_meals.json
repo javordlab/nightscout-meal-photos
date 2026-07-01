@@ -1,5 +1,16 @@
 [
   {
+    "id": "39085ec7-0668-8112-a427-c39aa77be226",
+    "title": "Lunch: a small bowl of fresh blueberries (BG: 138 mg/dL ➡️) (Pred: 130-150 mg/dL @ 6:05 PM) (Protein: ~1g | Carbs: ~11g | Cals: ~50) [Cumulative Lunch: 54g carbs total] [Coach: Blueberries 🫐 — whole fruit with fiber and antioxidants, about as blood-sugar-friendly as a sweet finish gets. A lovely light close to that steak lunch, and far kinder to your BG than a cookie would be. No notes here.]",
+    "type": "Lunch",
+    "date": "2026-07-01T16:50:00.000+02:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-01/d8585aa7e3af639f.jpg",
+    "carbs": 11,
+    "cals": 50,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39085ec7-0668-819a-b498-f8e5a82529c8",
     "title": "Lunch: grilled sliced steak (left a fatty end piece uneaten), a few french fries, creamed spinach, a side of cherry tomatoes, and a slice of white bread (BG: 101 mg/dL Flat) (Pred: 130-150 mg/dL @ 5:13 PM) (Protein: ~35g | Carbs: ~43g | Cals: ~570) [Coach: Steak, spinach, and tomatoes still make this a genuinely balanced plate 🥩, and leaving that fatty end piece was a smart call — you kept the lean protein and skipped the extra saturated fat. The fries and bread are small enough your blood sugar will barely blink. Nicely done.]",
     "type": "Lunch",
