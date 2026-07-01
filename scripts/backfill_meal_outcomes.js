@@ -20,6 +20,7 @@ const path = require('path');
 const https = require('https');
 const { spawnSync } = require('child_process');
 const { writeReceipt } = require('./health-sync/cron_receipt');
+const { withDnsRetry } = require('./health-sync/net_retry');
 
 const NS_URL = 'https://p01--sefi--s66fclg7g2lm.code.run';
 const NS_SECRET_HASH = 'b3170e23f45df7738434cd8be9cd79d86a6d0f01'; // SHA1 of JaviCare2026
@@ -32,7 +33,7 @@ const SYNC_STATE_PATH = path.join(process.env.HOME, '.openclaw/workspace/data/sy
 // ─── Nightscout ────────────────────────────────────────────────────────────
 
 async function fetchJson(url, headers = {}) {
-  return new Promise((resolve, reject) => {
+  return withDnsRetry(() => new Promise((resolve, reject) => {
     const options = { headers: { 'api-secret': NS_SECRET_HASH, ...headers } };
     https.get(url, options, res => {
       let data = '';
@@ -46,7 +47,7 @@ async function fetchJson(url, headers = {}) {
         catch (e) { reject(e); }
       });
     }).on('error', reject);
-  });
+  }), { label: 'NS glucose fetch' });
 }
 
 function getBgAt(entries, mealTime) {

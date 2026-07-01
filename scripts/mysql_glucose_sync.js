@@ -1,6 +1,7 @@
 const https = require('https');
 const { execSync, spawnSync } = require('child_process');
 const { writeReceipt } = require('./health-sync/cron_receipt');
+const { withDnsRetry } = require('./health-sync/net_retry');
 
 const NS_URL = "https://p01--sefi--s66fclg7g2lm.code.run";
 const NS_SECRET = "b3170e23f45df7738434cd8be9cd79d86a6d0f01";
@@ -10,7 +11,7 @@ const MYSQL_BIN = "/opt/homebrew/opt/mysql@8.4/bin/mysql";
 const MYSQL_CHARSET_ARG = "--default-character-set=utf8mb4";
 
 async function nsRequest(url) {
-    return new Promise((resolve, reject) => {
+    return withDnsRetry(() => new Promise((resolve, reject) => {
         https.get(url, { headers: { 'api-secret': NS_SECRET } }, (res) => {
             let d = "";
             res.on("data", c => d += c);
@@ -29,7 +30,7 @@ async function nsRequest(url) {
                 }
             });
         }).on("error", reject);
-    });
+    }), { label: 'NS glucose fetch' });
 }
 
 function runQuery(sql) {

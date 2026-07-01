@@ -13,6 +13,7 @@ const { parseRow: normParseRow, buildEntryKey: normBuildEntryKey } = require('./
 const SYNC_STATE_PATH = path.join(__dirname, '../data/sync_state.json');
 const { upsertNightscoutTreatment } = require('./health-sync/ns_upsert_safe');
 const { writeReceipt } = require('./health-sync/cron_receipt');
+const { withDnsRetry } = require('./health-sync/net_retry');
 
 // --- Configuration ---
 const LOG_PATH = "/Users/javier/.openclaw/workspace/health_log.md";
@@ -29,7 +30,7 @@ const NOTION_DB_ID = "31685ec7-0668-813e-8b9e-c5b4d5d70fa5";
 async function nsRequest(method, endpoint, body = null) {
   const url = `${NIGHTSCOUT_URL}${endpoint}`;
   const data = body ? JSON.stringify(body) : null;
-  return new Promise((resolve, reject) => {
+  return withDnsRetry(() => new Promise((resolve, reject) => {
     const options = {
       method,
       headers: {
@@ -63,13 +64,13 @@ async function nsRequest(method, endpoint, body = null) {
     req.on("error", reject);
     if (data) req.write(data);
     req.end();
-  });
+  }), { label: `NS ${method}` });
 }
 
 async function notionRequest(method, endpoint, body = null) {
   const url = `https://api.notion.com/v1${endpoint}`;
   const data = body ? JSON.stringify(body) : null;
-  return new Promise((resolve, reject) => {
+  return withDnsRetry(() => new Promise((resolve, reject) => {
     const options = {
       method,
       headers: {
@@ -94,7 +95,7 @@ async function notionRequest(method, endpoint, body = null) {
     req.on("error", reject);
     if (data) req.write(data);
     req.end();
-  });
+  }), { label: `Notion ${method}` });
 }
 
 // Parse prediction from health_log.md title text.
