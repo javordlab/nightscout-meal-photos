@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-01T10:29:28.316Z",
+  "lastUpdated": "2026-07-01T10:31:47.013Z",
   "serverTz": "Europe/Madrid",
   "dbError": null,
   "tokenUsage": [
@@ -23,7 +23,7 @@
     }
   ],
   "database": {
-    "glucose": 34543,
+    "glucose": 34544,
     "notion": 2214
   },
   "syncHistory": [
@@ -174,7 +174,7 @@
     },
     {
       "date": "2026-07-01",
-      "glucose": 34543,
+      "glucose": 34544,
       "notion": 2214
     }
   ],
@@ -29826,6 +29826,10 @@
     {
       "t": "2026-07-01T10:24:03.000Z",
       "v": 95
+    },
+    {
+      "t": "2026-07-01T10:29:02.000Z",
+      "v": 99
     }
   ],
   "backups": [
