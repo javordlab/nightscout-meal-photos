@@ -1,5 +1,16 @@
 [
   {
+    "id": "39085ec7-0668-819a-b498-f8e5a82529c8",
+    "title": "Lunch: grilled sliced steak (left a fatty end piece uneaten), a few french fries, creamed spinach, a side of cherry tomatoes, and a slice of white bread (BG: 101 mg/dL Flat) (Pred: 130-150 mg/dL @ 5:13 PM) (Protein: ~35g | Carbs: ~43g | Cals: ~570) [Coach: Steak, spinach, and tomatoes still make this a genuinely balanced plate 🥩, and leaving that fatty end piece was a smart call — you kept the lean protein and skipped the extra saturated fat. The fries and bread are small enough your blood sugar will barely blink. Nicely done.]",
+    "type": "Lunch",
+    "date": "2026-07-01T15:58:00.000+02:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-01/dccdbefa4d88f4b2.jpg",
+    "carbs": 43,
+    "cals": 570,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "38f85ec7-0668-8160-bcc1-c2dd88ee82c4",
     "title": "Dinner: a roast beef sandwich with lettuce and tomato on seeded multigrain bread (BG: 107 mg/dL Flat) (Pred: 131-151 mg/dL @ 10:39 PM) (Protein: 21g, Carbs: ~35g, Cals: ~305) [Coach: Now that is a balanced sandwich 🥪 — lean roast beef brings ~20g protein, the lettuce and tomato sneak in some veggies, and seeded bread beats white for fiber. A nice clean dinner to round out the day. Your usual evening stroll will keep the rise mild.]",
     "type": "Dinner",
@@ -276,7 +287,7 @@
   },
   {
     "id": "38985ec7-0668-8163-903c-c85f22c2d2f0",
-    "title": "Dinner: butternut squash soup with an open-faced multigrain sandwich (cheese and lacón) (BG: ~130 mg/dL est) (Pred: 145-165 mg/dL @ 10:21 PM) (Est: no sensor, ~130 baseline; 5:31 PM fingerstick now ~4h old) (Protein: 19g | Carbs: ~34g | Cals: ~355) [Coach: A cozy, well-balanced light dinner 🥣 — butternut squash soup brings warmth and vegetables, while the cheese and lacón on multigrain give you ~19g of protein. Nicely portioned carbs at ~34g to close out an active day, and a gentle one for your blood sugar.]",
+    "title": "Dinner: butternut squash soup with an open-faced multigrain sandwich (cheese and lacón) (BG: ~130 mg/dL est) (Pred: 145-165 mg/dL @ 10:21 PM) (Est: no sensor, ~130 baseline; 5:31 PM fingerstick now ~4h old) (Protein: 19g | Carbs: ~34g | Cals: ~355) [Coach: A cozy, well-balanced light dinner ���� — butternut squash soup brings warmth and vegetables, while the cheese and lacón on multigrain give you ~19g of protein. Nicely portioned carbs at ~34g to close out an active day, and a gentle one for your blood sugar.]",
     "type": "Dinner",
     "date": "2026-06-24T21:26:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-24/03ca2cdfb1ad6902.jpg",
