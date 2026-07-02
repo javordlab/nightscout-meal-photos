@@ -1,5 +1,16 @@
 [
   {
+    "id": "39185ec7-0668-8192-a0b0-ec432930674c",
+    "title": "Lunch: yogurt with honey drizzle (dessert course) (BG: 101 mg/dL Flat) (Pred: 170-190 mg/dL @ 4:37 PM) (Protein: ~9g | Carbs: ~24g | Cals: ~190) [Cumulative Lunch: 109g carbs total] [Coach: Yogurt with a drizzle of honey 🍯 — a lighter finish, with protein and probiotics from the yogurt to balance the honey's sweetness. It does close out a big three-course lunch (about 109g carbs all in), so one of your post-meal walks would really help smooth the afternoon. Nicely done, and set until dinner.]",
+    "type": "Lunch",
+    "date": "2026-07-02T15:22:00.000+02:00",
+    "photo": "https://iili.io/CYY6Fcl.jpg",
+    "carbs": 24,
+    "cals": 190,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39185ec7-0668-816c-bc08-d528d7675a91",
     "title": "Lunch: chicken tinga tostadas with beans and a side salad (BG: 103 mg/dL Flat) (Pred: 153-173 mg/dL @ 4:20 PM) (Protein: ~34g | Carbs: ~50g | Cals: ~520) [Cumulative Lunch: 85g carbs total] [Coach: Chicken tostadas piled with veggies 🌮 — lean protein from the chicken and beans, plus salad, pickled onion and beet for real fiber. Stacked onto the ensaladilla it's a hearty two-course lunch (85g carbs total), but the protein and greens keep it steadier than that number looks. A short walk after would seal it.]",
     "type": "Lunch",
@@ -15,7 +26,7 @@
     "title": "Lunch: ensaladilla rusa and green salad with beetroot and balsamic reduction (doubled portion, logged mid-meal) (BG: 105 mg/dL Flat) (Pred: 125-145 mg/dL @ 4:12 PM) (Protein: ~12g | Carbs: ~35g | Cals: ~370) [Coach: Now that's a proper lunch 🥗 — the green salad with beet plus the veggies and tuna in the ensaladilla bring fiber and protein together nicely. The potato and mayo make it a touch richer, so the greens and balsamic are doing good balancing work. BG is calm at 105, so this should ride smooth.]",
     "type": "Lunch",
     "date": "2026-07-02T14:57:00.000+02:00",
-    "photo": "https://iili.io/CYY3JQj.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-02/912c16fa10774fd3.jpg",
     "carbs": 35,
     "cals": 370,
     "delta": null,
