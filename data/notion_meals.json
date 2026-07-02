@@ -7,8 +7,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-02/adfccdf3293d8274.jpg",
     "carbs": 24,
     "cals": 190,
-    "delta": null,
-    "peak": null
+    "delta": 45,
+    "peak": 152
   },
   {
     "id": "39185ec7-0668-816c-bc08-d528d7675a91",
@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-02/d72a8851f4413625.jpg",
     "carbs": 50,
     "cals": 520,
-    "delta": null,
-    "peak": null
+    "delta": 46,
+    "peak": 149
   },
   {
     "id": "39185ec7-0668-81ea-85e4-f6a0344f7e4b",
