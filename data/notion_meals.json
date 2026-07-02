@@ -1,5 +1,16 @@
 [
   {
+    "id": "39185ec7-0668-8187-8e51-e3cac6e743ed",
+    "title": "Lunch: ham and cheese toasted sandwich on seeded multigrain bread (BG: 116 mg/dL Flat) (Pred: 134-154 mg/dL @ 1:08 PM) (Protein: ~22g | Carbs: ~37g | Cals: ~350) [Coach: A ham and cheese toastie on seeded bread 🥪 — solid protein from the ham and cheese, and the whole-grain slices bring fiber to keep the rise gentle. Since this is your lunch, a handful of tomato or cucumber on the side would round it into a full plate. Steady, sensible start to the day.]",
+    "type": "Lunch",
+    "date": "2026-07-02T11:53:00.000+02:00",
+    "photo": "https://iili.io/CYIBQAG.jpg",
+    "carbs": 37,
+    "cals": 350,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39085ec7-0668-8179-9783-dd1985da3338",
     "title": "Dinner: Cabeza ibérica sandwich on seeded multigrain bread (BG: 121 mg/dL FortyFiveDown) (Pred: 143-163 mg/dL @ 11:24 PM) (Protein: ~22g | Carbs: ~38g | Cals: ~370) [Coach: Cabeza ibérica on seeded bread 🥪 — those whole-grain slices bring fiber to soften the rise, and the Iberian pork adds a solid protein hit. That's your one cured-meat pick for the day, right on target, and with BG at 121 easing down it is nicely timed.]",
     "type": "Dinner",
@@ -408,7 +419,7 @@
   },
   {
     "id": "38785ec7-0668-8112-8d34-db4203655c6a",
-    "title": "Dinner: peanut butter and blueberry sandwich on multigrain seeded bread. (BG: 103 mg/dL Flat) (Pred: 137-157 mg/dL @ 11:08 PM) (Protein: 13g | Carbs: ~44g | Cals: ~400) [Coach: A cozy PB-and-blueberry sandwich ���� — the peanut butter brings protein and healthy fats that slow things down, and the blueberries add fiber. With BG at a tidy 103, this is a gentle way to close the day. The seeded bread is the main carb, so this size is just right.]",
+    "title": "Dinner: peanut butter and blueberry sandwich on multigrain seeded bread. (BG: 103 mg/dL Flat) (Pred: 137-157 mg/dL @ 11:08 PM) (Protein: 13g | Carbs: ~44g | Cals: ~400) [Coach: A cozy PB-and-blueberry sandwich 🥪 — the peanut butter brings protein and healthy fats that slow things down, and the blueberries add fiber. With BG at a tidy 103, this is a gentle way to close the day. The seeded bread is the main carb, so this size is just right.]",
     "type": "Dinner",
     "date": "2026-06-22T22:13:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-22/e59015480085b0b7.jpg",
