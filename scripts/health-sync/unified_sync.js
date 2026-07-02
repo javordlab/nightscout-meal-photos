@@ -132,12 +132,12 @@ function nsRequest(method, endpoint, body) {
 
 function getProteinEst(entry) {
   if (entry?.proteinEst != null) return entry.proteinEst;
-  const notesMatch = String(entry?.notes || '').match(/Protein:\s*([\d.]+)\s*g/i);
+  const notesMatch = String(entry?.notes || '').match(/Protein:\s*~?\s*([\d.]+)\s*g/i);
   if (notesMatch) {
     const parsed = Number(notesMatch[1]);
     if (Number.isFinite(parsed)) return parsed;
   }
-  const titleMatch = String(entry?.title || '').match(/Protein:\s*([\d.]+)\s*g/i);
+  const titleMatch = String(entry?.title || '').match(/Protein:\s*~?\s*([\d.]+)\s*g/i);
   if (titleMatch) {
     const parsed = Number(titleMatch[1]);
     if (Number.isFinite(parsed)) return parsed;

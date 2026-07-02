@@ -329,7 +329,10 @@ async function main() {
     const carbsIdx = p.length - 3;
     const calsIdx  = p.length - 2;
     const entryText = p.slice(6, carbsIdx).join(' | ');
-    const proteinMatch = entryText.match(/\(Protein:\s*([\d.]+)g[^)]*\)/i);
+    // Tolerate the "~" approximation prefix — the foodlog bridge writes
+    // "(Protein: ~23g | ...)" since 2026-07-01; the strict [\d.]+ form left
+    // Proteins null in Notion for every entry from Jul 1 dinner onward.
+    const proteinMatch = entryText.match(/\(Protein:\s*~?\s*([\d.]+)\s*g[^)]*\)/i);
     const rowIdMatch = entryText.match(/\[id:([a-f0-9]{8})\]/);
     const rowId = rowIdMatch ? rowIdMatch[1] : null;
     const entryData = {
