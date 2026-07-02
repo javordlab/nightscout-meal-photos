@@ -184,7 +184,11 @@ function finalize({ exitCode, signal, spawnError }) {
   else if (outcome && (outcome.status === 'partial' || outcome.status === 'warn')) lastStatus = 'warn';
   else lastStatus = 'ok';
 
-  const healthy = lastStatus === 'ok';
+  // Only hard errors count toward consecutiveErrors. A 'warn' (receipt status
+  // warn/partial with clean exit) is degraded-but-working — counting it as an
+  // error made probe-launchd-jobs accumulate hundreds of "consecutive errors"
+  // whenever ONE probed job was unhealthy (2026-07-02: 123 and climbing).
+  const isError = lastStatus === 'error';
 
   const payload = {
     jobId,
@@ -194,7 +198,7 @@ function finalize({ exitCode, signal, spawnError }) {
     // 124 = conventional timeout exit code (matches GNU timeout(1)).
     exitCode: spawnError ? 127 : (timedOut ? 124 : (exitCode == null ? 128 : exitCode)),
     lastStatus,
-    consecutiveErrors: healthy ? 0 : (prevErrors + 1),
+    consecutiveErrors: isError ? (prevErrors + 1) : 0,
     signal: signal || null,
     timedOut,
     spawnError: spawnError ? String(spawnError.message || spawnError) : null,

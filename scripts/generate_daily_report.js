@@ -493,6 +493,9 @@ async function main(options = {}) {
   const normalized = JSON.parse(fs.readFileSync(NORMALIZED_PATH, 'utf8'));
 
   const sgvRows = fetchRecentSgvRows(5000);
+  // Newest reading in the MySQL mirror — lets the sender distinguish a stale
+  // mirror (fail closed) from a genuine CGM sensor gap (send with a warning).
+  const newestSgvAtMs = sgvRows.length ? Math.max(...sgvRows.slice(0, 20).map(e => e.date)) : null;
 
   const glucosePrevDay = sgvRows.filter(e => laDateString(new Date(e.date)) === targetDate);
   const glucose14Days = sgvRows.filter(e => {
@@ -591,6 +594,7 @@ async function main(options = {}) {
     targetDate,
     statsDay,
     stats14,
+    newestSgvAtMs,
     generatedAt: new Date().toISOString()
   };
 }

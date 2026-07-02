@@ -102,7 +102,7 @@ function checkReportDeadline() {
   const fallbackTriggered = runFallback(la);
   const alert = {
     generatedAt: new Date().toISOString(),
-    severity: 'critical',
+    severity: fallbackTriggered ? 'warning' : 'critical',
     reason: 'missing_0930_report',
     dateLA: la.date,
     lastReportAt: status.lastReportAt,
@@ -111,6 +111,17 @@ function checkReportDeadline() {
 
   fs.writeFileSync(ALERT_PATH, JSON.stringify(alert, null, 2) + '\n');
   log({ op: 'watchdog_alert', ...alert });
+
+  // A successful fallback means the watchdog DID ITS JOB — Maria got the
+  // report. Exit 0 with a warn receipt so the cron dashboard shows "primary
+  // missed, fallback covered" instead of a hard error. (Before 2026-07-02
+  // this path exited 1 even on success, adding a spurious "Daily Report
+  // Watchdog: 1 consecutive errors" line to every recovered morning.)
+  if (fallbackTriggered) {
+    console.warn('WARN: 09:30 report was missing; fallback delivered it.');
+    return { ok: true, state: 'fallback_delivered', fallbackTriggered };
+  }
+
   console.error('CRITICAL: 09:30 report missing; alert emitted.');
   return { ok: false, state: 'missing_report', fallbackTriggered };
 }
@@ -125,6 +136,14 @@ if (require.main === module) {
   }
 
   const result = checkReportDeadline();
+  const { writeReceipt } = require('./cron_receipt');
+  if (result.state === 'fallback_delivered') {
+    writeReceipt({ status: 'warn', summary: 'Primary 08:55 report missed the 09:32 deadline — fallback report delivered', metrics: { state: result.state } });
+  } else if (result.ok) {
+    writeReceipt({ status: 'ok', summary: `Report check passed (${result.state})`, metrics: { state: result.state } });
+  } else {
+    writeReceipt({ status: 'error', summary: 'Daily report missing and fallback did not deliver', metrics: { state: result.state } });
+  }
   process.exit(result.ok ? 0 : 1);
 }
 

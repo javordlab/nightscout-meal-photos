@@ -418,17 +418,24 @@ function reconcileCrontabAgainstConfig() {
   return issues;
 }
 
+// Host-local timezone — the report pipeline stamps lastReportDateLA with the
+// HOST date (report_watchdog.nowInLosAngeles uses resolvedOptions().timeZone
+// despite its legacy name). Comparing against a hardcoded America/Los_Angeles
+// date here would disagree with that stamp for part of every day whenever the
+// machine isn't in LA time (it's been Europe/Madrid since mid-2026).
+const HOST_TZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
 function checkDailyReport(now) {
   if (!fs.existsSync(REPORT_STATUS_PATH)) return null;
   try {
     const status = JSON.parse(fs.readFileSync(REPORT_STATUS_PATH, 'utf8'));
-    // Daily report expected by 9:30 AM PT; alert if it's after 11:30 AM and no report today
-    const nowLA = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Los_Angeles' })
+    // Daily report expected by 9:30 AM local; alert if it's after 11 AM and no report today
+    const nowLA = new Intl.DateTimeFormat('en-CA', { timeZone: HOST_TZ })
       .format(new Date(now));
     if (status.lastReportDateLA !== nowLA) {
-      // Check if it's past 11:30 AM PT
+      // Check if it's past 11 AM local
       const hourLA = parseInt(new Intl.DateTimeFormat('en-US', {
-        timeZone: 'America/Los_Angeles', hour: 'numeric', hour12: false
+        timeZone: HOST_TZ, hour: 'numeric', hour12: false
       }).format(new Date(now)), 10);
       if (hourLA >= 11) {
         const lastReportAgo = now - new Date(status.lastReportAt).getTime();
@@ -457,6 +464,28 @@ async function main() {
   }
 
   const allJobs = jobs.map(j => buildJobInfo(j, now));
+
+  // If the primary 08:55 daily-report run failed but today's report was still
+  // delivered (fallback/manual — report_status.json is the delivery ledger),
+  // the failure is history, not an active incident: downgrade error → warning
+  // so it shows on the dashboard without re-alerting until tomorrow's run.
+  try {
+    const dr = allJobs.find(j => j.id === 'daily-report');
+    if (dr && dr.status === 'error' && fs.existsSync(REPORT_STATUS_PATH)) {
+      const rs = JSON.parse(fs.readFileSync(REPORT_STATUS_PATH, 'utf8'));
+      const todayLocal = new Intl.DateTimeFormat('en-CA', { timeZone: HOST_TZ }).format(new Date(now));
+      if (rs.lastReportDateLA === todayLocal) {
+        dr.status = 'warning';
+        dr.outcome = {
+          ...(dr.outcome || {}),
+          status: 'warn',
+          summary: `primary run failed but today's report was delivered via ${rs.source || 'fallback'}` +
+                   (dr.outcome?.summary ? ` — original: ${dr.outcome.summary}` : ''),
+        };
+      }
+    }
+  } catch { /* delivery ledger unreadable — keep original status */ }
+
   const stale = allJobs.filter(j => j.status === 'overdue' || j.status === 'error');
 
   // Check daily report separately
@@ -557,9 +586,13 @@ async function main() {
 
     const message = lines.join('\n');
 
-    // Fingerprint = sorted list of issue identifiers (job ids + detail text)
+    // Fingerprint = sorted list of issue identifiers (job ids + detail text).
+    // Deliberately EXCLUDES consecutiveErrors: that counter grows on every
+    // probe tick, so including it made the fingerprint "change" every 15 min
+    // and re-sent the same alert all day (1,240 duplicate alerts by 2026-07-02).
+    // Same failure state = same fingerprint; the 4h forceResend still applies.
     const fingerprintParts = [
-      ...stale.map(s => `job:${s.id}:${s.consecutiveErrors}`),
+      ...stale.map(s => `job:${s.id}:${s.status}:${s.outcome?.status || s.lastStatus || ''}`),
       reportIssue ? `report:${reportIssue.detail}` : null,
       ghPagesIssue ? `ghpages:${ghPagesIssue}` : null,
       ...(driftIssues || []).map(d => `drift:${d.id}:${d.kind}`),

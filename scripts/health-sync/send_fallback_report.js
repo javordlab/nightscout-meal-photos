@@ -6,6 +6,7 @@ const { execSync } = require('child_process');
 const { markReportSent } = require('./report_watchdog');
 const { splitMessage } = require('./send_daily_health_report_telegram');
 const { main: generateDailyReport } = require('../generate_daily_report');
+const { withNetRetry, describeError } = require('./net_retry');
 
 const WORKSPACE = '/Users/javier/.openclaw/workspace';
 const OUTPUT_PATH = path.join(WORKSPACE, 'data', 'fallback_report.txt');
@@ -76,7 +77,12 @@ async function main() {
     // Telegram caps messages at 4096 chars — chunk long reports and send sequentially.
     const chunks = splitMessage(reportText);
     for (const chunk of chunks) {
-      await sendMessage(botToken, chatId, chunk);
+      // This is the last line of defense for the daily report — retry hard on
+      // pre-connection network blips (safe: request never reached Telegram).
+      await withNetRetry(
+        () => sendMessage(botToken, chatId, chunk),
+        { attempts: 5, baseMs: 3000, label: 'fallback-report sendMessage' }
+      );
     }
     telegramStatus = 'sent';
   }
@@ -111,7 +117,7 @@ async function main() {
 
 if (require.main === module) {
   main().catch((e) => {
-    console.error(e.message);
+    console.error(describeError(e));
     process.exit(1);
   });
 }

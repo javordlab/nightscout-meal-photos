@@ -75,7 +75,9 @@
       "staleMaxMs": 93600000,
       "maxDurationMs": 600000,
       "source": "launchd",
-      "launchdLabel": "com.healthguard.daily-report"
+      "launchdLabel": "com.healthguard.daily-report",
+      "selfHeartbeat": true,
+      "_selfHeartbeat_comment": "2026-07-02: launchd plist wraps the run in heartbeat_wrap.js daily-report — the probe only checks loaded-ness, never overwrites the real heartbeat or re-reports sticky exit codes"
     },
     {
       "id": "report-watchdog",

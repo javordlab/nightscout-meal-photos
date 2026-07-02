@@ -7,6 +7,7 @@ const { execSync } = require('child_process');
 const { main: generateDailyReport, addDays } = require('../generate_daily_report');
 const { markReportSent } = require('./report_watchdog');
 const { writeReceipt } = require('./cron_receipt');
+const { withNetRetry, describeError } = require('./net_retry');
 
 const WORKSPACE = '/Users/javier/.openclaw/workspace';
 const DATA_DIR = path.join(WORKSPACE, 'data');
@@ -154,20 +155,47 @@ function sendMessage(botToken, chatId, text) {
   });
 }
 
+// Expected CGM cadence is ~288 readings/day (5-min Libre 3). The old version
+// failed closed on ANY count outside [200,320], which killed the report for 4
+// straight days during a real sensor gap (2026-06-25..28) even though the
+// data pipeline was fine. Now:
+//   - hard-throw only on logic bugs (wrong target date, count>320 = duplicate
+//     rows) or a stale MySQL mirror (data we cannot trust);
+//   - a genuinely sparse day with a FRESH mirror returns a warning banner and
+//     the report still ships.
+const MIRROR_STALE_MS = 2 * 60 * 60 * 1000; // glucose-sync runs every 2 min; 2h = clearly broken
+
 function validateReportWindow(generated) {
   const expectedTarget = addDays(generated.reportDate, -1);
   if (generated.targetDate !== expectedTarget) {
     throw new Error(`invalid_target_date: expected ${expectedTarget}, got ${generated.targetDate}`);
   }
 
-  if (!generated.statsDay || !Number.isFinite(generated.statsDay.average) || !Number.isFinite(generated.statsDay.gmi)) {
-    throw new Error('invalid_stats_day: missing average/gmi');
+  const count = generated.statsDay ? generated.statsDay.count : null;
+
+  // >320 points in one day means duplicate rows — that's a data bug, fail closed.
+  if (Number.isFinite(count) && count > 320) {
+    throw new Error(`invalid_stats_day_count:${count} (duplicates?)`);
   }
 
-  // Fail-closed against obviously wrong day-window data (e.g., stale file carried forward)
-  if (!Number.isFinite(generated.statsDay.count) || generated.statsDay.count < 200 || generated.statsDay.count > 320) {
-    throw new Error(`invalid_stats_day_count:${generated.statsDay.count}`);
+  const sparse = !generated.statsDay
+    || !Number.isFinite(generated.statsDay.average)
+    || !Number.isFinite(generated.statsDay.gmi)
+    || !Number.isFinite(count)
+    || count < 200;
+  if (!sparse) return null;
+
+  // Sparse day: only trust it as a real sensor gap if the mirror itself is live.
+  const mirrorAgeMs = Number.isFinite(generated.newestSgvAtMs)
+    ? Date.now() - generated.newestSgvAtMs
+    : Infinity;
+  if (mirrorAgeMs > MIRROR_STALE_MS) {
+    throw new Error(`glucose_mirror_stale: newest reading ${Math.round(mirrorAgeMs / 60000)}m old, day count=${count}`);
   }
+
+  const n = Number.isFinite(count) ? count : 0;
+  return `⚠️ Partial CGM coverage for ${generated.targetDate}: only ${n} readings ` +
+         `(expected ~288 — likely a sensor gap or warm-up). Glucose stats below may be unrepresentative.`;
 }
 
 async function main() {
@@ -180,8 +208,10 @@ async function main() {
   const alreadySent = state.chats[opts.chatId][opts.reportDateLA];
 
   const generated = await generateDailyReport({ reportDate: opts.reportDateLA });
-  validateReportWindow(generated);
-  const reportText = fs.readFileSync(generated.reportPath, 'utf8').trim();
+  const coverageWarning = validateReportWindow(generated);
+  if (coverageWarning) console.warn(coverageWarning);
+  let reportText = fs.readFileSync(generated.reportPath, 'utf8').trim();
+  if (coverageWarning) reportText = `${coverageWarning}\n\n${reportText}`;
 
   const summary = {
     status: 'ok',
@@ -206,7 +236,13 @@ async function main() {
     const chunks = splitMessage(reportText);
     let messageId = null;
     for (const chunk of chunks) {
-      const sent = await sendMessage(botToken, opts.chatId, chunk);
+      // Retry pre-connection network failures (VPN-tunnel DNS/connect blips) —
+      // ~3s/6s/12s/24s backoff. Post-connection errors still fail immediately
+      // so a delivered-but-unconfirmed message is never re-sent.
+      const sent = await withNetRetry(
+        () => sendMessage(botToken, opts.chatId, chunk),
+        { attempts: 5, baseMs: 3000, label: 'daily-report sendMessage' }
+      );
       if (!messageId) messageId = sent?.result?.message_id || null;
     }
 
@@ -256,7 +292,8 @@ async function main() {
  */
 function summaryToReceipt(summary) {
   const stats = summary.messageId && summary.statsDay ? summary.statsDay : null;
-  const statsBits = stats
+  // Stats can be null on a sparse-coverage day that still shipped with a warning banner.
+  const statsBits = stats && Number.isFinite(stats.average) && Number.isFinite(stats.gmi) && Number.isFinite(stats.tir)
     ? ` · avg ${Math.round(stats.average)} mg/dL, GMI ${stats.gmi.toFixed(1)}%, TIR ${Math.round(stats.tir)}%`
     : '';
 
@@ -304,15 +341,18 @@ if (require.main === module) {
       if (summary) writeReceipt(summaryToReceipt(summary));
     })
     .catch((e) => {
-      log({ op: 'daily_report_delivery_error', error: e.message });
-      console.error(e.message);
+      // describeError: AggregateError (multi-address connect failure) has an
+      // EMPTY .message — 2026-07-02 this produced a useless `error:""` log line.
+      const msg = describeError(e);
+      log({ op: 'daily_report_delivery_error', error: msg, code: e.code || null });
+      console.error(msg);
       writeReceipt({
         status: 'error',
-        summary: `Daily report delivery crashed: ${e.message || e}`,
+        summary: `Daily report delivery crashed: ${msg}`,
         metrics: null
       });
       process.exit(1);
     });
 }
 
-module.exports = { main, splitMessage };
+module.exports = { main, splitMessage, validateReportWindow };

@@ -85,6 +85,39 @@ function main() {
     const started = Date.now();
     const r = launchctlStatus(label);
     const finished = Date.now();
+
+    // Jobs marked selfHeartbeat run under heartbeat_wrap.js themselves (e.g.
+    // daily-report), so their OWN heartbeat is the authoritative run record.
+    // For these the probe only verifies the job is loaded in launchd:
+    //  - it must NOT overwrite the real heartbeat (the probe's 18ms "run"
+    //    used to clobber the actual run's duration/receipt), and
+    //  - it must NOT re-report launchd's sticky `last exit code` — after one
+    //    failed daily run that code stays non-zero for 24h, and re-flagging
+    //    it every 5 min produced an all-day alert storm (2026-07-02).
+    if (j.selfHeartbeat) {
+      if (r.found) { ok++; continue; }
+      // Not loaded at all — that IS worth surfacing, via the job's heartbeat.
+      const hbErr = {
+        jobId: j.id,
+        lastRunAtMs: finished,
+        lastFinishAtMs: finished,
+        lastDurationMs: finished - started,
+        exitCode: 1,
+        lastStatus: 'error',
+        consecutiveErrors: 1,
+        signal: null,
+        spawnError: null,
+        outcome: {
+          status: 'error',
+          summary: `UNHEALTHY: not loaded in launchd (${label})`,
+          metrics: { launchdLabel: label, state: null, lastExitCode: null, pid: null, intervalSec: null },
+        },
+      };
+      fs.writeFileSync(path.join(HEARTBEATS, `${j.id}.json`), JSON.stringify(hbErr, null, 2));
+      bad++; badDetails.push(`${j.id}: not loaded in launchd`);
+      continue;
+    }
+
     const { healthy, reason } = evaluateHealth(r);
 
     const status   = healthy ? 'ok' : 'error';

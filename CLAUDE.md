@@ -109,7 +109,7 @@ Monitoring:
 | `scripts/health-sync/glucose_low_alert.js` | Daytime (08:30–24:00): alerts at BG ≤ 80 (any trend) or BG ≤ 90 + downtrend. Overnight (00:00–08:30): alerts only when BG < 70. Re-alerts on critical re-cross, after 30 min of stale state, or once BG recovers above 100. Runs every 5 min. |
 | `scripts/health-sync/cron_health_watchdog.js` | Checks cron job freshness, alerts if stale. Every 15 min. |
 | `scripts/health-sync/audit_health_sync.js` | Detects entries missing from Notion or Nightscout. System cron 9:10 AM. |
-| `scripts/health-sync/report_watchdog.js` | Verifies daily report was sent; triggers fallback if not. Cron 9:35 (must run AFTER its 9:32 deadline — at the old 8:57 slot it was dead code for 2 months). |
+| `scripts/health-sync/report_watchdog.js` | Verifies daily report was sent; triggers fallback if not. Cron 9:35 (must run AFTER its 9:32 deadline — at the old 8:57 slot it was dead code for 2 months). Exits 0 with a `warn` receipt when the fallback delivered (that's the watchdog succeeding); exits 1 only when the day ends uncovered. |
 
 ### Daily Report
 | Script | Purpose |
@@ -170,7 +170,7 @@ Monitoring:
 | `10,40 * * * *` | `sync_ssot_to_mysql.js` | SSoT → MySQL mirror |
 | `15,45 * * * *` | `publish_photos_to_gh_pages.js` | Push new meal photos to gh-pages |
 | `*/20 * * * *` | `rescue_pending_photos.js` | Re-attempt any photos that failed initial upload |
-| `*/5 * * * *` | `probe_launchd_jobs.js` | Heartbeat-mirror for launchd jobs so the watchdog can see them |
+| `*/5 * * * *` | `probe_launchd_jobs.js` | Heartbeat-mirror for launchd jobs so the watchdog can see them. Jobs flagged `selfHeartbeat: true` in cron_jobs_config.json (daily-report) write their own heartbeat via heartbeat_wrap — for those the probe only checks loaded-ness and never overwrites the heartbeat or re-reports launchd's sticky `last exit code`. |
 | `*/15 * * * *` | `cron_health_watchdog.js` | Infrastructure health check + crontab/config drift detection |
 | `0 23 * * 0` | `weekly_memory_summary.sh` | Weekly memory rollup via `claude -p` OAuth (Opus 4.7). |
 
@@ -206,7 +206,7 @@ The HealthGuard cron dashboard at http://localhost/healthguard monitors three di
 
 **How it works:**
 
-- Every crontab entry is wrapped with `scripts/health-sync/heartbeat_wrap.js <job-id> -- <command...>`. The wrapper runs the command, preserves exit code, and writes `data/heartbeats/<job-id>.json` with timing + exit info.
+- Every crontab entry is wrapped with `scripts/health-sync/heartbeat_wrap.js <job-id> -- <command...>`. The wrapper runs the command, preserves exit code, and writes `data/heartbeats/<job-id>.json` with timing + exit info. `consecutiveErrors` counts only hard errors (`lastStatus === 'error'`); `warn`/`partial` receipts do not increment it (2026-07-02 fix — a partial probe receipt used to accumulate hundreds of phantom "consecutive errors").
 - The wrapper sets `CRON_RECEIPT_FILE=<tmp>` in the child env. Scripts that want to report outcome beyond "it exited 0" call `writeReceipt()` before exiting:
   ```js
   const { writeReceipt } = require('./health-sync/cron_receipt'); // path is relative to the script
