@@ -52,6 +52,19 @@ const ALLOWED_USERS = config.allowedUsers || [8335333215, 8738167445]; // Javi +
 const WORKSPACE = '/Users/javier/.openclaw/workspace';
 const CLAUDE_BIN = '/Users/javier/.local/bin/claude';
 const OPENCLAW_BIN = '/opt/homebrew/bin/openclaw';
+// Long-lived headless OAuth token (claude setup-token). When the secret file
+// exists, every spawned claude uses it via CLAUDE_CODE_OAUTH_TOKEN instead of
+// the interactive session's 8h credentials — decouples the bridges from the
+// interactive refresh cycle that caused the 2026-07-02/03 outages. Read per
+// spawn so token rotation needs no bridge restart.
+const CLAUDE_TOKEN_FILE = '/Users/javier/.openclaw/secrets/claude_oauth_token';
+function claudeTokenEnv() {
+  try {
+    const t = fs.readFileSync(CLAUDE_TOKEN_FILE, 'utf8').trim();
+    if (t) return { CLAUDE_CODE_OAUTH_TOKEN: t };
+  } catch {}
+  return {};
+}
 const INBOUND_DIR = '/Users/javier/.openclaw/media/inbound';
 const SYSTEM_PROMPT_FILE = config.systemPromptFile || path.join(WORKSPACE, 'AGENTS.md');
 // Optional per-config working directory for the spawned `claude` process.
@@ -152,8 +165,10 @@ const MAX_MESSAGE_LENGTH = 4096; // Telegram limit
 const OLLAMA_URL = 'http://127.0.0.1:11434';
 const DEFAULT_FALLBACK_CHAIN = [
   { backend: 'claude-cli',     model: 'haiku' },
-  { backend: 'ollama',         model: 'gemini-3-flash-preview:cloud' },
-  { backend: 'ollama',         model: 'deepseek-v3.2:cloud' },
+  // ollama tiers removed 2026-07-03: both cloud models are dead (subscription
+  // lapsed, then models delisted) and their "Empty Ollama response" masked the
+  // real claude-cli error during the auth outages. Re-add a tier here only
+  // after live-testing it (codex-cli is coded but needs `codex login`).
 ];
 const FALLBACK_CHAIN = config.fallbackChain || DEFAULT_FALLBACK_CHAIN;
 
@@ -361,6 +376,7 @@ function runClaude(userId, prompt, sessionId, photoPath, modelOverride = null) {
       HOME: '/Users/javier',
       USER: 'javier', // Required for Claude CLI auth in cron env
       PATH: '/Users/javier/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin',
+      ...claudeTokenEnv(),
     };
     const child = spawn(CLAUDE_BIN, args, {
       cwd: CLAUDE_CWD,

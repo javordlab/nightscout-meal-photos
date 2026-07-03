@@ -9,6 +9,11 @@ set -euo pipefail
 
 export USER="${USER:-javier}"  # Required for Claude CLI auth in cron env
 
+# Long-lived headless token (claude setup-token) — decouples this cron from
+# the interactive 8h credential refresh cycle. Silent no-op if absent.
+CLAUDE_TOKEN_FILE="/Users/javier/.openclaw/secrets/claude_oauth_token"
+[ -s "$CLAUDE_TOKEN_FILE" ] && export CLAUDE_CODE_OAUTH_TOKEN="$(cat "$CLAUDE_TOKEN_FILE")"
+
 WORKSPACE="/Users/javier/.openclaw/workspace"
 CLAUDE="/Users/javier/.local/bin/claude"
 NODE="/opt/homebrew/bin/node"

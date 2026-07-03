@@ -4,8 +4,5 @@
   "backend": "claude-cli",
   "model": "haiku",
   "_comment_fallback": "Skip the default Haiku-as-fallback tier (would loop back to the same primary). Skip Codex too per explicit choice 2026-04-08 — go straight to Gemini, then DeepSeek.",
-  "fallbackChain": [
-    { "backend": "ollama", "model": "gemini-3-flash-preview:cloud" },
-    { "backend": "ollama", "model": "deepseek-v3.2:cloud" }
-  ]
+  "fallbackChain": []
 }

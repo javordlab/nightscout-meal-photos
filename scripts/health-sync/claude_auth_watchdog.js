@@ -27,6 +27,16 @@ const { sendAlert } = require('./telegram_alert');
 const WORKSPACE = '/Users/javier/.openclaw/workspace';
 const HOME = '/Users/javier';
 const CLAUDE_BIN = `${HOME}/.local/bin/claude`;
+// Long-lived headless token (claude setup-token) — same source the bridges
+// use, so the watchdog live-tests the exact auth path services depend on.
+const CLAUDE_TOKEN_FILE = '/Users/javier/.openclaw/secrets/claude_oauth_token';
+function claudeTokenEnv() {
+  try {
+    const t = fs.readFileSync(CLAUDE_TOKEN_FILE, 'utf8').trim();
+    if (t) return { CLAUDE_CODE_OAUTH_TOKEN: t };
+  } catch {}
+  return {};
+}
 const STATE_FILE = path.join(WORKSPACE, 'data/claude_auth_watchdog_state.json');
 const MARKER = 'Not logged in';
 const TEST_MODEL = 'claude-haiku-4-5-20251001';
@@ -75,7 +85,8 @@ function runClaude(extraWrap) {
   // extraWrap 'pty' runs claude under a pseudo-TTY via `script` — mimics an
   // interactive launch, which is what recovered the 2026-07-03 outage.
   const env = { ...process.env, HOME, USER: 'javier',
-    PATH: `${HOME}/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin` };
+    PATH: `${HOME}/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin`,
+    ...claudeTokenEnv() };
   const args = ['-p', 'reply with the single word: ok', '--model', TEST_MODEL];
   const [cmd, argv] = extraWrap === 'pty'
     ? ['/usr/bin/script', ['-q', '/dev/null', CLAUDE_BIN, ...args]]

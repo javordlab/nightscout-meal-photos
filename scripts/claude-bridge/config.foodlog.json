@@ -19,14 +19,6 @@
     {
       "backend": "claude-cli",
       "model": "haiku"
-    },
-    {
-      "backend": "ollama",
-      "model": "gemini-3-flash-preview:cloud"
-    },
-    {
-      "backend": "ollama",
-      "model": "deepseek-v3.2:cloud"
     }
   ],
   "allowedUsers": [

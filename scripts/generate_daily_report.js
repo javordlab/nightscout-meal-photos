@@ -7,6 +7,16 @@ const { fetchRecentSgvRows } = require('./lib/glucose_source');
 
 const CLAUDE_BIN = '/Users/javier/.local/bin/claude';
 const COACH_DIAG_LOG = '/Users/javier/.openclaw/workspace/data/coach_failure_diagnostics.jsonl';
+// Long-lived headless token (claude setup-token) — decouples the coach memo
+// from the interactive 8h credential refresh cycle.
+const CLAUDE_TOKEN_FILE = '/Users/javier/.openclaw/secrets/claude_oauth_token';
+function claudeTokenEnv() {
+  try {
+    const t = fs.readFileSync(CLAUDE_TOKEN_FILE, 'utf8').trim();
+    if (t) return { CLAUDE_CODE_OAUTH_TOKEN: t };
+  } catch {}
+  return {};
+}
 
 function redactSecrets(s) {
   if (!s) return s;
@@ -50,6 +60,7 @@ function captureCoachFailureDiagnostics(ctx) {
     HOME,
     USER: 'javier',
     PATH: '/Users/javier/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin',
+    ...claudeTokenEnv(),
   };
 
   const stat = (p) => {
@@ -408,6 +419,7 @@ Reply with ONLY the paragraph. No other text. No JSON wrapping. Just the paragra
           HOME: '/Users/javier',
           USER: 'javier', // Required for Claude CLI auth in cron (no USER in cron env)
           PATH: '/Users/javier/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin',
+          ...claudeTokenEnv(),
         },
         stdio: ['pipe', 'pipe', 'pipe'],
       });
