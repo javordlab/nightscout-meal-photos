@@ -93,7 +93,7 @@ function sendEmail(subject, text) {
   let key;
   try { key = fs.readFileSync(`${HOME}/.openclaw/secrets/agentmail_api_key`, 'utf8').trim(); }
   catch { return Promise.resolve(false); }
-  const body = JSON.stringify({ to: ['ordonez@gmail.com'], subject, text });
+  const body = JSON.stringify({ to: ['javier@javierordonez.com'], subject, text });
   return new Promise(resolve => {
     const req = https.request({
       hostname: 'api.agentmail.to',
