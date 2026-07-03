@@ -4,12 +4,15 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 
-const WORKSPACE = '/Users/javier/.openclaw/workspace';
+// Repo root derived from this file's location so CI checkouts at other paths work;
+// on the mini this resolves to /Users/javier/.openclaw/workspace as before.
+const WORKSPACE = path.resolve(__dirname, '..', '..');
 const NORMALIZED_PATH = path.join(WORKSPACE, 'data', 'health_log.normalized.json');
 const SYNC_STATE_PATH = path.join(WORKSPACE, 'data', 'sync_state.json');
 const GALLERY_PATH = path.join(WORKSPACE, 'nightscout-meal-photos', 'data', 'notion_meals.json');
 const LOG_PATH = path.join(WORKSPACE, 'data', 'unified_sync.log.jsonl');
 const LOCK_PATH = path.join(WORKSPACE, 'data', 'sync.lock');
+fs.mkdirSync(path.dirname(LOG_PATH), { recursive: true });
 
 // --- Lock Management ---
 function acquireLock() {
