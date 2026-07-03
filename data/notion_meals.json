@@ -1,5 +1,27 @@
 [
   {
+    "id": "39285ec7-0668-813e-8401-d59da30fd07d",
+    "title": "Lunch: Spanish green melon (piel de sapo), a sliced wedge (BG: 117 mg/dL Flat) (Pred: 169-189 mg/dL @ 3:52 PM) (Protein: 1g | Carbs: ~16g | Cals: ~70) [Cumulative Lunch: 94g carbs total] [Coach: Melón to finish 🍈 — whole fruit with water and a bit of fiber, so it's a gentle sweet finish. Just know it's landing on top of an already starchy lunch, so it'll stretch the BG bump a little longer. No harm today — maybe pair fruit with a bit of protein next time to soften it.]",
+    "type": "Lunch",
+    "date": "2026-07-03T14:37:00.000+02:00",
+    "photo": "https://iili.io/CaHSE79.jpg",
+    "carbs": 16,
+    "cals": 70,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "39285ec7-0668-814a-9268-df18e44f5b95",
+    "title": "Lunch: roast beef with creamed spinach, cherry tomatoes, French fries, crusty bread, and carrot purée (BG: 120 mg/dL Flat) (Pred: 158-178 mg/dL @ 3:40 PM) (Protein: 34g | Carbs: ~78g | Cals: ~800) [Coach: Solid protein from the beef plus real veggies — tomatoes and spinach earn you points 🥗. But fries, bread, and carrot purée are a bit of a starch pile-up that'll nudge your BG up. Pick one starch and skip another next time and this lunch is basically a win.]",
+    "type": "Lunch",
+    "date": "2026-07-03T14:25:00.000+02:00",
+    "photo": "https://iili.io/CaHEWxe.jpg",
+    "carbs": 78,
+    "cals": 800,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39285ec7-0668-815c-b1e4-e54071b774a4",
     "title": "Breakfast: Peanut butter, fresh blueberries and flax seed sandwich on multigrain bread, tea with milk (BG: 116 mg/dL Flat) (Pred: 174-194 mg/dL @ 12:49 PM) (Protein: 18g | Carbs: ~48g | Cals: ~460) [Coach: Now this is a breakfast that earns its keep 🥑 — seeded bread, flax, and blueberries all bring fiber to slow the spike, while the peanut butter adds staying power. Just a hair shy of your protein target, so a boiled egg or a spoon of Greek yogurt on the side would round it out beautifully.]",
     "type": "Breakfast",
@@ -7,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-03/e18f60a45aab8139.jpg",
     "carbs": 48,
     "cals": 460,
-    "delta": null,
-    "peak": null
+    "delta": 48,
+    "peak": 162
   },
   {
     "id": "39185ec7-0668-810e-97a1-d0410e8dcf57",
@@ -2025,7 +2047,7 @@
   },
   {
     "id": "36b85ec7-0668-8199-8450-fc5f56f4039b",
-    "title": "Lunch: 1 fresh nectarine (identified by user from skin coloring/pattern) [Cumulative Lunch: 53g carbs total] (BG: 101 mg/dL Flat) (Pred: 126-136 mg/dL @ 4:04 PM) (Protein: 1g | Carbs: ~12g | Cals: ~45) [Coach: Fresh fruit dessert 🍑 — ~12g natural-sugar carbs balanced by fiber. Cumulative lunch ~53g. Smart whole-fruit finisher to a high-protein lunch — exactly the GMI 6.0 pattern.]",
+    "title": "Lunch: 1 fresh nectarine (identified by user from skin coloring/pattern) [Cumulative Lunch: 53g carbs total] (BG: 101 mg/dL Flat) (Pred: 126-136 mg/dL @ 4:04 PM) (Protein: 1g | Carbs: ~12g | Cals: ~45) [Coach: Fresh fruit dessert 🍑 — ~12g natural-sugar carbs balanced by fiber. Cumulative lunch ~53g. Smart whole-fruit finisher to a high-protein lunch �� exactly the GMI 6.0 pattern.]",
     "type": "Lunch",
     "date": "2026-05-25T14:27:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-25/ad9403153f7b3ad8.jpg",
@@ -3191,7 +3213,7 @@
   },
   {
     "id": "35e85ec7-0668-8184-9cc3-d3341fd27a63",
-    "title": "Lunch: White bean stew (judiones / fabes-style) in oil broth, with a side of stewed meat and vegetables (peppers, cabbage, tomato) [Cumulative Lunch: ~48g carbs total] (BG: 132 mg/dL Flat) (Pred: 160-170 mg/dL @ 4:02 PM) (Protein: 23g | Carbs: ~32g | Cals: ~460) [Coach: A real Spanish comida 🫘 — beans bring fiber and plant protein, the stewed meat and veggies round it out beautifully. Cumulative lunch is heartier now; an after-lunch walk would help BG settle gently.]  [id:a2628131]",
+    "title": "Lunch: White bean stew (judiones / fabes-style) in oil broth, with a side of stewed meat and vegetables (peppers, cabbage, tomato) [Cumulative Lunch: ~48g carbs total] (BG: 132 mg/dL Flat) (Pred: 160-170 mg/dL @ 4:02 PM) (Protein: 23g | Carbs: ~32g | Cals: ~460) [Coach: A real Spanish comida �� — beans bring fiber and plant protein, the stewed meat and veggies round it out beautifully. Cumulative lunch is heartier now; an after-lunch walk would help BG settle gently.]  [id:a2628131]",
     "type": "Lunch",
     "date": "2026-05-02T15:01:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-02/1c2c9a8eb31b63ab.jpg",
