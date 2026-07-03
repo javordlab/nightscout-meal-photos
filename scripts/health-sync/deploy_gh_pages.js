@@ -2,7 +2,12 @@
 /**
  * deploy_gh_pages.js
  * Syncs nightscout-meal-photos/ subfolder to the gh-pages branch.
- * Should be called after any update to notion_meals.json, backups.json, or chart PNGs.
+ *
+ * Deploys only when a new meal photo (uploads/) is in the diff — GitHub Pages
+ * soft-limits ~10 builds/hour, and deploying every CGM-driven backups.json
+ * change (~290/day) made it reject a quarter of the deployments. Data/chart
+ * changes ride along with the next photo deploy, the daily staleness valve
+ * (MAX_STALE_MS), or a manual run with --force.
  *
  * Concurrent callers are serialized via an O_EXLOCK file lock; back-to-back
  * pushes are separated by at least MIN_GAP_MS to avoid GitHub Pages "deployment
@@ -19,6 +24,7 @@ const WORKTREE = '/tmp/gh-pages-deploy';
 const LOCK_FILE = '/tmp/deploy_gh_pages.lock';
 const LAST_PUSH_FILE = '/tmp/deploy_gh_pages.last_push';
 const MIN_GAP_MS = 60_000;
+const MAX_STALE_MS = 24 * 60 * 60 * 1000;
 
 let lockFd = null;
 function acquireLock() {
@@ -49,6 +55,18 @@ async function waitMinGap() {
 
 function recordPush() {
   fs.writeFileSync(LAST_PUSH_FILE, String(Date.now()));
+}
+
+// True when the last recorded push is older than ms, or there is no record
+// (fresh boot clears /tmp) — either way one deploy is allowed through.
+function lastPushOlderThan(ms) {
+  try {
+    const last = parseInt(fs.readFileSync(LAST_PUSH_FILE, 'utf8'), 10);
+    if (!Number.isFinite(last)) return true;
+    return Date.now() - last > ms;
+  } catch {
+    return true;
+  }
 }
 
 function run(cmd, opts = {}) {
@@ -91,6 +109,16 @@ async function main() {
     const status = run('git status --porcelain', { cwd: WORKTREE, silent: true }) || '';
     if (!status) {
       console.log('gh-pages: nothing to deploy.');
+      return;
+    }
+
+    // Only new meal photos are time-sensitive (their gh-pages URLs are written
+    // into the SSoT/Notion). Everything else waits for a photo, the daily
+    // valve, or --force.
+    const changedPaths = status.split('\n').map(l => l.slice(3).replace(/^"(.*)"$/, '$1'));
+    const hasNewPhoto = changedPaths.some(p => p.startsWith('uploads/') || p.includes('-> uploads/'));
+    if (!hasNewPhoto && !process.argv.includes('--force') && !lastPushOlderThan(MAX_STALE_MS)) {
+      console.log('gh-pages: no new photos — skipping deploy (data-only changes ship with the next photo, the daily valve, or --force).');
       return;
     }
 

@@ -135,7 +135,7 @@ Monitoring:
 | `scripts/sync_notion_to_mysql.js` | RETIRED 2026-05-21 (`retired: true` in cron config) — MySQL is written from SSoT via `sync_ssot_to_mysql.js`, not from Notion |
 | `scripts/mysql_backup.sh` | Daily MySQL backup (4:20 AM) |
 | `scripts/generate_backup_dashboard_data.js` | Updates backups.json for gh-pages status dashboard |
-| `scripts/health-sync/deploy_gh_pages.js` | Deploys to gh-pages branch |
+| `scripts/health-sync/deploy_gh_pages.js` | Deploys to gh-pages branch — only when a new photo (uploads/) changed, at most-daily for data-only churn, or with `--force` (GitHub Pages throttles >10 builds/hr) |
 
 ### Automation
 | Script | Purpose |
