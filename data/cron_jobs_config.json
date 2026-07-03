@@ -203,6 +203,17 @@
       "source": "crontab",
       "staleMaxMs": 93600000,
       "maxDurationMs": 300000
+    },
+    {
+      "id": "claude-auth-watchdog",
+      "name": "Claude Auth Watchdog",
+      "cronExpr": "*/10 * * * *",
+      "staleMaxMs": 2700000,
+      "maxDurationMs": 480000,
+      "source": "launchd",
+      "launchdLabel": "com.healthguard.claude-auth-watchdog",
+      "selfHeartbeat": true,
+      "_comment": "2026-07-03: detects headless 'Not logged in' failures in claude-cli logs, attempts auto-recovery, alerts Javi (Telegram + email). Added after the 2026-07-02/03 auth outage."
     }
   ]
 }

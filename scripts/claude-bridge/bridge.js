@@ -140,6 +140,7 @@ const MAX_MESSAGE_LENGTH = 4096; // Telegram limit
 //   - 'claude-cli'     → spawn `claude --print --model <model>` (full Claude Code tool surface, vision, etc.)
 //   - 'openclaw-agent' → spawn `openclaw agent --agent <agentId>` (uses that agent's configured model + tools)
 //   - 'ollama'         → POST to local Ollama HTTP /api/chat (text only, no tools — vision via base64 image array if model supports it)
+//   - 'codex-cli'      → spawn `codex exec` (OpenAI Codex CLI, ChatGPT-subscription OAuth; read-only sandbox, vision via -i, no file writes)
 //
 // Default order is intentionally Haiku → Codex → Gemini → DeepSeek:
 //   tier 1 (Haiku via claude-cli)        — same tool surface as primary, vision-capable, free under Max, much higher rate limits than Sonnet
@@ -245,22 +246,38 @@ async function sendMessage(chatId, text, replyToId) {
   for (const chunk of chunkMessage(text)) {
     // Send as plain text to avoid Markdown parse failures
     const params = { chat_id: chatId, text: chunk, reply_to_message_id: replyToId };
-    let res;
-    try {
-      res = await tgApi('sendMessage', params);
-      if (res && res.ok === false && res.error_code === 429) {
-        const retryAfter = res.parameters?.retry_after ?? 1;
-        log(`sendMessage 429 — retrying once after ${retryAfter}s`);
-        await new Promise(r => setTimeout(r, Math.min(retryAfter, 60) * 1000));
+    // Retry transient failures (network/timeout exceptions + 429 rate limits) with
+    // backoff. A single dropped sendMessage used to silently lose Maria's reply
+    // (2026-06-15: tgApi timed out after 30s, reply never re-sent). Permanent
+    // rejections (403, 400, …) are NOT retried — they won't succeed on retry.
+    const MAX_ATTEMPTS = 3;
+    let res, sent = false;
+    for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+      try {
         res = await tgApi('sendMessage', params);
+      } catch (err) {
+        if (attempt < MAX_ATTEMPTS) {
+          const backoff = attempt * 3; // 3s, 6s
+          log(`sendMessage failed (attempt ${attempt}/${MAX_ATTEMPTS}): ${err.message} — retrying in ${backoff}s`);
+          await new Promise(r => setTimeout(r, backoff * 1000));
+          continue;
+        }
+        log(`sendMessage failed after ${MAX_ATTEMPTS} attempts: ${err.message}`);
+        break;
       }
-    } catch (err) {
-      log(`sendMessage failed: ${err.message}`);
-      allOk = false;
-      continue;
+      if (res && res.ok === false && res.error_code === 429 && attempt < MAX_ATTEMPTS) {
+        const retryAfter = res.parameters?.retry_after ?? 1;
+        log(`sendMessage 429 — retrying after ${retryAfter}s (attempt ${attempt}/${MAX_ATTEMPTS})`);
+        await new Promise(r => setTimeout(r, Math.min(retryAfter, 60) * 1000));
+        continue;
+      }
+      if (res && res.ok === true) sent = true;
+      break; // got a definitive (non-retryable) response
     }
-    if (!res || res.ok !== true) {
-      log(`sendMessage rejected by Telegram: error_code=${res?.error_code} description=${res?.description}`);
+    if (!sent) {
+      if (res && res.ok !== true) {
+        log(`sendMessage rejected by Telegram: error_code=${res?.error_code} description=${res?.description}`);
+      }
       allOk = false;
     }
   }
@@ -679,6 +696,50 @@ function runOllama(prompt, model, photoPath = null) {
   });
 }
 
+// ── Codex CLI fallback ──────────────────────────────────────────────────────
+// Runs `codex exec` (OpenAI Codex CLI, authenticated via ChatGPT-subscription
+// OAuth — run `codex login` once interactively to set up). Read-only sandbox:
+// the model can read files (vision via -i) but CANNOT write health_log.md or
+// run mutating commands — same best-effort semantics as the ollama tier.
+// Added 2026-07-03 to replace the dead Ollama cloud tiers (subscription lapsed).
+const CODEX_BIN = '/opt/homebrew/bin/codex';
+function runCodex(prompt, model = null, photoPath = null) {
+  return new Promise((resolve, reject) => {
+    const outFile = path.join(WORKSPACE, 'tmp', `codex-last-${process.pid}-${Date.now()}.txt`);
+    const args = ['exec', '--ephemeral', '--skip-git-repo-check', '--color', 'never',
+                  '-s', 'read-only', '-C', CLAUDE_CWD, '-o', outFile];
+    if (model) args.push('-m', model);
+    if (photoPath) args.push('-i', photoPath);
+    args.push('-'); // read the prompt from stdin (avoids ARG_MAX/quoting issues)
+    const child = spawn(CODEX_BIN, args, {
+      cwd: CLAUDE_CWD,
+      env: {
+        ...process.env,
+        HOME: '/Users/javier',
+        USER: 'javier',
+        PATH: '/Users/javier/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin',
+      },
+      stdio: ['pipe', 'ignore', 'pipe'],
+    });
+    let stderr = '';
+    child.stderr.on('data', d => stderr += d);
+    const timer = setTimeout(() => { try { child.kill('SIGKILL'); } catch {} }, 300_000);
+    child.on('error', err => { clearTimeout(timer); reject(err); });
+    child.on('close', code => {
+      clearTimeout(timer);
+      let text = '';
+      try { text = fs.readFileSync(outFile, 'utf8').trim(); fs.unlinkSync(outFile); } catch {}
+      if (code === 0 && text) {
+        resolve({ text, sessionId: null, source: `codex/${model || 'default'}` });
+      } else {
+        reject(new Error(`codex exec failed (exit ${code}): ${(stderr.trim() || 'no stderr').slice(0, 200)}`));
+      }
+    });
+    child.stdin.write(prompt);
+    child.stdin.end();
+  });
+}
+
 // ── Durable inbox journal ────────────────────────────────────────────────────
 // The poll loop advances state.offset BEFORE processing completes, and the
 // poll watchdog process.exit(2) drops anything queued/in-flight. The journal
@@ -939,6 +1000,13 @@ async function processMessage(msg) {
           } else if (tier.backend === 'openclaw-agent') {
             // Fresh openclaw session for the same reason.
             result = await runOpenclawAgent(userId, prompt, null, photoPath, tier.agentId);
+          } else if (tier.backend === 'codex-cli') {
+            // Codex runs in a read-only sandbox: it can read the photo and any
+            // workspace files but cannot write entries or run mutating commands.
+            const fallbackPrompt = photoPath
+              ? `${prompt}\n\n(Note: a photo was attached at ${photoPath}. This fallback runs in a READ-ONLY sandbox — it CANNOT write files or complete the full logging workflow. Best-effort analysis only; tell the user the entry was NOT logged.)`
+              : `${prompt}\n\n(Note: this fallback runs in a READ-ONLY sandbox — it CANNOT write files or complete the full logging workflow. Best-effort analysis only; tell the user the entry was NOT logged.)`;
+            result = await runCodex(fallbackPrompt, tier.model, photoPath);
           } else if (tier.backend === 'ollama') {
             // Ollama is single-shot (no tools). Photo is base64-encoded into the
             // request if the model supports vision; otherwise still passes the path
