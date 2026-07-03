@@ -1,5 +1,12 @@
 # Health Log
 
+| 2026-07-03 | 11:22 +02:00 | Maria Dennis | Food | Breakfast | Breakfast: Peanut butter, fresh blueberries and flax seed sandwich on multigrain bread, tea with milk (BG: 116 mg/dL Flat) (Pred: 174-194 mg/dL @ 12:49 PM) (Protein: 18g | Carbs: ~48g | Cals: ~460) [Coach: Now this is a breakfast that earns its keep 🥑 — seeded bread, flax, and blueberries all bring fiber to slow the spike, while the peanut butter adds staying power. Just a hair shy of your protein target, so a boiled egg or a spoon of Greek yogurt on the side would round it out beautifully.] [photo](https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-03/e18f60a45aab8139.jpg) [id:a7c876e5] | 48 | 460 |
+| 2026-07-02 | 22:44 +02:00 | Maria Dennis | Food | Dessert | Dessert: a peach after dinner (BG: 96 mg/dL FortyFiveDown) (Pred: 113-133 mg/dL @ 12:19 AM) (Protein: 1g | Carbs: ~15g | Cals: ~60) [Coach: A peach for dessert 🍑 — whole fruit, real fiber, and just a gentle amount of natural sugar your blood sugar can handle without drama. With BG already easing down into the 90s, this is a smart, low-stakes way to end the night. Nicely done.] [id:4f3925c4] | 15 | 60 |
+| 2026-07-03 | 13:00 +02:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 149 mg/dL Flat) [id:6f52a1d8] | - | - |
+| 2026-07-03 | 09:00 +02:00 | Maria Dennis | Medication | - | Medication: Lisinopril 10mg (Scheduled) (BG: 113 mg/dL Flat) [id:0f3ed382] | - | - |
+| 2026-07-03 | 09:10 +02:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (breakfast) (BG: 113 mg/dL Flat) [id:c87359e1] | - | - |
+| 2026-07-03 | 09:05 +02:00 | Maria Dennis | Medication | - | Medication: Rosuvastatin 10mg (Scheduled) (BG: 113 mg/dL Flat) [id:ffea1c3f] | - | - |
+| 2026-07-02 | 21:34 +02:00 | Maria Dennis | Food | Dinner | Dinner: hummus (two kinds), lentil chips, jamón, cabeza ibérica and toasted bread (BG: 126 mg/dL Flat) (Pred: 157-177 mg/dL @ 10:29 PM) (Protein: ~33g | Carbs: ~50g | Cals: ~570) [Coach: A tapas spread 🫓 — the hummus adds plant protein and fiber, and there's good protein overall. Quick heads-up that jamón plus cabeza ibérica is two cured meats at once, a touch over your one-a-day, so go easy on the salt. Chips and toast stack the carbs too — keep portions gentle. BG steady at 126.] [photo](https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-02/3e6436fdd6bd71a6.jpg) [id:cff0303c] | 50 | 570 |
 | 2026-07-02 | 19:00 +02:00 | Maria Dennis | Medication | - | Medication: Metformin 1000mg (dinner) (BG: 139 mg/dL Flat) [id:1e6cb89e] | - | - |
 | 2026-07-02 | 13:00 +02:00 | Maria Dennis | Medication | - | Medication: Metformin 500mg (lunch) (BG: 103 mg/dL Flat) [id:090062b3] | - | - |
 | 2026-07-02 | 16:08 +02:00 | Maria Dennis | Medication | - | Medication: Berberine (PRN — taken to help the carb load) (BG: 108 mg/dL Flat) [id:58ff5450] | - | - |
@@ -2284,3 +2291,16 @@
 | 2026-07-01 | 20:14 +02:00 | Maria Dennis | Exercise | - | Exercise: 31-min walk · 2,034 steps · 0.77 mi · 0 kcal (BG: 115 mg/dL Flat) [id:5de922a8] | - | - |
 | 2026-07-01 | 22:48 +02:00 | Maria Dennis | Exercise | - | Exercise: 20-min walk · 1,327 steps · 0.44 mi · 36 kcal (BG: 106 mg/dL Flat) [id:660ebb0e] | - | - |
 | 2026-07-02 | 08:31 +02:00 | Maria Dennis | Sleep | - | Sleep: 4h 44m · Deep 0h 39m · REM 0h 42m · Core 3h 24m · Awake 1h 14m [id:e0ddd75c] | - | - |
+| 2026-07-02 | 12:35 +02:00 | Maria Dennis | Exercise | - | Exercise: 12-min walk · 472 steps · 0.21 mi · 0 kcal (BG: 144 mg/dL FortyFiveUp) [id:b51880c0] | - | - |
+| 2026-07-02 | 13:14 +02:00 | Maria Dennis | Exercise | - | Exercise: 11-min walk · 798 steps · 0.26 mi · 0 kcal (BG: 164 mg/dL Flat) [id:5a190236] | - | - |
+| 2026-07-02 | 13:14 +02:00 | Maria Dennis | Exercise | - | Exercise: 29-min walk · 1,921 steps · 0.61 mi · 0 kcal (BG: 164 mg/dL Flat) [id:85e5ff94] | - | - |
+| 2026-07-02 | 14:10 +02:00 | Maria Dennis | Exercise | - | Exercise: 10-min walk · 455 steps · 0.17 mi · 0 kcal (BG: 124 mg/dL Flat) [id:5a9c5dc8] | - | - |
+| 2026-07-02 | 15:44 +02:00 | Maria Dennis | Exercise | - | Exercise: 20-min walk · 1,530 steps · 0.62 mi · 28 kcal (BG: 120 mg/dL Flat) [id:ff939aa6] | - | - |
+| 2026-07-02 | 18:27 +02:00 | Maria Dennis | Exercise | - | Exercise: 5-min walk · 211 steps · 0.08 mi · 0 kcal (BG: 143 mg/dL Flat) [id:3303e673] | - | - |
+| 2026-07-02 | 19:40 +02:00 | Maria Dennis | Exercise | - | Exercise: 8-min walk · 272 steps · 0.09 mi · 0 kcal (BG: 170 mg/dL Flat) [id:6ae511b8] | - | - |
+| 2026-07-02 | 20:07 +02:00 | Maria Dennis | Exercise | - | Exercise: 6-min walk · 210 steps · 0.08 mi · 0 kcal (BG: 114 mg/dL Flat) [id:e70dd114] | - | - |
+| 2026-07-02 | 20:32 +02:00 | Maria Dennis | Exercise | - | Exercise: 6-min walk · 231 steps · 0.08 mi · 0 kcal (BG: 161 mg/dL FortyFiveUp) [id:d4d17b88] | - | - |
+| 2026-07-02 | 20:50 +02:00 | Maria Dennis | Exercise | - | Exercise: 6-min walk · 202 steps · 0.07 mi · 0 kcal (BG: 164 mg/dL Flat) [id:4ab46615] | - | - |
+| 2026-07-02 | 21:59 +02:00 | Maria Dennis | Exercise | - | Exercise: 46-min walk · 2,942 steps · 0.99 mi · 72 kcal (BG: 146 mg/dL Flat) [id:a0179731] | - | - |
+| 2026-07-03 | 11:42 +02:00 | Maria Dennis | Exercise | - | Exercise: 10-min walk · 1,063 steps · 0.43 mi · 20 kcal (BG: 118 mg/dL Flat) [id:00b37e5e] | - | - |
+| 2026-07-03 | 09:52 +02:00 | Maria Dennis | Sleep | - | Sleep: 8h 07m · Deep 1h 01m · REM 1h 24m · Core 5h 43m · Awake 1h 07m [id:0b0eb674] | - | - |
