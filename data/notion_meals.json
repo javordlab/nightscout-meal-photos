@@ -1,5 +1,16 @@
 [
   {
+    "id": "39385ec7-0668-81ed-970b-c4d53bca7fba",
+    "title": "Breakfast: Greek yogurt with blueberries, walnuts, and ground flax (BG: 118 mg/dL Flat) (Pred: 156-176 mg/dL @ 12:20 PM) (Protein: 18g | Carbs: ~20g | Cals: ~370) [Coach: Now this is a breakfast 🥣 — Greek yogurt for protein, walnuts and flax bringing healthy fats and omega-3s, blueberries for antioxidant fiber. Low and slow on the carbs, so your BG should stay nice and steady. A textbook morning move, honestly.]",
+    "type": "Breakfast",
+    "date": "2026-07-04T10:53:00.000+02:00",
+    "photo": "https://iili.io/Caa8BVI.jpg",
+    "carbs": 20,
+    "cals": 370,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39285ec7-0668-813e-8401-d59da30fd07d",
     "title": "Lunch: Spanish green melon (piel de sapo), a sliced wedge (BG: 117 mg/dL Flat) (Pred: 169-189 mg/dL @ 3:52 PM) (Protein: 1g | Carbs: ~16g | Cals: ~70) [Cumulative Lunch: 94g carbs total] [Coach: Melón to finish 🍈 — whole fruit with water and a bit of fiber, so it's a gentle sweet finish. Just know it's landing on top of an already starchy lunch, so it'll stretch the BG bump a little longer. No harm today — maybe pair fruit with a bit of protein next time to soften it.]",
     "type": "Lunch",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-03/cfeda597b2077476.jpg",
     "carbs": 16,
     "cals": 70,
-    "delta": null,
-    "peak": null
+    "delta": 93,
+    "peak": 210
   },
   {
     "id": "39285ec7-0668-814a-9268-df18e44f5b95",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-03/fa6eedafc058adaf.jpg",
     "carbs": 78,
     "cals": 800,
-    "delta": null,
-    "peak": null
+    "delta": 90,
+    "peak": 210
   },
   {
     "id": "39285ec7-0668-815c-b1e4-e54071b774a4",
