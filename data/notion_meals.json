@@ -1,14 +1,25 @@
 [
   {
+    "id": "39385ec7-0668-810b-ba0f-d2953b9e8d7c",
+    "title": "Dinner (bedtime snack): milk and digestive cookies with peanut butter (BG: 90 mg/dL Flat) (Pred: 121-141 mg/dL @ 11:50 PM) (Protein: 14g | Carbs: ~36g | Cals: ~360) [Coach: A cozy bedtime combo 🥛 — the peanut butter is the smart touch, adding protein and fat to slow the cookies' quick wheat carbs, and the milk brings more protein. With BG resting at a nice 90, a modest portion won't rock the boat overnight. Just keep the cookie count small this late.]",
+    "type": "Dinner",
+    "date": "2026-07-04T22:55:00.000+02:00",
+    "photo": "https://iili.io/CaO2qqN.jpg",
+    "carbs": 36,
+    "cals": 360,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39385ec7-0668-8117-92c8-e0d6e9aad90b",
     "title": "Dinner: melón con jamón (green melon cubes with cured ham) (BG: 107 mg/dL Flat) (Pred: 130-150 mg/dL @ 7:39 PM) (Protein: 10g | Carbs: ~15g | Cals: ~160) [Coach: Melón con jamón, a Spanish classic and a lovely light dinner 🍈. The melon's natural sugar is softened by the protein from the ham, so your BG should stay mellow. That is your one cured-meat pick for the day, right on target. Refreshing and easy on the evening.]",
     "type": "Dinner",
     "date": "2026-07-04T18:44:00.000+02:00",
-    "photo": "https://iili.io/CaXgg2a.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-04/2c22c20ea06c51c0.jpg",
     "carbs": 15,
     "cals": 160,
-    "delta": null,
-    "peak": null
+    "delta": 54,
+    "peak": 159
   },
   {
     "id": "39385ec7-0668-817d-95d6-d00ffed49c2b",
