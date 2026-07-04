@@ -1,14 +1,25 @@
 [
   {
+    "id": "39385ec7-0668-8117-92c8-e0d6e9aad90b",
+    "title": "Dinner: melón con jamón (green melon cubes with cured ham) (BG: 107 mg/dL Flat) (Pred: 130-150 mg/dL @ 7:39 PM) (Protein: 10g | Carbs: ~15g | Cals: ~160) [Coach: Melón con jamón, a Spanish classic and a lovely light dinner 🍈. The melon's natural sugar is softened by the protein from the ham, so your BG should stay mellow. That is your one cured-meat pick for the day, right on target. Refreshing and easy on the evening.]",
+    "type": "Dinner",
+    "date": "2026-07-04T18:44:00.000+02:00",
+    "photo": "https://iili.io/CaXgg2a.jpg",
+    "carbs": 15,
+    "cals": 160,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39385ec7-0668-817d-95d6-d00ffed49c2b",
     "title": "Lunch: neapolitan ice cream wafer sandwich (dessert) (BG: 105 mg/dL Flat) (Pred: 137-157 mg/dL @ 3:50 PM) (Protein: 3g | Carbs: ~22g | Cals: ~180) [Cumulative Lunch: 52g carbs total] [Coach: A little ice cream treat 🍦 — wafers and sweet cream are fast sugar, so this is the part of lunch that will actually nudge your BG up. No harm as an occasional treat, especially riding on all that protein and fiber from the main plate. Best kept to once-in-a-while.]",
     "type": "Lunch",
     "date": "2026-07-04T14:35:00.000+02:00",
-    "photo": "https://iili.io/CaG5Av9.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-04/43dba16bcbe5b4d9.jpg",
     "carbs": 22,
     "cals": 180,
-    "delta": null,
-    "peak": null
+    "delta": 35,
+    "peak": 140
   },
   {
     "id": "39385ec7-0668-81c2-8916-df2d2bb30de9",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-04/2e989695f790defd.jpg",
     "carbs": 28,
     "cals": 330,
-    "delta": null,
-    "peak": null
+    "delta": 37,
+    "peak": 140
   },
   {
     "id": "39385ec7-0668-81ed-970b-c4d53bca7fba",
