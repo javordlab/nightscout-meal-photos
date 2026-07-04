@@ -1,12 +1,23 @@
 [
   {
+    "id": "39385ec7-0668-817d-95d6-d00ffed49c2b",
+    "title": "Lunch: neapolitan ice cream wafer sandwich (dessert) (BG: 105 mg/dL Flat) (Pred: 137-157 mg/dL @ 3:50 PM) (Protein: 3g | Carbs: ~22g | Cals: ~180) [Cumulative Lunch: 52g carbs total] [Coach: A little ice cream treat 🍦 — wafers and sweet cream are fast sugar, so this is the part of lunch that will actually nudge your BG up. No harm as an occasional treat, especially riding on all that protein and fiber from the main plate. Best kept to once-in-a-while.]",
+    "type": "Lunch",
+    "date": "2026-07-04T14:35:00.000+02:00",
+    "photo": "https://iili.io/CaG5Av9.jpg",
+    "carbs": 22,
+    "cals": 180,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39385ec7-0668-81c2-8916-df2d2bb30de9",
-    "title": "Lunch: roasted chicken (drumstick and thigh) with potatoes, broccoli, and grapes (BG: 103 mg/dL Flat) (Pred: 129-149 mg/dL @ 3:10 PM) (Protein: 35g | Carbs: ~30g | Cals: ~465) [Cumulative Lunch: 32g carbs total] [Coach: Now THIS is a plate 👏 — chicken brings ~30g protein, broccoli covers the veggie corner, and there is just enough potato for a satisfying starch. The protein and fiber will keep that potato from spiking you, and it rounds your earlier cheese into a genuinely balanced lunch.]",
+    "title": "Lunch: roasted chicken (drumstick and thigh, partially eaten, some chicken left) with potatoes, broccoli, and cherry tomatoes (BG: 103 mg/dL Flat) (Pred: 137-157 mg/dL @ 3:10 PM) (Protein: 23g | Carbs: ~28g | Cals: ~330) [Cumulative Lunch: 30g carbs total] [Coach: Now THIS is a plate 👏 — broccoli and cherry tomatoes cover the veggie corner, and there is just enough potato for a satisfying starch. Leaving some chicken is no problem, you still got ~20g of protein, and the fiber keeps that potato from spiking you. A genuinely balanced lunch.]",
     "type": "Lunch",
     "date": "2026-07-04T13:55:00.000+02:00",
-    "photo": "https://iili.io/CaElxaV.jpg",
-    "carbs": 30,
-    "cals": 465,
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-04/2e989695f790defd.jpg",
+    "carbs": 28,
+    "cals": 330,
     "delta": null,
     "peak": null
   },
@@ -232,7 +243,7 @@
   },
   {
     "id": "38d85ec7-0668-8126-8c47-d4a182875fe2",
-    "title": "Lunch: a fresh flat peach (paraguayo) (BG: 124 mg/dL Flat) (Pred: 136-156 mg/dL @ 5:11 PM) (Protein: 1g | Carbs: ~15g | Cals: ~60) [Coach: A juicy flat peach 🍑 �� whole fruit with fiber, so the natural sugar comes with brakes built in. An easy, refreshing afternoon pick. You have leaned on fruit a lot today, all good choices, though pairing the next one with a little protein would round things out and keep you fuller.]",
+    "title": "Lunch: a fresh flat peach (paraguayo) (BG: 124 mg/dL Flat) (Pred: 136-156 mg/dL @ 5:11 PM) (Protein: 1g | Carbs: ~15g | Cals: ~60) [Coach: A juicy flat peach 🍑 — whole fruit with fiber, so the natural sugar comes with brakes built in. An easy, refreshing afternoon pick. You have leaned on fruit a lot today, all good choices, though pairing the next one with a little protein would round things out and keep you fuller.]",
     "type": "Lunch",
     "date": "2026-06-28T15:56:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-28/91f060743a1b7c0b.jpg",
