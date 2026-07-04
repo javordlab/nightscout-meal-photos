@@ -1,14 +1,25 @@
 [
   {
-    "id": "39385ec7-0668-81ed-970b-c4d53bca7fba",
-    "title": "Breakfast: Greek yogurt with blueberries, walnuts, and ground flax (BG: 118 mg/dL Flat) (Pred: 156-176 mg/dL @ 12:20 PM) (Protein: 18g | Carbs: ~20g | Cals: ~370) [Coach: Now this is a breakfast 🥣 — Greek yogurt for protein, walnuts and flax bringing healthy fats and omega-3s, blueberries for antioxidant fiber. Low and slow on the carbs, so your BG should stay nice and steady. A textbook morning move, honestly.]",
-    "type": "Breakfast",
-    "date": "2026-07-04T10:53:00.000+02:00",
-    "photo": "https://iili.io/Caa8BVI.jpg",
-    "carbs": 20,
-    "cals": 370,
+    "id": "39385ec7-0668-81c2-8916-df2d2bb30de9",
+    "title": "Lunch: roasted chicken (drumstick and thigh) with potatoes, broccoli, and grapes (BG: 103 mg/dL Flat) (Pred: 129-149 mg/dL @ 3:10 PM) (Protein: 35g | Carbs: ~30g | Cals: ~465) [Cumulative Lunch: 32g carbs total] [Coach: Now THIS is a plate 👏 — chicken brings ~30g protein, broccoli covers the veggie corner, and there is just enough potato for a satisfying starch. The protein and fiber will keep that potato from spiking you, and it rounds your earlier cheese into a genuinely balanced lunch.]",
+    "type": "Lunch",
+    "date": "2026-07-04T13:55:00.000+02:00",
+    "photo": "https://iili.io/CaElxaV.jpg",
+    "carbs": 30,
+    "cals": 465,
     "delta": null,
     "peak": null
+  },
+  {
+    "id": "39385ec7-0668-81ed-970b-c4d53bca7fba",
+    "title": "Breakfast: plain natural yogurt with blueberries, walnuts, and ground flax (BG: 118 mg/dL Flat) (Pred: 156-176 mg/dL @ 12:20 PM) (Protein: 12g | Carbs: ~20g | Cals: ~365) [Coach: Plain natural yogurt keeps it simple, and the walnuts and flax pack in healthy fats and omega-3s while the blueberries add antioxidant fiber 🥣. Low and slow on the carbs, so your BG should stay steady. Want a bit more staying power? A few extra walnuts or an egg on the side nudges the protein up.]",
+    "type": "Breakfast",
+    "date": "2026-07-04T10:53:00.000+02:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-04/f7ebde89e008e0a5.jpg",
+    "carbs": 20,
+    "cals": 365,
+    "delta": 20,
+    "peak": 138
   },
   {
     "id": "39285ec7-0668-813e-8401-d59da30fd07d",
@@ -221,7 +232,7 @@
   },
   {
     "id": "38d85ec7-0668-8126-8c47-d4a182875fe2",
-    "title": "Lunch: a fresh flat peach (paraguayo) (BG: 124 mg/dL Flat) (Pred: 136-156 mg/dL @ 5:11 PM) (Protein: 1g | Carbs: ~15g | Cals: ~60) [Coach: A juicy flat peach 🍑 — whole fruit with fiber, so the natural sugar comes with brakes built in. An easy, refreshing afternoon pick. You have leaned on fruit a lot today, all good choices, though pairing the next one with a little protein would round things out and keep you fuller.]",
+    "title": "Lunch: a fresh flat peach (paraguayo) (BG: 124 mg/dL Flat) (Pred: 136-156 mg/dL @ 5:11 PM) (Protein: 1g | Carbs: ~15g | Cals: ~60) [Coach: A juicy flat peach 🍑 �� whole fruit with fiber, so the natural sugar comes with brakes built in. An easy, refreshing afternoon pick. You have leaned on fruit a lot today, all good choices, though pairing the next one with a little protein would round things out and keep you fuller.]",
     "type": "Lunch",
     "date": "2026-06-28T15:56:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-28/91f060743a1b7c0b.jpg",
