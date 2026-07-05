@@ -1,10 +1,21 @@
 [
   {
+    "id": "39485ec7-0668-81ef-86fb-dca1b8ff28e0",
+    "title": "Lunch: roasted chicken leftovers (drumstick and thigh) with potatoes, broccoli, and cherry tomatoes (BG: 97 mg/dL FortyFiveDown) (Pred: 122-142 mg/dL @ 3:18 PM) (Protein: 35g | Carbs: ~28g | Cals: ~425) [Coach: Leftovers doing you a favor 👌 — chicken brings ~30g protein, broccoli and cherry tomatoes hold the veggie corner, and the potato is a sensible starch. Nicely timed too — with your BG drifting down to 97, this balanced plate will steady you right back up.]",
+    "type": "Lunch",
+    "date": "2026-07-05T14:03:00.000+02:00",
+    "photo": "https://iili.io/CaLxVdx.jpg",
+    "carbs": 28,
+    "cals": 425,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39485ec7-0668-8140-a518-d050f8c42c07",
     "title": "Lunch: turkey sandwich on multigrain seeded bread with mustard, and a bowl of blueberries (BG: 125 mg/dL Flat) (Pred: 143-163 mg/dL @ 12:31 PM) (Protein: 19g | Carbs: ~40g | Cals: ~280) [Coach: Solid brunch move 🥪 — the multigrain seeded bread brings real fiber, the turkey packs ~18g of lean protein, and the blueberries add antioxidants without much sugar. That fiber-and-protein combo should keep the rise gentle. A near-model way to start the day.]",
     "type": "Lunch",
     "date": "2026-07-05T11:16:00.000+02:00",
-    "photo": "https://iili.io/Ca47ZEg.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-05/da96273059cece9b.jpg",
     "carbs": 40,
     "cals": 280,
     "delta": null,
@@ -1574,7 +1585,7 @@
   },
   {
     "id": "37485ec7-0668-8185-9e00-d7662db8eff9",
-    "title": "Dessert/early dinner: wafer \"sandwich\" �� 2 square wafers with ice cream (nata and chocolate flavors) and fresh raspberries in the middle (BG: 119 mg/dL Flat) (Pred: 166-176 mg/dL @ 7:21 PM) (Protein: 6g , Carbs: ~45g , Cals: ~291) [Coach: Wafer + ice cream + raspberries 🍦 — heads up, the ice cream pulls the carb load up to ~45g (vs my initial cream estimate of ~28g). The raspberries still bring fiber, but Pred shifts to ~171 by 7:21 PM. A short post-dessert walk would noticeably clip this peak.]",
+    "title": "Dessert/early dinner: wafer \"sandwich\" — 2 square wafers with ice cream (nata and chocolate flavors) and fresh raspberries in the middle (BG: 119 mg/dL Flat) (Pred: 166-176 mg/dL @ 7:21 PM) (Protein: 6g , Carbs: ~45g , Cals: ~291) [Coach: Wafer + ice cream + raspberries 🍦 — heads up, the ice cream pulls the carb load up to ~45g (vs my initial cream estimate of ~28g). The raspberries still bring fiber, but Pred shifts to ~171 by 7:21 PM. A short post-dessert walk would noticeably clip this peak.]",
     "type": "Dinner",
     "date": "2026-06-03T18:05:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-03/deccbfa174cb0ff8.jpg",
