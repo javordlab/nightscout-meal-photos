@@ -1,14 +1,25 @@
 [
   {
+    "id": "39485ec7-0668-81ee-9d05-d46fbbcffcbf",
+    "title": "Dinner: coffee gelatine with a bit of panna cotta and melon (BG: 128 mg/dL Flat) (Pred: 146-166 mg/dL @ 8:23 PM) (Protein: 5g | Carbs: ~27g | Cals: ~175) [Coach: A sweet little trio — the coffee gelatine and panna cotta are mostly sugar and cream, so with BG already at 128 they'll nudge you up without much staying power. The melon adds fresh fiber. If this is standing in for dinner, a bit of protein alongside would keep you fuller and steadier.]",
+    "type": "Dinner",
+    "date": "2026-07-05T19:28:00.000+02:00",
+    "photo": "https://iili.io/CayWSJ1.jpg",
+    "carbs": 27,
+    "cals": 175,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39485ec7-0668-81ef-86fb-dca1b8ff28e0",
     "title": "Lunch: roasted chicken leftovers (drumstick and thigh) with potatoes, broccoli, and cherry tomatoes (BG: 97 mg/dL FortyFiveDown) (Pred: 122-142 mg/dL @ 3:18 PM) (Protein: 35g | Carbs: ~28g | Cals: ~425) [Coach: Leftovers doing you a favor 👌 — chicken brings ~30g protein, broccoli and cherry tomatoes hold the veggie corner, and the potato is a sensible starch. Nicely timed too — with your BG drifting down to 97, this balanced plate will steady you right back up.]",
     "type": "Lunch",
     "date": "2026-07-05T14:03:00.000+02:00",
-    "photo": "https://iili.io/CaLxVdx.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-05/db2da87fdadb9755.jpg",
     "carbs": 28,
     "cals": 425,
-    "delta": null,
-    "peak": null
+    "delta": 60,
+    "peak": 151
   },
   {
     "id": "39485ec7-0668-8140-a518-d050f8c42c07",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-05/da96273059cece9b.jpg",
     "carbs": 40,
     "cals": 280,
-    "delta": null,
-    "peak": null
+    "delta": 53,
+    "peak": 178
   },
   {
     "id": "39385ec7-0668-810b-ba0f-d2953b9e8d7c",
