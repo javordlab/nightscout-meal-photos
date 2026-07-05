@@ -172,6 +172,20 @@ const DEFAULT_FALLBACK_CHAIN = [
 ];
 const FALLBACK_CHAIN = config.fallbackChain || DEFAULT_FALLBACK_CHAIN;
 
+// ── All-models-failed retry (2026-07-06) ────────────────────────────────────
+// Origin: 2026-07-05 22:44 CEST — a transient upstream 401 burst took out the
+// primary and every fallback within 40 seconds, and the message was lost
+// ("All models failed … Session reset"). Instead of giving up after one pass
+// through the chain, processMessage returns 'retry': the inbox-journal entry
+// stays un-done (so a bridge restart mid-outage still replays it via
+// recoverInbox, 24h retention) and the message re-enters handleMessage after
+// a backoff delay. Only after the full schedule fails does the bridge reset
+// the session and tell the user. A NEW message arriving during a wait is
+// processed immediately, so ordering across an outage window is best-effort —
+// acceptable for the food log, where [submitted_at:] preserves entry times.
+const RETRY_DELAYS_MS = [2, 5, 10, 20, 40, 60].map(m => m * 60 * 1000);
+const RETRY_MAX = RETRY_DELAYS_MS.length;
+
 // Validate config
 if (!BOT_TOKEN) { console.error(`[claude-bridge] FATAL: no botToken in ${CONFIG_PATH}`); process.exit(1); }
 if (BACKEND === 'openclaw-agent' && !OPENCLAW_AGENT_ID) {
@@ -860,12 +874,15 @@ async function handleMessage(msg) {
   try {
     let current = msg;
     while (current) {
+      let outcome;
       try {
-        await processMessage(current);
+        outcome = await processMessage(current);
       } catch (err) {
         log(`processMessage error: ${err.message}`);
       }
-      journalMarkDone(current.__update_id);
+      // 'retry' → a backoff re-attempt is scheduled; leave the journal entry
+      // un-done so a restart mid-outage still replays it.
+      if (outcome !== 'retry') journalMarkDone(current.__update_id);
       const q = userQueues.get(userId);
       if (q && q.length > 0) {
         current = q.shift();
@@ -1045,11 +1062,26 @@ async function processMessage(msg) {
     }
     clearTimeout(warnTimeout);
     if (!result) {
+      clearInterval(typingInterval);
+      const attempt = (msg.__retryCount || 0) + 1;
+      if (attempt <= RETRY_MAX) {
+        msg.__retryCount = attempt;
+        const delayMs = RETRY_DELAYS_MS[attempt - 1];
+        log(`All models failed (attempt ${attempt}/${RETRY_MAX + 1}) — retrying in ${Math.round(delayMs / 60000)} min. Last error: ${lastErr?.message}`);
+        if (attempt === 1) {
+          await sendMessage(chatId,
+            '⏳ Temporary problem reaching Claude — your message is queued and will be processed automatically when service recovers (I will keep retrying for ~2.5h).', msgId);
+        }
+        const timer = setTimeout(() => {
+          handleMessage(msg).catch(err => log(`retry dispatch error: ${err.message}`));
+        }, delayMs);
+        timer.unref();
+        return 'retry';
+      }
       delete state.sessions[userId];
       saveState();
-      clearInterval(typingInterval);
       await sendMessage(chatId,
-        `All models failed. Last error: ${lastErr?.message}\n\nSession reset.`, msgId);
+        `All models failed after ${RETRY_MAX + 1} attempts over ~2.5h. Last error: ${lastErr?.message}\n\nSession reset.`, msgId);
       return;
     }
 

@@ -38,7 +38,20 @@ function claudeTokenEnv() {
   return {};
 }
 const STATE_FILE = path.join(WORKSPACE, 'data/claude_auth_watchdog_state.json');
-const MARKER = 'Not logged in';
+// Failure signatures. The original single marker ('Not logged in', the
+// 2026-07-02/03 outage shape) missed the 2026-07-05 22:44 burst, which
+// surfaced as "API Error: 401 Invalid authentication credentials" — zero
+// alerts fired. Match ANY known auth-failure shape plus the bridge's
+// total-outage line (which indicates Maria-facing failure whatever the cause).
+const MARKERS = [
+  'Not logged in',                      // headless OAuth refresh dead (2026-07-02/03)
+  'Invalid authentication credentials', // API-side 401 (2026-07-05)
+  'Failed to authenticate',             // claude-cli auth failure wrapper
+  'OAuth token has expired',
+  'All models failed',                  // bridge exhausted primary + all fallbacks
+];
+const MARKER = MARKERS[0]; // retained for the recovery-path pty heuristic
+function hasMarker(text) { return MARKERS.some(m => text.includes(m)); }
 const TEST_MODEL = 'claude-haiku-4-5-20251001';
 const REALERT_MS = 6 * 60 * 60 * 1000;      // while broken, re-alert at most every 6h
 const HICCUP_DEDUPE_MS = 60 * 60 * 1000;    // aggregate recovered-hiccup alerts per hour
@@ -93,7 +106,7 @@ function runClaude(extraWrap) {
     : [CLAUDE_BIN, args];
   try {
     const out = execFileSync(cmd, argv, { env, timeout: 120_000, killSignal: 'SIGKILL', encoding: 'utf8' });
-    return { ok: !out.includes(MARKER), out: out.trim().slice(0, 200) };
+    return { ok: !hasMarker(out), out: out.trim().slice(0, 200) };
   } catch (e) {
     const out = `${e.stdout || ''}${e.stderr || ''}`.trim().slice(0, 200) || e.message;
     return { ok: false, out };
@@ -136,7 +149,9 @@ async function main() {
   for (const file of WATCHED_LOGS) {
     const chunk = readNew(file, state.offsets);
     if (!chunk) continue;
-    const n = chunk.split(MARKER).length - 1;
+    // Count matching LINES (a single line can contain several markers,
+    // e.g. "Failed to authenticate. API Error: 401 Invalid authentication…").
+    const n = chunk.split('\n').filter(hasMarker).length;
     if (n > 0) hits.push({ file: path.basename(file), count: n });
   }
 
@@ -205,7 +220,7 @@ async function main() {
   }
   if (now - state.incident.lastAlertAt > REALERT_MS) {
     const since = madrid(state.incident.startedAt);
-    const msg = `🚨 Claude auth is DOWN (headless "Not logged in") and auto-recovery failed.\nSince: ${since}\nNew failures: ${hitSummary}\nLive test says: ${test.out}\n\nFix: open Claude Code interactively on the mini (or run: claude /login). Foodlog bridge, coach memo and claude-cli cron jobs are failing until then; no fallback tier is available.`;
+    const msg = `🚨 Claude auth is DOWN (headless auth failure) and auto-recovery failed.\nSince: ${since}\nNew failures: ${hitSummary}\nLive test says: ${test.out}\n\nFix: open Claude Code interactively on the mini (or run: claude /login). Foodlog bridge, coach memo and claude-cli cron jobs are failing until then; no fallback tier is available.`;
     const tg = await sendAlert(msg, undefined, { parseMode: null });
     const em = await sendEmail('HealthGuard ALERT: Claude auth DOWN — manual action needed', msg);
     // Only count the alert as delivered if a channel actually accepted it —
