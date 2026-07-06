@@ -1,14 +1,36 @@
 [
   {
-    "id": "39585ec7-0668-8180-b6d4-d019a339cbda",
-    "title": "Lunch: a bowl of fresh melon chunks (BG: 163 mg/dL Flat) (Pred: 155-175 mg/dL @ 12:51 PM) (Protein: 1g | Carbs: ~20g | Cals: ~80) [Coach: Melon is refreshing and hydrating 🍈, but it's mostly fruit sugar landing on top of a breakfast that's still digesting — part of why your BG is already near 163. A few nuts or a spoon of yogurt alongside would soften the rise. Lovely pick, maybe just a smaller bowl next time.]",
+    "id": "39585ec7-0668-81ef-9383-f5c89319280d",
+    "title": "Lunch: chickpea stew with tripe (garbanzos con callos) in tomato-paprika sauce (BG: 133 mg/dL Flat) (Pred: 168-188 mg/dL @ 3:51 PM) (Protein: 19g | Carbs: ~32g | Cals: ~380) [Cumulative Lunch: 80g carbs total] [Coach: Garbanzos con callos is a hearty classic 🍲 — chickpeas bring fiber and plant protein that keep it steadier than it looks. Stacked with the empanada though, lunch is now near 80g of carbs total, a big load — a short walk after would help it land gently.]",
     "type": "Lunch",
-    "date": "2026-07-06T11:36:00.000+02:00",
-    "photo": "https://iili.io/CcuT9XS.jpg",
-    "carbs": 20,
-    "cals": 80,
+    "date": "2026-07-06T14:36:00.000+02:00",
+    "photo": "https://iili.io/CcYHACJ.jpg",
+    "carbs": 32,
+    "cals": 380,
     "delta": null,
     "peak": null
+  },
+  {
+    "id": "39585ec7-0668-8145-8e8a-e8ba2447c231",
+    "title": "Lunch: a slice of savory tomato empanada with steamed leeks and a side of chopped tomato (BG: 133 mg/dL Flat) (Pred: 155-175 mg/dL @ 3:46 PM) (Protein: 14g | Carbs: ~48g | Cals: ~390) [Coach: Nice range on this plate 🥗 — steamed leeks and tomato bring real veggie fiber that quietly slows things down. The empanada slice is the refined-carb wildcard carrying most of the load. A bit more protein — tuna, egg, some cheese — would round it into a proper win.]",
+    "type": "Lunch",
+    "date": "2026-07-06T14:31:00.000+02:00",
+    "photo": "https://iili.io/Cc7L5Rj.jpg",
+    "carbs": 48,
+    "cals": 390,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "39585ec7-0668-8180-b6d4-d019a339cbda",
+    "title": "Lunch: a small bowl (about one cup) of fresh melon chunks (BG: 163 mg/dL Flat) (Pred: 161-181 mg/dL @ 12:51 PM) (Protein: 1g | Carbs: ~15g | Cals: ~55) [Coach: A small cup of melon is a light, refreshing choice 🍈 — modest on carbs and easy on your blood sugar. It's mostly fruit sugar with nothing to slow it, so a few nuts or a spoon of yogurt alongside would round it out. Nicely portioned.]",
+    "type": "Lunch",
+    "date": "2026-07-06T11:36:00.000+02:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-06/a5f673b2f9441f21.jpg",
+    "carbs": 15,
+    "cals": 55,
+    "delta": 11,
+    "peak": 174
   },
   {
     "id": "39585ec7-0668-813e-ba3d-e90f11490cd6",
@@ -18,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-06/3e98ac37c4c86ea4.jpg",
     "carbs": 55,
     "cals": 530,
-    "delta": null,
-    "peak": null
+    "delta": 51,
+    "peak": 174
   },
   {
     "id": "39485ec7-0668-811d-a65b-c8b5b7b12e39",
