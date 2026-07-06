@@ -1,14 +1,25 @@
 [
   {
+    "id": "39585ec7-0668-813e-ba3d-e90f11490cd6",
+    "title": "Breakfast: peanut butter, blueberries and flax sandwich on seeded bread with a glass of milk (BG: 122 mg/dL Flat) (Pred: 173-193 mg/dL @ 12:00 PM) (Protein: 24g | Carbs: ~55g | Cals: ~530) [Coach: Peanut butter, blueberries and flax on seeded bread is a solid breakfast build 🥪 — protein, fiber and healthy fats all show up to soften the spike. The bread plus milk nudge the carbs a little high, so a thinner slice next time keeps it tidy. Whole berries over juice — exactly right.]",
+    "type": "Breakfast",
+    "date": "2026-07-06T10:33:00.000+02:00",
+    "photo": "https://iili.io/CcI228g.jpg",
+    "carbs": 55,
+    "cals": 530,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39485ec7-0668-811d-a65b-c8b5b7b12e39",
     "title": "Dinner: cold cuts and cheese sandwich on multigrain seeded bread with tomato (BG: 129 mg/dL Flat) (Pred: 142-162 mg/dL @ 10:27 PM) (Protein: 19g | Carbs: ~31g | Cals: ~360) [Coach: A tidy little dinner 🥪 — multigrain bread for fiber, and cold cuts plus cheese bring ~19g of protein to keep you satisfied, with tomato for a fresh touch. That's your one cured-meat pick today, right on target, and the whole-grain bread keeps the rise mellow.]",
     "type": "Dinner",
     "date": "2026-07-05T21:32:00.000+02:00",
-    "photo": "https://iili.io/CcHCbGR.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-05/c9f81375bf8777a2.jpg",
     "carbs": 31,
     "cals": 360,
-    "delta": null,
-    "peak": null
+    "delta": 26,
+    "peak": 155
   },
   {
     "id": "39485ec7-0668-81ee-9d05-d46fbbcffcbf",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-05/25321969f4b746f3.jpg",
     "carbs": 27,
     "cals": 175,
-    "delta": null,
-    "peak": null
+    "delta": 21,
+    "peak": 152
   },
   {
     "id": "39485ec7-0668-81ef-86fb-dca1b8ff28e0",
