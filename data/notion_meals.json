@@ -1,10 +1,21 @@
 [
   {
+    "id": "39585ec7-0668-8180-b6d4-d019a339cbda",
+    "title": "Lunch: a bowl of fresh melon chunks (BG: 163 mg/dL Flat) (Pred: 155-175 mg/dL @ 12:51 PM) (Protein: 1g | Carbs: ~20g | Cals: ~80) [Coach: Melon is refreshing and hydrating 🍈, but it's mostly fruit sugar landing on top of a breakfast that's still digesting — part of why your BG is already near 163. A few nuts or a spoon of yogurt alongside would soften the rise. Lovely pick, maybe just a smaller bowl next time.]",
+    "type": "Lunch",
+    "date": "2026-07-06T11:36:00.000+02:00",
+    "photo": "https://iili.io/CcuT9XS.jpg",
+    "carbs": 20,
+    "cals": 80,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39585ec7-0668-813e-ba3d-e90f11490cd6",
     "title": "Breakfast: peanut butter, blueberries and flax sandwich on seeded bread with a glass of milk (BG: 122 mg/dL Flat) (Pred: 173-193 mg/dL @ 12:00 PM) (Protein: 24g | Carbs: ~55g | Cals: ~530) [Coach: Peanut butter, blueberries and flax on seeded bread is a solid breakfast build 🥪 — protein, fiber and healthy fats all show up to soften the spike. The bread plus milk nudge the carbs a little high, so a thinner slice next time keeps it tidy. Whole berries over juice — exactly right.]",
     "type": "Breakfast",
     "date": "2026-07-06T10:33:00.000+02:00",
-    "photo": "https://iili.io/CcI228g.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-06/3e98ac37c4c86ea4.jpg",
     "carbs": 55,
     "cals": 530,
     "delta": null,
