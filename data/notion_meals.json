@@ -1,14 +1,36 @@
 [
   {
+    "id": "39685ec7-0668-8132-8924-e4faae8c5c41",
+    "title": "Lunch: a yellow plum (BG: 138 mg/dL Flat) (Pred: 137-157 mg/dL @ 5:00 PM) (Protein: 1g | Carbs: ~8g | Cals: ~30) [Cumulative Lunch: 18g carbs total] [Coach: A sweet little plum to finish 👌 — whole fruit brings fiber along, so it's a gentle sweet after that big protein lunch. Only a handful of extra carbs on an already-steady meal. Lovely way to round things off.]",
+    "type": "Lunch",
+    "date": "2026-07-07T15:45:00.000+02:00",
+    "photo": "https://iili.io/Ccml0be.jpg",
+    "carbs": 8,
+    "cals": 30,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "39685ec7-0668-811e-8de2-fff4e422ebad",
+    "title": "Lunch: grilled tuna collar, cockles (berberechos) with lemon, and steamed broccoli with red pepper-onion vinaigrette (BG: 138 mg/dL Flat) (Pred: 135-155 mg/dL @ 3:59 PM) (Protein: 42g | Carbs: ~10g | Cals: ~400) [Coach: Gorgeous plate 🎯 — grilled tuna collar and cockles bring a wave of lean protein plus iron, B12 and omega-3s, and the broccoli is exactly the non-starchy veggie we love to see. Barely any carbs, so your blood sugar stays calm. Genuinely a gold-star lunch.]",
+    "type": "Lunch",
+    "date": "2026-07-07T14:44:00.000+02:00",
+    "photo": "https://iili.io/CcbuoFe.jpg",
+    "carbs": 10,
+    "cals": 400,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39685ec7-0668-81a5-8c64-e705ed600af5",
     "title": "Breakfast: peanut butter and fresh peach slices on whole-grain toast (BG: 125 mg/dL Flat) (Pred: 173-193 mg/dL @ 10:12 AM) (Protein: 11g | Carbs: ~30g | Cals: ~310) [Coach: Peanut butter and fresh peach on toast 🥪 — the PB brings protein and healthy fats that steady the ride, and the whole peach adds fiber over plain jam would. Bread's your main carb as usual, so this is a nicely built breakfast. A short walk after and it'll settle in gently.]",
     "type": "Breakfast",
     "date": "2026-07-07T08:45:00.000+02:00",
-    "photo": "https://iili.io/CcgSh3N.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-07/04499f59273841d5.jpg",
     "carbs": 30,
     "cals": 310,
-    "delta": null,
-    "peak": null
+    "delta": 46,
+    "peak": 171
   },
   {
     "id": "39585ec7-0668-8164-b154-f75a8bcb6e05",
