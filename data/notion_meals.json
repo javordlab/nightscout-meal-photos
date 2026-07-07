@@ -1,25 +1,36 @@
 [
   {
-    "id": "39585ec7-0668-8164-b154-f75a8bcb6e05",
-    "title": "Dinner: a fresh nectarine (BG: 120 mg/dL Flat) (Pred: 145-165 mg/dL @ 10:34 PM) (Protein: 1g | Carbs: ~15g | Cals: ~60) [Cumulative Dinner: 52g carbs total] [Coach: A fresh nectarine to finish �� — whole fruit brings fiber along for the ride, so it's a much gentler sweet than a cookie would've been. It nudges dinner's total up a bit, but it's a solid way to cap the night. Sweet tooth handled, blood sugar respected.]",
-    "type": "Dinner",
-    "date": "2026-07-06T21:39:00.000+02:00",
-    "photo": "https://iili.io/CcheorB.jpg",
-    "carbs": 15,
-    "cals": 60,
+    "id": "39685ec7-0668-81a5-8c64-e705ed600af5",
+    "title": "Breakfast: peanut butter and fresh peach slices on whole-grain toast (BG: 125 mg/dL Flat) (Pred: 173-193 mg/dL @ 10:12 AM) (Protein: 11g | Carbs: ~30g | Cals: ~310) [Coach: Peanut butter and fresh peach on toast 🥪 — the PB brings protein and healthy fats that steady the ride, and the whole peach adds fiber over plain jam would. Bread's your main carb as usual, so this is a nicely built breakfast. A short walk after and it'll settle in gently.]",
+    "type": "Breakfast",
+    "date": "2026-07-07T08:45:00.000+02:00",
+    "photo": "https://iili.io/CcgSh3N.jpg",
+    "carbs": 30,
+    "cals": 310,
     "delta": null,
     "peak": null
   },
   {
+    "id": "39585ec7-0668-8164-b154-f75a8bcb6e05",
+    "title": "Dinner: a fresh nectarine (BG: 120 mg/dL Flat) (Pred: 145-165 mg/dL @ 10:34 PM) (Protein: 1g | Carbs: ~15g | Cals: ~60) [Cumulative Dinner: 52g carbs total] [Coach: A fresh nectarine to finish 🍑 — whole fruit brings fiber along for the ride, so it's a much gentler sweet than a cookie would've been. It nudges dinner's total up a bit, but it's a solid way to cap the night. Sweet tooth handled, blood sugar respected.]",
+    "type": "Dinner",
+    "date": "2026-07-06T21:39:00.000+02:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-06/6f42fceeb94ee487.jpg",
+    "carbs": 15,
+    "cals": 60,
+    "delta": 77,
+    "peak": 183
+  },
+  {
     "id": "39585ec7-0668-8160-8d55-f25d06173ad3",
-    "title": "Dinner: liver pâté and tomato sandwich on thick rustic bread (BG: 120 mg/dL Flat) (Pred: 142-162 mg/dL @ 10:21 PM) (Protein: 9g | Carbs: ~37g | Cals: ~285) [Coach: Nice to see BG back to 120 after this afternoon 👏 — you steadied it well. The liver pâté brings protein, iron and B12, and the tomato's a nice touch. The bread's the main carb here, so a thinner slice or a bit more pâté for staying power would make it even better.]",
+    "title": "Dinner: liver pâté and tomato sandwich on thick rustic bread, double pâté (BG: 120 mg/dL Flat) (Pred: 142-162 mg/dL @ 10:21 PM) (Protein: 14g | Carbs: ~37g | Cals: ~365) [Coach: Even better with the double pâté 👏 — more protein, more iron and B12, and a bit more fat to help slow the bread's carbs. The predicted BG landing zone doesn't change (pâté has no carbs), but the meal will feel steadier and keep you full longer. Nice adjustment.]",
     "type": "Dinner",
     "date": "2026-07-06T21:26:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-06/d2392926294b9e87.jpg",
     "carbs": 37,
-    "cals": 285,
-    "delta": null,
-    "peak": null
+    "cals": 365,
+    "delta": 63,
+    "peak": 183
   },
   {
     "id": "39585ec7-0668-81ef-9383-f5c89319280d",
