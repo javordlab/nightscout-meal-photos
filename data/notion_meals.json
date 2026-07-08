@@ -1,25 +1,36 @@
 [
   {
+    "id": "39785ec7-0668-81f9-8ace-e47c7ca7d072",
+    "title": "Lunch: café con leche and a small Galicia biscuit (BG: 96 mg/dL Flat) (Pred: 116-136 mg/dL @ 2:22 PM) (Protein: 5g | Carbs: ~14g | Cals: ~120) [Coach: Look at that — BG back down to 96 after this morning, that's the recovery in action 👏. Coffee with a little milk and one small biscuit is a light, low-key stop. The biscuit's a touch of refined sugar but a small one. Nice easy choice, and great to see the number settled.]",
+    "type": "Lunch",
+    "date": "2026-07-08T13:07:00.000+02:00",
+    "photo": "https://iili.io/Cl0y0WG.jpg",
+    "carbs": 14,
+    "cals": 120,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39685ec7-0668-8132-8924-e4faae8c5c41",
     "title": "Lunch: a yellow plum (BG: 138 mg/dL Flat) (Pred: 137-157 mg/dL @ 5:00 PM) (Protein: 1g | Carbs: ~8g | Cals: ~30) [Cumulative Lunch: 18g carbs total] [Coach: A sweet little plum to finish 👌 — whole fruit brings fiber along, so it's a gentle sweet after that big protein lunch. Only a handful of extra carbs on an already-steady meal. Lovely way to round things off.]",
     "type": "Lunch",
     "date": "2026-07-07T15:45:00.000+02:00",
-    "photo": "https://iili.io/Ccml0be.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-07/1b8db47d784c65de.jpg",
     "carbs": 8,
     "cals": 30,
-    "delta": null,
-    "peak": null
+    "delta": 61,
+    "peak": 179
   },
   {
     "id": "39685ec7-0668-811e-8de2-fff4e422ebad",
     "title": "Lunch: grilled tuna collar, cockles (berberechos) with lemon, and steamed broccoli with red pepper-onion vinaigrette (BG: 138 mg/dL Flat) (Pred: 135-155 mg/dL @ 3:59 PM) (Protein: 42g | Carbs: ~10g | Cals: ~400) [Coach: Gorgeous plate 🎯 — grilled tuna collar and cockles bring a wave of lean protein plus iron, B12 and omega-3s, and the broccoli is exactly the non-starchy veggie we love to see. Barely any carbs, so your blood sugar stays calm. Genuinely a gold-star lunch.]",
     "type": "Lunch",
     "date": "2026-07-07T14:44:00.000+02:00",
-    "photo": "https://iili.io/CcbuoFe.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-07/572086110001387b.jpg",
     "carbs": 10,
     "cals": 400,
-    "delta": null,
-    "peak": null
+    "delta": 9,
+    "peak": 147
   },
   {
     "id": "39685ec7-0668-81a5-8c64-e705ed600af5",
