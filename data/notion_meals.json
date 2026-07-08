@@ -1,10 +1,32 @@
 [
   {
+    "id": "39785ec7-0668-8131-a021-d99847b5bb59",
+    "title": "Lunch: a slice of whole-grain toast with dark olive tapenade (BG: 117 mg/dL Flat) (Pred: 140-160 mg/dL @ 3:58 PM) (Protein: 4g | Carbs: ~15g | Cals: ~160) [Cumulative Lunch: 43g carbs total] [Coach: Whole-grain toast with olive tapenade to round out lunch 🫒 — the olives bring heart-healthy fats and whole-grain is the friendlier bread choice. It nudges lunch to about 43g of carbs total, still a sensible amount. Tapenade runs salty, so a glass of water alongside keeps it balanced.]",
+    "type": "Lunch",
+    "date": "2026-07-08T14:43:00.000+02:00",
+    "photo": "https://iili.io/ClMOkuI.jpg",
+    "carbs": 15,
+    "cals": 160,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "39785ec7-0668-810a-aeb5-e5d03a81f66b",
+    "title": "Lunch: braised chicken thigh in savory sauce, a green salad (mixed lettuce, tomato, cucumber), and a small side of fries (BG: 117 mg/dL Flat) (Pred: 135-155 mg/dL @ 3:57 PM) (Protein: 28g | Carbs: ~28g | Cals: ~460) [Coach: Now this is a proper lunch 🥗 — the chicken brings ~28g of solid protein and that salad (tomato, cucumber, greens) is exactly the veggie half we love to see. Fries are the only wildcard, so keep the portion small and you're golden. After that uphill walk, your BG is sitting pretty. Really nice plate.]",
+    "type": "Lunch",
+    "date": "2026-07-08T14:42:00.000+02:00",
+    "photo": "https://iili.io/ClMGfr7.jpg",
+    "carbs": 28,
+    "cals": 460,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39785ec7-0668-81f9-8ace-e47c7ca7d072",
     "title": "Lunch: café con leche and a small Galicia biscuit (BG: 96 mg/dL Flat) (Pred: 116-136 mg/dL @ 2:22 PM) (Protein: 5g | Carbs: ~14g | Cals: ~120) [Coach: Look at that — BG back down to 96 after this morning, that's the recovery in action 👏. Coffee with a little milk and one small biscuit is a light, low-key stop. The biscuit's a touch of refined sugar but a small one. Nice easy choice, and great to see the number settled.]",
     "type": "Lunch",
     "date": "2026-07-08T13:07:00.000+02:00",
-    "photo": "https://iili.io/Cl0y0WG.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-08/b48f44b9c4a19104.jpg",
     "carbs": 14,
     "cals": 120,
     "delta": null,
