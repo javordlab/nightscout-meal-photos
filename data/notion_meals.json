@@ -1,25 +1,36 @@
 [
   {
-    "id": "39785ec7-0668-8131-a021-d99847b5bb59",
-    "title": "Lunch: a slice of whole-grain toast with dark olive tapenade (BG: 117 mg/dL Flat) (Pred: 140-160 mg/dL @ 3:58 PM) (Protein: 4g | Carbs: ~15g | Cals: ~160) [Cumulative Lunch: 43g carbs total] [Coach: Whole-grain toast with olive tapenade to round out lunch 🫒 — the olives bring heart-healthy fats and whole-grain is the friendlier bread choice. It nudges lunch to about 43g of carbs total, still a sensible amount. Tapenade runs salty, so a glass of water alongside keeps it balanced.]",
-    "type": "Lunch",
-    "date": "2026-07-08T14:43:00.000+02:00",
-    "photo": "https://iili.io/ClMOkuI.jpg",
-    "carbs": 15,
-    "cals": 160,
+    "id": "39785ec7-0668-8183-98f2-d9237ee95e83",
+    "title": "Dinner: lomo and cheese sandwich on seeded toast with cherry tomatoes (BG: 101 mg/dL Flat) (Pred: 127-147 mg/dL @ 10:17 PM) (Protein: 27g | Carbs: ~34g | Cals: ~365) [Coach: Nice protein from the lomo and cheese, with cherry tomatoes for a fresh veggie touch 🍅. One heads-up — that's the third cured or processed meat today (ham, morcilla, lomo), all salty. Tomorrow, lean on fresh proteins like eggs, fish or chicken for a break. Seeded toast is the friendlier bread.]",
+    "type": "Dinner",
+    "date": "2026-07-08T21:22:00.000+02:00",
+    "photo": "https://iili.io/ClSwV9I.jpg",
+    "carbs": 34,
+    "cals": 365,
     "delta": null,
     "peak": null
   },
   {
+    "id": "39785ec7-0668-8131-a021-d99847b5bb59",
+    "title": "Lunch: a slice of whole-grain toast with morcilla (blood sausage) (BG: 117 mg/dL Flat) (Pred: 133-153 mg/dL @ 3:58 PM) (Protein: 8g | Carbs: ~18g | Cals: ~200) [Cumulative Lunch: 26g carbs total] [Coach: Ah, morcilla changes things a little — it's rich in iron and protein, but it's a fatty, salty blood sausage, so more of a once-in-a-while treat than an everyday spread. On whole-grain toast it still keeps lunch moderate at about 26g of carbs. Enjoy it, and maybe lean on lighter proteins the rest of the day.]",
+    "type": "Lunch",
+    "date": "2026-07-08T14:43:00.000+02:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-08/67fc78485c0d48bc.jpg",
+    "carbs": 18,
+    "cals": 200,
+    "delta": 72,
+    "peak": 221
+  },
+  {
     "id": "39785ec7-0668-810a-aeb5-e5d03a81f66b",
-    "title": "Lunch: braised chicken thigh in savory sauce, a green salad (mixed lettuce, tomato, cucumber), and a small side of fries (BG: 117 mg/dL Flat) (Pred: 135-155 mg/dL @ 3:57 PM) (Protein: 28g | Carbs: ~28g | Cals: ~460) [Coach: Now this is a proper lunch 🥗 — the chicken brings ~28g of solid protein and that salad (tomato, cucumber, greens) is exactly the veggie half we love to see. Fries are the only wildcard, so keep the portion small and you're golden. After that uphill walk, your BG is sitting pretty. Really nice plate.]",
+    "title": "Lunch: braised chicken thigh in savory sauce and a green salad (mixed lettuce, tomato, cucumber) (BG: 117 mg/dL Flat) (Pred: 117-137 mg/dL @ 3:57 PM) (Protein: 26g | Carbs: ~8g | Cals: ~310) [Coach: Even better without the fries 🥗 — the chicken brings ~26g of solid protein and that salad (tomato, cucumber, greens) is exactly the veggie half we love to see. Barely any carbs on this plate, so your blood sugar stays nice and steady. After that uphill walk, you're in great shape. Lovely plate.]",
     "type": "Lunch",
     "date": "2026-07-08T14:42:00.000+02:00",
-    "photo": "https://iili.io/ClMGfr7.jpg",
-    "carbs": 28,
-    "cals": 460,
-    "delta": null,
-    "peak": null
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-08/d8b9c9f8cd83ba9d.jpg",
+    "carbs": 8,
+    "cals": 310,
+    "delta": 72,
+    "peak": 221
   },
   {
     "id": "39785ec7-0668-81f9-8ace-e47c7ca7d072",
@@ -29,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-08/b48f44b9c4a19104.jpg",
     "carbs": 14,
     "cals": 120,
-    "delta": null,
-    "peak": null
+    "delta": 125,
+    "peak": 221
   },
   {
     "id": "39685ec7-0668-8132-8924-e4faae8c5c41",
