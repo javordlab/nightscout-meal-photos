@@ -1,14 +1,25 @@
 [
   {
+    "id": "39885ec7-0668-8125-b8ae-ee1d8ee1623d",
+    "title": "Dinner: a bowl of yogurt with blueberries and flax, an oat cracker with butter, a slice of cured meat, and a nectarine (BG: 141 mg/dL Flat) (Pred: 159-179 mg/dL @ 10:40 PM) (Protein: 22g | Carbs: ~41g | Cals: ~450) [Coach: A nicely varied light dinner 🫐 — Greek yogurt and flax bring protein, probiotics and omega-3s, while blueberries and the nectarine add fiber. Solid protein overall. That cured meat slice is your second today, so keep it to the one. With BG at 141, a short evening walk would help it settle before bed.]",
+    "type": "Dinner",
+    "date": "2026-07-09T21:45:00.000+02:00",
+    "photo": "https://iili.io/C05b4aV.jpg",
+    "carbs": 41,
+    "cals": 450,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39885ec7-0668-81f7-b00f-d49b658906a8",
     "title": "Snack: an ice cream wafer sandwich and a few almonds (BG: 138 mg/dL Flat) (Pred: 149-169 mg/dL @ 6:42 PM) (Protein: 5g | Carbs: ~24g | Cals: ~230) [Coach: A little ice cream treat 🍦 — and smart move pairing it with almonds, whose protein and fat soften the sugar hit. The wafer and ice cream are fast carbs, so with BG at 138 it'll drift into the low-160s. A short walk would tidy that right up. One small sweet on a mostly-clean day is completely fine.]",
     "type": "Snack",
     "date": "2026-07-09T17:42:00.000+02:00",
-    "photo": "https://iili.io/C0zhFe4.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-09/3227654c1ac1ce2f.jpg",
     "carbs": 24,
     "cals": 230,
-    "delta": null,
-    "peak": null
+    "delta": 21,
+    "peak": 150
   },
   {
     "id": "39885ec7-0668-81d8-a227-e44ea10a7b2f",
