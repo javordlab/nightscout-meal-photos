@@ -1,14 +1,25 @@
 [
   {
+    "id": "39885ec7-0668-81a0-8da7-f4e5ea03136b",
+    "title": "Breakfast: black bean sandwich on seeded whole-grain bread (BG: 121 mg/dL Flat) (Pred: 177-197 mg/dL @ 11:47 AM) (Protein: 15g | Carbs: ~48g | Cals: ~300) [Coach: Now this is a smart breakfast 🫘 — black beans bring plant protein and a big dose of fiber that slows things down, and seeded bread is the friendly choice. Beans plus bread is a fair carb load, so expect a climb toward the high-180s, but the fiber softens the landing. A short walk after would seal it nicely.]",
+    "type": "Breakfast",
+    "date": "2026-07-09T10:20:00.000+02:00",
+    "photo": "https://iili.io/ClpWYap.jpg",
+    "carbs": 48,
+    "cals": 300,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39785ec7-0668-8183-98f2-d9237ee95e83",
     "title": "Dinner: lomo and cheese sandwich on seeded toast with cherry tomatoes (BG: 101 mg/dL Flat) (Pred: 127-147 mg/dL @ 10:17 PM) (Protein: 27g | Carbs: ~34g | Cals: ~365) [Coach: Nice protein from the lomo and cheese, with cherry tomatoes for a fresh veggie touch 🍅. One heads-up — that's the third cured or processed meat today (ham, morcilla, lomo), all salty. Tomorrow, lean on fresh proteins like eggs, fish or chicken for a break. Seeded toast is the friendlier bread.]",
     "type": "Dinner",
     "date": "2026-07-08T21:22:00.000+02:00",
-    "photo": "https://iili.io/ClSwV9I.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-08/4397656713cca4a6.jpg",
     "carbs": 34,
     "cals": 365,
-    "delta": null,
-    "peak": null
+    "delta": 49,
+    "peak": 154
   },
   {
     "id": "39785ec7-0668-8131-a021-d99847b5bb59",
