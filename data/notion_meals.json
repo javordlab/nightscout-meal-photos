@@ -1,14 +1,25 @@
 [
   {
-    "id": "39885ec7-0668-81d8-a227-e44ea10a7b2f",
-    "title": "Lunch: vegetable pisto (zucchini, peppers, carrot, onion, mushroom) topped with a fried egg (BG: 123 mg/dL Flat) (Pred: 127-147 mg/dL @ 3:43 PM) (Protein: 10g | Carbs: ~18g | Cals: ~250) [Coach: This is the plate we love to see 🍳 — a pan of non-starchy veggies (zucchini, peppers, mushrooms, onion) with a fried egg for protein. Barely any carbs, so your blood sugar stays calm and steady. Colorful, fresh, and a real gold-star lunch. Beautifully done.]",
-    "type": "Lunch",
-    "date": "2026-07-09T14:28:00.000+02:00",
-    "photo": "https://iili.io/C0f2vls.jpg",
-    "carbs": 18,
-    "cals": 250,
+    "id": "39885ec7-0668-81f7-b00f-d49b658906a8",
+    "title": "Snack: an ice cream wafer sandwich and a few almonds (BG: 138 mg/dL Flat) (Pred: 149-169 mg/dL @ 6:42 PM) (Protein: 5g | Carbs: ~24g | Cals: ~230) [Coach: A little ice cream treat 🍦 — and smart move pairing it with almonds, whose protein and fat soften the sugar hit. The wafer and ice cream are fast carbs, so with BG at 138 it'll drift into the low-160s. A short walk would tidy that right up. One small sweet on a mostly-clean day is completely fine.]",
+    "type": "Snack",
+    "date": "2026-07-09T17:42:00.000+02:00",
+    "photo": "https://iili.io/C0zhFe4.jpg",
+    "carbs": 24,
+    "cals": 230,
     "delta": null,
     "peak": null
+  },
+  {
+    "id": "39885ec7-0668-81d8-a227-e44ea10a7b2f",
+    "title": "Lunch: vegetable pisto (zucchini, eggplant, peppers, carrot, onion, mushroom) topped with a fried egg, with a slice of multigrain bread and a slice of Jamón ibérico (BG: 123 mg/dL Flat) (Pred: 135-155 mg/dL @ 3:43 PM) (Protein: 18g | Carbs: ~33g | Cals: ~375) [Coach: Even better now 🍖 — the Jamón ibérico adds savory protein, and it's your first cured meat today so right on target. A pisto full of non-starchy veggies (now with eggplant too), plus egg and a slice of multigrain bread, makes this a genuinely balanced plate. A short walk after and it lands beautifully.]",
+    "type": "Lunch",
+    "date": "2026-07-09T14:28:00.000+02:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-09/a006b161c93e0411.jpg",
+    "carbs": 33,
+    "cals": 375,
+    "delta": 40,
+    "peak": 154
   },
   {
     "id": "39885ec7-0668-81a0-8da7-f4e5ea03136b",
