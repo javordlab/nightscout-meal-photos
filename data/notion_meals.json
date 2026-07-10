@@ -1,14 +1,36 @@
 [
   {
+    "id": "39985ec7-0668-81b7-ab66-d28e8758fa4b",
+    "title": "Dinner: a chocolate-topped butter biscuit (BG: 118 mg/dL Flat) (Pred: 142-162 mg/dL @ 10:15 PM) (Protein: 2g | Carbs: ~15g | Cals: ~120) [Cumulative Dinner: 60g carbs total] [Coach: A little chocolate biscuit to round off dinner 🍫 — small and satisfying, no crime there. It is refined sugar though, so it nudges dinner up to about 60g of carbs total. Since you are already fed, an after-dinner stroll would help both this and the sandwich settle before bed.]",
+    "type": "Dinner",
+    "date": "2026-07-10T21:20:00.000+02:00",
+    "photo": "https://iili.io/C0bjWrP.jpg",
+    "carbs": 15,
+    "cals": 120,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "39985ec7-0668-81fc-9e37-e2fd5a6d6e0d",
+    "title": "Dinner: a toasted multigrain ham and cheese sandwich and a nectarine (BG: 108 mg/dL Flat) (Pred: 141-161 mg/dL @ 9:58 PM) (Protein: 28g | Carbs: ~45g | Cals: ~410) [Coach: Nice recovery — BG back to 108 after lunch 👏. The toastie packs ~28g protein from the ham and cheese, and the nectarine adds fruit and fiber. Multigrain bread is a decent carb pick too. That's ham twice today, so lean on a different protein tomorrow to keep the processed-meat count down.]",
+    "type": "Dinner",
+    "date": "2026-07-10T21:03:00.000+02:00",
+    "photo": "https://iili.io/C0baA0v.jpg",
+    "carbs": 45,
+    "cals": 410,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39985ec7-0668-81c9-ad72-df73bbefb2aa",
     "title": "Lunch: grilled steak, a slice of rustic bread, potatoes with red pepper, a green salad (lettuce, tomato, cucumber), and fresh tomato-pepper salsa (BG: 122 mg/dL Flat) (Pred: 138-158 mg/dL @ 4:35 PM) (Protein: 58g | Carbs: ~55g | Cals: ~880) [Cumulative Lunch: 66g carbs total] [Coach: A strong plate — the steak brings ~50g protein and the salad and fresh tomato are proper veggies. But the bread and potatoes together pushed your BG to 203 and still climbing. A 15-20 min walk now would help bring it down. Next time, ease off the bread or the potatoes to soften the spike.]",
     "type": "Lunch",
     "date": "2026-07-10T15:20:00.000+02:00",
-    "photo": "https://iili.io/C0Pa1Uu.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-10/6eb317606f068fc0.jpg",
     "carbs": 55,
     "cals": 880,
-    "delta": null,
-    "peak": null
+    "delta": 90,
+    "peak": 212
   },
   {
     "id": "39885ec7-0668-8125-b8ae-ee1d8ee1623d",
