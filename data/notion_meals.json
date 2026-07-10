@@ -1,14 +1,25 @@
 [
   {
-    "id": "39885ec7-0668-8125-b8ae-ee1d8ee1623d",
-    "title": "Dinner: a bowl of yogurt with blueberries and flax, an oat cracker with butter, a slice of cured meat, and a nectarine (BG: 141 mg/dL Flat) (Pred: 159-179 mg/dL @ 10:40 PM) (Protein: 22g | Carbs: ~41g | Cals: ~450) [Coach: A nicely varied light dinner 🫐 — Greek yogurt and flax bring protein, probiotics and omega-3s, while blueberries and the nectarine add fiber. Solid protein overall. That cured meat slice is your second today, so keep it to the one. With BG at 141, a short evening walk would help it settle before bed.]",
-    "type": "Dinner",
-    "date": "2026-07-09T21:45:00.000+02:00",
-    "photo": "https://iili.io/C05b4aV.jpg",
-    "carbs": 41,
-    "cals": 450,
+    "id": "39985ec7-0668-81c9-ad72-df73bbefb2aa",
+    "title": "Lunch: grilled steak, a slice of rustic bread, potatoes with red pepper, a green salad (lettuce, tomato, cucumber), and fresh tomato-pepper salsa (BG: 122 mg/dL Flat) (Pred: 138-158 mg/dL @ 4:35 PM) (Protein: 58g | Carbs: ~55g | Cals: ~880) [Cumulative Lunch: 66g carbs total] [Coach: A strong plate — the steak brings ~50g protein and the salad and fresh tomato are proper veggies. But the bread and potatoes together pushed your BG to 203 and still climbing. A 15-20 min walk now would help bring it down. Next time, ease off the bread or the potatoes to soften the spike.]",
+    "type": "Lunch",
+    "date": "2026-07-10T15:20:00.000+02:00",
+    "photo": "https://iili.io/C0Pa1Uu.jpg",
+    "carbs": 55,
+    "cals": 880,
     "delta": null,
     "peak": null
+  },
+  {
+    "id": "39885ec7-0668-8125-b8ae-ee1d8ee1623d",
+    "title": "Dinner: a bowl of yogurt with blueberries and flax, an oat cracker with Gorgonzola, a slice of cured meat, and a nectarine (BG: 141 mg/dL Flat) (Pred: 159-179 mg/dL @ 10:40 PM) (Protein: 27g | Carbs: ~41g | Cals: ~470) [Coach: A nicely varied light dinner 🫐 — Greek yogurt and flax bring protein and omega-3s, blueberries and the nectarine add fiber. Gorgonzola adds a bit of protein but runs salty, so keep that portion small. That cured meat is your second today, so hold at one. With BG at 141, a short walk would help it settle before bed.]",
+    "type": "Dinner",
+    "date": "2026-07-09T21:45:00.000+02:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-09/1b32c9a30a3b013d.jpg",
+    "carbs": 41,
+    "cals": 470,
+    "delta": 49,
+    "peak": 190
   },
   {
     "id": "39885ec7-0668-81f7-b00f-d49b658906a8",
