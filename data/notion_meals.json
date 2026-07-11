@@ -1,10 +1,21 @@
 [
   {
+    "id": "39a85ec7-0668-814b-9cac-c2749f2ceba7",
+    "title": "Lunch: a nectarine (BG: 149 mg/dL Flat) (Pred: 152-172 mg/dL @ 5:09 PM) (Protein: 2g | Carbs: ~15g | Cals: ~63) [Coach: A whole nectarine is a lovely afternoon pick 🍑 — the fiber and water make its natural sugar behave far better than any packaged snack would. Your BG is sitting around 149 from lunch, so eating it whole rather than juiced keeps things gentle. A little walk would help nudge that number down too.]",
+    "type": "Lunch",
+    "date": "2026-07-11T15:54:00.000+02:00",
+    "photo": "https://iili.io/C1aBeJs.jpg",
+    "carbs": 15,
+    "cals": 63,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39a85ec7-0668-8147-a7fb-cc9dbd847bb4",
     "title": "Lunch: pisto (sautéed zucchini, peppers, carrot, tomato, olives) topped with a fried egg (BG: 108 mg/dL FortyFiveDown) (Pred: 127-147 mg/dL @ 3:17 PM) (Protein: 10g | Carbs: ~15g | Cals: ~270) [Cumulative Lunch: 35g carbs total] [Coach: Now THIS completes it beautifully 🍳 — a big serving of non-starchy veggies plus an egg brings real fiber and protein, exactly what the jamón and gusanitos were missing. The olive oil and fiber will keep the whole lunch gentle on your blood sugar. Genuinely a gold-star addition.]",
     "type": "Lunch",
     "date": "2026-07-11T14:02:00.000+02:00",
-    "photo": "https://iili.io/C1TZAKb.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-11/c2ff00a659e13092.jpg",
     "carbs": 15,
     "cals": 270,
     "delta": null,
