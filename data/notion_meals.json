@@ -1,25 +1,36 @@
 [
   {
+    "id": "39a85ec7-0668-8119-8090-ce5cf5787e19",
+    "title": "Lunch: a peanut butter and blueberry sandwich on seeded bread and a coffee with milk (BG: 125 mg/dL Flat) (Pred: 147-167 mg/dL @ 12:15 PM) (Protein: 20g | Carbs: ~45g | Cals: ~410) [Coach: Peanut butter and seeded bread bring ~20g protein and fiber, and the blueberries add antioxidants — a nice combo 🫐. But this one climbed toward 200 before easing back, so the bread is doing the heavy lifting. A bit less bread, or a short walk after, would keep that peak gentler next time.]",
+    "type": "Lunch",
+    "date": "2026-07-11T11:00:00.000+02:00",
+    "photo": "https://iili.io/C1CnPOG.jpg",
+    "carbs": 45,
+    "cals": 410,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39985ec7-0668-81b7-ab66-d28e8758fa4b",
     "title": "Dinner: a chocolate-topped butter biscuit (BG: 118 mg/dL Flat) (Pred: 142-162 mg/dL @ 10:15 PM) (Protein: 2g | Carbs: ~15g | Cals: ~120) [Cumulative Dinner: 60g carbs total] [Coach: A little chocolate biscuit to round off dinner 🍫 — small and satisfying, no crime there. It is refined sugar though, so it nudges dinner up to about 60g of carbs total. Since you are already fed, an after-dinner stroll would help both this and the sandwich settle before bed.]",
     "type": "Dinner",
     "date": "2026-07-10T21:20:00.000+02:00",
-    "photo": "https://iili.io/C0bjWrP.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-10/387e64c6c747d4d8.jpg",
     "carbs": 15,
     "cals": 120,
-    "delta": null,
-    "peak": null
+    "delta": 101,
+    "peak": 219
   },
   {
     "id": "39985ec7-0668-81fc-9e37-e2fd5a6d6e0d",
     "title": "Dinner: a toasted multigrain ham and cheese sandwich and a nectarine (BG: 108 mg/dL Flat) (Pred: 141-161 mg/dL @ 9:58 PM) (Protein: 28g | Carbs: ~45g | Cals: ~410) [Coach: Nice recovery — BG back to 108 after lunch 👏. The toastie packs ~28g protein from the ham and cheese, and the nectarine adds fruit and fiber. Multigrain bread is a decent carb pick too. That's ham twice today, so lean on a different protein tomorrow to keep the processed-meat count down.]",
     "type": "Dinner",
     "date": "2026-07-10T21:03:00.000+02:00",
-    "photo": "https://iili.io/C0baA0v.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-10/18feb3edc91e4060.jpg",
     "carbs": 45,
     "cals": 410,
-    "delta": null,
-    "peak": null
+    "delta": 115,
+    "peak": 219
   },
   {
     "id": "39985ec7-0668-81c9-ad72-df73bbefb2aa",
