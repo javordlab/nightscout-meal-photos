@@ -1,14 +1,25 @@
 [
   {
-    "id": "39a85ec7-0668-8119-8090-ce5cf5787e19",
-    "title": "Lunch: a peanut butter and blueberry sandwich on seeded bread and a coffee with milk (BG: 125 mg/dL Flat) (Pred: 147-167 mg/dL @ 12:15 PM) (Protein: 20g | Carbs: ~45g | Cals: ~410) [Coach: Peanut butter and seeded bread bring ~20g protein and fiber, and the blueberries add antioxidants — a nice combo 🫐. But this one climbed toward 200 before easing back, so the bread is doing the heavy lifting. A bit less bread, or a short walk after, would keep that peak gentler next time.]",
+    "id": "39a85ec7-0668-8147-a7fb-cc9dbd847bb4",
+    "title": "Lunch: pisto (sautéed zucchini, peppers, carrot, tomato, olives) topped with a fried egg (BG: 108 mg/dL FortyFiveDown) (Pred: 127-147 mg/dL @ 3:17 PM) (Protein: 10g | Carbs: ~15g | Cals: ~270) [Cumulative Lunch: 35g carbs total] [Coach: Now THIS completes it beautifully 🍳 — a big serving of non-starchy veggies plus an egg brings real fiber and protein, exactly what the jamón and gusanitos were missing. The olive oil and fiber will keep the whole lunch gentle on your blood sugar. Genuinely a gold-star addition.]",
     "type": "Lunch",
-    "date": "2026-07-11T11:00:00.000+02:00",
-    "photo": "https://iili.io/C1CnPOG.jpg",
-    "carbs": 45,
-    "cals": 410,
+    "date": "2026-07-11T14:02:00.000+02:00",
+    "photo": "https://iili.io/C1TZAKb.jpg",
+    "carbs": 15,
+    "cals": 270,
     "delta": null,
     "peak": null
+  },
+  {
+    "id": "39a85ec7-0668-8119-8090-ce5cf5787e19",
+    "title": "Breakfast: a peanut butter and blueberry sandwich on seeded bread and a coffee with milk (BG: 125 mg/dL Flat) (Pred: 177-197 mg/dL @ 12:27 PM) (Protein: 20g | Carbs: ~45g | Cals: ~410) [Coach: Peanut butter and seeded bread bring ~20g protein and fiber, and the blueberries add antioxidants — a nice combo 🫐. But this one climbed toward 200 before easing back, so the bread is doing the heavy lifting. A bit less bread, or a short walk after, would keep that peak gentler next time.]",
+    "type": "Breakfast",
+    "date": "2026-07-11T11:00:00.000+02:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-11/241c9f31d67dfcd7.jpg",
+    "carbs": 45,
+    "cals": 410,
+    "delta": 77,
+    "peak": 201
   },
   {
     "id": "39985ec7-0668-81b7-ab66-d28e8758fa4b",
