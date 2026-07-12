@@ -1,14 +1,36 @@
 [
   {
+    "id": "39b85ec7-0668-81fc-a44c-f0a7ad62562b",
+    "title": "Dinner: a plum (BG: 108 mg/dL Flat) (Pred: 136-156 mg/dL @ 9:02 PM) (Protein: 1g | Carbs: ~9g | Cals: ~35) [Cumulative Dinner: 52g carbs total] [Coach: A fresh plum is a lovely way to finish dinner 🍑 — whole fruit with fiber that keeps its natural sugar gentle, far better than a packaged sweet. It nudges dinner to about 52g of carbs total, still reasonable. A nice light way to round things off.]",
+    "type": "Dinner",
+    "date": "2026-07-12T20:07:00.000+02:00",
+    "photo": "https://iili.io/CEdkapI.jpg",
+    "carbs": 9,
+    "cals": 35,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "39b85ec7-0668-816b-aa7e-e52a99c312d3",
+    "title": "Dinner: fresh morcilla (not cured) with a fried egg, potato salad with tomato and red pepper, and whole grain crackers (BG: 107 mg/dL Flat) (Pred: 139-159 mg/dL @ 8:50 PM) (Protein: 21g | Carbs: ~43g | Cals: ~520) [Coach: A hearty, traditional plate 🍳 — the morcilla and egg bring ~21g protein and iron, and the tomato and pepper in the potato salad sneak in some veggies. Morcilla is rich and salty though, so a modest portion is the move. The potato and crackers are your main carbs here — a short evening walk would help them settle.]",
+    "type": "Dinner",
+    "date": "2026-07-12T19:55:00.000+02:00",
+    "photo": "https://iili.io/CEd0HpR.jpg",
+    "carbs": 43,
+    "cals": 520,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39b85ec7-0668-81d5-a34a-e0d92c62fe7f",
     "title": "Lunch: two scrambled eggs with mushrooms and fried eggplant (BG: 103 mg/dL Flat) (Pred: 120-140 mg/dL @ 2:34 PM) (Protein: 17g | Carbs: ~14g | Cals: ~400) [Coach: This one is a blood-sugar dream 🍳 — eggs and mushrooms bring ~17g protein with almost no carbs, and both the mushrooms and eggplant count as non-starchy veggies. Your glucose will barely stir. Only tiny note, fried eggplant drinks up a lot of oil, so grilling it next time keeps the calories lighter without losing the flavor.]",
     "type": "Lunch",
     "date": "2026-07-12T13:19:00.000+02:00",
-    "photo": "https://iili.io/C1QH6Ku.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-12/f65c37316f7a340c.jpg",
     "carbs": 14,
     "cals": 400,
-    "delta": null,
-    "peak": null
+    "delta": 62,
+    "peak": 163
   },
   {
     "id": "39b85ec7-0668-8195-82f1-eef54f54aa4b",
@@ -18,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-12/3aa4f5a4ce9823cc.jpg",
     "carbs": 43,
     "cals": 340,
-    "delta": null,
-    "peak": null
+    "delta": 47,
+    "peak": 172
   },
   {
     "id": "39a85ec7-0668-810b-ab9b-fd4fa4f1118e",
