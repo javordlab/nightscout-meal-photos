@@ -65,7 +65,11 @@ function runFallback(la) {
   }
 
   try {
-    execSync(fallbackCmd, { stdio: 'inherit', timeout: 120000 });
+    // 5 min: the fallback never calls the Coach LLM (reuses the primary's file,
+    // or regenerates with skipCoach), so this covers MySQL fetch + chunked
+    // Telegram sends with retries. The old 120s cap killed the 2026-07-12
+    // fallback mid-Coach-retry while a complete report sat on disk.
+    execSync(fallbackCmd, { stdio: 'inherit', timeout: 300000 });
 
     // Preserve any report heartbeat updates done by fallback command.
     const latest = loadStatus();

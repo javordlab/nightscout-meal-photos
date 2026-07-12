@@ -584,7 +584,14 @@ async function main(options = {}) {
   // This calls Opus 4.8 via claude --print with the day's full food + glucose context.
   // Failure is non-fatal: if Sonnet is unreachable, generateDailyCoach returns a
   // graceful "unavailable today" string and the report still ships.
-  const dailyCoachText = await generateDailyCoach(targetDate, foodPrevDay, statsDay, stats14, avg14);
+  // options.skipCoach: delivery-guarantee paths (report_watchdog fallback) must
+  // never block on the LLM — the Coach retry budget (4 × 45s delays + up to
+  // 5 min per attempt) cannot fit inside the watchdog's execSync timeout
+  // (2026-07-12: transient 401s made the fallback time out and the day's
+  // report was never delivered).
+  const dailyCoachText = options.skipCoach
+    ? 'Daily coach summary skipped in fallback delivery — see yesterday\'s per-meal coach notes for guidance.'
+    : await generateDailyCoach(targetDate, foodPrevDay, statsDay, stats14, avg14);
 
   const trendsSection = has14dCoverage
     ? `- Average glucose: ${fmt(stats14.average, 1)} mg/dL\n- Time in Range (70-180): ${fmt(stats14.tir, 1)}%\n- GMI: ${fmt(stats14.gmi, 2)}%\n- Standard deviation: ${fmt(stats14.stdDev, 1)} mg/dL\n- CV: ${fmt(stats14.cv, 1)}%\n- Data points used: ${stats14.count}`

@@ -84,7 +84,7 @@
       "name": "Daily Report Watchdog",
       "cronExpr": "35 9 * * *",
       "staleMaxMs": 93600000,
-      "maxDurationMs": 60000
+      "maxDurationMs": 360000
     },
     {
       "id": "daily-charts",
