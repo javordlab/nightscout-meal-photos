@@ -38,6 +38,14 @@ function claudeTokenEnv() {
   return {};
 }
 const STATE_FILE = path.join(WORKSPACE, 'data/claude_auth_watchdog_state.json');
+// Decision audit trail — only non-clean runs are recorded (hits found, alert
+// attempted, incident opened/closed). The 2026-07-12 forensics had to be
+// reconstructed from state-file mtimes because the 09:43 hiccup run left no
+// trace of what it saw or whether its alert was actually delivered.
+const RUN_LOG = path.join(WORKSPACE, 'data/claude_auth_watchdog.log.jsonl');
+function logRun(entry) {
+  try { fs.appendFileSync(RUN_LOG, JSON.stringify({ ts: new Date().toISOString(), ...entry }) + '\n'); } catch {}
+}
 // Failure signatures. The original single marker ('Not logged in', the
 // 2026-07-02/03 outage shape) missed the 2026-07-05 22:44 burst, which
 // surfaced as "API Error: 401 Invalid authentication credentials" — zero
@@ -161,9 +169,12 @@ async function main() {
       const test = runClaude();
       if (test.ok) {
         const mins = Math.round((now - state.incident.startedAt) / 60000);
-        await sendAlert(`✅ Claude auth recovered — live test passes. Outage lasted ~${mins} min (since ${new Date(state.incident.startedAt).toLocaleString('en-GB', { timeZone: 'Europe/Madrid' })}).`, undefined, { parseMode: null });
+        const tg = await sendAlert(`✅ Claude auth recovered — live test passes. Outage lasted ~${mins} min (since ${new Date(state.incident.startedAt).toLocaleString('en-GB', { timeZone: 'Europe/Madrid' })}).`, undefined, { parseMode: null });
+        // The incident IS over (live test passed) — clear it even if the
+        // notify failed; the run log keeps the delivery truth.
         state.incident = null;
         saveState(state);
+        logRun({ kind: 'incident_closed', outageMin: mins, alertDelivered: !!tg?.ok });
         writeReceiptSafe({ status: 'warn', summary: `auth recovered after ~${mins} min` });
         return;
       }
@@ -203,11 +214,18 @@ async function main() {
     // Hiccup: failures happened but auth works now (self- or auto-recovered)
     if (state.incident) {
       const mins = Math.round((now - state.incident.startedAt) / 60000);
-      await sendAlert(`✅ Claude auth recovered${recoveredBy ? ` (via ${recoveredBy})` : ''} — outage lasted ~${mins} min. New failures seen meanwhile: ${hitSummary}.`, undefined, { parseMode: null });
+      const tg = await sendAlert(`✅ Claude auth recovered${recoveredBy ? ` (via ${recoveredBy})` : ''} — outage lasted ~${mins} min. New failures seen meanwhile: ${hitSummary}.`, undefined, { parseMode: null });
       state.incident = null;
+      logRun({ kind: 'incident_closed', outageMin: mins, hits, recoveredBy, alertDelivered: !!tg?.ok });
     } else if (now - (state.lastHiccupAlertAt || 0) > HICCUP_DEDUPE_MS) {
-      await sendAlert(`⚠️ Claude auth hiccup: "Not logged in" failures appeared in ${hitSummary}${recoveredBy ? `; auto-recovered via ${recoveredBy}` : ', but a live test now passes'}. No action needed — watching for recurrence.`, undefined, { parseMode: null });
-      state.lastHiccupAlertAt = now;
+      const tg = await sendAlert(`⚠️ Claude auth hiccup: auth-failure markers appeared in ${hitSummary}${recoveredBy ? `; auto-recovered via ${recoveredBy}` : ', but a live test now passes'}. No action needed — watching for recurrence.`, undefined, { parseMode: null });
+      // Only start the 1h dedupe window if the alert was actually delivered —
+      // a failed send must retry on the next tick, not vanish (2026-07-12:
+      // the 09:43 hiccup left no way to tell whether Javi's DM ever went out).
+      if (tg?.ok) state.lastHiccupAlertAt = now;
+      logRun({ kind: 'hiccup', hits, recoveredBy, alertDelivered: !!tg?.ok });
+    } else {
+      logRun({ kind: 'hiccup_deduped', hits, recoveredBy, lastHiccupAlertAt: state.lastHiccupAlertAt });
     }
     saveState(state);
     writeReceiptSafe({ status: 'warn', summary: `auth hiccup (${hitSummary}), live test ok${recoveredBy ? ` via ${recoveredBy}` : ''}` });
@@ -226,6 +244,9 @@ async function main() {
     // Only count the alert as delivered if a channel actually accepted it —
     // a failed send must not go quiet for the 6h re-alert window.
     if (tg?.ok || em) state.incident.lastAlertAt = now;
+    logRun({ kind: 'incident_alert', hits, testOut: test.out, telegramDelivered: !!tg?.ok, emailDelivered: !!em });
+  } else {
+    logRun({ kind: 'incident_ongoing_suppressed', hits, testOut: test.out, lastAlertAt: state.incident.lastAlertAt });
   }
   saveState(state);
   writeReceiptSafe({ status: 'error', summary: `auth DOWN since ${madrid(state.incident.startedAt)}; recovery failed` });
