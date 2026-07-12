@@ -1,10 +1,21 @@
 [
   {
+    "id": "39b85ec7-0668-81d5-a34a-e0d92c62fe7f",
+    "title": "Lunch: two scrambled eggs with mushrooms and fried eggplant (BG: 103 mg/dL Flat) (Pred: 120-140 mg/dL @ 2:34 PM) (Protein: 17g | Carbs: ~14g | Cals: ~400) [Coach: This one is a blood-sugar dream 🍳 — eggs and mushrooms bring ~17g protein with almost no carbs, and both the mushrooms and eggplant count as non-starchy veggies. Your glucose will barely stir. Only tiny note, fried eggplant drinks up a lot of oil, so grilling it next time keeps the calories lighter without losing the flavor.]",
+    "type": "Lunch",
+    "date": "2026-07-12T13:19:00.000+02:00",
+    "photo": "https://iili.io/C1QH6Ku.jpg",
+    "carbs": 14,
+    "cals": 400,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39b85ec7-0668-8195-82f1-eef54f54aa4b",
     "title": "Breakfast: a Greek yogurt bowl with blueberries, fresh nectarine, and ground flax (BG: 132 mg/dL Flat) (Pred: 180-200 mg/dL @ 12:26 PM) (Protein: 18g | Carbs: ~43g | Cals: ~340) [Coach: Now that is a breakfast to be proud of 🫐 — Greek yogurt brings ~13g protein, flax adds fiber and omega-3s, and the berries and nectarine are whole fruit with fiber intact. No bread in sight. It is fruit-forward, so from your 132 start it may still climb a little — a short walk after would keep the peak in check.]",
     "type": "Breakfast",
     "date": "2026-07-12T10:59:00.000+02:00",
-    "photo": "https://iili.io/C168T3Q.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-12/3aa4f5a4ce9823cc.jpg",
     "carbs": 43,
     "cals": 340,
     "delta": null,
