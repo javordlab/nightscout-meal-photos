@@ -1,25 +1,36 @@
 [
   {
+    "id": "39b85ec7-0668-8195-82f1-eef54f54aa4b",
+    "title": "Breakfast: a Greek yogurt bowl with blueberries, fresh nectarine, and ground flax (BG: 132 mg/dL Flat) (Pred: 180-200 mg/dL @ 12:26 PM) (Protein: 18g | Carbs: ~43g | Cals: ~340) [Coach: Now that is a breakfast to be proud of 🫐 — Greek yogurt brings ~13g protein, flax adds fiber and omega-3s, and the berries and nectarine are whole fruit with fiber intact. No bread in sight. It is fruit-forward, so from your 132 start it may still climb a little — a short walk after would keep the peak in check.]",
+    "type": "Breakfast",
+    "date": "2026-07-12T10:59:00.000+02:00",
+    "photo": "https://iili.io/C168T3Q.jpg",
+    "carbs": 43,
+    "cals": 340,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39a85ec7-0668-810b-ab9b-fd4fa4f1118e",
     "title": "Dinner: a strawberry ice cream wafer sandwich (corte de helado) (BG: 118 mg/dL Flat) (Pred: 131-151 mg/dL @ 10:56 PM) (Protein: 2g | Carbs: ~20g | Cals: ~140) [Coach: A little strawberry ice cream corte to end the night 🍓 — a sweet treat, and at ~20g of quick sugar it will nudge you up before bed. Since your BG was a comfortable 118, one is fine as an occasional indulgence. Just maybe not on the nights it is already running high.]",
     "type": "Dinner",
     "date": "2026-07-11T22:01:00.000+02:00",
-    "photo": "https://iili.io/C1hLzt2.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-11/6ed0a39f30214ea3.jpg",
     "carbs": 20,
     "cals": 140,
-    "delta": null,
-    "peak": null
+    "delta": 86,
+    "peak": 203
   },
   {
     "id": "39a85ec7-0668-81db-a44a-cffdfeec1a5d",
     "title": "Dinner: a chickpea stew (garbanzos) with shredded meat, red pepper and onion in a paprika-tomato broth (BG: 120 mg/dL Flat) (Pred: 144-164 mg/dL @ 9:51 PM) (Protein: 22g | Carbs: ~40g | Cals: ~430) [Coach: Now this is a smart dinner 🫘 — chickpeas are a T2D superstar, all slow carbs and fiber that release sugar gently, plus solid plant protein. The paprika broth and veggies round it out nicely. About the most blood-sugar-friendly stew you could pick. Lovely choice.]",
     "type": "Dinner",
     "date": "2026-07-11T20:56:00.000+02:00",
-    "photo": "https://iili.io/C1Xtqge.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-11/2d001c0ef76c2c2c.jpg",
     "carbs": 40,
     "cals": 430,
-    "delta": null,
-    "peak": null
+    "delta": 69,
+    "peak": 192
   },
   {
     "id": "39a85ec7-0668-814b-9cac-c2749f2ceba7",
