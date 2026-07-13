@@ -1,14 +1,25 @@
 [
   {
+    "id": "39c85ec7-0668-8178-b165-d15d89fd6f76",
+    "title": "Lunch: garbanzos with spinach, fresh morcilla on toast (BG: 142 mg/dL Flat) (Pred: 185-205 mg/dL @ 3:26 PM) (Protein: 29g | Carbs: ~82g | Cals: ~680) [Cumulative Lunch: ~97g carbs total] [Coach: Garbanzos and spinach are a fiber-and-protein win 🥘 — slow carbs plus iron-rich greens. The morcilla is your one cured meat today, so enjoy it; just note the chickpeas, bread, and plum add up to a hefty carb load, so a post-lunch stroll would smooth the rise.]",
+    "type": "Lunch",
+    "date": "2026-07-13T14:11:00.000+02:00",
+    "photo": "https://iili.io/CElYyCJ.jpg",
+    "carbs": 82,
+    "cals": 680,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39b85ec7-0668-81fc-a44c-f0a7ad62562b",
     "title": "Dinner: a plum (BG: 108 mg/dL Flat) (Pred: 136-156 mg/dL @ 9:02 PM) (Protein: 1g | Carbs: ~9g | Cals: ~35) [Cumulative Dinner: 52g carbs total] [Coach: A fresh plum is a lovely way to finish dinner 🍑 — whole fruit with fiber that keeps its natural sugar gentle, far better than a packaged sweet. It nudges dinner to about 52g of carbs total, still reasonable. A nice light way to round things off.]",
     "type": "Dinner",
     "date": "2026-07-12T20:07:00.000+02:00",
-    "photo": "https://iili.io/CEdkapI.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-12/f578cdf0075a77f8.jpg",
     "carbs": 9,
     "cals": 35,
-    "delta": null,
-    "peak": null
+    "delta": 65,
+    "peak": 173
   },
   {
     "id": "39b85ec7-0668-816b-aa7e-e52a99c312d3",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-12/ce89267ad0de35a5.jpg",
     "carbs": 43,
     "cals": 520,
-    "delta": null,
-    "peak": null
+    "delta": 66,
+    "peak": 173
   },
   {
     "id": "39b85ec7-0668-81d5-a34a-e0d92c62fe7f",
