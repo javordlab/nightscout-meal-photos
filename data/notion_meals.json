@@ -1,14 +1,36 @@
 [
   {
+    "id": "39c85ec7-0668-81fe-a8bd-cc8c4590e093",
+    "title": "Dinner: slice of toasted bread with olive oil (BG: 90 mg/dL FortyFiveDown) (Pred: 145-165 mg/dL @ 9:25 PM) (Protein: 3g | Carbs: ~16g | Cals: ~120) [Cumulative Dinner: ~44g carbs total] [Coach: A little olive-oil toast to round out dinner 🍞 — and well-timed, since your BG is drifting down to 90, so a modest carb here helps steady it. That brings dinner to about 44g carbs total, still a sensible load. Skip the post-meal walk this once so you do not dip any lower.]",
+    "type": "Dinner",
+    "date": "2026-07-13T20:30:00.000+02:00",
+    "photo": "https://iili.io/CEv4u7j.jpg",
+    "carbs": 16,
+    "cals": 120,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "39c85ec7-0668-814d-b7fd-d2eaa0add5f0",
+    "title": "Dinner: salad with hard-boiled eggs, peas, cherry tomatoes, green olives, pickles, onion, and red pepper (BG: 116 mg/dL Flat) (Pred: 139-159 mg/dL @ 9:10 PM) (Protein: 23g | Carbs: ~28g | Cals: ~480) [Coach: Now this is a dinner that loves you back 🥚 — three eggs of solid protein plus peas, tomatoes, peppers, and olives, with barely any fast carbs. Your blood sugar will stay calm and you will stay full, exactly the balanced plate that keeps you on track for your tight-control goal.]",
+    "type": "Dinner",
+    "date": "2026-07-13T20:15:00.000+02:00",
+    "photo": "https://iili.io/CEvGTJa.jpg",
+    "carbs": 28,
+    "cals": 480,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39c85ec7-0668-8178-b165-d15d89fd6f76",
     "title": "Lunch: garbanzos with spinach, fresh morcilla on toast (BG: 142 mg/dL Flat) (Pred: 185-205 mg/dL @ 3:26 PM) (Protein: 29g | Carbs: ~82g | Cals: ~680) [Cumulative Lunch: ~97g carbs total] [Coach: Garbanzos and spinach are a fiber-and-protein win 🥘 — slow carbs plus iron-rich greens. The morcilla is your one cured meat today, so enjoy it; just note the chickpeas, bread, and plum add up to a hefty carb load, so a post-lunch stroll would smooth the rise.]",
     "type": "Lunch",
     "date": "2026-07-13T14:11:00.000+02:00",
-    "photo": "https://iili.io/CElYyCJ.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-13/44f9dac8a38c2d72.jpg",
     "carbs": 82,
     "cals": 680,
-    "delta": null,
-    "peak": null
+    "delta": 59,
+    "peak": 184
   },
   {
     "id": "39b85ec7-0668-81fc-a44c-f0a7ad62562b",
