@@ -1,14 +1,25 @@
 [
   {
+    "id": "39d85ec7-0668-810c-add3-c1f63151aca8",
+    "title": "Breakfast: plain yogurt with walnuts, ground flax seeds, blueberries and 3 prunes (BG: 107 mg/dL Flat) (Pred: 157-177 mg/dL @ 11:54 AM) (Protein: 13g | Carbs: ~36g | Cals: ~325) [Coach: Beautiful breakfast 🥣 — yogurt brings ~13g protein, walnuts and flax add healthy fats and fiber, and blueberries are as blood-sugar-friendly as fruit gets. The 3 prunes are the main sugar act, but the protein-fat-fiber crew is playing solid defense. Nicely balanced way to open the day.]",
+    "type": "Breakfast",
+    "date": "2026-07-14T10:27:00.000+02:00",
+    "photo": "https://iili.io/CEmH5DN.jpg",
+    "carbs": 36,
+    "cals": 325,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39c85ec7-0668-81fe-a8bd-cc8c4590e093",
     "title": "Dinner: slice of toasted bread with olive oil (BG: 90 mg/dL FortyFiveDown) (Pred: 145-165 mg/dL @ 9:25 PM) (Protein: 3g | Carbs: ~16g | Cals: ~120) [Cumulative Dinner: ~44g carbs total] [Coach: A little olive-oil toast to round out dinner 🍞 — and well-timed, since your BG is drifting down to 90, so a modest carb here helps steady it. That brings dinner to about 44g carbs total, still a sensible load. Skip the post-meal walk this once so you do not dip any lower.]",
     "type": "Dinner",
     "date": "2026-07-13T20:30:00.000+02:00",
-    "photo": "https://iili.io/CEv4u7j.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-13/87debc3e4d1c1791.jpg",
     "carbs": 16,
     "cals": 120,
-    "delta": null,
-    "peak": null
+    "delta": 34,
+    "peak": 124
   },
   {
     "id": "39c85ec7-0668-814d-b7fd-d2eaa0add5f0",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-13/8939bdbf328ecf22.jpg",
     "carbs": 28,
     "cals": 405,
-    "delta": null,
-    "peak": null
+    "delta": 8,
+    "peak": 124
   },
   {
     "id": "39c85ec7-0668-8178-b165-d15d89fd6f76",
