@@ -1,14 +1,25 @@
 [
   {
+    "id": "39d85ec7-0668-8148-8ebb-eb1c8f25f542",
+    "title": "Lunch: two-egg omelette with zucchini and cheese, plus a dinner roll (BG: 108 mg/dL Flat) (Pred: 127-147 mg/dL @ 2:50 PM) (Protein: 22g | Carbs: ~26g | Cals: ~420) [Coach: Now this is a lunch that behaves 🍳 — two eggs and cheese give you ~22g protein, and the zucchini sneaks a real veggie onto the plate (rare and appreciated). The roll is the only fast carb, and it's outnumbered. Steady BG at 108 says you nailed the timing.]",
+    "type": "Lunch",
+    "date": "2026-07-14T13:35:00.000+02:00",
+    "photo": "https://iili.io/CGdeXn4.jpg",
+    "carbs": 26,
+    "cals": 420,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39d85ec7-0668-810c-add3-c1f63151aca8",
     "title": "Breakfast: plain yogurt with walnuts, ground flax seeds, blueberries and 3 prunes (BG: 107 mg/dL Flat) (Pred: 157-177 mg/dL @ 11:54 AM) (Protein: 13g | Carbs: ~36g | Cals: ~325) [Coach: Beautiful breakfast 🥣 — yogurt brings ~13g protein, walnuts and flax add healthy fats and fiber, and blueberries are as blood-sugar-friendly as fruit gets. The 3 prunes are the main sugar act, but the protein-fat-fiber crew is playing solid defense. Nicely balanced way to open the day.]",
     "type": "Breakfast",
     "date": "2026-07-14T10:27:00.000+02:00",
-    "photo": "https://iili.io/CEmH5DN.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-14/d2afee935b18ce21.jpg",
     "carbs": 36,
     "cals": 325,
-    "delta": null,
-    "peak": null
+    "delta": 24,
+    "peak": 133
   },
   {
     "id": "39c85ec7-0668-81fe-a8bd-cc8c4590e093",
