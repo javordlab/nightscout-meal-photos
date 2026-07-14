@@ -1,14 +1,25 @@
 [
   {
+    "id": "39d85ec7-0668-81cc-b1a5-c28c2a9aa71a",
+    "title": "Dinner: bean, cheese, tomato, onion and spinach quesadillas (BG: 107 mg/dL Flat) (Pred: 136-156 mg/dL @ 10:07 PM) (Protein: 22g | Carbs: ~52g | Cals: ~530) [Coach: A loaded quesadilla done right 🌯 — beans and cheese stack up ~22g protein and fiber, and you tucked tomato, onion and spinach in there too, so real veggies came along for the ride. The tortillas are the main carb load, so if you want a gentle after-dinner stroll it'll land even smoother. Well balanced.]",
+    "type": "Dinner",
+    "date": "2026-07-14T21:12:00.000+02:00",
+    "photo": "https://iili.io/CG7oTqQ.jpg",
+    "carbs": 52,
+    "cals": 530,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39d85ec7-0668-8148-8ebb-eb1c8f25f542",
     "title": "Lunch: two-egg omelette with zucchini and cheese, plus a dinner roll (BG: 108 mg/dL Flat) (Pred: 127-147 mg/dL @ 2:50 PM) (Protein: 22g | Carbs: ~26g | Cals: ~420) [Coach: Now this is a lunch that behaves 🍳 — two eggs and cheese give you ~22g protein, and the zucchini sneaks a real veggie onto the plate (rare and appreciated). The roll is the only fast carb, and it's outnumbered. Steady BG at 108 says you nailed the timing.]",
     "type": "Lunch",
     "date": "2026-07-14T13:35:00.000+02:00",
-    "photo": "https://iili.io/CGdeXn4.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-14/901572c96ff0c9cd.jpg",
     "carbs": 26,
     "cals": 420,
-    "delta": null,
-    "peak": null
+    "delta": 56,
+    "peak": 159
   },
   {
     "id": "39d85ec7-0668-810c-add3-c1f63151aca8",
