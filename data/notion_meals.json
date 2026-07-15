@@ -1,14 +1,36 @@
 [
   {
+    "id": "39e85ec7-0668-81ec-bf63-c40798919ed0",
+    "title": "Dinner: a nectarine (with dinner) (BG: 116 mg/dL Flat) (Pred: 148-168 mg/dL @ 10:24 PM) (Protein: 1g | Carbs: ~15g | Cals: ~60) [Cumulative Dinner: 47g carbs total] [Coach: A nectarine for dessert 🍑 — whole fruit means natural sugar wrapped in fiber, so it's about the gentlest sweet finish you could pick after that sandwich. Way friendlier than a cookie, and it rounds the evening off nicely.]",
+    "type": "Dinner",
+    "date": "2026-07-15T21:29:00.000+02:00",
+    "photo": "https://iili.io/CMScNS9.jpg",
+    "carbs": 15,
+    "cals": 60,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "39e85ec7-0668-81ba-9468-eb5e3eb12f34",
+    "title": "Dinner: turkey and cheese sandwich on multigrain seeded bread (BG: 116 mg/dL Flat) (Pred: 134-154 mg/dL @ 10:10 PM) (Protein: 25g | Carbs: ~32g | Cals: ~320) [Coach: A tidy little dinner 🥪 — turkey and cheese stack up ~25g protein, and you went with the multigrain seeded bread, which brings fiber to slow things down. Simple and well balanced. A few cucumber or tomato slices on the side would round it out if you ever want the veggie bonus.]",
+    "type": "Dinner",
+    "date": "2026-07-15T21:15:00.000+02:00",
+    "photo": "https://iili.io/CMS36VR.jpg",
+    "carbs": 32,
+    "cals": 320,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39e85ec7-0668-81a0-adbb-d46ab0de4531",
     "title": "Lunch: two pan-fried whole fish with steamed broccoli, a few roasted potato slices and a lime wedge (BG: 111 mg/dL Flat) (Pred: 132-152 mg/dL @ 3:34 PM) (Protein: 30g | Carbs: ~29g | Cals: ~420) [Coach: This is a gold-star plate 🎯 — the fish brings ~30g protein, the broccoli is a genuine non-starchy veggie win, and the potato is a sensibly small starch. Half veggie, quarter protein, quarter carb, almost exactly the balanced plate we aim for. Chef's kiss.]",
     "type": "Lunch",
     "date": "2026-07-15T14:19:00.000+02:00",
-    "photo": "https://iili.io/CMJ76as.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-15/8f384a2510dde9da.jpg",
     "carbs": 29,
     "cals": 420,
-    "delta": null,
-    "peak": null
+    "delta": 28,
+    "peak": 138
   },
   {
     "id": "39e85ec7-0668-81e4-b252-f41cc5b53f4c",
