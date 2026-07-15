@@ -1,14 +1,25 @@
 [
   {
+    "id": "39e85ec7-0668-81e4-b252-f41cc5b53f4c",
+    "title": "Breakfast: yogurt with half a peach, walnuts, flax and a bit of raw oats (BG: 118 mg/dL Flat) (Pred: 162-182 mg/dL @ 12:21 PM) (Protein: 17g | Carbs: ~33g | Cals: ~350) [Coach: Your signature breakfast bowl 🍑 — yogurt and walnuts bring ~17g protein and healthy fat, flax adds fiber, and the peach keeps the sugar gentle and whole. The raw oats are a slow, steady carb, so this holds together nicely. A reliably solid start, just like yesterday's.]",
+    "type": "Breakfast",
+    "date": "2026-07-15T10:54:00.000+02:00",
+    "photo": "https://iili.io/CGeuEyx.jpg",
+    "carbs": 33,
+    "cals": 350,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39d85ec7-0668-81cc-b1a5-c28c2a9aa71a",
     "title": "Dinner: bean, cheese, tomato, onion and spinach quesadillas (BG: 107 mg/dL Flat) (Pred: 136-156 mg/dL @ 10:07 PM) (Protein: 22g | Carbs: ~52g | Cals: ~530) [Coach: A loaded quesadilla done right 🌯 — beans and cheese stack up ~22g protein and fiber, and you tucked tomato, onion and spinach in there too, so real veggies came along for the ride. The tortillas are the main carb load, so if you want a gentle after-dinner stroll it'll land even smoother. Well balanced.]",
     "type": "Dinner",
     "date": "2026-07-14T21:12:00.000+02:00",
-    "photo": "https://iili.io/CG7oTqQ.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-14/8a5679095f9b966f.jpg",
     "carbs": 52,
     "cals": 530,
-    "delta": null,
-    "peak": null
+    "delta": 63,
+    "peak": 170
   },
   {
     "id": "39d85ec7-0668-8148-8ebb-eb1c8f25f542",
