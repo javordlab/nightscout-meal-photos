@@ -1,14 +1,25 @@
 [
   {
+    "id": "39e85ec7-0668-81a0-adbb-d46ab0de4531",
+    "title": "Lunch: two pan-fried whole fish with steamed broccoli, a few roasted potato slices and a lime wedge (BG: 111 mg/dL Flat) (Pred: 132-152 mg/dL @ 3:34 PM) (Protein: 30g | Carbs: ~29g | Cals: ~420) [Coach: This is a gold-star plate 🎯 — the fish brings ~30g protein, the broccoli is a genuine non-starchy veggie win, and the potato is a sensibly small starch. Half veggie, quarter protein, quarter carb, almost exactly the balanced plate we aim for. Chef's kiss.]",
+    "type": "Lunch",
+    "date": "2026-07-15T14:19:00.000+02:00",
+    "photo": "https://iili.io/CMJ76as.jpg",
+    "carbs": 29,
+    "cals": 420,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39e85ec7-0668-81e4-b252-f41cc5b53f4c",
     "title": "Breakfast: yogurt with half a peach, walnuts, flax and a bit of raw oats (BG: 118 mg/dL Flat) (Pred: 162-182 mg/dL @ 12:21 PM) (Protein: 17g | Carbs: ~33g | Cals: ~350) [Coach: Your signature breakfast bowl 🍑 — yogurt and walnuts bring ~17g protein and healthy fat, flax adds fiber, and the peach keeps the sugar gentle and whole. The raw oats are a slow, steady carb, so this holds together nicely. A reliably solid start, just like yesterday's.]",
     "type": "Breakfast",
     "date": "2026-07-15T10:54:00.000+02:00",
-    "photo": "https://iili.io/CGeuEyx.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-15/ea3786acb7195c97.jpg",
     "carbs": 33,
     "cals": 350,
-    "delta": null,
-    "peak": null
+    "delta": 20,
+    "peak": 137
   },
   {
     "id": "39d85ec7-0668-81cc-b1a5-c28c2a9aa71a",
