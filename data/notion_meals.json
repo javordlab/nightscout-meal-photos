@@ -4,22 +4,22 @@
     "title": "Dinner: a nectarine (with dinner) (BG: 116 mg/dL Flat) (Pred: 148-168 mg/dL @ 10:24 PM) (Protein: 1g | Carbs: ~15g | Cals: ~60) [Cumulative Dinner: 47g carbs total] [Coach: A nectarine for dessert 🍑 — whole fruit means natural sugar wrapped in fiber, so it's about the gentlest sweet finish you could pick after that sandwich. Way friendlier than a cookie, and it rounds the evening off nicely.]",
     "type": "Dinner",
     "date": "2026-07-15T21:29:00.000+02:00",
-    "photo": "https://iili.io/CMScNS9.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-15/053d8e61e4ee875d.jpg",
     "carbs": 15,
     "cals": 60,
-    "delta": null,
-    "peak": null
+    "delta": 24,
+    "peak": 157
   },
   {
     "id": "39e85ec7-0668-81ba-9468-eb5e3eb12f34",
     "title": "Dinner: turkey and cheese sandwich on multigrain seeded bread (BG: 116 mg/dL Flat) (Pred: 134-154 mg/dL @ 10:10 PM) (Protein: 25g | Carbs: ~32g | Cals: ~320) [Coach: A tidy little dinner 🥪 — turkey and cheese stack up ~25g protein, and you went with the multigrain seeded bread, which brings fiber to slow things down. Simple and well balanced. A few cucumber or tomato slices on the side would round it out if you ever want the veggie bonus.]",
     "type": "Dinner",
     "date": "2026-07-15T21:15:00.000+02:00",
-    "photo": "https://iili.io/CMS36VR.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-15/8d858a1290a5f712.jpg",
     "carbs": 32,
     "cals": 320,
-    "delta": null,
-    "peak": null
+    "delta": 41,
+    "peak": 157
   },
   {
     "id": "39e85ec7-0668-81a0-adbb-d46ab0de4531",
@@ -3785,7 +3785,7 @@
   },
   {
     "id": "35e85ec7-0668-81f1-802c-ff7ef486da93",
-    "title": "Dinner: 1 small thin-crust pizza slice with ham and cheese, and a small beer (caña) [Cumulative Dinner: ~45g carbs total] (BG: 109 mg/dL Flat) (Pred: 142-152 mg/dL @ 10:37 PM) (Protein: 10g | Carbs: ~26g | Cals: ~280) [Coach: Pizza nightcap 🍕 — thin crust + cheese + ham is a reasonable combo, and the small beer adds modest extra carbs. Cumulative dinner has climbed; a short walk before bed would help BG settle gently.]  [id:3226c3b8]",
+    "title": "Dinner: 1 small thin-crust pizza slice with ham and cheese, and a small beer (ca��a) [Cumulative Dinner: ~45g carbs total] (BG: 109 mg/dL Flat) (Pred: 142-152 mg/dL @ 10:37 PM) (Protein: 10g | Carbs: ~26g | Cals: ~280) [Coach: Pizza nightcap 🍕 — thin crust + cheese + ham is a reasonable combo, and the small beer adds modest extra carbs. Cumulative dinner has climbed; a short walk before bed would help BG settle gently.]  [id:3226c3b8]",
     "type": "Dinner",
     "date": "2026-05-01T22:25:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-01/798c33192021fb9b.jpg",
