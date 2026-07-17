@@ -178,13 +178,22 @@ const FALLBACK_CHAIN = config.fallbackChain || DEFAULT_FALLBACK_CHAIN;
 // ("All models failed … Session reset"). Instead of giving up after one pass
 // through the chain, processMessage returns 'retry': the inbox-journal entry
 // stays un-done (so a bridge restart mid-outage still replays it via
-// recoverInbox, 24h retention) and the message re-enters handleMessage after
-// a backoff delay. Only after the full schedule fails does the bridge reset
-// the session and tell the user. A NEW message arriving during a wait is
+// recoverInbox, INBOX_RETENTION_MS retention) and the message re-enters
+// handleMessage after a backoff delay. A NEW message arriving during a wait is
 // processed immediately, so ordering across an outage window is best-effort —
 // acceptable for the food log, where [submitted_at:] preserves entry times.
+//
+// Park-and-replay (2026-07-17): the 2026-07-16 outage ran 19h — far past the
+// ~2.5h fast schedule — and all 4 of Maria's meal messages that day were
+// dropped permanently. After the fast schedule is exhausted the message is now
+// PARKED instead: retried hourly until it is PARK_MAX_MS old (age measured
+// from msg.date, the original Telegram submission time). The journal entry
+// stays un-done for the whole parked period, so restarts keep replaying it.
+// Only a message older than PARK_MAX_MS is dropped with the session reset.
 const RETRY_DELAYS_MS = [2, 5, 10, 20, 40, 60].map(m => m * 60 * 1000);
 const RETRY_MAX = RETRY_DELAYS_MS.length;
+const PARK_RETRY_MS = 60 * 60 * 1000;     // hourly slow retries after the fast schedule
+const PARK_MAX_MS = 72 * 60 * 60 * 1000;  // give up only after 72h (= journal retention)
 
 // Validate config
 if (!BOT_TOKEN) { console.error(`[claude-bridge] FATAL: no botToken in ${CONFIG_PATH}`); process.exit(1); }
@@ -778,7 +787,9 @@ function runCodex(prompt, model = null, photoPath = null) {
 // settles. On startup, updates from the last 24h without a done marker are
 // re-enqueued through the normal queue path, then the journal is compacted.
 const INBOX_FILE = path.join(WORKSPACE, `data/bridge_inbox_${INSTANCE_LABEL}.jsonl`);
-const INBOX_RETENTION_MS = 24 * 60 * 60 * 1000;
+// Retention must cover the full parked-retry window (PARK_MAX_MS): a parked
+// message survives restarts only while its journal entry survives compaction.
+const INBOX_RETENTION_MS = 72 * 60 * 60 * 1000;
 
 function journalAppend(obj) {
   try { fs.appendFileSync(INBOX_FILE, JSON.stringify(obj) + '\n'); }
@@ -821,10 +832,10 @@ function recoverInbox() {
   }
 
   if (toReplay.length === 0) {
-    log('inbox recovery: no unfinished updates from the last 24h');
+    log('inbox recovery: no unfinished updates within the retention window');
     return;
   }
-  log(`inbox recovery: re-enqueueing ${toReplay.length} unfinished update(s) from the last 24h`);
+  log(`inbox recovery: re-enqueueing ${toReplay.length} unfinished update(s) from the retention window`);
   for (const r of toReplay) {
     const m = r.msg;
     m.__update_id = r.update_id;
@@ -1070,7 +1081,7 @@ async function processMessage(msg) {
         log(`All models failed (attempt ${attempt}/${RETRY_MAX + 1}) — retrying in ${Math.round(delayMs / 60000)} min. Last error: ${lastErr?.message}`);
         if (attempt === 1) {
           await sendMessage(chatId,
-            '⏳ Temporary problem reaching Claude — your message is queued and will be processed automatically when service recovers (I will keep retrying for ~2.5h).', msgId);
+            '⏳ Temporary problem reaching Claude — your message is queued and will be processed automatically when service recovers (quick retries for ~2.5h, then hourly for up to 3 days). No need to resend.', msgId);
         }
         const timer = setTimeout(() => {
           handleMessage(msg).catch(err => log(`retry dispatch error: ${err.message}`));
@@ -1078,10 +1089,30 @@ async function processMessage(msg) {
         timer.unref();
         return 'retry';
       }
+      // Fast schedule exhausted — park instead of dropping (see PARK_RETRY_MS
+      // comment). Age from msg.date (Telegram unix seconds, survives journal
+      // replay); a synthetic message without it ages from its first park,
+      // which does not survive a restart (journal replay restamps it).
+      if (!msg.date && !msg.__parkStartMs) msg.__parkStartMs = Date.now();
+      const msgAgeMs = Date.now() - (msg.date ? msg.date * 1000 : msg.__parkStartMs);
+      if (msgAgeMs < PARK_MAX_MS) {
+        msg.__retryCount = attempt;
+        log(`All models failed (attempt ${attempt}) — message parked, next retry in ${Math.round(PARK_RETRY_MS / 60000)} min (age ${(msgAgeMs / 3600000).toFixed(1)}h of ${PARK_MAX_MS / 3600000}h max). Last error: ${lastErr?.message}`);
+        if (!msg.__parkNotified) {
+          msg.__parkNotified = true;
+          await sendMessage(chatId,
+            '⏳ Claude is still unreachable — your message stays parked and will be processed automatically when service recovers (kept up to 3 days). No need to resend.', msgId);
+        }
+        const timer = setTimeout(() => {
+          handleMessage(msg).catch(err => log(`park retry dispatch error: ${err.message}`));
+        }, PARK_RETRY_MS);
+        timer.unref();
+        return 'retry';
+      }
       delete state.sessions[userId];
       saveState();
       await sendMessage(chatId,
-        `All models failed after ${RETRY_MAX + 1} attempts over ~2.5h. Last error: ${lastErr?.message}\n\nSession reset.`, msgId);
+        `All models failed for ${Math.round(msgAgeMs / 3600000)}h (${attempt} attempts). Last error: ${lastErr?.message}\n\nThis message has been dropped — please resend it. Session reset.`, msgId);
       return;
     }
 
