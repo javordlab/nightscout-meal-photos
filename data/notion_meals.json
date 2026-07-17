@@ -1,5 +1,27 @@
 [
   {
+    "id": "3a085ec7-0668-8114-bdbb-cf90844a028b",
+    "title": "Lunch: Squid in black ink sauce with potatoes and bread, then grilled white fish with a shrimp, a mussel, potatoes and bread (restaurant lunch, 2 courses) (BG: 161 mg/dL FortyFiveUp) (Pred: 127-147 mg/dL @ 4:00 PM) (Protein: 45g | Carbs: ~65g | Cals: ~850) [Coach: Two seafood courses is a protein jackpot 🦑 — squid, fish, shrimp, and a mussel all working for satiety. The double potatoes and bread is where the carbs stack up, so your BG took the stairs. Keep one starch and add a green side next time to ease the climb.]",
+    "type": "Lunch",
+    "date": "2026-07-16T15:14:00.000+02:00",
+    "photo": "https://iili.io/Ch1ba1V.jpg",
+    "carbs": 65,
+    "cals": 850,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "3a085ec7-0668-8100-a237-de6b11240e40",
+    "title": "Lunch: Greek yogurt bowl with chopped plums, walnut halves, and ground seeds (BG: 179 mg/dL Flat) (Pred: 175-195 mg/dL @ 12:56 PM) (Protein: 18g | Carbs: ~28g | Cals: ~330) [Coach: Really nice balance 🥑 — Greek yogurt for ~18g protein, walnuts and seeds for healthy fats and fiber, and plums for natural sweetness with their own fiber to soften the rise. Your BG was starting a touch high, so this protein-forward bowl is a smart move. Lovely midday choice.]",
+    "type": "Lunch",
+    "date": "2026-07-16T11:41:00.000+02:00",
+    "photo": "https://iili.io/ChZlkEg.jpg",
+    "carbs": 28,
+    "cals": 330,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "39e85ec7-0668-81ec-bf63-c40798919ed0",
     "title": "Dinner: a nectarine (with dinner) (BG: 116 mg/dL Flat) (Pred: 148-168 mg/dL @ 10:24 PM) (Protein: 1g | Carbs: ~15g | Cals: ~60) [Cumulative Dinner: 47g carbs total] [Coach: A nectarine for dessert 🍑 — whole fruit means natural sugar wrapped in fiber, so it's about the gentlest sweet finish you could pick after that sandwich. Way friendlier than a cookie, and it rounds the evening off nicely.]",
     "type": "Dinner",
@@ -12,7 +34,7 @@
   },
   {
     "id": "39e85ec7-0668-81ba-9468-eb5e3eb12f34",
-    "title": "Dinner: turkey and cheese sandwich on multigrain seeded bread (BG: 116 mg/dL Flat) (Pred: 134-154 mg/dL @ 10:10 PM) (Protein: 25g | Carbs: ~32g | Cals: ~320) [Coach: A tidy little dinner 🥪 — turkey and cheese stack up ~25g protein, and you went with the multigrain seeded bread, which brings fiber to slow things down. Simple and well balanced. A few cucumber or tomato slices on the side would round it out if you ever want the veggie bonus.]",
+    "title": "Dinner: turkey and cheese sandwich on multigrain seeded bread (BG: 116 mg/dL Flat) (Pred: 134-154 mg/dL @ 10:10 PM) (Protein: 25g | Carbs: ~32g | Cals: ~320) [Coach: A tidy little dinner ���� — turkey and cheese stack up ~25g protein, and you went with the multigrain seeded bread, which brings fiber to slow things down. Simple and well balanced. A few cucumber or tomato slices on the side would round it out if you ever want the veggie bonus.]",
     "type": "Dinner",
     "date": "2026-07-15T21:15:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-15/8d858a1290a5f712.jpg",
@@ -3785,7 +3807,7 @@
   },
   {
     "id": "35e85ec7-0668-81f1-802c-ff7ef486da93",
-    "title": "Dinner: 1 small thin-crust pizza slice with ham and cheese, and a small beer (ca��a) [Cumulative Dinner: ~45g carbs total] (BG: 109 mg/dL Flat) (Pred: 142-152 mg/dL @ 10:37 PM) (Protein: 10g | Carbs: ~26g | Cals: ~280) [Coach: Pizza nightcap 🍕 — thin crust + cheese + ham is a reasonable combo, and the small beer adds modest extra carbs. Cumulative dinner has climbed; a short walk before bed would help BG settle gently.]  [id:3226c3b8]",
+    "title": "Dinner: 1 small thin-crust pizza slice with ham and cheese, and a small beer (caña) [Cumulative Dinner: ~45g carbs total] (BG: 109 mg/dL Flat) (Pred: 142-152 mg/dL @ 10:37 PM) (Protein: 10g | Carbs: ~26g | Cals: ~280) [Coach: Pizza nightcap 🍕 — thin crust + cheese + ham is a reasonable combo, and the small beer adds modest extra carbs. Cumulative dinner has climbed; a short walk before bed would help BG settle gently.]  [id:3226c3b8]",
     "type": "Dinner",
     "date": "2026-05-01T22:25:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-01/798c33192021fb9b.jpg",
