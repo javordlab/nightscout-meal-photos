@@ -1,10 +1,21 @@
 [
   {
+    "id": "3a085ec7-0668-8123-a2af-e8dd14c9b2b2",
+    "title": "Lunch: grilled whole flatfish (gallo, sole) with cooked shrimp (gambas) (BG: 97 mg/dL Flat) (Pred: 114-134 mg/dL @ 5:52 PM) (Protein: 40g | Carbs: ~1g | Cals: ~240) [Cumulative Lunch: 21g carbs total] [Coach: Grilled fish and shrimp 🎯 — a lean-protein one-two punch with basically zero carbs, so your blood sugar barely notices while you get plenty of staying power. This is a textbook diabetes-friendly plate.]",
+    "type": "Lunch",
+    "date": "2026-07-17T16:37:00.000+02:00",
+    "photo": "https://iili.io/CjqX4Mx.jpg",
+    "carbs": 1,
+    "cals": 240,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3a085ec7-0668-8117-96d5-eeca40fdf09c",
     "title": "Snack: steamed cockles (berberechos) with a mixed green salad (lettuce, cherry tomato, cucumber, onion) and a pink iced drink (BG: 97 mg/dL Flat) (Pred: 117-137 mg/dL @ 5:30 PM) (Protein: 18g | Carbs: ~20g | Cals: ~190) [Coach: Cockles plus a big veggie salad 🥗 — lean protein and non-starchy veggies with barely any starch to spike you, exactly the plate your blood sugar loves. Just watch that pink drink if it's sweetened; sparkling water would keep it totally spike-free.]",
     "type": "Snack",
     "date": "2026-07-17T16:30:00.000+02:00",
-    "photo": "https://iili.io/CjqaCOl.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-17/da1419049e473eaf.jpg",
     "carbs": 20,
     "cals": 190,
     "delta": null,
@@ -67,7 +78,7 @@
   },
   {
     "id": "39e85ec7-0668-81e4-b252-f41cc5b53f4c",
-    "title": "Breakfast: yogurt with half a peach, walnuts, flax and a bit of raw oats (BG: 118 mg/dL Flat) (Pred: 162-182 mg/dL @ 12:21 PM) (Protein: 17g | Carbs: ~33g | Cals: ~350) [Coach: Your signature breakfast bowl 🍑 — yogurt and walnuts bring ~17g protein and healthy fat, flax adds fiber, and the peach keeps the sugar gentle and whole. The raw oats are a slow, steady carb, so this holds together nicely. A reliably solid start, just like yesterday's.]",
+    "title": "Breakfast: yogurt with half a peach, walnuts, flax and a bit of raw oats (BG: 118 mg/dL Flat) (Pred: 162-182 mg/dL @ 12:21 PM) (Protein: 17g | Carbs: ~33g | Cals: ~350) [Coach: Your signature breakfast bowl 🍑 ��� yogurt and walnuts bring ~17g protein and healthy fat, flax adds fiber, and the peach keeps the sugar gentle and whole. The raw oats are a slow, steady carb, so this holds together nicely. A reliably solid start, just like yesterday's.]",
     "type": "Breakfast",
     "date": "2026-07-15T10:54:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-15/ea3786acb7195c97.jpg",
