@@ -1,14 +1,25 @@
 [
   {
+    "id": "3a185ec7-0668-810c-b616-f6899d773ade",
+    "title": "Lunch: squid in its ink sauce (calamares en su tinta) with boiled potato and broccoli (BG: 133 mg/dL Flat) (Pred: 140-160 mg/dL @ 3:14 PM) (Protein: 23g | Carbs: ~32g | Cals: ~325) [Coach: Squid in its ink with broccoli and potato 🦑 — lean seafood protein plus a proper serving of non-starchy greens, exactly the balance you want. The potato is the main carb here, so a moderate one, keeping that portion in check is the only tweak. Really nice plate.]",
+    "type": "Lunch",
+    "date": "2026-07-18T13:59:00.000+02:00",
+    "photo": "https://iili.io/CjwiqgI.jpg",
+    "carbs": 32,
+    "cals": 325,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3a185ec7-0668-810f-b48c-f91e9352a063",
     "title": "Breakfast: a slice of bread with liver pâté and an apricot (BG: 122 mg/dL Flat) (Pred: 161-181 mg/dL @ 12:20 PM) (Protein: 10g | Carbs: ~22g | Cals: ~230) [Coach: Liver pâté on bread with an apricot 🍑 — the apricot brings fiber and a little natural sweetness, and the pâté packs iron and B12. It leans rich and salty though, and the protein is on the lighter side. An egg or a dollop of Greek yogurt would boost the staying power.]",
     "type": "Breakfast",
     "date": "2026-07-18T10:53:00.000+02:00",
-    "photo": "https://iili.io/CjW0tNp.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-18/ac6e87610773d456.jpg",
     "carbs": 22,
     "cals": 230,
-    "delta": null,
-    "peak": null
+    "delta": 39,
+    "peak": 160
   },
   {
     "id": "3a085ec7-0668-8123-a2af-e8dd14c9b2b2",
