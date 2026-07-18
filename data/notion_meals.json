@@ -1,14 +1,25 @@
 [
   {
+    "id": "3a185ec7-0668-81c1-b274-e16e23decbb6",
+    "title": "Dinner: a ham and liver pâté sandwich with tomato on whole grain bread (BG: 118 mg/dL Flat) (Pred: 138-158 mg/dL @ 11:11 PM) (Protein: 20g | Carbs: ~34g | Cals: ~340) [Coach: Whole grain bread and fresh tomato are the bright spots 🍅, and it packs a solid ~20g protein. Heads up though — that is liver pâté again after this morning, plus ham, so today ran heavy on processed meat (sodium and fat). Lean on fresh proteins tomorrow.]",
+    "type": "Dinner",
+    "date": "2026-07-18T22:16:00.000+02:00",
+    "photo": "https://iili.io/CjPUmsS.jpg",
+    "carbs": 34,
+    "cals": 340,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3a185ec7-0668-81a0-a387-d7ca1c34945a",
     "title": "Dinner (ice cream treat): a chocolate ice cream cone with whipped cream (BG: 124 mg/dL Flat) (Pred: 147-167 mg/dL @ 7:03 PM) (Protein: 5g | Carbs: ~40g | Cals: ~310) [Coach: An ice cream cone is pure sweet indulgence 🍦 — enjoy it, you have earned it with all of today's walking. Just know it is the day's fastest sugar hit with little to slow it down, so a short walk after would help keep the rise gentle. One scoop is a reasonable portion.]",
     "type": "Dinner",
     "date": "2026-07-18T18:08:00.000+02:00",
-    "photo": "https://iili.io/Cj8wej4.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-18/2f41ae32e2687c87.jpg",
     "carbs": 40,
     "cals": 310,
-    "delta": null,
-    "peak": null
+    "delta": 30,
+    "peak": 156
   },
   {
     "id": "3a185ec7-0668-810c-b616-f6899d773ade",
@@ -34,7 +45,7 @@
   },
   {
     "id": "3a085ec7-0668-8123-a2af-e8dd14c9b2b2",
-    "title": "Lunch: grilled whole flatfish (gallo, sole) with cooked shrimp (gambas) (BG: 97 mg/dL Flat) (Pred: 114-134 mg/dL @ 5:52 PM) (Protein: 40g | Carbs: ~1g | Cals: ~240) [Cumulative Lunch: 21g carbs total] [Coach: Grilled fish and shrimp 🎯 ��� a lean-protein one-two punch with basically zero carbs, so your blood sugar barely notices while you get plenty of staying power. This is a textbook diabetes-friendly plate.]",
+    "title": "Lunch: grilled whole flatfish (gallo, sole) with cooked shrimp (gambas) (BG: 97 mg/dL Flat) (Pred: 114-134 mg/dL @ 5:52 PM) (Protein: 40g | Carbs: ~1g | Cals: ~240) [Cumulative Lunch: 21g carbs total] [Coach: Grilled fish and shrimp 🎯 — a lean-protein one-two punch with basically zero carbs, so your blood sugar barely notices while you get plenty of staying power. This is a textbook diabetes-friendly plate.]",
     "type": "Lunch",
     "date": "2026-07-17T16:37:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-17/1501e0d26ccc15c1.jpg",
