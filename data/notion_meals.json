@@ -1,14 +1,25 @@
 [
   {
+    "id": "3a285ec7-0668-81cf-b531-ef9fd2a564e5",
+    "title": "Breakfast: a yogurt bowl with blueberries, green plum, and granola with nuts (BG: 122 mg/dL Flat) (Pred: 167-187 mg/dL @ 12:25 PM) (Protein: 13g | Carbs: ~36g | Cals: ~340) [Coach: Now this is a breakfast upgrade 🫐 — yogurt for protein, blueberries and plum for fiber and antioxidants, all far kinder than yesterday's pâté toast. Just keep an eye on the granola, it can hide sugar, so a lighter sprinkle keeps the morning rise gentle. Lovely start.]",
+    "type": "Breakfast",
+    "date": "2026-07-19T10:58:00.000+02:00",
+    "photo": "https://iili.io/CwHFpEP.jpg",
+    "carbs": 36,
+    "cals": 340,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3a185ec7-0668-81c1-b274-e16e23decbb6",
     "title": "Dinner: a ham and liver pâté sandwich with tomato on whole grain bread (BG: 118 mg/dL Flat) (Pred: 138-158 mg/dL @ 11:11 PM) (Protein: 20g | Carbs: ~34g | Cals: ~340) [Coach: Whole grain bread and fresh tomato are the bright spots 🍅, and it packs a solid ~20g protein. Heads up though — that is liver pâté again after this morning, plus ham, so today ran heavy on processed meat (sodium and fat). Lean on fresh proteins tomorrow.]",
     "type": "Dinner",
     "date": "2026-07-18T22:16:00.000+02:00",
-    "photo": "https://iili.io/CjPUmsS.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-18/d6ef15f00c163c64.jpg",
     "carbs": 34,
     "cals": 340,
-    "delta": null,
-    "peak": null
+    "delta": 62,
+    "peak": 180
   },
   {
     "id": "3a185ec7-0668-81a0-a387-d7ca1c34945a",
