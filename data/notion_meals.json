@@ -1,14 +1,25 @@
 [
   {
+    "id": "3a285ec7-0668-8187-90a6-de8c638ce3f7",
+    "title": "Lunch: rice noodles with mussels in tomato sauce, hard-boiled egg, and a side of broccoli (BG: 95 mg/dL Flat) (Pred: 128-148 mg/dL @ 3:17 PM) (Protein: 27g | Carbs: ~45g | Cals: ~385) [Coach: Mussels, egg, and broccoli bring protein and greens 🦪 — a genuinely well-built plate, and starting from a 95 you have got great runway. The rice noodles are the one refined carb, but the broccoli fiber and all that protein will keep the rise in check. Really nice balance.]",
+    "type": "Lunch",
+    "date": "2026-07-19T14:02:00.000+02:00",
+    "photo": "https://iili.io/CwFn3lf.jpg",
+    "carbs": 45,
+    "cals": 385,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3a285ec7-0668-81cf-b531-ef9fd2a564e5",
     "title": "Breakfast: a yogurt bowl with blueberries, green plum, and granola with nuts (BG: 122 mg/dL Flat) (Pred: 167-187 mg/dL @ 12:25 PM) (Protein: 13g | Carbs: ~36g | Cals: ~340) [Coach: Now this is a breakfast upgrade 🫐 — yogurt for protein, blueberries and plum for fiber and antioxidants, all far kinder than yesterday's pâté toast. Just keep an eye on the granola, it can hide sugar, so a lighter sprinkle keeps the morning rise gentle. Lovely start.]",
     "type": "Breakfast",
     "date": "2026-07-19T10:58:00.000+02:00",
-    "photo": "https://iili.io/CwHFpEP.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-19/c11180c2a31d112d.jpg",
     "carbs": 36,
     "cals": 340,
-    "delta": null,
-    "peak": null
+    "delta": 27,
+    "peak": 151
   },
   {
     "id": "3a185ec7-0668-81c1-b274-e16e23decbb6",
