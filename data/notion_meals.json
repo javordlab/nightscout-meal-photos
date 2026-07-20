@@ -1,14 +1,25 @@
 [
   {
-    "id": "3a285ec7-0668-811b-be3d-ec51a9f2a7e5",
-    "title": "Dinner: a ham, cheese, and turkey sandwich on whole grain bread with cornichons and green olives (BG: 127 mg/dL Flat) (Pred: 143-163 mg/dL @ 9:57 PM) (Protein: 24g | Carbs: ~34g | Cals: ~400) [Coach: Good protein here 🥪 — ham, turkey, and cheese stack up to a solid ~24g on whole grain bread. Heads up on sodium though, the pickles, olives, deli meats, and cheese all pile it on, so go easy on the salty extras, especially with your flight coming up. Filling dinner otherwise.]",
-    "type": "Dinner",
-    "date": "2026-07-19T21:02:00.000+02:00",
-    "photo": "https://iili.io/CwnM6Ab.jpg",
-    "carbs": 34,
-    "cals": 400,
+    "id": "3a385ec7-0668-81e7-a353-e95d090ac367",
+    "title": "Breakfast: a yogurt bowl with blueberries and cashews (BG: 123 mg/dL Flat) (Pred: 167-187 mg/dL @ 11:29 AM) (Protein: 14g | Carbs: ~35g | Cals: ~305) [Coach: This is the good stuff 🫐 — yogurt for protein, blueberries for fiber and antioxidants, and cashews adding healthy fats and crunch, no sugary granola in sight this time. The berry portion is generous but it is all whole fruit, so the fiber keeps it honest. Great way to start the day.]",
+    "type": "Breakfast",
+    "date": "2026-07-20T10:02:00.000+02:00",
+    "photo": "https://iili.io/CwYjlLl.jpg",
+    "carbs": 35,
+    "cals": 305,
     "delta": null,
     "peak": null
+  },
+  {
+    "id": "3a285ec7-0668-811b-be3d-ec51a9f2a7e5",
+    "title": "Dinner: a ham, cheese, and turkey sandwich on whole grain bread (olives and pickles set aside) (BG: 127 mg/dL Flat) (Pred: 141-161 mg/dL @ 9:57 PM) (Protein: 24g | Carbs: ~31g | Cals: ~340) [Coach: Good protein here 🥪 — ham, turkey, and cheese give a solid ~24g on whole grain bread. Smart call dropping the olives and pickles, that trims a real chunk of sodium. The deli meats and cheese still carry some, so drink plenty of water ahead of your flight. Filling dinner.]",
+    "type": "Dinner",
+    "date": "2026-07-19T21:02:00.000+02:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-19/7dfcb6dd06ac892b.jpg",
+    "carbs": 31,
+    "cals": 340,
+    "delta": 22,
+    "peak": 152
   },
   {
     "id": "3a285ec7-0668-8187-90a6-de8c638ce3f7",
