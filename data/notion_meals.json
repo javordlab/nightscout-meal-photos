@@ -4,22 +4,22 @@
     "title": "Lunch: braised lamb (BG: 95 mg/dL Flat) (Pred: 117-137 mg/dL @ 5:18 PM) (Protein: 26g | Carbs: ~3g | Cals: ~320) [Cumulative Lunch: 33g carbs total] [Coach: Lamb adds ~26g of solid protein 🍖 — great for staying power, just a richer, fattier cut. Together with the ensaladilla this is a hearty mayo-and-meat lunch, and your BG is already climbing near 155, so a post-lunch walk would help ease it back down.]",
     "type": "Lunch",
     "date": "2026-07-20T16:03:00.000+02:00",
-    "photo": "https://iili.io/CwM6Bob.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-20/b4d2e83f1aec2c99.jpg",
     "carbs": 3,
     "cals": 320,
-    "delta": null,
-    "peak": null
+    "delta": 59,
+    "peak": 169
   },
   {
     "id": "3a385ec7-0668-81dc-84b3-f885a9a6c618",
     "title": "Lunch: ensaladilla rusa (potato salad with tuna, peas, carrots, red pepper, egg, and mayonnaise) (BG: 95 mg/dL Flat) (Pred: 114-134 mg/dL @ 4:57 PM) (Protein: 14g | Carbs: ~30g | Cals: ~360) [Coach: The tuna and egg give this ensaladilla real protein 🐟, and there are a few veggies in the mix too. The catch is the mayo and potato make it rich and carb-forward, so a lighter hand on the mayo keeps it friendlier. Tasty Spanish classic though.]",
     "type": "Lunch",
     "date": "2026-07-20T15:42:00.000+02:00",
-    "photo": "https://iili.io/CwM7jnV.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-20/92832673434ac4d4.jpg",
     "carbs": 30,
     "cals": 360,
-    "delta": null,
-    "peak": null
+    "delta": 74,
+    "peak": 169
   },
   {
     "id": "3a385ec7-0668-81e7-a353-e95d090ac367",
@@ -3499,7 +3499,7 @@
   },
   {
     "id": "35e85ec7-0668-812a-a243-ea9579fada30",
-    "title": "Lunch: Egg-and-mashed-potato scramble (revuelto con patata), an egg in tomato sauce (huevo a la flamenca style), sliced avocado, and 2 small slices of rustic bread (BG: 120 mg/dL Flat) (Pred: 163-173 mg/dL @ 3:35 PM) (Protein: 26g | Carbs: ~50g | Cals: ~530) [Coach: A hearty plate 🍳 — eggs and avocado bring the protein and healthy fats, tomato sauce adds non-starchy veg, but the mashed potato in the scramble plus bread pushes carbs higher. A walk after will tame the peak nicely.]  [id:95f6071c]",
+    "title": "Lunch: Egg-and-mashed-potato scramble (revuelto con patata), an egg in tomato sauce (huevo a la flamenca style), sliced avocado, and 2 small slices of rustic bread (BG: 120 mg/dL Flat) (Pred: 163-173 mg/dL @ 3:35 PM) (Protein: 26g | Carbs: ~50g | Cals: ~530) [Coach: A hearty plate 🍳 ��� eggs and avocado bring the protein and healthy fats, tomato sauce adds non-starchy veg, but the mashed potato in the scramble plus bread pushes carbs higher. A walk after will tame the peak nicely.]  [id:95f6071c]",
     "type": "Lunch",
     "date": "2026-05-10T13:42:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-10/c1cd0c2ae3739ba3.jpg",
