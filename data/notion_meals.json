@@ -1,25 +1,47 @@
 [
   {
+    "id": "3a585ec7-0668-81d2-a5b0-cf767459250a",
+    "title": "Lunch: plate of beef chow fun (wide rice noodles with beef and bean sprouts), Szechuan-style eggplant with minced pork, and braised baby bok choy with shiitake mushroom and carrot (BG: 120 mg/dL Flat) (Pred: 143-163 mg/dL @ 2:03 PM) (Protein: 18g | Carbs: ~45g | Cals: ~550) [Cumulative Lunch: 57g carbs total] [Coach: The bok choy and mushrooms made it to your plate after all 😄 — well played. The chow fun noodles are the main carb load here, so that's where the 57g mostly lives, but the portion looks restaurant-reasonable and the veggies are pulling their weight. Solid lunch out.]",
+    "type": "Lunch",
+    "date": "2026-07-22T12:48:00.000-07:00",
+    "photo": "https://iili.io/CNrJAt2.jpg",
+    "carbs": 45,
+    "cals": 550,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "3a585ec7-0668-81e5-86c7-e2f39fe2b259",
+    "title": "Lunch: chicken lettuce wrap (minced chicken with water chestnuts and onion in hoisin sauce, iceberg lettuce cup) with tea (BG: 120 mg/dL Flat) (Pred: 127-147 mg/dL @ 1:57 PM) (Protein: 15g | Carbs: ~12g | Cals: ~180) [Coach: Lettuce wraps at a Chinese restaurant is a power move 🥬 — all the flavor, none of the rice-and-pancake carbs. Hoisin is where the sugar hides, so dip lightly. If those bok choy and mushrooms in the back made it to your plate, even better.]",
+    "type": "Lunch",
+    "date": "2026-07-22T12:42:00.000-07:00",
+    "photo": "https://iili.io/CNrHSC7.jpg",
+    "carbs": 12,
+    "cals": 180,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3a585ec7-0668-81ee-848c-c88162a85ee6",
     "title": "Breakfast: one medium orange (BG: 101 mg/dL Flat) (Pred: 153-173 mg/dL @ 9:35 AM) (Protein: 1g | Carbs: ~15g | Cals: ~65) [Cumulative Breakfast: 36g carbs total] [Coach: A whole orange beats juice every time 🍊 — the fiber slows the sugar down, and it rounds your breakfast to ~36g carbs, still comfy territory. With the yogurt's protein on board, this is a genuinely well-built morning. Vitamin C for the jet lag doesn't hurt either.]",
     "type": "Breakfast",
     "date": "2026-07-22T08:08:00.000-07:00",
-    "photo": "https://iili.io/CNjU9P2.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-22/be1d2d75216f0feb.jpg",
     "carbs": 15,
     "cals": 65,
-    "delta": null,
-    "peak": null
+    "delta": 84,
+    "peak": 182
   },
   {
     "id": "3a585ec7-0668-819f-a585-d176990b7c2d",
     "title": "Breakfast: Greek yogurt and a small piece of toast with prosciutto (BG: 101 mg/dL Flat) (Pred: 146-166 mg/dL @ 9:33 AM) (Protein: 28g | Carbs: ~21g | Cals: ~300) [Coach: Protein-packed landing breakfast 💪 — the Greek yogurt and prosciutto together bring ~28g with barely any carbs, so your BG should barely ripple. Smart salt-awareness too, that's the prosciutto's only mischief. Add fresh veggies when you restock and you're golden.]",
     "type": "Breakfast",
     "date": "2026-07-22T08:06:00.000-07:00",
-    "photo": "https://iili.io/CNjOPx2.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-22/7a9ac70460a0323e.jpg",
     "carbs": 21,
     "cals": 300,
-    "delta": null,
-    "peak": null
+    "delta": 81,
+    "peak": 182
   },
   {
     "id": "3a585ec7-0668-81e4-8d6c-ef652492530a",
