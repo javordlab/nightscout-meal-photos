@@ -1,5 +1,27 @@
 [
   {
+    "id": "3a585ec7-0668-81e4-8d6c-ef652492530a",
+    "title": "Dessert (travel day in-flight dessert, approx. time): chocolate mousse with a raspberry (BG: 200 mg/dL ➡️) (Pred: Pending) (Protein: 4g | Carbs: ~30g | Cals: ~280) [Coach: And a sweet finale 🍫 — the chocolate mousse is pure indulgence, rich and sugary, but after that well-balanced beef-and-greens main you have earned a little treat. It is the biggest sugar hit of the meal, so savour it slowly. A lovely way to cap the flight home.]",
+    "type": "Dessert",
+    "date": "2026-07-21T16:30:00.000-07:00",
+    "photo": "https://iili.io/CNAg511.jpg",
+    "carbs": 30,
+    "cals": 280,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "3a585ec7-0668-81b9-9395-cfc4046087f3",
+    "title": "Dinner (travel day in-flight main course, approx. time): braised beef cheeks with sweet potato purée and broccolini (BG: 200 mg/dL ➡️) (Pred: Pending) (Protein: 33g | Carbs: ~30g | Cals: ~500) [Cumulative Dinner: 55g carbs total] [Coach: A beautifully balanced in-flight main 🥦 — beef cheeks for rich protein, broccolini bringing non-starchy greens, and sweet potato purée as a quality complex carb with fiber and beta-carotene, far better than plain potato. The beef is on the richer side, but the portion looks sensible. Lovely plate.]",
+    "type": "Dinner",
+    "date": "2026-07-21T16:15:00.000-07:00",
+    "photo": "https://iili.io/CNAUaDl.jpg",
+    "carbs": 30,
+    "cals": 500,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3a385ec7-0668-8150-a025-c57eb772c3f1",
     "title": "Lunch: braised lamb (BG: 95 mg/dL Flat) (Pred: 117-137 mg/dL @ 5:18 PM) (Protein: 26g | Carbs: ~3g | Cals: ~320) [Cumulative Lunch: 33g carbs total] [Coach: Lamb adds ~26g of solid protein 🍖 — great for staying power, just a richer, fattier cut. Together with the ensaladilla this is a hearty mayo-and-meat lunch, and your BG is already climbing near 155, so a post-lunch walk would help ease it back down.]",
     "type": "Lunch",
@@ -3499,7 +3521,7 @@
   },
   {
     "id": "35e85ec7-0668-812a-a243-ea9579fada30",
-    "title": "Lunch: Egg-and-mashed-potato scramble (revuelto con patata), an egg in tomato sauce (huevo a la flamenca style), sliced avocado, and 2 small slices of rustic bread (BG: 120 mg/dL Flat) (Pred: 163-173 mg/dL @ 3:35 PM) (Protein: 26g | Carbs: ~50g | Cals: ~530) [Coach: A hearty plate 🍳 ��� eggs and avocado bring the protein and healthy fats, tomato sauce adds non-starchy veg, but the mashed potato in the scramble plus bread pushes carbs higher. A walk after will tame the peak nicely.]  [id:95f6071c]",
+    "title": "Lunch: Egg-and-mashed-potato scramble (revuelto con patata), an egg in tomato sauce (huevo a la flamenca style), sliced avocado, and 2 small slices of rustic bread (BG: 120 mg/dL Flat) (Pred: 163-173 mg/dL @ 3:35 PM) (Protein: 26g | Carbs: ~50g | Cals: ~530) [Coach: A hearty plate 🍳 — eggs and avocado bring the protein and healthy fats, tomato sauce adds non-starchy veg, but the mashed potato in the scramble plus bread pushes carbs higher. A walk after will tame the peak nicely.]  [id:95f6071c]",
     "type": "Lunch",
     "date": "2026-05-10T13:42:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-10/c1cd0c2ae3739ba3.jpg",
