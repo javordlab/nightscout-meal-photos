@@ -13,6 +13,7 @@ const WORKSPACE = '/Users/javier/.openclaw/workspace';
 const DATA_DIR = path.join(WORKSPACE, 'data');
 const OPENCLAW_CONFIG = '/Users/javier/.openclaw/openclaw.json';
 const STATE_PATH = path.join(DATA_DIR, 'daily_report_delivery_state.json');
+const REPORT_STATUS_PATH = path.join(DATA_DIR, 'report_status.json');
 const LOG_PATH = path.join(DATA_DIR, 'daily_report_delivery.log.jsonl');
 const TZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
@@ -198,6 +199,14 @@ function validateReportWindow(generated) {
          `(expected ~288 — likely a sensor gap or warm-up). Glucose stats below may be unrepresentative.`;
 }
 
+function triggerCharts(opts, summary) {
+  if (!opts.sendCharts) return;
+  const cmd = `cd ${WORKSPACE} && /opt/homebrew/bin/node scripts/health-sync/send_daily_charts_telegram.js --date-la=${opts.reportDateLA}${opts.dryRun ? ' --dry-run' : ''}`;
+  execSync(cmd, { stdio: 'inherit' });
+  summary.chartsTriggered = true;
+  log({ op: 'daily_report_charts_triggered', reportDateLA: opts.reportDateLA, chatId: opts.chatId, dryRun: opts.dryRun });
+}
+
 async function main() {
   const opts = parseArgs(process.argv.slice(2));
   const botToken = getBotToken();
@@ -207,29 +216,69 @@ async function main() {
   state.chats[opts.chatId] = state.chats[opts.chatId] || {};
   const alreadySent = state.chats[opts.chatId][opts.reportDateLA];
 
+  // The watchdog fallback records its delivery only in report_status.json, not
+  // in this script's ledger. Without this check, a primary fire that lands
+  // AFTER the fallback covered the day (launchd replays missed calendar jobs
+  // on wake; stale-TZ 23:55 firing on 2026-07-22) re-sends the report Maria
+  // already received that morning. --force overrides for manual runs.
+  const reportStatus = readJson(REPORT_STATUS_PATH, {});
+  const fallbackCovered = !alreadySent && !opts.force
+    && reportStatus.lastReportDateLA === opts.reportDateLA;
+
+  const summary = {
+    status: 'ok',
+    reportDateLA: opts.reportDateLA,
+    targetDate: null,
+    chatId: opts.chatId,
+    reportPath: null,
+    reportSent: false,
+    chartsTriggered: false,
+    skippedReportAlreadySent: false,
+    skippedFallbackCovered: false,
+    coveredBy: null,
+    dryRun: opts.dryRun,
+    force: opts.force
+  };
+
+  // Both skip paths return BEFORE generateDailyReport — regenerating (and
+  // re-running the Coach LLM) for a report that won't be sent is pure waste.
+  // Charts still trigger: the chart sender dedupes per-chart, so this only
+  // fills gaps (e.g. fallback delivered the text but a chart send failed).
+  if (alreadySent && !opts.force) {
+    summary.skippedReportAlreadySent = true;
+    summary.targetDate = alreadySent.targetDate || null;
+    summary.reportPath = alreadySent.reportPath || null;
+    log({ op: 'daily_report_skipped_already_sent', reportDateLA: opts.reportDateLA, chatId: opts.chatId });
+    triggerCharts(opts, summary);
+    console.log(JSON.stringify(summary, null, 2));
+    return summary;
+  }
+
+  if (fallbackCovered) {
+    summary.skippedFallbackCovered = true;
+    summary.coveredBy = reportStatus.source || 'unknown';
+    log({
+      op: 'daily_report_skipped_fallback_covered',
+      reportDateLA: opts.reportDateLA,
+      chatId: opts.chatId,
+      coveredBy: summary.coveredBy,
+      lastReportAt: reportStatus.lastReportAt || null
+    });
+    triggerCharts(opts, summary);
+    console.log(JSON.stringify(summary, null, 2));
+    return summary;
+  }
+
   const generated = await generateDailyReport({ reportDate: opts.reportDateLA });
   const coverageWarning = validateReportWindow(generated);
   if (coverageWarning) console.warn(coverageWarning);
   let reportText = fs.readFileSync(generated.reportPath, 'utf8').trim();
   if (coverageWarning) reportText = `${coverageWarning}\n\n${reportText}`;
 
-  const summary = {
-    status: 'ok',
-    reportDateLA: opts.reportDateLA,
-    targetDate: generated.targetDate,
-    chatId: opts.chatId,
-    reportPath: generated.reportPath,
-    reportSent: false,
-    chartsTriggered: false,
-    skippedReportAlreadySent: false,
-    dryRun: opts.dryRun,
-    force: opts.force
-  };
+  summary.targetDate = generated.targetDate;
+  summary.reportPath = generated.reportPath;
 
-  if (alreadySent && !opts.force) {
-    summary.skippedReportAlreadySent = true;
-    log({ op: 'daily_report_skipped_already_sent', reportDateLA: opts.reportDateLA, chatId: opts.chatId });
-  } else if (opts.dryRun) {
+  if (opts.dryRun) {
     summary.reportSent = true;
     log({ op: 'daily_report_send_dry_run', reportDateLA: opts.reportDateLA, chatId: opts.chatId, targetDate: generated.targetDate });
   } else {
@@ -275,12 +324,7 @@ async function main() {
     });
   }
 
-  if (opts.sendCharts) {
-    const cmd = `cd ${WORKSPACE} && /opt/homebrew/bin/node scripts/health-sync/send_daily_charts_telegram.js --date-la=${opts.reportDateLA}${opts.dryRun ? ' --dry-run' : ''}`;
-    execSync(cmd, { stdio: 'inherit' });
-    summary.chartsTriggered = true;
-    log({ op: 'daily_report_charts_triggered', reportDateLA: opts.reportDateLA, chatId: opts.chatId, dryRun: opts.dryRun });
-  }
+  triggerCharts(opts, summary);
 
   console.log(JSON.stringify(summary, null, 2));
   return summary;
@@ -302,6 +346,10 @@ function summaryToReceipt(summary) {
   if (summary.skippedReportAlreadySent) {
     status = 'noop';
     text = `Report for ${summary.reportDateLA} already sent — skipped`;
+  } else if (summary.skippedFallbackCovered) {
+    status = 'noop';
+    text = `Report for ${summary.reportDateLA} already covered by ${summary.coveredBy} — duplicate send skipped` +
+           (summary.chartsTriggered ? ' · charts triggered' : '');
   } else if (summary.dryRun && summary.reportSent) {
     status = 'ok';
     text = `Dry run for ${summary.reportDateLA} (no message sent)`;
@@ -329,6 +377,8 @@ function summaryToReceipt(summary) {
       messageId: summary.messageId || null,
       chartsTriggered: summary.chartsTriggered,
       skippedAlreadySent: summary.skippedReportAlreadySent,
+      skippedFallbackCovered: summary.skippedFallbackCovered,
+      coveredBy: summary.coveredBy,
       dryRun: summary.dryRun,
       statsDay: stats
     }
