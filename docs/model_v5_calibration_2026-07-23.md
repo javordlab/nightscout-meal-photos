@@ -101,6 +101,15 @@ mostly stops the systematic under-prediction of big protein meals.
 - **Regime caveat:** most of the evaluation window is Maria's Spain stay (through Jul 21).
   The protein term was chosen over a Lunch-intercept bump precisely because it follows the
   food, not the schedule — re-evaluate ~6 weeks after CA return (mid-September 2026).
+- **80+g mega-meals (post-ship finding, 2026-07-23 sample analysis): v5 over-predicts them
+  by ~33 (n=6, all 30g+ protein — v4 was already −11).** The higher 51+ factor and the
+  protein term stack on giant restaurant plates (ensaladilla 109g, garbanzos 97g, mussels
+  88g). Confounded by the 3h outcome window (fat+protein delays the true peak past it, so
+  measured "actuals" under-read), and n=6 is too small to tune on. Decision (Javi,
+  2026-07-23): keep v5 as shipped, tune later. **September re-eval must check this cohort
+  explicitly, ideally with a 4-5h outcome window; if confirmed, add a fifth bracket
+  (~×0.6 at 80+g) or cap the protein term.** By contrast 51–79g is v5's biggest win
+  (bias +15.0→+5.2, MAE 19.7→15.8, n=21) — don't undo it chasing the mega-meal tail.
 - **Dessert +13.6 residual (n=4)** — too small to act on; watch.
 - Fat-extended peaks (>3h window), stacking-aware predictions: still open from v4's list.
 - The next calibration gets clean `time_to_peak_min` data (TZ bug fixed 2026-07-23).
