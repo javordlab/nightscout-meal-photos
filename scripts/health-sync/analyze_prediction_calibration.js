@@ -20,14 +20,17 @@ const { spawnSync } = require('child_process');
 const MYSQL_BIN = '/opt/homebrew/opt/mysql@8.4/bin/mysql';
 const DB_NAME = 'health_ssot';
 
-// Current model parameters (Model v4, shipped 2026-06-12). Used only for the
-// "implied vs current" diagnostics — predictions themselves come from the DB.
+// Current model parameters (Model v5, shipped 2026-07-23 — see
+// docs/model_v5_calibration_2026-07-23.md). Used only for the "implied vs
+// current" diagnostics — predictions themselves come from the DB.
 const MODEL = {
   factors: [ // [maxCarbs, factor]
-    [15, 2.0], [30, 1.2], [50, 0.9], [Infinity, 0.7],
+    [15, 2.0], [30, 1.2], [50, 0.9], [Infinity, 0.8],
   ],
-  intercepts: { Breakfast: 25, Lunch: -5, Dinner: 0, Snack: 0, Dessert: -10 },
-  ttp: { Breakfast: 87, Lunch: 75, Dinner: 55, Snack: 60, Dessert: 95 },
+  intercepts: { Breakfast: 20, Lunch: 0, Dinner: 0, Snack: 0, Dessert: -10 },
+  ttp: { Breakfast: 75, Lunch: 70, Dinner: 65, Snack: 55, Dessert: 105 },
+  proteinCoef: 0.3,      // v5 Layer 2b: + coef × max(0, protein_g − threshold)
+  proteinThreshold: 20,
   dampSlope: 0.35,
   dampCenter: 115,
 };
@@ -158,13 +161,14 @@ for (const mt of Object.keys(MODEL.ttp)) {
   console.log(`${mt.padEnd(10)} n=${String(arr.length).padStart(3)}  model=${MODEL.ttp[mt]}min  actual median=${med}min  delta=${med - MODEL.ttp[mt]}min`);
 }
 
-console.log('\n--- Implied carb factor per bracket (clean; median of (rise − intercept − damp)/carbs) ---');
+console.log('\n--- Implied carb factor per bracket (clean; median of (rise − intercept − protein − damp)/carbs) ---');
 for (const [i, [maxC, fac]] of MODEL.factors.entries()) {
   const minC = i === 0 ? 5 : MODEL.factors[i - 1][0] + 1;
   const arr = clean.filter(g => g.totalCarbs >= minC && g.totalCarbs <= maxC && MODEL.intercepts[g.rep.meal_type] != null);
   const f = arr.map(g => {
     const damp = -MODEL.dampSlope * (g.rep.pre_meal_bg - MODEL.dampCenter);
-    return (g.actualRise - MODEL.intercepts[g.rep.meal_type] - damp) / g.totalCarbs;
+    const prot = MODEL.proteinCoef * Math.max(0, (g.totalProtein || 0) - MODEL.proteinThreshold);
+    return (g.actualRise - MODEL.intercepts[g.rep.meal_type] - prot - damp) / g.totalCarbs;
   }).sort((a, b) => a - b);
   if (!f.length) { console.log(`${minC}-${maxC === Infinity ? '+' : maxC}g: no data`); continue; }
   console.log(`${String(minC).padStart(3)}-${String(maxC === Infinity ? '+' : maxC).padEnd(4)}g current=${fac}  implied median=${f[Math.floor(f.length / 2)].toFixed(2)}  n=${f.length}`);
