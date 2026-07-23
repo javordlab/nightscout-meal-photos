@@ -17,6 +17,7 @@ const NIGHTSCOUT_SECRET = process.env.NIGHTSCOUT_SECRET || 'b3170e23f45df7738434
 const NOTION_DB_ID = process.env.NOTION_DB_ID || '31685ec7-0668-813e-8b9e-c5b4d5d70fa5';
 
 const { loadSyncState, saveSyncState } = require('./sync_state');
+const { stripMetadata } = require('./normalize_health_log');
 
 function log(entry) {
   const line = JSON.stringify({ ts: new Date().toISOString(), ...entry }) + '\n';
@@ -372,9 +373,25 @@ async function main(options = {}) {
     if (!stateByGroup.has(k)) stateByGroup.set(k, []);
     stateByGroup.get(k).push(rec);
   }
+  // Same-minute same-category entries are DISTINCT (e.g. two breakfast items
+  // logged from one message) — when the normalized log has ≥2 entries in a
+  // (ts, user, category) group, sibling-borrowing must be title-restricted or
+  // a genuine sibling's complete record masks this entry's missing NS/Notion
+  // links (the Jul 23 "half a glass of milk" gap surfaced only as a spurious
+  // gallery warning; the Jul 18 one never surfaced at all).
+  const normGroupCounts = new Map();
+  for (const e of (normalized.entries || [])) {
+    const k = `${e.timestamp}|${e.user}|${e.category}`;
+    normGroupCounts.set(k, (normGroupCounts.get(k) || 0) + 1);
+  }
+  const normTitle = t => stripMetadata(String(t || '')).toLowerCase();
   function effectiveSyncEntry(entry) {
+    const groupKey = `${entry.timestamp}|${entry.user}|${entry.category}`;
     const direct = state.entries[entry.entryKey];
-    const sibs = stateByGroup.get(`${entry.timestamp}|${entry.user}|${entry.category}`) || [];
+    let sibs = stateByGroup.get(groupKey) || [];
+    if ((normGroupCounts.get(groupKey) || 0) > 1) {
+      sibs = sibs.filter(r => normTitle(r.title) === normTitle(entry.title));
+    }
     if (direct && direct.nightscout?.treatment_id && direct.notion?.page_id) return direct;
     const merged = { ...(direct || sibs[sibs.length - 1] || {}) };
     if (!merged.nightscout?.treatment_id) {

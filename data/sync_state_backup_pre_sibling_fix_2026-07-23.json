@@ -161,6 +161,10 @@
         "page_id": "34a85ec7-0668-81d6-99ea-c95909d6f716",
         "last_synced_at": "2026-07-23T16:30:04.288Z"
       },
+      "nightscout": {
+        "treatment_id": "69c0195a911a8ea261e675d9",
+        "last_synced_at": "2026-03-24T06:30:25.749Z"
+      },
       "needs_outcome_backfill": true,
       "actual_outcomes": {
         "preMealBg": 149,
@@ -171,10 +175,6 @@
         "peakBgDelta": null,
         "peakTimeDeltaMin": null,
         "twoHourPeakBg": 170
-      },
-      "nightscout": {
-        "treatment_id": "6a62428cef9d78f27db2544c",
-        "last_synced_at": "2026-07-23T16:34:20.137Z"
       }
     },
     "sha256:b08ef16203e042c5a0d1e4e543218ebe4584721fa6adead44e22b18b2f864b3d": {
@@ -3682,8 +3682,8 @@
       "photo_urls": [],
       "outcomes_backfilled": false,
       "notion": {
-        "page_id": "3a685ec7-0668-81ac-8d1e-e80e75ad2939",
-        "last_synced_at": "2026-07-23T16:35:30.265Z"
+        "page_id": "36585ec7-0668-81ab-b754-f50b388060ab",
+        "last_synced_at": "2026-05-19T18:33:55.528Z"
       },
       "nightscout": {
         "treatment_id": "69a7b212911a8ea261e65f75",
@@ -3700,8 +3700,8 @@
       "photo_urls": [],
       "outcomes_backfilled": false,
       "notion": {
-        "page_id": "3a685ec7-0668-8174-aa4b-dd803f4e0ee7",
-        "last_synced_at": "2026-07-23T16:35:30.526Z"
+        "page_id": "36585ec7-0668-8160-8285-d0653bbc3cb6",
+        "last_synced_at": "2026-05-19T18:33:54.467Z"
       },
       "nightscout": {
         "treatment_id": "69b63f07911a8ea261e66bf6",
@@ -7789,6 +7789,10 @@
         "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-03-27/588f94924e486c78.jpg"
       ],
       "outcomes_backfilled": false,
+      "nightscout": {
+        "treatment_id": "69c8079d911a8ea261e67ccb",
+        "last_synced_at": "2026-03-31T06:30:19.969Z"
+      },
       "notion": {
         "page_id": "34a85ec7-0668-81ba-bd49-cdeda3995876",
         "last_synced_at": "2026-07-23T16:30:04.060Z"
@@ -7807,10 +7811,6 @@
         "peakBgDelta": null,
         "peakTimeDeltaMin": null,
         "twoHourPeakBg": 153
-      },
-      "nightscout": {
-        "treatment_id": "6a62428cef9d78f27db2544d",
-        "last_synced_at": "2026-07-23T16:34:20.809Z"
       }
     },
     "sha256:8e65bed6361d9e25bee94d175f507bb52689608be6db7cbd1cbb7a3431c3bc9c": {
@@ -20255,8 +20255,8 @@
         "last_synced_at": "2026-05-18T21:55:55.867Z"
       },
       "nightscout": {
-        "treatment_id": "6a6241feef9d78f27db2544a",
-        "last_synced_at": "2026-07-23T16:31:58.336Z"
+        "treatment_id": "69ff41c2763bd01671f75c83",
+        "last_synced_at": "2026-06-03T10:42:34.149Z"
       }
     },
     "sha256:264d43d32e31f07c7d45a272b9ecea86138f7c12f9207b59db0cb1f4836939ac": {
@@ -27146,8 +27146,8 @@
         "last_synced_at": "2026-07-23T16:30:02.508Z"
       },
       "nightscout": {
-        "treatment_id": "6a62428eef9d78f27db2544e",
-        "last_synced_at": "2026-07-23T16:34:22.886Z"
+        "treatment_id": "6a0dab5485ff6372e229e46c",
+        "last_synced_at": "2026-05-22T09:30:24.083Z"
       }
     },
     "sha256:a734cbb1e39a80ad5dab951eed042e01e9a371b0b159334f0c76e360ea045c50": {
@@ -27704,8 +27704,8 @@
         "last_synced_at": "2026-05-22T10:05:09.451Z"
       },
       "nightscout": {
-        "treatment_id": "6a6241fbef9d78f27db25449",
-        "last_synced_at": "2026-07-23T16:31:55.594Z"
+        "treatment_id": "6a10229c85ff6372e229e6a7",
+        "last_synced_at": "2026-06-10T09:04:19.714Z"
       }
     },
     "sha256:fa09608bbcb02ce83c9650a02104128b73e724465ab419c4e943917dbac73ff7": {
@@ -39459,6 +39459,10 @@
       "timestamp": "2026-06-20T17:22:00+02:00",
       "user": "Maria Dennis",
       "category": "Food",
+      "nightscout": {
+        "treatment_id": "6a36b08ed7b66fcf51f7c375",
+        "last_synced_at": "2026-06-20T15:26:52.130Z"
+      },
       "notion": {
         "page_id": "38585ec7-0668-81dc-b989-e1c69eae99e0",
         "last_synced_at": "2026-07-23T16:30:01.748Z"
@@ -39472,10 +39476,6 @@
       "gallery": {
         "gallery_id": "38585ec7-0668-81dc-b989-e1c69eae99e0",
         "last_synced_at": "2026-07-23T16:30:01.748Z"
-      },
-      "nightscout": {
-        "treatment_id": "6a624290ef9d78f27db2544f",
-        "last_synced_at": "2026-07-23T16:34:24.184Z"
       }
     },
     "sha256:30ef1fddfc57bdb1d68a12e4268100b9b7b1096710a2e8ef6654dd5f26c1ea81": {
@@ -39520,8 +39520,8 @@
         "last_synced_at": "2026-07-23T16:30:01.748Z"
       },
       "nightscout": {
-        "treatment_id": "6a624290ef9d78f27db25450",
-        "last_synced_at": "2026-07-23T16:34:24.751Z"
+        "treatment_id": "6a36b08ed7b66fcf51f7c375",
+        "last_synced_at": "2026-06-20T15:35:06.383Z"
       }
     },
     "sha256:b026c0bc4448f5d49fa0d3f6620e44475c1e03609aaaa491946b7f841acf7f41": {
@@ -44267,6 +44267,10 @@
       "timestamp": "2026-07-02T13:14:00+02:00",
       "user": "Maria Dennis",
       "category": "Exercise",
+      "nightscout": {
+        "treatment_id": "6a46e467d7b66fcf51f7ce48",
+        "last_synced_at": "2026-07-02T22:21:30.525Z"
+      },
       "meal_type": "-",
       "title": "Exercise: 29-min walk · 1,921 steps · 0.61 mi · 0 kcal",
       "photo_urls": [],
@@ -44274,11 +44278,7 @@
         "page_id": "39185ec7-0668-817f-9016-f5c8351bbddd",
         "last_synced_at": "2026-07-02T22:21:30.890Z"
       },
-      "content_hash": "sha256:a8c2ed686aa2355f8a9262b7d9774a33bf6bc58c7527ce2c484398353fc0d063",
-      "nightscout": {
-        "treatment_id": "6a6241faef9d78f27db25448",
-        "last_synced_at": "2026-07-23T16:31:54.845Z"
-      }
+      "content_hash": "sha256:a8c2ed686aa2355f8a9262b7d9774a33bf6bc58c7527ce2c484398353fc0d063"
     },
     "sha256:67556da8276f69a4fc705d8c5eafea3f25366866fa6590b0e5f706e28a1594f4": {
       "timestamp": "2026-07-02T12:35:00+02:00",
@@ -44308,10 +44308,6 @@
       "nightscout": {
         "treatment_id": "6a46e467d7b66fcf51f7ce48",
         "last_synced_at": "2026-07-23T16:22:19.261Z"
-      },
-      "notion": {
-        "page_id": "3a685ec7-0668-812c-b1d9-c270c92361b8",
-        "last_synced_at": "2026-07-23T16:35:30.853Z"
       }
     },
     "sha256:da58dee91739e27c17722bbceff87ff4a125735f226fb7149779657587004f20": {
@@ -49673,6 +49669,10 @@
       "timestamp": "2026-07-18T10:53:00+02:00",
       "user": "Maria Dennis",
       "category": "Food",
+      "nightscout": {
+        "treatment_id": "6a5b3f41ef9d78f27db24df8",
+        "last_synced_at": "2026-07-18T08:54:25.374Z"
+      },
       "meal_type": "Breakfast",
       "title": "Breakfast: a slice of bread with liver pâté and an apricot",
       "photo_urls": [
@@ -49686,10 +49686,6 @@
       "gallery": {
         "gallery_id": "3a185ec7-0668-810f-b48c-f91e9352a063",
         "last_synced_at": "2026-07-23T16:30:01.150Z"
-      },
-      "nightscout": {
-        "treatment_id": "6a6241ffef9d78f27db2544b",
-        "last_synced_at": "2026-07-23T16:31:59.012Z"
       }
     },
     "sha256:80722c3fbb392171c4f6689d77d37a1c802c6badaf1b86ac432b1a308d9388b4": {
@@ -51486,6 +51482,10 @@
       "timestamp": "2026-07-23T07:21:00-07:00",
       "user": "Maria Dennis",
       "category": "Food",
+      "nightscout": {
+        "treatment_id": "6a622385ef9d78f27db25428",
+        "last_synced_at": "2026-07-23T14:21:57.961Z"
+      },
       "meal_type": "Breakfast",
       "title": "Breakfast: half a slice of soft white bread with slices of brie cheese",
       "photo_urls": [
@@ -51499,10 +51499,6 @@
       "gallery": {
         "gallery_id": "3a685ec7-0668-8124-8379-c32021b59a34",
         "last_synced_at": "2026-07-23T16:30:01.042Z"
-      },
-      "nightscout": {
-        "treatment_id": "6a6241f8ef9d78f27db25447",
-        "last_synced_at": "2026-07-23T16:31:52.510Z"
       }
     },
     "sha256:66c2ccb3d6937a4872948ccbb4e7ebbc97c048867951837ba0ab4a145d4c6625": {
@@ -51572,23 +51568,6 @@
         "last_synced_at": "2026-07-23T16:05:06.688Z"
       },
       "content_hash": "sha256:5c680010b9bbb2bc19226fbd07e1856a3ca591d46edb22f090c960f1eb6a8bba"
-    },
-    "sha256:95b86eceeda875621be12e46dc7503927df07b77d14ad1126381af6ff10fc9f4": {
-      "timestamp": "2026-07-23T09:34:00-07:00",
-      "user": "Maria Dennis",
-      "category": "Exercise",
-      "title": "Exercise: 2 hrs heavy gardening",
-      "nightscout": {
-        "treatment_id": "6a6242c4ef9d78f27db25452",
-        "last_synced_at": "2026-07-23T16:35:16.021Z"
-      },
-      "meal_type": "-",
-      "photo_urls": [],
-      "notion": {
-        "page_id": "3a685ec7-0668-81e3-82ca-cfcd8e204af0",
-        "last_synced_at": "2026-07-23T16:35:16.660Z"
-      },
-      "content_hash": "sha256:e27637e07962b21fce5fbedb78d6a7405d28c9fe6c540d5c3cc5783b25254598"
     }
   }
 }

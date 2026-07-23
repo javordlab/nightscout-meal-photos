@@ -473,6 +473,7 @@ module.exports = {
   buildContentHash,
   extractPhotos,
   stripPhotos,
+  stripMetadata,
   healFoodTitlePrefixes,
   main
 };

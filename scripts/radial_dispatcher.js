@@ -291,6 +291,22 @@ async function main() {
   const finalLines = [...priorityLines, ...otherLines];
   console.log(`Processing ${priorityLines.length} today + ${otherLines.length} historical (skip-eligible)`);
 
+  // Same-minute same-category rows are DISTINCT entries (e.g. two breakfast
+  // items logged from one message), not drift siblings of one entry. Count
+  // rows per (date,time,user,category) so the skip-gate and NS-id borrowing
+  // below only apply drift-sibling logic when the group is unambiguous —
+  // borrowing a genuine sibling's record marked the second item "already
+  // synced" forever (the Jul 23 + Jul 18 "glass of milk" breakfasts never
+  // reached NS/Notion) and would have routed its NS write onto the sibling's
+  // treatment via knownTreatmentId.
+  const rowGroupCounts = new Map();
+  for (const l of finalLines) {
+    const q = l.split('|').map(x => x.trim());
+    if (q.length < 9) continue;
+    const k = `${q[1]}|${q[2]}|${q[3]}|${q[4]}`;
+    rowGroupCounts.set(k, (rowGroupCounts.get(k) || 0) + 1);
+  }
+
   let glucoseEntries = [];
   let photoSyncedToNotion = false;
   const nsTelemetry = createNsTelemetry();
@@ -407,10 +423,25 @@ async function main() {
     // are distinct entries (e.g. 19:00 dinner Metformin + 19:00 snack) — a
     // (ts, user)-only match let one sibling's complete record mark the other
     // as fully synced forever.
-    const matchingRecords = Object.values(syncState.entries || {}).filter(
+    let matchingRecords = Object.values(syncState.entries || {}).filter(
       e => e.timestamp === entryData.iso && e.user === entryData.user &&
            e.category === entryData.category
     );
+    // Title is load-bearing too when the log itself has ≥2 rows in this group:
+    // (ts, user, category) can't tell "drift sibling of this entry" from
+    // "record of the OTHER same-minute entry". Restrict to records whose
+    // normalized title matches. Records hold either the enrich-written short
+    // title or the persist-back cleanText form — normalize both sides. A
+    // record with no title is dropped here; the re-sync that causes is
+    // idempotent (NS by entry_key, Notion by Row Id).
+    const lookupTitle = normalizeEntryTitle(cleanText);
+    const isAmbiguousSibling =
+      (rowGroupCounts.get(`${entryData.date}|${entryData.time}|${entryData.user}|${entryData.category}`) || 0) > 1;
+    if (isAmbiguousSibling) {
+      matchingRecords = matchingRecords.filter(
+        r => normalizeEntryTitle(String(r.title || '')) === lookupTitle
+      );
+    }
     const fullySynced = matchingRecords.find(
       e => e.nightscout?.treatment_id && e.notion?.page_id
     );
@@ -435,7 +466,6 @@ async function main() {
     // Prefer the normalized SSoT's precomputed entry_key (consistent with
     // sync_state.json + Notion `Entry Key` property). Fall back to local
     // recompute only if the entry isn't in the normalized index.
-    const lookupTitle = normalizeEntryTitle(cleanText);
     const normalizedEntry = normalizedByKey.get(
       `${entryData.iso}|${entryData.user}|${entryData.category}|${lookupTitle}`
     );
@@ -523,13 +553,17 @@ async function main() {
               timestamp: entryData.iso,
               user: entryData.user,
               category: entryData.category,
+              title: cleanText.slice(0, 200),
               nightscout: {
                 treatment_id: nsRes.treatmentId,
                 last_synced_at: new Date().toISOString()
               }
             });
           }
-          const pruned = consolidateDriftSiblings(syncState, nsEntryKey, {
+          // Consolidation matches siblings by (ts, user, category) only — in an
+          // ambiguous group it would absorb/delete the OTHER entry's record, so
+          // skip it there and leave cleanup to the reviewed drift tool.
+          const pruned = isAmbiguousSibling ? 0 : consolidateDriftSiblings(syncState, nsEntryKey, {
             timestamp: entryData.iso, user: entryData.user, category: entryData.category
           });
           if (prevNsId !== nsRes.treatmentId || pruned > 0) {
@@ -717,7 +751,7 @@ async function main() {
             last_synced_at: new Date().toISOString()
           }
         });
-        consolidateDriftSiblings(syncState, nsEntryKey, {
+        if (!isAmbiguousSibling) consolidateDriftSiblings(syncState, nsEntryKey, {
           timestamp: entryData.iso, user: entryData.user, category: entryData.category
         });
         saveSyncState(SYNC_STATE_PATH, syncState);
@@ -750,7 +784,7 @@ async function main() {
             last_synced_at: new Date().toISOString()
           }
         });
-        consolidateDriftSiblings(syncState, nsEntryKey, {
+        if (!isAmbiguousSibling) consolidateDriftSiblings(syncState, nsEntryKey, {
           timestamp: entryData.iso, user: entryData.user, category: entryData.category
         });
         saveSyncState(SYNC_STATE_PATH, syncState);
