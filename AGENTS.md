@@ -55,25 +55,26 @@
   - Interactive sessions (Claude Code subscription — free, no API cost)
 - **FOOD ENTRY FORMAT (REQUIRED):** Use exact pattern `[Meal Type]: [Description] (BG: [Value] [Trend]) (Pred: [Range] mg/dL @ [Time]) (Protein: [P]g | Carbs: ~[C]g | Cals: ~[CAL])`. The meal-type prefix (`Breakfast:`, `Lunch:`, `Snack:`, `Dinner:`, `Dessert:`) must appear in entry text.
 - **TABLE COLUMN VALUES (REQUIRED):** The last two columns of every health_log.md row are `| Carbs | Cals |`. For Food entries, these MUST be numeric (e.g. `| 49 | 530 |`) — extract from the description text. For non-Food entries (Medication, Activity, Exercise, Sleep), use `| - | - |`. NEVER write `| null | null |`.
-- **PEAK BG PREDICTION FORMULA v4 (CALIBRATED 2026-06-12, n=145 clean meals, holdout-validated — see `docs/model_v4_calibration_2026-06-12.md`; supersedes v3 of 2026-04-02):** Four-layer model. Apply all layers:
+- **PEAK BG PREDICTION FORMULA v5 (CALIBRATED 2026-07-23, 104 clean prospective post-v4 meals — see `docs/model_v5_calibration_2026-07-23.md`; supersedes v4 of 2026-06-12):** Apply all layers:
   - **Layer 1 — Carb factor (preBG-anchored, Metformin-adjusted, monotonically declining):**
     - 0–15g:  `preBG + carbs × 2.0`
     - 16–30g: `preBG + carbs × 1.2`
     - 31–50g: `preBG + carbs × 0.9`
-    - 51+g:   `preBG + carbs × 0.7`
+    - 51+g:   `preBG + carbs × 0.8`
     - Never use flat 120 as baseline. Cap final result at 300 mg/dL.
   - **Layer 2 — Meal-type intercept (additive, apply after carb calc):**
-    - Breakfast: +25 mg/dL (dawn phenomenon / morning cortisol — mandatory, largest signal)
-    - Lunch:      −5 mg/dL
+    - Breakfast: +20 mg/dL (dawn phenomenon / morning cortisol — mandatory, largest signal)
+    - Lunch:       0 mg/dL
     - Dinner:      0 mg/dL
     - Snack:       0 mg/dL
     - Dessert:   −10 mg/dL (typically follows a meal, partially blunted)
+  - **Layer 2.4 — Protein term (additive, NEW in v5): `+ 0.3 × max(0, protein_g − 20)`.** Protein-heavy meals (steak, squid, charcuterie, large fish plates) ran ~15 mg/dL hotter than carb-only math predicts — gluconeogenesis from big protein loads. Example: 45g protein → +7.5.
   - **Layer 2.5 — preBG damping (additive): `− 0.35 × (preBG − 115)`.** High starting BG regresses down, low starting BG regresses up. Example: preBG 140 → −8.75; preBG 90 → +8.75. Without this, predictions over-shoot by ~15 when starting above 130 and under-shoot by ~19 below 90.
   - **Layer 3 — Cumulative meal preBG anchor (data quality fix):**
     - If this is a cumulative item (added to an ongoing meal within **1 hour** of the first item), use the **FIRST item's preBG** as the anchor — NOT the current live BG (which is mid-digestion and artificially elevated). Failure to do this causes ~47–56 mg/dL underestimate errors on cumulative items.
     - **CRITICAL — Cumulative meal type classification:** Food eaten within **1 hour** of a prior meal MUST be logged as the **same meal type** (e.g., Breakfast), NOT as Snack. A yogurt eaten 11 min after breakfast IS Breakfast. Prediction must use the **sum of all carbs** for the session. A snack prediction of 120 mg/dL while a 195 mg/dL breakfast is still digesting is physiologically wrong and must never be logged.
     - **Window unification (2026-04-07):** This window was 2 hours in earlier docs and 30 minutes in `health-guard.md`. Settled at **1 hour** as a balanced compromise. Apply consistently across all docs and code.
-- **TIME-TO-PEAK DEFAULTS (median observed, recalibrated 2026-06-12):** Breakfast: +87 min | Lunch: +75 min | Dinner: +55 min | Snack: +60 min | Dessert: +95 min. Do NOT use flat +90 min for all meal types — and note peaks arrive much EARLIER than the old v3 values for Lunch/Dinner/Snack.
+- **TIME-TO-PEAK DEFAULTS (n-weighted blend, recalibrated 2026-07-23):** Breakfast: +75 min | Lunch: +70 min | Dinner: +65 min | Snack: +55 min | Dessert: +105 min. Do NOT use flat +90 min for all meal types.
 - **CUMULATIVE MEAL PREDICTION (NON-NEGOTIABLE):** When a new food entry is logged within **1 hour** of a prior food entry by the same user, the peak BG prediction MUST be based on the **sum of all carbs for that meal**, not the new item's carbs alone. The new item is reclassified as the **same MealType** as the first (e.g., a "snack" 30 min after breakfast IS Breakfast). Adding food to a meal always increases (or holds) the predicted peak — never decreases it. Annotate with `[Cumulative [MealType]: Xg carbs total]` when applicable.
 - **FOOD DESCRIPTION ACCURACY (NON-NEGOTIABLE):** Description must match the submitted photo/caption content. Never invent/substitute meal descriptions. If uncertain, mark uncertainty and queue refinement.
 - **TIMEZONE POLICY (SYSTEM-WIDE):** Always use host-local dynamic timezone for timestamps/offsets. Never hardcode timezone offsets (`-07:00`, `-08:00`, etc.) unless a target API explicitly requires a specific format.

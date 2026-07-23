@@ -14,14 +14,15 @@
 - **Timestamps:** EVERY entry must include the explicit host timezone offset (auto-detected at runtime, never hardcoded).
   - Example: `2026-03-14 | 09:00 -07:00` (offset derived from host, not hardcoded)
 - **Real-time Context:** Manual entries (Food, Activity, Medication) MUST fetch the most recent glucose value from Nightscout and include it in the log note: `(BG: 145 mg/dL Rising)`.
-- **Food Projections:** Every Food entry MUST have a `Predicted Peak BG` and `Predicted Peak Time`. **Use Model v4 (calibrated 2026-06-12, n=145, holdout-validated). Do NOT use the old flat-baseline formula or v3 coefficients.** Full formula and tables in `AGENTS.md` under "PEAK BG PREDICTION FORMULA v4" — do not duplicate here. Summary:
-  - **Layer 1 — Carb factor (Metformin-adjusted, monotonically declining):** 0–15g→×2.0, 16–30g→×1.2, 31–50g→×0.9, 51+g→×0.7
-  - **Layer 2 — Meal-type intercept:** Breakfast +25, Lunch −5, Dinner 0, Snack 0, Dessert −10
+- **Food Projections:** Every Food entry MUST have a `Predicted Peak BG` and `Predicted Peak Time`. **Use Model v5 (calibrated 2026-07-23 on prospective post-v4 data). Do NOT use old coefficients.** Full formula and tables in `AGENTS.md` under "PEAK BG PREDICTION FORMULA v5" — do not duplicate here. Summary:
+  - **Layer 1 — Carb factor (Metformin-adjusted, monotonically declining):** 0–15g→×2.0, 16–30g→×1.2, 31–50g→×0.9, 51+g→×0.8
+  - **Layer 2 — Meal-type intercept:** Breakfast +20, Lunch 0, Dinner 0, Snack 0, Dessert −10
+  - **Layer 2.4 — Protein term (NEW in v5):** `+ 0.3 × max(0, protein_g − 20)` (protein-heavy meals run hotter)
   - **Layer 2.5 — preBG damping:** `− 0.35 × (preBG − 115)` (high baselines regress down, low up)
   - **Layer 3 — Cumulative anchor:** if a prior food entry was logged within **1 hour**, sum carbs and use the FIRST item's preBG (not the current live BG)
-  - **Layer 4 — Time-to-peak (median observed):** Breakfast +87 min | Lunch +75 | Dinner +55 | Snack +60 | Dessert +95
-  - Formula: `Peak = preBG + (carbs × factor) + intercept − 0.35 × (preBG − 115)`, capped at 300 mg/dL.
-  - **Stale formula warning:** This file previously listed `Peak = 120 + (carbs * 3.5)` and a flat `+105 min` (superseded 2026-04-02 by Model v3), and v3's coefficients (superseded 2026-06-12 by Model v4 — v3's ×1.2 mid-bracket factor and 1:1 preBG carry caused systematic over-prediction, MAE 20.6). **Do not resurrect old coefficients.**
+  - **Layer 4 — Time-to-peak (n-weighted blend):** Breakfast +75 min | Lunch +70 | Dinner +65 | Snack +55 | Dessert +105
+  - Formula: `Peak = preBG + (carbs × factor) + intercept + 0.3 × max(0, protein − 20) − 0.35 × (preBG − 115)`, capped at 300 mg/dL.
+  - **Stale formula warning:** This file previously listed `Peak = 120 + (carbs * 3.5)` and a flat `+105 min` (superseded 2026-04-02 by Model v3), v3's coefficients (superseded 2026-06-12 by Model v4), and v4's (superseded 2026-07-23 by Model v5 — v4 under-predicted 51+g and protein-heavy meals by ~14). **Do not resurrect old coefficients.**
 
 ## Reporting Schedule (Daily 9:30 AM PT)
 - **Mandatory Metrics:** 24h Avg, TIR (70-180), GMI/A1C, CV (Coefficient of Variation), and Outlier Analysis.

@@ -37,7 +37,7 @@ cat docs/CHANGELOG.md
 
 Fully automated health logging pipeline for Maria:
 - **Intake:** Maria sends food/medication/exercise via Telegram → logged to `health_log.md` (SSoT)
-- **Prediction:** Peak BG predicted immediately using Model v4 (4-layer formula, see AGENTS.md)
+- **Prediction:** Peak BG predicted immediately using Model v5 (layered formula incl. protein term, see AGENTS.md)
 - **Sync:** Every 30 min, `radial_dispatcher.js` pushes to Nightscout + Notion + MySQL
 - **Monitoring:** Glucose low alerts every 5 min, daily report at 9:30 AM PT, cron watchdog every 30 min
 - **Backfill:** Actual glucose outcomes written ~3h after each meal entry
@@ -98,7 +98,7 @@ Monitoring:
 ### Prediction & Analytics
 | Script | Purpose |
 |--------|---------|
-| `scripts/calculate_notion_projections.js` | Peak BG prediction (Model v4, 4-layer formula). Runs in radial sync. |
+| `scripts/calculate_notion_projections.js` | Peak BG prediction (Model v5, layered formula). Runs in radial sync. |
 | `scripts/calculate_glucose_summary.js` | 24h + 14d glucose stats (fetches live from NS). Suppresses 14d when coverage <13 days. |
 | `scripts/calculate_14d_stats.js` | 14d trend stats (fetches live from NS). Exits with code 2 when coverage <13 days. |
 | `scripts/backfill_meal_outcomes.js` | Writes actual BG outcomes ~3h post-meal to MySQL + best-effort Notion mirror (hourly cron). Replaced `backfill_notion_impact.js` 2026-05-21. |
@@ -172,7 +172,7 @@ Monitoring:
 | `*/20 * * * *` | `rescue_pending_photos.js` | Re-attempt any photos that failed initial upload |
 | `*/5 * * * *` | `probe_launchd_jobs.js` | Heartbeat-mirror for launchd jobs so the watchdog can see them. Jobs flagged `selfHeartbeat: true` in cron_jobs_config.json (daily-report) write their own heartbeat via heartbeat_wrap — for those the probe only checks loaded-ness and never overwrites the heartbeat or re-reports launchd's sticky `last exit code`. |
 | `*/15 * * * *` | `cron_health_watchdog.js` | Infrastructure health check + crontab/config drift detection |
-| `0 23 * * 0` | `weekly_memory_summary.sh` | Weekly memory rollup via `claude -p` OAuth (Opus 4.7). |
+| `0 23 * * 0` | `weekly_memory_summary.sh` | Weekly memory rollup via `claude -p` OAuth (Fable 5, codex fallback since 2026-07-22). |
 
 > **Critical:** All scripts must use `/opt/homebrew/bin/node` explicitly (or `/Users/javier/.local/bin/claude` for OAuth calls). System cron PATH is `/usr/bin:/bin` — bare `node`/`claude` fails silently.
 
@@ -225,7 +225,13 @@ The HealthGuard cron dashboard at http://localhost/healthguard monitors three di
 
 ## Model Routing (MANDATORY — see AGENTS.md for full rules)
 
-All health-critical and data-touching tasks use **Claude Opus 4.8** (`claude-opus-4-8`) — switched from Fable 5 on 2026-06-21 (scheduled), prev. Fable 5 since 2026-06-10:
+**2026-07-22 update:** Fable 5 is available again (export ban lifted) — **all LLM flows now run `claude-fable-5` primary with codex (OpenAI) as the cross-provider fallback**:
+- All four Telegram bridges: fable-5 → codex-cli (full processing tier: workspace-write + network, instructions via foodlog-cwd/AGENTS.md symlink) → Opus 4.8 → Sonnet 4.6 → Haiku.
+- Daily-report Coach memo (`generate_daily_report.js`): fable-5 @ xhigh ×4 attempts → one codex rescue (read-only, /tmp) → static fallback string.
+- Weekly memory summary (`weekly_memory_summary.sh`): fable-5 → codex (read-only, /tmp); dead ollama:cloud fallbacks removed.
+- Codex model everywhere: **`gpt-5.6-sol` @ high reasoning** (pinned; needs `@openai/codex` ≥0.145 — npm-global install, upgrade via `npm install -g @openai/codex@latest`, NOT brew).
+
+Historical (2026-06-14 → 2026-07-22): script flows used **Claude Opus 4.8** (`claude-opus-4-8`) — switched from Fable 5 on 2026-06-14 when the export ban hit, prev. Fable 5 since 2026-06-10:
 - Any write to `health_log.md`, Nightscout, or Notion
 - Entry key computation and deduplication (hash errors corrupt SSoT)
 - Quality gate evaluation (blocks malformed entries)
@@ -253,27 +259,33 @@ All health-critical and data-touching tasks use **Claude Opus 4.8** (`claude-opu
 
 ---
 
-## Prediction Model v4 (Calibrated 2026-06-12, n=145 clean meals, holdout-validated)
+## Prediction Model v5 (Calibrated 2026-07-23 on 104 clean prospective post-v4 meals)
 
-> Supersedes v3 (2026-04-02, n=57). Full analysis: `docs/model_v4_calibration_2026-06-12.md`.
-> Parity contract — the formula lives in FOUR places, change all together:
-> `foodlog-cwd/CLAUDE.md` Step 4, `scripts/calculate_notion_projections.js`, `AGENTS.md`, this section.
+> Supersedes v4 (2026-06-12, n=145). Full analysis: `docs/model_v5_calibration_2026-07-23.md`.
+> Parity contract — the formula lives in FIVE doc/code places plus the bridge prompt, change all together:
+> `foodlog-cwd/CLAUDE.md` Step 4, `scripts/calculate_notion_projections.js`, `AGENTS.md`,
+> `WORKFLOW_AUTO.md`, this section — and the `defaultPhotoPrompt` string in `config.foodlog.json`.
 
 ```
-Peak BG = preBG + (carbs × factor) + meal_intercept − 0.35 × (preBG − 115)   [capped at 300]
+Peak BG = preBG + (carbs × factor) + meal_intercept + protein_term − 0.35 × (preBG − 115)   [capped at 300]
 
 Carb factors (Metformin-adjusted, monotonically declining):
   0–15g:  × 2.0
   16–30g: × 1.2
   31–50g: × 0.9
-  51+g:   × 0.7
+  51+g:   × 0.8   (v5: was 0.7 — big meals under-predicted +14)
 
 Meal intercepts:
-  Breakfast: +25   (dawn phenomenon / cortisol)
-  Lunch:      −5
+  Breakfast: +20   (dawn phenomenon / cortisol; v5: was +25)
+  Lunch:       0   (v5: was −5; the protein term now carries big-lunch lift)
   Dinner:      0
   Snack:       0
   Dessert:   −10
+
+Protein term (NEW in v5):
+  +0.3 × max(0, protein_g − 20) — protein-heavy meals (steak, squid, charcuterie)
+  ran ~15 mg/dL hotter than carb-only math; tied to food, not hour, so it
+  generalizes across Spain/CA meal schedules.
 
 preBG damping term:
   −0.35 × (preBG − 115) — high baselines regress down, low baselines up.
@@ -282,12 +294,12 @@ Layer 3 — Cumulative anchor:
   If food within 1h of prior same-type meal, use FIRST item's preBG (not current live BG mid-digestion).
   Failure to do this causes ~47–56 mg/dL underestimate errors.
 
-Layer 4 — Time-to-peak defaults (minutes):
-  Breakfast: 87 | Lunch: 75 | Dinner: 55 | Snack: 60 | Dessert: 95
+Layer 4 — Time-to-peak defaults (minutes, n-weighted blend of v4-era + prospective medians):
+  Breakfast: 75 | Lunch: 70 | Dinner: 65 | Snack: 55 | Dessert: 105
 ```
 
-Measured accuracy (clean meals, no stacking): MAE ~15 mg/dL, ~68% within ±20, ~90% within ±30.
-(v3 measured: MAE 20.6, 57% within ±20 — its "87–89% within ±20" claim never held on real data.)
+Measured accuracy (v5 on prospective clean set n=104): MAE 15.8, ±20 70%, ±30 86%, bias +1.9
+(v4 prospective on the same set: MAE 16.6, bias +5.2 — under-predicted 51+g and 20g+-protein meals by ~14).
 
 ---
 
@@ -385,7 +397,7 @@ Commit message convention: `fix:`, `feat:`, `chore:`, `refactor:`. Be specific �
 - Radial sync to Nightscout + Notion + MySQL
 - Daily report (9:30 AM, pure script)
 - Glucose low alerts
-- Prediction Model v4 (all 4 layers, recalibrated 2026-06-12)
+- Prediction Model v5 (recalibrated 2026-07-23 on prospective post-v4 data)
 - System cron PATH (all scripts use full node path)
 - MySQL pagination (48h cutoff)
 - Photo upload via HealthGuard in real-time

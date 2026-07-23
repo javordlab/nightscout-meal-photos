@@ -1,5 +1,7 @@
 # Model v3 Calibration Analysis & Model v4 Proposal — 2026-06-12
 
+> **SUPERSEDED 2026-07-23 by Model v5** — see `docs/model_v5_calibration_2026-07-23.md`.
+
 > **STATUS: SHIPPED 2026-06-12** (same day, on Javier's go). Model v4 is live in all five
 > formula copies: `foodlog-cwd/CLAUDE.md` Step 4, `scripts/calculate_notion_projections.js`,
 > `AGENTS.md`, workspace `CLAUDE.md`, `WORKFLOW_AUTO.md` — plus the prompt string in

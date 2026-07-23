@@ -264,7 +264,12 @@ async function run() {
       if (pb != null && pkBg != null && pkTime) {
         preBg = pb; peakBg = pkBg; peakTimeStr = pkTime;
         const delta = pkBg - pb;
-        const timeToPeak = Math.round((new Date(pkTime).getTime() - mealMs) / 60_000);
+        // pkTime is "YYYY-MM-DD HH:MM:SS" in UTC (sliced from toISOString) —
+        // parse explicitly as UTC. Without the 'Z' it's read as HOST-local
+        // time, skewing time_to_peak_min by the UTC offset (all stored values
+        // before 2026-07-23 carry this skew; the delta block below already
+        // parsed correctly).
+        const timeToPeak = Math.round((new Date(pkTime.replace(' ', 'T') + 'Z').getTime() - mealMs) / 60_000);
         Object.assign(fields, {
           pre_meal_bg: preBg,
           peak_bg: peakBg,

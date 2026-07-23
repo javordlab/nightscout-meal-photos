@@ -51,26 +51,29 @@ async function patchJson(id, props) {
 }
 
 /**
- * PREDICTION MODEL v4 (calibrated 2026-06-12, n=145 clean meals — holdout-validated;
- * see docs/model_v4_calibration_2026-06-12.md; supersedes v3 of 2026-04-02 n=57)
+ * PREDICTION MODEL v5 (calibrated 2026-07-23 on 104 clean post-v4 meals,
+ * prospective 2026-06-13→07-23; see docs/model_v5_calibration_2026-07-23.md;
+ * supersedes v4 of 2026-06-12 n=145)
  *
  * Layer 1 — Carb factors (Metformin-adjusted, monotonically declining):
- *       0-15g: ×2.0   (v3 value confirmed exactly)
- *      16-30g: ×1.2   (was 1.3, implied 1.14)
- *      31-50g: ×0.9   (was 1.2 — v3's single biggest error, implied ~0.8)
- *        51+g: ×0.7   (was 0.8)
+ *       0-15g: ×2.0   (unchanged)
+ *      16-30g: ×1.2   (unchanged, prospective bias +1.4 — spot-on)
+ *      31-50g: ×0.9   (unchanged, prospective bias +1.3 — spot-on)
+ *        51+g: ×0.8   (was 0.7 — big meals under-predicted +14, implied 0.88)
  *
  * Layer 2 — Meal-type intercepts (additive, empirical):
- *   Breakfast: +25 mg/dL  (dawn phenomenon, was +31 — over-predicted)
- *   Lunch:      -5 mg/dL  (was −12; Spanish ~14:30 lunches run hotter)
+ *   Breakfast: +20 mg/dL  (dawn phenomenon, was +25 — still over-predicting)
+ *   Lunch:       0 mg/dL  (was −5; under-prediction now carried by protein term)
  *   Dinner:      0 mg/dL
  *   Snack:       0 mg/dL
  *   Dessert:   -10 mg/dL
  *
- * Layer 3 — preBG damping: − 0.35 × (preBG − 115).
- *   High baselines regress down, low baselines regress up (err-vs-preBG fit
- *   slope −0.35, r=−0.29). v3 carried preBG 1:1 → over-predicted by ~15 at
- *   preBG 130+, under-predicted by ~19 below 90.
+ * Layer 2b — Protein term (NEW in v5): + 0.3 × max(0, protein_g − 20).
+ *   Protein-heavy meals (steak, squid, charcuterie, tuna) under-predicted by
+ *   +15 on average (n=46 at 20g+); gluconeogenesis from large protein loads.
+ *   Tied to the food, not the hour, so it generalizes across Spain/CA schedules.
+ *
+ * Layer 3 — preBG damping: − 0.35 × (preBG − 115). (unchanged — bands within ±10)
  *
  * Layer 4 — Cumulative meal preBG anchor (data quality fix):
  *   For cumulative meals, use the FIRST item's preBG in the meal session,
@@ -83,38 +86,43 @@ const CARB_FACTORS = [
   { maxCarbs: 15,       factor: 2.0 },
   { maxCarbs: 30,       factor: 1.2 },
   { maxCarbs: 50,       factor: 0.9 },
-  { maxCarbs: Infinity, factor: 0.7 },
+  { maxCarbs: Infinity, factor: 0.8 },
 ];
 
 // Additive intercepts per meal type (dawn phenomenon, Metformin timing, etc.)
 const MEAL_INTERCEPTS = {
-  breakfast: 25,
-  lunch:     -5,
+  breakfast: 20,
+  lunch:      0,
   dinner:     0,
   snack:      0,
   dessert:  -10,
 };
 
-// preBG damping (model v4 Layer 3)
+// Protein term (model v5 Layer 2b)
+const PROTEIN_COEF = 0.3;
+const PROTEIN_THRESHOLD_G = 20;
+
+// preBG damping (model v5 Layer 3)
 const PREBG_DAMP_SLOPE = 0.35;
 const PREBG_DAMP_CENTER = 115;
 
 /**
- * Empirical time-to-peak defaults by meal type (2026-06-12 medians, n=107 with
- * measured peaks; v3's Lunch/Dinner/Snack values ran 20-70 min late):
- *   Breakfast: 87 min  (unchanged — was spot-on)
- *   Lunch:     75 min  (was 113)
- *   Dinner:    55 min  (was 76)
- *   Snack:     60 min  (was 126)
- *   Dessert:   95 min  (was 102)
+ * Empirical time-to-peak defaults by meal type — n-weighted blend of the
+ * 2026-06-12 medians and the 2026-07-23 prospective medians (peaks measured
+ * from UTC peak_time; the stored time_to_peak_min column carried a TZ bug):
+ *   Breakfast: 75 min  (was 87; new median 66 n=19)
+ *   Lunch:     70 min  (was 75; new median 61 n=9)
+ *   Dinner:    65 min  (was 55; new median 80 n=21 — Spain-period dinners later)
+ *   Snack:     55 min  (was 60; new median 49 n=8)
+ *   Dessert:  105 min  (was 95; new median 123 n=4)
  *   Default:   70 min  (overall median)
  */
 const TTP_DEFAULTS_MIN = {
-  breakfast: 87,
-  lunch: 75,
-  dinner: 55,
-  snack: 60,
-  dessert: 95,
+  breakfast: 75,
+  lunch: 70,
+  dinner: 65,
+  snack: 55,
+  dessert: 105,
   default: 70,
 };
 
@@ -218,7 +226,7 @@ function parsePredFromText(text, fullDateIso) {
 }
 
 async function run() {
-  console.log('Starting Projections Audit (model v4: intercepts + preBG damping + cumulative anchor)...');
+  console.log('Starting Projections Audit (model v5: intercepts + protein term + preBG damping + cumulative anchor)...');
 
   // Retroactive window: last 7 days in local (host) timezone context.
   // en-CA Intl gives YYYY-MM-DD in the HOST's local calendar — toISOString()
@@ -288,10 +296,11 @@ async function run() {
         peakTimeIso = pred.peakIso || new Date(mealTime.getTime() + getTTPMinutes(title) * 60 * 1000).toISOString();
         source = 'from title (agent)';
       } else {
-        // ── Fallback formula (model v4) ──
+        // ── Fallback formula (model v5) ──
         //
         // Layer 1: carb factor (Metformin-adjusted, preBG-anchored)
         // Layer 2: meal-type intercept (dawn phenomenon, Metformin timing)
+        // Layer 2b: protein term (+0.3 × grams above 20 — gluconeogenesis)
         // Layer 3: preBG damping (−0.35 × (preBG − 115))
         // Layer 4: cumulative meal preBG anchor (use first-meal preBG, not mid-digestion BG)
         const type = getMealType(title);
@@ -302,16 +311,21 @@ async function run() {
         const preBg = rawPreBg ?? 115; // 115 = Maria's typical pre-meal fallback
 
         const factor = getCarbFactor(carbsForCalc);
+        // Protein from the title's "(Protein: ~18g" fragment — tilde-tolerant
+        // (plain "Protein: 18g" also matches; see ff7f294f8 for the tilde bug).
+        const proteinMatch = (title || '').match(/Protein:\s*~?(\d+(?:\.\d+)?)\s*g/i);
+        const proteinG = proteinMatch ? Number(proteinMatch[1]) : 0;
+        const proteinTerm = PROTEIN_COEF * Math.max(0, proteinG - PROTEIN_THRESHOLD_G);
         const damping = -PREBG_DAMP_SLOPE * (preBg - PREBG_DAMP_CENTER);
 
         predictedBg = Math.min(
-          Math.round(preBg + carbsForCalc * factor + intercept + damping),
+          Math.round(preBg + carbsForCalc * factor + intercept + proteinTerm + damping),
           300
         );
 
         const ttpMin = getTTPMinutes(title);
         peakTimeIso = new Date(mealTime.getTime() + ttpMin * 60 * 1000).toISOString();
-        source = `formula v4 (preBG=${preBg} + ${carbsForCalc}g×${factor} + intercept=${intercept} + damp=${damping.toFixed(1)}, ttp=${ttpMin}min)`;
+        source = `formula v5 (preBG=${preBg} + ${carbsForCalc}g×${factor} + intercept=${intercept} + prot=${proteinTerm.toFixed(1)} + damp=${damping.toFixed(1)}, ttp=${ttpMin}min)`;
       }
 
       console.log(`Projection for '${title?.substring(0, 60)}': ${predictedBg} mg/dL [${source}]`);
