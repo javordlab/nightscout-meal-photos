@@ -14,7 +14,10 @@
  *
  * When Claude is confirmed down and an alert is due, it also live-tests the
  * codex fallback tier (gpt-5.6-sol) so the alert states whether failover is
- * covering Maria-facing flows or the outage is total (added 2026-07-23).
+ * covering Maria-facing flows or the outage is total, and checks the public
+ * status page (status.claude.com). Manual-fix advice (claude setup-token) is
+ * age-gated: fresh incidents are framed as self-recovering provider hiccups
+ * (no action); the escalation only appears on the 6h re-alert (2026-07-23).
  *
  * Runs every 10 min via LaunchAgent com.healthguard.claude-auth-watchdog
  * (wrapped in heartbeat_wrap.js, job id claude-auth-watchdog).
@@ -153,6 +156,31 @@ function runCodexProbe() {
   }
 }
 
+// Claude/Anthropic public status page (statuspage.io; status.anthropic.com
+// redirects here). Most auth-failure incidents are provider-side blips that
+// self-recover in minutes with the stored token still perfectly valid, so the
+// alert surfaces upstream status instead of prescribing local credential
+// surgery. Returns null if the page is unreachable.
+function fetchClaudeStatus() {
+  const get = p => new Promise(resolve => {
+    const req = https.get({ hostname: 'status.claude.com', path: p, headers: { accept: 'application/json' } }, res => {
+      let b = ''; res.on('data', d => b += d);
+      res.on('end', () => { try { resolve(JSON.parse(b)); } catch { resolve(null); } });
+    });
+    req.on('error', () => resolve(null));
+    req.setTimeout(15_000, () => { req.destroy(); resolve(null); });
+  });
+  return Promise.all([get('/api/v2/status.json'), get('/api/v2/incidents/unresolved.json')])
+    .then(([s, inc]) => {
+      if (!s || !s.status) return null;
+      return {
+        indicator: s.status.indicator, // none | minor | major | critical
+        description: s.status.description,
+        incidents: ((inc && inc.incidents) || []).map(i => i.name).slice(0, 3),
+      };
+    });
+}
+
 function sendEmail(subject, text) {
   let key;
   try { key = fs.readFileSync(`${HOME}/.openclaw/secrets/agentmail_api_key`, 'utf8').trim(); }
@@ -271,22 +299,35 @@ async function main() {
   let codex = null;
   if (now - state.incident.lastAlertAt > REALERT_MS) {
     const since = madrid(state.incident.startedAt);
+    const ageMin = Math.round((now - state.incident.startedAt) / 60000);
     // Claude is confirmed down — live-test the codex fallback tier so the
     // alert reports whether failover is covering (2026-07-23: the old static
     // "no fallback tier is available" text predated the codex tier and was
     // wrong, as was the "claude /login" advice — headless services never read
     // the interactive login; they read the setup-token file).
     codex = runCodexProbe();
+    const st = await fetchClaudeStatus();
+    const statusLine = st
+      ? `Anthropic status page: ${st.description}${st.incidents.length ? ` — open: ${st.incidents.join('; ')}` : ''}`
+      : 'Anthropic status page: unreachable';
     const failover = codex.ok
       ? `Failover: codex (${CODEX_MODEL}) live test PASSED — foodlog bridge and coach memo fail over to codex, so Maria-facing replies keep working; parked health_log writes replay once Claude auth returns. Claude-cli-only cron jobs stay down until then.`
       : `Failover: codex (${CODEX_MODEL}) live test ALSO FAILED (${codex.out}) — no working fallback tier; foodlog bridge, coach memo and claude-cli cron jobs are all down.`;
-    const msg = `🚨 Claude auth is DOWN (headless auth failure) and auto-recovery failed.\nSince: ${since}\nNew failures: ${hitSummary}\nLive test says: ${test.out}\n\n${failover}\n\nFix: on the mini run \`claude setup-token\` and save the new token into ~/.openclaw/secrets/claude_oauth_token — that file is what all headless callers read. (Interactive /login is NOT required and on its own does not fix the headless path.)`;
+    // First alert (incident younger than the re-alert window): almost always a
+    // provider-side hiccup that self-recovers with the stored token still
+    // valid — regenerating it does nothing, so don't prescribe it. The
+    // setup-token advice only appears on the 6h re-alert, when the outage has
+    // outlived every hiccup on record (longest self-recovered: ~52 min).
+    const advice = (now - state.incident.startedAt) < REALERT_MS
+      ? `No action needed yet: this is usually a transient provider-side hiccup that self-recovers in minutes — the stored token is normally still valid, so regenerating it would not help. The watchdog retests every 10 min and will confirm recovery. If it is still down in ~6h you will get an escalation alert with manual steps.`
+      : `Still down after ~${(ageMin / 60).toFixed(1)}h — beyond hiccup territory. If the status page is clean, suspect the stored token: on the mini run \`claude setup-token\` and save the new token into ~/.openclaw/secrets/claude_oauth_token (the file all headless callers read; interactive /login is not the mechanism).`;
+    const msg = `🚨 Claude auth is DOWN (headless auth failure) and auto-recovery failed.\nSince: ${since} (~${ageMin} min)\nNew failures: ${hitSummary}\nLive test says: ${test.out}\n${statusLine}\n\n${failover}\n\n${advice}`;
     const tg = await sendAlert(msg, undefined, { parseMode: null });
-    const em = await sendEmail('HealthGuard ALERT: Claude auth DOWN — manual action needed', msg);
+    const em = await sendEmail('HealthGuard ALERT: Claude auth DOWN', msg);
     // Only count the alert as delivered if a channel actually accepted it —
     // a failed send must not go quiet for the 6h re-alert window.
     if (tg?.ok || em) state.incident.lastAlertAt = now;
-    logRun({ kind: 'incident_alert', hits, testOut: test.out, codexOk: codex.ok, codexOut: codex.out, telegramDelivered: !!tg?.ok, emailDelivered: !!em });
+    logRun({ kind: 'incident_alert', hits, testOut: test.out, codexOk: codex.ok, codexOut: codex.out, anthropicStatus: st ? st.description : null, telegramDelivered: !!tg?.ok, emailDelivered: !!em });
   } else {
     logRun({ kind: 'incident_ongoing_suppressed', hits, testOut: test.out, lastAlertAt: state.incident.lastAlertAt });
   }
