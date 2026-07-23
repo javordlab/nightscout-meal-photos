@@ -1,0 +1,72 @@
+[
+  {
+    "_id": "6a5a3cc8ef9d78f27db24d17",
+    "enteredBy": "Javordclaw-SSoT",
+    "eventType": "Meal Bolus",
+    "carbs": 20,
+    "notes": "Snack: steamed cockles (berberechos) with a mixed green salad (lettuce, cherry tomato, cucumber, onion) and a pink iced drink (BG: 97 mg/dL Flat) (Pred: 117-137 mg/dL @ 5:30 PM) (Protein: 18g | Carbs: ~20g | Cals: ~190) [Coach: Cockles plus a big veggie salad 🥗 — lean protein and non-starchy veggies with barely any starch to spike you, exactly the plate your blood sugar loves. Just watch that pink drink if it's sweetened; sparkling water would keep it totally spike-free.] (~20g carbs, ~190 kcal) 📷 https://iili.io/CjqaCOl.jpg [entry_key:sha256:da1419049e473eaf66763677119d6d1a44f9c5cd25c91ea00b2b42a654eab007]",
+    "created_at": "2026-07-17T14:30:00.000Z",
+    "utcOffset": 120,
+    "insulin": null
+  },
+  {
+    "_id": "6a604871ef9d78f27db2526f",
+    "enteredBy": "Javordclaw-SSoT",
+    "eventType": "Meal Bolus",
+    "carbs": 46,
+    "notes": "Lunch (travel day airport lounge, approx. time): two small ham croquettes, three slices of goat cheese, one flat peach, a couple of bites of tiramisu, and two cortados (BG: 160 mg/dL) (Pred: Pending) (Protein: 24g | Carbs: ~46g | Cals: ~520) [Coach: A proper lounge graze 🧀 — the goat cheese brings protein and the flat peach adds fresh fiber, both solid picks. The croquettes and tiramisu are the fried-and-sweet indulgences, fine in the small portions you had. A cortado or two is no problem. Welcome home.] (~46g carbs, ~520 kcal) [entry_key:sha256:7c14a145272745a64a1a097b47128e20fed806e7f1cd455c45fe8e62bfd891e4]",
+    "created_at": "2026-07-21T21:00:00.000Z",
+    "utcOffset": -420,
+    "insulin": null
+  },
+  {
+    "_id": "6a604872ef9d78f27db25270",
+    "enteredBy": "Javordclaw-SSoT",
+    "eventType": "Meal Bolus",
+    "carbs": 29,
+    "notes": "Breakfast (travel day on plane, approx. time): one small croissant with two small Iberitos pâté and two spoons of strawberry yogurt (BG: 104 mg/dL) (Pred: Pending) (Protein: 10g | Carbs: ~29g | Cals: ~355) [Coach: Travel breakfasts are rarely gold-standard and that is completely fine ✈️ — the croissant and sweetened yogurt lean refined and sugary, though the pâté adds a bit of protein. On future trips a boiled egg or plain yogurt would steady things a little more. Glad you made it home.] (~29g carbs, ~355 kcal) [entry_key:sha256:560da31593e443b97e12c6be66e9b93602182fb0e1bf137424e884671d644126]",
+    "created_at": "2026-07-21T17:00:00.000Z",
+    "utcOffset": -420,
+    "insulin": null
+  },
+  {
+    "_id": "6a6048d9ef9d78f27db25272",
+    "enteredBy": "Javordclaw-SSoT",
+    "eventType": "Meal Bolus",
+    "carbs": 42,
+    "notes": "Dinner (travel day in-flight meal, approx. time): salmon tartare with avocado and a creamy sauce, two bread rolls, and a glass of white wine (BG: 205 mg/dL ➡️) (Pred: Pending) (Protein: 21g | Carbs: ~42g | Cals: ~560) [Coach: Now this is a lovely in-flight main 🐟 — salmon tartare brings lean protein and omega-3s, exactly what you want up there. The two bread rolls are the carb-heavy part, so one is plenty. A glass of wine is a fine travel treat. A genuinely solid choice at altitude.] (~42g carbs, ~560 kcal) [entry_key:sha256:9285f46844a335b9592d89e00e9e2a747f81196f49412efc7f88fd62ccd0628a]",
+    "created_at": "2026-07-21T23:00:00.000Z",
+    "utcOffset": -420,
+    "insulin": null
+  },
+  {
+    "_id": "6a604931ef9d78f27db25273",
+    "enteredBy": "Javordclaw-SSoT",
+    "eventType": "Meal Bolus",
+    "carbs": 30,
+    "notes": "Dinner (travel day in-flight main course, approx. time): braised beef cheeks with sweet potato purée and broccolini (BG: 200 mg/dL ➡️) (Pred: Pending) (Protein: 33g | Carbs: ~30g | Cals: ~500) [Cumulative Dinner: 55g carbs total] [Coach: A beautifully balanced in-flight main 🥦 — beef cheeks for rich protein, broccolini bringing non-starchy greens, and sweet potato purée as a quality complex carb with fiber and beta-carotene, far better than plain potato. The beef is on the richer side, but the portion looks sensible. Lovely plate.] (~30g carbs, ~500 kcal) 📷 https://iili.io/CNAUaDl.jpg [entry_key:sha256:53f4b3e44fe36d3dda2bab28de1ec4c3d428beee40d8e279b470f6c80a1356a8]",
+    "created_at": "2026-07-21T23:15:00.000Z",
+    "utcOffset": -420,
+    "insulin": null
+  },
+  {
+    "_id": "6a604969ef9d78f27db25274",
+    "enteredBy": "Javordclaw-SSoT",
+    "eventType": "Meal Bolus",
+    "carbs": 30,
+    "notes": "Dessert (travel day in-flight dessert, approx. time): chocolate mousse with a raspberry (BG: 200 mg/dL ➡️) (Pred: Pending) (Protein: 4g | Carbs: ~30g | Cals: ~280) [Coach: And a sweet finale 🍫 — the chocolate mousse is pure indulgence, rich and sugary, but after that well-balanced beef-and-greens main you have earned a little treat. It is the biggest sugar hit of the meal, so savour it slowly. A lovely way to cap the flight home.] (~30g carbs, ~280 kcal) 📷 https://iili.io/CNAg511.jpg [entry_key:sha256:ec86425e200db890915e4afe783a9216cec32d4c3838c707e045f557b91dd98e]",
+    "created_at": "2026-07-21T23:30:00.000Z",
+    "utcOffset": -420,
+    "insulin": null
+  },
+  {
+    "_id": "6a6049c6ef9d78f27db25276",
+    "enteredBy": "Javordclaw-SSoT",
+    "eventType": "Meal Bolus",
+    "carbs": 35,
+    "notes": "Snack (travel day pre-landing, approx. time): a cup of mixed fruit, a small mushroom empanadilla, a small piece of cecina, and a small piece of jamón (BG: 126 mg/dL ➡️) (Pred: Pending) (Protein: 15g | Carbs: ~35g | Cals: ~290) [Coach: The cup of fruit is the star here 🍓 — fiber and vitamins to land on, with protein from the cecina and jamón. Those plus the earlier pâté made for a cured-meat-heavy travel day, so lean on fresh proteins and water now you are home. Small portions throughout though, nicely done.] (~35g carbs, ~290 kcal) [entry_key:sha256:f10762f395e0555aa27b7522da7455d5ddab9ded16a34b890198a46d3033c8ef]",
+    "created_at": "2026-07-22T01:30:00.000Z",
+    "utcOffset": -420,
+    "insulin": null
+  }
+]

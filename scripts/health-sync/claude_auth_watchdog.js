@@ -12,6 +12,10 @@
  * byte offsets and only runs a live `claude -p` test when a NEW "Not logged
  * in" line appears. Zero quota cost while healthy.
  *
+ * When Claude is confirmed down and an alert is due, it also live-tests the
+ * codex fallback tier (gpt-5.6-sol) so the alert states whether failover is
+ * covering Maria-facing flows or the outage is total (added 2026-07-23).
+ *
  * Runs every 10 min via LaunchAgent com.healthguard.claude-auth-watchdog
  * (wrapped in heartbeat_wrap.js, job id claude-auth-watchdog).
  */
@@ -61,6 +65,12 @@ const MARKERS = [
 const MARKER = MARKERS[0]; // retained for the recovery-path pty heuristic
 function hasMarker(text) { return MARKERS.some(m => text.includes(m)); }
 const TEST_MODEL = 'claude-haiku-4-5-20251001';
+// Codex fallback tier — probed only when Claude auth is confirmed down, so the
+// DOWN alert can say whether failover (foodlog bridge + coach memo chain into
+// codex since 2026-07-22) is covering or the outage is total. Mirrors the
+// read-only codex rescue invocation in generate_daily_report.js.
+const CODEX_BIN = '/opt/homebrew/bin/codex';
+const CODEX_MODEL = 'gpt-5.6-sol';
 const REALERT_MS = 6 * 60 * 60 * 1000;      // while broken, re-alert at most every 6h
 const HICCUP_DEDUPE_MS = 60 * 60 * 1000;    // aggregate recovered-hiccup alerts per hour
 
@@ -118,6 +128,28 @@ function runClaude(extraWrap) {
   } catch (e) {
     const out = `${e.stdout || ''}${e.stderr || ''}`.trim().slice(0, 200) || e.message;
     return { ok: false, out };
+  }
+}
+
+function runCodexProbe() {
+  const outFile = path.join(WORKSPACE, 'tmp', `auth-watchdog-codex-${process.pid}-${Date.now()}.txt`);
+  const env = { ...process.env, HOME, USER: 'javier',
+    PATH: `${HOME}/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin` };
+  try {
+    execFileSync(CODEX_BIN, [
+      'exec', '--ephemeral', '--skip-git-repo-check', '--color', 'never',
+      '-m', CODEX_MODEL, '-c', 'model_reasoning_effort="high"',
+      '-s', 'read-only', '-C', '/tmp', '-o', outFile, '-',
+    ], { env, cwd: '/tmp', input: 'reply with the single word: ok',
+         timeout: 180_000, killSignal: 'SIGKILL', encoding: 'utf8' });
+    let text = '';
+    try { text = fs.readFileSync(outFile, 'utf8').trim(); } catch {}
+    return { ok: !!text, out: (text || 'exit 0 but empty output file').slice(0, 200) };
+  } catch (e) {
+    const out = `${e.stdout || ''}${e.stderr || ''}`.trim().slice(0, 200) || e.message;
+    return { ok: false, out };
+  } finally {
+    try { fs.unlinkSync(outFile); } catch {}
   }
 }
 
@@ -236,20 +268,30 @@ async function main() {
   if (!state.incident) {
     state.incident = { startedAt: now, lastAlertAt: 0 };
   }
+  let codex = null;
   if (now - state.incident.lastAlertAt > REALERT_MS) {
     const since = madrid(state.incident.startedAt);
-    const msg = `🚨 Claude auth is DOWN (headless auth failure) and auto-recovery failed.\nSince: ${since}\nNew failures: ${hitSummary}\nLive test says: ${test.out}\n\nFix: open Claude Code interactively on the mini (or run: claude /login). Foodlog bridge, coach memo and claude-cli cron jobs are failing until then; no fallback tier is available.`;
+    // Claude is confirmed down — live-test the codex fallback tier so the
+    // alert reports whether failover is covering (2026-07-23: the old static
+    // "no fallback tier is available" text predated the codex tier and was
+    // wrong, as was the "claude /login" advice — headless services never read
+    // the interactive login; they read the setup-token file).
+    codex = runCodexProbe();
+    const failover = codex.ok
+      ? `Failover: codex (${CODEX_MODEL}) live test PASSED — foodlog bridge and coach memo fail over to codex, so Maria-facing replies keep working; parked health_log writes replay once Claude auth returns. Claude-cli-only cron jobs stay down until then.`
+      : `Failover: codex (${CODEX_MODEL}) live test ALSO FAILED (${codex.out}) — no working fallback tier; foodlog bridge, coach memo and claude-cli cron jobs are all down.`;
+    const msg = `🚨 Claude auth is DOWN (headless auth failure) and auto-recovery failed.\nSince: ${since}\nNew failures: ${hitSummary}\nLive test says: ${test.out}\n\n${failover}\n\nFix: on the mini run \`claude setup-token\` and save the new token into ~/.openclaw/secrets/claude_oauth_token — that file is what all headless callers read. (Interactive /login is NOT required and on its own does not fix the headless path.)`;
     const tg = await sendAlert(msg, undefined, { parseMode: null });
     const em = await sendEmail('HealthGuard ALERT: Claude auth DOWN — manual action needed', msg);
     // Only count the alert as delivered if a channel actually accepted it —
     // a failed send must not go quiet for the 6h re-alert window.
     if (tg?.ok || em) state.incident.lastAlertAt = now;
-    logRun({ kind: 'incident_alert', hits, testOut: test.out, telegramDelivered: !!tg?.ok, emailDelivered: !!em });
+    logRun({ kind: 'incident_alert', hits, testOut: test.out, codexOk: codex.ok, codexOut: codex.out, telegramDelivered: !!tg?.ok, emailDelivered: !!em });
   } else {
     logRun({ kind: 'incident_ongoing_suppressed', hits, testOut: test.out, lastAlertAt: state.incident.lastAlertAt });
   }
   saveState(state);
-  writeReceiptSafe({ status: 'error', summary: `auth DOWN since ${madrid(state.incident.startedAt)}; recovery failed` });
+  writeReceiptSafe({ status: 'error', summary: `auth DOWN since ${madrid(state.incident.startedAt)}; recovery failed${codex ? `; codex fallback ${codex.ok ? 'OK (failover covering)' : 'ALSO DOWN'}` : ''}` });
 }
 
 main().catch(async e => {
