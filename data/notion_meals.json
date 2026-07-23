@@ -1,10 +1,32 @@
 [
   {
+    "id": "3a685ec7-0668-8148-9940-e7fc538b5fb8",
+    "title": "Breakfast (garden reward): a chunk of dark chocolate, about 25g (BG: 117 mg/dL Flat) (Pred: 160-180 mg/dL @ 11:25 AM) (Protein: 2g | Carbs: ~12g | Cals: ~140) [Cumulative Breakfast: 37g carbs total] [Coach: Two hours of heavy gardening absolutely earns a square or three of dark chocolate 😄 — and dark is the smart pick, slower on the sugar. That brings the morning to ~37g carbs, still reasonable. The card for scale is chef's kiss, very professional logging.]",
+    "type": "Breakfast",
+    "date": "2026-07-23T10:10:00.000-07:00",
+    "photo": "https://iili.io/COzGW7V.jpg",
+    "carbs": 12,
+    "cals": 140,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "3a685ec7-0668-81a2-876d-e0f55225bc41",
+    "title": "Breakfast: open-faced toast with sliced avocado and mortadella, with a cup of tea (BG: 117 mg/dL Flat) (Pred: 156-176 mg/dL @ 11:16 AM) (Protein: 10g | Carbs: ~25g | Cals: ~400) [Coach: There's the substantial round two you promised 🥑 — avocado on toast with protein on top is a solid rebuild after two hours of heavy gardening. That's your cured meat for the day though, so keep tonight's dinner fresh. Earned every bite of this one.]",
+    "type": "Breakfast",
+    "date": "2026-07-23T10:01:00.000-07:00",
+    "photo": "https://iili.io/COz73BV.jpg",
+    "carbs": 25,
+    "cals": 400,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3a685ec7-0668-8124-8379-c32021b59a34",
     "title": "Breakfast: half a slice of soft white bread with slices of brie cheese (BG: 106 mg/dL Flat) (Pred: 148-168 mg/dL @ 8:48 AM) (Protein: 7g | Carbs: ~12g | Cals: ~180) [Coach: Light and easy start 🧀 — the brie brings protein and fat that slow the bread down, and the half-slice portion keeps carbs modest. Morning numbers do run a touch higher on their own, so if you're still hungry, a few nuts or some yogurt beat a second slice.]",
     "type": "Breakfast",
     "date": "2026-07-23T07:21:00.000-07:00",
-    "photo": "https://iili.io/COC9Jn9.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-23/acfb9eb50085330e.jpg",
     "carbs": 12,
     "cals": 180,
     "delta": null,
@@ -2806,7 +2828,7 @@
   },
   {
     "id": "36b85ec7-0668-81b8-8fb3-f3a99042103d",
-    "title": "Dinner: grilled ham and cheese sandwich on whole-grain bread with a pickled eggplant (berenjena en escabeche) on the side (BG: 150 mg/dL Flat) (Pred: 184-194 mg/dL @ 9:47 PM) (Protein: 26g | Carbs: ~34g | Cals: ~360) [Coach: Solid grilled sandwich ��� — ~26g protein from ham + cheese, whole-grain bread, pickled eggplant for tang. Ham is today's 1× cured-meat allowance, on-target with your rule. BG at 150 means it lands on a higher baseline; predicted peak ~189. The 2hr gardening you just did will help offset.]",
+    "title": "Dinner: grilled ham and cheese sandwich on whole-grain bread with a pickled eggplant (berenjena en escabeche) on the side (BG: 150 mg/dL Flat) (Pred: 184-194 mg/dL @ 9:47 PM) (Protein: 26g | Carbs: ~34g | Cals: ~360) [Coach: Solid grilled sandwich 🥪 — ~26g protein from ham + cheese, whole-grain bread, pickled eggplant for tang. Ham is today's 1× cured-meat allowance, on-target with your rule. BG at 150 means it lands on a higher baseline; predicted peak ~189. The 2hr gardening you just did will help offset.]",
     "type": "Dinner",
     "date": "2026-05-25T20:31:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-25/41de2bbf09bca4a4.jpg",
