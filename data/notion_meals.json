@@ -1,14 +1,25 @@
 [
   {
+    "id": "3a685ec7-0668-8124-8379-c32021b59a34",
+    "title": "Breakfast: half a slice of soft white bread with slices of brie cheese (BG: 106 mg/dL Flat) (Pred: 148-168 mg/dL @ 8:48 AM) (Protein: 7g | Carbs: ~12g | Cals: ~180) [Coach: Light and easy start 🧀 — the brie brings protein and fat that slow the bread down, and the half-slice portion keeps carbs modest. Morning numbers do run a touch higher on their own, so if you're still hungry, a few nuts or some yogurt beat a second slice.]",
+    "type": "Breakfast",
+    "date": "2026-07-23T07:21:00.000-07:00",
+    "photo": "https://iili.io/COC9Jn9.jpg",
+    "carbs": 12,
+    "cals": 180,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3a685ec7-0668-811d-9e8f-d4ca58412de2",
     "title": "Dinner (dessert): two dark chocolate truffles with sea salt (0.5 oz each) (BG: 118 mg/dL Flat) (Pred: 150-170 mg/dL @ 9:27 PM) (Protein: 2g | Carbs: ~18g | Cals: ~150) [Cumulative Dinner: 48g carbs total] [Coach: Dark chocolate is the right way to do dessert 🍫 — two small truffles is a controlled indulgence, not a binge. They nudge dinner to ~48g carbs total, so an evening stroll would smooth out the peak nicely. Enjoy every bite of that sea salt.]",
     "type": "Dinner",
     "date": "2026-07-22T20:32:00.000-07:00",
-    "photo": "https://iili.io/CNsY6cN.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-22/bc3f2118586f2cbe.jpg",
     "carbs": 18,
     "cals": 150,
-    "delta": null,
-    "peak": null
+    "delta": 43,
+    "peak": 169
   },
   {
     "id": "3a685ec7-0668-81d9-a280-c94f76d11d97",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-22/b7a69e83319629dc.jpg",
     "carbs": 30,
     "cals": 420,
-    "delta": null,
-    "peak": null
+    "delta": 52,
+    "peak": 169
   },
   {
     "id": "3a585ec7-0668-81d2-a5b0-cf767459250a",
@@ -2795,7 +2806,7 @@
   },
   {
     "id": "36b85ec7-0668-81b8-8fb3-f3a99042103d",
-    "title": "Dinner: grilled ham and cheese sandwich on whole-grain bread with a pickled eggplant (berenjena en escabeche) on the side (BG: 150 mg/dL Flat) (Pred: 184-194 mg/dL @ 9:47 PM) (Protein: 26g | Carbs: ~34g | Cals: ~360) [Coach: Solid grilled sandwich 🥪 — ~26g protein from ham + cheese, whole-grain bread, pickled eggplant for tang. Ham is today's 1× cured-meat allowance, on-target with your rule. BG at 150 means it lands on a higher baseline; predicted peak ~189. The 2hr gardening you just did will help offset.]",
+    "title": "Dinner: grilled ham and cheese sandwich on whole-grain bread with a pickled eggplant (berenjena en escabeche) on the side (BG: 150 mg/dL Flat) (Pred: 184-194 mg/dL @ 9:47 PM) (Protein: 26g | Carbs: ~34g | Cals: ~360) [Coach: Solid grilled sandwich ��� — ~26g protein from ham + cheese, whole-grain bread, pickled eggplant for tang. Ham is today's 1× cured-meat allowance, on-target with your rule. BG at 150 means it lands on a higher baseline; predicted peak ~189. The 2hr gardening you just did will help offset.]",
     "type": "Dinner",
     "date": "2026-05-25T20:31:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-25/41de2bbf09bca4a4.jpg",
