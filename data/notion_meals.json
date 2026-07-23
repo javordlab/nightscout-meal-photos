@@ -1,25 +1,47 @@
 [
   {
+    "id": "3a685ec7-0668-819f-85e4-fb5952a8f557",
+    "title": "Lunch: 8 oz of Kooksoondang draft makgeolli (Korean rice wine) (BG: 158 mg/dL Flat) (Pred: 163-183 mg/dL @ 3:25 PM) (Protein: 2g | Carbs: ~15g | Cals: ~120) [Cumulative Lunch: 25g carbs total] [Coach: Makgeolli with your lettuce wraps, very international 😄 — rice wine does carry real sugar though, so it counts as ~15g carbs, not just a drink. One 8oz glass alongside food is the right way to do it. Water for the rest of the afternoon and you're set.]",
+    "type": "Lunch",
+    "date": "2026-07-23T14:15:00.000-07:00",
+    "photo": "https://iili.io/CO56G0F.jpg",
+    "carbs": 15,
+    "cals": 120,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "3a685ec7-0668-8118-9204-f76818300530",
+    "title": "Lunch: leftover chicken lettuce wraps (minced chicken with water chestnuts over iceberg lettuce) (BG: 158 mg/dL Flat) (Pred: 153-173 mg/dL @ 3:21 PM) (Protein: 12g | Carbs: ~10g | Cals: ~150) [Coach: Yesterday's lettuce-wrap leftovers put to good work 🥬 — light on carbs, decent protein, and barely a ripple for your BG, which is already running a bit warm after all that gardening. Perfect refuel without piling on. Great instinct.]",
+    "type": "Lunch",
+    "date": "2026-07-23T14:11:00.000-07:00",
+    "photo": "https://iili.io/CO58IKG.jpg",
+    "carbs": 10,
+    "cals": 150,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3a685ec7-0668-8148-9940-e7fc538b5fb8",
     "title": "Breakfast (garden reward): a chunk of dark chocolate, about 25g (BG: 117 mg/dL Flat) (Pred: 160-180 mg/dL @ 11:25 AM) (Protein: 2g | Carbs: ~12g | Cals: ~140) [Cumulative Breakfast: 37g carbs total] [Coach: Two hours of heavy gardening absolutely earns a square or three of dark chocolate 😄 — and dark is the smart pick, slower on the sugar. That brings the morning to ~37g carbs, still reasonable. The card for scale is chef's kiss, very professional logging.]",
     "type": "Breakfast",
     "date": "2026-07-23T10:10:00.000-07:00",
-    "photo": "https://iili.io/COzGW7V.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-23/660937735f72f5b7.jpg",
     "carbs": 12,
     "cals": 140,
-    "delta": null,
-    "peak": null
+    "delta": 77,
+    "peak": 185
   },
   {
     "id": "3a685ec7-0668-81a2-876d-e0f55225bc41",
     "title": "Breakfast: open-faced toast with sliced avocado and mortadella, with a cup of tea (BG: 117 mg/dL Flat) (Pred: 156-176 mg/dL @ 11:16 AM) (Protein: 10g | Carbs: ~25g | Cals: ~400) [Coach: There's the substantial round two you promised 🥑 — avocado on toast with protein on top is a solid rebuild after two hours of heavy gardening. That's your cured meat for the day though, so keep tonight's dinner fresh. Earned every bite of this one.]",
     "type": "Breakfast",
     "date": "2026-07-23T10:01:00.000-07:00",
-    "photo": "https://iili.io/COz73BV.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-23/492955a7000bcddd.jpg",
     "carbs": 25,
     "cals": 400,
-    "delta": null,
-    "peak": null
+    "delta": 68,
+    "peak": 185
   },
   {
     "id": "3a685ec7-0668-8124-8379-c32021b59a34",
@@ -29,8 +51,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-23/acfb9eb50085330e.jpg",
     "carbs": 12,
     "cals": 180,
-    "delta": null,
-    "peak": null
+    "delta": 73,
+    "peak": 179
   },
   {
     "id": "3a685ec7-0668-811d-9e8f-d4ca58412de2",
