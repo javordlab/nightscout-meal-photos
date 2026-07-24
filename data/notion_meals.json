@@ -1,14 +1,36 @@
 [
   {
+    "id": "3a785ec7-0668-811b-b36b-efbc524cbd78",
+    "title": "Lunch: small bowl of biang-biang noodles (wide hand-pulled noodles) with chili oil, a piece of braised beef, bok choy, and carrot (BG: 122 mg/dL Flat) (Pred: 149-169 mg/dL @ 1:59 PM) (Protein: 6g | Carbs: ~30g | Cals: ~250) [Cumulative Lunch: 40g carbs total] [Coach: Ah, the noodles found you 😄 — biang-biang are gloriously chewy and worth it, and portioning into that small bowl instead of adopting the whole big one is exactly the right move. Lunch totals ~40g carbs with plenty of protein from the beef plate. A post-lunch stroll would tuck the peak in nicely.]",
+    "type": "Lunch",
+    "date": "2026-07-24T12:49:00.000-07:00",
+    "photo": "https://iili.io/COpOQqv.jpg",
+    "carbs": 30,
+    "cals": 250,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "3a785ec7-0668-819a-9e28-cc0ed718c29e",
+    "title": "Lunch: Sichuan-style cold braised beef slices in chili oil over julienned cucumber with cilantro and sesame, with a side of steamed baby bok choy and carrots (BG: 122 mg/dL Flat) (Pred: 131-151 mg/dL @ 1:59 PM) (Protein: 26g | Carbs: ~10g | Cals: ~350) [Coach: Restaurant lunch done like a pro 🎯 — lean braised beef over cucumber instead of noodles, plus a whole side of greens. Solid ~26g protein and barely any carbs to speak of. The chili oil brings some sodium along for the ride, but honestly, this plate is a masterclass.]",
+    "type": "Lunch",
+    "date": "2026-07-24T12:49:00.000-07:00",
+    "photo": "https://iili.io/COpOCxa.jpg",
+    "carbs": 10,
+    "cals": 350,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3a785ec7-0668-81e9-a5b8-cde78c90c1f0",
     "title": "Breakfast: Greek yogurt bowl with fresh mango and walnuts (BG: 108 mg/dL Flat) (Pred: 156-176 mg/dL @ 9:49 AM) (Protein: 18g | Carbs: ~30g | Cals: ~370) [Coach: This is your gold-standard breakfast formula 🥭 — yogurt protein, walnut healthy fats, and whole fruit doing dessert's job. After those overnight leg cramps, keep the water coming today, especially if the garden calls again. Lovely start.]",
     "type": "Breakfast",
     "date": "2026-07-24T08:34:00.000-07:00",
-    "photo": "https://iili.io/COZCQKG.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-24/110384ed00a3282e.jpg",
     "carbs": 30,
     "cals": 370,
-    "delta": null,
-    "peak": null
+    "delta": 46,
+    "peak": 152
   },
   {
     "id": "3a785ec7-0668-818b-9420-cf8cfd7829a3",
@@ -1365,7 +1387,7 @@
   },
   {
     "id": "38785ec7-0668-8112-8d34-db4203655c6a",
-    "title": "Dinner: peanut butter and blueberry sandwich on multigrain seeded bread. (BG: 103 mg/dL Flat) (Pred: 137-157 mg/dL @ 11:08 PM) (Protein: 13g | Carbs: ~44g | Cals: ~400) [Coach: A cozy PB-and-blueberry sandwich ��� — the peanut butter brings protein and healthy fats that slow things down, and the blueberries add fiber. With BG at a tidy 103, this is a gentle way to close the day. The seeded bread is the main carb, so this size is just right.]",
+    "title": "Dinner: peanut butter and blueberry sandwich on multigrain seeded bread. (BG: 103 mg/dL Flat) (Pred: 137-157 mg/dL @ 11:08 PM) (Protein: 13g | Carbs: ~44g | Cals: ~400) [Coach: A cozy PB-and-blueberry sandwich 🥪 — the peanut butter brings protein and healthy fats that slow things down, and the blueberries add fiber. With BG at a tidy 103, this is a gentle way to close the day. The seeded bread is the main carb, so this size is just right.]",
     "type": "Dinner",
     "date": "2026-06-22T22:13:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-22/e59015480085b0b7.jpg",
