@@ -1,14 +1,36 @@
 [
   {
+    "id": "3a785ec7-0668-818b-9420-cf8cfd7829a3",
+    "title": "Dinner: leftover braised baby bok choy, shiitake mushrooms, and carrots topped with a soft-cooked egg (BG: 138 mg/dL Flat) (Pred: 149-169 mg/dL @ 8:33 PM) (Protein: 8g | Carbs: ~8g | Cals: ~150) [Cumulative Dinner: 24g carbs total] [Coach: There's the protein anchor, right on cue 🍳 — egg over those restaurant veggies is a genuinely clever leftover remix. Dinner sits at a friendly ~24g carbs with the naan, light and balanced after a big gardening day. Well played.]",
+    "type": "Dinner",
+    "date": "2026-07-23T19:28:00.000-07:00",
+    "photo": "https://iili.io/CO1u6Ov.jpg",
+    "carbs": 8,
+    "cals": 150,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "3a785ec7-0668-8172-b707-e082bc407730",
+    "title": "Dinner: two small wedges of spinach naan (BG: 138 mg/dL Flat) (Pred: 139-159 mg/dL @ 8:31 PM) (Protein: 4g | Carbs: ~16g | Cals: ~140) [Coach: Spinach naan is a fun way to open dinner 🍞 — the wedges are small and the card-for-scale confirms you kept the portion tidy. It's mostly flatbread carbs though, so some protein alongside — chicken, fish, eggs — would anchor the meal. Send the main event when it lands.]",
+    "type": "Dinner",
+    "date": "2026-07-23T19:26:00.000-07:00",
+    "photo": "https://iili.io/CO1T5ZB.jpg",
+    "carbs": 16,
+    "cals": 140,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3a685ec7-0668-8183-8250-f74b3f2fc8e0",
     "title": "Snack: a small bag of Crunchmaster Crisps baked rice crackers (0.75 oz) (BG: 151 mg/dL Flat) (Pred: 148-168 mg/dL @ 4:12 PM) (Protein: 1g | Carbs: ~16g | Cals: ~100) [Coach: Gardening fuel, round three 🌱 — baked rice crackers are a lighter pick than chips, and the small bag keeps the portion honest. They're mostly carbs though, so pairing the next snack with cheese or nuts would hold you steadier out there. The garden doesn't stand a chance.]",
     "type": "Snack",
     "date": "2026-07-23T15:17:00.000-07:00",
-    "photo": "https://iili.io/COYftfI.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-23/74614aa53e0a5ca0.jpg",
     "carbs": 16,
     "cals": 100,
-    "delta": null,
-    "peak": null
+    "delta": 0,
+    "peak": 158
   },
   {
     "id": "3a685ec7-0668-819f-85e4-fb5952a8f557",
@@ -18,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-23/1573fa5956c48d88.jpg",
     "carbs": 15,
     "cals": 120,
-    "delta": null,
-    "peak": null
+    "delta": 17,
+    "peak": 160
   },
   {
     "id": "3a685ec7-0668-8118-9204-f76818300530",
@@ -29,8 +51,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-23/7184d73354a02a14.jpg",
     "carbs": 10,
     "cals": 150,
-    "delta": null,
-    "peak": null
+    "delta": 2,
+    "peak": 160
   },
   {
     "id": "3a685ec7-0668-8148-9940-e7fc538b5fb8",
