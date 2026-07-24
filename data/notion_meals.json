@@ -1,25 +1,36 @@
 [
   {
+    "id": "3a785ec7-0668-81e9-a5b8-cde78c90c1f0",
+    "title": "Breakfast: Greek yogurt bowl with fresh mango and walnuts (BG: 108 mg/dL Flat) (Pred: 156-176 mg/dL @ 9:49 AM) (Protein: 18g | Carbs: ~30g | Cals: ~370) [Coach: This is your gold-standard breakfast formula 🥭 — yogurt protein, walnut healthy fats, and whole fruit doing dessert's job. After those overnight leg cramps, keep the water coming today, especially if the garden calls again. Lovely start.]",
+    "type": "Breakfast",
+    "date": "2026-07-24T08:34:00.000-07:00",
+    "photo": "https://iili.io/COZCQKG.jpg",
+    "carbs": 30,
+    "cals": 370,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3a785ec7-0668-818b-9420-cf8cfd7829a3",
     "title": "Dinner: leftover braised baby bok choy, shiitake mushrooms, and carrots topped with a soft-cooked egg (BG: 138 mg/dL Flat) (Pred: 149-169 mg/dL @ 8:33 PM) (Protein: 8g | Carbs: ~8g | Cals: ~150) [Cumulative Dinner: 24g carbs total] [Coach: There's the protein anchor, right on cue 🍳 — egg over those restaurant veggies is a genuinely clever leftover remix. Dinner sits at a friendly ~24g carbs with the naan, light and balanced after a big gardening day. Well played.]",
     "type": "Dinner",
     "date": "2026-07-23T19:28:00.000-07:00",
-    "photo": "https://iili.io/CO1u6Ov.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-23/af0f9b1c62439b2d.jpg",
     "carbs": 8,
     "cals": 150,
-    "delta": null,
-    "peak": null
+    "delta": 29,
+    "peak": 168
   },
   {
     "id": "3a785ec7-0668-8172-b707-e082bc407730",
     "title": "Dinner: two small wedges of spinach naan (BG: 138 mg/dL Flat) (Pred: 139-159 mg/dL @ 8:31 PM) (Protein: 4g | Carbs: ~16g | Cals: ~140) [Coach: Spinach naan is a fun way to open dinner 🍞 — the wedges are small and the card-for-scale confirms you kept the portion tidy. It's mostly flatbread carbs though, so some protein alongside — chicken, fish, eggs — would anchor the meal. Send the main event when it lands.]",
     "type": "Dinner",
     "date": "2026-07-23T19:26:00.000-07:00",
-    "photo": "https://iili.io/CO1T5ZB.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-23/7d6a8f839149c4e9.jpg",
     "carbs": 16,
     "cals": 140,
-    "delta": null,
-    "peak": null
+    "delta": 30,
+    "peak": 168
   },
   {
     "id": "3a685ec7-0668-8183-8250-f74b3f2fc8e0",
@@ -1354,7 +1365,7 @@
   },
   {
     "id": "38785ec7-0668-8112-8d34-db4203655c6a",
-    "title": "Dinner: peanut butter and blueberry sandwich on multigrain seeded bread. (BG: 103 mg/dL Flat) (Pred: 137-157 mg/dL @ 11:08 PM) (Protein: 13g | Carbs: ~44g | Cals: ~400) [Coach: A cozy PB-and-blueberry sandwich 🥪 — the peanut butter brings protein and healthy fats that slow things down, and the blueberries add fiber. With BG at a tidy 103, this is a gentle way to close the day. The seeded bread is the main carb, so this size is just right.]",
+    "title": "Dinner: peanut butter and blueberry sandwich on multigrain seeded bread. (BG: 103 mg/dL Flat) (Pred: 137-157 mg/dL @ 11:08 PM) (Protein: 13g | Carbs: ~44g | Cals: ~400) [Coach: A cozy PB-and-blueberry sandwich ��� — the peanut butter brings protein and healthy fats that slow things down, and the blueberries add fiber. With BG at a tidy 103, this is a gentle way to close the day. The seeded bread is the main carb, so this size is just right.]",
     "type": "Dinner",
     "date": "2026-06-22T22:13:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-22/e59015480085b0b7.jpg",
