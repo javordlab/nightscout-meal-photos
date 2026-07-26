@@ -1,10 +1,21 @@
 [
   {
+    "id": "3a985ec7-0668-8104-a040-d32c216ceba2",
+    "title": "Lunch (afternoon frozen treat): one Open Nature strawberry fruit bar (80g, from label: 16g carbs, 60 cal) (BG: 130 mg/dL Flat) (Pred: 134-154 mg/dL @ 5:08 PM) (Protein: 0g | Carbs: ~16g | Cals: ~60) [Coach: A strawberry bar on a hot gardening day — completely fair trade 🍓 — it's mostly real fruit and water, and at 60 calories it's one of the gentler frozen treats out there. The 14g of sugar lands quick, but with the afternoon's digging still ahead, it has a job to do. Label photo = perfect logging, by the way.]",
+    "type": "Lunch",
+    "date": "2026-07-26T15:58:00.000-07:00",
+    "photo": "https://iili.io/CkqhAxt.jpg",
+    "carbs": 16,
+    "cals": 60,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3a985ec7-0668-81b7-a096-e293207d74e8",
     "title": "Lunch: bacon and tomato sandwich on a ciabatta roll with two small apricots (BG: 141 mg/dL Flat) (Pred: 154-174 mg/dL @ 2:26 PM) (Protein: 12g | Carbs: ~40g | Cals: ~450) [Cumulative Lunch: 44g carbs total] [Coach: A proper worker's lunch 🥪 — bacon and tomato on ciabatta is hearty, and the apricots are a smart dessert swap. The roll is the main carb load, but four-plus hours of gardening today gives it somewhere to go. Rich and salty though, so keep that Liquid I.V. routine going this afternoon.]",
     "type": "Lunch",
     "date": "2026-07-26T13:16:00.000-07:00",
-    "photo": "https://iili.io/CkKJXnI.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-26/b9e9c4d4f232fd69.jpg",
     "carbs": 40,
     "cals": 450,
     "delta": null,
@@ -2894,7 +2905,7 @@
   },
   {
     "id": "36d85ec7-0668-81f4-9f1a-fe8eaa50cde1",
-    "title": "Lunch: spread — mixed green salad (frisée, red lettuce, cucumber, avocado, tomato), baguette, Paté de Cabracho (Agromar — red scorpionfish pâté in olive oil), liver pâté, and cornichons (BG: 153 mg/dL Flat) (Pred: 175-185 mg/dL @ 5:32 PM) (Protein: 17g | Carbs: ~30g | Cals: ~375) [Coach: Lovely spread 🥗 ��� salad with avocado leads, and the Paté de Cabracho is lean fish protein + omega-3s (scorpionfish pâté, not cheese — a nicer protein than I first thought). Baguette is the main carb (~20g). BG starting at 153 means it lands higher (~180), but the salad and healthy fats slow it. Veggies + seafood protein = a strong plate.]",
+    "title": "Lunch: spread — mixed green salad (frisée, red lettuce, cucumber, avocado, tomato), baguette, Paté de Cabracho (Agromar — red scorpionfish pâté in olive oil), liver pâté, and cornichons (BG: 153 mg/dL Flat) (Pred: 175-185 mg/dL @ 5:32 PM) (Protein: 17g | Carbs: ~30g | Cals: ~375) [Coach: Lovely spread 🥗 — salad with avocado leads, and the Paté de Cabracho is lean fish protein + omega-3s (scorpionfish pâté, not cheese — a nicer protein than I first thought). Baguette is the main carb (~20g). BG starting at 153 means it lands higher (~180), but the salad and healthy fats slow it. Veggies + seafood protein = a strong plate.]",
     "type": "Lunch",
     "date": "2026-05-27T15:39:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-27/928416a55f4c4d8a.jpg",
