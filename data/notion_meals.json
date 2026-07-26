@@ -1,5 +1,49 @@
 [
   {
+    "id": "3a985ec7-0668-8161-805d-e2932dc8e770",
+    "title": "Breakfast: spinach flatbread toasted with melted cheese, three wedges (BG: 112 mg/dL Flat) (Pred: 153-173 mg/dL @ 10:39 AM) (Protein: 12g | Carbs: ~25g | Cals: ~350) [Coach: Heavier than your usual morning, but garden expedition day earns it 🌱 — the cheese adds protein and the spinach layer sneaks in some greens. All those carbs will be spent on weeds by noon. Pack water for the drive and the digging — after Thursday's leg cramps, hydration is your real fuel today.]",
+    "type": "Breakfast",
+    "date": "2026-07-26T09:24:00.000-07:00",
+    "photo": "https://iili.io/CeyX9B1.jpg",
+    "carbs": 25,
+    "cals": 350,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "3a985ec7-0668-8187-86f3-fcf18436b097",
+    "title": "Dinner (cheese course): two wedges of Manchego-style cheese (BG: 120 mg/dL Flat) (Pred: 151-171 mg/dL @ 7:59 PM) (Protein: 16g | Carbs: ~1g | Cals: ~280) [Cumulative Dinner: 30g carbs total] [Coach: The Manchego made an encore 🧀 — practically zero carbs, so your BG won't mind, and dinner still closes at just ~30g. It is a rich second helping of cheese though, so I'd call the dairy tab settled for tonight. Spain clearly left its mark on the menu, and honestly, good taste.]",
+    "type": "Dinner",
+    "date": "2026-07-25T18:54:00.000-07:00",
+    "photo": "https://iili.io/CehVDru.jpg",
+    "carbs": 1,
+    "cals": 280,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "3a985ec7-0668-8128-bf36-e247bf597b34",
+    "title": "Dinner (dessert): half an orange in wedges and a small piece of hard cheese (BG: 120 mg/dL Flat) (Pred: 145-165 mg/dL @ 7:54 PM) (Protein: 3g | Carbs: ~8g | Cals: ~70) [Cumulative Dinner: 29g carbs total] [Coach: Fruit and cheese for dessert — the classic European close 🍊 — and that clean plate says the sardines were a hit. Dinner wraps at a lovely ~29g carbs with protein to spare. If the evening walk happens, tonight's numbers should be a work of art.]",
+    "type": "Dinner",
+    "date": "2026-07-25T18:49:00.000-07:00",
+    "photo": "https://iili.io/CehMHaj.jpg",
+    "carbs": 8,
+    "cals": 70,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "3a985ec7-0668-8124-b56b-cb0b3e2f3ef0",
+    "title": "Dinner: a wedge of tortilla española, canned sardines, tomato and scallion salad, and pickle slices (BG: 120 mg/dL Flat) (Pred: 135-155 mg/dL @ 7:44 PM) (Protein: 24g | Carbs: ~21g | Cals: ~430) [Coach: A little Spain on the plate tonight 🇪🇸 — sardines are a nutrition jackpot, omega-3s and ~15g of protein from one tin. The tortilla's potato is the only real carb and it's a modest wedge, with fresh tomatoes rounding things out. This is the kind of dinner your GMI goal dreams about.]",
+    "type": "Dinner",
+    "date": "2026-07-25T18:39:00.000-07:00",
+    "photo": "https://iili.io/Ceh0EhX.jpg",
+    "carbs": 21,
+    "cals": 430,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3a785ec7-0668-811b-b36b-efbc524cbd78",
     "title": "Lunch: small bowl of biang-biang noodles (wide hand-pulled noodles) with chili oil, a piece of braised beef, bok choy, and carrot (BG: 122 mg/dL Flat) (Pred: 149-169 mg/dL @ 1:59 PM) (Protein: 6g | Carbs: ~30g | Cals: ~250) [Cumulative Lunch: 40g carbs total] [Coach: Ah, the noodles found you 😄 — biang-biang are gloriously chewy and worth it, and portioning into that small bowl instead of adopting the whole big one is exactly the right move. Lunch totals ~40g carbs with plenty of protein from the beef plate. A post-lunch stroll would tuck the peak in nicely.]",
     "type": "Lunch",
