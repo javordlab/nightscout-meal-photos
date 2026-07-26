@@ -15,33 +15,33 @@
     "title": "Dinner (cheese course): two wedges of Manchego-style cheese (BG: 120 mg/dL Flat) (Pred: 151-171 mg/dL @ 7:59 PM) (Protein: 16g | Carbs: ~1g | Cals: ~280) [Cumulative Dinner: 30g carbs total] [Coach: The Manchego made an encore 🧀 — practically zero carbs, so your BG won't mind, and dinner still closes at just ~30g. It is a rich second helping of cheese though, so I'd call the dairy tab settled for tonight. Spain clearly left its mark on the menu, and honestly, good taste.]",
     "type": "Dinner",
     "date": "2026-07-25T18:54:00.000-07:00",
-    "photo": "https://iili.io/CehVDru.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-25/bfe1222d72798a32.jpg",
     "carbs": 1,
     "cals": 280,
-    "delta": null,
-    "peak": null
+    "delta": 62,
+    "peak": 190
   },
   {
     "id": "3a985ec7-0668-8128-bf36-e247bf597b34",
     "title": "Dinner (dessert): half an orange in wedges and a small piece of hard cheese (BG: 120 mg/dL Flat) (Pred: 145-165 mg/dL @ 7:54 PM) (Protein: 3g | Carbs: ~8g | Cals: ~70) [Cumulative Dinner: 29g carbs total] [Coach: Fruit and cheese for dessert — the classic European close 🍊 — and that clean plate says the sardines were a hit. Dinner wraps at a lovely ~29g carbs with protein to spare. If the evening walk happens, tonight's numbers should be a work of art.]",
     "type": "Dinner",
     "date": "2026-07-25T18:49:00.000-07:00",
-    "photo": "https://iili.io/CehMHaj.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-25/98c04616eca9b84b.jpg",
     "carbs": 8,
     "cals": 70,
-    "delta": null,
-    "peak": null
+    "delta": 65,
+    "peak": 190
   },
   {
     "id": "3a985ec7-0668-8124-b56b-cb0b3e2f3ef0",
     "title": "Dinner: a wedge of tortilla española, canned sardines, tomato and scallion salad, and pickle slices (BG: 120 mg/dL Flat) (Pred: 135-155 mg/dL @ 7:44 PM) (Protein: 24g | Carbs: ~21g | Cals: ~430) [Coach: A little Spain on the plate tonight 🇪🇸 — sardines are a nutrition jackpot, omega-3s and ~15g of protein from one tin. The tortilla's potato is the only real carb and it's a modest wedge, with fresh tomatoes rounding things out. This is the kind of dinner your GMI goal dreams about.]",
     "type": "Dinner",
     "date": "2026-07-25T18:39:00.000-07:00",
-    "photo": "https://iili.io/Ceh0EhX.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-25/a9db13dc0024770d.jpg",
     "carbs": 21,
     "cals": 430,
-    "delta": null,
-    "peak": null
+    "delta": 64,
+    "peak": 190
   },
   {
     "id": "3a785ec7-0668-811b-b36b-efbc524cbd78",
