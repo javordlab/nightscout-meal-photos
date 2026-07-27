@@ -1,14 +1,25 @@
 [
   {
+    "id": "3aa85ec7-0668-8107-baed-f7b263710b93",
+    "title": "Dinner: barbecue ribs with peas, corn, tomato, and onion salad (BG: 178 mg/dL Flat) (Pred: 190-210 mg/dL @ 7:45 PM) (Protein: 40g | Carbs: ~42g | Cals: ~620) [Coach: The ribs provide solid protein, and peas, corn, tomato, and onion make a resourceful pantry dinner. With BG already elevated, the starchy vegetables and barbecue sauce may push it higher, so keep portions steady and add leafy greens next time.]",
+    "type": "Dinner",
+    "date": "2026-07-26T18:40:00.000-07:00",
+    "photo": "https://iili.io/CknCcp2.jpg",
+    "carbs": 42,
+    "cals": 620,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3a985ec7-0668-8104-a040-d32c216ceba2",
     "title": "Lunch (afternoon frozen treat): one Open Nature strawberry fruit bar (80g, from label: 16g carbs, 60 cal) (BG: 130 mg/dL Flat) (Pred: 134-154 mg/dL @ 5:08 PM) (Protein: 0g | Carbs: ~16g | Cals: ~60) [Coach: A strawberry bar on a hot gardening day — completely fair trade 🍓 — it's mostly real fruit and water, and at 60 calories it's one of the gentler frozen treats out there. The 14g of sugar lands quick, but with the afternoon's digging still ahead, it has a job to do. Label photo = perfect logging, by the way.]",
     "type": "Lunch",
     "date": "2026-07-26T15:58:00.000-07:00",
-    "photo": "https://iili.io/CkqhAxt.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-26/c2cf5e2191d9b775.jpg",
     "carbs": 16,
     "cals": 60,
-    "delta": null,
-    "peak": null
+    "delta": 94,
+    "peak": 220
   },
   {
     "id": "3a985ec7-0668-81b7-a096-e293207d74e8",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-26/b9e9c4d4f232fd69.jpg",
     "carbs": 40,
     "cals": 450,
-    "delta": null,
-    "peak": null
+    "delta": 38,
+    "peak": 179
   },
   {
     "id": "3a985ec7-0668-8161-805d-e2932dc8e770",
