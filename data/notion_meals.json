@@ -1,14 +1,25 @@
 [
   {
+    "id": "3aa85ec7-0668-813f-9454-c85c97293208",
+    "title": "Lunch: sausage patties on spinach flatbread with a plate of fresh orange wedges (BG: Unknown) (Pred: Pending) (Protein: 17g | Carbs: ~40g | Cals: ~520) [Coach: Hearty and earned after 2.5 hours in the dirt 💪 — the sausage brings solid protein and that whole orange is dessert done right, fiber included. Sausage is the salty, fattier protein pick though, so balance it with something leaner tonight. Three big gardening days in a row — you're a machine.]",
+    "type": "Lunch",
+    "date": "2026-07-27T12:55:00.000-07:00",
+    "photo": "https://iili.io/CkrBTIs.jpg",
+    "carbs": 40,
+    "cals": 520,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3aa85ec7-0668-814b-8527-e41f37473a5a",
     "title": "Dinner (dessert): one plum (BG: 118 mg/dL Flat) (Pred: 197-217 mg/dL @ 8:44 PM) (Protein: 1g | Carbs: ~8g | Cals: ~35) [Cumulative Dinner: 50g carbs total] [Coach: A plum to finish — small, fresh, and full of fiber 🍑 — the gentlest dessert in the house. Dinner closes at ~50g carbs on a day you spent three hours digging, so the books are balanced. Lovely discipline on a pantry-and-freezer day.]",
     "type": "Dinner",
     "date": "2026-07-26T19:39:00.000-07:00",
-    "photo": "https://iili.io/Cko3kog.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-26/08eb4fc8c541a7b3.jpg",
     "carbs": 8,
     "cals": 35,
-    "delta": null,
-    "peak": null
+    "delta": 19,
+    "peak": 137
   },
   {
     "id": "3aa85ec7-0668-8137-824b-dc53183c5214",
