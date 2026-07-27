@@ -1,7 +1,7 @@
 [
   {
-    "id": "3aa85ec7-0668-8137-824b-dc53183c5214",
-    "title": "Dinner: one small red plum (BG: 121 mg/dL Flat) (Pred: 197-217 mg/dL @ 8:44 PM) (Protein: 0g | Carbs: ~8g | Cals: ~35) [Cumulative Dinner: 50g carbs total] [Coach: A small plum is a fiber-rich finish 🎯, and its modest portion keeps the extra carbs manageable. Dinner now totals about 50g carbs, so this is a smart stopping point while the protein from the ribs helps slow the meal.]",
+    "id": "3aa85ec7-0668-814b-8527-e41f37473a5a",
+    "title": "Dinner (dessert): one plum (BG: 118 mg/dL Flat) (Pred: 197-217 mg/dL @ 8:44 PM) (Protein: 1g | Carbs: ~8g | Cals: ~35) [Cumulative Dinner: 50g carbs total] [Coach: A plum to finish — small, fresh, and full of fiber 🍑 — the gentlest dessert in the house. Dinner closes at ~50g carbs on a day you spent three hours digging, so the books are balanced. Lovely discipline on a pantry-and-freezer day.]",
     "type": "Dinner",
     "date": "2026-07-26T19:39:00.000-07:00",
     "photo": "https://iili.io/Cko3kog.jpg",
@@ -11,6 +11,17 @@
     "peak": null
   },
   {
+    "id": "3aa85ec7-0668-8137-824b-dc53183c5214",
+    "title": "Dinner: one small red plum (BG: 121 mg/dL Flat) (Pred: 197-217 mg/dL @ 8:44 PM) (Protein: 0g | Carbs: ~8g | Cals: ~35) [Cumulative Dinner: 50g carbs total] [Coach: A small plum is a fiber-rich finish 🎯, and its modest portion keeps the extra carbs manageable. Dinner now totals about 50g carbs, so this is a smart stopping point while the protein from the ribs helps slow the meal.]",
+    "type": "Dinner",
+    "date": "2026-07-26T19:39:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-26/7dea516c78a1926b.jpg",
+    "carbs": 8,
+    "cals": 35,
+    "delta": 19,
+    "peak": 137
+  },
+  {
     "id": "3aa85ec7-0668-8107-baed-f7b263710b93",
     "title": "Dinner: barbecue ribs with peas, corn, tomato, and onion salad (BG: 178 mg/dL Flat) (Pred: 190-210 mg/dL @ 7:45 PM) (Protein: 40g | Carbs: ~42g | Cals: ~620) [Coach: The ribs provide solid protein, and peas, corn, tomato, and onion make a resourceful pantry dinner. With BG already elevated, the starchy vegetables and barbecue sauce may push it higher, so keep portions steady and add leafy greens next time.]",
     "type": "Dinner",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-26/7f5ba57e5dae1006.jpg",
     "carbs": 42,
     "cals": 620,
-    "delta": null,
-    "peak": null
+    "delta": -34,
+    "peak": 144
   },
   {
     "id": "3a985ec7-0668-8104-a040-d32c216ceba2",
