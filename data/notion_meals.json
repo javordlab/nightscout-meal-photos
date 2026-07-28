@@ -1,10 +1,21 @@
 [
   {
+    "id": "3ab85ec7-0668-8129-a3bd-ec469a19b55e",
+    "title": "Breakfast: spinach flatbread with one canned sardine and shredded cheese, with black coffee (BG: 132 mg/dL fingerstick 7:21 AM) (Pred: 155-175 mg/dL @ 9:46 AM) (Protein: 15g | Carbs: ~16g | Cals: ~330) [Coach: Pantry-mode creativity at its best 🐟 — that sardine adds omega-3s and protein to what would've been a carb-forward flatbread, and the cheese seals the deal. Modest ~16g carbs keeps the morning gentle after last night's 200. Yes to shopping though — your yogurt-and-veggie game misses you 😉]",
+    "type": "Breakfast",
+    "date": "2026-07-28T08:31:00.000-07:00",
+    "photo": "https://iili.io/CvYIhu9.jpg",
+    "carbs": 16,
+    "cals": 330,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3ab85ec7-0668-81a8-9baa-fce201e7c13f",
     "title": "Dinner: pappardelle with meat sauce, leftover barbecue ribs, white asparagus, and peas and corn with red pepper (BG: Unknown) (Pred: Pending) (Protein: 30g | Carbs: ~50g | Cals: ~650) [Coach: A big honest dinner after a big honest day 🍝 — the ribs and meat sauce stack up ~30g of protein, and the asparagus with peas and corn bring real vegetables to the table. The pappardelle makes it your carb-heaviest meal today at ~50g, so tonight's little walk would be well timed. With the sensor off, a bedtime fingerstick after this one wouldn't hurt.]",
     "type": "Dinner",
     "date": "2026-07-27T18:40:00.000-07:00",
-    "photo": "https://iili.io/CkQMcIp.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-27/e062ddca10694076.jpg",
     "carbs": 50,
     "cals": 650,
     "delta": null,
