@@ -1,10 +1,21 @@
 [
   {
+    "id": "3ab85ec7-0668-81a8-9baa-fce201e7c13f",
+    "title": "Dinner: pappardelle with meat sauce, leftover barbecue ribs, white asparagus, and peas and corn with red pepper (BG: Unknown) (Pred: Pending) (Protein: 30g | Carbs: ~50g | Cals: ~650) [Coach: A big honest dinner after a big honest day 🍝 — the ribs and meat sauce stack up ~30g of protein, and the asparagus with peas and corn bring real vegetables to the table. The pappardelle makes it your carb-heaviest meal today at ~50g, so tonight's little walk would be well timed. With the sensor off, a bedtime fingerstick after this one wouldn't hurt.]",
+    "type": "Dinner",
+    "date": "2026-07-27T18:40:00.000-07:00",
+    "photo": "https://iili.io/CkQMcIp.jpg",
+    "carbs": 50,
+    "cals": 650,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3aa85ec7-0668-815c-972c-dc74ed76b678",
     "title": "Lunch (dessert): one small banana from Maria's own banana tree (BG: Unknown) (Pred: Pending) (Protein: 1g | Carbs: ~13g | Cals: ~50) [Cumulative Lunch: 53g carbs total] [Coach: Homegrown bananas — now that's farm-to-table showing off 😄🍌 — and the potassium is exactly what your hard-working muscles need after those cramps. Very ripe ones run sweeter, so good thing it's small. Lunch totals ~53g carbs, well spent on a gardening day.]",
     "type": "Lunch",
     "date": "2026-07-27T13:24:00.000-07:00",
-    "photo": "https://iili.io/Ckrtb3v.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-27/5d5d8d1ab847b57d.jpg",
     "carbs": 13,
     "cals": 50,
     "delta": null,
@@ -386,7 +397,7 @@
   },
   {
     "id": "3a285ec7-0668-81cf-b531-ef9fd2a564e5",
-    "title": "Breakfast: a yogurt bowl with blueberries, green plum, and granola with nuts (BG: 122 mg/dL Flat) (Pred: 167-187 mg/dL @ 12:25 PM) (Protein: 13g | Carbs: ~36g | Cals: ~340) [Coach: Now this is a breakfast upgrade 🫐 — yogurt for protein, blueberries and plum for fiber and antioxidants, all far kinder than yesterday's p��té toast. Just keep an eye on the granola, it can hide sugar, so a lighter sprinkle keeps the morning rise gentle. Lovely start.]",
+    "title": "Breakfast: a yogurt bowl with blueberries, green plum, and granola with nuts (BG: 122 mg/dL Flat) (Pred: 167-187 mg/dL @ 12:25 PM) (Protein: 13g | Carbs: ~36g | Cals: ~340) [Coach: Now this is a breakfast upgrade 🫐 — yogurt for protein, blueberries and plum for fiber and antioxidants, all far kinder than yesterday's pâté toast. Just keep an eye on the granola, it can hide sugar, so a lighter sprinkle keeps the morning rise gentle. Lovely start.]",
     "type": "Breakfast",
     "date": "2026-07-19T10:58:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-19/c11180c2a31d112d.jpg",
