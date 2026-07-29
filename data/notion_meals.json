@@ -1,10 +1,21 @@
 [
   {
+    "id": "3ac85ec7-0668-81ec-8140-fefe87e83c1c",
+    "title": "Dinner: leftover pappardelle with meat sauce and grated cheese, a piece of herbed chicken breast, and a mixed salad of greens, tomato, and mango (BG: Unknown) (Pred: Pending) (Protein: 31g | Carbs: ~40g | Cals: ~520) [Coach: Look at this correction 🎯 — same delicious pasta as last night but a visibly smaller portion, plus chicken carrying ~18g of lean protein. That's exactly the adjustment after yesterday's bedtime 200. Fresh groceries are clearly paying off. Another bedtime fingerstick tonight would show us the difference.]",
+    "type": "Dinner",
+    "date": "2026-07-28T18:58:00.000-07:00",
+    "photo": "https://iili.io/CvwODRp.jpg",
+    "carbs": 40,
+    "cals": 520,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3ab85ec7-0668-8123-98d0-e73e437a3b88",
     "title": "Lunch: open-faced ciabatta toasts, one with smoked salmon and one with fresh tomato slices, and a bowl of blueberries (BG: Unknown) (Pred: Pending) (Protein: 13g | Carbs: ~44g | Cals: ~330) [Coach: The shopping trip clearly happened 🎉 — smoked salmon, fresh tomatoes, and blueberries is a glorious upgrade from pantry mode. Omega-3s, whole fruit, real vegetables — this is the balanced plate we've been waiting for. The ciabatta carries most of the ~44g carbs, so an afternoon leg-stretch would finish it off nicely.]",
     "type": "Lunch",
     "date": "2026-07-28T14:19:00.000-07:00",
-    "photo": "https://iili.io/CvMiTPe.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-28/43c55f65826462cd.jpg",
     "carbs": 44,
     "cals": 330,
     "delta": null,
