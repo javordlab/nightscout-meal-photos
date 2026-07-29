@@ -1,10 +1,43 @@
 [
   {
+    "id": "3ac85ec7-0668-81d3-aaea-cc9deeb746bb",
+    "title": "Lunch (dessert): a piece of dark chocolate bark (BG: Unknown) (Pred: Pending) (Protein: 1g | Carbs: ~10g | Cals: ~110) [Cumulative Lunch: 60g carbs total] [Coach: The traditional chocolate finale 🍫 — a single piece of the dark stuff is a fine dessert, though it does nudge lunch to ~60g carbs, your bigger midday total this week. The fiber from all those carrots and crackers will slow the ride. A little post-lunch movement would balance the books.]",
+    "type": "Lunch",
+    "date": "2026-07-29T12:44:00.000-07:00",
+    "photo": "https://iili.io/C83YR07.jpg",
+    "carbs": 10,
+    "cals": 110,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "3ac85ec7-0668-81d7-b29d-ce418e319eb8",
+    "title": "Lunch: mezze plate of hummus topped with nuts and sun-dried tomato, fresh carrot sticks, mango chunks, and multigrain seed crackers (BG: Unknown) (Pred: Pending) (Protein: 9g | Carbs: ~50g | Cals: ~410) [Coach: Carrots and hummus — your signature move is back 🥕 — with whole-grain crackers and fresh mango rounding out a proper grazing lunch. The mango is the sweetest player at ~18g, but it's whole fruit with fiber doing its job. Colorful, fresh, and fiber-rich — the groceries are working hard.]",
+    "type": "Lunch",
+    "date": "2026-07-29T12:30:00.000-07:00",
+    "photo": "https://iili.io/C82inqv.jpg",
+    "carbs": 50,
+    "cals": 410,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "3ac85ec7-0668-81b6-87e8-da60beb82a45",
+    "title": "Breakfast (logged later): open-faced ciabatta with mashed avocado and prosciutto, and a bowl of blueberries with half a container of vanilla yogurt (BG: Unknown) (Pred: Pending) (Protein: 16g | Carbs: ~45g | Cals: ~430) [Coach: Avocado toast with prosciutto is a strong start 🥑 — healthy fats, protein, and the blueberries bring their antioxidant A-game. The vanilla yogurt runs sweeter than your usual plain (16g sugar per cup), so halving it was exactly right. That's your cured meat for today, noted 😄]",
+    "type": "Breakfast",
+    "date": "2026-07-29T09:05:00.000-07:00",
+    "photo": "https://iili.io/C89H6HQ.jpg",
+    "carbs": 45,
+    "cals": 430,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3ac85ec7-0668-81e2-9cfb-fa44238570e1",
     "title": "Breakfast: open-faced ciabatta toast with avocado, lettuce, and prosciutto, plus blueberries with half a container of sweetened yogurt (BG: 132 mg/dL Flat) (Pred: 185-205 mg/dL @ 10:20 AM) (Protein: 23g | Carbs: ~60g | Cals: ~515) [Coach: Protein from the prosciutto and yogurt gives this breakfast staying power, while blueberries and avocado add fiber 🫐. The sweetened yogurt lifts the carbs more than your usual plain, but using only half is a smart compromise; the cured ham is the salty bit to watch.]",
     "type": "Breakfast",
     "date": "2026-07-29T09:05:00.000-07:00",
-    "photo": "https://iili.io/C89H6HQ.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-29/066ca909fb042de7.jpg",
     "carbs": 60,
     "cals": 515,
     "delta": null,
