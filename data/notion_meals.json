@@ -1,10 +1,21 @@
 [
   {
+    "id": "3ac85ec7-0668-81e2-9cfb-fa44238570e1",
+    "title": "Breakfast: open-faced ciabatta toast with avocado, lettuce, and prosciutto, plus blueberries with half a container of sweetened yogurt (BG: 132 mg/dL Flat) (Pred: 185-205 mg/dL @ 10:20 AM) (Protein: 23g | Carbs: ~60g | Cals: ~515) [Coach: Protein from the prosciutto and yogurt gives this breakfast staying power, while blueberries and avocado add fiber 🫐. The sweetened yogurt lifts the carbs more than your usual plain, but using only half is a smart compromise; the cured ham is the salty bit to watch.]",
+    "type": "Breakfast",
+    "date": "2026-07-29T09:05:00.000-07:00",
+    "photo": "https://iili.io/C89H6HQ.jpg",
+    "carbs": 60,
+    "cals": 515,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3ac85ec7-0668-81ec-8140-fefe87e83c1c",
-    "title": "Dinner: leftover pappardelle with meat sauce and grated cheese, a piece of herbed chicken breast, and a mixed salad of greens, tomato, and mango (BG: Unknown) (Pred: Pending) (Protein: 31g | Carbs: ~40g | Cals: ~520) [Coach: Look at this correction 🎯 — same delicious pasta as last night but a visibly smaller portion, plus chicken carrying ~18g of lean protein. That's exactly the adjustment after yesterday's bedtime 200. Fresh groceries are clearly paying off. Another bedtime fingerstick tonight would show us the difference.]",
+    "title": "Dinner: leftover pappardelle with meat sauce and grated cheese, a scoop of hummus, and a mixed salad of greens, tomato, and mango (BG: Unknown) (Pred: Pending) (Protein: 19g | Carbs: ~45g | Cals: ~530) [Coach: Smart portion control 🎯 — same delicious pasta as last night but visibly smaller, and the hummus adds plant protein and fiber that slow everything down. That's exactly the adjustment after yesterday's bedtime 200. Fresh groceries are clearly paying off. Another bedtime fingerstick tonight would show us the difference.]",
     "type": "Dinner",
     "date": "2026-07-28T18:58:00.000-07:00",
-    "photo": "https://iili.io/CvwODRp.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-28/a4833e22ff101855.jpg",
     "carbs": 40,
     "cals": 520,
     "delta": null,
