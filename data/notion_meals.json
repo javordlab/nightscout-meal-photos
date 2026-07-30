@@ -1,10 +1,21 @@
 [
   {
+    "id": "3ad85ec7-0668-810b-9e03-f4aca1c9da7b",
+    "title": "Lunch: one medium nectarine (BG: 132 mg/dL Flat) (Pred: 146-166 mg/dL @ 16:39) (Protein: 1g | Carbs: ~15g | Cals: ~60) [Coach: A nectarine is a sweet little fiber win 🍑 — whole fruit keeps this gentler than juice. It is light on protein, so a few nuts or some yogurt alongside would make it steadier and more filling.]",
+    "type": "Snack",
+    "date": "2026-07-30T15:29:00.000-07:00",
+    "photo": "https://iili.io/C8PiC4n.jpg",
+    "carbs": 15,
+    "cals": 60,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3ad85ec7-0668-81da-8854-dcedcdd5a27c",
     "title": "Lunch: open-faced toast with avocado slices and prosciutto (BG: Unknown) (Pred: Pending) (Protein: 14g | Carbs: ~25g | Cals: ~380) [Coach: The avocado-prosciutto combo is a reliable friend 🥑 — good fats and salty protein on one modest slice of bread keeps carbs around 25g, gentle for a lunch. That's your cured meat for the day, logged and accounted. Spotted the Metformin standing by too — lunch dose confirmed 👀]",
     "type": "Lunch",
     "date": "2026-07-30T13:40:00.000-07:00",
-    "photo": "https://iili.io/C84IIrF.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-30/4e4eb77fcbc1e662.jpg",
     "carbs": 25,
     "cals": 380,
     "delta": null,
