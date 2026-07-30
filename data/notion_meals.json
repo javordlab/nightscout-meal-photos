@@ -1,10 +1,21 @@
 [
   {
+    "id": "3ad85ec7-0668-8154-84ba-ff6d0adccc5a",
+    "title": "Dinner: grilled steak and buttered corn on the cob (BG: Unknown) (Pred: Pending) (Protein: 38g | Carbs: ~32g | Cals: ~480) [Cumulative Dinner: 46g carbs total] [Coach: Steak night done simply 🥩 — a generous ~35g of lean protein, and the corn brings fiber along with its sweetness. With the nectarine and carrots already banked before dinner, nobody's auditing the vegetable count tonight. Classic summer plate, well earned.]",
+    "type": "Dinner",
+    "date": "2026-07-29T18:53:00.000-07:00",
+    "photo": "https://iili.io/C8C4yga.jpg",
+    "carbs": 32,
+    "cals": 480,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3ad85ec7-0668-8122-a8b0-e27981bcadfe",
     "title": "Dinner: grilled steak and a whole ear of corn on the cob (BG: 132 mg/dL Flat) (Pred: 160-180 mg/dL @ 7:58 PM) (Protein: 47g | Carbs: ~30g | Cals: ~500) [Coach: Steak brings plenty of satisfying protein, and the whole ear of corn gives you a fiber-containing carb 🌽. Add a non-starchy vegetable such as greens, tomatoes, or broccoli next time and this plate will be nicely rounded out.]",
     "type": "Dinner",
     "date": "2026-07-29T18:53:00.000-07:00",
-    "photo": "https://iili.io/C8C4yga.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-29/92e28af119443759.jpg",
     "carbs": 30,
     "cals": 500,
     "delta": null,
@@ -2498,7 +2509,7 @@
   },
   {
     "id": "37785ec7-0668-813f-a1db-fc8300e5f504",
-    "title": "Dinner: Swiss chard with potatoes topped with melted cheese (béchamel-style), plus a slice of whole wheat seeded bread with liver pâté (BG: 121 mg/dL Flat) (Pred: 152-162 mg/dL @ 9:31 PM) (Protein: 18g , Carbs: ~32g , Cals: ~370) [Coach: Hearty cooked-veggie dinner 🥬 — Swiss chard + potatoes + cheese, bread with pâté brings ~5g more protein. ~18g total protein on ~32g carbs, Pred ~157. Pât�� is cooked organ meat (iron + B12, not cured), so cured-meat tally stays at 1× from this morning. Heads up on the Swiss chard at dinner — leafy greens have a mild diuretic effect that can pull you out of bed overnight. Given your sleep is already recovering from the bites, just a heads up; not a problem if you hydrate moderately before bed rather than just before lying down.]",
+    "title": "Dinner: Swiss chard with potatoes topped with melted cheese (béchamel-style), plus a slice of whole wheat seeded bread with liver pâté (BG: 121 mg/dL Flat) (Pred: 152-162 mg/dL @ 9:31 PM) (Protein: 18g , Carbs: ~32g , Cals: ~370) [Coach: Hearty cooked-veggie dinner 🥬 — Swiss chard + potatoes + cheese, bread with pâté brings ~5g more protein. ~18g total protein on ~32g carbs, Pred ~157. Pâté is cooked organ meat (iron + B12, not cured), so cured-meat tally stays at 1× from this morning. Heads up on the Swiss chard at dinner — leafy greens have a mild diuretic effect that can pull you out of bed overnight. Given your sleep is already recovering from the bites, just a heads up; not a problem if you hydrate moderately before bed rather than just before lying down.]",
     "type": "Dinner",
     "date": "2026-06-06T20:15:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-06/3fd594e741b4e6e4.jpg",
