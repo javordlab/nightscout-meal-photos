@@ -1,10 +1,32 @@
 [
   {
+    "id": "3ad85ec7-0668-818d-babc-c53d56f51894",
+    "title": "Breakfast: a slice of homemade bread with a teaspoon of peanut butter and a teaspoon of low-sugar jam (BG: Unknown) (Pred: Pending) (Protein: 5g | Carbs: ~21g | Cals: ~140) [Cumulative Breakfast: 51g carbs total] [Coach: Homemade yogurt AND homemade bread — the kitchen is thriving 🍞 — and teaspoon-level restraint on both spreads is exactly the right touch. This does bring breakfast to ~51g carbs, your heartier side, so a morning walk or garden session would put it to work. The AirPods-for-scale made me smile.]",
+    "type": "Breakfast",
+    "date": "2026-07-30T08:03:00.000-07:00",
+    "photo": "https://iili.io/C8eKCSs.jpg",
+    "carbs": 21,
+    "cals": 140,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "3ad85ec7-0668-8105-90e5-fc30e17d4683",
+    "title": "Breakfast: homemade yogurt with cashews, hemp hearts, blueberries, and goji berries (BG: Unknown) (Pred: Pending) (Protein: 18g | Carbs: ~30g | Cals: ~375) [Coach: Homemade yogurt — even better than the plain you were missing 🫐 — no added sugar and you know exactly what's in it. Hemp hearts are a sneaky-great add, complete protein and omega-3s. Gojis are dried so their sugar is concentrated, and that sprinkle is just right. This bowl is your gold-standard breakfast, upgraded.]",
+    "type": "Breakfast",
+    "date": "2026-07-30T07:59:00.000-07:00",
+    "photo": "https://iili.io/C8OZHU7.jpg",
+    "carbs": 30,
+    "cals": 375,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3ad85ec7-0668-8154-84ba-ff6d0adccc5a",
     "title": "Dinner: grilled steak and buttered corn on the cob (BG: Unknown) (Pred: Pending) (Protein: 38g | Carbs: ~32g | Cals: ~480) [Cumulative Dinner: 46g carbs total] [Coach: Steak night done simply 🥩 — a generous ~35g of lean protein, and the corn brings fiber along with its sweetness. With the nectarine and carrots already banked before dinner, nobody's auditing the vegetable count tonight. Classic summer plate, well earned.]",
     "type": "Dinner",
     "date": "2026-07-29T18:53:00.000-07:00",
-    "photo": "https://iili.io/C8C4yga.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-29/94842e65d435059a.jpg",
     "carbs": 32,
     "cals": 480,
     "delta": null,
