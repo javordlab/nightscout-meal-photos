@@ -1,10 +1,21 @@
 [
   {
+    "id": "3ad85ec7-0668-81da-8854-dcedcdd5a27c",
+    "title": "Lunch: open-faced toast with avocado slices and prosciutto (BG: Unknown) (Pred: Pending) (Protein: 14g | Carbs: ~25g | Cals: ~380) [Coach: The avocado-prosciutto combo is a reliable friend 🥑 — good fats and salty protein on one modest slice of bread keeps carbs around 25g, gentle for a lunch. That's your cured meat for the day, logged and accounted. Spotted the Metformin standing by too — lunch dose confirmed 👀]",
+    "type": "Lunch",
+    "date": "2026-07-30T13:40:00.000-07:00",
+    "photo": "https://iili.io/C84IIrF.jpg",
+    "carbs": 25,
+    "cals": 380,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3ad85ec7-0668-811e-97ba-e188de46be8b",
     "title": "Snack: a small bowl of cashews and a red apple (BG: 157 mg/dL fingerstick) (Pred: 166-186 mg/dL @ 12:21 PM) (Protein: 6g | Carbs: ~28g | Cals: ~230) [Coach: Apple and cashews — the gardener's recovery snack done right 🍎 — whole fruit for the energy dip and nuts to steady it. With your BG sitting at 157 from the workout surge, this will nudge it up briefly before the rest and fiber bring it back. Round two of pruning will burn it happily.]",
     "type": "Snack",
     "date": "2026-07-30T11:26:00.000-07:00",
-    "photo": "https://iili.io/C8Uq25P.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-30/257562502f50b614.jpg",
     "carbs": 28,
     "cals": 230,
     "delta": null,
