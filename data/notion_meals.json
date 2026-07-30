@@ -1,10 +1,21 @@
 [
   {
+    "id": "3ad85ec7-0668-811e-97ba-e188de46be8b",
+    "title": "Snack: a small bowl of cashews and a red apple (BG: 157 mg/dL fingerstick) (Pred: 166-186 mg/dL @ 12:21 PM) (Protein: 6g | Carbs: ~28g | Cals: ~230) [Coach: Apple and cashews — the gardener's recovery snack done right 🍎 — whole fruit for the energy dip and nuts to steady it. With your BG sitting at 157 from the workout surge, this will nudge it up briefly before the rest and fiber bring it back. Round two of pruning will burn it happily.]",
+    "type": "Snack",
+    "date": "2026-07-30T11:26:00.000-07:00",
+    "photo": "https://iili.io/C8Uq25P.jpg",
+    "carbs": 28,
+    "cals": 230,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3ad85ec7-0668-818d-babc-c53d56f51894",
     "title": "Breakfast: a slice of homemade bread with a teaspoon of peanut butter and a teaspoon of low-sugar jam (BG: Unknown) (Pred: Pending) (Protein: 5g | Carbs: ~21g | Cals: ~140) [Cumulative Breakfast: 51g carbs total] [Coach: Homemade yogurt AND homemade bread — the kitchen is thriving 🍞 — and teaspoon-level restraint on both spreads is exactly the right touch. This does bring breakfast to ~51g carbs, your heartier side, so a morning walk or garden session would put it to work. The AirPods-for-scale made me smile.]",
     "type": "Breakfast",
     "date": "2026-07-30T08:03:00.000-07:00",
-    "photo": "https://iili.io/C8eKCSs.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-30/a0d343c7db93cf5c.jpg",
     "carbs": 21,
     "cals": 140,
     "delta": null,
@@ -15,7 +26,7 @@
     "title": "Breakfast: homemade yogurt with cashews, hemp hearts, blueberries, and goji berries (BG: Unknown) (Pred: Pending) (Protein: 18g | Carbs: ~30g | Cals: ~375) [Coach: Homemade yogurt — even better than the plain you were missing 🫐 — no added sugar and you know exactly what's in it. Hemp hearts are a sneaky-great add, complete protein and omega-3s. Gojis are dried so their sugar is concentrated, and that sprinkle is just right. This bowl is your gold-standard breakfast, upgraded.]",
     "type": "Breakfast",
     "date": "2026-07-30T07:59:00.000-07:00",
-    "photo": "https://iili.io/C8OZHU7.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-30/d7cead166b957485.jpg",
     "carbs": 30,
     "cals": 375,
     "delta": null,
@@ -29,17 +40,6 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-29/94842e65d435059a.jpg",
     "carbs": 32,
     "cals": 480,
-    "delta": null,
-    "peak": null
-  },
-  {
-    "id": "3ad85ec7-0668-8122-a8b0-e27981bcadfe",
-    "title": "Dinner: grilled steak and a whole ear of corn on the cob (BG: 132 mg/dL Flat) (Pred: 160-180 mg/dL @ 7:58 PM) (Protein: 47g | Carbs: ~30g | Cals: ~500) [Coach: Steak brings plenty of satisfying protein, and the whole ear of corn gives you a fiber-containing carb 🌽. Add a non-starchy vegetable such as greens, tomatoes, or broccoli next time and this plate will be nicely rounded out.]",
-    "type": "Dinner",
-    "date": "2026-07-29T18:53:00.000-07:00",
-    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-29/92e28af119443759.jpg",
-    "carbs": 30,
-    "cals": 500,
     "delta": null,
     "peak": null
   },
@@ -73,17 +73,6 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-29/43894617c69bea2e.jpg",
     "carbs": 45,
     "cals": 430,
-    "delta": null,
-    "peak": null
-  },
-  {
-    "id": "3ac85ec7-0668-81e2-9cfb-fa44238570e1",
-    "title": "Breakfast: open-faced ciabatta toast with avocado, lettuce, and prosciutto, plus blueberries with half a container of sweetened yogurt (BG: 132 mg/dL Flat) (Pred: 185-205 mg/dL @ 10:20 AM) (Protein: 23g | Carbs: ~60g | Cals: ~515) [Coach: Protein from the prosciutto and yogurt gives this breakfast staying power, while blueberries and avocado add fiber 🫐. The sweetened yogurt lifts the carbs more than your usual plain, but using only half is a smart compromise; the cured ham is the salty bit to watch.]",
-    "type": "Breakfast",
-    "date": "2026-07-29T09:05:00.000-07:00",
-    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-29/066ca909fb042de7.jpg",
-    "carbs": 60,
-    "cals": 515,
     "delta": null,
     "peak": null
   },
