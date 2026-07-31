@@ -1,10 +1,43 @@
 [
   {
+    "id": "3ae85ec7-0668-810a-b588-db84bd5ad995",
+    "title": "Dinner (dessert): fresh mango slices, about half a mango (BG: Unknown) (Pred: Pending) (Protein: 1g | Carbs: ~17g | Cals: ~70) [Cumulative Dinner: 37g carbs total] [Coach: Mango for dessert keeps the whole-fruit streak alive 🥭 — and even with it, dinner lands at a tidy ~37g carbs thanks to that veggie-forward pisto. This is one of your best-built days in the log. If the evening walk happens, chef's kiss.]",
+    "type": "Dinner",
+    "date": "2026-07-30T18:35:00.000-07:00",
+    "photo": "https://iili.io/C8Lb13l.jpg",
+    "carbs": 17,
+    "cals": 70,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "3ae85ec7-0668-81d9-9100-d9ee18591dda",
+    "title": "Dinner: two eggs baked over pisto-style vegetable hash (zucchini, eggplant, peppers, tomato, and diced potato) (BG: Unknown) (Pred: Pending) (Protein: 16g | Carbs: ~20g | Cals: ~380) [Coach: Pisto con huevos — Spain called and it approves 🍳 — a whole plate of vegetables carrying two eggs' worth of protein at only ~20g carbs. This is exactly the kind of dinner that keeps bedtime numbers boring, in the best way. The kitchen is on a real roll this week.]",
+    "type": "Dinner",
+    "date": "2026-07-30T18:24:00.000-07:00",
+    "photo": "https://iili.io/C8LU6ga.jpg",
+    "carbs": 20,
+    "cals": 380,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "3ae85ec7-0668-81f0-a771-df0a03cd3bba",
+    "title": "Lunch (afternoon fruit): one nectarine (BG: Unknown) (Pred: Pending) (Protein: 1g | Carbs: ~15g | Cals: ~60) [Coach: A nectarine straight from the hand, summer's fast food 🍑 — whole fruit, fiber included, and nothing else along for the ride. Simple, fresh, and exactly enough to bridge to dinner.]",
+    "type": "Lunch",
+    "date": "2026-07-30T15:29:00.000-07:00",
+    "photo": "https://iili.io/C8PiC4n.jpg",
+    "carbs": 15,
+    "cals": 60,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3ad85ec7-0668-810b-9e03-f4aca1c9da7b",
     "title": "Lunch: one medium nectarine (BG: 132 mg/dL Flat) (Pred: 146-166 mg/dL @ 16:39) (Protein: 1g | Carbs: ~15g | Cals: ~60) [Coach: A nectarine is a sweet little fiber win 🍑 — whole fruit keeps this gentler than juice. It is light on protein, so a few nuts or some yogurt alongside would make it steadier and more filling.]",
     "type": "Snack",
     "date": "2026-07-30T15:29:00.000-07:00",
-    "photo": "https://iili.io/C8PiC4n.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-30/6acf4cbfcd58f1e6.jpg",
     "carbs": 15,
     "cals": 60,
     "delta": null,
@@ -45,7 +78,7 @@
   },
   {
     "id": "3ad85ec7-0668-8105-90e5-fc30e17d4683",
-    "title": "Breakfast: homemade yogurt with cashews, hemp hearts, blueberries, and goji berries (BG: Unknown) (Pred: Pending) (Protein: 18g | Carbs: ~30g | Cals: ~375) [Coach: Homemade yogurt — even better than the plain you were missing 🫐 — no added sugar and you know exactly what's in it. Hemp hearts are a sneaky-great add, complete protein and omega-3s. Gojis are dried so their sugar is concentrated, and that sprinkle is just right. This bowl is your gold-standard breakfast, upgraded.]",
+    "title": "Breakfast: homemade yogurt with cashews, hemp hearts, blueberries, and goji berries (BG: Unknown) (Pred: Pending) (Protein: 18g | Carbs: ~30g | Cals: ~375) [Coach: Homemade yogurt — even better than the plain you were missing �� — no added sugar and you know exactly what's in it. Hemp hearts are a sneaky-great add, complete protein and omega-3s. Gojis are dried so their sugar is concentrated, and that sprinkle is just right. This bowl is your gold-standard breakfast, upgraded.]",
     "type": "Breakfast",
     "date": "2026-07-30T07:59:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-30/d7cead166b957485.jpg",
