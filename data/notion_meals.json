@@ -1,10 +1,21 @@
 [
   {
+    "id": "3af85ec7-0668-814a-bcbc-feda900a720e",
+    "title": "Lunch: apple slices, prosciutto, multigrain seed crackers, and half a Radler (BG: Unknown) (Pred: Pending) (Protein: 14g | Carbs: ~44g | Cals: ~360) [Coach: A picnic-style lunch with a Saturday twist 🍺 — the Radler is basically beer's soft-spoken cousin, and stopping at half keeps its sugar contribution modest. Fresh apple, protein from the prosciutto, seedy crackers — nicely spread across ~44g. That's today's cured meat card played, for the record 😄]",
+    "type": "Lunch",
+    "date": "2026-08-01T13:52:00.000-07:00",
+    "photo": "https://iili.io/CSNxdHx.jpg",
+    "carbs": 44,
+    "cals": 360,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3af85ec7-0668-814f-b37d-e73e4d7bd214",
     "title": "Breakfast (fruit): one plum (BG: Unknown) (Pred: Pending) (Protein: 1g | Carbs: ~8g | Cals: ~30) [Cumulative Breakfast: 36g carbs total] [Coach: A plum to finish — the house specialty at this point 🍑 — and it keeps breakfast at a tidy ~36g carbs with the omelette's protein in charge. Simple, fresh, and right on pattern.]",
     "type": "Breakfast",
     "date": "2026-08-01T10:15:00.000-07:00",
-    "photo": "https://iili.io/CSXQ9yP.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-01/6b88b3d4df090021.jpg",
     "carbs": 8,
     "cals": 30,
     "delta": null,
@@ -12,12 +23,12 @@
   },
   {
     "id": "3af85ec7-0668-81b5-af61-eb96286f31c5",
-    "title": "Breakfast: scrambled egg sandwich on a ciabatta roll with coffee (BG: Unknown) (Pred: Pending) (Protein: 15g | Carbs: ~28g | Cals: ~380) [Coach: Eggs on ciabatta — simple, warm, and properly filling 🍳 — the ~12g of egg protein anchors the roll's carbs nicely. Happy August! Starting the month with protein at breakfast is the pattern that's been serving you so well all week. Metformin spotted on deck too 👀]",
+    "title": "Breakfast: two-egg omelette sandwich on a ciabatta roll with coffee, part of the roll left uneaten (BG: Unknown) (Pred: Pending) (Protein: 15g | Carbs: ~18g | Cals: ~320) [Coach: Eggs on ciabatta — simple, warm, and properly filling 🍳 — the ~12g of egg protein anchors the roll's carbs nicely. Happy August! Starting the month with protein at breakfast is the pattern that's been serving you so well all week. Metformin spotted on deck too 👀]",
     "type": "Breakfast",
     "date": "2026-08-01T10:10:00.000-07:00",
-    "photo": "https://iili.io/CSX4rPV.jpg",
-    "carbs": 28,
-    "cals": 380,
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-01/6aa33025d3728fe6.jpg",
+    "carbs": 18,
+    "cals": 320,
     "delta": null,
     "peak": null
   },
