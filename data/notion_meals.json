@@ -1,10 +1,21 @@
 [
   {
+    "id": "3af85ec7-0668-81f7-a940-fba5bb70a8de",
+    "title": "Dinner: a flour tortilla taco with seasoned ground beef, sautéed peppers and onions, avocado, shredded cheese, and a dollop of sour cream (BG: Unknown) (Pred: Pending) (Protein: 19g | Carbs: ~32g | Cals: ~480) [Coach: Taco night, properly built 🌮 — beef and cheese bring the protein, the peppers and onions sneak in vegetables, and avocado rounds it out. One well-loaded tortilla instead of three skimpy ones is the right call, keeping carbs near 32g. If a second one is tempting, a lettuce wrap version would keep the party going carb-free.]",
+    "type": "Dinner",
+    "date": "2026-07-31T19:17:00.000-07:00",
+    "photo": "https://iili.io/CSRrqAb.jpg",
+    "carbs": 32,
+    "cals": 480,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3ae85ec7-0668-818a-9f95-f657e61d5038",
     "title": "Lunch: smoked salmon and multigrain seed crackers with butter lettuce, hummus topped with nuts, and fresh mango slices (BG: Unknown) (Pred: Pending) (Protein: 17g | Carbs: ~45g | Cals: ~430) [Coach: This is a beautiful board 🥗 — salmon for omega-3 protein, lettuce bringing your midday greens, hummus for fiber, and mango as honest dessert. Textbook lunch architecture after a 90-minute garden shift. The ~45g carbs are spread across slow sources, exactly how you want them.]",
     "type": "Lunch",
     "date": "2026-07-31T13:47:00.000-07:00",
-    "photo": "https://iili.io/CSTCQWl.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-31/c644a1a3a8032b10.jpg",
     "carbs": 45,
     "cals": 430,
     "delta": null,
@@ -56,7 +67,7 @@
   },
   {
     "id": "3ad85ec7-0668-81da-8854-dcedcdd5a27c",
-    "title": "Lunch: open-faced toast with avocado slices and prosciutto (BG: Unknown) (Pred: Pending) (Protein: 14g | Carbs: ~25g | Cals: ~380) [Coach: The avocado-prosciutto combo is a reliable friend �� — good fats and salty protein on one modest slice of bread keeps carbs around 25g, gentle for a lunch. That's your cured meat for the day, logged and accounted. Spotted the Metformin standing by too — lunch dose confirmed 👀]",
+    "title": "Lunch: open-faced toast with avocado slices and prosciutto (BG: Unknown) (Pred: Pending) (Protein: 14g | Carbs: ~25g | Cals: ~380) [Coach: The avocado-prosciutto combo is a reliable friend 🥑 — good fats and salty protein on one modest slice of bread keeps carbs around 25g, gentle for a lunch. That's your cured meat for the day, logged and accounted. Spotted the Metformin standing by too — lunch dose confirmed 👀]",
     "type": "Lunch",
     "date": "2026-07-30T13:40:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-30/4e4eb77fcbc1e662.jpg",
@@ -5292,7 +5303,7 @@
   },
   {
     "id": "35e85ec7-0668-8129-a3cc-dd4f6b76295f",
-    "title": "Lunch: Stir-fried noodles, sautéed leafy greens, pork shumai, scallop dumpling, papaya on the side (BG: 121 mg/dL Flat) (Pred: 157-167 mg/dL @ 2:53 PM) (Protein: 17g | Carbs: ~44g | Cals: ~323) [Coach: Better protein picture with the shumai and scallop dumpling — brings you to ~17g which is respectable. The dim sum wrappers add some carbs but not excessively. Papaya is gentler than watermelon on blood sugar. Good variety with the greens rounding it all out.]  [id:fa9c4d22]",
+    "title": "Lunch: Stir-fried noodles, saut��ed leafy greens, pork shumai, scallop dumpling, papaya on the side (BG: 121 mg/dL Flat) (Pred: 157-167 mg/dL @ 2:53 PM) (Protein: 17g | Carbs: ~44g | Cals: ~323) [Coach: Better protein picture with the shumai and scallop dumpling — brings you to ~17g which is respectable. The dim sum wrappers add some carbs but not excessively. Papaya is gentler than watermelon on blood sugar. Good variety with the greens rounding it all out.]  [id:fa9c4d22]",
     "type": "Lunch",
     "date": "2026-04-12T13:00:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-12/a711406c64426bd0.jpg",
