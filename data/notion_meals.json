@@ -1,17 +1,25 @@
 [
   {
-    "id": "3b085ec7-0668-8191-bdba-fe965434b4db",
-    "title": "Snack: one home-grown banana while gardening (Pred: Pending)",
-    "type": "Snack",
-    "date": "2026-08-02T12:57:00-07:00",
-    "photo": "https://iili.io/CUfDMcN.jpg",
-    "carbs": 27,
-    "cals": 105,
+    "id": "3b085ec7-0668-817a-bebd-d0ba1893324d",
+    "title": "Lunch: fresh broccoli florets with hummus topped with sun-dried tomato and nuts, and toast with prosciutto (BG: Unknown) (Pred: Pending) (Protein: 17g | Carbs: ~30g | Cals: ~360) [Coach: Broccoli moved to the day shift — see, the system works 🥦 — fiber and greens at lunch where they can't touch your sleep, hummus for slow fuel, prosciutto for the salty joy. A modest ~30g carbs and the veggie box already ticked before 3pm. Textbook adjustment from last night's lesson.]",
+    "type": "Lunch",
+    "date": "2026-08-02T14:19:00.000-07:00",
+    "photo": "https://iili.io/CUqN4Pj.jpg",
+    "carbs": 30,
+    "cals": 360,
     "delta": null,
-    "peak": null,
-    "entry_key": "sha256:8520c6a8a05c683d7c6a9cf6f6e67498dade3ddb8588c1f93a7c41dc2e34cce9",
-    "protein": 1,
-    "preMeal": null
+    "peak": null
+  },
+  {
+    "id": "3b085ec7-0668-8194-973b-c0d0c285c1ab",
+    "title": "Snack: one home-grown banana while gardening (small-medium tree banana, AirPods-case scale) (BG: Unknown) (Pred: Pending) (Protein: 1g | Carbs: ~20g | Cals: ~80) [Coach: Home-grown banana — now that is proper garden-to-table energy 🍌. It brings potassium and quick carbs, though it is light on protein, so yogurt or a handful of nuts alongside would help steady the ride.]",
+    "type": "Snack",
+    "date": "2026-08-02T12:57:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-02/8520c6a8a05c683d.jpg",
+    "carbs": 20,
+    "cals": 80,
+    "delta": null,
+    "peak": null
   },
   {
     "id": "3b085ec7-0668-8119-a474-e328437781af",
@@ -92,7 +100,7 @@
   },
   {
     "id": "3ae85ec7-0668-8155-8829-da5fa3e43224",
-    "title": "Breakfast: crunchy peanut butter on toast, and a bowl of yogurt with blueberries, walnuts, and ground flax seed (BG: Unknown) (Pred: Pending) (Protein: 20g | Carbs: ~38g | Cals: ~500) [Coach: The flax-walnut-blueberry bowl is back in the rotation 🫐 — omega-3s, fiber, and antioxidants all pulling in the same direction, with the peanut butter adding staying power. A hearty ~40g morning, solid fuel if the garden calls again today. Your breakfast game has been the steadiest thing in this log.]",
+    "title": "Breakfast: crunchy peanut butter on toast, and a bowl of yogurt with blueberries, walnuts, and ground flax seed (BG: Unknown) (Pred: Pending) (Protein: 20g | Carbs: ~38g | Cals: ~500) [Coach: The flax-walnut-blueberry bowl is back in the rotation ��� — omega-3s, fiber, and antioxidants all pulling in the same direction, with the peanut butter adding staying power. A hearty ~40g morning, solid fuel if the garden calls again today. Your breakfast game has been the steadiest thing in this log.]",
     "type": "Breakfast",
     "date": "2026-07-31T09:55:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-31/789d38d0be65b7fc.jpg",
@@ -367,7 +375,7 @@
   },
   {
     "id": "3a985ec7-0668-8124-b56b-cb0b3e2f3ef0",
-    "title": "Dinner: a wedge of tortilla española, canned sardines, tomato and scallion salad, and pickle slices (BG: 120 mg/dL Flat) (Pred: 135-155 mg/dL @ 7:44 PM) (Protein: 24g | Carbs: ~21g | Cals: ~430) [Coach: A little Spain on the plate tonight 🇪🇸 — sardines are a nutrition jackpot, omega-3s and ~15g of protein from one tin. The tortilla's potato is the only real carb and it's a modest wedge, with fresh tomatoes rounding things out. This is the kind of dinner your GMI goal dreams about.]",
+    "title": "Dinner: a wedge of tortilla española, canned sardines, tomato and scallion salad, and pickle slices (BG: 120 mg/dL Flat) (Pred: 135-155 mg/dL @ 7:44 PM) (Protein: 24g | Carbs: ~21g | Cals: ~430) [Coach: A little Spain on the plate tonight 🇪🇸 ��� sardines are a nutrition jackpot, omega-3s and ~15g of protein from one tin. The tortilla's potato is the only real carb and it's a modest wedge, with fresh tomatoes rounding things out. This is the kind of dinner your GMI goal dreams about.]",
     "type": "Dinner",
     "date": "2026-07-25T18:39:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-25/a9db13dc0024770d.jpg",
