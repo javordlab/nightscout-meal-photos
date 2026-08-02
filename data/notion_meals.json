@@ -1,10 +1,24 @@
 [
   {
+    "id": "3b085ec7-0668-8191-bdba-fe965434b4db",
+    "title": "Snack: one home-grown banana while gardening (Pred: Pending)",
+    "type": "Snack",
+    "date": "2026-08-02T12:57:00-07:00",
+    "photo": "https://iili.io/CUfDMcN.jpg",
+    "carbs": 27,
+    "cals": 105,
+    "delta": null,
+    "peak": null,
+    "entry_key": "sha256:8520c6a8a05c683d7c6a9cf6f6e67498dade3ddb8588c1f93a7c41dc2e34cce9",
+    "protein": 1,
+    "preMeal": null
+  },
+  {
     "id": "3b085ec7-0668-8119-a474-e328437781af",
     "title": "Breakfast: fruit and yogurt bowl with apple chunks, blueberries, and walnuts (BG: Unknown) (Pred: Pending) (Protein: 9g | Carbs: ~30g | Cals: ~290) [Coach: A fresh, light start after yesterday's off day 🍎 — whole fruit for gentle energy, walnuts and yogurt to steady it. Kind to the stomach and to the BG at ~30g. Hope you're feeling brighter this morning — ease into the day and let the energy come back on its own schedule.]",
     "type": "Breakfast",
     "date": "2026-08-02T10:32:00.000-07:00",
-    "photo": "https://iili.io/CUKaH6G.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-02/3ac3da0280db0227.jpg",
     "carbs": 30,
     "cals": 290,
     "delta": null,
