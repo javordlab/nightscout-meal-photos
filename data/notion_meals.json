@@ -1,5 +1,16 @@
 [
   {
+    "id": "3b085ec7-0668-81fb-a134-dd16a0883eef",
+    "title": "Dinner: broccoli, zucchini, potato and onion soup with a 4 oz burger on lettuce (BG: Unknown) (Pred: Pending) (Protein: 32g | Carbs: ~16g | Cals: ~440) [Coach: Burger on lettuce instead of a bun — that swap alone saves ~25g of carbs and you don't lose the good part 🍔 — and the homemade blended soup turns four vegetables into comfort food. Only ~16g carbs with a hefty 32g protein. Dinners like this are why your fasting numbers behave.]",
+    "type": "Dinner",
+    "date": "2026-08-01T18:50:00.000-07:00",
+    "photo": "https://iili.io/CSkSyss.jpg",
+    "carbs": 16,
+    "cals": 440,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3af85ec7-0668-814a-bcbc-feda900a720e",
     "title": "Lunch: apple slices, prosciutto, multigrain seed crackers, and half a Radler (BG: Unknown) (Pred: Pending) (Protein: 14g | Carbs: ~44g | Cals: ~360) [Coach: A picnic-style lunch with a Saturday twist 🍺 — the Radler is basically beer's soft-spoken cousin, and stopping at half keeps its sugar contribution modest. Fresh apple, protein from the prosciutto, seedy crackers — nicely spread across ~44g. That's today's cured meat card played, for the record 😄]",
     "type": "Lunch",
