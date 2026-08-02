@@ -1,5 +1,16 @@
 [
   {
+    "id": "3b085ec7-0668-8119-a474-e328437781af",
+    "title": "Breakfast: fruit and yogurt bowl with apple chunks, blueberries, and walnuts (BG: Unknown) (Pred: Pending) (Protein: 9g | Carbs: ~30g | Cals: ~290) [Coach: A fresh, light start after yesterday's off day 🍎 — whole fruit for gentle energy, walnuts and yogurt to steady it. Kind to the stomach and to the BG at ~30g. Hope you're feeling brighter this morning — ease into the day and let the energy come back on its own schedule.]",
+    "type": "Breakfast",
+    "date": "2026-08-02T10:32:00.000-07:00",
+    "photo": "https://iili.io/CUKaH6G.jpg",
+    "carbs": 30,
+    "cals": 290,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3b085ec7-0668-81fb-a134-dd16a0883eef",
     "title": "Dinner: broccoli, zucchini, potato and onion soup with melted cheese, and a 4 oz burger on lettuce (BG: Unknown) (Pred: Pending) (Protein: 37g | Carbs: ~16g | Cals: ~520) [Coach: Burger on lettuce instead of a bun — that swap alone saves ~25g of carbs and you don't lose the good part 🍔 — and the cheese-enriched veggie soup adds creaminess and extra protein without touching the carb count. Only ~16g carbs with a hefty 37g protein. Dinners like this are why your fasting numbers behave.]",
     "type": "Dinner",
