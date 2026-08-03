@@ -1,10 +1,43 @@
 [
   {
+    "id": "3b185ec7-0668-8173-b329-d106f6527e25",
+    "title": "Breakfast (fruit): a wedge of cantaloupe melon (BG: 107 mg/dL Flat) (Pred: 151-171 mg/dL @ 11:56 AM) (Protein: 1g | Carbs: ~6g | Cals: ~25) [Cumulative Breakfast: 26g carbs total] [Coach: One tidy melon wedge to close — hydrating, light, and it keeps breakfast at a graceful ~26g carbs 🍈 — salmon toast, tea, and fruit is a genuinely elegant reopening day menu. The sensor's first breakfast is a well-behaved one.]",
+    "type": "Breakfast",
+    "date": "2026-08-03T10:41:00.000-07:00",
+    "photo": "https://iili.io/CUvLtQ1.jpg",
+    "carbs": 6,
+    "cals": 25,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "3b185ec7-0668-815a-b461-d5635a081ab8",
+    "title": "Breakfast (drink): tea with milk (BG: 107 mg/dL Flat) (Pred: 144-164 mg/dL @ 11:54 AM) (Protein: 1g | Carbs: ~2g | Cals: ~20) [Cumulative Breakfast: 20g carbs total] [Coach: Tea with a splash of milk — barely moves the needle, just warms the morning ☕ — breakfast stays a gentle ~20g total. Civilized start to the sensor's first full day on the job.]",
+    "type": "Breakfast",
+    "date": "2026-08-03T10:39:00.000-07:00",
+    "photo": "https://iili.io/CUviOFf.jpg",
+    "carbs": 2,
+    "cals": 20,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "3b185ec7-0668-8181-8c79-d26b8a2015e4",
+    "title": "Breakfast: toast with mashed avocado and smoked salmon (BG: 107 mg/dL Flat) (Pred: 141-161 mg/dL @ 11:52 AM) (Protein: 12g | Carbs: ~18g | Cals: ~230) [Coach: The comeback meal gets the full treatment again 📊 — salmon and avocado on one modest toast is exactly the light-lunch... sorry, California-breakfast form you've perfected. Omega-3s, good fats, gentle carbs, and a real prediction for the first time in a week. Feels good to have numbers back, doesn't it?]",
+    "type": "Breakfast",
+    "date": "2026-08-03T10:37:00.000-07:00",
+    "photo": "https://iili.io/CUv6cog.jpg",
+    "carbs": 18,
+    "cals": 230,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3b185ec7-0668-81d3-9733-e4c541489b4e",
     "title": "Dinner: a wedge of tortilla española with fresh cantaloupe melon (BG: Unknown) (Pred: Pending) (Protein: 9g | Carbs: ~28g | Cals: ~305) [Coach: Spain on the plate to end an essay-worthy day 🇪🇸 — the tortilla's potato is a gentle carb wrapped in egg, and melon is summer's lightest dessert. Modest ~28g total. If the evening runs long, a bit of cheese or yogurt later would top up today's protein, which ran on the light side. A calm, fitting dinner for the house philosopher.]",
     "type": "Dinner",
     "date": "2026-08-02T19:17:00.000-07:00",
-    "photo": "https://iili.io/CUoESPR.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-02/f632834d71c4fe71.jpg",
     "carbs": 28,
     "cals": 305,
     "delta": null,
