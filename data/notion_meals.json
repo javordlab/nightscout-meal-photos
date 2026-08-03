@@ -1,36 +1,47 @@
 [
   {
+    "id": "3b185ec7-0668-8163-86ca-c35d08535c61",
+    "title": "Lunch: a fried egg with melted cheese over pita flatbread, with two cantaloupe wedges (BG: 113 mg/dL Flat) (Pred: 138-158 mg/dL @ 3:23 PM) (Protein: 13g | Carbs: ~38g | Cals: ~370) [Coach: Egg and cheese over warm pita is a comforting little lunch 🍳 — protein up top, the flatbread carrying most of the ~38g, and melon keeping dessert honest. Light-lunch California pattern, executed cleanly. Back at 113 before eating — a nice reset from the morning.]",
+    "type": "Lunch",
+    "date": "2026-08-03T14:13:00.000-07:00",
+    "photo": "https://iili.io/CUgwGAg.jpg",
+    "carbs": 38,
+    "cals": 370,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3b185ec7-0668-8173-b329-d106f6527e25",
     "title": "Breakfast (fruit): a wedge of cantaloupe melon (BG: 107 mg/dL Flat) (Pred: 151-171 mg/dL @ 11:56 AM) (Protein: 1g | Carbs: ~6g | Cals: ~25) [Cumulative Breakfast: 26g carbs total] [Coach: One tidy melon wedge to close — hydrating, light, and it keeps breakfast at a graceful ~26g carbs 🍈 — salmon toast, tea, and fruit is a genuinely elegant reopening day menu. The sensor's first breakfast is a well-behaved one.]",
     "type": "Breakfast",
     "date": "2026-08-03T10:41:00.000-07:00",
-    "photo": "https://iili.io/CUvLtQ1.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-03/9dbec6670c75bb3a.jpg",
     "carbs": 6,
     "cals": 25,
-    "delta": null,
-    "peak": null
+    "delta": 87,
+    "peak": 195
   },
   {
     "id": "3b185ec7-0668-815a-b461-d5635a081ab8",
     "title": "Breakfast (drink): tea with milk (BG: 107 mg/dL Flat) (Pred: 144-164 mg/dL @ 11:54 AM) (Protein: 1g | Carbs: ~2g | Cals: ~20) [Cumulative Breakfast: 20g carbs total] [Coach: Tea with a splash of milk — barely moves the needle, just warms the morning ☕ — breakfast stays a gentle ~20g total. Civilized start to the sensor's first full day on the job.]",
     "type": "Breakfast",
     "date": "2026-08-03T10:39:00.000-07:00",
-    "photo": "https://iili.io/CUviOFf.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-03/2dd87b5eb1d34a47.jpg",
     "carbs": 2,
     "cals": 20,
-    "delta": null,
-    "peak": null
+    "delta": 87,
+    "peak": 195
   },
   {
     "id": "3b185ec7-0668-8181-8c79-d26b8a2015e4",
     "title": "Breakfast: toast with mashed avocado and smoked salmon (BG: 107 mg/dL Flat) (Pred: 141-161 mg/dL @ 11:52 AM) (Protein: 12g | Carbs: ~18g | Cals: ~230) [Coach: The comeback meal gets the full treatment again 📊 — salmon and avocado on one modest toast is exactly the light-lunch... sorry, California-breakfast form you've perfected. Omega-3s, good fats, gentle carbs, and a real prediction for the first time in a week. Feels good to have numbers back, doesn't it?]",
     "type": "Breakfast",
     "date": "2026-08-03T10:37:00.000-07:00",
-    "photo": "https://iili.io/CUv6cog.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-03/c536776556cb642e.jpg",
     "carbs": 18,
     "cals": 230,
-    "delta": null,
-    "peak": null
+    "delta": 87,
+    "peak": 195
   },
   {
     "id": "3b185ec7-0668-81d3-9733-e4c541489b4e",
