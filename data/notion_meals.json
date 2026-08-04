@@ -1,14 +1,36 @@
 [
   {
+    "id": "3b285ec7-0668-81f9-b96e-d3a85cf71204",
+    "title": "Dinner: one slice of rustic white bread drizzled with olive oil (BG: 120 mg/dL Flat) (Pred: 156-176 mg/dL @ 7:52 PM) (Protein: 4g | Carbs: ~24g | Cals: ~170) [Cumulative Dinner: 46g carbs total] [Coach: The olive-oil bread is a satisfying finish, and the tofu plus pisto already gave this dinner plenty of protein and vegetables 🥖. At ~46g carbs total, it is still reasonable, though keeping this to one slice is the smart move.]",
+    "type": "Dinner",
+    "date": "2026-08-03T18:47:00.000-07:00",
+    "photo": "https://iili.io/CUP7Y8v.jpg",
+    "carbs": 24,
+    "cals": 170,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "3b285ec7-0668-81ff-8585-f0a9a4981d6c",
+    "title": "Dinner: four pan-seared tofu squares with pisto (tomato, peppers, zucchini, eggplant, and onion) (BG: 122 mg/dL Flat) (Pred: 140-160 mg/dL @ 7:41 PM) (Protein: 32g | Carbs: ~22g | Cals: ~440) [Coach: This is a strong dinner: tofu brings solid protein, while the pisto supplies a colorful mix of vegetables and fiber 🥗. Carbs stay modest, and it nicely makes up for the lighter-protein lunch.]",
+    "type": "Dinner",
+    "date": "2026-08-03T18:36:00.000-07:00",
+    "photo": "https://iili.io/CUPq6Ij.jpg",
+    "carbs": 22,
+    "cals": 440,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3b185ec7-0668-8163-86ca-c35d08535c61",
     "title": "Lunch: a fried egg with melted cheese over pita flatbread, with two cantaloupe wedges (BG: 113 mg/dL Flat) (Pred: 138-158 mg/dL @ 3:23 PM) (Protein: 13g | Carbs: ~38g | Cals: ~370) [Coach: Egg and cheese over warm pita is a comforting little lunch 🍳 — protein up top, the flatbread carrying most of the ~38g, and melon keeping dessert honest. Light-lunch California pattern, executed cleanly. Back at 113 before eating — a nice reset from the morning.]",
     "type": "Lunch",
     "date": "2026-08-03T14:13:00.000-07:00",
-    "photo": "https://iili.io/CUgwGAg.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-03/6c17fc0c9de60e45.jpg",
     "carbs": 38,
     "cals": 370,
-    "delta": null,
-    "peak": null
+    "delta": 49,
+    "peak": 164
   },
   {
     "id": "3b185ec7-0668-8173-b329-d106f6527e25",
