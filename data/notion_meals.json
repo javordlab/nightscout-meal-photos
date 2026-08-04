@@ -1,25 +1,36 @@
 [
   {
+    "id": "3b285ec7-0668-812d-9c30-c3203af8d399",
+    "title": "Breakfast: a bowl of blueberries in milk, and toast with peanut butter and low-sugar jam (BG: 111 mg/dL Flat) (Pred: 163-183 mg/dL @ 12:06 PM) (Protein: 13g | Carbs: ~45g | Cals: ~390) [Coach: Blueberries swimming in milk — cereal's smarter cousin 🫐 — all the berries, none of the box sugar. With the PB toast bringing protein and staying power, this is a solid ~45g morning. Yesterday's breakfast peak ran hot on the new sensor, so today's noon reading will tell us if it was the sensor settling or the model needing a tune-up.]",
+    "type": "Breakfast",
+    "date": "2026-08-04T10:51:00.000-07:00",
+    "photo": "https://iili.io/Cgqvv9t.jpg",
+    "carbs": 45,
+    "cals": 390,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3b285ec7-0668-81f9-b96e-d3a85cf71204",
     "title": "Dinner: one slice of rustic white bread drizzled with olive oil (BG: 120 mg/dL Flat) (Pred: 156-176 mg/dL @ 7:52 PM) (Protein: 4g | Carbs: ~24g | Cals: ~170) [Cumulative Dinner: 46g carbs total] [Coach: The olive-oil bread is a satisfying finish, and the tofu plus pisto already gave this dinner plenty of protein and vegetables 🥖. At ~46g carbs total, it is still reasonable, though keeping this to one slice is the smart move.]",
     "type": "Dinner",
     "date": "2026-08-03T18:47:00.000-07:00",
-    "photo": "https://iili.io/CUP7Y8v.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-03/d159ac2285a5a1a0.jpg",
     "carbs": 24,
     "cals": 170,
-    "delta": null,
-    "peak": null
+    "delta": 39,
+    "peak": 157
   },
   {
     "id": "3b285ec7-0668-81ff-8585-f0a9a4981d6c",
     "title": "Dinner: four pan-seared tofu squares with pisto (tomato, peppers, zucchini, eggplant, and onion) (BG: 122 mg/dL Flat) (Pred: 140-160 mg/dL @ 7:41 PM) (Protein: 32g | Carbs: ~22g | Cals: ~440) [Coach: This is a strong dinner: tofu brings solid protein, while the pisto supplies a colorful mix of vegetables and fiber 🥗. Carbs stay modest, and it nicely makes up for the lighter-protein lunch.]",
     "type": "Dinner",
     "date": "2026-08-03T18:36:00.000-07:00",
-    "photo": "https://iili.io/CUPq6Ij.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-03/46a646318b09745f.jpg",
     "carbs": 22,
     "cals": 440,
-    "delta": null,
-    "peak": null
+    "delta": 35,
+    "peak": 157
   },
   {
     "id": "3b185ec7-0668-8163-86ca-c35d08535c61",
