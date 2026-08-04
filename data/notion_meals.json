@@ -1,14 +1,25 @@
 [
   {
-    "id": "3b285ec7-0668-812d-9c30-c3203af8d399",
-    "title": "Breakfast: a bowl of blueberries in milk, and toast with peanut butter and low-sugar jam (BG: 111 mg/dL Flat) (Pred: 163-183 mg/dL @ 12:06 PM) (Protein: 13g | Carbs: ~45g | Cals: ~390) [Coach: Blueberries swimming in milk — cereal's smarter cousin 🫐 — all the berries, none of the box sugar. With the PB toast bringing protein and staying power, this is a solid ~45g morning. Yesterday's breakfast peak ran hot on the new sensor, so today's noon reading will tell us if it was the sensor settling or the model needing a tune-up.]",
-    "type": "Breakfast",
-    "date": "2026-08-04T10:51:00.000-07:00",
-    "photo": "https://iili.io/Cgqvv9t.jpg",
+    "id": "3b285ec7-0668-811f-8d3d-ef16195c4242",
+    "title": "Lunch: smoked salmon with whole-grain toast, carrot sticks, and hummus (BG: 128 mg/dL Flat) (Pred: 154-174 mg/dL @ 3:11 PM) (Protein: 19g | Carbs: ~45g | Cals: ~430) [Coach: The greatest hits album 🥕 — salmon for omega-3s, carrots and hummus doing their signature duet, whole-grain toast keeping the carbs slow. Nearly 20g of protein on the light-lunch program, and the veggie quota banked on the day shift where it belongs. Textbook Maria.]",
+    "type": "Lunch",
+    "date": "2026-08-04T14:01:00.000-07:00",
+    "photo": "https://iili.io/Cgn00bV.jpg",
     "carbs": 45,
-    "cals": 390,
+    "cals": 430,
     "delta": null,
     "peak": null
+  },
+  {
+    "id": "3b285ec7-0668-812d-9c30-c3203af8d399",
+    "title": "Breakfast: a bowl of yogurt and blueberries with a spoonful of flax meal, and toast with peanut butter and low-sugar jam (BG: 111 mg/dL Flat) (Pred: 163-183 mg/dL @ 12:06 PM) (Protein: 17g | Carbs: ~45g | Cals: ~420) [Coach: Blueberries swimming in milk — cereal's smarter cousin 🫐 — all the berries, none of the box sugar. With the PB toast bringing protein and staying power, this is a solid ~45g morning. Yesterday's breakfast peak ran hot on the new sensor, so today's noon reading will tell us if it was the sensor settling or the model needing a tune-up.]",
+    "type": "Breakfast",
+    "date": "2026-08-04T10:51:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-04/0b8731c1a35acc40.jpg",
+    "carbs": 45,
+    "cals": 420,
+    "delta": 69,
+    "peak": 180
   },
   {
     "id": "3b285ec7-0668-81f9-b96e-d3a85cf71204",
