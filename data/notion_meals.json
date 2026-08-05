@@ -1,10 +1,21 @@
 [
   {
+    "id": "3b385ec7-0668-81cb-8cf7-dc7443b572d1",
+    "title": "Dinner (dessert): dried mango and two small squares of dark chocolate (BG: 102 mg/dL Flat) (Pred: 135-155 mg/dL @ 9:18 PM) (Protein: 1g | Carbs: ~21g | Cals: ~135) [Cumulative Dinner: 43g carbs total] [Coach: The mango-chocolate duo rides again 🥭🍫 — worth knowing that dried mango packs fresh mango's sugar into a quarter of the bites, so the small portion is the right call. Dinner totals a comfortable ~43g, and from a 102 start the evening should stay smooth. A familiar, happy ending.]",
+    "type": "Dinner",
+    "date": "2026-08-04T20:13:00.000-07:00",
+    "photo": "https://iili.io/CgRTZDQ.jpg",
+    "carbs": 21,
+    "cals": 135,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3b385ec7-0668-8132-b51b-d4ce166fdd24",
     "title": "Dinner: one fried egg with mashed avocado on multigrain toast (BG: 102 mg/dL Flat) (Pred: 123-143 mg/dL @ 8:26 PM) (Protein: 9g | Carbs: ~22g | Cals: ~310) [Coach: The cardboard loaf finally found its calling — buried under avocado where texture doesn't matter 😄 — and the egg tops off a gentle ~22g dinner. Starting from a lovely 102, this should barely make a ripple overnight. Light, balanced, and bedtime-friendly.]",
     "type": "Dinner",
     "date": "2026-08-04T19:21:00.000-07:00",
-    "photo": "https://iili.io/CgAU7Db.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-04/83da469e446a135c.jpg",
     "carbs": 22,
     "cals": 310,
     "delta": null,
@@ -1464,7 +1475,7 @@
   },
   {
     "id": "39185ec7-0668-8187-8e51-e3cac6e743ed",
-    "title": "Lunch: ham and cheese toasted sandwich on seeded multigrain bread (BG: 116 mg/dL Flat) (Pred: 134-154 mg/dL @ 1:08 PM) (Protein: ~22g | Carbs: ~37g | Cals: ~350) [Coach: A ham and cheese toastie on seeded bread 🥪 — solid protein from the ham and cheese, and the whole-grain slices bring fiber to keep the rise gentle. Since this is your lunch, a handful of tomato or cucumber on the side would round it into a full plate. Steady, sensible start to the day.]",
+    "title": "Lunch: ham and cheese toasted sandwich on seeded multigrain bread (BG: 116 mg/dL Flat) (Pred: 134-154 mg/dL @ 1:08 PM) (Protein: ~22g | Carbs: ~37g | Cals: ~350) [Coach: A ham and cheese toastie on seeded bread ��� — solid protein from the ham and cheese, and the whole-grain slices bring fiber to keep the rise gentle. Since this is your lunch, a handful of tomato or cucumber on the side would round it into a full plate. Steady, sensible start to the day.]",
     "type": "Lunch",
     "date": "2026-07-02T11:53:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-02/fe8b9bf70babf842.jpg",
