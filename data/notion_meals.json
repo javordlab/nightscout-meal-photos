@@ -1,14 +1,25 @@
 [
   {
+    "id": "3b385ec7-0668-814c-b466-f196b1b24968",
+    "title": "Lunch: kale salad with orange, blueberries, flax, brewer's yeast, hemp hearts, and cashews, with a side of cantaloupe and prosciutto (BG: 101 mg/dL Flat) (Pred: 143-163 mg/dL @ 4:08 PM) (Protein: 27g | Carbs: ~50g | Cals: ~540) [Coach: This salad is practically a multivitamin with a fork in it 🥬 — kale on the day shift, omega-3s from three directions, and brewer's yeast sneaking in B vitamins. Melón con jamón on the side makes it a Spanish summer classic. One of the most complete plates in your entire log, truly.]",
+    "type": "Lunch",
+    "date": "2026-08-05T14:58:00.000-07:00",
+    "photo": "https://iili.io/Cg6IK8u.jpg",
+    "carbs": 50,
+    "cals": 540,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3b385ec7-0668-81aa-a29d-f4958230f94d",
     "title": "Breakfast: multigrain toast with turkey breast and brie, a bowl of fresh mango, and black tea (BG: 100 mg/dL Flat) (Pred: 147-167 mg/dL @ 11:39 AM) (Protein: 17g | Carbs: ~35g | Cals: ~340) [Coach: Turkey and brie is a genuinely elegant toast pairing 🧀 — lean protein plus creamy richness, and the fresh mango bowl beats any pastry for the sweet spot. Starting from a perfect 100 flat, this ~35g morning has all the makings of another in-range day. The flamingos approve.]",
     "type": "Breakfast",
     "date": "2026-08-05T10:24:00.000-07:00",
-    "photo": "https://iili.io/CgSTQ3b.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-05/225e1bb1b9189520.jpg",
     "carbs": 35,
     "cals": 340,
-    "delta": null,
-    "peak": null
+    "delta": 54,
+    "peak": 159
   },
   {
     "id": "3b385ec7-0668-81cb-8cf7-dc7443b572d1",
@@ -221,7 +232,7 @@
   },
   {
     "id": "3ae85ec7-0668-818a-9f95-f657e61d5038",
-    "title": "Lunch: smoked salmon and multigrain seed crackers with butter lettuce, hummus topped with nuts, and fresh mango slices (BG: Unknown) (Pred: Pending) (Protein: 17g | Carbs: ~45g | Cals: ~430) [Coach: This is a beautiful board 🥗 — salmon for omega-3 protein, lettuce bringing your midday greens, hummus for fiber, and mango as honest dessert. Textbook lunch architecture after a 90-minute garden shift. The ~45g carbs are spread across slow sources, exactly how you want them.]",
+    "title": "Lunch: smoked salmon and multigrain seed crackers with butter lettuce, hummus topped with nuts, and fresh mango slices (BG: Unknown) (Pred: Pending) (Protein: 17g | Carbs: ~45g | Cals: ~430) [Coach: This is a beautiful board 🥗 ��� salmon for omega-3 protein, lettuce bringing your midday greens, hummus for fiber, and mango as honest dessert. Textbook lunch architecture after a 90-minute garden shift. The ~45g carbs are spread across slow sources, exactly how you want them.]",
     "type": "Lunch",
     "date": "2026-07-31T13:47:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-31/c644a1a3a8032b10.jpg",
