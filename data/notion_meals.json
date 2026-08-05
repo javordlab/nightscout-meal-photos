@@ -1,10 +1,21 @@
 [
   {
+    "id": "3b385ec7-0668-817b-9e65-dd39ba3c04d3",
+    "title": "Lunch (dessert): three pieces of Trader Joe's coconut-oil chocolate (from label: ~11g carbs, ~135 cal for 3 of 4-piece serving) (BG: 101 mg/dL Flat) (Pred: 148-168 mg/dL @ 4:47 PM) (Protein: 1g | Carbs: ~11g | Cals: ~135) [Cumulative Lunch: 61g carbs total] [Coach: Label-photo logging — chef's kiss as always 📸 — and stopping at three pieces is real restraint. One honest note: this one's built on coconut oil, so it carries more saturated fat per bite than your usual dark squares — fine as a treat, just not the everyday chocolate. Lunch closes at ~61g, your heartiest of the week, well-earned by that supersalad.]",
+    "type": "Lunch",
+    "date": "2026-08-05T15:37:00.000-07:00",
+    "photo": "https://iili.io/Cg6DliN.jpg",
+    "carbs": 11,
+    "cals": 135,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3b385ec7-0668-814c-b466-f196b1b24968",
-    "title": "Lunch: kale salad with orange, blueberries, flax, brewer's yeast, hemp hearts, and cashews, with a side of cantaloupe and prosciutto (BG: 101 mg/dL Flat) (Pred: 143-163 mg/dL @ 4:08 PM) (Protein: 27g | Carbs: ~50g | Cals: ~540) [Coach: This salad is practically a multivitamin with a fork in it 🥬 — kale on the day shift, omega-3s from three directions, and brewer's yeast sneaking in B vitamins. Melón con jamón on the side makes it a Spanish summer classic. One of the most complete plates in your entire log, truly.]",
+    "title": "Lunch: kale salad with orange, blueberries, flax, brewer's yeast, hemp hearts, sunflower seeds, and cashews, with a side of cantaloupe and prosciutto (BG: 101 mg/dL Flat) (Pred: 143-163 mg/dL @ 4:08 PM) (Protein: 29g | Carbs: ~50g | Cals: ~590) [Coach: This salad is practically a multivitamin with a fork in it 🥬 — kale on the day shift, omega-3s from three directions, and brewer's yeast sneaking in B vitamins. Melón con jamón on the side makes it a Spanish summer classic. One of the most complete plates in your entire log, truly.]",
     "type": "Lunch",
     "date": "2026-08-05T14:58:00.000-07:00",
-    "photo": "https://iili.io/Cg6IK8u.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-05/9d488966c3340401.jpg",
     "carbs": 50,
     "cals": 540,
     "delta": null,
@@ -232,7 +243,7 @@
   },
   {
     "id": "3ae85ec7-0668-818a-9f95-f657e61d5038",
-    "title": "Lunch: smoked salmon and multigrain seed crackers with butter lettuce, hummus topped with nuts, and fresh mango slices (BG: Unknown) (Pred: Pending) (Protein: 17g | Carbs: ~45g | Cals: ~430) [Coach: This is a beautiful board 🥗 ��� salmon for omega-3 protein, lettuce bringing your midday greens, hummus for fiber, and mango as honest dessert. Textbook lunch architecture after a 90-minute garden shift. The ~45g carbs are spread across slow sources, exactly how you want them.]",
+    "title": "Lunch: smoked salmon and multigrain seed crackers with butter lettuce, hummus topped with nuts, and fresh mango slices (BG: Unknown) (Pred: Pending) (Protein: 17g | Carbs: ~45g | Cals: ~430) [Coach: This is a beautiful board 🥗 — salmon for omega-3 protein, lettuce bringing your midday greens, hummus for fiber, and mango as honest dessert. Textbook lunch architecture after a 90-minute garden shift. The ~45g carbs are spread across slow sources, exactly how you want them.]",
     "type": "Lunch",
     "date": "2026-07-31T13:47:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-31/c644a1a3a8032b10.jpg",
