@@ -1,14 +1,25 @@
 [
   {
+    "id": "3b385ec7-0668-8132-b51b-d4ce166fdd24",
+    "title": "Dinner: one fried egg with mashed avocado on multigrain toast (BG: 102 mg/dL Flat) (Pred: 123-143 mg/dL @ 8:26 PM) (Protein: 9g | Carbs: ~22g | Cals: ~310) [Coach: The cardboard loaf finally found its calling — buried under avocado where texture doesn't matter 😄 — and the egg tops off a gentle ~22g dinner. Starting from a lovely 102, this should barely make a ripple overnight. Light, balanced, and bedtime-friendly.]",
+    "type": "Dinner",
+    "date": "2026-08-04T19:21:00.000-07:00",
+    "photo": "https://iili.io/CgAU7Db.jpg",
+    "carbs": 22,
+    "cals": 310,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3b285ec7-0668-811f-8d3d-ef16195c4242",
     "title": "Lunch: smoked salmon with whole-grain toast, carrot sticks, and hummus (BG: 128 mg/dL Flat) (Pred: 154-174 mg/dL @ 3:11 PM) (Protein: 19g | Carbs: ~45g | Cals: ~430) [Coach: The greatest hits album 🥕 — salmon for omega-3s, carrots and hummus doing their signature duet, whole-grain toast keeping the carbs slow. Nearly 20g of protein on the light-lunch program, and the veggie quota banked on the day shift where it belongs. Textbook Maria.]",
     "type": "Lunch",
     "date": "2026-08-04T14:01:00.000-07:00",
-    "photo": "https://iili.io/Cgn00bV.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-04/f86dac933c943065.jpg",
     "carbs": 45,
     "cals": 430,
-    "delta": null,
-    "peak": null
+    "delta": 42,
+    "peak": 170
   },
   {
     "id": "3b285ec7-0668-812d-9c30-c3203af8d399",
