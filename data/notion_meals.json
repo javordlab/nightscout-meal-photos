@@ -1,14 +1,25 @@
 [
   {
+    "id": "3b385ec7-0668-81aa-a29d-f4958230f94d",
+    "title": "Breakfast: multigrain toast with turkey breast and brie, a bowl of fresh mango, and black tea (BG: 100 mg/dL Flat) (Pred: 147-167 mg/dL @ 11:39 AM) (Protein: 17g | Carbs: ~35g | Cals: ~340) [Coach: Turkey and brie is a genuinely elegant toast pairing 🧀 — lean protein plus creamy richness, and the fresh mango bowl beats any pastry for the sweet spot. Starting from a perfect 100 flat, this ~35g morning has all the makings of another in-range day. The flamingos approve.]",
+    "type": "Breakfast",
+    "date": "2026-08-05T10:24:00.000-07:00",
+    "photo": "https://iili.io/CgSTQ3b.jpg",
+    "carbs": 35,
+    "cals": 340,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3b385ec7-0668-81cb-8cf7-dc7443b572d1",
     "title": "Dinner (dessert): dried mango and two small squares of dark chocolate (BG: 102 mg/dL Flat) (Pred: 135-155 mg/dL @ 9:18 PM) (Protein: 1g | Carbs: ~21g | Cals: ~135) [Cumulative Dinner: 43g carbs total] [Coach: The mango-chocolate duo rides again 🥭🍫 — worth knowing that dried mango packs fresh mango's sugar into a quarter of the bites, so the small portion is the right call. Dinner totals a comfortable ~43g, and from a 102 start the evening should stay smooth. A familiar, happy ending.]",
     "type": "Dinner",
     "date": "2026-08-04T20:13:00.000-07:00",
-    "photo": "https://iili.io/CgRTZDQ.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-04/001bf6603e5f0a60.jpg",
     "carbs": 21,
     "cals": 135,
-    "delta": null,
-    "peak": null
+    "delta": 26,
+    "peak": 139
   },
   {
     "id": "3b385ec7-0668-8132-b51b-d4ce166fdd24",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-04/83da469e446a135c.jpg",
     "carbs": 22,
     "cals": 310,
-    "delta": null,
-    "peak": null
+    "delta": 37,
+    "peak": 139
   },
   {
     "id": "3b285ec7-0668-811f-8d3d-ef16195c4242",
@@ -1475,7 +1486,7 @@
   },
   {
     "id": "39185ec7-0668-8187-8e51-e3cac6e743ed",
-    "title": "Lunch: ham and cheese toasted sandwich on seeded multigrain bread (BG: 116 mg/dL Flat) (Pred: 134-154 mg/dL @ 1:08 PM) (Protein: ~22g | Carbs: ~37g | Cals: ~350) [Coach: A ham and cheese toastie on seeded bread ��� — solid protein from the ham and cheese, and the whole-grain slices bring fiber to keep the rise gentle. Since this is your lunch, a handful of tomato or cucumber on the side would round it into a full plate. Steady, sensible start to the day.]",
+    "title": "Lunch: ham and cheese toasted sandwich on seeded multigrain bread (BG: 116 mg/dL Flat) (Pred: 134-154 mg/dL @ 1:08 PM) (Protein: ~22g | Carbs: ~37g | Cals: ~350) [Coach: A ham and cheese toastie on seeded bread 🥪 — solid protein from the ham and cheese, and the whole-grain slices bring fiber to keep the rise gentle. Since this is your lunch, a handful of tomato or cucumber on the side would round it into a full plate. Steady, sensible start to the day.]",
     "type": "Lunch",
     "date": "2026-07-02T11:53:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-02/fe8b9bf70babf842.jpg",
