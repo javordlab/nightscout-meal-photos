@@ -1,14 +1,25 @@
 [
   {
+    "id": "3b485ec7-0668-818d-a0bc-fe53cfd84bbc",
+    "title": "Dinner: white fish braised with peppers and onions over sliced potatoes (cooked by Javier) (BG: 120 mg/dL Flat) (Pred: 140-160 mg/dL @ 7:58 PM) (Protein: 26g | Carbs: ~25g | Cals: ~350) [Coach: Chef Javier delivers 👨‍🍳 — lean fish over patatas with slow-cooked peppers is straight out of a Spanish costa kitchen. A solid ~26g of protein, modest potato carbs, and olive-oil vegetables. Being cooked for is its own nutrition. Someone's earning his garden wages.]",
+    "type": "Dinner",
+    "date": "2026-08-05T18:53:00.000-07:00",
+    "photo": "https://iili.io/CgseaZg.jpg",
+    "carbs": 25,
+    "cals": 350,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3b385ec7-0668-817b-9e65-dd39ba3c04d3",
     "title": "Lunch (dessert): three pieces of Trader Joe's coconut-oil chocolate (from label: ~11g carbs, ~135 cal for 3 of 4-piece serving) (BG: 101 mg/dL Flat) (Pred: 148-168 mg/dL @ 4:47 PM) (Protein: 1g | Carbs: ~11g | Cals: ~135) [Cumulative Lunch: 61g carbs total] [Coach: Label-photo logging — chef's kiss as always 📸 — and stopping at three pieces is real restraint. One honest note: this one's built on coconut oil, so it carries more saturated fat per bite than your usual dark squares — fine as a treat, just not the everyday chocolate. Lunch closes at ~61g, your heartiest of the week, well-earned by that supersalad.]",
     "type": "Lunch",
     "date": "2026-08-05T15:37:00.000-07:00",
-    "photo": "https://iili.io/Cg6DliN.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-05/af07e7c7cfa27e08.jpg",
     "carbs": 11,
     "cals": 135,
-    "delta": null,
-    "peak": null
+    "delta": 15,
+    "peak": 166
   },
   {
     "id": "3b385ec7-0668-814c-b466-f196b1b24968",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-05/9d488966c3340401.jpg",
     "carbs": 50,
     "cals": 540,
-    "delta": null,
-    "peak": null
+    "delta": 66,
+    "peak": 166
   },
   {
     "id": "3b385ec7-0668-81aa-a29d-f4958230f94d",
