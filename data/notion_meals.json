@@ -1,25 +1,36 @@
 [
   {
-    "id": "3b485ec7-0668-810a-950f-ce0f139b5335",
-    "title": "Breakfast (add-on): peanut butter on multigrain toast, fuel for hill walking (BG: 103 mg/dL Flat) (Pred: 163-183 mg/dL @ 11:33 AM) (Protein: 6g | Carbs: ~20g | Cals: ~200) [Cumulative Breakfast: 49g carbs total] [Coach: Smart pre-hill fueling 🏔️ — peanut butter's slow burn is exactly what climbing legs want, and the hills will happily spend the ~49g breakfast total. Carry water, pace the inclines, and those slopes don't stand a chance. Enjoy the views up there.]",
-    "type": "Breakfast",
-    "date": "2026-08-06T10:18:00.000-07:00",
-    "photo": "https://iili.io/CrnQzW7.jpg",
-    "carbs": 20,
-    "cals": 200,
+    "id": "3b485ec7-0668-8168-8553-c9079a3a67b9",
+    "title": "Lunch: blended vegetable soup with cheese, and hummus with multigrain seed crackers (BG: 107 mg/dL Flat) (Pred: 131-151 mg/dL @ 3:05 PM) (Protein: 14g | Carbs: ~35g | Cals: ~440) [Coach: The veggie soup moved to the day shift — noted and applauded 🥣 — same cozy bowl as last week, but at lunch where it can't touch your sleep. Cheese for protein, hummus and seed crackers for slow carbs. This is the system running exactly as designed.]",
+    "type": "Lunch",
+    "date": "2026-08-06T13:55:00.000-07:00",
+    "photo": "https://iili.io/CrT3F6u.jpg",
+    "carbs": 35,
+    "cals": 440,
     "delta": null,
     "peak": null
   },
   {
+    "id": "3b485ec7-0668-810a-950f-ce0f139b5335",
+    "title": "Breakfast (add-on): peanut butter on multigrain toast, fuel for hill walking (BG: 103 mg/dL Flat) (Pred: 163-183 mg/dL @ 11:33 AM) (Protein: 6g | Carbs: ~20g | Cals: ~200) [Cumulative Breakfast: 49g carbs total] [Coach: Smart pre-hill fueling 🏔️ — peanut butter's slow burn is exactly what climbing legs want, and the hills will happily spend the ~49g breakfast total. Carry water, pace the inclines, and those slopes don't stand a chance. Enjoy the views up there.]",
+    "type": "Breakfast",
+    "date": "2026-08-06T10:18:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-06/d7afa47e08a5407c.jpg",
+    "carbs": 20,
+    "cals": 200,
+    "delta": 31,
+    "peak": 135
+  },
+  {
     "id": "3b485ec7-0668-813b-95e2-f53858c8ceab",
-    "title": "Breakfast: yogurt bowl with blueberries, flax meal, and a dusting of brewer's yeast (BG: 103 mg/dL Flat) (Pred: 150-170 mg/dL @ 11:21 AM) (Protein: 13g | Carbs: ~27g | Cals: ~225) [Coach: The signature bowl with yesterday's discovery sprinkled on top 🫐 — brewer's yeast bringing its B vitamins to breakfast now too. Light at ~27g carbs, fiber everywhere, and starting from a smooth 103. The bread-project ingredients continue their productive second careers.]",
+    "title": "Breakfast: yogurt bowl with blueberries, flax meal, hemp hearts, and a dusting of brewer's yeast (BG: 103 mg/dL Flat) (Pred: 150-170 mg/dL @ 11:21 AM) (Protein: 19g | Carbs: ~29g | Cals: ~335) [Coach: The signature bowl with yesterday's discovery sprinkled on top 🫐 — brewer's yeast bringing its B vitamins to breakfast now too. Light at ~27g carbs, fiber everywhere, and starting from a smooth 103. The bread-project ingredients continue their productive second careers.]",
     "type": "Breakfast",
     "date": "2026-08-06T10:06:00.000-07:00",
-    "photo": "https://iili.io/CrnwTzl.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-06/88541518a332abae.jpg",
     "carbs": 27,
     "cals": 225,
-    "delta": null,
-    "peak": null
+    "delta": 32,
+    "peak": 135
   },
   {
     "id": "3b485ec7-0668-818d-a0bc-fe53cfd84bbc",
