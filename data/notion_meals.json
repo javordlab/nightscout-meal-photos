@@ -1,14 +1,36 @@
 [
   {
+    "id": "3b485ec7-0668-810a-950f-ce0f139b5335",
+    "title": "Breakfast (add-on): peanut butter on multigrain toast, fuel for hill walking (BG: 103 mg/dL Flat) (Pred: 163-183 mg/dL @ 11:33 AM) (Protein: 6g | Carbs: ~20g | Cals: ~200) [Cumulative Breakfast: 49g carbs total] [Coach: Smart pre-hill fueling 🏔️ — peanut butter's slow burn is exactly what climbing legs want, and the hills will happily spend the ~49g breakfast total. Carry water, pace the inclines, and those slopes don't stand a chance. Enjoy the views up there.]",
+    "type": "Breakfast",
+    "date": "2026-08-06T10:18:00.000-07:00",
+    "photo": "https://iili.io/CrnQzW7.jpg",
+    "carbs": 20,
+    "cals": 200,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "3b485ec7-0668-813b-95e2-f53858c8ceab",
+    "title": "Breakfast: yogurt bowl with blueberries, flax meal, and a dusting of brewer's yeast (BG: 103 mg/dL Flat) (Pred: 150-170 mg/dL @ 11:21 AM) (Protein: 13g | Carbs: ~27g | Cals: ~225) [Coach: The signature bowl with yesterday's discovery sprinkled on top 🫐 — brewer's yeast bringing its B vitamins to breakfast now too. Light at ~27g carbs, fiber everywhere, and starting from a smooth 103. The bread-project ingredients continue their productive second careers.]",
+    "type": "Breakfast",
+    "date": "2026-08-06T10:06:00.000-07:00",
+    "photo": "https://iili.io/CrnwTzl.jpg",
+    "carbs": 27,
+    "cals": 225,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3b485ec7-0668-818d-a0bc-fe53cfd84bbc",
     "title": "Dinner: white fish braised with peppers and onions over sliced potatoes (cooked by Javier) (BG: 120 mg/dL Flat) (Pred: 140-160 mg/dL @ 7:58 PM) (Protein: 26g | Carbs: ~25g | Cals: ~350) [Coach: Chef Javier delivers 👨‍🍳 — lean fish over patatas with slow-cooked peppers is straight out of a Spanish costa kitchen. A solid ~26g of protein, modest potato carbs, and olive-oil vegetables. Being cooked for is its own nutrition. Someone's earning his garden wages.]",
     "type": "Dinner",
     "date": "2026-08-05T18:53:00.000-07:00",
-    "photo": "https://iili.io/CgseaZg.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-05/52011ff40f22c0ae.jpg",
     "carbs": 25,
     "cals": 350,
-    "delta": null,
-    "peak": null
+    "delta": 79,
+    "peak": 198
   },
   {
     "id": "3b385ec7-0668-817b-9e65-dd39ba3c04d3",
