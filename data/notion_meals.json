@@ -1,12 +1,23 @@
 [
   {
+    "id": "3b585ec7-0668-81b0-8d12-c98dd2567cee",
+    "title": "Lunch: half a small home-grown banana (BG: 142 mg/dL FortyFiveDown) (Pred: 139-159 mg/dL @ 2:04 PM) (Protein: 1g | Carbs: ~8g | Cals: ~30) [Coach: Your own banana 🍌 — hard to beat eating something you grew yourself, and half is exactly the right portion for fruit this concentrated. Timing helps too: you're on the way down from brunch, so these ~8g land softly instead of stacking on a peak.]",
+    "type": "Lunch",
+    "date": "2026-08-07T12:54:00.000-07:00",
+    "photo": "https://iili.io/Cr6xWcx.jpg",
+    "carbs": 8,
+    "cals": 30,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3b585ec7-0668-81d4-b004-e14e2f40107d",
-    "title": "Lunch: one slice of French toast topped with a fried egg, and a bowl of cantaloupe and blueberries (BG: 93 mg/dL Flat) (Pred: 127-147 mg/dL @ 12:11 PM) (Protein: 14g | Carbs: ~40g | Cals: ~345) [Coach: The egg on top is what makes this one work 🍳 — French toast on its own is a carb slab, but the egg and the custard soak bring real protein along. Cantaloupe and blueberries instead of syrup, and a lovely 93 to start from. Yesterday's lesson clearly stuck.]",
+    "title": "Lunch (brunch): one slice of French toast, custard soak of milk and one whole egg, topped with a fried egg, and a bowl of cantaloupe and blueberries (BG: 93 mg/dL Flat) (Pred: 127-147 mg/dL @ 12:11 PM) (Protein: 20g | Carbs: ~40g | Cals: ~375) [Coach: Two eggs in one slice — the soak plus the one on top — and that changes the whole picture 🍳 French toast alone is a carb slab, but ~20g of protein turns it into a proper balanced brunch. Fruit instead of syrup, from a lovely 93 start.]",
     "type": "Lunch",
     "date": "2026-08-07T11:01:00.000-07:00",
-    "photo": "https://iili.io/CrrKMdX.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-07/d0a9f294362bcd15.jpg",
     "carbs": 40,
-    "cals": 345,
+    "cals": 375,
     "delta": null,
     "peak": null
   },
@@ -188,7 +199,7 @@
   },
   {
     "id": "3b185ec7-0668-815a-b461-d5635a081ab8",
-    "title": "Breakfast (drink): tea with milk (BG: 107 mg/dL Flat) (Pred: 144-164 mg/dL @ 11:54 AM) (Protein: 1g | Carbs: ~2g | Cals: ~20) [Cumulative Breakfast: 20g carbs total] [Coach: Tea with a splash of milk — barely moves the needle, just warms the morning ��� — breakfast stays a gentle ~20g total. Civilized start to the sensor's first full day on the job.]",
+    "title": "Breakfast (drink): tea with milk (BG: 107 mg/dL Flat) (Pred: 144-164 mg/dL @ 11:54 AM) (Protein: 1g | Carbs: ~2g | Cals: ~20) [Cumulative Breakfast: 20g carbs total] [Coach: Tea with a splash of milk — barely moves the needle, just warms the morning ☕ — breakfast stays a gentle ~20g total. Civilized start to the sensor's first full day on the job.]",
     "type": "Breakfast",
     "date": "2026-08-03T10:39:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-03/2dd87b5eb1d34a47.jpg",
@@ -5171,7 +5182,7 @@
   },
   {
     "id": "35e85ec7-0668-81f2-8c19-e1f78d5e5f15",
-    "title": "Dinner: First course ��� 4 large grilled head-on prawns with a small piece of crusty bread (BG: 91 mg/dL Flat) (Pred: 107-117 mg/dL @ 8:03 PM) (Protein: 27g | Carbs: ~18g | Cals: ~195) [Coach: Wonderful protein-forward first course — large prawns are lean and pack ~24g of protein on their own, with just a small bread portion to round it out. A great start that should land very gently on your BG.]  [id:e3ffbaf1]",
+    "title": "Dinner: First course — 4 large grilled head-on prawns with a small piece of crusty bread (BG: 91 mg/dL Flat) (Pred: 107-117 mg/dL @ 8:03 PM) (Protein: 27g | Carbs: ~18g | Cals: ~195) [Coach: Wonderful protein-forward first course — large prawns are lean and pack ~24g of protein on their own, with just a small bread portion to round it out. A great start that should land very gently on your BG.]  [id:e3ffbaf1]",
     "type": "Dinner",
     "date": "2026-04-21T18:47:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-21/75d2b671363507ba.jpg",
