@@ -1,14 +1,25 @@
 [
   {
+    "id": "3b585ec7-0668-816a-aa8a-fc53db7b18d9",
+    "title": "Dinner: half a grilled boneless pork chop with a grilled ear of corn (BG: 150 mg/dL Flat) (Pred: 166-186 mg/dL @ 7:47 PM) (Protein: 29g | Carbs: ~30g | Cals: ~330) [Coach: Half the chop was a smart call — you still bank ~25g of protein without the full load 🍖. The corn is the carb here, and you're starting from 150 with the mango still working, so this dinner lands higher than your usual. Grilled protein is the right anchor for it.]",
+    "type": "Dinner",
+    "date": "2026-08-06T18:42:00.000-07:00",
+    "photo": "https://iili.io/Cr7Wzb9.jpg",
+    "carbs": 30,
+    "cals": 330,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3b485ec7-0668-8168-8553-c9079a3a67b9",
     "title": "Lunch: blended vegetable soup with cheese, and hummus with multigrain seed crackers (BG: 107 mg/dL Flat) (Pred: 131-151 mg/dL @ 3:05 PM) (Protein: 14g | Carbs: ~35g | Cals: ~440) [Coach: The veggie soup moved to the day shift — noted and applauded 🥣 — same cozy bowl as last week, but at lunch where it can't touch your sleep. Cheese for protein, hummus and seed crackers for slow carbs. This is the system running exactly as designed.]",
     "type": "Lunch",
     "date": "2026-08-06T13:55:00.000-07:00",
-    "photo": "https://iili.io/CrT3F6u.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-06/5865e11f61b35612.jpg",
     "carbs": 35,
     "cals": 440,
-    "delta": null,
-    "peak": null
+    "delta": 19,
+    "peak": 126
   },
   {
     "id": "3b485ec7-0668-810a-950f-ce0f139b5335",
@@ -67,7 +78,7 @@
   },
   {
     "id": "3b385ec7-0668-81aa-a29d-f4958230f94d",
-    "title": "Breakfast: multigrain toast with turkey breast and brie, a bowl of fresh mango, and black tea (BG: 100 mg/dL Flat) (Pred: 147-167 mg/dL @ 11:39 AM) (Protein: 17g | Carbs: ~35g | Cals: ~340) [Coach: Turkey and brie is a genuinely elegant toast pairing 🧀 — lean protein plus creamy richness, and the fresh mango bowl beats any pastry for the sweet spot. Starting from a perfect 100 flat, this ~35g morning has all the makings of another in-range day. The flamingos approve.]",
+    "title": "Breakfast: multigrain toast with turkey breast and brie, a bowl of fresh mango, and black tea (BG: 100 mg/dL Flat) (Pred: 147-167 mg/dL @ 11:39 AM) (Protein: 17g | Carbs: ~35g | Cals: ~340) [Coach: Turkey and brie is a genuinely elegant toast pairing ���� — lean protein plus creamy richness, and the fresh mango bowl beats any pastry for the sweet spot. Starting from a perfect 100 flat, this ~35g morning has all the makings of another in-range day. The flamingos approve.]",
     "type": "Breakfast",
     "date": "2026-08-05T10:24:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-05/225e1bb1b9189520.jpg",
