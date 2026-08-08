@@ -1,5 +1,16 @@
 [
   {
+    "id": "3b685ec7-0668-81b5-9f95-d85df698a9ef",
+    "title": "Lunch: kale salad with cashews, nutritional yeast, orange, blueberries and hemp hearts, plus a glass of makgeolli (Korean rice wine) (BG: 107 mg/dL Flat) (Pred: 141-161 mg/dL @ 3:27 PM) (Protein: 19g | Carbs: ~46g | Cals: ~545) [Coach: The supersalad returns 🥬 — kale, hemp hearts, cashews and yeast stacking to about 19g protein, with orange and blueberries for sweetness. And what a noble sacrifice, draining that bottle for Javier. Makgeolli carries more sugar than it lets on, so it adds a lift the salad alone would not.]",
+    "type": "Lunch",
+    "date": "2026-08-08T14:17:00.000-07:00",
+    "photo": "https://iili.io/C4oYUn2.jpg",
+    "carbs": 46,
+    "cals": 545,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3b685ec7-0668-81c2-8047-d94e48e49fbb",
     "title": "Dessert: half an apple with a small bowl of cashews (BG: 139 mg/dL Flat) (Pred: 135-155 mg/dL @ 10:15 PM) (Protein: 5g | Carbs: ~20g | Cals: ~200) [Coach: Half an apple with cashews again 🍎 — you have found your evening formula and it is a good one, the fat and protein keeping the fruit sugar slow. Taking it after the walk rather than before is the smart order. Two nights running now.]",
     "type": "Dessert",
@@ -1387,7 +1398,7 @@
   },
   {
     "id": "39585ec7-0668-8160-8d55-f25d06173ad3",
-    "title": "Dinner: liver pâté and tomato sandwich on thick rustic bread, double pâté (BG: 120 mg/dL Flat) (Pred: 142-162 mg/dL @ 10:21 PM) (Protein: 14g | Carbs: ~37g | Cals: ~365) [Coach: Even better with the double pâté ���� — more protein, more iron and B12, and a bit more fat to help slow the bread's carbs. The predicted BG landing zone doesn't change (pâté has no carbs), but the meal will feel steadier and keep you full longer. Nice adjustment.]",
+    "title": "Dinner: liver pâté and tomato sandwich on thick rustic bread, double pâté (BG: 120 mg/dL Flat) (Pred: 142-162 mg/dL @ 10:21 PM) (Protein: 14g | Carbs: ~37g | Cals: ~365) [Coach: Even better with the double pâté 👏 — more protein, more iron and B12, and a bit more fat to help slow the bread's carbs. The predicted BG landing zone doesn't change (pâté has no carbs), but the meal will feel steadier and keep you full longer. Nice adjustment.]",
     "type": "Dinner",
     "date": "2026-07-06T21:26:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-06/d2392926294b9e87.jpg",
