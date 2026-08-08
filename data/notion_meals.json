@@ -4,11 +4,11 @@
     "title": "Dessert: half an apple with a small bowl of cashews (BG: 139 mg/dL Flat) (Pred: 135-155 mg/dL @ 10:15 PM) (Protein: 5g | Carbs: ~20g | Cals: ~200) [Coach: Half an apple with cashews again 🍎 — you have found your evening formula and it is a good one, the fat and protein keeping the fruit sugar slow. Taking it after the walk rather than before is the smart order. Two nights running now.]",
     "type": "Dessert",
     "date": "2026-08-07T20:30:00.000-07:00",
-    "photo": "https://iili.io/CrZpNR9.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-07/e85f589db28e1f12.jpg",
     "carbs": 20,
     "cals": 200,
-    "delta": null,
-    "peak": null
+    "delta": 10,
+    "peak": 149
   },
   {
     "id": "3b685ec7-0668-81dc-8316-cf7c88e8960a",
@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-07/999b47414ed79d0c.jpg",
     "carbs": 4,
     "cals": 20,
-    "delta": null,
-    "peak": null
+    "delta": 59,
+    "peak": 175
   },
   {
     "id": "3b685ec7-0668-81e1-9711-eaec9b11325a",
@@ -29,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-07/3dcdfdad52a2048c.jpg",
     "carbs": 45,
     "cals": 400,
-    "delta": null,
-    "peak": null
+    "delta": 71,
+    "peak": 175
   },
   {
     "id": "3b585ec7-0668-81b0-8d12-c98dd2567cee",
@@ -1387,7 +1387,7 @@
   },
   {
     "id": "39585ec7-0668-8160-8d55-f25d06173ad3",
-    "title": "Dinner: liver pâté and tomato sandwich on thick rustic bread, double pâté (BG: 120 mg/dL Flat) (Pred: 142-162 mg/dL @ 10:21 PM) (Protein: 14g | Carbs: ~37g | Cals: ~365) [Coach: Even better with the double pâté 👏 — more protein, more iron and B12, and a bit more fat to help slow the bread's carbs. The predicted BG landing zone doesn't change (pâté has no carbs), but the meal will feel steadier and keep you full longer. Nice adjustment.]",
+    "title": "Dinner: liver pâté and tomato sandwich on thick rustic bread, double pâté (BG: 120 mg/dL Flat) (Pred: 142-162 mg/dL @ 10:21 PM) (Protein: 14g | Carbs: ~37g | Cals: ~365) [Coach: Even better with the double pâté ���� — more protein, more iron and B12, and a bit more fat to help slow the bread's carbs. The predicted BG landing zone doesn't change (pâté has no carbs), but the meal will feel steadier and keep you full longer. Nice adjustment.]",
     "type": "Dinner",
     "date": "2026-07-06T21:26:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-06/d2392926294b9e87.jpg",
