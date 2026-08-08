@@ -1,14 +1,36 @@
 [
   {
+    "id": "3b685ec7-0668-81dc-8316-cf7c88e8960a",
+    "title": "Dinner: a tiny piece of melon (BG: 103 mg/dL Flat) (Pred: 144-164 mg/dL @ 8:07 PM) (Protein: 0g | Carbs: ~4g | Cals: ~20) [Cumulative Dinner: 49g carbs total] [Coach: Melon after the paella instead of on its own — that is this morning's lesson applied, and it is the whole trick 🍈 Protein and fat first means those few grams of sugar arrive slowly. A tiny piece is exactly the right size for a fruit that moves you fast.]",
+    "type": "Dinner",
+    "date": "2026-08-07T19:02:00.000-07:00",
+    "photo": "https://iili.io/CrQrMSR.jpg",
+    "carbs": 4,
+    "cals": 20,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "3b685ec7-0668-81e1-9711-eaec9b11325a",
+    "title": "Dinner: paella with chicken and calamari, with raw carrot sticks (BG: 103 mg/dL Flat) (Pred: 141-161 mg/dL @ 7:47 PM) (Protein: 30g | Carbs: ~45g | Cals: ~400) [Coach: Paella that is actually mostly protein 🥘 — chicken and calamari carrying about 30g between them, so the rice is not running the show. Carrot sticks alongside for crunch and fiber. Starting from a calm 103, this one should land gently.]",
+    "type": "Dinner",
+    "date": "2026-08-07T18:42:00.000-07:00",
+    "photo": "https://iili.io/CrQh8cF.jpg",
+    "carbs": 45,
+    "cals": 400,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3b585ec7-0668-81b0-8d12-c98dd2567cee",
     "title": "Lunch: half a small home-grown banana (BG: 142 mg/dL FortyFiveDown) (Pred: 139-159 mg/dL @ 2:04 PM) (Protein: 1g | Carbs: ~8g | Cals: ~30) [Coach: Your own banana 🍌 — hard to beat eating something you grew yourself, and half is exactly the right portion for fruit this concentrated. Timing helps too: you're on the way down from brunch, so these ~8g land softly instead of stacking on a peak.]",
     "type": "Lunch",
     "date": "2026-08-07T12:54:00.000-07:00",
-    "photo": "https://iili.io/Cr6xWcx.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-07/ffdb048f6357649b.jpg",
     "carbs": 8,
     "cals": 30,
-    "delta": null,
-    "peak": null
+    "delta": 15,
+    "peak": 157
   },
   {
     "id": "3b585ec7-0668-81d4-b004-e14e2f40107d",
@@ -18,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-07/d0a9f294362bcd15.jpg",
     "carbs": 40,
     "cals": 375,
-    "delta": null,
-    "peak": null
+    "delta": 103,
+    "peak": 196
   },
   {
     "id": "3b585ec7-0668-816a-aa8a-fc53db7b18d9",
@@ -2190,7 +2212,7 @@
   },
   {
     "id": "38485ec7-0668-81d4-908f-fb698b474497",
-    "title": "Dinner: a ham and cheese sandwich on multi-seed whole-grain bread (pumpkin, sunflower, sesame, flax) and a nectarine (BG: 140 mg/dL Flat) (Pred: 163-183 mg/dL @ 10:17 PM) (Protein: 24g | Carbs: ~46g | Cals: ~460) [Coach: Even better with that seeded bread 🌻 — pumpkin, sunflower, sesame and flax add fiber and healthy fats that slow the carbs right down, so this dinner will land gentler than the number suggests. Ham and cheese for protein, a nectarine to finish — a genuinely well-built plate.]",
+    "title": "Dinner: a ham and cheese sandwich on multi-seed whole-grain bread (pumpkin, sunflower, sesame, flax) and a nectarine (BG: 140 mg/dL Flat) (Pred: 163-183 mg/dL @ 10:17 PM) (Protein: 24g | Carbs: ~46g | Cals: ~460) [Coach: Even better with that seeded bread ��� — pumpkin, sunflower, sesame and flax add fiber and healthy fats that slow the carbs right down, so this dinner will land gentler than the number suggests. Ham and cheese for protein, a nectarine to finish — a genuinely well-built plate.]",
     "type": "Dinner",
     "date": "2026-06-19T21:22:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-19/f693bdb6edf0dc94.jpg",
