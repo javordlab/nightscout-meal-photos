@@ -1,10 +1,21 @@
 [
   {
+    "id": "3b785ec7-0668-81dd-bcc7-cad39dd552fb",
+    "title": "Dinner: unsweetened dried mango, approx. 3 slices (BG: 124 mg/dL Flat) (Pred: 131-151 mg/dL @ 9:27 PM) (Protein: 1g | Carbs: ~17g | Cals: ~70) [Coach: Unsweetened is the right call 🥭 — that is just concentrated mango, no added sugar hiding in it. Drying strips the water though, so a small handful carries the sugar of a much larger fresh one. You are at 124 and still climbing from the ribs, so this one stacks rather than starting fresh.]",
+    "type": "Dinner",
+    "date": "2026-08-08T20:22:00.000-07:00",
+    "photo": "https://iili.io/C4AB2b2.jpg",
+    "carbs": 17,
+    "cals": 70,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3b785ec7-0668-8131-aa7b-d1abe37c4e28",
     "title": "Dinner: leftover half banana (BG: 96 mg/dL Flat) (Pred: 139-159 mg/dL @ 8:10 PM) (Protein: 1g | Carbs: ~17g | Cals: ~70) [Cumulative Dinner: 59g carbs total] [Coach: The card trick again 💳 — it makes sizing easy, and this is a genuine half at roughly 17g rather than a token bite. Taking it after the ribs is the right order, since all that protein and fat slows the fruit sugar down. Dinner lands around 59g carbs total, still a sensible night.]",
     "type": "Dinner",
     "date": "2026-08-08T19:05:00.000-07:00",
-    "photo": "https://iili.io/C4uf0iu.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-08/842d91da43b36dc5.jpg",
     "carbs": 17,
     "cals": 70,
     "delta": null,
