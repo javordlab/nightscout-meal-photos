@@ -1,10 +1,21 @@
 [
   {
+    "id": "3b785ec7-0668-8131-aa7b-d1abe37c4e28",
+    "title": "Dinner: leftover half banana (BG: 96 mg/dL Flat) (Pred: 139-159 mg/dL @ 8:10 PM) (Protein: 1g | Carbs: ~17g | Cals: ~70) [Cumulative Dinner: 59g carbs total] [Coach: The card trick again 💳 — it makes sizing easy, and this is a genuine half at roughly 17g rather than a token bite. Taking it after the ribs is the right order, since all that protein and fat slows the fruit sugar down. Dinner lands around 59g carbs total, still a sensible night.]",
+    "type": "Dinner",
+    "date": "2026-08-08T19:05:00.000-07:00",
+    "photo": "https://iili.io/C4uf0iu.jpg",
+    "carbs": 17,
+    "cals": 70,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3b785ec7-0668-81de-97b5-dd3a2b63b91f",
     "title": "Dinner: BBQ pork ribs with rosemary roasted potato slices (BG: 87 mg/dL Flat) (Pred: 129-149 mg/dL @ 7:31 PM) (Protein: 35g | Carbs: ~42g | Cals: ~660) [Coach: Those ribs bring a serious ~35g of protein 🍖 and you are starting from a calm 87, so there is plenty of runway. The potatoes and that sweet glaze are the real carbs here — BBQ sauce sneaks in more sugar than the rack does. Your kale salad already handled the greens today.]",
     "type": "Dinner",
     "date": "2026-08-08T18:26:00.000-07:00",
-    "photo": "https://iili.io/C4TScNe.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-08/246314d4676ef935.jpg",
     "carbs": 42,
     "cals": 660,
     "delta": null,
