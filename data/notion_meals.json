@@ -1,10 +1,21 @@
 [
   {
+    "id": "3b785ec7-0668-810e-a267-c234881194c9",
+    "title": "Breakfast: plain yogurt with chopped apple, ground flaxseed and hemp hearts, plus whole-grain toast with peanut butter (BG: 97 mg/dL Flat) (Pred: 160-180 mg/dL @ 11:46 AM) (Protein: 30g | Carbs: ~55g | Cals: ~520) [Coach: Apple, yogurt, hemp and flax bring fiber, calcium and solid protein, while peanut-butter toast adds staying power. Around 55g carbs is substantial, but the protein and healthy fats should soften the rise—nicely built breakfast 🎯]",
+    "type": "Breakfast",
+    "date": "2026-08-09T10:31:00.000-07:00",
+    "photo": "https://iili.io/C4w3xSa.jpg",
+    "carbs": 55,
+    "cals": 520,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3b785ec7-0668-81dd-bcc7-cad39dd552fb",
     "title": "Dinner: unsweetened dried mango, approx. 3 slices (BG: 124 mg/dL Flat) (Pred: 131-151 mg/dL @ 9:27 PM) (Protein: 1g | Carbs: ~17g | Cals: ~70) [Coach: Unsweetened is the right call 🥭 — that is just concentrated mango, no added sugar hiding in it. Drying strips the water though, so a small handful carries the sugar of a much larger fresh one. You are at 124 and still climbing from the ribs, so this one stacks rather than starting fresh.]",
     "type": "Dinner",
     "date": "2026-08-08T20:22:00.000-07:00",
-    "photo": "https://iili.io/C4AB2b2.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-08/189fbed05591d380.jpg",
     "carbs": 17,
     "cals": 70,
     "delta": null,
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-08/842d91da43b36dc5.jpg",
     "carbs": 17,
     "cals": 70,
-    "delta": null,
-    "peak": null
+    "delta": 45,
+    "peak": 141
   },
   {
     "id": "3b785ec7-0668-81de-97b5-dd3a2b63b91f",
@@ -29,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-08/246314d4676ef935.jpg",
     "carbs": 42,
     "cals": 660,
-    "delta": null,
-    "peak": null
+    "delta": 51,
+    "peak": 138
   },
   {
     "id": "3b685ec7-0668-81b5-9f95-d85df698a9ef",
