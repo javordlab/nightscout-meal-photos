@@ -1,14 +1,25 @@
 [
   {
+    "id": "3b785ec7-0668-81de-97b5-dd3a2b63b91f",
+    "title": "Dinner: BBQ pork ribs with rosemary roasted potato slices (BG: 87 mg/dL Flat) (Pred: 129-149 mg/dL @ 7:31 PM) (Protein: 35g | Carbs: ~42g | Cals: ~660) [Coach: Those ribs bring a serious ~35g of protein 🍖 and you are starting from a calm 87, so there is plenty of runway. The potatoes and that sweet glaze are the real carbs here — BBQ sauce sneaks in more sugar than the rack does. Your kale salad already handled the greens today.]",
+    "type": "Dinner",
+    "date": "2026-08-08T18:26:00.000-07:00",
+    "photo": "https://iili.io/C4TScNe.jpg",
+    "carbs": 42,
+    "cals": 660,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3b685ec7-0668-81b5-9f95-d85df698a9ef",
     "title": "Lunch: kale salad with cashews, nutritional yeast, orange, blueberries and hemp hearts, plus a glass of makgeolli (Korean rice wine) (BG: 107 mg/dL Flat) (Pred: 141-161 mg/dL @ 3:27 PM) (Protein: 19g | Carbs: ~46g | Cals: ~545) [Coach: The supersalad returns 🥬 — kale, hemp hearts, cashews and yeast stacking to about 19g protein, with orange and blueberries for sweetness. And what a noble sacrifice, draining that bottle for Javier. Makgeolli carries more sugar than it lets on, so it adds a lift the salad alone would not.]",
     "type": "Lunch",
     "date": "2026-08-08T14:17:00.000-07:00",
-    "photo": "https://iili.io/C4oYUn2.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-08/1c9138cdc3235fce.jpg",
     "carbs": 46,
     "cals": 545,
-    "delta": null,
-    "peak": null
+    "delta": 41,
+    "peak": 144
   },
   {
     "id": "3b685ec7-0668-81c2-8047-d94e48e49fbb",
