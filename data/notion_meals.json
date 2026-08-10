@@ -1,14 +1,25 @@
 [
   {
+    "id": "3b885ec7-0668-813a-99f6-c9c4f84ec9f1",
+    "title": "Snack: mortadella and cheese sandwich on toasted rustic bread, made by Javier (BG: 123 mg/dL Flat) (Pred: 152-172 mg/dL @ 6:48 PM) (Protein: 19g | Carbs: ~46g | Cals: ~450) [Coach: Chef Javier's audition piece 🥪 — that rustic loaf is doing most of the carb work at around 46g, while the mortadella and cheese bring fat and a respectable 19g of protein to slow it down. Your blood sugar will notice the bread far more than the filling.]",
+    "type": "Snack",
+    "date": "2026-08-09T17:53:00.000-07:00",
+    "photo": "https://iili.io/C4S9piQ.jpg",
+    "carbs": 46,
+    "cals": 450,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3b785ec7-0668-8162-be9c-eec011e831ee",
     "title": "Lunch: Large wedge of cantaloupe (BG: 112 mg/dL Flat) (Pred: 152-172 mg/dL @ 15:19) (Protein: 2g | Carbs: ~16g | Cals: ~70) [Cumulative Lunch: 54g carbs total] [Coach: A juicy finish 🍈 — cantaloupe adds hydration, vitamin C, and a modest carb bump. Because it follows a protein-, fat-, and fiber-rich lunch, the rise should be gentler than fruit eaten alone.]",
     "type": "Lunch",
     "date": "2026-08-09T14:09:00.000-07:00",
-    "photo": "https://iili.io/C4Ovf9f.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-09/ae87d91969253fbf.jpg",
     "carbs": 16,
     "cals": 70,
-    "delta": null,
-    "peak": null
+    "delta": 34,
+    "peak": 152
   },
   {
     "id": "3b785ec7-0668-810e-a267-c234881194c9",
@@ -3752,7 +3763,7 @@
   },
   {
     "id": "36985ec7-0668-8173-a7ea-c54dae71faed",
-    "title": "Dessert: handful of cashews and 2 squares of dark chocolate (BG: 153 mg/dL Flat) (Pred: 164-174 mg/dL @ 12:16 AM) (Protein: 5g | Carbs: ~15g | Cals: ~195) [Coach: You followed the playbook exactly 👏 — cashews + dark chocolate is the smartest dessert pick. Fat + protein slow the ~15g carbs, minimal sugar overall. Bonus: BG just dropped to 153 Flat from 174 rising — peak's resolving, fine moment for this treat.]",
+    "title": "Dessert: handful of cashews and 2 squares of dark chocolate (BG: 153 mg/dL Flat) (Pred: 164-174 mg/dL @ 12:16 AM) (Protein: 5g | Carbs: ~15g | Cals: ~195) [Coach: You followed the playbook exactly 👏 — cashews + dark chocolate is the smartest dessert pick. Fat + protein slow the ~15g carbs, minimal sugar overall. Bonus: BG just dropped to 153 Flat from 174 rising ��� peak's resolving, fine moment for this treat.]",
     "type": "Dessert",
     "date": "2026-05-23T22:34:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-23/0dead2e0fddadb0b.jpg",
@@ -4940,7 +4951,7 @@
   },
   {
     "id": "35e85ec7-0668-8146-b75a-fb27b8611de8",
-    "title": "Dinner: Tapa plate with bread topped with chorizo and cured meat (jamón/salchichón), a wedge of manchego cheese, and a small beer (caña) (BG: 135 mg/dL Flat) (Pred: 163-173 mg/dL @ 10:55 PM) (Protein: 23g | Carbs: ~27g | Cals: ~440) [Coach: Classic tapas night ��� — solid protein from the cured meats and cheese, modest carbs from the bread and beer. BG starting at 135 from the churro means peak may sit a bit higher; a short walk after would help bring it back down before bed.]  [id:ed2c4478]",
+    "title": "Dinner: Tapa plate with bread topped with chorizo and cured meat (jamón/salchichón), a wedge of manchego cheese, and a small beer (caña) (BG: 135 mg/dL Flat) (Pred: 163-173 mg/dL @ 10:55 PM) (Protein: 23g | Carbs: ~27g | Cals: ~440) [Coach: Classic tapas night 🍻 — solid protein from the cured meats and cheese, modest carbs from the bread and beer. BG starting at 135 from the churro means peak may sit a bit higher; a short walk after would help bring it back down before bed.]  [id:ed2c4478]",
     "type": "Dinner",
     "date": "2026-04-30T21:39:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-30/eb704546fcc3fae5.jpg",
