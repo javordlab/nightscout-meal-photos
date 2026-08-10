@@ -1,14 +1,14 @@
 [
   {
     "id": "3b885ec7-0668-8187-9ad2-f92e0b47660d",
-    "title": "Breakfast: plain yogurt bowl with blueberries, ground flaxseed, hemp hearts, a spoonful of soft orange fruit that appears to be mango, and a dusting of turmeric. Portions calibrated against the SPG card at 85mm, bowl interior approx. 17cm, giving roughly 170g yogurt, 70g blueberries, 20g hemp hearts, 15g ground flaxseed and 45g of the orange fruit. The mango identification is visual and unconfirmed. (BG: 100 mg/dL Flat) (Pred: 152-172 mg/dL @ 11:09 AM) (Protein: 27g | Carbs: ~29g | Cals: ~355) [Coach: This is the breakfast of someone who read the manual 🎯 — 27g protein, real fiber from the flax and hemp, and blueberries doing the sweet work at a fraction of yesterday's carbs. Dropping the toast halved the carb load. The yogurt is quietly banking calcium for your bones too.]",
+    "title": "Breakfast: plain yogurt bowl with blueberries, ground flaxseed, hemp hearts, a very small slice of mango, and a dusting of turmeric. Portions calibrated against the SPG card at 85mm, bowl interior approx. 17cm, giving roughly 170g yogurt, 70g blueberries, 20g hemp hearts and 15g ground flaxseed. Mango CONFIRMED by Maria at 10:28 and revised down from an estimated 45g to approx. 20g on her description of it as a very small slice, which lowers carbs from 29g to 25g and calories from 355 to 340. Prediction recomputed on the revised carb total. (BG: 100 mg/dL Flat) (Pred: 147-167 mg/dL @ 11:09 AM) (Protein: 27g | Carbs: ~25g | Cals: ~340) [Coach: This is the breakfast of someone who read the manual 🎯 — 27g protein, real fiber from the flax and hemp, and blueberries doing the sweet work at a fraction of yesterday's carbs. Dropping the toast halved the carb load. The yogurt is quietly banking calcium for your bones too.]",
     "type": "Breakfast",
     "date": "2026-08-10T09:54:00.000-07:00",
-    "photo": "https://iili.io/C6dLErl.jpg",
-    "carbs": 29,
-    "cals": 355,
-    "delta": null,
-    "peak": null
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-10/c19956a9fa37cee6.jpg",
+    "carbs": 25,
+    "cals": 340,
+    "delta": 20,
+    "peak": 123
   },
   {
     "id": "3b885ec7-0668-813f-b3f2-d86a8198abfc",
