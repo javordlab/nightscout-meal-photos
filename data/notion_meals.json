@@ -1,5 +1,16 @@
 [
   {
+    "id": "3b885ec7-0668-8141-b141-ed9d7b50ba4f",
+    "title": "Lunch: two open-faced slices of whole-grain bread, one topped with cured ham and the other with brie, plus two wedges of cantaloupe in a side bowl. Portions calibrated against the SPG card at 85mm, plate approx. 17cm, giving roughly 60g bread across the two slices, 35g ham, 35g brie and 130g cantaloupe. (BG: 88 mg/dL Flat) (Pred: 122-142 mg/dL @ 3:06 PM) (Protein: 25g | Carbs: ~37g | Cals: ~400) [Coach: Open-faced is a clever move 🥖 — half the bread, all the topping, and a solid 25g of protein on the plate. The brie is quietly adding calcium for your bones too. A few slices of cucumber or tomato alongside and this would be a complete lunch.]",
+    "type": "Lunch",
+    "date": "2026-08-10T13:56:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-10/7f44f25bd902fe31.jpg",
+    "carbs": 37,
+    "cals": 400,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3b885ec7-0668-8187-9ad2-f92e0b47660d",
     "title": "Breakfast: plain yogurt bowl with blueberries, ground flaxseed, hemp hearts, a very small slice of mango, and a dusting of turmeric. Portions calibrated against the SPG card at 85mm, bowl interior approx. 17cm, giving roughly 170g yogurt, 70g blueberries, 20g hemp hearts and 15g ground flaxseed. Mango CONFIRMED by Maria at 10:28 and revised down from an estimated 45g to approx. 20g on her description of it as a very small slice, which lowers carbs from 29g to 25g and calories from 355 to 340. Prediction recomputed on the revised carb total. (BG: 100 mg/dL Flat) (Pred: 147-167 mg/dL @ 11:09 AM) (Protein: 27g | Carbs: ~25g | Cals: ~340) [Coach: This is the breakfast of someone who read the manual 🎯 — 27g protein, real fiber from the flax and hemp, and blueberries doing the sweet work at a fraction of yesterday's carbs. Dropping the toast halved the carb load. The yogurt is quietly banking calcium for your bones too.]",
     "type": "Breakfast",
@@ -108,6 +119,17 @@
     "cals": 545,
     "delta": 41,
     "peak": 144
+  },
+  {
+    "id": "3b685ec7-0668-8161-be43-e1e9db460e7c",
+    "title": "Breakfast: multigrain toast with mashed avocado and turkey breast, plus a small bowl of plain yogurt (BG: 100 mg/dL Flat) (Pred: 151-171 mg/dL @ 11:40 AM) (Protein: 23g | Carbs: ~29g | Cals: ~340) [Coach: Now this is a breakfast that behaves 🥑 — avocado fat and turkey protein wrapped around a single slice, with yogurt piling on more. About 23g of protein against only ~29g of carbs, the near-mirror image of yesterday's French toast. Expect a much calmer late morning.]",
+    "type": "Breakfast",
+    "date": "2026-08-08T10:25:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-08/6711e75669d4045e.jpg",
+    "carbs": 29,
+    "cals": 340,
+    "delta": 27,
+    "peak": 127
   },
   {
     "id": "3b685ec7-0668-81c2-8047-d94e48e49fbb",
@@ -4555,7 +4577,7 @@
   },
   {
     "id": "35e85ec7-0668-8130-9063-edb0310cf7c4",
-    "title": "Lunch: Wedge of blue cheese, wedge of cured cheese, and a small portion of morcilla [Cumulative Lunch: ~43g carbs total] (BG: 111 mg/dL Flat) (Pred: 152-162 mg/dL @ 4:11 PM) (Protein: 16g | Carbs: ~6g | Cals: ~270) [Coach: Cheese course with morcilla 🧀 — protein and fat from both cheeses, plus that classic Spanish blood sausage. Cumulative lunch is heartier now; the gardening earlier and a walk after will keep things in check.]  [id:8acb656f]",
+    "title": "Lunch: Wedge of blue cheese, wedge of cured cheese, and a small portion of morcilla [Cumulative Lunch: ~43g carbs total] (BG: 111 mg/dL Flat) (Pred: 152-162 mg/dL @ 4:11 PM) (Protein: 16g | Carbs: ~6g | Cals: ~270) [Coach: Cheese course with morcilla ��� — protein and fat from both cheeses, plus that classic Spanish blood sausage. Cumulative lunch is heartier now; the gardening earlier and a walk after will keep things in check.]  [id:8acb656f]",
     "type": "Lunch",
     "date": "2026-05-07T14:28:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-07/ee5ebb0377283340.jpg",
