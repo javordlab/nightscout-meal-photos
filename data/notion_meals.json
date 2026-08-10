@@ -1,10 +1,21 @@
 [
   {
+    "id": "3b885ec7-0668-8141-8594-eb49fdb9d538",
+    "title": "Dinner: kale and mango salad with leftover paella chicken (BG: 140 mg/dL Flat) (Pred: 178-198 mg/dL @ 7:39 PM) (Protein: 28g | Carbs: ~29g | Cals: ~435) [Cumulative Dinner: 75g carbs total] [Coach: Now that is a proper plate 🥬 — kale, mango and paella chicken bringing about 28g of protein and real fiber alongside it. Between this and the sandwich, dinner lands near 75g of carbs, so expect a firmer climb than usual tonight. The protein and the greens will keep it civilised.]",
+    "type": "Dinner",
+    "date": "2026-08-09T18:34:00.000-07:00",
+    "photo": "https://iili.io/C4UorDQ.jpg",
+    "carbs": 29,
+    "cals": 435,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3b885ec7-0668-813a-99f6-c9c4f84ec9f1",
     "title": "Snack: mortadella and cheese sandwich on toasted rustic bread, made by Javier (BG: 123 mg/dL Flat) (Pred: 152-172 mg/dL @ 6:48 PM) (Protein: 19g | Carbs: ~46g | Cals: ~450) [Coach: Chef Javier's audition piece 🥪 — that rustic loaf is doing most of the carb work at around 46g, while the mortadella and cheese bring fat and a respectable 19g of protein to slow it down. Your blood sugar will notice the bread far more than the filling.]",
     "type": "Snack",
     "date": "2026-08-09T17:53:00.000-07:00",
-    "photo": "https://iili.io/C4S9piQ.jpg",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-09/beb98169f56e3c05.jpg",
     "carbs": 46,
     "cals": 450,
     "delta": null,
@@ -430,7 +441,7 @@
   },
   {
     "id": "3ae85ec7-0668-818a-9f95-f657e61d5038",
-    "title": "Lunch: smoked salmon and multigrain seed crackers with butter lettuce, hummus topped with nuts, and fresh mango slices (BG: Unknown) (Pred: Pending) (Protein: 17g | Carbs: ~45g | Cals: ~430) [Coach: This is a beautiful board 🥗 — salmon for omega-3 protein, lettuce bringing your midday greens, hummus for fiber, and mango as honest dessert. Textbook lunch architecture after a 90-minute garden shift. The ~45g carbs are spread across slow sources, exactly how you want them.]",
+    "title": "Lunch: smoked salmon and multigrain seed crackers with butter lettuce, hummus topped with nuts, and fresh mango slices (BG: Unknown) (Pred: Pending) (Protein: 17g | Carbs: ~45g | Cals: ~430) [Coach: This is a beautiful board ���� — salmon for omega-3 protein, lettuce bringing your midday greens, hummus for fiber, and mango as honest dessert. Textbook lunch architecture after a 90-minute garden shift. The ~45g carbs are spread across slow sources, exactly how you want them.]",
     "type": "Lunch",
     "date": "2026-07-31T13:47:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-31/c644a1a3a8032b10.jpg",
@@ -3763,7 +3774,7 @@
   },
   {
     "id": "36985ec7-0668-8173-a7ea-c54dae71faed",
-    "title": "Dessert: handful of cashews and 2 squares of dark chocolate (BG: 153 mg/dL Flat) (Pred: 164-174 mg/dL @ 12:16 AM) (Protein: 5g | Carbs: ~15g | Cals: ~195) [Coach: You followed the playbook exactly 👏 — cashews + dark chocolate is the smartest dessert pick. Fat + protein slow the ~15g carbs, minimal sugar overall. Bonus: BG just dropped to 153 Flat from 174 rising ��� peak's resolving, fine moment for this treat.]",
+    "title": "Dessert: handful of cashews and 2 squares of dark chocolate (BG: 153 mg/dL Flat) (Pred: 164-174 mg/dL @ 12:16 AM) (Protein: 5g | Carbs: ~15g | Cals: ~195) [Coach: You followed the playbook exactly 👏 — cashews + dark chocolate is the smartest dessert pick. Fat + protein slow the ~15g carbs, minimal sugar overall. Bonus: BG just dropped to 153 Flat from 174 rising — peak's resolving, fine moment for this treat.]",
     "type": "Dessert",
     "date": "2026-05-23T22:34:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-23/0dead2e0fddadb0b.jpg",
