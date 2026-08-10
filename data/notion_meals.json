@@ -1,14 +1,25 @@
 [
   {
-    "id": "3b885ec7-0668-813f-b3f2-d86a8198abfc",
-    "title": "Dinner: one peeled white sapote, approx. 68mm across, second fruit shown in the photo but not eaten (BG: 168 mg/dL Flat) (Pred: 200-220 mg/dL @ 8:26 PM) (Protein: 2g | Carbs: ~27g | Cals: ~105) [Cumulative Dinner: 102g carbs total] [Coach: Sapote is lovely and genuinely nutritious, but it is a sweet one at roughly 27g of carbs, more than the mango in the salad. You are at 168 and easing down from dinner, so this restarts the climb rather than joining it. The berberine should help soften it.]",
-    "type": "Dinner",
-    "date": "2026-08-09T19:21:00.000-07:00",
-    "photo": "https://iili.io/C4U6UYv.jpg",
-    "carbs": 27,
-    "cals": 105,
+    "id": "3b885ec7-0668-8187-9ad2-f92e0b47660d",
+    "title": "Breakfast: plain yogurt bowl with blueberries, ground flaxseed, hemp hearts, a spoonful of soft orange fruit that appears to be mango, and a dusting of turmeric. Portions calibrated against the SPG card at 85mm, bowl interior approx. 17cm, giving roughly 170g yogurt, 70g blueberries, 20g hemp hearts, 15g ground flaxseed and 45g of the orange fruit. The mango identification is visual and unconfirmed. (BG: 100 mg/dL Flat) (Pred: 152-172 mg/dL @ 11:09 AM) (Protein: 27g | Carbs: ~29g | Cals: ~355) [Coach: This is the breakfast of someone who read the manual 🎯 — 27g protein, real fiber from the flax and hemp, and blueberries doing the sweet work at a fraction of yesterday's carbs. Dropping the toast halved the carb load. The yogurt is quietly banking calcium for your bones too.]",
+    "type": "Breakfast",
+    "date": "2026-08-10T09:54:00.000-07:00",
+    "photo": "https://iili.io/C6dLErl.jpg",
+    "carbs": 29,
+    "cals": 355,
     "delta": null,
     "peak": null
+  },
+  {
+    "id": "3b885ec7-0668-813f-b3f2-d86a8198abfc",
+    "title": "Dinner: two bites of a peeled white sapote, approx. 68mm across, the rest shared with Javier and a second fruit shown in the photo but not eaten (BG: 168 mg/dL Flat) (Pred: 183-203 mg/dL @ 8:26 PM) (Protein: 0g | Carbs: ~6g | Cals: ~25) [Cumulative Dinner: 81g carbs total] [Coach: Two bites changes the whole calculation — roughly 6g of carbs instead of 27. Handing the rest over was the single best move available tonight. Dinner settles at about 81g, and between that, the walk and the berberine you have stacked every advantage in your favour.]",
+    "type": "Dinner",
+    "date": "2026-08-09T19:21:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-09/832c437ba439b611.jpg",
+    "carbs": 6,
+    "cals": 25,
+    "delta": -1,
+    "peak": 167
   },
   {
     "id": "3b885ec7-0668-8141-8594-eb49fdb9d538",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-09/5d0939478b4aa574.jpg",
     "carbs": 29,
     "cals": 435,
-    "delta": null,
-    "peak": null
+    "delta": 45,
+    "peak": 185
   },
   {
     "id": "3b885ec7-0668-813a-99f6-c9c4f84ec9f1",
@@ -29,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-09/beb98169f56e3c05.jpg",
     "carbs": 46,
     "cals": 450,
-    "delta": null,
-    "peak": null
+    "delta": 56,
+    "peak": 185
   },
   {
     "id": "3b785ec7-0668-8162-be9c-eec011e831ee",
