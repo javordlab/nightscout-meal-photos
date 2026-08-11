@@ -1,5 +1,16 @@
 [
   {
+    "id": "3b985ec7-0668-812a-b4eb-dcc6ab3b7486",
+    "title": "Lunch: leftover coconut curry from last night with roast pork loin added, served without rice. The curry carries zucchini rounds, orange sweet potato or carrot rounds, yellow pepper and firm tofu in a coconut sauce, and the pork is sliced into roughly seven medallions with a browned crust. Portions calibrated against the SPG card at 85.6mm, whose edges gave a ratio of about 1.77 against the true 1.586, indicating the short edge is foreshortened, so the long edge was used as the honest scale. That puts the bowl rim near 18cm after a plane-offset correction for its depth, the food mound about 12cm across, and gives roughly 110g of cooked pork loin, about 165ml or three quarters of a cup of curry, comprising near 40g sweet potato, 50g zucchini, 20g yellow pepper, 40g tofu and 40ml of coconut sauce. (BG: 104 mg/dL Flat) (Pred: 131-151 mg/dL @ 2:26 PM) (Protein: 38g | Carbs: ~14g | Cals: ~375) [Coach: Now this is a recovery lunch 💪 — nearly 40g of protein after an hour of hauling stone is exactly what your muscles were asking for. Leaving the rice off this time keeps carbs near 14g, so barely a ripple. Zucchini and pepper carrying the veg. One of your best-built plates.]",
+    "type": "Lunch",
+    "date": "2026-08-11T13:16:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-11/658bcb17baedc5c3.jpg",
+    "carbs": 14,
+    "cals": 375,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3b985ec7-0668-819b-b5c7-eec5736ba0f8",
     "title": "Breakfast: a peanut butter and fresh blueberry sandwich on whole-grain bread, cut in half diagonally. Portions calibrated against the loyalty card in frame at 85.6mm, whose long and short edges gave closely matching scales of 3.50 and 3.52 px per mm, indicating the card lay nearly flat with negligible tilt. That puts the plate at roughly 21cm after a 5 percent plane-offset correction for the rim sitting above the table, giving two bread slices of about 11.5cm square at roughly 60g total, about 28g of peanut butter judged from the layer thickness at the cut face, and roughly 80g of blueberries, near two thirds of a cup. (BG: 101 mg/dL Flat) (Pred: 157-177 mg/dL @ 11:25 AM) (Protein: 16g | Carbs: ~46g | Cals: ~385) [Coach: This is a PB and J with the jam swapped out for actual blueberries 🫐 — whole fruit and fiber instead of spoonfuls of sugar, which is a genuine upgrade. The peanut butter's fat and protein will slow the bread down nicely. A little more protein would round it out, but this is a solid start to the day.]",
     "type": "Breakfast",
