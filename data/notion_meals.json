@@ -1,5 +1,16 @@
 [
   {
+    "id": "3b985ec7-0668-819b-b5c7-eec5736ba0f8",
+    "title": "Breakfast: a peanut butter and fresh blueberry sandwich on whole-grain bread, cut in half diagonally. Portions calibrated against the loyalty card in frame at 85.6mm, whose long and short edges gave closely matching scales of 3.50 and 3.52 px per mm, indicating the card lay nearly flat with negligible tilt. That puts the plate at roughly 21cm after a 5 percent plane-offset correction for the rim sitting above the table, giving two bread slices of about 11.5cm square at roughly 60g total, about 28g of peanut butter judged from the layer thickness at the cut face, and roughly 80g of blueberries, near two thirds of a cup. (BG: 101 mg/dL Flat) (Pred: 157-177 mg/dL @ 11:25 AM) (Protein: 16g | Carbs: ~46g | Cals: ~385) [Coach: This is a PB and J with the jam swapped out for actual blueberries 🫐 — whole fruit and fiber instead of spoonfuls of sugar, which is a genuine upgrade. The peanut butter's fat and protein will slow the bread down nicely. A little more protein would round it out, but this is a solid start to the day.]",
+    "type": "Breakfast",
+    "date": "2026-08-11T10:10:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-11/515e49da73622652.jpg",
+    "carbs": 46,
+    "cals": 385,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3b985ec7-0668-81fd-85f6-faf23216b9b3",
     "title": "Dinner: a single wedge of fresh cantaloupe on a small side plate, eaten to finish the meal. Portions calibrated against the SPG card at 85mm, giving a wedge roughly 13cm along its curve and 4cm at its widest, which works out to approx. 75g of flesh and matches the per-wedge size of the two cantaloupe wedges logged at lunch. The plumeria flower is garnish, not food. (BG: 89 mg/dL Flat) (Pred: 138-158 mg/dL @ 7:51 PM) (Protein: 1g | Carbs: ~6g | Cals: ~30) [Cumulative Dinner: 61g carbs total] [Coach: Cantaloupe to finish 🍈 — about 6g of carbs for something that reads as dessert is a bargain, and it is mostly water and potassium. Second helping today after lunch, which is fine, it is one of the gentler fruits. Dinner lands at 61g total and still sits comfortably.]",
     "type": "Dinner",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-10/2b14539e545191fa.jpg",
     "carbs": 6,
     "cals": 30,
-    "delta": null,
-    "peak": null
+    "delta": 72,
+    "peak": 161
   },
   {
     "id": "3b985ec7-0668-813b-a278-e5bde6bac805",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-10/5d62bc161f3fce46.jpg",
     "carbs": 69,
     "cals": 570,
-    "delta": null,
-    "peak": null
+    "delta": 72,
+    "peak": 161
   },
   {
     "id": "3b885ec7-0668-8141-b141-ed9d7b50ba4f",
