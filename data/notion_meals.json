@@ -1,5 +1,16 @@
 [
   {
+    "id": "3b985ec7-0668-813b-a278-e5bde6bac805",
+    "title": "Dinner: a coconut curry with cubes that appear to be firm tofu, zucchini, yellow pepper and red onion, served with a molded scoop of white rice and a side of fresh mango. Portions calibrated against the SPG card at 85mm, plate approx. 28cm, giving roughly 130g cooked rice, 140g tofu, 135g mixed vegetables, about 75ml of coconut curry sauce and 110g mango. The tofu identification is visual and unconfirmed. The plumeria flower is garnish, not food. (BG: 89 mg/dL Flat) (Pred: 145-165 mg/dL @ 7:51 PM) (Protein: 24g | Carbs: ~69g | Cals: ~570) [Coach: Tofu and a curry loaded with zucchini and peppers is a strong build 🍛 — 24g protein and real vegetables without you having to try. The rice plus the mango is the carb story here, ~69g and the day's biggest. Starting from 89 buys you plenty of room, so this should land gently.]",
+    "type": "Dinner",
+    "date": "2026-08-10T18:46:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-10/5d62bc161f3fce46.jpg",
+    "carbs": 69,
+    "cals": 570,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3b885ec7-0668-8141-b141-ed9d7b50ba4f",
     "title": "Lunch: two open-faced slices of whole-grain bread, one topped with cured ham and the other with brie, plus two wedges of cantaloupe in a side bowl. Portions calibrated against the SPG card at 85mm, plate approx. 17cm, giving roughly 60g bread across the two slices, 35g ham, 35g brie and 130g cantaloupe. (BG: 88 mg/dL Flat) (Pred: 122-142 mg/dL @ 3:06 PM) (Protein: 25g | Carbs: ~37g | Cals: ~400) [Coach: Open-faced is a clever move 🥖 — half the bread, all the topping, and a solid 25g of protein on the plate. The brie is quietly adding calcium for your bones too. A few slices of cucumber or tomato alongside and this would be a complete lunch.]",
     "type": "Lunch",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-10/7f44f25bd902fe31.jpg",
     "carbs": 37,
     "cals": 400,
-    "delta": null,
-    "peak": null
+    "delta": 54,
+    "peak": 142
   },
   {
     "id": "3b885ec7-0668-8187-9ad2-f92e0b47660d",
@@ -4577,7 +4588,7 @@
   },
   {
     "id": "35e85ec7-0668-8130-9063-edb0310cf7c4",
-    "title": "Lunch: Wedge of blue cheese, wedge of cured cheese, and a small portion of morcilla [Cumulative Lunch: ~43g carbs total] (BG: 111 mg/dL Flat) (Pred: 152-162 mg/dL @ 4:11 PM) (Protein: 16g | Carbs: ~6g | Cals: ~270) [Coach: Cheese course with morcilla ��� — protein and fat from both cheeses, plus that classic Spanish blood sausage. Cumulative lunch is heartier now; the gardening earlier and a walk after will keep things in check.]  [id:8acb656f]",
+    "title": "Lunch: Wedge of blue cheese, wedge of cured cheese, and a small portion of morcilla [Cumulative Lunch: ~43g carbs total] (BG: 111 mg/dL Flat) (Pred: 152-162 mg/dL @ 4:11 PM) (Protein: 16g | Carbs: ~6g | Cals: ~270) [Coach: Cheese course with morcilla 🧀 — protein and fat from both cheeses, plus that classic Spanish blood sausage. Cumulative lunch is heartier now; the gardening earlier and a walk after will keep things in check.]  [id:8acb656f]",
     "type": "Lunch",
     "date": "2026-05-07T14:28:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-07/ee5ebb0377283340.jpg",
