@@ -1,5 +1,16 @@
 [
   {
+    "id": "3b985ec7-0668-81fd-85f6-faf23216b9b3",
+    "title": "Dinner: a single wedge of fresh cantaloupe on a small side plate, eaten to finish the meal. Portions calibrated against the SPG card at 85mm, giving a wedge roughly 13cm along its curve and 4cm at its widest, which works out to approx. 75g of flesh and matches the per-wedge size of the two cantaloupe wedges logged at lunch. The plumeria flower is garnish, not food. (BG: 89 mg/dL Flat) (Pred: 138-158 mg/dL @ 7:51 PM) (Protein: 1g | Carbs: ~6g | Cals: ~30) [Cumulative Dinner: 61g carbs total] [Coach: Cantaloupe to finish 🍈 — about 6g of carbs for something that reads as dessert is a bargain, and it is mostly water and potassium. Second helping today after lunch, which is fine, it is one of the gentler fruits. Dinner lands at 61g total and still sits comfortably.]",
+    "type": "Dinner",
+    "date": "2026-08-10T19:00:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-10/2b14539e545191fa.jpg",
+    "carbs": 6,
+    "cals": 30,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3b985ec7-0668-813b-a278-e5bde6bac805",
     "title": "Dinner: a coconut curry with cubes that appear to be firm tofu, zucchini, yellow pepper and red onion, served with a molded scoop of white rice and a side of fresh mango. Portions calibrated against the SPG card at 85mm, plate approx. 28cm, giving roughly 130g cooked rice, 140g tofu, 135g mixed vegetables, about 75ml of coconut curry sauce and 110g mango. The tofu identification is visual and unconfirmed. The plumeria flower is garnish, not food. (BG: 89 mg/dL Flat) (Pred: 145-165 mg/dL @ 7:51 PM) (Protein: 24g | Carbs: ~69g | Cals: ~570) [Coach: Tofu and a curry loaded with zucchini and peppers is a strong build 🍛 — 24g protein and real vegetables without you having to try. The rice plus the mango is the carb story here, ~69g and the day's biggest. Starting from 89 buys you plenty of room, so this should land gently.]",
     "type": "Dinner",
