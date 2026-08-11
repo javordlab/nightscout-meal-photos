@@ -1,5 +1,16 @@
 [
   {
+    "id": "3b985ec7-0668-81e2-b19d-dd67f5efb625",
+    "title": "Lunch (cont.): fresh orange cut into wedges. Seven wedges on a small plate, portions calibrated against the SPG card at 85.6mm giving 4.10 px per mm, which puts the plate near 17cm after a plane-offset correction and each wedge at roughly 8cm long by 4.4cm wide, consistent with one medium-to-large orange at about 140g of flesh divided into wedges. (BG: 102 mg/dL Flat) (Pred: 131-151 mg/dL @ 2:29 PM) (Protein: 1g | Carbs: ~17g | Cals: ~65) [Cumulative Lunch: 31g carbs total] [Coach: Whole orange beats juice every time 🍊 — the fiber keeps the sugar gentle and the vitamin C is a bonus. Lunch lands at about 31g of carbs total, still very comfortable, and sitting on 39g of protein that is a genuinely well-shaped plate. Nice finish.]",
+    "type": "Lunch",
+    "date": "2026-08-11T13:19:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-11/896e2058b61f6c96.jpg",
+    "carbs": 17,
+    "cals": 65,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3b985ec7-0668-812a-b4eb-dcc6ab3b7486",
     "title": "Lunch: leftover coconut curry from last night with roast pork loin added, served without rice. The curry carries zucchini rounds, orange sweet potato or carrot rounds, yellow pepper and firm tofu in a coconut sauce, and the pork is sliced into roughly seven medallions with a browned crust. Portions calibrated against the SPG card at 85.6mm, whose edges gave a ratio of about 1.77 against the true 1.586, indicating the short edge is foreshortened, so the long edge was used as the honest scale. That puts the bowl rim near 18cm after a plane-offset correction for its depth, the food mound about 12cm across, and gives roughly 110g of cooked pork loin, about 165ml or three quarters of a cup of curry, comprising near 40g sweet potato, 50g zucchini, 20g yellow pepper, 40g tofu and 40ml of coconut sauce. (BG: 104 mg/dL Flat) (Pred: 131-151 mg/dL @ 2:26 PM) (Protein: 38g | Carbs: ~14g | Cals: ~375) [Coach: Now this is a recovery lunch 💪 — nearly 40g of protein after an hour of hauling stone is exactly what your muscles were asking for. Leaving the rice off this time keeps carbs near 14g, so barely a ripple. Zucchini and pepper carrying the veg. One of your best-built plates.]",
     "type": "Lunch",
