@@ -1,5 +1,16 @@
 [
   {
+    "id": "3ba85ec7-0668-81b1-9a41-d32195b36541",
+    "title": "Snack: a small bowl of lightly breaded fried shrimp, seasoned with paprika and pepper, alongside a tall glass of milk. Portions calibrated against the SPG card in frame at 85.6mm, whose long and short edges measured approximately 373 and 241 pixels giving 4.36 and 4.46 pixels per mm respectively, a 2 percent disagreement, so the card lay nearly flat and the larger figure was taken as the honest scale per the max rule. That puts the ramekin rim near 8cm after a plane-offset correction for the bowl sitting some 5cm above the card, each shrimp piece at roughly 1.5 to 1.8cm across, and ten to twelve pieces counting those partly hidden underneath, giving approximately 60g of breaded fried shrimp. The tumbler measures near 6cm at the rim and the milk fills about two thirds of its height, giving roughly one cup or 240ml. THE MILK IS THE LEAST CERTAIN NUMBER on this row, since the glass tapers and refraction widens the visible column, and a stated measure from Maria would replace it outright. Milk taken as reduced fat at 12g carbohydrate, 8g protein and 130 calories per cup; the shrimp contributes the remaining 11g of carbohydrate entirely from its breading. Not cumulative with the 12:22 lunch, that being 3 hours 52 minutes earlier and well outside the 1-hour window. (BG: 77 mg/dL Flat) (Pred: 108-128 mg/dL @ 5:09 PM) (Protein: 17g | Carbs: ~23g | Cals: ~275) [Coach: Shrimp and milk after the day you have had 🦐 — protein for staying power and calcium for your bones, which is a genuinely good pairing. The breading is where the carbs hide, about 11g, so nothing dramatic. And sitting at 77 after all that fasting, this lands at a sensible moment.]",
+    "type": "Snack",
+    "date": "2026-08-12T16:14:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-12/ac1ced09a67fd122.jpg",
+    "carbs": 23,
+    "cals": 275,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3ba85ec7-0668-8199-b4ca-ebb33e555d1b",
     "title": "Dessert: a wedge of homemade dark chocolate cake topped with a spoonful of fresh passion fruit pulp from her own garden, with a cup of hibiscus tea alongside. Portions calibrated against the SPG card lying on the plate, whose long and short edges measured approximately 493 and 373 pixels giving 5.76 and 6.91 pixels per mm respectively, a 20 percent disagreement, so the card is STEEPLY TILTED where it rests on the curved plate surface and the estimate below is widened rather than presented as precise. Per the max rule 6.91 was taken as the honest scale, cross-checked against the plate which resolves to 14 to 17cm and is a dessert plate rather than a dinner plate. That puts the cake wedge near 9.4cm from tip to crust by about 4cm tall, consistent with a slice cut from a roughly 19cm round cake into ten portions, giving approximately 85g of cake, and the passion fruit mound near 4.2cm across by 2cm high giving roughly 30g or about two tablespoons of pulp. Hibiscus tea assumed UNSWEETENED and counted as zero carbohydrate and zero calories, which needs revising if she added sugar or honey. NOT treated as cumulative with the 19:04 dinner, that being 1 hour 22 minutes earlier and therefore outside the 1-hour cumulative window. (BG: 109 mg/dL Flat) (Pred: 132-152 mg/dL @ 10:11 PM) (Protein: 5g | Carbs: ~45g | Cals: ~320) [Coach: Passion fruit from your own garden 🌺 — that is a genuinely lovely finish, and the fiber earns its keep. Fair warning though, at 45g this is the biggest carb load of your day, and chocolate at 8:30pm is precisely the pairing we discussed this afternoon. Stay upright a while.]",
     "type": "Dessert",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-11/b71a9e081e04abac.jpg",
     "carbs": 45,
     "cals": 320,
-    "delta": null,
-    "peak": null
+    "delta": 37,
+    "peak": 146
   },
   {
     "id": "3ba85ec7-0668-813e-8bb6-dd2d86e2350c",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-11/e6c9ba071f950a50.jpg",
     "carbs": 23,
     "cals": 630,
-    "delta": null,
-    "peak": null
+    "delta": 46,
+    "peak": 136
   },
   {
     "id": "3b985ec7-0668-81e2-b19d-dd67f5efb625",
