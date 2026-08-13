@@ -1,5 +1,16 @@
 [
   {
+    "id": "3bb85ec7-0668-8120-afe2-e5c74eb130f1",
+    "title": "Snack: a bowl of deep purple-magenta vegetable chips, thin curled slices consistent with beet, alongside a small bowl of hummus topped with a chunky green and brown olive or herb relish. CLASSIFIED SNACK ON HER OWN WORD, WHICH OVERRIDES THE HOUR: 12:30 falls in the 11:00 to 15:59 Lunch band, but her message was the single word Snack, and explicit user text outranks the hour table. Only the agent's own context drift is barred from reclassifying, never Maria. Portions calibrated against the SPG card lying flat on the tablecloth at 85.6mm, whose long and short edges measured approximately 396 and 195 pixels giving 4.63 and 3.61 pixels per mm, a 28 percent disagreement from a shallow camera angle near 38 degrees, so per the max rule 4.63 is the honest scale and only horizontal extents were used. The chip bowl rim measures 525 pixels or 113mm apparent and corrects to approximately 10cm allowing for the rim sitting some 5cm above the tablecloth; its interior at food level resolves near 8.8cm, and the chips fill it loosely to roughly 3cm, giving approximately 120 to 150ml of very airy volume. CHIP WEIGHT IS THE SOFT NUMBER AND THE REASON IS DENSITY, NOT VOLUME: curled vegetable crisps pack at only about 0.15 to 0.2 g per ml, so that volume is roughly 25g, near a single one-ounce serving, and eight to ten large slices are visible which is consistent. The hummus bowl rim measures 335 pixels or 72mm apparent, correcting to about 6.5cm, a small dipping bowl, holding a rounded scoop of approximately 45g of hummus, near three tablespoons, with roughly 15g of the relish on top. TWO IDENTIFICATIONS ARE UNCONFIRMED AND BOTH ARE FLAGGED RATHER THAN HIDDEN. The chips are read as beet from the deep magenta and the visible ring structure; IF THEY ARE PURPLE SWEET POTATO INSTEAD, carbohydrate rises by roughly 4g and the predicted peak by about 5 mg/dL. They are also assumed oil-baked or fried in the commercial style at about 15g carbohydrate per 25g; a purely dehydrated chip with no oi…",
+    "type": "Snack",
+    "date": "2026-08-13T12:30:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-13/1bbbe4b640787e51.jpg",
+    "carbs": 22,
+    "cals": 240,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3bb85ec7-0668-813c-b1c3-f975541fc1d1",
     "title": "Breakfast: a bowl of plain yogurt with a small sapote cut into pieces, a tablespoon of pumpkin seeds and a teaspoon of flaxseed meal, alongside a slice of dark whole-grain toast spread generously with a nut butter. THE BOWL IS AS MARIA DESCRIBED IT AT 09:29 and its four components are taken from her words rather than guessed. THE TOAST IS NOT IN HER DESCRIPTION AND IS INCLUDED ON A JUDGEMENT CALL, FLAGGED HERE AS THE ONE THING SHE SHOULD CONTRADICT IF WRONG: it sits on its own small plate immediately beside her bowl, front and centre in the same place setting rather than at the back of the frame, and the round loaf it was cut from is visible on the board behind. It is included because omitting real carbohydrate is the more clinically consequential error of the two — the toast and its spread carry roughly 30g, more than the entire yogurt bowl. IF THE TOAST IS NOT HERS the meal falls to 24g carbohydrate, 8g protein and 190 calories, the carb factor rises from 0.8 to 1.2 as it crosses out of the 51g-plus band into the 16 to 30g band, and the prediction drops to 143 to 163 mg/dL. Yogurt taken as plain and unsweetened per her standing confirmation of 2026-08-12, so that is no longer an open assumption. Portions calibrated against the SPG card lying flat on the tablecloth at 85.6mm; the card is rotated and shot from a shallow angle, and solving its bounding box gives edges of approximately 372 and 195 pixels, so 4.35 and 3.61 pixels per mm, a 20 percent disagreement, and per the max rule 4.35 is the honest scale with only horizontal extents used. The bowl rim measures 680 pixels or 156mm apparent and corrects to approximately 13cm once the rim is allowed to sit some 7cm above the tablecloth plane; the contents surface measures 490 pixels or 113mm apparent, correcting to about 10cm at its own level. Treating the bowl interior as a spherical segment, a 10cm surface in a 13cm bowl sits roughly 2.2cm deep, giving approximately 95 to 140ml of contents and taken here at about …",
     "type": "Breakfast",
@@ -2036,7 +2047,7 @@
   },
   {
     "id": "38c85ec7-0668-81fa-85b8-f74a0d0629f8",
-    "title": "Dinner: a multigrain sandwich with cheese and cured ham, plus 1/2 cup blueberries (BG: 115 mg/dL Flat) (Pred: 140-160 mg/dL @ 10:02 PM) (Protein: 24g | Carbs: ~39g | Cals: ~392) [Coach: Blueberries to finish ��� — whole fruit with fiber and antioxidants, a gentle sweet ending that will not rock your steady evening. Nice lighter dinner overall, exactly what you set out to do. Sitting calm at 115, this keeps the night on track.]",
+    "title": "Dinner: a multigrain sandwich with cheese and cured ham, plus 1/2 cup blueberries (BG: 115 mg/dL Flat) (Pred: 140-160 mg/dL @ 10:02 PM) (Protein: 24g | Carbs: ~39g | Cals: ~392) [Coach: Blueberries to finish 🫐 — whole fruit with fiber and antioxidants, a gentle sweet ending that will not rock your steady evening. Nice lighter dinner overall, exactly what you set out to do. Sitting calm at 115, this keeps the night on track.]",
     "type": "Dinner",
     "date": "2026-06-27T21:07:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-27/f2b194d96c44cae2.jpg",
@@ -4588,7 +4599,7 @@
   },
   {
     "id": "35e85ec7-0668-817f-b205-fda5a5431890",
-    "title": "Breakfast: Open-faced toast with jamón and manchego cheese, with half a plain yogurt (BG: 117 mg/dL Flat) (Pred: 169-179 mg/dL @ 12:48 PM) (Protein: 22g | Carbs: ~19g | Cals: ~275) [Coach: Solid protein-forward plate 🧀 ��� jamón and cheese stack the protein, half yogurt adds more plus gut-friendly probiotics, modest bread anchors it. Late breakfasts ride a bit higher with dawn cortisol; a walk after would help cap the peak.]  [id:ba527859]",
+    "title": "Breakfast: Open-faced toast with jamón and manchego cheese, with half a plain yogurt (BG: 117 mg/dL Flat) (Pred: 169-179 mg/dL @ 12:48 PM) (Protein: 22g | Carbs: ~19g | Cals: ~275) [Coach: Solid protein-forward plate 🧀 — jamón and cheese stack the protein, half yogurt adds more plus gut-friendly probiotics, modest bread anchors it. Late breakfasts ride a bit higher with dawn cortisol; a walk after would help cap the peak.]  [id:ba527859]",
     "type": "Breakfast",
     "date": "2026-05-11T11:21:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-11/43fb11a98e52ce3c.jpg",
