@@ -1,5 +1,16 @@
 [
   {
+    "id": "3bb85ec7-0668-81d4-805d-f4b15c4681e7",
+    "title": "Lunch: a coconut curry with sliced roast pork loin, cubed firm tofu, zucchini rounds and orange root vegetable, served without rice. This is very plainly the same dish family as the 2026-08-11 13:16 lunch, which she confirmed then as leftover coconut curry with roast pork loin added, carrying zucchini, carrot, yellow pepper and tofu — so this is read as leftovers of the same preparation, and the macros landing within a few grams of that entry is corroboration rather than coincidence. PORTIONS DERIVED BY COMPONENT COUNTING, NOT BY MOUND DEPTH, AND THAT CHOICE IS DELIBERATE: twice earlier today a bowl depth inferred from a photograph proved wrong by a factor of two, always low, so where individual pieces are visible and countable that is the sounder method and it is what was used here. Scale from the SPG card lying on the tablecloth at 85.6mm, whose long and short edges measured approximately 330 and 172 pixels giving 3.86 and 3.19 pixels per mm, a 21 percent disagreement from a camera angle near 40 degrees, so per the max rule 3.86 is the honest scale and only horizontal extents were used. The plate measures 815 pixels across, resolving to approximately 21cm after a small plane-offset correction for the rim sitting above the tablecloth, and the food covers roughly 14cm of it in a single layer. Counted components: six to seven pork slices of about 5 to 6cm by 2.5 to 3cm by 1 to 1.5cm, giving approximately 130g of cooked loin; five or six tofu cubes near 2cm giving about 45g; six to eight zucchini rounds and half-rounds near 3cm giving about 70g; roughly 30g of the orange root vegetable, read as carrot on the precedent of 2026-08-11 when Maria corrected an identical-looking orange round from sweet potato TO carrot, which matters because carrot carries about 3g of carbohydrate per 40g against 8g for sweet potato; and approximately 50ml of coconut sauce, which is where most of this meal's fat and calories sit. MINOR FLAG, NOT A QUESTION: there is a sauce smear at the to…",
+    "type": "Lunch",
+    "date": "2026-08-13T14:41:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-13/cde80ee6778c6a42.jpg",
+    "carbs": 9,
+    "cals": 375,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3bb85ec7-0668-8120-afe2-e5c74eb130f1",
     "title": "Snack: a bowl of deep purple-magenta vegetable chips, thin curled slices consistent with beet, alongside a small bowl of hummus topped with a chunky green and brown olive or herb relish. CLASSIFIED SNACK ON HER OWN WORD, WHICH OVERRIDES THE HOUR: 12:30 falls in the 11:00 to 15:59 Lunch band, but her message was the single word Snack, and explicit user text outranks the hour table. Only the agent's own context drift is barred from reclassifying, never Maria. Portions calibrated against the SPG card lying flat on the tablecloth at 85.6mm, whose long and short edges measured approximately 396 and 195 pixels giving 4.63 and 3.61 pixels per mm, a 28 percent disagreement from a shallow camera angle near 38 degrees, so per the max rule 4.63 is the honest scale and only horizontal extents were used. The chip bowl rim measures 525 pixels or 113mm apparent and corrects to approximately 10cm allowing for the rim sitting some 5cm above the tablecloth; its interior at food level resolves near 8.8cm, and the chips fill it loosely to roughly 3cm, giving approximately 120 to 150ml of very airy volume. CHIP WEIGHT IS THE SOFT NUMBER AND THE REASON IS DENSITY, NOT VOLUME: curled vegetable crisps pack at only about 0.15 to 0.2 g per ml, so that volume is roughly 25g, near a single one-ounce serving, and eight to ten large slices are visible which is consistent. The hummus bowl rim measures 335 pixels or 72mm apparent, correcting to about 6.5cm, a small dipping bowl, holding a rounded scoop of approximately 45g of hummus, near three tablespoons, with roughly 15g of the relish on top. TWO IDENTIFICATIONS ARE UNCONFIRMED AND BOTH ARE FLAGGED RATHER THAN HIDDEN. The chips are read as beet from the deep magenta and the visible ring structure; IF THEY ARE PURPLE SWEET POTATO INSTEAD, carbohydrate rises by roughly 4g and the predicted peak by about 5 mg/dL. They are also assumed oil-baked or fried in the commercial style at about 15g carbohydrate per 25g; a purely dehydrated chip with no oi…",
     "type": "Snack",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-13/99d77cbf43322978.jpg",
     "carbs": 54,
     "cals": 450,
-    "delta": null,
-    "peak": null
+    "delta": 54,
+    "peak": 151
   },
   {
     "id": "3bb85ec7-0668-817b-8a25-f8ede935fa00",
@@ -1596,7 +1607,7 @@
   },
   {
     "id": "39785ec7-0668-81f9-8ace-e47c7ca7d072",
-    "title": "Lunch: café con leche and a small Galicia biscuit (BG: 96 mg/dL Flat) (Pred: 116-136 mg/dL @ 2:22 PM) (Protein: 5g | Carbs: ~14g | Cals: ~120) [Coach: Look at that — BG back down to 96 after this morning, that's the recovery in action 👏. Coffee with a little milk and one small biscuit is a light, low-key stop. The biscuit's a touch of refined sugar but a small one. Nice easy choice, and great to see the number settled.]",
+    "title": "Lunch: café con leche and a small Galicia biscuit (BG: 96 mg/dL Flat) (Pred: 116-136 mg/dL @ 2:22 PM) (Protein: 5g | Carbs: ~14g | Cals: ~120) [Coach: Look at that — BG back down to 96 after this morning, that's the recovery in action ���. Coffee with a little milk and one small biscuit is a light, low-key stop. The biscuit's a touch of refined sugar but a small one. Nice easy choice, and great to see the number settled.]",
     "type": "Lunch",
     "date": "2026-07-08T13:07:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-08/b48f44b9c4a19104.jpg",
