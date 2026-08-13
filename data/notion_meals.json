@@ -1,5 +1,16 @@
 [
   {
+    "id": "3bb85ec7-0668-813c-b1c3-f975541fc1d1",
+    "title": "Breakfast: a bowl of plain yogurt with a small sapote cut into pieces, a tablespoon of pumpkin seeds and a teaspoon of flaxseed meal, alongside a slice of dark whole-grain toast spread generously with a nut butter. THE BOWL IS AS MARIA DESCRIBED IT AT 09:29 and its four components are taken from her words rather than guessed. THE TOAST IS NOT IN HER DESCRIPTION AND IS INCLUDED ON A JUDGEMENT CALL, FLAGGED HERE AS THE ONE THING SHE SHOULD CONTRADICT IF WRONG: it sits on its own small plate immediately beside her bowl, front and centre in the same place setting rather than at the back of the frame, and the round loaf it was cut from is visible on the board behind. It is included because omitting real carbohydrate is the more clinically consequential error of the two — the toast and its spread carry roughly 30g, more than the entire yogurt bowl. IF THE TOAST IS NOT HERS the meal falls to 24g carbohydrate, 8g protein and 190 calories, the carb factor rises from 0.8 to 1.2 as it crosses out of the 51g-plus band into the 16 to 30g band, and the prediction drops to 143 to 163 mg/dL. Yogurt taken as plain and unsweetened per her standing confirmation of 2026-08-12, so that is no longer an open assumption. Portions calibrated against the SPG card lying flat on the tablecloth at 85.6mm; the card is rotated and shot from a shallow angle, and solving its bounding box gives edges of approximately 372 and 195 pixels, so 4.35 and 3.61 pixels per mm, a 20 percent disagreement, and per the max rule 4.35 is the honest scale with only horizontal extents used. The bowl rim measures 680 pixels or 156mm apparent and corrects to approximately 13cm once the rim is allowed to sit some 7cm above the tablecloth plane; the contents surface measures 490 pixels or 113mm apparent, correcting to about 10cm at its own level. Treating the bowl interior as a spherical segment, a 10cm surface in a 13cm bowl sits roughly 2.2cm deep, giving approximately 95 to 140ml of contents and taken here at about …",
+    "type": "Breakfast",
+    "date": "2026-08-13T09:29:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-13/99d77cbf43322978.jpg",
+    "carbs": 54,
+    "cals": 450,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3bb85ec7-0668-817b-8a25-f8ede935fa00",
     "title": "Dinner (dessert course): a bowl of thick creamy white yogurt with fresh strawberry pieces stirred through it, five or six halves visible at the surface. MEALTYPE CLASSIFIED BY THE HOUR RULE AS DINNER, NOT DESSERT, and this is a deliberate call worth flagging: the photograph arrived at 20:05 with no accompanying text, and the classification rule states the hour is authoritative and that photo content and recent entries must NOT drive the decision, the only override being explicit words from the user. Functionally this is plainly an after-dinner dessert course and Maria can reclassify it in one word. THE CLASSIFICATION MATTERS LITTLE HERE: as Dessert the intercept would be −10 and the time-to-peak 105 minutes rather than 65, giving 108 to 128 mg/dL at 9:50 PM instead of the band below, a difference of about 10 mg/dL on a 7g carb load. Not cumulative with the 18:48 dinner, that being 1 hour 17 minutes earlier and outside the 1-hour window, so the live 113 was used as the anchor rather than the dinner's 100. Portions calibrated against the SPG card lying flat on the counter at 85.6mm, whose long and short edges measured approximately 350 and 190 pixels giving 4.09 and 3.52 pixels per mm respectively, a 16 percent disagreement caused by the shallow downward camera angle across the counter, so per the max rule 4.09 is the honest scale and only horizontal extents were used. The bowl rim measures 704 pixels across, which is 172mm apparent, and corrects to approximately 14cm once the rim is allowed to sit some 8cm above the card plane and therefore image larger than it is. The yogurt surface measures 422 pixels or 103mm apparent, correcting to roughly 9cm across at its own level. Treating the bowl interior as a spherical segment, a 9cm surface in a 14cm bowl sits only 1.6 to 2.5cm deep, giving approximately 80 to 120ml of contents, so ROUGHLY A THIRD TO A HALF CUP and taken here at about 100ml, of which approximately 80g yogurt and 35g strawberries. THE YOGURT IS ASSUMED PL…",
     "type": "Dinner",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-12/119a1383f1ff017c.jpg",
     "carbs": 7,
     "cals": 85,
-    "delta": null,
-    "peak": null
+    "delta": 9,
+    "peak": 122
   },
   {
     "id": "3bb85ec7-0668-8189-a977-f17b31992a46",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-12/f1e28668b10f409f.jpg",
     "carbs": 33,
     "cals": 375,
-    "delta": null,
-    "peak": null
+    "delta": 54,
+    "peak": 149
   },
   {
     "id": "3ba85ec7-0668-81b1-9a41-d32195b36541",
@@ -969,7 +980,7 @@
   },
   {
     "id": "3a685ec7-0668-8118-9204-f76818300530",
-    "title": "Lunch: leftover chicken lettuce wraps (minced chicken with water chestnuts over iceberg lettuce) (BG: 158 mg/dL Flat) (Pred: 153-173 mg/dL @ 3:21 PM) (Protein: 12g | Carbs: ~10g | Cals: ~150) [Coach: Yesterday's lettuce-wrap leftovers put to good work ���� — light on carbs, decent protein, and barely a ripple for your BG, which is already running a bit warm after all that gardening. Perfect refuel without piling on. Great instinct.]",
+    "title": "Lunch: leftover chicken lettuce wraps (minced chicken with water chestnuts over iceberg lettuce) (BG: 158 mg/dL Flat) (Pred: 153-173 mg/dL @ 3:21 PM) (Protein: 12g | Carbs: ~10g | Cals: ~150) [Coach: Yesterday's lettuce-wrap leftovers put to good work 🥬 — light on carbs, decent protein, and barely a ripple for your BG, which is already running a bit warm after all that gardening. Perfect refuel without piling on. Great instinct.]",
     "type": "Lunch",
     "date": "2026-07-23T14:11:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-23/7184d73354a02a14.jpg",
@@ -2025,7 +2036,7 @@
   },
   {
     "id": "38c85ec7-0668-81fa-85b8-f74a0d0629f8",
-    "title": "Dinner: a multigrain sandwich with cheese and cured ham, plus 1/2 cup blueberries (BG: 115 mg/dL Flat) (Pred: 140-160 mg/dL @ 10:02 PM) (Protein: 24g | Carbs: ~39g | Cals: ~392) [Coach: Blueberries to finish 🫐 — whole fruit with fiber and antioxidants, a gentle sweet ending that will not rock your steady evening. Nice lighter dinner overall, exactly what you set out to do. Sitting calm at 115, this keeps the night on track.]",
+    "title": "Dinner: a multigrain sandwich with cheese and cured ham, plus 1/2 cup blueberries (BG: 115 mg/dL Flat) (Pred: 140-160 mg/dL @ 10:02 PM) (Protein: 24g | Carbs: ~39g | Cals: ~392) [Coach: Blueberries to finish ��� — whole fruit with fiber and antioxidants, a gentle sweet ending that will not rock your steady evening. Nice lighter dinner overall, exactly what you set out to do. Sitting calm at 115, this keeps the night on track.]",
     "type": "Dinner",
     "date": "2026-06-27T21:07:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-27/f2b194d96c44cae2.jpg",
@@ -4577,7 +4588,7 @@
   },
   {
     "id": "35e85ec7-0668-817f-b205-fda5a5431890",
-    "title": "Breakfast: Open-faced toast with jamón and manchego cheese, with half a plain yogurt (BG: 117 mg/dL Flat) (Pred: 169-179 mg/dL @ 12:48 PM) (Protein: 22g | Carbs: ~19g | Cals: ~275) [Coach: Solid protein-forward plate 🧀 — jamón and cheese stack the protein, half yogurt adds more plus gut-friendly probiotics, modest bread anchors it. Late breakfasts ride a bit higher with dawn cortisol; a walk after would help cap the peak.]  [id:ba527859]",
+    "title": "Breakfast: Open-faced toast with jamón and manchego cheese, with half a plain yogurt (BG: 117 mg/dL Flat) (Pred: 169-179 mg/dL @ 12:48 PM) (Protein: 22g | Carbs: ~19g | Cals: ~275) [Coach: Solid protein-forward plate 🧀 ��� jamón and cheese stack the protein, half yogurt adds more plus gut-friendly probiotics, modest bread anchors it. Late breakfasts ride a bit higher with dawn cortisol; a walk after would help cap the peak.]  [id:ba527859]",
     "type": "Breakfast",
     "date": "2026-05-11T11:21:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-11/43fb11a98e52ce3c.jpg",
