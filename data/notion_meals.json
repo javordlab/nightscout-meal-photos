@@ -1,5 +1,16 @@
 [
   {
+    "id": "3bb85ec7-0668-817b-8a25-f8ede935fa00",
+    "title": "Dinner (dessert course): a bowl of thick creamy white yogurt with fresh strawberry pieces stirred through it, five or six halves visible at the surface. MEALTYPE CLASSIFIED BY THE HOUR RULE AS DINNER, NOT DESSERT, and this is a deliberate call worth flagging: the photograph arrived at 20:05 with no accompanying text, and the classification rule states the hour is authoritative and that photo content and recent entries must NOT drive the decision, the only override being explicit words from the user. Functionally this is plainly an after-dinner dessert course and Maria can reclassify it in one word. THE CLASSIFICATION MATTERS LITTLE HERE: as Dessert the intercept would be −10 and the time-to-peak 105 minutes rather than 65, giving 108 to 128 mg/dL at 9:50 PM instead of the band below, a difference of about 10 mg/dL on a 7g carb load. Not cumulative with the 18:48 dinner, that being 1 hour 17 minutes earlier and outside the 1-hour window, so the live 113 was used as the anchor rather than the dinner's 100. Portions calibrated against the SPG card lying flat on the counter at 85.6mm, whose long and short edges measured approximately 350 and 190 pixels giving 4.09 and 3.52 pixels per mm respectively, a 16 percent disagreement caused by the shallow downward camera angle across the counter, so per the max rule 4.09 is the honest scale and only horizontal extents were used. The bowl rim measures 704 pixels across, which is 172mm apparent, and corrects to approximately 14cm once the rim is allowed to sit some 8cm above the card plane and therefore image larger than it is. The yogurt surface measures 422 pixels or 103mm apparent, correcting to roughly 9cm across at its own level. Treating the bowl interior as a spherical segment, a 9cm surface in a 14cm bowl sits only 1.6 to 2.5cm deep, giving approximately 80 to 120ml of contents, so ROUGHLY A THIRD TO A HALF CUP and taken here at about 100ml, of which approximately 80g yogurt and 35g strawberries. THE YOGURT IS ASSUMED PL…",
+    "type": "Dinner",
+    "date": "2026-08-12T20:05:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-12/119a1383f1ff017c.jpg",
+    "carbs": 7,
+    "cals": 85,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3bb85ec7-0668-8189-a977-f17b31992a46",
     "title": "Dinner: an open-faced beef burger on the bottom half of a crusty roll, cooked to a pink centre, with two large butter lettuce leaves alongside and a segment of corn on the cob dusted with black pepper. Portions calibrated against the SPG card lying flat on the plate at 85.6mm, whose long and short edges measured approximately 382 and 191 pixels giving 4.46 and 3.54 pixels per mm respectively. THAT IS A 26 PERCENT DISAGREEMENT, far outside the 10 percent tolerance, because this photograph was taken from a shallow angle of roughly 40 degrees rather than overhead, which foreshortens the card's short edge badly. Per the max rule the larger figure of 4.46 is the honest scale, and it is trustworthy only along the HORIZONTAL axis of the frame, which runs across the line of sight and is therefore not compressed; every measurement below was taken along that axis for exactly that reason, and vertical extents in the image were not used for plate-plane distances. Cross-checked against the plate, which measures 945 pixels across its horizontal axis and resolves to approximately 21cm, a standard dinner plate, consistent with the card. No plane-offset correction applies between card and food since the card rests on the plate itself rather than on the table. THE SHALLOW ANGLE MAKES THIS ROW LESS PRECISE THAN A TOP-DOWN SHOT and the numbers should be read as a band rather than point values. Measurements: the beef patty spans about 6.3cm across and stands roughly 2cm thick, a thick coarsely-ground patty rather than a flat one, giving approximately 70g cooked; the bread is a single bottom half of a small crusty roll near 7.5cm across by 2.5cm thick, approximately 35 to 40g; the corn segment measures about 12.5cm of cob length with its left end partly hidden behind the lettuce, so roughly two thirds of a full ear, giving approximately 70g of kernels; and the two butter lettuce leaves total approximately 30g. THE CORN LOOKS GLOSSY and a light butter or oil coating is assumed at about 3…",
     "type": "Dinner",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-12/ac1ced09a67fd122.jpg",
     "carbs": 23,
     "cals": 275,
-    "delta": null,
-    "peak": null
+    "delta": 103,
+    "peak": 180
   },
   {
     "id": "3ba85ec7-0668-8199-b4ca-ebb33e555d1b",
@@ -958,7 +969,7 @@
   },
   {
     "id": "3a685ec7-0668-8118-9204-f76818300530",
-    "title": "Lunch: leftover chicken lettuce wraps (minced chicken with water chestnuts over iceberg lettuce) (BG: 158 mg/dL Flat) (Pred: 153-173 mg/dL @ 3:21 PM) (Protein: 12g | Carbs: ~10g | Cals: ~150) [Coach: Yesterday's lettuce-wrap leftovers put to good work 🥬 — light on carbs, decent protein, and barely a ripple for your BG, which is already running a bit warm after all that gardening. Perfect refuel without piling on. Great instinct.]",
+    "title": "Lunch: leftover chicken lettuce wraps (minced chicken with water chestnuts over iceberg lettuce) (BG: 158 mg/dL Flat) (Pred: 153-173 mg/dL @ 3:21 PM) (Protein: 12g | Carbs: ~10g | Cals: ~150) [Coach: Yesterday's lettuce-wrap leftovers put to good work ���� — light on carbs, decent protein, and barely a ripple for your BG, which is already running a bit warm after all that gardening. Perfect refuel without piling on. Great instinct.]",
     "type": "Lunch",
     "date": "2026-07-23T14:11:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-23/7184d73354a02a14.jpg",
