@@ -1,5 +1,16 @@
 [
   {
+    "id": "3bc85ec7-0668-8134-8304-c743c042f39b",
+    "title": "Dinner: a soup plate of lentil stew, lentejas, with chunks of potato and diced carrot in a paprika-tomato broth, topped with a piece of stewed pork off the bone, eaten with a wooden spoon. Portions calibrated against the SPG card lying flat on the placemat at 85.6mm, giving roughly 2.7 px/mm; that scales the soup plate to about 23cm as measured and about 21cm after correcting for the plate sitting roughly 3cm above the card's plane at a 40cm camera distance, which is a standard European plato hondo and confirms the card reading. The plate's ellipse, about 525px deep against 615px wide, puts the viewing angle near 31 degrees off vertical, so the depth axis of the food footprint was expanded by cos 31 to undo the compression. The lentil bed covers approximately 15cm of the plate at an average depth of about 1.5cm, giving roughly 265ml or a generous cup, which breaks down as approximately 160g of cooked lentils, 50g of potato in three or four chunks, 20g of carrot and about 50ml of oily paprika broth. The pork piece measures roughly 6.5 by 4 by 2.5cm once allowance is made for it sitting a further 2cm above the plate plane on top of the lentils, giving approximately 35g of meat. Depth is the least certain term here since the plate well hides it, so the honest volume range is 210 to 350ml and the carb figure moves with it. Fiber is high at roughly 12g of the 45g total, which is why this is expected to rise slowly. (BG: 74 mg/dL Flat) (Pred: 120-140 mg/dL @ 7:46 PM) (Protein: 24g | Carbs: ~45g | Cals: ~420) [Coach: Starting at 74 you were right to eat, and lentils are close to the ideal thing to come up on — about 12g of fiber means those 45g of carbs arrive slowly rather than all at once. Protein lands at 24g between the lentils and the pork, right in your target range. Genuinely well built.]",
+    "type": "Dinner",
+    "date": "2026-08-13T18:41:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-13/80e0dac0e959b924.jpg",
+    "carbs": 45,
+    "cals": 420,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3bb85ec7-0668-81d4-805d-f4b15c4681e7",
     "title": "Lunch: a coconut curry with sliced roast pork loin, cubed firm tofu, zucchini rounds and orange root vegetable, served without rice. This is very plainly the same dish family as the 2026-08-11 13:16 lunch, which she confirmed then as leftover coconut curry with roast pork loin added, carrying zucchini, carrot, yellow pepper and tofu — so this is read as leftovers of the same preparation, and the macros landing within a few grams of that entry is corroboration rather than coincidence. PORTIONS DERIVED BY COMPONENT COUNTING, NOT BY MOUND DEPTH, AND THAT CHOICE IS DELIBERATE: twice earlier today a bowl depth inferred from a photograph proved wrong by a factor of two, always low, so where individual pieces are visible and countable that is the sounder method and it is what was used here. Scale from the SPG card lying on the tablecloth at 85.6mm, whose long and short edges measured approximately 330 and 172 pixels giving 3.86 and 3.19 pixels per mm, a 21 percent disagreement from a camera angle near 40 degrees, so per the max rule 3.86 is the honest scale and only horizontal extents were used. The plate measures 815 pixels across, resolving to approximately 21cm after a small plane-offset correction for the rim sitting above the tablecloth, and the food covers roughly 14cm of it in a single layer. Counted components: six to seven pork slices of about 5 to 6cm by 2.5 to 3cm by 1 to 1.5cm, giving approximately 130g of cooked loin; five or six tofu cubes near 2cm giving about 45g; six to eight zucchini rounds and half-rounds near 3cm giving about 70g; roughly 30g of the orange root vegetable, read as carrot on the precedent of 2026-08-11 when Maria corrected an identical-looking orange round from sweet potato TO carrot, which matters because carrot carries about 3g of carbohydrate per 40g against 8g for sweet potato; and approximately 50ml of coconut sauce, which is where most of this meal's fat and calories sit. MINOR FLAG, NOT A QUESTION: there is a sauce smear at the to…",
     "type": "Lunch",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-13/cde80ee6778c6a42.jpg",
     "carbs": 9,
     "cals": 375,
-    "delta": null,
-    "peak": null
+    "delta": -3,
+    "peak": 127
   },
   {
     "id": "3bb85ec7-0668-8120-afe2-e5c74eb130f1",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-13/1bbbe4b640787e51.jpg",
     "carbs": 22,
     "cals": 240,
-    "delta": null,
-    "peak": null
+    "delta": 19,
+    "peak": 137
   },
   {
     "id": "3bb85ec7-0668-813c-b1c3-f975541fc1d1",
