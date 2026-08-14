@@ -1,5 +1,16 @@
 [
   {
+    "id": "3bc85ec7-0668-81d3-a058-dccad2eabd87",
+    "title": "Breakfast: a bowl of plain homemade yogurt heaped with hemp hearts, whole cashews, chunks of red-skinned apple with the skin left on, and a scatter of black sesame seeds. PORTIONS TAKEN FROM THE STORED BOWL ANCHOR RATHER THAN FROM PHOTO DEPTH, WHICH IS THE CORRECTION LEARNED YESTERDAY: her yogurt bowl was established at approximately 220ml capacity on 2026-08-13 after I read it as 120ml from an image, so capacity is used here as the primary input and the photo only confirms it. That confirmation does hold — the SPG card lying on the placemat gives roughly 3.8 px/mm at the mat plane, the bowl rim images at about 478px across, and correcting for the rim sitting roughly 7cm above the mat and nearer the lens at an estimated 45cm distance gives an outer rim of about 106mm and an inner of about 95mm, which for a rounded bowl implies roughly 224ml. TWO INDEPENDENT ROUTES AGREEING AT 220 TO 225ml IS THE FIRST TIME THAT HAS HAPPENED IN THIS LOG. Note the geometry is still the weaker arrangement flagged on 2026-08-13: the card is on the placemat while the food is up in an elevated bowl, so they are NOT in the same plane, and the agreement above should be read as the stored anchor being confirmed rather than as the card having become reliable at different depths. Contents fill the bowl to the rim with a central mound, so about 220 to 250ml total, apportioned as approximately 140g of yogurt forming the base, a generous 25g or about two and a half tablespoons of hemp hearts in the central pile, 12g of whole cashews at roughly nine nuts counted directly off the image, about 70g of apple across the visible red-skinned chunks, and roughly 2g of black sesame. Hemp is the dominant macro contributor here despite its small volume, supplying nearly half the protein and a third of the calories at 31.6g protein and 553 calories per 100g. Yogurt taken as plain and unsweetened at 4.7g carbohydrate per 100g per her confirmed homemade preparation, never sweetened. ALSO IN FRAME AND DELIBERAT…",
+    "type": "Breakfast",
+    "date": "2026-08-14T10:15:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-14/0e923045b8acd147.jpg",
+    "carbs": 23,
+    "cals": 335,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3bc85ec7-0668-81a5-8701-ed0dd727853a",
     "title": "Dinner (evening fruit): one whole dark purple-red plum or pluot with pale speckling and skin intact, uncut, resting on a paper towel in low kitchen light. NO SPG CARD IN FRAME, so the scale reference is the AirPods Pro case lying beside it, and THIS IS A DELIBERATELY WEAKER REFERENCE THAN THE CARD AND THE ENTRY SHOULD BE READ THAT WAY: the case is a three-dimensional box at 60.6 by 45.2 by 21.7mm rather than a flat rectangle, so which face is presented and how much of the depth wall is visible are both ambiguous in this lighting, and unlike the card it cannot yield a viewing angle by aspect comparison. Taking the case's largest in-frame extent of about 290px as its 60.6mm long dimension gives roughly 4.8 px/mm. The plum images at about 362px across by 340px, near enough circular, WHICH IS THE ONE THING THAT MAKES THIS TRACTABLE: a sphere silhouettes as a circle from every angle, so unlike the lentil plate and the bread slice there is no depth-axis or thickness term to get wrong here, and today's three under-reads do not apply. Raw diameter is therefore about 73mm, but the plum is a ball sitting ON the towel with its centre roughly 35mm above the reference plane while the case sits flat, so the plane-offset correction at an estimated 30cm camera distance is 265 over 300 or 0.883, giving A CORRECTED DIAMETER OF ABOUT 65mm. Treating it as slightly oblate at 6.5 by 6.5 by 5.8cm gives approximately 128ml, so about 120g gross and roughly 115g of flesh once the pit is removed. THAT IS A LARGE PLUM, well above the USDA large at 66g, which is consistent with the deep colour and speckling of a pluot or Black Splendor rather than a supermarket red plum, but the honest range given the softer reference is 100 to 140g and the carb figure moves about 2g across it. Macros taken at pluot values of roughly 13g carbohydrate and 55 calories per 100g rather than common plum values, since the fruit reads as one of the sweeter dark cultivars. NOT CUMULATIVE: the previous food was the 18:…",
     "type": "Dinner",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-13/88562043f1aea4be.jpg",
     "carbs": 14,
     "cals": 65,
-    "delta": null,
-    "peak": null
+    "delta": 23,
+    "peak": 146
   },
   {
     "id": "3bc85ec7-0668-812f-a3b0-ccabab715ae4",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-13/029e87f7d3239210.jpg",
     "carbs": 10,
     "cals": 55,
-    "delta": null,
-    "peak": null
+    "delta": 64,
+    "peak": 146
   },
   {
     "id": "3bc85ec7-0668-8134-8304-c743c042f39b",
@@ -29,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-13/80e0dac0e959b924.jpg",
     "carbs": 45,
     "cals": 420,
-    "delta": null,
-    "peak": null
+    "delta": 61,
+    "peak": 135
   },
   {
     "id": "3bb85ec7-0668-81d4-805d-f4b15c4681e7",
