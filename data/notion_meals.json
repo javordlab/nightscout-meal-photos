@@ -1,5 +1,16 @@
 [
   {
+    "id": "3bd85ec7-0668-81cb-be6f-cc71bea0b55b",
+    "title": "Lunch (cont.): SEVEN dark sweet cherries with stems attached, laid out individually on the floral placemat rather than heaped. THE ARRANGEMENT IS THE STORY OF THIS ENTRY AND IT SOLVES YESTERDAY'S PROBLEM: on 2026-08-14 a piled cluster was counted as eight and Maria corrected it to six, the lesson being that overlapping glossy fruit distorts a count in BOTH directions. Here every cherry is physically separate with mat visible between them, so the count is direct observation rather than an estimate off a heap, and SEVEN is stated with confidence. THE CARD LIES ON THE SAME PLACEMAT AS THE FRUIT, which per the 2026-08-13 plum lesson is the good geometry: reference and food share a plane, so this is a point estimate rather than the range a distant reference would force. Card measures roughly 400 px on the long edge by 255 px on the short, an apparent aspect of 1.57 against the true 1.586, so it is essentially square-on to the lens and this is a near top-down frame, giving 4.72 px/mm at the card's own position low in the frame. The cherries sit higher in frame and therefore farther from the lens, so their scale is nearer 4.3 to 4.5 px/mm; their measured widths run 110 to 130 px with a mean of about 119, which resolves to ROUGHLY 26 TO 27mm PER CHERRY, a good-sized sweet cherry rather than an average one. Taken as slightly flattened spheres near 8.5ml each that is about 9g with the pit and 8g of flesh, so SEVEN CHERRIES IS ABOUT 60g WITH PITS AND 56g EDIBLE, giving 9g of carbohydrate, 0.6g of protein and 35 calories at the USDA sweet-cherry figures of 16g carb and 63 calories per 100g. CUMULATIVE WITH THE 13:52 LUNCH, 14 MINUTES EARLIER AND WELL INSIDE THE HOUR, so the preBG anchor is the FIRST item's 84 mg/dL and NOT the live 93 mg/dL now showing, which is already mid-digestion and would inflate the projection. Carbs summed across both plates for the Model v5 recomputation. [Cumulative Lunch: 49g carbs total] (BG: 84 mg/dL Flat) (Pred: 129-149 mg/dL @ 3:16 PM) (Protein: …",
+    "type": "Lunch",
+    "date": "2026-08-15T14:06:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-15/21bd527dbbceca6d.jpg",
+    "carbs": 9,
+    "cals": 35,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3bd85ec7-0668-8161-8630-d5cfa41fcffe",
     "title": "Lunch: a mezze plate on her small yellow-rimmed ICE CREAM dessert plate — raw broccoli florets, a large double scoop of hummus with an orange-tinted second flavour spooned over one side, a pile of thin dark purple beet chips, and a fan of pale seeded crackers. SCALE REFERENCE IS THE SPG CARD AT 85.6mm BUT IT LIES ON THE PLACEMAT, NOT ON THE PLATE, so it does not share the food's plane and every figure here is an estimate with a plane correction applied rather than a direct reading. Card measures about 323 px on the long edge by 208 px on the short, an apparent aspect of 1.55 against the true 1.586, so it is very nearly square-on to the lens and gives about 3.85 px/mm at its own position on the mat. The plate ellipse runs 680 px across by 485 px deep, so cos theta is about 0.713 and THE VIEWING ANGLE IS ROUGHLY 44 DEGREES, at the steep end of the useful band and therefore good for reading height off the side of the hummus. The plate sits farther from the lens than the card, so about 3.5 px/mm at the food, which scales the plate to roughly 19 to 20cm and confirms it is a dessert plate rather than a dinner plate — worth stating because the same pile on a 26cm plate would have been read as half again as much food. PER COMPONENT: hummus footprint about 8.5cm with its front edge standing roughly 65 px proud of the plate, which at sin theta 0.70 is a measured 2.6cm of height rather than an assumed dome, giving a spherical cap near 78ml, and about 67ml after the 0.857 volume correction for the food sitting some 2cm above the card's plane, so ROUGHLY 70g OR A QUARTER CUP of hummus. Broccoli florets about 3cm per head across roughly six heads in a single layer, about 90g or a cup of florets. Beet chips are thin and airy and their pile volume badly overstates their mass, per the 2026-08-14 bowl lesson, so they are carried at about 18g rather than by volume. Seven seeded crackers at about 4cm each, roughly 22g. A single white oblong tablet also lies on the placemat and is not …",
     "type": "Lunch",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-15/14c234e42481ee5d.jpg",
     "carbs": 19,
     "cals": 320,
-    "delta": null,
-    "peak": null
+    "delta": 72,
+    "peak": 166
   },
   {
     "id": "3bd85ec7-0668-8102-9fb2-eae99c8b597b",
