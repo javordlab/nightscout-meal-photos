@@ -1,5 +1,16 @@
 [
   {
+    "id": "3bd85ec7-0668-81aa-9589-e9f9622cbb1b",
+    "title": "Breakfast: one fried egg, sunny side up with the yolk whole and a heavy grind of black pepper over it, plus an open-faced slice of her own homemade whole grain multi-seed bread with jamon serrano draped over it in folded slices. THE SCALE REFERENCE IS THE SPG CARD AT 85.6mm BUT IT IS LYING ON THE PLACEMAT, NOT ON THE PLATE, so it does not share the food's plane and this entry is a range rather than a point estimate, per the 2026-08-13 plum lesson. Card measures roughly 300 px on the long edge and 200 px on the short, giving about 3.7 px/mm at the card's own position; the plate ellipse cross-checks it at 865 px across by 675 px deep, so cos theta about 0.78 and a viewing angle near 39 degrees, which is squarely in the useful 30-45 range. Correcting the card scale for the plate being farther from the lens and the food sitting about 2cm above the mat gives about 3.6 px/mm at the food, so the plate is roughly 24cm and the egg white about 13.5cm across, one large fried egg at roughly 55g cooked in a little oil. THE BREAD IS NOT RE-MEASURED FROM THE PHOTO: it is one slice of her known 9x5 loaf and is carried at the standing 45g and 18g of carbs per the loaf calibration, which outranks any pixel estimate of a slice partly hidden under ham. The ham covers the full slice and ruffles over its far edge in what reads as two or three very thin slices, estimated at about 35g of serrano, the least certain number here since drape hides layers. A single white oblong tablet also sits on the plate rim and is not food, so it carries no macros and no Medication row is written from it. (BG: 94 mg/dL Flat) (Pred: 135-155 mg/dL @ 11:44 AM) (Protein: 22g | Carbs: ~19g | Cals: ~320) [Coach: Egg and ham put about 22g of protein on the plate before noon, and with a single slice of your bread the carbs stay down at 19g. Starting from 94, that is a gentle morning. Some sliced tomato or peppers alongside would round it right out.]",
+    "type": "Breakfast",
+    "date": "2026-08-15T10:29:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-15/14c234e42481ee5d.jpg",
+    "carbs": 19,
+    "cals": 320,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3bd85ec7-0668-8102-9fb2-eae99c8b597b",
     "title": "Dinner (dessert course): four dark-chocolate-covered cashews, one of them already bitten into and showing the whole cashew inside, with a small pile of dark sweet cherries on their stems, PLUS THREE STRAWBERRIES THAT ARE NOT IN THE PHOTO. Her words at 20:34 were add three strawberries to the picture, which is her supplying an item the frame does not contain, the mirror image of the six-oyster count at 19:01 where the frame under-showed what was served. TWO COUNTS HERE HAVE DIFFERENT CONFIDENCE AND THE DIFFERENCE IS STATED RATHER THAN GLOSSED. The strawberries and the chocolate cashews are solid: she stated three strawberries outright, and the four cashews are individually separated on the towel with clear space between them, so nothing can hide. THE CHERRIES ARE THE WEAK COUNT AT ABOUT EIGHT VISIBLE, because they are PILED IN A CLUSTER rather than laid out flat and the lower layer can conceal fruit, which is precisely the failure the oysters demonstrated ninety minutes ago when only three of six were in frame. The count is therefore recorded as eight to ten with eight used, worth about 2g of carbohydrate across that spread. NO SCALE REFERENCE IN FRAME and none needed, since every item here is a countable unit of well-known size rather than a portion of bulk food, which is the easiest measurement case there is. Build: four chocolate-covered cashews at roughly 4g each, a whole cashew being about 1.4g and the dark chocolate shell carrying the rest, so about 16g total giving 7g carbohydrate, 2g protein and 85 calories; eight sweet cherries at roughly 8g gross each, about 58g of flesh once the pits are out, giving 9g carbohydrate and 37 calories; three medium strawberries at roughly 12g each for 36g, giving 3g carbohydrate and 12 calories. THE FRUIT IS TWO THIRDS OF THE CARBOHYDRATE AND ONE THIRD OF THE CALORIES, the chocolate the reverse, which is the right way round for a dessert. NOT CUMULATIVE: the 19:12 chicken course was 1 hour 22 minutes earlier, outside the 1-ho…",
     "type": "Dinner",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-14/914b4c6b29f819c9.jpg",
     "carbs": 19,
     "cals": 135,
-    "delta": null,
-    "peak": null
+    "delta": 19,
+    "peak": 125
   },
   {
     "id": "3bd85ec7-0668-81e8-9e8e-df4ca7f0d4c2",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-14/dbd7eecc3d8aaca1.jpg",
     "carbs": 18,
     "cals": 425,
-    "delta": null,
-    "peak": null
+    "delta": 32,
+    "peak": 125
   },
   {
     "id": "3bd85ec7-0668-8150-8798-c6850c57e6e3",
@@ -29,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-14/7ab0ae382f315718.jpg",
     "carbs": 19,
     "cals": 240,
-    "delta": null,
-    "peak": null
+    "delta": 31,
+    "peak": 125
   },
   {
     "id": "3bc85ec7-0668-81a9-9d8b-f4a6d4d7e988",
