@@ -1,5 +1,16 @@
 [
   {
+    "id": "3bd85ec7-0668-8150-8798-c6850c57e6e3",
+    "title": "Dinner (first course): six raw oysters on the half shell with a pool of red cocktail sauce for dipping, served on a slate alongside a blue bowl of sauteed dark leafy greens tossed with shredded carrot. She flagged this explicitly as a FIRST COURSE, so a second course is expected and, if it lands inside the hour, will be logged as a cumulative continuation anchored on THIS entry's preBG of 94 rather than on the live reading at that time. COUNT STATED BY MARIA AT SIX, and only three oysters are visible in frame, which is the entire reason the count matters: a photo-derived count would have been WRONG BY HALF here and no amount of measurement care would have caught it. Her stated count is used verbatim, exactly as her 1.5 cups, her 8oz bowl and her 18 slices were earlier. NO SCALE REFERENCE IN FRAME — no SPG card, and the blue bowl is not the 237ml one already anchored — so nothing here is measured against a known object and PORTIONS COME FROM STANDARD SIZES RATHER THAN FROM GEOMETRY, which is stated plainly rather than dressed up as a measurement. The shells read as medium-to-large Pacific oysters at roughly 8 to 9cm, yielding ABOUT 18g of meat each or roughly 110g total, with an honest range of 90 to 130g. Macros at USDA Pacific oyster values of 81 calories, 9.45g protein and 4.95g carbohydrate per 100g; note oysters DO carry carbohydrate as glycogen, about 5g here, which is easy to forget on a food that reads as pure protein. Cocktail sauce taken at roughly 2 tablespoons for about 6g carbohydrate and 25 calories, that being ketchup-based and the single sweetest item on the plate. Greens estimated at roughly a cup cooked, about 120g of leaves plus 35g of shredded carrot, with a couple of teaspoons of cooking oil, giving about 8g carbohydrate, 4g protein and 125 calories. THE GREENS ARE COUNTED because they are fully in frame, per her own rule of 2026-08-13 that full framing signals intent. Recorded without comment to her: dark leafy greens at dinner run against her …",
+    "type": "Dinner",
+    "date": "2026-08-14T19:01:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-14/7ab0ae382f315718.jpg",
+    "carbs": 19,
+    "cals": 240,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3bc85ec7-0668-81a9-9d8b-f4a6d4d7e988",
     "title": "Lunch: two roast poultry drumsticks with crisp browned skin and pale torn meat still attached, served on a plate, with a thick slice of her own homemade whole grain multi-seed bread and half an apple cut face up alongside on the placemat. All three items are FULLY IN FRAME and are therefore all counted, per her stated rule of 2026-08-13 that full framing means intent and only something sneaking into a corner is accidental. TWO DIFFERENT GEOMETRIES IN ONE SHOT AND THEY DESERVE DIFFERENT CONFIDENCE. The bread and the apple sit on the placemat WITH the SPG card, same plane, so they are measured by direct ratio against the card and are the trustworthy half: the card images with a long axis of about 271px, the bread at about 380px long by 190px tall giving roughly 120 by 60mm, near enough identical to the 123 by 71mm slice measured this morning off the same loaf, so it is taken as the SAME SLICE SIZE at about 50g. The apple half spans about 205px across frame giving roughly 65mm at the mat plane, about 60mm after correcting for its own 35mm centre height, so a whole apple of about 130g and A HALF AT ABOUT 65g. THE CHICKEN IS THE WEAK HALF AND IS DELIBERATELY GIVEN A RANGE RATHER THAN A POINT VALUE: it sits on an ELEVATED PLATE, a different plane from the card, which is exactly the arrangement that produced the 2x plum error on 2026-08-13, so no point estimate is warranted. The plate reads about 737px across, or 233mm at the mat plane and roughly 222mm after plane correction. The left drumstick spans about 552px, which is 2.04 times the card's long axis and therefore ABOUT 174mm at the mat plane or 159mm corrected — LONG FOR CHICKEN AND MORE TYPICAL OF TURKEY, and the possibility that these are turkey drumsticks rather than chicken is left open here because the macros barely differ, roughly 216 versus 208 calories and 27 versus 28g protein per 100g. Volumes as tapered cylinders less about a quarter for bone give roughly 105g and 115g, so ABOUT 190g OF MEAT AND SKIN TOTAL…",
     "type": "Lunch",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-14/2f8b572172db8f2c.jpg",
     "carbs": 29,
     "cals": 585,
-    "delta": null,
-    "peak": null
+    "delta": 56,
+    "peak": 160
   },
   {
     "id": "3bc85ec7-0668-8164-98fa-d04fb0eaf6c8",
@@ -4797,7 +4808,7 @@
   },
   {
     "id": "35e85ec7-0668-815a-9789-d6b837707466",
-    "title": "Lunch: Slice of rustic bread [Cumulative Lunch: ~37g carbs total] (BG: 111 mg/dL Flat) (Pred: 145-155 mg/dL @ 4:11 PM) (Protein: 3g | Carbs: ~15g | Cals: ~80) [Coach: Bread for the olive oil 🥖 — cumulative carbs go up but the chard/potato base is fiber-rich, so it should still land in a friendly range.]  [id:2526522d]",
+    "title": "Lunch: Slice of rustic bread [Cumulative Lunch: ~37g carbs total] (BG: 111 mg/dL Flat) (Pred: 145-155 mg/dL @ 4:11 PM) (Protein: 3g | Carbs: ~15g | Cals: ~80) [Coach: Bread for the olive oil ���� — cumulative carbs go up but the chard/potato base is fiber-rich, so it should still land in a friendly range.]  [id:2526522d]",
     "type": "Lunch",
     "date": "2026-05-07T14:24:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-07/288e5e17b45a0d2b.jpg",
