@@ -1,5 +1,16 @@
 [
   {
+    "id": "3be85ec7-0668-8168-9cd3-ef14bd8f5093",
+    "title": "Snack: half a red-skinned apple, cut face up on the floral placemat with the core and two pips visible, skin left on. CLASSIFIED SNACK ON THE HOUR TABLE: 16:57 sits in the 16:00 to 17:59 Snack band. NOT CUMULATIVE — the previous food was the 14:06 cherries, 2 hours 51 minutes earlier, so the live 113 mg/dL is the honest preBG rather than a mid-digestion reading. CARD AND APPLE SHARE THE PLACEMAT, the good geometry, but TWO OPPOSING CORRECTIONS APPLY HERE AND THEY VERY NEARLY CANCEL, which is worth writing out because taking either one alone would have been wrong in a different direction. The card images about 367 px on its long edge by 225 px on its short, an apparent aspect of 1.63 against the true 1.586, giving 4.29 px/mm at the card's own position. The apple's cut face spans about 322 px across frame, the across-frame axis that needs no depth correction, which is a naive 75mm. FIRST CORRECTION, DOWNWARD: the cut face is not on the mat, it is the top of a half apple lying dome-down, some 40mm above the card's plane and therefore nearer the lens, which at a 40cm working distance images it about 10 percent large. SECOND CORRECTION, UPWARD: the apple sits roughly 500 px higher in the frame than the card, which in a tilted shot is farther from the lens by perhaps 6cm, imaging it about 13 percent small. Net effect is close to unity and THE CUT FACE IS ABOUT 75mm, a standard USDA medium apple, whose whole weight is 182g, so THE HALF IS ABOUT 90g GROSS AND 82g OF EDIBLE FLESH ONCE THE CORE IS OFF, giving 11g of carbohydrate, 0.2g of protein and about 45 calories. CROSS-CHECKED AGAINST THE 2026-08-14 15:05 APPLE HALF AND THEY GENUINELY DIFFER: that cut face measured 60mm against today's 75mm, so today's apple is materially the larger fruit and the difference is real rather than method drift. ONE FLAG ON THAT OLDER ROW WITHOUT REWRITING IT: it derived 130g for a 60mm whole apple, where the USDA figures imply nearer 90g at that diameter, so its 65g half was generous and to…",
+    "type": "Snack",
+    "date": "2026-08-15T16:57:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-15/cbe7156fec7c8bdf.jpg",
+    "carbs": 11,
+    "cals": 45,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3bd85ec7-0668-81cb-be6f-cc71bea0b55b",
     "title": "Lunch (cont.): SEVEN dark sweet cherries with stems attached, laid out individually on the floral placemat rather than heaped. THE ARRANGEMENT IS THE STORY OF THIS ENTRY AND IT SOLVES YESTERDAY'S PROBLEM: on 2026-08-14 a piled cluster was counted as eight and Maria corrected it to six, the lesson being that overlapping glossy fruit distorts a count in BOTH directions. Here every cherry is physically separate with mat visible between them, so the count is direct observation rather than an estimate off a heap, and SEVEN is stated with confidence. THE CARD LIES ON THE SAME PLACEMAT AS THE FRUIT, which per the 2026-08-13 plum lesson is the good geometry: reference and food share a plane, so this is a point estimate rather than the range a distant reference would force. Card measures roughly 400 px on the long edge by 255 px on the short, an apparent aspect of 1.57 against the true 1.586, so it is essentially square-on to the lens and this is a near top-down frame, giving 4.72 px/mm at the card's own position low in the frame. The cherries sit higher in frame and therefore farther from the lens, so their scale is nearer 4.3 to 4.5 px/mm; their measured widths run 110 to 130 px with a mean of about 119, which resolves to ROUGHLY 26 TO 27mm PER CHERRY, a good-sized sweet cherry rather than an average one. Taken as slightly flattened spheres near 8.5ml each that is about 9g with the pit and 8g of flesh, so SEVEN CHERRIES IS ABOUT 60g WITH PITS AND 56g EDIBLE, giving 9g of carbohydrate, 0.6g of protein and 35 calories at the USDA sweet-cherry figures of 16g carb and 63 calories per 100g. CUMULATIVE WITH THE 13:52 LUNCH, 14 MINUTES EARLIER AND WELL INSIDE THE HOUR, so the preBG anchor is the FIRST item's 84 mg/dL and NOT the live 93 mg/dL now showing, which is already mid-digestion and would inflate the projection. Carbs summed across both plates for the Model v5 recomputation. [Cumulative Lunch: 49g carbs total] (BG: 84 mg/dL Flat) (Pred: 129-149 mg/dL @ 3:16 PM) (Protein: …",
     "type": "Lunch",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-15/f019fd137aac3898.jpg",
     "carbs": 40,
     "cals": 355,
-    "delta": null,
-    "peak": null
+    "delta": 48,
+    "peak": 137
   },
   {
     "id": "3bd85ec7-0668-81aa-9589-e9f9622cbb1b",
