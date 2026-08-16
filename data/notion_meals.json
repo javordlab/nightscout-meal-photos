@@ -1,5 +1,16 @@
 [
   {
+    "id": "3be85ec7-0668-810c-bde8-dcf367dc8811",
+    "title": "Lunch: a homemade blueberry muffin in its paper liner, her words a homemade muffin adjustment for diabetics, eaten an hour and eleven minutes after the chicken salad. Pale gold cakey crumb with dark specks that read as ground flax or poppy, and whole blueberries that have burst and bled purple down one side. ALL MACROS BELOW ARE PROVISIONAL AND ARE EXPECTED TO BE SUPERSEDED — she wrote see nutrition info in the below picture and that second photo has NOT arrived in this turn, so the recipe's own label is pending and WILL REPLACE these figures as a correction to this row when it lands. That is the single most important fact about this entry and it is recorded first so no later reader mistakes an estimate for a measurement. GEOMETRY IS THE GOOD CASE FOR ONCE: the SPG card lies flat on the SAME floral placemat as the muffin, genuinely sharing its plane, which is the arrangement the 2026-08-13 plum incident showed to be necessary — so this is a real calibration and not a cross-frame guess. Card long edge about 515px against a short edge of about 152px, apparent aspect 3.39 against a true 1.586, giving cos θ = 0.47 and a viewing angle of ABOUT 60 DEGREES, which is at the oblique limit where the short edge stops being trustworthy, so px per mm was taken from the long edge alone at 6.0 and the result is given as a RANGE rather than a point value. Top diameter measures 455px across the frame, an axis that needs no cos correction, giving 7.5 to 8.0cm — a JUMBO MUFFIN, not a standard 7cm cup and nowhere near a cupcake. Height from liner base to dome measured against the angle at 365 vertical px over 6.0 px per mm times sin 60, giving about 7cm. Truncated cone plus dome on a 5cm base gives roughly 190ml, which at a muffin crumb density of 0.4 to 0.45 g per ml puts it at 80 to 90g, so about 85g was used — ROUGHLY DOUBLE A SUPERMARKET MUFFIN and the reason size matters more here than the recipe substitution does. Provisional build at 85g: 30g carbohydrate, 6g protein, about 250…",
+    "type": "Lunch",
+    "date": "2026-08-16T14:39:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-16/7916ffa9ae2a9f6a.jpg",
+    "carbs": 30,
+    "cals": 250,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3be85ec7-0668-819f-866a-eecbb0c470b2",
     "title": "Lunch: a chopped salad of roast chicken thigh, fresh orange segments and avocado, tossed together on a white plate with a heavy grind of black pepper over it and no visible dressing beyond the orange juice released into the plate. HER CAPTION AND THE PLATE AGREE ITEM FOR ITEM — one chicken thigh, one medium orange, half an avocado — which is the clean case and is worth recording as such, because the 2026-08-13 framing rule exists for the opposite situation and there is nothing uncaptioned in frame here. Her stated counts therefore carry the whole build and no visual portion estimate was substituted for them. THE SPG CARD IS IN FRAME ON THE PLACEMAT WHILE THE FOOD SITS ON A PLATE ABOVE IT, a different plane again, so it was used only as a coarse cross-check on the vessel and NOT to size any food item: card long edge about 340px against a short edge of about 215px gives roughly 3.98 px per mm, which puts the plate at about 176mm before correction and about 167mm after allowing a 2cm rim height at a 40cm camera distance, so a 17cm plate, consistent with the mound covering most of its face. Build from her stated counts: one roast chicken thigh yields roughly 85g of cooked meat at 26g protein per 100g, giving 22g protein and about 165 calories with no carbohydrate; one medium orange at about 140g of flesh gives 15g carbs, 1g protein, about 62 calories and ROUGHLY 3g OF FIBER since it is the whole fruit and not juice, which is the difference between a slow load and a fast one; half a medium avocado at about 68g gives 6g total carbohydrate of which about 4.5g IS FIBER, so its net glycemic contribution is near 1g, plus 2g protein, 10g of monounsaturated fat and about 110 calories. Totals 21g carbs, 25g protein, about 340 calories. THE 21g FIGURE IS LOGGED AS TOTAL CARBOHYDRATE AND THEREFORE OVER-STATES THE GLYCEMIC LOAD, since roughly 7g of it is fiber across the orange and the avocado; the Model v5 projection below is computed on the total for consistency with every other…",
     "type": "Lunch",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-16/c74bb0f9f1a450fa.jpg",
     "carbs": 44,
     "cals": 475,
-    "delta": null,
-    "peak": null
+    "delta": 73,
+    "peak": 172
   },
   {
     "id": "3be85ec7-0668-8125-b436-e6640b05a57f",
