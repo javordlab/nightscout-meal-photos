@@ -1,5 +1,27 @@
 [
   {
+    "id": "3be85ec7-0668-8165-8815-e5764d3fb192",
+    "title": "Dinner (cont.): a stemmed glass of deep golden SPARKLING WHITE WINE, poured generously, standing on the glass patio table with a dark bottle behind it at the right of frame. IDENTIFICATION BASIS STATED SO SHE CAN CONTRADICT IT IN ONE WORD: fine bubbles are streaming continuously up the bowl in several distinct trains, which is a carbonated wine rather than a still one, and the colour is a deep gold rather than the pale straw of a young prosecco, so this is read as a cava or a similarly aged sparkling. A non-alcoholic sparkling cider would look much the same in a photograph, and if that is what it is the alcohol caution below does not apply and the carbs roughly quadruple, so this is the one line worth checking. NO SCALE REFERENCE IN FRAME and no card, so the volume comes from standard glassware proportions rather than measurement: the bowl is filled to about its widest point, which in an ordinary white wine glass is a generous pour near 175ml or 6oz rather than a standard 150ml. AT BRUT SPARKLING FIGURES the carbohydrate is only about 1 to 2g per 100ml, so ROUGHLY 3g OF CARBOHYDRATE, no protein, and about 130 calories of which nearly all is the ethanol itself at roughly 17g. CUMULATIVE WITH THE 18:39 OYSTERS, three minutes earlier, so the preBG anchor stays the FIRST item's 95 mg/dL and the carbs are summed for the Model v5 recomputation. THE CLINICALLY IMPORTANT POINT IS NOT THE CARBOHYDRATE, IT IS THE OVERNIGHT DIRECTION: ethanol suppresses hepatic gluconeogenesis for several hours after drinking, and tonight it lands on a dinner that so far carries 6g of carbohydrate from oysters and 12g of protein, with the whole day already light on protein at about 40g. That combination — alcohol, a very low carbohydrate evening and a 95 mg/dL starting point — is the recognised setup for a delayed nocturnal fall rather than for a spike. NOTED FOR THE ALERTING PATH: the overnight glucose alert threshold between 00:00 and 08:30 is BG below 70 only, so a soft drift into the low …",
+    "type": "Dinner",
+    "date": "2026-08-15T18:42:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-15/0c9463c73248b811.jpg",
+    "carbs": 3,
+    "cals": 130,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "3be85ec7-0668-8134-b624-c02940e012b6",
+    "title": "Dinner: SEVEN raw oysters on the half shell, plump and served in their own liquor with no sauce on the plate, on a white dinner plate with red and black rim bands, a lemon wedge and a fork beside it on the placemat. THE COUNT IS SEVEN AND IT IS TAKEN FROM THE FRAME, WHICH IS THE CORRECT PROCEDURE HERE AND IS WORTH SPELLING OUT AFTER YESTERDAY. On 2026-08-14 an oyster course was logged as six because she SAID six, and she later clarified that six was her PLAN for the course while the frame honestly showed the three then on the plate. Today there is NO CAPTION AND NO STATED COUNT, so her standing rule of 2026-08-13 governs — fully in frame means intended and counted — and the shells are individually separable rather than heaped, each with its own visible meat, so seven is a direct count and not an estimate off a pile. NO SCALE REFERENCE IN FRAME: the SPG card is absent, so the plate is the only ruler and it is an assumed one. The plate ellipse runs about 1160 px across by 870 px deep, giving cos theta near 0.75 and a viewing angle around 41 degrees, and taking it as a standard 26cm dinner plate yields roughly 4.46 px/mm. On that scale the shells measure about 100mm along their long axes once the depth axis is corrected by cos theta, which is a good-sized oyster rather than a small one. MEAT WEIGHT IS THE SOFT NUMBER AND IT IS ANCHORED TO THE 2026-08-14 OYSTER COURSE FOR CONSISTENCY rather than re-derived, at about 18g of meat per shell, so SEVEN OYSTERS IS ROUGHLY 126g OF OYSTER MEAT. At Pacific oyster figures near 81 calories, 4.9g carbohydrate, 9.5g protein and 2.3g fat per 100g, that is about 6g of carbohydrate, 12g of protein and 100 calories. IF THE PLATE ASSUMPTION IS WRONG THE ERROR IS PROPORTIONAL and would move meat weight by the cube of it, which is the price of no card — worth noting only because oysters are so low in carbohydrate that even a large error here barely moves the projection. NOT CUMULATIVE: the previous food was the 16:57 apple half, 1 hour 42…",
+    "type": "Dinner",
+    "date": "2026-08-15T18:39:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-15/ebad5641855a62d5.jpg",
+    "carbs": 6,
+    "cals": 100,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3be85ec7-0668-8168-9cd3-ef14bd8f5093",
     "title": "Snack: half a red-skinned apple, cut face up on the floral placemat with the core and two pips visible, skin left on. CLASSIFIED SNACK ON THE HOUR TABLE: 16:57 sits in the 16:00 to 17:59 Snack band. NOT CUMULATIVE — the previous food was the 14:06 cherries, 2 hours 51 minutes earlier, so the live 113 mg/dL is the honest preBG rather than a mid-digestion reading. CARD AND APPLE SHARE THE PLACEMAT, the good geometry, but TWO OPPOSING CORRECTIONS APPLY HERE AND THEY VERY NEARLY CANCEL, which is worth writing out because taking either one alone would have been wrong in a different direction. The card images about 367 px on its long edge by 225 px on its short, an apparent aspect of 1.63 against the true 1.586, giving 4.29 px/mm at the card's own position. The apple's cut face spans about 322 px across frame, the across-frame axis that needs no depth correction, which is a naive 75mm. FIRST CORRECTION, DOWNWARD: the cut face is not on the mat, it is the top of a half apple lying dome-down, some 40mm above the card's plane and therefore nearer the lens, which at a 40cm working distance images it about 10 percent large. SECOND CORRECTION, UPWARD: the apple sits roughly 500 px higher in the frame than the card, which in a tilted shot is farther from the lens by perhaps 6cm, imaging it about 13 percent small. Net effect is close to unity and THE CUT FACE IS ABOUT 75mm, a standard USDA medium apple, whose whole weight is 182g, so THE HALF IS ABOUT 90g GROSS AND 82g OF EDIBLE FLESH ONCE THE CORE IS OFF, giving 11g of carbohydrate, 0.2g of protein and about 45 calories. CROSS-CHECKED AGAINST THE 2026-08-14 15:05 APPLE HALF AND THEY GENUINELY DIFFER: that cut face measured 60mm against today's 75mm, so today's apple is materially the larger fruit and the difference is real rather than method drift. ONE FLAG ON THAT OLDER ROW WITHOUT REWRITING IT: it derived 130g for a 60mm whole apple, where the USDA figures imply nearer 90g at that diameter, so its 65g half was generous and to…",
     "type": "Snack",
@@ -18,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-15/21bd527dbbceca6d.jpg",
     "carbs": 9,
     "cals": 35,
-    "delta": null,
-    "peak": null
+    "delta": 44,
+    "peak": 137
   },
   {
     "id": "3bd85ec7-0668-8161-8630-d5cfa41fcffe",
