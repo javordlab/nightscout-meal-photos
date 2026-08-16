@@ -1,5 +1,16 @@
 [
   {
+    "id": "3be85ec7-0668-8168-b45f-da90f379050e",
+    "title": "Breakfast: a bowl of her own plain homemade yogurt with chunks of red-skinned apple and a scattering of dried goji berries, plus an open-faced slice of her own homemade whole grain multi-seed bread under a thick edge-to-edge layer of what reads as smooth peanut butter, on a separate white plate. HER STATED MEASURES CARRY THE BOWL AND OVERRIDE THE PHOTO — half a cup of yogurt at 118ml, a quarter of a red apple, a few goji berries — a stated measure collapses tilt, depth and packing density in one move and was not averaged with the visual estimate. THE SPG CARD IS IN FRAME BUT LIES FLAT ON THE TABLECLOTH WHILE BOTH THE BOWL AND THE PLATE SIT ABOVE AND BEHIND IT, so it is a DIFFERENT PLANE and was deliberately NOT used for a point estimate; the 2026-08-13 plum error (120g called against a true 55g) came from exactly this geometry. Card read 345px on its long edge against 187px on its short, apparent aspect 1.84 against a true 1.586, giving cos θ = 0.86 and a viewing angle of about 30 degrees, which is a good angle but does not repair the depth offset, so the card served only as a sanity check. BOWL CROSS-CHECK against the stored 8oz / 237ml yogurt bowl: 118ml of yogurt plus roughly 55ml of apple and 10ml of berries sums to about 183ml, which sits comfortably inside 237ml and is consistent with the fill level in frame. Build: yogurt 118ml ≈ 122g at 4.7g carbohydrate per 100g gives 6g carbs, 5g protein, about 80 calories and ROUGHLY 150mg OF CALCIUM, recorded deliberately given her osteoporosis and her doctor's dietary-calcium advice; apple quarter at about 45g gives 6g carbs; roughly 30 dried goji berries at about 0.45g each ≈ 13g, which at 64g carbohydrate per 100g is 8g carbs and 2g protein — SMALL BY VOLUME BUT NOT BY CARBOHYDRATE and the most under-counted item on this plate, since a scattering of dried fruit reads as a garnish and costs as much as the apple. Bread slice taken from the STORED LOAF CALIBRATION (9x5 pan, 18 slices, about 45g and about 18g carbs per s…",
+    "type": "Breakfast",
+    "date": "2026-08-16T10:34:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-16/c74bb0f9f1a450fa.jpg",
+    "carbs": 44,
+    "cals": 475,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3be85ec7-0668-8125-b436-e6640b05a57f",
     "title": "Dinner (cont.): one short plump banana, deeply ripe with brown speckling and streaking across most of the skin, unpeeled on the floral placemat. CARD AND FRUIT SHARE THE PLACEMAT, the good geometry, so this is a point estimate rather than the range a cross-frame reference would force. THE CARD IS NOTICEABLY FORESHORTENED HERE AND THE MAX RULE DOES REAL WORK: it images about 364 px on its long edge against roughly 250 px on its short, an apparent aspect near 1.44 against the true 1.586, so the long axis is the compressed one and the honest scale is the short edge at about 4.63 px/mm, NOT the 4.25 the long edge would have given — taking the long edge would have inflated every linear dimension by 9 percent and the derived volume by about 30 percent. The banana lies farther up frame than the card and therefore farther from the lens, so its own scale is a little lower again. THE FRUIT IS SHORT AND FAT RATHER THAN LONG: about 125mm from tip to stem and about 45mm through at the thickest, where a standard Cavendish runs 180 to 200mm long by 35mm, so this is either an apple or manzano type or simply a stubby one, and ITS SHAPE IS WHY LENGTH ALONE WOULD MISLEAD — by length it would read as an extra-small banana at 81g of flesh, by volume it is fatter than that. Treating it as a tapered near-elliptical cylinder at roughly 75 percent cross-section fill gives about 110ml, so near 103g whole with the peel and ABOUT 75g OF EDIBLE FLESH once the peel is off at its usual third of the weight. At USDA banana figures of 22.8g carbohydrate, 1.1g protein and 89 calories per 100g that is 17g of carbohydrate, 1g of protein and about 70 calories. THE RIPENESS IS A REAL VARIABLE AND IS RECORDED RATHER THAN IGNORED: heavy brown speckling means most of the resistant starch has already converted to free sugars, so the same grams arrive faster than they would from a green-tipped banana, though the total is unchanged. A small brown object lies on the mat to the right of the stem; it is not iden…",
     "type": "Dinner",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-15/a04e3c7fabaa2710.jpg",
     "carbs": 17,
     "cals": 70,
-    "delta": null,
-    "peak": null
+    "delta": 18,
+    "peak": 130
   },
   {
     "id": "3be85ec7-0668-8160-9bb8-dedf4bbc0abb",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-15/c8e64b5a9dbd5b6c.jpg",
     "carbs": 31,
     "cals": 385,
-    "delta": null,
-    "peak": null
+    "delta": 24,
+    "peak": 125
   },
   {
     "id": "3be85ec7-0668-8165-8815-e5764d3fb192",
@@ -29,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-15/0c9463c73248b811.jpg",
     "carbs": 3,
     "cals": 130,
-    "delta": null,
-    "peak": null
+    "delta": 28,
+    "peak": 125
   },
   {
     "id": "3be85ec7-0668-8134-b624-c02940e012b6",
@@ -40,8 +51,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-15/ebad5641855a62d5.jpg",
     "carbs": 6,
     "cals": 100,
-    "delta": null,
-    "peak": null
+    "delta": 30,
+    "peak": 125
   },
   {
     "id": "3be85ec7-0668-8168-9cd3-ef14bd8f5093",
@@ -51,8 +62,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-15/cbe7156fec7c8bdf.jpg",
     "carbs": 11,
     "cals": 45,
-    "delta": null,
-    "peak": null
+    "delta": 39,
+    "peak": 141
   },
   {
     "id": "3bd85ec7-0668-81cb-be6f-cc71bea0b55b",
@@ -3620,7 +3631,7 @@
   },
   {
     "id": "37285ec7-0668-819f-9667-d7cf4b59709e",
-    "title": "Dinner (light): pan con tomate (half slice of toasted bread topped with fresh tomato slices), shaved cecina (Spanish cured beef), and a nectarine on the side (BG: 73 mg/dL Flat) (Pred: 102-112 mg/dL @ 10:55 PM) (Protein: 15g , Carbs: ~28g , Cals: ~200) [Coach: Pan con tomate + cecina + nectarine 🍑 — clean light dinner, ~15g protein, fresh tomato and fruit fiber to slow the bread. Pred ~107. One small note: this is your 2nd cured-meat hit of the day (lomo chips at the golf course were #1), so you're one over the ≤1×/day goal today — not a setback, just naming it. Tomorrow we reset.]",
+    "title": "Dinner (light): pan con tomate (half slice of toasted bread topped with fresh tomato slices), shaved cecina (Spanish cured beef), and a nectarine on the side (BG: 73 mg/dL Flat) (Pred: 102-112 mg/dL @ 10:55 PM) (Protein: 15g , Carbs: ~28g , Cals: ~200) [Coach: Pan con tomate + cecina + nectarine 🍑 — clean light dinner, ~15g protein, fresh tomato and fruit fiber to slow the bread. Pred ~107. One small note: this is your 2nd cured-meat hit of the day (lomo chips at the golf course were #1), so you're one over the ��1×/day goal today — not a setback, just naming it. Tomorrow we reset.]",
     "type": "Dinner",
     "date": "2026-06-01T21:39:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-01/c33fa2cdf883cff6.jpg",
@@ -5215,7 +5226,7 @@
   },
   {
     "id": "35e85ec7-0668-8184-9cc3-d3341fd27a63",
-    "title": "Lunch: White bean stew (judiones / fabes-style) in oil broth, with a side of stewed meat and vegetables (peppers, cabbage, tomato) [Cumulative Lunch: ~48g carbs total] (BG: 132 mg/dL Flat) (Pred: 160-170 mg/dL @ 4:02 PM) (Protein: 23g | Carbs: ~32g | Cals: ~460) [Coach: A real Spanish comida 🫘 — beans bring fiber and plant protein, the stewed meat and veggies round it out beautifully. Cumulative lunch is heartier now; an after-lunch walk would help BG settle gently.]  [id:a2628131]",
+    "title": "Lunch: White bean stew (judiones / fabes-style) in oil broth, with a side of stewed meat and vegetables (peppers, cabbage, tomato) [Cumulative Lunch: ~48g carbs total] (BG: 132 mg/dL Flat) (Pred: 160-170 mg/dL @ 4:02 PM) (Protein: 23g | Carbs: ~32g | Cals: ~460) [Coach: A real Spanish comida 🫘 ��� beans bring fiber and plant protein, the stewed meat and veggies round it out beautifully. Cumulative lunch is heartier now; an after-lunch walk would help BG settle gently.]  [id:a2628131]",
     "type": "Lunch",
     "date": "2026-05-02T15:01:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-02/1c2c9a8eb31b63ab.jpg",
