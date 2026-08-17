@@ -1,5 +1,16 @@
 [
   {
+    "id": "3bf85ec7-0668-818e-a84e-f00c6f09559b",
+    "title": "Dinner: a wide white bowl of LENTIL STEW in the Spanish style, her words lentil stew has vegies included — brown lentils in a reddish tomato-and-sofrito broth with chunks of potato, small-diced carrot and chopped parsley through it, and a single large piece of fatty pork, panceta or belly by its layered pale fat and lean streaking rather than chorizo, which would have coloured the broth with paprika. A slice of her own homemade whole grain multi-seed bread lies on the placemat beside the bowl, UNCAPTIONED BUT FULLY IN FRAME AND THEREFORE COUNTED, per her own rule of 2026-08-13. MEALTYPE IS DINNER AND THIS IS A DELIBERATE DEPARTURE FROM THE CUMULATIVE RULE, WHICH IS THE MOST IMPORTANT DECISION IN THIS ROW. The six cherries were logged at 17:45, forty-four minutes ago and INSIDE the one-hour cumulative window, and the rule as written says reclassify the later item to the FIRST item's MealType, which would label this lentil stew a Snack. That was rejected on two grounds. Substantively a stew at 18:29 is dinner and the hour table says so. Clinically it matters more than a label: auto_track_meds.js anchors the Metformin 1000mg dinner dose to a Dinner row, so filing this as Snack would leave tonight's largest dose with nothing to attach to, and a MealType error would become a medication-record error. THE ARITHMETIC HALF OF THE CUMULATIVE RULE WAS KEPT, only the label was not: carbs are summed across both items and the anchor is the FIRST item's preBG of 106 rather than the live 138, because 138 is the cherries mid-digestion and using it while also summing their carbs would count them twice. SCALE REFERENCE PRESENT BUT REJECTED AS TOO OBLIQUE, applying the rule written into memory earlier today off the muffin error. The SPG card lies flat on the placemat, correct plane, sharing it with the bread — but it images at about 358px long against 92px short, an apparent aspect of 3.87 against a true 1.586, so cos θ = 0.41 and θ = ABOUT 66 DEGREES, well past the 50 degree limit be…",
+    "type": "Dinner",
+    "date": "2026-08-16T18:29:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-16/82d1edc214addd98.jpg",
+    "carbs": 65,
+    "cals": 660,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3be85ec7-0668-810c-bde8-dcf367dc8811",
     "title": "Lunch: a homemade blueberry muffin in its paper liner, her words a homemade muffin adjustment for diabetics, eaten an hour and eleven minutes after the chicken salad. Pale gold cakey crumb with dark specks that read as ground flax or poppy, and whole blueberries that have burst and bled purple down one side. ALL MACROS BELOW ARE PROVISIONAL AND ARE EXPECTED TO BE SUPERSEDED — she wrote see nutrition info in the below picture and that second photo has NOT arrived in this turn, so the recipe's own label is pending and WILL REPLACE these figures as a correction to this row when it lands. That is the single most important fact about this entry and it is recorded first so no later reader mistakes an estimate for a measurement. GEOMETRY IS THE GOOD CASE FOR ONCE: the SPG card lies flat on the SAME floral placemat as the muffin, genuinely sharing its plane, which is the arrangement the 2026-08-13 plum incident showed to be necessary — so this is a real calibration and not a cross-frame guess. Card long edge about 515px against a short edge of about 152px, apparent aspect 3.39 against a true 1.586, giving cos θ = 0.47 and a viewing angle of ABOUT 60 DEGREES, which is at the oblique limit where the short edge stops being trustworthy, so px per mm was taken from the long edge alone at 6.0 and the result is given as a RANGE rather than a point value. Top diameter measures 455px across the frame, an axis that needs no cos correction, giving 7.5 to 8.0cm — a JUMBO MUFFIN, not a standard 7cm cup and nowhere near a cupcake. Height from liner base to dome measured against the angle at 365 vertical px over 6.0 px per mm times sin 60, giving about 7cm. Truncated cone plus dome on a 5cm base gives roughly 190ml, which at a muffin crumb density of 0.4 to 0.45 g per ml puts it at 80 to 90g, so about 85g was used — ROUGHLY DOUBLE A SUPERMARKET MUFFIN and the reason size matters more here than the recipe substitution does. Provisional build at 85g: 30g carbohydrate, 6g protein, about 250…",
     "type": "Lunch",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-16/7916ffa9ae2a9f6a.jpg",
     "carbs": 30,
     "cals": 250,
-    "delta": null,
-    "peak": null
+    "delta": 17,
+    "peak": 137
   },
   {
     "id": "3be85ec7-0668-819f-866a-eecbb0c470b2",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-16/442574320665a661.jpg",
     "carbs": 21,
     "cals": 340,
-    "delta": null,
-    "peak": null
+    "delta": 25,
+    "peak": 138
   },
   {
     "id": "3be85ec7-0668-8168-b45f-da90f379050e",
