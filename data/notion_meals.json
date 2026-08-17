@@ -1,5 +1,16 @@
 [
   {
+    "id": "3bf85ec7-0668-81ba-84cd-e629009d499f",
+    "title": "Lunch: a beef patty wrapped in butter lettuce leaves under a thick slice of pale semi-firm cheese, with a slice of her homemade whole-grain multi-seed bread and a fried egg alongside. The patty is 70g stated by Maria in her message, so that measured figure replaces the photo estimate outright. The SPG card was in frame but lying on the tablecloth rather than in either plate's plane, so it was used for scale only and not for the plate geometry, giving about 3.6 px/mm from its 307px long edge, cross-checked against the fried egg at roughly 12cm across and the top plate at about 20cm. On that scale the bread is a full slice carried at the standing 45g from her 18-slice 9x5 loaf rather than re-measured, the cheese runs about 8cm by 5cm by an assumed 1.2cm thick for roughly 35g, and the butter lettuce is about 40g of leaves. Thickness on the cheese is the least certain figure since the frame is near top-down. (BG: 93 mg/dL Flat) (Pred: 121-141 mg/dL @ 2:21 PM) (Protein: 40g | Carbs: ~20g | Cals: ~535) [Coach: This is the plate the morning was missing — 40g of protein across the patty, egg and cheese, only 20g of carbs, and the cheese brings calcium your bones will take. You are at 93 and drifting after the gardening, so the timing is spot on. Butter lettuce instead of a bun, nicely done.]",
+    "type": "Lunch",
+    "date": "2026-08-17T13:11:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-17/a83febc794de2b6f.jpg",
+    "carbs": 20,
+    "cals": 535,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3bf85ec7-0668-81a9-91ee-d96026794c73",
     "title": "Breakfast: a slice of her homemade whole-grain multi-seed bread, cold-smoked salmon dressed with pickled mustard seeds, a fresh green fig, and about half a blueberry muffin, alongside coffee. The SPG card was in frame but lying flat on the tablecloth rather than in the plate's plane, so it was not used for scale; portions were calibrated instead against the plate, measured at roughly 22cm across from its 700px major axis and a 0.81 minor-to-major ratio giving a 37 degree view. That gives about a 45g slice of bread, carried from the standing 18-slice figure for her 9x5 loaf rather than re-estimated from the photo, roughly 50g of smoked salmon draped across about a third of the plate at 2mm slice thickness, a small green fig at about 40g measured 3.4cm across, and about 45g of muffin, which is half a standard 6cm one. (BG: 121 mg/dL Flat) (Pred: 173-193 mg/dL @ 11:02 AM) (Protein: 17g | Carbs: ~49g | Cals: ~360) [Coach: Salmon at breakfast is a lovely call — real protein to steady you after the evening you had. The bread, muffin and fig do stack three carb sources on one plate though, so the muffin is the piece I would trim first. The fig brings fiber along with its sugar, which helps.]",
     "type": "Breakfast",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-17/b9fa7be5acf7c735.jpg",
     "carbs": 49,
     "cals": 360,
-    "delta": null,
-    "peak": null
+    "delta": 58,
+    "peak": 179
   },
   {
     "id": "3bf85ec7-0668-818e-a84e-f00c6f09559b",
@@ -1673,7 +1684,7 @@
   },
   {
     "id": "39b85ec7-0668-8195-82f1-eef54f54aa4b",
-    "title": "Breakfast: a Greek yogurt bowl with blueberries, fresh nectarine, and ground flax (BG: 132 mg/dL Flat) (Pred: 180-200 mg/dL @ 12:26 PM) (Protein: 18g | Carbs: ~43g | Cals: ~340) [Coach: Now that is a breakfast to be proud of 🫐 — Greek yogurt brings ~13g protein, flax adds fiber and omega-3s, and the berries and nectarine are whole fruit with fiber intact. No bread in sight. It is fruit-forward, so from your 132 start it may still climb a little — a short walk after would keep the peak in check.]",
+    "title": "Breakfast: a Greek yogurt bowl with blueberries, fresh nectarine, and ground flax (BG: 132 mg/dL Flat) (Pred: 180-200 mg/dL @ 12:26 PM) (Protein: 18g | Carbs: ~43g | Cals: ~340) [Coach: Now that is a breakfast to be proud of 🫐 — Greek yogurt brings ~13g protein, flax adds fiber and omega-3s, and the berries and nectarine are whole fruit with fiber intact. No bread in sight. It is fruit-forward, so from your 132 start it may still climb a little ��� a short walk after would keep the peak in check.]",
     "type": "Breakfast",
     "date": "2026-07-12T10:59:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-12/3aa4f5a4ce9823cc.jpg",
