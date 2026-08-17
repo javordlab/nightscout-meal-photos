@@ -1,5 +1,16 @@
 [
   {
+    "id": "3bf85ec7-0668-81a9-91ee-d96026794c73",
+    "title": "Breakfast: a slice of her homemade whole-grain multi-seed bread, cold-smoked salmon dressed with pickled mustard seeds, a fresh green fig, and about half a blueberry muffin, alongside coffee. The SPG card was in frame but lying flat on the tablecloth rather than in the plate's plane, so it was not used for scale; portions were calibrated instead against the plate, measured at roughly 22cm across from its 700px major axis and a 0.81 minor-to-major ratio giving a 37 degree view. That gives about a 45g slice of bread, carried from the standing 18-slice figure for her 9x5 loaf rather than re-estimated from the photo, roughly 50g of smoked salmon draped across about a third of the plate at 2mm slice thickness, a small green fig at about 40g measured 3.4cm across, and about 45g of muffin, which is half a standard 6cm one. (BG: 121 mg/dL Flat) (Pred: 173-193 mg/dL @ 11:02 AM) (Protein: 17g | Carbs: ~49g | Cals: ~360) [Coach: Salmon at breakfast is a lovely call — real protein to steady you after the evening you had. The bread, muffin and fig do stack three carb sources on one plate though, so the muffin is the piece I would trim first. The fig brings fiber along with its sugar, which helps.]",
+    "type": "Breakfast",
+    "date": "2026-08-17T09:47:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-17/b9fa7be5acf7c735.jpg",
+    "carbs": 49,
+    "cals": 360,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3bf85ec7-0668-818e-a84e-f00c6f09559b",
     "title": "Dinner: a wide white bowl of LENTIL STEW in the Spanish style, her words lentil stew has vegies included — brown lentils in a reddish tomato-and-sofrito broth with chunks of potato, small-diced carrot and chopped parsley through it, and a single large piece of fatty pork, panceta or belly by its layered pale fat and lean streaking rather than chorizo, which would have coloured the broth with paprika. A slice of her own homemade whole grain multi-seed bread lies on the placemat beside the bowl, UNCAPTIONED BUT FULLY IN FRAME AND THEREFORE COUNTED, per her own rule of 2026-08-13. MEALTYPE IS DINNER AND THIS IS A DELIBERATE DEPARTURE FROM THE CUMULATIVE RULE, WHICH IS THE MOST IMPORTANT DECISION IN THIS ROW. The six cherries were logged at 17:45, forty-four minutes ago and INSIDE the one-hour cumulative window, and the rule as written says reclassify the later item to the FIRST item's MealType, which would label this lentil stew a Snack. That was rejected on two grounds. Substantively a stew at 18:29 is dinner and the hour table says so. Clinically it matters more than a label: auto_track_meds.js anchors the Metformin 1000mg dinner dose to a Dinner row, so filing this as Snack would leave tonight's largest dose with nothing to attach to, and a MealType error would become a medication-record error. THE ARITHMETIC HALF OF THE CUMULATIVE RULE WAS KEPT, only the label was not: carbs are summed across both items and the anchor is the FIRST item's preBG of 106 rather than the live 138, because 138 is the cherries mid-digestion and using it while also summing their carbs would count them twice. SCALE REFERENCE PRESENT BUT REJECTED AS TOO OBLIQUE, applying the rule written into memory earlier today off the muffin error. The SPG card lies flat on the placemat, correct plane, sharing it with the bread — but it images at about 358px long against 92px short, an apparent aspect of 3.87 against a true 1.586, so cos θ = 0.41 and θ = ABOUT 66 DEGREES, well past the 50 degree limit be…",
     "type": "Dinner",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-16/82d1edc214addd98.jpg",
     "carbs": 65,
     "cals": 660,
-    "delta": null,
-    "peak": null
+    "delta": 34,
+    "peak": 171
   },
   {
     "id": "3be85ec7-0668-810c-bde8-dcf367dc8811",
