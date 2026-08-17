@@ -1,5 +1,16 @@
 [
   {
+    "id": "3bf85ec7-0668-81d3-b274-f59dfc37d9eb",
+    "title": "Lunch: a small pink bowl of fresh blueberries, eaten eight minutes after the 13:11 plate. The SPG card lay flat on the same tablecloth the bowl stands on, so it shared the food's plane, but its edges measure about 371px long against 144px short for an apparent aspect of 2.58, which puts the view near 52 degrees off vertical and makes it a range reference rather than a precise one. Scale at the berry surface works out around 4.2 px/mm, putting individual berries near 15mm across, and the mound runs roughly 8cm wide by 3cm deep for about 90ml. Against a bowl interior of roughly 10cm and about 200ml that is a little under half full, and a surface count of about 40 berries agrees, so roughly 70g or a scant half cup. Cumulative anchor is the 13:11 preBG of 93, not the live 89, per the within-the-hour rule. [Cumulative Lunch: 30g carbs total] (BG: 89 mg/dL Flat) (Pred: 133-153 mg/dL @ 2:29 PM) (Protein: 1g | Carbs: ~10g | Cals: ~45) [Coach: Blueberries are about the friendliest thing you can put after a protein-heavy plate — 10g of carbs, plenty of fiber, and they land gently on top of all that protein. Third fruit of the day after the fig and the goji, which is a good run. At 89 you had room for them.]",
+    "type": "Lunch",
+    "date": "2026-08-17T13:19:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-17/4f7ac164a1ea5a63.jpg",
+    "carbs": 10,
+    "cals": 45,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3bf85ec7-0668-81ba-84cd-e629009d499f",
     "title": "Lunch: a beef patty wrapped in butter lettuce leaves under a thick slice of pale semi-firm cheese, with a slice of her homemade whole-grain multi-seed bread and a fried egg alongside. The patty is 70g stated by Maria in her message, so that measured figure replaces the photo estimate outright. The SPG card was in frame but lying on the tablecloth rather than in either plate's plane, so it was used for scale only and not for the plate geometry, giving about 3.6 px/mm from its 307px long edge, cross-checked against the fried egg at roughly 12cm across and the top plate at about 20cm. On that scale the bread is a full slice carried at the standing 45g from her 18-slice 9x5 loaf rather than re-measured, the cheese runs about 8cm by 5cm by an assumed 1.2cm thick for roughly 35g, and the butter lettuce is about 40g of leaves. Thickness on the cheese is the least certain figure since the frame is near top-down. (BG: 93 mg/dL Flat) (Pred: 121-141 mg/dL @ 2:21 PM) (Protein: 40g | Carbs: ~20g | Cals: ~535) [Coach: This is the plate the morning was missing — 40g of protein across the patty, egg and cheese, only 20g of carbs, and the cheese brings calcium your bones will take. You are at 93 and drifting after the gardening, so the timing is spot on. Butter lettuce instead of a bun, nicely done.]",
     "type": "Lunch",
@@ -1684,7 +1695,7 @@
   },
   {
     "id": "39b85ec7-0668-8195-82f1-eef54f54aa4b",
-    "title": "Breakfast: a Greek yogurt bowl with blueberries, fresh nectarine, and ground flax (BG: 132 mg/dL Flat) (Pred: 180-200 mg/dL @ 12:26 PM) (Protein: 18g | Carbs: ~43g | Cals: ~340) [Coach: Now that is a breakfast to be proud of 🫐 — Greek yogurt brings ~13g protein, flax adds fiber and omega-3s, and the berries and nectarine are whole fruit with fiber intact. No bread in sight. It is fruit-forward, so from your 132 start it may still climb a little ��� a short walk after would keep the peak in check.]",
+    "title": "Breakfast: a Greek yogurt bowl with blueberries, fresh nectarine, and ground flax (BG: 132 mg/dL Flat) (Pred: 180-200 mg/dL @ 12:26 PM) (Protein: 18g | Carbs: ~43g | Cals: ~340) [Coach: Now that is a breakfast to be proud of 🫐 — Greek yogurt brings ~13g protein, flax adds fiber and omega-3s, and the berries and nectarine are whole fruit with fiber intact. No bread in sight. It is fruit-forward, so from your 132 start it may still climb a little — a short walk after would keep the peak in check.]",
     "type": "Breakfast",
     "date": "2026-07-12T10:59:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-12/3aa4f5a4ce9823cc.jpg",
