@@ -1,12 +1,23 @@
 [
   {
+    "id": "3c185ec7-0668-8127-994c-ce5abab9711c",
+    "title": "Dinner: two whole fresh apricots, her word, photographed on the flamingo tablecloth with the SPG card beside them. FAVOURABLE GEOMETRY AND IT IS THE SECOND GOOD FRAMING TODAY: the card lies flat on the same tablecloth as the fruit rather than off on a placemat while the food sits raised on a plate, so THE TWO SHARE A PLANE AND NO PLANE-OFFSET CORRECTION IS APPLIED, which removes the term that cost 17 percent of volume on 2026-08-10 and that had to be carried against the 19:06 omelette earlier this evening. Card edges measure about 475px long against 310px short for an apparent aspect of 1.53 against the true 1.586, a disagreement of only three percent, so the camera is essentially straight down and the honest scale is the LESS foreshortened short edge at 310 divided by 54mm, giving 5.74 px per mm. On that scale the left apricot measures about 38mm across and the right about 36mm, both squarely in the ordinary 35 to 45mm range for the fruit, so at a near-spherical shape they come to roughly 40g each and ABOUT 80g OF FRUIT IN TOTAL, which is two medium apricots and nothing unusual. THE LIMITATION OF A TOP-DOWN FRAME IS STATED RATHER THAN HIDDEN: a straight-down view measures footprint precisely and height not at all, so the height here is a SHAPE PRIOR and not a measurement. That prior is unusually safe for this particular fruit, an apricot being near-spherical and only slightly oblate, which is exactly the case where a footprint does constrain volume — it would not be safe for a mound of rice or a folded omelette, and the contrast with tonight's egg error is deliberate. The fruit also carries a frosted, condensation-like sheen suggesting it came straight from the fridge, which changes nothing nutritionally and is noted only so a later reader does not mistake it for a coating or a sugar dusting. Macros from USDA raw apricot at about 4.4g of carbohydrate, 0.55g of protein and 21 calories per 40g fruit. A CALORIE FLOOR NOTE, SINCE THIS ROW SITS RIGHT ON THE LIMIT: 4 ti…",
+    "type": "Dinner",
+    "date": "2026-08-18T20:45:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-18/fed571655a3a3332.jpg",
+    "carbs": 8,
+    "cals": 40,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3c185ec7-0668-812a-828d-cfa6b1a085a3",
     "title": "Dinner: a folded rice omelette, the rice cooked with coconut milk, with three crinkle-cut dill pickle chips alongside. THE RICE QUANTITY IS MARIA'S OWN STATED FIGURE, about half a cup total given in her caption, which REPLACES any photographic estimate outright rather than being averaged with it; half a cup of cooked rice is roughly 118ml at about 0.67 g/ml, so about 79g and about 22g of carbohydrate. SHE ALSO STATES THE RICE WAS FROZEN AND REHEATED AND SHE IS RIGHT ABOUT THE DIRECTION: cooking, chilling and reheating retrogrades part of the starch into resistant starch that is not absorbed in the small intestine, and the published effect on the glycaemic response of reheated rice is on the order of ten to fifteen percent. IT IS DELIBERATELY NOT APPLIED AS A CARBOHYDRATE DEDUCTION HERE, because Model v5 has no resistant-starch term and inventing an off-book discount would corrupt the calibration set; total carbohydrate is logged at face value and the expectation is recorded instead that the actual peak should land at or below the LOW end of the predicted range. That makes this meal a small natural test of her claim, which the three-hour backfill will settle. SCALE REFERENCE, AND THE CARD WAS DELIBERATELY NOT USED: the SPG card is in frame but it lies on the tablecloth while the food sits on a raised plate, so it is in the wrong plane and would carry a plane-offset error, and its right end runs toward the frame edge so both of its edges cannot be measured honestly in any case. THE PICKLE CHIPS WERE USED AS THE SCALE INSTEAD because they share the omelette's plane, imaging at about 117, 110 and 115px against a typical crinkle-cut chip of 3.5 to 4cm, giving roughly 30 px/cm on the plate surface. The plate images as an ellipse about 605px across by 695px, so the major axis is the true diameter and cos theta of about 0.87 puts the view roughly 29 degrees off vertical. On that scale the omelette runs about 20cm long by about 8cm wide and spans nearly the whole plate. THE…",
     "type": "Dinner",
     "date": "2026-08-18T19:06:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-18/cb4f4dcdf2c68c50.jpg",
-    "carbs": 24,
-    "cals": 425,
+    "carbs": 25,
+    "cals": 320,
     "delta": null,
     "peak": null
   },
