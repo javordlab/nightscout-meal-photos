@@ -1,5 +1,27 @@
 [
   {
+    "id": "3c185ec7-0668-813f-b73a-c960ca9f28ff",
+    "title": "Lunch: two broken shards of dark chocolate, her words a treat for being so good today, eaten 29 minutes after the 12:52 lunch and therefore logged as a CUMULATIVE LUNCH rather than as a Snack or Dessert — the hour would give Lunch in any case, but the one-hour cumulative rule is what governs here and it also fixes the baseline. THE GEOMETRY IS THE GOOD CASE AND IT IS WORTH SAYING SO: the SPG card lies FLAT ON THE SAME FLAMINGO CLOTH as the chocolate, so both share a plane and a depth, no plane-offset term applies and no perspective correction is needed across the frame. This is the arrangement that has been asked for repeatedly and it is the third time today she has supplied it unprompted. Card bounding box of about 437 by 655 pixels, solved for an in-plane rotation near 8 degrees, gives a long edge of 612 px and a short edge of 356 px, an apparent aspect of 1.721 against the card's true 1.586, so COS THETA IS 0.921 AND THE VIEWING ANGLE IS ABOUT 23 DEGREES — close to overhead, which is the honest weakness of this shot since it leaves almost no side profile to read thickness from. Under the max rule the scale is 356 divided by 54.0, giving 7.15 px per mm. PORTIONS: the upper shard is a wedge of roughly 27 by 38mm after correcting its vertical axis by cos theta, about 6.2 square cm of face at roughly 60 percent fill of its bounding box; the lower shard is an elongated piece of roughly 31 by 73mm, about 12.4 square cm at 55 percent fill. TOTAL FACE AREA ABOUT 18.6 SQUARE CM. THICKNESS IS THE WEAK TERM AND IS STATED AS A PRIOR RATHER THAN A MEASUREMENT, because at 23 degrees there is barely any side profile: moulded dark chocolate runs 4 to 6mm and 5mm was taken, giving about 9.3 cubic cm, and at a chocolate density near 1.3 g per ml that is APPROXIMATELY 13g with an honest range of 10 to 15g. Cross-checked against a household anchor rather than left on geometry alone: a square broken off a standard 100g bar weighs 8 to 12g, and two shards of this size sit right at th…",
+    "type": "Lunch",
+    "date": "2026-08-19T13:21:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-19/c20de5c4798a3d43.jpg",
+    "carbs": 51,
+    "cals": 560,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "3c185ec7-0668-8123-8557-ee449fce4efa",
+    "title": "Lunch: two open-faced slices of her homemade dark sprouted-wholewheat bread, each topped with a slice of cooked ham and a shaved layer of a pale semi-hard cheese, with one whole raw carrot alongside, photographed on the flamingo tablecloth with the SPG card at the front of the plate. THE BREAD IS HER OWN WEIGHING AND IT REPLACES EVERY ESTIMATE IN THIS LOG: her words, the two slices is 82 g, which is 41g PER SLICE. This was given in direct answer to the request made at 10:15 and repeated at 10:27, and it is the definitive resolution of an anchor that has been carried on inference since 2026-08-14. CORRECTED AT 12:57 BY MARIA AND THE CORRECTION MATTERS MORE THAN THE NUMBER: her words, the bread weight was right, she has different thickness going on, and THESE TWO SLICES WERE ONE THICKER THAN THE OTHER, which is why she weighed them together. SO 41g IS THE MEAN OF TWO UNEQUAL SLICES AND NOT A PER-SLICE CONSTANT. The claims made here before that correction — that 41g supersedes 45g, that the log had been over-counting by 9 percent, and that 82g implies a 740 to 820g loaf — ARE ALL WITHDRAWN, the last of them because the loaf back-calculation assumed uniform slices and that assumption is false. 82g REMAINS EXACT FOR THIS MEAL, which is the only thing it was ever needed for; it is the general rule drawn from it that was wrong. THE BREAKFAST ROW IS DELIBERATELY NOT BEING RE-EDITED FOR THIS. Its 45g slice would become 41g, moving carbohydrate from 24g to 23g, calories from 275 to 265, and the prediction from 160 to 159 — one milligram per decilitre. More importantly, THAT PREDICTION HAS ALREADY BEEN TESTED AGAINST REALITY: the peak came in at 181 at 10:14. REWRITING A PREDICTION AFTER ITS OUTCOME IS KNOWN IS BAD PRACTICE and would quietly improve a score that was already recorded, so the row stands as issued and this note carries the correction. It also makes the 10:27 conclusion STRONGER, not weaker — the breakfast bread was if anything over-counted, so under-counted carb…",
+    "type": "Lunch",
+    "date": "2026-08-19T12:52:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-19/4e7b87661fa8fed6.jpg",
+    "carbs": 45,
+    "cals": 480,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3c185ec7-0668-8162-8193-e7d09d948808",
     "title": "Breakfast: an open-faced slice of dark whole-grain bread topped with two draped pieces of cold-smoked salmon, with half an avocado still in its skin alongside, photographed on the flamingo tablecloth with the SPG card lying flat on the same cloth in the near foreground. GEOMETRY: the plate images as a 758 by 557 pixel ellipse, so cos theta is 0.735 and the VIEWING ANGLE IS ROUGHLY 43 DEGREES, squarely inside the useful 30 to 45 degree band, which means the bread thickness was measured off the side profile rather than assumed. THE CARD WAS DELIBERATELY NOT USED AS THE PRIMARY SCALE, because it lies in the foreground roughly 11cm nearer the lens than the plate and that inflates its pixels per mm by about 21 percent; taken raw at 5.2 px/mm it would have resolved the plate to 14.6cm. Correcting for that depth difference and for the rim sitting about 1.5cm above the cloth puts the plate near 17cm, which MATCHES HER KNOWN SMALL SIDE PLATE measured independently at 16 to 17cm on two prior occasions, so the plate was adopted as the anchor at 4.46 px/mm and the card served only to fix the geometry. This is the same failure mode as the plum on 2026-08-13, caught this time rather than after the fact: right cloth, wrong depth. BREAD: MARIA CORRECTED THE SLICE TO 40 TO 45g AT 09:10 AND HER STATED WEIGHT REPLACES THE PHOTOGRAMMETRY OUTRIGHT rather than being averaged with it. 45g was taken, the top of her range, because it coincides exactly with the stored figure for one slice of her homemade multi-seed loaf, so two independent routes agree once her number is in. THE PER-SLICE MACROS WERE THEN REPLACED AT 09:30 BY RECIPE-DERIVED FIGURES when she photographed the actual recipe, which supersede the generic wholegrain-bread table used here first: a 45g slice of an 894g loaf built from 350g whole wheat, 150g bread flour, 110g of seeds, 20g oil and 20g honey carries 20g of total carbohydrate of which 2.7g is fibre, 4.6g of protein, 4.3g of fat and 131 calories, against the 18g, 6g an…",
     "type": "Breakfast",
@@ -7,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-19/32bd9e37d58e8a7a.jpg",
     "carbs": 24,
     "cals": 275,
-    "delta": null,
-    "peak": null
+    "delta": 72,
+    "peak": 181
   },
   {
     "id": "3c185ec7-0668-8127-994c-ce5abab9711c",
