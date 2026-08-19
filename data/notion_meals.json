@@ -1,14 +1,25 @@
 [
   {
+    "id": "3c185ec7-0668-812a-828d-cfa6b1a085a3",
+    "title": "Dinner: a folded rice omelette, the rice cooked with coconut milk, with three crinkle-cut dill pickle chips alongside. THE RICE QUANTITY IS MARIA'S OWN STATED FIGURE, about half a cup total given in her caption, which REPLACES any photographic estimate outright rather than being averaged with it; half a cup of cooked rice is roughly 118ml at about 0.67 g/ml, so about 79g and about 22g of carbohydrate. SHE ALSO STATES THE RICE WAS FROZEN AND REHEATED AND SHE IS RIGHT ABOUT THE DIRECTION: cooking, chilling and reheating retrogrades part of the starch into resistant starch that is not absorbed in the small intestine, and the published effect on the glycaemic response of reheated rice is on the order of ten to fifteen percent. IT IS DELIBERATELY NOT APPLIED AS A CARBOHYDRATE DEDUCTION HERE, because Model v5 has no resistant-starch term and inventing an off-book discount would corrupt the calibration set; total carbohydrate is logged at face value and the expectation is recorded instead that the actual peak should land at or below the LOW end of the predicted range. That makes this meal a small natural test of her claim, which the three-hour backfill will settle. SCALE REFERENCE, AND THE CARD WAS DELIBERATELY NOT USED: the SPG card is in frame but it lies on the tablecloth while the food sits on a raised plate, so it is in the wrong plane and would carry a plane-offset error, and its right end runs toward the frame edge so both of its edges cannot be measured honestly in any case. THE PICKLE CHIPS WERE USED AS THE SCALE INSTEAD because they share the omelette's plane, imaging at about 117, 110 and 115px against a typical crinkle-cut chip of 3.5 to 4cm, giving roughly 30 px/cm on the plate surface. The plate images as an ellipse about 605px across by 695px, so the major axis is the true diameter and cos theta of about 0.87 puts the view roughly 29 degrees off vertical. On that scale the omelette runs about 20cm long by about 8cm wide and spans nearly the whole plate. THE…",
+    "type": "Dinner",
+    "date": "2026-08-18T19:06:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-18/cb4f4dcdf2c68c50.jpg",
+    "carbs": 24,
+    "cals": 425,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3c085ec7-0668-81a4-8965-ed11a06dbef3",
-    "title": "Lunch: half of one of her homemade lemon poppy seed and blueberry muffins, identified from the poppy seeds and the blueberry visible in the cut face, with a glass of milk. Classified Lunch on the 15:43 hour rule, seventeen minutes short of the Snack band, and not cumulative since the 13:24 salad was two hours and nineteen minutes earlier. FAVOURABLE GEOMETRY FOR ONCE: the SPG card lies on the placemat and the muffin sits directly on the cloth beside it rather than on a plate, so the two share a plane and NO PLANE-OFFSET CORRECTION IS NEEDED, which removes the error term that cost 17 percent of volume on 2026-08-10. Card edges measure about 449px long against 314px short for an apparent aspect of 1.41 against the true 1.586, so it is the LONG axis that is foreshortened here and the short edge is the honest one, giving 5.81 px/mm, with cos theta of 0.89 putting the view about 27 degrees off vertical. AN INCONSISTENCY IS RECORDED RATHER THAN RESOLVED BY PICKING A SIDE: the glass rim images as a far flatter ellipse than a 27 degree view would produce, implying a much lower camera angle, and the two readings cannot both be right. The glass also stands further back than the card and higher off the table, so its apparent size is unreliable on the card's scale in any case. THE MILK VOLUME IS THEREFORE NOT TAKEN FROM GEOMETRY AT ALL. It is read from fill fraction, the milk standing a little over half the glass height in a standard tall tumbler, cross-checked against her own established glass carried at about 8oz in the 2026-08-16 19:45 row, giving roughly 200ml or a generous three quarters of a cup and deliberately a shade under her usual full glass. Whole or 2 percent milk is assumed since the fat content is not determinable from the photograph, which moves the calories by about 20 either way but leaves carbohydrate and protein essentially unchanged. THE MUFFIN IS CARRIED FROM HER OWN RECIPE TABLE RATHER THAN RE-ESTIMATED, a whole muffin being 26g of carbohydrate, 5g of pr…",
+    "title": "Lunch: two thirds of one of her homemade lemon poppy seed and blueberry muffins, her own stated portion given at 15:47 which replaces the half first read off the photograph rather than being averaged with it, identified from the poppy seeds and the blueberry visible in the cut face, with a glass of milk. Classified Lunch on the 15:43 hour rule, seventeen minutes short of the Snack band, and not cumulative since the 13:24 salad was two hours and nineteen minutes earlier. FAVOURABLE GEOMETRY FOR ONCE: the SPG card lies on the placemat and the muffin sits directly on the cloth beside it rather than on a plate, so the two share a plane and NO PLANE-OFFSET CORRECTION IS NEEDED, which removes the error term that cost 17 percent of volume on 2026-08-10. Card edges measure about 449px long against 314px short for an apparent aspect of 1.41 against the true 1.586, so it is the LONG axis that is foreshortened here and the short edge is the honest one, giving 5.81 px/mm, with cos theta of 0.89 putting the view about 27 degrees off vertical. AN INCONSISTENCY IS RECORDED RATHER THAN RESOLVED BY PICKING A SIDE: the glass rim images as a far flatter ellipse than a 27 degree view would produce, implying a much lower camera angle, and the two readings cannot both be right. The glass also stands further back than the card and higher off the table, so its apparent size is unreliable on the card's scale in any case. THE MILK VOLUME IS THEREFORE NOT TAKEN FROM GEOMETRY AT ALL. It is read from fill fraction, the milk standing a little over half the glass height in a standard tall tumbler, cross-checked against her own established glass carried at about 8oz in the 2026-08-16 19:45 row, giving roughly 200ml or a generous three quarters of a cup and deliberately a shade under her usual full glass. Whole or 2 percent milk is assumed since the fat content is not determinable from the photograph, which moves the calories by about 20 either way but leaves carbohydrate and protein essentially u…",
     "type": "Lunch",
     "date": "2026-08-18T15:43:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-18/44f7174ec2d1d671.jpg",
-    "carbs": 23,
-    "cals": 215,
-    "delta": null,
-    "peak": null
+    "carbs": 27,
+    "cals": 245,
+    "delta": 59,
+    "peak": 158
   },
   {
     "id": "3c085ec7-0668-8130-881f-c0e91a348649",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-18/f4fefd11b32d6264.jpg",
     "carbs": 35,
     "cals": 510,
-    "delta": null,
-    "peak": null
+    "delta": 0,
+    "peak": 119
   },
   {
     "id": "3c085ec7-0668-81c5-88cb-f208ad00c8b5",
@@ -34,12 +45,12 @@
   },
   {
     "id": "3c085ec7-0668-8180-b54d-e81aaf698ec6",
-    "title": "Dinner: half a blueberry muffin and a whole green fig cut in two, plus the four cherries she named in the caption. The cherries are not in the frame, so they are logged on her word alone while the muffin and fig are counted because they sit fully in frame on a deliberately composed plate. Logged 68 minutes after the 18:45 dinner, so just outside the one-hour window and not a cumulative continuation. The SPG card lay on the tablecloth beside the plate and shares its plane; its edges measure about 459px long against 292px short for an apparent aspect of 1.57 against the card's true 1.586, so the view is effectively straight down and the scale is sound at 5.41 px/mm, cross-checked by the brie box lid serving as the plate coming out at 157mm against a real 15 to 16cm. Being a straight-down frame there is no height information whatever, so every depth below is a shape prior rather than a measurement: the muffin half measures 6cm by 6cm in footprint and is carried at 45g to match the half logged at breakfast from what is very likely the same muffin, the two fig halves measure 4.1 to 4.6cm across their cut faces for a whole fruit near 45g, and the four cherries are taken at about 30g of flesh. (BG: 104 mg/dL Flat) (Pred: 130-150 mg/dL @ 8:58 PM) (Protein: 4g | Carbs: ~36g | Cals: ~190) [Coach: The fig and cherries are the good part here, and honestly a little carbohydrate this evening is not the worst idea given how reliably you dip after dinner. The muffin half is the refined bit at 22g. 36g in total, landing on a calm 104, so this should sit fine.]",
+    "title": "Dinner: half a blueberry muffin and a whole green fig cut in two, plus the four cherries she named in the caption. The cherries are not in the frame, so they are logged on her word alone while the muffin and fig are counted because they sit fully in frame on a deliberately composed plate. Logged 68 minutes after the 18:45 dinner, so just outside the one-hour window and not a cumulative continuation. The SPG card lay on the tablecloth beside the plate and shares its plane; its edges measure about 459px long against 292px short for an apparent aspect of 1.57 against the card's true 1.586, so the view is effectively straight down and the scale is sound at 5.41 px/mm, cross-checked by the brie box lid serving as the plate coming out at 157mm against a real 15 to 16cm. Being a straight-down frame there is no height information whatever, so every depth below is a shape prior rather than a measurement: the muffin half measures 6cm by 6cm in footprint and is the same half logged at breakfast. CORRECTED 2026-08-18: Maria confirmed it is her own lemon poppy seed and blueberry recipe, so the half is carried from her recipe table at 13g of carbohydrate, 2.5g of protein and about 95 calories rather than the 22g first assumed for a generic bakery muffin, removing 9g of carbohydrate and about 25 calories. The recomputed total of 28g crosses from the 31-50g band into the 16-30g band, so the carb factor rises from 0.9 to 1.2 and the projected peak barely moves. THE PREDICTION BELOW WAS RECOMPUTED POST HOC and MUST BE EXCLUDED FROM PROSPECTIVE MODEL CALIBRATION; the figure issued on the day was 130-150, the two fig halves measure 4.1 to 4.6cm across their cut faces for a whole fruit near 45g, and the four cherries are taken at about 30g of flesh. (BG: 104 mg/dL Flat) (Pred: 131-151 mg/dL @ 8:58 PM, post hoc) (Protein: 4g | Carbs: ~28g | Cals: ~165) [Coach: The fig and cherries are the good part here, and honestly a little carbohydrate this evening is not the worst idea given how rel…",
     "type": "Dinner",
     "date": "2026-08-17T19:53:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-17/bbb26fa9ca5f902e.jpg",
-    "carbs": 36,
-    "cals": 190,
+    "carbs": 28,
+    "cals": 165,
     "delta": 49,
     "peak": 155
   },
@@ -78,12 +89,12 @@
   },
   {
     "id": "3bf85ec7-0668-81a9-91ee-d96026794c73",
-    "title": "Breakfast: a slice of her homemade whole-grain multi-seed bread, cold-smoked salmon dressed with pickled mustard seeds, a fresh green fig, and about half a blueberry muffin, alongside coffee. The SPG card was in frame but lying flat on the tablecloth rather than in the plate's plane, so it was not used for scale; portions were calibrated instead against the plate, measured at roughly 22cm across from its 700px major axis and a 0.81 minor-to-major ratio giving a 37 degree view. That gives about a 45g slice of bread, carried from the standing 18-slice figure for her 9x5 loaf rather than re-estimated from the photo, roughly 50g of smoked salmon draped across about a third of the plate at 2mm slice thickness, a small green fig at about 40g measured 3.4cm across, and about 45g of muffin, which is half a standard 6cm one. (BG: 121 mg/dL Flat) (Pred: 173-193 mg/dL @ 11:02 AM) (Protein: 17g | Carbs: ~49g | Cals: ~360) [Coach: Salmon at breakfast is a lovely call — real protein to steady you after the evening you had. The bread, muffin and fig do stack three carb sources on one plate though, so the muffin is the piece I would trim first. The fig brings fiber along with its sugar, which helps.]",
+    "title": "Breakfast: a slice of her homemade whole-grain multi-seed bread, cold-smoked salmon dressed with pickled mustard seeds, a fresh green fig, and about half a blueberry muffin, alongside coffee. The SPG card was in frame but lying flat on the tablecloth rather than in the plate's plane, so it was not used for scale; portions were calibrated instead against the plate, measured at roughly 22cm across from its 700px major axis and a 0.81 minor-to-major ratio giving a 37 degree view. That gives about a 45g slice of bread, carried from the standing 18-slice figure for her 9x5 loaf rather than re-estimated from the photo, roughly 50g of smoked salmon draped across about a third of the plate at 2mm slice thickness, a small green fig at about 40g measured 3.4cm across, and half a muffin. CORRECTED 2026-08-18: the muffin was originally carried at about 22g of carbohydrate as half a generic 45g bakery muffin. Maria confirmed on 2026-08-18 that it is her own lemon poppy seed and blueberry recipe, whose table gives 26g of carbohydrate, 5g of protein and 189 calories for a WHOLE muffin, so a half is 13g, 2.5g and about 95 calories. That removes 9g of carbohydrate and about 65 calories from this row. THE PREDICTION BELOW WAS RECOMPUTED POST HOC for internal consistency and MUST BE EXCLUDED FROM PROSPECTIVE MODEL CALIBRATION; the figure actually issued to her on the day was 173-193. (BG: 121 mg/dL Flat) (Pred: 165-185 mg/dL @ 11:02 AM, post hoc) (Protein: 17g | Carbs: ~40g | Cals: ~295) [Coach: Salmon at breakfast is a lovely call — real protein to steady you after the evening you had. The bread, muffin and fig do stack three carb sources on one plate though, so the muffin is the piece I would trim first. The fig brings fiber along with its sugar, which helps.]",
     "type": "Breakfast",
     "date": "2026-08-17T09:47:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-17/b9fa7be5acf7c735.jpg",
-    "carbs": 49,
-    "cals": 360,
+    "carbs": 40,
+    "cals": 295,
     "delta": 58,
     "peak": 179
   },
