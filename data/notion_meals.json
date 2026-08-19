@@ -1,5 +1,16 @@
 [
   {
+    "id": "3c185ec7-0668-8162-8193-e7d09d948808",
+    "title": "Breakfast: an open-faced slice of dark whole-grain bread topped with two draped pieces of cold-smoked salmon, with half an avocado still in its skin alongside, photographed on the flamingo tablecloth with the SPG card lying flat on the same cloth in the near foreground. GEOMETRY: the plate images as a 758 by 557 pixel ellipse, so cos theta is 0.735 and the VIEWING ANGLE IS ROUGHLY 43 DEGREES, squarely inside the useful 30 to 45 degree band, which means the bread thickness was measured off the side profile rather than assumed. THE CARD WAS DELIBERATELY NOT USED AS THE PRIMARY SCALE, because it lies in the foreground roughly 11cm nearer the lens than the plate and that inflates its pixels per mm by about 21 percent; taken raw at 5.2 px/mm it would have resolved the plate to 14.6cm. Correcting for that depth difference and for the rim sitting about 1.5cm above the cloth puts the plate near 17cm, which MATCHES HER KNOWN SMALL SIDE PLATE measured independently at 16 to 17cm on two prior occasions, so the plate was adopted as the anchor at 4.46 px/mm and the card served only to fix the geometry. This is the same failure mode as the plum on 2026-08-13, caught this time rather than after the fact: right cloth, wrong depth. BREAD: the front crust reads 300 px wide, which is 67mm, and the crust band stands 50 px tall in frame which resolves through sin 43 to a THICKNESS OF 16mm MEASURED, giving roughly 7 by 7.5 by 1.6cm, about 66ml, and at 0.42 g/ml for a dense wholegrain crumb about 30g. That is APPRECIABLY SMALLER THAN ONE SLICE OF HER 45g HOMEMADE LOAF, nearer two thirds of one, so the stored loaf figure was checked and then deliberately not applied; 30g gives 13g of carbohydrate, 4g of protein and 78 calories. SALMON: two pieces covering the whole bread top and overhanging both the left and right edges, roughly 80 square cm of drape at an average 3.5mm of folded thickness, about 55g, giving 10g of protein, 2.4g of fat and 64 calories. AVOCADO: the half measures 273 px ac…",
+    "type": "Breakfast",
+    "date": "2026-08-19T09:01:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-19/32bd9e37d58e8a7a.jpg",
+    "carbs": 17,
+    "cals": 225,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3c185ec7-0668-8127-994c-ce5abab9711c",
     "title": "Dinner: two whole fresh apricots, her word, photographed on the flamingo tablecloth with the SPG card beside them. FAVOURABLE GEOMETRY AND IT IS THE SECOND GOOD FRAMING TODAY: the card lies flat on the same tablecloth as the fruit rather than off on a placemat while the food sits raised on a plate, so THE TWO SHARE A PLANE AND NO PLANE-OFFSET CORRECTION IS APPLIED, which removes the term that cost 17 percent of volume on 2026-08-10 and that had to be carried against the 19:06 omelette earlier this evening. Card edges measure about 475px long against 310px short for an apparent aspect of 1.53 against the true 1.586, a disagreement of only three percent, so the camera is essentially straight down and the honest scale is the LESS foreshortened short edge at 310 divided by 54mm, giving 5.74 px per mm. On that scale the left apricot measures about 38mm across and the right about 36mm, both squarely in the ordinary 35 to 45mm range for the fruit, so at a near-spherical shape they come to roughly 40g each and ABOUT 80g OF FRUIT IN TOTAL, which is two medium apricots and nothing unusual. THE LIMITATION OF A TOP-DOWN FRAME IS STATED RATHER THAN HIDDEN: a straight-down view measures footprint precisely and height not at all, so the height here is a SHAPE PRIOR and not a measurement. That prior is unusually safe for this particular fruit, an apricot being near-spherical and only slightly oblate, which is exactly the case where a footprint does constrain volume — it would not be safe for a mound of rice or a folded omelette, and the contrast with tonight's egg error is deliberate. The fruit also carries a frosted, condensation-like sheen suggesting it came straight from the fridge, which changes nothing nutritionally and is noted only so a later reader does not mistake it for a coating or a sugar dusting. Macros from USDA raw apricot at about 4.4g of carbohydrate, 0.55g of protein and 21 calories per 40g fruit. A CALORIE FLOOR NOTE, SINCE THIS ROW SITS RIGHT ON THE LIMIT: 4 ti…",
     "type": "Dinner",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-18/fed571655a3a3332.jpg",
     "carbs": 8,
     "cals": 40,
-    "delta": null,
-    "peak": null
+    "delta": 1,
+    "peak": 136
   },
   {
     "id": "3c185ec7-0668-812a-828d-cfa6b1a085a3",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-18/cb4f4dcdf2c68c50.jpg",
     "carbs": 25,
     "cals": 320,
-    "delta": null,
-    "peak": null
+    "delta": 15,
+    "peak": 152
   },
   {
     "id": "3c085ec7-0668-81a4-8965-ed11a06dbef3",
