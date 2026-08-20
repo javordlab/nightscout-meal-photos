@@ -1,5 +1,16 @@
 [
   {
+    "id": "3c285ec7-0668-81f3-b215-e00ad2a5296f",
+    "title": "Lunch: an open-faced slice of her homemade whole-grain loaf draped with cold-smoked salmon, alongside sliced avocado, a pile of raw carrot sticks and a dollop of hummus. THE BREAD IS HER OWN STATED 40g, GIVEN IN THE CAPTION, and a stated weight replaces any photo estimate outright rather than being averaged with it — she weighs her bread herself now and that habit is doing real work here. Applying her stored loaf constants of 0.451g carb, 0.102g protein and 2.925 cal per gram gives 18.0g carb, 4.1g protein and 117 cal for the 40g slice; generic bakery figures run about 70 percent high on this loaf and were not used. MEASUREMENT FOR THE REMAINING COMPONENTS, calibrated against the SPG card lying FLAT ON THE FLAMINGO CLOTH: card images at about 360 px on the long edge against about 235 px on the short, an apparent aspect of 1.53 against the true 1.586, so the frame is very near overhead and no meaningful obliquity correction is warranted — this is the easy case and the fourth time running she has supplied it. Scale is taken as the larger of the two edge ratios at 4.35 px/mm, which is valid AT THE CLOTH PLANE. PLANE-OFFSET CORRECTION IS APPLIED AND IS NOT NEGLIGIBLE: the food sits on a plate roughly 2cm above the cloth at a camera distance near 40cm, so plate-plane objects image about 5 percent larger, and the working scale at the food is 4.58 px/mm. Cross-check that the scale is sane: the bread measures about 255 by 390 px, i.e. 56 by 85 mm, which at a 15mm slice thickness and a dense multi-seed crumb near 0.55 g/ml predicts about 39g against her stated 40g — independent agreement to within 3 percent, which is the strongest validation of the scale available in this frame. PORTIONS DERIVED: avocado about six fanned slices spanning 265 by 270 px, consistent with HALF A MEDIUM FRUIT at roughly 68g of flesh, giving 5.8g carb, 1.4g protein, 109 cal; carrot sticks counted at roughly sixteen, a representative stick measuring about 250 px long by 40 px wide, i.e. 55mm by 8.7…",
+    "type": "Lunch",
+    "date": "2026-08-20T13:13:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-20/c53b300989581624.jpg",
+    "carbs": 36,
+    "cals": 375,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3c285ec7-0668-81dd-83f5-c15dba98846a",
     "title": "Breakfast: a yogurt bowl with blueberries, hemp hearts and ground flax, alongside a slice of her homemade whole-grain loaf with peanut butter and low-sugar jam. ALL PORTIONS ARE MARIA'S OWN STATED MEASURES, SUPPLIED IN THE CAPTION, AND THEY REPLACE ANY PHOTO ESTIMATE OUTRIGHT RATHER THAN BEING AVERAGED WITH IT — no geometry was performed and none was needed. The SPG card is present and lying flat on the flamingo cloth, but a stated measurement collapses tilt, plane offset, height, shape and packing density in one move, so the card was deliberately left unused. Stated quantities: 2/3 cup yogurt (158 ml, about 163g at a yogurt density near 1.03 g/ml), 1/2 cup blueberries (about 74g), 1 tbsp hemp hearts (about 10g), 1 tsp ground flax (about 2.5g), one 60g slice of her homemade loaf, 2 tbsp peanut butter (about 32g), and 1 tsp low-sugar jam (about 7g). BREAD USES HER STORED LOAF CONSTANTS rather than a generic bakery figure, at 0.451g carb, 0.102g protein and 2.925 cal per gram, giving 27.1g carb, 6.1g protein and 176 cal for the 60g slice — she weighs her own bread now, so the gram figure is hers and not inferred, and generic estimates run about 70 percent high on this loaf. YOGURT is her homemade whole-milk plain, never sweetened per her standing record, taken at 4.7g carb and 3.5g protein per 100g; no question about added sugar is warranted or asked. Component build: yogurt 7.7g carb, 5.7g protein, 99 cal; blueberries 10.7g carb, 0.5g protein, 42 cal; hemp hearts 0.9g carb, 3.2g protein, 55 cal; ground flax 0.7g carb, 0.5g protein, 13 cal; bread 27.1g carb, 6.1g protein, 176 cal; peanut butter 6.4g carb, 8.0g protein, 188 cal; jam 1.8g carb, 10 cal. Totals 55.3g carb, 24.0g protein, 583 cal, rounded below. Calorie floor check passes comfortably: 4 x 55 plus 4 x 24 is 316 against 585, the balance being fat from the peanut butter, hemp hearts and whole-milk yogurt. NOT CUMULATIVE — the previous Food entry was the 22:35 milk on 2026-08-19, over eleven hours earlier, so…",
     "type": "Breakfast",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-20/39748eb04dc92f6c.jpg",
     "carbs": 55,
     "cals": 585,
-    "delta": null,
-    "peak": null
+    "delta": 51,
+    "peak": 152
   },
   {
     "id": "3c285ec7-0668-8114-b8c6-f12b0b554b8c",
