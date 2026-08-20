@@ -1,5 +1,27 @@
 [
   {
+    "id": "3c285ec7-0668-8114-b8c6-f12b0b554b8c",
+    "title": "Dinner: a tall glass of milk before bed, roughly one cup, on the small round side table. NOT CUMULATIVE — the banana was 2h23m earlier, well outside the one-hour window, so this is its own Dinner row; the hour table gives Dinner at 22:35 and no invented prefix such as Pre-sleep is used, since a Food title not starting with one of the five meal words hard-blocks the sync pipeline. MEASUREMENT — THE CARD IS PRESENT AND FLAT ON THE TABLE BUT IS DELIBERATELY NOT USED FOR SCALE, and the reason is worth recording. Its edges image at about 268 px against about 225 px, an apparent aspect of 1.19 — LOWER than the card's true 1.586, which is IMPOSSIBLE for any flat rectangle unless the LONG axis is the one running into the depth direction and being crushed. Solving it that way gives a foreshortening factor near 0.53 on the long axis, so cos theta is about 0.53 and THE VIEWING ANGLE IS ROUGHLY 58 DEGREES — a steep oblique, and past the 50-degree threshold at which the standing rule says RANGE ONLY, NEVER A MASS, with food-size priors outranking the card. The round tabletop is the correct angle gauge in principle, being a true circle, but its diameter is unknown so it can corroborate the obliquity without supplying a scale. A second independent reason to distrust pixel widths here: the glass sits well left of frame centre in a wide-angle phone shot and its edges taper asymmetrically, the left edge sloping in from about x=40 at the rim to x=235 at the base while the right edge stays near-vertical, which is lens perspective rather than the glass's real shape. ANCHOR IS THEREFORE A HOUSEHOLD PRIOR, NOT GEOMETRY: a standard tall tumbler runs 12 to 16 oz, and the milk surface sits about 410 px up an interior of about 615 px, so roughly two-thirds full. Taken as ABOUT 250 ml, one cup — chosen as a round household measure precisely because it is a claim she can overturn in one word, which no pixel figure would be. Whole milk per her standing record that both her milks are whole: abou…",
+    "type": "Dinner",
+    "date": "2026-08-19T22:35:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-19/5313c2fcad33269d.jpg",
+    "carbs": 12,
+    "cals": 150,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "3c285ec7-0668-81f5-83d1-c40a1bcef99c",
+    "title": "Dinner: one of her short plump apple/manzano bananas, yellow and heavily brown-speckled, eaten 23 minutes after the plum and 63 minutes after the 19:09 plate, so logged as a CUMULATIVE DINNER under the one-hour rule. Per the standing variety note the brown speckling means RIPE, NOT OVER-RIPE, and carb mass is unchanged by it; no comment was made to her about ripeness and none should be. THE GEOMETRY IS THE IDEAL CASE AND IT IS WORTH RECORDING AS SUCH: the SPG card lies FLAT ON THE SAME FLAMINGO CLOTH as the banana, sharing one plane and one camera distance, so NO plane-offset term applies — the third time today she has supplied that arrangement unprompted. Card measures about 460 px on the long edge and 285 px on the short, an apparent aspect of 1.614 against the true 1.586, so cos theta is 0.983 and the shot is near-overhead at ABOUT 11 DEGREES. CAVEAT PER TODAY'S 15:49 FINDING: aspect ratio is only a LOWER BOUND on the viewing angle, valid when the card's edges align with the tilt direction, and there is NO CIRCLE IN FRAME here to check it against, so the true angle may be higher — accepted because at near-overhead the two dimensions that matter for a banana, length and width, are exactly the ones a top-down frame measures well. The two edges agree on scale to within 2 percent, 5.37 against 5.28 px per mm, which is the tell of a genuinely flat card. PORTIONS: banana 760 px along its axis by 270 px at its widest, giving 141mm long by 51mm wide — long for a manzano, but the blunt, plump, ridged profile is hers and not a Cavendish, which she cannot digest. Volume as a prolate ellipsoid is 183ml, reduced by a 0.75 taper-and-flattening factor to ABOUT 137ml whole, times a flesh density near 0.94 giving ABOUT 129g with peel, less a peel fraction of about a third, leaving ABOUT 85g of flesh. CROSS-CHECK AGAINST THE STORED ANCHOR, AND THE DISAGREEMENT IS FLAGGED RATHER THAN HIDDEN: her banana note carries about 17g of carbs as the usual figure, while 85g of flesh at 23g …",
+    "type": "Dinner",
+    "date": "2026-08-19T20:12:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-19/20abc68cde551f45.jpg",
+    "carbs": 20,
+    "cals": 80,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3c285ec7-0668-8193-8bb6-e9c4dccc6271",
     "title": "Dinner: sautéed cabbage browned in fat with a fried egg set into the middle of it, a molded scoop of white rice, and her stated two slices of prosciutto. MEASUREMENT — THE CARD IS FLAT ON THE TABLECLOTH, NOT ON THE PLATE, so it sits in the table plane BELOW the food and a plane-offset correction applies; per the lesson established at 15:49 today the angle gauge is the circular plate rim rather than the card's aspect ratio. THE PLATE IS CUT OFF AT FRAME-LEFT, so its major axis cannot be measured cleanly, and the two scales disagree in the wrong direction: a card long edge of about 310 px gives 3.62 px per mm at cloth level while a 27cm plate assumption gives 3.13, yet the cloth sits BELOW the plate and should therefore image SMALLER, not larger. One of the two is wrong, so neither is trusted. ACCORDINGLY THE ANCHOR IS A FOOD-SIZE PRIOR, which by the same 2026-08-16 rule outranks a contested card: the egg yolk measures about 170 px across against a typical large-egg yolk of 40-45mm, giving roughly 3.8 to 4.25 px per mm, and on that scale the plate reads about 22cm rather than 27 — a lunch plate, not a dinner plate. PORTIONS: rice dome about 70mm across by 30mm high, roughly 90-100ml packed, giving ABOUT 70g, a scant half cup, and this is calibrated against HER OWN stated measure from 2026-08-10 where a measured half cup of her rice weighed 79g rather than against any generic density; cabbage covering roughly 60 percent of the plate at about 2cm depth, some 540ml loose at a shredded-cooked density near 0.35 g per ml, giving ABOUT 180g or one and a half cups cooked, plus roughly a tablespoon of cooking fat which the heavy browning makes visible and which carries most of the calories; one large fried egg; and 30g of prosciutto across the TWO SLICES SHE STATED, carried verbatim rather than estimated from the pile. Calorie floor check passes: 4 x 31 plus 4 x 19 is 196 against 420, the balance being fat from the sauté and the yolk. Not cumulative — the 15:37 bowl was 3h32m…",
     "type": "Dinner",
@@ -2014,7 +2036,7 @@
   },
   {
     "id": "39685ec7-0668-8132-8924-e4faae8c5c41",
-    "title": "Lunch: a yellow plum (BG: 138 mg/dL Flat) (Pred: 137-157 mg/dL @ 5:00 PM) (Protein: 1g | Carbs: ~8g | Cals: ~30) [Cumulative Lunch: 18g carbs total] [Coach: A sweet little plum to finish 👌 — whole fruit brings fiber along, so it's a gentle sweet after that big protein lunch. Only a handful of extra carbs on an already-steady meal. Lovely way to round things off.]",
+    "title": "Lunch: a yellow plum (BG: 138 mg/dL Flat) (Pred: 137-157 mg/dL @ 5:00 PM) (Protein: 1g | Carbs: ~8g | Cals: ~30) [Cumulative Lunch: 18g carbs total] [Coach: A sweet little plum to finish 👌 ��� whole fruit brings fiber along, so it's a gentle sweet after that big protein lunch. Only a handful of extra carbs on an already-steady meal. Lovely way to round things off.]",
     "type": "Lunch",
     "date": "2026-07-07T15:45:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-07/1b8db47d784c65de.jpg",
@@ -6183,7 +6205,7 @@
   },
   {
     "id": "35e85ec7-0668-8171-a5e1-d96a6452d65b",
-    "title": "Lunch: Half Reuben sandwich (corned beef, sauerkraut, Swiss cheese, Thousand Island dressing on toasted rye/sourdough), side salad of mixed greens, pickled red onion, and pumpkin seeds (BG: 141 mg/dL Flat) (Pred: 158-168 mg/dL @ 2:34 PM) (Protein: 16g | Carbs: ~26g | Cals: ~270) [Coach: Smart call eating only half ��� the corned beef has no carbs and good protein, sourdough fermentation slows digestion vs white bread, and the salad adds fiber and healthy fats. A well-managed lunch especially starting at 141.]  [id:fb787a0e]",
+    "title": "Lunch: Half Reuben sandwich (corned beef, sauerkraut, Swiss cheese, Thousand Island dressing on toasted rye/sourdough), side salad of mixed greens, pickled red onion, and pumpkin seeds (BG: 141 mg/dL Flat) (Pred: 158-168 mg/dL @ 2:34 PM) (Protein: 16g | Carbs: ~26g | Cals: ~270) [Coach: Smart call eating only half — the corned beef has no carbs and good protein, sourdough fermentation slows digestion vs white bread, and the salad adds fiber and healthy fats. A well-managed lunch especially starting at 141.]  [id:fb787a0e]",
     "type": "Lunch",
     "date": "2026-04-15T12:41:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-15/517104f542b954c4.jpg",
