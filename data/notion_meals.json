@@ -1,7 +1,7 @@
 [
   {
     "id": "3c185ec7-0668-819c-893a-f630416c0c9f",
-    "title": "Lunch: a small bowl of seeded crackers, purple sweet potato chips and a scoop of hummus from the tub she says she has been working through for a long time. SCALE REFERENCE PRESENT BUT NOT IN THE FOOD'S PLANE: the SPG card is propped against the bowl rim rather than lying flat on the flamingo cloth, so it is both elevated above the table and tilted up toward the lens. Consequence: the card reads almost square-on, apparent aspect of 412 by 262 px equals 1.573 against the card's true 1.586, which would falsely suggest a near-overhead shot. The bowl rim is a true circle and is therefore the honest angle gauge: rim ellipse minor over major of about 565 over 660 px gives cos theta 0.856 and A VIEWING ANGLE NEAR 31 DEGREES FROM VERTICAL. Because the card sits above the table plane it images magnified, so its 4.85 px per mm was used only as a cross-check and THE ANCHOR IS HER STATED 8oz / 237ml BOWL at roughly 10cm inner diameter. Portions from the bowl anchor: hummus scoop about 40mm across by 25mm high, a spherical cap of roughly 24ml, giving ABOUT 35g or two heaped tablespoons; three seeded crackers at roughly 35 by 39mm each, ABOUT 11g total, two of them partly buried behind the hummus; six thick-cut curled purple sweet potato chips, ABOUT 14g. SUM-VS-CAPACITY CHECK PASSES: 24ml of hummus plus roughly 60ml of airy chips plus 15ml of crackers is about 100ml in a 237ml bowl, and the photo shows it a little under half full. Not cumulative: the 13:21 chocolate was 2h16m earlier, outside the one-hour window, so this is its own Lunch row under the hour table rather than a continuation. (BG: 127 mg/dL Flat) (Pred: 138-158 mg/dL @ 4:47 PM) (Protein: 5g | Carbs: ~21g | Cals: ~200) [Coach: Hummus is the hero here 👌 — chickpeas bring fiber and fat that slow the crunch right down, so two crunchy starches still land at only 21g. The sweet potato chips are the fried half, but on a day with a whole carrot and 28g of protein already in it, that tub can take its time.]",
+    "title": "Lunch: a small bowl of seeded crackers, purple sweet potato chips and a scoop of hummus from the tub she says she has been working through for a long time. SCALE REFERENCE CORRECTLY PLACED — CORRECTED AT 15:49 ON MARIA'S OWN STATEMENT, WHICH OVERRIDES THE PHOTO READ: the SPG card is lying FLAT ON TOP OF THE BOWL RIM, horizontal and at the food's own height, which is exactly the arrangement that has been asked for. The first version of this row called it propped and leaning against the rim and that was WRONG. WHY THE PHOTO READ FAILED, AND THIS IS THE REUSABLE LESSON: the card's apparent aspect of about 412 by 262 px equals 1.573 against its true 1.586, i.e. almost no foreshortening, which was misread as evidence of a near-overhead shot and hence of a tilted card. But a flat rectangle only compresses along the direction of tilt, so when it is rotated roughly diagonally to that direction, as here, both edges compress in similar proportion and THE ASPECT RATIO CAN READ NEAR-TRUE AT A REAL 31 DEGREE TILT. ASPECT RATIO IS THEREFORE NOT A VALID ANGLE GAUGE UNLESS THE CARD'S IN-PLANE ROTATION IS KNOWN; A CIRCULAR VESSEL RIM IS, because a circle is rotationally symmetric and squashes identically whichever way it is turned. Accordingly the bowl rim was used as the angle gauge: rim ellipse minor over major of about 565 over 660 px gives cos theta 0.856 and A VIEWING ANGLE NEAR 31 DEGREES FROM VERTICAL. The card's 4.85 px per mm served as a cross-check and THE ANCHOR IS HER STATED 8oz / 237ml BOWL at roughly 10cm inner diameter. The portion figures below are unchanged by this correction. Portions from the bowl anchor: hummus scoop about 40mm across by 25mm high, a spherical cap of roughly 24ml, giving ABOUT 35g or two heaped tablespoons; three seeded crackers at roughly 35 by 39mm each, ABOUT 11g total, two of them partly buried behind the hummus; six thick-cut curled purple sweet potato chips, ABOUT 14g. SUM-VS-CAPACITY CHECK PASSES: 24ml of hummus plus roughly 60ml of airy …",
     "type": "Lunch",
     "date": "2026-08-19T15:37:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-19/5eef140d9ba6dd0e.jpg",
@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-19/c20de5c4798a3d43.jpg",
     "carbs": 51,
     "cals": 560,
-    "delta": null,
-    "peak": null
+    "delta": 64,
+    "peak": 172
   },
   {
     "id": "3c185ec7-0668-8123-8557-ee449fce4efa",
@@ -29,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-19/4e7b87661fa8fed6.jpg",
     "carbs": 45,
     "cals": 480,
-    "delta": null,
-    "peak": null
+    "delta": 84,
+    "peak": 172
   },
   {
     "id": "3c185ec7-0668-8162-8193-e7d09d948808",
