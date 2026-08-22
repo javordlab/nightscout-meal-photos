@@ -1,14 +1,25 @@
 [
   {
-    "id": "3c485ec7-0668-8190-ba37-c9b1979bffaa",
-    "title": "Dinner (cont.): a beef burger patty topped with a melted slice of pale cheese, NO BUN, served with a whole ear of grilled corn cooked in foil. Eaten 7 minutes after the 18:24 salad and 25 minutes after the 18:06 cheese and crackers, so a CUMULATIVE DINNER and the third course of this meal. THE PATTY WEIGHT IS MARIA'S OWN STATED MEASURE AND REPLACES ESTIMATION ENTIRELY: her words, BURGER IS 6.5 OZ BEFORE COOKING, carried verbatim as 184g RAW. No geometry was performed on the patty and none should be — a stated weight collapses tilt, plane offset, height and shape in one move, and it is the single most reliable number in this row. The SPG card is again cut off at the left frame edge and was not needed for the patty as a result. COOKING YIELD APPLIED: a grilled patty loses roughly a quarter of its raw weight to rendered fat and water, so 184g raw yields ABOUT 138g cooked. Macros are computed on the raw stated weight with that rendering accounted for. LEAN RATIO IS THE LARGEST UNCERTAINTY IN THIS ROW AND IS FLAGGED RATHER THAN BURIED. It was not stated and is ASSUMED AT 85/15, the common middle grade. The spread is material: at 184g raw, 80/20 gives roughly 470 cal against 90/10 at roughly 325 cal, so the assumption carries a swing of about 145 CALORIES — larger than the entire salad course logged at 18:24. Protein moves far less, from about 32g to 37g, so the prediction is barely sensitive to it. If Maria states the grade the calorie figure should be revised; the carbohydrate and the prediction will not change. PATTY at 85/15, 184g raw yielding 138g cooked: ABOUT 35g PROTEIN, ZERO CARBOHYDRATE, ABOUT 350 cal. CHEESE SLICE, a single melted pale slice of a melting variety such as provolone, Jack or Havarti, estimated at ABOUT 22g: roughly 5g protein, negligible carbohydrate, 78 cal. CORN MEASURED AGAINST THE PLATE RATHER THAN THE CARD, since the card is clipped. The plate rim images about 1093 px across and reads as a standard dinner plate near 26.5cm, giving about 4.12…",
+    "id": "3c485ec7-0668-8172-a448-d13613a049c8",
+    "title": "Breakfast: one slice of her homemade dark seeded loaf topped with sliced avocado and draped prosciutto, alongside a bowl of plain homemade yogurt with blueberries, ground flax and hemp hearts. EVERY PORTION IS MARIA'S OWN STATED MEASURE, GIVEN IN THE CAPTION AND CARRIED RATHER THAN ESTIMATED FROM THE IMAGE, and NO SCALE REFERENCE IS IN FRAME — none was needed and none is missed, since a stated measurement collapses tilt, plane offset, height and packing density in one move and outranks any geometry. Her stated build: BREAD 50g WEIGHED, one slice prosciutto, one third of an avocado, yogurt, half a cup of blueberries, and one tablespoon each of flax and hemp. THE BREAD IS COSTED FROM HER OWN RECIPE TABLE rather than from a generic loaf, at 0.451g carbohydrate, 0.102g protein and 2.925 cal per gram, so her weighed 50g gives 22.6g carbs, 5.1g protein and 146 cal — she weighs the loaf herself as a standing habit and that figure is the most reliable number in this row. Prosciutto at one deli slice taken as 18g gives 4.9g protein and 35 cal with no carbohydrate. One third of a medium Hass at about 45g of flesh gives 3.8g total carbohydrate, of which ROUGHLY THREE QUARTERS IS FIBRE, plus 0.9g protein and 72 cal. Yogurt is her own homemade plain, NEVER SWEETENED per the standing rule, costed at 4.7g per 100g. Blueberries at half a cup and about 74g give 10.7g carbs and 42 cal. Ground flax at a tablespoon of about 7g gives 2.0g carbs of which nearly all is fibre, 1.3g protein and 37 cal; hemp hearts at about 10g give 0.9g carbs, 3.2g protein and 55 cal. ONE STATED FIGURE IS AMBIGUOUS AND IS FLAGGED RATHER THAN SILENTLY RESOLVED: SHE WROTE 1.2 CUP YOGURT, which is read here as HALF A CUP on three grounds and she was told so in one clause so she can contradict it in one word. First, 1.2 cup is not a measure a person pours; the adjacent fractions in the same caption are written 1/3 and 1/2 with a slash, so a single keystroke slip from 1/2 to 1.2 explains it. Second, HALF A CUP …",
+    "type": "Breakfast",
+    "date": "2026-08-22T09:55:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-22/21615d1bd8199726.jpg",
+    "carbs": 46,
+    "cals": 490,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "3c485ec7-0668-8101-9a4d-d9897df87bd9",
+    "title": "Dinner (cont.): a wagyu beef burger patty topped with a melted slice of pale cheese, NO BUN, served with a whole ear of grilled corn cooked in foil. Eaten 7 minutes after the 18:24 salad and 25 minutes after the 18:06 cheese and crackers, so a CUMULATIVE DINNER and the third course of this meal. THE PATTY WEIGHT IS MARIA'S OWN STATED MEASURE: her words, BURGER IS 6.5 OZ BEFORE COOKING, carried verbatim as 184g RAW. No geometry was performed on the patty and none should be. LEAN RATIO SUPPLIED BY MARIA AT 18:35 AND THE ASSUMPTION IS REPLACED: her words, BEEF IS 25/75 WAGYU. READ AS 75 PERCENT LEAN AND 25 PERCENT FAT, the digits taken in the conventional lean-first order — she was answering the direct lean-ratio question asked at 18:31, and 75/25 is a real grade whereas 25 percent lean is not a product that exists. A 25-PERCENT-WAGYU BLEND IS THE ONLY OTHER PLAUSIBLE READING and would point the same direction on fat, so the row is not materially exposed either way. The reading was stated back to her in one clause so she can overturn it. THE ASSUMED 85/15 IS THEREFORE WRONG AND THE PATTY IS FATTIER THAN LOGGED, BUT THE CONSEQUENCE IS FAR SMALLER THAN THIS LOG PREDICTED AT 18:31, AND THAT OVERSTATEMENT IS CORRECTED HERE. The 18:31 row quoted a swing of about 145 CALORIES between grades. THAT FIGURE WAS COMPUTED ON RAW WEIGHTS AND DOES NOT SURVIVE CONTACT WITH A GRILL: a fattier patty sheds proportionally more fat during cooking, so the grades converge once rendered. Recomputed on USDA COOKED values, 184g of raw 75/25 yields about 130g cooked at roughly 24.9g protein and 272 cal per 100g, giving ABOUT 32g PROTEIN and ABOUT 355 cal, plus a modest allowance for retained rendered fat, taken as ABOUT 375 cal. Against the 85/15 figures of 35g protein and 350 cal the real movement is roughly PLUS 25 CALORIES AND MINUS 3g PROTEIN. The plate shows no pooled fat, consistent with substantial rendering. WAGYU NOTE RECORDED BECAUSE IT IS RELEVANT TO HER AND NOT MERELY TRIVIA: at a …",
     "type": "Dinner",
     "date": "2026-08-21T18:31:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-21/f32b321cf9d46070.jpg",
     "carbs": 18,
-    "cals": 550,
-    "delta": null,
-    "peak": null
+    "cals": 570,
+    "delta": 99,
+    "peak": 180
   },
   {
     "id": "3c485ec7-0668-81ea-a453-ff7e241decd3",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-21/a67581660bc28fff.jpg",
     "carbs": 7,
     "cals": 80,
-    "delta": null,
-    "peak": null
+    "delta": 104,
+    "peak": 180
   },
   {
     "id": "3c485ec7-0668-8159-b5f0-d3f23464ff44",
@@ -29,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-21/91d77756d22eb998.jpg",
     "carbs": 14,
     "cals": 150,
-    "delta": null,
-    "peak": null
+    "delta": 99,
+    "peak": 180
   },
   {
     "id": "3c385ec7-0668-8100-8f8f-ee3cb702f043",
