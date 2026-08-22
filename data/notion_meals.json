@@ -1,5 +1,16 @@
 [
   {
+    "id": "3c485ec7-0668-814c-a90a-c9045a358f6b",
+    "title": "Dinner: a slice of hard pale aged cheese alongside four paprika-dusted cooked shrimp, served on a wooden board. SCALE REFERENCE PRESENT BUT NOT FULLY USABLE, AND THAT IS STATED RATHER THAN GLOSSED: the SPG card is in frame but is CUT OFF AT THE LEFT EDGE, so only one complete edge can be measured. With a single edge there is no aspect ratio, therefore NO VIEWING ANGLE CAN BE COMPUTED and there is no way to tell a foreshortened long edge from an honest short one — the two readings differ by a factor of 1.6 here, which is the whole ballgame. The card was therefore treated as a PARTIAL CROSS-CHECK ONLY and not as a calibration. PORTIONS SET FROM FOOD-SIZE PRIORS, which per the standing rule outrank an unreliable card. The four shrimp are plump and read as LARGE, roughly 35mm across curled, about 12g of cooked meat each and ABOUT 48g IN TOTAL; that prior fixes the working scale near 4.7 px per mm, and the card's one measurable edge is consistent with it if that edge is the 85.6mm long side. Against the same scale the CHEESE SLICE measures roughly 55mm by 65mm and about 5mm thick, close to 18ml at a hard-cheese density near 1.05 g/ml, so ABOUT 20g. SHRIMP READ AS PLAINLY COOKED AND PAPRIKA-DUSTED, NOT BATTERED — the craggy surface is curled shrimp flesh rather than coating. This matters because a light flour batter would add roughly 8 to 12g of carbohydrate and materially change the prediction; if they were in fact battered the row needs revising. A small allowance of about 20 cal is included for pan oil. NOT COUNTED, AND FLAGGED TO HER: a plate holding further cheese slices sits CUT OFF at the top-left frame edge, along with a cheese slicer. Per Maria's own 2026-08-13 framing rule, fully in frame counts and something clipped at a corner is incidental, so it is excluded. A small dark morsel is partly occluded behind the third shrimp and is most likely dark grain in the board rather than food; it is not counted and was mentioned to her. MEALTYPE IS DINNER from the hour t…",
+    "type": "Dinner",
+    "date": "2026-08-21T18:06:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-21/91d77756d22eb998.jpg",
+    "carbs": 1,
+    "cals": 145,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3c385ec7-0668-8100-8f8f-ee3cb702f043",
     "title": "Lunch (cont.): a bowl of thin golden seeded crackers, flax and sesame visible in the crumb, eaten 5 minutes after the 13:06 charcuterie plate and therefore a CUMULATIVE LUNCH rather than a separate item. Photo-only with no caption, so nothing here is stated and everything is measured. THE VESSEL IS ALMOST CERTAINLY HER KNOWN 8oz BOWL AND IT WAS VERIFIED RATHER THAN ASSUMED. The card lies flat on the placemat beside the bowl and is very nearly flat-on: its edges measure about 452 px and 275 px for an apparent aspect of 1.644 against the true 1.586, only 3.7 percent out, giving cos theta of 0.965 and A VIEWING ANGLE NEAR 15 DEGREES — the easy near-top-down case. Scale on the placemat plane is 452/85.6 = 5.28 px/mm. The bowl's outer diameter measures about 705 px, or 133mm on that plane; correcting for the rim standing roughly 5.5cm above the placemat at a 40cm working distance multiplies by 0.86 for A TRUE OUTER DIAMETER NEAR 115mm and an inner diameter near 100mm, which for a bowl of ordinary depth is a capacity in the 200 to 260ml region. THAT IS CONSISTENT WITH THE 237ml BOWL SHE HAS STATED and the standing anchor is therefore applied. THE COUNT IS FLAGGED OUT LOUD BECAUSE IT IS THE WEAK LINK, per the standing rule on mixed and overlapping items: the crackers OVERLAP AND STACK, so between six and eight are distinguishable and SEVEN IS TAKEN, with the real possibility that one or two more sit hidden underneath. PER-CRACKER WEIGHT IS TIED TO THIS LOG'S OWN PRIOR MEASUREMENT RATHER THAN INVENTED FRESH: the 2026-08-19 15:37 lunch established three seeded crackers at roughly 35 by 39mm as ABOUT 11g total, or 3.7g each. TODAY'S ARE LARGER, measuring roughly 45 by 38mm, and scaling by area gives 1710 over 1365, a factor of 1.25, so ABOUT 4.6g EACH AND ROUGHLY 30g FOR SEVEN. At 65g carbohydrate, 10g protein and 460 cal per 100g for a seeded cracker — shaded down from the 70g carb and 450 cal figure that row used for plain wheat crackers, because these visibly carry flax a…",
     "type": "Lunch",
@@ -7,19 +18,19 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-21/6b2e994ad75cfdcd.jpg",
     "carbs": 20,
     "cals": 140,
-    "delta": null,
-    "peak": null
+    "delta": 38,
+    "peak": 159
   },
   {
     "id": "3c385ec7-0668-81e0-9650-cc625d13fe6c",
-    "title": "Lunch: a small charcuterie plate — prosciutto, a whole fresh green fig, and one curled slice of a darker cured sausage of the chorizo or salami type. TWO OF THE THREE ITEMS WERE NOT IN HER CAPTION, WHICH SAID ONLY 1 AND A HALF SLICES PROSCIUTTO, AND BOTH ARE COUNTED HERE UNDER HER OWN STANDING FRAMING RULE OF 2026-08-13: fully in frame means count it even when uncaptioned, and only something sneaking into a corner is accidental. THE FIG SITS DEAD CENTRE OF THE PLATE and is unambiguous. THE DARK RED PIECE IS AMBIGUOUS IN IDENTITY RATHER THAN IN PRESENCE — it lies against the prosciutto pile, is markedly deeper red, glossier and firmer-edged with a distinct curl, which reads as a separate cured sausage rather than as a darker margin of the ham, but that is a visual call and it was FLAGGED TO HER OUT LOUD in the reply so a one-word correction can overturn it. No question was put to her, per the framing rule that the framing is the answer. NOT CUMULATIVE, AND THE MARGIN IS NARROW ENOUGH TO STATE: the previous Food row is the 11:17 milk, one hour and forty-nine minutes earlier, outside the one-hour window, so this is a fresh Lunch row rather than a fourth course of the morning meal. The hour table gives Lunch at 13:06 in any case. MEASUREMENT, AND THE CARD WAS DELIBERATELY DEMOTED TO A SANITY CHECK RATHER THAN USED AS THE RULER. The SPG card lies flat on the placemat, in the TABLE plane, while all the food sits on a raised plate, so the two are not coplanar. The view is also markedly oblique: the plate images as an ellipse of roughly 880 by 645 px, an aspect of 1.364, giving cos theta of 0.733 and A VIEWING ANGLE NEAR 43 DEGREES. Per the standing rule that a steep card yields a range only and that food-size priors outrank it, THE PLATE WAS USED AS THE IN-PLANE RULER AND THE FIG WAS SIZED AGAINST A FOOD PRIOR. The card independently gives about 2.80 px/mm on the table plane, and the plate plane necessarily reads higher because it is nearer the lens, which is consistent a…",
+    "title": "Lunch: prosciutto with a whole fresh green fig. CORRECTED AT 13:12 ON MARIA'S OWN STATEMENT AND AMENDED IN PLACE RATHER THAN LEFT STANDING. As first written this row logged a THIRD ITEM, a curled slice of darker cured sausage of the chorizo or salami type, read as separate because it was markedly deeper red, glossier and firmer-edged than the ham around it. HER WORDS AT 13:12: the red is part of the prosciutto, it is just a bit drier than the rest. THE ITEM DOES NOT EXIST AND HAS BEEN REMOVED. Her stated one and a half slices therefore covers every piece of meat on the plate, the dry darker portion included, so the prosciutto weight of 24g is unchanged. THE FIG REMAINS UNCAPTIONED AND REMAINS COUNTED, dead centre of the plate and unambiguous, under her standing framing rule of 2026-08-13 that fully in frame means count it. THE MECHANISM THAT CAUGHT THIS WORKED EXACTLY AS DESIGNED AND THAT IS WORTH RECORDING: the phantom item was FLAGGED OUT LOUD in the reply as an uncertain visual call rather than logged silently, no question was put to her per the framing rule, and she overturned it in one sentence six minutes later. Logged silently it would have carried a fictitious cured sausage forward indefinitely. NOT CUMULATIVE, AND THE MARGIN IS NARROW ENOUGH TO STATE: the previous Food row is the 11:17 milk, one hour and forty-nine minutes earlier, outside the one-hour window, so this is a fresh Lunch row rather than a fourth course of the morning meal. The hour table gives Lunch at 13:06 in any case. MEASUREMENT, AND THE CARD WAS DELIBERATELY DEMOTED TO A SANITY CHECK RATHER THAN USED AS THE RULER. The SPG card lies flat on the placemat, in the TABLE plane, while all the food sits on a raised plate, so the two are not coplanar. The view is also markedly oblique: the plate images as an ellipse of roughly 880 by 645 px, an aspect of 1.364, giving cos theta of 0.733 and A VIEWING ANGLE NEAR 43 DEGREES. Per the standing rule that a steep card yields a range only and that food…",
     "type": "Lunch",
     "date": "2026-08-21T13:06:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-21/f57487b801edc2f1.jpg",
     "carbs": 11,
-    "cals": 155,
-    "delta": null,
-    "peak": null
+    "cals": 105,
+    "delta": 36,
+    "peak": 159
   },
   {
     "id": "3c385ec7-0668-81d4-b861-f4af541cc8bb",
@@ -29,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-21/fdbedeb0bd3f27ae.jpg",
     "carbs": 22,
     "cals": 230,
-    "delta": null,
-    "peak": null
+    "delta": 57,
+    "peak": 151
   },
   {
     "id": "3c385ec7-0668-819b-a753-e6406b5f26f6",
@@ -40,8 +51,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-21/b36da3186cd75a8d.jpg",
     "carbs": 26,
     "cals": 225,
-    "delta": null,
-    "peak": null
+    "delta": 55,
+    "peak": 144
   },
   {
     "id": "3c385ec7-0668-81e7-8e63-ff8e65c3e7d6",
