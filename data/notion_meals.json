@@ -1,5 +1,27 @@
 [
   {
+    "id": "3c585ec7-0668-8141-b791-cbf00d042f04",
+    "title": "Breakfast: one slice of her homemade wholegrain seeded loaf spread thickly with peanut butter, alongside a small bowl of plain homemade yogurt topped with slices of dried mango, and a mug of coffee with milk. NO CARD IN FRAME; portions calibrated instead against her own measured bread anchor, which is the stronger reference here — loaf #2 at 861g cooled over her stated 23 slices gives 37.4g per slice carrying about 16.5g carbohydrate, 3.5g protein and 95 cal, constants validated on the 2026-08-22 15:40 single-slice test. The peanut butter layer measured roughly 2.5 to 3mm deep across the full slice face of about 13 by 6.5cm, giving close to 25g, a generous tablespoon and a half, for about 6.3g protein, 5g carbohydrate and 148 cal. The yogurt bowl is her stated 8oz/237ml vessel and sat about half full: a yogurt surface radius near 4.5cm at about 2.5cm depth gives roughly 95g, and the mango cluster adds about 25ml on top, so the components total near 120ml against a 237ml capacity and THE SUM-VERSUS-CAPACITY CHECK PASSES with room to spare. Yogurt taken as plain homemade whole-milk at 4.7g carbohydrate per 100g per her standing confirmation, never sweetened. Dried mango taken at about 20g dry weight, consistent with the three or four slices at roughly 15g she ate on 2026-08-22 evening. THE FRUIT IDENTITY IS THE ONE UNCERTAIN TERM AND IT WAS FLAGGED TO HER IN THE REPLY RATHER THAN ASSUMED SILENTLY: dried mango carries about 65g carbohydrate per 100g against about 10g for fresh peach, so the choice swings the meal total by roughly 13g, which is material to the forecast. Dried was chosen on the leathery folded surface of the upper-left piece, the deep golden colour, and the bag she opened the previous night; one word from her overrides it. NOT CUMULATIVE — the last food was the 21:47 half apple more than eleven hours earlier. Pills are visible on the side dish but under the standing rule they are neither narrated to her nor read as a confirmation, and NO MEDICATION ROW …",
+    "type": "Breakfast",
+    "date": "2026-08-23T09:53:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-23/c0731c797114a548.jpg",
+    "carbs": 43,
+    "cals": 390,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "3c585ec7-0668-8131-8460-c08c95356d70",
+    "title": "Dinner (dessert course): one square of dark chocolate with a few slices of dried mango, eaten at the table about 78 minutes after the stew. CLASSIFIED DINNER RATHER THAN DESSERT BY THE HOUR RULE — 19:46 falls in the 18:00 to 04:59 Dinner band, she gave no caption and MealType is never inferred from photo content. NOT CUMULATIVE EITHER: the last food was the 18:33 bread slice, 73 minutes back, outside the 1-hour window, so this takes its own row and its own live baseline. Portions calibrated against the SPG card lying flat on the placemat IN THE SAME PLANE AS THE FOOD, which is the arrangement that makes the card trustworthy. The card is rotated in plane rather than tilted, so the scale was solved from its bounding box of about 430 by 408 pixels, giving roughly 4.25 pixels per mm at a rotation near 39 degrees. On that scale the chocolate measures about 43 by 54mm at roughly 7mm thick, so about 16 cubic cm and about 20g at chocolate's density. The mango reads as THREE OR FOUR THIN CURLED SLICES TOTALLING ABOUT 15g, deliberately counted as pieces rather than from the pile's footprint, which is spread out and flatters the quantity — the standing over-count trap with cut and dried fruit. Dried mango is ASSUMED UNSWEETENED; a sweetened packet would add roughly 1 to 2g of carbohydrate, which is inside the noise and was therefore not made into a question for her. ⚠️ THE BASELINE IS COMPROMISED AND THE PREDICTION INHERITS THAT. The last half hour reads 157 at 19:19, 142 at 19:24, then 115 and 111 with FortyFiveDown arrows, 106 at 19:39 and 114 at 19:44. A FALL OF 51 POINTS IN 20 MINUTES IS NOT PHYSIOLOGICALLY POSSIBLE HERE — no insulin, no sulfonylurea, no exercise — so it is a sensor artifact, and it matters because her Libre 3 is on the ACTIVE FDA CLASS I RECALL FOR FALSE LOWS. ⚠️ THE CAUSE WAS CALLED TWICE AND BOTH CALLS WERE WRONG — READ THE THIRD PARAGRAPH BELOW, NOT THE FIRST TWO. It was first called as COMPRESSION from leaning on the sensor. She corrected that at 19:…",
+    "type": "Dinner",
+    "date": "2026-08-22T19:46:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-22/70e2ed2e80675185.jpg",
+    "carbs": 21,
+    "cals": 170,
+    "delta": 16,
+    "peak": 130
+  },
+  {
     "id": "3c585ec7-0668-815a-8f5c-ec98fecbc0c0",
     "title": "Dinner: a wide bowl of Spanish white bean stew with potato and a piece of braised pork belly, topped with a whole hard-boiled egg served as two halves, alongside a side plate of raw carrot sticks and cut orange, and a glass of water. Portions calibrated against the SPG card lying flat on the placemat in the same plane as the bowl's base, giving about 2.76 pixels per mm at a viewing angle in the useful 30 to 45 degree range; the bowl reads about 21cm across the rim with the stew filling a well roughly 15cm wide to about 3cm deep, so ABOUT 350ml of stew, which resolves as roughly 120g of cooked white beans, 70g of potato, a 35g piece of pork belly consistent with her stated 1.5 inches, and the balance broth and sofrito. The egg is ONE whole egg presented as two halves and is counted as one. The three pieces of cut orange read as about three-quarters of a single fruit at roughly 100g of flesh rather than as three oranges, and the carrot sticks as about 90g of raw carrot. Fibre is high at roughly 13g across the beans, potato, carrots and orange, which Model v5 has no term for. (BG: 121 mg/dL Flat) (Pred: 159-179 mg/dL @ 7:33 PM) (Protein: 26g | Carbs: ~60g | Cals: ~575) [Coach: Now that is a proper plate 🎯 — beans and egg together bring 26g of protein and around 13g of fibre, which is exactly what keeps 60g of carbs civil. Lunch only managed 14g of protein, so dinner has squared the day nicely. The carrots and orange are honest work too.]",
     "type": "Dinner",
@@ -7,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-22/1f41d9b50fa863da.jpg",
     "carbs": 60,
     "cals": 575,
-    "delta": null,
-    "peak": null
+    "delta": 36,
+    "peak": 157
   },
   {
     "id": "3c485ec7-0668-81c5-a557-c29cdc1692a1",
