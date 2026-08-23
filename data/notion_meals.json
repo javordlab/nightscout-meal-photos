@@ -1,14 +1,25 @@
 [
   {
+    "id": "3c585ec7-0668-815a-8f5c-ec98fecbc0c0",
+    "title": "Dinner: a wide bowl of Spanish white bean stew with potato and a piece of braised pork belly, topped with a whole hard-boiled egg served as two halves, alongside a side plate of raw carrot sticks and cut orange, and a glass of water. Portions calibrated against the SPG card lying flat on the placemat in the same plane as the bowl's base, giving about 2.76 pixels per mm at a viewing angle in the useful 30 to 45 degree range; the bowl reads about 21cm across the rim with the stew filling a well roughly 15cm wide to about 3cm deep, so ABOUT 350ml of stew, which resolves as roughly 120g of cooked white beans, 70g of potato, a 35g piece of pork belly consistent with her stated 1.5 inches, and the balance broth and sofrito. The egg is ONE whole egg presented as two halves and is counted as one. The three pieces of cut orange read as about three-quarters of a single fruit at roughly 100g of flesh rather than as three oranges, and the carrot sticks as about 90g of raw carrot. Fibre is high at roughly 13g across the beans, potato, carrots and orange, which Model v5 has no term for. (BG: 121 mg/dL Flat) (Pred: 159-179 mg/dL @ 7:33 PM) (Protein: 26g | Carbs: ~60g | Cals: ~575) [Coach: Now that is a proper plate 🎯 — beans and egg together bring 26g of protein and around 13g of fibre, which is exactly what keeps 60g of carbs civil. Lunch only managed 14g of protein, so dinner has squared the day nicely. The carrots and orange are honest work too.]",
+    "type": "Dinner",
+    "date": "2026-08-22T18:28:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-22/1f41d9b50fa863da.jpg",
+    "carbs": 60,
+    "cals": 575,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3c485ec7-0668-81c5-a557-c29cdc1692a1",
-    "title": "Lunch (cont.): a thick slice of rustic white bread spread with liver pate, and half a red apple alongside. Eaten 16 minutes after the 12:37 chips and hummus and therefore a CUMULATIVE LUNCH, the second course of one meal rather than a separate item — this is the food she said at 12:44 she was still deciding on. THE THREE ITEMS ARE HER OWN STATED IDENTIFICATION, carried verbatim; only the portions are estimated. THIS IS SHOP BREAD, NOT HER HOMEMADE LOAF, and the distinction is recorded because it matters to the bread constants: she stated white bread, the crumb is pale and open with a golden crust, and her own dark seeded loaf FINISHED AT THIS MORNING'S 09:55 BREAKFAST with the replacement not yet baked. So the recipe-derived per-gram constants DO NOT APPLY to this slice and a generic white-bread table is used instead, which is the correct call for the gap between loaves. PORTIONS CALIBRATED AGAINST THE SPG CARD, WHICH IS AGAIN ON THE PLACEMAT RATHER THAN THE PLATE — the plane offset is computed, not waived, and the placement was NOT raised with her again, having been named once sixteen minutes earlier; repeating it inside the same meal would be nagging. Card corners resolve to approximately 848,432 and 1090,414 and 1140,730 and 900,762, giving mean edges near 327 px and 242 px. APPARENT ASPECT 1.349 AGAINST THE TRUE 1.586, so THE LONG AXIS IS THE COMPRESSED ONE HERE, inverting the usual case; cos theta = 3.820/4.489 = 0.851 and THE VIEWING ANGLE IS ABOUT 32 DEGREES off straight down. Under the max rule the honest scale is 242/54.0 = 4.489 px/mm, valid along the card's SHORT-edge direction which runs roughly horizontally in frame. PLANE OFFSET at the standing D = 40cm and h = 2cm gives 4.725 px/mm AT THE PLATE'S SURFACE. CROSS-CHECKED AGAINST THE PLATE: its long axis of about 725 px resolves to 153mm, a small 15cm side plate rather than the 21cm lunch plate used at 12:37, which is consistent with what the image shows and confirms the correction ran the right way. TH…",
+    "title": "Lunch (cont.): a thick slice of rustic white bread spread with liver pate, and half a red apple alongside. Eaten 16 minutes after the 12:37 chips and hummus and therefore a CUMULATIVE LUNCH, the second course of one meal rather than a separate item — this is the food she said at 12:44 she was still deciding on. THE THREE ITEMS ARE HER OWN STATED IDENTIFICATION, carried verbatim; only the portions are estimated. CORRECTED AT 13:06 ON HER OWN STATEMENT — THIS IS NOT SHOP BREAD. As first written this row called it shop bread and costed it from a generic white-bread table, reasoning that her seeded wholegrain loaf had finished at the 09:55 breakfast and its replacement was not yet baked. HER WORDS AT 13:06: the bread she ate is not shop bread, it is THE BREAD SHE MAKES FOR JAVIER, just flour, water, yeast and salt. A SECOND HOMEMADE LOAF EXISTS IN THAT HOUSE AND THIS LOG DID NOT KNOW IT — the standing bread reference described exactly one loaf, so when hers ran out the only remaining hypothesis was a bought one. THE GENERALISABLE FIX IS RECORDED IN THE BREAD REFERENCE: when she says bread it can now be EITHER loaf, so ASK WHICH ONE rather than inferring from which loaf is in stock. RECOSTED FROM A LEAN BUILD of roughly 500g flour, 325g water, 10g salt and 5g yeast, about 840g of dough yielding some 740g baked, giving per gram 0.492g carbohydrate, 0.087g protein and 2.46 cal. THE CORRECTION IS REAL BUT SMALL AND IS REPORTED AS SUCH RATHER THAN INFLATED: carbohydrate and protein are within a rounding of the generic table, and only calories move, from 93 to 86 on this slice, BECAUSE HER LOAF CARRIES NO ADDED SUGAR AND NO FAT where a commercial white bread does. The row's stated macros are left at 28g carbohydrate, 8g protein and 240 cal, since a 7-calorie shift is inside the portion uncertainty on the pate and the apple and re-rounding would imply a precision this row does not have. QUANTITIES FOR JAVIER'S LOAF ARE INFERRED FROM A STANDARD LEAN FORMULA AND NOT STATED BY H…",
     "type": "Lunch",
     "date": "2026-08-22T12:53:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-22/89d1b02e5395c6af.jpg",
     "carbs": 28,
     "cals": 240,
-    "delta": null,
-    "peak": null
+    "delta": 50,
+    "peak": 163
   },
   {
     "id": "3c485ec7-0668-818f-976d-f65733643bce",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-22/6c90343c27e55ca9.jpg",
     "carbs": 32,
     "cals": 295,
-    "delta": null,
-    "peak": null
+    "delta": 39,
+    "peak": 163
   },
   {
     "id": "3c485ec7-0668-8172-a448-d13613a049c8",
@@ -29,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-22/21615d1bd8199726.jpg",
     "carbs": 46,
     "cals": 490,
-    "delta": null,
-    "peak": null
+    "delta": 54,
+    "peak": 151
   },
   {
     "id": "3c485ec7-0668-8101-9a4d-d9897df87bd9",
