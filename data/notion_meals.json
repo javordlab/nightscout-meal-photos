@@ -1,5 +1,16 @@
 [
   {
+    "id": "3c685ec7-0668-81a6-88c5-fbfb234aa8ce",
+    "title": "Dinner: two fried eggs with black pepper, one fresh fig cut into halves, a fan of sliced avocado, a serving of home-fried potatoes, and a small slice of her homemade wholegrain seeded loaf eaten plain. NO CARD IN FRAME, and the plate is cropped at the left and bottom edges, so THREE INDEPENDENT ANCHORS WERE CROSS-CHECKED RATHER THAN ONE TRUSTED. Fitting the visible rim arc through its top and right edges gives a plate radius near 539px, so a 26 to 27cm plate puts scale at ABOUT 41 px/cm; the fried egg yolks at 190px read 4.6cm and the fig halves at 185px and 155px read 4.5cm and 3.8cm on that scale, both sane, which corroborates it. A FOURTH ANCHOR WAS TRIED AND DELIBERATELY REJECTED: measuring the two tablets on the side dish against a nominal 19mm tablet length implied only 28.5 px/cm, which would make the two eggs span 19 by 24cm and overflow a 27cm plate outright, so the tablet reading is wrong rather than the plate reading; it is recorded here so the same false anchor is not retried later. THE SHOT IS CLOSE TO TOP-DOWN, theta perhaps 20 to 25 degrees judging by how nearly circular the rim runs, WHICH MEANS HEIGHTS ARE NOT MEASURABLE HERE and every depth below is a stated prior rather than a measurement. Two large fried eggs give 12.6g protein, 0.8g carbohydrate and about 185 cal once roughly a teaspoon of absorbed frying oil is counted. One medium fig at about 4.5cm across is near 50g whole, giving 9.6g carbohydrate and 37 cal, and it is logged as ONE FIG IN TWO HALVES rather than as two figs — the halved-fruit over-count trap. Avocado fan of eight or nine crescents taken at about 70g of flesh, roughly half a medium fruit, for 6g carbohydrate of which 4.7g is fibre, 1.4g protein and 112 cal. Home-fried potatoes counted at ten to twelve pieces averaging near 4.5g each, so about 55g cooked, for 14g carbohydrate, 1.5g protein and 120 cal with the frying oil; they read as Spanish-style patatas fritas with soft interiors rather than as crisps, WHICH MATTERS BECAUSE…",
+    "type": "Dinner",
+    "date": "2026-08-23T18:31:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-23/75c2b70a312c0fe2.jpg",
+    "carbs": 39,
+    "cals": 505,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3c585ec7-0668-8139-9efd-f01be72913f4",
     "title": "Lunch: a large serving of sauteed browned cabbage with onion, a thick slice of rustic bread spread with liver pate, and a small orange cut into six wedges. HER TEXT ARRIVED WITH TYPOS AND THE PHOTO SETTLES ALL THREE ITEMS, so nothing was asked of her: Manage reads as CABBAGE, bread with locate reads as bread with PATE, and small orange ge reads as SMALL ORANGE WEDGES — each confirmed visually rather than guessed. NO CARD IN FRAME; calibrated against the plate, taken as a standard 27cm dinner plate. THE SHOT IS A GOOD ANGLED ONE AND THE ANGLE WAS MEASURED RATHER THAN LAMENTED: the plate spans 1140px across frame against 925px front-to-back, so cos theta is 925/1140 = 0.81 and THETA IS ABOUT 36 DEGREES, squarely in the useful band. Scale on the honest across-frame axis is 42.2 px/cm; depth-axis measurements were divided by 0.81 before use. Bread slice measured 12.8cm by 7.0cm after that depth correction, at about 1.5cm thick, giving roughly 100ml of crumb once the oval outline is accounted for and about 40g at rustic-loaf density near 0.3 g/ml, carrying about 20g carbohydrate and 3.5g protein for 105 cal. ⚠️ THIS IS DELIBERATELY NOT SCORED AS HER HOMEMADE LOAF: no seeds are visible and the crumb is markedly paler than the seeded slice she ate at 09:53 this morning, so it reads as the rustic white bread she also ate at 2026-08-22 12:53, and HER PRECISE 37.4g PER-SLICE LOAF CONSTANTS WERE NOT APPLIED. The difference is about 3.5g carbohydrate, immaterial to the forecast, which is why she was not asked. Pate layer about 4mm deep over roughly 72 sq cm of the slice, near 30g, giving 4.2g protein and 96 cal. Cabbage covers close to 40 percent of the plate at about 2cm depth with a packing factor near 0.55 for the air between shreds, so roughly 250ml or a good cup cooked, near 150g, plus browned onion and about a tablespoon of cooking oil; that comes to about 11g carbohydrate of which 3g is fibre, 2g protein and 165 cal, THE OIL RATHER THAN THE VEGETABLE CARRYING MOST OF TH…",
     "type": "Lunch",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-23/3a528d96a54b9e99.jpg",
     "carbs": 43,
     "cals": 410,
-    "delta": null,
-    "peak": null
+    "delta": 43,
+    "peak": 133
   },
   {
     "id": "3c585ec7-0668-8141-b791-cbf00d042f04",
