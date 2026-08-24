@@ -1,14 +1,25 @@
 [
   {
+    "id": "3c685ec7-0668-8116-8512-f7f8f72c06d4",
+    "title": "Breakfast: one slice of her homemade wholegrain seeded loaf spread thickly with peanut butter, alongside a bowl of plain homemade yogurt topped with chunks of sapote and a generous sprinkle of ground flax, with a mug of coffee. SAPOTE IDENTIFIED BY DEFAULT AND NOT ASKED ABOUT, per the rule adopted 2026-08-23 09:59 when she told me she has a sapote tree — pale golden chunky fruit in her bowl is sapote, and this is the first entry to apply that rule without querying her. NO CARD IN FRAME. ⚠️ THE VIEWING ANGLE IS TOO STEEP FOR GEOMETRY TO BE TRUSTED AND FOOD-SIZE PRIORS WERE USED INSTEAD, which is the standing rule above about 50 degrees: the yogurt bowl images 440px wide by 275px deep, a ratio of 0.625, so COS THETA = 0.625 AND THETA IS ABOUT 51 DEGREES. At that obliquity a naive read runs high — the 2026-08-16 muffin came out 45 percent heavy on a same-plane reference at a similar angle — so the bread was taken from her measured loaf constants rather than from pixels, and the remaining figures are ranges. Bread scored as ONE FULL SLICE of loaf #2 at 861g over 23 slices, so 37.4g carrying 16.5g carbohydrate, 3.5g protein and 95 cal; the steep-angle pixel read suggested a shorter slice but WAS OVERRULED BY THE PRIOR, since one full slice is her established breakfast pattern and the geometry is the unreliable term here. Peanut butter layer comparable to yesterday's at roughly 25g, giving 6.3g protein, 5g carbohydrate and 148 cal. Yogurt at about 110g for 5.2g carbohydrate, 3.9g protein and 67 cal. Sapote at about 50g, slightly more than yesterday's 45g, giving 14.5g carbohydrate, 0.7g protein and 63 cal at white sapote's 29g per 100g. GROUND FLAX AT ABOUT 2 TABLESPOONS OR 14g for 4g carbohydrate, 2.6g protein and 75 cal — AND NEARLY ALL OF THAT CARBOHYDRATE IS FIBRE, about 3.8g of the 4g, so its true glycaemic contribution is close to zero and the 47g total slightly overstates what will actually reach her blood. Components sum to about 175ml against the bowl's stated 2…",
+    "type": "Breakfast",
+    "date": "2026-08-24T10:18:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-24/4674de87949f7aba.jpg",
+    "carbs": 47,
+    "cals": 473,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3c685ec7-0668-8131-858d-fe028ee9dd21",
-    "title": "Dinner (cont.): about an ounce of cheese and half an apple. Added on her own instruction 16 minutes after the 18:31 plate, so this is a CUMULATIVE CONTINUATION of that dinner and not a separate snack — well inside the 1-hour window. AMENDED IN PLACE AT 18:58 WHEN SHE SENT A PHOTO OF THE CHEESE WITH THE SPG CARD BESIDE IT — this row was first written text-only against her stated about 1 oz and a generic firm cheese; the photo supplies both the identity and a real measurement, so the row was corrected rather than a second row added, since it is the same food. Half an apple stays at her stated 90g, the same figure used for her stated half apple on 2026-08-22 at 21:47. THE CHEESE IS TWO CHEESES, NOT ONE: a thin triangular wedge of hard aged cheese plus TWO CHUNKS OF BLUE CHEESE, which is the larger part by some margin. CARD CALIBRATION: card edges measured 484px long against 292px short, an apparent aspect of 1.657 against the true 1.586, so COS THETA IS 1.586/1.657 = 0.957 AND THETA IS ABOUT 17 DEGREES — a near-top-down frame. Scale from the honest long edge is 5.65 px/mm at table level. PLANE OFFSET APPLIED RATHER THAN IGNORED: the card lies on the placemat while the cheese sits on the plate about 2cm nearer the lens, so at an assumed 40cm shooting distance the plate-level scale is 5.65 × 40/38 = 59.5 px/cm, and every dimension below was taken at that scale. ⚠️ AT 17 DEGREES THE THICKNESSES ARE PRIORS, NOT MEASUREMENTS, and they are the dominant uncertainty here — a near-overhead frame sees footprint perfectly and height not at all. Hard wedge measured as a triangle of sides 3.4, 5.5 and 6.1cm, so 9.3 sq cm by Heron, at an assumed 0.8cm thick, giving 7.4ml and about 8g at 1.09 g/ml: 2.0g protein, 31 cal. Blue cheese measured as two blobs, 2.8 by 3.7cm and 5.7 by 3.5cm, at assumed depths near 1.2 and 1.3cm, giving about 25ml and 26g at 1.05 g/ml: 5.6g protein, 0.6g carbohydrate, 92 cal. TOTAL CHEESE IS THEREFORE ABOUT 34g AGAINST HER STATED 28g — 21 percent heavier, w…",
+    "title": "Dinner (cont.): about an ounce of cheese and half an apple. Added on her own instruction 16 minutes after the 18:31 plate, so this is a CUMULATIVE CONTINUATION of that dinner and not a separate snack — well inside the 1-hour window. AMENDED IN PLACE AT 18:58 WHEN SHE SENT A PHOTO OF THE CHEESE WITH THE SPG CARD BESIDE IT — this row was first written text-only against her stated about 1 oz and a generic firm cheese; the photo supplies both the identity and a real measurement, so the row was corrected rather than a second row added, since it is the same food. SHE CONFIRMED AT 18:59 THAT THIS WAS THE PICTURE THAT COULDN'T GET THROUGH — her first send failed on the Telegram side, which is why the text description came first and the photo eleven minutes later, and it RULES OUT ANY READING OF THIS AS A SECOND HELPING OF CHEESE. THE FAILURE WAS ON HER SEND, NOT IN THE BRIDGE: no photo_upload_failed directive was ever received, no photo: pending upload placeholder exists anywhere in the log, and the day closes with five food rows against four distinct photo URLs, the one uncovered row being the 14:13 cashews which were text-only by her choice. Nothing is stranded and nothing is duplicated. Half an apple stays at her stated 90g, the same figure used for her stated half apple on 2026-08-22 at 21:47. THE CHEESE IS TWO CHEESES, NOT ONE: a thin triangular wedge of hard aged cheese plus TWO CHUNKS OF BLUE CHEESE, which is the larger part by some margin. CARD CALIBRATION: card edges measured 484px long against 292px short, an apparent aspect of 1.657 against the true 1.586, so COS THETA IS 1.586/1.657 = 0.957 AND THETA IS ABOUT 17 DEGREES — a near-top-down frame. Scale from the honest long edge is 5.65 px/mm at table level. PLANE OFFSET APPLIED RATHER THAN IGNORED: the card lies on the placemat while the cheese sits on the plate about 2cm nearer the lens, so at an assumed 40cm shooting distance the plate-level scale is 5.65 × 40/38 = 59.5 px/cm, and every dimension below was take…",
     "type": "Dinner",
     "date": "2026-08-23T18:47:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-23/1d7921d0d9acb74f.jpg",
     "carbs": 13,
     "cals": 173,
-    "delta": null,
-    "peak": null
+    "delta": 6,
+    "peak": 129
   },
   {
     "id": "3c685ec7-0668-81a6-88c5-fbfb234aa8ce",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-23/75c2b70a312c0fe2.jpg",
     "carbs": 39,
     "cals": 505,
-    "delta": null,
-    "peak": null
+    "delta": 9,
+    "peak": 129
   },
   {
     "id": "3c585ec7-0668-8139-9efd-f01be72913f4",
