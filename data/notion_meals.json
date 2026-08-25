@@ -1,5 +1,16 @@
 [
   {
+    "id": "3c785ec7-0668-8108-89b6-cad2ad331e36",
+    "title": "Breakfast: one of her own lemon poppy seed and blueberry muffins alongside an open-faced piece of her homemade seeded loaf under folded slices of cooked deli ham, on a white plate. CLASSIFIED BREAKFAST BY THE HOUR RULE — 09:53 sits in the 05:00 to 10:59 window — and NOT cumulative, since the previous Food entry was the 21:09 apricots twelve hours earlier. No scale card in frame; portions calibrated against the plate, which reads about 930px across the horizontal axis against 685px vertically, giving cos theta 0.74 and a viewing angle near 42 degrees, so roughly 3.6 to 4.1 px per mm on the across-frame axis. THE MUFFIN WAS NOT ESTIMATED FROM THE PHOTO — her own recipe table gives 26g carbs, 5g protein and 189 cal for a whole muffin, and generic bakery figures run about 70 percent high, so the recipe numbers were used verbatim. THE BREAD FOOTPRINT MEASURES ABOUT 6cm ACROSS, roughly half of her 37g slice anchor, so about 20g of loaf and 9g of carbs were logged rather than a full slice — geometry ran 35 percent heavy on her bread on 2026-08-24 and still reads small here, which argues the piece genuinely is a half; her stated grams override this the moment she gives them. Cooked ham read as two folded deli slices at about 45g total, giving 8g protein and negligible carbs. Tablets were visible on a side dish and are deliberately not narrated or counted, per her standing rule — the auto-tracker owns that row. (BG: 98 mg/dL Flat) (Pred: 145-165 mg/dL @ 11:08 AM) (Protein: 16g | Carbs: ~35g | Cals: ~295) [Coach: Your own muffin next to ham on the seeded loaf 🫐 — homemade keeps the sugar in check, and the ham carries most of the 16g of protein. After last night's digging, an egg alongside would top that up nicely. Carbs at 35g sit comfortably.]",
+    "type": "Breakfast",
+    "date": "2026-08-25T09:53:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-25/180e5275012926da.jpg",
+    "carbs": 35,
+    "cals": 295,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3c785ec7-0668-817a-ade2-e4e60a44e8d4",
     "title": "Dinner (late fruit): two whole frozen apricots, still frost-covered, in a small pink bowl on the counter. Her own stated count of two, so nothing was inferred about number. CLASSIFIED DINNER BY THE HOUR RULE — 21:09 sits in the 18:00 to 04:59 Dinner window — and NOT cumulative, since the 18:01 fajita dinner was 3 hours 8 minutes earlier and well outside the one-hour window. No scale card in frame; portions calibrated against the bowl, whose inner rim reads about 11.5cm on the uncompressed horizontal axis, putting each apricot at roughly 4.4cm across and therefore about 40g of edible flesh once the stone is discounted, for about 80g in total. That is a medium-to-large apricot rather than the 35g USDA medium, and the larger figure was used because the fruit measures larger. FREEZING CHANGES NOTHING NUTRITIONALLY — no water is lost and no sugar is added — so the fresh-fruit panel applies unaltered. THE CALORIE TOTAL SITS EXACTLY ON THE 4-times-carbs-plus-4-times-protein FLOOR at 40, which is expected and not an error for a fat-free whole fruit. (BG: 101 mg/dL Flat) (Pred: 114-134 mg/dL @ 10:14 PM) (Protein: 1g | Carbs: ~9g | Cals: ~40) [Coach: Two frozen apricots is about as clever as a 9pm snack gets 🍑 — 9g of carbs, all of it whole fruit with fibre and water, and freezing turns it into sorbet without a grain of added sugar. After the day you have had, that is a quiet, well-judged way to finish it.]",
     "type": "Dinner",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-24/de914ef6fa3d220d.jpg",
     "carbs": 9,
     "cals": 40,
-    "delta": null,
-    "peak": null
+    "delta": 30,
+    "peak": 135
   },
   {
     "id": "3c785ec7-0668-81e7-9b02-d9fd1a7608d2",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-24/1425ec4b4d7e0cdc.jpg",
     "carbs": 47,
     "cals": 565,
-    "delta": null,
-    "peak": null
+    "delta": 49,
+    "peak": 142
   },
   {
     "id": "3c685ec7-0668-814f-ae54-e20d1e790499",
@@ -3598,7 +3609,7 @@
   },
   {
     "id": "37d85ec7-0668-818e-a399-d6f7c129ab9d",
-    "title": "Lunch: merluza rebozada (battered hake) — batter peeled off and NOT eaten, just the fish inside — with lettuce and tomato salad and a small piece of white bread (BG: 103 mg/dL Flat) (Pred: 113-123 mg/dL @ 4:31 PM) (Protein: 26g , Carbs: ~16g , Cals: ~250) [Coach: Merluza sin rebozado �� — peeling off the batter is a sharp move: drops ~11g of fried-flour carbs and a good chunk of oil calories. What's left is ~26g of lean hake protein + salad fiber + a bit of bread. Pred only ~118 by 4:31 PM. This is exactly the kind of quiet food edit that compounds into the 5s. Cured-meat tally stays at 0.]",
+    "title": "Lunch: merluza rebozada (battered hake) — batter peeled off and NOT eaten, just the fish inside — with lettuce and tomato salad and a small piece of white bread (BG: 103 mg/dL Flat) (Pred: 113-123 mg/dL @ 4:31 PM) (Protein: 26g , Carbs: ~16g , Cals: ~250) [Coach: Merluza sin rebozado 🐟 — peeling off the batter is a sharp move: drops ~11g of fried-flour carbs and a good chunk of oil calories. What's left is ~26g of lean hake protein + salad fiber + a bit of bread. Pred only ~118 by 4:31 PM. This is exactly the kind of quiet food edit that compounds into the 5s. Cured-meat tally stays at 0.]",
     "type": "Lunch",
     "date": "2026-06-12T14:38:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-12/f4e905af4c17b0eb.jpg",
