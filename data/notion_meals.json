@@ -1,14 +1,14 @@
 [
   {
     "id": "3c685ec7-0668-814f-ae54-e20d1e790499",
-    "title": "Lunch: one large slice of her homemade dark seeded loaf under generous ribbons of cold-smoked salmon, with wedges of red apple alongside. No scale card in frame; portions calibrated against the dinner plate and the tablet on the side dish, the plate reading about 25cm across and the plate ellipse giving a viewing angle near 49 degrees, which puts the slice at roughly 17cm wide and 2cm thick for about 50g, the salmon at about 65g across three folded ribbons, and the apple at about 100g, being five wedges or half a medium fruit. THE SLICE MEASURES LARGER THAN HER STORED LOAF ANCHOR of 37.4g per slice from the 861g 23-slice bake, so the anchor was NOT applied blindly and she was asked whether this is the same loaf or a wider cut. THE PREDICTION IS INSENSITIVE TO THAT QUESTION and this was checked rather than assumed: 30g of carbohydrate at the 1.2 factor gives 135 and 39g at the 0.9 factor gives 135, so the carb-band step cancels the difference and no answer is needed before eating. (BG: 91 mg/dL Flat) (Pred: 121-141 mg/dL @ 3:06 PM) (Protein: 17g | Carbs: ~35g | Cals: ~255) [Coach: Smoked salmon on your own seeded loaf is a smart answer to this morning 🐟 — 17g of protein, about 35g of carbs, and the apple brings fibre rather than a sugar rush. After a 204 peak, a plate this well-judged is exactly the reset. A few cucumber or tomato slices would round it out.]",
+    "title": "Lunch: one slice of her homemade dark seeded loaf under generous ribbons of cold-smoked salmon, with wedges of red apple alongside. CORRECTED AT 14:00 ON HER OWN STATEMENT — her words: it's a slice of my loaf, same as usual — so the slice is her STORED WEIGHED ANCHOR of 37g from the 861g 23-slice bake, giving about 16.5g of carbohydrate, and NOT the 50g my photo geometry produced. The salmon is about 65g across three folded ribbons and the apple about 100g, five wedges or half a medium fruit, both unchanged and both still photo estimates. ⚠️ MY GEOMETRY READ THE BREAD 35 PERCENT HEAVY AND THE STANDING RULE ALREADY FORBADE THE ATTEMPT: her loaf is the one food that must be taken from HER GRAMS, never measured from frame, because she weighs every bake. No card was in frame, the plate ellipse gave a steep 49-degree view, and the resulting 17cm slice was never plausible against a 37g anchor. THE ANCHOR SHOULD HAVE BEEN APPLIED OUTRIGHT AND THE QUESTION ASKED ONLY IF IT LOOKED WRONG. Same error class as the 2026-08-13 plum and the 2026-08-16 muffin — steep angle plus a competing estimate that should never have been generated. THE 13:56 CLAIM THAT THE PREDICTION WAS INSENSITIVE HELD UP: it moves only from 131 to 135, because 30g at the 1.2 factor and 35g at the 0.9 factor land within four points of each other. (BG: 91 mg/dL Flat) (Pred: 125-145 mg/dL @ 3:06 PM) (Protein: 16g | Carbs: ~30g | Cals: ~225) [Coach: Smoked salmon on your own seeded loaf is a smart answer to this morning 🐟 — 16g of protein, about 30g of carbs, and the apple brings fibre rather than a sugar rush. After a 204 peak, a plate this well-judged is exactly the reset. A few cucumber or tomato slices would round it out.]",
     "type": "Lunch",
     "date": "2026-08-24T13:56:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-24/a7c5628eea5f83b5.jpg",
-    "carbs": 35,
-    "cals": 255,
-    "delta": null,
-    "peak": null
+    "carbs": 30,
+    "cals": 225,
+    "delta": 48,
+    "peak": 139
   },
   {
     "id": "3c685ec7-0668-8116-8512-f7f8f72c06d4",
@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-24/4674de87949f7aba.jpg",
     "carbs": 48,
     "cals": 488,
-    "delta": null,
-    "peak": null
+    "delta": 111,
+    "peak": 204
   },
   {
     "id": "3c685ec7-0668-8131-858d-fe028ee9dd21",

@@ -256,26 +256,6 @@
         grouped[day].push(m);
       });
 
-
-      // Compact display summary: first sentence (the food description) — the
-      // audit narrative starts at sentence two — capped at 140 chars. Periods
-      // in "(cont.)" / decimals are not followed by space+capital, so safe.
-      function shortMealTitle(t) {
-        let s = (t || '').replace(/\s*\[[^\]]*\]\s*/g, ' ').trim();
-        const m = s.match(/^(.*?[.!?])\s+(?=[A-Z\u26A0\u201C"\u00A1\u00BF])/s);
-        if (m) s = m[1];
-        s = s.replace(/\s{2,}/g, ' ').trim();
-        if (s.length > 250) {
-          let c = s.slice(0, 250);
-          const sp = c.lastIndexOf(' ');
-          if (sp > 150) c = c.slice(0, sp);
-          s = c.replace(/[\s,;:-]+$/, '') + '\u2026';
-        }
-        return s;
-      }
-      function escAttr(t) {
-        return (t || '').replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
-      }
       let html = '';
       for (const [day, meals] of Object.entries(grouped)) {
         html += `<div class="day-label">${day}</div>`;
@@ -285,7 +265,7 @@
               <img src="${m.photo}" alt="Meal photo" onclick="openLightbox('${m.photo}')" loading="lazy" />
               <div class="info">
                 <div class="time">🕐 ${formatTime(m.date)} • ${m.type}</div>
-                <div class="description" title="${escAttr(m.title)}">${shortMealTitle(m.title)}</div>
+                <div class="description">${m.title}</div>
                 <div class="impact-row">
                   ${m.carbs ? `<span class="badge badge-carbs">${m.carbs}g carbs</span>` : ''}
                   ${m.cals ? `<span class="badge badge-cals">${m.cals} kcal</span>` : ''}
