@@ -1,16 +1,5 @@
 [
   {
-    "id": "3c885ec7-0668-8193-bbda-d342a6d03a79",
-    "title": "Breakfast: two open-faced slices of her own dark seeded loaf, one under herbed cured salmon and one under a fan of sliced avocado, with six orange wedges arranged alongside and a glass of water. CLASSIFIED BREAKFAST BY THE HOUR RULE — 10:06 sits inside the 05:00 to 10:59 window — and NOT cumulative, the previous Food entry being the 19:03 muffin fifteen hours earlier. NO SCALE REFERENCE IN FRAME, no card anywhere on the table, so portions were calibrated against the plate taken at approximately 25cm across its horizontal axis, which is the axis running across the line of sight and therefore the least foreshortened one in a moderately oblique shot like this. That gives roughly 75g of bread across the two slices, 60g of salmon, 75g of avocado which is about half a medium fruit, and about 120g of orange. THE BREAD FIGURE IS THE LEAST CERTAIN AND IS NOT FROM THE PHOTOGRAPH AT ALL — it uses her own recorded 37.4g per slice and 16.5g carbohydrate per slice from loaf number two, which she weighed at 861g over 23 slices, because her stated weights always outrank a visual estimate for bread. HER SLICE COUNT VARIES FROM BAKE TO BAKE AND THE CURRENT LOAF HAS NOT BEEN WEIGHED OR COUNTED, so if this bake ran to thicker or thinner slices the 33g of bread carbohydrate moves with it. The orange was counted as one fruit cut into six wedges rather than six fruits' worth, per the standing rule that cut fruit systematically over-counts by piece. 🔬 THIS MEAL IS A PROSPECTIVE TEST OF THE FOOD-FORM FINDING RECORDED AT 20:15 YESTERDAY AND THE PREDICTION SHOULD BE READ WITH THAT IN MIND. Model v5 is quoted here unmodified per the parity contract and gives 164 from 94 plus 53g at the 0.8 factor plus the 20 breakfast intercept plus 7 of preBG damping, with no protein term since protein lands exactly at the 20g threshold. BUT V5 CARRIES NO FOOD-FORM TERM, and this is the slow end of her range rather than the fast end — dense seeded loaf, half an avocado of fat and fibre, 20g of protein and w…",
-    "type": "Breakfast",
-    "date": "2026-08-26T10:06:00.000-07:00",
-    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-26/fcaa7faa0ef29aba.jpg",
-    "carbs": null,
-    "cals": null,
-    "delta": null,
-    "peak": null
-  },
-  {
     "id": "3c885ec7-0668-81ba-9463-d488f2c7da51",
     "title": "Dinner (cont.): one of her own lemon poppy seed and blueberry muffins, the second of the day, on a white plate. LOGGED AS A CUMULATIVE DINNER — it arrives 16 minutes after the 18:47 chickpea bowl and 52 minutes after the 18:11 chips, inside the one-hour window on both counts, so carbohydrate is summed across all three and PREBG STAYS ANCHORED TO THE 18:11 FIRST ITEM AT 100 mg/dL rather than the 121 current at 19:03. ✅ NO GEOMETRY WAS PERFORMED AND THE SPG CARD IN FRAME WAS DELIBERATELY IGNORED: her own recipe table gives 26g carbohydrate, 5g protein and 189 cal for a whole muffin, generic bakery figures run about 70 percent high, and the standing rule is that her measured constants beat any photograph. This is the same muffin costed at breakfast, so the figures are consistent within the day by construction rather than by coincidence. ⚠️ THE TAGGED PEAK TIME OF 7:16 PM FOLLOWS THE CUMULATIVE CONVENTION AND IS ANCHORED TO THE 18:11 FIRST ITEM, BUT IT IS EXPECTED TO BE EARLY IN REALITY: the single largest carbohydrate item in this meal arrived 52 minutes into it, so the true peak should land nearer 8:10 PM. ✏️ REFINED AT 19:06 BY HER OWN CLARIFICATION — she had JUST FINISHED THE MAIN MEAL when the muffin followed, with little time between them, so the 18:47 stamp marks when she STARTED that course and not when she ate it. The effective centre of the carbohydrate load is therefore around 18:55 to 19:00, not 18:47, which pulls the expected peak slightly earlier to roughly 8:00 PM. This is the same lesson as the 2026-08-21 19:11 disclosure about how meal timestamps should be read: a logged time is the start of eating, and for a slowly eaten course the load lands later than the stamp implies. Recorded before the outcome so the miss is scored against a stated expectation rather than explained afterwards. CONTEXT ON THE DECISION, WHICH IS HERS AND IS SOUND: at 19:01 she raised the muffin herself, said she thought she had maxed out on carbs, and asked about having it later t…",
     "type": "Dinner",
@@ -7580,7 +7569,7 @@
   },
   {
     "id": "33085ec7-0668-81c8-897d-c9c46fd440ec",
-    "title": "Dinner: Spanish green bean stew (judías verdes) with potatoes, garlic, and paprika (BG: 131 mg/dL Flat) (Pred: 155-170 mg/dL @ 7:55 PM) (Protein: 6g | Carbs: ~20g | Cals: ~160)",
+    "title": "Dinner: Spanish green bean stew (jud��as verdes) with potatoes, garlic, and paprika (BG: 131 mg/dL Flat) (Pred: 155-170 mg/dL @ 7:55 PM) (Protein: 6g | Carbs: ~20g | Cals: ~160)",
     "type": "Dinner",
     "date": "2026-03-26T18:25:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-03-26/838968912d887466.jpg",
