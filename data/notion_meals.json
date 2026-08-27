@@ -1,5 +1,16 @@
 [
   {
+    "id": "3c985ec7-0668-8162-939f-fd8e02f74f2c",
+    "title": "Breakfast: two open-faced slices of her own seeded loaf, one topped with a folded one-egg omelette and both carrying stewed apricot, with a mug alongside. CLASSIFIED BREAKFAST BY THE HOUR RULE — 10:46 sits inside the 05:00 to 10:59 window — and NOT cumulative, the previous Food entry being the 23:49 late-night yogurt eleven hours earlier. ⭐ THE BREAD IS NOT MEASURED FROM THE PHOTOGRAPH AND DELIBERATELY SO: it is her own weighed loaf, the standing rule is to use HER grams rather than a photo estimate for her bread, and she confirmed on 2026-08-26 that this is still loaf number two, the one they baked together, with a heads-up promised before the next bake. LOAF #2 ANCHOR: 861g across 23 slices is 37.4g per slice and about 16.5g of carbohydrate, so two slices are about 75g and 33g of carbohydrate. CORROBORATED INDEPENDENTLY BY HER OWN SCALE YESTERDAY, when she weighed a two-slice breakfast at 78g, so the pair sits in a tight 75 to 78g band and the anchor holds. THE OMELETTE IS HER STATED ONE EGG and is taken at that, not re-estimated from its spread — a folded omelette fans out and reads bigger than its egg count, which is a known over-counting trap in this log. One large egg gives about 6g of protein and 72 calories, with roughly 3g of cooking fat on top. THE APRICOTS ARE HER STATED TWO SMALL ONES, cooked down to a compote; two small apricots are about 70g raw at roughly 11g of carbohydrate per 100g, so about 8g, reducing to perhaps 50g of compote, which matches the volume visible on the plate. NOTE THAT THE APRICOT IS ON BOTH SLICES, visible peeking beneath the omelette on the left as well as covering the right, but the total is still her stated two and is not double-counted. NO SCALE REFERENCE IN FRAME, no card, and none was needed since every component came from her own stated figures or her weighed loaf. ASSUMED UNSWEETENED, consistent with her never sweetening her own preparations; if she added sugar to the compote the carbohydrate rises. (BG: 91 mg/dL Flat) (P…",
+    "type": "Breakfast",
+    "date": "2026-08-27T10:46:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-27/78ba19884c98c233.jpg",
+    "carbs": 42,
+    "cals": 325,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3c985ec7-0668-81a2-8498-ed72e8ee8ad0",
     "title": "Dinner (cont.): mapo tofu with a small serving of steamed white rice alongside, the masymas card lying flat on the plate. LOGGED AS A CUMULATIVE DINNER, seven minutes after the 19:10 chow fun and sixty-seven minutes after the 18:10 protein bite, so THE preBG ANCHOR REMAINS THE FIRST ITEM'S 105 mg/dL rather than the 108 read live at 19:17. THE RICE IS HER OWN STATED QUARTER CUP AND IS NOT ESTIMATED — 59ml, about 40g of cooked white rice, giving 11g of carbohydrate and about 52 calories. ⭐ THE CARD IS USABLE IN THIS FRAME AND WAS USED, unlike the 19:10 chow fun photo: it lies flat on the plate in the food's own plane, both edges are fully visible at about 409 and 255 pixels for an apparent aspect of 1.60 against the true 1.586, so cos theta is 0.99 and THE VIEW IS ONLY ABOUT 8 DEGREES OFF STRAIGHT DOWN, giving 4.78 pixels per millimetre with the two axis estimates agreeing to within one percent. THE CARD AND HER STATED MEASURE AGREE, which is the useful part: the rice footprint measures about 8.4 by 11.8cm at roughly 1.5cm deep, which works out near 70ml against her stated 59ml, so the two methods land within about 15 percent and her figure is the one used. THE TOFU IS MEASURED FROM THE CARD since she gave no figure for it: about fifteen cubes averaging 2.2cm, roughly 120ml or 125g of tofu, in a mapo sauce carrying perhaps 20g of ground pork, a chilli bean paste and around 10g of stir-fry oil, which is where most of the calories sit. Nearly all of this dish's mass is protein and fat rather than starch. Two further bowls sit cut off at the top edge of the frame and are NOT counted, per her own rule that food merely sneaking into a corner is accidental. [Cumulative Dinner: 85g carbs total] (BG: 105 mg/dL Flat) (Pred: 174-194 mg/dL @ 8:22 PM) (Protein: 14g | Carbs: ~19g | Cals: ~290) [Coach: Mapo tofu is a genuinely good pick 🥢 — nearly everything on that side of the plate is protein and fat rather than starch. And a quarter cup of rice beside it is real restraint in a…",
     "type": "Dinner",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-26/cb8e453c5e20b2a8.jpg",
     "carbs": 19,
     "cals": 290,
-    "delta": null,
-    "peak": null
+    "delta": 52,
+    "peak": 161
   },
   {
     "id": "3c985ec7-0668-812f-b466-ca98a0eacd46",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-26/3dbdc0c0ec42122e.jpg",
     "carbs": 25,
     "cals": 250,
-    "delta": null,
-    "peak": null
+    "delta": 53,
+    "peak": 161
   },
   {
     "id": "3c985ec7-0668-8187-8925-f4b717185a60",
@@ -29,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-26/52b5565f6570ae65.jpg",
     "carbs": 4,
     "cals": 55,
-    "delta": null,
-    "peak": null
+    "delta": 53,
+    "peak": 161
   },
   {
     "id": "3c985ec7-0668-81a8-8839-c63ccb9b6a50",
@@ -40,8 +51,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-26/6d935216dd69a9a5.jpg",
     "carbs": 22,
     "cals": 255,
-    "delta": null,
-    "peak": null
+    "delta": 52,
+    "peak": 161
   },
   {
     "id": "3c985ec7-0668-8163-be20-f9ed566ac82c",
@@ -51,8 +62,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-26/54ce24b304aba8d3.jpg",
     "carbs": 7,
     "cals": 110,
-    "delta": null,
-    "peak": null
+    "delta": 52,
+    "peak": 161
   },
   {
     "id": "3c885ec7-0668-8193-bbda-d342a6d03a79",
