@@ -1,5 +1,16 @@
 [
   {
+    "id": "3ca85ec7-0668-81c8-85bb-e352038d822b",
+    "title": "Dinner: reheated Chinese leftovers from the 2026-08-26 restaurant meal, her own caption being leftovers Chinese — a wide patterned serving bowl of steamed white rice topped with mapo tofu, and alongside on a dinner plate a large pan-browned flour pancake folded around a dark shredded savoury filling. CLASSIFIED DINNER BY THE HOUR RULE — 19:07 sits inside the 18:00 to 04:59 window — and NOT cumulative, the previous Food entry being the 13:55 lunch five hours and twelve minutes earlier, so the preBG anchor is the live 102 mg/dL read at 19:04, three minutes before submission and comfortably inside the fifteen-minute freshness rule. ⚠️ NO USABLE SCALE REFERENCE IN THE FOOD PLANE AND THE CARD IN FRAME WAS DELIBERATELY NOT USED: a card is visible on the round side table well behind and above the meal, at a completely different depth, and the standing rule from the 2026-08-13 plum incident is that a reference at the wrong depth produces two-fold errors. Portions therefore come from the vessels. The dinner plate ellipse measures about 535 by 435 pixels for an aspect of 0.81, giving a viewing angle near 36 degrees off vertical, and is taken at 26cm for a scale near 2.1 pixels per millimetre; the serving bowl sits nearer the lens at about 660 pixels across and works out near 27cm. THE RICE is a thin bed rather than a mound, spanning about 20.6 by 18.6cm once the depth axis is decompressed, at roughly 6 to 8mm deep, which gives about 180ml or three-quarters of a cup, so about 120g of cooked white rice for 33g of carbohydrate, 3g of protein and 156 calories. ⚠️ THAT FIGURE IS DELIBERATELY TRIMMED DOWN from the raw geometry, which read nearer 200g: on 2026-08-10 a card-measured rice estimate ran 1.65 times her stated half cup, and on 2026-08-26 the card read 70ml against her stated 59ml, so the documented upward bias on rice is corrected for here rather than repeated. THE MAPO TOFU mound measures about 11.3cm across at roughly 2.5cm high, a spherical cap near 130ml, which is es…",
+    "type": "Dinner",
+    "date": "2026-08-27T19:07:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-27/676d3375b1410581.jpg",
+    "carbs": 86,
+    "cals": 775,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3c985ec7-0668-81a7-b251-d409527bcbe2",
     "title": "Lunch: a large bowl of dressed kale salad with one medium sapote and one medium orange cut through it and a tablespoon each of sunflower seeds, pepitas, ground flax, hemp hearts and nutritional yeast, PLUS TWO of her own no-bake energy bites on a side plate. CLASSIFIED LUNCH BY THE HOUR RULE — 13:55 sits inside the 11:00 to 15:59 window — and NOT cumulative, the previous Food entry being the 10:51 cashews three hours and four minutes earlier. ⭐ THE TWO ENERGY BITES ARE COUNTED AND SHE WAS NOT ASKED, WHICH IS HER OWN STANDING RULE APPLIED AS AGREED: food fully in frame counts even when uncaptioned, and food merely sneaking into a corner does not. They sit on their own plate, centred, with a fork and a piece of fruit on one — plainly part of the setting, exactly like the pâté toast of 2026-08-26. Their figures come from the counted-twenty batch anchor of 2026-08-24, 95 calories with 8g of carbohydrate and 3g of protein each, so 190, 16g and 6g for the two. HER STATED COMPONENTS ARE TAKEN VERBATIM AND NOT RE-ESTIMATED: one medium sapote, one medium orange, and one tablespoon each of the five toppings. THE SAPOTE IS THE HEAVYWEIGHT AND USES THE ESTABLISHED ANCHOR of roughly 25 to 29g of carbohydrate per 100g, about three times a peach per gram; a medium fruit at about 90g of flesh gives 24g of carbohydrate and 115 calories, against the 13g that a SMALL one carried in earlier rows. Medium orange at about 130g edible gives 15g and 62 calories. THE FIVE TABLESPOONS TOGETHER give about 8g of carbohydrate, 12g of protein and 217 calories, the flax taken from her own package label at 7.5g per tablespoon. ⚠️ THE KALE IS THE ONLY ESTIMATED COMPONENT since she gave no amount: the bowl is a wide salad bowl of roughly 22cm at the well, generously mounded with dressed and wilted-looking kale, taken at about 130g, which gives 11g of carbohydrate of which around 5g is fibre, 4.5g of protein and 45 calories. NO SCALE REFERENCE IN FRAME and none was needed for anything but the kale. D…",
     "type": "Lunch",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-27/842296eaeaace892.jpg",
     "carbs": 74,
     "cals": 750,
-    "delta": null,
-    "peak": null
+    "delta": 42,
+    "peak": 132
   },
   {
     "id": "3c985ec7-0668-8162-939f-fd8e02f74f2c",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-27/78ba19884c98c233.jpg",
     "carbs": 42,
     "cals": 325,
-    "delta": null,
-    "peak": null
+    "delta": 81,
+    "peak": 172
   },
   {
     "id": "3c985ec7-0668-81a2-8498-ed72e8ee8ad0",
