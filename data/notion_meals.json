@@ -1,5 +1,16 @@
 [
   {
+    "id": "3cb85ec7-0668-8164-b4bb-f292da49af8c",
+    "title": "Dinner: six raw oysters on the half shell with a lime wedge, a small dish of thin red chilli or cocktail sauce alongside, and a glass of white wine. CLASSIFIED DINNER BY THE HOUR RULE — 18:22 sits inside the 18:00 to 04:59 window. ⚠️ THE CUMULATIVE CALL WAS THE CLOSEST YET AND WAS CHECKED RATHER THAN ASSUMED: the 17:20 snack was 62 MINUTES EARLIER, two minutes outside the one-hour window, so this is NOT cumulative. THAT MARGIN IS TOO THIN TO REST ON THE CLOCK ALONE, so the preBG was verified against the trend exactly as last night's 21:35 failure taught — the last eight readings ran 97, 96, 93, 100, 101, 97, 98 and 100, all Flat, bouncing inside an 8-point band with no climb. THE 100 mg/dL IS THEREFORE A GENUINE BASELINE AND NOT A MID-DIGESTION VALUE, and the rule proposed last night worked as intended on its first live test. THE SNACK ALSO UNDERSHOT, incidentally: predicted 114 to 134 at 6:15 PM against an actual that never left the nineties. SIX OYSTERS COUNTED IN FRAME, taken at roughly 110g of meat in total, giving about 6g of carbohydrate from their glycogen, 8g of protein and 75 calories. THE WINE IS COUNTED, per her own standing rule that food fully in frame counts: a standard 5oz pour of dry white at about 3g of carbohydrate and 120 calories. THE RED SAUCE IS THE ONLY GUESSED ITEM, taken at about two tablespoons of a sweet chilli or cocktail type at 4g of carbohydrate and 20 calories; a plain sriracha would be nearer 2g and a sweet cocktail sauce nearer 10g, so the figure carries about 6g of spread and she was told it is the uncertain one. Lime is negligible. Calorie floor checked: 4 times 13 carbs plus 4 times 8 protein is 84 against the 215 logged, the gap being alcohol at 7 calories per gram plus oyster fat. ⭐ THE B12 POINT IS THE MOST CLINICALLY USEFUL THING ON THIS PLATE AND IS WHY IT IS WORTH LOGGING CAREFULLY: raw oysters carry roughly 16 to 17 micrograms of B12 per 100g against a daily requirement of 2.4, so this plate is on the order of seven days'…",
+    "type": "Dinner",
+    "date": "2026-08-28T18:22:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-28/b7f707c0beb3f874.jpg",
+    "carbs": 13,
+    "cals": 215,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3ca85ec7-0668-81b2-b4e5-f9e39fd0c283",
     "title": "Lunch: a plate of raw kale leaves, folded sliced turkey, fanned avocado and one slice of her own seeded loaf, with a whole nectarine alongside. CLASSIFIED LUNCH BY THE HOUR RULE — 13:29 sits inside the 11:00 to 15:59 window — and NOT cumulative, the previous Food entry being the 09:50 breakfast three hours and thirty-nine minutes earlier, so the preBG is the live 106 mg/dL read at 13:24. ⭐ THREE OF THE FIVE COMPONENTS CARRY HER OWN STATED WEIGHTS AND ARE NOT ESTIMATED — bread 43g, turkey 58g, avocado 34g — which is the most weighed single plate in the log to date and removes the portion question from most of it. BREAD at 43g on her established loaf basis of 0.443g of carbohydrate, 0.082g of protein and 2.95 calories per gram, the same basis used for this morning's stated 61g, gives 19g of carbohydrate, 4g of protein and 127 calories. TURKEY at 58g of sliced deli breast at roughly 18g of protein, 1.5g of carbohydrate and 104 calories per 100g gives 10g of protein, 1g of carbohydrate and 60 calories. AVOCADO at 34g gives about 3g of total carbohydrate, of which roughly 2.3g is fibre so barely 1g is net, plus 1g of protein and 54 calories; the total figure is carried into the macros rather than the net one, which is the conservative direction and moves the prediction by under two points either way. ⚠️ ONLY TWO ITEMS ARE ESTIMATED AND BOTH ARE SMALL. THE SCALE WAS TAKEN FROM THE BREAD, NOT THE PLATE, deliberately continuing last night's correction: her slice measures about 440 pixels on its long edge against a known 10.5cm, giving 4.19 pixels per millimetre, and that scale then reads this plate at about 19.6cm — a salad plate, NOT the 26cm dinner plate used for this morning's sandwich, which is a direct vindication of anchoring on food rather than assuming a vessel. KALE is three to four large raw lacinato leaves taken at about 40g, giving 4g of carbohydrate, 2g of protein and 20 calories. THE NECTARINE measures about 6.0cm across at that scale, a medium fruit at rough…",
     "type": "Lunch",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-28/0235a56cfef7036f.jpg",
     "carbs": 40,
     "cals": 315,
-    "delta": null,
-    "peak": null
+    "delta": 30,
+    "peak": 130
   },
   {
     "id": "3ca85ec7-0668-812c-abfa-cd43eee9f950",
