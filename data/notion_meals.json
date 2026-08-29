@@ -1,5 +1,16 @@
 [
   {
+    "id": "3cb85ec7-0668-814b-869d-f30b2b5b64f6",
+    "title": "Breakfast: half a cup of her own plain yogurt with a tablespoon each of hemp hearts and ground flax, alongside one slice of her seeded loaf under a melted slice of cheese. CLASSIFIED BREAKFAST BY THE HOUR RULE — 10:14 sits inside the 05:00 to 10:59 window — and NOT cumulative, the previous Food entry being the 21:35 nibble of 2026-08-28 nearly thirteen hours earlier, so the live 106 mg/dL read at 10:14 is a clean fasting anchor. ⭐ EVERY PORTION HERE IS HER OWN STATED MEASURE AND NO GEOMETRY WAS PERFORMED ON ANY OF IT, which is the correct handling and the reason this row needs no card: half a cup of yogurt at 118ml and roughly 122g of her homemade plain whole-milk yogurt gives 5.7g of carbohydrate, 4.3g of protein and 74 calories at 4.7g carb per 100g per the standing homemade-yogurt rule, never sweetened and never asked about again; a tablespoon of hemp hearts at about 10g gives 0.9g of carbohydrate, 3.2g of protein and 55 calories; a tablespoon of ground flax at about 7.5g gives 2.5g of carbohydrate of which 2g is fibre, 1.5g of protein and 45 calories, taken from her own label rather than a generic table. THE BREAD IS COSTED FROM THE LOAF ANCHOR OUTRIGHT WITH NO COMPETING PHOTO ESTIMATE GENERATED, per the standing rule: loaf #2 is still the current bake, 861g cut into 23 slices at 37.4g and 0.441g of carbohydrate per gram, so one slice is 16.5g of carbohydrate, 3.5g of protein and 95 calories. The cheese is the only estimated item, read as a standard slice at about 25g for 0.4g of carbohydrate, 6g of protein and 100 calories. ⚠️ OPEN QUESTION FLAGGED TO HER RATHER THAN SILENTLY COSTED: there are pale yellow-cream chunks in the left of the yogurt bowl that read like fruit and are not in her caption. THEY ARE DELIBERATELY NOT COUNTED, because the whole lesson of 2026-08-28 was three corrections in one evening all caused by adding food she was not eating, and homemade yogurt curds can look exactly like this. If she confirms fruit, the row needs correcting and the c…",
+    "type": "Breakfast",
+    "date": "2026-08-29T10:14:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-29/601d455a1f218611.jpg",
+    "carbs": 26,
+    "cals": 370,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3cb85ec7-0668-81c8-9561-f9eac7071eca",
     "title": "Dinner (dessert, the fruit she flagged at 18:48): 12 whole dark sweet cherries in a small white bowl, her own stated count and not estimated. CLASSIFIED DINNER BY THE HOUR RULE — 19:47 sits inside the 18:00 to 04:59 window, and Dessert is not reachable from the hour table without her saying the word — and NOT cumulative, the previous Food entry being the 18:33 fish at 74 minutes, outside the one-hour window. ⚠️ THE preBG WAS TREND-CHECKED RATHER THAN TAKEN AT FACE VALUE, and the check found the MIRROR IMAGE of last night's failure: the last ten readings ran 100, 103, 104, 109, 112, 117, 121, 118, 113, 111, so she is on the DESCENDING limb of the dinner rise, not at a baseline. A falling preBG biases the prediction slightly HIGH, since her settled value would be nearer 100 than 111, but the effect is around 10 points and the one-hour cumulative window has genuinely passed, so 111 is used as written rather than substituted. FLAGGED SO THE BACKFILL READS IT CORRECTLY. THEY ARE WHOLE AND UNCUT IN THE FRAME, so the cut-fruit over-counting trap does not apply and her stated 12 is the count. SIZED FROM THE FOOD PRIOR RATHER THAN THE BOWL, deliberately, since her known bowls are 11.6cm and this one is unmeasured and today has already produced three plates of 26, 19.6 and 25.4cm: a large dark sweet cherry runs 26 to 28mm and about 10g with the pit, so 12 give roughly 120g gross and about 105g of flesh once the pits are discounted at around 12 percent. At USDA sweet-cherry values of 16.0g of carbohydrate, 2.1g of fibre, 1.06g of protein and 63 calories per 100g, that gives 17g of carbohydrate of which about 2g is fibre, 1g of protein and 66 calories. ⚠️ THE CALORIE FLOOR CHECK FAILS HERE AND THE NUMBERS WERE NOT BENT TO PASS IT. Four times 17 carbs plus four times 1 protein is 72 against 66 logged. THE RULE ITSELF IS AT FAULT, NOT THE ROW: it charges fibre at 4 calories per gram when fibre delivers nearer 2, so it produces a FALSE POSITIVE on any high-fibre low-fat whole fru…",
     "type": "Dinner",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-28/812ab7e40bae8f49.jpg",
     "carbs": 17,
     "cals": 65,
-    "delta": null,
-    "peak": null
+    "delta": 26,
+    "peak": 136
   },
   {
     "id": "3cb85ec7-0668-8147-87cf-fb22263d2566",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-28/d0ae9a27bb96349b.jpg",
     "carbs": 12,
     "cals": 225,
-    "delta": null,
-    "peak": null
+    "delta": 39,
+    "peak": 136
   },
   {
     "id": "3cb85ec7-0668-8164-b4bb-f292da49af8c",
@@ -29,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-28/b7f707c0beb3f874.jpg",
     "carbs": 10,
     "cals": 200,
-    "delta": null,
-    "peak": null
+    "delta": 40,
+    "peak": 136
   },
   {
     "id": "3ca85ec7-0668-81b2-b4e5-f9e39fd0c283",
