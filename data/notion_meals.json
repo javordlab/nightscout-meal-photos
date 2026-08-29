@@ -1,7 +1,18 @@
 [
   {
+    "id": "3cb85ec7-0668-81e1-a56c-ef8b40a551b0",
+    "title": "Lunch: 45g of sliced turkey, her own homemade hummus and a pile of raw carrot sticks on a white plate. CLASSIFIED LUNCH BY THE HOUR RULE — 13:25 sits inside the 11:00 to 15:59 window — and NOT cumulative, the previous Food entry being the 10:14 breakfast three hours and eleven minutes earlier, so the live 126 mg/dL read at 13:24 is a clean anchor. THE TURKEY IS HER OWN STATED 45g AND IS NOT ESTIMATED, taken at deli roast-breast values for 8g of protein, under a gram of carbohydrate and 50 calories. ⚠️ THE SPG CARD IS IN FRAME BUT IT IS LYING ON THE PLACEMAT, NOT ON THE PLATE, so it calibrates the TABLE plane and the food sits about 2cm above it on the plate — the plane-mismatch case that produced a 2x error on the 2026-08-13 plum, and it is corrected here rather than ignored. Card edges measured about 330 by 200 pixels, an apparent aspect of 1.65 against the true 1.586, so the card is very nearly flat to the lens and the scale is honest: 3.86 pixels per millimetre at the table, lifted to about 4.06 on the plate plane by the standard D over D minus h correction at D of 40cm and h of 2cm. THAT SCALE READS THE PLATE AT ABOUT 22cm, which is plausible against her known range of 19.6 to 26cm and is reported rather than assumed. Carrots: about eleven sticks at roughly 70mm long and 12mm square, near 10g each, giving about 105g and therefore 10g of carbohydrate of which 3g is fibre, 1g of protein and 43 calories. Hummus: a spread dome about 8cm across and 1.3cm at its thickest, which by the spherical-cap formula is about 40ml and near 40g at hummus density, or roughly three tablespoons in household terms, giving 5.6g of carbohydrate, 3.2g of protein and 70 calories at standard chickpea-tahini-olive-oil values. ⚠️ HER HUMMUS IS HOMEMADE AND ITS RECIPE IS NOT ON FILE, unlike her loaf and her muffins, so the oil and tahini proportions are assumed and the calorie figure is the softest number in this row — worth asking for the recipe once, not mid-meal. 💪 PROTEIN LANDS AT 13g,…",
+    "type": "Lunch",
+    "date": "2026-08-29T13:25:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-29/c8e7d5760514a369.jpg",
+    "carbs": 16,
+    "cals": 165,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3cb85ec7-0668-814b-869d-f30b2b5b64f6",
-    "title": "Breakfast: half a cup of her own plain yogurt with a tablespoon each of hemp hearts and ground flax, alongside one slice of her seeded loaf under a melted slice of cheese. CLASSIFIED BREAKFAST BY THE HOUR RULE — 10:14 sits inside the 05:00 to 10:59 window — and NOT cumulative, the previous Food entry being the 21:35 nibble of 2026-08-28 nearly thirteen hours earlier, so the live 106 mg/dL read at 10:14 is a clean fasting anchor. ⭐ EVERY PORTION HERE IS HER OWN STATED MEASURE AND NO GEOMETRY WAS PERFORMED ON ANY OF IT, which is the correct handling and the reason this row needs no card: half a cup of yogurt at 118ml and roughly 122g of her homemade plain whole-milk yogurt gives 5.7g of carbohydrate, 4.3g of protein and 74 calories at 4.7g carb per 100g per the standing homemade-yogurt rule, never sweetened and never asked about again; a tablespoon of hemp hearts at about 10g gives 0.9g of carbohydrate, 3.2g of protein and 55 calories; a tablespoon of ground flax at about 7.5g gives 2.5g of carbohydrate of which 2g is fibre, 1.5g of protein and 45 calories, taken from her own label rather than a generic table. THE BREAD IS COSTED FROM THE LOAF ANCHOR OUTRIGHT WITH NO COMPETING PHOTO ESTIMATE GENERATED, per the standing rule: loaf #2 is still the current bake, 861g cut into 23 slices at 37.4g and 0.441g of carbohydrate per gram, so one slice is 16.5g of carbohydrate, 3.5g of protein and 95 calories. The cheese is the only estimated item, read as a standard slice at about 25g for 0.4g of carbohydrate, 6g of protein and 100 calories. ⚠️ OPEN QUESTION FLAGGED TO HER RATHER THAN SILENTLY COSTED: there are pale yellow-cream chunks in the left of the yogurt bowl that read like fruit and are not in her caption. THEY ARE DELIBERATELY NOT COUNTED, because the whole lesson of 2026-08-28 was three corrections in one evening all caused by adding food she was not eating, and homemade yogurt curds can look exactly like this. If she confirms fruit, the row needs correcting and the c…",
+    "title": "Breakfast: half a cup of her own plain yogurt with one medium sapote cut through it and a tablespoon each of hemp hearts and ground flax, alongside one slice of her seeded loaf under a melted slice of cheese. CLASSIFIED BREAKFAST BY THE HOUR RULE — 10:14 sits inside the 05:00 to 10:59 window — and NOT cumulative, the previous Food entry being the 21:35 nibble of 2026-08-28 nearly thirteen hours earlier, so the live 106 mg/dL read at 10:14 is a clean fasting anchor. ⭐ EVERY PORTION HERE IS HER OWN STATED MEASURE AND NO GEOMETRY WAS PERFORMED ON ANY OF IT, which is the correct handling and the reason this row needs no card: half a cup of yogurt at 118ml and roughly 122g of her homemade plain whole-milk yogurt gives 5.7g of carbohydrate, 4.3g of protein and 74 calories at 4.7g carb per 100g per the standing homemade-yogurt rule, never sweetened and never asked about again; a tablespoon of hemp hearts at about 10g gives 0.9g of carbohydrate, 3.2g of protein and 55 calories; a tablespoon of ground flax at about 7.5g gives 2.5g of carbohydrate of which 2g is fibre, 1.5g of protein and 45 calories, taken from her own label rather than a generic table. THE BREAD IS COSTED FROM THE LOAF ANCHOR OUTRIGHT WITH NO COMPETING PHOTO ESTIMATE GENERATED, per the standing rule: loaf #2 is still the current bake, 861g cut into 23 slices at 37.4g and 0.441g of carbohydrate per gram, so one slice is 16.5g of carbohydrate, 3.5g of protein and 95 calories. The cheese is the only estimated item, read as a standard slice at about 25g for 0.4g of carbohydrate, 6g of protein and 100 calories. ✅ CORRECTED AT 10:16, TWO MINUTES AFTER THE FIRST WRITE — THE PALE CHUNKS WERE ONE MEDIUM SAPOTE, HER ANSWER TO A FLAGGED QUESTION RATHER THAN A SILENT GUESS. The original build costed only her captioned items at 26g of carbohydrate and flagged the unidentified pale yellow-cream chunks in the left of the bowl as deliberately NOT counted, on the reasoning that the whole lesson of 2026-08-28 was three corr…",
     "type": "Breakfast",
     "date": "2026-08-29T10:14:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-29/601d455a1f218611.jpg",
@@ -159,10 +170,21 @@
     "type": "Lunch",
     "date": "2026-08-26T13:44:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-26/3e9415c901a6731e.jpg",
-    "carbs": null,
-    "cals": null,
+    "carbs": 46,
+    "cals": 405,
     "delta": 32,
     "peak": 147
+  },
+  {
+    "id": "3cb85ec7-0668-8105-aeae-ea3731dcbc5c",
+    "title": "Breakfast: two open-faced slices of her own dark seeded loaf, one under herbed cured salmon and one under a fan of sliced avocado, with six orange wedges arranged alongside and a glass of water. CLASSIFIED BREAKFAST BY THE HOUR RULE — 10:06 sits inside the 05:00 to 10:59 window — and NOT cumulative, the previous Food entry being the 19:03 muffin fifteen hours earlier. NO SCALE REFERENCE IN FRAME, no card anywhere on the table, so portions were calibrated against the plate taken at approximately 25cm across its horizontal axis, which is the axis running across the line of sight and therefore the least foreshortened one in a moderately oblique shot like this. That gives roughly 60g of salmon and about 120g of orange. ⭐ TWO FIGURES CAME FROM MARIA HERSELF AT 10:14 AND REPLACE THE VISUAL ESTIMATES ENTIRELY, per the standing rule that a stated measurement always overrides the photograph. FIRST, SHE WEIGHED THE BREAD AT 78g FOR THE TWO SLICES TOGETHER, against a visual estimate of 75g, an error of four percent. 78g over two slices is 39g per slice, which sits almost exactly on loaf number two's recorded 37.4g per slice, SO THE CURRENT BAKE IS CUTTING TO THE SAME THICKNESS AND THE LOAF-TWO ANCHOR IS VALIDATED RATHER THAN MERELY ASSUMED; at her recorded carbohydrate density of 0.441g per gram that is 34g of carbohydrate. SECOND, THE AVOCADO IS HALF OF A SMALL FRUIT, small in her words meaning about half the size of a normal one, so the flesh is about 37g rather than the 75g estimated. THAT WAS A CLEAN TWO-FOLD OVER-ESTIMATE AND ITS CAUSE WAS A SIZE PRIOR RATHER THAN A MEASUREMENT ERROR — the fan of slices was read against a mental image of a normal avocado, and a half-size fruit cut into the same number of slices looks nearly identical in a photograph because only the slice length differs, not the count or the arrangement. It cost 3g of carbohydrate, 1g of protein and about 60 calories. LESSON WORTH GENERALISING: for any fruit or vegetable sliced or fanned out, the slice C…",
+    "type": "Breakfast",
+    "date": "2026-08-26T10:06:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-26/fcaa7faa0ef29aba.jpg",
+    "carbs": 51,
+    "cals": 415,
+    "delta": null,
+    "peak": null
   },
   {
     "id": "3c885ec7-0668-81ba-9463-d488f2c7da51",
@@ -3752,7 +3774,7 @@
   },
   {
     "id": "37e85ec7-0668-815e-95bd-e2f25f311101",
-    "title": "Lunch: creamy cauliflower soup with a bit of cheese and cream (BG: 114 mg/dL Flat) (Pred: 125-145 mg/dL @ 4:31 PM) (Protein: ~8g | Carbs: ~13g | Cals: ~310) [Coach: Cauliflower soup 🥣 — naturally low-carb, so your BG will barely flinch. The cream and cheese bring more fat than protein though, so a bit of grilled chicken, fish, or a couple of hard-boiled eggs on the side would round this out nicely and keep you full longer.]",
+    "title": "Lunch: creamy cauliflower soup with a bit of cheese and cream (BG: 114 mg/dL Flat) (Pred: 125-145 mg/dL @ 4:31 PM) (Protein: ~8g | Carbs: ~13g | Cals: ~310) [Coach: Cauliflower soup ��� — naturally low-carb, so your BG will barely flinch. The cream and cheese bring more fat than protein though, so a bit of grilled chicken, fish, or a couple of hard-boiled eggs on the side would round this out nicely and keep you full longer.]",
     "type": "Lunch",
     "date": "2026-06-13T15:16:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-13/f4e38fdd62786fc6.jpg",
