@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-30T01:32:00.273Z",
+  "lastUpdated": "2026-08-30T01:36:03.690Z",
   "serverTz": "America/Los_Angeles",
   "dbError": null,
   "tokenUsage": [
@@ -23,7 +23,7 @@
     }
   ],
   "database": {
-    "glucose": 49445,
+    "glucose": 49446,
     "notion": 3786
   },
   "syncHistory": [
@@ -30370,6 +30370,10 @@
     {
       "t": "2026-08-30T01:29:18.000Z",
       "v": 100
+    },
+    {
+      "t": "2026-08-30T01:34:16.000Z",
+      "v": 99
     }
   ],
   "backups": [
