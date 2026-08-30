@@ -1,14 +1,25 @@
 [
   {
+    "id": "3cc85ec7-0668-81c1-94da-e1d2227d3a2f",
+    "title": "Breakfast: one slice of her own loaf #3 under a thick layer of chunky peanut butter, alongside a small pink ramekin of her homemade plain yogurt with cut nectarine stirred through it. CLASSIFIED BREAKFAST BY THE HOUR RULE — 10:37 sits inside the 05:00 to 10:59 window — and NOT cumulative, the previous Food entry being the 20:21 second bread slice of 2026-08-29 just over fourteen hours earlier, so the live 100 mg/dL Flat read at 10:34, three minutes before submission, is a clean fasting anchor. PORTIONS: her stated half cup of yogurt and half a nectarine are taken verbatim and OVERRIDE the photo, giving 122g of yogurt at her established homemade-plain figures of 4.9g carb and 4.2g protein per 100g, so 6g carbs, 5g protein, 75 cal, plus roughly 70g of nectarine flesh at 7g carbs, 1g protein, 31 cal. THE BREAD IS NOT ESTIMATED FROM THE CARD, per the standing rule that her loaf is weighed: this is one full slice of loaf #3 at the figures settled with her last night from her own 906g over 22 slices, 41g per slice giving 19g carbs, 4g protein and 120 cal. The SPG card was used ONLY to confirm the slice is whole rather than half — card edges measured 348px and 201px against a true 85.6 by 54.0mm, an apparent aspect of 1.73 against 1.586, so cos theta 0.915 and a viewing angle near 24 degrees, scale 4.07 px per mm; the slice reads about 98 by 49mm, which is a full slice, and the plate about 166mm by that scale, though the card lies nearer the lens than the plate so the true plate is likelier 17 to 18cm. THE PEANUT BUTTER IS THE ONE GENUINELY ESTIMATED ITEM and the largest uncertainty in the row: it covers the whole 48 sq cm face of the slice at a visibly thick and lumpy several millimetres, which puts it near 2 tablespoons or 32g, so 7g carbs, 8g protein, 190 cal. ⚠️ THE TOAST WAS NOT IN HER CAPTION, which read only 1/2 cup yogurt, 1/2 nectarine, AND IT IS COUNTED ANYWAY under her own 2026-08-13 framing rule — plated alone, dead centre and fully in frame is the test she se…",
+    "type": "Breakfast",
+    "date": "2026-08-30T10:37:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-30/87a7d706460fae6a.jpg",
+    "carbs": 39,
+    "cals": 415,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3cc85ec7-0668-8109-8b2b-da8413ee4cde",
-    "title": "Dinner (cont.): one slice of her brand-new loaf #3, cut warm about an hour and a quarter out of the oven. CUMULATIVE BY RULE: the oysters sit seven minutes back at 18:33, so this inherits Dinner and keeps the FIRST item's preBG of 100 mg/dL. ⚠️ COSTED FROM THE LOAF #2 ANCHOR OUTRIGHT AND NO COMPETING GEOMETRIC ESTIMATE WAS GENERATED, per the standing bread rule, even though the SPG card is lying in the same plane as the slice and a clean measurement was available: card at about 440 by 280 pixels for an apparent aspect of 1.57 against the true 1.586, so essentially flat to the lens at 5.19 pixels per millimetre, which would read the slice face at about 106 by 74mm. THAT NUMBER IS RECORDED AND DELIBERATELY NOT USED, because thickness runs into the frame and is unreadable from a face-on shot, and three prior attempts to measure her bread gave 30, 41 and 45g for slices she weighed at 40 to 45g. INTERIM FIGURES ARE THEREFORE LOAF #2's: 37.4g per slice at 0.441g of carbohydrate per gram, giving 16.5g of carbohydrate, 3.5g of protein and 95 calories. ⚠️ PROVISIONAL AND EXPECTED TO CHANGE: loaf #3 has a different build entirely, its cooled weight and slice count are not yet known, and she has said she will cut the rest thin and report the count, which will make this slice thicker than the loaf's eventual average. Recompute this row when she reports. 🍞 FIRST LOOK AT THE CRUMB AND IT IS GOOD: fine, even, moderately open cells with seeds distributed through, no gummy band at the base and no smearing at the cut, which is a better result than loaf #2's compactness despite being cut an hour and a quarter in rather than the three to four hours advised. ⚠️ THE PREDICTION BARELY MOVES AND THAT IS A MODEL ARTIFACT WORTH FLAGGING FOR THE BACKFILL: adding 16.5g of bread carries the dinner total from 14g to 31g, which crosses out of the 0 to 15g band at factor 2.0 into the 31 to 50g band at factor 0.9, so the band rises by a single point despite the carbohydrate more than doubling. TH…",
+    "title": "Dinner (cont.): one slice of her brand-new loaf #3, cut warm about an hour and a quarter out of the oven. CUMULATIVE BY RULE: the oysters sit seven minutes back at 18:33, so this inherits Dinner and keeps the FIRST item's preBG of 100 mg/dL. ⚠️ COSTED FROM THE LOAF #2 ANCHOR OUTRIGHT AND NO COMPETING GEOMETRIC ESTIMATE WAS GENERATED, per the standing bread rule, even though the SPG card is lying in the same plane as the slice and a clean measurement was available: card at about 440 by 280 pixels for an apparent aspect of 1.57 against the true 1.586, so essentially flat to the lens at 5.19 pixels per millimetre, which would read the slice face at about 106 by 74mm. THAT NUMBER IS RECORDED AND DELIBERATELY NOT USED, because thickness runs into the frame and is unreadable from a face-on shot, and three prior attempts to measure her bread gave 30, 41 and 45g for slices she weighed at 40 to 45g. ✅ RECOMPUTED AT 20:19 ON HER OWN NUMBERS — 22 SLICES REPORTED AT 20:15 AND A COOLED WHOLE-LOAF WEIGHT OF 906g AT 20:19, so this row no longer rests on loaf #2's anchor. LOAF #3 CONSTANTS: 906g over 22 slices is 41.2g per slice, and the batch carbohydrate is derived from loaf #2's established 382.6g plus the three additions this build carries, namely about 20g from the oat flakes, 12.5g from the tablespoon of sugar and 6g from the extra 26g of seeds, giving roughly 421g of carbohydrate in the loaf, or 0.465g per gram. Protein lands near 88g in the batch at 0.097g per gram and calories near 2594 at 2.86 per gram. ✅ TWO CORRECTIONS FROM HER AT 20:23, BOTH FOLDED IN ABOVE: she uses a tablespoon of SUGAR AND NOT HONEY, worth 4.5g less carbohydrate and 13 fewer calories across the whole loaf, and the FLOUR WAS THE SAME 500g TOTAL AS LOAF #2, which is exactly the figure this derivation had assumed and flagged as its one unverifiable term. HER SECOND CORRECTION IS THE VALUABLE ONE: it converts the density from an assumption into a confirmed quantity, while the first moves a slice by 0.2…",
     "type": "Dinner",
     "date": "2026-08-29T18:40:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-29/34c61a69cddb6612.jpg",
-    "carbs": 17,
-    "cals": 95,
-    "delta": null,
-    "peak": null
+    "carbs": 19,
+    "cals": 120,
+    "delta": 54,
+    "peak": 154
   },
   {
     "id": "3cc85ec7-0668-81f2-a408-cbc19fa06092",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-29/4807fc17bf867704.jpg",
     "carbs": 9,
     "cals": 235,
-    "delta": null,
-    "peak": null
+    "delta": 55,
+    "peak": 154
   },
   {
     "id": "3cc85ec7-0668-81e6-9591-f64bbdff5598",
@@ -29,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-29/49edd9be05f8c125.jpg",
     "carbs": 5,
     "cals": 75,
-    "delta": null,
-    "peak": null
+    "delta": 55,
+    "peak": 154
   },
   {
     "id": "3cb85ec7-0668-81ab-81db-d5f76997c754",
@@ -40,8 +51,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-29/170e35e898aedad8.jpg",
     "carbs": 13,
     "cals": 175,
-    "delta": null,
-    "peak": null
+    "delta": 0,
+    "peak": 123
   },
   {
     "id": "3cb85ec7-0668-81e1-a56c-ef8b40a551b0",
