@@ -1,5 +1,16 @@
 [
   {
+    "id": "3cd85ec7-0668-81c2-99d0-dad3eea4531b",
+    "title": "Breakfast: an open-faced sandwich of one slice of her own loaf #3 with a slice of yellow cheese under two large folded slices of deli turkey, alongside a round glass bowl of her chia pudding turned deep purple with blueberries and topped with halved cherries. Her stated components are 1 bread slice, 2 turkey slices, 1 cheese slice, and chia pudding with blueberries and three cherries, all taken verbatim. CLASSIFIED BREAKFAST BY THE HOUR RULE — 09:19 sits inside the 05:00 to 10:59 window — and NOT cumulative, the previous Food entry being the 21:08 cashews and milk of 2026-08-30 just over twelve hours back, so the 95 mg/dL Flat read at 09:19, in the same minute as submission, is a clean fasting anchor. ⛔ THE SPG CARD IS IN FRAME BUT WAS DELIBERATELY NOT USED FOR SCALE, and that decision is the important part of this row. It lies on the tablecloth rather than on the plate, and it is steeply oblique: from a bounding box of about 435 by 260 px at roughly 21 degrees of in-plane rotation the edges solve to about 421 and 117 px, an apparent aspect near 3.6 against the true 1.586, giving cos theta about 0.44 and A VIEWING ANGLE NEAR 64 DEGREES. That is past the 60-degree limit at which the standing rule says the card yields a range at best, and it sits in the wrong plane on top of that, so food-size priors and her own stated counts outrank it here. NOTHING WAS MEASURED FROM IT. PORTIONS THEREFORE COME FROM ESTABLISHED CONSTANTS AND HER COUNTS: the bread is one full slice of loaf #3 at the settled figures from her own 906g over 22 slices, 41.2g per slice giving 19g carbs, 4g protein and 120 cal, per the standing rule that her loaf is weighed and never estimated from a photo. The two turkey slices are sandwich-cut deli breast at about 30g each, so 60g giving 13g protein, 1.5g carbs and 60 cal. The single cheese slice is a standard 21g sandwich slice at 5g protein, 1g carbs and 80 cal. ⚠️ THE ONE REAL UNCERTAINTY IS HOW MUCH PUDDING, AND SHE HAS BEEN ASKED. The 2026-08-30 12:…",
+    "type": "Breakfast",
+    "date": "2026-08-31T09:19:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-31/7a6c40a593ec711c.jpg",
+    "carbs": 49,
+    "cals": 450,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3cd85ec7-0668-8106-b71b-f723b5126402",
     "title": "Dinner (cont., the fruit after the ribs): half a yellow nectarine, cut face up with the stone removed, photographed alone beside the scale card. CUMULATIVE BY RULE AND NOT A NEW MEAL — the 18:22 ribs sit just TWELVE MINUTES back, well inside the one-hour window, so this inherits Dinner and, critically, INHERITS THE FIRST ITEM'S preBG OF 108 mg/dL RATHER THAN THE LIVE 109 READ AT 18:34, since a mid-digestion reading is not a valid anchor. The two happen to be almost identical here, which makes no difference to the principle. [Cumulative Dinner: 50g carbs total] ⭐ THIS IS ALMOST CERTAINLY THE OTHER HALF OF THIS MORNING'S FRUIT: her 10:37 breakfast was logged from her own words as half a nectarine, and a matching yellow-fleshed, red-centred, smooth-skinned half appears twelve hours later. Consistent but NOT asserted to her as fact. PORTIONS CALIBRATED AGAINST THE SPG CARD, which lies on the same tablecloth as the fruit. Card long edge about 425 px against a short edge of about 290 px, an apparent aspect of 1.466 where the true card is 1.586, so cos theta 0.924 and THETA ABOUT 22 DEGREES — close to top-down. The SHORT EDGE IS THE HONEST RULER at 290 over 54.0, giving 5.37 px per mm. Fruit measures about 365 by 455 px, so 68 by 85mm as imaged. ⚠️ PLANE OFFSET APPLIED AND IT MATTERS HERE: the card rests on the tablecloth but the CUT FACE SITS ABOUT 30mm ABOVE IT, being the top of the half-fruit, so it images larger. At an assumed camera distance of 400mm the linear correction is 370 over 400, or 0.925, giving a TRUE 63 by 79mm. Treating the half as half an ellipsoid with semi-axes 31.5, 39.5 and 31.5mm gives about 82 ml, so ROUGHLY 78g OF FLESH once the removed stone is discounted — about 34 cal, 8g carb of which 1.3g fibre, and 1g protein. CROSS-CHECK AGAINST THIS MORNING: the breakfast row put her half-nectarine at about 70g from her stated portion alone, and the card geometry independently gives 78g, so THE TWO METHODS AGREE WITHIN ABOUT 10 PERCENT, which is reassurin…",
     "type": "Dinner",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-30/2b37041e8b90565b.jpg",
     "carbs": 8,
     "cals": 34,
-    "delta": null,
-    "peak": null
+    "delta": 25,
+    "peak": 134
   },
   {
     "id": "3cd85ec7-0668-811b-b8e7-de1155836506",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-30/217dd44627319afa.jpg",
     "carbs": 42,
     "cals": 628,
-    "delta": null,
-    "peak": null
+    "delta": 27,
+    "peak": 134
   },
   {
     "id": "3cc85ec7-0668-81d6-9153-d8f73a8f4468",
@@ -67,7 +78,7 @@
   },
   {
     "id": "3cc85ec7-0668-81f2-a408-cbc19fa06092",
-    "title": "Dinner (cont.): a two-egg omelette, folded and plain, with a side of sliced dark heirloom tomato and avocado. CUMULATIVE BY RULE, NOT A NEW MEAL: the six oysters sit two minutes back at 18:33, so this inherits Dinner and takes the FIRST item's preBG of 100 mg/dL rather than a later live reading. THE EGG COUNT IS HERS AND IS NOT ESTIMATED, which matters because a folded omelette is exactly the dish the standing counting rule warns about — a spread-out fold reads as more egg than it is — so two eggs at 50g each give 1g of carbohydrate, 13g of protein and about 160 calories including the pan fat. ⚠️ THE TOMATO AND AVOCADO ARE NOT IN HER CAPTION AND ARE COUNTED ANYWAY, per her own 2026-08-13 rule that anything fully in frame on the plate is part of the meal and only items sneaking in at the edge are ignored. Tomato read as one medium fruit in wedges at about 120g for 4.7g of carbohydrate, 1.1g of protein and 22 calories. ⚠️ THE AVOCADO IS THE SOFT NUMBER IN THIS ROW AND IS FLAGGED RATHER THAN QUIETLY GUESSED: eight to ten slices are visible, but the 2026-08-26 error proved that slice COUNT carries no size information at all, since a fanned half looks identical whether the fruit was 75g or 150g, and hers are small ones at about half the size of a supermarket avocado. ✅ CORRECTED AT 18:37 — SHE STATED HALF OF A VERY SMALL AVOCADO AT 34g, TWO MINUTES AFTER THE UNCERTAINTY WAS FLAGGED. The estimate had been 40g, so it ran 6g or 18 percent HIGH, which is the closest an avocado estimate has come in this log: the 2026-08-26 error was a clean 2x. THE FLAG IS WHAT EARNED THE NUMBER, exactly as with the sapote this morning. At her 34g the avocado gives 2.9g of carbohydrate of which 2.3g is fibre, 0.7g of protein and 54 calories, so the row loses 10 calories and the carbohydrate and protein are unchanged at rounding, as is the prediction. A PINKISH SLIVER AT THE FOLD MIGHT BE HAM OR CHEESE INSIDE THE OMELETTE AND IS DELIBERATELY NOT COUNTED, since she described it as a two-egg om…",
+    "title": "Dinner (cont.): a two-egg omelette, folded and plain, with a side of sliced dark heirloom tomato and avocado. CUMULATIVE BY RULE, NOT A NEW MEAL: the six oysters sit two minutes back at 18:33, so this inherits Dinner and takes the FIRST item's preBG of 100 mg/dL rather than a later live reading. THE EGG COUNT IS HERS AND IS NOT ESTIMATED, which matters because a folded omelette is exactly the dish the standing counting rule warns about — a spread-out fold reads as more egg than it is — so two eggs at 50g each give 1g of carbohydrate, 13g of protein and about 160 calories including the pan fat. ⚠��� THE TOMATO AND AVOCADO ARE NOT IN HER CAPTION AND ARE COUNTED ANYWAY, per her own 2026-08-13 rule that anything fully in frame on the plate is part of the meal and only items sneaking in at the edge are ignored. Tomato read as one medium fruit in wedges at about 120g for 4.7g of carbohydrate, 1.1g of protein and 22 calories. ⚠️ THE AVOCADO IS THE SOFT NUMBER IN THIS ROW AND IS FLAGGED RATHER THAN QUIETLY GUESSED: eight to ten slices are visible, but the 2026-08-26 error proved that slice COUNT carries no size information at all, since a fanned half looks identical whether the fruit was 75g or 150g, and hers are small ones at about half the size of a supermarket avocado. ✅ CORRECTED AT 18:37 — SHE STATED HALF OF A VERY SMALL AVOCADO AT 34g, TWO MINUTES AFTER THE UNCERTAINTY WAS FLAGGED. The estimate had been 40g, so it ran 6g or 18 percent HIGH, which is the closest an avocado estimate has come in this log: the 2026-08-26 error was a clean 2x. THE FLAG IS WHAT EARNED THE NUMBER, exactly as with the sapote this morning. At her 34g the avocado gives 2.9g of carbohydrate of which 2.3g is fibre, 0.7g of protein and 54 calories, so the row loses 10 calories and the carbohydrate and protein are unchanged at rounding, as is the prediction. A PINKISH SLIVER AT THE FOLD MIGHT BE HAM OR CHEESE INSIDE THE OMELETTE AND IS DELIBERATELY NOT COUNTED, since she described it as a two-egg om…",
     "type": "Dinner",
     "date": "2026-08-29T18:35:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-29/4807fc17bf867704.jpg",
@@ -3422,7 +3433,7 @@
   },
   {
     "id": "38685ec7-0668-8189-bd14-fee238b22299",
-    "title": "Lunch: a handful of fresh cherries (~12) with a piece of rustic bread ��� dessert course. (BG: 161 mg/dL Flat) (Pred: 171-191 mg/dL @ 3:35 PM) (Protein: 4g | Carbs: ~28g | Cals: ~160) [Cumulative Lunch: ~58g carbs total] [Coach: Fresh cherries 🍒 are a smart way to finish — whole fruit with fiber and antioxidants, far better than anything processed. That said, with BG already warm and bread stacking on top, your lunch carbs are adding up, so maybe ease off the extra bread. A short walk after would help settle things.]",
+    "title": "Lunch: a handful of fresh cherries (~12) with a piece of rustic bread — dessert course. (BG: 161 mg/dL Flat) (Pred: 171-191 mg/dL @ 3:35 PM) (Protein: 4g | Carbs: ~28g | Cals: ~160) [Cumulative Lunch: ~58g carbs total] [Coach: Fresh cherries 🍒 are a smart way to finish — whole fruit with fiber and antioxidants, far better than anything processed. That said, with BG already warm and bread stacking on top, your lunch carbs are adding up, so maybe ease off the extra bread. A short walk after would help settle things.]",
     "type": "Lunch",
     "date": "2026-06-21T14:26:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-21/9d4b99bcc2cca75d.jpg",
@@ -6414,7 +6425,7 @@
   },
   {
     "id": "35e85ec7-0668-8197-8989-c466e735893b",
-    "title": "Lunch: A small bowl of about 5 fresh strawberries [Cumulative Lunch: ~65g carbs total] (BG: 109 mg/dL Flat) (Pred: 146-156 mg/dL @ 5:01 PM) (Protein: 1g | Carbs: ~9g | Cals: ~38) [Coach: Lovely fresh ending to lunch — strawberries are one of the lowest-glycemic fruits, packed with fiber and vitamin C, so they add minimal carb impact. A bright way to round things out.]  [id:85c1c918]",
+    "title": "Lunch: A small bowl of about 5 fresh strawberries [Cumulative Lunch: ~65g carbs total] (BG: 109 mg/dL Flat) (Pred: 146-156 mg/dL @ 5:01 PM) (Protein: 1g | Carbs: ~9g | Cals: ~38) [Coach: Lovely fresh ending to lunch �� strawberries are one of the lowest-glycemic fruits, packed with fiber and vitamin C, so they add minimal carb impact. A bright way to round things out.]  [id:85c1c918]",
     "type": "Lunch",
     "date": "2026-04-25T15:24:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-25/a705586f11778dc8.jpg",
