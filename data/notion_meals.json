@@ -1,5 +1,16 @@
 [
   {
+    "id": "3cd85ec7-0668-811b-b8e7-de1155836506",
+    "title": "Dinner: a glazed section of pork ribs with a pile of meat already pulled from the bones, and a side of chunky steak-cut fries, with pan juices on the plate. CLASSIFIED DINNER BY THE HOUR RULE — 18:22 sits inside the 18:00 to 04:59 window — and NOT cumulative, the previous Food entry being the 16:34 chia snack one hour and forty-eight minutes earlier, outside the one-hour window, so the live 108 mg/dL Flat read at 18:19, three minutes before submission, is a clean anchor. PORTIONS CALIBRATED AGAINST THE SPG CARD, WHICH IS IN FRAME AND LYING ON THE PLATE RIM so it shares the food's plane and needs no offset correction. The card images with its LONG edge foreshortened — about 312 px against 239 px on the short edge, an apparent aspect of 1.31 where the true card is 1.586 — SO THE COMPRESSED AXIS IS THE LONG ONE AND THE SHORT EDGE IS THE HONEST RULER, giving px per mm of 239 divided by 54.0 equals 4.43. Viewing angle recovered as 1.31 over 1.586, cos theta 0.826, THETA ABOUT 34 DEGREES, squarely in the useful range. Plate measures about 852 px across its widest chord, giving roughly 192mm, a standard 19cm dinner plate, which cross-checks the card scale. FROM THAT: the rib section spans about 430 by 345 px, roughly 97 by 78mm, showing two clear bone ends, and together with the pulled pile at about 85 by 70mm and some 20mm deep at loose packing the TOTAL EDIBLE COOKED PORK COMES TO ROUGHLY 120g, giving about 348 cal, 30g protein and 25g fat at spare-rib composition. THE FRIES are chunky wedges of about 41 by 16 by 16mm each, and the mound occupies roughly 86 by 85mm at about 30mm deep with heavy air gaps, WHICH TWO INDEPENDENT ROUTES — piece-count times unit volume, and mound volume at 40 percent packing — BRACKET AT 50 TO 95g; 90g WAS TAKEN, the upper end, to avoid under-counting a fried side, giving 243 cal, 31.5g carb and 12g fat. Glaze and pan juices consumed put at about 1.5 tbsp of barbecue sauce, 37 cal and 10g carb, with the majority of the visible sauce smeared …",
+    "type": "Dinner",
+    "date": "2026-08-30T18:22:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-30/217dd44627319afa.jpg",
+    "carbs": 42,
+    "cals": 628,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3cc85ec7-0668-81d6-9153-d8f73a8f4468",
     "title": "Snack: a third of the chia pudding she made at midday, in a small glass bowl, topped with three cherries cut into halves whose juice has bled pink into the milk. CLASSIFIED SNACK BY THE HOUR RULE — 16:34 sits inside the 16:00 to 17:59 window — and NOT cumulative, the previous Food entry being the 13:21 lunch three hours and thirteen minutes earlier, so the live 124 mg/dL Flat read at 16:34, at the moment of submission, is a clean anchor. PORTIONS ARE HER OWN STATED FIGURES AND OVERRIDE THE PHOTOGRAPH: a third of the batch, and three cherries. THE BATCH RECIPE IS ALREADY ON RECORD from 12:53 — 1/2 cup whole milk, 2 tbsp chia, 1 tsp honey, 1/2 tsp vanilla, totalling about 219 cal, 22g carbohydrate of which 8g fibre, and 8g protein — SO A THIRD IS ARITHMETIC RATHER THAN ESTIMATION: about 73 cal, 7.3g carb of which 2.7g fibre, 2.7g protein. Three sweet cherries at roughly 8g each, about 24g total: 12 cal, 3g carb, 0.2g protein. ⚠️ THE PHOTOGRAPH SHOWS FIVE OR SIX CHERRY PIECES AND THAT IS NOT A DISCREPANCY — they are three cherries HALVED, which is exactly the cut-fruit over-count trap documented for this log, where six visible pieces are three fruits. HER STATED COUNT OF THREE IS USED AND THE PIECE COUNT IS IGNORED. 🤔 SHE ASKS WHY THE PUDDING DID NOT THICKEN AND THE PHOTOGRAPH ANSWERS IT: the seeds are visibly HYDRATED, each carrying its gel halo, but they have SETTLED INTO A LAYER with free liquid standing above them rather than being suspended throughout. RATIO IS NOT THE PROBLEM — 2 tbsp chia to 1/2 cup milk is 1 to 4 by volume, which sits at the THICK end of the standard 1-to-4 to 1-to-6 range and should have set firm. THE TWO REAL CAUSES ARE STIRRING AND TIME. Chia clumps on contact with liquid and the clumps gel from the outside in, so WITHOUT A STIR AT ROUGHLY FIVE TO TEN MINUTES the seeds bind to each other and sink, leaving the surrounding milk thin — which is precisely the settled layer visible here. AND IT HAD ONLY 3h41m, made about 12:53 and eaten at 16:3…",
     "type": "Snack",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-30/0ef42857610c4cd5.jpg",
     "carbs": 57,
     "cals": 525,
-    "delta": null,
-    "peak": null
+    "delta": 20,
+    "peak": 130
   },
   {
     "id": "3cc85ec7-0668-81b8-ba63-dbc1bd8f451b",
@@ -2190,7 +2201,7 @@
   },
   {
     "id": "3a285ec7-0668-8187-90a6-de8c638ce3f7",
-    "title": "Lunch: rice noodles with mussels in tomato sauce, hard-boiled egg, and a side of broccoli (BG: 95 mg/dL Flat) (Pred: 128-148 mg/dL @ 3:17 PM) (Protein: 27g | Carbs: ~45g | Cals: ~385) [Coach: Mussels, egg, and broccoli bring protein and greens ���� — a genuinely well-built plate, and starting from a 95 you have got great runway. The rice noodles are the one refined carb, but the broccoli fiber and all that protein will keep the rise in check. Really nice balance.]",
+    "title": "Lunch: rice noodles with mussels in tomato sauce, hard-boiled egg, and a side of broccoli (BG: 95 mg/dL Flat) (Pred: 128-148 mg/dL @ 3:17 PM) (Protein: 27g | Carbs: ~45g | Cals: ~385) [Coach: Mussels, egg, and broccoli bring protein and greens 🦪 — a genuinely well-built plate, and starting from a 95 you have got great runway. The rice noodles are the one refined carb, but the broccoli fiber and all that protein will keep the rise in check. Really nice balance.]",
     "type": "Lunch",
     "date": "2026-07-19T14:02:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-19/9cd62523ed1fc166.jpg",
