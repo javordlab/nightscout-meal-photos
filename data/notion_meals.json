@@ -29,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-30/f338def2bd4005f4.jpg",
     "carbs": 10,
     "cals": 85,
-    "delta": null,
-    "peak": null
+    "delta": 12,
+    "peak": 136
   },
   {
     "id": "3cc85ec7-0668-8185-9e7a-d055c67c4941",
@@ -3422,7 +3422,7 @@
   },
   {
     "id": "38685ec7-0668-8189-bd14-fee238b22299",
-    "title": "Lunch: a handful of fresh cherries (~12) with a piece of rustic bread — dessert course. (BG: 161 mg/dL Flat) (Pred: 171-191 mg/dL @ 3:35 PM) (Protein: 4g | Carbs: ~28g | Cals: ~160) [Cumulative Lunch: ~58g carbs total] [Coach: Fresh cherries 🍒 are a smart way to finish — whole fruit with fiber and antioxidants, far better than anything processed. That said, with BG already warm and bread stacking on top, your lunch carbs are adding up, so maybe ease off the extra bread. A short walk after would help settle things.]",
+    "title": "Lunch: a handful of fresh cherries (~12) with a piece of rustic bread ��� dessert course. (BG: 161 mg/dL Flat) (Pred: 171-191 mg/dL @ 3:35 PM) (Protein: 4g | Carbs: ~28g | Cals: ~160) [Cumulative Lunch: ~58g carbs total] [Coach: Fresh cherries 🍒 are a smart way to finish — whole fruit with fiber and antioxidants, far better than anything processed. That said, with BG already warm and bread stacking on top, your lunch carbs are adding up, so maybe ease off the extra bread. A short walk after would help settle things.]",
     "type": "Lunch",
     "date": "2026-06-21T14:26:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-21/9d4b99bcc2cca75d.jpg",
