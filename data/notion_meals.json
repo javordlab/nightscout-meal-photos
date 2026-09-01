@@ -1,5 +1,16 @@
 [
   {
+    "id": "3ce85ec7-0668-813d-b22d-eb1bf5a64fa2",
+    "title": "Lunch: a deconstructed open plate rather than a sandwich — folded slices of mortadella, one slice of her dense homemade seeded loaf, two thick avocado slices and a dollop of her homemade hummus. ALL FOUR COMPONENTS WERE WEIGHED BY HER AND HER GRAMS ARE USED VERBATIM, so no scale reference was needed and none is in frame: 39g mortadella giving 6.2g protein and 121 cal, 47g bread costed at her own loaf's density of about 0.44g carb per gram giving 20.7g carbs and 4.7g protein and 122 cal, 64g avocado giving 5.4g carbs of which 4.3g fibre and 102 cal, and two full tablespoons of hummus at about 32g costed from HER OWN RECIPE FIGURES of 185 cal and 15.4g carb and 5.8g protein per 100g, giving 4.9g carbs and 59 cal. THE HUMMUS IS COUNTED AS A FAT AND FIBRE FOOD AND NOT TOWARD HER PROTEIN TARGET, per the standing rule for her recipe. ⭐ PROTEIN IS 14g, UP FROM 9g AT BREAKFAST — the right direction on the day's running theme, still short of her 20-30g target, and raised with her once and gently rather than twice, since three separate food-subtraction proposals have already been declined today and a fourth criticism of a perfectly reasonable plate would feed the self-blame pattern rather than the protein. NO COMMENT WAS MADE ON THE MORTADELLA BEING A CURED MEAT, per the standing California relaxation of that rule, and no more of it was recommended either; an egg was named as the cleaner way to close the gap. FAT CONTENT WAS ALSO DELIBERATELY NOT FLAGGED TO HER — the plate runs about 26g of fat, which is moderate rather than the fried, greasy load implicated in the 2026-08-30 flare, her stomach reported BETTER at 12:06, and an anxious note about fat today would cost more than it could buy. ⚠️ THE PRE-MEAL BG OF 80 IS THE TAIL OF A VERY STEEP FALL AND THE ENTRY IS ANCHORED TO IT ANYWAY: the curve ran 211 at 12:04 down to 80 at 13:59, including 195 at 12:19 to 109 at 12:44, which is 86 mg/dL in 25 minutes and steeper than a real post-spike decline usually manages. THE LAST FIV…",
+    "type": "Lunch",
+    "date": "2026-09-01T13:59:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-01/1230a68e779f3780.jpg",
+    "carbs": 32,
+    "cals": 405,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3ce85ec7-0668-812f-885e-fb5543dd225c",
     "title": "Breakfast: a bowl of oatmeal topped with blueberries, a spoon of her homemade plain yogurt, hemp hearts and ground flaxseed, with a dusting of cinnamon. ALL PORTIONS ARE HER OWN STATED AMOUNTS AND NO SCALE REFERENCE WAS PRESENT OR NEEDED — one third of a cup of dry rolled oats at about 27g giving 18.1g carbs and 3.6g protein and 103 cal, one third of a cup of blueberries at about 49g giving 7.1g carbs and 28 cal, one tablespoon of her homemade plain yogurt at about 15g giving 0.7g carbs at the 4.7g per 100g figure established for her unsweetened homemade batch, one tablespoon of hemp hearts at about 10g giving 3.2g protein and 55 cal, and one tablespoon of ground flaxseed costed at 7.5g FROM HER OWN LABEL rather than a generic estimate, giving 2.5g carbs of which 2g fibre and 45 cal. Total fibre about 6.5g. THE YOGURT READS FAR WIDER THAN A TABLESPOON IN THE FRAME AND HER STATED FIGURE IS USED UNALTERED ANYWAY: it has melted and spread across hot porridge into a thin pool, which is spread rather than volume, and a stated measure overrides a photo in any case; the whole discrepancy is worth under 2g of carbohydrate so it changes nothing. THE TRADER JOE'S GROUND CINNAMON JAR IS VISIBLE IN FRAME and confirms that the word common in her message is an autocorrect of cinnamon rather than an unidentified ingredient; it is nutritionally negligible at a sprinkle. 💊 A DISH OF THREE TABLETS SITS BESIDE THE BOWL, TWO PINK ROUND AND ONE WHITE OBLONG, CONSISTENT WITH LISINOPRIL 10MG PLUS ROSUVASTATIN 5MG PLUS METFORMIN 500MG — NO MEDICATION ROW IS WRITTEN FROM IT AND IT WAS NOT MENTIONED TO HER, per the standing 2026-08-12 rule that pills visible in a meal photo are neither a confirmation nor a reason to skip the reminder line, and that narrating them back to her reads as surveillance. auto_track_meds.js will anchor the three breakfast doses to this 10:34 entry. ⭐ THIS IS THE BREAKFAST DESIGNED WITH HER ACROSS THE 10:09 AND 10:16 EXCHANGES and it serves both open problems at on…",
     "type": "Breakfast",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-01/ec57b4c7478e3f32.jpg",
     "carbs": 29,
     "cals": 240,
-    "delta": null,
-    "peak": null
+    "delta": 109,
+    "peak": 211
   },
   {
     "id": "3ce85ec7-0668-8131-84f6-fb870315b109",
@@ -27,10 +38,10 @@
     "type": "Snack",
     "date": "2026-08-31T16:34:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-31/ff938ce8d39a426f.jpg",
-    "carbs": 12,
-    "cals": 235,
-    "delta": 24,
-    "peak": 144
+    "carbs": 9,
+    "cals": 72,
+    "delta": 35,
+    "peak": 120
   },
   {
     "id": "3cd85ec7-0668-81c2-99d0-dad3eea4531b",
@@ -408,7 +419,7 @@
   },
   {
     "id": "3c685ec7-0668-8116-8512-f7f8f72c06d4",
-    "title": "Breakfast: one slice of her homemade wholegrain seeded loaf spread thickly with peanut butter, alongside a bowl of plain homemade yogurt topped with chunks of sapote and a generous sprinkle of ground flax, with a mug of coffee. SAPOTE IDENTIFIED BY DEFAULT AND NOT ASKED ABOUT, per the rule adopted 2026-08-23 09:59 when she told me she has a sapote tree — pale golden chunky fruit in her bowl is sapote, and this is the first entry to apply that rule without querying her. NO CARD IN FRAME. ⚠️ THE VIEWING ANGLE IS TOO STEEP FOR GEOMETRY TO BE TRUSTED AND FOOD-SIZE PRIORS WERE USED INSTEAD, which is the standing rule above about 50 degrees: the yogurt bowl images 440px wide by 275px deep, a ratio of 0.625, so COS THETA = 0.625 AND THETA IS ABOUT 51 DEGREES. At that obliquity a naive read runs high — the 2026-08-16 muffin came out 45 percent heavy on a same-plane reference at a similar angle — so the bread was taken from her measured loaf constants rather than from pixels, and the remaining figures are ranges. Bread scored as ONE FULL SLICE of loaf #2 at 861g over 23 slices, so 37.4g carrying 16.5g carbohydrate, 3.5g protein and 95 cal; the steep-angle pixel read suggested a shorter slice but WAS OVERRULED BY THE PRIOR, since one full slice is her established breakfast pattern and the geometry is the unreliable term here. Peanut butter layer comparable to yesterday's at roughly 25g, giving 6.3g protein, 5g carbohydrate and 148 cal. Yogurt at about 110g for 5.2g carbohydrate, 3.9g protein and 67 cal. Sapote at about 50g, slightly more than yesterday's 45g, giving 14.5g carbohydrate, 0.7g protein and 63 cal at white sapote's 29g per 100g. GROUND FLAX AT 2 TABLESPOONS, WHICH THE PACKAGE LABEL SENT AT 10:42 CONFIRMS IS 15g, NOT THE 14g FIRST ASSUMED — corrected in place from the manufacturer's own panel rather than left as an estimate: 5g carbohydrate, 3g protein and 90 cal. NEARLY ALL OF THAT CARBOHYDRATE IS FIBRE, 4g OF THE 5g PER THE LABEL WITH 0g SUGARS, so net carbohydr��",
+    "title": "Breakfast: one slice of her homemade wholegrain seeded loaf spread thickly with peanut butter, alongside a bowl of plain homemade yogurt topped with chunks of sapote and a generous sprinkle of ground flax, with a mug of coffee. SAPOTE IDENTIFIED BY DEFAULT AND NOT ASKED ABOUT, per the rule adopted 2026-08-23 09:59 when she told me she has a sapote tree — pale golden chunky fruit in her bowl is sapote, and this is the first entry to apply that rule without querying her. NO CARD IN FRAME. ⚠️ THE VIEWING ANGLE IS TOO STEEP FOR GEOMETRY TO BE TRUSTED AND FOOD-SIZE PRIORS WERE USED INSTEAD, which is the standing rule above about 50 degrees: the yogurt bowl images 440px wide by 275px deep, a ratio of 0.625, so COS THETA = 0.625 AND THETA IS ABOUT 51 DEGREES. At that obliquity a naive read runs high — the 2026-08-16 muffin came out 45 percent heavy on a same-plane reference at a similar angle — so the bread was taken from her measured loaf constants rather than from pixels, and the remaining figures are ranges. Bread scored as ONE FULL SLICE of loaf #2 at 861g over 23 slices, so 37.4g carrying 16.5g carbohydrate, 3.5g protein and 95 cal; the steep-angle pixel read suggested a shorter slice but WAS OVERRULED BY THE PRIOR, since one full slice is her established breakfast pattern and the geometry is the unreliable term here. Peanut butter layer comparable to yesterday's at roughly 25g, giving 6.3g protein, 5g carbohydrate and 148 cal. Yogurt at about 110g for 5.2g carbohydrate, 3.9g protein and 67 cal. Sapote at about 50g, slightly more than yesterday's 45g, giving 14.5g carbohydrate, 0.7g protein and 63 cal at white sapote's 29g per 100g. GROUND FLAX AT 2 TABLESPOONS, WHICH THE PACKAGE LABEL SENT AT 10:42 CONFIRMS IS 15g, NOT THE 14g FIRST ASSUMED — corrected in place from the manufacturer's own panel rather than left as an estimate: 5g carbohydrate, 3g protein and 90 cal. NEARLY ALL OF THAT CARBOHYDRATE IS FIBRE, 4g OF THE 5g PER THE LABEL WITH 0g SUGARS, so net carbohydr…",
     "type": "Breakfast",
     "date": "2026-08-24T10:18:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-24/4674de87949f7aba.jpg",
@@ -3235,7 +3246,7 @@
   },
   {
     "id": "38a85ec7-0668-815c-ad67-dd697a6c5571",
-    "title": "Lunch (dessert): a homemade egg-and-milk flan with caramel, ringed with fresh blueberries (BG: ~135 mg/dL est, no sensor) (Pred: 170-190 mg/dL @ 3:39 PM) (Est: no sensor, anchor ~135 pre-lunch; gardened all morning, likely improves tolerance) (Protein: 6g | Carbs: ~28g | Cals: ~180) [Cumulative Lunch: 81g carbs total] [Coach: A flan to finish 🍮 ��� and a fair point from you: being eggs and milk plus caramelized sugar, it brings protein and fat that slow the sugar more than a candy would. The blueberries add fiber too. It still nudges lunch to ~81g carbs, but after a full morning gardening you have earned it and set yourself up to handle it well.]",
+    "title": "Lunch (dessert): a homemade egg-and-milk flan with caramel, ringed with fresh blueberries (BG: ~135 mg/dL est, no sensor) (Pred: 170-190 mg/dL @ 3:39 PM) (Est: no sensor, anchor ~135 pre-lunch; gardened all morning, likely improves tolerance) (Protein: 6g | Carbs: ~28g | Cals: ~180) [Cumulative Lunch: 81g carbs total] [Coach: A flan to finish 🍮 — and a fair point from you: being eggs and milk plus caramelized sugar, it brings protein and fat that slow the sugar more than a candy would. The blueberries add fiber too. It still nudges lunch to ~81g carbs, but after a full morning gardening you have earned it and set yourself up to handle it well.]",
     "type": "Lunch",
     "date": "2026-06-25T14:24:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-25/7c64a8f79bcac8ee.jpg",
