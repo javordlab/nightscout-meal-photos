@@ -1,5 +1,16 @@
 [
   {
+    "id": "3cf85ec7-0668-8135-9631-c66c0040f3cd",
+    "title": "Dinner: about a cup and a half of her blended carrot, cabbage and coconut milk soup, smooth and deep orange, served in a stoneware bowl on a white plate. THE VOLUME IS HER OWN STATED FIGURE and the bowl is not measured against anything, since a stated measure overrides the photo; the composition behind it IS an estimate and that is said plainly rather than dressed up. Costed as roughly 120g of carrot giving 12g carbs and 49 cal, about 50g of cabbage giving 3g carbs and 13 cal, and about 60ml of full-fat canned coconut milk giving 1.7g carbs, 1.2g protein and 118 cal, with broth making up the rest. ⚠️ THE COCONUT MILK IS THE LEAST CERTAIN TERM AND IT IS ALSO THE CALORIE DRIVER — the deep orange rather than pale colour argues it is a minority of the volume, which is why 60ml was used rather than more, but anywhere from 40 to 100ml is defensible from the image and that swings the calories by about 80 either way. Carbohydrate is barely affected, so the prediction is robust even though the calorie figure is not. Totals about 17g carbs, 3g protein, 175 cal. Calorie floor satisfied comfortably at 4 times 17 plus 4 times 3 equals 80 against 175, the balance being coconut fat. Classified DINNER by the hour rule and NOT cumulative — the 17:03 protein bite is one hour and fifty-nine minutes back, outside the window. SHE SAYS MORE FOOD FOLLOWS IN A MINUTE, and a tortilla or frittata is visible on a board behind the bowl, so a cumulative continuation is expected shortly and this row is the anchor. ⛔ THE THREE TABLETS ON THE WOODEN SPOON WERE NOT NARRATED BACK TO HER, per the standing rule, and the medication question below was answered ONLY because she raised it in text herself. 💊⚠️ SHE REPORTS FORGETTING THE LUNCH METFORMIN AND PLANS THREE TABLETS TONIGHT, ie 1500mg. TWO SEPARATE ACTIONS FOLLOWED. FIRST, THE 13:59 AUTO-LOGGED LUNCH DOSE ROW WAS A FALSE POSITIVE AND HAS BEEN CORRECTED IN PLACE, and auto_track_meds.js --suppress was run for that date and label. SECOND, SHE WAS …",
+    "type": "Dinner",
+    "date": "2026-09-01T19:02:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-01/1f2a3f08e27e7824.jpg",
+    "carbs": 17,
+    "cals": 175,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3ce85ec7-0668-81ed-a802-e8e9ea353695",
     "title": "Lunch (cont., a nectarine 12 minutes after the 13:59 plate): one whole ripe nectarine, red-skinned, eaten with the skin on. THE SPG CARD IS IN FRAME AND ON THE SAME TABLECLOTH PLANE AS THE FRUIT, which is the arrangement that makes it usable, but IT IS ROTATED AND FORESHORTENED ENOUGH THAT IT WAS USED AS A COARSE CHECK RATHER THAN A PRECISE RULER, per the standing rule that a steeply-viewed card yields a range and that food-size priors outrank it. Reading the card's less-compressed edge as the 54mm short edge gives about 5.2 px per mm, putting the fruit at roughly 62mm wide by 68mm tall, a medium-to-large nectarine; the alternative reading of that edge as the 85.6mm long edge would imply a 91mm fruit, which is larger than nectarines come and was rejected on that ground. Treating it as a sphere of about 65mm gives roughly 144ml, less a stone of about 8g, so ABOUT 135g OF FLESH — and the card estimate and the plain food-size prior agree at 135 to 140g, which is why the figure is trusted. At USDA values of 44 cal and 10.55g carb and 1.06g protein per 100g that gives 14.2g carbs of which 2.3g fibre, 1.4g protein and 59 cal. ⚠️ THE CALORIE FLOOR IS SATISFIED ON NET CARBS AND THIS IS STATED RATHER THAN FUDGED: 4 times 14 plus 4 times 1.4 is 61.6 against 60 cal, marginally over, but whole fruit is the documented exception because USDA calories discount fibre — on the 11.9g net figure the floor is 53.2 and clears comfortably. No number was adjusted to make the heuristic pass. ⭐ CUMULATIVE WITH THE 13:59 LUNCH AND WELL INSIDE THE ONE-HOUR WINDOW at 12 minutes, so the columns carry THIS ITEM'S INCREMENT ONLY at 14g and 60 cal and the running total lives solely in the cumulative marker; the preBG anchor stays at the FIRST item's 80 mg/dL rather than the live 81, and the peak time stays at the original 3:09 PM. [Cumulative Lunch: 46g carbs total] Recomputed on the cumulative total: 80 plus 46 times 0.9 plus 0 intercept plus 0 protein term plus 12.25 damping equals about 134. ⭐…",
     "type": "Lunch",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-01/82f15f8f07677c9b.jpg",
     "carbs": 14,
     "cals": 60,
-    "delta": null,
-    "peak": null
+    "delta": 53,
+    "peak": 134
   },
   {
     "id": "3ce85ec7-0668-813d-b22d-eb1bf5a64fa2",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-01/1230a68e779f3780.jpg",
     "carbs": 32,
     "cals": 405,
-    "delta": null,
-    "peak": null
+    "delta": 54,
+    "peak": 134
   },
   {
     "id": "3ce85ec7-0668-812f-885e-fb5543dd225c",
@@ -199,7 +210,7 @@
   },
   {
     "id": "3cb85ec7-0668-8147-87cf-fb22263d2566",
-    "title": "Dinner (cont.): four pieces of white fish braised with sliced potatoes, tomato, red pepper and onion in a light oily sauce, on a wide-rimmed white plate. LOGGED AS A CUMULATIVE DINNER — eleven minutes after the 18:22 oysters, well inside the one-hour window — so THE preBG ANCHOR REMAINS THE FIRST ITEM'S 100 mg/dL and the time-to-peak is measured from 18:22, not from now. ⚠️ NO SCALE REFERENCE AND NO FIXED-SIZE FOOD ARTICLE IN FRAME, which is the weakest measurement position of the day and is stated rather than glossed. The plate is cut off at the right edge so its horizontal span is unusable; the vertical span of about 1090 pixels was taken as the diameter at an assumed 26cm, giving roughly 4.19 pixels per millimetre. THAT ASSUMED PLATE WAS FLAGGED TO HER AS THE WEAK LINK, since last night's error was exactly this and today's lunch plate turned out to be 19.6cm. ✅ SHE ANSWERED AT 18:47 WITH A STATED 10 INCHES, so the plate is 25.4cm and the scale is 4.29 pixels per millimetre. ⭐ THIS IS THE FIRST VESSEL ASSUMPTION ALL DAY TO BE CONFIRMED RATHER THAN CORRECTED, and the miss was only 2.3 percent linear or about 7 percent on volume — inside the noise of everything else in this row. Portions below are reduced by that 7 percent to the stated plate and are no longer estimates resting on an assumed vessel. ⚠️ THE CONFIRMATION DOES NOT REHABILITATE THE ASSUMPTION AS A METHOD: her plates today measured 26cm at breakfast, 19.6cm at lunch and 25.4cm now, so the dinner-plate default happened to be right here and was badly wrong at lunch. KEEP ASKING OR KEEP ANCHORING ON THE FOOD; do not read this as licence to assume 26cm again. THE FISH is four pieces measuring roughly 38 by 21mm, 30 by 20mm, 30 by 22mm and 35 by 25mm at about 15 to 18mm thick, taken together at about 75g of cooked white fish, giving 17g of protein, no carbohydrate and 80 calories. THE POTATOES are five or six rounds of about 3cm across at 5 to 6mm thick, taken at about 75g, giving 13g of carbohydrate, 2g of …",
+    "title": "Dinner (cont.): four pieces of white fish braised with sliced potatoes, tomato, red pepper and onion in a light oily sauce, on a wide-rimmed white plate. LOGGED AS A CUMULATIVE DINNER — eleven minutes after the 18:22 oysters, well inside the one-hour window — so THE preBG ANCHOR REMAINS THE FIRST ITEM'S 100 mg/dL and the time-to-peak is measured from 18:22, not from now. ⚠️ NO SCALE REFERENCE AND NO FIXED-SIZE FOOD ARTICLE IN FRAME, which is the weakest measurement position of the day and is stated rather than glossed. The plate is cut off at the right edge so its horizontal span is unusable; the vertical span of about 1090 pixels was taken as the diameter at an assumed 26cm, giving roughly 4.19 pixels per millimetre. THAT ASSUMED PLATE WAS FLAGGED TO HER AS THE WEAK LINK, since last night's error was exactly this and today's lunch plate turned out to be 19.6cm. ✅ SHE ANSWERED AT 18:47 WITH A STATED 10 INCHES, so the plate is 25.4cm and the scale is 4.29 pixels per millimetre. ⭐ THIS IS THE FIRST VESSEL ASSUMPTION ALL DAY TO BE CONFIRMED RATHER THAN CORRECTED, and the miss was only 2.3 percent linear or about 7 percent on volume — inside the noise of everything else in this row. Portions below are reduced by that 7 percent to the stated plate and are no longer estimates resting on an assumed vessel. ⚠�� THE CONFIRMATION DOES NOT REHABILITATE THE ASSUMPTION AS A METHOD: her plates today measured 26cm at breakfast, 19.6cm at lunch and 25.4cm now, so the dinner-plate default happened to be right here and was badly wrong at lunch. KEEP ASKING OR KEEP ANCHORING ON THE FOOD; do not read this as licence to assume 26cm again. THE FISH is four pieces measuring roughly 38 by 21mm, 30 by 20mm, 30 by 22mm and 35 by 25mm at about 15 to 18mm thick, taken together at about 75g of cooked white fish, giving 17g of protein, no carbohydrate and 80 calories. THE POTATOES are five or six rounds of about 3cm across at 5 to 6mm thick, taken at about 75g, giving 13g of carbohydrate, 2g of …",
     "type": "Dinner",
     "date": "2026-08-28T18:33:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-28/d0ae9a27bb96349b.jpg",
