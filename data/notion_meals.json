@@ -1,5 +1,16 @@
 [
   {
+    "id": "3d085ec7-0668-8188-9791-fd58913f88c0",
+    "title": "Breakfast: an open-faced sandwich on one slice of her own seeded loaf, sliced avocado laid on the bread and two folded slices of mortadella draped over the top, with a mug alongside. ⭐ ALL THREE WEIGHTS WERE STATED BY MARIA AND ARE USED VERBATIM — 55g bread, 55g avocado, 40g mortadella — so nothing here was estimated from the photograph, no scale reference was needed and NO geometry was performed. A stated weight collapses tilt, plane offset, height and packing density in one move, and her numbers replace the visual estimate rather than being averaged with it. Carbohydrate for the bread is derived from her own weighed-loaf figures at about 0.44g carb per gram of loaf, giving 24g for the 55g slice; avocado at 55g contributes about 5g total carbohydrate of which roughly 3g is fibre, and the mortadella about 1g. ⚠️ PREBG CAVEAT: the 101 is a plateau reading from a sensor that has produced EIGHT false low excursions since 01:00 today, most recently 80 at 10:24 recovering to 101 by 10:34, and her meter read 17 points above the contemporaneous sensor value at 09:35. The plateau values are the trustworthy ones and the dips are not, so this preBG is usable, but the prediction inherits some of that uncertainty and if anything her true starting point sits slightly higher. (BG: 101 mg/dL Flat) (Pred: 152-172 mg/dL @ 11:52 AM) (Protein: 12g | Carbs: ~30g | Cals: ~365) [Coach: Avocado on your seeded loaf is a proper slow-burn breakfast 🥑 — the fat and fibre are doing the work of keeping that bread honest. Protein is a little light at 12g though, and after the night you have had, an egg alongside would lift it to your target for about 70 calories.]",
+    "type": "Breakfast",
+    "date": "2026-09-03T10:37:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-03/527d59cc01759fe6.jpg",
+    "carbs": 30,
+    "cals": 365,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3d085ec7-0668-8138-b941-c45419446242",
     "title": "Dinner (late fruit, 1 hour 47 minutes after the 19:04 dessert and therefore a NEW entry rather than a cumulative one): one whole medium red nectarine, skin on, sitting in a small green patterned bowl on a side table. ⭐ SAME FRUIT AS THE 2026-09-01 14:11 ROW, which recorded one whole ripe red-skinned nectarine eaten with the skin on at 14g carbs, 1g protein and 60 cal, so the identity and the per-fruit figures carry over and only the size is re-read from this photo. 📏 NO SCALE CARD IN FRAME, BUT AN AIRPODS PRO CASE LIES ON THE SAME TABLE and was used as an opportunistic ruler at 60.6 by 45.2 mm: it measures about 240 by 190 px, giving 3.96 and 4.20 px per mm on its two axes and therefore roughly 4.1 px per mm at the table plane. The nectarine spans about 325 px, which is 79 mm uncorrected; the fruit sits raised in a bowl perhaps 4 cm above the case, so at an assumed 40 cm camera distance the plane correction of 0.90 brings it to ABOUT 70 mm, implying nearer 165g and 16 to 17g of carbohydrate. ⚖️ HER STATED MEDIUM IS GIVEN THE CASTING VOTE AND THE FIGURE IS SET AT 15g, between the two readings. A stated size beats a photo estimate, the case is an improvised reference sitting in a different plane from the food, and my portion priors have been shown to run systematically LARGE for her — the rice at 1.6 to 3x, and her own count-word calibration volunteered nine minutes earlier at 20:42. Costed as about 150g of flesh giving 15g carbs of which roughly 2g fibre, 1g protein and 65 cal. ⚠️ PREDICTION CAVEAT STATED IN ADVANCE, NOT AFTERWARDS: 15g falls in the 0 to 15g band where Model v5 applies its most aggressive factor of 2.0, so a single nectarine is projected to lift her 30 points. Both of today's scored meals over-predicted by about 30, at lunch and at dinner. THE BAND IS EXPECTED TO RUN HIGH AGAIN and is left unadjusted so the record stays honest. 🍑 THIS IS THE FRUIT SHE ALMOST DID NOT EAT — see the 20:42 note. She declined it on carbohydrate and calorie grounds, was…",
     "type": "Dinner",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-02/58e383f4cdea180e.jpg",
     "carbs": 15,
     "cals": 65,
-    "delta": null,
-    "peak": null
+    "delta": 29,
+    "peak": 150
   },
   {
     "id": "3d085ec7-0668-8152-af26-d625da545ff5",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-02/ed6ff776086121a2.jpg",
     "carbs": 13,
     "cals": 115,
-    "delta": null,
-    "peak": null
+    "delta": 18,
+    "peak": 128
   },
   {
     "id": "3d085ec7-0668-8115-a64f-ec782b6c246f",
@@ -29,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-02/093d28bf932f8c3c.jpg",
     "carbs": 19,
     "cals": 350,
-    "delta": null,
-    "peak": null
+    "delta": 16,
+    "peak": 127
   },
   {
     "id": "3d085ec7-0668-8191-abd2-c029e73d171e",
@@ -40,8 +51,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-02/0d9d01b2311a53e1.jpg",
     "carbs": 11,
     "cals": 120,
-    "delta": null,
-    "peak": null
+    "delta": 11,
+    "peak": 127
   },
   {
     "id": "3cf85ec7-0668-8113-b967-c42019d1a445",
@@ -793,7 +804,7 @@
   },
   {
     "id": "3c285ec7-0668-8193-8bb6-e9c4dccc6271",
-    "title": "Dinner: sautéed cabbage browned in fat with a fried egg set into the middle of it, a molded scoop of white rice, and her stated two slices of prosciutto. MEASUREMENT �� THE CARD IS FLAT ON THE TABLECLOTH, NOT ON THE PLATE, so it sits in the table plane BELOW the food and a plane-offset correction applies; per the lesson established at 15:49 today the angle gauge is the circular plate rim rather than the card's aspect ratio. THE PLATE IS CUT OFF AT FRAME-LEFT, so its major axis cannot be measured cleanly, and the two scales disagree in the wrong direction: a card long edge of about 310 px gives 3.62 px per mm at cloth level while a 27cm plate assumption gives 3.13, yet the cloth sits BELOW the plate and should therefore image SMALLER, not larger. One of the two is wrong, so neither is trusted. ACCORDINGLY THE ANCHOR IS A FOOD-SIZE PRIOR, which by the same 2026-08-16 rule outranks a contested card: the egg yolk measures about 170 px across against a typical large-egg yolk of 40-45mm, giving roughly 3.8 to 4.25 px per mm, and on that scale the plate reads about 22cm rather than 27 — a lunch plate, not a dinner plate. PORTIONS: rice dome about 70mm across by 30mm high, roughly 90-100ml packed, giving ABOUT 70g, a scant half cup, and this is calibrated against HER OWN stated measure from 2026-08-10 where a measured half cup of her rice weighed 79g rather than against any generic density; cabbage covering roughly 60 percent of the plate at about 2cm depth, some 540ml loose at a shredded-cooked density near 0.35 g per ml, giving ABOUT 180g or one and a half cups cooked, plus roughly a tablespoon of cooking fat which the heavy browning makes visible and which carries most of the calories; one large fried egg; and 30g of prosciutto across the TWO SLICES SHE STATED, carried verbatim rather than estimated from the pile. Calorie floor check passes: 4 x 31 plus 4 x 19 is 196 against 420, the balance being fat from the sauté and the yolk. Not cumulative — the 15:37 bowl was 3h32m…",
+    "title": "Dinner: sautéed cabbage browned in fat with a fried egg set into the middle of it, a molded scoop of white rice, and her stated two slices of prosciutto. MEASUREMENT — THE CARD IS FLAT ON THE TABLECLOTH, NOT ON THE PLATE, so it sits in the table plane BELOW the food and a plane-offset correction applies; per the lesson established at 15:49 today the angle gauge is the circular plate rim rather than the card's aspect ratio. THE PLATE IS CUT OFF AT FRAME-LEFT, so its major axis cannot be measured cleanly, and the two scales disagree in the wrong direction: a card long edge of about 310 px gives 3.62 px per mm at cloth level while a 27cm plate assumption gives 3.13, yet the cloth sits BELOW the plate and should therefore image SMALLER, not larger. One of the two is wrong, so neither is trusted. ACCORDINGLY THE ANCHOR IS A FOOD-SIZE PRIOR, which by the same 2026-08-16 rule outranks a contested card: the egg yolk measures about 170 px across against a typical large-egg yolk of 40-45mm, giving roughly 3.8 to 4.25 px per mm, and on that scale the plate reads about 22cm rather than 27 — a lunch plate, not a dinner plate. PORTIONS: rice dome about 70mm across by 30mm high, roughly 90-100ml packed, giving ABOUT 70g, a scant half cup, and this is calibrated against HER OWN stated measure from 2026-08-10 where a measured half cup of her rice weighed 79g rather than against any generic density; cabbage covering roughly 60 percent of the plate at about 2cm depth, some 540ml loose at a shredded-cooked density near 0.35 g per ml, giving ABOUT 180g or one and a half cups cooked, plus roughly a tablespoon of cooking fat which the heavy browning makes visible and which carries most of the calories; one large fried egg; and 30g of prosciutto across the TWO SLICES SHE STATED, carried verbatim rather than estimated from the pile. Calorie floor check passes: 4 x 31 plus 4 x 19 is 196 against 420, the balance being fat from the sauté and the yolk. Not cumulative — the 15:37 bowl was 3h32m…",
     "type": "Dinner",
     "date": "2026-08-19T19:09:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-19/cb4a997d198c1b70.jpg",
