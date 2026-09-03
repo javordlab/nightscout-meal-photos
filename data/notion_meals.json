@@ -1,5 +1,16 @@
 [
   {
+    "id": "3d085ec7-0668-8191-abd2-c029e73d171e",
+    "title": "Dinner: one cup of a smooth puréed orange vegetable soup, carrot or squash by colour and texture, served in her glazed cream-and-brown bowl with a wooden spoon. No scale reference in the frame and none needed here — the portion is Maria's own stated one cup, about 237 ml, which replaces the visual estimate rather than being averaged with it. Costed as a homemade puréed carrot or squash soup at roughly 16g carbs, 3g protein and 140 cal for the cup; a cream- or potato-thickened version would run higher and a plain stock-based one lower, so the macros carry more uncertainty than the volume does. First food since the 15:11 lunch close, three and a half hours earlier, so not cumulative. (BG: 116 mg/dL Flat) (Pred: 125-145 mg/dL @ 7:46 PM) (Protein: 3g | Carbs: ~16g | Cals: ~140) [Coach: A whole cup of vegetables in the easiest possible form 🥕 — gentle on your blood sugar and no work at all. The gap is protein, just 3g, and after this afternoon's talk about holding your weight that is the one worth filling. An egg, a little cheese or some nuts alongside would do it.]",
+    "type": "Dinner",
+    "date": "2026-09-02T18:41:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-02/0d9d01b2311a53e1.jpg",
+    "carbs": 16,
+    "cals": 140,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3cf85ec7-0668-8113-b967-c42019d1a445",
     "title": "Lunch (cont., 24 minutes after the 13:45 smoothie): 26g of prosciutto draped beside five seeded multigrain crackers on a white plate. THE PROSCIUTTO WEIGHT IS HER OWN STATED FIGURE and is used verbatim; the CRACKERS ARE THE ONLY ESTIMATED ITEM, given as a count rather than a weight. ⭐ THE SPG CARD IS IN FRAME AND WAS USABLE THIS TIME — LYING FLAT ON THE PLATE IN THE FOOD'S OWN PLANE, which is exactly the placement asked for on 2026-09-01 19:17 after the tortilla card sat sloped across the rim and had to be rejected. Its two edges measure about 319 and 210 px giving an apparent aspect near 1.52 against the true 1.586, so the view is very close to top-down and no meaningful tilt correction applies; scale is about 3.89 px/mm on the long edge. Against that the crackers measure roughly 45mm across at a few millimetres thick, putting them near 4.5g each and the five at about 22g — costed as a seeded multigrain cracker at roughly 60 percent carbohydrate and 10 percent protein, giving 13g carbs, 2g protein and 95 calories. Prosciutto at her stated 26g gives 7g protein and 64 calories at essentially zero carbohydrate. ⚠️ THE CRACKERS CARRY THE UNCERTAINTY HERE and it is named rather than hidden: a count plus a card gives size but not density, and a denser or thicker cracker would move the 13g by several grams either way. A stated weight or a box figure would collapse that, as her prosciutto weight already has. ⛔ CUMULATIVE — THE COLUMNS AND THE MACRO PARENTHETICAL CARRY THIS ITEM'S INCREMENT ONLY, 13g carbs and 160 calories, NEVER the running total. The 13:45 smoothie already contributed 34g and 325 calories and downstream sums the columns across the day, so restating the whole meal here would double-count it — the failure mode of 2026-08-31 and 2026-08-19. ⭐ preBG IS ANCHORED TO THE FIRST ITEM AT 91 mg/dL Flat, 13:44, NOT to the live reading of 99 at 14:09. The 13:45 smoothie is already on board and its predicted peak is 14:55, so the current value is mid-rise and using it…",
     "type": "Lunch",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-02/e7630b0dbbaf8a6c.jpg",
     "carbs": 13,
     "cals": 160,
-    "delta": null,
-    "peak": null
+    "delta": 17,
+    "peak": 116
   },
   {
     "id": "3cf85ec7-0668-81e5-b0e2-c3bef5ad0968",
