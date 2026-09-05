@@ -1,5 +1,16 @@
 [
   {
+    "id": "3d285ec7-0668-8117-b2ec-fbdecf26c9cf",
+    "title": "Breakfast: half a cup of her homemade plain yogurt with a tablespoon each of hemp hearts, ground flaxseed and nutritional yeast and a quarter cup of sapote, alongside one lemon poppy seed blueberry muffin from her own earlier batch. ⭐ EVERY QUANTITY IS HER OWN STATED MEASURE AND ALL OF THEM OVERRIDE THE PHOTOGRAPH, so NO GEOMETRY WAS PERFORMED AND NO SCALE CARD IS IN FRAME OR NEEDED — a stated household measure collapses tilt, plane offset, height and packing density in one move, which is exactly the case the rules say to take over any visual estimate. 🔁 LEFTOVER MATCH AT COMPONENT LEVEL: the yogurt bowl is the same dish as the 2026-08-29 10:14 breakfast, id ead9ac96, so its composition and per-item figures are carried over rather than re-derived, with nutritional yeast as the one new component; the muffin is matched to HER OWN RECIPE ON FILE rather than any bakery table, since generic muffin estimates run about 70 percent high. 🧮 THE BUILD, ITEM BY ITEM: half a cup of yogurt at 118ml and about 122g gives 5.7g carbohydrate, 4.3g protein and 74 calories on the standing homemade-plain figures of 4.7g carb per 100g, never sweetened and never to be asked about again; a tablespoon of hemp hearts at about 10g gives 0.9g carbohydrate, 3.2g protein and 55 calories; a tablespoon of ground flax at about 7.5g gives 2.5g carbohydrate of which 2g is fibre, 1.5g protein and 45 calories, taken from HER OWN LABEL rather than a generic table; a tablespoon of nutritional yeast at about 5g gives 2g carbohydrate, 4g protein and 25 calories; and the whole muffin is 26g carbohydrate, 5g protein and 189 calories STRAIGHT FROM HER RECIPE TABLE, the old batch made to the pre-correction recipe with 1 cup of all-purpose flour, which is the recipe the 2026-08-25 analysis showed is not diabetic-friendly despite its billing. ⚠️ THE SAPOTE IS THE ONLY ESTIMATE-BEARING ITEM IN THIS ROW AND IS FLAGGED AS SUCH: her measure of a quarter cup is exact at 59ml, but the conversion to mass and macros r…",
+    "type": "Breakfast",
+    "date": "2026-09-05T09:30:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-05/acdc4fa5ae7b3a2c.jpg",
+    "carbs": 52,
+    "cals": 450,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3d285ec7-0668-8157-8a9c-d0f61ca975a6",
     "title": "Snack (cont., 24 minutes after the 18:35 cabbage and sausage, so still the same evening occasion): one portion of her homemade chia pudding with ONE TABLESPOON of her own passion fruit sauce. ⭐ SHE IS EATING THE SMALL GLASS BOWL WITH THE SPOON ON IT, HER OWN WORDS, and the wide plastic container beside it is the remainder of the batch and is NOT part of this row. 🌺 PASSION FRUIT SAUCE RECIPE GIVEN BY HER AT 18:59 AND RECORDED IN FULL, since it is a house staple that will recur: 1 cup of fresh passion fruit juice FROM HER OWN GARDEN, 2 tablespoons sugar, 2 tablespoons corn starch. That batch is about 300ml or 20 tablespoons and carries roughly 73g carbohydrate in total — 34g from the juice, 25g from the sugar and 14g from the starch — so ONE TABLESPOON IS ABOUT 4g CARBS AND 15 CALORIES, negligible protein. The sauce is costed from her recipe, not estimated from the photo. 🥣 THE PUDDING PORTION IS TAKEN AS ABOUT A THIRD OF THE BATCH, matching the 2026-08-30 16:34 row, on her stated base recipe of half a cup of milk, 2 tablespoons chia, 1 teaspoon honey and half a teaspoon vanilla: the whole batch is about 22g carbs, 8g protein and 211 calories, so a third gives 7g carbs of which about 3g is fibre, 3g protein and 70 calories. The bowl-to-container ratio in the frame supports roughly a third. TOTALS FOR THIS ITEM: 11g carbs, 3g protein, 85 calories. ⛔⭐ THE SPG CARD IS IN FRAME AND WAS DELIBERATELY NOT USED, WHICH IS THE POINT OF THIS PARAGRAPH. It is lying on the mat in the FOREGROUND, appreciably nearer the lens than the two bowls behind it, so it is at a different DEPTH rather than merely a different height. Scaling the bowls off a card 15 to 20cm closer to the camera would have made them read perhaps 30 percent small — the exact failure that produced the 2026-08-13 plum error, where a card at the wrong depth gave a 2x mistake. THE RECIPE IS A BETTER RULER THAN THE CARD HERE and was used instead. ➡️ FOR HER, NOT SAID TONIGHT BECAUSE SHE IS TIRED: the card only work…",
     "type": "Snack",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-04/fa7aac5222d36e07.jpg",
     "carbs": 11,
     "cals": 85,
-    "delta": null,
-    "peak": null
+    "delta": 11,
+    "peak": 139
   },
   {
     "id": "3d285ec7-0668-81dd-a0e2-e6e250d71fd2",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-04/4fe11cdbf1bd6d22.jpg",
     "carbs": 8,
     "cals": 250,
-    "delta": null,
-    "peak": null
+    "delta": 41,
+    "peak": 139
   },
   {
     "id": "3d285ec7-0668-81d4-adcd-c069216db063",
@@ -29,19 +40,19 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-04/dafb641bb7c7e4c3.jpg",
     "carbs": 36,
     "cals": 181,
-    "delta": null,
-    "peak": null
+    "delta": 45,
+    "peak": 139
   },
   {
     "id": "3d285ec7-0668-815d-9055-c7058fefa53b",
-    "title": "Snack: one whole dark red plum, skin on and uncut, lying on the woven placemat with the SPG card beside it. NOT CUMULATIVE — the previous Food entry is the 14:03 nectarine three hours and forty-nine minutes earlier, so this takes a fresh preBG. 📐⭐ THIS IS THE BEST-CASE CALIBRATION SETUP AND IT SHOULD BE SAID SO: the card is lying FLAT ON THE SAME MAT AS THE FRUIT, directly adjacent to it, with no plate lifting either one — exactly the arrangement the 2026-08-13 plum incident and the 2026-08-16 muffin incident were logged to produce. Card orientation is portrait, so the SHORT edge runs across frame. It images at about 305 pixels against 370 for the long edge, an apparent aspect of 1.21 against the true 1.586, so the long axis is the foreshortened one and the RECOVERED VIEWING ANGLE IS ABOUT 40 DEGREES off vertical. The honest scale therefore comes from the across-frame short edge at 5.65 pixels per mm. THE PLUM IS MEASURED ON THAT SAME ACROSS-FRAME AXIS, which needs no cosine correction: it spans about 290 pixels against the card's 305, giving 51mm before plane offset. Correcting for the fruit's equator sitting about 25mm above the mat gives A TRUE DIAMETER OF ABOUT 49mm — treated as a sphere that is 62ml, so roughly 55g of flesh once the stone is out. At plum values of 11.4g carbohydrate, 0.7g protein and 46 calories per 100g that is 6g carbs of which about 1g is fibre, under 1g of protein and 25 calories. ⚠️ THIS IS A SMALL PLUM AND THE FIGURE IS LESS THAN HALF THE 2026-09-03 10:44 PLUM ROW, WHICH WAS COSTED AT 14g CARBS. The discrepancy is recorded rather than smoothed over: that row also had the card in frame, so either that fruit was genuinely much larger or it was over-costed, and this row's arithmetic is written out above so a later reader can check which. A stated correction from her overrides it instantly. 🩸⚠️ BG CONTEXT IS THE REAL STORY OF THIS ROW: she is at 96 mg/dL and FALLING at 45 degrees, four minutes fresh, after 150 minutes of hill path work, 20…",
+    "title": "Snack: one whole dark red plum, skin on and uncut, lying on the woven placemat with the SPG card beside it. NOT CUMULATIVE — the previous Food entry is the 14:03 nectarine three hours and forty-nine minutes earlier, so this takes a fresh preBG. 📐⭐ THIS IS THE BEST-CASE CALIBRATION SETUP AND IT SHOULD BE SAID SO: the card is lying FLAT ON THE SAME MAT AS THE FRUIT, directly adjacent to it, with no plate lifting either one — exactly the arrangement the 2026-08-13 plum incident and the 2026-08-16 muffin incident were logged to produce. Card orientation is portrait, so the SHORT edge runs across frame. It images at about 305 pixels against 370 for the long edge, an apparent aspect of 1.21 against the true 1.586, so the long axis is the foreshortened one and the RECOVERED VIEWING ANGLE IS ABOUT 40 DEGREES off vertical. The honest scale therefore comes from the across-frame short edge at 5.65 pixels per mm. THE PLUM IS MEASURED ON THAT SAME ACROSS-FRAME AXIS, which needs no cosine correction: it spans about 290 pixels against the card's 305, giving 51mm before plane offset. Correcting for the fruit's equator sitting about 25mm above the mat gives A TRUE DIAMETER OF ABOUT 49mm — treated as a sphere that is 62ml, so roughly 55g of flesh once the stone is out. At plum values of 11.4g carbohydrate, 0.7g protein and 46 calories per 100g that is 6g carbs of which about 1g is fibre, under 1g of protein and 25 calories. ⚠�� THIS IS A SMALL PLUM AND THE FIGURE IS LESS THAN HALF THE 2026-09-03 10:44 PLUM ROW, WHICH WAS COSTED AT 14g CARBS. The discrepancy is recorded rather than smoothed over: that row also had the card in frame, so either that fruit was genuinely much larger or it was over-costed, and this row's arithmetic is written out above so a later reader can check which. A stated correction from her overrides it instantly. 🩸⚠️ BG CONTEXT IS THE REAL STORY OF THIS ROW: she is at 96 mg/dL and FALLING at 45 degrees, four minutes fresh, after 150 minutes of hill path work, 20…",
     "type": "Snack",
     "date": "2026-09-04T17:52:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-04/d64f38b5f140a423.jpg",
     "carbs": 6,
     "cals": 25,
-    "delta": null,
-    "peak": null
+    "delta": 50,
+    "peak": 139
   },
   {
     "id": "3d185ec7-0668-81de-9895-c55b1bbc3ce9",
