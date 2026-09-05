@@ -1,5 +1,16 @@
 [
   {
+    "id": "3d285ec7-0668-81d4-adcd-c069216db063",
+    "title": "Snack (cont., 37 minutes after the 17:52 plum, and in practice this is her DINNER — see the classification note below): one serving of dry buckwheat noodles, her own stated quantity of exactly one serving. ⭐ MACROS READ STRAIGHT OFF THE PACKET LABEL SHE PHOTOGRAPHED, NOT ESTIMATED AND NOT MEASURED FROM ANY IMAGE OF THE FOOD — the photo is the nutrition panel itself. Serving size is one quarter of the package at 50g dry, giving 181 calories, 1.3g fat with 0g saturated, 0mg cholesterol, 0mg SODIUM, 36g total carbohydrate of which 2g is fibre and 2g sugars with NO added sugar, 6g protein, 10mg calcium, 1mg iron and 175mg potassium. The side panel reads 20 percent wheat flour as the golden ratio and directs a 5-minute boil, which identifies this as an 80/20 soba rather than a wheat noodle. 🚫 NO SCALE REFERENCE APPLIES — there is no plate in frame and nothing to calibrate; the quantity is her word plus the label. ⚠️⭐ CLASSIFICATION IS SNACK BY RULE AND THE RULE FITS BADLY HERE, SO IT IS RECORDED RATHER THAN QUIETLY OVERRIDDEN. The 1-hour cumulative rule is explicit that a Food entry within an hour inherits the earlier one's MealType, and the 17:52 plum was Snack by the hour table. So a 36g noodle dinner is carrying the Snack label because a 6g plum 37 minutes earlier got there first. FOR JAVI: this is the edge the rule does not handle — an hour-table Snack immediately preceding the real evening meal inverts which item names the occasion. The macros, the cumulative total and the prediction are all unaffected; only the label is wrong. 🕐 TIME-TO-PEAK IS ANCHORED TO 18:29 AND NOT TO THE 17:52 FIRST ITEM, WHICH IS A DELIBERATE DEPARTURE FROM THE 2026-09-03 PRECEDENT AND IS FLAGGED AS ONE: 36 of these 42 grams arrive at 18:29, and the first-item anchor would have projected the peak at 18:47, eighteen minutes after she starts eating the noodles, which is physically impossible. The prior precedent had a 7-minute gap where the choice did not matter; this one has 37. 🍜 SECOND …",
+    "type": "Snack",
+    "date": "2026-09-04T18:29:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-04/dafb641bb7c7e4c3.jpg",
+    "carbs": 41,
+    "cals": 211,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3d285ec7-0668-815d-9055-c7058fefa53b",
     "title": "Snack: one whole dark red plum, skin on and uncut, lying on the woven placemat with the SPG card beside it. NOT CUMULATIVE — the previous Food entry is the 14:03 nectarine three hours and forty-nine minutes earlier, so this takes a fresh preBG. 📐⭐ THIS IS THE BEST-CASE CALIBRATION SETUP AND IT SHOULD BE SAID SO: the card is lying FLAT ON THE SAME MAT AS THE FRUIT, directly adjacent to it, with no plate lifting either one — exactly the arrangement the 2026-08-13 plum incident and the 2026-08-16 muffin incident were logged to produce. Card orientation is portrait, so the SHORT edge runs across frame. It images at about 305 pixels against 370 for the long edge, an apparent aspect of 1.21 against the true 1.586, so the long axis is the foreshortened one and the RECOVERED VIEWING ANGLE IS ABOUT 40 DEGREES off vertical. The honest scale therefore comes from the across-frame short edge at 5.65 pixels per mm. THE PLUM IS MEASURED ON THAT SAME ACROSS-FRAME AXIS, which needs no cosine correction: it spans about 290 pixels against the card's 305, giving 51mm before plane offset. Correcting for the fruit's equator sitting about 25mm above the mat gives A TRUE DIAMETER OF ABOUT 49mm — treated as a sphere that is 62ml, so roughly 55g of flesh once the stone is out. At plum values of 11.4g carbohydrate, 0.7g protein and 46 calories per 100g that is 6g carbs of which about 1g is fibre, under 1g of protein and 25 calories. ⚠️ THIS IS A SMALL PLUM AND THE FIGURE IS LESS THAN HALF THE 2026-09-03 10:44 PLUM ROW, WHICH WAS COSTED AT 14g CARBS. The discrepancy is recorded rather than smoothed over: that row also had the card in frame, so either that fruit was genuinely much larger or it was over-costed, and this row's arithmetic is written out above so a later reader can check which. A stated correction from her overrides it instantly. 🩸⚠️ BG CONTEXT IS THE REAL STORY OF THIS ROW: she is at 96 mg/dL and FALLING at 45 degrees, four minutes fresh, after 150 minutes of hill path work, 20…",
     "type": "Snack",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-04/cf2446a250e36199.jpg",
     "carbs": 20,
     "cals": 90,
-    "delta": null,
-    "peak": null
+    "delta": 17,
+    "peak": 135
   },
   {
     "id": "3d185ec7-0668-8117-ba89-caac14deec69",
