@@ -1,14 +1,25 @@
 [
   {
+    "id": "3d385ec7-0668-8133-9de4-e2994ee2310b",
+    "title": "Breakfast: one slice of her own seeded loaf with a poached egg laid on top, a mug of miso soup made with just water and a tablespoon of miso, and one whole dark red plum, on a rimmed white side plate with her ProHealth methyl B-12 bottle standing in the background. NO SCALE CARD IN FRAME, so portions were checked against the plate assumed at about 20cm across, which puts the bread slice at roughly 9.3cm long and the plum at about 49mm in diameter, giving roughly 60g of fruit. THE BREAD IS COSTED FROM HER OWN LOAF ANCHOR AND NOT FROM GEOMETRY, per her standing rule that she weighs her loaf and per the stored loaf #3 figures of 41.2g per slice at 0.470g of carbohydrate per gram, giving 19g carbohydrate, 4g protein and 120 calories; the geometry above is consistent with that slice size and is recorded only as a cross-check. The poached egg is one large egg at 6g protein and 72 calories; one tablespoon of miso paste at about 17g gives 4g carbohydrate, 2g protein, 35 calories and roughly 600mg of sodium, which is the salient number on a morning her cuff read 132/72 and 129/72; the plum at about 60g of flesh gives 7g carbohydrate and 28 calories. ⚠️ HER TEXT READ one slice of my bread, one piece bread AND ONLY ONE SLICE IS ON THE PLATE — read here as a dictation repetition of the same single slice rather than two separate bread items, and she was told so plainly in the reply so a second piece eaten off-camera costs her one word to correct. 🍳 SHE DID NOT MENTION THE EGG AT ALL, but it is fully in frame and sitting centred on the bread, so it is counted per her own framing rule that anything fully in frame belongs to the meal. ⏱️ CLASSIFIED BREAKFAST BY THE HOUR RULE and NOT cumulative, the previous Food entry being last night's 22:15 slice of bread almost twelve hours earlier, so the 96 mg/dL read at 10:04 is a clean live anchor one minute old. (BG: 96 mg/dL Flat) (Pred: 149-169 mg/dL @ 11:20 AM) (Protein: 13g | Carbs: ~30g | Cals: ~255) [Coach: Egg on your own loaf is a…",
+    "type": "Breakfast",
+    "date": "2026-09-06T10:05:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-06/c04fae9f45cabd68.jpg",
+    "carbs": 30,
+    "cals": 255,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3d385ec7-0668-8133-89cb-d0c2abde6fc6",
-    "title": "Dinner (cont., 7 minutes after the 18:27 liver and onions, so cumulative rather than a new meal): a torn hunk of crusty white bread with a thick golden crust and an open airy crumb, photographed on the placemat beside the SPG card. 📐 THE CARD IS IN FRAME AND LYING FLAT IN THE BREAD'S OWN PLANE, which is the placement that makes the geometry work — both scale and viewing angle come straight off it and no plane-offset correction is needed since bread and card rest on the same mat. Its edges measure about 386 and 261 px, an apparent aspect of 1.48 against the true 1.586, so the LONG edge is the foreshortened one: scale is taken as max of 386/85.6 and 261/54.0 = 4.83 px per mm off the honest short edge, and cos theta = 386 divided by 85.6 times 4.83 = 0.935, giving A VIEWING ANGLE NEAR 21 DEGREES — a mild tilt, close to top-down. Against that the bread measures about 75mm across the uncompressed axis and about 94mm along the compressed one, corrected to roughly 101mm, so a piece near 10cm by 7.5cm with a height read at about 4cm. An irregular torn chunk fills maybe half its bounding box, so about 150ml, and crusty white bread with an open crumb runs about 0.28 g per ml, giving ROUGHLY 45g — a hand-sized hunk. At 51g carbohydrate and 270 calories per 100g that is 23g carbohydrate, 4g protein and 125 calories. 🍞 NOTE ON WHICH BREAD THIS IS, BECAUSE IT CHANGES THE METHOD: this is NOT her homemade seeded loaf, which she weighs and for which the standing rule is to use her grams and never the card. It is the same shop-bought crusty rustic bread as the 2026-09-03 18:47 row, which came out at 17g carbohydrate for a slightly smaller torn hunk with its middle pulled out — consistent with today's larger, intact piece. WITH NO STATED WEIGHT AVAILABLE THE CARD IS THE BEST RULER HERE, and a weight from her would beat it instantly. 🔗 CUMULATIVE HANDLING: THE COLUMNS AND THE MACRO PARENTHETICAL CARRY THIS ITEM'S INCREMENT ONLY — 23g carbs and 125 calories, NOT the 60g and 620 calo…",
+    "title": "Dinner (cont., 7 minutes after the 18:27 liver and onions, so cumulative rather than a new meal): a torn hunk of crusty white bread with a thick golden crust and an open airy crumb, photographed on the placemat beside the SPG card. 📐 THE CARD IS IN FRAME AND LYING FLAT IN THE BREAD'S OWN PLANE, which is the placement that makes the geometry work — both scale and viewing angle come straight off it and no plane-offset correction is needed since bread and card rest on the same mat. Its edges measure about 386 and 261 px, an apparent aspect of 1.48 against the true 1.586, so the LONG edge is the foreshortened one: scale is taken as max of 386/85.6 and 261/54.0 = 4.83 px per mm off the honest short edge, and cos theta = 386 divided by 85.6 times 4.83 = 0.935, giving A VIEWING ANGLE NEAR 21 DEGREES — a mild tilt, close to top-down. Against that the bread measures about 75mm across the uncompressed axis and about 94mm along the compressed one, corrected to roughly 101mm, so a piece near 10cm by 7.5cm with a height read at about 4cm. An irregular torn chunk fills maybe half its bounding box, so about 150ml, and crusty white bread with an open crumb runs about 0.28 g per ml, giving roughly 45g. ⛔⭐ THAT ESTIMATE WAS WRONG AND SHE WEIGHED IT: MARIA STATED 26g AT 18:38 AND HER FIGURE REPLACES MINE OUTRIGHT — 26g gives 13g carbohydrate, 2g protein and 70 calories at 51g carb and 270 cal per 100g, and those are the numbers on this row. A stated weight collapses tilt, height, shape and packing density in one move and is never averaged with a visual estimate. MY ERROR WAS 73 PERCENT HIGH AND THE CAUSE IS SPECIFIC AND FAMILIAR: 26g of this bread is about 93ml, against the 150ml I built, so THE VOLUME WAS 1.6 TIMES TOO BIG WHILE THE FOOTPRINT WAS PROBABLY FINE. The footprint came off the card honestly; THE HEIGHT DID NOT, BECAUSE AT 21 DEGREES THERE IS NO SIDE PROFILE TO MEASURE. A near-top-down frame measures footprint perfectly and height not at all, and height is the term volume…",
     "type": "Dinner",
     "date": "2026-09-05T18:34:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-05/9051271ba7db90bd.jpg",
-    "carbs": 23,
-    "cals": 125,
-    "delta": null,
-    "peak": null
+    "carbs": 13,
+    "cals": 70,
+    "delta": 58,
+    "peak": 141
   },
   {
     "id": "3d385ec7-0668-8184-8aca-de189e1a3411",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-05/62ad5448e757261d.jpg",
     "carbs": 37,
     "cals": 495,
-    "delta": null,
-    "peak": null
+    "delta": 62,
+    "peak": 141
   },
   {
     "id": "3d285ec7-0668-81a3-a761-ce4a80f1b971",
