@@ -1,5 +1,16 @@
 [
   {
+    "id": "3d485ec7-0668-819f-8437-ee0bd1feb885",
+    "title": "Breakfast: one slice of her own seeded loaf spread with chunky peanut butter and topped with dark cooked-down blueberries in their own released syrup, on a white side plate with the SPG card laid on the plate rim, a few splashes of the berry juice on the plate beside it. ⭐ LEFTOVER MATCH ON THE BERRIES, NOT A COLOUR GUESS: these are HER OWN BLUEBERRIES THAWED FROM THE FREEZER, not a shop-bought jam or preserve. The berries hold their whole rounded shapes in a thick very dark syrup, which is exactly what her frozen fruit does on thawing, and the identical signature was already recorded on 2026-09-03 20:04 as \"berries and their released juice pooled around it\". She keeps a freezer of apricots, strawberries and blueberries as her own sherbet substitute, confirmed in her words 2026-09-06 20:50, so a known house item outranks the jam reading of a dark glossy topping. ⚠️ THIS IS THE ONE UNCERTAINTY THAT MOVES THE NUMBERS MATERIALLY and it was named to her in the reply for a one-word veto: unsweetened thawed berries carry about 14g carb per 100g, whereas a preserve carries 50 to 65g, so if this is actually jam the carb total goes from 28g to roughly 40g and the prediction rises about 14 mg/dL. 📐 PORTIONS CALIBRATED AGAINST THE SPG CARD, which is IN FRAME AND LYING IN THE PLATE PLANE. Both card edges measured: long edge about 322 px, short edge about 184 px, so apparent aspect 1.75 against the true 1.586 gives cos θ = 1.586/1.75 = 0.906 and a viewing angle of ABOUT 25 DEGREES off straight down — inside the useful range, so the geometry is trusted rather than downgraded to a range. Scale px/mm = max(322/85.6, 184/54.0) = 3.76 px/mm, taking the larger and therefore less foreshortened value. CROSS-CHECKED AGAINST THE PLATE: 700 px across its widest axis is 186mm, a sensible 19cm side plate, and the plate ellipse at 665 by 700 px independently gives cos θ = 0.95, confirming a steep near-overhead view. On that scale the slice measures about 117 by 78mm after dividing the depth…",
+    "type": "Breakfast",
+    "date": "2026-09-07T10:11:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-07/434a119718cd8ca6.jpg",
+    "carbs": 28,
+    "cals": 271,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3d485ec7-0668-81c0-8151-f31b10007c69",
     "title": "Dinner (cumulative, 19 minutes after the 22:12 milk and chocolate, eaten to treat a low): four small Spanish picos — the hard, oil-enriched bread sticks — tipped out of an opened single-serve PICOS UTRERANOS / PICOS CAMPEROS sachet, photographed on the dark granite counter beside the Spode Christmas Tree mug still holding the warmed milk. ⭐ COUNT TAKEN FROM THE PHOTOGRAPH, NOT FROM HER WORDS: she wrote \"a few bread sticks\", and her own calibration rule would make \"a few\" half a usual serving, but four picos are fully in frame and a visible count outranks a vague quantity word every time — she photographs the plate before eating, so four is what she had. ⛔ NO CARD IN FRAME. Scale was taken from the sachet, a standard single-serve picos packet at about 11cm across the printed face, giving roughly 4.1 px/mm at the packet; because the packet sits further back in a tilted frame than the picos do, that figure is an UNDER-estimate of px/mm at the food and therefore an OVER-estimate of pico length, so the raw 50mm reading was pulled back. Cross-checked against the Spode mug, whose rim is a known 8.3cm. Resolved dimensions: picos of roughly 5 to 6cm long by about 1.2cm thick, four of them, giving ABOUT 11g OF BREAD IN TOTAL — one small sachet's worth. Costed from picos composition at roughly 68g carb, 10g protein, 13g fat and 460 cal per 100g, which is why 11g of it carries more calories than the same weight of plain bread. Calorie floor checked: 4×8 + 4×1 = 36, under the 52 written. 🩸 CLINICAL CONTEXT — THIS IS HYPOGLYCAEMIA TREATMENT, NOT AN APPETITE SNACK. Sensor nadir 64 FortyFiveDown at 22:24, fingerstick 85 at 22:24 confirmed by her at 22:25, sensor 68 Flat at 22:29 and therefore TURNED. Dry hard bread is close to the fastest carb in the house and was the correct reach. ⚠️ preBG FOR THE PREDICTION IS 75, THE 22:12 FIRST ITEM'S ANCHOR, NOT THE LIVE 68 — the live value is mid-treatment on a rising limb and using it would under-predict the recovery. Time-to-peak is anch…",
     "type": "Dinner",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-06/0fd010272cf48a01.jpg",
     "carbs": 8,
     "cals": 52,
-    "delta": null,
-    "peak": null
+    "delta": 66,
+    "peak": 134
   },
   {
     "id": "3d485ec7-0668-819d-a581-e09b392eb0c5",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-06/d06d68791c083ecd.jpg",
     "carbs": 6,
     "cals": 25,
-    "delta": null,
-    "peak": null
+    "delta": 4,
+    "peak": 162
   },
   {
     "id": "3d485ec7-0668-819e-97af-d787763448e6",
