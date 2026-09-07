@@ -1,14 +1,25 @@
 [
   {
+    "id": "3d485ec7-0668-819e-97af-d787763448e6",
+    "title": "Dinner: one breaded chicken cutlet, a pile of diced boiled potatoes tossed with shredded carrot, sesame seeds and black pepper, and half a hard-boiled egg, on a white plate. ⛔⭐⭐ THE SPG CARD WAS IN FRAME AND WAS DELIBERATELY NOT USED FOR SCALE — IT IS LYING ON THE PLACEMAT, NOT ON THE PLATE, so it sits in a lower plane AND nearer the lens at the bottom of a tilted frame, which images it large and drives px/mm too high. Taken at face value it gave about 4.5 px per mm and a 20cm plate, which would have made the halved egg only 30mm across — impossible for a halved hen's egg and the tell that the reference was in the wrong plane. This is the documented 2x-error mode and food-size priors outrank a misplaced card. ✅ SCALE TAKEN FROM THE HALVED EGG INSTEAD, a food article of known size: its cut face reads about 135 px across the uncompressed horizontal axis and about 115 px vertically. THE VIEWING ANGLE COMES OFF THE PLATE ELLIPSE, 900 px wide by 698 px deep, an apparent aspect of 1.29 against a true circle, so cos theta = 0.776 and THETA IS ABOUT 39 DEGREES — squarely in the useful 30 to 45 range. Correcting the egg's depth axis gives a true cut face near 50 by 44mm, a medium-to-large egg, and a plate-plane scale of ABOUT 3.1 px per mm horizontally and 2.4 px per mm along the depth axis, which puts the plate at roughly 28-29cm. ⚠️ HONEST SPREAD STATED RATHER THAN HIDDEN: the card scale and the egg scale disagree by about 1.6x linear, which is 4x in volume, so the chicken is bracketed at 45-90g and the egg-anchored figure was chosen. Portions: the cutlet measures about 158mm long by 65mm wide as a tapered strip, roughly 62 cm2 of footprint, at the 1.2cm thickness anchored from her 2026-09-02 cutlets, giving ABOUT 75g of breaded chicken; the potato and carrot pile spreads over roughly 124 cm2 at about 1.8cm average depth with loose cube packing near 0.6, giving about 135ml of solid food or A SCANT CUP, taken as 120g of boiled potato with 30g of shredded carrot, a teaspoon…",
+    "type": "Dinner",
+    "date": "2026-09-06T18:58:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-06/95a1d65428abebf1.jpg",
+    "carbs": 35,
+    "cals": 415,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3d385ec7-0668-8153-aa7c-f8e29b9511be",
-    "title": "Lunch: an open-faced sandwich on one slice of her own seeded loaf, layered mortadella then a slice of orange cheese then fanned avocado slices, on a white side plate. ⭐ EVERY QUANTITY IS HER OWN STATED COUNT — bread slice, 2 mortadella slices, 1 cheese slice, quarter avocado — SO NO GEOMETRY WAS PERFORMED AND NO SCALE REFERENCE WAS USED OR NEEDED, a stated measure outranking any photo estimate by rule. The photo was read only to confirm the build, which matches her text exactly with nothing additional on the plate. 🔁 THE PER-ITEM WEIGHTS ARE CARRIED FROM HER OWN PRIOR STATEMENTS RATHER THAN ESTIMATED AFRESH, this being her recurring mortadella plate, logged 2026-09-04 at 13:46 and 2026-09-01 at 13:59: TWO MORTADELLA SLICES AT 48g TOTAL and ONE CHEESE SLICE AT 31g are her own figures from the 09-04 row, giving 162 calories with 8g protein for the mortadella and 124 calories with 8g protein for the cheese. The bread is costed from HER OWN LOAF ANCHOR at 41.2g per slice and 0.470g of carbohydrate per gram, giving 19g carbohydrate, 4g protein and 120 calories. The avocado uses HER OWN FIXED PORTION RULE — a quarter of a large one or a half of a small one, landing at about 38g of flesh either way — giving 3g carbohydrate, 1g protein and 61 calories, and the fruit was deliberately NOT sized from the photo, since slice count carries no size information and doing so caused a two-fold error once before. ⏱️ CLASSIFIED LUNCH BY THE HOUR RULE and NOT cumulative, the previous Food entry being the 10:11 cashews three hours and seventeen minutes earlier, so the 96 mg/dL read at 13:24 is a clean live anchor four minutes old. 🍽️ SHE ATE BEFORE THE CHORE, WHICH IS THE POINT OF THE 12:39 ADVICE: she declared a freezer-cleaning session at 12:39 while sitting at 99 mg/dL nearly three hours after a modest 31g breakfast, was told plainly to eat lunch first, and did. Yesterday's three dips came out of exactly the pattern this avoids. 💊 THE LUNCH METFORMIN REMINDER APPLIES — no Metformi…",
+    "title": "Lunch: an open-faced sandwich on one slice of her own seeded loaf, layered mortadella then a slice of orange cheese then fanned avocado slices, on a white side plate. ⭐ EVERY QUANTITY IS HER OWN STATED COUNT — bread slice, 2 mortadella slices, 1 cheese slice, quarter avocado — SO NO GEOMETRY WAS PERFORMED AND NO SCALE REFERENCE WAS USED OR NEEDED, a stated measure outranking any photo estimate by rule. The photo was read only to confirm the build, which matches her text exactly with nothing additional on the plate. 🔁 THE PER-ITEM WEIGHTS ARE CARRIED FROM HER OWN PRIOR STATEMENTS RATHER THAN ESTIMATED AFRESH, this being her recurring mortadella plate, logged 2026-09-04 at 13:46 and 2026-09-01 at 13:59: TWO MORTADELLA SLICES AT 48g TOTAL and ONE CHEESE SLICE AT 31g are her own figures from the 09-04 row, giving 162 calories with 8g protein for the mortadella and 124 calories with 8g protein for the cheese. The bread is costed from HER OWN LOAF ANCHOR at 41.2g per slice and 0.470g of carbohydrate per gram, giving 19g carbohydrate, 4g protein and 120 calories. The avocado uses HER OWN FIXED PORTION RULE — a quarter of a large one or a half of a small one, landing at about 38g of flesh either way — giving 3g carbohydrate, 1g protein and 61 calories, and the fruit was deliberately NOT sized from the photo, since slice count carries no size information and doing so caused a two-fold error once before. ⏱️ CLASSIFIED LUNCH BY THE HOUR RULE and NOT cumulative, the previous Food entry being the 10:11 cashews three hours and seventeen minutes earlier, so the 96 mg/dL read at 13:24 is a clean live anchor four minutes old. ⛔ CORRECTED AT 13:30 BY HER — SHE DID NOT EAT BEFORE THE CHORE, AND THE CLAIM THAT SHE FOLLOWED THE 12:39 ADVICE IS WITHDRAWN. Her words: nope, I already did the freezer cos I hadn't read your message. THE ADVICE SIMPLY ARRIVED TOO LATE, she having gone straight from announcing it to doing it, so she cleaned the freezer from roughly 12:39 to 13:25 on a 31g br…",
     "type": "Lunch",
     "date": "2026-09-06T13:28:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-06/32a4ea529823f813.jpg",
     "carbs": 23,
     "cals": 465,
-    "delta": null,
-    "peak": null
+    "delta": 12,
+    "peak": 111
   },
   {
     "id": "3d385ec7-0668-8133-9de4-e2994ee2310b",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-06/c04fae9f45cabd68.jpg",
     "carbs": 28,
     "cals": 237,
-    "delta": null,
-    "peak": null
+    "delta": 24,
+    "peak": 120
   },
   {
     "id": "3d385ec7-0668-8133-89cb-d0c2abde6fc6",
@@ -5457,7 +5468,7 @@
   },
   {
     "id": "36885ec7-0668-814e-8628-fa685ceb1c7a",
-    "title": "Lunch: 1 fresh nectarine [Cumulative Lunch: 44g carbs total; protein ~57g] (BG: 115 mg/dL Flat) (Pred: 151-161 mg/dL @ 4:26 PM) (Protein: 1g | Carbs: ~13g | Cals: ~60) [Coach: Nectarine 🍑 — fresh whole fruit with fiber and natural sugars, ~13g carbs. Smart finisher after the seafood feast. Cumulative lunch ~44g carbs, ~57g protein. Today's looking like a textbook T2D-friendly day.]",
+    "title": "Lunch: 1 fresh nectarine [Cumulative Lunch: 44g carbs total; protein ~57g] (BG: 115 mg/dL Flat) (Pred: 151-161 mg/dL @ 4:26 PM) (Protein: 1g | Carbs: ~13g | Cals: ~60) [Coach: Nectarine ���� — fresh whole fruit with fiber and natural sugars, ~13g carbs. Smart finisher after the seafood feast. Cumulative lunch ~44g carbs, ~57g protein. Today's looking like a textbook T2D-friendly day.]",
     "type": "Lunch",
     "date": "2026-05-22T14:54:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-22/193b0ecee506cd42.jpg",
