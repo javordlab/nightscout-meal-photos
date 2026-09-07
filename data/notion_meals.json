@@ -1,12 +1,23 @@
 [
   {
+    "id": "3d485ec7-0668-819d-a581-e09b392eb0c5",
+    "title": "Dinner (late fruit, 1 hour 47 minutes after the 18:58 plate): a small white bowl of blueberries on a textured cream cloth, the berries carrying a pale frosted bloom that reads as frozen rather than fresh, though that is a visual impression and not her word. ⛔ NO SCALE REFERENCE IN FRAME — no card, nothing of stated size, so the bowl rim is the only ruler and it is an ASSUMED one, which makes it the weakest link in this row. ⚠️ THE VIEWING ANGLE IS STEEP AND THAT CAPS THE PRECISION: the rim ellipse measures about 820 px across by 455 px deep, an apparent aspect of 1.80 against a true circle, so cos theta = 0.555 and THETA IS ABOUT 56 DEGREES — past the 50-degree line at which the standing rule says give a RANGE AND NEVER A POINT MASS. ✅ TWO INDEPENDENT METHODS WERE RUN AND THEY CONVERGE, which is why a central figure is offered at all. FIRST, BERRY COUNT: about 20 berries are visible with perhaps 5 to 8 more in the layer beneath, so roughly 25 to 28 in total, and the larger ones measure near 14mm across on the assumption that this is one of her 8oz bowls at a 116mm rim — a size squarely in the normal cultivated range, which is itself a check that the bowl assumption is not wildly wrong. At about 1.4g a berry that is 35 to 39g. SECOND, VOLUME: the pile spreads about 68mm by 78mm over roughly 42 cm2, standing about 2.5cm at two berries deep with a mound factor near 0.7, giving about 73ml, which at the bulk density of 0.63 g per ml implied by her own 2026-09-04 half-cup row is about 46g. TAKEN AT ABOUT 40g, A THIRD OF A CUP, WITH AN HONEST RANGE OF 30 TO 50g. 🔁 IDENTITY AND COMPOSITION CARRIED FROM HER 2026-09-04 20:45 ROW — half a cup of blueberries at 11g carbohydrate and 45 calories, the same food at the same hour of the evening two days ago — with only the portion re-measured here, and today's is roughly half that. NOT CUMULATIVE: the 18:58 dinner was 1 hour 47 minutes earlier, outside the 1-hour window, so this row carries its own increment and no running total. …",
+    "type": "Dinner",
+    "date": "2026-09-06T20:45:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-06/d06d68791c083ecd.jpg",
+    "carbs": 6,
+    "cals": 25,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3d485ec7-0668-819e-97af-d787763448e6",
-    "title": "Dinner: one breaded chicken cutlet, a pile of diced boiled potatoes tossed with shredded carrot, sesame seeds and black pepper, and half a hard-boiled egg, on a white plate. ⛔⭐⭐ THE SPG CARD WAS IN FRAME AND WAS DELIBERATELY NOT USED FOR SCALE — IT IS LYING ON THE PLACEMAT, NOT ON THE PLATE, so it sits in a lower plane AND nearer the lens at the bottom of a tilted frame, which images it large and drives px/mm too high. Taken at face value it gave about 4.5 px per mm and a 20cm plate, which would have made the halved egg only 30mm across — impossible for a halved hen's egg and the tell that the reference was in the wrong plane. This is the documented 2x-error mode and food-size priors outrank a misplaced card. ✅ SCALE TAKEN FROM THE HALVED EGG INSTEAD, a food article of known size: its cut face reads about 135 px across the uncompressed horizontal axis and about 115 px vertically. THE VIEWING ANGLE COMES OFF THE PLATE ELLIPSE, 900 px wide by 698 px deep, an apparent aspect of 1.29 against a true circle, so cos theta = 0.776 and THETA IS ABOUT 39 DEGREES — squarely in the useful 30 to 45 range. Correcting the egg's depth axis gives a true cut face near 50 by 44mm, a medium-to-large egg, and a plate-plane scale of ABOUT 3.1 px per mm horizontally and 2.4 px per mm along the depth axis, which puts the plate at roughly 28-29cm. ⚠️ HONEST SPREAD STATED RATHER THAN HIDDEN: the card scale and the egg scale disagree by about 1.6x linear, which is 4x in volume, so the chicken is bracketed at 45-90g and the egg-anchored figure was chosen. Portions: the cutlet measures about 158mm long by 65mm wide as a tapered strip, roughly 62 cm2 of footprint, at the 1.2cm thickness anchored from her 2026-09-02 cutlets, giving ABOUT 75g of breaded chicken; the potato and carrot pile spreads over roughly 124 cm2 at about 1.8cm average depth with loose cube packing near 0.6, giving about 135ml of solid food or A SCANT CUP, taken as 120g of boiled potato with 30g of shredded carrot, a teaspoon…",
+    "title": "Dinner: one breaded chicken cutlet, a pile of diced boiled potatoes tossed with shredded carrot, sesame seeds and black pepper, and half a hard-boiled egg, on a white plate. ⛔⭐⭐⭐ CORRECTED AT 19:03 BY MARIA — CARD WAS ON TOP OF THE PLATE BORDER, HER WORDS. MY FIRST PASS CALLED IT PLACEMAT AND DISCARDED IT; SHE PLACED IT CORRECTLY AND THE ERROR WAS MINE. ⭐⭐ THE REAL EFFECT IS A THIRD FAILURE MODE NOT PREVIOUSLY NAMED IN THIS FILE, AND IT IS NOT PLANE OFFSET: the card sat on the NEAR rim while the egg sat at the FAR side, and across a plate at a 39-degree view those two points are at genuinely different camera distances. With theta = 39 degrees from the plate ellipse (900 px wide by 698 px deep, apparent aspect 1.29 against a true circle, cos theta = 0.776) and a nominal 40cm lens distance, the near and far rims of a 25cm plate differ by about 16cm of camera distance — A 37 PERCENT LINEAR SCALE DIFFERENCE ACROSS ONE PLATE, and about 2.5x in volume. THE CARD IS VALID ONLY AT ITS OWN DEPTH; every item must be scaled at ITS OWN position. ✅ SOLVING THE TWO REFERENCES TOGETHER RESOLVES BOTH AND THEY NOW AGREE: the card reads 4.5 px per mm at the near rim, and requiring that to be consistent with a 900 px plate width at plate-centre depth gives a PLATE OF ABOUT 25cm and a plate-centre scale of 3.61 px per mm. On that solution the halved egg, sitting about 0.7 of a radius toward the back at 3.16 px per mm, comes out 43mm across — a normal halved large egg, where the naive card reading had made it an impossible 30mm. THE CARD WAS ALWAYS RIGHT; THE PERSPECTIVE CORRECTION WAS MISSING. ✅ PORTIONS RECOMPUTED AT EACH ITEM'S OWN DEPTH: the cutlet centres about 0.29 of a radius back at 3.42 px per mm horizontally and 2.66 along the depth axis, measuring roughly 58mm by 143mm as a tapered strip for about 50 cm2 of footprint, at the 1.2cm thickness anchored from her 2026-09-02 cutlets, giving ABOUT 65g of breaded chicken — which lands within 5g of that row's independently measured 60…",
     "type": "Dinner",
     "date": "2026-09-06T18:58:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-06/95a1d65428abebf1.jpg",
-    "carbs": 35,
-    "cals": 415,
+    "carbs": 26,
+    "cals": 346,
     "delta": null,
     "peak": null
   },
@@ -5468,7 +5479,7 @@
   },
   {
     "id": "36885ec7-0668-814e-8628-fa685ceb1c7a",
-    "title": "Lunch: 1 fresh nectarine [Cumulative Lunch: 44g carbs total; protein ~57g] (BG: 115 mg/dL Flat) (Pred: 151-161 mg/dL @ 4:26 PM) (Protein: 1g | Carbs: ~13g | Cals: ~60) [Coach: Nectarine ���� — fresh whole fruit with fiber and natural sugars, ~13g carbs. Smart finisher after the seafood feast. Cumulative lunch ~44g carbs, ~57g protein. Today's looking like a textbook T2D-friendly day.]",
+    "title": "Lunch: 1 fresh nectarine [Cumulative Lunch: 44g carbs total; protein ~57g] (BG: 115 mg/dL Flat) (Pred: 151-161 mg/dL @ 4:26 PM) (Protein: 1g | Carbs: ~13g | Cals: ~60) [Coach: Nectarine 🍑 — fresh whole fruit with fiber and natural sugars, ~13g carbs. Smart finisher after the seafood feast. Cumulative lunch ~44g carbs, ~57g protein. Today's looking like a textbook T2D-friendly day.]",
     "type": "Lunch",
     "date": "2026-05-22T14:54:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-22/193b0ecee506cd42.jpg",
@@ -6524,7 +6535,7 @@
   },
   {
     "id": "35e85ec7-0668-811a-bd18-ff7b4271d3db",
-    "title": "Lunch: Grilled puerros (leeks) with diced pepper vinaigrette and a dollop of romesco-style sauce (BG: 125 mg/dL Flat) (Pred: 126-136 mg/dL @ 4:09 PM) (Protein: 2g | Carbs: ~9g | Cals: ~100) [Coach: Elegant little starter 🌱 — grilled leeks bring sweet, mellow flavor with very little carb impact. The romesco adds a lovely punch. A perfect opener; just make sure something with protein follows.]  [id:6bb7444c]",
+    "title": "Lunch: Grilled puerros (leeks) with diced pepper vinaigrette and a dollop of romesco-style sauce (BG: 125 mg/dL Flat) (Pred: 126-136 mg/dL @ 4:09 PM) (Protein: 2g | Carbs: ~9g | Cals: ~100) [Coach: Elegant little starter 🌱 ��� grilled leeks bring sweet, mellow flavor with very little carb impact. The romesco adds a lovely punch. A perfect opener; just make sure something with protein follows.]  [id:6bb7444c]",
     "type": "Lunch",
     "date": "2026-05-01T14:16:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-01/0e704a0a7ae79b81.jpg",
