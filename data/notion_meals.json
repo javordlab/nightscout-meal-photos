@@ -1,14 +1,25 @@
 [
   {
+    "id": "3d585ec7-0668-81d5-b63b-da88f6488b3e",
+    "title": "Dinner: a large mound of chopped dark kale tossed through diced boiled potato and carrot, one browned sausage laid alongside, and ONE THICK SLICE OF THE LOAF SHE BAKED THIS AFTERNOON, on her white dinner plate. Her own caption names all four components. ⭐ LEFTOVER MATCH ON THE POTATO AND CARROT BASE: this is the same dish as the 2026-09-06 18:58 dinner, which recorded a pile of diced boiled potatoes tossed with shredded carrot, with kale added today. Composition carried over, portion re-measured. The SAUSAGE matches the 2026-09-04 18:35 row's pork sausage and is costed from it. 📐 NO SCALE REFERENCE IN THE PLATE PLANE, AND THE CARD THAT IS VISIBLE WAS DELIBERATELY NOT USED: a card sits on the table BEHIND the plate at a different depth, and calibrating off an object outside the food's plane is the exact error that produced a 2x miss on 2026-08-13. THE PLATE IS THE ANCHOR INSTEAD, and it is a house-known one — the same white dinner plate and flamingo placemat measured against the SPG card at 12:50 TODAY, giving 26.5 cm. It spans about 1,145 px here, so 4.32 px per mm. ⚠️⚠️ THE VIEW IS STEEP AND THAT LIMITS WHAT GEOMETRY CAN CLAIM: the plate images about 1,145 px by 710 px, an apparent aspect of 1.61 against a true circle, so cos theta is 0.62 and THE CAMERA IS ABOUT 51 DEGREES OFF STRAIGHT DOWN. Past 50 degrees the standing rule is that the depth axis stretches unreliably and FOOD-SIZE PRIORS OUTRANK THE GEOMETRY — every figure below is therefore a range-backed prior, not a measured volume, and the honest spread on the salad is plus or minus 25 percent. THE SALAD is costed by component against those priors rather than as one volume: roughly 60 g of raw chopped kale at 29 cal and 5g carb, about 90 g of diced boiled potato at 78 cal and 18g carb, about 40 g of carrot at 16 cal and 4g carb, and roughly 2 teaspoons of oil for the gloss on the leaves at 80 cal, totalling 203 cal, 27g carb and 5g protein. THE SAUSAGE images about 93 mm long by 20 mm across, a slim link ra…",
+    "type": "Dinner",
+    "date": "2026-09-07T18:35:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-07/d2396e3222a8ee87.jpg",
+    "carbs": 45,
+    "cals": 453,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3d485ec7-0668-81ea-b46d-d46c8acf1efe",
-    "title": "Lunch: three pieces of breaded chicken, two large and one small, with a dollop of her homemade hummus and a pile of raw carrot sticks, on a white dinner plate with the SPG card lying flat in the plate plane. ⭐ LEFTOVER MATCH ON TWO OF THE THREE COMPONENTS, AND IT WAS STATED TO HER IN THE REPLY SO SHE CAN VETO IT IN ONE WORD: the breaded chicken is the same house item as the 2026-09-06 18:58 and 2026-09-02 18:44 dinners, so its COMPOSITION IS CARRIED OVER and only the PORTION is re-measured here; the hummus is her own recipe at 185 cal, 15.4g carb and 5.8g protein per 100g and is costed from that recipe rather than by eye. The raw carrot sticks match nothing in the last 7 days and are estimated from scratch. 📐 PORTIONS CALIBRATED AGAINST THE SPG CARD LYING FLAT ON THE PLATE, SO CARD AND FOOD SHARE ONE PLANE AND NO PLANE-OFFSET CORRECTION IS NEEDED. The card measured about 274 px by 179 px, an apparent aspect of 1.53 against the true 1.586, so the scale is taken from the less-compressed short edge at 3.31 px per mm; on that scale the plate reads about 26.5 cm, a full dinner plate rather than the side plates she usually photographs. The plate ellipse is about 880 px by 800 px, giving a viewing angle of roughly 25 degrees off straight down, so the vertical image axis is the depth axis and every vertical extent below is divided by cos 25 before use. THE CHICKEN covers about 95 cm2 of plate after that correction, and ITS THICKNESS IS MEASURED RATHER THAN ASSUMED: the lower tender shows a shadowed side face about 30 px tall, which at 3.31 px per mm and sin 25 works out at roughly 2 cm. At a 0.75 packing factor for craggy irregular pieces that gives about 130 g of breaded chicken, with an honest range of 110 to 150 g. ✅ CROSS-CHECKED AGAINST THE MATCHED ROW: 2026-09-02 put two flatter cutlets at 120 g over a near-identical 100 cm2 at an assumed 1.2 cm, so today's pieces are fewer but thicker and land in the same place. Macros are carried from that row's implied per-100g f…",
+    "title": "Lunch: two pieces of breaded chicken half a cup of her homemade hummus and a pile of raw carrot sticks, on a white dinner plate with the SPG card lying flat in the plate plane. ⭐ LEFTOVER MATCH ON TWO OF THE THREE COMPONENTS, AND IT WAS STATED TO HER IN THE REPLY SO SHE CAN VETO IT IN ONE WORD: the breaded chicken is the same house item as the 2026-09-06 18:58 and 2026-09-02 18:44 dinners, so its COMPOSITION IS CARRIED OVER and only the PORTION is re-measured here; the hummus is her own recipe at 185 cal, 15.4g carb and 5.8g protein per 100g and is costed from that recipe rather than by eye. The raw carrot sticks match nothing in the last 7 days and are estimated from scratch. 📐 PORTIONS CALIBRATED AGAINST THE SPG CARD LYING FLAT ON THE PLATE, SO CARD AND FOOD SHARE ONE PLANE AND NO PLANE-OFFSET CORRECTION IS NEEDED. The card measured about 274 px by 179 px, an apparent aspect of 1.53 against the true 1.586, so the scale is taken from the less-compressed short edge at 3.31 px per mm; on that scale the plate reads about 26.5 cm, a full dinner plate rather than the side plates she usually photographs. The plate ellipse is about 880 px by 800 px, giving a viewing angle of roughly 25 degrees off straight down, so the vertical image axis is the depth axis and every vertical extent below is divided by cos 25 before use. THE CHICKEN covers about 89 cm2 of plate after that correction, and ITS THICKNESS IS MEASURED RATHER THAN ASSUMED: the lower tender shows a shadowed side face about 30 px tall, which at 3.31 px per mm and sin 25 works out at roughly 2 cm. At a 0.75 packing factor for craggy irregular pieces that gives about 122 g of breaded chicken, with an honest range of 105 to 140 g. ✅ CROSS-CHECKED AGAINST THE MATCHED ROW: 2026-09-02 put two flatter cutlets at 120 g over a comparable 100 cm2 at an assumed 1.2 cm — the same two-piece serving, slightly smaller in footprint and thicker, landing within 2 g of it. Macros are carried from that row's implied per-100g figure…",
     "type": "Lunch",
     "date": "2026-09-07T12:50:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-07/9e8e2aea501e1823.jpg",
-    "carbs": 33,
-    "cals": 435,
-    "delta": null,
-    "peak": null
+    "carbs": 43,
+    "cals": 553,
+    "delta": -4,
+    "peak": 140
   },
   {
     "id": "3d485ec7-0668-819f-8437-ee0bd1feb885",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-07/434a119718cd8ca6.jpg",
     "carbs": 29,
     "cals": 312,
-    "delta": null,
-    "peak": null
+    "delta": 71,
+    "peak": 163
   },
   {
     "id": "3d485ec7-0668-81c0-8151-f31b10007c69",
