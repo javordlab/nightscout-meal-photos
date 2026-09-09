@@ -1,14 +1,36 @@
 [
   {
+    "id": "3d685ec7-0668-81cc-80c3-c67d6eb67202",
+    "title": "Dinner: four thin pan-seared chicken fillets laid in a row, a generous mound of sautéed zucchini in rounds and half-moons browned at the edges, and six roasted potato wedges, on her white dinner plate with the SPG card on the placemat at the left. ⛔ NO LEFTOVER MATCH, AND THAT WAS CHECKED RATHER THAN SKIPPED: the digest holds breaded chicken on 2026-09-02, 09-06 and 09-07, but THIS CHICKEN IS NOT BREADED — the pieces are plainly seared with browned spots and no crumb coat — and the 09-06 potatoes were diced and boiled where today's are wedges and roasted. ZUCCHINI DOES NOT APPEAR ANYWHERE IN THE LAST 7 DAYS. So all three components are estimated from scratch and nothing was forced onto a near-miss. 📐 CALIBRATION, WITH ITS WEAKNESS STATED RATHER THAN HIDDEN: the SPG card IS in frame but sits at the left edge, tilted steeply and partly crossed by the knife, so its edges could not be read cleanly. THE PLATE WAS USED AS THE PRIMARY RULER INSTEAD, which is the food-size-prior rule outranking a bad card rather than an excuse to skip measuring. Her white DINNER plate is taken at 26cm: 780 px across its widest axis gives 3.0 px/mm at the plate plane, and the plate ellipse at 780 by 700 px gives cos θ = 0.897 and a viewing angle of ABOUT 26 DEGREES off straight down. Vertical extents were divided by cos θ before use. ⚠️ THE 26cm PLATE IS AN ASSUMPTION AND IT IS THE LARGEST SINGLE UNCERTAINTY HERE — at 28cm every weight below rises about 23 percent, at 24cm it falls about 20 percent. Her 19cm side plate is documented from two independent shots but her dinner plate is not, and one weighed item on it some day would fix that permanently. ⭐ COMPONENT BUILD: CHICKEN, four fillets each about 47 by 69mm at roughly 12mm thick, giving about 27 cubic cm apiece and ABOUT 100 g COOKED, which is 31g protein and 165 cal with no carb. ZUCCHINI, a footprint of roughly 150 by 106mm at about 70 percent coverage and 15mm deep, so about 100 cubic cm packed, ABOUT 240 g or a cup and a half cook…",
+    "type": "Dinner",
+    "date": "2026-09-08T18:28:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-08/9e67ffc48105a70c.jpg",
+    "carbs": 27,
+    "cals": 406,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "3d585ec7-0668-81dd-8fa4-ef395866769a",
+    "title": "Lunch (second sitting, 12 minutes after the 13:46 oranges and therefore CUMULATIVE rather than a new meal — the window is 1 hour and this is well inside it): an open-faced slice of her own loaf with sliced avocado laid on it and a fried egg over the top, on her white side plate with the SPG card on the placemat beside it. ⭐⭐ ALL THREE QUANTITIES ARE HER OWN STATED FIGURES — 30 g of bread, a quarter of an avocado and one egg — SO NOTHING WAS MEASURED FROM THE IMAGE AND NO GEOMETRY WAS PERFORMED. The card is in frame but was NOT used and did not need to be: a stated measure replaces a photo estimate rather than being averaged with it, and here every component carries one. That also means today's earlier fill-factor error cannot repeat on this row. 📷 THE PHOTO WAS STILL READ, FOR COMPOSITION RATHER THAN PORTION, and it changed one thing: THE EGG IS FRIED, not poached or boiled — the whites carry the crisped lacy edge that only comes from hot fat, and the yolk has set through. ⚠️ SO ABOUT A TEASPOON OF COOKING FAT IS INCLUDED AT 40 CAL, AND THAT ADDITION IS MINE AND NOT HERS: she named three items and no fat. It moves calories only, touches neither carbs nor protein, and is flagged here rather than folded in silently. ⭐ COMPONENT BUILD: bread 30 g at her new loaf's 40g carb, 11g protein and 275 cal per 100g gives C12 P3 83 cal; avocado at her own fixed quarter-of-a-large rule, about 37 g of flesh, gives C3 P1 59 cal; one large egg gives C0 P6 72 cal; cooking fat 40 cal. Totals C16 P10 254 cal. Calorie floor rechecked: 4×16 + 4×10 = 104, far under the 254 written, with the avocado and the frying fat carrying the balance. ⚠️ THE COLUMNS CARRY THIS ITEM'S INCREMENT ONLY, 16g and 254 cal, AND NOT THE RUNNING TOTAL of 47g — the cumulative figure lives in the marker and nowhere else, because downstream sums the columns across the day. ⭐ PREBG IS ANCHORED TO THE FIRST ITEM AT 101, not to the live 98, which is twelve minutes into the oranges. Cumulative carbs of 47g stay insi…",
+    "type": "Lunch",
+    "date": "2026-09-08T13:58:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-08/af7396f29c633da3.jpg",
+    "carbs": 16,
+    "cals": 254,
+    "delta": 67,
+    "peak": 171
+  },
+  {
     "id": "3d585ec7-0668-8125-a3c4-ed1bf6feea44",
-    "title": "Lunch: cut orange, seven pieces on her white side plate — five lying flesh-up, including one large half showing a full round cut face, and two more turned rind-up at the back, with the SPG card on the placemat beside the plate. ⭐ LEFTOVER MATCH ON IDENTITY: cut whole orange is a house item, logged 2026-09-03 13:49 as one whole medium orange cut into a half and two wedges, id b82dcf12, and again as orange segments in the 2026-09-05 salad. Identity carried from that row, portion measured fresh from this photo, and its house cost of about 15g carb for a medium orange is what today's figure is scaled against. 📐 PORTIONS CALIBRATED AGAINST THE SPG CARD, WITH ITS LIMITS COMPUTED RATHER THAN GLOSSED: the card lies on the placemat and not in the plate plane, and it is markedly foreshortened — edges measure about 258 px and 213 px, an apparent aspect of 1.21 AGAINST THE TRUE 1.586, which is BELOW the true ratio and therefore means the card's LONG axis runs along the line of sight. That gives cos θ = 1.21/1.586 = 0.763 and θ ABOUT 40 DEGREES off straight down, squarely in the useful range rather than a bad frame. Scale px/mm = max(258/85.6, 213/54.0) = 3.94 px/mm, taking the short edge as the honest across-frame axis. ✅ CROSS-CHECKED AGAINST THE PLATE AND IT LANDS ON A KNOWN OBJECT: 770 px across the widest axis is 195mm at the placemat, 186mm once corrected for the 2 cm rim height, which is her documented 19cm white side plate — the same plate identified independently on 2026-09-07. That agreement is why the geometry is trusted here. ⚠️ VERTICAL EXTENTS WERE DIVIDED BY cos θ before use, since the image's vertical axis is mostly depth at this angle. On that basis the largest piece measures about 61 by 67mm, which is a FULL EQUATORIAL HALF laid cut-face up and not a wedge, and the remaining pieces run 35 to 50mm. ⭐ VOLUME BY FOOTPRINT AND FILL RATHER THAN PIECE COUNT, which is the standing over-count trap with cut fruit: the fruit covers roughly 130 cm² of the plate in a sin…",
+    "title": "Lunch: TWO WHOLE MEDIUM ORANGES, HER OWN STATED QUANTITY, cut up into EIGHT PIECES and arranged on her white side plate — SEVEN OF THEM ARE IN THE PHOTO, five lying flesh-up including one large half showing a full round cut face, and two turned rind-up at the back, with the SPG card on the placemat beside the plate. ⏰ THE EIGHTH WAS ALREADY EATEN WHEN SHE TOOK THE PICTURE, her own account at 13:55 — she had started before she remembered to log, which INVERTS HER USUAL PATTERN of photographing the plate before eating. ⛔ THE ROW IS NOT RE-TIMED to an earlier start: v5's time-to-peak constants already absorb the gap between the picture and the last bite, and moving the stamp would shift the called peak time for no gain. ✅ THE MACROS DO NOT CHANGE EITHER, AND THIS WAS CHECKED RATHER THAN ASSUMED: her two whole medium oranges at 13:50 was the TOTAL she is eating, not a count of what survived to the photo, which is her standing pattern — a stated quantity is the plan and not the plate. ⭐ LEFTOVER MATCH ON IDENTITY: cut whole orange is a house item, logged 2026-09-03 13:49 as one whole medium orange cut into a half and two wedges, id b82dcf12, and again as orange segments in the 2026-09-05 salad. Identity carried from that row, portion measured fresh from this photo, and its house cost of about 15g carb for a medium orange is what today's figure is scaled against. 📐 PORTIONS CALIBRATED AGAINST THE SPG CARD, WITH ITS LIMITS COMPUTED RATHER THAN GLOSSED: the card lies on the placemat and not in the plate plane, and it is markedly foreshortened — edges measure about 258 px and 213 px, an apparent aspect of 1.21 AGAINST THE TRUE 1.586, which is BELOW the true ratio and therefore means the card's LONG axis runs along the line of sight. That gives cos θ = 1.21/1.586 = 0.763 and θ ABOUT 40 DEGREES off straight down, squarely in the useful range rather than a bad frame. Scale px/mm = max(258/85.6, 213/54.0) = 3.94 px/mm, taking the short edge as the honest across-frame axis. ✅ C…",
     "type": "Lunch",
     "date": "2026-09-08T13:46:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-08/cdf646f74fcad84e.jpg",
-    "carbs": 20,
-    "cals": 90,
-    "delta": null,
-    "peak": null
+    "carbs": 31,
+    "cals": 135,
+    "delta": 70,
+    "peak": 171
   },
   {
     "id": "3d585ec7-0668-81b2-97b3-f142b97e995c",
@@ -18,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-08/257afc1b7befe75f.jpg",
     "carbs": 34,
     "cals": 393,
-    "delta": null,
-    "peak": null
+    "delta": 44,
+    "peak": 138
   },
   {
     "id": "3d585ec7-0668-81d5-b63b-da88f6488b3e",
