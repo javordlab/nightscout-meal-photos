@@ -1,5 +1,16 @@
 [
   {
+    "id": "3d785ec7-0668-8157-b24e-c0dd014e84e4",
+    "title": "Breakfast: a bowl of cottage cheese topped with fresh blueberries, with a piece of her own loaf and a teaspoon of butter alongside. ⭐⭐ ALL FOUR QUANTITIES ARE HER OWN WEIGHED FIGURES, GIVEN IN THE CAPTION — 125 g cottage cheese, 80 g blueberries, 69 g of her bread, 1 tsp butter — SO NOTHING WAS ESTIMATED FROM THE IMAGE, no scale card was needed and NO GEOMETRY WAS PERFORMED. A stated measure replaces a visual estimate outright rather than being averaged with it. 📷 ONLY THE BOWL IS IN FRAME: the bread and the butter are not photographed and they are counted regardless, because HER STATED TOTAL IS THE RECORD and the frame is not a check on her words. 🫐 THE BERRIES ARE FRESH — NOT FROZEN AND NOT HER COOKED-DOWN ONES: they are glossy, plump, individually separate and unfrosted with no syrup pooling, which distinguishes them from the dark cooked-down blueberries in her 09-07, 09-08 and 09-09 breakfasts and from the frozen ones she eats as her sherbet. 🍞 BREAD COSTED FROM HER OWN LOAF FIGURES, NOT A GENERIC BREAD TABLE: 40g carb, 11g protein and 275 cal per 100 g, established 2026-09-07, giving 28g carb, 8g protein and 190 cal at her 69 g. NO PER-SLICE VALUE WAS COMPUTED — she asked for that explicitly, and stated grams are exactly the method she requested on 2026-09-07 at 20:40. �� THE COTTAGE CHEESE IS THE ONE ASSUMPTION IN THIS ROW AND IT IS A NARROW ONE: the fat level is not stated, so 2 percent low-fat is used at 11g protein, 4.3g carb and 84 cal per 100 g, giving 14g protein, 5g carb and 105 cal at 125 g. PROTEIN AND CARB ARE ROBUST TO THE FAT LEVEL — every style runs 11 to 12g protein and 3 to 4g carb per 100 g — and ONLY THE CALORIE FIGURE MOVES, by about 20 either way between 1 percent and 4 percent. Blueberries at 80 g are 12g carb, 1g protein and 46 cal; the teaspoon of butter is 34 cal with no carb or protein. Calorie floor rechecked: 4×45 + 4×23 = 272, comfortably under 375, with the butter and the cottage-cheese fat carrying the balance. ♻️ NOT CUMULATIV…",
+    "type": "Breakfast",
+    "date": "2026-09-10T09:26:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-10/af7938c4069370a2.jpg",
+    "carbs": 45,
+    "cals": 375,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3d785ec7-0668-81b5-a843-d5755ca6cdf2",
     "title": "Dinner: two tablespoons of her own chia pudding made to the usual recipe but WITH COCOA POWDER STIRRED IN, about a tablespoon per recipe, topped with two crumbled freeze-dried strawberries, in her small blue-and-white patterned bowl on the wooden table. ⭐⭐ EVERY QUANTITY HERE IS HERS AND STATED IN WORDS — two tablespoons, one tablespoon of cocoa per recipe, two strawberries — so NOTHING WAS ESTIMATED FROM THE IMAGE AND NO GEOMETRY WAS PERFORMED. No scale card is in frame and none was needed. ⭐ LEFTOVER MATCH ON THE PUDDING with her own established recipe rather than a fresh estimate: half a cup of milk, 2 tbsp chia, 1 tsp honey and half a teaspoon of vanilla, THE WHOLE PUDDING being 22g carb, 8g protein and 211 cal — a single portion-sized pudding she eats in thirds, NOT a multi-serving batch, a wording error already corrected once on 2026-09-05 and deliberately not repeated. 📏 THE ONE PIECE OF ARITHMETIC IN THIS ROW IS TURNING HER TABLESPOONS INTO A FRACTION OF THAT PUDDING: half a cup of milk is 118 ml and 2 tbsp of chia swells into roughly another 45 ml, so THE WHOLE PUDDING IS ABOUT 165 ml, and her two tablespoons at 30 ml are ABOUT 18 PERCENT OF IT — appreciably less than the third she usually takes. That gives 4g carb, 1.5g protein and 38 cal. 🍫 COCOA IS NEW TONIGHT AND IS COSTED SEPARATELY: one tablespoon of unsweetened cocoa is about 5 g carrying 3g carb of which 2g is fibre, 1g protein and 12 cal, but it is stirred through the WHOLE pudding, so her 18 percent share is only 0.9 g — 0.5g carb and 2 cal. It is a colour and flavour change, essentially not a carbohydrate event. 🍓 THE STRAWBERRIES ARE THE FREEZE-DRIED ONES SHE BOUGHT THIS MORNING, NOT FRESH, AND THE PHOTO IS WHAT SETTLES IT: the fragments are matte, dry and porous rather than glossy and wet, which is also why they crumble. Two whole pieces at her own calibration of about 1.1 g each — established at 13:55 when she weighed 6 g for five or six — is ABOUT 2.2 g, giving 1.9g carb and 8 cal off the…",
     "type": "Dinner",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-09/26965fa6ff998c65.jpg",
     "carbs": 6,
     "cals": 48,
-    "delta": null,
-    "peak": null
+    "delta": 16,
+    "peak": 102
   },
   {
     "id": "3d785ec7-0668-8144-95e2-cb03061de0a3",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-09/fee7c455858c89b3.jpg",
     "carbs": 11,
     "cals": 356,
-    "delta": null,
-    "peak": null
+    "delta": 0,
+    "peak": 104
   },
   {
     "id": "3d785ec7-0668-8113-b84c-e7a4a061eb1d",
@@ -29,12 +40,12 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-09/b55c8d4f0273709d.jpg",
     "carbs": 14,
     "cals": 192,
-    "delta": null,
-    "peak": null
+    "delta": 16,
+    "peak": 107
   },
   {
     "id": "3d685ec7-0668-81b9-b9b2-f43186ee4f09",
-    "title": "Lunch (second sitting, 44 minutes after the 12:47 chip samples and therefore CUMULATIVE with them — the window is 1 hour and this sits inside it): TWO drumsticks of glossy browned roast chicken, HER OWN CORRECTION AT 13:38 replacing my read of a drumstick and a wing, a fanned pile of raw carrot sticks and a large dollop of her own hummus, on her white dinner plate on the flamingo placemat. 🍗 THE CHICKEN READS AS A SHOP ROTISSERIE BIRD FROM THE COSTCO RUN SHE FINISHED ABOUT AN HOUR AGO, stated rather than asked so she can veto it in one word: the lacquered skin, the joint cuts and the timing all point there, and it is the obvious answer to her own 09:55 message that she was out of other protein and that was why she was going to the store. ⭐ LEFTOVER MATCH AT THE COMPONENT LEVEL ON TWO OF THE THREE ITEMS, against the 2026-09-07 12:50 lunch, id b1ed4ad7, which was breaded chicken with half a cup of her homemade hummus and a pile of raw carrot sticks: THE HUMMUS AND THE CARROTS ARE THAT SAME PAIR and their identity and composition carry over, while THE CHICKEN IS NEW AND IS COSTED FROM SCRATCH because roast chicken on the bone with skin is a different food from a breaded cutlet. Portions were re-measured from today's photo in every case. 📐 NO SCALE REFERENCE IS IN FRAME — the SPG card is absent, so the RULER IS THE PLATE ITSELF, and that is not a guess: THE SAME WHITE DINNER PLATE WAS MEASURED AGAINST THE CARD AT ABOUT 26.5 cm ON 2026-09-07, so a measured figure from her own prior row is reused rather than a generic plate assumption. ⭐ THIS ARRANGEMENT IS ACTUALLY BETTER THAN A CARD ON THE PLACEMAT: the plate IS the food's own plane, so NO PLANE-OFFSET CORRECTION IS NEEDED AT ALL and the 17 percent volume error that a table-level card carries is simply absent here. 📐 GEOMETRY COMPUTED, NOT EYEBALLED: the plate images as an ellipse of about 720 px by 530 px, so cos θ = 530/720 = 0.736 and THE VIEWING ANGLE IS ABOUT 43 DEGREES OFF STRAIGHT DOWN — squarely inside the u…",
+    "title": "Lunch (second sitting, 44 minutes after the 12:47 chip samples and therefore CUMULATIVE with them — the window is 1 hour and this sits inside it): TWO drumsticks of glossy browned roast chicken, HER OWN CORRECTION AT 13:38 replacing my read of a drumstick and a wing, a fanned pile of raw carrot sticks and a large dollop of her own hummus, on her white dinner plate on the flamingo placemat. 🍗 THE CHICKEN READS AS A SHOP ROTISSERIE BIRD FROM THE COSTCO RUN SHE FINISHED ABOUT AN HOUR AGO, stated rather than asked so she can veto it in one word: the lacquered skin, the joint cuts and the timing all point there, and it is the obvious answer to her own 09:55 message that she was out of other protein and that was why she was going to the store. ⭐ LEFTOVER MATCH AT THE COMPONENT LEVEL ON TWO OF THE THREE ITEMS, against the 2026-09-07 12:50 lunch, id b1ed4ad7, which was breaded chicken with half a cup of her homemade hummus and a pile of raw carrot sticks: THE HUMMUS AND THE CARROTS ARE THAT SAME PAIR and their identity and composition carry over, while THE CHICKEN IS NEW AND IS COSTED FROM SCRATCH because roast chicken on the bone with skin is a different food from a breaded cutlet. Portions were re-measured from today's photo in every case. 📐 NO SCALE REFERENCE IS IN FRAME �� the SPG card is absent, so the RULER IS THE PLATE ITSELF, and that is not a guess: THE SAME WHITE DINNER PLATE WAS MEASURED AGAINST THE CARD AT ABOUT 26.5 cm ON 2026-09-07, so a measured figure from her own prior row is reused rather than a generic plate assumption. ⭐ THIS ARRANGEMENT IS ACTUALLY BETTER THAN A CARD ON THE PLACEMAT: the plate IS the food's own plane, so NO PLANE-OFFSET CORRECTION IS NEEDED AT ALL and the 17 percent volume error that a table-level card carries is simply absent here. 📐 GEOMETRY COMPUTED, NOT EYEBALLED: the plate images as an ellipse of about 720 px by 530 px, so cos θ = 530/720 = 0.736 and THE VIEWING ANGLE IS ABOUT 43 DEGREES OFF STRAIGHT DOWN — squarely inside the u…",
     "type": "Lunch",
     "date": "2026-09-09T13:31:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-09/1df3218458a7fb82.jpg",
