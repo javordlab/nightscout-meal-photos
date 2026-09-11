@@ -1,5 +1,16 @@
 [
   {
+    "id": "3d885ec7-0668-81d7-9895-d14c80e87c87",
+    "title": "Lunch: a closed sandwich of last night's leftover cheeseburger — the remaining piece of patty with its melted cheese and one tomato slice between two thin square slices of her own seeded loaf, on the Bumble Bee Brie plate — with a mound of her carrot salad with oranges and passion fruit on the red-and-black rimmed plate, and a glass of water. ⭐⭐ ALL FOUR QUANTITIES ARE HER OWN, GIVEN IN THE CAPTION — Bread 40g, hamburger 80g, 1 tomato slice, 2/3 cup carrot salad — so NO GEOMETRY WAS PERFORMED; no card in frame and none needed. 🔁 LEFTOVER MATCH ON TWO ITEMS: the patty is the piece left over from the 2026-09-10 18:29 dinner (the second photo that night, id:012e2efe), and the salad is the same batch as that dinner's 18:29 and 18:46 rows; compositions carried over, portions are her weights today. 🍞 Bread costed from her loaf anchor (0.44 g carbs, 0.12 g protein, 2.5 cal per gram): 40 g = 18 g carbs, 5 g protein, 100 cal. 🍔 The 80 g is the patty piece AS WEIGHED WITH ITS CHEESE ON — visible in the photo — taken as about 72 g of cooked 80/20 beef (P19, cal 183) plus about 8 g of melted cheese (P2, C0.4, cal 32). Tomato one slice about 20 g P0.2 C0.75 cal 4. Carrot salad from the same mix as last night (12 g carbs, 1.2 g protein, 51 cal per 100 g, about 0.78 g/ml): 2/3 cup = 158 ml = about 123 g — 15 g carbs, 1.5 g protein, 63 cal. Build: bread 40 g P5 C18 cal 100; patty and cheese 80 g P21 C0.4 cal 215; tomato 20 g P0.2 C0.75 cal 4; carrot salad 123 g P1.5 C15 cal 63 — total P28 C34 cal 382. ⚖️ HER SCALE CORRECTS YESTERDAY: the leftover piece alone weighs 80 g, and she said last night she ate half the patty, so the whole patty was about 160 g and the eaten half about 80 g — not the 42.5 g my geometry gave; the 2026-09-10 18:29 row is corrected accordingly (protein 15 → 23, calories 223 → 290). ⏱️ NOT CUMULATIVE: last Food row was the 10:13 bread, three hours ago; preBG is the live 108, breakfast's shelf having settled from 125. 💊 Lunch Metformin reminder sent — no lu…",
+    "type": "Lunch",
+    "date": "2026-09-11T13:10:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-11/77223bde6139ea1b.jpg",
+    "carbs": 34,
+    "cals": 382,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3d885ec7-0668-8159-811e-d85cbe912c17",
     "title": "Breakfast: a bowl of cottage cheese under large chunks of a skin-on pear, with dried goji berries scattered over the top, in her red-and-white patterned bowl with red chopsticks on the flamingo placemat. ⭐⭐ ALL THREE QUANTITIES ARE HER OWN, GIVEN IN THE CAPTION — 1 cup of cottage cheese, 1 large pear, 2 tbsp goji berries — so NO GEOMETRY WAS PERFORMED: the SPG card is in frame at the far left of the placemat, not in the bowl's plane, and was not used because stated measures outrank any photo estimate. 🥣 COTTAGE CHEESE COSTED AS YESTERDAY'S ROW (125 g gave 14 g protein at about 100 cal per 100 g, so the 4 percent kind): 1 cup taken at 226 g, 25 g protein, 8 g carbs, 222 cal. 🍐 PEAR: her large is graded against store-bought fruit, as she told me yesterday for oranges; a large pear taken at about 210 g of edible flesh with the skin on, 32 g carbs, 1 g protein, 120 cal. Goji: 2 tbsp of dried berries taken at about 18 g, costed as her 2026-09-08 row at 0.8 g carbs per gram — 14 g carbs, 2 g protein, 65 cal. Build: cottage cheese 226 g P25 C8 cal 222; pear 210 g P1 C32 cal 120; goji 18 g P2 C14 cal 65 — total P28 C54 cal 407. 💊 Her pill organiser and the B12 and D bottles are visible on the table behind the bowl — NOT narrated to her and NOT taken as a confirmation of any dose; the standard breakfast reminder line was sent since no Medication row exists for today. Friday, so no Vitamin D in the line. ⏱️ NOT CUMULATIVE: last Food row was last night's 21:14 crackers. 📈 Yesterday's breakfast (50 g cumulative, cottage cheese base) peaked 177 at 10:19, 20 minutes before her treadmill session; today's is 54 g from a lower start of 98. (BG: 98 mg/dL Flat) (Pred: 160-180 mg/dL @ 11:07 AM) (Protein: 28g | Carbs: ~54g | Cals: ~407) [Coach: Cottage cheese two mornings running 🥣 — a full cup this time, 25g of protein sitting under the fruit, which is exactly the order you want it. The pear and goji bring most of the 54g, so expect a fuller curve than yesterday's, but whole frui…",
     "type": "Breakfast",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-11/b9f475c9a589e0c6.jpg",
     "carbs": 54,
     "cals": 407,
-    "delta": null,
-    "peak": null
+    "delta": 34,
+    "peak": 132
   },
   {
     "id": "3d885ec7-0668-81b9-9c00-fec9e3346794",
