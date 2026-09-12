@@ -1,5 +1,16 @@
 [
   {
+    "id": "3d985ec7-0668-814e-8945-fa22cbc8d53d",
+    "title": "Dinner: two small chicken tacos on her white dinner plate on the flamingo placemat — the left one shredded chicken topped with guacamole, a sprinkle of shredded cheese and butter lettuce leaves with a lime wedge beside it, the right one shredded chicken tossed with sautéed red onion and red and yellow bell pepper strips — with a glass of water. Her caption names the build: Chicken peppers onions, guacamole lettuce cheese. 🃏 SPG CARD IN FRAME, lying on the PLACEMAT (table plane), plate rim about 2 cm above it. Card edges about 245 px along the depth axis and about 180 px across, apparent aspect 1.36 against 1.586 true, so cos θ = 0.86 and θ ≈ 31°, in the useful range; scale from the across-frame short edge = 3.33 px/mm. Plate about 865 px across = 26 cm dinner plate. Tortillas 390 px and 375 px across the frame = 117 and 113 mm raw, about 11 cm each after the 5 percent plane-offset correction — street-taco size (4.5 in). Read as FLOUR (thin, translucent where the filling soaked in, smooth thin edge); corn at this size would add about 2 g carb each, small either way. Chicken in two loose shredded piles about 55 mm and 85 mm across and about 25 mm high (height read against the card at 31°, the right pile including the onion and pepper) — about 40 g cooked chicken each, 80 g total. Guacamole per HER FIXED AVOCADO PORTION (35 to 40 g flesh, never sized from the photo). Cheese a light sprinkle of shredded, about 12 g. Butter lettuce about 25 g. Red onion about 25 g, peppers about 15 g — she usually leaves peppers, so they are costed light; the difference is under 1 g carb and not worth a question. NOT COUNTED: the serving bowl of extra filling at the top-right corner and the container at top-left (corner rule). Build: two flour street tortillas 34 g P3 C17 cal 100; chicken 80 g with fajita seasoning and pan oil P22 C0 cal 170; onion 25 g and pepper 15 g sautéed P1 C3.5 cal 45; guacamole from 40 g avocado P1 C3 cal 65; shredded cheese 12 g P3 C0 cal 45; lettuce 25 g P0.5…",
+    "type": "Dinner",
+    "date": "2026-09-11T18:21:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-11/76cbab2dd8ee6bd8.jpg",
+    "carbs": 25,
+    "cals": 430,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3d885ec7-0668-81fa-8176-e1b66aa75e84",
     "title": "Lunch (afternoon fruit, 2 hours 15 minutes after the 13:10 sandwich and therefore OUTSIDE the 1-hour cumulative window — a separate sitting, classified Lunch by the hour table since 15:25 falls in the 11:00–15:59 band): a small red-and-white patterned bowl of freeze-dried strawberry slices and halves, on the white waffle-weave cloth. 🔁 LEFTOVER MATCH: these are the Volupta freeze-dried strawberries from Costco, the house item of the week (2026-09-09 13:55 row, id:e7d7c6a7, plus the 09-09 17:40, 09-10 13:39 and 09-10 13:59 rows), costed from the label she photographed on 09-09 — 30 g serving = 26 g carb, 4 g fibre, 1 g protein, 110 cal — not from any fresh-fruit table. No scale reference in frame and no stated quantity, so the portion comes from a PIECE COUNT, the method her own weighing set on 09-09 (5 to 6 pieces = 6 g, about 1 g per piece): about 10 pieces visible, several of them large halves with the white core showing, lying in a single loose layer over about half the base of a small rice bowl assumed at about 11 cm across the rim — about 10 g, range 8 to 12 g, and airy enough that the count is a better guide than the bowl. 10 g = 9 g carb, 1.3 g fibre, 0.3 g protein, 37 cal. Build: freeze-dried strawberries 10 g P0 C9 cal 37 — total P0 C9 cal 37. Floor check 4×9 + 4×0 = 36, under 37. preBG is the live 100 Flat at 15:23. Lunch's peak never arrived (Pred 132-152 @ 14:20; sensor 109 at 14:24, 100 now) with the 14:29 gardening-plus-tai-chi hour sitting on its window. 💊 No lunch reminder sent: today's lunch Metformin row (13:10) already exists. (BG: 100 mg/dL Flat) (Pred: 113-133 mg/dL @ 4:35 PM) (Protein: 0g | Carbs: ~9g | Cals: ~37) [Coach: Strawberries with the water taken out 🍓 — one ingredient, a bit of fiber, and about 9g of carbs in the bowl. Starting from a flat 100 after an hour in the garden, that's a small, tidy lift rather than a spike. A fine pick for a pooped afternoon.]",
     "type": "Lunch",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-11/77223bde6139ea1b.jpg",
     "carbs": 34,
     "cals": 331,
-    "delta": null,
-    "peak": null
+    "delta": 15,
+    "peak": 123
   },
   {
     "id": "3d885ec7-0668-8159-811e-d85cbe912c17",
