@@ -1,5 +1,16 @@
 [
   {
+    "id": "3da85ec7-0668-8188-aa97-e0f4edf09eec",
+    "title": "Breakfast: a small round flatbread topped with a slice of melted marbled orange-and-white cheese and two folded slices of prosciutto, with three wedges of a red-skinned apple alongside, on her white side plate with the red and black rim bands on the flamingo placemat. Her caption: Flat bread with a tsp flax, 1 slice of cheese and 2 slices of prosciutto. 1/2 medium apple. ⭐ THREE OF THE FOUR ITEMS ARE HER OWN STATED COUNTS AND ARE COSTED FROM HER OWN ANCHORS, NOT MEASURED: 🧀 one slice of cheese at her own weighed 31 g slice (2026-09-04 13:46, carried on 2026-09-06 and 2026-09-07) — 8 g protein, 1 g carb, 125 cal; the photo shows a marbled Colby-Jack style slice, same class, same figures. 🥓 Two slices of prosciutto at her per-slice anchor of about 18 g (a single paper-thin slice covers a whole slice of bread, per the earlier corrected row) = about 36 g, which also matches her own weighed 37 g for yesterday's lunch pile — a quarter protein by weight: 9 g protein, 0 carb, 83 cal. 🍎 Half a MEDIUM apple, her own size word, which is a supermarket grade and outranks the photo: a medium apple at about 180 g whole is about 160 g of edible flesh, so half is about 85 g with the skin on — 12 g carb, 0 g protein, 44 cal (her 2026-08-27 half-apple row used 90 g and 12 g carb, so the figure is unchanged). The three wedges in frame are the half, cut in three; not counted separately. 🫓 THE FLATBREAD IS THE ONLY MEASURED ITEM AND THE ONLY REAL UNCERTAINTY. No leftover match — no flatbread in the last 7 days of rows, and the July and August rows were store spinach flatbread, which this is not: it is pale, puffy and speckled, and reads as HOMEMADE with the teaspoon of ground flax in the dough. No scale card in frame. Reference is the side plate itself, taken at 20 cm: about 640 px across the frame = 3.2 px/mm; the plate's depth extent is about 495 px against 640, so cos θ ≈ 0.77 and θ ≈ 39°, in the useful range. Flatbread about 415 px across the frame = 13 cm, about 305 px along th…",
+    "type": "Breakfast",
+    "date": "2026-09-13T09:39:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-13/1b642b364d07bb60.jpg",
+    "carbs": 42,
+    "cals": 430,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3da85ec7-0668-8183-a2cd-eabe06651cfb",
     "title": "Dinner: a roasted bone-in chicken thigh with the skin on, a mound of white rice, and butter lettuce leaves, on her white dinner plate on the flamingo placemat. Her caption: Chicken thigh 1/2 rice previously frozen rice. ⭐ THE RICE IS HER OWN STATED MEASURE — half a cup — used verbatim and NOT read from the photo (her rice photos run 1.6 to 3× high by rule, and her measured half cup on 2026-08-10 weighed 79 g): 79 g cooked white rice = 22 g carb, 2 g protein, 103 cal. Cooked, frozen and reheated, so a little of the starch is resistant — costed at the full carb figure anyway. 🍗 THE THIGH is the only estimated item: no card in frame; sized as a standard bone-in roasted thigh, about 120 g with bone, about 90 g of meat and skin eaten — skin counted because it is on the plate and fully in frame (on 2026-09-09 she left the skin; not asked, stated in the reply as skin on so she can veto it in one word): 22 g protein, 0 carb, 200 cal. Butter lettuce about 30 g: 1 g carb, 0.5 g protein, 4 cal. Build: chicken thigh 90 g P22 C0 cal 200; rice 79 g P2 C22 cal 103; lettuce 30 g P0.5 C1 cal 4 — total P24 C23 cal 307. Floor check 4×23 + 4×24 = 188, under 307. ⏱️ NOT CUMULATIVE: last Food row was the 16:18 cottage cheese, 2 h 18 min ago; preBG is the live 81 Flat at 18:34 — down from 129 at 16:12 as lunch's late peak passed, flat, no alert (daytime threshold is 80 any trend or 90 falling). Dinner is timely from 81. 🍗 Second chicken dinner in a row on the fullness thread — nothing asked; she will say. 💊 Dinner reminder sent — no dinner Medication row exists today; SATURDAY, so Metformin 1000mg AND Vitamin D. (BG: 81 mg/dL Flat) (Pred: 112-132 mg/dL @ 7:41 PM) (Protein: 24g | Carbs: ~23g | Cals: ~307) [Coach: A chicken thigh with its 24g of protein, a measured half cup of rice and some lettuce 🍗 — a well-proportioned plate. Rice that was cooked, frozen and reheated lands a little softer than fresh, and from 81 this is a gentle evening, 23g of carbs all in.]",
     "type": "Dinner",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-12/b700bb196794e1ea.jpg",
     "carbs": 23,
     "cals": 307,
-    "delta": null,
-    "peak": null
+    "delta": 71,
+    "peak": 152
   },
   {
     "id": "3d985ec7-0668-816f-a0e1-f31ee5dbc3a8",
