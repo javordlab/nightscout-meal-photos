@@ -1,5 +1,16 @@
 [
   {
+    "id": "3db85ec7-0668-81c6-abfe-fc29c718fde8",
+    "title": "Breakfast: one slice of her own dark seeded loaf spread with chunky peanut butter and topped with a heap of fresh whole blueberries, on a plain white plate on the flamingo placemat, with the Christmas-tree mug of coffee with milk behind. Her caption: 41g bread, 2/3 cup blueberries, and coffee with 8oz milk. ⭐⭐ THREE OF THE FOUR QUANTITIES ARE HER OWN STATED FIGURES — 41 g of bread, 2/3 cup of blueberries, 8 oz of milk — used verbatim, NO GEOMETRY WAS PERFORMED and no scale card is in frame. 🥜 THE PEANUT BUTTER IS NOT IN HER CAPTION BUT IS FULLY IN FRAME, a tan layer visible under and between the berries across the whole slice, so it counts (framing rule); with no stated amount it is read as about two tablespoons, 32 g — between her two generous tablespoons of 09-08 and the 3 tbsp of 09-12 — and STATED IN THE REPLY so she can veto it in one word. 🔁 LEFTOVER MATCH ON THE BUILD: the same peanut-butter-and-fresh-blueberry toast as the 2026-09-12 10:09 breakfast, in the same mug; composition carried, portions are hers today. 🍞 BREAD from her loaf anchor (0.44 g carb, about 0.12 g protein, 2.5 cal per gram, the figures behind her weighed pieces of 09-11 to 09-13): 41 g = 18 g carb, 5 g protein, 103 cal. 🫐 BLUEBERRIES at her stated 2/3 cup = 100 g by her own big-berry anchor (about 3 g apiece, 32 to a 2/3 cup): 14 g carb, 1 g protein, 57 cal. Cross-check only: about 33 berries are visible across the pile, traced front to back — consistent with 2/3 cup, so the stated measure and the count agree. 🥛 MILK at the new label anchor (Kirkland A2 organic whole, panel photographed this morning): 8 oz = 11 g carb, 8 g protein, 160 cal, about 290 mg calcium; coffee itself 0. Peanut butter 32 g = 6 g carb, 7 g protein, 190 cal. Build: loaf 41 g P5 C18 cal 103 — peanut butter 2 tbsp P7 C6 cal 190 — blueberries 100 g P1 C14 cal 57 — milk 8 oz P8 C11 cal 160 — total P21 C49 cal 510. Floor check 4×49 + 4×21 = 280, under 510. 📦 A weekly pill organizer sits at the left edge of frame a…",
+    "type": "Breakfast",
+    "date": "2026-09-14T10:11:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-14/08c6136e80f35afd.jpg",
+    "carbs": 49,
+    "cals": 510,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3db85ec7-0668-81e5-a181-c349535e7db3",
     "title": "Dinner (third item, 17 minutes after the 18:46 baguette and pork belly and therefore CUMULATIVE with the 18:40 stew — the window is 1 hour from the last Food row and this sits inside it): a small green-patterned bowl of fresh blueberries, on the flamingo placemat with a glass of water behind. No caption. 🫐 HER BIG BLUEBERRIES, costed at her established 3 g per berry (2026-09-12 card comparison), not the generic 1.7 g. COUNTED, not guessed: eighteen berries are visible across the top of the pile, traced back to front in four rows of 5, 6, 4 and 3; the bowl is her small ~9 cm rice bowl and the pile stands about a layer and a half deep, so a partly hidden lower layer of roughly 6 to 8 berries sits beneath — ABOUT 25 BERRIES in all, stated as the count in the reply so she can correct it in one word. 25 × 3 g = about 75 g, roughly half a cup (her 32 berries were two thirds of a cup at 100 g). Fresh, not frozen — glossy and dry, no frost, and yesterday's breakfast used fresh ones. No scale card in frame; the count is the measurement, the bowl only the cross-check (a half cup fits her small bowl at a layer and a half). At 14.5 g carb, 0.7 g protein and 57 cal per 100 g: 11 g carb, 0.5 g protein, 43 cal — written as 44 cal so the row clears the 4-cal-per-gram floor (4×11 = 44). Build: blueberries 75 g P0 C11 cal 44 — total P0 C11 cal 44. Floor check 4×11 + 4×0 = 44, equal to 44, passes. ⛔ INCREMENT ONLY IN THE COLUMNS: the 11 g carb and 44 cal are THIS ITEM ALONE; the 69 g running total belongs in the cumulative marker and nowhere else, and 11 is smaller than 69, which is the check. Cumulative dinner: carbs 44 + 14 + 11 = 69 g, protein 12 + 7 + 0 = 19 g, calories 282 + 198 + 44 = 524. Prediction anchored to the FIRST item's preBG of 109 (not the live 126 at 18:59, which is the stew starting to show) with the cumulative carbs, in the 51+ band at 0.8, protein 19 so no protein term, damping from 109 adds 2, timed from this item: 109 + 55.2 + 0 + 0 + 2.1 = 166, range 156-176 …",
     "type": "Dinner",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-13/3bffa0e693361872.jpg",
     "carbs": 11,
     "cals": 44,
-    "delta": null,
-    "peak": null
+    "delta": 26,
+    "peak": 160
   },
   {
     "id": "3db85ec7-0668-8143-8523-e180643bc127",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-13/97179729e228aea0.jpg",
     "carbs": 14,
     "cals": 198,
-    "delta": null,
-    "peak": null
+    "delta": 48,
+    "peak": 160
   },
   {
     "id": "3db85ec7-0668-8152-adb6-decb4ce4a364",
@@ -29,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-13/a522ce213c466704.jpg",
     "carbs": 44,
     "cals": 282,
-    "delta": null,
-    "peak": null
+    "delta": 51,
+    "peak": 160
   },
   {
     "id": "3da85ec7-0668-811c-a087-db2f1fa9a357",
@@ -3312,7 +3323,7 @@
   },
   {
     "id": "39885ec7-0668-81d8-a227-e44ea10a7b2f",
-    "title": "Lunch: vegetable pisto (zucchini, eggplant, peppers, carrot, onion, mushroom) topped with a fried egg, with a slice of multigrain bread and a slice of Jamón ibérico (BG: 123 mg/dL Flat) (Pred: 135-155 mg/dL @ 3:43 PM) (Protein: 18g | Carbs: ~33g | Cals: ~375) [Coach: Even better now 🍖 — the Jamón ibérico adds savory protein, and it's your first cured meat today so right on target. A pisto full of non-starchy veggies (now with eggplant too), plus egg and a slice of multigrain bread, makes this a genuinely balanced plate. A short walk after and it lands beautifully.]",
+    "title": "Lunch: vegetable pisto (zucchini, eggplant, peppers, carrot, onion, mushroom) topped with a fried egg, with a slice of multigrain bread and a slice of Jamón ibérico (BG: 123 mg/dL Flat) (Pred: 135-155 mg/dL @ 3:43 PM) (Protein: 18g | Carbs: ~33g | Cals: ~375) [Coach: Even better now ���� — the Jamón ibérico adds savory protein, and it's your first cured meat today so right on target. A pisto full of non-starchy veggies (now with eggplant too), plus egg and a slice of multigrain bread, makes this a genuinely balanced plate. A short walk after and it lands beautifully.]",
     "type": "Lunch",
     "date": "2026-07-09T14:28:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-09/a006b161c93e0411.jpg",
