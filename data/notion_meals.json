@@ -7,8 +7,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-14/48644be8ac112e9e.jpg",
     "carbs": 14,
     "cals": 200,
-    "delta": null,
-    "peak": null
+    "delta": 7,
+    "peak": 147
   },
   {
     "id": "3db85ec7-0668-81ba-9a95-c5edc88958ee",
@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-14/5f7c6920730eada5.jpg",
     "carbs": 15,
     "cals": 68,
-    "delta": null,
-    "peak": null
+    "delta": 30,
+    "peak": 147
   },
   {
     "id": "3db85ec7-0668-81c6-abfe-fc29c718fde8",
@@ -29,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-14/08c6136e80f35afd.jpg",
     "carbs": 49,
     "cals": 510,
-    "delta": null,
-    "peak": null
+    "delta": 58,
+    "peak": 156
   },
   {
     "id": "3db85ec7-0668-81e5-a181-c349535e7db3",
@@ -232,7 +232,7 @@
   },
   {
     "id": "3d785ec7-0668-8144-95e2-cb03061de0a3",
-    "title": "Dinner: A CHICKEN THIGH AND A LITTLE PIECE OF WING, WITH THE SKIN LEFT ON THE PLATE UNEATEN — both facts are hers, the cuts given at 19:15 against my read of a large breast quarter plus a wing, and the skin at 19:18 — with a salad of green leaf lettuce, avocado, tomato and blueberries dressed in oil, on her white dinner plate on the flamingo placemat. ⭐ LEFTOVER MATCH ON THE CHICKEN, HER OWN WORD — she wrote more chicken, so this is the same shop rotisserie bird as the 13:31 lunch, id cba20354, and its identity and per-100g figures are carried straight from that row at 215 cal, 27g protein and negligible carb per 100 g rather than re-derived. Only the portion was re-measured. The salad is new and is costed from scratch. 🍗 PIECE IDENTITY WAS STATED FOR HER TO VETO AND SHE VETOED IT IN ONE LINE: my read was a breast quarter with the skin flap laid over it plus a wing, and at 19:15 she wrote that it is a thigh and a little piece of wing, not a big serving. Her statement replaces the measurement outright rather than being averaged with it, per the stated-measure rule. THIS IS THE SECOND CHICKEN-CUT MISREAD IN ONE DAY ��� the 13:31 lunch row misread a foreshortened second drumstick as a wing — so the standing correction is that chicken CUTS should be described neutrally and left for her to name, never asserted from a photograph. 📐 NO SCALE CARD IN FRAME — THE RULER IS THE PLATE ITSELF and that is a measured figure, not a generic assumption: this same white dinner plate was measured against the SPG card at ABOUT 26.5 cm on 2026-09-07. ⭐ THE PLATE IS THE FOOD'S OWN PLANE, so NO PLANE-OFFSET CORRECTION APPLIES and the 17 percent volume error a table-level card carries is simply absent. 📐 GEOMETRY COMPUTED, NOT EYEBALLED: the plate images as an ellipse about 1040 px across by 945 px deep, so cos θ = 945/1040 = 0.909 and THE VIEWING ANGLE IS ABOUT 25 DEGREES OFF STRAIGHT DOWN — flatter than the 30-to-45 band, which means the footprint is excellent and the HEIGHT IS THE WEAK…",
+    "title": "Dinner: A CHICKEN THIGH AND A LITTLE PIECE OF WING, WITH THE SKIN LEFT ON THE PLATE UNEATEN — both facts are hers, the cuts given at 19:15 against my read of a large breast quarter plus a wing, and the skin at 19:18 — with a salad of green leaf lettuce, avocado, tomato and blueberries dressed in oil, on her white dinner plate on the flamingo placemat. ⭐ LEFTOVER MATCH ON THE CHICKEN, HER OWN WORD — she wrote more chicken, so this is the same shop rotisserie bird as the 13:31 lunch, id cba20354, and its identity and per-100g figures are carried straight from that row at 215 cal, 27g protein and negligible carb per 100 g rather than re-derived. Only the portion was re-measured. The salad is new and is costed from scratch. 🍗 PIECE IDENTITY WAS STATED FOR HER TO VETO AND SHE VETOED IT IN ONE LINE: my read was a breast quarter with the skin flap laid over it plus a wing, and at 19:15 she wrote that it is a thigh and a little piece of wing, not a big serving. Her statement replaces the measurement outright rather than being averaged with it, per the stated-measure rule. THIS IS THE SECOND CHICKEN-CUT MISREAD IN ONE DAY — the 13:31 lunch row misread a foreshortened second drumstick as a wing — so the standing correction is that chicken CUTS should be described neutrally and left for her to name, never asserted from a photograph. 📐 NO SCALE CARD IN FRAME — THE RULER IS THE PLATE ITSELF and that is a measured figure, not a generic assumption: this same white dinner plate was measured against the SPG card at ABOUT 26.5 cm on 2026-09-07. ⭐ THE PLATE IS THE FOOD'S OWN PLANE, so NO PLANE-OFFSET CORRECTION APPLIES and the 17 percent volume error a table-level card carries is simply absent. 📐 GEOMETRY COMPUTED, NOT EYEBALLED: the plate images as an ellipse about 1040 px across by 945 px deep, so cos θ = 945/1040 = 0.909 and THE VIEWING ANGLE IS ABOUT 25 DEGREES OFF STRAIGHT DOWN — flatter than the 30-to-45 band, which means the footprint is excellent and the HEIGHT IS THE WEAK…",
     "type": "Dinner",
     "date": "2026-09-09T19:10:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-09/fee7c455858c89b3.jpg",
