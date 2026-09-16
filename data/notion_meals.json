@@ -1,5 +1,16 @@
 [
   {
+    "id": "3dd85ec7-0668-81ef-a9b5-fae17e15cf0a",
+    "title": "Dinner: a bowl of egg drop soup — pale golden broth with beaten egg ribbons through it, torn lettuce greens, and about 30 g of rice under the surface, in her brown-rimmed stoneware soup bowl on the flamingo placemat with the red Chinese soup spoon beside it. ⭐ RICE AND EGGS ARE HER OWN STATED QUANTITIES — her words at 18:38: Soup with about 30g rice, two eggs and lettuce greens — used verbatim. The 30 g is READ AS COOKED WEIGHT (about three tablespoons, close to her usual quarter cup at 40 g; the grains are not distinguishable under the egg, which fits a small cooked amount rather than the ~90 g that 30 g dry would yield), and that reading was stated to her in the reply so one word corrects it — if it was dry rice, carbs go to about 23 g and the prediction moves only ~5 because the band factor drops from 2.0 to 1.2. Scale reference: the SPG card is in frame but lies on the placemat BEHIND the bowl with most of it hidden, so no calibration was taken from it; the bowl is a wide stoneware soup bowl assumed at approx. 16 cm across, about three-quarters full, roughly 350 ml of soup — consistent with two eggs, a small handful of greens and a little rice in around 250 ml of broth. Build: rice 30 g cooked P1 C8 cal 39; two large eggs about 100 g P13 C1 cal 145; lettuce greens about 40 g P1 C1 cal 6; broth about 250 ml read as chicken stock with no starch thickener stated P2 C1 cal 30 — total P17 C11 cal 220. Floor check 4×11 + 4×17 = 112, under 220. Leftover match: no soup in the 7-day digest, so costed from her stated amounts. NOT cumulative — 3 hours 32 minutes after the 15:06 last lunch item; classified Dinner by the hour rule. 📊 MODEL v5: 109 + 11×2.0 (0-15 g band) + 0 Dinner intercept + 0 protein term (17 g, under 20) − 0.35×(109−115) = +2.1 damping = 133.1, so 123-143; time to peak Dinner +65 min from 18:38, 7:43 PM. Trulicity day (0.75 mg this morning). 💊 REMINDER SENT: Metformin 1000mg with this dinner — Tuesday, so no Vitamin D; no dinner Metformin row for today…",
+    "type": "Dinner",
+    "date": "2026-09-15T18:38:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-15/c48c381f9f513537.jpg",
+    "carbs": 11,
+    "cals": 220,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3dc85ec7-0668-81c2-9142-fb340de3c030",
     "title": "Lunch (her second sitting of the day, 3 hours 35 minutes after the 11:10 oatmeal, so NOT cumulative; classified Lunch by the hour rule): an open-faced slice of her own dark seeded loaf with sliced avocado laid on it and ruffled slices of prosciutto piled over the top, on her white side plate on the flamingo placemat. Her caption: 44g bread, 1/4 avocado, 3 slices prosciutto. ⭐⭐ ALL THREE QUANTITIES ARE HER OWN STATED MEASURES and are used verbatim — the bread weighed, the avocado her fixed quarter, the prosciutto counted by her. 📐 THE SPG CARD IS IN FRAME on the placemat to the right, turned about 30 degrees in-plane; NOT USED — nothing needed measuring, so NO GEOMETRY WAS PERFORMED. The prosciutto ruffles are consistent with three slices; her count governs. Build: loaf 44 g at her loaf's figures (about 0.44 g carb, 0.11 g protein and 2.5 kcal per gram, as the 2026-09-12 36 g slice) P5 C19 cal 110; a quarter of an avocado at her fixed portion of about 35 to 40 g flesh P1 C3 cal 60; three slices of prosciutto at about 13 g each, 40 g P10 C0 cal 90 — total P16 C22 cal 260. Floor check 4×22 + 4×16 = 152, under 260. 📊 MODEL v5: 90 + 22×1.2 (16-30 g band) + 0 Lunch intercept + no protein term (16 g) − 0.35×(90−115) = +8.75 damping = 125.2, so 115-135; time to peak Lunch +70 min from 14:45, so 3:55 PM. 🩸 BG 90 Flat sampled at 21:44:12Z (14:44 local), one minute before the entry, so live — the oatmeal (peak 172 at 12:04) fully unwound: 151 at 12:29, 137 at 12:39, 90 now, a gradual slide with no reactive dip, which is the cottage cheese and the walk doing their job. 🧪 FULLNESS TEST, DAY TWO: how this lunch sits is her readout, not asked; nothing from the pause list here (cottage cheese was the morning's deliberate test). Cured meat not tallied (California rule). 💊 REMINDER SENT: Metformin 500mg with this lunch — no lunch Medication row existed in today's history (the 11:10 auto-row was relabelled to the breakfast dose at 12:33); the dose row above is written by hand un…",
     "type": "Lunch",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-15/0044a7cb6030dee7.jpg",
     "carbs": 22,
     "cals": 260,
-    "delta": null,
-    "peak": null
+    "delta": 37,
+    "peak": 127
   },
   {
     "id": "3dc85ec7-0668-81eb-a0b8-eaad9ec740d1",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-15/e7ad7b673a6468e9.jpg",
     "carbs": 39,
     "cals": 305,
-    "delta": null,
-    "peak": null
+    "delta": 73,
+    "peak": 172
   },
   {
     "id": "3dc85ec7-0668-81a1-89aa-de59f895ed5d",
@@ -144,7 +155,7 @@
   },
   {
     "id": "3d985ec7-0668-816f-a0e1-f31ee5dbc3a8",
-    "title": "Lunch: an open-faced slice of her own loaf draped with folded slices of prosciutto, and a pile of her carrot salad with orange pieces, on a white dinner plate on the dark granite counter. ⭐⭐ BREAD AND PROSCIUTTO ARE HER OWN WEIGHED FIGURES, GIVEN IN THE CAPTION — Lunch 36g bread, 37 g prosciutto — used verbatim, NO GEOMETRY on either, and no card in frame. 🥕 THE CARROT SALAD IS NOT IN HER CAPTION BUT IS FULLY IN FRAME, so it counts (framing rule). 🔁 LEFTOVER MATCH on the salad: the same carrot, orange and passion fruit batch as the 2026-09-10 18:29 and 18:46 rows and the 2026-09-11 13:10 lunch (12 g carb, 1.2 g protein, 51 cal per 100 g, about 0.78 g/ml) — composition carried, portion first read from this photo as about three-quarters of a cup (140 g). ⛔ CORRECTED AT 13:29 FROM HER OWN WORDS, sent within the minute — 1 cup salad — and her stated measure replaces the photo read: 1 cup = 237 ml × 0.78 = about 185 g. My photo read was about 25 percent low on volume; a loose shredded pile spreads wide and low, the same under-read as the shredded chicken last night. Carbs 33 → 38, calories 246 → 269, prediction 122-142 → 126-146. 🍞 Bread from her loaf anchor (0.44 g carb, 0.12 g protein, 2.5 cal per gram): 36 g = 16 g carb, 4 g protein, 90 cal. 🥓 Prosciutto 37 g at about a quarter protein by weight and about 2.3 cal per gram: 10 g protein, 0 carb, 85 cal (cured-meat tally relaxed in California, not remarked on). Carrot salad 185 g: 22 g carb, 2 g protein, 94 cal. Build: loaf 36 g P4 C16 cal 90; prosciutto 37 g P10 C0 cal 85; carrot salad 185 g P2 C22 cal 94 — total P16 C38 cal 269. Floor check 4×38 + 4×16 = 216, under 269. ⏱️ NOT CUMULATIVE: last Food row was the 10:09 breakfast, 3 h 20 min ago; preBG is the live 95 Flat at 13:24, breakfast fully settled (its peak held at 127 under the 159-179 call with the walk on it). Eaten straight after the second 30-minute gardening session (13:28). 💊 Lunch Metformin reminder sent — no lunch Medication row exists today. (BG: 9…",
+    "title": "Lunch: an open-faced slice of her own loaf draped with folded slices of prosciutto, and a pile of her carrot salad with orange pieces, on a white dinner plate on the dark granite counter. ⭐⭐ BREAD AND PROSCIUTTO ARE HER OWN WEIGHED FIGURES, GIVEN IN THE CAPTION — Lunch 36g bread, 37 g prosciutto — used verbatim, NO GEOMETRY on either, and no card in frame. 🥕 THE CARROT SALAD IS NOT IN HER CAPTION BUT IS FULLY IN FRAME, so it counts (framing rule). 🔁 LEFTOVER MATCH on the salad: the same carrot, orange and passion fruit batch as the 2026-09-10 18:29 and 18:46 rows and the 2026-09-11 13:10 lunch (12 g carb, 1.2 g protein, 51 cal per 100 g, about 0.78 g/ml) �� composition carried, portion first read from this photo as about three-quarters of a cup (140 g). ⛔ CORRECTED AT 13:29 FROM HER OWN WORDS, sent within the minute — 1 cup salad — and her stated measure replaces the photo read: 1 cup = 237 ml × 0.78 = about 185 g. My photo read was about 25 percent low on volume; a loose shredded pile spreads wide and low, the same under-read as the shredded chicken last night. Carbs 33 → 38, calories 246 → 269, prediction 122-142 → 126-146. 🍞 Bread from her loaf anchor (0.44 g carb, 0.12 g protein, 2.5 cal per gram): 36 g = 16 g carb, 4 g protein, 90 cal. 🥓 Prosciutto 37 g at about a quarter protein by weight and about 2.3 cal per gram: 10 g protein, 0 carb, 85 cal (cured-meat tally relaxed in California, not remarked on). Carrot salad 185 g: 22 g carb, 2 g protein, 94 cal. Build: loaf 36 g P4 C16 cal 90; prosciutto 37 g P10 C0 cal 85; carrot salad 185 g P2 C22 cal 94 — total P16 C38 cal 269. Floor check 4×38 + 4×16 = 216, under 269. ⏱️ NOT CUMULATIVE: last Food row was the 10:09 breakfast, 3 h 20 min ago; preBG is the live 95 Flat at 13:24, breakfast fully settled (its peak held at 127 under the 159-179 call with the walk on it). Eaten straight after the second 30-minute gardening session (13:28). 💊 Lunch Metformin reminder sent — no lunch Medication row exists today. (BG: 9…",
     "type": "Lunch",
     "date": "2026-09-12T13:29:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-12/42917a706e38cb8a.jpg",
