@@ -1,5 +1,16 @@
 [
   {
+    "id": "3de85ec7-0668-8152-8c12-e891c3d6ec39",
+    "title": "Breakfast: a bowl of cooked oatmeal dusted with cinnamon, with cottage cheese spooned in at the left and chunks of a red-skinned apple piled at the right, in her blue-striped bowl with the red spoon on the flamingo placemat, a glass of water behind. Her caption at 09:37: 1/4 cup dry oats, 1/2 a medium apple 1/3 cup cottage cheese and a tsp honey. Classified Breakfast by the hour rule (05:00 to 10:59); NOT cumulative — first Food row of the day, 13 h 36 min after the 20:01 smoothie. ⭐ ALL FOUR QUANTITIES ARE HER OWN STATED MEASURES AND HER OWN SIZE WORD, so they are used verbatim; no scale reference in frame and NO GEOMETRY WAS PERFORMED — the photo confirms the components (cinnamon visible, not in the caption, nil) and nothing was re-sized from it. Leftover match: the same bowl as the 2026-09-15 11:10 oatmeal (oats, honey, cinnamon, cottage cheese, apple) — identity carried over, today's portions from her caption (a third of a cup of cottage cheese today against three quarters then). Costed from her own anchors: dry rolled oats a quarter cup, about 20 g (2026-09-16 10:06 row) P3 C14 cal 75; cottage cheese a third of a cup, 75 g at 4 percent (2026-09-12 16:18 anchor) P8 C3 cal 74; half a medium apple (her size word, 2026-09-15 15:04 row) P0 C12 cal 50; honey one teaspoon, about 7 g P0 C6 cal 21; cinnamon dusting nil. Build: oats P3 C14 cal 75; cottage cheese P8 C3 cal 74; half apple P0 C12 cal 50; honey P0 C6 cal 21 — total P11 C35 cal 220. Floor check 4×35 + 4×11 = 184, under 220. 🦴 CALCIUM (her 07:53 request): about 85 mg calcium in this bowl — cottage cheese about 60 mg, oats about 10, cinnamon about 10, apple about 5; running total for 2026-09-17 about 85 mg of 1200. Oats are the fast-rising part of this bowl (her reactive post-spike pattern), the 8 g of cottage cheese protein and the apple's fibre are the pacing. Non-acidic throughout, in line with the acid-free days (2026-09-16 15:20 Note). 📊 MODEL v5: 101 + 35×0.9 (31-50 g band) = 31.5 + 20 Breakfast interc…",
+    "type": "Breakfast",
+    "date": "2026-09-17T09:37:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-17/44b60e78499b1196.jpg",
+    "carbs": 35,
+    "cals": 220,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3de85ec7-0668-817a-87b6-dc1cbae85af5",
     "title": "Dinner (after-dinner smoothie, 80 minutes after the 18:41 baguette — outside the 1-hour window, so a separate sitting anchored to the live BG; classified Dinner by the hour rule, 18:00 to 04:59): a pink smoothie of three-quarters of a cup of her own plain yogurt, half a sapote and three small strawberries, blended in her NutriBullet-style cup and photographed part-drunk on the dark granite counter by the stove. ⭐ ALL THREE QUANTITIES ARE HER OWN STATED MEASURES, given in the caption at 20:01 (3/4 cup yogurt, 1/2 Sapote and 3 small strawberries), so they are used verbatim; no scale reference in frame and NO GEOMETRY WAS PERFORMED — the blended level in the cup, about a cup of smoothie, is consistent with the stated build and was not used to re-size anything. Costed from her own anchors: homemade plain yogurt, unsweetened by her standing method, 3.5 g protein, 5 g carb and 61 cal per 100 g (2026-09-11 18:39 row), 3/4 cup taken as 180 g = P6 C9 cal 110; white sapote from her tree at 25 to 29 g carb per 100 g, no size word given so TAKEN AS HALF A MEDIUM at about 45 g flesh (whole medium 90 g = C24 cal 115, 2026-09-10 19:47 row) = P1 C12 cal 58 — she was told it was taken as a medium so one word corrects it; three small strawberries at about 7 g each, 21 g = P0 C2 cal 7. Build: yogurt 3/4 cup P6 C9 cal 110; half sapote P1 C12 cal 58; three small strawberries P0 C2 cal 7 — total P7 C23 cal 175. Floor check 4×23 + 4×7 = 120, under 175. Blended rather than whole, so the fruit sugars arrive faster than the 09-10 whole sapote did; the yogurt's protein and fat are the pacing. Mostly non-acidic (white sapote is a mild, low-acid fruit; the yogurt is her own) — the three small strawberries are the only tart component, a small dose buffered in the yogurt, not flagged to her (the 15:20 acid rule is hers to run). Leftover match: the sapote rows of 08-27, 08-29 and 09-10 supply the anchor; no smoothie row in the 7-day digest. Dinner outcome for the backfill: 104 at 18:33, peak 112 …",
     "type": "Dinner",
@@ -7,19 +18,19 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-16/1af9f13201fff383.jpg",
     "carbs": 23,
     "cals": 175,
-    "delta": null,
-    "peak": null
+    "delta": 29,
+    "peak": 136
   },
   {
     "id": "3de85ec7-0668-81a3-a935-e5ab77826546",
-    "title": "Dinner: one round slice of crusty baguette, airy open crumb with a golden crust, on the finished dinner plate beside the SPG card with the fish crumbs and pan sheen around it, fork at the right (second item of the sitting, 8 minutes after the 18:33 sole, so CUMULATIVE — inside the 1-hour window). No caption. Portions calibrated against the SPG card lying flat on the plate in a near top-down frame: the card reads about 410 px by 260 px, apparent aspect about 1.58 against the true 1.586, so θ is close to 0° and the scale is about 4.8 px/mm on the plate plane; the bread face measures about 275 px by 310 px, 5.7 by 6.5 cm, less about 5 percent for its top face sitting a couple of centimetres nearer the lens than the card, so about 5.4 by 6.2 cm; thickness read from the crust edge visible at the lower left at roughly 2 cm (assumed — no side profile at this angle), giving about 52 ml at an airy baguette crumb of about 0.38 g/ml, about 20 g — a thin slice, a little under a standard inch-thick baguette round. Build: baguette about 20 g P2 C10 cal 55 (per 100 g: 52 g carb, 9 g protein, 270 cal); the pan juices it mops up are already in the 18:33 row — total P2 C10 cal 55. Floor check 4×10 + 4×2 = 48, under 55. ⛔ INCREMENT ONLY IN THE COLUMNS: 10g and 55 cal are THIS ITEM ALONE; the running total lives in the marker and nowhere else, and 10 is smaller than 20, which is the check. [Cumulative Dinner: 20g carbs total] — 10g from the sole and croqueta and 10g here, with protein at 30g and calories at 325 across the sitting. ♻️ ANCHORED ON THE FIRST ITEM'S PreBG OF 104 AT 18:33; sensor 105 Flat at 18:39, the fish not yet showing. 📊 MODEL v5 ON THE CUMULATIVE TOTALS: 104 + 20×1.2 (16-30 g band) = 24 + 0 Dinner intercept + 0.3×(30−20) = 3 protein term − 0.35×(104−115) = +3.85 damping = 134.9, so 125-145 — up 5 from the 120-140 published at 18:33; time to peak Dinner +65 min from 18:41, so 7:46 PM. Plain bread, non-acidic, in line with the acid-free days (15:20 Note). ⛔ NO MEDICAT…",
+    "title": "Dinner: one round slice of crusty baguette, airy open crumb with a golden crust, on the finished dinner plate beside the SPG card with the fish crumbs and pan sheen around it, fork at the right (second item of the sitting, 8 minutes after the 18:33 sole, so CUMULATIVE — inside the 1-hour window). No caption. Portions calibrated against the SPG card lying flat on the plate in a near top-down frame: the card reads about 410 px by 260 px, apparent aspect about 1.58 against the true 1.586, so θ is close to 0° and the scale is about 4.8 px/mm on the plate plane; the bread face measures about 275 px by 310 px, 5.7 by 6.5 cm, less about 5 percent for its top face sitting a couple of centimetres nearer the lens than the card, so about 5.4 by 6.2 cm; thickness read from the crust edge visible at the lower left at roughly 2 cm (assumed — no side profile at this angle), giving about 52 ml at an airy baguette crumb of about 0.38 g/ml, about 20 g — a thin slice, a little under a standard inch-thick baguette round. Build: baguette about 20 g P2 C10 cal 55 (per 100 g: 52 g carb, 9 g protein, 270 cal); the pan juices it mops up are already in the 18:33 row — total P2 C10 cal 55. Floor check 4×10 + 4×2 = 48, under 55. ⛔ INCREMENT ONLY IN THE COLUMNS: 10g and 55 cal are THIS ITEM ALONE; the running total lives in the marker and nowhere else, and 10 is smaller than 20, which is the check. [Cumulative Dinner: 20g carbs total] — 10g from the sole and croqueta and 10g here, with protein at 30g and calories at 325 across the sitting. ♻�� ANCHORED ON THE FIRST ITEM'S PreBG OF 104 AT 18:33; sensor 105 Flat at 18:39, the fish not yet showing. 📊 MODEL v5 ON THE CUMULATIVE TOTALS: 104 + 20×1.2 (16-30 g band) = 24 + 0 Dinner intercept + 0.3×(30−20) = 3 protein term − 0.35×(104−115) = +3.85 damping = 134.9, so 125-145 — up 5 from the 120-140 published at 18:33; time to peak Dinner +65 min from 18:41, so 7:46 PM. Plain bread, non-acidic, in line with the acid-free days (15:20 Note). ⛔ NO MEDICAT…",
     "type": "Dinner",
     "date": "2026-09-16T18:41:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-16/8a670e9fa7c2d223.jpg",
     "carbs": 10,
     "cals": 55,
-    "delta": null,
-    "peak": null
+    "delta": 31,
+    "peak": 136
   },
   {
     "id": "3de85ec7-0668-8167-ad21-edb6163851e7",
@@ -29,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-16/0ebe8a72fa2e4aae.jpg",
     "carbs": 10,
     "cals": 270,
-    "delta": null,
-    "peak": null
+    "delta": 28,
+    "peak": 136
   },
   {
     "id": "3dd85ec7-0668-8148-8932-ccc2cd877ec7",
@@ -6788,7 +6799,7 @@
   },
   {
     "id": "35e85ec7-0668-81ee-bb49-ed1f1d4eb139",
-    "title": "Dinner: 1 loquat (níspero) [Cumulative Dinner: ~33g carbs total] (BG: 103 mg/dL Flat) (Pred: 142-152 mg/dL @ 10:14 PM) (Protein: 0g | Carbs: ~3g | Cals: ~12) [Coach: N��spero 🍑 — small, sweet, almost free on BG. A perfect tiny finish to a balanced dinner. Cumulative dinner stays in a friendly zone.]  [id:ce4e4942]",
+    "title": "Dinner: 1 loquat (níspero) [Cumulative Dinner: ~33g carbs total] (BG: 103 mg/dL Flat) (Pred: 142-152 mg/dL @ 10:14 PM) (Protein: 0g | Carbs: ~3g | Cals: ~12) [Coach: Níspero 🍑 — small, sweet, almost free on BG. A perfect tiny finish to a balanced dinner. Cumulative dinner stays in a friendly zone.]  [id:ce4e4942]",
     "type": "Dinner",
     "date": "2026-05-04T21:07:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-04/c12dc7b121ef6aca.jpg",
