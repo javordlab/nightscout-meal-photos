@@ -7,8 +7,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-16/654d907c0e61b20b.jpg",
     "carbs": 19,
     "cals": 215,
-    "delta": null,
-    "peak": null
+    "delta": 41,
+    "peak": 125
   },
   {
     "id": "3dd85ec7-0668-8164-bf73-e56fd1ec9ee1",
@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-16/21928174c0c70900.jpg",
     "carbs": 30,
     "cals": 375,
-    "delta": null,
-    "peak": null
+    "delta": 41,
+    "peak": 125
   },
   {
     "id": "3dd85ec7-0668-8100-b90a-cfe57281d081",
@@ -29,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-16/00280553c79e3a21.jpg",
     "carbs": 29,
     "cals": 320,
-    "delta": null,
-    "peak": null
+    "delta": 68,
+    "peak": 160
   },
   {
     "id": "3dd85ec7-0668-8143-9eef-e950c7918782",
@@ -210,7 +210,7 @@
   },
   {
     "id": "3d985ec7-0668-812b-b2b1-f69253f78f26",
-    "title": "Breakfast: one slice of her own loaf spread thickly with chunky peanut butter and topped with FRESH whole blueberries, on a white plate on the flamingo placemat, with a mug of milk (the Christmas-tree mug) and a glass of water. ⭐⭐ THREE OF THE FOUR QUANTITIES ARE HER OWN, GIVEN IN THE CAPTION — 54g bread 3tbp p butter 6 oz milk �� and are used verbatim; NO GEOMETRY WAS PERFORMED on them and no card is in frame. 🫐 THE BLUEBERRIES ARE NOT IN HER CAPTION BUT ARE FULLY IN FRAME, so they count (framing rule): first read as about 32 berries at roughly 1.7 g each = about 55 g, a third of a cup. ⛔ CORRECTED AT 10:12 FROM HER OWN WORDS — More like two thirds c blueberries, they are big ones. Her stated measure replaces the count: 2/3 cup of fresh blueberries = about 100 g. Lesson for the reader: the same 32 berries at 100 g are about 3 g each — HER BLUEBERRIES ARE BIG, cost them at about 3 g a berry, not the 1.5 to 2 g of a generic punnet; the count was right and the per-berry weight was the error. These are fresh whole berries, not the cooked-down ones of the 09-07 to 09-09 builds. 🔁 LEFTOVER MATCH on the loaf and the peanut butter (2026-09-08 10:10 and 2026-09-09 09:50 rows): composition carried, portions are her figures today. 🍞 Bread from her loaf anchor (0.44 g carb, 0.12 g protein, 2.5 cal per gram): 54 g = 24 g carb, 6.5 g protein, 135 cal. 🥜 Peanut butter at her prior per-gram costing (38 g = C7 P9 on 09-08; chunky, about 5.9 cal per gram): 3 tbsp = 48 g = 9 g carb, 11 g protein, 285 cal. Milk 6 oz per her own rows: P6 C8 cal 110. Blueberries 100 g: 14 g carb, 0.7 g protein, 57 cal. Build: loaf 54 g P6.5 C24 cal 135; peanut butter 48 g P11 C9 cal 285; blueberries 100 g P0.7 C14 cal 57; milk 6 oz P6 C8 cal 110 — total P24 C55 cal 587 (first write P24 C49 cal 561). Floor check 4×55 + 4×24 = 316, under 587. Prediction recomputed: carbs move into the 51+ band at 0.8, so 98 + 55 × 0.8 + 20 + 0.3 × 4 + 5.95 = 169 — the same 159-179 window, the band change offsetting th…",
+    "title": "Breakfast: one slice of her own loaf spread thickly with chunky peanut butter and topped with FRESH whole blueberries, on a white plate on the flamingo placemat, with a mug of milk (the Christmas-tree mug) and a glass of water. ⭐⭐ THREE OF THE FOUR QUANTITIES ARE HER OWN, GIVEN IN THE CAPTION — 54g bread 3tbp p butter 6 oz milk — and are used verbatim; NO GEOMETRY WAS PERFORMED on them and no card is in frame. 🫐 THE BLUEBERRIES ARE NOT IN HER CAPTION BUT ARE FULLY IN FRAME, so they count (framing rule): first read as about 32 berries at roughly 1.7 g each = about 55 g, a third of a cup. ⛔ CORRECTED AT 10:12 FROM HER OWN WORDS — More like two thirds c blueberries, they are big ones. Her stated measure replaces the count: 2/3 cup of fresh blueberries = about 100 g. Lesson for the reader: the same 32 berries at 100 g are about 3 g each — HER BLUEBERRIES ARE BIG, cost them at about 3 g a berry, not the 1.5 to 2 g of a generic punnet; the count was right and the per-berry weight was the error. These are fresh whole berries, not the cooked-down ones of the 09-07 to 09-09 builds. 🔁 LEFTOVER MATCH on the loaf and the peanut butter (2026-09-08 10:10 and 2026-09-09 09:50 rows): composition carried, portions are her figures today. 🍞 Bread from her loaf anchor (0.44 g carb, 0.12 g protein, 2.5 cal per gram): 54 g = 24 g carb, 6.5 g protein, 135 cal. 🥜 Peanut butter at her prior per-gram costing (38 g = C7 P9 on 09-08; chunky, about 5.9 cal per gram): 3 tbsp = 48 g = 9 g carb, 11 g protein, 285 cal. Milk 6 oz per her own rows: P6 C8 cal 110. Blueberries 100 g: 14 g carb, 0.7 g protein, 57 cal. Build: loaf 54 g P6.5 C24 cal 135; peanut butter 48 g P11 C9 cal 285; blueberries 100 g P0.7 C14 cal 57; milk 6 oz P6 C8 cal 110 — total P24 C55 cal 587 (first write P24 C49 cal 561). Floor check 4×55 + 4×24 = 316, under 587. Prediction recomputed: carbs move into the 51+ band at 0.8, so 98 + 55 × 0.8 + 20 + 0.3 × 4 + 5.95 = 169 — the same 159-179 window, the band change offsetting th…",
     "type": "Breakfast",
     "date": "2026-09-12T10:09:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-12/ef74c67134a1090b.jpg",
