@@ -1,5 +1,16 @@
 [
   {
+    "id": "3df85ec7-0668-81ac-a6d4-cdc9e5c5a77a",
+    "title": "Breakfast: an open-faced slice of her own dark seeded loaf spread with mashed avocado and topped with ruffled folds of prosciutto, on her white plate with the red and black rim on the blue floral placemat, with a white mug of milky coffee beside it. Her caption at 10:19: Bread 56g, avocado 66g, 27g prosciutto and 6oz milk with coffee. ⭐ HER OWN WEIGHED FIGURES GOVERN EVERY COMPONENT, so NO GEOMETRY WAS PERFORMED and nothing was sized from the photo (no scale reference in frame either, and her loaf is never estimated from a photo by standing rule): bread 56 g, avocado 66 g, prosciutto 27 g, milk 6 oz, used verbatim. Same build as the 2026-09-15 14:45 lunch (loaf, avocado, prosciutto) — composition carried over, portions today are hers. Costed from her anchors: the loaf at about 40 g carb, 11 g protein, 275 kcal per 100 g gives 22 g carb, 6 g protein, 154 kcal for 56 g; avocado 66 g flesh about 6 g carb (mostly fiber), 1 g protein, 106 kcal; prosciutto 27 g about 7 g protein, 68 kcal, no carb; Kirkland A2 whole milk 6 oz per label 8 g carb, 6 g protein, 120 kcal. Fat runs to roughly 25 g between the avocado, the prosciutto and the milk, which is the first fat-forward meal since the gastric flare settled (09:47 Note). About 235 mg calcium, nearly all of it the milk (220), with a few mg each from the bread, avocado and ham; first Food row of the day, so the running total is 235 of 1200. Her first meal of the day, classified Breakfast by the hour rule (05:00 to 10:59); not cumulative. Sensor 108 Flat at 10:14 on the day-old unit (first-night artifact at 02:24 noted at 09:56; daytime trace steady 82-108 since 08:00, so the reading is used as is). Pills on the placemat are not narrated and are not a confirmation. (BG: 108 mg/dL Flat) (Pred: 153-173 mg/dL @ 11:34 AM) (Protein: 20g | Carbs: ~36g | Cals: ~450) [Coach: Bread's back, and it brought friends 🥑 — avocado and prosciutto put fat and 20g of protein between the loaf and your blood sugar, so 36g here should climb slo…",
+    "type": "Breakfast",
+    "date": "2026-09-18T10:19:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-18/e9108fa504672c64.jpg",
+    "carbs": 36,
+    "cals": 450,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3df85ec7-0668-81ea-beee-d019476da336",
     "title": "Dinner (after-dinner frozen fruit, her sherbet — 73 minutes after the 18:49 dairy, outside the 1-hour window, so a separate sitting anchored to the live BG; classified Dinner by the hour rule, 18:00 to 04:59): a small yellow-patterned bowl of frozen berries straight from the freezer, frosted — three strawberries and a quarter cup of blueberries — on the dark wood table. Her caption at 20:02: 3 small strawberries and 1/4 cup blueberries. ⭐ HER OWN STATED COUNT AND MEASURE, used verbatim; no scale reference in frame and NO GEOMETRY WAS PERFORMED — the photo confirms frozen fruit (frost on every berry) and the count of strawberries; 13 blueberries visible, counted, consistent with her quarter cup at her big 3 g berries (about 39 g). Costed from her own anchors: three small strawberries about 21 g P0 C2 cal 7; blueberries a quarter cup, about 39 g (13 big berries at 3 g, 2026-09-12 anchor) P0 C6 cal 23. Build: strawberries P0 C2 cal 7; blueberries P0 C6 cal 23 — total P0 C7 cal 30 (7.3 g carb rounded to 7). Floor check 4×7 + 0 = 28, under 30. 🦴 CALCIUM: about 5 mg calcium in the berries; running total for 2026-09-17 about 670 mg of 1200. Non-acidic enough for the quiet-stomach days — a small dose of berries, frozen, the sherbet she credits herself (never proposed as new). Dinner outcome so far for the backfill (Nightscout entries, checked at 20:03): 121 at 18:39, a shallow rise to 124 at 19:14, 117 at 19:59 — far under the 157-177 call at 7:54 PM after 59 g of a lentil-and-potato sitting; lentils are slow and a later, broader hump may still arrive, so the backfill should read the full three hours before calling it, but this is the second legume stew this week to run well under its v5 call (the 2026-09-13 white bean stew is the other one to check) — a note for the model, not for her. 📊 MODEL v5: 117 + 7×2.0 (0-15 g band) = 14 + 0 Dinner intercept + 0 protein term − 0.35×(117−115) = −0.7 damping = 130.3, so 120-140; time to peak Dinner +65 min from 20:02, 9:07 PM. ⛔ NO…",
     "type": "Dinner",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-17/4a45074483114222.jpg",
     "carbs": 7,
     "cals": 30,
-    "delta": null,
-    "peak": null
+    "delta": 17,
+    "peak": 144
   },
   {
     "id": "3df85ec7-0668-81c1-845e-d9561d490b8b",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-17/47ab40123ff80478.jpg",
     "carbs": 13,
     "cals": 140,
-    "delta": null,
-    "peak": null
+    "delta": 30,
+    "peak": 144
   },
   {
     "id": "3df85ec7-0668-813e-9ce4-f7fca2bdd05b",
@@ -29,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-17/4ff404aa15c0e523.jpg",
     "carbs": 46,
     "cals": 300,
-    "delta": null,
-    "peak": null
+    "delta": 27,
+    "peak": 144
   },
   {
     "id": "3de85ec7-0668-81ad-aed9-dbac47226134",
