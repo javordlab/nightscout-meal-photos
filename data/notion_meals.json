@@ -1,5 +1,16 @@
 [
   {
+    "id": "3df85ec7-0668-813e-9ce4-f7fca2bdd05b",
+    "title": "Dinner: a wide shallow white bowl of lentil and potato stew — brown lentils thick in a red-orange tomato-and-sofrito base with chunks of potato and dice of carrot through it, no meat visible — with a wooden spoon, on the flamingo placemat with the SPG card lying on the placemat at the left and a glass of water behind. Her caption at 18:39: 1.5 cup lentil and potatoes stew. Classified Dinner by the hour rule (18:00 to 04:59); NOT cumulative — 2 h 25 min after the 16:14 snack. ⭐ HER OWN STATED MEASURE, so 1.5 cups (about 355 ml) is used verbatim; the SPG card is on the placemat, not on the plate, and NO GEOMETRY WAS PERFORMED — the photo confirms the components (lentils, potato, carrot, sofrito; no pork, no bread) and nothing was re-sized from it. Leftover match: no lentil row in the 7-day digest; costed from her 2026-08-16 18:29 Spanish lentil stew build (350 ml: about 140 g cooked lentils, 70 g potato, 25 g carrot, tomato-onion-olive-oil sofrito), today's bowl WITHOUT that row's pork. Build: cooked lentils about 140 g P13 C28 cal 162; potato about 70 g P1 C12 cal 55; carrot about 25 g P0 C2 cal 10; sofrito with olive oil P0 C4 cal 70 — total P14 C46 cal 297, written as 300. Floor check 4×46 + 4×14 = 240, under 300. About a third of the lentil carbohydrate is fibre, which is why this stew rises slowly. 🦴 CALCIUM: about 55 mg calcium — lentils about 27, potato and carrot about 15, sofrito about 10; running total for 2026-09-17 about 500 mg of 1200. Non-acidic beyond the cooked tomato of the sofrito, which she has always tolerated (not on her 09-16 trigger list). 📊 MODEL v5: 121 + 46×0.9 (31-50 g band) = 41.4 + 0 Dinner intercept + 0 protein term (14 g) − 0.35×(121−115) = −2.1 damping = 160.3, so 150-170; time to peak Dinner +65 min from 18:39, 7:44 PM. Snack outcome for the backfill (from the Nightscout entries, checked at 18:40): 119 at 16:09, peak 147 at 17:14 (one hour after the snack) against the 129-149 call at 5:09 PM — inside the band, near its top; a slow d…",
+    "type": "Dinner",
+    "date": "2026-09-17T18:39:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-17/4ff404aa15c0e523.jpg",
+    "carbs": 46,
+    "cals": 300,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3de85ec7-0668-81ad-aed9-dbac47226134",
     "title": "Lunch: a bowl of rice porridge built from her leftover egg drop soup — the broth absorbed into the rice with egg ribbons and bits of lettuce greens through it, and one soft-cooked egg with a runny yolk sitting on top — in her white Christmas-tree bowl with a wooden spoon, on the flamingo placemat with a glass of water behind. Her caption at 13:40: Ok this one is an interesting lunch. About a cup of my leftover egg soup from the other night. An additional 1/2 frozen rice, and 1 egg. Classified Lunch by the hour rule (11:00 to 15:59); NOT cumulative — 3 h 48 min after the 09:52 milk. ⭐ ALL THREE QUANTITIES ARE HER OWN STATED MEASURES (a cup of soup, half a cup of frozen cooked rice, one egg), so they are used verbatim; no scale reference in frame and NO GEOMETRY WAS PERFORMED — the photo confirms the components and nothing was re-sized from it. Leftover match: the soup is the 2026-09-15 18:38 egg drop soup in the ramen broth (30 g cooked rice, two eggs, lettuce greens; whole bowl P16 C13 cal 225) — composition carried over, portion re-measured as her stated cup, taken as about half that bowl's build: P8 C6 cal 110 (one egg's worth of ribbons, about 15 g rice, broth and greens). New today: frozen cooked rice half a cup, 79 g (her 2026-09-12 18:36 anchor) P2 C22 cal 103 — her stated half cup, twice her usual quarter-cup portion, used as stated; one egg, large, soft-cooked, P6 C0 cal 72. Build: leftover egg soup 1 cup P8 C6 cal 110; rice half a cup P2 C22 cal 103; egg P6 C0 cal 72 — total P16 C28 cal 285. Floor check 4×28 + 4×16 = 176, under 285. 🦴 CALCIUM: about 75 mg calcium in this bowl — the two eggs' worth about 55, greens and broth about 15, rice about 5; running total for 2026-09-17 about 380 mg of 1200. Bland and non-acidic, the second quiet day for her stomach (2026-09-16 15:20 Note); no lime. 📡 NEW SENSOR, FIRST READING: 102 Flat at 13:39 is the first value Nightscout has received from the sensor she started this morning (her 11:42 heads-up; the old one ende…",
     "type": "Lunch",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-17/83f9082e8167f235.jpg",
     "carbs": 28,
     "cals": 285,
-    "delta": null,
-    "peak": null
+    "delta": 56,
+    "peak": 158
   },
   {
     "id": "3de85ec7-0668-8152-8c12-e891c3d6ec39",
