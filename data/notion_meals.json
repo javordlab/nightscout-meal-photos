@@ -1,5 +1,16 @@
 [
   {
+    "id": "3e085ec7-0668-81d0-9af1-f91c7fe08a98",
+    "title": "Dinner: one whole Italian sausage link, grilled to a dark browned char along the top, with a slice of her own dark seeded loaf topped with a pat of butter, a small pile of thick-cut fries and raw carrot sticks, on her white dinner plate on the blue floral placemat, a fork at the right edge. Her caption at 18:24: Italian sausage, bread 30g, fries. ⭐ THE BREAD IS HER OWN WEIGHED FIGURE, 30 g, used verbatim (her loaf is never sized from a photo by standing rule); the sausage, fries, butter and carrots were sized by me. The carrots are not in her caption but are fully in frame, so they are counted per the framing rule (fully in frame counts, a corner is ignored, do not ask). 📐 NO SCALE REFERENCE IN FRAME (no SPG card; the wrapper at top right and the fork are not usable rulers). Scale taken from the plate, assumed to be her 26 cm white dinner plate spanning about 1250 px across the frame at the rim, so about 4.8 px per mm along the across-frame axis; the plate images as an ellipse, so the camera sits roughly 40 degrees off vertical and depth-axis lengths were divided by about 0.77. Sausage: about 830 px chord along its curve, corrected to roughly 16 to 17 cm long, and about 160 px across, roughly 3 cm thick, a cylinder of about 100 ml less the tapered ends, taken as about 90 g cooked — one large link, the least certain figure on the plate (a standard 4 oz raw link cooks to 85 to 90 g). Fries: NINE thick-cut pieces, COUNTED across the pile left to right, lengths about 3 to 7 cm, about 1.3 cm square in section, roughly 10 g each, so about 85 g in all, golden and oil-sheened so costed as shallow-fried thick-cut. Carrots: FIVE sticks, COUNTED, about 5 to 6 cm each, roughly 8 g apiece, about 40 g (a third of a cup, against the 14 sticks that made about a cup at lunch). Butter: one pat about 3.5 by 3 cm, roughly 8 g. Composition: the sausage is costed as pork Italian sausage at the log's own anchor from the 2026-09-14 ramen row (about 18 g protein, 2 g carb, 318 kcal per 10…",
+    "type": "Dinner",
+    "date": "2026-09-18T18:24:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-18/c1749969c904ebe9.jpg",
+    "carbs": 42,
+    "cals": 650,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3df85ec7-0668-8155-b53e-d0b569984f73",
     "title": "Lunch: a plate of raw carrot sticks with a scoop of Kirkland roasted pine nut hummus and a mound of cottage cheese, on her yellow Bumblebee dessert plate on the blue floral placemat, the SPG card lying on the placemat to the right of the plate. Her caption at 13:37: 6 tbsp of humus and 1/3 cu cottage cheese. ⭐ HER OWN STATED MEASURES GOVERN THE HUMMUS AND THE COTTAGE CHEESE — 6 tablespoons and a third of a cup, used verbatim, nothing re-sized from the photo. The carrots were not in her caption and are costed from the photo: 14 carrot sticks, counted across the plate in one pass (six in the left pile, seven in the right pile, one short stub under the hummus), each about 8 cm long and finger-thick, roughly 8 g apiece, so about 110 g of carrot. The SPG card is on the placemat, not on the plate plane, and sits farther from the lens than the food, so it was not used as a ruler; the sticks were sized from their shape against the dessert plate. Costed: hummus 6 tbsp from the label photographed one minute earlier (2 tbsp = 80 kcal, 4 g carb, 2 g protein, 6 g fat) — 12 g carb, 6 g protein, 240 kcal, calcium nil; cottage cheese 4% a third of a cup about 3 g carb, 8 g protein, 74 kcal, about 60 mg calcium; carrots about 11 g carb (3 g of it fiber), 1 g protein, 45 kcal, about 35 mg calcium. About 95 mg calcium in the plate; running total today about 345 of 1200. Classified Lunch by the hour rule (11:00 to 15:59); not cumulative — 2 hours 53 minutes after the 10:44 pistachios. Lighter lunch, her California pattern. Sensor 115 Flat at 13:34 on the day-old unit. (BG: 115 mg/dL Flat) (Pred: 136-156 mg/dL @ 2:47 PM) (Protein: 15g | Carbs: ~26g | Cals: ~360) [Coach: Carrots, hummus and cottage cheese 🥕 — crunchy, filling and only 26g of carbs, most of them the slow kind. The cottage cheese brings the protein to 15g; an egg or a couple of slices of turkey alongside would round it out, but as a light lunch ahead of a hearty dinner this is right on your pattern.]",
     "type": "Lunch",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-18/7bd0cea4e9df1d33.jpg",
     "carbs": 26,
     "cals": 360,
-    "delta": null,
-    "peak": null
+    "delta": 12,
+    "peak": 131
   },
   {
     "id": "3df85ec7-0668-81ac-a6d4-cdc9e5c5a77a",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-18/e9108fa504672c64.jpg",
     "carbs": 36,
     "cals": 450,
-    "delta": null,
-    "peak": null
+    "delta": 47,
+    "peak": 158
   },
   {
     "id": "3df85ec7-0668-81ea-beee-d019476da336",
@@ -4863,7 +4874,7 @@
   },
   {
     "id": "37d85ec7-0668-81ce-82bc-fd8ab547bdd7",
-    "title": "Snack (post-gardening): a bowl of fresh blueberries (BG: 104 mg/dL Flat) (Pred: 131-141 mg/dL @ 8:21 PM) (Protein: 1g , Carbs: ~14g , Cals: ~55) [Coach: Blueberries after garden work 🫐 — whole-fruit fiber + polyphenols on a clean 104 baseline (the gardening kept the flan curve flat all afternoon). Pred ~136 by 8:21 PM. Perfect garden-to-snack rhythm.]",
+    "title": "Snack (post-gardening): a bowl of fresh blueberries (BG: 104 mg/dL Flat) (Pred: 131-141 mg/dL @ 8:21 PM) (Protein: 1g , Carbs: ~14g , Cals: ~55) [Coach: Blueberries after garden work ���� — whole-fruit fiber + polyphenols on a clean 104 baseline (the gardening kept the flan curve flat all afternoon). Pred ~136 by 8:21 PM. Perfect garden-to-snack rhythm.]",
     "type": "Snack",
     "date": "2026-06-12T18:15:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-12/365b07221b147dbe.jpg",
