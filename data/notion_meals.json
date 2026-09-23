@@ -29,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-22/fffe7a2f25f937b8.jpg",
     "carbs": 57,
     "cals": 750,
-    "delta": null,
-    "peak": null
+    "delta": 68,
+    "peak": 166
   },
   {
     "id": "3e385ec7-0668-8195-a063-f136bf8dd268",
@@ -6700,7 +6700,7 @@
   },
   {
     "id": "36085ec7-0668-815e-aa59-d2bdfc9e897d",
-    "title": "Dinner: 1 small peeled nectarine [Cumulative Dinner: ~53g carbs total] (BG: 92 mg/dL Flat) (Pred: 130-140 mg/dL @ 10:26 PM) (Protein: 1g | Carbs: ~12g | Cals: ~55) [Coach: Sweet finish 🍑 — the nectarine brings fiber and vitamin C with a gentler sugar curve than a dessert would. It nudges your dinner total to ~53g carbs, but the protein from the ham and cheese is still doing some buffering work.]",
+    "title": "Dinner: 1 small peeled nectarine [Cumulative Dinner: ~53g carbs total] (BG: 92 mg/dL Flat) (Pred: 130-140 mg/dL @ 10:26 PM) (Protein: 1g | Carbs: ~12g | Cals: ~55) [Coach: Sweet finish 🍑 ��� the nectarine brings fiber and vitamin C with a gentler sugar curve than a dessert would. It nudges your dinner total to ~53g carbs, but the protein from the ham and cheese is still doing some buffering work.]",
     "type": "Dinner",
     "date": "2026-05-14T21:17:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-14/7fbf980d58606da7.jpg",
