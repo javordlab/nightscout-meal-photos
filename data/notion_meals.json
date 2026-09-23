@@ -7,8 +7,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-23/f65832805f3bf944.jpg",
     "carbs": 15,
     "cals": 70,
-    "delta": null,
-    "peak": null
+    "delta": 32,
+    "peak": 144
   },
   {
     "id": "3e485ec7-0668-814a-b0c0-ee4444d42ff9",
@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-23/f9823d87dadab125.jpg",
     "carbs": 18,
     "cals": 380,
-    "delta": null,
-    "peak": null
+    "delta": 32,
+    "peak": 144
   },
   {
     "id": "3e485ec7-0668-81b1-a666-dc63632bda9e",
@@ -1354,7 +1354,7 @@
   },
   {
     "id": "3cb85ec7-0668-8147-87cf-fb22263d2566",
-    "title": "Dinner (cont.): four pieces of white fish braised with sliced potatoes, tomato, red pepper and onion in a light oily sauce, on a wide-rimmed white plate. LOGGED AS A CUMULATIVE DINNER — eleven minutes after the 18:22 oysters, well inside the one-hour window — so THE preBG ANCHOR REMAINS THE FIRST ITEM'S 100 mg/dL and the time-to-peak is measured from 18:22, not from now. ⚠️ NO SCALE REFERENCE AND NO FIXED-SIZE FOOD ARTICLE IN FRAME, which is the weakest measurement position of the day and is stated rather than glossed. The plate is cut off at the right edge so its horizontal span is unusable; the vertical span of about 1090 pixels was taken as the diameter at an assumed 26cm, giving roughly 4.19 pixels per millimetre. THAT ASSUMED PLATE WAS FLAGGED TO HER AS THE WEAK LINK, since last night's error was exactly this and today's lunch plate turned out to be 19.6cm. ✅ SHE ANSWERED AT 18:47 WITH A STATED 10 INCHES, so the plate is 25.4cm and the scale is 4.29 pixels per millimetre. ⭐ THIS IS THE FIRST VESSEL ASSUMPTION ALL DAY TO BE CONFIRMED RATHER THAN CORRECTED, and the miss was only 2.3 percent linear or about 7 percent on volume — inside the noise of everything else in this row. Portions below are reduced by that 7 percent to the stated plate and are no longer estimates resting on an assumed vessel. ⚠️ THE CONFIRMATION DOES NOT REHABILITATE THE ASSUMPTION AS A METHOD: her plates today measured 26cm at breakfast, 19.6cm at lunch and 25.4cm now, so the dinner-plate default happened to be right here and was badly wrong at lunch. KEEP ASKING OR KEEP ANCHORING ON THE FOOD; do not read this as licence to assume 26cm again. THE FISH is four pieces measuring roughly 38 by 21mm, 30 by 20mm, 30 by 22mm and 35 by 25mm at about 15 to 18mm thick, taken together at about 75g of cooked white fish, giving 17g of protein, no carbohydrate and 80 calories. THE POTATOES are five or six rounds of about 3cm across at 5 to 6mm thick, taken at about 75g, giving 13g of carbohydrate, 2g of …",
+    "title": "Dinner (cont.): four pieces of white fish braised with sliced potatoes, tomato, red pepper and onion in a light oily sauce, on a wide-rimmed white plate. LOGGED AS A CUMULATIVE DINNER ��� eleven minutes after the 18:22 oysters, well inside the one-hour window — so THE preBG ANCHOR REMAINS THE FIRST ITEM'S 100 mg/dL and the time-to-peak is measured from 18:22, not from now. ⚠️ NO SCALE REFERENCE AND NO FIXED-SIZE FOOD ARTICLE IN FRAME, which is the weakest measurement position of the day and is stated rather than glossed. The plate is cut off at the right edge so its horizontal span is unusable; the vertical span of about 1090 pixels was taken as the diameter at an assumed 26cm, giving roughly 4.19 pixels per millimetre. THAT ASSUMED PLATE WAS FLAGGED TO HER AS THE WEAK LINK, since last night's error was exactly this and today's lunch plate turned out to be 19.6cm. ✅ SHE ANSWERED AT 18:47 WITH A STATED 10 INCHES, so the plate is 25.4cm and the scale is 4.29 pixels per millimetre. ⭐ THIS IS THE FIRST VESSEL ASSUMPTION ALL DAY TO BE CONFIRMED RATHER THAN CORRECTED, and the miss was only 2.3 percent linear or about 7 percent on volume — inside the noise of everything else in this row. Portions below are reduced by that 7 percent to the stated plate and are no longer estimates resting on an assumed vessel. ⚠️ THE CONFIRMATION DOES NOT REHABILITATE THE ASSUMPTION AS A METHOD: her plates today measured 26cm at breakfast, 19.6cm at lunch and 25.4cm now, so the dinner-plate default happened to be right here and was badly wrong at lunch. KEEP ASKING OR KEEP ANCHORING ON THE FOOD; do not read this as licence to assume 26cm again. THE FISH is four pieces measuring roughly 38 by 21mm, 30 by 20mm, 30 by 22mm and 35 by 25mm at about 15 to 18mm thick, taken together at about 75g of cooked white fish, giving 17g of protein, no carbohydrate and 80 calories. THE POTATOES are five or six rounds of about 3cm across at 5 to 6mm thick, taken at about 75g, giving 13g of carbohydrate, 2g of …",
     "type": "Dinner",
     "date": "2026-08-28T18:33:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-28/d0ae9a27bb96349b.jpg",
@@ -9329,7 +9329,7 @@
   },
   {
     "id": "33b85ec7-0668-8103-b326-e89c58e8d7a9",
-    "title": "Breakfast: 2 boiled eggs, 1 slice white bread, 1 small guava (BG: 117 mg/dL ➡��) (Peak: 161 mg/dL @ 10:59 AM) (Protein: 16g | Carbs: ~21g | Cals: ~245)  (Pred: 167-187 mg/dL @ 11:38 AM)",
+    "title": "Breakfast: 2 boiled eggs, 1 slice white bread, 1 small guava (BG: 117 mg/dL ➡️) (Peak: 161 mg/dL @ 10:59 AM) (Protein: 16g | Carbs: ~21g | Cals: ~245)  (Pred: 167-187 mg/dL @ 11:38 AM)",
     "type": "Breakfast",
     "date": "2026-03-21T10:03:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-03-21/ead7c4f9da6e4f03.jpg",
