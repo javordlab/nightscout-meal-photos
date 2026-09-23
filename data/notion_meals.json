@@ -1,7 +1,7 @@
 [
   {
     "id": "3e485ec7-0668-81b1-a666-dc63632bda9e",
-    "title": "Dinner (second sitting): half a cup of cottage cheese in a small white ceramic bowl with a black spoon standing in it, on the grey polka-dot tablecloth — the protein top-up after the light tortilla dinner. Her caption: 1/2 cup cottage cheese. NOT cumulative — 1 hour 9 minutes after the 18:24 tortilla, just outside the 1-hour window, so a separate sitting with its own live preBG; classified Dinner by the hour rule. ⭐ HER OWN STATED MEASURE, which overrides the photo; nothing sized from the bowl. BUILD from her established figures, same as the 2026-09-16 17:51 row: half a cup of cottage cheese about 113 g — 4 g carb, 12 g protein, 110 kcal, about 90 mg calcium (cottage cheese is protein-rich but a weak calcium source, unlike her yogurt and milk). Running calcium total today about 949 of 1200. This brings the evening's protein from 11 g to 23 g, into her usual per-meal range, and the day to about 84 g. Model v5, Dinner, preBG 145 Flat at 19:28 — the tortilla's rise, and the lunch Metformin was left at home today (14:21 Note), so the baseline is higher than a usual Tuesday evening: 145 + 4 × 2.0 + 0 + 0 − 0.35 × (145 − 115) = about 143, i.e. the damping term cancels the load and the number should ease rather than climb. Dinner Metformin 1000mg was still unlogged at 19:33 — reminder repeated with this row, since the auto-tracker will otherwise record it against the 18:24 tortilla at its next run. (BG: 145 mg/dL Flat) (Pred: 133-153 mg/dL @ 8:38 PM) (Protein: 12g | Carbs: ~4g | Cals: ~110) [Coach: That is the protein the tortilla was missing 🥣 — 12g for 4g of carbs, and it takes the evening to 23g. Cottage cheese is a lighter calcium source than your yogurt, but the day is near 950 mg either way, so you are in good shape there.]",
+    "title": "Dinner (second sitting): half a cup of cottage cheese in a small white ceramic bowl with a black spoon standing in it, on the grey polka-dot tablecloth — the protein top-up after the light tortilla dinner. Her caption: 1/2 cup cottage cheese. NOT cumulative — 1 hour 9 minutes after the 18:24 tortilla, just outside the 1-hour window, so a separate sitting with its own live preBG; classified Dinner by the hour rule. ⭐ HER OWN STATED MEASURE, which overrides the photo; nothing sized from the bowl. BUILD from her established figures, same as the 2026-09-16 17:51 row: half a cup of cottage cheese about 113 g — 4 g carb, 12 g protein, 110 kcal, about 90 mg calcium (cottage cheese is protein-rich but a weak calcium source, unlike her yogurt and milk). Running calcium total today about 949 of 1200. This brings the evening's protein from 11 g to 23 g, into her usual per-meal range, and the day to about 84 g. Model v5, Dinner, preBG 145 Flat at 19:28 — the tortilla's rise, and the lunch Metformin was left at home today (14:21 Note), so the baseline is higher than a usual Tuesday evening: 145 + 4 × 2.0 + 0 + 0 − 0.35 × (145 − 115) = about 143, i.e. the damping term cancels the load and the number should ease rather than climb. Dinner Metformin 1000mg was still unlogged at 19:33 — reminder repeated with this row, since the auto-tracker will otherwise record it against the 18:24 tortilla at its next run. (BG: 145 mg/dL Flat) (Pred: 133-153 mg/dL @ 8:38 PM) (Protein: 12g | Carbs: ~4g | Cals: ~110) [Coach: That is the protein the tortilla was missing �� — 12g for 4g of carbs, and it takes the evening to 23g. Cottage cheese is a lighter calcium source than your yogurt, but the day is near 950 mg either way, so you are in good shape there.]",
     "type": "Dinner",
     "date": "2026-09-22T19:33:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-22/9d4ea167be69269f.jpg",
@@ -29,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-22/ec9065851e487f2e.jpg",
     "carbs": 6,
     "cals": 45,
-    "delta": null,
-    "peak": null
+    "delta": 20,
+    "peak": 151
   },
   {
     "id": "3e385ec7-0668-8193-a47f-e8bdfb5556f0",
@@ -40,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-22/b378bb7c0a282e53.jpg",
     "carbs": 8,
     "cals": 120,
-    "delta": null,
-    "peak": null
+    "delta": 20,
+    "peak": 151
   },
   {
     "id": "3e385ec7-0668-81b6-a000-ea4ff90fa3d5",
