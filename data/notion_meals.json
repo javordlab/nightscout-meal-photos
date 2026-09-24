@@ -1,12 +1,12 @@
 [
   {
     "id": "3e585ec7-0668-8199-9fb5-d1fd1f5d767a",
-    "title": "Dessert: one Trader Joe's Japanese cheesecake, the souffle-style kind, 60 g, golden-topped in its fluted white paper cup, set on its own red bag on the wooden board by the granite counter and photographed with the Nutrition Facts panel. Her caption: Dessert (the dessert she announced at 18:50, I'll dessert in a while too). MealType Dessert by her own word, overriding the Dinner hour. NOT cumulative — 69 minutes after the 18:01 pho, outside the 1-hour window, so preBG is the live 129. 🏷️ COSTED FROM THE LABEL IN FRAME, NOT ESTIMATED: 2 servings per container, serving 1 cheesecake (60 g) — 150 kcal, 7 g fat (4.5 g saturated), 16 g carb (2 g fibre, 10 g sugars, 9 g added), 6 g protein, 150 mg sodium, 70 mg calcium. Ingredients: cream cheese, milk, egg whites, sugar, egg, wheat flour, cheese powder, sweetened condensed milk, lemon flavor, tapioca starch. One cake in frame and one assumed eaten; the second stays in the bag. 📐 No geometry needed, since it is a single labeled unit. About 70 mg calcium (running total today about 665 of 1200). Calorie floor checked: 4 × 16 + 4 × 6 = 88, under 150. Model v5, Dessert, preBG 129 Flat at 19:09, 16 g at the 16-30 factor of 1.2, protein 6 g (under 20, no protein term): 129 + 16 × 1.2 − 10 + 0 − 0.35 × (129 − 115) = 129 + 19.2 − 10 − 4.9 = about 133, peak at +105 min. Berberine was taken with the 18:00 dinner (see that row); v5 has no berberine term. (BG: 129 mg/dL Flat) (Pred: 123-143 mg/dL @ 8:55 PM) (Protein: 6g | Carbs: ~16g | Cals: ~150) [Coach: A Japanese cheesecake, soft as a souffle 🍰 One little cake is 16g of carbs with 6g of protein, plus some calcium from the cream cheese, so it's a tidy way to finish the day. Your dinner is sitting calm at 129, so this one has room to land gently.]",
+    "title": "Dessert: two-thirds of one Trader Joe's Japanese cheesecake (she shared a third with Javier), the souffle-style kind, 60 g whole, golden-topped in its fluted white paper cup, set on its own red bag on the wooden board by the granite counter and photographed with the Nutrition Facts panel. Her caption: Dessert (the dessert she announced at 18:50, I'll dessert in a while too). MealType Dessert by her own word, overriding the Dinner hour. NOT cumulative — 69 minutes after the 18:01 pho, outside the 1-hour window, so preBG is the live 129. 🏷️ COSTED FROM THE LABEL IN FRAME, NOT ESTIMATED: 2 servings per container, serving 1 cheesecake (60 g) — 150 kcal, 7 g fat (4.5 g saturated), 16 g carb (2 g fibre, 10 g sugars, 9 g added), 6 g protein, 150 mg sodium, 70 mg calcium. Ingredients: cream cheese, milk, egg whites, sugar, egg, wheat flour, cheese powder, sweetened condensed milk, lemon flavor, tapioca starch. One cake in frame; the second stays in the bag. ✏️ CORRECTED at 21:14 from her own words: I shared 1/3 Japanese dessert with Javier — read as Javier had a third of this cake and she ate two-thirds, said so in the reply for her to veto; first logged as the whole cake, 16 g carb, 6 g protein, 150 kcal. 📐 No geometry needed, since it is a single labeled unit and her fraction. BUILD, her two-thirds, about 40 g: 11 g carb, 4 g protein, 100 kcal, about 45 mg calcium (running total today about 640 of 1200). Calorie floor checked: 4 × 11 + 4 × 4 = 60, under 100. Model v5, Dessert, preBG 129 Flat at 19:09, 11 g at the 0-15 factor of 2.0, protein 4 g (under 20, no protein term): 129 + 11 × 2.0 − 10 + 0 − 0.35 × (129 − 115) = 129 + 22 − 10 − 4.9 = about 136, peak at +105 min. Berberine was taken with the 18:00 dinner (see that row); v5 has no berberine term. (BG: 129 mg/dL Flat) (Pred: 126-146 mg/dL @ 8:55 PM) (Protein: 4g | Carbs: ~11g | Cals: ~100) [Coach: A Japanese cheesecake, soft as a souffle 🍰 Your two-thirds is about 11g of carbs with 4g of protein, plus some calcium…",
     "type": "Dessert",
     "date": "2026-09-23T19:10:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-23/2286afdd92c4107c.jpg",
-    "carbs": 16,
-    "cals": 150,
+    "carbs": 11,
+    "cals": 100,
     "delta": null,
     "peak": null
   },
@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-23/ee29a526bc0044d0.jpg",
     "carbs": 47,
     "cals": 225,
-    "delta": null,
-    "peak": null
+    "delta": 42,
+    "peak": 160
   },
   {
     "id": "3e585ec7-0668-81c0-97d4-efa575346480",
@@ -7206,7 +7206,7 @@
   },
   {
     "id": "35e85ec7-0668-8144-b07f-fc8fdd6f0283",
-    "title": "Dinner: Fried egg, slices of jamón serrano and salchichón, pimientos de Padrón, a wedge of manchego, and a slice of rustic bread (BG: 128 mg/dL Flat) (Pred: 146-156 mg/dL @ 10:49 PM) (Protein: 30g | Carbs: ~19g | Cals: ~410) [Coach: Beautifully balanced Spanish plate 🍳 — egg + jamón + cheese stack 30g of solid protein, padrón peppers bring a non-starchy veg, and one slice of bread keeps carbs reasonable. Things should land in a friendly range.]  [id:993c5cc1]",
+    "title": "Dinner: Fried egg, slices of jamón serrano and salchich��n, pimientos de Padrón, a wedge of manchego, and a slice of rustic bread (BG: 128 mg/dL Flat) (Pred: 146-156 mg/dL @ 10:49 PM) (Protein: 30g | Carbs: ~19g | Cals: ~410) [Coach: Beautifully balanced Spanish plate 🍳 — egg + jamón + cheese stack 30g of solid protein, padrón peppers bring a non-starchy veg, and one slice of bread keeps carbs reasonable. Things should land in a friendly range.]  [id:993c5cc1]",
     "type": "Dinner",
     "date": "2026-05-03T21:33:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-03/6eece3be4d0f24cc.jpg",
