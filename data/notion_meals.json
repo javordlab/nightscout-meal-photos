@@ -7,8 +7,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-24/b5829f8f8139d6c3.jpg",
     "carbs": 41,
     "cals": 900,
-    "delta": null,
-    "peak": null
+    "delta": 92,
+    "peak": 184
   },
   {
     "id": "3e585ec7-0668-81df-9e9e-dddd288da350",
@@ -3609,7 +3609,7 @@
   },
   {
     "id": "39e85ec7-0668-81ba-9468-eb5e3eb12f34",
-    "title": "Dinner: turkey and cheese sandwich on multigrain seeded bread (BG: 116 mg/dL Flat) (Pred: 134-154 mg/dL @ 10:10 PM) (Protein: 25g | Carbs: ~32g | Cals: ~320) [Coach: A tidy little dinner 🥪 — turkey and cheese stack up ~25g protein, and you went with the multigrain seeded bread, which brings fiber to slow things down. Simple and well balanced. A few cucumber or tomato slices on the side would round it out if you ever want the veggie bonus.]",
+    "title": "Dinner: turkey and cheese sandwich on multigrain seeded bread (BG: 116 mg/dL Flat) (Pred: 134-154 mg/dL @ 10:10 PM) (Protein: 25g | Carbs: ~32g | Cals: ~320) [Coach: A tidy little dinner �� — turkey and cheese stack up ~25g protein, and you went with the multigrain seeded bread, which brings fiber to slow things down. Simple and well balanced. A few cucumber or tomato slices on the side would round it out if you ever want the veggie bonus.]",
     "type": "Dinner",
     "date": "2026-07-15T21:15:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-15/8d858a1290a5f712.jpg",
