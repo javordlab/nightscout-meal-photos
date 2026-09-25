@@ -1,7 +1,7 @@
 [
   {
     "id": "3e685ec7-0668-814b-ad34-d56fca564cf6",
-    "title": "Dinner: half a cup of cottage cheese in a small cream-glazed ceramic bowl with a spoon standing in it, on the grey polka-dot tablecloth with the card lying to the right (33 minutes after the 18:51 pho and chicken, so CUMULATIVE — inside the 1-hour window; the Dinner type and the 119 preBG anchor are inherited). Her caption: Half cup cottage cheese. ⭐ HER OWN STATED MEASURE, which overrides the photo; nothing sized from the bowl. LEFTOVER MATCH: her house 4% cottage cheese, figures from the 2026-09-22 19:33 half-cup row. BUILD: half a cup, about 113 g — 4 g carb, 12 g protein, 110 kcal, about 90 mg calcium (running total today about 440 of 1200). Dinner protein now about 47 g. Model v5, Dinner cumulative, preBG 119 Flat at 18:49 (the first item's anchor; live 127 Flat at 19:18), cumulative 36 g (32 + 4) at the 31 to 50 factor of 0.9, cumulative protein 47 g (35 + 12): 119 + 36 × 0.9 + 0 + 0.3 × (47 − 20) − 0.35 × (119 − 115) = 119 + 32.4 + 8.1 − 1.4 = about 158, peak at +65 min from this item. No medication reminder, as a cumulative continuation; the dinner reminder went with the 18:51 row. (BG: 127 mg/dL Flat) (Pred: 148-168 mg/dL @ 8:29 PM) (Protein: 12g | Carbs: ~4g | Cals: ~110) [Cumulative Dinner: 36g carbs total] [Coach: A smooth, protein-rich finish 🥣 Half a cup adds 12g of protein for only 4g of carbs, taking dinner to about 47g of protein. It also chips in about 90mg of calcium toward the day.]",
+    "title": "Dinner: half a cup of cottage cheese in a small cream-glazed ceramic bowl with a spoon standing in it, on the grey polka-dot tablecloth with the card lying to the right (33 minutes after the 18:51 pho and chicken, so CUMULATIVE — inside the 1-hour window; the Dinner type and the 119 preBG anchor are inherited). Her caption: Half cup cottage cheese. ⭐ HER OWN STATED MEASURE, which overrides the photo; nothing sized from the bowl. LEFTOVER MATCH: her house 4% cottage cheese, figures from the 2026-09-22 19:33 half-cup row. BUILD: half a cup, about 113 g — 4 g carb, 12 g protein, 110 kcal, about 90 mg calcium (running total today about 440 of 1200). Dinner protein now about 45 g (47 before her 22:24 pho correction). Model v5, Dinner cumulative, recomputed at 22:24 after she corrected the 18:51 pho to about half the bowl, preBG 119 Flat at 18:49 (the first item's anchor; live 127 Flat at 19:18), cumulative 22 g (18 + 4) at the 16 to 30 factor of 1.2, cumulative protein 45 g (33 + 12): 119 + 22 × 1.2 + 0 + 0.3 × (45 − 20) − 0.35 × (119 − 115) = 119 + 26.4 + 7.5 − 1.4 = about 152 (was 158), peak at +65 min from this item. No medication reminder, as a cumulative continuation; the dinner reminder went with the 18:51 row. (BG: 127 mg/dL Flat) (Pred: 142-162 mg/dL @ 8:29 PM) (Protein: 12g | Carbs: ~4g | Cals: ~110) [Cumulative Dinner: 22g carbs total] [Coach: A smooth, protein-rich finish 🥣 Half a cup adds 12g of protein for only 4g of carbs, taking dinner to about 45g of protein. It also chips in about 90mg of calcium toward the day.]",
     "type": "Dinner",
     "date": "2026-09-24T19:24:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-24/5ff4ee868d8960e9.jpg",
@@ -16,10 +16,10 @@
     "type": "Dinner",
     "date": "2026-09-24T18:51:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-24/31840f53b9354ef4.jpg",
-    "carbs": 32,
-    "cals": 425,
-    "delta": null,
-    "peak": null
+    "carbs": 18,
+    "cals": 350,
+    "delta": 67,
+    "peak": 186
   },
   {
     "id": "3e585ec7-0668-8117-8c6a-d6be355ff883",
