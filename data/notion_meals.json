@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-10-07/99ba253fa42c9529.jpg",
     "carbs": 15,
     "cals": 295,
-    "delta": null,
-    "peak": null
+    "delta": 27,
+    "peak": 153
   },
   {
     "id": "3f285ec7-0668-8116-a847-ff6644cab5e1",
@@ -29,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-10-07/10c0360198d6f95d.jpg",
     "carbs": 15,
     "cals": 65,
-    "delta": null,
-    "peak": null
+    "delta": 9,
+    "peak": 153
   },
   {
     "id": "3f285ec7-0668-81b3-ab15-cf0a677dea6f",
@@ -2245,7 +2245,7 @@
   },
   {
     "id": "3c485ec7-0668-81c5-a557-c29cdc1692a1",
-    "title": "Lunch (cont.): a thick slice of rustic white bread spread with liver pate, and half a red apple alongside. Eaten 16 minutes after the 12:37 chips and hummus and therefore a CUMULATIVE LUNCH, the second course of one meal rather than a separate item — this is the food she said at 12:44 she was still deciding on. THE THREE ITEMS ARE HER OWN STATED IDENTIFICATION, carried verbatim; only the portions are estimated. CORRECTED AT 13:06 ON HER OWN STATEMENT — THIS IS NOT SHOP BREAD. As first written this row called it shop bread and costed it from a generic white-bread table, reasoning that her seeded wholegrain loaf had finished at the 09:55 breakfast and its replacement was not yet baked. HER WORDS AT 13:06: the bread she ate is not shop bread, it is THE BREAD SHE MAKES FOR JAVIER, just flour, water, yeast and salt. A SECOND HOMEMADE LOAF EXISTS IN THAT HOUSE AND THIS LOG DID NOT KNOW IT — the standing bread reference described exactly one loaf, so when hers ran out the only remaining hypothesis was a bought one. THE GENERALISABLE FIX IS RECORDED IN THE BREAD REFERENCE: when she says bread it can now be EITHER loaf, so ASK WHICH ONE rather than inferring from which loaf is in stock. RECOSTED FROM A LEAN BUILD of roughly 500g flour, 325g water, 10g salt and 5g yeast, about 840g of dough yielding some 740g baked, giving per gram 0.492g carbohydrate, 0.087g protein and 2.46 cal. THE CORRECTION IS REAL BUT SMALL AND IS REPORTED AS SUCH RATHER THAN INFLATED: carbohydrate and protein are within a rounding of the generic table, and only calories move, from 93 to 86 on this slice, BECAUSE HER LOAF CARRIES NO ADDED SUGAR AND NO FAT where a commercial white bread does. The row's stated macros are left at 28g carbohydrate, 8g protein and 240 cal, since a 7-calorie shift is inside the portion uncertainty on the pate and the apple and re-rounding would imply a precision this row does not have. QUANTITIES FOR JAVIER'S LOAF ARE INFERRED FROM A STANDARD LEAN FORMULA AND NOT STATED BY H…",
+    "title": "Lunch (cont.): a thick slice of rustic white bread spread with liver pate, and half a red apple alongside. Eaten 16 minutes after the 12:37 chips and hummus and therefore a CUMULATIVE LUNCH, the second course of one meal rather than a separate item — this is the food she said at 12:44 she was still deciding on. THE THREE ITEMS ARE HER OWN STATED IDENTIFICATION, carried verbatim; only the portions are estimated. CORRECTED AT 13:06 ON HER OWN STATEMENT — THIS IS NOT SHOP BREAD. As first written this row called it shop bread and costed it from a generic white-bread table, reasoning that her seeded wholegrain loaf had finished at the 09:55 breakfast and its replacement was not yet baked. HER WORDS AT 13:06: the bread she ate is not shop bread, it is THE BREAD SHE MAKES FOR JAVIER, just flour, water, yeast and salt. A SECOND HOMEMADE LOAF EXISTS IN THAT HOUSE AND THIS LOG DID NOT KNOW IT ��� the standing bread reference described exactly one loaf, so when hers ran out the only remaining hypothesis was a bought one. THE GENERALISABLE FIX IS RECORDED IN THE BREAD REFERENCE: when she says bread it can now be EITHER loaf, so ASK WHICH ONE rather than inferring from which loaf is in stock. RECOSTED FROM A LEAN BUILD of roughly 500g flour, 325g water, 10g salt and 5g yeast, about 840g of dough yielding some 740g baked, giving per gram 0.492g carbohydrate, 0.087g protein and 2.46 cal. THE CORRECTION IS REAL BUT SMALL AND IS REPORTED AS SUCH RATHER THAN INFLATED: carbohydrate and protein are within a rounding of the generic table, and only calories move, from 93 to 86 on this slice, BECAUSE HER LOAF CARRIES NO ADDED SUGAR AND NO FAT where a commercial white bread does. The row's stated macros are left at 28g carbohydrate, 8g protein and 240 cal, since a 7-calorie shift is inside the portion uncertainty on the pate and the apple and re-rounding would imply a precision this row does not have. QUANTITIES FOR JAVIER'S LOAF ARE INFERRED FROM A STANDARD LEAN FORMULA AND NOT STATED BY H…",
     "type": "Lunch",
     "date": "2026-08-22T12:53:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-22/89d1b02e5395c6af.jpg",
