@@ -1,5 +1,16 @@
 [
   {
+    "id": "3f385ec7-0668-810f-8755-e4588cf5aa6a",
+    "title": "Lunch: a kale salad in a wide white pasta bowl — torn lacinato kale underneath, topped with cubes of roasted butternut squash (some with skin), chunks of avocado, torn pink ham and halved grape tomatoes, dressed with olive oil and finished with cracked black pepper and a few salt flakes — on the blue-and-yellow floral placemat, a fork at the right. ⭐ HER OWN STATED MEASURES at 13:26: 1 cup kale. 6 tomatoes. 1. 5 slice of ham. 1/2 small avocado. 3 pieces of butternut squash, same sauce as last night's, 1 tbsp olive oil. Her cup, count of six, slice and a half, half a small avocado, three pieces and tablespoon used verbatim. Her same sauce as last night's is read as same squash (autocorrect): no sauce was logged last night and the squash is the 10-06 and 10-07 batch; named to her as the same squash in one clause so one word corrects it. LEFTOVER MATCH: the squash is the 2026-10-06 18:49 and 2026-10-07 18:38 dinners' roasted butternut squash (rows 8e7cadd8, 4bd0c22c) — her three pieces match the three wedges of both rows, about 175 g, cubed today — costed at those rows' figures (10.5 g carb, 3.2 g fiber, 0.9 g protein, 40 kcal and 41 mg calcium per 100 g); the kale is the lacinato of the 2026-10-06 12:51 kale salad (row 43033466), at that row's figures (about 6.7 g carb, 3.3 g protein, 44 kcal and 150 mg calcium per 100 g); the ham is the pink deli ham of the 2026-10-05 12:49 lunch (row a762c0eb), whose three slices weighed about 65 g, so about 22 g a slice, at 130 kcal, 18 g protein and 2 g carb per 100 g; the grape tomatoes at the 10-06 row's six-tomato figures. No card in frame. Scale from the placemat, taken as about 45 by 30 cm (about 26 px per cm at the table, the placemat's apparent aspect 1.42 against 1.5 giving cos θ about 0.95, close to top-down); the bowl rim reads about 845 px across, about 29 cm after the plane correction for its roughly 5 cm height, a wide pasta bowl; the salad itself about 24 cm across. Pieces counted: about 11 tomato halves in view, co…",
+    "type": "Lunch",
+    "date": "2026-10-08T13:26:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-10-08/36c07a005a232614.jpg",
+    "carbs": 26,
+    "cals": 320,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3f385ec7-0668-81bc-b65a-d70e7e578e07",
     "title": "Breakfast: an open-faced slice of her seeded loaf spread with peanut butter and streaked with red jam, on her yellow plate lettered BUMBLE BEE BRIE and TRIPLE CREAM around the rim; at the back left her small red-patterned bowl holding last night's fruit salad (strawberry, red-skinned plum and orange pieces showing) under a mound of cottage cheese, a red spoon in it; her Christmas-tree mug of coffee with milk at the right; on the floral tablecloth. ⭐ HER OWN STATED MEASURES at 09:39: 1 slice bread with 2tbsp p butter, 1 tsp jam. leftover of last night fruit salad with 1/4 cup cottage cheese and 4oz milk with coffee. Her slice count, 2 tablespoons, teaspoon, quarter cup and 4 oz used verbatim. LEFTOVER MATCH: the toast is the same build as the 2026-10-05 09:00 breakfast (row cb6a431f), her own seeded loaf with 2 tablespoons of peanut butter, costed at that row's loaf #4 figures (about 40 g carb, 10 g protein, 272 kcal and 57 mg calcium per 100 g); slice weight not stated, so taken as about 45 g, in line with her recent slices (45 g on 10-07, 46 g on 10-01 and 10-02, 50 g on 10-05) and named to her in one clause so one word corrects it; the jam is her red low-sugar jam of the 10-01 and 10-02 breakfasts; the fruit salad is the 2026-10-07 18:38 dinner's (row 4bd0c22c) — strawberry, plum, orange and white dragon fruit — composition carried over at that row's mix (about 20 g carb, 1.5 g protein and 85 kcal per 180 g), portion re-measured; the cottage cheese is costed at the 10-07 10:17 row's half-cup figures, halved. No card in frame. Scale from the Christmas-tree mug, taken as about 8.3 cm across (about 38 px per cm at the bowl's depth), which puts the bowl at about 13 cm across and the plate, nearer the lens, at about 18 cm; the plate ellipse, 750 by 575 px, gives cos θ about 0.77, a view about 40° off straight down. The slice reads about 10.5 by 8.5 cm and about 1 cm thick, consistent with a 40 to 45 g slice. Fruit: at least 5 pieces visible around the cottage cheese, …",
     "type": "Breakfast",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-10-08/6391c0af5eb73428.jpg",
     "carbs": 47,
     "cals": 505,
-    "delta": null,
-    "peak": null
+    "delta": 58,
+    "peak": 162
   },
   {
     "id": "3f385ec7-0668-8185-886a-ec5c2f621d8f",
