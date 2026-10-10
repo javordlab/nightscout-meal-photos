@@ -7,8 +7,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-10-09/aa31c26fe283a0ce.jpg",
     "carbs": 21,
     "cals": 125,
-    "delta": null,
-    "peak": null
+    "delta": 48,
+    "peak": 152
   },
   {
     "id": "3f585ec7-0668-816d-996f-fce4250cbcee",
@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-10-09/fa08d62f1460fc03.jpg",
     "carbs": 32,
     "cals": 405,
-    "delta": null,
-    "peak": null
+    "delta": 39,
+    "peak": 152
   },
   {
     "id": "3f485ec7-0668-8172-b98a-eeaea5194a2e",
@@ -1112,7 +1112,7 @@
   },
   {
     "id": "3dd85ec7-0668-8100-b90a-cfe57281d081",
-    "title": "Breakfast: a bowl of oatmeal topped with a smooth mound of her own plain yogurt beside the curds of cottage cheese, chopped walnuts, a dark drizzle of honey and cinnamon dusted over it, in her brown-rimmed stoneware bowl on the flamingo placemat with a glass of water behind (her first meal of the day, classified Breakfast by the hour rule, 05:00 to 10:59; NOT cumulative — 10 hours 39 minutes after the 23:27 bedtime snack). ⭐⭐ ALL FIVE QUANTITIES ARE HER OWN STATED MEASURES, GIVEN IN THE CAPTION, and are used verbatim — her words at 10:06: 1/4c oatmeal, 1/3c cottage cheese, 1/3c yogurt, 15g walnuts. 1 tsp honey. The SPG card stands upright on the far side behind the bowl, not on the food plane, and was not used — nothing needed measuring; the photo confirms the build only. Build: a quarter cup dry rolled oats (about 20 g, as yesterday's 11:10 row) P3 C14 cal 75; a third of a cup of cottage cheese (75 g, 4 percent, her 2026-09-12 16:18 anchor) P8 C3 cal 74; a third of a cup of her own homemade plain unsweetened yogurt (about 80 g, scaled from her 2026-09-11 18:39 four-tablespoon row) P3 C4 cal 50; 15 g of walnuts P2 C2 cal 98; one teaspoon of honey (about 7 g) P0 C6 cal 21; cinnamon nil — total P16 C29 cal 318, written as 320. Floor check 4×29 + 4×16 = 180, under 320. Leftover match: the oatmeal is the same dish as yesterday's 11:10 bowl, rebuilt to her stated amounts — cottage cheese halved to a third of a cup, apple out, yogurt and walnuts in. 🧪 Cottage cheese, day three of her own fullness test, a third of a cup; how it sits is her readout, not asked. 📈 Oatmeal runs hotter than its carb band for her on every run on record (2026-09-01: peak 211 on a third cup dry; 2026-09-15: peak 172 against a 130-150 Lunch call on a quarter cup, with the treadmill started 50 minutes in), and it is her reactive-dip food — today's yogurt and walnut fat plus 16 g of protein are the brake; noted for the backfill. 📊 MODEL v5: 92 + 29×1.2 (16-30 g band) = 34.8 + 20 Breakfast interce…",
+    "title": "Breakfast: a bowl of oatmeal topped with a smooth mound of her own plain yogurt beside the curds of cottage cheese, chopped walnuts, a dark drizzle of honey and cinnamon dusted over it, in her brown-rimmed stoneware bowl on the flamingo placemat with a glass of water behind (her first meal of the day, classified Breakfast by the hour rule, 05:00 to 10:59; NOT cumulative — 10 hours 39 minutes after the 23:27 bedtime snack). ⭐⭐ ALL FIVE QUANTITIES ARE HER OWN STATED MEASURES, GIVEN IN THE CAPTION, and are used verbatim — her words at 10:06: 1/4c oatmeal, 1/3c cottage cheese, 1/3c yogurt, 15g walnuts. 1 tsp honey. The SPG card stands upright on the far side behind the bowl, not on the food plane, and was not used — nothing needed measuring; the photo confirms the build only. Build: a quarter cup dry rolled oats (about 20 g, as yesterday's 11:10 row) P3 C14 cal 75; a third of a cup of cottage cheese (75 g, 4 percent, her 2026-09-12 16:18 anchor) P8 C3 cal 74; a third of a cup of her own homemade plain unsweetened yogurt (about 80 g, scaled from her 2026-09-11 18:39 four-tablespoon row) P3 C4 cal 50; 15 g of walnuts P2 C2 cal 98; one teaspoon of honey (about 7 g) P0 C6 cal 21; cinnamon nil �� total P16 C29 cal 318, written as 320. Floor check 4×29 + 4×16 = 180, under 320. Leftover match: the oatmeal is the same dish as yesterday's 11:10 bowl, rebuilt to her stated amounts — cottage cheese halved to a third of a cup, apple out, yogurt and walnuts in. 🧪 Cottage cheese, day three of her own fullness test, a third of a cup; how it sits is her readout, not asked. 📈 Oatmeal runs hotter than its carb band for her on every run on record (2026-09-01: peak 211 on a third cup dry; 2026-09-15: peak 172 against a 130-150 Lunch call on a quarter cup, with the treadmill started 50 minutes in), and it is her reactive-dip food — today's yogurt and walnut fat plus 16 g of protein are the brake; noted for the backfill. 📊 MODEL v5: 92 + 29×1.2 (16-30 g band) = 34.8 + 20 Breakfast interce…",
     "type": "Breakfast",
     "date": "2026-09-16T10:06:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-16/00280553c79e3a21.jpg",
