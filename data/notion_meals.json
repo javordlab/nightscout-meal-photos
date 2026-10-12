@@ -1,5 +1,16 @@
 [
   {
+    "id": "3f785ec7-0668-81d2-872a-c85fa323bcf6",
+    "title": "Dinner: tortilla chips with more of the same guacamole and grated cheese, added to the 18:31 chicken fajita taco — on the same white wide-rimmed dinner plate, the taco now gone: a small pile of golden corn tortilla chips at the upper left, a fluffy mound of the finely grated white cheese at the lower center, a mound of guacamole at the right with a fork resting in it, and two lime wedges at the top (one squeezed). Photo with no caption. Chips COUNTED: seven triangles, all in the pile and fully in frame, about 6 to 7 cm on a side, restaurant-style. NOT COUNTED: the lime wedges, the water glass, the striped bowl at the top and the items at the right edge. LEFTOVER MATCH: the guacamole and the cheese are the same batch as the 18:31 taco six minutes earlier (id dceadb60); their composition is carried over and the portions re-measured here. 📐 Scale: no card in frame; the plate is the ruler, about 1095 px across the frame and about 860 px top to bottom, so cos θ ≈ 0.79 and the view is about 38° off straight down; taken as the same 26.5 cm dinner plate, about 4.1 px/mm across the frame. Guacamole mound about 7 cm across and 6 cm deep, about 2.5 cm high read at the 38° view, lumpy, about 45 g — about three tablespoons. Cheese mound about 6 cm across, about 3 cm high, loose fine shreds spreading at its lower left, about 20 g at an assumed loose packing — about a third of a cup, a little more than on the taco. Chips at about 2.8 g each (10 to the ounce for this size), about 20 g. BUILD: tortilla chips 7, about 20 g — 13.5 g carb, 1.5 g protein, 100 kcal, about 25 mg calcium; guacamole about 45 g (about 36 g avocado plus lime, onion and salt) — 3.5 g carb (mostly fiber), 1 g protein, 65 kcal, about 6 mg calcium; grated cheese about 20 g, costed as a hard white cheese as on the taco — 0.5 g carb, 6.5 g protein, 80 kcal, about 220 mg calcium (about 70 mg less if it is Monterey Jack). Totals about 18 g carb, 9 g protein, about 245 kcal. About 250 mg calcium; running total today…",
+    "type": "Dinner",
+    "date": "2026-10-11T18:37:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-10-11/37b899973ec3f061.jpg",
+    "carbs": 18,
+    "cals": 245,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3f785ec7-0668-810e-a88a-fda95ce501ba",
     "title": "Dinner: an open chicken fajita taco — one soft flour tortilla, pale with light toasted spots and an orange oil sheen from the filling, laid flat on a white wide-rimmed dinner plate on the blue floral placemat, topped with a smear of guacamole, browned fajita-seasoned chicken pieces with soft cooked onion strips, a little tomato salsa (diced tomato, onion and cilantro), a fluffy mound of finely grated white cheese, a few cilantro leaves and a lime wedge on the tortilla's edge. Photo with no caption. Chicken pieces COUNTED: seven bite-size chunks, about 2 to 2.5 cm each, all on the tortilla. NOT COUNTED: the serving dish of fajita filling clipped at the top right corner, which shows red bell pepper strips — no pepper strips are on her plate (the red dice by the guacamole read as salsa tomato), consistent with peppers giving her indigestion; the striped bowl, the water glass and the napkin; the lime wedge is not costed. LEFTOVER MATCH: the tortilla reads as the same flour tortilla as the 2026-10-10 13:17 quesadilla (id 81fcf67f); its per-gram figures are carried over (24 g carb, 4 g protein, 145 kcal, 60 mg calcium per 49 g) and its size re-measured here. The guacamole is costed at her fixed avocado portion of about 40 g flesh, not sized from the photo; she also had avocado at the 13:43 lunch. 📐 Scale: a card lies at the far top-left of the table, off the placemat, at the frame edge and well behind the plate — wrong plane and too oblique to calibrate, so not used. The plate is the ruler: about 865 px across the frame and about 775 px top to bottom, so cos θ ≈ 0.90 and the view is about 26° off straight down; taken as a 26.5 cm dinner plate, that gives about 3.3 px/mm across the frame. The tortilla is about 562 px across, about 17 to 18 cm — a 7-inch tortilla, about 42 g, a little smaller than yesterday's 8-inch; if it is the same 8-inch pack and the plate is bigger than assumed, add about 3 g carb (the prediction barely moves, because 32 g falls into the 0.9 band). C…",
     "type": "Dinner",
@@ -5666,7 +5677,7 @@
   },
   {
     "id": "38285ec7-0668-81af-a18a-fb3111c9b01d",
-    "title": "Snack: ice cream wafer sandwich (vanilla and strawberry between two wafers) (BG: 154 mg/dL Flat) (Pred: 164-184 mg/dL @ 6:33 PM) (Protein: 3g | Carbs: ~28g | Cals: ~200) [Coach: Right on plan ��� your one daily treat 🍦. Just a heads-up the timing's a touch high: BG is already at 154 from lunch, so this sugary corte will likely push it toward the 170s for a bit. Totally fine as your single treat; a short walk after would help bring it back down nicely.]",
+    "title": "Snack: ice cream wafer sandwich (vanilla and strawberry between two wafers) (BG: 154 mg/dL Flat) (Pred: 164-184 mg/dL @ 6:33 PM) (Protein: 3g | Carbs: ~28g | Cals: ~200) [Coach: Right on plan — your one daily treat 🍦. Just a heads-up the timing's a touch high: BG is already at 154 from lunch, so this sugary corte will likely push it toward the 170s for a bit. Totally fine as your single treat; a short walk after would help bring it back down nicely.]",
     "type": "Snack",
     "date": "2026-06-17T17:33:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-17/a4bef7024205b3f3.jpg",
@@ -7514,7 +7525,7 @@
   },
   {
     "id": "36185ec7-0668-819f-880f-d5944820971e",
-    "title": "Dinner: Pan of garlic shrimp (gambas al ajillo) — whole shell-on shrimp sautéed in olive oil with garlic (BG: 121 mg/dL Flat) (Pred: 118-128 mg/dL @ 10:47 PM) (Protein: 24g | Carbs: ~2g | Cals: ~220) [Coach: Now this is a T2D dream dinner 🦐 — pure protein from the shrimp, big flavor from the garlic, olive oil for satiety, and basically zero carbs. Your BG should barely notice this happened. Beautifully balanced for evening.]",
+    "title": "Dinner: Pan of garlic shrimp (gambas al ajillo) — whole shell-on shrimp sautéed in olive oil with garlic (BG: 121 mg/dL Flat) (Pred: 118-128 mg/dL @ 10:47 PM) (Protein: 24g | Carbs: ~2g | Cals: ~220) [Coach: Now this is a T2D dream dinner ��� — pure protein from the shrimp, big flavor from the garlic, olive oil for satiety, and basically zero carbs. Your BG should barely notice this happened. Beautifully balanced for evening.]",
     "type": "Dinner",
     "date": "2026-05-15T21:31:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-15/56a109b8d614e7a8.jpg",
