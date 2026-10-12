@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-10-12/b0c65dd051825d85.jpg",
     "carbs": 22,
     "cals": 345,
-    "delta": null,
-    "peak": null
+    "delta": 23,
+    "peak": 137
   },
   {
     "id": "3f785ec7-0668-81d2-872a-c85fa323bcf6",
@@ -4940,7 +4940,7 @@
   },
   {
     "id": "39285ec7-0668-815c-b1e4-e54071b774a4",
-    "title": "Breakfast: Peanut butter, fresh blueberries and flax seed sandwich on multigrain bread, tea with milk (BG: 116 mg/dL Flat) (Pred: 174-194 mg/dL @ 12:49 PM) (Protein: 18g | Carbs: ~48g | Cals: ~460) [Coach: Now this is a breakfast that earns its keep 🥑 — seeded bread, flax, and blueberries all bring fiber to slow the spike, while the peanut butter adds staying power. Just a hair shy of your protein target, so a boiled egg or a spoon of Greek yogurt on the side would round it out beautifully.]",
+    "title": "Breakfast: Peanut butter, fresh blueberries and flax seed sandwich on multigrain bread, tea with milk (BG: 116 mg/dL Flat) (Pred: 174-194 mg/dL @ 12:49 PM) (Protein: 18g | Carbs: ~48g | Cals: ~460) [Coach: Now this is a breakfast that earns its keep 🥑 �� seeded bread, flax, and blueberries all bring fiber to slow the spike, while the peanut butter adds staying power. Just a hair shy of your protein target, so a boiled egg or a spoon of Greek yogurt on the side would round it out beautifully.]",
     "type": "Breakfast",
     "date": "2026-07-03T11:22:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-03/e18f60a45aab8139.jpg",
