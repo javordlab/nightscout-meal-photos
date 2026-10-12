@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-10-11/bf9380126be3149e.jpg",
     "carbs": 22,
     "cals": 255,
-    "delta": null,
-    "peak": null
+    "delta": 39,
+    "peak": 152
   },
   {
     "id": "3f685ec7-0668-810f-a77a-cb1263e08d16",
@@ -3675,7 +3675,7 @@
   },
   {
     "id": "3af85ec7-0668-81f7-a940-fba5bb70a8de",
-    "title": "Dinner: a flour tortilla taco with seasoned ground beef, sautéed peppers and onions, avocado, shredded cheese, and a dollop of sour cream (BG: Unknown) (Pred: Pending) (Protein: 19g | Carbs: ~32g | Cals: ~480) [Coach: Taco night, properly built 🌮 — beef and cheese bring the protein, the peppers and onions sneak in vegetables, and avocado rounds it out. One well-loaded tortilla instead of three skimpy ones is the right call, keeping carbs near 32g. If a second one is tempting, a lettuce wrap version would keep the party going carb-free.]",
+    "title": "Dinner: a flour tortilla taco with seasoned ground beef, sautéed peppers and onions, avocado, shredded cheese, and a dollop of sour cream (BG: Unknown) (Pred: Pending) (Protein: 19g | Carbs: ~32g | Cals: ~480) [Coach: Taco night, properly built ��� — beef and cheese bring the protein, the peppers and onions sneak in vegetables, and avocado rounds it out. One well-loaded tortilla instead of three skimpy ones is the right call, keeping carbs near 32g. If a second one is tempting, a lettuce wrap version would keep the party going carb-free.]",
     "type": "Dinner",
     "date": "2026-07-31T19:17:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-31/d2baf862a3ca0382.jpg",
