@@ -1,5 +1,16 @@
 [
   {
+    "id": "3fa85ec7-0668-8113-abcc-da453ca8e61e",
+    "title": "Dinner: one single-serve Trader Joe's mango yogurt cup, 113 g, plus three tablespoons of her homemade plain yogurt. Her photo is the cup's label held in her hand: Nutrition Facts per container (113 g) 140 kcal, total fat 6 g, total carb 18 g, fiber 0, total sugars 16 g including 13 g added, protein 4 g, calcium 10% DV; ingredients pasteurized milk, sugar, cream, mango purée concentrate, modified corn starch, whey protein concentrate, gelatin, live cultures; distributed by Trader Joe's, Monrovia CA. ⭐ HER OWN WORDS at 21:04: This plus 3 tbsp of my yogurt. Read as the whole container plus her stated 3 tablespoons. 📐 Nothing sized from the photo: the cup is costed from its own label, the homemade yogurt from her stated measure. BUILD: mango yogurt cup 113 g — 18 g carb, 4 g protein, 140 kcal, about 130 mg calcium (10% DV); homemade plain yogurt 3 tablespoons, about 45 g — 2 g carb, 1.5 g protein, 28 kcal, about 52 mg calcium. Totals about 20 g carb, 6 g protein (5.5 rounded), about 170 kcal. About 180 mg calcium; running total today about 700 of 1200. Calorie floor checked: 4 × 20 + 4 × 6 = 104, under 170. NOT cumulative: the previous Food row was the 18:35 dinner, 2 h 29 min earlier; Dinner by the hour rule (21:04). Live BG 106 Flat (CGM 20:59, 5 min old). The 18:35 macarrones dinner, computed from Nightscout 18:34 to 20:54: 109 → 143 at 19:14 (+34), inside its 134-154 forecast, back to 99-101 by 19:44-19:54, a second bump to about 130 from 20:14 to 20:34, then 114. Model v5.1, Dinner, preBG 106, 20 g at the 16 to 30 factor of 1.2 = 24, intercept 0, protein under 20 so no term, damping −0.35 × (106 − 115) = +3.15, so 106 + 24 + 0 + 3.15 = about 133, peak at +65 min. No 💊 line: today's dinner Metformin and Vitamin D rows already exist (auto-tracked against the 18:35 dinner). Coach: no remark on the sweetened cup, her plan or swaps (her request 2026-10-13 09:40). (BG: 106 mg/dL Flat) (Pred: 123-143 mg/dL @ 10:09 PM) (Protein: 6g | Carbs: ~20g | Cals: ~170) [Coach: A …",
+    "type": "Dinner",
+    "date": "2026-10-14T21:04:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-10-14/031213fbb7ceb7e7.jpg",
+    "carbs": 20,
+    "cals": 170,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3fa85ec7-0668-8191-bdb4-d01333a226d6",
     "title": "Dinner: macarrones with tomato — penne in a homemade tomato sauce with soft onion, topped with chopped hard-boiled egg, with a mound of sautéed Swiss chard and its stems at the back, in a wide white pasta bowl on the blue floral placemat, a fork resting on the rim. HER CONTEXT: the macarrones Javier asked for today (her words 10:57 and 11:00, \"I'll keep my serving small\"); last made 2026-05-05 in Spain with the same tomato and chopped-egg build. NOT COUNTED: the second plate of chard cut off at the top right edge. Count: sixteen penne pieces visible in one pass, more hidden under the egg, so about 22 to 26 in the bowl. 📐 No card in frame. The bowl is taken at about 24 cm across, and the penne measure about 6 cm by 1.2 cm against it, which fits cooked penne. The bowl ellipse, 1155 by 880 px, gives cos θ ≈ 0.76, about 40° off straight down. The pasta spread is about 18 by 14 cm after the depth correction, mostly one layer about 1.3 cm deep, so about 0.9 cup bulk; the piece count (about 24 at 3.5 g cooked) gives about 85 g. Taken as about 85 g cooked, roughly three-quarters of a cup. The egg pile reads as about one and a half eggs; the chard mound about 7 by 5 cm and 3 to 4 cm high, about half a cup cooked. BUILD: penne about 85 g cooked — 26 g carb, 5 g protein, 135 kcal, about 6 mg calcium; tomato sauce about 70 g with a little olive oil — 5 g carb, 1 g protein, 70 kcal, about 10 mg calcium; hard-boiled egg about one and a half, 75 g — 1 g carb, 9.5 g protein, 115 kcal, about 40 mg calcium; sautéed chard about 90 g with a little oil — 4 g carb, 1.5 g protein, 60 kcal, about 50 mg calcium. Totals about 36 g carb, 17 g protein, about 380 kcal. About 105 mg calcium; running total today about 520 of 1200. Calorie floor checked: 4 × 36 + 4 × 17 = 212, under 380. NOT cumulative: the previous Food row was the 14:58 cakes, 3 h 37 min earlier; Dinner by the hour rule (18:35). Live BG 109 Flat (CGM 18:34, 1 min old). Model v5.1, Dinner, preBG 109, 36 g at the 31 to 50 factor…",
     "type": "Dinner",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-10-14/a36f3fb906c6156f.jpg",
     "carbs": 36,
     "cals": 380,
-    "delta": null,
-    "peak": null
+    "delta": 34,
+    "peak": 143
   },
   {
     "id": "3f985ec7-0668-819c-a883-cce45bde8ffd",
@@ -6964,7 +6975,7 @@
   },
   {
     "id": "36e85ec7-0668-81e8-a83d-f66a5470e316",
-    "title": "Snack: café cortado / café con leche at a café (part of a tapa-break, assumed unsugared) (BG: 99 mg/dL Flat) (Pred: 88-98 mg/dL @ 2:19 PM) (Protein: 1g | Carbs: ~3g | Cals: ~20) [Coach: Café cortado ☕ �� near-zero BG impact if unsugared. Part of a Spanish café tapa-break with a small egg tapa to follow.]",
+    "title": "Snack: café cortado / café con leche at a café (part of a tapa-break, assumed unsugared) (BG: 99 mg/dL Flat) (Pred: 88-98 mg/dL @ 2:19 PM) (Protein: 1g | Carbs: ~3g | Cals: ~20) [Coach: Café cortado ☕ — near-zero BG impact if unsugared. Part of a Spanish café tapa-break with a small egg tapa to follow.]",
     "type": "Snack",
     "date": "2026-05-28T12:13:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-28/b831c9c9324f81f8.jpg",
