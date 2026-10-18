@@ -1,5 +1,16 @@
 [
   {
+    "id": "3fd85ec7-0668-8114-adce-ce7e179705f6",
+    "title": "Lunch: half a cup of papaya and a plate of her unsalted in-shell pistachios — the pistachios on a yellow Bumble Bee Triple Cream Brie plate on the dark stone counter; the papaya is not in the frame. An iced amber drink sits at the top edge, cut off by the frame and not in her message, so it is NOT counted (the reply says so, for her to correct). ⭐ HER OWN WORDS at 15:25: Log 1/2 cup papaya and pistachios. Papaya by her half cup; pistachios COUNTED from the photo: 43 nuts, one pass left to right across the plate, all fully visible on one layer, which matches yesterday's half cup in shell at about 44. No scale reference in frame; none needed with the count. LEFTOVER MATCH: the same in-shell pistachios as the 2026-10-17 10:40 and 20:14 adds (shells about half the in-shell mass), and the papaya at the figures of the 2026-10-10 and 10-11 half-cup adds. BUILD: pistachio kernels 43, about 24.5 g — 7 g carb (6.8, about 2.5 g fiber), 5 g protein, about 140 kcal, about 25 mg calcium; papaya half a cup cubed, about 70 g — 8 g carb, 0.3 g protein, about 35 kcal, about 14 mg calcium. Totals about 15 g carb (14.8), 5 g protein, about 175 kcal. About 40 mg calcium; running total today about 335 of 1200. Calorie floor checked: 4 × 15 + 4 × 5 = 80, under 175. NOT cumulative: the previous Food row is the 11:41 milk, 3h44m earlier; Lunch by the hour. No 💊 line: a Metformin 500mg (lunch) row for today already exists (auto-anchored to 11:30 — see the 11:30 row's note for Javi on the breakfast/lunch dose mismatch). BG at the meal 126 Flat (CGM 15:24, one minute old). Model v5.3: carb rise 19.5 + 0.2 × 15 = 22.5, intercept 0, no fast-carb bump, protein term 0, damping −0.35 × (126 − 115) = −3.85, so 126 + 22.5 − 3.85 ≈ 145, peak at +70 min. (BG: 126 mg/dL Flat) (Pred: 135-155 mg/dL @ 4:35 PM) (Protein: 5g | Carbs: ~15g | Cals: ~175) [Coach: Pistachios served on a brie plate, very fancy for a birthday afternoon 😄 Paired with papaya, the nuts' fat, fiber and protein keep the fruit's suga…",
+    "type": "Lunch",
+    "date": "2026-10-18T15:25:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-10-18/5c2107d1951e43db.jpg",
+    "carbs": 15,
+    "cals": 175,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "3fd85ec7-0668-8159-a7ba-d35a2d102b56",
     "title": "Lunch: one slice of her dark seeded bread spread with peanut butter and swirled with a teaspoon of dark jam, on a white plate, beside a small pink bowl of cottage cheese topped with one kiwi cut into chunks, a red spoon in the bowl, on the blue floral placemat; a glass of water at the right and her pill organiser at the top left (not food). Her first food of the day, on her birthday. ⭐ HER OWN STATED MEASURES at 11:30: 1 slice of bread 2tbsp peanut butter. 1 tsp jam, 1/4 cup cottage cheese, 1 kiwi. Her measures govern; no scale reference in frame and none needed; the bread is one standard slice by the loaf rule, never sized from the photo. LEFTOVER MATCH: the bread is her homemade loaf #5 (45 g slice default, loaf per-100 g figures) and the peanut butter the same as the 2026-10-15 10:12 breakfast; the cottage cheese (2%) and kiwi as in the 2026-10-17 10:27 breakfast, the cottage cheese scaled to a quarter cup. The jam is costed as regular jam (it would be less if low-sugar). BUILD: bread one slice, about 45 g — 18 g carb, 4.5 g protein, about 122 kcal, about 26 mg calcium; peanut butter 2 tablespoons, about 32 g — 7 g carb, 8 g protein, 190 kcal, about 14 mg calcium; jam 1 teaspoon, about 7 g — 4.5 g carb, 0 g protein, about 17 kcal, about 1 mg calcium; cottage cheese 2% a quarter cup, about 57 g — 2 g carb, 6 g protein, about 45 kcal, about 50 mg calcium; kiwi one medium, about 75 g — 11 g carb (about 2 g fiber), 1 g protein (0.8), about 46 kcal, about 25 mg calcium. Totals about 42 g carb (42.5), 19 g protein (19.3), about 420 kcal. About 115 mg calcium; running total today about 115 of 1200. Calorie floor checked: 4 × 42 + 4 × 19 = 244, under 420. NOT cumulative: first Food row of the day (the last was the 2026-10-17 20:14 pistachios); Lunch by the hour rule (11:30), as on the 2026-08-07, 08-12, 08-21, 09-15 and 09-28 first meals after 11:00. 💊 line sent: the MORNING set (Lisinopril, Rosuvastatin, Metformin 500mg, Vitamin B12), not the lunch line, because this …",
     "type": "Lunch",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-10-18/1ef87b962f00bd22.jpg",
     "carbs": 42,
     "cals": 420,
-    "delta": null,
-    "peak": null
+    "delta": 67,
+    "peak": 165
   },
   {
     "id": "3fc85ec7-0668-810e-8dae-f846cc64f835",
