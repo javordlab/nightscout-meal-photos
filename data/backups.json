@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-21T18:00:04.519Z",
+  "lastUpdated": "2026-10-21T19:01:14.467Z",
   "serverTz": "America/Los_Angeles",
   "dbError": null,
   "tokenUsage": [
@@ -10,12 +10,6 @@
       "link": "https://ollama.com"
     },
     {
-      "platform": "Gemini Antigravity",
-      "bucketType": "Sign in\nwith your Google Account. This account will be available to other Google apps in the browser.\nEmail or phone\nForgot email?\nNot your computer? Use a private browsing window to sign in. Learn more about using Guest mode\nNext\nCreate account\nAfrikaans\nazərbaycan\nbosanski\ncatalà\nČeština\nCymraeg\nDansk\nDeutsch\neesti\nEnglish (United Kingdom)\nEnglish (United States)\nEspañol (España)\nEspañol (Latinoamérica)\neuskara\nFilipino\nFrançais (Canada)\nFrançais (France)\nGaeilge\ngalego\nHrvatski\nIndonesia\nisiZulu\níslenska\nItaliano\nKiswahili\nlatviešu\nlietuvių\nmagyar\nMelayu\nNederlands\nnorsk\no‘zbek\npolski\nPortuguês (Brasil)\nPortuguês (Portugal)\nromână\nshqip\nSlovenčina\nslovenščina\nsrpski (latinica)\nSuomi\nSvenska\nTiếng Việt\nTürkçe\nΕλληνικά\nбеларуская\nбългарски\nкыргызча\nқазақ тілі\nмакедонски\nмонгол\nРусский\nсрпски (ћирилица)\nУкраїнська\nქართული\nհայերեն\n‫עברית‬\n‫اردو‬\n‫العربية‬\n‫فارسی‬\nአማርኛ\nनेपाली\nमराठी\nहिन्दी\nঅসমীয়া\nবাংলা\nਪੰਜਾਬੀ\nગુજરાતી\nଓଡ଼ିଆ\nதமிழ்\nతెలుగు\nಕನ್ನಡ\nമലയാളം\nසිංහල\nไทย\nລາວ\nမြန်မာ\nខ្មែរ\n한국어\n中文（香港）\n日",
-      "realTokens": 0,
-      "link": "https://aistudio.google.com/app/plan"
-    },
-    {
       "platform": "OpenAI Codex",
       "bucketType": "Pay-as-you-go",
       "realTokens": 0,
@@ -23,8 +17,8 @@
     }
   ],
   "database": {
-    "glucose": 64466,
-    "notion": 5452
+    "glucose": 64478,
+    "notion": 5456
   },
   "syncHistory": [
     {
@@ -174,63 +168,11 @@
     },
     {
       "date": "2026-10-21",
-      "glucose": 64466,
-      "notion": 5452
+      "glucose": 64478,
+      "notion": 5456
     }
   ],
   "glucoseTrend": [
-    {
-      "t": "2026-09-21T18:04:57.000Z",
-      "v": 121
-    },
-    {
-      "t": "2026-09-21T18:09:57.000Z",
-      "v": 120
-    },
-    {
-      "t": "2026-09-21T18:14:57.000Z",
-      "v": 123
-    },
-    {
-      "t": "2026-09-21T18:19:57.000Z",
-      "v": 121
-    },
-    {
-      "t": "2026-09-21T18:23:55.000Z",
-      "v": 118
-    },
-    {
-      "t": "2026-09-21T18:29:55.000Z",
-      "v": 118
-    },
-    {
-      "t": "2026-09-21T18:34:56.000Z",
-      "v": 110
-    },
-    {
-      "t": "2026-09-21T18:39:57.000Z",
-      "v": 105
-    },
-    {
-      "t": "2026-09-21T18:44:56.000Z",
-      "v": 100
-    },
-    {
-      "t": "2026-09-21T18:49:56.000Z",
-      "v": 99
-    },
-    {
-      "t": "2026-09-21T18:51:57.000Z",
-      "v": 98
-    },
-    {
-      "t": "2026-09-21T18:53:05.000Z",
-      "v": 100
-    },
-    {
-      "t": "2026-09-21T18:57:56.000Z",
-      "v": 98
-    },
     {
       "t": "2026-09-21T19:14:56.000Z",
       "v": 94
@@ -34346,6 +34288,54 @@
     {
       "t": "2026-10-21T17:58:59.000Z",
       "v": 136
+    },
+    {
+      "t": "2026-10-21T18:04:00.000Z",
+      "v": 137
+    },
+    {
+      "t": "2026-10-21T18:09:59.000Z",
+      "v": 134
+    },
+    {
+      "t": "2026-10-21T18:13:59.000Z",
+      "v": 134
+    },
+    {
+      "t": "2026-10-21T18:18:59.000Z",
+      "v": 132
+    },
+    {
+      "t": "2026-10-21T18:23:59.000Z",
+      "v": 126
+    },
+    {
+      "t": "2026-10-21T18:29:00.000Z",
+      "v": 114
+    },
+    {
+      "t": "2026-10-21T18:34:58.000Z",
+      "v": 111
+    },
+    {
+      "t": "2026-10-21T18:38:59.000Z",
+      "v": 109
+    },
+    {
+      "t": "2026-10-21T18:43:59.000Z",
+      "v": 100
+    },
+    {
+      "t": "2026-10-21T18:49:59.000Z",
+      "v": 93
+    },
+    {
+      "t": "2026-10-21T18:54:00.000Z",
+      "v": 90
+    },
+    {
+      "t": "2026-10-21T18:59:59.000Z",
+      "v": 83
     }
   ],
   "glucoseTrendError": null,
