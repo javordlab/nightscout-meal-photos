@@ -1,5 +1,16 @@
 [
   {
+    "id": "40185ec7-0668-8167-b32d-e9ac05a09b55",
+    "title": "Dinner: an open-faced fajita-style taco — one flour tortilla, charred in dark spots, laid flat on a white rimmed dinner plate and topped with pulled pork, strips of red and green bell pepper, a little cooked onion, a dollop of herby guacamole and chopped cilantro and chives, with a lime wedge at the plate's edge — plus a small round glass bowl of sautéed dark leafy greens with sliced white stems, read as Swiss chard with its stems, on the blue floral placemat. No caption; photo only. No scale reference in frame; portions estimated against a dinner plate assumed at approx. 27 cm, which puts the tortilla at about 21 cm across, an 8-inch one, about 45 g. PEPPERS NOT COUNTED: she leaves bell peppers because they give her indigestion (her words 2026-08-28), so the red and green strips, about 50 g, are excluded; if she eats them they add about 3 g carb, 0.5 g protein and 15 kcal. EXCLUDED: a Christmas-tree pitcher at the top-left edge (contents unseen, not counted) and a white cork-lidded canister at the top-right (not food). LEFTOVER MATCH: the tortilla is costed between the 2026-10-11 18:31 fajita taco's 42 g tortilla (id dceadb60) and the 2026-10-10 13:17 quesadilla's 49 g 8-inch one (id 81fcf67f); the guacamole at the 2026-10-11 and 2026-10-13 dinners' figures; the chard as the house sautéed chard of the 2026-10-14 18:35 dinner. BUILD: flour tortilla about 45 g — 22.5 g carb, 3.8 g protein, about 133 kcal, about 50 mg calcium; pulled pork about 70 g cooked — 0 g carb, 18 g protein, about 165 kcal, about 15 mg calcium; cooked onion about 15 g — 1.4 g carb, 0.2 g protein, about 6 kcal, about 3 mg calcium; guacamole about 45 g (about 36 g avocado) — 3.5 g carb (mostly fiber), 1 g protein, about 65 kcal, about 6 mg calcium; cilantro, chives and a squeeze of lime about 6 g — 0.5 g carb, 0.2 g protein, about 3 kcal, about 4 mg calcium; cooking fat for the filling, about half a teaspoon share, assumed — about 20 kcal; sautéed chard about half a cup, about 88 g, with about a…",
+    "type": "Dinner",
+    "date": "2026-10-21T18:24:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-10-21/0e1728ca0eb83ad9.jpg",
+    "carbs": 32,
+    "cals": 450,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "40085ec7-0668-8145-a343-e3356b34eeba",
     "title": "Lunch: an open-faced slice of her dark seeded bread topped with one sliced hard-boiled egg, half a medium avocado in chunks and two slices of prosciutto draped over the top, on her painted fig-leaf plate on the blue floral placemat, added to the 12:22 pistachios. ⭐ HER OWN STATED MEASURES at 13:06: Bread, 1 egg, 1/2 medium avocado. 2 slices prosciutto. No scale reference in frame; her stated counts govern every component. COUNTED from the photo: one slice of bread, egg rounds from one egg. The bread is one standard 45 g slice per her loaf rule, never sized from the photo. The avocado is HER named fraction, half a medium one, so her usual fixed 35 g portion does not apply: costed at about 68 g of flesh (a medium Hass about 136 g), about twice her usual serving. LEFTOVER MATCH: the bread and prosciutto are costed at the 2026-10-19 13:30 lunch's figures (id 2aa7de4c), the egg at the 2026-10-20 10:06 breakfast's large hard-boiled egg (id ceceb3a6). BUILD: bread one slice, 45 g — 18 g carb, 4.5 g protein, about 122 kcal, about 26 mg calcium; egg one large, about 50 g — 0.4 g carb, 6.3 g protein, about 72 kcal, about 28 mg calcium; avocado half a medium, about 68 g — 5.9 g carb (about 4.6 g fiber), 1.4 g protein, about 114 kcal, about 9 mg calcium; prosciutto 2 slices, about 30 g — 0 g carb, 8 g protein, about 70 kcal, about 4 mg calcium. This row: about 24 g carb (24.3), 20 g protein (20.2), about 380 kcal (378). About 65 mg calcium; running total today about 275 of 1200 (breakfast 195, pistachios 15). Calorie floor checked: 4 × 24 + 4 × 20 = 176, under 380. This row carries ONLY this item's increment. CUMULATIVE: 44 minutes after the 12:22 pistachios, inside the 1-hour window, so Lunch, anchored to the 12:22 preBG 80 (CGM 12:19); live BG 91 Flat (CGM 13:03) noted but not used. Sitting totals about 29 g carb (29.3), 24 g protein (23.7), about 475 kcal. No 💊 line: cumulative continuation, the Metformin 500mg lunch reminder went out at 12:22 (she said at 12:24 she would …",
     "type": "Lunch",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-10-21/dd1b6102b2fa84bf.jpg",
     "carbs": 24,
     "cals": 380,
-    "delta": null,
-    "peak": null
+    "delta": 6,
+    "peak": 93
   },
   {
     "id": "40085ec7-0668-8168-9398-fe5a0e5d75c1",
