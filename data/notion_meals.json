@@ -1,5 +1,16 @@
 [
   {
+    "id": "40485ec7-0668-811c-a8a2-dbf080badcb1",
+    "title": "Lunch: a grilled cheese sandwich on 70 g of her seeded bread with two slices of cheddar and two kale leaves wilted inside, on a white dinner plate, with two rind-on pieces of watermelon on the yellow Bumble Bee Triple Cream Brie plate beside it, on the floral placemat on the glass table — the bread toasted dry and golden with sunflower seeds on top, the cheese melted orange at the edges and the dark kale showing at one side. ⭐ HER OWN STATED MEASURES at 13:19: 70g bread, 2 slices cheese, 2 kale leaves and watermelon. Her 70 g, two slices and two leaves used verbatim; the watermelon amount was not stated and is measured from the photo. Portions calibrated against the AAA card lying on the placemat, long axis pointing away from the lens: short edges about 145 and 157 px, long edges about 198 and 185 px, so 2.8 px/mm across the frame and cos θ = 0.80, a view about 37° off straight down. The watermelon pieces run off the left edge of the frame, so part of the footprint is assumed: about 120 cm² after dividing the depth axis by cos θ, the plane-offset correction and an allowance for the cut-off part, about 15% of it rind, at about 2–2.5 cm thick. That matches the 2026-10-24 12:22 lunch's plate (id a3a48f8a) exactly: two rind-on pieces on the same 19–20 cm plate, about half a round slice from a small melon, so this is read as the same melon and costed at that row's 225 g of flesh, about a cup and a half if cubed. COUNTED: two watermelon pieces, two kale leaves, two cheese slices (her count); the top slice of bread is broken in two. No butter or oil visible on the bread, none added. The bread is the same seeded loaf as the 09:44 toast and costed at the same per-gram figures (40 g carb, 10 g protein, 272 kcal, 57 mg calcium per 100 g); the cheese read as cheddar from its orange melt, at a 21 g deli slice; the kale at the 2026-10-24 12:22 lunch's per-gram lacinato figures. EXCLUDED: the pill organizer and the water glass at the top, the card, not food. BUILD: bread 70 g — 2…",
+    "type": "Lunch",
+    "date": "2026-10-25T13:19:00.000-07:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-10-25/3c3d1f7316de8796.jpg",
+    "carbs": 47,
+    "cals": 438,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "40485ec7-0668-8145-8da6-d8118d34a561",
     "title": "Breakfast: an open-faced slice of whole-grain bread spread with cream cheese and topped with her homemade no-sugar-added blueberry jam (whole glossy berries), on the yellow Bumble Bee Triple Cream Brie plate on the floral placemat, added to the 09:33 cottage cheese and pear. ⭐ HER OWN STATED MEASURES at 09:44: 30g bread, 1.5 tbsp cream cheese, 1.5 tbsp blueberry jam. Her 30 g, tablespoon and a half and tablespoon and a half used verbatim; a thinner slice than her usual 45 g. No scale reference in frame; her measures govern every component, none sized from the photo. EXCLUDED: the white mug at the top-left (no drink logged by her) and the jam jar at the top-right, the source of the spread, not extra food. LEFTOVER MATCH: the bread read as her house dark seeded bread and costed per gram at the 2026-10-24 09:17 breakfast's 45 g slice (id 16854f0a), the jam at that row's per-tablespoon figures, the cream cheese at the per-100 g figures of her cream cheese jalapeño batch (2026-10-23 18:37, id ba5754b7: 5.5 g carb, 6.2 g protein, 350 kcal, 97 mg calcium per 100 g). BUILD: bread 30 g — 12 g carb, 3 g protein, about 81 kcal, about 17 mg calcium; cream cheese 1.5 tablespoons, about 22 g — 1.2 g carb, 1.4 g protein, about 77 kcal, about 21 mg calcium; blueberry jam 1.5 tablespoons, about 30 g — 6 g carb (about 1 g fiber), 0.2 g protein, about 24 kcal, about 2 mg calcium. Totals about 19 g carb (19.2), 5 g protein (4.6), about 180 kcal (182). About 40 mg calcium; running total today about 200 of 1200. Calorie floor checked: 4 × 19 + 4 × 5 = 96, under 180. CUMULATIVE: the 09:33 cottage cheese and pear is 11 minutes earlier, inside the 1-hour window, so this is Breakfast and the sitting runs 38.9 g carb, 22.9 g protein, about 370 kcal; preBG anchored to the 09:33 row's 101. No 💊 line: a cumulative follow-up, and the breakfast reminder went out with the 09:33 row. Live BG 102 Flat (CGM 09:44, at the entry). Model v5.3 on the sitting: carb rise 26 + 0.2 × 38.9 = 33.8 (the 37.1–6…",
     "type": "Breakfast",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-10-25/f34608f777b41d58.jpg",
     "carbs": 19,
     "cals": 180,
-    "delta": null,
-    "peak": null
+    "delta": 47,
+    "peak": 149
   },
   {
     "id": "40485ec7-0668-811c-9d76-f6287b7cb1f4",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-10-25/2f2cc31f26b132b8.jpg",
     "carbs": 20,
     "cals": 190,
-    "delta": null,
-    "peak": null
+    "delta": 51,
+    "peak": 149
   },
   {
     "id": "40485ec7-0668-8134-a381-f9e2331c4712",
@@ -155,7 +166,7 @@
   },
   {
     "id": "40185ec7-0668-8122-8351-f78db6c20b75",
-    "title": "Lunch: a kale salad — one and a half cups of kale, half an apple, six cherry tomatoes and half a cup of carnitas, dressed with a teaspoon of olive oil and some lime juice, added to the 12:09 cheesecake scraps. ⭐ HER OWN STATED MEASURES, TEXT-ONLY WITH NO PHOTO, at 12:41: I'm having early lunch because I e been cleaning after the storm and I'm tired and plan to rest after lunch. Log 1.5 cup kale, half an apple, 6 tomatoes, 1/2 cup carnitas, a tsp olive oil and some lime juice. Her measures used verbatim; her 6 tomatoes read as cherry tomatoes (six whole tomatoes would not fit a lunch salad), told to her in the reply so she can correct it in one word; her some lime juice taken as about a tablespoon. LEFTOVER MATCH: the carnitas costed at the 2026-10-21 18:24 taco's pulled pork (id 4377ce85), about 70 g for half a cup; the half apple at the 2026-10-21 rows' usual 90 g half; the cherry tomatoes at the 2026-10-17 13:09 lunch's (id a7535e4c) about 17 g each. BUILD: kale 1.5 cups raw chopped, about 45 g — 3 g carb (mostly fiber), 2 g protein, about 20 kcal, about 90 mg calcium; apple half, about 90 g — 12 g carb (about 2 g fiber), 0.2 g protein, about 50 kcal, about 5 mg calcium; cherry tomatoes 6, about 100 g — 4 g carb, 1 g protein, about 18 kcal, about 10 mg calcium; carnitas half a cup, about 70 g — 0 g carb, 18 g protein, about 165 kcal, about 15 mg calcium; olive oil 1 teaspoon, 4.5 g — about 40 kcal; lime juice about 1 tablespoon — 1.3 g carb, 0.1 g protein, about 4 kcal, about 2 mg calcium. Totals about 20 g carb (20.3), 21 g protein (21.3), about 295 kcal (297). About 120 mg calcium; running total today about 585 of 1200. Calorie floor checked: 4 × 20.3 + 4 × 21.3 = 166, under 295. This row carries ONLY this item's increment. CUMULATIVE: 32 minutes after the 12:09 cheesecake scraps, inside the 1-hour window, so Lunch, anchored to the 12:09 preBG 124 (CGM 12:04); live BG 130 Flat (CGM 12:39) noted but not used. No 💊 line: cumulative continuation, the lunch Metfor…",
+    "title": "Lunch: a kale salad — one and a half cups of kale, half an apple, six cherry tomatoes and half a cup of carnitas, dressed with a teaspoon of olive oil and some lime juice, added to the 12:09 cheesecake scraps. ⭐ HER OWN STATED MEASURES, TEXT-ONLY WITH NO PHOTO, at 12:41: I'm having early lunch because I e been cleaning after the storm and I'm tired and plan to rest after lunch. Log 1.5 cup kale, half an apple, 6 tomatoes, 1/2 cup carnitas, a tsp olive oil and some lime juice. Her measures used verbatim; her 6 tomatoes read as cherry tomatoes (six whole tomatoes would not fit a lunch salad), told to her in the reply so she can correct it in one word; her some lime juice taken as about a tablespoon. LEFTOVER MATCH: the carnitas costed at the 2026-10-21 18:24 taco's pulled pork (id 4377ce85), about 70 g for half a cup; the half apple at the 2026-10-21 rows' usual 90 g half; the cherry tomatoes at the 2026-10-17 13:09 lunch's (id a7535e4c) about 17 g each. BUILD: kale 1.5 cups raw chopped, about 45 g — 3 g carb (mostly fiber), 2 g protein, about 20 kcal, about 90 mg calcium; apple half, about 90 g — 12 g carb (about 2 g fiber), 0.2 g protein, about 50 kcal, about 5 mg calcium; cherry tomatoes 6, about 100 g — 4 g carb, 1 g protein, about 18 kcal, about 10 mg calcium; carnitas half a cup, about 70 g — 0 g carb, 18 g protein, about 165 kcal, about 15 mg calcium; olive oil 1 teaspoon, 4.5 g — about 40 kcal; lime juice about 1 tablespoon — 1.3 g carb, 0.1 g protein, about 4 kcal, about 2 mg calcium. Totals about 20 g carb (20.3), 21 g protein (21.3), about 295 kcal (297). About 120 mg calcium; running total today about 585 of 1200. Calorie floor checked: 4 × 20.3 + 4 × 21.3 = 166, under 295. This row carries ONLY this item's increment. CUMULATIVE: 32 minutes after the 12:09 cheesecake scraps, inside the 1-hour window, so Lunch, anchored to the 12:09 preBG 124 (CGM 12:04); live BG 130 Flat (CGM 12:39) noted but not used. No �� line: cumulative continuation, the lunch Metfor…",
     "type": "Lunch",
     "date": "2026-10-22T12:41:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-10-22/4b56b0f3514766ac.jpg",
