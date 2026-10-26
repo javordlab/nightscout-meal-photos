@@ -7,8 +7,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-10-26/8711a4cbd6e0d851.jpg",
     "carbs": 42,
     "cals": 415,
-    "delta": null,
-    "peak": null
+    "delta": 76,
+    "peak": 174
   },
   {
     "id": "40585ec7-0668-8174-b3f5-db0911b35d9e",
@@ -6348,7 +6348,7 @@
   },
   {
     "id": "38485ec7-0668-81d4-908f-fb698b474497",
-    "title": "Dinner: a ham and cheese sandwich on multi-seed whole-grain bread (pumpkin, sunflower, sesame, flax) and a nectarine (BG: 140 mg/dL Flat) (Pred: 163-183 mg/dL @ 10:17 PM) (Protein: 24g | Carbs: ~46g | Cals: ~460) [Coach: Even better with that seeded bread 🌻 — pumpkin, sunflower, sesame and flax add fiber and healthy fats that slow the carbs right down, so this dinner will land gentler than the number suggests. Ham and cheese for protein, a nectarine to finish — a genuinely well-built plate.]",
+    "title": "Dinner: a ham and cheese sandwich on multi-seed whole-grain bread (pumpkin, sunflower, sesame, flax) and a nectarine (BG: 140 mg/dL Flat) (Pred: 163-183 mg/dL @ 10:17 PM) (Protein: 24g | Carbs: ~46g | Cals: ~460) [Coach: Even better with that seeded bread ��� — pumpkin, sunflower, sesame and flax add fiber and healthy fats that slow the carbs right down, so this dinner will land gentler than the number suggests. Ham and cheese for protein, a nectarine to finish — a genuinely well-built plate.]",
     "type": "Dinner",
     "date": "2026-06-19T21:22:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-19/f693bdb6edf0dc94.jpg",
@@ -7294,7 +7294,7 @@
   },
   {
     "id": "37285ec7-0668-8137-83ef-ec75a42f2762",
-    "title": "Lunch (restaurant — first course): mixed salad (iceberg lettuce, tomato slices, onion rings) with olive oil + bread on the side (BG: 87 mg/dL Flat) (Pred: 108-118 mg/dL @ 5:23 PM) (Protein: 7g , Carbs: ~32g , Cals: ~285) [Coach: Restaurant lunch starting strong 🥗 �� non-starchy veggies up front, good olive oil, and bread on the side. BG recovered cleanly to 87 Flat after the golf-course dip. ~32g carbs from the bread is the main load; salad fiber will slow it. Pred ~113. If a main course comes (it usually does at a Spanish restaurant), we'll cumulate it.]",
+    "title": "Lunch (restaurant — first course): mixed salad (iceberg lettuce, tomato slices, onion rings) with olive oil + bread on the side (BG: 87 mg/dL Flat) (Pred: 108-118 mg/dL @ 5:23 PM) (Protein: 7g , Carbs: ~32g , Cals: ~285) [Coach: Restaurant lunch starting strong 🥗 — non-starchy veggies up front, good olive oil, and bread on the side. BG recovered cleanly to 87 Flat after the golf-course dip. ~32g carbs from the bread is the main load; salad fiber will slow it. Pred ~113. If a main course comes (it usually does at a Spanish restaurant), we'll cumulate it.]",
     "type": "Lunch",
     "date": "2026-06-01T15:30:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-01/22b46dbaa6689f38.jpg",
