@@ -7,8 +7,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-10-27/22e4ff1b7ae43d6e.jpg",
     "carbs": 50,
     "cals": 435,
-    "delta": null,
-    "peak": null
+    "delta": 53,
+    "peak": 143
   },
   {
     "id": "40785ec7-0668-8109-bcaa-fa9bf670196d",
@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-10-27/c2711b56f95385d6.jpg",
     "carbs": 5,
     "cals": 145,
-    "delta": null,
-    "peak": null
+    "delta": 53,
+    "peak": 143
   },
   {
     "id": "40785ec7-0668-8122-b37f-c6c26fcf60eb",
@@ -29,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-10-27/8fdb3d02efe25993.jpg",
     "carbs": 30,
     "cals": 340,
-    "delta": null,
-    "peak": null
+    "delta": 51,
+    "peak": 143
   },
   {
     "id": "40685ec7-0668-8139-9d73-f3a9e52433b1",
@@ -7206,7 +7206,7 @@
   },
   {
     "id": "37685ec7-0668-81a8-8ae9-cb4cf1a57246",
-    "title": "Lunch (retroactively logged 06-05 15:24, photo added 06-05 21:23): Swiss chard with olive oil, boiled potatoes, morcilla de León (Spanish FRESH blood sausage — cooked, NOT cured), and a piece of bread on the side (BG: 115 mg/dL Flat — NS reading at 13:00) (Pred: 154-164 mg/dL @ 2:53 PM — historical) (Protein: 12g , Carbs: ~47g , Cals: ~370) [Coach: Lunch ~47g carbs (potatoes + rice in the morcilla + bread), Pred ~159 by 2:53 PM under the lunch intercept. Then the dessert at 14:15 stacked on top before lunch peaked — drove the 220 reading by 6 PM. Morcilla = fresh blood sausage (cooked, not cured), so it does NOT count toward the cured-meat tally. June 4 cured-meat = just the cecina at 6 PM = 1× total = on-target ���]",
+    "title": "Lunch (retroactively logged 06-05 15:24, photo added 06-05 21:23): Swiss chard with olive oil, boiled potatoes, morcilla de León (Spanish FRESH blood sausage — cooked, NOT cured), and a piece of bread on the side (BG: 115 mg/dL Flat — NS reading at 13:00) (Pred: 154-164 mg/dL @ 2:53 PM — historical) (Protein: 12g , Carbs: ~47g , Cals: ~370) [Coach: Lunch ~47g carbs (potatoes + rice in the morcilla + bread), Pred ~159 by 2:53 PM under the lunch intercept. Then the dessert at 14:15 stacked on top before lunch peaked — drove the 220 reading by 6 PM. Morcilla = fresh blood sausage (cooked, not cured), so it does NOT count toward the cured-meat tally. June 4 cured-meat = just the cecina at 6 PM = 1× total = on-target ✅]",
     "type": "Lunch",
     "date": "2026-06-04T13:00:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-06-04/306583e04004a12d.jpg",
