@@ -1,12 +1,12 @@
 [
   {
     "id": "40885ec7-0668-81cb-9ada-ced5978f9989",
-    "title": "Lunch: one slice of IKEA chocolate layer cake, a birthday treat from the store — a tall triangular wedge of dark chocolate sponge layers with a chocolate mousse layer between them under a thick glossy ganache top, a Swedish-flag toothpick stuck in it, on a small white plate on the IKEA café table, a few crumbs on the plate. ⭐ HER OWN WORDS at 13:41: They gave me a BD cake at IKEA. Her birthday was 2026-10-18. She did not say she shared it (unlike the meatballs, where she said half), so the WHOLE slice is logged; if she split it, that is a one-word correction. COUNTED: one slice. Read as IKEA's Chocolate Overload cake, the layered chocolate-mousse cake on the US café menu, and costed at its published per-slice figures (fatsecret, IKEA Chocolate Overload Cake: 480 kcal, 26 g fat, 58 g carb per slice; protein not listed, about 5 g by the calorie remainder) rather than from the photo; the wedge looks like a standard café slice (no card in frame; plate about 19 cm, wedge about 12 cm long and 5 cm tall). EXCLUDED: the flag toothpick, the tray, receipt, phone, napkin and water glass. LEFTOVER MATCH: none. BUILD: one slice — 58 g carb, about 5 g protein, 480 kcal, about 40 mg calcium. About 40 mg calcium; running total today about 530 of 1200. Calorie floor checked: 4 × 58 + 4 × 5 = 252, under 480. THIS ROW CARRIES ONLY THIS ITEM'S OWN INCREMENT; lunch now stands at about 97 g carb (96.7), 24 g protein (24.1), about 935 kcal. CUMULATIVE: 9 minutes after the 13:32 meatball plate, so the same Lunch. No 💊 line: a cumulative continuation (the 13:32 entry carried it). Live BG 85 Flat (CGM 13:39). Model v5.3, Lunch cumulative: preBG 81 Flat (the 13:32 first item's anchor), cumulative 96.7 g, carb rise 96.7 × 0.6 = 58.0 (over 65), intercept 0, no fast-carb bump, cumulative protein 24.1 g so protein term 0.3 × (24.1 − 20) = 1.2, damping −0.35 × (81 − 115) = +11.9, so 81 + 58.0 + 1.2 + 11.9 ≈ 152, peak at +70 min from 13:32. Coach suggests a slow showroom stroll about 45 minutes a…",
+    "title": "Lunch: half a slice of IKEA chocolate layer cake, a birthday treat from the store — the photo shows a tall triangular wedge of dark chocolate sponge layers with a chocolate mousse layer between them under a thick glossy ganache top, a Swedish-flag toothpick stuck in it, on a small white plate on the IKEA café table, a few crumbs on the plate. ⭐ HER OWN WORDS at 13:41: They gave me a BD cake at IKEA. Her birthday was 2026-10-18. ✏️ CORRECTED at 14:26 on her words: Only ate half of cake. The row first logged the whole slice (58 g carb, 5 g protein, 480 kcal, 40 mg calcium); it now carries half, and every figure below is the corrected one. COUNTED: one slice photographed, half eaten. Read as IKEA's Chocolate Overload cake, the layered chocolate-mousse cake on the US café menu, and costed at its published per-slice figures (fatsecret, IKEA Chocolate Overload Cake: 480 kcal, 26 g fat, 58 g carb per slice; protein not listed, about 5 g by the calorie remainder) rather than from the photo; the wedge looks like a standard café slice (no card in frame; plate about 19 cm, wedge about 12 cm long and 5 cm tall). EXCLUDED: the flag toothpick, the tray, receipt, phone, napkin and water glass. LEFTOVER MATCH: none. BUILD: half a slice — 29 g carb, about 2.5 g protein, 240 kcal, about 20 mg calcium. About 20 mg calcium; running total today about 510 of 1200. Calorie floor checked: 4 × 29 + 4 × 2.5 = 126, under 240. THIS ROW CARRIES ONLY THIS ITEM'S OWN INCREMENT; lunch now stands at about 68 g carb (67.7), 22 g protein (21.6), about 695 kcal. CUMULATIVE: 9 minutes after the 13:32 meatball plate, so the same Lunch. No 💊 line: a cumulative continuation (the 13:32 entry carried it). Live BG 85 Flat (CGM 13:39); at the 14:26 correction 117 Flat (CGM 14:24). Model v5.3, Lunch cumulative, recomputed for the half: preBG 81 Flat (the 13:32 first item's anchor), cumulative 67.7 g, carb rise 67.7 × 0.6 = 40.6 (over 65), intercept 0, no fast-carb bump, cumulative protein 21.6 g so protein t…",
     "type": "Lunch",
     "date": "2026-10-29T13:41:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-10-29/b6513f09ac914909.jpg",
-    "carbs": 58,
-    "cals": 480,
+    "carbs": 29,
+    "cals": 240,
     "delta": null,
     "peak": null
   },
@@ -29,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-10-29/fc0716f8214182c1.jpg",
     "carbs": 37,
     "cals": 410,
-    "delta": null,
-    "peak": null
+    "delta": 91,
+    "peak": 194
   },
   {
     "id": "40885ec7-0668-8189-82b2-dc5ece02d146",
