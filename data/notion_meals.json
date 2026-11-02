@@ -1,5 +1,16 @@
 [
   {
+    "id": "40c85ec7-0668-8142-a5dd-d319b46f1b11",
+    "title": "Snack: one Arcor strawberry-filled hard candy, a bridge until lunch — the photo shows the empty, crumpled wrapper held in her fingers outdoors beside a dark metal railing over water, white with a pink twist end, strawberry pictures and the Arcor logo; the text reads caramelo duro relleno sabor a frutilla/fresa, libre de gluten / filled hard candy strawberry flavoured, Industria Argentina, not labeled for individual sale (from a multi-piece bag). ⭐ HER OWN WORDS at 12:08: Just to keep me going till lunch. One candy (one wrapper in frame). MealType: the hour (12:08) says Lunch, but her words say this is before lunch, so it is reclassified to Snack on her words (same call as the 2026-10-26 11:39 grapefruit juice); her actual lunch, when it comes, is its own Lunch sitting and carries the lunch 💊 line. LEFTOVER MATCH: none; estimated from scratch. No nutrition panel visible on the wrapper; costed at a typical filled hard candy of about 6 g: 6 g carb (all sugar), 0 g protein, about 25 kcal, 0 mg calcium. BUILD: Arcor filled hard candy one, about 6 g — 6 g carb, 0 g protein, about 25 kcal, 0 mg calcium. 0 mg calcium; running total today stays about 360 of 1200. Calorie floor checked: 4 × 6 + 4 × 0 = 24, under 25. Not cumulative: the last Food row is the 08:28 breakfast cottage cheese, 3 h 40 min earlier. No 💊 line: a Snack carries no dose (the lunch Metformin waits for the real lunch). Not a fast-carb bump food. Live BG 88 Flat (CGM 12:04). Model v5.3, Snack: preBG 88, carb rise 2.0 × 6 = 12 (0 to 10.8 g band), intercept 0, no fast-carb bump, protein term 0, damping −0.35 × (88 − 115) = +9.45, so 88 + 12 + 9.45 ≈ 109, peak at +55 min from 12:08. (BG: 88 mg/dL Flat) (Pred: 99-119 mg/dL @ 1:03 PM) (Protein: 0g | Carbs: ~6g | Cals: ~25) [Coach: A little strawberry candy from Argentina 🍓 to bridge the gap, about 6g of quick sugar and a handy lift with your BG at a calm 88. It won't hold you for long, so a lunch with some protein soon will do the real work.]",
+    "type": "Snack",
+    "date": "2026-11-02T12:08:00.000-08:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-11-02/249598be933a6967.jpg",
+    "carbs": 6,
+    "cals": 25,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "40c85ec7-0668-81de-8296-f9747afb122e",
     "title": "Breakfast: an open-faced slice of her seeded whole-grain bread (loaf #6, by the brown crumb and the match below) spread with two tablespoons of chunky peanut butter and a teaspoon of Trader Joe's guava fruit spread swirled over it in a glossy orange-red layer, on a white embossed paper towel on the grey polka-dot tablecloth in morning sun, plus 6 oz of milk, her Kirkland A2 Organic Whole (not in frame). ⭐ HER OWN WORDS at 08:19: 2tbsp p butter and 1tsp guava fruit spread from TJs plus 6 oz milk. Her 2 tbsp, 1 tsp and 6 oz used verbatim. The bread is not named in her text but is fully in frame as the base, so it is counted. COUNTED from the photo: one slice of bread. LEFTOVER MATCH: the bread and peanut butter are the house items of the 2026-10-30 09:41 and 2026-10-27 09:28 loaf #6 breakfasts (the 10-27 one also peanut butter and jam on a paper towel); composition carried over: loaf #6 slice at the 45 g default (no weight from her; loaf #6 is 0.455 g carb per g), peanut butter 2 tbsp at the 10-30 figures. The guava spread is new: no label on file, costed at a typical fruit spread of about 10 g carb and 40 kcal per tablespoon, so a teaspoon is a third of that. No card in frame; her stated measures govern and the bread is never sized from a photo. BUILD: loaf #6 bread one slice, 45 g — 20.5 g carb, 4.4 g protein, about 132 kcal, about 26 mg calcium; peanut butter 2 tablespoons, 32 g — 6 g carb, 8 g protein, about 190 kcal, about 14 mg calcium; TJ guava fruit spread 1 teaspoon, about 7 g — 3.5 g carb, 0 g protein, about 13 kcal, 0 mg calcium; milk 6 oz — 8.25 g carb, 6 g protein, 120 kcal, about 218 mg calcium. Totals about 38 g carb (38.25), 18 g protein (18.4), about 455 kcal, about 260 mg calcium. About 260 mg calcium; running total today about 260 of 1200. Calorie floor checked: 4 × 38 + 4 × 18 = 224, under 455. Not cumulative: the first Food row of the day. 💊 line sent: first Breakfast entry, Monday, no Medication rows yet today (Trulicity is tomorrow, Tuesday, s…",
     "type": "Breakfast",
@@ -7,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-11-02/c37a10dce97aad58.jpg",
     "carbs": 38,
     "cals": 455,
-    "delta": null,
-    "peak": null
+    "delta": 59,
+    "peak": 182
   },
   {
     "id": "40c85ec7-0668-814b-9682-ed8269fc9fab",
