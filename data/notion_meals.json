@@ -7,8 +7,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-11-02/3cf4b298dec0df01.jpg",
     "carbs": 35,
     "cals": 385,
-    "delta": null,
-    "peak": null
+    "delta": 73,
+    "peak": 173
   },
   {
     "id": "40c85ec7-0668-814f-9004-ccd65e9a4781",
@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-11-02/bacf606c2b4f4ccf.jpg",
     "carbs": 7,
     "cals": 115,
-    "delta": null,
-    "peak": null
+    "delta": 75,
+    "peak": 173
   },
   {
     "id": "40c85ec7-0668-8115-9b89-d2f5a5ba8c4d",
@@ -29,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-11-02/3a5b62359f2eaf0f.jpg",
     "carbs": 13,
     "cals": 285,
-    "delta": null,
-    "peak": null
+    "delta": 76,
+    "peak": 173
   },
   {
     "id": "40c85ec7-0668-8142-a5dd-d319b46f1b11",
@@ -3202,7 +3202,7 @@
   },
   {
     "id": "3cf85ec7-0668-8147-b0b0-f18bdb1bcbfc",
-    "title": "Dinner (cont., 11 minutes after the 19:02 soup): two slices of prosciutto, draped and folded, with a wedge of Spanish potato tortilla, near-top-down on a white plate. ⚠️⭐ THE SPG CARD IS IN FRAME AND WAS REJECTED AS A RULER — CORRECTLY, BUT MY STATED REASON WAS WRONG AND MARIA CORRECTED IT AT 19:17. I told her the card lay on the tablecloth off the plate. SHE REPLIED THAT SHE CAN SEE IT ON THE PLATE, AND SHE IS RIGHT — she placed it, and her account of her own setup outranks my read of the frame. THE REJECTION STILL STANDS AND NOW HAS A BETTER EXPLANATION THAN THE ONE I GAVE: the card is resting ON THE PLATE RIM and sloping down toward the cloth, so it BRIDGES TWO HEIGHTS instead of lying flat in any single plane. A ramped card is not a flat rectangle, which is exactly why its measured edges gave an apparent aspect near 1.17 against the true 1.586 — geometrically impossible, since foreshortening can only SHRINK an apparent edge, never stretch one. THE IMPOSSIBLE NUMBER WAS THEREFORE THE SIGNATURE OF A BENT REFERENCE, not of an exotic viewing angle, and that is the generalisable lesson: an aspect ratio BELOW 1.586 means the card is not flat, and no scale derived from it is usable. The fix given to her is to lay the card FLAT IN THE MIDDLE OF THE PLATE beside the food rather than across the rim, which puts it in the food's own plane. An impossible reading means the measurement is unreliable, not that the card is at an exotic angle, so per the standing rule that food-size priors outrank a bad card, the PLATE and ordinary portion priors were used instead. THE PLATE reads about 930 px on its long axis, the un-foreshortened one, and is taken as a salad plate near 22cm. THE TORTILLA WEDGE spans roughly a third of that diameter and reads as about one eighth of a standard tortilla, giving a face area near 47 cm squared. ⚠️ THICKNESS IS THE DOMINANT TERM AND THERE IS NO SIDE PROFILE IN A TOP-DOWN FRAME, so it is an ASSUMPTION and is stated as one: 2.2cm, the usual depth of a…",
+    "title": "Dinner (cont., 11 minutes after the 19:02 soup): two slices of prosciutto, draped and folded, with a wedge of Spanish potato tortilla, near-top-down on a white plate. ⚠��⭐ THE SPG CARD IS IN FRAME AND WAS REJECTED AS A RULER — CORRECTLY, BUT MY STATED REASON WAS WRONG AND MARIA CORRECTED IT AT 19:17. I told her the card lay on the tablecloth off the plate. SHE REPLIED THAT SHE CAN SEE IT ON THE PLATE, AND SHE IS RIGHT — she placed it, and her account of her own setup outranks my read of the frame. THE REJECTION STILL STANDS AND NOW HAS A BETTER EXPLANATION THAN THE ONE I GAVE: the card is resting ON THE PLATE RIM and sloping down toward the cloth, so it BRIDGES TWO HEIGHTS instead of lying flat in any single plane. A ramped card is not a flat rectangle, which is exactly why its measured edges gave an apparent aspect near 1.17 against the true 1.586 — geometrically impossible, since foreshortening can only SHRINK an apparent edge, never stretch one. THE IMPOSSIBLE NUMBER WAS THEREFORE THE SIGNATURE OF A BENT REFERENCE, not of an exotic viewing angle, and that is the generalisable lesson: an aspect ratio BELOW 1.586 means the card is not flat, and no scale derived from it is usable. The fix given to her is to lay the card FLAT IN THE MIDDLE OF THE PLATE beside the food rather than across the rim, which puts it in the food's own plane. An impossible reading means the measurement is unreliable, not that the card is at an exotic angle, so per the standing rule that food-size priors outrank a bad card, the PLATE and ordinary portion priors were used instead. THE PLATE reads about 930 px on its long axis, the un-foreshortened one, and is taken as a salad plate near 22cm. THE TORTILLA WEDGE spans roughly a third of that diameter and reads as about one eighth of a standard tortilla, giving a face area near 47 cm squared. ⚠️ THICKNESS IS THE DOMINANT TERM AND THERE IS NO SIDE PROFILE IN A TOP-DOWN FRAME, so it is an ASSUMPTION and is stated as one: 2.2cm, the usual depth of a…",
     "type": "Dinner",
     "date": "2026-09-01T19:13:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-01/f118efb55826bf26.jpg",
