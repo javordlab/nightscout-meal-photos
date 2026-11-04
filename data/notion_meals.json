@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-11-03/6e1edd4ed2ad0a88.jpg",
     "carbs": 15,
     "cals": 93,
-    "delta": null,
-    "peak": null
+    "delta": 48,
+    "peak": 139
   },
   {
     "id": "40d85ec7-0668-815d-b1a0-d2906d0a86f2",
@@ -6271,7 +6271,7 @@
   },
   {
     "id": "39185ec7-0668-8192-a0b0-ec432930674c",
-    "title": "Lunch: yogurt with honey drizzle (dessert course) (BG: 101 mg/dL Flat) (Pred: 170-190 mg/dL @ 4:37 PM) (Protein: ~9g | Carbs: ~24g | Cals: ~190) [Cumulative Lunch: 109g carbs total] [Coach: Yogurt with a drizzle of honey ���� — a lighter finish, with protein and probiotics from the yogurt to balance the honey's sweetness. It does close out a big three-course lunch (about 109g carbs all in), so one of your post-meal walks would really help smooth the afternoon. Nicely done, and set until dinner.]",
+    "title": "Lunch: yogurt with honey drizzle (dessert course) (BG: 101 mg/dL Flat) (Pred: 170-190 mg/dL @ 4:37 PM) (Protein: ~9g | Carbs: ~24g | Cals: ~190) [Cumulative Lunch: 109g carbs total] [Coach: Yogurt with a drizzle of honey 🍯 — a lighter finish, with protein and probiotics from the yogurt to balance the honey's sweetness. It does close out a big three-course lunch (about 109g carbs all in), so one of your post-meal walks would really help smooth the afternoon. Nicely done, and set until dinner.]",
     "type": "Lunch",
     "date": "2026-07-02T15:22:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-07-02/adfccdf3293d8274.jpg",
