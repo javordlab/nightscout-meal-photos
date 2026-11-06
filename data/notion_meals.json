@@ -1,5 +1,16 @@
 [
   {
+    "id": "41085ec7-0668-8185-bba1-f163759eff96",
+    "title": "Snack: one cup of broccoli and potato soup with a white swirl read as her yogurt, two-thirds of a cup of cottage cheese with a little chopped green herb, a quarter cup of hummus, one serving of pita chips and one carrot cut in sticks, on a floral placemat with her road-service card at the left. ⭐ HER OWN WORDS at 17:44: 1 cup broccoli and potato soup. 2/3 cottage cheese, 1/4 cup humus, 1 serving g of pita and one carrot. Her measures used verbatim, 2/3 read as two-thirds of a cup; they replace any estimate from the photo, so the card is not used for sizing. COUNTED from the photo: about ten pita chip pieces, some broken and overlapping, against the label's about 8 chips, and her one serving governs; about ten carrot sticks, read as her one carrot. COUNTED ALTHOUGH NOT NAMED, under her framing rule: the white swirl on the soup, about 1.5 tablespoons, read as her yogurt, not confirmed. EXCLUDED: the white mug on the wooden lazy Susan, clipped by the top edge, contents not visible; tissues and paper towels, the card, not food. LEFTOVER MATCH: cottage cheese at the 2026-11-01 18:18 row's two-thirds cup figures (id 9fb6c35c); pita chips at the label in the 2026-11-02 18:32 row (id c2a50580); the hummus shows red and green flecks like the topping on the Kirkland roasted pine nut tub, so costed at that label, per tablespoon 40 kcal, 2 g carb, 1 g protein, 0 calcium, and named in the reply so she can veto it (the Kirkland Organic single-serve cup would be about 3 g carb more; her homemade about 1 g more). SOUP COMPOSITION ASSUMED, her recipe not stated this time, nearest earlier soups 2026-05-08 and 2026-08-01: about 80 g broccoli, 75 g potato, 20 g onion and 1 teaspoon of oil in one cup. BUILD: soup one cup — 20 g carb, 4 g protein, about 130 kcal, about 50 mg calcium; yogurt swirl — 1 g carb, 1 g protein, about 15 kcal, about 25 mg calcium; cottage cheese two-thirds of a cup, about 152 g — 5.4 g carb, 16 g protein, about 120 kcal, about 135 mg calcium; hummus a quarter c…",
+    "type": "Snack",
+    "date": "2026-11-05T17:44:00.000-08:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-11-05/fe82840e9b4199ea.jpg",
+    "carbs": 60,
+    "cals": 595,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "40f85ec7-0668-81df-a8f3-c326559af62e",
     "title": "Lunch: one whole persimmon, the squat Fuyu type, deep orange with its green calyx still on, uncut, lying on a blue-and-yellow floral tablecloth with her road-service card beside it. Photo only, no caption. Portions calibrated against the card at 85.6 by 54 mm, lying flat on the same table: long edges about 473 and 483 px, short edges about 279 and 332 px, average aspect about 1.57 against 1.586, so near top-down (cos θ about 1.0) with some perspective along the card. Scale taken at the card's near-fruit end, about 279 / 54 = 5.2 px/mm. Fruit about 417 px across, about 80 mm on the table plane; plane offset for its widest line about 3 cm above the table at an assumed 40 cm camera distance gives about 74 mm, roughly 3 inches across. No side profile in a near top-down frame, so height is ASSUMED at about 5.5 cm from the Fuyu shape. Oblate volume (π/6) × 7.4² × 5.5 ≈ 158 ml, about 150 g, range 130 to 170 g (24 to 32 g carb). COUNTED from the photo: one persimmon, whole, in frame in its entirety, so counted under her framing rule and treated as eaten whole, since she photographs before eating; if she eats part of it, her word changes the row. First persimmon in this log, so no leftover match; estimated from scratch. Figures from general USDA values for raw Japanese persimmon, from memory, not looked up: per 100 g about 18.6 g carb, 3.6 g fiber, 0.6 g protein, 70 kcal, 8 mg calcium. BUILD: persimmon about 150 g — 28 g carb (about 5 g fiber), 1 g protein, about 12 mg calcium. USDA gives about 105 kcal at this weight because fiber yields little; the row carries about 120 kcal to clear the calorie floor. About 10 mg calcium; running total today about 75 of 1200. Calorie floor checked: 4 × 28 + 4 × 1 = 116, under 120. HOUR RULE: 15:48 is Lunch. NOT cumulative: 2 h 38 min after the 13:10 sandwich, so a new sitting with its own preBG. No 💊 line: the lunch Metformin row already exists for today. Not a fast-carb bump food. Her 13:20 words: no fruit or veggies on the road, she w…",
     "type": "Lunch",
@@ -18,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-11-05/9d68ea3711d1eed1.jpg",
     "carbs": 17,
     "cals": 155,
-    "delta": null,
-    "peak": null
+    "delta": 20,
+    "peak": 162
   },
   {
     "id": "40f85ec7-0668-817d-9e9a-d4c059f9b913",
