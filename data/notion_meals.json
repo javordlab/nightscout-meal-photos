@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-11-06/b8d226c04d397a6d.jpg",
     "carbs": 8,
     "cals": 32,
-    "delta": null,
-    "peak": null
+    "delta": 46,
+    "peak": 133
   },
   {
     "id": "41185ec7-0668-81f7-aee8-dce1aae4c99d",
@@ -29,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-11-06/5e5395b381199ca8.jpg",
     "carbs": 3,
     "cals": 60,
-    "delta": null,
-    "peak": null
+    "delta": 44,
+    "peak": 132
   },
   {
     "id": "41185ec7-0668-812a-88f1-f28e29378ca7",
@@ -40,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-11-06/123d898934cefda0.jpg",
     "carbs": 47,
     "cals": 540,
-    "delta": null,
-    "peak": null
+    "delta": 44,
+    "peak": 132
   },
   {
     "id": "41085ec7-0668-8193-ad89-d12f3cdc5198",
@@ -4885,7 +4885,7 @@
   },
   {
     "id": "3b785ec7-0668-8131-aa7b-d1abe37c4e28",
-    "title": "Dinner: leftover half banana (BG: 96 mg/dL Flat) (Pred: 139-159 mg/dL @ 8:10 PM) (Protein: 1g | Carbs: ~17g | Cals: ~70) [Cumulative Dinner: 59g carbs total] [Coach: The card trick again 💳 — it makes sizing easy, and this is a genuine half at roughly 17g rather than a token bite. Taking it after the ribs is the right order, since all that protein and fat slows the fruit sugar down. Dinner lands around 59g carbs total, still a sensible night.]",
+    "title": "Dinner: leftover half banana (BG: 96 mg/dL Flat) (Pred: 139-159 mg/dL @ 8:10 PM) (Protein: 1g | Carbs: ~17g | Cals: ~70) [Cumulative Dinner: 59g carbs total] [Coach: The card trick again ���� — it makes sizing easy, and this is a genuine half at roughly 17g rather than a token bite. Taking it after the ribs is the right order, since all that protein and fat slows the fruit sugar down. Dinner lands around 59g carbs total, still a sensible night.]",
     "type": "Dinner",
     "date": "2026-08-08T19:05:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-08/842d91da43b36dc5.jpg",
