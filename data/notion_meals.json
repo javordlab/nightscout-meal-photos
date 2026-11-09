@@ -1,5 +1,27 @@
 [
   {
+    "id": "41385ec7-0668-8140-a7ec-e025a2c3e918",
+    "title": "Snack: the other half of the small Fuyu persimmon whose first half went into the 12:33 lunch salad, held in her hand outdoors over a flagstone path, deep orange skin with the green calyx still on, cut face toward her, added to the 16:01 slice of her new loaf. ⭐ HER OWN WORDS at 16:19: Log the other half of the persimmon. Her other half used verbatim. No scale reference in frame; her half governs, so nothing is sized from the photo. LEFTOVER MATCH: the half small persimmon of the 2026-11-08 12:33 lunch (id b1a6877b) and the 2026-11-06 12:31 salad (id 4301844e), at those rows' figures; same pattern as the 2026-11-06 14:19 other-half row (id 5c0e58e4). BUILD: persimmon half small, about 60 g — 11 g carb, 0.4 g protein, about 46 kcal, about 5 mg calcium. About 5 mg calcium; running total today about 645 of 1200. Calorie floor checked: 4 × 11 + 4 × 0.4 = 46, at 46. THIS ROW CARRIES ONLY THIS ITEM'S OWN INCREMENT; this sitting now stands at about 33 g carb (32.9), 5 g protein (5.1), about 187 kcal. CUMULATIVE: 18 minutes after the 16:01 bread slice, so the same Snack sitting. No 💊 line: Snack carries no dose. Not a fast-carb bump food. Live BG 97 Flat (CGM 16:14, five minutes old). Model v5.3, Snack cumulative: preBG 115 Flat (the 16:01 first item's anchor), cumulative 32.9 g, carb rise 24.86 + 0.2 × 32.9 = 31.4 (the 24.9–35.5 step), intercept 0, no fast-carb bump, protein term 0 (5.1 g, under 20), damping −0.35 × (115 − 115) = 0, so 115 + 31.4 ≈ 146, peak at +55 min from 16:01. [Cumulative Snack: 33g carbs total] (BG: 97 mg/dL Flat) (Pred: 136-156 mg/dL @ 4:56 PM) (Protein: 0g | Carbs: ~11g | Cals: ~46) [Coach: The other half of your persimmon, a sweet little encore 🧡 With the bread slice this snack comes to about 33g of carbs, and the fruit's fiber keeps it gentle. Your BG is sitting nicely at 97 going in.]",
+    "type": "Snack",
+    "date": "2026-11-08T16:19:00.000-08:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-11-08/7b7e45658aa9984d.jpg",
+    "carbs": 11,
+    "cals": 46,
+    "delta": null,
+    "peak": null
+  },
+  {
+    "id": "41385ec7-0668-813b-8368-ff3b9df45399",
+    "title": "Snack: one plain slice of her homemade seeded whole-grain loaf #7, baked today (13:06 photo of it in the pan), held up in her hand over the stove, no topping: light brown, soft, even crumb with sunflower and pumpkin seeds and oat flecks all through, crust on the top and both sides, no gummy band. ⭐ PHOTO ONLY, NO CAPTION, at 15:59. ✏️ CORRECTED at 16:01 by her words: That was just to show you the loaf but ok I'll gavel a piece 😄 (\"gavel\" read as \"have\", a phone autocorrect). The 15:59 photo was NOT food she was eating; she decided at 16:01 to have a piece, after the row was first logged at 15:59 as Lunch. Re-timed to 16:01, her stated eating time, which moves it into the Snack window by the hour rule; preBG and prediction recomputed from the 16:01 reading. Her \"a piece\" is taken as the same one slice shown. Lesson: a caption-less photo of a whole loaf or a just-cut slice on bake day can be show-and-tell, not a meal. No scale reference; per the standing bread rule her bread is never sized from a photo, so this is ONE standard slice, about 45 g. The loaf #7 weight and slice count were asked for at 13:06 and are not reported yet, so the slice is costed at the loaf #6 constants (0.455 g carb, 0.098 g protein, 2.94 kcal, 0.58 mg calcium per gram); re-cost when she gives the weight; told her in the reply. ➕ 16:06, her words: 19 slices (the loaf #7 count). Weight still not given; per the standing rule (no weight ÷ count average, 45 g a slice unless she states a weight) the 45 g slice stands. For reference only: if #7 weighs about what #6 did (996 g), 19 slices would average about 52 g, about 24 g carb, so this row may run about 3 g carb low until W arrives. ✏️ RE-COSTED at 16:07, her words: 933 g the whole loaf. W = 933 g; no recipe change reported, so the loaf #6 recipe totals are kept (about 453 g carb, 98 g protein, 2,926 kcal, 69 g fiber, 580 mg calcium per loaf), giving per gram of #7: 0.486 g carb, 0.105 g protein, 3.14 kcal, 0.62 mg calcium. Bake-off about 16% if …",
+    "type": "Snack",
+    "date": "2026-11-08T16:01:00.000-08:00",
+    "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-11-08/d45694397d6679ea.jpg",
+    "carbs": 22,
+    "cals": 140,
+    "delta": null,
+    "peak": null
+  },
+  {
     "id": "41285ec7-0668-81ff-b63f-d396e49e887b",
     "title": "Lunch: a big leafy salad of butter lettuce with a few dark leafy greens (kale-like, as in the 2026-11-06 salad), half a small persimmon in orange chunks, two slices of tomato, a small avocado (the equivalent of a third of a large one, her words), two tablespoons of hemp hearts, three tablespoons of pepitas and one tablespoon of goji berries, dressed with one tablespoon of olive oil and black pepper, in a wide white shallow bowl, plus half a cup of cottage cheese topped with two teaspoons of Smörgås Creme fish roe spread, piped in an orange swirl, in a small pink-lined bowl, on the blue-and-yellow floral placemat. ⭐ HER OWN STATED MEASURES at 12:33: Salad with lettuce, 1/2 small persimmon, 2 slices of tomato, 2 tbsp of hemp, 3 tbsp of pepitas, 1 tbsp of goji b. 1/2 cup cottage cheese and 2 tsp fish roe. Her half persimmon, two tomato slices, 2 tbsp, 3 tbsp, 1 tbsp, half cup and 2 tsp used verbatim (\"goji b.\" read as goji berries). No scale reference in frame; the bowl is taken at about 23 cm across, used only for the lettuce, which fills it as about three loosely packed cups, roughly 90 g, plus about 15 g of the dark greens. COUNTED from the photo: about 22 goji berries on top (about 0.4 g each, about 9 g, matching her tablespoon), three persimmon chunks visible (her half governs), about eight pepitas visible on top (her 3 tbsp governs, the rest under the leaves); the tomato slices are not visible, hidden under the leaves, and her two count. ✏️ CORRECTED at 12:35 by her words: Oh yes I forgot the small avocado and tbsp olive oil! Her tablespoon of olive oil REPLACES the 1 teaspoon first estimated from the glossy leaves (not added to it); her small avocado is ADDED. The avocado is not visible in the photo (under the leaves or added after the shot). She said the small avocado, not half, so it is taken as a whole small avocado, about 75 g of flesh, departing from her usual half-of-a-small portion (about 35 to 40 g) because she named no fraction; flagged in the reply so…",
     "type": "Lunch",
@@ -7,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-11-08/073d9b7513accdc0.jpg",
     "carbs": 39,
     "cals": 710,
-    "delta": null,
-    "peak": null
+    "delta": 55,
+    "peak": 155
   },
   {
     "id": "41285ec7-0668-810f-962e-ee1fc97516a2",
