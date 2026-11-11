@@ -7,8 +7,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-11-10/f0c904654fd4059b.jpg",
     "carbs": 33,
     "cals": 480,
-    "delta": null,
-    "peak": null
+    "delta": 45,
+    "peak": 129
   },
   {
     "id": "41485ec7-0668-81e3-81d7-c9ef815fa94c",
@@ -9406,7 +9406,7 @@
   },
   {
     "id": "35f85ec7-0668-81d2-8e79-f2731d28cb86",
-    "title": "Lunch: Bowl of gazpacho, 2 fried eggs, and a small bread roll (BG: 117 mg/dL Flat) (Pred: 144-154 mg/dL @ 4:26 PM) (Protein: 21g | Carbs: ~36g | Cals: ~370) [Coach: Now THIS is a proper meal 🍅 ��� gazpacho packs raw veggies (tomato, cucumber, pepper), eggs cover the protein, and a modest bread roll anchors it. Perfect refuel after a morning of heavy gardening.]",
+    "title": "Lunch: Bowl of gazpacho, 2 fried eggs, and a small bread roll (BG: 117 mg/dL Flat) (Pred: 144-154 mg/dL @ 4:26 PM) (Protein: 21g | Carbs: ~36g | Cals: ~370) [Coach: Now THIS is a proper meal 🍅 — gazpacho packs raw veggies (tomato, cucumber, pepper), eggs cover the protein, and a modest bread roll anchors it. Perfect refuel after a morning of heavy gardening.]",
     "type": "Lunch",
     "date": "2026-05-13T14:33:00.000+02:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-05-13/3f825fb3e0e4f28e.jpg",
