@@ -7,8 +7,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-11-11/2f20f56fce6a8b47.jpg",
     "carbs": 52,
     "cals": 580,
-    "delta": null,
-    "peak": null
+    "delta": 53,
+    "peak": 154
   },
   {
     "id": "41585ec7-0668-8183-add6-c83df9952f72",
@@ -3246,7 +3246,7 @@
   },
   {
     "id": "3d985ec7-0668-814e-8945-fa22cbc8d53d",
-    "title": "Dinner: two small chicken tacos on her white dinner plate on the flamingo placemat — the left one shredded chicken topped with guacamole, a sprinkle of shredded cheese and butter lettuce leaves with a lime wedge beside it, the right one shredded chicken tossed with sautéed red onion and red and yellow bell pepper strips — with a glass of water. Her caption names the build: Chicken peppers onions, guacamole lettuce cheese. 🃏 SPG CARD IN FRAME, lying on the PLACEMAT (table plane), plate rim about 2 cm above it. Card edges about 245 px along the depth axis and about 180 px across, apparent aspect 1.36 against 1.586 true, so cos θ = 0.86 and θ ≈ 31°, in the useful range; scale from the across-frame short edge = 3.33 px/mm. Plate about 865 px across = 26 cm dinner plate. Tortillas 390 px and 375 px across the frame = 117 and 113 mm raw, about 11 cm each after the 5 percent plane-offset correction — street-taco size (4.5 in). Read as FLOUR (thin, translucent where the filling soaked in, smooth thin edge); corn at this size would add about 2 g carb each, small either way. Chicken in two loose shredded piles about 55 mm and 85 mm across and about 25 mm high (height read against the card at 31°, the right pile including the onion and pepper) — first read as about 40 g cooked chicken each, 80 g total. ⛔ CORRECTED AT 18:31 FROM HER OWN WORDS — Didn't seem like that much chicken, I had way more meat when I had the two drumsticks on Wednesday. The 2026-09-09 13:31 drumsticks were costed at about 125 g of meat eaten; way less than that puts tonight's chicken at ABOUT 50 g across both tacos, a relative statement rather than a weight but hers, and it outranks the photo. Lesson for the reader: loose shredded chicken piles high and airy, so a 25 mm heap of shreds weighs well under a 25 mm heap of solid meat — the same volume-over-mass trap as pistachio shells and freeze-dried fruit; pack shredded meat at roughly half the density of a solid piece. Protein 30 → 22, calories 430 → 365…",
+    "title": "Dinner: two small chicken tacos on her white dinner plate on the flamingo placemat — the left one shredded chicken topped with guacamole, a sprinkle of shredded cheese and butter lettuce leaves with a lime wedge beside it, the right one shredded chicken tossed with sautéed red onion and red and yellow bell pepper strips — with a glass of water. Her caption names the build: Chicken peppers onions, guacamole lettuce cheese. 🃏 SPG CARD IN FRAME, lying on the PLACEMAT (table plane), plate rim about 2 cm above it. Card edges about 245 px along the depth axis and about 180 px across, apparent aspect 1.36 against 1.586 true, so cos θ = 0.86 and θ ≈ 31°, in the useful range; scale from the across-frame short edge = 3.33 px/mm. Plate about 865 px across = 26 cm dinner plate. Tortillas 390 px and 375 px across the frame = 117 and 113 mm raw, about 11 cm each after the 5 percent plane-offset correction — street-taco size (4.5 in). Read as FLOUR (thin, translucent where the filling soaked in, smooth thin edge); corn at this size would add about 2 g carb each, small either way. Chicken in two loose shredded piles about 55 mm and 85 mm across and about 25 mm high (height read against the card at 31°, the right pile including the onion and pepper) — first read as about 40 g cooked chicken each, 80 g total. ⛔ CORRECTED AT 18:31 FROM HER OWN WORDS — Didn't seem like that much chicken, I had way more meat when I had the two drumsticks on Wednesday. The 2026-09-09 13:31 drumsticks were costed at about 125 g of meat eaten; way less than that puts tonight's chicken at ABOUT 50 g across both tacos, a relative statement rather than a weight but hers, and it outranks the photo. Lesson for the reader: loose shredded chicken piles high and airy, so a 25 mm heap of shreds weighs well under a 25 mm heap of solid meat �� the same volume-over-mass trap as pistachio shells and freeze-dried fruit; pack shredded meat at roughly half the density of a solid piece. Protein 30 → 22, calories 430 → 365…",
     "type": "Dinner",
     "date": "2026-09-11T18:21:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-11/76cbab2dd8ee6bd8.jpg",
@@ -10605,7 +10605,7 @@
   },
   {
     "id": "35e85ec7-0668-81ff-9a87-e049aa1f4286",
-    "title": "Snack: Half a medium apple with glass of water [Cumulative Snack: ~33g carbs total] (BG: 115 mg/dL Flat) (Pred: 159-169 mg/dL @ 7:58 PM) (Protein: 0g | Carbs: ~12g | Cals: ~50) [Coach: A lovely follow-up — fresh apple adds fiber and Vitamin C to balance out the rice crackers and peanut butter from a few minutes ago. Together you've got protein, healthy fats, and fruit fiber working in your favor. Water is the perfect companion too.]  [id:bddcbaf2]",
+    "title": "Snack: Half a medium apple with glass of water [Cumulative Snack: ~33g carbs total] (BG: 115 mg/dL Flat) (Pred: 159-169 mg/dL @ 7:58 PM) (Protein: 0g | Carbs: ~12g | Cals: ~50) [Coach: A lovely follow-up �� fresh apple adds fiber and Vitamin C to balance out the rice crackers and peanut butter from a few minutes ago. Together you've got protein, healthy fats, and fruit fiber working in your favor. Water is the perfect companion too.]  [id:bddcbaf2]",
     "type": "Snack",
     "date": "2026-04-17T17:56:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-04-17/b2a5bd4ee7c8a999.jpg",
