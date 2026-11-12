@@ -7,8 +7,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-11-11/a08989e786718f9a.jpg",
     "carbs": 23,
     "cals": 215,
-    "delta": null,
-    "peak": null
+    "delta": 6,
+    "peak": 153
   },
   {
     "id": "41685ec7-0668-8122-b502-d90f8ec1cc8c",
@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-11-11/b6c7d62fe7989bf4.jpg",
     "carbs": 18,
     "cals": 185,
-    "delta": null,
-    "peak": null
+    "delta": 19,
+    "peak": 153
   },
   {
     "id": "41685ec7-0668-8128-8668-e5899a637b09",
@@ -29,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-11-11/57adb5c366499df0.jpg",
     "carbs": 22,
     "cals": 250,
-    "delta": null,
-    "peak": null
+    "delta": 19,
+    "peak": 153
   },
   {
     "id": "41685ec7-0668-8151-af92-dd4d770ef563",
@@ -210,7 +210,7 @@
   },
   {
     "id": "41385ec7-0668-813b-8368-ff3b9df45399",
-    "title": "Snack: one plain slice of her homemade seeded whole-grain loaf #7, baked today (13:06 photo of it in the pan), held up in her hand over the stove, no topping: light brown, soft, even crumb with sunflower and pumpkin seeds and oat flecks all through, crust on the top and both sides, no gummy band. ⭐ PHOTO ONLY, NO CAPTION, at 15:59. ✏️ CORRECTED at 16:01 by her words: That was just to show you the loaf but ok I'll gavel a piece 😄 (\"gavel\" read as \"have\", a phone autocorrect). The 15:59 photo was NOT food she was eating; she decided at 16:01 to have a piece, after the row was first logged at 15:59 as Lunch. Re-timed to 16:01, her stated eating time, which moves it into the Snack window by the hour rule; preBG and prediction recomputed from the 16:01 reading. Her \"a piece\" is taken as the same one slice shown. Lesson: a caption-less photo of a whole loaf or a just-cut slice on bake day can be show-and-tell, not a meal. No scale reference; per the standing bread rule her bread is never sized from a photo, so this is ONE standard slice, about 45 g. The loaf #7 weight and slice count were asked for at 13:06 and are not reported yet, so the slice is costed at the loaf #6 constants (0.455 g carb, 0.098 g protein, 2.94 kcal, 0.58 mg calcium per gram); re-cost when she gives the weight; told her in the reply. ➕ 16:06, her words: 19 slices (the loaf #7 count). Weight still not given; per the standing rule (no weight ÷ count average, 45 g a slice unless she states a weight) the 45 g slice stands. For reference only: if #7 weighs about what #6 did (996 g), 19 slices would average about 52 g, about 24 g carb, so this row may run about 3 g carb low until W arrives. ✏️ RE-COSTED at 16:07, her words: 933 g the whole loaf. W = 933 g; no recipe change reported, so the loaf #6 recipe totals are kept (about 453 g carb, 98 g protein, 2,926 kcal, 69 g fiber, 580 mg calcium per loaf), giving per gram of #7: 0.486 g carb, 0.105 g protein, 3.14 kcal, 0.62 mg calcium. Bake-off about 16% if …",
+    "title": "Snack: one plain slice of her homemade seeded whole-grain loaf #7, baked today (13:06 photo of it in the pan), held up in her hand over the stove, no topping: light brown, soft, even crumb with sunflower and pumpkin seeds and oat flecks all through, crust on the top and both sides, no gummy band. ⭐ PHOTO ONLY, NO CAPTION, at 15:59. ✏️ CORRECTED at 16:01 by her words: That was just to show you the loaf but ok I'll gavel a piece ��� (\"gavel\" read as \"have\", a phone autocorrect). The 15:59 photo was NOT food she was eating; she decided at 16:01 to have a piece, after the row was first logged at 15:59 as Lunch. Re-timed to 16:01, her stated eating time, which moves it into the Snack window by the hour rule; preBG and prediction recomputed from the 16:01 reading. Her \"a piece\" is taken as the same one slice shown. Lesson: a caption-less photo of a whole loaf or a just-cut slice on bake day can be show-and-tell, not a meal. No scale reference; per the standing bread rule her bread is never sized from a photo, so this is ONE standard slice, about 45 g. The loaf #7 weight and slice count were asked for at 13:06 and are not reported yet, so the slice is costed at the loaf #6 constants (0.455 g carb, 0.098 g protein, 2.94 kcal, 0.58 mg calcium per gram); re-cost when she gives the weight; told her in the reply. ➕ 16:06, her words: 19 slices (the loaf #7 count). Weight still not given; per the standing rule (no weight ÷ count average, 45 g a slice unless she states a weight) the 45 g slice stands. For reference only: if #7 weighs about what #6 did (996 g), 19 slices would average about 52 g, about 24 g carb, so this row may run about 3 g carb low until W arrives. ✏️ RE-COSTED at 16:07, her words: 933 g the whole loaf. W = 933 g; no recipe change reported, so the loaf #6 recipe totals are kept (about 453 g carb, 98 g protein, 2,926 kcal, 69 g fiber, 580 mg calcium per loaf), giving per gram of #7: 0.486 g carb, 0.105 g protein, 3.14 kcal, 0.62 mg calcium. Bake-off about 16% if …",
     "type": "Snack",
     "date": "2026-11-08T16:01:00.000-08:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-11-08/d45694397d6679ea.jpg",
@@ -1354,7 +1354,7 @@
   },
   {
     "id": "40185ec7-0668-8167-b32d-e9ac05a09b55",
-    "title": "Dinner: an open-faced fajita-style taco — one flour tortilla, charred in dark spots, laid flat on a white rimmed dinner plate and topped with pulled pork, strips of red and green bell pepper, a little cooked onion, a dollop of herby guacamole and chopped cilantro and chives, with a lime wedge at the plate's edge — plus a small round glass bowl of sautéed dark leafy greens with sliced white stems, read as Swiss chard with its stems, on the blue floral placemat. No caption; photo only. No scale reference in frame; portions estimated against a dinner plate assumed at approx. 27 cm, which puts the tortilla at about 21 cm across, an 8-inch one, about 45 g. PEPPERS COUNTED — ✏️ HER WORDS at 18:27: Add the pepper even if I regret it later! (First logged without the red and green strips, since bell peppers give her indigestion, her words 2026-08-28; now in, at about 50 g.) EXCLUDED: a Christmas-tree pitcher at the top-left edge (contents unseen, not counted) and a white cork-lidded canister at the top-right (not food). LEFTOVER MATCH: the tortilla is costed between the 2026-10-11 18:31 fajita taco's 42 g tortilla (id dceadb60) and the 2026-10-10 13:17 quesadilla's 49 g 8-inch one (id 81fcf67f); the guacamole at the 2026-10-11 and 2026-10-13 dinners' figures; the chard as the house sautéed chard of the 2026-10-14 18:35 dinner. BUILD: flour tortilla about 45 g — 22.5 g carb, 3.8 g protein, about 133 kcal, about 50 mg calcium; pulled pork about 70 g cooked ��� 0 g carb, 18 g protein, about 165 kcal, about 15 mg calcium; cooked onion about 15 g — 1.4 g carb, 0.2 g protein, about 6 kcal, about 3 mg calcium; guacamole about 45 g (about 36 g avocado) — 3.5 g carb (mostly fiber), 1 g protein, about 65 kcal, about 6 mg calcium; cilantro, chives and a squeeze of lime about 6 g — 0.5 g carb, 0.2 g protein, about 3 kcal, about 4 mg calcium; cooking fat for the filling, about half a teaspoon share, assumed — about 20 kcal; sautéed chard about half a cup, about 88 g, with about a teaspoon…",
+    "title": "Dinner: an open-faced fajita-style taco — one flour tortilla, charred in dark spots, laid flat on a white rimmed dinner plate and topped with pulled pork, strips of red and green bell pepper, a little cooked onion, a dollop of herby guacamole and chopped cilantro and chives, with a lime wedge at the plate's edge — plus a small round glass bowl of sautéed dark leafy greens with sliced white stems, read as Swiss chard with its stems, on the blue floral placemat. No caption; photo only. No scale reference in frame; portions estimated against a dinner plate assumed at approx. 27 cm, which puts the tortilla at about 21 cm across, an 8-inch one, about 45 g. PEPPERS COUNTED — ✏️ HER WORDS at 18:27: Add the pepper even if I regret it later! (First logged without the red and green strips, since bell peppers give her indigestion, her words 2026-08-28; now in, at about 50 g.) EXCLUDED: a Christmas-tree pitcher at the top-left edge (contents unseen, not counted) and a white cork-lidded canister at the top-right (not food). LEFTOVER MATCH: the tortilla is costed between the 2026-10-11 18:31 fajita taco's 42 g tortilla (id dceadb60) and the 2026-10-10 13:17 quesadilla's 49 g 8-inch one (id 81fcf67f); the guacamole at the 2026-10-11 and 2026-10-13 dinners' figures; the chard as the house sautéed chard of the 2026-10-14 18:35 dinner. BUILD: flour tortilla about 45 g — 22.5 g carb, 3.8 g protein, about 133 kcal, about 50 mg calcium; pulled pork about 70 g cooked — 0 g carb, 18 g protein, about 165 kcal, about 15 mg calcium; cooked onion about 15 g — 1.4 g carb, 0.2 g protein, about 6 kcal, about 3 mg calcium; guacamole about 45 g (about 36 g avocado) — 3.5 g carb (mostly fiber), 1 g protein, about 65 kcal, about 6 mg calcium; cilantro, chives and a squeeze of lime about 6 g — 0.5 g carb, 0.2 g protein, about 3 kcal, about 4 mg calcium; cooking fat for the filling, about half a teaspoon share, assumed — about 20 kcal; sautéed chard about half a cup, about 88 g, with about a teaspoon…",
     "type": "Dinner",
     "date": "2026-10-21T18:24:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-10-21/0e1728ca0eb83ad9.jpg",
