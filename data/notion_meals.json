@@ -7,8 +7,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-11-12/a2318492e6a3e9ed.jpg",
     "carbs": 15,
     "cals": 74,
-    "delta": null,
-    "peak": null
+    "delta": 33,
+    "peak": 160
   },
   {
     "id": "41685ec7-0668-8111-84c5-f880ff60d1fb",
@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-11-12/e1b1509f7205c6fb.jpg",
     "carbs": 43,
     "cals": 355,
-    "delta": null,
-    "peak": null
+    "delta": 34,
+    "peak": 160
   },
   {
     "id": "41685ec7-0668-81d4-b01d-fb8a228f5768",
@@ -3774,7 +3774,7 @@
   },
   {
     "id": "3d085ec7-0668-81d0-852a-e0bf64e36c05",
-    "title": "Breakfast (cont.): one whole dark-skinned plum, unclear whether a black plum or a dark pluot but the macros are near-identical either way, photographed alone on the placemat beside the SPG card. LOGGED AS A CUMULATIVE BREAKFAST — it arrived SEVEN MINUTES after the 10:37 sandwich, far inside the one-hour window, so it inherits that meal's type and its preBG anchor of 101 rather than the live 98, which is already mid-digestion. ⛔ THE CARB, CALORIE AND PROTEIN COLUMNS ON THIS ROW CARRY ONLY THIS PLUM'S OWN INCREMENT and NOT the running total; the whole-meal figure lives in the cumulative marker alone. 📐 MEASURED AGAINST THE CARD, WHICH SITS ON THE PLACEMAT IN THE SAME PLANE AS THE FRUIT — the configuration that made the 2026-08-13 plum wrong was a card at a different depth, and that fault is absent here. Card edges read about 469 px long by 238 px short, an apparent aspect of 1.97 against the true 1.586, giving px per mm of 5.48 from the long edge and a viewing angle of about 36 degrees, squarely in the useful range. The fruit images as a circle roughly 385 px across, and a sphere projects to a circle from every angle so no foreshortening correction applies to it, giving about 70 mm. Correcting for the equator of the fruit sitting a radius above the mat and therefore nearer the lens, at an assumed 40 cm working distance, trims that to ABOUT 64 mm, which is a large plum of roughly 125g of flesh once the stone is discounted. Held deliberately at the conservative end of the plausible range because portion priors here have run systematically large. [Cumulative Breakfast: 44g carbs total] (BG: 101 mg/dL Flat, the anchor preBG from the 10:37 first item) (Pred: 156-176 mg/dL @ 11:52 AM, computed on the cumulative 44g and superseding the 152-172 on the 10:37 row) (Protein: 1g | Carbs: ~14g | Cals: ~60) [Coach: A whole plum with the skin on is about the best thing you could have put next to that sandwich 🍑 — the fibre comes packaged with the sugar, which is exactly how your ��",
+    "title": "Breakfast (cont.): one whole dark-skinned plum, unclear whether a black plum or a dark pluot but the macros are near-identical either way, photographed alone on the placemat beside the SPG card. LOGGED AS A CUMULATIVE BREAKFAST — it arrived SEVEN MINUTES after the 10:37 sandwich, far inside the one-hour window, so it inherits that meal's type and its preBG anchor of 101 rather than the live 98, which is already mid-digestion. ⛔ THE CARB, CALORIE AND PROTEIN COLUMNS ON THIS ROW CARRY ONLY THIS PLUM'S OWN INCREMENT and NOT the running total; the whole-meal figure lives in the cumulative marker alone. 📐 MEASURED AGAINST THE CARD, WHICH SITS ON THE PLACEMAT IN THE SAME PLANE AS THE FRUIT — the configuration that made the 2026-08-13 plum wrong was a card at a different depth, and that fault is absent here. Card edges read about 469 px long by 238 px short, an apparent aspect of 1.97 against the true 1.586, giving px per mm of 5.48 from the long edge and a viewing angle of about 36 degrees, squarely in the useful range. The fruit images as a circle roughly 385 px across, and a sphere projects to a circle from every angle so no foreshortening correction applies to it, giving about 70 mm. Correcting for the equator of the fruit sitting a radius above the mat and therefore nearer the lens, at an assumed 40 cm working distance, trims that to ABOUT 64 mm, which is a large plum of roughly 125g of flesh once the stone is discounted. Held deliberately at the conservative end of the plausible range because portion priors here have run systematically large. [Cumulative Breakfast: 44g carbs total] (BG: 101 mg/dL Flat, the anchor preBG from the 10:37 first item) (Pred: 156-176 mg/dL @ 11:52 AM, computed on the cumulative 44g and superseding the 152-172 on the 10:37 row) (Protein: 1g | Carbs: ~14g | Cals: ~60) [Coach: A whole plum with the skin on is about the best thing you could have put next to that sandwich 🍑 — the fibre comes packaged with the sugar, which is exactly how your …",
     "type": "Breakfast",
     "date": "2026-09-03T10:44:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-09-03/2ca7ef859b0d19a4.jpg",
