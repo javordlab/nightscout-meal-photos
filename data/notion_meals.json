@@ -29,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-11-26/90003b9e2586af16.jpg",
     "carbs": 10,
     "cals": 100,
-    "delta": null,
-    "peak": null
+    "delta": 24,
+    "peak": 136
   },
   {
     "id": "42585ec7-0668-81df-a4e4-cd9caaa3f26f",
@@ -40,8 +40,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-11-26/38e1afea5c531398.jpg",
     "carbs": 11,
     "cals": 165,
-    "delta": null,
-    "peak": null
+    "delta": 24,
+    "peak": 136
   },
   {
     "id": "42585ec7-0668-813e-a516-dad07f2adc09",
@@ -51,8 +51,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-11-26/43840cdf576b33b2.jpg",
     "carbs": 9,
     "cals": 298,
-    "delta": null,
-    "peak": null
+    "delta": 9,
+    "peak": 136
   },
   {
     "id": "42485ec7-0668-81d9-a800-ee4743396534",
@@ -3048,7 +3048,7 @@
   },
   {
     "id": "3f185ec7-0668-8148-8f50-d761d59f137c",
-    "title": "Dinner: chunks of flaky white fish, pan-seared with golden edges, cooked with strips of green pepper and red onion in an orange olive-oil sauce; one of her homemade meatballs in a little brown gravy; and thin pan-fried potato rounds, on a white dinner plate on the blue floral placemat, fork at the top right. Her caption at 18:26: Fish and peppers, 1 meatballs, potatoes. ✏️ CORRECTED at 18:31, her words: No ham, fish peppers and red onions. The pink-red pieces first read as about 20 g of diced cured ham, plus about 45 g of tomato and onion, are all red onion; ham removed, the tomato reading dropped, and the red onion costed at about 65 g cooked. Was 26 g carb, 41 g protein, about 505 kcal, Pred 123-143. ⭐ HER OWN COUNT GOVERNS the meatball (one; one visible). Peppers counted as eaten because she named them in her caption (pepper-intolerance note of 2026-08-28 kept in mind); they are about 2 g carb, so the figures barely move either way. LEFTOVER MATCH: the meatball is from the 2026-09-30 batch (row 3ce9dee1, her recipe with carrot and milk-soaked bread as binder), costed at that row's per-meatball figures; it measures about 4.6 cm across here, inside that batch's 4.5 to 5 cm. The fish dish and the potatoes are new to this week's digest and estimated from the photo. 📐 No card in frame; scale taken from the meatball (about 240 px across at 4.6 cm, about 52 px per cm), which agrees with the plate's visible arc read as a 26 to 27 cm dinner plate (about 1,400 to 1,450 px across); the meatball's widest point sits about 2 cm above the plate, so plate-level items may read about 5% small. POTATOES: ten slices, counted in one pass on a zoomed crop (one partly hidden under its neighbors), plus a small glossy fragment not counted; about 4 to 5.5 cm across and 3 to 4 mm thick, about 6.5 g each cooked, so about 65 g, roughly half a medium potato. FISH: about 14 pieces, counted on a zoomed crop, each about 2 to 3 cm across and 1.5 to 2 cm thick, about 8 to 9 g, so about 115 g coo��",
+    "title": "Dinner: chunks of flaky white fish, pan-seared with golden edges, cooked with strips of green pepper and red onion in an orange olive-oil sauce; one of her homemade meatballs in a little brown gravy; and thin pan-fried potato rounds, on a white dinner plate on the blue floral placemat, fork at the top right. Her caption at 18:26: Fish and peppers, 1 meatballs, potatoes. ✏️ CORRECTED at 18:31, her words: No ham, fish peppers and red onions. The pink-red pieces first read as about 20 g of diced cured ham, plus about 45 g of tomato and onion, are all red onion; ham removed, the tomato reading dropped, and the red onion costed at about 65 g cooked. Was 26 g carb, 41 g protein, about 505 kcal, Pred 123-143. ⭐ HER OWN COUNT GOVERNS the meatball (one; one visible). Peppers counted as eaten because she named them in her caption (pepper-intolerance note of 2026-08-28 kept in mind); they are about 2 g carb, so the figures barely move either way. LEFTOVER MATCH: the meatball is from the 2026-09-30 batch (row 3ce9dee1, her recipe with carrot and milk-soaked bread as binder), costed at that row's per-meatball figures; it measures about 4.6 cm across here, inside that batch's 4.5 to 5 cm. The fish dish and the potatoes are new to this week's digest and estimated from the photo. 📐 No card in frame; scale taken from the meatball (about 240 px across at 4.6 cm, about 52 px per cm), which agrees with the plate's visible arc read as a 26 to 27 cm dinner plate (about 1,400 to 1,450 px across); the meatball's widest point sits about 2 cm above the plate, so plate-level items may read about 5% small. POTATOES: ten slices, counted in one pass on a zoomed crop (one partly hidden under its neighbors), plus a small glossy fragment not counted; about 4 to 5.5 cm across and 3 to 4 mm thick, about 6.5 g each cooked, so about 65 g, roughly half a medium potato. FISH: about 14 pieces, counted on a zoomed crop, each about 2 to 3 cm across and 1.5 to 2 cm thick, about 8 to 9 g, so about 115 g coo…",
     "type": "Dinner",
     "date": "2026-10-05T18:26:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-10-05/2b0dc9df340dd911.jpg",
@@ -5952,7 +5952,7 @@
   },
   {
     "id": "3b885ec7-0668-8141-b141-ed9d7b50ba4f",
-    "title": "Lunch: two open-faced slices of whole-grain bread, one topped with cured ham and the other with brie, plus two wedges of cantaloupe in a side bowl. Portions calibrated against the SPG card at 85mm, plate approx. 17cm, giving roughly 60g bread across the two slices, 35g ham, 35g brie and 130g cantaloupe. (BG: 88 mg/dL Flat) (Pred: 122-142 mg/dL @ 3:06 PM) (Protein: 25g | Carbs: ~37g | Cals: ~400) [Coach: Open-faced is a clever move 🥖 — half the bread, all the topping, and a solid 25g of protein on the plate. The brie is quietly adding calcium for your bones too. A few slices of cucumber or tomato alongside and this would be a complete lunch.]",
+    "title": "Lunch: two open-faced slices of whole-grain bread, one topped with cured ham and the other with brie, plus two wedges of cantaloupe in a side bowl. Portions calibrated against the SPG card at 85mm, plate approx. 17cm, giving roughly 60g bread across the two slices, 35g ham, 35g brie and 130g cantaloupe. (BG: 88 mg/dL Flat) (Pred: 122-142 mg/dL @ 3:06 PM) (Protein: 25g | Carbs: ~37g | Cals: ~400) [Coach: Open-faced is a clever move ���� — half the bread, all the topping, and a solid 25g of protein on the plate. The brie is quietly adding calcium for your bones too. A few slices of cucumber or tomato alongside and this would be a complete lunch.]",
     "type": "Lunch",
     "date": "2026-08-10T13:56:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-10/7f44f25bd902fe31.jpg",
@@ -5985,7 +5985,7 @@
   },
   {
     "id": "3b885ec7-0668-8141-8594-eb49fdb9d538",
-    "title": "Dinner: kale and mango salad with leftover paella chicken (BG: 140 mg/dL Flat) (Pred: 178-198 mg/dL @ 7:39 PM) (Protein: 28g | Carbs: ~29g | Cals: ~435) [Cumulative Dinner: 75g carbs total] [Coach: Now that is a proper plate 🥬 — kale, mango and paella chicken bringing about 28g of protein and real fiber alongside it. Between this and the sandwich, dinner lands near 75g of carbs, so expect a firmer climb than usual tonight. The protein and the greens will keep it civilised.]",
+    "title": "Dinner: kale and mango salad with leftover paella chicken (BG: 140 mg/dL Flat) (Pred: 178-198 mg/dL @ 7:39 PM) (Protein: 28g | Carbs: ~29g | Cals: ~435) [Cumulative Dinner: 75g carbs total] [Coach: Now that is a proper plate �� — kale, mango and paella chicken bringing about 28g of protein and real fiber alongside it. Between this and the sandwich, dinner lands near 75g of carbs, so expect a firmer climb than usual tonight. The protein and the greens will keep it civilised.]",
     "type": "Dinner",
     "date": "2026-08-09T18:34:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-08-09/5d0939478b4aa574.jpg",
