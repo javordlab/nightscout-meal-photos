@@ -7,8 +7,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-11-27/55c10510eec833af.jpg",
     "carbs": 29,
     "cals": 221,
-    "delta": null,
-    "peak": null
+    "delta": 6,
+    "peak": 164
   },
   {
     "id": "42585ec7-0668-81ad-ae53-f5b0b30239da",
@@ -18,8 +18,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-11-27/2b51038c9a7ebe75.jpg",
     "carbs": 23,
     "cals": 325,
-    "delta": null,
-    "peak": null
+    "delta": 66,
+    "peak": 164
   },
   {
     "id": "42585ec7-0668-8126-ac0c-d1b7117510b9",
@@ -29,8 +29,8 @@
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-11-27/b5d7275f361ecb66.jpg",
     "carbs": 22,
     "cals": 96,
-    "delta": null,
-    "peak": null
+    "delta": 60,
+    "peak": 164
   },
   {
     "id": "42585ec7-0668-81da-8f0a-f0a1b5975724",
@@ -3059,7 +3059,7 @@
   },
   {
     "id": "3f285ec7-0668-81cb-90ab-d0eb224f6f84",
-    "title": "Dinner: a thick seared beef tenderloin steak with its pan juices, and three wedges of roasted butternut squash, one with its skin on, on a white rimmed dinner plate on the blue floral placemat, a steak knife and fork at the right. Her caption at 18:49: 5oz beef tenderloin and butternut squash. No salad tonight. ⭐ HER OWN STATED WEIGHT GOVERNS the steak: 5 oz, taken as the cooked weight on the plate, since the steak in frame is at least that size; named to her in one clause so one word (\"raw\") corrects it, which would make it about 3.75 oz cooked, about 31 g protein and 230 kcal. No leftover match: tenderloin and butternut squash are new to this week's digest. 📐 No usable card: a card at the top left edge sits partly under her tablet, far from the plate (corner rule). Scale from the steak knife (taken as about 23 cm, about 600 px along its length, about 2.6 px per mm) and the plate (about 730 px across, so about 27 cm, a dinner plate); the plate's ellipse (about 625 px deep) gives cos θ about 0.86, a view about 31° off straight down. SQUASH: a half-moon slice standing on its cut face, about 9 cm across, 6 cm tall and 2 cm thick, about 60 g; a small wedge about 5 by 3.5 by 3 cm, about 40 g; a long wedge with skin about 11 cm long, 4 cm wide and 3 cm thick, about 75 g; three pieces, counted, about 175 g cooked (range 140 to 210), a bit under a cup; the softest number in this row. BUILD: beef tenderloin 5 oz cooked, about 142 g, at about 29 g protein and 215 kcal per 100 g — 0 g carb, 41 g protein, about 305 kcal, about 15 mg calcium; pan juices and a little fat, read from the sheen, about 1 teaspoon — about 35 kcal; butternut squash roasted, about 175 g, at 10.5 g carb (3.2 g fiber), 0.9 g protein, 40 kcal and 41 mg calcium per 100 g — 18 g carb (about 6 g of it fiber), 2 g protein, about 70 kcal, about 70 mg calcium. Totals about 18 g carb, 43 g protein, about 410 kcal. About 85 mg calcium; running total today about 485 of 1200. Calorie floor checked: 4 × 18 + 4 × 4…",
+    "title": "Dinner: a thick seared beef tenderloin steak with its pan juices, and three wedges of roasted butternut squash, one with its skin on, on a white rimmed dinner plate on the blue floral placemat, a steak knife and fork at the right. Her caption at 18:49: 5oz beef tenderloin and butternut squash. No salad tonight. ⭐ HER OWN STATED WEIGHT GOVERNS the steak: 5 oz, taken as the cooked weight on the plate, since the steak in frame is at least that size; named to her in one clause so one word (\"raw\") corrects it, which would make it about 3.75 oz cooked, about 31 g protein and 230 kcal. No leftover match: tenderloin and butternut squash are new to this week's digest. 📐 No usable card: a card at the top left edge sits partly under her tablet, far from the plate (corner rule). Scale from the steak knife (taken as about 23 cm, about 600 px along its length, about 2.6 px per mm) and the plate (about 730 px across, so about 27 cm, a dinner plate); the plate's ellipse (about 625 px deep) gives cos θ about 0.86, a view about 31�� off straight down. SQUASH: a half-moon slice standing on its cut face, about 9 cm across, 6 cm tall and 2 cm thick, about 60 g; a small wedge about 5 by 3.5 by 3 cm, about 40 g; a long wedge with skin about 11 cm long, 4 cm wide and 3 cm thick, about 75 g; three pieces, counted, about 175 g cooked (range 140 to 210), a bit under a cup; the softest number in this row. BUILD: beef tenderloin 5 oz cooked, about 142 g, at about 29 g protein and 215 kcal per 100 g — 0 g carb, 41 g protein, about 305 kcal, about 15 mg calcium; pan juices and a little fat, read from the sheen, about 1 teaspoon — about 35 kcal; butternut squash roasted, about 175 g, at 10.5 g carb (3.2 g fiber), 0.9 g protein, 40 kcal and 41 mg calcium per 100 g — 18 g carb (about 6 g of it fiber), 2 g protein, about 70 kcal, about 70 mg calcium. Totals about 18 g carb, 43 g protein, about 410 kcal. About 85 mg calcium; running total today about 485 of 1200. Calorie floor checked: 4 × 18 + 4 × 4…",
     "type": "Dinner",
     "date": "2026-10-06T18:49:00.000-07:00",
     "photo": "https://javordlab.github.io/nightscout-meal-photos/uploads/2026-10-06/e82c98f2d0a9f6c2.jpg",
